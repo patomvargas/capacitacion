@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Genera tips diarios sobre herramientas de infraestructura y DevOps."""
+"""Genera noticias tecnicas diarias por sistema, cada uno con su propio feed Atom."""
 
 import json
 import os
 import sys
-from datetime import date, datetime, timedelta, timezone
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -14,6 +14,7 @@ from jinja2 import Environment, FileSystemLoader
 
 BASE_DIR = Path(__file__).parent
 DOCS_DIR = BASE_DIR / "docs"
+FEEDS_DIR = DOCS_DIR / "feeds"
 ARCHIVE_DIR = DOCS_DIR / "archive"
 
 
@@ -22,10 +23,10 @@ def load_config() -> dict:
         return yaml.safe_load(f)
 
 
-def pick_topics(config: dict, today: date) -> list[dict]:
-    """Selecciona topics rotativos para hoy. Usa day-of-year para rotar."""
+def pick_systems(config: dict, today: date) -> list[dict]:
+    """Selecciona N sistemas rotativos para hoy."""
     topics = config["topics"]
-    n = config["tips_per_day"]
+    n = config["systems_per_day"]
     day_num = today.timetuple().tm_yday + today.year * 366
     selected = []
     for i in range(n):
@@ -34,176 +35,251 @@ def pick_topics(config: dict, today: date) -> list[dict]:
     return selected
 
 
-def generate_tips(topics: list[dict], today: date) -> list[dict]:
-    """Llama a Groq para generar los tips."""
+def generate_news(systems: list[dict], today: date) -> dict[str, dict]:
+    """Llama a Groq para generar una noticia tecnica por sistema. Retorna {slug: news}."""
     client = Groq(api_key=os.environ["GROQ_API_KEY"])
 
-    topic_list = "\n".join(f"- {t['name']}" for t in topics)
+    system_descriptions = "\n".join(
+        f"- {s['name']} (slug: {s['slug']}): {s['focus']}" for s in systems
+    )
 
-    prompt = f"""Genera exactamente {len(topics)} tips tecnicos, uno por cada sistema/herramienta listado abajo.
-Cada tip debe ser practico, accionable y util para un sysadmin o DevOps engineer.
-Varia los temas: no repitas tips genericos. Busca funcionalidades especificas, trucos poco conocidos, mejores practicas o comandos utiles.
+    prompt = f"""Sos un editor tecnico que escribe noticias educativas para sysadmins y DevOps engineers.
+
+Para cada sistema listado abajo, genera UNA noticia tecnica. Cada noticia debe:
+- Cubrir una funcionalidad especifica, un cambio reciente, una best practice avanzada, o un caso de uso poco conocido
+- Ser tecnica y practica: incluir comandos, configuraciones, o ejemplos concretos cuando aplique
+- Tener profundidad suficiente para que el lector aprenda algo nuevo y accionable
+- NO ser un tip generico. Debe leerse como una noticia o articulo corto de un blog tecnico
 
 Fecha: {today.isoformat()}
 
-Sistemas (uno tip por cada uno, en este orden):
-{topic_list}
+Sistemas:
+{system_descriptions}
 
-Responde UNICAMENTE con un JSON array, sin markdown ni texto adicional. Cada elemento debe tener:
-- "system": nombre del sistema (exacto como se lista arriba)
-- "title": titulo corto del tip (maximo 80 caracteres)
-- "content": desarrollo del tip en 2-4 oraciones. Puede incluir comandos o ejemplos.
+Responde UNICAMENTE con un JSON array, sin markdown ni texto adicional. Cada elemento:
+- "slug": slug del sistema (exacto como se lista)
+- "title": titulo de la noticia (maximo 100 caracteres, descriptivo y especifico)
+- "summary": resumen en 1-2 oraciones
+- "content": desarrollo completo en 3-6 parrafos. Usa saltos de linea entre parrafos. Incluye comandos o ejemplos de configuracion cuando sea relevante (envueltos en backticks).
 
-Responde en espanol."""
+Responde en espanol tecnico (puede incluir terminos en ingles cuando es lo estandar)."""
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.8,
-        max_tokens=4000,
+        max_tokens=8000,
     )
 
     raw = response.choices[0].message.content.strip()
-    # Limpiar si viene envuelto en markdown
     if raw.startswith("```"):
         raw = raw.split("\n", 1)[1]
         raw = raw.rsplit("```", 1)[0]
 
-    return json.loads(raw)
+    # Limpiar caracteres de control que el modelo a veces genera
+    import re
+    raw = re.sub(r'[\x00-\x09\x0b\x0c\x0e-\x1f]', ' ', raw)
+
+    news_list = json.loads(raw, strict=False)
+    return {item["slug"]: item for item in news_list}
 
 
-def update_feed(config: dict, today: date, tips: list[dict]) -> None:
-    """Genera/actualiza el feed Atom."""
-    feed_path = DOCS_DIR / "feed.xml"
-    base_url = config["feed"]["url"].rstrip("/")
-
-    fg = FeedGenerator()
-    fg.id(f"{base_url}/feed.xml")
-    fg.title(config["feed"]["title"])
-    fg.subtitle(config["feed"]["description"])
-    fg.language(config["feed"]["language"])
-    fg.link(href=base_url, rel="alternate")
-    fg.link(href=f"{base_url}/feed.xml", rel="self")
-    fg.updated(datetime.now(timezone.utc))
-
-    # Cargar entradas existentes del archivo JSON de archivo
-    archive_index = load_archive_index()
-
-    # Agregar entrada de hoy
-    archive_index[today.isoformat()] = tips
-
-    # Limitar a max_entries dias
-    max_entries = config["feed"].get("max_entries", 90)
-    sorted_dates = sorted(archive_index.keys(), reverse=True)[:max_entries]
-    archive_index = {d: archive_index[d] for d in sorted_dates}
-
-    # Generar entradas del feed (mas reciente primero)
-    for date_str in sorted_dates:
-        day_tips = archive_index[date_str]
-        entry = fg.add_entry()
-        entry.id(f"{base_url}/archive/{date_str}.html")
-        entry.title(f"Tips del {date_str}")
-        entry.link(href=f"{base_url}/archive/{date_str}.html")
-        entry.published(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
-        entry.updated(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
-
-        # Contenido HTML
-        html_content = render_tips_html(day_tips)
-        entry.content(html_content, type="html")
-
-    fg.atom_file(str(feed_path), pretty=True)
-
-    # Guardar indice
-    save_archive_index(archive_index)
-
-
-def render_tips_html(tips: list[dict]) -> str:
-    """Renderiza tips como HTML para el feed."""
-    lines = []
-    for tip in tips:
-        lines.append(f'<h3>{tip["system"]}: {tip["title"]}</h3>')
-        lines.append(f'<p>{tip["content"]}</p>')
-    return "\n".join(lines)
-
-
-def load_archive_index() -> dict:
-    """Carga el indice de archivo."""
-    index_path = DOCS_DIR / "archive" / "index.json"
-    if index_path.exists():
-        with open(index_path) as f:
+def load_system_archive(slug: str) -> dict:
+    """Carga el archivo historico de un sistema. {date_str: news_item}"""
+    path = ARCHIVE_DIR / slug / "index.json"
+    if path.exists():
+        with open(path) as f:
             return json.load(f)
     return {}
 
 
-def save_archive_index(index: dict) -> None:
-    """Guarda el indice de archivo."""
-    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
-    with open(ARCHIVE_DIR / "index.json", "w") as f:
-        json.dump(index, f, indent=2, ensure_ascii=False)
+def save_system_archive(slug: str, archive: dict) -> None:
+    """Guarda el archivo historico de un sistema."""
+    dir_path = ARCHIVE_DIR / slug
+    dir_path.mkdir(parents=True, exist_ok=True)
+    with open(dir_path / "index.json", "w") as f:
+        json.dump(archive, f, indent=2, ensure_ascii=False)
 
 
-def generate_html_pages(config: dict, today: date, tips: list[dict]) -> None:
-    """Genera paginas HTML estaticas."""
+def update_system_feed(config: dict, topic: dict, archive: dict) -> None:
+    """Genera el feed Atom para un sistema."""
+    FEEDS_DIR.mkdir(parents=True, exist_ok=True)
+    slug = topic["slug"]
+    base_url = config["site"]["url"].rstrip("/")
+    max_entries = config["site"].get("max_entries", 60)
+
+    fg = FeedGenerator()
+    fg.id(f"{base_url}/feeds/{slug}.xml")
+    fg.title(f"{topic['name']} - {config['site']['title']}")
+    fg.subtitle(f"Noticias tecnicas sobre {topic['name']}: {topic['focus']}")
+    fg.language(config["site"]["language"])
+    fg.link(href=f"{base_url}/archive/{slug}/", rel="alternate")
+    fg.link(href=f"{base_url}/feeds/{slug}.xml", rel="self")
+    fg.updated(datetime.now(timezone.utc))
+
+    sorted_dates = sorted(archive.keys(), reverse=True)[:max_entries]
+
+    for date_str in sorted_dates:
+        news = archive[date_str]
+        entry = fg.add_entry()
+        entry.id(f"{base_url}/archive/{slug}/{date_str}.html")
+        entry.title(news["title"])
+        entry.link(href=f"{base_url}/archive/{slug}/{date_str}.html")
+        entry.published(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
+        entry.updated(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
+        entry.summary(news.get("summary", ""))
+
+        content_html = format_content_html(news)
+        entry.content(content_html, type="html")
+
+    fg.atom_file(str(FEEDS_DIR / f"{slug}.xml"), pretty=True)
+
+
+def format_content_html(news: dict) -> str:
+    """Convierte el contenido de una noticia a HTML."""
+    content = news.get("content", "")
+    paragraphs = [p.strip() for p in content.split("\n") if p.strip()]
+    html_parts = []
+    for p in paragraphs:
+        # Convertir backticks a <code>
+        import re
+        p = re.sub(r"`([^`]+)`", r"<code>\1</code>", p)
+        html_parts.append(f"<p>{p}</p>")
+    return "\n".join(html_parts)
+
+
+def generate_opml(config: dict) -> None:
+    """Genera archivo OPML para importar todos los feeds de una."""
+    base_url = config["site"]["url"].rstrip("/")
+    lines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<opml version="2.0">',
+        "  <head>",
+        f"    <title>{config['site']['title']}</title>",
+        "  </head>",
+        "  <body>",
+        f'    <outline text="{config["site"]["title"]}" title="{config["site"]["title"]}">',
+    ]
+    for topic in config["topics"]:
+        lines.append(
+            f'      <outline type="rss" text="{topic["name"]}" title="{topic["name"]}" '
+            f'xmlUrl="{base_url}/feeds/{topic["slug"]}.xml" '
+            f'htmlUrl="{base_url}/archive/{topic["slug"]}/" />'
+        )
+    lines.append("    </outline>")
+    lines.append("  </body>")
+    lines.append("</opml>")
+
+    with open(DOCS_DIR / "feeds.opml", "w") as f:
+        f.write("\n".join(lines))
+
+
+def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> None:
+    """Genera todas las paginas HTML."""
     env = Environment(loader=FileSystemLoader(BASE_DIR / "templates"))
-    base_url = config["feed"]["url"].rstrip("/")
-    archive_index = load_archive_index()
-    sorted_dates = sorted(archive_index.keys(), reverse=True)
+    base_url = config["site"]["url"].rstrip("/")
 
-    # Pagina principal (hoy)
+    # Landing page
+    all_systems = []
+    for topic in config["topics"]:
+        archive = load_system_archive(topic["slug"])
+        latest = None
+        if archive:
+            latest_date = sorted(archive.keys(), reverse=True)[0]
+            latest = {"date": latest_date, **archive[latest_date]}
+        all_systems.append({**topic, "latest": latest, "count": len(archive)})
+
     tpl_index = env.get_template("index.html")
     html = tpl_index.render(
         config=config,
         today=today.isoformat(),
-        tips=tips,
-        dates=sorted_dates,
+        systems=all_systems,
+        todays_slugs=[s["slug"] for s in all_systems if s["slug"] in todays_news],
         base_url=base_url,
     )
     with open(DOCS_DIR / "index.html", "w") as f:
         f.write(html)
 
-    # Paginas de archivo por dia
-    tpl_day = env.get_template("day.html")
-    for date_str in sorted_dates:
-        day_tips = archive_index[date_str]
-        html = tpl_day.render(
+    # Paginas por sistema
+    tpl_system = env.get_template("system.html")
+    tpl_article = env.get_template("article.html")
+
+    for topic in config["topics"]:
+        archive = load_system_archive(topic["slug"])
+        if not archive:
+            continue
+
+        sorted_dates = sorted(archive.keys(), reverse=True)
+        system_dir = ARCHIVE_DIR / topic["slug"]
+        system_dir.mkdir(parents=True, exist_ok=True)
+
+        # Index del sistema
+        html = tpl_system.render(
             config=config,
-            date=date_str,
-            tips=day_tips,
+            topic=topic,
             dates=sorted_dates,
+            archive=archive,
             base_url=base_url,
         )
-        with open(ARCHIVE_DIR / f"{date_str}.html", "w") as f:
+        with open(system_dir / "index.html", "w") as f:
             f.write(html)
+
+        # Articulos individuales
+        for i, date_str in enumerate(sorted_dates):
+            news = archive[date_str]
+            prev_date = sorted_dates[i + 1] if i + 1 < len(sorted_dates) else None
+            next_date = sorted_dates[i - 1] if i > 0 else None
+
+            html = tpl_article.render(
+                config=config,
+                topic=topic,
+                news=news,
+                date=date_str,
+                prev_date=prev_date,
+                next_date=next_date,
+                base_url=base_url,
+            )
+            with open(system_dir / f"{date_str}.html", "w") as f:
+                f.write(html)
 
 
 def main():
     today = date.today()
-
-    # Permitir override de fecha para testing
     if len(sys.argv) > 1:
         today = date.fromisoformat(sys.argv[1])
 
-    print(f"Generando tips para {today.isoformat()}...")
+    print(f"Generando noticias para {today.isoformat()}...")
 
     config = load_config()
+    systems = pick_systems(config, today)
+    print(f"Sistemas de hoy: {', '.join(s['name'] for s in systems)}")
 
-    if not config["feed"]["url"]:
-        print("ADVERTENCIA: config.yaml feed.url esta vacio. Completalo con tu URL de GitHub Pages.")
+    news = generate_news(systems, today)
+    print(f"Noticias generadas: {len(news)}")
 
-    topics = pick_topics(config, today)
-    print(f"Topics seleccionados: {', '.join(t['name'] for t in topics)}")
-
-    tips = generate_tips(topics, today)
-    print(f"Tips generados: {len(tips)}")
-
+    # Actualizar archivos y feeds por sistema
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
-    ARCHIVE_DIR.mkdir(parents=True, exist_ok=True)
 
-    update_feed(config, today, tips)
-    print("Feed actualizado.")
+    max_entries = config["site"].get("max_entries", 60)
+    for topic in config["topics"]:
+        archive = load_system_archive(topic["slug"])
 
-    generate_html_pages(config, today, tips)
-    print("Paginas HTML generadas.")
+        if topic["slug"] in news:
+            archive[today.isoformat()] = news[topic["slug"]]
+            # Limitar historial
+            sorted_dates = sorted(archive.keys(), reverse=True)[:max_entries]
+            archive = {d: archive[d] for d in sorted_dates}
+            save_system_archive(topic["slug"], archive)
+            print(f"  [{topic['name']}] nueva noticia guardada")
+
+        if archive:
+            update_system_feed(config, topic, archive)
+
+    generate_opml(config)
+    print("OPML generado.")
+
+    generate_html(config, today, news)
+    print("HTML generado.")
 
     print("Listo!")
 

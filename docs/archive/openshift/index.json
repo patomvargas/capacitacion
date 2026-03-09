@@ -1,0 +1,8 @@
+{
+  "2026-03-09": {
+    "slug": "openshift",
+    "title": "OKD 4: Mejoras en la instalación",
+    "summary": "OKD 4 presenta mejoras en la instalación y configuración del cluster. Estas mejoras permiten a los administradores instalar y configurar el cluster de manera más rápida y sencilla.",
+    "content": "En la última versión de OKD 4, se han introducido varias mejoras en la instalación y configuración del cluster. Una de las principales mejoras es la capacidad de instalar el cluster mediante un proceso de instalación automatizado, que se puede realizar mediante el comando `openshift-install`.\n \n Para instalar un cluster de OKD 4, se puede utilizar el siguiente comando: `openshift-install create cluster --dir=/path/to/cluster/config`. Este comando creará un directorio con la configuración del cluster y comenzará el proceso de instalación.\n \n Otra mejora en la instalación de OKD 4 es la capacidad de personalizar la configuración del cluster mediante la creación de un archivo de configuración. Por ejemplo, se puede crear un archivo `config.yaml` con la siguiente configuración: `apiVersion: v1, kind: Cluster, metadata: name: mi-cluster`.\n \n La instalación de OKD 4 también ofrece soporte para la instalación en diferentes plataformas, como AWS, Azure y GCP. Para instalar el cluster en una de estas plataformas, se puede utilizar el comando `openshift-install create cluster --platform=<plataforma>`.\n \n En resumen, las mejoras en la instalación de OKD 4 ofrecen una forma más rápida y sencilla de instalar y configurar el cluster, lo que puede ayudar a mejorar la productividad y la eficiencia de los administradores."
+  }
+}

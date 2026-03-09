@@ -1,0 +1,8 @@
+{
+  "2026-03-09": {
+    "slug": "kubernetes",
+    "title": "K8s: Nuevas políticas de red",
+    "summary": "Kubernetes presenta nuevas políticas de red para mejorar la seguridad y el control de tráfico. Estas políticas permiten a los administradores definir reglas de tráfico de red para los pods y servicios.",
+    "content": "En la última versión de Kubernetes, se han introducido nuevas políticas de red que permiten a los administradores definir reglas de tráfico de red para los pods y servicios. Esto se logra mediante la creación de objetos de política de red, que se pueden aplicar a los pods y servicios mediante la configuración de la red.\n \n Para crear una política de red, se puede utilizar el comando `kubectl create network-policy`. Por ejemplo, para crear una política que permite el tráfico de red entre dos pods, se puede utilizar el siguiente comando: `kubectl create network-policy allow-traffic --pod-selector app=mi-aplicacion --ingress --egress`.\n \n Las políticas de red en Kubernetes se pueden utilizar para mejorar la seguridad y el control de tráfico de red en los clusters. Por ejemplo, se pueden utilizar para restringir el acceso a ciertos servicios o pods, o para permitir el tráfico de red solo entre pods y servicios específicos.\n \n Para aplicar una política de red a un pod o servicio, se puede utilizar el comando `kubectl label`. Por ejemplo, para aplicar una política de red a un pod, se puede utilizar el siguiente comando: `kubectl label pod mi-pod network-policy=allow-traffic`.\n \n En resumen, las nuevas políticas de red en Kubernetes ofrecen una forma flexible y poderosa de controlar el tráfico de red en los clusters, lo que puede ayudar a mejorar la seguridad y el rendimiento de las aplicaciones."
+  }
+}

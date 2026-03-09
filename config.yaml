@@ -1,50 +1,110 @@
-feed:
-  title: "Daily SysAdmin & DevOps Tips"
-  description: "Tips diarios sobre herramientas de infraestructura, DevOps y productividad"
+site:
+  title: "Tech News & Learning Feeds"
+  description: "Noticias tecnicas diarias por sistema para mantenerse actualizado"
   url: "https://patomvargas.github.io/capacitacion"
   language: "es"
-  max_entries: 90  # dias de historial en el feed
+  max_entries: 60  # dias de historial por feed
 
-tips_per_day: 10
+# Cuantos sistemas generar por dia (rota entre todos)
+systems_per_day: 5
 
 topics:
   - name: Google Workspace
+    slug: google-workspace
     tags: [productividad, google, admin]
+    focus: "Admin console, APIs, security, Vault, novedades de Workspace"
+
   - name: FreeIPA
+    slug: freeipa
     tags: [identidad, ldap, kerberos]
+    focus: "Identity management, LDAP, Kerberos, trust relationships, HBAC, sudo rules"
+
   - name: DNS BIND9
+    slug: bind9
     tags: [dns, redes, infraestructura]
+    focus: "Configuracion de zonas, DNSSEC, views, RPZ, logging, performance tuning"
+
   - name: OpenVPN
+    slug: openvpn
     tags: [vpn, redes, seguridad]
+    focus: "Tunneling, certificados, hardening, Access Server, site-to-site"
+
   - name: Kubernetes
+    slug: kubernetes
     tags: [containers, orquestacion, devops]
+    focus: "Nuevas features de K8s, networking, storage, security, operators, troubleshooting"
+
   - name: OpenShift
+    slug: openshift
     tags: [containers, orquestacion, redhat]
+    focus: "OKD, OperatorHub, builds, routes, OAuth, monitoring, migration"
+
   - name: Claude Code
+    slug: claude-code
     tags: [ia, cli, desarrollo]
+    focus: "CLI features, hooks, MCP servers, workflows, tips de productividad"
+
   - name: Gemini
+    slug: gemini
     tags: [ia, google, productividad]
+    focus: "API, modelos, integracion con Workspace, Vertex AI, prompting"
+
   - name: ChatGPT
+    slug: chatgpt
     tags: [ia, openai, productividad]
+    focus: "API, plugins, GPTs, function calling, best practices"
+
   - name: Metabase
+    slug: metabase
     tags: [datos, visualizacion, bi]
+    focus: "Queries, dashboards, embedding, API, custom expressions, administracion"
+
   - name: Airflow
+    slug: airflow
     tags: [datos, etl, orquestacion]
+    focus: "DAGs, operators, sensors, XCom, connections, best practices, Airflow 2.x"
+
   - name: n8n
+    slug: n8n
     tags: [automatizacion, workflows, integracion]
+    focus: "Nodos, workflows, credentials, webhooks, self-hosting, integraciones"
+
   - name: Superset
+    slug: superset
     tags: [datos, visualizacion, bi]
+    focus: "Charts, dashboards, SQL Lab, datasets, Jinja templates, administracion"
+
   - name: Traefik
+    slug: traefik
     tags: [proxy, ingress, redes]
+    focus: "Routers, middlewares, providers, Let's Encrypt, TCP/UDP, observability"
+
   - name: MetalLB
+    slug: metallb
     tags: [kubernetes, redes, loadbalancer]
+    focus: "L2 mode, BGP mode, IP pools, troubleshooting, integracion con K8s"
+
   - name: PostgreSQL
+    slug: postgresql
     tags: [base-de-datos, sql, dba]
+    focus: "Performance tuning, indices, replicacion, extensions, pg_stat, backups"
+
   - name: Docker
+    slug: docker
     tags: [containers, devops, desarrollo]
+    focus: "Multi-stage builds, compose, networking, security, BuildKit, registries"
+
   - name: Git
+    slug: git
     tags: [versionado, desarrollo, devops]
+    focus: "Workflows, hooks, rebase, bisect, worktrees, tips avanzados"
+
   - name: Terraform
+    slug: terraform
     tags: [iac, devops, infraestructura]
+    focus: "Providers, modules, state management, workspaces, import, moved blocks"
+
   - name: Ansible
+    slug: ansible
     tags: [automatizacion, iac, configuracion]
+    focus: "Playbooks, roles, collections, vault, inventory, AWX/Tower"

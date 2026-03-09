@@ -3,137 +3,95 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config.feed.title }}</title>
-    <link rel="alternate" type="application/atom+xml" title="Feed" href="{{ base_url }}/feed.xml">
+    <title>{{ config.site.title }}</title>
     <style>
         :root {
-            --bg: #0d1117;
-            --card: #161b22;
-            --border: #30363d;
-            --text: #c9d1d9;
-            --heading: #f0f6fc;
-            --accent: #58a6ff;
-            --tag: #1f6feb;
-            --code-bg: #1c2128;
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --tag: #1f6feb; --code-bg: #1c2128; --muted: #8b949e;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            padding: 2rem 1rem;
-            max-width: 800px;
-            margin: 0 auto;
+            background: var(--bg); color: var(--text); line-height: 1.6;
+            padding: 2rem 1rem; max-width: 900px; margin: 0 auto;
         }
-        header {
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border);
-        }
+        header { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
         h1 { color: var(--heading); font-size: 1.5rem; margin-bottom: 0.25rem; }
-        header p { color: var(--text); font-size: 0.9rem; opacity: 0.8; }
-        .rss-link {
-            display: inline-block;
-            margin-top: 0.5rem;
-            color: var(--accent);
-            text-decoration: none;
-            font-size: 0.85rem;
+        header p { color: var(--muted); font-size: 0.9rem; }
+        .actions { margin-top: 0.5rem; display: flex; gap: 1rem; }
+        .actions a {
+            color: var(--accent); text-decoration: none; font-size: 0.85rem;
+            border: 1px solid var(--border); padding: 0.3rem 0.8rem; border-radius: 6px;
         }
-        .rss-link:hover { text-decoration: underline; }
-        .date-badge {
-            display: inline-block;
-            background: var(--tag);
-            color: #fff;
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
+        .actions a:hover { border-color: var(--accent); }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.75rem; }
+        .system-card {
+            background: var(--card); border: 1px solid var(--border);
+            border-radius: 8px; padding: 1rem 1.2rem; transition: border-color 0.2s;
         }
-        .tip {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem 1.2rem;
-            margin-bottom: 0.75rem;
+        .system-card:hover { border-color: var(--accent); }
+        .system-card h2 { color: var(--heading); font-size: 1rem; margin-bottom: 0.3rem; }
+        .system-card .meta { font-size: 0.8rem; color: var(--muted); margin-bottom: 0.5rem; }
+        .system-card .latest { font-size: 0.85rem; }
+        .system-card .latest a { color: var(--accent); text-decoration: none; }
+        .system-card .latest a:hover { text-decoration: underline; }
+        .tags { display: flex; gap: 0.3rem; flex-wrap: wrap; margin-top: 0.5rem; }
+        .tag {
+            background: var(--code-bg); color: var(--muted); font-size: 0.7rem;
+            padding: 0.1rem 0.4rem; border-radius: 3px;
         }
-        .tip h3 {
-            color: var(--accent);
-            font-size: 0.95rem;
-            margin-bottom: 0.3rem;
+        .feed-link {
+            display: inline-block; font-size: 0.75rem; color: var(--muted);
+            text-decoration: none; margin-top: 0.4rem;
         }
-        .tip .system {
-            color: var(--heading);
-            font-weight: 600;
+        .feed-link:hover { color: var(--accent); }
+        .new-badge {
+            display: inline-block; background: #238636; color: #fff;
+            font-size: 0.65rem; padding: 0.1rem 0.35rem; border-radius: 3px;
+            margin-left: 0.4rem; vertical-align: middle;
         }
-        .tip p {
-            font-size: 0.9rem;
-            color: var(--text);
-        }
-        .tip code {
-            background: var(--code-bg);
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            font-size: 0.85rem;
-        }
-        .archive {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-        }
-        .archive h2 {
-            color: var(--heading);
-            font-size: 1.1rem;
-            margin-bottom: 0.75rem;
-        }
-        .archive a {
-            display: inline-block;
-            color: var(--accent);
-            text-decoration: none;
-            margin: 0.2rem 0.5rem 0.2rem 0;
-            font-size: 0.85rem;
-        }
-        .archive a:hover { text-decoration: underline; }
         footer {
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 1px solid var(--border);
-            font-size: 0.8rem;
-            opacity: 0.6;
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            font-size: 0.8rem; color: var(--muted);
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>{{ config.feed.title }}</h1>
-        <p>{{ config.feed.description }}</p>
-        <a class="rss-link" href="{{ base_url }}/feed.xml">Suscribirse via RSS/Atom</a>
+        <h1>{{ config.site.title }}</h1>
+        <p>{{ config.site.description }}</p>
+        <div class="actions">
+            <a href="{{ base_url }}/feeds.opml">Importar todos los feeds (OPML)</a>
+        </div>
     </header>
 
-    <main>
-        <span class="date-badge">{{ today }}</span>
-
-        {% for tip in tips %}
-        <div class="tip">
-            <h3><span class="system">{{ tip.system }}</span> &mdash; {{ tip.title }}</h3>
-            <p>{{ tip.content }}</p>
+    <div class="grid">
+        {% for sys in systems %}
+        <div class="system-card">
+            <h2>
+                {{ sys.name }}
+                {% if sys.slug in todays_slugs %}<span class="new-badge">NEW</span>{% endif %}
+            </h2>
+            <div class="meta">{{ sys.count }} articulo{{ 's' if sys.count != 1 else '' }}</div>
+            {% if sys.latest %}
+            <div class="latest">
+                <a href="{{ base_url }}/archive/{{ sys.slug }}/{{ sys.latest.date }}.html">{{ sys.latest.title }}</a>
+            </div>
+            {% endif %}
+            <div class="tags">
+                {% for tag in sys.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+            </div>
+            <a class="feed-link" href="{{ base_url }}/feeds/{{ sys.slug }}.xml">RSS Feed</a>
+            {% if sys.count > 0 %}
+            · <a class="feed-link" href="{{ base_url }}/archive/{{ sys.slug }}/">Archivo</a>
+            {% endif %}
         </div>
         {% endfor %}
-    </main>
-
-    {% if dates|length > 1 %}
-    <section class="archive">
-        <h2>Archivo</h2>
-        {% for d in dates %}
-            {% if d != today %}
-            <a href="{{ base_url }}/archive/{{ d }}.html">{{ d }}</a>
-            {% endif %}
-        {% endfor %}
-    </section>
-    {% endif %}
+    </div>
 
     <footer>
-        Generado automaticamente con Groq + GitHub Actions
+        Generado automaticamente con Groq + GitHub Actions · {{ today }}
     </footer>
 </body>
 </html>
