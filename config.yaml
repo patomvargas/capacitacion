@@ -1,0 +1,50 @@
+feed:
+  title: "Daily SysAdmin & DevOps Tips"
+  description: "Tips diarios sobre herramientas de infraestructura, DevOps y productividad"
+  url: "https://patomvargas.github.io/capacitacion"
+  language: "es"
+  max_entries: 90  # dias de historial en el feed
+
+tips_per_day: 10
+
+topics:
+  - name: Google Workspace
+    tags: [productividad, google, admin]
+  - name: FreeIPA
+    tags: [identidad, ldap, kerberos]
+  - name: DNS BIND9
+    tags: [dns, redes, infraestructura]
+  - name: OpenVPN
+    tags: [vpn, redes, seguridad]
+  - name: Kubernetes
+    tags: [containers, orquestacion, devops]
+  - name: OpenShift
+    tags: [containers, orquestacion, redhat]
+  - name: Claude Code
+    tags: [ia, cli, desarrollo]
+  - name: Gemini
+    tags: [ia, google, productividad]
+  - name: ChatGPT
+    tags: [ia, openai, productividad]
+  - name: Metabase
+    tags: [datos, visualizacion, bi]
+  - name: Airflow
+    tags: [datos, etl, orquestacion]
+  - name: n8n
+    tags: [automatizacion, workflows, integracion]
+  - name: Superset
+    tags: [datos, visualizacion, bi]
+  - name: Traefik
+    tags: [proxy, ingress, redes]
+  - name: MetalLB
+    tags: [kubernetes, redes, loadbalancer]
+  - name: PostgreSQL
+    tags: [base-de-datos, sql, dba]
+  - name: Docker
+    tags: [containers, devops, desarrollo]
+  - name: Git
+    tags: [versionado, desarrollo, devops]
+  - name: Terraform
+    tags: [iac, devops, infraestructura]
+  - name: Ansible
+    tags: [automatizacion, iac, configuracion]

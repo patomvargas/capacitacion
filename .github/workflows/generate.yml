@@ -1,0 +1,40 @@
+name: Generate Daily Tips
+
+on:
+  schedule:
+    # Todos los dias a las 08:00 UTC (05:00 Argentina)
+    - cron: '0 8 * * *'
+  workflow_dispatch: # permite ejecucion manual
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate tips
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+        run: python generate.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/
+          git diff --staged --quiet && echo "No changes" && exit 0
+          git commit -m "tips: $(date +%Y-%m-%d)"
+          git push
