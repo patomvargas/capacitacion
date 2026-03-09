@@ -76,7 +76,7 @@
             <div class="meta">{{ sys.count }} articulo{{ 's' if sys.count != 1 else '' }}</div>
             {% if sys.latest %}
             <div class="latest">
-                <a href="{{ base_url }}/archive/{{ sys.slug }}/{{ sys.latest.date }}.html">{{ sys.latest.title }}</a>
+                <a href="{{ base_url }}/archive/{{ sys.slug }}/{{ sys.latest.key }}.html">{{ sys.latest.title }}</a>
             </div>
             {% endif %}
             <div class="tags">

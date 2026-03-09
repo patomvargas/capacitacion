@@ -2,22 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-09T13:50:18.160769+00:00</updated>
+  <updated>2026-03-09T14:36:10.478034+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
   <subtitle>Noticias tecnicas sobre Kubernetes: Nuevas features de K8s, networking, storage, security, operators, troubleshooting</subtitle>
   <entry>
-    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09.html</id>
-    <title>K8s: Nuevas políticas de red</title>
-    <updated>2026-03-09T08:00:00+00:00</updated>
-    <content type="html">&lt;p&gt;En la última versión de Kubernetes, se han introducido nuevas políticas de red que permiten a los administradores definir reglas de tráfico de red para los pods y servicios. Esto se logra mediante la creación de objetos de política de red, que se pueden aplicar a los pods y servicios mediante la configuración de la red.&lt;/p&gt;
-&lt;p&gt;Para crear una política de red, se puede utilizar el comando &lt;code&gt;kubectl create network-policy&lt;/code&gt;. Por ejemplo, para crear una política que permite el tráfico de red entre dos pods, se puede utilizar el siguiente comando: &lt;code&gt;kubectl create network-policy allow-traffic --pod-selector app=mi-aplicacion --ingress --egress&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Las políticas de red en Kubernetes se pueden utilizar para mejorar la seguridad y el control de tráfico de red en los clusters. Por ejemplo, se pueden utilizar para restringir el acceso a ciertos servicios o pods, o para permitir el tráfico de red solo entre pods y servicios específicos.&lt;/p&gt;
-&lt;p&gt;Para aplicar una política de red a un pod o servicio, se puede utilizar el comando &lt;code&gt;kubectl label&lt;/code&gt;. Por ejemplo, para aplicar una política de red a un pod, se puede utilizar el siguiente comando: &lt;code&gt;kubectl label pod mi-pod network-policy=allow-traffic&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;En resumen, las nuevas políticas de red en Kubernetes ofrecen una forma flexible y poderosa de controlar el tráfico de red en los clusters, lo que puede ayudar a mejorar la seguridad y el rendimiento de las aplicaciones.&lt;/p&gt;</content>
-    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09.html"/>
-    <summary>Kubernetes presenta nuevas políticas de red para mejorar la seguridad y el control de tráfico. Estas políticas permiten a los administradores definir reglas de tráfico de red para los pods y servicios.</summary>
-    <published>2026-03-09T08:00:00+00:00</published>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09_1435.html</id>
+    <title>Kubernetes: Mejoras y Novedades</title>
+    <updated>2026-03-09T14:35:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. Una de las últimas novedades es la inclusión de &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico de red entre pods. Esto se puede lograr mediante el comando &lt;code&gt;kubectl create network-policy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes. La herramienta &lt;code&gt;AURI&lt;/code&gt; de Endor Labs es una plataforma de seguridad gratuita que se integra con asistentes de codificación de AI para detectar vulnerabilidades en el código generado.&lt;/p&gt;
+&lt;p&gt;En cuanto a almacenamiento, Kubernetes ofrece varias opciones, como &lt;code&gt;Persistent Volumes&lt;/code&gt; (PV) y &lt;code&gt;StatefulSets&lt;/code&gt;. Los PV permiten almacenar datos de manera persistente, incluso si un pod se elimina. Los &lt;code&gt;StatefulSets&lt;/code&gt; permiten crear conjuntos de pods con estado, como bases de datos.&lt;/p&gt;
+&lt;p&gt;La comunidad de Kubernetes es muy activa, y eventos como KubeCon Europe 2026 ofrecen oportunidades para conectarse con otros profesionales y aprender sobre las últimas tendencias y best practices.&lt;/p&gt;
+&lt;p&gt;Para aquellos que buscan mejorar la seguridad de sus clústeres de Kubernetes, es importante seguir las best practices, como utilizar &lt;code&gt;Role-Based Access Control&lt;/code&gt; (RBAC) y &lt;code&gt;Secrets&lt;/code&gt; para proteger la información sensible.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. Es importante estar al tanto de las últimas novedades y best practices para aprovechar al máximo este sistema de orquestación de contenedores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://venturebeat.com/technology/endor-labs-launches-free-tool-auri-after-study-finds-only-10-of-ai-generated"&gt;Endor Labs launches free tool AURI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://virtualizationreview.com/articles/2026/02/26/why-i-need-to-attend-kubecon-europe-2026-this-year.aspx"&gt;Why I Need to Attend KubeCon Europe 2026 this Year&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09_1435.html"/>
+    <summary>Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. En este artículo, exploraremos las últimas novedades y best practices para admins y DevOps.</summary>
+    <published>2026-03-09T14:35:00+00:00</published>
   </entry>
 </feed>

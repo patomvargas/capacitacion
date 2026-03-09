@@ -1,8 +1,22 @@
 {
-  "2026-03-09": {
+  "2026-03-09_1435": {
     "slug": "openshift",
-    "title": "OKD 4: Mejoras en la instalación",
-    "summary": "OKD 4 presenta mejoras en la instalación y configuración del cluster. Estas mejoras permiten a los administradores instalar y configurar el cluster de manera más rápida y sencilla.",
-    "content": "En la última versión de OKD 4, se han introducido varias mejoras en la instalación y configuración del cluster. Una de las principales mejoras es la capacidad de instalar el cluster mediante un proceso de instalación automatizado, que se puede realizar mediante el comando `openshift-install`.\n \n Para instalar un cluster de OKD 4, se puede utilizar el siguiente comando: `openshift-install create cluster --dir=/path/to/cluster/config`. Este comando creará un directorio con la configuración del cluster y comenzará el proceso de instalación.\n \n Otra mejora en la instalación de OKD 4 es la capacidad de personalizar la configuración del cluster mediante la creación de un archivo de configuración. Por ejemplo, se puede crear un archivo `config.yaml` con la siguiente configuración: `apiVersion: v1, kind: Cluster, metadata: name: mi-cluster`.\n \n La instalación de OKD 4 también ofrece soporte para la instalación en diferentes plataformas, como AWS, Azure y GCP. Para instalar el cluster en una de estas plataformas, se puede utilizar el comando `openshift-install create cluster --platform=<plataforma>`.\n \n En resumen, las mejoras en la instalación de OKD 4 ofrecen una forma más rápida y sencilla de instalar y configurar el cluster, lo que puede ayudar a mejorar la productividad y la eficiencia de los administradores."
+    "title": "OpenShift: Mejores prácticas y configuraciones",
+    "summary": "OpenShift es una plataforma de contenedores de código abierto que permite a los desarrolladores y administradores crear, desplegar y gestionar aplicaciones en la nube. A continuación, se presentan algunas mejores prácticas y configuraciones para aprovechar al máximo OpenShift.",
+    "content": "OpenShift es una plataforma basada en Kubernetes que ofrece una variedad de herramientas y características para simplificar el proceso de desarrollo y despliegue de aplicaciones. Una de las características más importantes de OpenShift es su capacidad para crear y gestionar builds de aplicaciones mediante el comando `oc start-build`. Este comando permite a los desarrolladores crear un build de su aplicación y desplegarlo en la plataforma.\n\nPara desplegar una aplicación en OpenShift, es necesario crear un archivo de configuración `deployment.yaml` que defina la aplicación y sus dependencias. Luego, se puede utilizar el comando `oc apply` para aplicar la configuración y desplegar la aplicación. Por ejemplo: `oc apply -f deployment.yaml`.\n\nOtra característica importante de OpenShift es su capacidad para crear y gestionar rutas de acceso a las aplicaciones. Las rutas se pueden crear utilizando el comando `oc expose` y se pueden configurar para utilizar diferentes protocolos y puertos. Por ejemplo: `oc expose svc/my-service --port=8080 --type=Route`.\n\nEn cuanto a la autenticación y autorización, OpenShift utiliza OAuth para gestionar el acceso a las aplicaciones. Los desarrolladores pueden utilizar el comando `oc login` para autenticarse en la plataforma y obtener un token de acceso. Luego, se puede utilizar el comando `oc whoami` para verificar la identidad del usuario autenticado.\n\nEn cuanto a la monitorización y logging, OpenShift ofrece una variedad de herramientas y características para supervisar y analizar el rendimiento de las aplicaciones. Los desarrolladores pueden utilizar el comando `oc logs` para ver los registros de la aplicación y el comando `oc get pods` para obtener información sobre los pods que se están ejecutando.\n\nFinalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para migrar aplicaciones desde otras plataformas. Los desarrolladores pueden utilizar el comando `oc adm migrate` para migrar una aplicación desde una plataforma diferente a OpenShift.\n\nEn resumen, OpenShift es una plataforma poderosa y flexible que ofrece una variedad de herramientas y características para simplificar el proceso de desarrollo y despliegue de aplicaciones. Al seguir las mejores prácticas y configuraciones presentadas en este artículo, los desarrolladores y administradores pueden aprovechar al máximo OpenShift y crear aplicaciones escalables y seguras.\n\nPara más información sobre OpenShift y sus características, se pueden consultar las fuentes siguientes.\n\n",
+    "sources": [
+      {
+        "title": "OKD Documentation",
+        "url": "https://docs.okd.io/latest/"
+      },
+      {
+        "title": "OpenShift Documentation",
+        "url": "https://docs.openshift.com/"
+      },
+      {
+        "title": "OperatorHub",
+        "url": "https://operatorhub.io/"
+      }
+    ]
   }
 }

@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Genera noticias tecnicas diarias por sistema, cada uno con su propio feed Atom."""
+"""Genera noticias tecnicas diarias por sistema, cada uno con su propio feed Atom.
+
+Busca noticias reales via DuckDuckGo y las usa como fuente para el articulo."""
 
 import json
 import os
+import re
 import sys
-from datetime import date, datetime, timezone
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
+from ddgs import DDGS
 from feedgen.feed import FeedGenerator
 from groq import Groq
 from jinja2 import Environment, FileSystemLoader
@@ -23,11 +27,11 @@ def load_config() -> dict:
         return yaml.safe_load(f)
 
 
-def pick_systems(config: dict, today: date) -> list[dict]:
+def pick_systems(config: dict, now: datetime) -> list[dict]:
     """Selecciona N sistemas rotativos para hoy."""
     topics = config["topics"]
     n = config["systems_per_day"]
-    day_num = today.timetuple().tm_yday + today.year * 366
+    day_num = now.timetuple().tm_yday + now.year * 366
     selected = []
     for i in range(n):
         idx = (day_num + i) % len(topics)
@@ -35,40 +39,84 @@ def pick_systems(config: dict, today: date) -> list[dict]:
     return selected
 
 
-def generate_news(systems: list[dict], today: date) -> dict[str, dict]:
-    """Llama a Groq para generar una noticia tecnica por sistema. Retorna {slug: news}."""
-    client = Groq(api_key=os.environ["GROQ_API_KEY"])
+def search_news(system: dict) -> list[dict]:
+    """Busca noticias recientes sobre un sistema via DuckDuckGo."""
+    queries = [
+        f"{system['name']} release update changelog 2025 2026",
+        f"{system['name']} new feature announcement",
+    ]
 
-    system_descriptions = "\n".join(
-        f"- {s['name']} (slug: {s['slug']}): {s['focus']}" for s in systems
-    )
+    results = []
+    with DDGS() as ddgs:
+        for query in queries:
+            try:
+                hits = list(ddgs.news(query, max_results=5, timelimit="m"))
+                results.extend(hits)
+            except Exception:
+                pass
+            if not results:
+                try:
+                    hits = list(ddgs.text(query, max_results=5, timelimit="m"))
+                    results.extend(hits)
+                except Exception:
+                    pass
 
-    prompt = f"""Sos un editor tecnico que escribe noticias educativas para sysadmins y DevOps engineers.
+    # Deduplicar por titulo
+    seen = set()
+    unique = []
+    for r in results:
+        title = r.get("title", "")
+        if title not in seen:
+            seen.add(title)
+            unique.append(r)
 
-Para cada sistema listado abajo, genera UNA noticia tecnica. Cada noticia debe:
-- Cubrir una funcionalidad especifica, un cambio reciente, una best practice avanzada, o un caso de uso poco conocido
-- Ser tecnica y practica: incluir comandos, configuraciones, o ejemplos concretos cuando aplique
-- Tener profundidad suficiente para que el lector aprenda algo nuevo y accionable
-- NO ser un tip generico. Debe leerse como una noticia o articulo corto de un blog tecnico
+    return unique[:8]
 
-Fecha: {today.isoformat()}
 
-Sistemas:
-{system_descriptions}
+def generate_news_for_system(client: Groq, system: dict, search_results: list[dict], now: datetime) -> dict:
+    """Genera una noticia para un sistema basandose en resultados de busqueda reales."""
 
-Responde UNICAMENTE con un JSON array, sin markdown ni texto adicional. Cada elemento:
-- "slug": slug del sistema (exacto como se lista)
-- "title": titulo de la noticia (maximo 100 caracteres, descriptivo y especifico)
+    sources_text = ""
+    for i, r in enumerate(search_results, 1):
+        title = r.get("title", "Sin titulo")
+        body = r.get("body", r.get("description", ""))
+        url = r.get("url", r.get("href", ""))
+        date = r.get("date", r.get("published", ""))
+        sources_text += f"\n[{i}] {title}\n    Fecha: {date}\n    URL: {url}\n    {body}\n"
+
+    if not sources_text.strip():
+        sources_text = "\nNo se encontraron noticias recientes. Genera contenido basado en las mejores practicas mas actuales y features estables del sistema.\n"
+
+    prompt = f"""Sos un editor tecnico que escribe articulos para sysadmins y DevOps engineers.
+
+Escribi UN articulo tecnico sobre **{system['name']}** basandote en las fuentes reales de abajo.
+El articulo debe:
+- Estar basado en informacion real de las fuentes proporcionadas
+- Ser tecnico y practico: incluir comandos, configuraciones o ejemplos concretos
+- Cubrir novedades, cambios, mejoras o best practices reales del sistema
+- Citar las fuentes al final (URLs)
+- Si las fuentes no tienen info relevante, escribi sobre una best practice avanzada y actual
+
+Enfoque del sistema: {system['focus']}
+Fecha actual: {now.strftime('%Y-%m-%d %H:%M UTC')}
+
+FUENTES:
+{sources_text}
+
+Responde UNICAMENTE con un JSON object (sin markdown ni texto adicional):
+- "slug": "{system['slug']}"
+- "title": titulo del articulo (maximo 100 caracteres, especifico)
 - "summary": resumen en 1-2 oraciones
-- "content": desarrollo completo en 3-6 parrafos. Usa saltos de linea entre parrafos. Incluye comandos o ejemplos de configuracion cuando sea relevante (envueltos en backticks).
+- "content": desarrollo completo en 3-6 parrafos. Usa saltos de linea entre parrafos. Incluye comandos o configuraciones cuando sea relevante (envueltos en backticks).
+- "sources": array de objetos con "title" y "url" de las fuentes usadas
 
 Responde en espanol tecnico (puede incluir terminos en ingles cuando es lo estandar)."""
 
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        temperature=0.8,
-        max_tokens=8000,
+        temperature=0.5,
+        max_tokens=4000,
     )
 
     raw = response.choices[0].message.content.strip()
@@ -76,16 +124,17 @@ Responde en espanol tecnico (puede incluir terminos en ingles cuando es lo estan
         raw = raw.split("\n", 1)[1]
         raw = raw.rsplit("```", 1)[0]
 
-    # Limpiar caracteres de control que el modelo a veces genera
-    import re
     raw = re.sub(r'[\x00-\x09\x0b\x0c\x0e-\x1f]', ' ', raw)
+    return json.loads(raw, strict=False)
 
-    news_list = json.loads(raw, strict=False)
-    return {item["slug"]: item for item in news_list}
+
+def make_entry_key(now: datetime) -> str:
+    """Genera clave unica con fecha y hora."""
+    return now.strftime("%Y-%m-%d_%H%M")
 
 
 def load_system_archive(slug: str) -> dict:
-    """Carga el archivo historico de un sistema. {date_str: news_item}"""
+    """Carga el archivo historico de un sistema. {entry_key: news_item}"""
     path = ARCHIVE_DIR / slug / "index.json"
     if path.exists():
         with open(path) as f:
@@ -99,6 +148,14 @@ def save_system_archive(slug: str, archive: dict) -> None:
     dir_path.mkdir(parents=True, exist_ok=True)
     with open(dir_path / "index.json", "w") as f:
         json.dump(archive, f, indent=2, ensure_ascii=False)
+
+
+def entry_key_to_datetime(key: str) -> datetime:
+    """Convierte entry key a datetime para el feed."""
+    if "_" in key:
+        return datetime.strptime(key, "%Y-%m-%d_%H%M").replace(tzinfo=timezone.utc)
+    # Retrocompatibilidad con claves viejas (solo fecha)
+    return datetime.strptime(key, "%Y-%m-%d").replace(hour=8, tzinfo=timezone.utc)
 
 
 def update_system_feed(config: dict, topic: dict, archive: dict) -> None:
@@ -117,16 +174,17 @@ def update_system_feed(config: dict, topic: dict, archive: dict) -> None:
     fg.link(href=f"{base_url}/feeds/{slug}.xml", rel="self")
     fg.updated(datetime.now(timezone.utc))
 
-    sorted_dates = sorted(archive.keys(), reverse=True)[:max_entries]
+    sorted_keys = sorted(archive.keys(), reverse=True)[:max_entries]
 
-    for date_str in sorted_dates:
-        news = archive[date_str]
+    for key in sorted_keys:
+        news = archive[key]
+        entry_dt = entry_key_to_datetime(key)
         entry = fg.add_entry()
-        entry.id(f"{base_url}/archive/{slug}/{date_str}.html")
+        entry.id(f"{base_url}/archive/{slug}/{key}.html")
         entry.title(news["title"])
-        entry.link(href=f"{base_url}/archive/{slug}/{date_str}.html")
-        entry.published(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
-        entry.updated(datetime.fromisoformat(f"{date_str}T08:00:00+00:00"))
+        entry.link(href=f"{base_url}/archive/{slug}/{key}.html")
+        entry.published(entry_dt)
+        entry.updated(entry_dt)
         entry.summary(news.get("summary", ""))
 
         content_html = format_content_html(news)
@@ -141,10 +199,22 @@ def format_content_html(news: dict) -> str:
     paragraphs = [p.strip() for p in content.split("\n") if p.strip()]
     html_parts = []
     for p in paragraphs:
-        # Convertir backticks a <code>
-        import re
         p = re.sub(r"`([^`]+)`", r"<code>\1</code>", p)
         html_parts.append(f"<p>{p}</p>")
+
+    # Agregar fuentes si existen
+    sources = news.get("sources", [])
+    if sources:
+        html_parts.append("<hr><p><strong>Fuentes:</strong></p><ul>")
+        for s in sources:
+            title = s.get("title", s.get("url", ""))
+            url = s.get("url", "")
+            if url:
+                html_parts.append(f'<li><a href="{url}">{title}</a></li>')
+            else:
+                html_parts.append(f"<li>{title}</li>")
+        html_parts.append("</ul>")
+
     return "\n".join(html_parts)
 
 
@@ -174,7 +244,7 @@ def generate_opml(config: dict) -> None:
         f.write("\n".join(lines))
 
 
-def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> None:
+def generate_html(config: dict, now: datetime, todays_news: dict[str, dict], entry_key: str) -> None:
     """Genera todas las paginas HTML."""
     env = Environment(loader=FileSystemLoader(BASE_DIR / "templates"))
     base_url = config["site"]["url"].rstrip("/")
@@ -185,14 +255,14 @@ def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> No
         archive = load_system_archive(topic["slug"])
         latest = None
         if archive:
-            latest_date = sorted(archive.keys(), reverse=True)[0]
-            latest = {"date": latest_date, **archive[latest_date]}
+            latest_key = sorted(archive.keys(), reverse=True)[0]
+            latest = {"key": latest_key, **archive[latest_key]}
         all_systems.append({**topic, "latest": latest, "count": len(archive)})
 
     tpl_index = env.get_template("index.html")
     html = tpl_index.render(
         config=config,
-        today=today.isoformat(),
+        today=now.strftime("%Y-%m-%d %H:%M UTC"),
         systems=all_systems,
         todays_slugs=[s["slug"] for s in all_systems if s["slug"] in todays_news],
         base_url=base_url,
@@ -209,7 +279,7 @@ def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> No
         if not archive:
             continue
 
-        sorted_dates = sorted(archive.keys(), reverse=True)
+        sorted_keys = sorted(archive.keys(), reverse=True)
         system_dir = ARCHIVE_DIR / topic["slug"]
         system_dir.mkdir(parents=True, exist_ok=True)
 
@@ -217,7 +287,7 @@ def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> No
         html = tpl_system.render(
             config=config,
             topic=topic,
-            dates=sorted_dates,
+            keys=sorted_keys,
             archive=archive,
             base_url=base_url,
         )
@@ -225,37 +295,50 @@ def generate_html(config: dict, today: date, todays_news: dict[str, dict]) -> No
             f.write(html)
 
         # Articulos individuales
-        for i, date_str in enumerate(sorted_dates):
-            news = archive[date_str]
-            prev_date = sorted_dates[i + 1] if i + 1 < len(sorted_dates) else None
-            next_date = sorted_dates[i - 1] if i > 0 else None
+        for i, key in enumerate(sorted_keys):
+            news = archive[key]
+            prev_key = sorted_keys[i + 1] if i + 1 < len(sorted_keys) else None
+            next_key = sorted_keys[i - 1] if i > 0 else None
 
             html = tpl_article.render(
                 config=config,
                 topic=topic,
                 news=news,
-                date=date_str,
-                prev_date=prev_date,
-                next_date=next_date,
+                entry_key=key,
+                prev_key=prev_key,
+                next_key=next_key,
                 base_url=base_url,
             )
-            with open(system_dir / f"{date_str}.html", "w") as f:
+            with open(system_dir / f"{key}.html", "w") as f:
                 f.write(html)
 
 
 def main():
-    today = date.today()
-    if len(sys.argv) > 1:
-        today = date.fromisoformat(sys.argv[1])
+    now = datetime.now(timezone.utc)
 
-    print(f"Generando noticias para {today.isoformat()}...")
+    print(f"Generando noticias - {now.strftime('%Y-%m-%d %H:%M UTC')}...")
 
     config = load_config()
-    systems = pick_systems(config, today)
+    systems = pick_systems(config, now)
     print(f"Sistemas de hoy: {', '.join(s['name'] for s in systems)}")
 
-    news = generate_news(systems, today)
-    print(f"Noticias generadas: {len(news)}")
+    client = Groq(api_key=os.environ["GROQ_API_KEY"])
+    entry_key = make_entry_key(now)
+    news = {}
+
+    for system in systems:
+        print(f"  [{system['name']}] buscando noticias...")
+        search_results = search_news(system)
+        print(f"  [{system['name']}] {len(search_results)} fuentes encontradas, generando articulo...")
+
+        try:
+            article = generate_news_for_system(client, system, search_results, now)
+            news[system["slug"]] = article
+            print(f"  [{system['name']}] OK: {article.get('title', '?')}")
+        except Exception as e:
+            print(f"  [{system['name']}] ERROR: {e}")
+
+    print(f"\nNoticias generadas: {len(news)}")
 
     # Actualizar archivos y feeds por sistema
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
@@ -265,21 +348,17 @@ def main():
         archive = load_system_archive(topic["slug"])
 
         if topic["slug"] in news:
-            archive[today.isoformat()] = news[topic["slug"]]
+            archive[entry_key] = news[topic["slug"]]
             # Limitar historial
-            sorted_dates = sorted(archive.keys(), reverse=True)[:max_entries]
-            archive = {d: archive[d] for d in sorted_dates}
+            sorted_keys = sorted(archive.keys(), reverse=True)[:max_entries]
+            archive = {k: archive[k] for k in sorted_keys}
             save_system_archive(topic["slug"], archive)
-            print(f"  [{topic['name']}] nueva noticia guardada")
 
         if archive:
             update_system_feed(config, topic, archive)
 
     generate_opml(config)
-    print("OPML generado.")
-
-    generate_html(config, today, news)
-    print("HTML generado.")
+    generate_html(config, now, news, entry_key)
 
     print("Listo!")
 

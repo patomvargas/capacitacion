@@ -34,6 +34,14 @@
             overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
         }
         .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
         .nav {
             margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
             display: flex; justify-content: space-between;
@@ -50,7 +58,7 @@
     </div>
 
     <h1>{{ news.title }}</h1>
-    <div class="meta">{{ date }} · {{ topic.name }}</div>
+    <div class="meta">{{ entry_key.replace('_', ' ') }} · {{ topic.name }}</div>
 
     <div class="content">
         {% set paragraphs = news.content.split('\n') %}
@@ -61,15 +69,29 @@
         {% endfor %}
     </div>
 
+    {% if news.sources %}
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            {% for s in news.sources %}
+            <li>
+                {% if s.url %}<a href="{{ s.url }}" target="_blank">{{ s.title }}</a>
+                {% else %}{{ s.title }}{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+
     <div class="nav">
         <div>
-            {% if prev_date %}
-            <a href="{{ base_url }}/archive/{{ topic.slug }}/{{ prev_date }}.html">&larr; {{ prev_date }}</a>
+            {% if prev_key %}
+            <a href="{{ base_url }}/archive/{{ topic.slug }}/{{ prev_key }}.html">&larr; {{ prev_key.replace('_', ' ') }}</a>
             {% endif %}
         </div>
         <div>
-            {% if next_date %}
-            <a href="{{ base_url }}/archive/{{ topic.slug }}/{{ next_date }}.html">{{ next_date }} &rarr;</a>
+            {% if next_key %}
+            <a href="{{ base_url }}/archive/{{ topic.slug }}/{{ next_key }}.html">{{ next_key.replace('_', ' ') }} &rarr;</a>
             {% endif %}
         </div>
     </div>

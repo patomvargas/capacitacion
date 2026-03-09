@@ -1,8 +1,18 @@
 {
-  "2026-03-09": {
+  "2026-03-09_1435": {
     "slug": "kubernetes",
-    "title": "K8s: Nuevas políticas de red",
-    "summary": "Kubernetes presenta nuevas políticas de red para mejorar la seguridad y el control de tráfico. Estas políticas permiten a los administradores definir reglas de tráfico de red para los pods y servicios.",
-    "content": "En la última versión de Kubernetes, se han introducido nuevas políticas de red que permiten a los administradores definir reglas de tráfico de red para los pods y servicios. Esto se logra mediante la creación de objetos de política de red, que se pueden aplicar a los pods y servicios mediante la configuración de la red.\n \n Para crear una política de red, se puede utilizar el comando `kubectl create network-policy`. Por ejemplo, para crear una política que permite el tráfico de red entre dos pods, se puede utilizar el siguiente comando: `kubectl create network-policy allow-traffic --pod-selector app=mi-aplicacion --ingress --egress`.\n \n Las políticas de red en Kubernetes se pueden utilizar para mejorar la seguridad y el control de tráfico de red en los clusters. Por ejemplo, se pueden utilizar para restringir el acceso a ciertos servicios o pods, o para permitir el tráfico de red solo entre pods y servicios específicos.\n \n Para aplicar una política de red a un pod o servicio, se puede utilizar el comando `kubectl label`. Por ejemplo, para aplicar una política de red a un pod, se puede utilizar el siguiente comando: `kubectl label pod mi-pod network-policy=allow-traffic`.\n \n En resumen, las nuevas políticas de red en Kubernetes ofrecen una forma flexible y poderosa de controlar el tráfico de red en los clusters, lo que puede ayudar a mejorar la seguridad y el rendimiento de las aplicaciones."
+    "title": "Kubernetes: Mejoras y Novedades",
+    "summary": "Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. En este artículo, exploraremos las últimas novedades y best practices para admins y DevOps.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. Una de las últimas novedades es la inclusión de `Network Policies` para controlar el tráfico de red entre pods. Esto se puede lograr mediante el comando `kubectl create network-policy`. \n\nLa seguridad es otro aspecto importante en Kubernetes. La herramienta `AURI` de Endor Labs es una plataforma de seguridad gratuita que se integra con asistentes de codificación de AI para detectar vulnerabilidades en el código generado. \n\nEn cuanto a almacenamiento, Kubernetes ofrece varias opciones, como `Persistent Volumes` (PV) y `StatefulSets`. Los PV permiten almacenar datos de manera persistente, incluso si un pod se elimina. Los `StatefulSets` permiten crear conjuntos de pods con estado, como bases de datos. \n\nLa comunidad de Kubernetes es muy activa, y eventos como KubeCon Europe 2026 ofrecen oportunidades para conectarse con otros profesionales y aprender sobre las últimas tendencias y best practices. \n\nPara aquellos que buscan mejorar la seguridad de sus clústeres de Kubernetes, es importante seguir las best practices, como utilizar `Role-Based Access Control` (RBAC) y `Secrets` para proteger la información sensible. \n\nEn resumen, Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. Es importante estar al tanto de las últimas novedades y best practices para aprovechar al máximo este sistema de orquestación de contenedores.",
+    "sources": [
+      {
+        "title": "Endor Labs launches free tool AURI",
+        "url": "https://venturebeat.com/technology/endor-labs-launches-free-tool-auri-after-study-finds-only-10-of-ai-generated"
+      },
+      {
+        "title": "Why I Need to Attend KubeCon Europe 2026 this Year",
+        "url": "https://virtualizationreview.com/articles/2026/02/26/why-i-need-to-attend-kubecon-europe-2026-this-year.aspx"
+      }
+    ]
   }
 }
