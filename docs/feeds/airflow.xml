@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
+  <title>Airflow - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-10T12:10:13.882976+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre Airflow: DAGs, operators, sensors, XCom, connections, best practices, Airflow 2.x</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-10_1209.html</id>
+    <title>Airflow 3.2: Mejoras y Best Practices</title>
+    <updated>2026-03-10T12:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow 3.2 es la última versión del popular sistema de gestión de flujos de trabajo. Una de las mejoras más destacadas es la expansión de la funcionalidad de conciencia de activos y datos, que permite a los desarrolladores crear flujos de trabajo más complejos y personalizados. Para aprovechar esta funcionalidad, se pueden utilizar &lt;code&gt;DAGs&lt;/code&gt; (Directed Acyclic Graphs) para definir los flujos de trabajo y &lt;code&gt;operators&lt;/code&gt; para ejecutar tareas específicas.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la expansión de las integraciones clave, como la integración con &lt;code&gt;dbt&lt;/code&gt; y &lt;code&gt;DuckDB&lt;/code&gt;. Esto permite a los desarrolladores crear flujos de trabajo que involucran la transformación y análisis de datos de manera más eficiente. Por ejemplo, se puede utilizar &lt;code&gt;dbt&lt;/code&gt; para transformar datos y luego utilizar &lt;code&gt;DuckDB&lt;/code&gt; para analizarlos. Para hacer esto, se puede utilizar el comando &lt;code&gt;dbt debug&lt;/code&gt; para depurar el flujo de trabajo y &lt;code&gt;duckdb query&lt;/code&gt; para ejecutar consultas en la base de datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a best practices, es importante mencionar la importancia de utilizar &lt;code&gt;XCom&lt;/code&gt; para compartir datos entre tareas y &lt;code&gt;connections&lt;/code&gt; para gestionar las conexiones a las bases de datos y otros sistemas. También es importante utilizar &lt;code&gt;sensors&lt;/code&gt; para monitorear los flujos de trabajo y detectar cualquier problema. Para hacer esto, se puede utilizar el comando &lt;code&gt;airflow db check&lt;/code&gt; para verificar la integridad de la base de datos y &lt;code&gt;airflow webserver&lt;/code&gt; para iniciar el servidor web.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar la importancia de utilizar &lt;code&gt;worker groups&lt;/code&gt; para gestionar los flujos de trabajo en entornos de multi-tenencia. Esto permite a los desarrolladores crear flujos de trabajo que se ejecutan en diferentes entornos y con diferentes configuraciones. Para hacer esto, se puede utilizar el comando &lt;code&gt;airflow worker&lt;/code&gt; para iniciar los trabajadores y &lt;code&gt;airflow scheduler&lt;/code&gt; para programar los flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 3.2 ofrece una serie de mejoras y funcionalidades que permiten a los desarrolladores crear flujos de trabajo más complejos y personalizados. Al utilizar &lt;code&gt;DAGs&lt;/code&gt;, &lt;code&gt;operators&lt;/code&gt;, &lt;code&gt;XCom&lt;/code&gt;, &lt;code&gt;connections&lt;/code&gt; y &lt;code&gt;sensors&lt;/code&gt;, los desarrolladores pueden crear flujos de trabajo que se ejecutan de manera eficiente y escalable. También es importante mencionar la importancia de utilizar &lt;code&gt;worker groups&lt;/code&gt; para gestionar los flujos de trabajo en entornos de multi-tenencia.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Airflow 3.2 y sus funcionalidades, se puede consultar la documentación oficial y los recursos en línea. También es importante mencionar que Astronomer ofrece una serie de recursos y herramientas para ayudar a los desarrolladores a aprovechar al máximo Airflow 3.2, incluyendo webinars y tutoriales en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/62537"&gt;Status of testing Providers that were prepared on February 26, 2026 #62537&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/events/webinars/"&gt;Webinars - Astronomer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/milestone/114"&gt;Airflow 2.11.1 · Milestone #114 · apache/airflow - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/blog/airflow-in-action-datadog/"&gt;Datadog Unlocks Apache Airflow 3's Power for Multi-Tenancy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/podcast/"&gt;The Data Flowcast with Astronomer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-10_1209.html"/>
+    <summary>Airflow 3.2 introduce mejoras en la funcionalidad de conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta versión.</summary>
+    <published>2026-03-10T12:09:00+00:00</published>
+  </entry>
+</feed>

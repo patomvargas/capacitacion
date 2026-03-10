@@ -1,0 +1,30 @@
+{
+  "2026-03-10_1209": {
+    "slug": "airflow",
+    "title": "Airflow 3.2: Mejoras y Best Practices",
+    "summary": "Airflow 3.2 introduce mejoras en la funcionalidad de conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta versión.",
+    "content": "\nAirflow 3.2 es la última versión del popular sistema de gestión de flujos de trabajo. Una de las mejoras más destacadas es la expansión de la funcionalidad de conciencia de activos y datos, que permite a los desarrolladores crear flujos de trabajo más complejos y personalizados. Para aprovechar esta funcionalidad, se pueden utilizar `DAGs` (Directed Acyclic Graphs) para definir los flujos de trabajo y `operators` para ejecutar tareas específicas.\n\nOtra mejora importante es la expansión de las integraciones clave, como la integración con `dbt` y `DuckDB`. Esto permite a los desarrolladores crear flujos de trabajo que involucran la transformación y análisis de datos de manera más eficiente. Por ejemplo, se puede utilizar `dbt` para transformar datos y luego utilizar `DuckDB` para analizarlos. Para hacer esto, se puede utilizar el comando `dbt debug` para depurar el flujo de trabajo y `duckdb query` para ejecutar consultas en la base de datos.\n\nEn cuanto a best practices, es importante mencionar la importancia de utilizar `XCom` para compartir datos entre tareas y `connections` para gestionar las conexiones a las bases de datos y otros sistemas. También es importante utilizar `sensors` para monitorear los flujos de trabajo y detectar cualquier problema. Para hacer esto, se puede utilizar el comando `airflow db check` para verificar la integridad de la base de datos y `airflow webserver` para iniciar el servidor web.\n\nAdemás, es importante mencionar la importancia de utilizar `worker groups` para gestionar los flujos de trabajo en entornos de multi-tenencia. Esto permite a los desarrolladores crear flujos de trabajo que se ejecutan en diferentes entornos y con diferentes configuraciones. Para hacer esto, se puede utilizar el comando `airflow worker` para iniciar los trabajadores y `airflow scheduler` para programar los flujos de trabajo.\n\nEn resumen, Airflow 3.2 ofrece una serie de mejoras y funcionalidades que permiten a los desarrolladores crear flujos de trabajo más complejos y personalizados. Al utilizar `DAGs`, `operators`, `XCom`, `connections` y `sensors`, los desarrolladores pueden crear flujos de trabajo que se ejecutan de manera eficiente y escalable. También es importante mencionar la importancia de utilizar `worker groups` para gestionar los flujos de trabajo en entornos de multi-tenencia.\n\nPara obtener más información sobre Airflow 3.2 y sus funcionalidades, se puede consultar la documentación oficial y los recursos en línea. También es importante mencionar que Astronomer ofrece una serie de recursos y herramientas para ayudar a los desarrolladores a aprovechar al máximo Airflow 3.2, incluyendo webinars y tutoriales en línea.",
+    "sources": [
+      {
+        "title": "Status of testing Providers that were prepared on February 26, 2026 #62537",
+        "url": "https://github.com/apache/airflow/issues/62537"
+      },
+      {
+        "title": "Webinars - Astronomer",
+        "url": "https://www.astronomer.io/events/webinars/"
+      },
+      {
+        "title": "Airflow 2.11.1 · Milestone #114 · apache/airflow - GitHub",
+        "url": "https://github.com/apache/airflow/milestone/114"
+      },
+      {
+        "title": "Datadog Unlocks Apache Airflow 3's Power for Multi-Tenancy",
+        "url": "https://www.astronomer.io/blog/airflow-in-action-datadog/"
+      },
+      {
+        "title": "The Data Flowcast with Astronomer",
+        "url": "https://www.astronomer.io/podcast/"
+      }
+    ]
+  }
+}
