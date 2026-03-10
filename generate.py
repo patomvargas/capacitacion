@@ -11,7 +11,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
-from duckduckgo_search import DDGS
+try:
+    from ddgs import DDGS
+except ImportError:
+    from duckduckgo_search import DDGS
 from feedgen.feed import FeedGenerator
 from groq import Groq
 from jinja2 import Environment, FileSystemLoader
@@ -339,6 +342,9 @@ def main():
             print(f"  [{system['name']}] ERROR: {e}")
 
     print(f"\nNoticias generadas: {len(news)}")
+    if not news:
+        print("ERROR: No se genero ninguna noticia, abortando.")
+        sys.exit(1)
 
     # Actualizar archivos y feeds por sistema
     DOCS_DIR.mkdir(parents=True, exist_ok=True)
