@@ -17,6 +17,7 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     if: github.actor != 'github-actions[bot]'
+    environment: github-pages
     steps:
       - uses: actions/checkout@v4
 
