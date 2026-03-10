@@ -1,6 +1,8 @@
 name: Generate Daily Tips
 
 on:
+  push:
+    branches: [main]
   schedule:
     # Todos los dias a las 08:00 UTC (05:00 Argentina)
     - cron: '0 8 * * *'
