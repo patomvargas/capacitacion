@@ -47,8 +47,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 export GROQ_API_KEY=tu-key
-python generate.py              # genera para hoy
-python generate.py 2026-03-15   # genera para una fecha especifica
+python generate.py              # genera para hoy (se puede correr varias veces al dia)
 ```
 
 ## Agregar un nuevo sistema

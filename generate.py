@@ -11,7 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
-from ddgs import DDGS
+from duckduckgo_search import DDGS
 from feedgen.feed import FeedGenerator
 from groq import Groq
 from jinja2 import Environment, FileSystemLoader
