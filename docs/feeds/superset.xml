@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-10T12:10:13.883520+00:00</updated>
+  <updated>2026-03-10T12:13:21.482736+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -26,5 +26,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1209.html"/>
     <summary>Superset es una herramienta de visualización de datos que ofrece funcionalidades avanzadas para la creación de gráficos y paneles de control. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Superset.</summary>
     <published>2026-03-10T12:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html</id>
+    <title>Superset: administración y visualización de datos</title>
+    <updated>2026-03-10T12:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto desarrollada por Apache que permite la administración y visualización de datos de manera eficiente. En la versión 6.0, se han introducido varias mejoras, como el soporte para temas personalizables y la capacidad de crear dashboards personalizados con &lt;code&gt;Jinja templates&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar: &lt;code&gt;docker-compose up -d&lt;/code&gt;. Luego, se puede acceder a la interfaz de usuario de Superset mediante &lt;code&gt;http://localhost:8088&lt;/code&gt;. Para conectar Superset a una base de datos externa, se puede utilizar el comando &lt;code&gt;pip install psycopg2-binary&lt;/code&gt; para instalar el conector de PostgreSQL.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de datos, Superset ofrece varias herramientas, como &lt;code&gt;SQL Lab&lt;/code&gt;, que permite ejecutar consultas SQL y visualizar los resultados en forma de gráficos y tablas. También se puede utilizar &lt;code&gt;datasets&lt;/code&gt; para crear conjuntos de datos personalizados y &lt;code&gt;charts&lt;/code&gt; para visualizar los datos de manera efectiva. Sin embargo, es importante tener en cuenta los problemas conocidos, como el error de conexión con Oracle (&lt;code&gt;oracledb connection error #37793&lt;/code&gt;) y la falta de soporte para prefijos y sufijos en las tablas (&lt;code&gt;Prefix and Suffix are not added in the Table Chart #37854&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad y el rendimiento de Superset, se pueden seguir varias best practices, como utilizar &lt;code&gt;LDAP&lt;/code&gt; para la autenticación y &lt;code&gt;SSL/TLS&lt;/code&gt; para cifrar las conexiones. También se puede utilizar &lt;code&gt;Amazon Web Services (AWS)&lt;/code&gt; para almacenar y procesar grandes conjuntos de datos, como se describe en el artículo de Ray Munene.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la administración y visualización de datos, y con las últimas mejoras y best practices, se puede utilizar de manera efectiva para tomar decisiones informadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://preset.io/blog/apache-superset-community-update-february-2026/"&gt;Apache Superset Community Update: February 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://preset.io/blog/superset-6-theming/"&gt;Apache Superset 6.0 Unlocks Infinite Themeability&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24"&gt;Running Superset Locally Using Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@raymunene/handling-large-datasets-in-aws-a9ab36eb2ec2"&gt;Handling Large Datasets in AWS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html"/>
+    <summary>Superset es una herramienta de código abierto para la administración y visualización de datos. En este artículo, se presentan las últimas novedades y best practices para su uso efectivo.</summary>
+    <published>2026-03-10T12:12:00+00:00</published>
   </entry>
 </feed>

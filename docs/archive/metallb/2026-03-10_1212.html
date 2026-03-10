@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-03-10 1212 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP reales a servicios de tipo LoadBalancer. Esto es especialmente útil en entornos de bare-metal, donde no se dispone de un equilibrio de carga integrado. Para configurar MetalLB, es necesario crear un objeto `IPAddressPool` que defina el rango de direcciones IP que se asignarán a los servicios.</p>
+            
+        
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: IPAddressPool</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: pool-local</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>autoAssign: false</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 192.168.3.247-192.168.3.250</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Una vez creado el objeto `IPAddressPool`, se puede configurar MetalLB para que utilice el modo L2 o BGP. El modo L2 es el más sencillo y permite asignar direcciones IP a servicios de tipo LoadBalancer sin necesidad de configurar un router BGP. Para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/manifests/layer2.yaml`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede configurar para que se integre con el sistema de orquestación de contenedores. Para hacer esto, se debe crear un objeto `Service` de tipo LoadBalancer y asignarle una dirección IP del rango definido en el objeto `IPAddressPool`. Por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: Service</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: mi-servicio</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>selector:</p>
+            
+        
+            
+            <p>app: mi-aplicacion</p>
+            
+        
+            
+            <p>ports:</p>
+            
+        
+            
+            <p>- name: http</p>
+            
+        
+            
+            <p>port: 80</p>
+            
+        
+            
+            <p>targetPort: 8080</p>
+            
+        
+            
+            <p>type: LoadBalancer</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Es importante mencionar que MetalLB también admite el modo BGP, que permite asignar direcciones IP a servicios de tipo LoadBalancer utilizando el protocolo BGP. Para configurar MetalLB en modo BGP, se debe crear un objeto `BGPAdvertisement` que defina la configuración del router BGP.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para equilibrio de carga en Kubernetes que permite asignar direcciones IP reales a servicios de tipo LoadBalancer. Su configuración y uso en modo L2 y BGP hacen que sea una herramienta versátil y escalable para entornos de bare-metal y cloud.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `kubectl` y `metallbctl` para verificar la configuración y el estado de los servicios. También es importante monitorear los logs de MetalLB para detectar cualquier problema o error.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que MetalLB se puede integrar con otras herramientas y sistemas de orquestación de contenedores, como Talos Linux y Rancher. Para obtener más información sobre la configuración y el uso de MetalLB, se pueden consultar las fuentes oficiales y la documentación de la comunidad.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb" target="_blank">MetalLB GitHub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://talos.dev/" target="_blank">Talos Linux Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://rancher.com/docs/" target="_blank">Rancher Documentation</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

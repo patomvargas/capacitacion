@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Mejoras y Best Practices - Superset</title>
-    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <title>Automatización con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Superset: Mejoras y Best Practices</h1>
-    <div class="meta">2026-03-10 1209 · Superset</div>
+    <h1>Automatización con n8n</h1>
+    <div class="meta">2026-03-10 1212 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear gráficos y paneles de control personalizados para visualizar datos. Recientemente, se han reportado algunos errores y mejoras en la comunidad de Superset, como el error de conexión con Oracle (`oracledb connection error #37793`) y la falta de funcionalidad en la tabla de gráficos (`Prefix and Suffix are not added in the Table Chart #37854`).</p>
+            <p>n8n es una herramienta de automatización de workflows que permite a los usuarios crear y ejecutar flujos de trabajo personalizados. Para empezar a usar n8n, es necesario instalar la versión más reciente del software, que se puede hacer ejecutando el comando `npm install -g n8n`. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante el comando `n8n start`.</p>
             
         
             
         
             
-            <p>Para instalar Superset de manera local, se puede utilizar Docker Compose, como se describe en el artículo `Running Superset Locally Using Docker Compose`. Esto permite a los desarrolladores probar y depurar Superset de manera rápida y sencilla.</p>
+            <p>La versión actual de n8n incluye varias mejoras y correcciones de errores, como la solución de un problema con el nodo de formulario en formato JSON, que se puede configurar utilizando el comando `n8n workflow:update`. Además, se han agregado nuevas funcionalidades de seguridad, como la capacidad de configurar el punto final de salud para evitar conflictos con otros servicios.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Superset, es importante destacar la importancia de la configuración de la base de datos y la autenticación. Se puede utilizar `pip install psycopg2-binary` para conectar a una base de datos PostgreSQL, y `pip install python-ldap` para autenticar con LDAP.</p>
+            <p>Para crear un workflow en n8n, se pueden utilizar nodos predefinidos, como el nodo de `HTTP Request`, que permite realizar solicitudes HTTP a servicios externos. También se pueden crear nodos personalizados utilizando el lenguaje de programación JavaScript. Para ejecutar un workflow, se puede utilizar el comando `n8n workflow:run`.</p>
             
         
             
         
             
-            <p>Además, se han agregado nuevas funcionalidades a Superset, como la posibilidad de resaltar notas y advertencias utilizando blockquote (`An option to highlight a “Note” and “Warning” using blockquote (Beta)`).</p>
+            <p>Es importante mencionar que n8n también ofrece una función de autenticación y autorización, que permite a los usuarios configurar credenciales y permisos para acceder a los workflows. Para configurar las credenciales, se puede utilizar el comando `n8n credentials:create`.</p>
             
         
             
         
             
-            <p>Para trabajar con grandes conjuntos de datos en AWS, se pueden utilizar servicios como Amazon S3 y Amazon Redshift, como se describe en el artículo `Handling Large Datasets in AWS`.</p>
+            <p>En cuanto a las mejores prácticas, se recomienda actualizar la versión de n8n de manera regular para asegurarse de tener las últimas correcciones de errores y mejoras. También es importante probar los workflows antes de activarlos, utilizando el modo de prueba de n8n.</p>
             
         
             
         
             
-            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que requiere una configuración y administración adecuadas para funcionar de manera efectiva.</p>
+            <p>Finalmente, es importante mencionar que n8n ofrece una comunidad activa y recursos para aprender y mejorar las habilidades en la automatización de workflows. Se pueden encontrar tutoriales y guías en la documentación oficial de n8n, así como en sitios web como DEV Community y Medium.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de n8n, como la documentación y el blog de la comunidad.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,22 +115,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37793" target="_blank">oracledb connection error #37793</a>
+                <a href="https://github.com/n8n-io/n8n" target="_blank">GitHub - n8n-io/n8n</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37854" target="_blank">Prefix and Suffix are not added in the Table Chart #37854</a>
+                <a href="https://blog.n8n.io/" target="_blank">n8n Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24" target="_blank">Running Superset Locally Using Docker Compose</a>
+                <a href="https://dev.to/t/n8n" target="_blank">DEV Community - n8n</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@raymunene/handling-large-datasets-in-aws-a9ab36eb2ec2" target="_blank">Handling Large Datasets in AWS</a>
+                <a href="https://medium.com/tag/n8n" target="_blank">Medium - n8n</a>
                 
             </li>
             
@@ -133,8 +143,6 @@
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html">2026-03-10 1212 &rarr;</a>
             
         </div>
     </div>

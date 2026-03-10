@@ -1,0 +1,26 @@
+{
+  "2026-03-10_1212": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en Kubernetes",
+    "summary": "MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP reales a servicios de tipo LoadBalancer. En este artículo, se explora su configuración y uso en modo L2 y BGP.",
+    "content": "\nMetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP reales a servicios de tipo LoadBalancer. Esto es especialmente útil en entornos de bare-metal, donde no se dispone de un equilibrio de carga integrado. Para configurar MetalLB, es necesario crear un objeto `IPAddressPool` que defina el rango de direcciones IP que se asignarán a los servicios.\n\n```yaml\napiVersion: metallb.io/v1beta1\nkind: IPAddressPool\nmetadata:\n  name: pool-local\nspec:\n  autoAssign: false\n  addresses:\n  - 192.168.3.247-192.168.3.250\n```\nUna vez creado el objeto `IPAddressPool`, se puede configurar MetalLB para que utilice el modo L2 o BGP. El modo L2 es el más sencillo y permite asignar direcciones IP a servicios de tipo LoadBalancer sin necesidad de configurar un router BGP. Para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/manifests/layer2.yaml`.\n\nEn cuanto a la integración con Kubernetes, MetalLB se puede configurar para que se integre con el sistema de orquestación de contenedores. Para hacer esto, se debe crear un objeto `Service` de tipo LoadBalancer y asignarle una dirección IP del rango definido en el objeto `IPAddressPool`. Por ejemplo:\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: mi-servicio\nspec:\n  selector:\n    app: mi-aplicacion\n  ports:\n  - name: http\n    port: 80\n    targetPort: 8080\n  type: LoadBalancer\n```\nEs importante mencionar que MetalLB también admite el modo BGP, que permite asignar direcciones IP a servicios de tipo LoadBalancer utilizando el protocolo BGP. Para configurar MetalLB en modo BGP, se debe crear un objeto `BGPAdvertisement` que defina la configuración del router BGP.\n\nEn resumen, MetalLB es una herramienta poderosa para equilibrio de carga en Kubernetes que permite asignar direcciones IP reales a servicios de tipo LoadBalancer. Su configuración y uso en modo L2 y BGP hacen que sea una herramienta versátil y escalable para entornos de bare-metal y cloud.\n\nPara solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `kubectl` y `metallbctl` para verificar la configuración y el estado de los servicios. También es importante monitorear los logs de MetalLB para detectar cualquier problema o error.\n\nFinalmente, es importante mencionar que MetalLB se puede integrar con otras herramientas y sistemas de orquestación de contenedores, como Talos Linux y Rancher. Para obtener más información sobre la configuración y el uso de MetalLB, se pueden consultar las fuentes oficiales y la documentación de la comunidad.\n\n",
+    "sources": [
+      {
+        "title": "MetalLB GitHub",
+        "url": "https://github.com/metallb/metallb"
+      },
+      {
+        "title": "Kubernetes Documentation",
+        "url": "https://kubernetes.io/docs/"
+      },
+      {
+        "title": "Talos Linux Documentation",
+        "url": "https://talos.dev/"
+      },
+      {
+        "title": "Rancher Documentation",
+        "url": "https://rancher.com/docs/"
+      }
+    ]
+  }
+}

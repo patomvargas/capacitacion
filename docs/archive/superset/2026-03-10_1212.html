@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Mejoras y Best Practices - Superset</title>
+    <title>Superset: administración y visualización de datos - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Mejoras y Best Practices</h1>
-    <div class="meta">2026-03-10 1209 · Superset</div>
+    <h1>Superset: administración y visualización de datos</h1>
+    <div class="meta">2026-03-10 1212 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear gráficos y paneles de control personalizados para visualizar datos. Recientemente, se han reportado algunos errores y mejoras en la comunidad de Superset, como el error de conexión con Oracle (`oracledb connection error #37793`) y la falta de funcionalidad en la tabla de gráficos (`Prefix and Suffix are not added in the Table Chart #37854`).</p>
+        
+            
+            <p>Superset es una herramienta de código abierto desarrollada por Apache que permite la administración y visualización de datos de manera eficiente. En la versión 6.0, se han introducido varias mejoras, como el soporte para temas personalizables y la capacidad de crear dashboards personalizados con `Jinja templates`.</p>
             
         
             
         
             
-            <p>Para instalar Superset de manera local, se puede utilizar Docker Compose, como se describe en el artículo `Running Superset Locally Using Docker Compose`. Esto permite a los desarrolladores probar y depurar Superset de manera rápida y sencilla.</p>
+            <p>Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar: `docker-compose up -d`. Luego, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088`. Para conectar Superset a una base de datos externa, se puede utilizar el comando `pip install psycopg2-binary` para instalar el conector de PostgreSQL.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Superset, es importante destacar la importancia de la configuración de la base de datos y la autenticación. Se puede utilizar `pip install psycopg2-binary` para conectar a una base de datos PostgreSQL, y `pip install python-ldap` para autenticar con LDAP.</p>
+            <p>En cuanto a la administración de datos, Superset ofrece varias herramientas, como `SQL Lab`, que permite ejecutar consultas SQL y visualizar los resultados en forma de gráficos y tablas. También se puede utilizar `datasets` para crear conjuntos de datos personalizados y `charts` para visualizar los datos de manera efectiva. Sin embargo, es importante tener en cuenta los problemas conocidos, como el error de conexión con Oracle (`oracledb connection error #37793`) y la falta de soporte para prefijos y sufijos en las tablas (`Prefix and Suffix are not added in the Table Chart #37854`).</p>
             
         
             
         
             
-            <p>Además, se han agregado nuevas funcionalidades a Superset, como la posibilidad de resaltar notas y advertencias utilizando blockquote (`An option to highlight a “Note” and “Warning” using blockquote (Beta)`).</p>
+            <p>Para mejorar la seguridad y el rendimiento de Superset, se pueden seguir varias best practices, como utilizar `LDAP` para la autenticación y `SSL/TLS` para cifrar las conexiones. También se puede utilizar `Amazon Web Services (AWS)` para almacenar y procesar grandes conjuntos de datos, como se describe en el artículo de Ray Munene.</p>
             
         
             
         
             
-            <p>Para trabajar con grandes conjuntos de datos en AWS, se pueden utilizar servicios como Amazon S3 y Amazon Redshift, como se describe en el artículo `Handling Large Datasets in AWS`.</p>
+            <p>En resumen, Superset es una herramienta poderosa para la administración y visualización de datos, y con las últimas mejoras y best practices, se puede utilizar de manera efectiva para tomar decisiones informadas.</p>
             
         
             
         
-            
-            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que requiere una configuración y administración adecuadas para funcionar de manera efectiva.</p>
             
         
     </div>
@@ -105,12 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37793" target="_blank">oracledb connection error #37793</a>
+                <a href="https://preset.io/blog/apache-superset-community-update-february-2026/" target="_blank">Apache Superset Community Update: February 2026</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37854" target="_blank">Prefix and Suffix are not added in the Table Chart #37854</a>
+                <a href="https://preset.io/blog/superset-6-theming/" target="_blank">Apache Superset 6.0 Unlocks Infinite Themeability</a>
                 
             </li>
             
@@ -131,10 +131,10 @@
     <div class="nav">
         <div>
             
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1209.html">&larr; 2026-03-10 1209</a>
+            
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html">2026-03-10 1212 &rarr;</a>
             
         </div>
     </div>

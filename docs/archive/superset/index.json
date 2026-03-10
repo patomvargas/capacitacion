@@ -1,4 +1,28 @@
 {
+  "2026-03-10_1212": {
+    "slug": "superset",
+    "title": "Superset: administración y visualización de datos",
+    "summary": "Superset es una herramienta de código abierto para la administración y visualización de datos. En este artículo, se presentan las últimas novedades y best practices para su uso efectivo.",
+    "content": "\nSuperset es una herramienta de código abierto desarrollada por Apache que permite la administración y visualización de datos de manera eficiente. En la versión 6.0, se han introducido varias mejoras, como el soporte para temas personalizables y la capacidad de crear dashboards personalizados con `Jinja templates`.\n\nPara instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar: `docker-compose up -d`. Luego, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088`. Para conectar Superset a una base de datos externa, se puede utilizar el comando `pip install psycopg2-binary` para instalar el conector de PostgreSQL.\n\nEn cuanto a la administración de datos, Superset ofrece varias herramientas, como `SQL Lab`, que permite ejecutar consultas SQL y visualizar los resultados en forma de gráficos y tablas. También se puede utilizar `datasets` para crear conjuntos de datos personalizados y `charts` para visualizar los datos de manera efectiva. Sin embargo, es importante tener en cuenta los problemas conocidos, como el error de conexión con Oracle (`oracledb connection error #37793`) y la falta de soporte para prefijos y sufijos en las tablas (`Prefix and Suffix are not added in the Table Chart #37854`).\n\nPara mejorar la seguridad y el rendimiento de Superset, se pueden seguir varias best practices, como utilizar `LDAP` para la autenticación y `SSL/TLS` para cifrar las conexiones. También se puede utilizar `Amazon Web Services (AWS)` para almacenar y procesar grandes conjuntos de datos, como se describe en el artículo de Ray Munene.\n\nEn resumen, Superset es una herramienta poderosa para la administración y visualización de datos, y con las últimas mejoras y best practices, se puede utilizar de manera efectiva para tomar decisiones informadas.\n\n",
+    "sources": [
+      {
+        "title": "Apache Superset Community Update: February 2026",
+        "url": "https://preset.io/blog/apache-superset-community-update-february-2026/"
+      },
+      {
+        "title": "Apache Superset 6.0 Unlocks Infinite Themeability",
+        "url": "https://preset.io/blog/superset-6-theming/"
+      },
+      {
+        "title": "Running Superset Locally Using Docker Compose",
+        "url": "https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24"
+      },
+      {
+        "title": "Handling Large Datasets in AWS",
+        "url": "https://medium.com/@raymunene/handling-large-datasets-in-aws-a9ab36eb2ec2"
+      }
+    ]
+  },
   "2026-03-10_1209": {
     "slug": "superset",
     "title": "Superset: Mejoras y Best Practices",
