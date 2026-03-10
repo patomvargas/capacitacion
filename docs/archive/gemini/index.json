@@ -1,4 +1,24 @@
 {
+  "2026-03-10_1158": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una plataforma de inteligencia artificial de Google que se integra con diversas aplicaciones y servicios. En este artículo, se presentan las últimas novedades y mejoras de Gemini, incluyendo su integración con Workspace y Vertex AI.",
+    "content": "Gemini es una plataforma de inteligencia artificial de Google que se utiliza para generar texto, imágenes y otros contenidos. Recientemente, se han anunciado varias mejoras y actualizaciones para Gemini, incluyendo su integración con Workspace y Vertex AI. Esto permite a los desarrolladores utilizar Gemini para generar contenido de manera más eficiente y personalizada. \n\nPara utilizar Gemini con Workspace, es necesario configurar la API de Google y obtener una clave de API. Luego, se puede utilizar el comando `gcloud auth application-default login` para autenticar con la API de Google. Una vez autenticado, se puede utilizar el comando `gcloud ai gemini create` para crear un modelo de lenguaje de Gemini.\n\nLa integración de Gemini con Vertex AI permite a los desarrolladores entrenar y desplegar modelos de lenguaje de manera más eficiente. Se puede utilizar el comando `gcloud ai vertex create` para crear un modelo de lenguaje en Vertex AI. Luego, se puede utilizar el comando `gcloud ai vertex deploy` para desplegar el modelo en un entorno de producción.\n\nAdemás, se han anunciado varias mejoras en la generación de imágenes de Gemini. La plataforma ahora utiliza el modelo Nano Banana 2, que admite resoluciones de hasta 4K. Esto permite generar imágenes de alta calidad de manera más eficiente. \n\nEn cuanto a la seguridad, se han anunciado varias mejoras en la autenticación y autorización de Gemini. La plataforma ahora utiliza claves de API de Google para autenticar a los usuarios y autorizar el acceso a los modelos de lenguaje. Esto permite a los desarrolladores controlar de manera más precisa quién puede acceder a los modelos de lenguaje y cómo se utilizan.\n\nEn resumen, las últimas novedades y mejoras de Gemini permiten a los desarrolladores utilizar la plataforma de manera más eficiente y personalizada. La integración con Workspace y Vertex AI, la mejora en la generación de imágenes y la seguridad son solo algunas de las características que hacen de Gemini una plataforma de inteligencia artificial líder en el mercado.",
+    "sources": [
+      {
+        "title": "Previously harmless Google API keys now expose Gemini AI data",
+        "url": "https://www.bleepingcomputer.com/news/security/previously-harmless-google-api-keys-now-expose-gemini-ai-data/"
+      },
+      {
+        "title": "Big Google Home update lets Gemini describe live camera feeds",
+        "url": "https://www.theverge.com/tech/888008/big-google-home-update-lets-gemini-describe-live-camera-feeds"
+      },
+      {
+        "title": "Google upgrades Gemini image generation to Nano Banana 2 with 4K support",
+        "url": "https://www.techspot.com/news/111495/google-upgrades-gemini-image-generation-nano-banana-2.html"
+      }
+    ]
+  },
   "2026-03-09_1435": {
     "slug": "gemini",
     "title": "Gemini: Integración y Mejoras",

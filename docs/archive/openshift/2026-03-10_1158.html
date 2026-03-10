@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejores prácticas para OKD y OperatorHub - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejores prácticas para OKD y OperatorHub</h1>
+    <div class="meta">2026-03-10 1158 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+            <p>OpenShift es una plataforma de contenedores basada en Kubernetes que ofrece una amplia gama de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Una de las características más destacadas de OpenShift es OKD (Origin Community Distribution), que es una versión de código abierto de la plataforma. Para implementar OKD, es necesario seguir una serie de pasos, incluyendo la instalación de los paquetes necesarios y la configuración de la red. Por ejemplo, se puede utilizar el comando `oc cluster up` para iniciar un cluster de OKD en un entorno de desarrollo.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo las funcionalidades de OpenShift, es importante entender cómo funciona OperatorHub, que es un marketplace de operadores que permite a los usuarios instalar y gestionar aplicaciones complejas en la plataforma. Los operadores son paquetes de software que encapsulan la lógica de una aplicación y proporcionan una forma sencilla de implementar y gestionar aplicaciones en OpenShift. Por ejemplo, se puede utilizar el comando `oc apply -f <operador>.yaml` para instalar un operador en un cluster de OpenShift.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece una variedad de funcionalidades para proteger las aplicaciones y los datos, incluyendo OAuth, que es un protocolo de autorización que permite a los usuarios acceder a las aplicaciones y los servicios de la plataforma de manera segura. Por ejemplo, se puede utilizar el comando `oc create -f <configuracion-oauth>.yaml` para crear una configuración de OAuth en un cluster de OpenShift.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Además, OpenShift ofrece una variedad de herramientas para el monitoreo y la supervisión de las aplicaciones y los servicios, incluyendo Prometheus y Grafana, que son herramientas de código abierto para el monitoreo y la visualización de datos. Por ejemplo, se puede utilizar el comando `oc create -f <configuracion-prometheus>.yaml` para crear una configuración de Prometheus en un cluster de OpenShift.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores líder en la industria que ofrece una amplia gama de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Al seguir las mejores prácticas para implementar OKD y OperatorHub, y al aprovechar las funcionalidades de seguridad y monitoreo de la plataforma, los usuarios pueden crear aplicaciones y servicios escalables y seguros en la nube.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que las fuentes proporcionadas no contienen información relevante sobre OpenShift, por lo que este artículo se enfoca en proporcionar una visión general de las mejores prácticas para implementar la plataforma.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://sports.yahoo.com/articles/sports-cards-release-calendar-2026-200644360.html" target="_blank">Sports Cards Release Calendar for 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-releases-windows-10-kb5075912-extended-security-update/" target="_blank">Microsoft releases Windows 10 KB5075912 extended security update</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://9to5google.com/2026/03/09/march-2026-google-system-updates/" target="_blank">What's new in Android's March 2026 Google System Updates</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.msn.com/en-us/lifestyle/shopping/xbox-consoles-get-brand-new-system-update-for-february-2026/ar-AA1X7tXS" target="_blank">Xbox Consoles Get Brand-New System Update for February 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.ign.com/articles/capcom-spotlight-march-2026-everything-announced" target="_blank">Capcom Spotlight March 2026: Everything Announced</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.windowscentral.com/microsoft/windows-11/windows-11-new-features-2026-so-far" target="_blank">Windows 11 is testing new 2026 features — and some of them are already changing how the OS feels</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.macrumors.com/2026/02/12/ios-27-features-rumors/" target="_blank">iOS 27 Will Add These New Features to Your iPhone</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.msn.com/en-us/news/technology/new-pokémon-titles-revealed-during-30th-anniversary-presents-everything-announced/ar-AA1XdxMp?ocid=BingNewsVerp" target="_blank">New Pokémon titles revealed during 30th anniversary Presents: Everything announced</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-09_1435.html">&larr; 2026-03-09 1435</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
