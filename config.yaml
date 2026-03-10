@@ -13,98 +13,118 @@ topics:
     slug: google-workspace
     tags: [productividad, google, admin]
     focus: "Admin console, APIs, security, Vault, novedades de Workspace"
+    sources: "workspaceupdates.googleblog.com OR support.google.com OR cloud.google.com"
 
   - name: FreeIPA
     slug: freeipa
     tags: [identidad, ldap, kerberos]
     focus: "Identity management, LDAP, Kerberos, trust relationships, HBAC, sudo rules"
+    sources: "freeipa.org OR access.redhat.com OR github.com/freeipa"
 
   - name: DNS BIND9
     slug: bind9
     tags: [dns, redes, infraestructura]
     focus: "Configuracion de zonas, DNSSEC, views, RPZ, logging, performance tuning"
+    sources: "isc.org OR kb.isc.org OR bind9.readthedocs.io"
 
   - name: OpenVPN
     slug: openvpn
     tags: [vpn, redes, seguridad]
     focus: "Tunneling, certificados, hardening, Access Server, site-to-site"
+    sources: "openvpn.net OR community.openvpn.net OR github.com/OpenVPN"
 
   - name: Kubernetes
     slug: kubernetes
     tags: [containers, orquestacion, devops]
     focus: "Nuevas features de K8s, networking, storage, security, operators, troubleshooting"
+    sources: "kubernetes.io OR github.com/kubernetes OR learnk8s.io"
 
   - name: OpenShift
     slug: openshift
     tags: [containers, orquestacion, redhat]
     focus: "OKD, OperatorHub, builds, routes, OAuth, monitoring, migration"
+    sources: "redhat.com OR docs.openshift.com OR cloud.redhat.com"
 
   - name: Claude Code
     slug: claude-code
     tags: [ia, cli, desarrollo]
     focus: "CLI features, hooks, MCP servers, workflows, tips de productividad"
+    sources: "anthropic.com OR docs.anthropic.com OR github.com/anthropics"
 
   - name: Gemini
     slug: gemini
     tags: [ia, google, productividad]
     focus: "API, modelos, integracion con Workspace, Vertex AI, prompting"
+    sources: "blog.google OR ai.google.dev OR cloud.google.com"
 
   - name: ChatGPT
     slug: chatgpt
     tags: [ia, openai, productividad]
     focus: "API, plugins, GPTs, function calling, best practices"
+    sources: "openai.com OR platform.openai.com OR github.com/openai"
 
   - name: Metabase
     slug: metabase
     tags: [datos, visualizacion, bi]
     focus: "Queries, dashboards, embedding, API, custom expressions, administracion"
+    sources: "metabase.com OR github.com/metabase OR discourse.metabase.com"
 
   - name: Airflow
     slug: airflow
     tags: [datos, etl, orquestacion]
     focus: "DAGs, operators, sensors, XCom, connections, best practices, Airflow 2.x"
+    sources: "airflow.apache.org OR github.com/apache/airflow OR astronomer.io"
 
   - name: n8n
     slug: n8n
     tags: [automatizacion, workflows, integracion]
     focus: "Nodos, workflows, credentials, webhooks, self-hosting, integraciones"
+    sources: "n8n.io OR docs.n8n.io OR github.com/n8n-io"
 
   - name: Superset
     slug: superset
     tags: [datos, visualizacion, bi]
     focus: "Charts, dashboards, SQL Lab, datasets, Jinja templates, administracion"
+    sources: "superset.apache.org OR github.com/apache/superset OR preset.io"
 
   - name: Traefik
     slug: traefik
     tags: [proxy, ingress, redes]
     focus: "Routers, middlewares, providers, Let's Encrypt, TCP/UDP, observability"
+    sources: "traefik.io OR doc.traefik.io OR github.com/traefik"
 
   - name: MetalLB
     slug: metallb
     tags: [kubernetes, redes, loadbalancer]
     focus: "L2 mode, BGP mode, IP pools, troubleshooting, integracion con K8s"
+    sources: "metallb.universe.tf OR github.com/metallb"
 
   - name: PostgreSQL
     slug: postgresql
     tags: [base-de-datos, sql, dba]
     focus: "Performance tuning, indices, replicacion, extensions, pg_stat, backups"
+    sources: "postgresql.org OR pganalyze.com OR cybertec-postgresql.com"
 
   - name: Docker
     slug: docker
     tags: [containers, devops, desarrollo]
     focus: "Multi-stage builds, compose, networking, security, BuildKit, registries"
+    sources: "docker.com OR docs.docker.com OR github.com/moby"
 
   - name: Git
     slug: git
     tags: [versionado, desarrollo, devops]
     focus: "Workflows, hooks, rebase, bisect, worktrees, tips avanzados"
+    sources: "git-scm.com OR github.blog OR github.com/git"
 
   - name: Terraform
     slug: terraform
     tags: [iac, devops, infraestructura]
     focus: "Providers, modules, state management, workspaces, import, moved blocks"
+    sources: "hashicorp.com OR developer.hashicorp.com OR github.com/hashicorp"
 
   - name: Ansible
     slug: ansible
     tags: [automatizacion, iac, configuracion]
     focus: "Playbooks, roles, collections, vault, inventory, AWX/Tower"
+    sources: "ansible.com OR docs.ansible.com OR github.com/ansible"

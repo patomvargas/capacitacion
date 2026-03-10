@@ -30,39 +30,63 @@ def load_config() -> dict:
         return yaml.safe_load(f)
 
 
+def count_todays_runs(config: dict, now: datetime) -> int:
+    """Cuenta cuantas corridas ya hubo hoy mirando los archives."""
+    today_prefix = now.strftime("%Y-%m-%d_")
+    max_runs = 0
+    for topic in config["topics"]:
+        archive = load_system_archive(topic["slug"])
+        runs = sum(1 for k in archive if k.startswith(today_prefix))
+        max_runs = max(max_runs, runs)
+    return max_runs
+
+
 def pick_systems(config: dict, now: datetime) -> list[dict]:
-    """Selecciona N sistemas rotativos para hoy."""
+    """Selecciona N sistemas rotativos. Cada corrida del mismo dia avanza al grupo siguiente."""
     topics = config["topics"]
     n = config["systems_per_day"]
+    run_number = count_todays_runs(config, now)
     day_num = now.timetuple().tm_yday + now.year * 366
+    offset = (day_num * n + run_number * n) % len(topics)
     selected = []
     for i in range(n):
-        idx = (day_num + i) % len(topics)
+        idx = (offset + i) % len(topics)
         selected.append(topics[idx])
     return selected
 
 
 def search_news(system: dict) -> list[dict]:
-    """Busca noticias recientes sobre un sistema via DuckDuckGo."""
+    """Busca noticias tecnicas recientes sobre un sistema via DuckDuckGo.
+
+    Usa queries orientados a fuentes confiables: docs oficiales, blogs tecnicos,
+    changelogs y sitios especializados.
+    """
+    name = system["name"]
+    # Sitios confiables por defecto
+    trusted = system.get("sources", "")
+    site_filter = f"site:({trusted})" if trusted else ""
+
     queries = [
-        f"{system['name']} release update changelog 2025 2026",
-        f"{system['name']} new feature announcement",
+        f"{name} release changelog announcement 2025 2026 {site_filter}".strip(),
+        f"{name} best practices tutorial site:dev.to OR site:medium.com OR site:blog.cloudflare.com",
+        f"{name} new feature update site:github.com OR site:kubernetes.io OR site:redhat.com",
     ]
 
     results = []
     with DDGS() as ddgs:
         for query in queries:
+            # Intentar news primero (mas reciente)
             try:
                 hits = list(ddgs.news(query, max_results=5, timelimit="m"))
                 results.extend(hits)
             except Exception:
                 pass
-            if not results:
-                try:
-                    hits = list(ddgs.text(query, max_results=5, timelimit="m"))
-                    results.extend(hits)
-                except Exception:
-                    pass
+            # Complementar con busqueda web
+            try:
+                hits = list(ddgs.text(query, max_results=5, timelimit="m"))
+                results.extend(hits)
+            except Exception:
+                pass
 
     # Deduplicar por titulo
     seen = set()
@@ -73,7 +97,7 @@ def search_news(system: dict) -> list[dict]:
             seen.add(title)
             unique.append(r)
 
-    return unique[:8]
+    return unique[:12]
 
 
 def generate_news_for_system(client: Groq, system: dict, search_results: list[dict], now: datetime) -> dict:
