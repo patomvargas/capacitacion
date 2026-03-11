@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-10T12:13:21.482736+00:00</updated>
+  <updated>2026-03-11T08:52:28.213604+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -45,5 +45,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html"/>
     <summary>Superset es una herramienta de código abierto para la administración y visualización de datos. En este artículo, se presentan las últimas novedades y best practices para su uso efectivo.</summary>
     <published>2026-03-10T12:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-11_0851.html</id>
+    <title>Superset: Herramienta de Visualización de Datos</title>
+    <updated>2026-03-11T08:51:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizadas y explorar grandes conjuntos de datos. Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar. Para ello, se debe ejecutar el comando &lt;code&gt;docker-compose up&lt;/code&gt; en el directorio donde se encuentra el archivo &lt;code&gt;docker-compose.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez instalado Superset, se puede acceder a la interfaz de usuario y comenzar a crear dashboards y explorar datos. Superset admite una variedad de fuentes de datos, incluyendo bases de datos relacionales y NoSQL. Para conectar a una base de datos, se debe configurar el archivo &lt;code&gt;superset_config.py&lt;/code&gt; con los parámetros de conexión adecuados, como el nombre de la base de datos, el usuario y la contraseña.&lt;/p&gt;
+&lt;p&gt;En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de barras, líneas y scatter plots. También se puede utilizar SQL Lab para ejecutar consultas SQL y explorar los resultados. Sin embargo, se ha reportado un problema con la visualización de los gráficos en el modo oscuro, como se muestra en el issue #37905 de GitHub.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede modificar el archivo &lt;code&gt;superset_config.py&lt;/code&gt; y agregar la siguiente línea de código: &lt;code&gt;SUPERSET_THEME = 'cosmo'&lt;/code&gt;. Esto cambiará el tema de Superset a Cosmo, que es un tema claro que no presenta problemas de visualización en el modo oscuro.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar la base de datos y crear los roles y permisos necesarios. También se puede utilizar el comando &lt;code&gt;superset run&lt;/code&gt; para ejecutar el servidor de Superset.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de opciones para la creación de dashboards y la exploración de datos. Sin embargo, es importante estar al tanto de los problemas y limitaciones que se presentan en la comunidad de GitHub y buscar soluciones y best practices para su implementación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24"&gt;Running Superset Locally Using Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/37905"&gt;Dark Theme: Starburst chart 'total' displayed in black, labels in white with black outline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@sukrucanucar/apache-superset-on-linux-d60afbc42a9f"&gt;Apache Superset on Linux&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-11_0851.html"/>
+    <summary>Superset es una herramienta de visualización de datos que permite a los usuarios crear dashboards personalizadas y explorar grandes conjuntos de datos. En este artículo, se presentan las características y configuraciones de Superset, así como algunas best practices para su implementación.</summary>
+    <published>2026-03-11T08:51:00+00:00</published>
   </entry>
 </feed>

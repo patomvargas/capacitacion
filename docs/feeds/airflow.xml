@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-10T12:13:21.481519+00:00</updated>
+  <updated>2026-03-11T08:52:28.212352+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -27,5 +27,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-10_1209.html"/>
     <summary>Airflow 3.2 introduce mejoras en la funcionalidad de conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta versión.</summary>
     <published>2026-03-10T12:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-11_0851.html</id>
+    <title>Airflow 3.x: Mejoras y Novedades</title>
+    <updated>2026-03-11T08:51:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow 3.x es una versión importante en la evolución de este sistema de gestión de flujos de trabajo. Una de las novedades clave es la expansión de la funcionalidad de conciencia de activos y datos, lo que permite a los usuarios tener una visibilidad más detallada de sus flujos de trabajo y datos. Para aprovechar esta funcionalidad, se puede utilizar el comando &lt;code&gt;airflow db upgrade&lt;/code&gt; para actualizar la base de datos de Airflow.&lt;/p&gt;
+&lt;p&gt;La integración con otros sistemas y herramientas también ha sido mejorada en Airflow 3.x. Por ejemplo, la integración con Elasticsearch ha sido actualizada para incluir la clase &lt;code&gt;ElasticsearchRemoteLogIO&lt;/code&gt;, que requiere la versión &lt;code&gt;apache-airflow-providers-elasticsearch&gt;=6.5.0&lt;/code&gt;. No se necesitan cambios de configuración, ya que las configuraciones existentes como &lt;code&gt;write_to_es&lt;/code&gt;, &lt;code&gt;target_index&lt;/code&gt;, &lt;code&gt;json_format&lt;/code&gt;, &lt;code&gt;host_field&lt;/code&gt; y &lt;code&gt;offset_field&lt;/code&gt; siguen funcionando como antes.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la capacidad de crear entornos multi-tenant utilizando grupos de trabajadores compuestos por colecciones de DAG, espacios de nombres de trabajadores dedicados y mapeo de identidad de organización. Esto permite a los usuarios crear entornos de Airflow personalizados y seguros para diferentes organizaciones o departamentos. Para crear un entorno multi-tenant, se puede utilizar el comando &lt;code&gt;airflow config get&lt;/code&gt; para obtener la configuración actual de Airflow y luego modificarla según sea necesario.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante mencionar la importancia de la seguridad en Airflow. Los pequeños errores de configuración o anomalías en las solicitudes pueden parecer inofensivos en sí mismos, pero cuando se combinan, pueden desencadenar incidentes de seguridad. Para evitar esto, es importante monitorear y analizar los registros de Airflow regularmente, utilizando herramientas como &lt;code&gt;airflow logs&lt;/code&gt; para detectar posibles problemas de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de la comunidad de Airflow y los recursos disponibles para los usuarios. La página oficial de Airflow en GitHub ofrece una variedad de recursos, incluyendo documentación, tutoriales y ejemplos de código. Además, la comunidad de Airflow es muy activa y ofrece una variedad de eventos y webinars para ayudar a los usuarios a mejorar sus habilidades y conocimientos.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 3.x es una versión poderosa y flexible que ofrece una variedad de mejoras y novedades para los usuarios. Al seguir las mejores prácticas y aprovechar al máximo las funcionalidades de Airflow, los usuarios pueden crear flujos de trabajo eficientes y seguros que satisfagan sus necesidades específicas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/62537"&gt;Status of testing Providers that were prepared on February 26, 2026 #62537&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/milestone/114"&gt;Airflow 2.11.1 · Milestone #114 · apache/airflow - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/events/webinars/"&gt;Webinars - Astronomer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/62794"&gt;Status of testing Providers that were prepared on March 03, 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/blog/airflow-in-action-datadog/"&gt;Datadog Unlocks Apache Airflow 3's Power for Multi-Tenancy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-11_0851.html"/>
+    <summary>Airflow 3.x trae consigo mejoras significativas en funcionalidades de conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow. Este artículo explora las novedades y mejores prácticas para aprovechar al máximo estas actualizaciones.</summary>
+    <published>2026-03-11T08:51:00+00:00</published>
   </entry>
 </feed>

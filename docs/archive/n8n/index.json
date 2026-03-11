@@ -1,4 +1,24 @@
 {
+  "2026-03-11_0851": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo que permite combinar nodos y credenciales para crear flujos de trabajo personalizados. Recientemente, se han descubierto vulnerabilidades de seguridad que han sido parcheadas en versiones recientes.",
+    "content": "\nLa plataforma n8n permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y credenciales. Los nodos son los componentes básicos de los flujos de trabajo y pueden ser utilizados para realizar tareas como la lectura de datos, la escritura de archivos y la ejecución de comandos. Las credenciales son utilizadas para autenticar con servicios externos y pueden ser almacenadas de manera segura en la plataforma.\n\nPara crear un flujo de trabajo en n8n, se puede utilizar el comando `n8n start` para iniciar la plataforma y luego crear un nuevo flujo de trabajo utilizando el comando `n8n workflow:create`. Luego, se pueden agregar nodos y credenciales al flujo de trabajo utilizando el comando `n8n node:add` y `n8n credential:add`, respectivamente.\n\nRecientemente, se han descubierto varias vulnerabilidades de seguridad en la plataforma n8n, incluyendo la vulnerabilidad de ejecución de comandos arbitrarios a través de la escritura de archivos y operaciones de Git, y la vulnerabilidad de escape de expresiones que puede llevar a la ejecución de comandos del sistema. Estas vulnerabilidades han sido parcheadas en versiones recientes de la plataforma, como la versión 2.8.4, que se puede instalar utilizando el comando `npm install n8n@2.8.4`.\n\nPara protegerse contra estas vulnerabilidades, se recomienda actualizar a la versión más reciente de la plataforma y seguir las mejores prácticas de seguridad, como utilizar credenciales seguras y limitar el acceso a la plataforma. También se puede utilizar el comando `n8n security:check` para verificar la seguridad de la plataforma y detectar cualquier vulnerabilidad.\n\nEn cuanto a las integraciones, n8n tiene una gran variedad de nodos para diferentes servicios y plataformas, incluyendo IONOS Cloud, que tiene su propio paquete de nodos oficiales. Esto permite a los usuarios crear flujos de trabajo que se integren con estos servicios de manera fácil y segura.\n\nFinalmente, es importante mencionar que la plataforma n8n tiene una comunidad activa y una documentación extensa, que incluye tutoriales y guías para ayudar a los usuarios a empezar a utilizar la plataforma. Se pueden encontrar más recursos y tutoriales en la página oficial de n8n y en la comunidad de desarrolladores.\n\n",
+    "sources": [
+      {
+        "title": "Expression Escape Vulnerability Leading to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-6cqr-8cfr-67f8"
+      },
+      {
+        "title": "Comparing n8n@2.8.3...n8n@2.8.4",
+        "url": "https://github.com/n8n-io/n8n/compare/n8n@2.8.3...n8n@2.8.4"
+      },
+      {
+        "title": "Guide, Tutorials, and Updates on Workflow Automation",
+        "url": "https://blog.n8n.io/"
+      }
+    ]
+  },
   "2026-03-10_1212": {
     "slug": "n8n",
     "title": "Automatización con n8n",

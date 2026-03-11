@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: administración y visualización de datos - Superset</title>
+    <title>Superset: Herramienta de Visualización de Datos - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: administración y visualización de datos</h1>
-    <div class="meta">2026-03-10 1212 · Superset</div>
+    <h1>Superset: Herramienta de Visualización de Datos</h1>
+    <div class="meta">2026-03-11 0851 · Superset</div>
 
     <div class="content">
         
@@ -66,31 +66,37 @@
             
         
             
-            <p>Superset es una herramienta de código abierto desarrollada por Apache que permite la administración y visualización de datos de manera eficiente. En la versión 6.0, se han introducido varias mejoras, como el soporte para temas personalizables y la capacidad de crear dashboards personalizados con `Jinja templates`.</p>
+            <p>Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizadas y explorar grandes conjuntos de datos. Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar. Para ello, se debe ejecutar el comando `docker-compose up` en el directorio donde se encuentra el archivo `docker-compose.yml`.</p>
             
         
             
         
             
-            <p>Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar: `docker-compose up -d`. Luego, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088`. Para conectar Superset a una base de datos externa, se puede utilizar el comando `pip install psycopg2-binary` para instalar el conector de PostgreSQL.</p>
+            <p>Una vez instalado Superset, se puede acceder a la interfaz de usuario y comenzar a crear dashboards y explorar datos. Superset admite una variedad de fuentes de datos, incluyendo bases de datos relacionales y NoSQL. Para conectar a una base de datos, se debe configurar el archivo `superset_config.py` con los parámetros de conexión adecuados, como el nombre de la base de datos, el usuario y la contraseña.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de datos, Superset ofrece varias herramientas, como `SQL Lab`, que permite ejecutar consultas SQL y visualizar los resultados en forma de gráficos y tablas. También se puede utilizar `datasets` para crear conjuntos de datos personalizados y `charts` para visualizar los datos de manera efectiva. Sin embargo, es importante tener en cuenta los problemas conocidos, como el error de conexión con Oracle (`oracledb connection error #37793`) y la falta de soporte para prefijos y sufijos en las tablas (`Prefix and Suffix are not added in the Table Chart #37854`).</p>
+            <p>En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de barras, líneas y scatter plots. También se puede utilizar SQL Lab para ejecutar consultas SQL y explorar los resultados. Sin embargo, se ha reportado un problema con la visualización de los gráficos en el modo oscuro, como se muestra en el issue #37905 de GitHub.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad y el rendimiento de Superset, se pueden seguir varias best practices, como utilizar `LDAP` para la autenticación y `SSL/TLS` para cifrar las conexiones. También se puede utilizar `Amazon Web Services (AWS)` para almacenar y procesar grandes conjuntos de datos, como se describe en el artículo de Ray Munene.</p>
+            <p>Para solucionar este problema, se puede modificar el archivo `superset_config.py` y agregar la siguiente línea de código: `SUPERSET_THEME = 'cosmo'`. Esto cambiará el tema de Superset a Cosmo, que es un tema claro que no presenta problemas de visualización en el modo oscuro.</p>
             
         
             
         
             
-            <p>En resumen, Superset es una herramienta poderosa para la administración y visualización de datos, y con las últimas mejoras y best practices, se puede utilizar de manera efectiva para tomar decisiones informadas.</p>
+            <p>En cuanto a la administración de Superset, se puede utilizar el comando `superset init` para inicializar la base de datos y crear los roles y permisos necesarios. También se puede utilizar el comando `superset run` para ejecutar el servidor de Superset.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de opciones para la creación de dashboards y la exploración de datos. Sin embargo, es importante estar al tanto de los problemas y limitaciones que se presentan en la comunidad de GitHub y buscar soluciones y best practices para su implementación.</p>
             
         
             
@@ -105,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://preset.io/blog/apache-superset-community-update-february-2026/" target="_blank">Apache Superset Community Update: February 2026</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://preset.io/blog/superset-6-theming/" target="_blank">Apache Superset 6.0 Unlocks Infinite Themeability</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24" target="_blank">Running Superset Locally Using Docker Compose</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@raymunene/handling-large-datasets-in-aws-a9ab36eb2ec2" target="_blank">Handling Large Datasets in AWS</a>
+                <a href="https://github.com/apache/superset/issues/37905" target="_blank">Dark Theme: Starburst chart 'total' displayed in black, labels in white with black outline</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@sukrucanucar/apache-superset-on-linux-d60afbc42a9f" target="_blank">Apache Superset on Linux</a>
                 
             </li>
             
@@ -131,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1209.html">&larr; 2026-03-10 1209</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html">&larr; 2026-03-10 1212</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-11_0851.html">2026-03-11 0851 &rarr;</a>
             
         </div>
     </div>
