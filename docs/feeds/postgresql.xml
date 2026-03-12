@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
+  <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-12T08:53:08.639558+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre PostgreSQL: Performance tuning, indices, replicacion, extensions, pg_stat, backups</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-12_0852.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-03-12T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Por ejemplo, se puede crear un índice en una columna utilizando el comando &lt;code&gt;CREATE INDEX idx_nombre ON tabla (columna);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra forma de mejorar la disponibilidad y el rendimiento de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestro-esclavo y la replicación asíncrona. Se puede configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_replication.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La monitorización y el análisis de la base de datos son fundamentales para identificar cuellos de botella y optimizar el rendimiento. Se puede utilizar la herramienta &lt;code&gt;pg_stat&lt;/code&gt; para recopilar estadísticas y monitorear el rendimiento de la base de datos. Por ejemplo, se puede utilizar el comando &lt;code&gt;pg_stat_user&lt;/code&gt; para obtener información sobre el uso de la base de datos por parte de los usuarios.&lt;/p&gt;
+&lt;p&gt;Las copias de seguridad son esenciales para garantizar la integridad y la disponibilidad de la base de datos. Se pueden realizar copias de seguridad utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;. Es importante programar las copias de seguridad regularmente para asegurarse de que los datos estén siempre disponibles en caso de una falla.&lt;/p&gt;
+&lt;p&gt;La extensión &lt;code&gt;pg_stat&lt;/code&gt; es una herramienta poderosa para monitorear y analizar el rendimiento de la base de datos. Se puede utilizar para recopilar estadísticas sobre el uso de la base de datos, el tiempo de respuesta y otros parámetros importantes. Por ejemplo, se puede utilizar el comando &lt;code&gt;pg_stat_user_queries&lt;/code&gt; para obtener información sobre las consultas que se están ejecutando en la base de datos.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas y herramientas, incluyendo la configuración de índices, la replicación, la monitorización y el análisis, y las copias de seguridad. Al seguir estas mejores prácticas, se puede garantizar el rendimiento y la escalabilidad de la base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/release/"&gt;Release Notes - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/pgsql/"&gt;PostgreSQL: News Archive - PostgreSQL Project&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/current/release-18.html"&gt;PostgreSQL: Documentation: 18: E.4. Release 18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/philip_mcclarence_2ef9475/postgresql-query-optimization-10-techniques-that-actually-work-3i8b"&gt;PostgreSQL Query Optimization: 10 Techniques That Actually Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/philip_mcclarence_2ef9475/running-postgresql-on-kubernetes-operators-storage-and-production-guide-54ii"&gt;Running PostgreSQL on Kubernetes: Operators, Storage and Production Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-12_0852.html"/>
+    <summary>En este artículo, se presentan técnicas y mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, replicación y copias de seguridad. Se proporcionan ejemplos concretos y comandos para mejorar la eficiencia de la base de datos.</summary>
+    <published>2026-03-12T08:52:00+00:00</published>
+  </entry>
+</feed>

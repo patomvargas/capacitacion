@@ -1,0 +1,26 @@
+{
+  "2026-03-12_0852": {
+    "slug": "git",
+    "title": "Mejorando el flujo de trabajo con Git",
+    "summary": "Aprende a utilizar Git de manera efectiva para mejorar tu flujo de trabajo y colaboración en equipo. Descubre las mejores prácticas y herramientas para optimizar tu uso de Git.",
+    "content": "\nEl sistema de control de versiones Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, su uso efectivo requiere una comprensión profunda de sus características y funcionalidades. En este artículo, exploraremos algunas de las mejores prácticas y herramientas para mejorar tu flujo de trabajo con Git.\n\nUna de las características más poderosas de Git es su capacidad para manejar ramas y fusionar cambios. Para crear una nueva rama, puedes utilizar el comando `git branch <nombre_de_la_rama>`. Luego, puedes cambiar a esa rama con `git checkout <nombre_de_la_rama>`. Para fusionar cambios de una rama a otra, puedes utilizar `git merge <nombre_de_la_rama>`. Es importante mencionar que Git también ofrece la opción de utilizar `git rebase` para reorganizar los commits y mantener un historial de cambios limpio.\n\nOtra herramienta útil es Git Hooks, que permite ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un commit. Por ejemplo, puedes utilizar un hook de pre-commit para verificar que el código se ajuste a ciertos estándares de calidad. Para habilitar Git Hooks, puedes utilizar `git config core.hooksPath <ruta_al_directorio_de_hooks>`. Además, GitHub Desktop 3.5.5 ahora ofrece soporte para Git Hooks, lo que facilita su uso en entornos de desarrollo.\n\nPara mejorar la colaboración en equipo, es importante utilizar herramientas como GitHub o GitLab, que ofrecen funcionalidades como pull requests y code reviews. Estas herramientas permiten a los miembros del equipo revisar y discutir los cambios antes de fusionarlos en la rama principal. También es importante mencionar que Git ofrece la opción de utilizar `git worktree` para trabajar en múltiples ramas simultáneamente, lo que puede ser útil en proyectos complejos.\n\nEn resumen, Git es una herramienta poderosa que requiere una comprensión profunda de sus características y funcionalidades. Al utilizar las mejores prácticas y herramientas, como Git Hooks y GitHub, puedes mejorar tu flujo de trabajo y colaboración en equipo.\n\nFinalmente, es importante mencionar que existen muchas fuentes de información y recursos disponibles para aprender y mejorar tus habilidades con Git. Algunas de estas fuentes incluyen la documentación oficial de Git, tutoriales en línea y comunidades de desarrolladores en GitHub y otros sitios web.\n",
+    "sources": [
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/month/02-2026/"
+      },
+      {
+        "title": "GitHub Desktop 3.5.5 adds Git hooks support",
+        "url": "https://github.blog/changelog/2026-02-18-github-desktop-3-5-5-adds-git-hooks-support/"
+      },
+      {
+        "title": "Git Complete Practical Guide",
+        "url": "https://medium.com/write-a-catalyst/git-complete-practical-guide-simple-real-examples-39021cefed8c"
+      }
+    ]
+  }
+}

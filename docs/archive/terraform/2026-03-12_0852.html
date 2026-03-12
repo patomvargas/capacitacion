@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejores prácticas y novedades - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-03-12 0852 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Terraform es una herramienta fundamental en la gestión de infraestructura como código. Permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de manera eficiente, utilizando un lenguaje de configuración simple y declarativo. Una de las características clave de Terraform es la gestión de estado, que permite a los usuarios mantener un registro de los recursos provisionados y sus configuraciones.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de estado en Terraform se realiza mediante el comando `terraform state`, que permite a los usuarios visualizar y modificar el estado de los recursos provisionados. Por ejemplo, para agregar un nuevo recurso a la configuración de Terraform, se puede utilizar el comando `terraform state add <recurso>`. También se puede utilizar el comando `terraform state rm <recurso>` para eliminar un recurso de la configuración.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Terraform es la gestión de espacios de trabajo, que permite a los usuarios crear y gestionar diferentes entornos de infraestructura de manera independiente. Los espacios de trabajo se pueden crear utilizando el comando `terraform workspace new <nombre_del_espacio_de_trabajo>`, y se pueden seleccionar utilizando el comando `terraform workspace select <nombre_del_espacio_de_trabajo>`. Esto permite a los usuarios mantener diferentes versiones de la infraestructura y realizar pruebas y depuración de manera más eficiente.</p>
+            
+        
+            
+        
+            
+            <p>La importación de recursos es otra característica clave de Terraform, que permite a los usuarios importar recursos existentes en la configuración de Terraform. Esto se puede realizar utilizando el comando `terraform import <proveedor>/<recurso> <id_del_recurso>`, donde `<proveedor>` es el proveedor del recurso (por ejemplo, `aws` o `azure`), `<recurso>` es el tipo de recurso (por ejemplo, `ec2_instance` o `storage_account`), y `<id_del_recurso>` es el ID del recurso que se desea importar.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, Terraform ha lanzado recientemente la versión 1.14.6, que incluye varias correcciones de errores y mejoras en la gestión de estado y la importación de recursos. También se ha lanzado la versión 1.2.1 de Terraform Enterprise, que incluye varias mejoras en la gestión de espacios de trabajo y la importación de recursos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta fundamental en la gestión de infraestructura como código, y sus características de gestión de estado, espacios de trabajo y importación de recursos la hacen una herramienta muy poderosa y flexible. Las novedades en Terraform, como la versión 1.14.6 y la versión 1.2.1 de Terraform Enterprise, demuestran el compromiso de la comunidad con la mejora y el desarrollo de la herramienta.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Terraform y sus características, se pueden consultar las fuentes oficiales de HashiCorp, como la documentación de Terraform y el sitio web de HashiCorp. También se pueden consultar las fuentes de la comunidad, como los foros de discusión y los blogs de expertos en la materia.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-enterprise-1-2-1-is-available/77219" target="_blank">Terraform Enterprise 1.2.1</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-14-6-released/77189" target="_blank">Terraform v1.14.6</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://developer.hashicorp.com/terraform/cloud-docs/agents/changelog" target="_blank">HCP Terraform Agents Changelog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-enterprise-1-2-0-is-available/77169" target="_blank">Terraform Enterprise 1.2.0</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

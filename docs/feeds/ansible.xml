@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
+  <title>Ansible - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-12T08:53:08.641534+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre Ansible: Playbooks, roles, collections, vault, inventory, AWX/Tower</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-12_0852.html</id>
+    <title>Ansible: Nuevas Funcionalidades y Mejoras</title>
+    <updated>2026-03-12T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores crear playbooks para automatizar tareas complejas. Recientemente, se han lanzado nuevas versiones de Ansible, incluyendo &lt;code&gt;ansible-core v2.20.3&lt;/code&gt; y &lt;code&gt;Ansible community package 13.4.0&lt;/code&gt;. Estas versiones ofrecen mejoras significativas en la seguridad y el rendimiento, así como nuevas funcionalidades para simplificar la automatización de infraestructuras y aplicaciones.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas de &lt;code&gt;ansible-core v2.20.3&lt;/code&gt; es la mejora en la gestión de vault, que permite cifrar y descifrar datos de forma segura. Para utilizar vault, se puede ejecutar el comando &lt;code&gt;ansible-vault create&lt;/code&gt; para crear un archivo de vault, y luego utilizar el comando &lt;code&gt;ansible-vault encrypt&lt;/code&gt; para cifrar los datos. Por ejemplo, para cifrar un archivo de configuración, se puede ejecutar el comando &lt;code&gt;ansible-vault encrypt config.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la mejora en la gestión de roles, que permite a los administradores de sistemas crear y gestionar roles de forma más eficiente. Para crear un rol, se puede ejecutar el comando &lt;code&gt;ansible-galaxy init&lt;/code&gt; para crear un directorio de rol, y luego utilizar el comando &lt;code&gt;ansible-galaxy install&lt;/code&gt; para instalar el rol. Por ejemplo, para instalar el rol de &lt;code&gt;apache&lt;/code&gt;, se puede ejecutar el comando &lt;code&gt;ansible-galaxy install geerlingguy.apache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, &lt;code&gt;Ansible community package 13.4.0&lt;/code&gt; ofrece una curada selección de colecciones de Ansible que proporcionan una amplia variedad de módulos, plugins y roles. Para instalar este paquete, se puede ejecutar el comando &lt;code&gt;pip install ansible==13.4.0&lt;/code&gt;. Es importante tener en cuenta que esta versión depende de &lt;code&gt;ansible-core v2.20.3&lt;/code&gt;, por lo que es necesario instalar esta versión antes de instalar el paquete de la comunidad.&lt;/p&gt;
+&lt;p&gt;En resumen, las nuevas versiones de Ansible ofrecen mejoras significativas en la seguridad y el rendimiento, así como nuevas funcionalidades para simplificar la automatización de infraestructuras y aplicaciones. Los administradores de sistemas y desarrolladores pueden aprovechar estas mejoras para crear playbooks más eficientes y seguros.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las novedades y mejoras de Ansible, se puede consultar la documentación oficial de Ansible y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-3/45390"&gt;New Release: ansible-core v2.20.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-4-0/45399"&gt;Release announcement: Ansible community package 13.4.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-12_0852.html"/>
+    <summary>Ansible ha lanzado nuevas versiones con mejoras significativas, incluyendo ansible-core v2.20.3 y Ansible community package 13.4.0. Estas versiones ofrecen nuevas funcionalidades y mejoras en la seguridad y el rendimiento.</summary>
+    <published>2026-03-12T08:52:00+00:00</published>
+  </entry>
+</feed>

@@ -1,0 +1,30 @@
+{
+  "2026-03-12_0852": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "En este artículo, se presentan técnicas y mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, replicación y copias de seguridad. Se proporcionan ejemplos concretos y comandos para mejorar la eficiencia de la base de datos.",
+    "content": "La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Por ejemplo, se puede crear un índice en una columna utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`. \n\nLa replicación es otra forma de mejorar la disponibilidad y el rendimiento de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestro-esclavo y la replicación asíncrona. Se puede configurar la replicación utilizando el comando `pg_basebackup` y `pg_replication.conf`. \n\nLa monitorización y el análisis de la base de datos son fundamentales para identificar cuellos de botella y optimizar el rendimiento. Se puede utilizar la herramienta `pg_stat` para recopilar estadísticas y monitorear el rendimiento de la base de datos. Por ejemplo, se puede utilizar el comando `pg_stat_user` para obtener información sobre el uso de la base de datos por parte de los usuarios. \n\nLas copias de seguridad son esenciales para garantizar la integridad y la disponibilidad de la base de datos. Se pueden realizar copias de seguridad utilizando el comando `pg_dump` y `pg_restore`. Es importante programar las copias de seguridad regularmente para asegurarse de que los datos estén siempre disponibles en caso de una falla. \n\nLa extensión `pg_stat` es una herramienta poderosa para monitorear y analizar el rendimiento de la base de datos. Se puede utilizar para recopilar estadísticas sobre el uso de la base de datos, el tiempo de respuesta y otros parámetros importantes. Por ejemplo, se puede utilizar el comando `pg_stat_user_queries` para obtener información sobre las consultas que se están ejecutando en la base de datos. \n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas y herramientas, incluyendo la configuración de índices, la replicación, la monitorización y el análisis, y las copias de seguridad. Al seguir estas mejores prácticas, se puede garantizar el rendimiento y la escalabilidad de la base de datos.",
+    "sources": [
+      {
+        "title": "Release Notes - PostgreSQL",
+        "url": "https://www.postgresql.org/docs/release/"
+      },
+      {
+        "title": "PostgreSQL: News Archive - PostgreSQL Project",
+        "url": "https://www.postgresql.org/about/newsarchive/pgsql/"
+      },
+      {
+        "title": "PostgreSQL: Documentation: 18: E.4. Release 18",
+        "url": "https://www.postgresql.org/docs/current/release-18.html"
+      },
+      {
+        "title": "PostgreSQL Query Optimization: 10 Techniques That Actually Work",
+        "url": "https://dev.to/philip_mcclarence_2ef9475/postgresql-query-optimization-10-techniques-that-actually-work-3i8b"
+      },
+      {
+        "title": "Running PostgreSQL on Kubernetes: Operators, Storage and Production Guide",
+        "url": "https://dev.to/philip_mcclarence_2ef9475/running-postgresql-on-kubernetes-operators-storage-and-production-guide-54ii"
+      }
+    ]
+  }
+}

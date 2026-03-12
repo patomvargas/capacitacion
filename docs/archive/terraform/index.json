@@ -1,0 +1,26 @@
+{
+  "2026-03-12_0852": {
+    "slug": "terraform",
+    "title": "Terraform: Mejores prácticas y novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, espacios de trabajo y la importación de recursos.",
+    "content": "\nTerraform es una herramienta fundamental en la gestión de infraestructura como código. Permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de manera eficiente, utilizando un lenguaje de configuración simple y declarativo. Una de las características clave de Terraform es la gestión de estado, que permite a los usuarios mantener un registro de los recursos provisionados y sus configuraciones.\n\nLa gestión de estado en Terraform se realiza mediante el comando `terraform state`, que permite a los usuarios visualizar y modificar el estado de los recursos provisionados. Por ejemplo, para agregar un nuevo recurso a la configuración de Terraform, se puede utilizar el comando `terraform state add <recurso>`. También se puede utilizar el comando `terraform state rm <recurso>` para eliminar un recurso de la configuración.\n\nOtra característica importante de Terraform es la gestión de espacios de trabajo, que permite a los usuarios crear y gestionar diferentes entornos de infraestructura de manera independiente. Los espacios de trabajo se pueden crear utilizando el comando `terraform workspace new <nombre_del_espacio_de_trabajo>`, y se pueden seleccionar utilizando el comando `terraform workspace select <nombre_del_espacio_de_trabajo>`. Esto permite a los usuarios mantener diferentes versiones de la infraestructura y realizar pruebas y depuración de manera más eficiente.\n\nLa importación de recursos es otra característica clave de Terraform, que permite a los usuarios importar recursos existentes en la configuración de Terraform. Esto se puede realizar utilizando el comando `terraform import <proveedor>/<recurso> <id_del_recurso>`, donde `<proveedor>` es el proveedor del recurso (por ejemplo, `aws` o `azure`), `<recurso>` es el tipo de recurso (por ejemplo, `ec2_instance` o `storage_account`), y `<id_del_recurso>` es el ID del recurso que se desea importar.\n\nEn cuanto a las novedades, Terraform ha lanzado recientemente la versión 1.14.6, que incluye varias correcciones de errores y mejoras en la gestión de estado y la importación de recursos. También se ha lanzado la versión 1.2.1 de Terraform Enterprise, que incluye varias mejoras en la gestión de espacios de trabajo y la importación de recursos.\n\nEn resumen, Terraform es una herramienta fundamental en la gestión de infraestructura como código, y sus características de gestión de estado, espacios de trabajo y importación de recursos la hacen una herramienta muy poderosa y flexible. Las novedades en Terraform, como la versión 1.14.6 y la versión 1.2.1 de Terraform Enterprise, demuestran el compromiso de la comunidad con la mejora y el desarrollo de la herramienta.\n\nPara obtener más información sobre Terraform y sus características, se pueden consultar las fuentes oficiales de HashiCorp, como la documentación de Terraform y el sitio web de HashiCorp. También se pueden consultar las fuentes de la comunidad, como los foros de discusión y los blogs de expertos en la materia.\n\n",
+    "sources": [
+      {
+        "title": "Terraform Enterprise 1.2.1",
+        "url": "https://discuss.hashicorp.com/t/terraform-enterprise-1-2-1-is-available/77219"
+      },
+      {
+        "title": "Terraform v1.14.6",
+        "url": "https://discuss.hashicorp.com/t/terraform-v1-14-6-released/77189"
+      },
+      {
+        "title": "HCP Terraform Agents Changelog",
+        "url": "https://developer.hashicorp.com/terraform/cloud-docs/agents/changelog"
+      },
+      {
+        "title": "Terraform Enterprise 1.2.0",
+        "url": "https://discuss.hashicorp.com/t/terraform-enterprise-1-2-0-is-available/77169"
+      }
+    ]
+  }
+}
