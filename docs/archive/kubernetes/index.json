@@ -1,4 +1,24 @@
 {
+  "2026-03-13_0850": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes 1.36",
+    "summary": "Kubernetes 1.36 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. Además, se presentan herramientas y prácticas para mejorar la gestión y el monitoreo de clústeres.",
+    "content": "\nLa versión 1.36 de Kubernetes se encuentra en fase de prueba, con la versión alpha 2 disponible desde el 26 de febrero de 2026. Esta versión incluye mejoras en la escalabilidad y el rendimiento, así como nuevas características como el Target Optimizer para Application Load Balancers (ALB). Para probar esta versión, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/`.\n\nUna de las características más destacadas de esta versión es la capacidad de realizar un escalado en lugar (in-place) de los pods, lo que permite una mayor flexibilidad en la gestión de recursos. Además, se ha mejorado la seguridad con la introducción de nuevos modos de autenticación y autorización. Para configurar la autenticación, se puede utilizar el comando `kubectl create clusterrolebinding`.\n\nEn cuanto a la gestión de clústeres, se recomienda utilizar herramientas como Velero para realizar copias de seguridad y restauraciones de los datos. Para instalar Velero, se puede utilizar el comando `kubectl apply -f https://github.com/vmware-tanzu/velero/tree/main/config/common`. Además, se puede utilizar el comando `kubectl get pods -o wide` para obtener información detallada sobre los pods en ejecución.\n\nLa seguridad es otro aspecto importante en la gestión de clústeres de Kubernetes. Se recomienda utilizar el modelo de control de acceso basado en roles (RBAC) para asignar permisos a los usuarios y servicios. Para configurar el RBAC, se puede utilizar el comando `kubectl create rolebinding`. Además, se puede utilizar el comando `kubectl get deployments -o yaml` para obtener información detallada sobre los despliegues en ejecución.\n\nEn resumen, la versión 1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres, la seguridad y el rendimiento. Se recomienda probar esta versión y utilizar herramientas como Velero y el modelo de control de acceso basado en roles (RBAC) para mejorar la gestión y el monitoreo de clústeres.\n",
+    "sources": [
+      {
+        "title": "Releases · kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes/releases"
+      },
+      {
+        "title": "Kubernetes 1.35 es un juego cambiador para las cargas de trabajo estatales",
+        "url": "https://thenewstack.io/kubernetes-vpa-inplace-resize/"
+      },
+      {
+        "title": "Velero: copia de seguridad y restauración de clústeres de Kubernetes",
+        "url": "https://linbit.com/blog/using-velero-linbit-sds-to-back-up-restore-a-kubernetes-deployment/"
+      }
+    ]
+  },
   "2026-03-09_1435": {
     "slug": "kubernetes",
     "title": "Kubernetes: Mejoras y Novedades",

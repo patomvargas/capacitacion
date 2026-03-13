@@ -1,0 +1,22 @@
+{
+  "2026-03-13_0850": {
+    "slug": "openvpn",
+    "title": "Seguridad y configuración de OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas y DevOps engineers establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para la configuración y el hardening de OpenVPN.",
+    "content": "OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas y DevOps engineers establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación, utilizando herramientas como `openssl` para crear un certificado de autoridad de certificación (CA) y claves de servidor y cliente.\n\nPara establecer una conexión segura con OpenVPN, es necesario configurar el servidor y el cliente. En el servidor, se debe configurar el archivo de configuración `server.conf` con la ruta del certificado y la clave de autenticación, utilizando comandos como `tls-server` y `tls-auth`. En el cliente, se debe configurar el archivo de configuración `client.conf` con la ruta del certificado y la clave de autenticación, utilizando comandos como `tls-client` y `tls-auth`.\n\nUna de las mejores prácticas para el hardening de OpenVPN es utilizar la autenticación de dos factores (2FA) y la autenticación basada en certificados. También es importante mantener actualizados los certificados y claves de autenticación, y utilizar algoritmos de cifrado seguros como AES-256. Además, es recomendable utilizar herramientas de monitoreo y análisis de logs para detectar posibles intentos de intrusión en la red.\n\nEn cuanto a la configuración de OpenVPN, es importante mencionar que la versión 2.7.0 ha sido reemplazada por la versión 2.8, que incluye nuevas características y mejoras de seguridad. Para actualizar a la versión 2.8, se puede utilizar el comando `git checkout master` y luego `git pull` para descargar los cambios.\n\nFinalmente, es importante mencionar que OpenVPN también se puede utilizar para establecer conexiones de sitio a sitio, lo que permite a las organizaciones conectar varias redes de forma segura. Para configurar una conexión de sitio a sitio con OpenVPN, se debe utilizar el modo de servidor y cliente, y configurar los archivos de configuración correspondientes.\n\nEn resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes, y su configuración y hardening son fundamentales para proteger la seguridad de la red. Al seguir las mejores prácticas y utilizar las herramientas y comandos adecuados, los administradores de sistemas y DevOps engineers pueden establecer conexiones seguras y confiables con OpenVPN.",
+    "sources": [
+      {
+        "title": "OpenVPN GitHub",
+        "url": "https://github.com/OpenVPN/openvpn/compare/v2.7.0...master"
+      },
+      {
+        "title": "OpenVPN Community Wiki",
+        "url": "https://community.openvpn.net/Meetings/2026/2026-03-04/source"
+      },
+      {
+        "title": "Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/toxic-combinations-security/"
+      }
+    ]
+  }
+}

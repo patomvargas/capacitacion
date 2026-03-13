@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
+  <title>OpenVPN - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-13T08:51:01.442427+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre OpenVPN: Tunneling, certificados, hardening, Access Server, site-to-site</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-13_0850.html</id>
+    <title>Seguridad y configuración de OpenVPN</title>
+    <updated>2026-03-13T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas y DevOps engineers establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación, utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt; para crear un certificado de autoridad de certificación (CA) y claves de servidor y cliente.&lt;/p&gt;
+&lt;p&gt;Para establecer una conexión segura con OpenVPN, es necesario configurar el servidor y el cliente. En el servidor, se debe configurar el archivo de configuración &lt;code&gt;server.conf&lt;/code&gt; con la ruta del certificado y la clave de autenticación, utilizando comandos como &lt;code&gt;tls-server&lt;/code&gt; y &lt;code&gt;tls-auth&lt;/code&gt;. En el cliente, se debe configurar el archivo de configuración &lt;code&gt;client.conf&lt;/code&gt; con la ruta del certificado y la clave de autenticación, utilizando comandos como &lt;code&gt;tls-client&lt;/code&gt; y &lt;code&gt;tls-auth&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para el hardening de OpenVPN es utilizar la autenticación de dos factores (2FA) y la autenticación basada en certificados. También es importante mantener actualizados los certificados y claves de autenticación, y utilizar algoritmos de cifrado seguros como AES-256. Además, es recomendable utilizar herramientas de monitoreo y análisis de logs para detectar posibles intentos de intrusión en la red.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de OpenVPN, es importante mencionar que la versión 2.7.0 ha sido reemplazada por la versión 2.8, que incluye nuevas características y mejoras de seguridad. Para actualizar a la versión 2.8, se puede utilizar el comando &lt;code&gt;git checkout master&lt;/code&gt; y luego &lt;code&gt;git pull&lt;/code&gt; para descargar los cambios.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN también se puede utilizar para establecer conexiones de sitio a sitio, lo que permite a las organizaciones conectar varias redes de forma segura. Para configurar una conexión de sitio a sitio con OpenVPN, se debe utilizar el modo de servidor y cliente, y configurar los archivos de configuración correspondientes.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes, y su configuración y hardening son fundamentales para proteger la seguridad de la red. Al seguir las mejores prácticas y utilizar las herramientas y comandos adecuados, los administradores de sistemas y DevOps engineers pueden establecer conexiones seguras y confiables con OpenVPN.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/compare/v2.7.0...master"&gt;OpenVPN GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Meetings/2026/2026-03-04/source"&gt;OpenVPN Community Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/toxic-combinations-security/"&gt;Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-13_0850.html"/>
+    <summary>OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas y DevOps engineers establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para la configuración y el hardening de OpenVPN.</summary>
+    <published>2026-03-13T08:50:00+00:00</published>
+  </entry>
+</feed>

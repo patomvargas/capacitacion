@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Kubernetes: Mejoras y Novedades - Kubernetes</title>
+    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,44 +57,42 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Kubernetes: Mejoras y Novedades</h1>
-    <div class="meta">2026-03-09 1435 · Kubernetes</div>
+    <h1>Novedades en Kubernetes 1.36</h1>
+    <div class="meta">2026-03-13 0850 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. Una de las últimas novedades es la inclusión de `Network Policies` para controlar el tráfico de red entre pods. Esto se puede lograr mediante el comando `kubectl create network-policy`.</p>
+        
+            
+            <p>La versión 1.36 de Kubernetes se encuentra en fase de prueba, con la versión alpha 2 disponible desde el 26 de febrero de 2026. Esta versión incluye mejoras en la escalabilidad y el rendimiento, así como nuevas características como el Target Optimizer para Application Load Balancers (ALB). Para probar esta versión, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/`.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto importante en Kubernetes. La herramienta `AURI` de Endor Labs es una plataforma de seguridad gratuita que se integra con asistentes de codificación de AI para detectar vulnerabilidades en el código generado.</p>
+            <p>Una de las características más destacadas de esta versión es la capacidad de realizar un escalado en lugar (in-place) de los pods, lo que permite una mayor flexibilidad en la gestión de recursos. Además, se ha mejorado la seguridad con la introducción de nuevos modos de autenticación y autorización. Para configurar la autenticación, se puede utilizar el comando `kubectl create clusterrolebinding`.</p>
             
         
             
         
             
-            <p>En cuanto a almacenamiento, Kubernetes ofrece varias opciones, como `Persistent Volumes` (PV) y `StatefulSets`. Los PV permiten almacenar datos de manera persistente, incluso si un pod se elimina. Los `StatefulSets` permiten crear conjuntos de pods con estado, como bases de datos.</p>
+            <p>En cuanto a la gestión de clústeres, se recomienda utilizar herramientas como Velero para realizar copias de seguridad y restauraciones de los datos. Para instalar Velero, se puede utilizar el comando `kubectl apply -f https://github.com/vmware-tanzu/velero/tree/main/config/common`. Además, se puede utilizar el comando `kubectl get pods -o wide` para obtener información detallada sobre los pods en ejecución.</p>
             
         
             
         
             
-            <p>La comunidad de Kubernetes es muy activa, y eventos como KubeCon Europe 2026 ofrecen oportunidades para conectarse con otros profesionales y aprender sobre las últimas tendencias y best practices.</p>
+            <p>La seguridad es otro aspecto importante en la gestión de clústeres de Kubernetes. Se recomienda utilizar el modelo de control de acceso basado en roles (RBAC) para asignar permisos a los usuarios y servicios. Para configurar el RBAC, se puede utilizar el comando `kubectl create rolebinding`. Además, se puede utilizar el comando `kubectl get deployments -o yaml` para obtener información detallada sobre los despliegues en ejecución.</p>
             
         
             
         
             
-            <p>Para aquellos que buscan mejorar la seguridad de sus clústeres de Kubernetes, es importante seguir las best practices, como utilizar `Role-Based Access Control` (RBAC) y `Secrets` para proteger la información sensible.</p>
+            <p>En resumen, la versión 1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres, la seguridad y el rendimiento. Se recomienda probar esta versión y utilizar herramientas como Velero y el modelo de control de acceso basado en roles (RBAC) para mejorar la gestión y el monitoreo de clústeres.</p>
             
         
-            
-        
-            
-            <p>En resumen, Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. Es importante estar al tanto de las últimas novedades y best practices para aprovechar al máximo este sistema de orquestación de contenedores.</p>
             
         
     </div>
@@ -105,12 +103,17 @@
         <ul>
             
             <li>
-                <a href="https://venturebeat.com/technology/endor-labs-launches-free-tool-auri-after-study-finds-only-10-of-ai-generated" target="_blank">Endor Labs launches free tool AURI</a>
+                <a href="https://github.com/kubernetes/kubernetes/releases" target="_blank">Releases · kubernetes/kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://virtualizationreview.com/articles/2026/02/26/why-i-need-to-attend-kubecon-europe-2026-this-year.aspx" target="_blank">Why I Need to Attend KubeCon Europe 2026 this Year</a>
+                <a href="https://thenewstack.io/kubernetes-vpa-inplace-resize/" target="_blank">Kubernetes 1.35 es un juego cambiador para las cargas de trabajo estatales</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://linbit.com/blog/using-velero-linbit-sds-to-back-up-restore-a-kubernetes-deployment/" target="_blank">Velero: copia de seguridad y restauración de clústeres de Kubernetes</a>
                 
             </li>
             
@@ -121,10 +124,10 @@
     <div class="nav">
         <div>
             
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09_1435.html">&larr; 2026-03-09 1435</a>
+            
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-13_0850.html">2026-03-13 0850 &rarr;</a>
             
         </div>
     </div>

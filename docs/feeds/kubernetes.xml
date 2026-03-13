@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-12T08:53:08.633843+00:00</updated>
+  <updated>2026-03-13T08:51:01.443086+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -24,5 +24,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-09_1435.html"/>
     <summary>Kubernetes sigue evolucionando con mejoras en seguridad, almacenamiento y redes. En este artículo, exploraremos las últimas novedades y best practices para admins y DevOps.</summary>
     <published>2026-03-09T14:35:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-13_0850.html</id>
+    <title>Novedades en Kubernetes 1.36</title>
+    <updated>2026-03-13T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.36 de Kubernetes se encuentra en fase de prueba, con la versión alpha 2 disponible desde el 26 de febrero de 2026. Esta versión incluye mejoras en la escalabilidad y el rendimiento, así como nuevas características como el Target Optimizer para Application Load Balancers (ALB). Para probar esta versión, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/kubernetes/kubernetes/master/cluster/addons/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de esta versión es la capacidad de realizar un escalado en lugar (in-place) de los pods, lo que permite una mayor flexibilidad en la gestión de recursos. Además, se ha mejorado la seguridad con la introducción de nuevos modos de autenticación y autorización. Para configurar la autenticación, se puede utilizar el comando &lt;code&gt;kubectl create clusterrolebinding&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de clústeres, se recomienda utilizar herramientas como Velero para realizar copias de seguridad y restauraciones de los datos. Para instalar Velero, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://github.com/vmware-tanzu/velero/tree/main/config/common&lt;/code&gt;. Además, se puede utilizar el comando &lt;code&gt;kubectl get pods -o wide&lt;/code&gt; para obtener información detallada sobre los pods en ejecución.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en la gestión de clústeres de Kubernetes. Se recomienda utilizar el modelo de control de acceso basado en roles (RBAC) para asignar permisos a los usuarios y servicios. Para configurar el RBAC, se puede utilizar el comando &lt;code&gt;kubectl create rolebinding&lt;/code&gt;. Además, se puede utilizar el comando &lt;code&gt;kubectl get deployments -o yaml&lt;/code&gt; para obtener información detallada sobre los despliegues en ejecución.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión 1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres, la seguridad y el rendimiento. Se recomienda probar esta versión y utilizar herramientas como Velero y el modelo de control de acceso basado en roles (RBAC) para mejorar la gestión y el monitoreo de clústeres.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes/releases"&gt;Releases · kubernetes/kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://thenewstack.io/kubernetes-vpa-inplace-resize/"&gt;Kubernetes 1.35 es un juego cambiador para las cargas de trabajo estatales&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linbit.com/blog/using-velero-linbit-sds-to-back-up-restore-a-kubernetes-deployment/"&gt;Velero: copia de seguridad y restauración de clústeres de Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-13_0850.html"/>
+    <summary>Kubernetes 1.36 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. Además, se presentan herramientas y prácticas para mejorar la gestión y el monitoreo de clústeres.</summary>
+    <published>2026-03-13T08:50:00+00:00</published>
   </entry>
 </feed>

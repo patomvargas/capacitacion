@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
+  <title>FreeIPA - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-13T08:51:01.441375+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre FreeIPA: Identity management, LDAP, Kerberos, trust relationships, HBAC, sudo rules</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-13_0850.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-03-13T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de usuarios y servicios en una red. Una de las características clave de FreeIPA es su capacidad para integrar tecnologías como LDAP, Kerberos y HBAC, lo que permite una gestión de identidad y acceso más segura y eficiente.&lt;/p&gt;
+&lt;p&gt;Para implementar FreeIPA, es necesario configurar el servidor de FreeIPA con el comando &lt;code&gt;ipa-server-install&lt;/code&gt;. Luego, se pueden agregar clientes a la red con el comando &lt;code&gt;ipa-client-install&lt;/code&gt;. Una vez configurados, los clientes pueden autenticarse con el servidor de FreeIPA utilizando el protocolo Kerberos.&lt;/p&gt;
+&lt;p&gt;Una de las novedades en la versión más reciente de FreeIPA es la compatibilidad con la autenticación de PostgreSQL mediante LDAP. Esto se logra configurando el archivo &lt;code&gt;pg_hba.conf&lt;/code&gt; con la línea &lt;code&gt;host  all  all  0.0.0.0/0  ldap ldapserver=freeipa-server&lt;/code&gt;. De esta manera, los usuarios de FreeIPA pueden autenticarse en la base de datos de PostgreSQL sin necesidad de una contraseña adicional.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de FreeIPA es la capacidad de establecer relaciones de confianza con otros dominios, como Active Directory. Esto se logra utilizando el comando &lt;code&gt;ipa trust-add&lt;/code&gt; y permite a los usuarios de un dominio acceder a recursos en otro dominio sin necesidad de autenticarse nuevamente.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es recomendable utilizar el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; para agregar reglas de acceso basadas en la hora del día y el día de la semana. De esta manera, se puede restringir el acceso a ciertos recursos en función de la hora y el día. Además, es importante utilizar el comando &lt;code&gt;ipa sudorule-add&lt;/code&gt; para agregar reglas de sudo que permitan a los usuarios ejecutar comandos con privilegios elevados de manera segura.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es un sistema de gestión de identidad y acceso que ofrece una gran flexibilidad y seguridad en la autenticación y autorización de usuarios y servicios. Al seguir las best practices y configurar adecuadamente el servidor y los clientes, se puede lograr una gestión de identidad y acceso eficiente y segura en la red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/10.1_release_notes/"&gt;Red Hat Enterprise Linux 10 10.1 Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/pdf/9.5_release_notes/Red_Hat_Enterprise_Linux-9-9.5_Release_Notes-en-US.pdf"&gt;Red Hat Enterprise Linux 9 9.5 Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mehmanjafarov1905/postgresql-ldap-authentication-integrating-freeipa-and-active-directory-445254f01df4"&gt;PostgreSQL LDAP Authentication: Integrating FreeIPA and Active Directory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-13_0850.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidad y acceso que integra tecnologías como LDAP, Kerberos y HBAC. En este artículo, se presentan las novedades y best practices para implementar y configurar FreeIPA de manera efectiva.</summary>
+    <published>2026-03-13T08:50:00+00:00</published>
+  </entry>
+</feed>

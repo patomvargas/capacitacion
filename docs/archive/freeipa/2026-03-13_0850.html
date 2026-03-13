@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+    </div>
+
+    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
+    <div class="meta">2026-03-13 0850 · FreeIPA</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>FreeIPA es un sistema de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de usuarios y servicios en una red. Una de las características clave de FreeIPA es su capacidad para integrar tecnologías como LDAP, Kerberos y HBAC, lo que permite una gestión de identidad y acceso más segura y eficiente.</p>
+            
+        
+            
+        
+            
+            <p>Para implementar FreeIPA, es necesario configurar el servidor de FreeIPA con el comando `ipa-server-install`. Luego, se pueden agregar clientes a la red con el comando `ipa-client-install`. Una vez configurados, los clientes pueden autenticarse con el servidor de FreeIPA utilizando el protocolo Kerberos.</p>
+            
+        
+            
+        
+            
+            <p>Una de las novedades en la versión más reciente de FreeIPA es la compatibilidad con la autenticación de PostgreSQL mediante LDAP. Esto se logra configurando el archivo `pg_hba.conf` con la línea `host  all  all  0.0.0.0/0  ldap ldapserver=freeipa-server`. De esta manera, los usuarios de FreeIPA pueden autenticarse en la base de datos de PostgreSQL sin necesidad de una contraseña adicional.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de FreeIPA es la capacidad de establecer relaciones de confianza con otros dominios, como Active Directory. Esto se logra utilizando el comando `ipa trust-add` y permite a los usuarios de un dominio acceder a recursos en otro dominio sin necesidad de autenticarse nuevamente.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es recomendable utilizar el comando `ipa hbacrule-add` para agregar reglas de acceso basadas en la hora del día y el día de la semana. De esta manera, se puede restringir el acceso a ciertos recursos en función de la hora y el día. Además, es importante utilizar el comando `ipa sudorule-add` para agregar reglas de sudo que permitan a los usuarios ejecutar comandos con privilegios elevados de manera segura.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, FreeIPA es un sistema de gestión de identidad y acceso que ofrece una gran flexibilidad y seguridad en la autenticación y autorización de usuarios y servicios. Al seguir las best practices y configurar adecuadamente el servidor y los clientes, se puede lograr una gestión de identidad y acceso eficiente y segura en la red.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/10.1_release_notes/" target="_blank">Red Hat Enterprise Linux 10 10.1 Release Notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/pdf/9.5_release_notes/Red_Hat_Enterprise_Linux-9-9.5_Release_Notes-en-US.pdf" target="_blank">Red Hat Enterprise Linux 9 9.5 Release Notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@mehmanjafarov1905/postgresql-ldap-authentication-integrating-freeipa-and-active-directory-445254f01df4" target="_blank">PostgreSQL LDAP Authentication: Integrating FreeIPA and Active Directory</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
