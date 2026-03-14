@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejoras y Best Practices</h1>
+    <div class="meta">2026-03-14 0841 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>OpenShift es una plataforma de contenedores basada en Kubernetes que ofrece una amplia gama de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Una de las características más destacadas de OpenShift es su capacidad para implementar pipelines de CI/CD utilizando Tekton, lo que permite automatizar los procesos de construcción, prueba y despliegue de aplicaciones. Para implementar un pipeline de CI/CD en OpenShift, se puede utilizar el comando `oc create -f pipeline.yaml` para crear un pipeline y `oc create -f pipelinerun.yaml` para ejecutar el pipeline.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de OpenShift es su capacidad para implementar rutas y OAuth para la autenticación y autorización de aplicaciones. Para implementar una ruta en OpenShift, se puede utilizar el comando `oc expose svc <nombre_del_servicio> --hostname=<nombre_del_host>` para exponer un servicio y `oc create -f route.yaml` para crear una ruta. Para implementar OAuth en OpenShift, se puede utilizar el comando `oc create -f oauth.yaml` para crear un proveedor de OAuth.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece una amplia gama de herramientas y características para proteger los despliegues de aplicaciones. Una de las características más destacadas es la capacidad para implementar políticas de seguridad utilizando el comando `oc create -f securitypolicy.yaml` para crear una política de seguridad. También se puede utilizar el comando `oc adm must-gather` para recopilar información de seguridad y diagnosticar problemas de seguridad.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Algunas de las características más destacadas de OpenShift incluyen la implementación de pipelines de CI/CD utilizando Tekton, la implementación de rutas y OAuth para la autenticación y autorización de aplicaciones, y la capacidad para implementar políticas de seguridad.</p>
+            
+        
+            
+        
+            
+            <p>Para migrar a OpenShift, se pueden seguir los siguientes pasos: primero, se debe crear un clúster de OpenShift utilizando el comando `oc cluster up` para crear un clúster de prueba. Luego, se debe crear un proyecto en OpenShift utilizando el comando `oc new-project <nombre_del_proyecto>` para crear un proyecto. Finalmente, se puede utilizar el comando `oc create -f <archivo_de_configuracion>.yaml` para crear los recursos necesarios para la aplicación.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la monitorización, OpenShift ofrece una amplia gama de herramientas y características para monitorear los despliegues de aplicaciones. Una de las características más destacadas es la capacidad para implementar la monitorización utilizando el comando `oc create -f monitoring.yaml` para crear un recurso de monitorización. También se puede utilizar el comando `oc get pods` para obtener información sobre los pods que se están ejecutando en el clúster.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a OKD, OperatorHub y builds, se pueden utilizar los siguientes comandos: `oc create -f buildconfig.yaml` para crear un build, `oc start-build <nombre_del_build>` para iniciar un build, y `oc create -f imagestream.yaml` para crear un image stream. También se puede utilizar el comando `oc get builds` para obtener información sobre los builds que se han realizado.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, se puede mencionar que la versión 4.21 de OpenShift incluye nuevas características de observabilidad, como el operador de observabilidad del clúster (COO) 1.4, la integración con OpenTelemetry y el resumen de trazas de AI. También se puede mencionar que se han publicado varias actualizaciones de seguridad para OpenShift, como la RHSA-2026:3905 y la RHSA-2026:2659.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Algunas de las características más destacadas de OpenShift incluyen la implementación de pipelines de CI/CD utilizando Tekton, la implementación de rutas y OAuth para la autenticación y autorización de aplicaciones, y la capacidad para implementar políticas de seguridad.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.redhat.com/en/blog/new-observability-features-red-hat-openshift-421-and-red-hat-advanced-cluster-management-kubernetes-216" target="_blank">New observability features in Red Hat OpenShift 4.21 and Red Hat Advanced Cluster Management for Kubernetes 2.16</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:3905" target="_blank">RHSA-2026:3905 - Security Advisory - Red Hat Customer Portal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:2659" target="_blank">RHSA-2026:2659 - Security Advisory - Red Hat Customer Portal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30" target="_blank">Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/tekton-on-openshift-part-1-understanding-tasks-and-taskruns-deab2ca71e82" target="_blank">Tekton on OpenShift — Part 1: Understanding Tasks and TaskRuns</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-10_1158.html">&larr; 2026-03-10 1158</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

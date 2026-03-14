@@ -1,4 +1,24 @@
 {
+  "2026-03-14_0841": {
+    "slug": "gemini",
+    "title": "Integración de Gemini con Vertex AI",
+    "summary": "Gemini es una herramienta que permite la integración con Vertex AI para construir agentes de datos empresariales. En este artículo, se explora cómo utilizar Gemini para supercharge el desarrollo de Spark y la integración con Workspace.",
+    "content": "Gemini es una herramienta que permite la integración con Vertex AI para construir agentes de datos empresariales. Para comenzar, es necesario instalar el paquete de Gemini en el entorno de desarrollo. Esto se puede hacer utilizando el comando `pip install gemini`. Una vez instalado, se puede utilizar el comando `gemini init` para inicializar el proyecto.\n\n \nLa integración de Gemini con Vertex AI permite la construcción de agentes de datos empresariales que pueden realizar consultas a gran escala. Para hacer esto, es necesario configurar el archivo `gemini.yaml` con la información de la cuenta de Vertex AI. Por ejemplo, se puede agregar la siguiente configuración: `vertex_ai: project_id: <ID_PROYECTO>`. Luego, se puede utilizar el comando `gemini deploy` para desplegar el agente de datos en Vertex AI.\n\n \nAdemás, Gemini se puede utilizar para supercharge el desarrollo de Spark. Para hacer esto, es necesario instalar el paquete de Spark en el entorno de desarrollo. Luego, se puede utilizar el comando `gemini spark` para crear un nuevo proyecto de Spark. Por ejemplo, se puede agregar la siguiente configuración: `spark: master: local[2]`. Luego, se puede utilizar el comando `gemini spark submit` para enviar el trabajo de Spark a la cola de ejecución.\n\n \nLa integración de Gemini con Workspace permite la utilización de notebooks de NotebookLM como contexto en Gemini. Para hacer esto, es necesario configurar el archivo `gemini.yaml` con la información de la cuenta de Workspace. Por ejemplo, se puede agregar la siguiente configuración: `workspace: notebook_id: <ID_NOTEBOOK>`. Luego, se puede utilizar el comando `gemini notebook` para crear un nuevo notebook en Workspace.\n\n \nEn resumen, Gemini es una herramienta poderosa que permite la integración con Vertex AI y Workspace para construir agentes de datos empresariales y supercharge el desarrollo de Spark. Con la configuración adecuada y los comandos correctos, es posible crear soluciones personalizadas para satisfacer las necesidades de la empresa.\n\n \nPara obtener más información sobre Gemini y sus características, se puede consultar la documentación oficial de Gemini y las fuentes proporcionadas.",
+    "sources": [
+      {
+        "title": "Architecting Enterprise-Grade Data Agents with Gemini 3.1 Pro on Vertex AI",
+        "url": "https://medium.com/@alex.burdenko/architecting-enterprise-grade-data-agents-with-gemini-3-1-pro-on-vertex-ai-4745e96df77f"
+      },
+      {
+        "title": "Supercharge Your Spark Development with Gemini",
+        "url": "https://medium.com/google-cloud/supercharge-your-spark-development-with-gemini-1540f1cb47d4"
+      },
+      {
+        "title": "NotebookLM Context in Gemini Workspace Accounts",
+        "url": "https://medium.com/ai-quick-tips/how-to-use-notebooklm-as-context-in-gemini-for-workspace-e9bea8c6d2a6"
+      }
+    ]
+  },
   "2026-03-10_1158": {
     "slug": "gemini",
     "title": "Gemini: Integración y Mejoras",

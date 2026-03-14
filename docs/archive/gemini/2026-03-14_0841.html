@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gemini: Integración y Mejoras - Gemini</title>
+    <title>Integración de Gemini con Vertex AI - Gemini</title>
     <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
     <style>
         :root {
@@ -57,44 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
     </div>
 
-    <h1>Gemini: Integración y Mejoras</h1>
-    <div class="meta">2026-03-10 1158 · Gemini</div>
+    <h1>Integración de Gemini con Vertex AI</h1>
+    <div class="meta">2026-03-14 0841 · Gemini</div>
 
     <div class="content">
         
         
             
-            <p>Gemini es una plataforma de inteligencia artificial de Google que se utiliza para generar texto, imágenes y otros contenidos. Recientemente, se han anunciado varias mejoras y actualizaciones para Gemini, incluyendo su integración con Workspace y Vertex AI. Esto permite a los desarrolladores utilizar Gemini para generar contenido de manera más eficiente y personalizada.</p>
+            <p>Gemini es una herramienta que permite la integración con Vertex AI para construir agentes de datos empresariales. Para comenzar, es necesario instalar el paquete de Gemini en el entorno de desarrollo. Esto se puede hacer utilizando el comando `pip install gemini`. Una vez instalado, se puede utilizar el comando `gemini init` para inicializar el proyecto.</p>
             
         
             
         
             
-            <p>Para utilizar Gemini con Workspace, es necesario configurar la API de Google y obtener una clave de API. Luego, se puede utilizar el comando `gcloud auth application-default login` para autenticar con la API de Google. Una vez autenticado, se puede utilizar el comando `gcloud ai gemini create` para crear un modelo de lenguaje de Gemini.</p>
+        
+            
+            <p>La integración de Gemini con Vertex AI permite la construcción de agentes de datos empresariales que pueden realizar consultas a gran escala. Para hacer esto, es necesario configurar el archivo `gemini.yaml` con la información de la cuenta de Vertex AI. Por ejemplo, se puede agregar la siguiente configuración: `vertex_ai: project_id: <ID_PROYECTO>`. Luego, se puede utilizar el comando `gemini deploy` para desplegar el agente de datos en Vertex AI.</p>
             
         
             
         
             
-            <p>La integración de Gemini con Vertex AI permite a los desarrolladores entrenar y desplegar modelos de lenguaje de manera más eficiente. Se puede utilizar el comando `gcloud ai vertex create` para crear un modelo de lenguaje en Vertex AI. Luego, se puede utilizar el comando `gcloud ai vertex deploy` para desplegar el modelo en un entorno de producción.</p>
+        
+            
+            <p>Además, Gemini se puede utilizar para supercharge el desarrollo de Spark. Para hacer esto, es necesario instalar el paquete de Spark en el entorno de desarrollo. Luego, se puede utilizar el comando `gemini spark` para crear un nuevo proyecto de Spark. Por ejemplo, se puede agregar la siguiente configuración: `spark: master: local[2]`. Luego, se puede utilizar el comando `gemini spark submit` para enviar el trabajo de Spark a la cola de ejecución.</p>
             
         
             
         
             
-            <p>Además, se han anunciado varias mejoras en la generación de imágenes de Gemini. La plataforma ahora utiliza el modelo Nano Banana 2, que admite resoluciones de hasta 4K. Esto permite generar imágenes de alta calidad de manera más eficiente.</p>
+        
+            
+            <p>La integración de Gemini con Workspace permite la utilización de notebooks de NotebookLM como contexto en Gemini. Para hacer esto, es necesario configurar el archivo `gemini.yaml` con la información de la cuenta de Workspace. Por ejemplo, se puede agregar la siguiente configuración: `workspace: notebook_id: <ID_NOTEBOOK>`. Luego, se puede utilizar el comando `gemini notebook` para crear un nuevo notebook en Workspace.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, se han anunciado varias mejoras en la autenticación y autorización de Gemini. La plataforma ahora utiliza claves de API de Google para autenticar a los usuarios y autorizar el acceso a los modelos de lenguaje. Esto permite a los desarrolladores controlar de manera más precisa quién puede acceder a los modelos de lenguaje y cómo se utilizan.</p>
+        
+            
+            <p>En resumen, Gemini es una herramienta poderosa que permite la integración con Vertex AI y Workspace para construir agentes de datos empresariales y supercharge el desarrollo de Spark. Con la configuración adecuada y los comandos correctos, es posible crear soluciones personalizadas para satisfacer las necesidades de la empresa.</p>
             
         
             
         
             
-            <p>En resumen, las últimas novedades y mejoras de Gemini permiten a los desarrolladores utilizar la plataforma de manera más eficiente y personalizada. La integración con Workspace y Vertex AI, la mejora en la generación de imágenes y la seguridad son solo algunas de las características que hacen de Gemini una plataforma de inteligencia artificial líder en el mercado.</p>
+        
+            
+            <p>Para obtener más información sobre Gemini y sus características, se puede consultar la documentación oficial de Gemini y las fuentes proporcionadas.</p>
             
         
     </div>
@@ -105,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://www.bleepingcomputer.com/news/security/previously-harmless-google-api-keys-now-expose-gemini-ai-data/" target="_blank">Previously harmless Google API keys now expose Gemini AI data</a>
+                <a href="https://medium.com/@alex.burdenko/architecting-enterprise-grade-data-agents-with-gemini-3-1-pro-on-vertex-ai-4745e96df77f" target="_blank">Architecting Enterprise-Grade Data Agents with Gemini 3.1 Pro on Vertex AI</a>
                 
             </li>
             
             <li>
-                <a href="https://www.theverge.com/tech/888008/big-google-home-update-lets-gemini-describe-live-camera-feeds" target="_blank">Big Google Home update lets Gemini describe live camera feeds</a>
+                <a href="https://medium.com/google-cloud/supercharge-your-spark-development-with-gemini-1540f1cb47d4" target="_blank">Supercharge Your Spark Development with Gemini</a>
                 
             </li>
             
             <li>
-                <a href="https://www.techspot.com/news/111495/google-upgrades-gemini-image-generation-nano-banana-2.html" target="_blank">Google upgrades Gemini image generation to Nano Banana 2 with 4K support</a>
+                <a href="https://medium.com/ai-quick-tips/how-to-use-notebooklm-as-context-in-gemini-for-workspace-e9bea8c6d2a6" target="_blank">NotebookLM Context in Gemini Workspace Accounts</a>
                 
             </li>
             
@@ -126,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-03-09_1435.html">&larr; 2026-03-09 1435</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-03-10_1158.html">&larr; 2026-03-10 1158</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-03-14_0841.html">2026-03-14 0841 &rarr;</a>
             
         </div>
     </div>
