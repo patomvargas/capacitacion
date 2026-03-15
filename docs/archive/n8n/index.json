@@ -1,4 +1,24 @@
 {
+  "2026-03-15_0843": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo que combina una interfaz visual con la flexibilidad de código personalizado. Recientemente, se han identificado vulnerabilidades de seguridad que han sido parcheadas.",
+    "content": "\nLa plataforma n8n permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y configuraciones específicas. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad que han sido identificadas recientemente, como la vulnerabilidad de escape de expresiones que puede llevar a la ejecución de comandos del sistema en el host que ejecuta n8n. Para evitar esto, es importante mantener la plataforma actualizada y utilizar `git pull` para obtener los últimos parches de seguridad.\n\nEn cuanto a la configuración de n8n, es importante entender cómo funcionan los nodos y los flujos de trabajo. Un nodo es un componente individual que realiza una tarea específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los flujos de trabajo son una serie de nodos conectados que trabajan juntos para lograr un objetivo específico. Para crear un flujo de trabajo, se puede utilizar el comando `n8n start` y luego configurar los nodos y las conexiones entre ellos utilizando la interfaz visual de n8n.\n\nAdemás, n8n admite la autenticación y el uso de credenciales para acceder a servicios externos. Sin embargo, es importante tener en cuenta que se han identificado problemas con la autenticación en algunos servicios, como Synology DSM, que puede requerir configuraciones específicas para funcionar correctamente. Para solucionar esto, se puede utilizar el comando `n8n credentials` para configurar las credenciales y luego utilizar `n8n test` para probar la conexión.\n\nEn cuanto a las mejores prácticas para la automatización de flujos de trabajo con n8n, es importante diseñar flujos de trabajo modulares y validar los datos de entrada en cada paso. También es importante utilizar la función de registro de n8n para monitorear y depurar los flujos de trabajo. Además, se pueden utilizar herramientas de terceros, como Clerk, para la autenticación y la autorización.\n\nFinalmente, es importante mencionar que n8n se puede utilizar para una variedad de casos de uso, desde la automatización de tareas simples hasta la creación de pipelines de contenido complejos. Con su flexibilidad y personalización, n8n es una herramienta poderosa para cualquier equipo de desarrollo o operaciones.\n\nEn resumen, n8n es una plataforma de automatización de flujos de trabajo que ofrece una gran flexibilidad y personalización. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad y seguir las mejores prácticas para diseñar y configurar flujos de trabajo seguros y eficientes.\n",
+    "sources": [
+      {
+        "title": "Expression Escape Vulnerability Leading to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-6cqr-8cfr-67f8"
+      },
+      {
+        "title": "Credential test false negative for Synology DSM custom HTTPS port",
+        "url": "https://github.com/n8n-io/n8n/issues/26738"
+      },
+      {
+        "title": "CVE-2026-27577: n8n Workflow Automation RCE Vulnerability",
+        "url": "https://www.sentinelone.com/vulnerability-database/cve-2026-27577/"
+      }
+    ]
+  },
   "2026-03-11_0851": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",

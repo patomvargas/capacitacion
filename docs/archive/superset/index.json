@@ -1,4 +1,24 @@
 {
+  "2026-03-15_0843": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Novedades",
+    "summary": "Superset es una herramienta de visualización de datos que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "Superset es una herramienta de visualización de datos que permite a los usuarios crear dashboards personalizados y explorar datos de manera efectiva. Recientemente, se han agregado nuevas características como el soporte para PWA (Progressive Web Apps) y el Marco de Tareas Globales (Global Task Framework). \n\nPara aprovechar al máximo estas características, es importante configurar correctamente el entorno de Superset. Por ejemplo, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos a la última versión. Además, se puede utilizar el comando `superset init` para inicializar el entorno de Superset.\n\nEn cuanto a la creación de dashboards, Superset ofrece una variedad de componentes y herramientas para personalizar la visualización de los datos. Por ejemplo, se puede utilizar el componente `Grid` para crear una cuadrícula de gráficos y tablas. También se puede utilizar el componente `DropdownContainer` para crear un menú desplegable con opciones de filtrado.\n\nPara mejorar la seguridad de los dashboards, Superset ofrece características como el control de acceso basado en roles (RLS) y la autenticación con tokens. Por ejemplo, se puede utilizar el comando `superset auth` para configurar la autenticación con tokens. También se puede utilizar el comando `superset rls` para configurar el control de acceso basado en roles.\n\nEn resumen, Superset es una herramienta poderosa para la visualización de datos que sigue evolucionando con nuevas características y mejoras. Al configurar correctamente el entorno y aprovechar al máximo sus funcionalidades, los usuarios pueden crear dashboards personalizados y explorar datos de manera efectiva.\n\nPara más información, se puede consultar la documentación oficial de Superset, que incluye guías detalladas para la configuración y el uso de la herramienta. También se puede consultar la comunidad de Superset, que ofrece recursos y soporte para los usuarios.",
+    "sources": [
+      {
+        "title": "Apache Superset Community Update: February 2026",
+        "url": "https://preset.io/blog/apache-superset-community-update-february-2026/"
+      },
+      {
+        "title": "Apache Superset 6.0: Migration from Iframe Embedding to the ...",
+        "url": "https://github.com/apache/superset/discussions/38461"
+      },
+      {
+        "title": "Core Components | Superset",
+        "url": "https://superset.apache.org/developer-docs/components/ui/"
+      }
+    ]
+  },
   "2026-03-11_0851": {
     "slug": "superset",
     "title": "Superset: Herramienta de Visualización de Datos",

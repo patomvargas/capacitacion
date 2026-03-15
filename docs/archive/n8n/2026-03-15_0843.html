@@ -58,7 +58,7 @@
     </div>
 
     <h1>Automatización de flujos de trabajo con n8n</h1>
-    <div class="meta">2026-03-11 0851 · n8n</div>
+    <div class="meta">2026-03-15 0843 · n8n</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La plataforma n8n permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y credenciales. Los nodos son los componentes básicos de los flujos de trabajo y pueden ser utilizados para realizar tareas como la lectura de datos, la escritura de archivos y la ejecución de comandos. Las credenciales son utilizadas para autenticar con servicios externos y pueden ser almacenadas de manera segura en la plataforma.</p>
+            <p>La plataforma n8n permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y configuraciones específicas. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad que han sido identificadas recientemente, como la vulnerabilidad de escape de expresiones que puede llevar a la ejecución de comandos del sistema en el host que ejecuta n8n. Para evitar esto, es importante mantener la plataforma actualizada y utilizar `git pull` para obtener los últimos parches de seguridad.</p>
             
         
             
         
             
-            <p>Para crear un flujo de trabajo en n8n, se puede utilizar el comando `n8n start` para iniciar la plataforma y luego crear un nuevo flujo de trabajo utilizando el comando `n8n workflow:create`. Luego, se pueden agregar nodos y credenciales al flujo de trabajo utilizando el comando `n8n node:add` y `n8n credential:add`, respectivamente.</p>
+            <p>En cuanto a la configuración de n8n, es importante entender cómo funcionan los nodos y los flujos de trabajo. Un nodo es un componente individual que realiza una tarea específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los flujos de trabajo son una serie de nodos conectados que trabajan juntos para lograr un objetivo específico. Para crear un flujo de trabajo, se puede utilizar el comando `n8n start` y luego configurar los nodos y las conexiones entre ellos utilizando la interfaz visual de n8n.</p>
             
         
             
         
             
-            <p>Recientemente, se han descubierto varias vulnerabilidades de seguridad en la plataforma n8n, incluyendo la vulnerabilidad de ejecución de comandos arbitrarios a través de la escritura de archivos y operaciones de Git, y la vulnerabilidad de escape de expresiones que puede llevar a la ejecución de comandos del sistema. Estas vulnerabilidades han sido parcheadas en versiones recientes de la plataforma, como la versión 2.8.4, que se puede instalar utilizando el comando `npm install n8n@2.8.4`.</p>
+            <p>Además, n8n admite la autenticación y el uso de credenciales para acceder a servicios externos. Sin embargo, es importante tener en cuenta que se han identificado problemas con la autenticación en algunos servicios, como Synology DSM, que puede requerir configuraciones específicas para funcionar correctamente. Para solucionar esto, se puede utilizar el comando `n8n credentials` para configurar las credenciales y luego utilizar `n8n test` para probar la conexión.</p>
             
         
             
         
             
-            <p>Para protegerse contra estas vulnerabilidades, se recomienda actualizar a la versión más reciente de la plataforma y seguir las mejores prácticas de seguridad, como utilizar credenciales seguras y limitar el acceso a la plataforma. También se puede utilizar el comando `n8n security:check` para verificar la seguridad de la plataforma y detectar cualquier vulnerabilidad.</p>
+            <p>En cuanto a las mejores prácticas para la automatización de flujos de trabajo con n8n, es importante diseñar flujos de trabajo modulares y validar los datos de entrada en cada paso. También es importante utilizar la función de registro de n8n para monitorear y depurar los flujos de trabajo. Además, se pueden utilizar herramientas de terceros, como Clerk, para la autenticación y la autorización.</p>
             
         
             
         
             
-            <p>En cuanto a las integraciones, n8n tiene una gran variedad de nodos para diferentes servicios y plataformas, incluyendo IONOS Cloud, que tiene su propio paquete de nodos oficiales. Esto permite a los usuarios crear flujos de trabajo que se integren con estos servicios de manera fácil y segura.</p>
+            <p>Finalmente, es importante mencionar que n8n se puede utilizar para una variedad de casos de uso, desde la automatización de tareas simples hasta la creación de pipelines de contenido complejos. Con su flexibilidad y personalización, n8n es una herramienta poderosa para cualquier equipo de desarrollo o operaciones.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la plataforma n8n tiene una comunidad activa y una documentación extensa, que incluye tutoriales y guías para ayudar a los usuarios a empezar a utilizar la plataforma. Se pueden encontrar más recursos y tutoriales en la página oficial de n8n y en la comunidad de desarrolladores.</p>
-            
-        
+            <p>En resumen, n8n es una plataforma de automatización de flujos de trabajo que ofrece una gran flexibilidad y personalización. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad y seguir las mejores prácticas para diseñar y configurar flujos de trabajo seguros y eficientes.</p>
             
         
             
@@ -116,12 +114,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/compare/n8n@2.8.3...n8n@2.8.4" target="_blank">Comparing n8n@2.8.3...n8n@2.8.4</a>
+                <a href="https://github.com/n8n-io/n8n/issues/26738" target="_blank">Credential test false negative for Synology DSM custom HTTPS port</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.n8n.io/" target="_blank">Guide, Tutorials, and Updates on Workflow Automation</a>
+                <a href="https://www.sentinelone.com/vulnerability-database/cve-2026-27577/" target="_blank">CVE-2026-27577: n8n Workflow Automation RCE Vulnerability</a>
                 
             </li>
             
@@ -132,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-10_1212.html">&larr; 2026-03-10 1212</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-11_0851.html">&larr; 2026-03-11 0851</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-15_0843.html">2026-03-15 0843 &rarr;</a>
             
         </div>
     </div>

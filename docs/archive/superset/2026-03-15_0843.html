@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Herramienta de Visualización de Datos - Superset</title>
+    <title>Superset: Mejoras y Novedades - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,50 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Herramienta de Visualización de Datos</h1>
-    <div class="meta">2026-03-11 0851 · Superset</div>
+    <h1>Superset: Mejoras y Novedades</h1>
+    <div class="meta">2026-03-15 0843 · Superset</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizadas y explorar grandes conjuntos de datos. Para instalar Superset, se puede utilizar Docker Compose, como se muestra en el artículo de Abonia Sojasingarayar. Para ello, se debe ejecutar el comando `docker-compose up` en el directorio donde se encuentra el archivo `docker-compose.yml`.</p>
+            <p>Superset es una herramienta de visualización de datos que permite a los usuarios crear dashboards personalizados y explorar datos de manera efectiva. Recientemente, se han agregado nuevas características como el soporte para PWA (Progressive Web Apps) y el Marco de Tareas Globales (Global Task Framework).</p>
             
         
             
         
             
-            <p>Una vez instalado Superset, se puede acceder a la interfaz de usuario y comenzar a crear dashboards y explorar datos. Superset admite una variedad de fuentes de datos, incluyendo bases de datos relacionales y NoSQL. Para conectar a una base de datos, se debe configurar el archivo `superset_config.py` con los parámetros de conexión adecuados, como el nombre de la base de datos, el usuario y la contraseña.</p>
+            <p>Para aprovechar al máximo estas características, es importante configurar correctamente el entorno de Superset. Por ejemplo, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos a la última versión. Además, se puede utilizar el comando `superset init` para inicializar el entorno de Superset.</p>
             
         
             
         
             
-            <p>En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de barras, líneas y scatter plots. También se puede utilizar SQL Lab para ejecutar consultas SQL y explorar los resultados. Sin embargo, se ha reportado un problema con la visualización de los gráficos en el modo oscuro, como se muestra en el issue #37905 de GitHub.</p>
+            <p>En cuanto a la creación de dashboards, Superset ofrece una variedad de componentes y herramientas para personalizar la visualización de los datos. Por ejemplo, se puede utilizar el componente `Grid` para crear una cuadrícula de gráficos y tablas. También se puede utilizar el componente `DropdownContainer` para crear un menú desplegable con opciones de filtrado.</p>
             
         
             
         
             
-            <p>Para solucionar este problema, se puede modificar el archivo `superset_config.py` y agregar la siguiente línea de código: `SUPERSET_THEME = 'cosmo'`. Esto cambiará el tema de Superset a Cosmo, que es un tema claro que no presenta problemas de visualización en el modo oscuro.</p>
+            <p>Para mejorar la seguridad de los dashboards, Superset ofrece características como el control de acceso basado en roles (RLS) y la autenticación con tokens. Por ejemplo, se puede utilizar el comando `superset auth` para configurar la autenticación con tokens. También se puede utilizar el comando `superset rls` para configurar el control de acceso basado en roles.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Superset, se puede utilizar el comando `superset init` para inicializar la base de datos y crear los roles y permisos necesarios. También se puede utilizar el comando `superset run` para ejecutar el servidor de Superset.</p>
+            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que sigue evolucionando con nuevas características y mejoras. Al configurar correctamente el entorno y aprovechar al máximo sus funcionalidades, los usuarios pueden crear dashboards personalizados y explorar datos de manera efectiva.</p>
             
         
             
         
             
-            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de opciones para la creación de dashboards y la exploración de datos. Sin embargo, es importante estar al tanto de los problemas y limitaciones que se presentan en la comunidad de GitHub y buscar soluciones y best practices para su implementación.</p>
-            
-        
-            
-        
+            <p>Para más información, se puede consultar la documentación oficial de Superset, que incluye guías detalladas para la configuración y el uso de la herramienta. También se puede consultar la comunidad de Superset, que ofrece recursos y soporte para los usuarios.</p>
             
         
     </div>
@@ -111,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://medium.com/@abonia/running-superset-locally-using-docker-compose-cd6d8da53c24" target="_blank">Running Superset Locally Using Docker Compose</a>
+                <a href="https://preset.io/blog/apache-superset-community-update-february-2026/" target="_blank">Apache Superset Community Update: February 2026</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37905" target="_blank">Dark Theme: Starburst chart 'total' displayed in black, labels in white with black outline</a>
+                <a href="https://github.com/apache/superset/discussions/38461" target="_blank">Apache Superset 6.0: Migration from Iframe Embedding to the ...</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@sukrucanucar/apache-superset-on-linux-d60afbc42a9f" target="_blank">Apache Superset on Linux</a>
+                <a href="https://superset.apache.org/developer-docs/components/ui/" target="_blank">Core Components | Superset</a>
                 
             </li>
             
@@ -132,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-10_1212.html">&larr; 2026-03-10 1212</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-11_0851.html">&larr; 2026-03-11 0851</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-15_0843.html">2026-03-15 0843 &rarr;</a>
             
         </div>
     </div>

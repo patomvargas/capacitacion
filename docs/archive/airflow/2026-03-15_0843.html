@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow: Mejores Practicas y Novedades - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow: Mejores Practicas y Novedades</h1>
+    <div class="meta">2026-03-15 0843 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo complejos. Para empezar a trabajar con Airflow, es necesario instalarlo en un entorno de desarrollo. Esto se puede hacer utilizando el comando `pip install apache-airflow`. Una vez instalado, es posible crear un nuevo flujo de trabajo utilizando el comando `airflow db init` y luego `airflow webserver -p 8080`.</p>
+            
+        
+            
+        
+            
+            <p>La configuración de un DAG (Directed Acyclic Graph) es fundamental en Airflow. Un DAG es un grafo que representa el flujo de trabajo y se define utilizando un archivo Python. Por ejemplo, se puede crear un DAG que ejecute una tarea cada día a las 8:00 am utilizando el siguiente código: `from datetime import datetime, timedelta; from airflow import DAG; from airflow.operators.bash_operator import BashOperator; default_args = { 'owner': 'airflow', 'depends_on_past': False, 'start_date': datetime(2026, 3, 15), 'retries': 1, 'retry_delay': timedelta(minutes=5), }; dag = DAG('mi_dag', default_args=default_args, schedule_interval=timedelta(days=1))`.</p>
+            
+        
+            
+        
+            
+            <p>Los operadores son fundamentales en Airflow, ya que permiten ejecutar tareas específicas. Por ejemplo, se puede utilizar el operador `BashOperator` para ejecutar un comando de bash. Los sensores también son importantes, ya que permiten esperar a que una condición específica se cumpla antes de continuar con el flujo de trabajo. Por ejemplo, se puede utilizar el sensor `ExternalTaskSensor` para esperar a que una tarea externa se complete.</p>
+            
+        
+            
+        
+            
+            <p>La versión 3.1.8 de Airflow ha introducido cambios significativos, como la gestión de permisos para el backfill de DAGs. Esto se puede configurar utilizando el comando `airflow config get-value core dag_access_control`. Además, la versión 2.11 de Airflow ha introducido soporte para proveedores de servicios en la nube, como Amazon y Google.</p>
+            
+        
+            
+        
+            
+            <p>Para conectar Airflow con otros servicios, es posible utilizar las conexiones. Por ejemplo, se puede crear una conexión con un servidor de base de datos utilizando el comando `airflow connections --add --conn_id mi_conexion --conn_type postgres`. Luego, es posible utilizar esta conexión en un DAG para ejecutar una tarea que interactúe con la base de datos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo. La configuración de DAGs, operadores y sensores es fundamental para crear flujos de trabajo complejos. La versión 3.1.8 de Airflow ha introducido cambios significativos, y la versión 2.11 ha introducido soporte para proveedores de servicios en la nube.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Airflow y los artículos de la comunidad. Por ejemplo, el artículo de Ken Patcharanat sobre la configuración de Airflow en Minikube con Helm es muy útil para aquellos que desean desplegar Airflow en un entorno de contenedores.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante seguir los principios de la arquitectura de software, como la separación de preocupaciones y la modularidad. Además, es importante probar y depurar los flujos de trabajo antes de desplegarlos en producción.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Airflow es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y cambios. La comunidad de Airflow es muy activa, y hay muchos recursos disponibles para aquellos que desean aprender más sobre esta herramienta.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo. La configuración de DAGs, operadores y sensores es fundamental para crear flujos de trabajo complejos. La versión 3.1.8 de Airflow ha introducido cambios significativos, y la versión 2.11 ha introducido soporte para proveedores de servicios en la nube. Es importante seguir las mejores prácticas y estar al tanto de las últimas novedades y cambios en la herramienta.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/issues/62537" target="_blank">Status of testing Providers that were prepared on February 26, 2026 #62537</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow/stable/release_notes.html" target="_blank">Release Notes — Airflow 3.1.8 Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-http/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-http</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@patcha-ranat/setting-up-airflow-locally-on-minikube-with-helm-a3f0cbfb6617" target="_blank">Setting up Airflow Locally on Minikube with Helm</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-11_0851.html">&larr; 2026-03-11 0851</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

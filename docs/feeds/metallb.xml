@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-14T08:43:07.829341+00:00</updated>
+  <updated>2026-03-15T08:44:34.597400+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -101,5 +101,34 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-11_0851.html"/>
     <summary>MetalLB es un sistema de balanceo de carga para Kubernetes que permite la asignación de direcciones IP a servicios. En este artículo, se presentan las mejores prácticas para configurar y utilizar MetalLB en un entorno de producción.</summary>
     <published>2026-03-11T08:51:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-15_0843.html</id>
+    <title>MetalLB: Balanceo de carga en Kubernetes</title>
+    <updated>2026-03-15T08:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta de balanceo de carga para Kubernetes que permite a los administradores de clusters configurar servicios de carga equilibrada de manera sencilla y eficiente. En este artículo, se centrará en la configuración de MetalLB en modo L2 y BGP, así como la gestión de pools de direcciones IP y la resolución de problemas comunes.&lt;/p&gt;
+&lt;p&gt;En primer lugar, es importante mencionar que MetalLB se puede configurar en dos modos principales: L2 y BGP. El modo L2 utiliza el protocolo ARP para asignar direcciones IP a los servicios, mientras que el modo BGP utiliza el protocolo BGP para anunciar las rutas a los servicios. Para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/namespace.yaml&lt;/code&gt;. Luego, se puede crear un pool de direcciones IP utilizando el comando: &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/examples.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de pools de direcciones IP, MetalLB permite a los administradores crear y gestionar pools de direcciones IP de manera sencilla. Por ejemplo, se puede crear un pool de direcciones IP con el siguiente comando: `kubectl apply -f - &lt;&lt;EOF&lt;/p&gt;
+&lt;p&gt;apiVersion: metallb.io/v1beta1&lt;/p&gt;
+&lt;p&gt;kind: IPAddressPool&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: pool-local&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;autoAssign: false&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 192.168.3.247-192.168.3.250&lt;/p&gt;
+&lt;p&gt;EOF`. Esto creará un pool de direcciones IP que se puede utilizar para asignar direcciones IP a los servicios.&lt;/p&gt;
+&lt;p&gt;Para resolver problemas comunes con MetalLB, es importante verificar la configuración del cluster y los servicios. Por ejemplo, se puede verificar la configuración del pool de direcciones IP con el comando: &lt;code&gt;kubectl get ippool -o yaml&lt;/code&gt;. También se puede verificar el estado de los servicios con el comando: &lt;code&gt;kubectl get svc -o yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con Kubernetes, MetalLB se integra de manera nativa con el sistema de orquestación de contenedores. Por ejemplo, se puede crear un servicio de carga equilibrada con el comando: &lt;code&gt;kubectl expose deployment/my-deployment --type=LoadBalancer --port=80&lt;/code&gt;. Esto creará un servicio de carga equilibrada que se puede acceder desde fuera del cluster.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que MetalLB es una herramienta de balanceo de carga muy flexible y configurable. Por ejemplo, se puede configurar para utilizar diferentes protocolos de enrutamiento, como BGP o OSPF. También se puede configurar para utilizar diferentes algoritmos de asignación de direcciones IP, como el algoritmo de asignación de direcciones IP de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/2963"&gt;Reg Route flap issue in FRR&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/2971"&gt;serviceAllocation does not work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/blob/main/charts/metallb/values.yaml"&gt;metallb/charts/metallb/values.yaml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/solutions/7036962"&gt;Expose Openshift ingressControllers with LoadBalancerService&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-15_0843.html"/>
+    <summary>MetalLB es una implementación de balanceo de carga para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, se explora su funcionamiento y configuración en modo L2 y BGP, así como la gestión de pools de direcciones IP y la resolución de problemas comunes.</summary>
+    <published>2026-03-15T08:43:00+00:00</published>
   </entry>
 </feed>
