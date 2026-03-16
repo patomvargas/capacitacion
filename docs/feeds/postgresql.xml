@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-15T08:44:34.598044+00:00</updated>
+  <updated>2026-03-16T09:04:51.120844+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -27,5 +27,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-12_0852.html"/>
     <summary>En este artículo, se presentan técnicas y mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, replicación y copias de seguridad. Se proporcionan ejemplos concretos y comandos para mejorar la eficiencia de la base de datos.</summary>
     <published>2026-03-12T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-16_0904.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-03-16T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas más efectivas de mejorar el rendimiento es mediante la creación de índices. Los índices permiten a la base de datos acceder rápidamente a los datos sin tener que escanear toda la tabla. Por ejemplo, se puede crear un índice en una columna utilizando el comando &lt;code&gt;CREATE INDEX idx_nombre ON tabla (columna);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra característica importante de PostgreSQL que permite mantener una copia exacta de la base de datos en un servidor separado. Esto se puede lograr utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de seguridad de la base de datos y luego configurar la replicación utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt;. Por ejemplo, se puede agregar la siguiente línea al archivo &lt;code&gt;postgresql.conf&lt;/code&gt; para habilitar la replicación: &lt;code&gt;wal_level = hot_standby&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La extensión &lt;code&gt;pg_stat&lt;/code&gt; es una herramienta útil para monitorear el rendimiento de la base de datos. Proporciona información detallada sobre el uso de la CPU, la memoria y el disco, lo que puede ayudar a identificar cuellos de botella y optimizar el rendimiento. Por ejemplo, se puede utilizar el comando &lt;code&gt;pg_stat_activity&lt;/code&gt; para ver las consultas que actualmente se están ejecutando en la base de datos.&lt;/p&gt;
+&lt;p&gt;Además, es importante realizar copias de seguridad regulares de la base de datos para evitar la pérdida de datos en caso de un fallo. Se puede utilizar el comando &lt;code&gt;pg_dump&lt;/code&gt; para crear una copia de seguridad de la base de datos. Por ejemplo, se puede utilizar el siguiente comando para crear una copia de seguridad de la base de datos &lt;code&gt;mi_base_de_datos&lt;/code&gt;: &lt;code&gt;pg_dump -U mi_usuario mi_base_de_datos &gt; mi_base_de_datos.sql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La optimización de consultas es otro aspecto importante para mejorar el rendimiento de la base de datos. Se pueden utilizar herramientas como &lt;code&gt;EXPLAIN&lt;/code&gt; y &lt;code&gt;ANALYZE&lt;/code&gt; para analizar el plan de ejecución de una consulta y identificar oportunidades de optimización. Por ejemplo, se puede utilizar el comando &lt;code&gt;EXPLAIN (ANALYZE) SELECT * FROM mi_tabla;&lt;/code&gt; para ver el plan de ejecución de la consulta y identificar posibles cuellos de botella.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas y mejores prácticas, incluyendo la creación de índices, la replicación, el monitoreo del rendimiento y la optimización de consultas. Al seguir estos consejos, se puede mejorar significativamente el rendimiento de la base de datos y garantizar la eficiencia y la escalabilidad de la aplicación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/release/"&gt;Release Notes - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/"&gt;PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/philip_mcclarence_2ef9475/postgresql-query-optimization-10-techniques-that-actually-work-3i8b"&gt;PostgreSQL Query Optimization: 10 Techniques That Actually Work&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-16_0904.html"/>
+    <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas y mejores prácticas. Descubre cómo mejorar la velocidad de consulta y la eficiencia de la base de datos.</summary>
+    <published>2026-03-16T09:04:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-15T08:44:34.599037+00:00</updated>
+  <updated>2026-03-16T09:04:51.122834+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -25,5 +25,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-12_0852.html"/>
     <summary>Ansible ha lanzado nuevas versiones con mejoras significativas, incluyendo ansible-core v2.20.3 y Ansible community package 13.4.0. Estas versiones ofrecen nuevas funcionalidades y mejoras en la seguridad y el rendimiento.</summary>
     <published>2026-03-12T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-16_0904.html</id>
+    <title>Ansible 13.4.0: Nuevas Características y Mejoras</title>
+    <updated>2026-03-16T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible 13.4.0 es la última versión del paquete de comunidad de Ansible, que incluye una versión actualizada de &lt;code&gt;ansible-core&lt;/code&gt; (2.20.3) y una selección de colecciones de módulos, plugins y roles. Esta versión ofrece mejoras en la seguridad y la estabilidad del sistema, lo que la hace ideal para entornos de producción.&lt;/p&gt;
+&lt;p&gt;Para instalar Ansible 13.4.0, se puede utilizar el comando &lt;code&gt;pip install ansible==13.4.0&lt;/code&gt;. Una vez instalado, se puede verificar la versión con el comando &lt;code&gt;ansible --version&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejoras, se han incluido cambios en la forma en que se manejan las plantillas, lo que puede requerir actualizaciones en los playbooks y roles existentes. Para más información, se puede consultar la documentación oficial de Ansible en https://docs.ansible.com/.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la inclusión de &lt;code&gt;tox-ansible&lt;/code&gt; v26.2.2, que proporciona funcionalidad adicional para probar módulos y plugins de Ansible bajo diferentes versiones de Python y &lt;code&gt;ansible-core&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para utilizar &lt;code&gt;tox-ansible&lt;/code&gt;, se puede instalar con el comando &lt;code&gt;pip install tox-ansible&lt;/code&gt; y luego ejecutar &lt;code&gt;tox&lt;/code&gt; en el directorio del proyecto para probar los módulos y plugins.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible 13.4.0 es una versión sólida y segura que ofrece mejoras en la estabilidad y la seguridad del sistema, lo que la hace ideal para entornos de producción.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, para aprovechar al máximo las características de Ansible, se deben seguir las mejores prácticas de seguridad y configuración, como el uso de &lt;code&gt;ansible-vault&lt;/code&gt; para cifrar datos sensibles y el uso de &lt;code&gt;AWX/Tower&lt;/code&gt; para la automatización y el monitoreo de los procesos de Ansible.&lt;/p&gt;
+&lt;p&gt;Finalmente, se debe destacar que la documentación oficial de Ansible es una excelente fuente de información para aprender sobre las características y las mejores prácticas de Ansible.&lt;/p&gt;
+&lt;p&gt;Se puede consultar la documentación oficial en https://docs.ansible.com/ para obtener más información sobre cómo utilizar Ansible de manera efectiva y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-4-0/45399"&gt;Release announcement: Ansible community package 13.4.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-3/45390"&gt;New Release: ansible-core v2.20.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-16_0904.html"/>
+    <summary>Ansible 13.4.0 ofrece nuevas características y mejoras en su paquete de comunidad, incluyendo dependencias actualizadas y colecciones de módulos y plugins. Esta versión también incluye mejoras en la seguridad y la estabilidad del sistema.</summary>
+    <published>2026-03-16T09:04:00+00:00</published>
   </entry>
 </feed>

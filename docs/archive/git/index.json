@@ -1,4 +1,24 @@
 {
+  "2026-03-16_0904": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "Aprende a utilizar Git de manera efectiva con mejores prácticas y herramientas avanzadas. Descubre cómo optimizar tus flujos de trabajo y colaboraciones con Git.",
+    "content": "\nEl sistema de control de versiones Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. En este artículo, exploraremos algunas de las mejores prácticas y herramientas avanzadas para utilizar Git de manera efectiva. \n\nUna de las características más poderosas de Git es su capacidad para crear ramas y fusionarlas. Esto permite a los desarrolladores trabajar en características o correcciones de errores de manera independiente sin afectar el código principal. Para crear una rama en Git, se puede utilizar el comando `git branch <nombre_rama>`. Luego, se puede cambiar a la rama utilizando `git checkout <nombre_rama>`.\n\nOtra herramienta avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un repositorio Git. Por ejemplo, se puede utilizar un hook para verificar que los commits cumplan con ciertos estándares de calidad antes de permitir que se suban al repositorio remoto. GitHub Desktop 3.5.5 ha agregado soporte para Git hooks, lo que facilita la configuración y uso de estos scripts.\n\nAdemás, Git proporciona herramientas como `git rebase` y `git bisect` para ayudar a los desarrolladores a manejar y depurar su código de manera más eficiente. `git rebase` permite reorganizar los commits para que el historial del repositorio sea más lineal y fácil de seguir, mientras que `git bisect` ayuda a identificar el commit que introdujo un error o problema en el código.\n\nPara aquellos que buscan mejorar su flujo de trabajo con Git, existen herramientas como GitHub Actions y GitOps que pueden ayudar a automatizar y optimizar las tareas de desarrollo y despliegue. GitHub Actions, por ejemplo, permite crear flujos de trabajo personalizados para automatizar tareas como la compilación y el despliegue de código.\n\nEn resumen, Git es una herramienta poderosa y versátil que puede ser utilizada de manera efectiva con la ayuda de mejores prácticas y herramientas avanzadas. Al utilizar ramas, hooks, `git rebase`, `git bisect` y otras herramientas, los desarrolladores pueden optimizar sus flujos de trabajo y colaboraciones con Git.\n\n",
+    "sources": [
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "GitHub Desktop 3.5.5 adds Git hooks support",
+        "url": "https://github.blog/changelog/2026-02-18-github-desktop-3-5-5-adds-git-hooks-support/"
+      },
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/month/02-2026/"
+      }
+    ]
+  },
   "2026-03-12_0852": {
     "slug": "git",
     "title": "Mejorando el flujo de trabajo con Git",

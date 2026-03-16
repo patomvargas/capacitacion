@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Nuevas Funcionalidades y Mejoras - Ansible</title>
+    <title>Ansible 13.4.0: Nuevas Características y Mejoras - Ansible</title>
     <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
@@ -57,48 +57,62 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Ansible: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-03-12 0852 · Ansible</div>
+    <h1>Ansible 13.4.0: Nuevas Características y Mejoras</h1>
+    <div class="meta">2026-03-16 0904 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores crear playbooks para automatizar tareas complejas. Recientemente, se han lanzado nuevas versiones de Ansible, incluyendo `ansible-core v2.20.3` y `Ansible community package 13.4.0`. Estas versiones ofrecen mejoras significativas en la seguridad y el rendimiento, así como nuevas funcionalidades para simplificar la automatización de infraestructuras y aplicaciones.</p>
+            <p>Ansible 13.4.0 es la última versión del paquete de comunidad de Ansible, que incluye una versión actualizada de `ansible-core` (2.20.3) y una selección de colecciones de módulos, plugins y roles. Esta versión ofrece mejoras en la seguridad y la estabilidad del sistema, lo que la hace ideal para entornos de producción.</p>
             
         
             
         
             
-            <p>Una de las novedades más destacadas de `ansible-core v2.20.3` es la mejora en la gestión de vault, que permite cifrar y descifrar datos de forma segura. Para utilizar vault, se puede ejecutar el comando `ansible-vault create` para crear un archivo de vault, y luego utilizar el comando `ansible-vault encrypt` para cifrar los datos. Por ejemplo, para cifrar un archivo de configuración, se puede ejecutar el comando `ansible-vault encrypt config.yml`.</p>
+            <p>Para instalar Ansible 13.4.0, se puede utilizar el comando `pip install ansible==13.4.0`. Una vez instalado, se puede verificar la versión con el comando `ansible --version`.</p>
             
         
             
         
             
-            <p>Otra novedad importante es la mejora en la gestión de roles, que permite a los administradores de sistemas crear y gestionar roles de forma más eficiente. Para crear un rol, se puede ejecutar el comando `ansible-galaxy init` para crear un directorio de rol, y luego utilizar el comando `ansible-galaxy install` para instalar el rol. Por ejemplo, para instalar el rol de `apache`, se puede ejecutar el comando `ansible-galaxy install geerlingguy.apache`.</p>
+            <p>En cuanto a las mejoras, se han incluido cambios en la forma en que se manejan las plantillas, lo que puede requerir actualizaciones en los playbooks y roles existentes. Para más información, se puede consultar la documentación oficial de Ansible en https://docs.ansible.com/.</p>
             
         
             
         
             
-            <p>Además, `Ansible community package 13.4.0` ofrece una curada selección de colecciones de Ansible que proporcionan una amplia variedad de módulos, plugins y roles. Para instalar este paquete, se puede ejecutar el comando `pip install ansible==13.4.0`. Es importante tener en cuenta que esta versión depende de `ansible-core v2.20.3`, por lo que es necesario instalar esta versión antes de instalar el paquete de la comunidad.</p>
+            <p>Otra característica importante es la inclusión de `tox-ansible` v26.2.2, que proporciona funcionalidad adicional para probar módulos y plugins de Ansible bajo diferentes versiones de Python y `ansible-core`.</p>
             
         
             
         
             
-            <p>En resumen, las nuevas versiones de Ansible ofrecen mejoras significativas en la seguridad y el rendimiento, así como nuevas funcionalidades para simplificar la automatización de infraestructuras y aplicaciones. Los administradores de sistemas y desarrolladores pueden aprovechar estas mejoras para crear playbooks más eficientes y seguros.</p>
+            <p>Para utilizar `tox-ansible`, se puede instalar con el comando `pip install tox-ansible` y luego ejecutar `tox` en el directorio del proyecto para probar los módulos y plugins.</p>
             
         
             
         
             
-            <p>Para más información sobre las novedades y mejoras de Ansible, se puede consultar la documentación oficial de Ansible y las fuentes citadas a continuación.</p>
+            <p>En resumen, Ansible 13.4.0 es una versión sólida y segura que ofrece mejoras en la estabilidad y la seguridad del sistema, lo que la hace ideal para entornos de producción.</p>
             
         
             
         
+            
+            <p>Es importante mencionar que, para aprovechar al máximo las características de Ansible, se deben seguir las mejores prácticas de seguridad y configuración, como el uso de `ansible-vault` para cifrar datos sensibles y el uso de `AWX/Tower` para la automatización y el monitoreo de los procesos de Ansible.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, se debe destacar que la documentación oficial de Ansible es una excelente fuente de información para aprender sobre las características y las mejores prácticas de Ansible.</p>
+            
+        
+            
+        
+            
+            <p>Se puede consultar la documentación oficial en https://docs.ansible.com/ para obtener más información sobre cómo utilizar Ansible de manera efectiva y segura.</p>
             
         
     </div>
@@ -109,12 +123,12 @@
         <ul>
             
             <li>
-                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-3/45390" target="_blank">New Release: ansible-core v2.20.3</a>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-4-0/45399" target="_blank">Release announcement: Ansible community package 13.4.0</a>
                 
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-4-0/45399" target="_blank">Release announcement: Ansible community package 13.4.0</a>
+                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-3/45390" target="_blank">New Release: ansible-core v2.20.3</a>
                 
             </li>
             
@@ -130,10 +144,10 @@
     <div class="nav">
         <div>
             
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-12_0852.html">&larr; 2026-03-12 0852</a>
+            
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-16_0904.html">2026-03-16 0904 &rarr;</a>
             
         </div>
     </div>

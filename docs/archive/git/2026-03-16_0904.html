@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejorando el flujo de trabajo con Git - Git</title>
+    <title>Mejores prácticas con Git - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejorando el flujo de trabajo con Git</h1>
-    <div class="meta">2026-03-12 0852 · Git</div>
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-03-16 0904 · Git</div>
 
     <div class="content">
         
@@ -66,37 +66,39 @@
             
         
             
-            <p>El sistema de control de versiones Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, su uso efectivo requiere una comprensión profunda de sus características y funcionalidades. En este artículo, exploraremos algunas de las mejores prácticas y herramientas para mejorar tu flujo de trabajo con Git.</p>
+            <p>El sistema de control de versiones Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. En este artículo, exploraremos algunas de las mejores prácticas y herramientas avanzadas para utilizar Git de manera efectiva.</p>
             
         
             
         
             
-            <p>Una de las características más poderosas de Git es su capacidad para manejar ramas y fusionar cambios. Para crear una nueva rama, puedes utilizar el comando `git branch <nombre_de_la_rama>`. Luego, puedes cambiar a esa rama con `git checkout <nombre_de_la_rama>`. Para fusionar cambios de una rama a otra, puedes utilizar `git merge <nombre_de_la_rama>`. Es importante mencionar que Git también ofrece la opción de utilizar `git rebase` para reorganizar los commits y mantener un historial de cambios limpio.</p>
+            <p>Una de las características más poderosas de Git es su capacidad para crear ramas y fusionarlas. Esto permite a los desarrolladores trabajar en características o correcciones de errores de manera independiente sin afectar el código principal. Para crear una rama en Git, se puede utilizar el comando `git branch <nombre_rama>`. Luego, se puede cambiar a la rama utilizando `git checkout <nombre_rama>`.</p>
             
         
             
         
             
-            <p>Otra herramienta útil es Git Hooks, que permite ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un commit. Por ejemplo, puedes utilizar un hook de pre-commit para verificar que el código se ajuste a ciertos estándares de calidad. Para habilitar Git Hooks, puedes utilizar `git config core.hooksPath <ruta_al_directorio_de_hooks>`. Además, GitHub Desktop 3.5.5 ahora ofrece soporte para Git Hooks, lo que facilita su uso en entornos de desarrollo.</p>
+            <p>Otra herramienta avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un repositorio Git. Por ejemplo, se puede utilizar un hook para verificar que los commits cumplan con ciertos estándares de calidad antes de permitir que se suban al repositorio remoto. GitHub Desktop 3.5.5 ha agregado soporte para Git hooks, lo que facilita la configuración y uso de estos scripts.</p>
             
         
             
         
             
-            <p>Para mejorar la colaboración en equipo, es importante utilizar herramientas como GitHub o GitLab, que ofrecen funcionalidades como pull requests y code reviews. Estas herramientas permiten a los miembros del equipo revisar y discutir los cambios antes de fusionarlos en la rama principal. También es importante mencionar que Git ofrece la opción de utilizar `git worktree` para trabajar en múltiples ramas simultáneamente, lo que puede ser útil en proyectos complejos.</p>
+            <p>Además, Git proporciona herramientas como `git rebase` y `git bisect` para ayudar a los desarrolladores a manejar y depurar su código de manera más eficiente. `git rebase` permite reorganizar los commits para que el historial del repositorio sea más lineal y fácil de seguir, mientras que `git bisect` ayuda a identificar el commit que introdujo un error o problema en el código.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que requiere una comprensión profunda de sus características y funcionalidades. Al utilizar las mejores prácticas y herramientas, como Git Hooks y GitHub, puedes mejorar tu flujo de trabajo y colaboración en equipo.</p>
+            <p>Para aquellos que buscan mejorar su flujo de trabajo con Git, existen herramientas como GitHub Actions y GitOps que pueden ayudar a automatizar y optimizar las tareas de desarrollo y despliegue. GitHub Actions, por ejemplo, permite crear flujos de trabajo personalizados para automatizar tareas como la compilación y el despliegue de código.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que existen muchas fuentes de información y recursos disponibles para aprender y mejorar tus habilidades con Git. Algunas de estas fuentes incluyen la documentación oficial de Git, tutoriales en línea y comunidades de desarrolladores en GitHub y otros sitios web.</p>
+            <p>En resumen, Git es una herramienta poderosa y versátil que puede ser utilizada de manera efectiva con la ayuda de mejores prácticas y herramientas avanzadas. Al utilizar ramas, hooks, `git rebase`, `git bisect` y otras herramientas, los desarrolladores pueden optimizar sus flujos de trabajo y colaboraciones con Git.</p>
+            
+        
             
         
             
@@ -114,17 +116,12 @@
             </li>
             
             <li>
-                <a href="https://github.blog/changelog/month/02-2026/" target="_blank">GitHub Changelog</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://github.blog/changelog/2026-02-18-github-desktop-3-5-5-adds-git-hooks-support/" target="_blank">GitHub Desktop 3.5.5 adds Git hooks support</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/write-a-catalyst/git-complete-practical-guide-simple-real-examples-39021cefed8c" target="_blank">Git Complete Practical Guide</a>
+                <a href="https://github.blog/changelog/month/02-2026/" target="_blank">GitHub Changelog</a>
                 
             </li>
             
@@ -135,10 +132,10 @@
     <div class="nav">
         <div>
             
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-12_0852.html">&larr; 2026-03-12 0852</a>
+            
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-16_0904.html">2026-03-16 0904 &rarr;</a>
             
         </div>
     </div>

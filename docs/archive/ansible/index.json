@@ -1,4 +1,24 @@
 {
+  "2026-03-16_0904": {
+    "slug": "ansible",
+    "title": "Ansible 13.4.0: Nuevas Características y Mejoras",
+    "summary": "Ansible 13.4.0 ofrece nuevas características y mejoras en su paquete de comunidad, incluyendo dependencias actualizadas y colecciones de módulos y plugins. Esta versión también incluye mejoras en la seguridad y la estabilidad del sistema.",
+    "content": "Ansible 13.4.0 es la última versión del paquete de comunidad de Ansible, que incluye una versión actualizada de `ansible-core` (2.20.3) y una selección de colecciones de módulos, plugins y roles. Esta versión ofrece mejoras en la seguridad y la estabilidad del sistema, lo que la hace ideal para entornos de producción.\n\nPara instalar Ansible 13.4.0, se puede utilizar el comando `pip install ansible==13.4.0`. Una vez instalado, se puede verificar la versión con el comando `ansible --version`. \n\nEn cuanto a las mejoras, se han incluido cambios en la forma en que se manejan las plantillas, lo que puede requerir actualizaciones en los playbooks y roles existentes. Para más información, se puede consultar la documentación oficial de Ansible en https://docs.ansible.com/.\n\nOtra característica importante es la inclusión de `tox-ansible` v26.2.2, que proporciona funcionalidad adicional para probar módulos y plugins de Ansible bajo diferentes versiones de Python y `ansible-core`. \n\nPara utilizar `tox-ansible`, se puede instalar con el comando `pip install tox-ansible` y luego ejecutar `tox` en el directorio del proyecto para probar los módulos y plugins.\n\nEn resumen, Ansible 13.4.0 es una versión sólida y segura que ofrece mejoras en la estabilidad y la seguridad del sistema, lo que la hace ideal para entornos de producción. \n\nEs importante mencionar que, para aprovechar al máximo las características de Ansible, se deben seguir las mejores prácticas de seguridad y configuración, como el uso de `ansible-vault` para cifrar datos sensibles y el uso de `AWX/Tower` para la automatización y el monitoreo de los procesos de Ansible.\n\nFinalmente, se debe destacar que la documentación oficial de Ansible es una excelente fuente de información para aprender sobre las características y las mejores prácticas de Ansible. \n\nSe puede consultar la documentación oficial en https://docs.ansible.com/ para obtener más información sobre cómo utilizar Ansible de manera efectiva y segura.",
+    "sources": [
+      {
+        "title": "Release announcement: Ansible community package 13.4.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-13-4-0/45399"
+      },
+      {
+        "title": "New Release: ansible-core v2.20.3",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-20-3/45390"
+      },
+      {
+        "title": "Roadmaps — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"
+      }
+    ]
+  },
   "2026-03-12_0852": {
     "slug": "ansible",
     "title": "Ansible: Nuevas Funcionalidades y Mejoras",
