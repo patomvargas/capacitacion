@@ -1,4 +1,24 @@
 {
+  "2026-03-17_0859": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es una plataforma de gestión de identidad y acceso que proporciona autenticación, autorización y gestión de identidad para sistemas Linux. En este artículo, se presentan las mejores prácticas para implementar y configurar FreeIPA en un entorno de red.",
+    "content": "\nFreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red. Permite la autenticación, autorización y gestión de identidad para sistemas Linux, lo que facilita la administración de usuarios y grupos en una red. Para implementar FreeIPA, es necesario instalar el paquete `ipa-server` y configurar el servidor de identidad.\n\nUna vez instalado, es posible configurar FreeIPA utilizando el comando `ipa setup`. Este comando solicita información básica como el nombre del dominio, el nombre del servidor y la contraseña del administrador. Luego, es posible agregar usuarios y grupos utilizando los comandos `ipa user-add` y `ipa group-add`, respectivamente.\n\nPara configurar la autenticación Kerberos, es necesario generar un ticket de autenticación utilizando el comando `kinit`. Luego, es posible acceder a los recursos de la red utilizando el comando `klist`. FreeIPA también proporciona la capacidad de configurar reglas de acceso basadas en el host (HBAC) y reglas de acceso basadas en el usuario (sudo).\n\nEs importante mencionar que FreeIPA requiere una configuración adecuada para garantizar la seguridad y la integridad de la red. Es recomendable utilizar una conexión segura (HTTPS) para acceder al servidor de identidad y configurar los parámetros de seguridad adecuados. Además, es posible integrar FreeIPA con otros sistemas de gestión de identidad y acceso, como Active Directory.\n\nEn cuanto a las novedades y mejoras en FreeIPA, es importante mencionar que la versión más reciente incluye mejoras en la seguridad y la escalabilidad. Es recomendable consultar la documentación oficial de FreeIPA para obtener más información sobre las últimas características y mejoras.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red. Su configuración y implementación requieren una comprensión profunda de los conceptos de autenticación, autorización y gestión de identidad. Es importante seguir las mejores prácticas para garantizar la seguridad y la integridad de la red.\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:3966 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3966"
+      },
+      {
+        "title": "RHSA-2026:3083 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:3083"
+      },
+      {
+        "title": "Red Hat Enterprise Linux 10 10.1 Release Notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/10.1_release_notes/"
+      }
+    ]
+  },
   "2026-03-13_0850": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",
