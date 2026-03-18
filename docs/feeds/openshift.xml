@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-17T08:59:52.835122+00:00</updated>
+  <updated>2026-03-18T08:58:02.985944+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -75,5 +75,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-14_0841.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo OpenShift.</summary>
     <published>2026-03-14T08:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-18_0857.html</id>
+    <title>OpenShift: Mejoras y Best Practices</title>
+    <updated>2026-03-18T08:57:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Recientemente, se han publicado varias actualizaciones de seguridad, como RHSA-2026:2671 y RHSA-2026:4511, que aconsejan a los usuarios de OpenShift Container Platform 4.17 actualizar a los paquetes y imágenes actualizados disponibles en el canal de lanzamiento correspondiente. Para verificar las actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc&lt;/code&gt; o la consola web de OpenShift.&lt;/p&gt;
+&lt;p&gt;La plataforma OpenShift también ofrece herramientas para la creación y gestión de builds, como ImageStreams, BuildConfigs y Builds. Por ejemplo, se puede crear un build utilizando el comando &lt;code&gt;oc start-build &lt;nombre_del_build&gt;&lt;/code&gt;. Además, se pueden utilizar operadores como el Red Hat OpenShift Pipelines operator para integrar Tekton en OpenShift y crear pipelines de CI/CD.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift ofrece características como OAuth para la autenticación y autorización de usuarios. Se puede configurar OAuth utilizando el comando &lt;code&gt;oc create secret oauth &lt;nombre_del_secreto&gt;&lt;/code&gt;. También se pueden utilizar rutas (routes) para exponer aplicaciones a Internet, lo que se puede hacer utilizando el comando &lt;code&gt;oc expose svc &lt;nombre_del_servicio&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para migrar aplicaciones a OpenShift, se pueden utilizar herramientas como el comando &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar aplicaciones desde plataformas como Docker. También se pueden utilizar operadores como el OperatorHub para instalar y gestionar operadores en OpenShift.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma poderosa que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Al seguir las best practices y utilizar las herramientas y características adecuadas, se pueden crear aplicaciones escalables y seguras en la nube.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/channel/red-hat-openshift"&gt;Red Hat OpenShift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:2671"&gt;RHSA-2026:2671 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:4511"&gt;RHSA-2026:4511 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30"&gt;Understanding Builds in OpenShift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@devopsdiary/tekton-on-openshift-part-1-understanding-tasks-and-taskruns-deab2ca71e82"&gt;Tekton on OpenShift — Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-18_0857.html"/>
+    <summary>OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
+    <published>2026-03-18T08:57:00+00:00</published>
   </entry>
 </feed>

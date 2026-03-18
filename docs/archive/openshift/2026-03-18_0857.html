@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejoras y Best Practices</h1>
+    <div class="meta">2026-03-18 0857 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+            <p>OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Recientemente, se han publicado varias actualizaciones de seguridad, como RHSA-2026:2671 y RHSA-2026:4511, que aconsejan a los usuarios de OpenShift Container Platform 4.17 actualizar a los paquetes y imágenes actualizados disponibles en el canal de lanzamiento correspondiente. Para verificar las actualizaciones disponibles, se puede utilizar el comando `oc` o la consola web de OpenShift.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La plataforma OpenShift también ofrece herramientas para la creación y gestión de builds, como ImageStreams, BuildConfigs y Builds. Por ejemplo, se puede crear un build utilizando el comando `oc start-build <nombre_del_build>`. Además, se pueden utilizar operadores como el Red Hat OpenShift Pipelines operator para integrar Tekton en OpenShift y crear pipelines de CI/CD.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece características como OAuth para la autenticación y autorización de usuarios. Se puede configurar OAuth utilizando el comando `oc create secret oauth <nombre_del_secreto>`. También se pueden utilizar rutas (routes) para exponer aplicaciones a Internet, lo que se puede hacer utilizando el comando `oc expose svc <nombre_del_servicio>`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para migrar aplicaciones a OpenShift, se pueden utilizar herramientas como el comando `oc adm migrate` para migrar aplicaciones desde plataformas como Docker. También se pueden utilizar operadores como el OperatorHub para instalar y gestionar operadores en OpenShift.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma poderosa que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Al seguir las best practices y utilizar las herramientas y características adecuadas, se pueden crear aplicaciones escalables y seguras en la nube.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.redhat.com/en/blog/channel/red-hat-openshift" target="_blank">Red Hat OpenShift</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:2671" target="_blank">RHSA-2026:2671 - Security Advisory</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:4511" target="_blank">RHSA-2026:4511 - Security Advisory</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30" target="_blank">Understanding Builds in OpenShift</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/tekton-on-openshift-part-1-understanding-tasks-and-taskruns-deab2ca71e82" target="_blank">Tekton on OpenShift — Part 1</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-14_0841.html">&larr; 2026-03-14 0841</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

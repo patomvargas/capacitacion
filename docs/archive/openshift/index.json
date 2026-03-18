@@ -1,4 +1,32 @@
 {
+  "2026-03-18_0857": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Best Practices",
+    "summary": "OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.",
+    "content": "OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Recientemente, se han publicado varias actualizaciones de seguridad, como RHSA-2026:2671 y RHSA-2026:4511, que aconsejan a los usuarios de OpenShift Container Platform 4.17 actualizar a los paquetes y imágenes actualizados disponibles en el canal de lanzamiento correspondiente. Para verificar las actualizaciones disponibles, se puede utilizar el comando `oc` o la consola web de OpenShift.\n\n \nLa plataforma OpenShift también ofrece herramientas para la creación y gestión de builds, como ImageStreams, BuildConfigs y Builds. Por ejemplo, se puede crear un build utilizando el comando `oc start-build <nombre_del_build>`. Además, se pueden utilizar operadores como el Red Hat OpenShift Pipelines operator para integrar Tekton en OpenShift y crear pipelines de CI/CD.\n\n \nEn cuanto a la seguridad, OpenShift ofrece características como OAuth para la autenticación y autorización de usuarios. Se puede configurar OAuth utilizando el comando `oc create secret oauth <nombre_del_secreto>`. También se pueden utilizar rutas (routes) para exponer aplicaciones a Internet, lo que se puede hacer utilizando el comando `oc expose svc <nombre_del_servicio>`.\n\n \nPara migrar aplicaciones a OpenShift, se pueden utilizar herramientas como el comando `oc adm migrate` para migrar aplicaciones desde plataformas como Docker. También se pueden utilizar operadores como el OperatorHub para instalar y gestionar operadores en OpenShift.\n\n \nEn resumen, OpenShift es una plataforma poderosa que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. Al seguir las best practices y utilizar las herramientas y características adecuadas, se pueden crear aplicaciones escalables y seguras en la nube.",
+    "sources": [
+      {
+        "title": "Red Hat OpenShift",
+        "url": "https://www.redhat.com/en/blog/channel/red-hat-openshift"
+      },
+      {
+        "title": "RHSA-2026:2671 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:2671"
+      },
+      {
+        "title": "RHSA-2026:4511 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4511"
+      },
+      {
+        "title": "Understanding Builds in OpenShift",
+        "url": "https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30"
+      },
+      {
+        "title": "Tekton on OpenShift — Part 1",
+        "url": "https://medium.com/@devopsdiary/tekton-on-openshift-part-1-understanding-tasks-and-taskruns-deab2ca71e82"
+      }
+    ]
+  },
   "2026-03-14_0841": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Best Practices",
