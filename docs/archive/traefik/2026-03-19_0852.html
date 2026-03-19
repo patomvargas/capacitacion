@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad y configuración de Traefik - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Seguridad y configuración de Traefik</h1>
+    <div class="meta">2026-03-19 0852 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Traefik es un sistema que permite la configuración de routers, middlewares, providers y la integración con Let's Encrypt para la generación de certificados SSL/TLS. Para configurar Traefik, se puede utilizar un archivo de configuración en formato YAML o TOML, como por ejemplo: `traefik.yml` o `traefik.toml`. En este archivo, se pueden definir los routers, middlewares y providers que se utilizarán en la configuración de Traefik.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad de Traefik, es importante configurar la autenticación y la autorización adecuadamente. Por ejemplo, se puede utilizar la autenticación basada en certificados SSL/TLS con `tls.clientAuth` o la autenticación basada en tokens con `middleware.auth`. También es importante configurar los middlewares para proteger contra ataques de inyección de código, como por ejemplo, el ataque de inyección de comandos en HTTPRoute.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de los routers, se pueden definir diferentes routers para diferentes dominios o rutas. Por ejemplo, se puede definir un router para el dominio `example.com` con `router.example.com` y otro router para el dominio `blog.example.com` con `router.blog.example.com`. También se pueden configurar los middlewares para cada router, como por ejemplo, el middleware de autenticación o el middleware de caché.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que Traefik tiene una gran comunidad de desarrolladores y usuarios, lo que significa que hay muchos recursos disponibles para aprender y configurar el sistema. Por ejemplo, se puede utilizar la documentación oficial de Traefik para aprender sobre la configuración y los comandos disponibles. También se pueden utilizar herramientas como `docker-compose` para configurar y ejecutar Traefik en un entorno de contenedores.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y cambios en Traefik, es importante mencionar que el sistema está en constante evolución y se están agregando nuevas características y mejoras. Por ejemplo, se ha agregado la compatibilidad con HTTP/3 y se han mejorado las opciones de configuración para la autenticación y la autorización. También se han agregado nuevas opciones para la configuración de los middlewares y los routers.</p>
+            
+        
+            
+        
+            
+            <p>Para concluir, Traefik es un sistema muy flexible y configurable que ofrece una gran variedad de opciones para la configuración de routers, middlewares y providers. Es importante configurar el sistema adecuadamente para mejorar la seguridad y el rendimiento, y utilizar las herramientas y recursos disponibles para aprender y configurar el sistema.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-8q2w-wr49-whqj" target="_blank">Kubernetes gateway rule injection via unescaped backticks in HTTPRoute match values</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-gv8r-9rw9-9697" target="_blank">TLS ClientAuth Bypass on HTTP/3</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/12735" target="_blank">Auto-update fails on IPv6-only hosts</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

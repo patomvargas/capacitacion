@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Balanceo de Carga en K8s - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Balanceo de Carga en K8s</h1>
+    <div class="meta">2026-03-19 0852 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+            <p>MetalLB es una herramienta de código abierto que permite a los administradores de sistemas implementar servicios de balanceo de carga en un clúster de Kubernetes. Una de las características más destacadas de MetalLB es su capacidad para funcionar en modo L2, lo que permite a los pods comunicarse directamente con los clientes sin necesidad de un router externo. Para configurar MetalLB en modo L2, se debe crear un objeto de configuración de tipo `MetalLB` con el modo `layer2` especificado, como se muestra en el siguiente ejemplo: `kubectl apply -f 'metalLB-config.yaml'` con contenido `apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: MetalLB</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: metallb</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 192.168.1.100-192.168.1.150</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- peer:</p>
+            
+        
+            
+            <p>ip: 192.168.1.1</p>
+            
+        
+            
+            <p>port: 7946</p>
+            
+        
+            
+            <p>myID: 1</p>
+            
+        
+            
+            <p>mode: layer2`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para implementar MetalLB en modo BGP, se debe configurar un objeto de tipo `BGPAdvertisement` que especifique los anuncios BGP que se deben enviar a los routers vecinos. Por ejemplo: `kubectl apply -f 'bgp-adv.yaml'` con contenido `apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: BGPAdvertisement</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: bgp-adv</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>peer:</p>
+            
+        
+            
+            <p>ip: 192.168.1.1</p>
+            
+        
+            
+            <p>port: 179</p>
+            
+        
+            
+            <p>advertisement:</p>
+            
+        
+            
+            <p>prefix: 192.168.1.100/24</p>
+            
+        
+            
+            <p>nextHop: 192.168.1.100`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de MetalLB es la capacidad de configurar pools de direcciones IP, lo que permite a los administradores de sistemas asignar direcciones IP a los servicios de balanceo de carga de manera más eficiente. Para crear un pool de direcciones IP, se debe crear un objeto de tipo `IPPools` con la lista de direcciones IP que se deben incluir en el pool, como se muestra en el siguiente ejemplo: `kubectl apply -f 'ip-pool.yaml'` con contenido `apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: IPPool</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: ip-pool</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 192.168.1.100-192.168.1.150`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede integrar con el sistema de orquestación de contenedores para proporcionar servicios de balanceo de carga a los pods. Para hacer esto, se debe crear un objeto de tipo `Service` con el tipo `LoadBalancer` especificado, como se muestra en el siguiente ejemplo: `kubectl apply -f 'service.yaml'` con contenido `apiVersion: v1</p>
+            
+        
+            
+            <p>kind: Service</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: my-service</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>selector:</p>
+            
+        
+            
+            <p>app: my-app</p>
+            
+        
+            
+            <p>ports:</p>
+            
+        
+            
+            <p>- name: http</p>
+            
+        
+            
+            <p>port: 80</p>
+            
+        
+            
+            <p>targetPort: 8080</p>
+            
+        
+            
+            <p>type: LoadBalancer`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `kubectl` para verificar el estado de los objetos de configuración y los logs de los componentes de MetalLB. Por ejemplo, se puede utilizar el comando `kubectl get metallb` para verificar el estado del objeto de configuración de MetalLB, o `kubectl logs -f metallb-controller` para verificar los logs del controlador de MetalLB.</p>
+            
+        
+    </div>
+
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-15_0843.html">&larr; 2026-03-15 0843</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

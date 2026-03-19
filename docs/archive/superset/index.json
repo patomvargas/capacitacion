@@ -1,4 +1,32 @@
 {
+  "2026-03-19_0852": {
+    "slug": "superset",
+    "title": "Superset: Mejores prácticas y solución de problemas",
+    "summary": "Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. En este artículo, se presentan algunas mejores prácticas y soluciones a problemas comunes en Superset.",
+    "content": "Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. Para empezar a utilizar Superset, es necesario instalarlo y configurarlo correctamente. Una vez instalado, se puede acceder a la interfaz de usuario y comenzar a crear dashboards y gráficos.\n\nPara crear un dashboard en Superset, se debe seguir una serie de pasos. Primero, se debe crear un nuevo dataset utilizando el comando `superset dataset create`. Luego, se debe crear un nuevo gráfico utilizando el comando `superset chart create`. Finalmente, se puede agregar el gráfico al dashboard utilizando el comando `superset dashboard add_chart`.\n\nUn problema común en Superset es la conexión con bases de datos Oracle. Para solucionar este problema, es necesario instalar el paquete `oracledb` y configurar la conexión con la base de datos utilizando el comando `superset config set ORACLE_DB_HOST`. Otro problema común es la visualización de datos en la tabla de gráficos, para solucionar esto se puede utilizar el comando `superset chart config set prefix` y `superset chart config set suffix`.\n\nAdemás, es importante mencionar que Superset tiene una característica llamada SQL Lab, que permite ejecutar consultas SQL directamente en la interfaz de usuario. Para utilizar SQL Lab, se debe crear un nuevo query utilizando el comando `superset sql lab create`. Luego, se puede ejecutar el query y visualizar los resultados en la interfaz de usuario.\n\nPara mejorar la seguridad de Superset, se puede utilizar el protocolo HTTPS y configurar la autenticación utilizando el comando `superset config set AUTH_TYPE`. También es importante mencionar que Superset tiene una característica llamada Embedded SDK, que permite embeber dashboards en aplicaciones web utilizando el comando `superset embedded sdk create`.\n\nEn resumen, Superset es una herramienta poderosa para la visualización de datos, pero requiere una configuración y una utilización adecuadas para obtener los mejores resultados. Siguiendo las mejores prácticas y soluciones a problemas comunes presentadas en este artículo, se puede aprovechar al máximo la funcionalidad de Superset.\n\n",
+    "sources": [
+      {
+        "title": "oracledb connection error #37793",
+        "url": "https://github.com/apache/superset/issues/37793"
+      },
+      {
+        "title": "Prefix and Suffix are not added in the Table Chart #37854",
+        "url": "https://github.com/apache/superset/issues/37854"
+      },
+      {
+        "title": "Empty state in SQL Lab does not open a blank Tab, so left panel doesn't work. #38482",
+        "url": "https://github.com/apache/superset/issues/38482"
+      },
+      {
+        "title": "How I Built a Production-Grade Real-Time Retail Sales Data Pipeline",
+        "url": "https://medium.com/@shrikantlambe/how-i-built-a-production-grade-real-time-retail-sales-data-pipeline-4601430087db"
+      },
+      {
+        "title": "Superset Embedded SDK",
+        "url": "https://github.com/apache/superset/tree/master/superset-embedded-sdk"
+      }
+    ]
+  },
   "2026-03-15_0843": {
     "slug": "superset",
     "title": "Superset: Mejoras y Novedades",

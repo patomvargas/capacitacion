@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-18T08:58:02.989709+00:00</updated>
+  <updated>2026-03-19T08:52:47.172438+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -83,5 +83,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-15_0843.html"/>
     <summary>Superset es una herramienta de visualización de datos que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
     <published>2026-03-15T08:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-19_0852.html</id>
+    <title>Superset: Mejores prácticas y solución de problemas</title>
+    <updated>2026-03-19T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. Para empezar a utilizar Superset, es necesario instalarlo y configurarlo correctamente. Una vez instalado, se puede acceder a la interfaz de usuario y comenzar a crear dashboards y gráficos.&lt;/p&gt;
+&lt;p&gt;Para crear un dashboard en Superset, se debe seguir una serie de pasos. Primero, se debe crear un nuevo dataset utilizando el comando &lt;code&gt;superset dataset create&lt;/code&gt;. Luego, se debe crear un nuevo gráfico utilizando el comando &lt;code&gt;superset chart create&lt;/code&gt;. Finalmente, se puede agregar el gráfico al dashboard utilizando el comando &lt;code&gt;superset dashboard add_chart&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un problema común en Superset es la conexión con bases de datos Oracle. Para solucionar este problema, es necesario instalar el paquete &lt;code&gt;oracledb&lt;/code&gt; y configurar la conexión con la base de datos utilizando el comando &lt;code&gt;superset config set ORACLE_DB_HOST&lt;/code&gt;. Otro problema común es la visualización de datos en la tabla de gráficos, para solucionar esto se puede utilizar el comando &lt;code&gt;superset chart config set prefix&lt;/code&gt; y &lt;code&gt;superset chart config set suffix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que Superset tiene una característica llamada SQL Lab, que permite ejecutar consultas SQL directamente en la interfaz de usuario. Para utilizar SQL Lab, se debe crear un nuevo query utilizando el comando &lt;code&gt;superset sql lab create&lt;/code&gt;. Luego, se puede ejecutar el query y visualizar los resultados en la interfaz de usuario.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de Superset, se puede utilizar el protocolo HTTPS y configurar la autenticación utilizando el comando &lt;code&gt;superset config set AUTH_TYPE&lt;/code&gt;. También es importante mencionar que Superset tiene una característica llamada Embedded SDK, que permite embeber dashboards en aplicaciones web utilizando el comando &lt;code&gt;superset embedded sdk create&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la visualización de datos, pero requiere una configuración y una utilización adecuadas para obtener los mejores resultados. Siguiendo las mejores prácticas y soluciones a problemas comunes presentadas en este artículo, se puede aprovechar al máximo la funcionalidad de Superset.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/37793"&gt;oracledb connection error #37793&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/37854"&gt;Prefix and Suffix are not added in the Table Chart #37854&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/38482"&gt;Empty state in SQL Lab does not open a blank Tab, so left panel doesn't work. #38482&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@shrikantlambe/how-i-built-a-production-grade-real-time-retail-sales-data-pipeline-4601430087db"&gt;How I Built a Production-Grade Real-Time Retail Sales Data Pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/tree/master/superset-embedded-sdk"&gt;Superset Embedded SDK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-19_0852.html"/>
+    <summary>Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. En este artículo, se presentan algunas mejores prácticas y soluciones a problemas comunes en Superset.</summary>
+    <published>2026-03-19T08:52:00+00:00</published>
   </entry>
 </feed>

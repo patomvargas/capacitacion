@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
+  <title>Traefik - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-19T08:52:47.173460+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre Traefik: Routers, middlewares, providers, Let's Encrypt, TCP/UDP, observability</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-19_0852.html</id>
+    <title>Seguridad y configuración de Traefik</title>
+    <updated>2026-03-19T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un sistema que permite la configuración de routers, middlewares, providers y la integración con Let's Encrypt para la generación de certificados SSL/TLS. Para configurar Traefik, se puede utilizar un archivo de configuración en formato YAML o TOML, como por ejemplo: &lt;code&gt;traefik.yml&lt;/code&gt; o &lt;code&gt;traefik.toml&lt;/code&gt;. En este archivo, se pueden definir los routers, middlewares y providers que se utilizarán en la configuración de Traefik.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de Traefik, es importante configurar la autenticación y la autorización adecuadamente. Por ejemplo, se puede utilizar la autenticación basada en certificados SSL/TLS con &lt;code&gt;tls.clientAuth&lt;/code&gt; o la autenticación basada en tokens con &lt;code&gt;middleware.auth&lt;/code&gt;. También es importante configurar los middlewares para proteger contra ataques de inyección de código, como por ejemplo, el ataque de inyección de comandos en HTTPRoute.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de los routers, se pueden definir diferentes routers para diferentes dominios o rutas. Por ejemplo, se puede definir un router para el dominio &lt;code&gt;example.com&lt;/code&gt; con &lt;code&gt;router.example.com&lt;/code&gt; y otro router para el dominio &lt;code&gt;blog.example.com&lt;/code&gt; con &lt;code&gt;router.blog.example.com&lt;/code&gt;. También se pueden configurar los middlewares para cada router, como por ejemplo, el middleware de autenticación o el middleware de caché.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que Traefik tiene una gran comunidad de desarrolladores y usuarios, lo que significa que hay muchos recursos disponibles para aprender y configurar el sistema. Por ejemplo, se puede utilizar la documentación oficial de Traefik para aprender sobre la configuración y los comandos disponibles. También se pueden utilizar herramientas como &lt;code&gt;docker-compose&lt;/code&gt; para configurar y ejecutar Traefik en un entorno de contenedores.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y cambios en Traefik, es importante mencionar que el sistema está en constante evolución y se están agregando nuevas características y mejoras. Por ejemplo, se ha agregado la compatibilidad con HTTP/3 y se han mejorado las opciones de configuración para la autenticación y la autorización. También se han agregado nuevas opciones para la configuración de los middlewares y los routers.&lt;/p&gt;
+&lt;p&gt;Para concluir, Traefik es un sistema muy flexible y configurable que ofrece una gran variedad de opciones para la configuración de routers, middlewares y providers. Es importante configurar el sistema adecuadamente para mejorar la seguridad y el rendimiento, y utilizar las herramientas y recursos disponibles para aprender y configurar el sistema.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-8q2w-wr49-whqj"&gt;Kubernetes gateway rule injection via unescaped backticks in HTTPRoute match values&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-gv8r-9rw9-9697"&gt;TLS ClientAuth Bypass on HTTP/3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/12735"&gt;Auto-update fails on IPv6-only hosts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-19_0852.html"/>
+    <summary>Traefik es un proxy inverso y balanceador de carga que ofrece una gran flexibilidad en su configuración. En este artículo, se presentan algunas best practices y configuraciones para mejorar la seguridad y el rendimiento de Traefik.</summary>
+    <published>2026-03-19T08:52:00+00:00</published>
+  </entry>
+</feed>

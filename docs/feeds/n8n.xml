@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-18T08:58:02.989102+00:00</updated>
+  <updated>2026-03-19T08:52:47.171184+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -65,5 +65,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-15_0843.html"/>
     <summary>n8n es una plataforma de automatización de flujos de trabajo que combina una interfaz visual con la flexibilidad de código personalizado. Recientemente, se han identificado vulnerabilidades de seguridad que han sido parcheadas.</summary>
     <published>2026-03-15T08:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-19_0852.html</id>
+    <title>Automatización con n8n</title>
+    <updated>2026-03-19T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;n8n es una herramienta de automatización de flujos de trabajo que se ejecuta en Node.js y permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. Para instalar n8n, se puede utilizar el comando &lt;code&gt;npm install -g n8n&lt;/code&gt; o &lt;code&gt;docker pull n8n/n8n&lt;/code&gt;. Una vez instalado, se puede acceder a la interfaz de usuario web mediante &lt;code&gt;http://localhost:5678&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para crear un flujo de trabajo en n8n, se deben definir nodos que representan las diferentes tareas que se deben realizar. Por ejemplo, se puede crear un nodo &lt;code&gt;HTTP Request&lt;/code&gt; para realizar una solicitud HTTP a un servidor externo. Luego, se puede agregar un nodo &lt;code&gt;JSON Parser&lt;/code&gt; para parsear la respuesta JSON.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, n8n proporciona una función de credenciales que permite almacenar y gestionar credenciales de forma segura. Se pueden crear credenciales para diferentes servicios, como API keys o contraseñas, y luego utilizarlas en los nodos correspondientes. Por ejemplo, se puede crear una credencial para un servicio de API y luego utilizarla en un nodo &lt;code&gt;HTTP Request&lt;/code&gt; para autenticar la solicitud.&lt;/p&gt;
+&lt;p&gt;Recientemente, se han reportado algunos problemas con la instalación de n8n mediante npm, como se indica en el issue #26960 en GitHub. Sin embargo, se puede instalar n8n mediante Docker para evitar estos problemas. Además, se han realizado cambios en la versión 2.8.4 de n8n, como se indica en el comparativo de versiones en GitHub.&lt;/p&gt;
+&lt;p&gt;Para aprender más sobre n8n, se pueden consultar los tutoriales y guías en el blog oficial de n8n. También se pueden encontrar recursos adicionales en la comunidad de n8n, como la guía para principiantes en DEV Community.&lt;/p&gt;
+&lt;p&gt;En resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo que ofrece una gran flexibilidad y personalización. Con la creación de nodos y la gestión de credenciales, se pueden crear flujos de trabajo complejos y seguros. Sin embargo, es importante estar al tanto de las últimas novedades y problemas reportados en la comunidad de n8n.&lt;/p&gt;
+&lt;p&gt;Se pueden encontrar más recursos y tutoriales en las fuentes citadas al final de este artículo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n/issues/26960"&gt;Issue #26960 en GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n/compare/n8n@2.8.3...n8n@2.8.4"&gt;Comparativo de versiones en GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.n8n.io/"&gt;Blog oficial de n8n&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/kaminade/getting-started-with-n8n-a-non-developers-complete-guide-4l2g"&gt;Guía para principiantes en DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-19_0852.html"/>
+    <summary>n8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.</summary>
+    <published>2026-03-19T08:52:00+00:00</published>
   </entry>
 </feed>
