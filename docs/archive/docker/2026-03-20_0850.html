@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docker: Mejores prácticas y novedades - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+    </div>
+
+    <h1>Docker: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-03-20 0850 · Docker</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear contenedores ligeros y portables que pueden ejecutarse en cualquier entorno. Una de las mejores prácticas en Docker es utilizar `ENTRYPOINT` cuando el contenedor debe ejecutar siempre una aplicación, y `CMD` cuando los argumentos pueden cambiar. Por ejemplo, se puede utilizar `ENTRYPOINT` para ejecutar un comando específico al iniciar el contenedor: `ENTRYPOINT ["/usr/bin/myapp"]`.</p>
+            
+        
+            
+        
+            
+            <p>Otra práctica recomendada es utilizar multi-stage builds para crear imágenes de Docker. Esto permite dividir el proceso de compilación en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con multi-stage build: `docker build -t myimage . -f Dockerfile`. En el archivo `Dockerfile`, se pueden definir las diferentes etapas de la compilación utilizando la instrucción `FROM`.</p>
+            
+        
+            
+        
+            
+            <p>La seguridad es un aspecto fundamental en Docker, y hay varias formas de mejorar la seguridad de los contenedores. Una de ellas es utilizar `docker compose` para definir y ejecutar contenedores de manera segura. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con `docker compose`: `docker-compose up -d`. También se pueden utilizar redes virtuales para aislar los contenedores y mejorar la seguridad.</p>
+            
+        
+            
+        
+            
+            <p>BuildKit es una herramienta de compilación de Docker que permite crear imágenes de manera más eficiente y segura. Se puede utilizar BuildKit para crear imágenes de Docker utilizando el comando `docker buildx`. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con BuildKit: `docker buildx build -t myimage . -f Dockerfile`. BuildKit también permite utilizar caché para mejorar la velocidad de compilación y reducir el tamaño de la imagen final.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar la importancia de utilizar registros de Docker para almacenar y distribuir imágenes de Docker. Los registros de Docker permiten almacenar y recuperar imágenes de Docker de manera segura y eficiente. Por ejemplo, se puede utilizar el comando `docker push` para subir una imagen de Docker a un registro de Docker: `docker push myregistry/myimage`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Docker es una herramienta poderosa para crear contenedores ligeros y portables, y hay varias mejores prácticas y novedades que se pueden utilizar para mejorar la seguridad, la eficiencia y la productividad. Al utilizar `ENTRYPOINT`, multi-stage builds, `docker compose`, BuildKit y registros de Docker, se pueden crear contenedores de manera segura y eficiente.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://dev.to/propfirmkey/docker-for-trading-applications-a-practical-setup-guide-1n41" target="_blank">Docker for Trading Applications: A Practical Setup Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/anusha_kuppili/building-and-configuring-custom-docker-images-from-execution-mechanics-to-global-distribution-2h12" target="_blank">Building and Configuring Custom Docker Images: From Execution Mechanics to Global Distribution</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/docker-world/docker-images-everything-you-need-to-know-7db33594a5c5" target="_blank">Docker images! Everything you need to know!</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

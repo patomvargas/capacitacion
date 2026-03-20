@@ -58,49 +58,43 @@
     </div>
 
     <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-03-16 0904 · Git</div>
+    <div class="meta">2026-03-20 0850 · Git</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>El sistema de control de versiones Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. En este artículo, exploraremos algunas de las mejores prácticas y herramientas avanzadas para utilizar Git de manera efectiva.</p>
+            <p>Git es un sistema de control de versiones ampliamente utilizado en la industria del software. Para aprovechar al máximo sus funcionalidades, es importante conocer algunas mejores prácticas y comandos avanzados. Por ejemplo, el comando `git rebase` se utiliza para reorganizar los commits y mantener un historial de cambios limpio y coherente.</p>
             
         
             
         
             
-            <p>Una de las características más poderosas de Git es su capacidad para crear ramas y fusionarlas. Esto permite a los desarrolladores trabajar en características o correcciones de errores de manera independiente sin afectar el código principal. Para crear una rama en Git, se puede utilizar el comando `git branch <nombre_rama>`. Luego, se puede cambiar a la rama utilizando `git checkout <nombre_rama>`.</p>
+            <p>Una de las mejores prácticas es utilizar `git worktrees` para trabajar en diferentes ramas o versiones de un proyecto sin tener que clonar el repositorio completo. Esto se logra con el comando `git worktree add <nombre-rama> <ruta-rama>`. Además, es importante utilizar `git bisect` para identificar y solucionar problemas en el código de manera eficiente.</p>
             
         
             
         
             
-            <p>Otra herramienta avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un repositorio Git. Por ejemplo, se puede utilizar un hook para verificar que los commits cumplan con ciertos estándares de calidad antes de permitir que se suban al repositorio remoto. GitHub Desktop 3.5.5 ha agregado soporte para Git hooks, lo que facilita la configuración y uso de estos scripts.</p>
+            <p>Otra herramienta útil es `git hook`, que permite ejecutar scripts personalizados en diferentes etapas del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar la calidad del código antes de realizar un commit. Esto se configura agregando un script en el directorio `.git/hooks` con el nombre `pre-commit`.</p>
             
         
             
         
             
-            <p>Además, Git proporciona herramientas como `git rebase` y `git bisect` para ayudar a los desarrolladores a manejar y depurar su código de manera más eficiente. `git rebase` permite reorganizar los commits para que el historial del repositorio sea más lineal y fácil de seguir, mientras que `git bisect` ayuda a identificar el commit que introdujo un error o problema en el código.</p>
+            <p>La colaboración en equipo es fundamental en el desarrollo de software, y Git proporciona herramientas como `git merge` y `git pull` para integrar cambios de diferentes desarrolladores. Sin embargo, es importante utilizar estas herramientas de manera efectiva para evitar conflictos y mantener un historial de cambios coherente.</p>
             
         
             
         
             
-            <p>Para aquellos que buscan mejorar su flujo de trabajo con Git, existen herramientas como GitHub Actions y GitOps que pueden ayudar a automatizar y optimizar las tareas de desarrollo y despliegue. GitHub Actions, por ejemplo, permite crear flujos de trabajo personalizados para automatizar tareas como la compilación y el despliegue de código.</p>
+            <p>En resumen, Git es una herramienta poderosa que requiere conocimiento y práctica para utilizarla de manera efectiva. Algunos comandos avanzados como `git rebase`, `git worktrees` y `git bisect` pueden mejorar significativamente la productividad y colaboración en proyectos de desarrollo de software.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa y versátil que puede ser utilizada de manera efectiva con la ayuda de mejores prácticas y herramientas avanzadas. Al utilizar ramas, hooks, `git rebase`, `git bisect` y otras herramientas, los desarrolladores pueden optimizar sus flujos de trabajo y colaboraciones con Git.</p>
-            
-        
-            
-        
+            <p>Finalmente, es importante mencionar que existen recursos en línea que pueden ayudar a mejorar las habilidades con Git, como la documentación oficial de Git y tutoriales en sitios web como GitHub y GitLab.</p>
             
         
     </div>
@@ -111,17 +105,17 @@
         <ul>
             
             <li>
+                <a href="https://github.blog/changelog/" target="_blank">GitHub Changelog</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://github.blog/latest/" target="_blank">The latest blogs from GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.blog/changelog/2026-02-18-github-desktop-3-5-5-adds-git-hooks-support/" target="_blank">GitHub Desktop 3.5.5 adds Git hooks support</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.blog/changelog/month/02-2026/" target="_blank">GitHub Changelog</a>
+                <a href="https://github.blog/changelog/2026-03-12-rest-api-version-2026-03-10-is-now-available/" target="_blank">REST API version 2026-03-10 is now available</a>
                 
             </li>
             
@@ -132,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-12_0852.html">&larr; 2026-03-12 0852</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-16_0904.html">&larr; 2026-03-16 0904</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-20_0850.html">2026-03-20 0850 &rarr;</a>
             
         </div>
     </div>

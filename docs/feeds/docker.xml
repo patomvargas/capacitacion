@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
+  <title>Docker - Tech News &amp; Learning Feeds</title>
+  <updated>2026-03-20T08:51:19.968297+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre Docker: Multi-stage builds, compose, networking, security, BuildKit, registries</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-03-20_0850.html</id>
+    <title>Docker: Mejores prácticas y novedades</title>
+    <updated>2026-03-20T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear contenedores ligeros y portables que pueden ejecutarse en cualquier entorno. Una de las mejores prácticas en Docker es utilizar &lt;code&gt;ENTRYPOINT&lt;/code&gt; cuando el contenedor debe ejecutar siempre una aplicación, y &lt;code&gt;CMD&lt;/code&gt; cuando los argumentos pueden cambiar. Por ejemplo, se puede utilizar &lt;code&gt;ENTRYPOINT&lt;/code&gt; para ejecutar un comando específico al iniciar el contenedor: &lt;code&gt;ENTRYPOINT ["/usr/bin/myapp"]&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra práctica recomendada es utilizar multi-stage builds para crear imágenes de Docker. Esto permite dividir el proceso de compilación en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con multi-stage build: &lt;code&gt;docker build -t myimage . -f Dockerfile&lt;/code&gt;. En el archivo &lt;code&gt;Dockerfile&lt;/code&gt;, se pueden definir las diferentes etapas de la compilación utilizando la instrucción &lt;code&gt;FROM&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en Docker, y hay varias formas de mejorar la seguridad de los contenedores. Una de ellas es utilizar &lt;code&gt;docker compose&lt;/code&gt; para definir y ejecutar contenedores de manera segura. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con &lt;code&gt;docker compose&lt;/code&gt;: &lt;code&gt;docker-compose up -d&lt;/code&gt;. También se pueden utilizar redes virtuales para aislar los contenedores y mejorar la seguridad.&lt;/p&gt;
+&lt;p&gt;BuildKit es una herramienta de compilación de Docker que permite crear imágenes de manera más eficiente y segura. Se puede utilizar BuildKit para crear imágenes de Docker utilizando el comando &lt;code&gt;docker buildx&lt;/code&gt;. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con BuildKit: &lt;code&gt;docker buildx build -t myimage . -f Dockerfile&lt;/code&gt;. BuildKit también permite utilizar caché para mejorar la velocidad de compilación y reducir el tamaño de la imagen final.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de utilizar registros de Docker para almacenar y distribuir imágenes de Docker. Los registros de Docker permiten almacenar y recuperar imágenes de Docker de manera segura y eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker push&lt;/code&gt; para subir una imagen de Docker a un registro de Docker: &lt;code&gt;docker push myregistry/myimage&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa para crear contenedores ligeros y portables, y hay varias mejores prácticas y novedades que se pueden utilizar para mejorar la seguridad, la eficiencia y la productividad. Al utilizar &lt;code&gt;ENTRYPOINT&lt;/code&gt;, multi-stage builds, &lt;code&gt;docker compose&lt;/code&gt;, BuildKit y registros de Docker, se pueden crear contenedores de manera segura y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/propfirmkey/docker-for-trading-applications-a-practical-setup-guide-1n41"&gt;Docker for Trading Applications: A Practical Setup Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/anusha_kuppili/building-and-configuring-custom-docker-images-from-execution-mechanics-to-global-distribution-2h12"&gt;Building and Configuring Custom Docker Images: From Execution Mechanics to Global Distribution&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/docker-world/docker-images-everything-you-need-to-know-7db33594a5c5"&gt;Docker images! Everything you need to know!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-03-20_0850.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo la creación de imágenes personalizadas y la configuración de contenedores. Se cubren temas como multi-stage builds, compose, networking, seguridad y BuildKit.</summary>
+    <published>2026-03-20T08:50:00+00:00</published>
+  </entry>
+</feed>

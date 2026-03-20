@@ -1,0 +1,22 @@
+{
+  "2026-03-20_0850": {
+    "slug": "docker",
+    "title": "Docker: Mejores prácticas y novedades",
+    "summary": "En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo la creación de imágenes personalizadas y la configuración de contenedores. Se cubren temas como multi-stage builds, compose, networking, seguridad y BuildKit.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear contenedores ligeros y portables que pueden ejecutarse en cualquier entorno. Una de las mejores prácticas en Docker es utilizar `ENTRYPOINT` cuando el contenedor debe ejecutar siempre una aplicación, y `CMD` cuando los argumentos pueden cambiar. Por ejemplo, se puede utilizar `ENTRYPOINT` para ejecutar un comando específico al iniciar el contenedor: `ENTRYPOINT [\"/usr/bin/myapp\"]`.\n\nOtra práctica recomendada es utilizar multi-stage builds para crear imágenes de Docker. Esto permite dividir el proceso de compilación en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con multi-stage build: `docker build -t myimage . -f Dockerfile`. En el archivo `Dockerfile`, se pueden definir las diferentes etapas de la compilación utilizando la instrucción `FROM`.\n\nLa seguridad es un aspecto fundamental en Docker, y hay varias formas de mejorar la seguridad de los contenedores. Una de ellas es utilizar `docker compose` para definir y ejecutar contenedores de manera segura. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con `docker compose`: `docker-compose up -d`. También se pueden utilizar redes virtuales para aislar los contenedores y mejorar la seguridad.\n\nBuildKit es una herramienta de compilación de Docker que permite crear imágenes de manera más eficiente y segura. Se puede utilizar BuildKit para crear imágenes de Docker utilizando el comando `docker buildx`. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker con BuildKit: `docker buildx build -t myimage . -f Dockerfile`. BuildKit también permite utilizar caché para mejorar la velocidad de compilación y reducir el tamaño de la imagen final.\n\nFinalmente, es importante mencionar la importancia de utilizar registros de Docker para almacenar y distribuir imágenes de Docker. Los registros de Docker permiten almacenar y recuperar imágenes de Docker de manera segura y eficiente. Por ejemplo, se puede utilizar el comando `docker push` para subir una imagen de Docker a un registro de Docker: `docker push myregistry/myimage`.\n\nEn resumen, Docker es una herramienta poderosa para crear contenedores ligeros y portables, y hay varias mejores prácticas y novedades que se pueden utilizar para mejorar la seguridad, la eficiencia y la productividad. Al utilizar `ENTRYPOINT`, multi-stage builds, `docker compose`, BuildKit y registros de Docker, se pueden crear contenedores de manera segura y eficiente.\n\n",
+    "sources": [
+      {
+        "title": "Docker for Trading Applications: A Practical Setup Guide",
+        "url": "https://dev.to/propfirmkey/docker-for-trading-applications-a-practical-setup-guide-1n41"
+      },
+      {
+        "title": "Building and Configuring Custom Docker Images: From Execution Mechanics to Global Distribution",
+        "url": "https://dev.to/anusha_kuppili/building-and-configuring-custom-docker-images-from-execution-mechanics-to-global-distribution-2h12"
+      },
+      {
+        "title": "Docker images! Everything you need to know!",
+        "url": "https://medium.com/docker-world/docker-images-everything-you-need-to-know-7db33594a5c5"
+      }
+    ]
+  }
+}

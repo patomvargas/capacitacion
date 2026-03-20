@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-19T08:52:47.175837+00:00</updated>
+  <updated>2026-03-20T08:51:19.968836+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -45,5 +45,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-16_0904.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con mejores prácticas y herramientas avanzadas. Descubre cómo optimizar tus flujos de trabajo y colaboraciones con Git.</summary>
     <published>2026-03-16T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-03-20_0850.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-03-20T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es un sistema de control de versiones ampliamente utilizado en la industria del software. Para aprovechar al máximo sus funcionalidades, es importante conocer algunas mejores prácticas y comandos avanzados. Por ejemplo, el comando &lt;code&gt;git rebase&lt;/code&gt; se utiliza para reorganizar los commits y mantener un historial de cambios limpio y coherente.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas es utilizar &lt;code&gt;git worktrees&lt;/code&gt; para trabajar en diferentes ramas o versiones de un proyecto sin tener que clonar el repositorio completo. Esto se logra con el comando &lt;code&gt;git worktree add &lt;nombre-rama&gt; &lt;ruta-rama&gt;&lt;/code&gt;. Además, es importante utilizar &lt;code&gt;git bisect&lt;/code&gt; para identificar y solucionar problemas en el código de manera eficiente.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git hook&lt;/code&gt;, que permite ejecutar scripts personalizados en diferentes etapas del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook &lt;code&gt;pre-commit&lt;/code&gt; para verificar la calidad del código antes de realizar un commit. Esto se configura agregando un script en el directorio &lt;code&gt;.git/hooks&lt;/code&gt; con el nombre &lt;code&gt;pre-commit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La colaboración en equipo es fundamental en el desarrollo de software, y Git proporciona herramientas como &lt;code&gt;git merge&lt;/code&gt; y &lt;code&gt;git pull&lt;/code&gt; para integrar cambios de diferentes desarrolladores. Sin embargo, es importante utilizar estas herramientas de manera efectiva para evitar conflictos y mantener un historial de cambios coherente.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que requiere conocimiento y práctica para utilizarla de manera efectiva. Algunos comandos avanzados como &lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git worktrees&lt;/code&gt; y &lt;code&gt;git bisect&lt;/code&gt; pueden mejorar significativamente la productividad y colaboración en proyectos de desarrollo de software.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que existen recursos en línea que pueden ayudar a mejorar las habilidades con Git, como la documentación oficial de Git y tutoriales en sitios web como GitHub y GitLab.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/"&gt;GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/latest/"&gt;The latest blogs from GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-03-12-rest-api-version-2026-03-10-is-now-available/"&gt;REST API version 2026-03-10 is now available&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-20_0850.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-03-20T08:50:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-03-20_0850": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.",
+    "content": "Git es un sistema de control de versiones ampliamente utilizado en la industria del software. Para aprovechar al máximo sus funcionalidades, es importante conocer algunas mejores prácticas y comandos avanzados. Por ejemplo, el comando `git rebase` se utiliza para reorganizar los commits y mantener un historial de cambios limpio y coherente.\n\nUna de las mejores prácticas es utilizar `git worktrees` para trabajar en diferentes ramas o versiones de un proyecto sin tener que clonar el repositorio completo. Esto se logra con el comando `git worktree add <nombre-rama> <ruta-rama>`. Además, es importante utilizar `git bisect` para identificar y solucionar problemas en el código de manera eficiente.\n\nOtra herramienta útil es `git hook`, que permite ejecutar scripts personalizados en diferentes etapas del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar la calidad del código antes de realizar un commit. Esto se configura agregando un script en el directorio `.git/hooks` con el nombre `pre-commit`.\n\nLa colaboración en equipo es fundamental en el desarrollo de software, y Git proporciona herramientas como `git merge` y `git pull` para integrar cambios de diferentes desarrolladores. Sin embargo, es importante utilizar estas herramientas de manera efectiva para evitar conflictos y mantener un historial de cambios coherente.\n\nEn resumen, Git es una herramienta poderosa que requiere conocimiento y práctica para utilizarla de manera efectiva. Algunos comandos avanzados como `git rebase`, `git worktrees` y `git bisect` pueden mejorar significativamente la productividad y colaboración en proyectos de desarrollo de software.\n\nFinalmente, es importante mencionar que existen recursos en línea que pueden ayudar a mejorar las habilidades con Git, como la documentación oficial de Git y tutoriales en sitios web como GitHub y GitLab.",
+    "sources": [
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/"
+      },
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "REST API version 2026-03-10 is now available",
+        "url": "https://github.blog/changelog/2026-03-12-rest-api-version-2026-03-10-is-now-available/"
+      }
+    ]
+  },
   "2026-03-16_0904": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

@@ -1,4 +1,24 @@
 {
+  "2026-03-20_0850": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "En este artículo, se presentan técnicas y herramientas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. Se cubren también las últimas novedades y mejoras en la versión 18.3 de PostgreSQL.",
+    "content": "\nLa optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y la escalabilidad de las aplicaciones que lo utilizan. Una de las formas de mejorar el rendimiento es mediante la configuración de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos, reduciendo el tiempo de respuesta de las consultas. Para crear un índice, se puede utilizar el comando `CREATE INDEX` seguido del nombre del índice y la columna o columnas que se desean indexar.\n\nOtra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar el servidor esclavo para que se sincronice con el servidor maestro.\n\nLa creación de copias de seguridad es también fundamental para garantizar la integridad de los datos. PostgreSQL proporciona varias herramientas para crear copias de seguridad, incluyendo `pg_dump` y `pg_restore`. Para crear una copia de seguridad, se puede utilizar el comando `pg_dump -U usuario -d base_de_datos > archivo_de_copia_de_seguridad.sql`. Luego, para restaurar la copia de seguridad, se puede utilizar el comando `psql -U usuario -d base_de_datos < archivo_de_copia_de_seguridad.sql`.\n\nRecientemente, se ha lanzado la versión 18.3 de PostgreSQL, que incluye varias mejoras y novedades. Una de las novedades más destacadas es la mejora en la gestión de la memoria, lo que puede mejorar el rendimiento en sistemas con grandes cantidades de memoria. Para aprovechar al máximo esta característica, se puede configurar el parámetro `shared_buffers` en el archivo de configuración de PostgreSQL.\n\nEn resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas y herramientas, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. La versión 18.3 de PostgreSQL incluye varias mejoras y novedades que pueden ayudar a mejorar el rendimiento y la escalabilidad de las aplicaciones que lo utilizan.\n\nPara más información sobre las últimas novedades y mejoras en PostgreSQL, se puede consultar la documentación oficial y las fuentes citadas a continuación.",
+    "sources": [
+      {
+        "title": "Release Notes - PostgreSQL",
+        "url": "https://www.postgresql.org/docs/release/"
+      },
+      {
+        "title": "PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!",
+        "url": "https://www.postgresql.org/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      }
+    ]
+  },
   "2026-03-16_0904": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

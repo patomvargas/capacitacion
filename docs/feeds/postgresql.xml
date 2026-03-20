@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-19T08:52:47.175218+00:00</updated>
+  <updated>2026-03-20T08:51:19.967619+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -47,5 +47,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-16_0904.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas y mejores prácticas. Descubre cómo mejorar la velocidad de consulta y la eficiencia de la base de datos.</summary>
     <published>2026-03-16T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-20_0850.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-03-20T08:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y la escalabilidad de las aplicaciones que lo utilizan. Una de las formas de mejorar el rendimiento es mediante la configuración de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos, reduciendo el tiempo de respuesta de las consultas. Para crear un índice, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt; seguido del nombre del índice y la columna o columnas que se desean indexar.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos y luego configurar el servidor esclavo para que se sincronice con el servidor maestro.&lt;/p&gt;
+&lt;p&gt;La creación de copias de seguridad es también fundamental para garantizar la integridad de los datos. PostgreSQL proporciona varias herramientas para crear copias de seguridad, incluyendo &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;. Para crear una copia de seguridad, se puede utilizar el comando &lt;code&gt;pg_dump -U usuario -d base_de_datos &gt; archivo_de_copia_de_seguridad.sql&lt;/code&gt;. Luego, para restaurar la copia de seguridad, se puede utilizar el comando &lt;code&gt;psql -U usuario -d base_de_datos &lt; archivo_de_copia_de_seguridad.sql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Recientemente, se ha lanzado la versión 18.3 de PostgreSQL, que incluye varias mejoras y novedades. Una de las novedades más destacadas es la mejora en la gestión de la memoria, lo que puede mejorar el rendimiento en sistemas con grandes cantidades de memoria. Para aprovechar al máximo esta característica, se puede configurar el parámetro &lt;code&gt;shared_buffers&lt;/code&gt; en el archivo de configuración de PostgreSQL.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas y herramientas, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. La versión 18.3 de PostgreSQL incluye varias mejoras y novedades que pueden ayudar a mejorar el rendimiento y la escalabilidad de las aplicaciones que lo utilizan.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las últimas novedades y mejoras en PostgreSQL, se puede consultar la documentación oficial y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/release/"&gt;Release Notes - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-183-179-1613-1517-and-1422-released-3246/"&gt;PostgreSQL 18.3, 17.9, 16.13, 15.17, and 14.22 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-20_0850.html"/>
+    <summary>En este artículo, se presentan técnicas y herramientas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. Se cubren también las últimas novedades y mejoras en la versión 18.3 de PostgreSQL.</summary>
+    <published>2026-03-20T08:50:00+00:00</published>
   </entry>
 </feed>
