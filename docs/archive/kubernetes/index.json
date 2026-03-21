@@ -1,4 +1,40 @@
 {
+  "2026-03-21_0840": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "En este artículo, se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de red, almacenamiento y seguridad. Se destacan las herramientas y proyectos que facilitan la administración y el despliegue de clústeres de Kubernetes.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las novedades recientes es el proyecto Thundernetes, que permite ejecutar servidores de juegos en clústeres de Kubernetes de manera sencilla. Para ello, se utiliza el comando `thundernetes init` para inicializar el clúster y `thundernetes deploy` para desplegar los servidores de juegos.\n\nOtra herramienta útil es Virtual Kubelet, que permite conectar clústeres de Kubernetes con otras APIs y servicios. Esto se logra mediante la configuración de un archivo `virtual-kubelet.yaml` que define los parámetros de conexión. Por ejemplo, se puede utilizar el comando `kubectl apply -f virtual-kubelet.yaml` para aplicar la configuración.\n\nEn cuanto a la seguridad, es importante mencionar la herramienta Docuum, que realiza una evacuación LRU (Least Recently Used) de imágenes de Docker para mantener el uso del disco por debajo de un umbral determinado. Esto se puede lograr mediante el comando `docuum --threshold 10G` para establecer un umbral de 10 GB.\n\nAdemás, se han realizado mejoras en la red y el almacenamiento de Kubernetes. Por ejemplo, se ha mejorado la compatibilidad con el proveedor de AWS en el proyecto Cluster API Provider AWS. Esto permite crear y gestionar clústeres de Kubernetes en AWS de manera más sencilla. Se puede utilizar el comando `clusterctl init --infrastructure aws` para inicializar el clúster y `clusterctl upgrade` para actualizar la versión del clúster.\n\nEn resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que facilitan la administración y el despliegue de clústeres. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes.\n\nFinalmente, es importante mencionar que la comunidad de Kubernetes es muy activa y hay muchos recursos disponibles para aprender y mejorar las habilidades en este campo. Se pueden consultar las fuentes oficiales de Kubernetes y proyectos relacionados para obtener más información y mantenerse actualizado sobre las últimas novedades y mejoras.",
+    "sources": [
+      {
+        "title": "Flaking Tests",
+        "url": "https://github.com/kubernetes/kubernetes/issues/137184"
+      },
+      {
+        "title": "SIG List",
+        "url": "https://github.com/kubernetes/community/blob/master/sig-list.md"
+      },
+      {
+        "title": "Kubernetes Cluster API Provider AWS",
+        "url": "https://github.com/kubernetes-sigs/cluster-api-provider-aws"
+      },
+      {
+        "title": "Thundernetes",
+        "url": "https://github.com/PlayFab/thundernetes"
+      },
+      {
+        "title": "Docuum",
+        "url": "https://github.com/stepchowfun/docuum"
+      },
+      {
+        "title": "Virtual Kubelet",
+        "url": "https://github.com/virtual-kubelet/virtual-kubelet"
+      },
+      {
+        "title": "CoreDNS Corefile Migration Tools",
+        "url": "https://github.com/coredns/corefile-migration"
+      }
+    ]
+  },
   "2026-03-13_0850": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes 1.36",

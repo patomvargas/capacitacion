@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad y configuración de OpenVPN - OpenVPN</title>
+    <title>Configuración y Seguridad de OpenVPN - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Seguridad y configuración de OpenVPN</h1>
-    <div class="meta">2026-03-13 0850 · OpenVPN</div>
+    <h1>Configuración y Seguridad de OpenVPN</h1>
+    <div class="meta">2026-03-21 0840 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas y DevOps engineers establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación, utilizando herramientas como `openssl` para crear un certificado de autoridad de certificación (CA) y claves de servidor y cliente.</p>
+        
+            
+            <p>La configuración de un servidor OpenVPN implica varios pasos, incluyendo la generación de certificados y la configuración de la autenticación. Para generar los certificados, se puede utilizar la herramienta `easy-rsa`, que viene incluida con OpenVPN. El comando `./build-key-server` se utiliza para generar el certificado del servidor.</p>
             
         
             
         
             
-            <p>Para establecer una conexión segura con OpenVPN, es necesario configurar el servidor y el cliente. En el servidor, se debe configurar el archivo de configuración `server.conf` con la ruta del certificado y la clave de autenticación, utilizando comandos como `tls-server` y `tls-auth`. En el cliente, se debe configurar el archivo de configuración `client.conf` con la ruta del certificado y la clave de autenticación, utilizando comandos como `tls-client` y `tls-auth`.</p>
+            <p>Una vez generados los certificados, se debe configurar el archivo de configuración del servidor OpenVPN, generalmente ubicado en `/etc/openvpn/server.conf`. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP y el puerto del servidor, así como la ruta a los certificados. Por ejemplo, se puede utilizar la siguiente configuración: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`.</p>
             
         
             
         
             
-            <p>Una de las mejores prácticas para el hardening de OpenVPN es utilizar la autenticación de dos factores (2FA) y la autenticación basada en certificados. También es importante mantener actualizados los certificados y claves de autenticación, y utilizar algoritmos de cifrado seguros como AES-256. Además, es recomendable utilizar herramientas de monitoreo y análisis de logs para detectar posibles intentos de intrusión en la red.</p>
+            <p>Para mejorar la seguridad del servidor OpenVPN, se pueden implementar varias medidas, como el uso de autenticación de dos factores y la configuración de un firewall para restringir el acceso al servidor. También es importante mantener el software actualizado y aplicar parches de seguridad regularmente. Además, se puede utilizar la herramienta `openvpn --test-config` para probar la configuración del servidor y detectar cualquier error.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de OpenVPN, es importante mencionar que la versión 2.7.0 ha sido reemplazada por la versión 2.8, que incluye nuevas características y mejoras de seguridad. Para actualizar a la versión 2.8, se puede utilizar el comando `git checkout master` y luego `git pull` para descargar los cambios.</p>
+            <p>En cuanto a la configuración de túneles site-to-site, OpenVPN ofrece la posibilidad de establecer conexiones seguras entre dos o más redes. Para configurar un túnel site-to-site, se deben especificar los parámetros de conexión en el archivo de configuración del servidor OpenVPN, como la dirección IP y el puerto del servidor remoto. Por ejemplo, se puede utilizar la siguiente configuración: `remote-cert-tls server`, `remote <dirección_IP_remota> 1194`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenVPN también se puede utilizar para establecer conexiones de sitio a sitio, lo que permite a las organizaciones conectar varias redes de forma segura. Para configurar una conexión de sitio a sitio con OpenVPN, se debe utilizar el modo de servidor y cliente, y configurar los archivos de configuración correspondientes.</p>
+            <p>Finalmente, es importante mencionar que OpenVPN ofrece una herramienta llamada Access Server, que permite a los administradores gestionar y monitorizar las conexiones VPN de manera centralizada. El Access Server ofrece una interfaz web para configurar y administrar las conexiones, así como herramientas para monitorear el tráfico y la seguridad de la red.</p>
             
         
             
         
             
-            <p>En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes, y su configuración y hardening son fundamentales para proteger la seguridad de la red. Al seguir las mejores prácticas y utilizar las herramientas y comandos adecuados, los administradores de sistemas y DevOps engineers pueden establecer conexiones seguras y confiables con OpenVPN.</p>
+            <p>En resumen, OpenVPN es una herramienta poderosa y flexible para establecer conexiones VPN seguras. Con la configuración adecuada y la implementación de medidas de seguridad, se puede proteger la red y garantizar la privacidad de los datos.</p>
             
         
     </div>
@@ -105,17 +107,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn/compare/v2.7.0...master" target="_blank">OpenVPN GitHub</a>
+                <a href="https://openvpn.net/community-resources/" target="_blank">OpenVPN Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://community.openvpn.net/Meetings/2026/2026-03-04/source" target="_blank">OpenVPN Community Wiki</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://blog.cloudflare.com/toxic-combinations-security/" target="_blank">Cloudflare Blog</a>
+                <a href="https://github.com/OpenVPN/easy-rsa" target="_blank">Easy-RSA Documentation</a>
                 
             </li>
             
@@ -126,10 +123,10 @@
     <div class="nav">
         <div>
             
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-13_0850.html">&larr; 2026-03-13 0850</a>
+            
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-21_0840.html">2026-03-21 0840 &rarr;</a>
             
         </div>
     </div>

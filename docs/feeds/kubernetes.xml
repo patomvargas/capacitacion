@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-20T08:51:19.961919+00:00</updated>
+  <updated>2026-03-21T08:41:01.068722+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -42,5 +42,28 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-13_0850.html"/>
     <summary>Kubernetes 1.36 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. Además, se presentan herramientas y prácticas para mejorar la gestión y el monitoreo de clústeres.</summary>
     <published>2026-03-13T08:50:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-21_0840.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-03-21T08:40:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las novedades recientes es el proyecto Thundernetes, que permite ejecutar servidores de juegos en clústeres de Kubernetes de manera sencilla. Para ello, se utiliza el comando &lt;code&gt;thundernetes init&lt;/code&gt; para inicializar el clúster y &lt;code&gt;thundernetes deploy&lt;/code&gt; para desplegar los servidores de juegos.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es Virtual Kubelet, que permite conectar clústeres de Kubernetes con otras APIs y servicios. Esto se logra mediante la configuración de un archivo &lt;code&gt;virtual-kubelet.yaml&lt;/code&gt; que define los parámetros de conexión. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl apply -f virtual-kubelet.yaml&lt;/code&gt; para aplicar la configuración.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar la herramienta Docuum, que realiza una evacuación LRU (Least Recently Used) de imágenes de Docker para mantener el uso del disco por debajo de un umbral determinado. Esto se puede lograr mediante el comando &lt;code&gt;docuum --threshold 10G&lt;/code&gt; para establecer un umbral de 10 GB.&lt;/p&gt;
+&lt;p&gt;Además, se han realizado mejoras en la red y el almacenamiento de Kubernetes. Por ejemplo, se ha mejorado la compatibilidad con el proveedor de AWS en el proyecto Cluster API Provider AWS. Esto permite crear y gestionar clústeres de Kubernetes en AWS de manera más sencilla. Se puede utilizar el comando &lt;code&gt;clusterctl init --infrastructure aws&lt;/code&gt; para inicializar el clúster y &lt;code&gt;clusterctl upgrade&lt;/code&gt; para actualizar la versión del clúster.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que facilitan la administración y el despliegue de clústeres. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Kubernetes es muy activa y hay muchos recursos disponibles para aprender y mejorar las habilidades en este campo. Se pueden consultar las fuentes oficiales de Kubernetes y proyectos relacionados para obtener más información y mantenerse actualizado sobre las últimas novedades y mejoras.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes/issues/137184"&gt;Flaking Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/community/blob/master/sig-list.md"&gt;SIG List&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/cluster-api-provider-aws"&gt;Kubernetes Cluster API Provider AWS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/PlayFab/thundernetes"&gt;Thundernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/stepchowfun/docuum"&gt;Docuum&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/virtual-kubelet/virtual-kubelet"&gt;Virtual Kubelet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/coredns/corefile-migration"&gt;CoreDNS Corefile Migration Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-21_0840.html"/>
+    <summary>En este artículo, se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de red, almacenamiento y seguridad. Se destacan las herramientas y proyectos que facilitan la administración y el despliegue de clústeres de Kubernetes.</summary>
+    <published>2026-03-21T08:40:00+00:00</published>
   </entry>
 </feed>

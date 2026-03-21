@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-20T08:51:19.960955+00:00</updated>
+  <updated>2026-03-21T08:41:01.067038+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -44,5 +44,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-17_0859.html"/>
     <summary>FreeIPA es una plataforma de gestión de identidad y acceso que proporciona autenticación, autorización y gestión de identidad para sistemas Linux. En este artículo, se presentan las mejores prácticas para implementar y configurar FreeIPA en un entorno de red.</summary>
     <published>2026-03-17T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-21_0840.html</id>
+    <title>FreeIPA: Administración de Identidades</title>
+    <updated>2026-03-21T08:40:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta poderosa para la administración de identidades en entornos de red. Permite la creación de un dominio de autenticación único, donde los usuarios y equipos pueden acceder a recursos y servicios de manera segura. Para instalar FreeIPA en un sistema Ubuntu, se puede utilizar el comando &lt;code&gt;sudo apt-get install freeipa-server&lt;/code&gt;. Una vez instalado, se puede configurar el servidor FreeIPA utilizando el comando &lt;code&gt;sudo ipa-server-install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA implica la creación de un dominio de autenticación, la configuración de los servidores DNS y la creación de certificados de autenticación. Para crear un dominio de autenticación, se puede utilizar el comando &lt;code&gt;sudo ipa domain-level 0&lt;/code&gt;. Luego, se puede agregar un servidor DNS utilizando el comando &lt;code&gt;sudo ipa dnszone-add example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;FreeIPA también permite la creación de relaciones de confianza con otros dominios de autenticación, lo que permite la autenticación de usuarios y equipos entre dominios. Para crear una relación de confianza, se puede utilizar el comando &lt;code&gt;sudo ipa trust-add example.com&lt;/code&gt;. Además, FreeIPA permite la configuración de reglas de sudo, que permiten a los administradores delegar permisos de administración a otros usuarios. Para crear una regla de sudo, se puede utilizar el comando &lt;code&gt;sudo ipa sudorule-add myrule&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA utiliza protocolos de autenticación seguros como Kerberos y LDAP. También utiliza certificados de autenticación para verificar la identidad de los usuarios y equipos. Para configurar la autenticación Kerberos, se puede utilizar el comando &lt;code&gt;sudo ipa kerberos-config&lt;/code&gt;. En resumen, FreeIPA es una herramienta poderosa para la administración de identidades en entornos de red, que permite la autenticación y autorización de usuarios y equipos de manera segura.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la configuración y el uso de FreeIPA, se puede consultar la documentación oficial de FreeIPA. También se pueden encontrar tutoriales y guías en línea que explican cómo instalar y configurar FreeIPA en diferentes sistemas operativos.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en FreeIPA, se pueden encontrar en la página oficial de FreeIPA. También se pueden encontrar en las fuentes que se citan a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/"&gt;Deploy FreeIPA Server On Cloud VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-freeipa-on-ubuntu/view"&gt;How to Set Up FreeIPA on Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mehmanjafarov1905/postgresql-ldap-authentication-integrating-freeipa-and-active-directory-445254f01df4"&gt;PostgreSQL LDAP Authentication: Integrating FreeIPA and Active Directory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-21_0840.html"/>
+    <summary>FreeIPA es un sistema de administración de identidades que combina LDAP, Kerberos, DNS y una autoridad de certificados. Permite la autenticación y autorización de usuarios y equipos en una red.</summary>
+    <published>2026-03-21T08:40:00+00:00</published>
   </entry>
 </feed>
