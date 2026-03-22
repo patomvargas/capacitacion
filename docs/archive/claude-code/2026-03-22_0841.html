@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Optimizando Claude Code - Claude Code</title>
+    <title>Mejores prácticas para Claude Code - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,50 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Optimizando Claude Code</h1>
-    <div class="meta">2026-03-14 0841 · Claude Code</div>
+    <h1>Mejores prácticas para Claude Code</h1>
+    <div class="meta">2026-03-22 0841 · Claude Code</div>
 
     <div class="content">
         
         
             
-            <p>Claude Code es una herramienta poderosa para los desarrolladores y sysadmins, pero para aprovecharla al máximo es necesario conocer sus mejores prácticas y configuraciones avanzadas. Una de las formas de mejorar la productividad es mediante el uso de `CLAUDE.md` files, que permiten enseñar a Claude Code cómo trabajar de acuerdo a tus convenciones y preferencias personales.</p>
+        
+            
+            <p>La configuración de Claude Code es fundamental para aprovechar sus funcionalidades. Se puede configurar mediante el archivo `claude_desktop_config.json`, donde se pueden especificar los servidores MCP y otros parámetros. Por ejemplo, se puede agregar un servidor MCP con el comando `mcp-registry --server <direccion_del_servidor>`.</p>
             
         
             
         
             
-            <p>Para empezar a utilizar `CLAUDE.md`, debes crear un archivo con este nombre en el directorio raíz de tu proyecto y agregar las configuraciones y reglas que desees. Por ejemplo, puedes agregar una regla para que Claude Code ignore ciertos archivos o directorios utilizando el comando `ignore: <ruta>`.</p>
+            <p>Para mejorar la productividad, se pueden crear subagentes personalizados que realicen tareas específicas. Por ejemplo, se puede crear un subagente para revisar el código con el comando `claude plugin validate`. También se pueden utilizar los hooks para automatizar tareas, como la ejecución de comandos después de una acción específica.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar la eficiencia es mediante el uso de plugins y acciones personalizadas. Por ejemplo, el repositorio `anthropics/claude-plugins-official` ofrece una variedad de plugins oficiales que pueden ser utilizados para mejorar la funcionalidad de Claude Code. También se puede crear un `claude-code-action` personalizado para automatizar tareas y flujos de trabajo.</p>
+            <p>La documentación oficial de Claude Code proporciona información valiosa sobre cómo utilizar la herramienta de manera efectiva. Por ejemplo, se puede utilizar el comando `claude --help` para obtener información sobre los parámetros y opciones disponibles. También se pueden utilizar las opciones de configuración, como `--output-style`, para personalizar la salida de la herramienta.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar la importancia de utilizar habilidades y skills en Claude Code. Las habilidades son carpetas de instrucciones, scripts y recursos que Claude carga dinámicamente para mejorar su rendimiento en tareas especializadas. Por ejemplo, se puede utilizar la habilidad de `claude-code-action` para automatizar la revisión de código y la implementación de cambios.</p>
+            <p>En cuanto a la seguridad, es importante tener en cuenta las vulnerabilidades conocidas y parchear la herramienta regularmente. Por ejemplo, se puede utilizar el comando `claude --version` para verificar la versión actual y actualizarla si es necesario.</p>
             
         
             
         
             
-            <p>Por último, es importante mantenerse actualizado con las últimas novedades y mejoras de Claude Code. La comunidad de desarrolladores y usuarios de Claude Code es muy activa y ofrece una variedad de recursos y tutoriales para ayudar a mejorar la productividad y eficiencia.</p>
+            <p>Para aprovechar al máximo las funcionalidades de Claude Code, se recomienda utilizar las mejores prácticas recomendadas por la comunidad. Por ejemplo, se puede utilizar el formato `file_path:line_number` para referirse a líneas específicas de código, y proporcionar ejemplos y detalles de error para facilitar la depuración.</p>
             
         
             
         
             
-            <p>En resumen, Claude Code es una herramienta poderosa que puede ser aprovechada al máximo mediante el uso de mejores prácticas, configuraciones avanzadas y habilidades personalizadas. Al seguir estos consejos y mantenerse actualizado con las últimas novedades, es posible mejorar la productividad y eficiencia en los flujos de trabajo.</p>
+            <p>En resumen, Claude Code es una herramienta poderosa que requiere configuración y conocimiento para aprovechar al máximo sus funcionalidades. Siguiendo las mejores prácticas y utilizando los comandos y configuraciones adecuados, se puede mejorar la productividad y la eficiencia en el desarrollo y la administración de sistemas.</p>
             
         
             
         
-            
-            <p>Para más información, se pueden consultar los siguientes recursos: `claude-code-action`, `CLAUDE.md` y `anthropics/claude-plugins-official`. También se pueden utilizar comandos como `claude plugin validate` y `claude model` para mejorar la funcionalidad de Claude Code.</p>
             
         
     </div>
@@ -111,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/anthropics/claude-plugins-official" target="_blank">anthropics/claude-plugins-official</a>
+                <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Code Docs</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code-action" target="_blank">GitHub - anthropics/claude-code-action</a>
+                <a href="https://dev.to/godinhojoao/claude-code-tools-best-practices-for-real-productivity-295g" target="_blank">Claude Code Tools: Best Practices for Real Productivity</a>
                 
             </li>
             
             <li>
                 <a href="https://medium.com/@knowsouravroy/claude-code-best-practices-564fa5f2a568" target="_blank">CLAUDE CODE — BEST PRACTICES</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/gunnargrosch/teaching-claude-code-how-you-work-claudemd-in-practice-21d9" target="_blank">Teaching Claude Code How You Work: CLAUDE.md in Practice</a>
                 
             </li>
             
@@ -137,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-03-10_1158.html">&larr; 2026-03-10 1158</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-03-14_0841.html">&larr; 2026-03-14 0841</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-03-22_0841.html">2026-03-22 0841 &rarr;</a>
             
         </div>
     </div>

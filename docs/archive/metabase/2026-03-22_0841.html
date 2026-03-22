@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metabase 59: Nuevas Funcionalidades y Mejoras - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+    </div>
+
+    <h1>Metabase 59: Nuevas Funcionalidades y Mejoras</h1>
+    <div class="meta">2026-03-22 0841 · Metabase</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Metabase 59 es una versión importante que introduce una nueva API versionada que expone la capa semántica definida en Metabase, lo que permite a los sistemas externos descubrir datos y ejecutar consultas de forma programática. Esto es especialmente útil para aplicaciones de inteligencia empresarial sin interfaz de usuario y agentes de AI que no son de Metabase.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo esta nueva funcionalidad, se puede utilizar el comando `GET /api/semantic-layer` para obtener la capa semántica definida en Metabase. Además, se puede utilizar el comando `POST /api/query` para ejecutar consultas programáticas.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Metabase 59 es Data Studio, un espacio de trabajo para analistas que permite estructurar datos y construir una capa semántica de forma sencilla. Data Studio proporciona herramientas para curar la capa semántica en Metabase, lo que permite a los analistas crear dashboards y informes más precisos y relevantes.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Metabase 59 también incluye mejoras en la seguridad, como la corrección de vulnerabilidades y la implementación de medidas de seguridad adicionales. Es importante mencionar que, según la documentación oficial, todos los instancias de Metabase Cloud han sido actualizadas y ya no son vulnerables.</p>
+            
+        
+            
+        
+            
+            <p>Para embeddings y API, Metabase 59 proporciona una mayor flexibilidad y personalización, lo que permite a los desarrolladores integrar Metabase con sus aplicaciones de forma más sencilla. Se pueden utilizar comandos como `GET /api/embed` para obtener un embed de un dashboard o informe, y `POST /api/query` para ejecutar consultas programáticas.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Metabase 59 es una versión importante que introduce nuevas funcionalidades y mejoras en la capa semántica, la seguridad y la integración con sistemas externos. Los administradores y desarrolladores pueden aprovechar al máximo estas nuevas funcionalidades para crear dashboards y informes más precisos y relevantes, y para integrar Metabase con sus aplicaciones de forma más sencilla.</p>
+            
+        
+            
+        
+            
+            <p>Para custom expressions, Metabase 59 proporciona una mayor flexibilidad y personalización, lo que permite a los desarrolladores crear expresiones personalizadas para sus dashboards y informes. Se pueden utilizar comandos como `GET /api/custom-expressions` para obtener una lista de expresiones personalizadas, y `POST /api/custom-expressions` para crear una nueva expresión personalizada.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la administración, Metabase 59 proporciona herramientas y características para ayudar a los administradores a gestionar sus instancias de Metabase de forma más eficiente. Se pueden utilizar comandos como `GET /api/instances` para obtener una lista de instancias, y `POST /api/instances` para crear una nueva instancia.</p>
+            
+        
+            
+        
+            
+            <p>En general, Metabase 59 es una versión importante que introduce nuevas funcionalidades y mejoras en la capa semántica, la seguridad y la integración con sistemas externos. Los administradores y desarrolladores pueden aprovechar al máximo estas nuevas funcionalidades para crear dashboards y informes más precisos y relevantes, y para integrar Metabase con sus aplicaciones de forma más sencilla.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Metabase, que proporciona detalles sobre las nuevas funcionalidades y mejoras de Metabase 59.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.metabase.com/releases/metabase-59" target="_blank">Metabase 59</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://discourse.metabase.com/t/metabase-59-is-here/296136" target="_blank">Metabase 59 is here!</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.metabase.com/blog/meet-data-studio-semantic-layer" target="_blank">Meet Data Studio</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/70972" target="_blank">Migration failure on large metabase_table during upgrade to v59</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "2026-03-22_0841": {
+    "slug": "metabase",
+    "title": "Metabase 59: Nuevas Funcionalidades y Mejoras",
+    "summary": "Metabase 59 introduce una nueva API versionada y mejoras en la capa semántica, permitiendo una integración más sencilla con sistemas externos. Además, se han agregado nuevas características como Data Studio y generación de SQL mediante AI.",
+    "content": "Metabase 59 es una versión importante que introduce una nueva API versionada que expone la capa semántica definida en Metabase, lo que permite a los sistemas externos descubrir datos y ejecutar consultas de forma programática. Esto es especialmente útil para aplicaciones de inteligencia empresarial sin interfaz de usuario y agentes de AI que no son de Metabase.\n\nPara aprovechar al máximo esta nueva funcionalidad, se puede utilizar el comando `GET /api/semantic-layer` para obtener la capa semántica definida en Metabase. Además, se puede utilizar el comando `POST /api/query` para ejecutar consultas programáticas.\n\nOtra característica importante de Metabase 59 es Data Studio, un espacio de trabajo para analistas que permite estructurar datos y construir una capa semántica de forma sencilla. Data Studio proporciona herramientas para curar la capa semántica en Metabase, lo que permite a los analistas crear dashboards y informes más precisos y relevantes.\n\nEn cuanto a la seguridad, Metabase 59 también incluye mejoras en la seguridad, como la corrección de vulnerabilidades y la implementación de medidas de seguridad adicionales. Es importante mencionar que, según la documentación oficial, todos los instancias de Metabase Cloud han sido actualizadas y ya no son vulnerables.\n\nPara embeddings y API, Metabase 59 proporciona una mayor flexibilidad y personalización, lo que permite a los desarrolladores integrar Metabase con sus aplicaciones de forma más sencilla. Se pueden utilizar comandos como `GET /api/embed` para obtener un embed de un dashboard o informe, y `POST /api/query` para ejecutar consultas programáticas.\n\nEn resumen, Metabase 59 es una versión importante que introduce nuevas funcionalidades y mejoras en la capa semántica, la seguridad y la integración con sistemas externos. Los administradores y desarrolladores pueden aprovechar al máximo estas nuevas funcionalidades para crear dashboards y informes más precisos y relevantes, y para integrar Metabase con sus aplicaciones de forma más sencilla.\n\nPara custom expressions, Metabase 59 proporciona una mayor flexibilidad y personalización, lo que permite a los desarrolladores crear expresiones personalizadas para sus dashboards y informes. Se pueden utilizar comandos como `GET /api/custom-expressions` para obtener una lista de expresiones personalizadas, y `POST /api/custom-expressions` para crear una nueva expresión personalizada.\n\nEn cuanto a la administración, Metabase 59 proporciona herramientas y características para ayudar a los administradores a gestionar sus instancias de Metabase de forma más eficiente. Se pueden utilizar comandos como `GET /api/instances` para obtener una lista de instancias, y `POST /api/instances` para crear una nueva instancia.\n\nEn general, Metabase 59 es una versión importante que introduce nuevas funcionalidades y mejoras en la capa semántica, la seguridad y la integración con sistemas externos. Los administradores y desarrolladores pueden aprovechar al máximo estas nuevas funcionalidades para crear dashboards y informes más precisos y relevantes, y para integrar Metabase con sus aplicaciones de forma más sencilla.\n\nPara más información, se puede consultar la documentación oficial de Metabase, que proporciona detalles sobre las nuevas funcionalidades y mejoras de Metabase 59.\n\n",
+    "sources": [
+      {
+        "title": "Metabase 59",
+        "url": "https://www.metabase.com/releases/metabase-59"
+      },
+      {
+        "title": "Metabase 59 is here!",
+        "url": "https://discourse.metabase.com/t/metabase-59-is-here/296136"
+      },
+      {
+        "title": "Meet Data Studio",
+        "url": "https://www.metabase.com/blog/meet-data-studio-semantic-layer"
+      },
+      {
+        "title": "Migration failure on large metabase_table during upgrade to v59",
+        "url": "https://github.com/metabase/metabase/issues/70972"
+      }
+    ]
+  }
+}

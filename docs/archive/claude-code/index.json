@@ -1,4 +1,24 @@
 {
+  "2026-03-22_0841": {
+    "slug": "claude-code",
+    "title": "Mejores prácticas para Claude Code",
+    "summary": "Claude Code es una herramienta poderosa para desarrolladores y sysadmins. En este artículo, se presentan las mejores prácticas para aprovechar al máximo sus funcionalidades.",
+    "content": "\nLa configuración de Claude Code es fundamental para aprovechar sus funcionalidades. Se puede configurar mediante el archivo `claude_desktop_config.json`, donde se pueden especificar los servidores MCP y otros parámetros. Por ejemplo, se puede agregar un servidor MCP con el comando `mcp-registry --server <direccion_del_servidor>`.\n\nPara mejorar la productividad, se pueden crear subagentes personalizados que realicen tareas específicas. Por ejemplo, se puede crear un subagente para revisar el código con el comando `claude plugin validate`. También se pueden utilizar los hooks para automatizar tareas, como la ejecución de comandos después de una acción específica.\n\nLa documentación oficial de Claude Code proporciona información valiosa sobre cómo utilizar la herramienta de manera efectiva. Por ejemplo, se puede utilizar el comando `claude --help` para obtener información sobre los parámetros y opciones disponibles. También se pueden utilizar las opciones de configuración, como `--output-style`, para personalizar la salida de la herramienta.\n\nEn cuanto a la seguridad, es importante tener en cuenta las vulnerabilidades conocidas y parchear la herramienta regularmente. Por ejemplo, se puede utilizar el comando `claude --version` para verificar la versión actual y actualizarla si es necesario.\n\nPara aprovechar al máximo las funcionalidades de Claude Code, se recomienda utilizar las mejores prácticas recomendadas por la comunidad. Por ejemplo, se puede utilizar el formato `file_path:line_number` para referirse a líneas específicas de código, y proporcionar ejemplos y detalles de error para facilitar la depuración.\n\nEn resumen, Claude Code es una herramienta poderosa que requiere configuración y conocimiento para aprovechar al máximo sus funcionalidades. Siguiendo las mejores prácticas y utilizando los comandos y configuraciones adecuados, se puede mejorar la productividad y la eficiencia en el desarrollo y la administración de sistemas.\n\n  ",
+    "sources": [
+      {
+        "title": "Claude Code Docs",
+        "url": "https://github.com/anthropics/claude-code"
+      },
+      {
+        "title": "Claude Code Tools: Best Practices for Real Productivity",
+        "url": "https://dev.to/godinhojoao/claude-code-tools-best-practices-for-real-productivity-295g"
+      },
+      {
+        "title": "CLAUDE CODE — BEST PRACTICES",
+        "url": "https://medium.com/@knowsouravroy/claude-code-best-practices-564fa5f2a568"
+      }
+    ]
+  },
   "2026-03-14_0841": {
     "slug": "claude-code",
     "title": "Optimizando Claude Code",
