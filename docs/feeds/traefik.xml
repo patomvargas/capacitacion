@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-22T08:41:51.334379+00:00</updated>
+  <updated>2026-03-23T09:04:58.940245+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -25,5 +25,43 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-19_0852.html"/>
     <summary>Traefik es un proxy inverso y balanceador de carga que ofrece una gran flexibilidad en su configuración. En este artículo, se presentan algunas best practices y configuraciones para mejorar la seguridad y el rendimiento de Traefik.</summary>
     <published>2026-03-19T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-23_0904.html</id>
+    <title>Seguridad y Mejoras en Traefik</title>
+    <updated>2026-03-23T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un proxy inverso y un balanceador de carga que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han identificado varias vulnerabilidades en Traefik que han sido abordadas en las versiones 2.11 y 3.6. Una de estas vulnerabilidades es la inyección de reglas en HTTPRoute, que permite a un atacante inyectar reglas maliciosas en el router de Traefik.&lt;/p&gt;
+&lt;p&gt;Para mitigar esta vulnerabilidad, se puede utilizar la configuración de &lt;code&gt;HTTPRoute&lt;/code&gt; con &lt;code&gt;match&lt;/code&gt; y &lt;code&gt;kind&lt;/code&gt; para restringir las reglas que se pueden inyectar. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: traefik.containo.us/v1alpha1&lt;/p&gt;
+&lt;p&gt;kind: IngressRoute&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: ejemplo&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;entryPoints:&lt;/p&gt;
+&lt;p&gt;- web&lt;/p&gt;
+&lt;p&gt;routes:&lt;/p&gt;
+&lt;p&gt;- match: Host(&lt;code&gt;example.com&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;kind: Rule&lt;/p&gt;
+&lt;p&gt;services:&lt;/p&gt;
+&lt;p&gt;- name: servicio-ejemplo&lt;/p&gt;
+&lt;p&gt;port: 80&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Otra vulnerabilidad que se ha abordado es la omisión de cabeceras X-Forwarded, que puede ser explotada por un atacante para obtener información sensible sobre el servidor. Para prevenir esto, se puede configurar Traefik para que incluya las cabeceras X-Forwarded en las solicitudes. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;```bash&lt;/p&gt;
+&lt;p&gt;traefik --log.level=DEBUG --log.file=/var/log/traefik.log --api.insecure=true --providers.docker=true --providers.docker.exposedbydefault=false --entrypoints.web.address=:80 --entrypoints.web.http.middlewares=forwarded-headers@file&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Es importante tener en cuenta que la seguridad es un proceso continuo y que es fundamental mantener actualizado el software y configuraciones para prevenir vulnerabilidades.&lt;/p&gt;
+&lt;p&gt;Además de las actualizaciones de seguridad, Traefik también ha lanzado nuevas características y mejoras en sus versiones 2.11 y 3.6. Una de estas características es el soporte para ingress-nginx annotations, que permite a los usuarios configurar Traefik utilizando anotaciones en sus recursos de Kubernetes.&lt;/p&gt;
+&lt;p&gt;En resumen, las actualizaciones de seguridad y mejoras en Traefik son fundamentales para mantener la seguridad y el rendimiento de los entornos de contenedores y Kubernetes. Es importante mantener actualizado el software y configuraciones para prevenir vulnerabilidades y aprovechar las nuevas características y mejoras.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las actualizaciones de seguridad y mejoras en Traefik, se pueden consultar las fuentes oficiales de Traefik y las notas de lanzamiento de las versiones 2.11 y 3.6.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.traefik.io/t/traefik-3-7-release/29694"&gt;Traefik 3.7 release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.traefik.io/t/new-security-updates-for-traefik-2-11-2-11-38-and-3-6-3-6-9/29718"&gt;New Security Updates for Traefik 2.11 (2.11.38) and 3.6 (3.6.9)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-92mv-8f8w-wq52"&gt;Case-Sensitive Bypass in Connection Header Allows Removal of X-Forwarded Headers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-23_0904.html"/>
+    <summary>Traefik ha lanzado actualizaciones de seguridad y mejoras en sus versiones 2.11 y 3.6. Estas actualizaciones abordan vulnerabilidades como la inyección de reglas en HTTPRoute y la omisión de cabeceras X-Forwarded.</summary>
+    <published>2026-03-23T09:04:00+00:00</published>
   </entry>
 </feed>

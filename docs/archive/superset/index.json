@@ -1,4 +1,24 @@
 {
+  "2026-03-23_0904": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Novedades",
+    "summary": "Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.1.0, incluyendo la corrección de errores y la adición de nuevas características.",
+    "content": "Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards personalizados y visualizar datos de manera efectiva. En la versión 6.1.0, se han corregido varios errores, como el problema de la barra de gráficos de ECharts que no podía ordenarse de manera descendente cuando se aplicaba una dimensión. \n \n Para solucionar este problema, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos de Superset. Además, se ha agregado la opción de pre-filtrado para el control de grano de tiempo, lo que permite a los usuarios limitar las opciones disponibles en este control. \n \n La comunidad de Superset ha estado trabajando activamente en la mejora de la herramienta, con 48 colaboradores que han fusionado 330 solicitudes de extracción en febrero de 2026. Esto refleja el ritmo y la dedicación de la comunidad en la mejora de Superset. \n \n En cuanto a la administración de Superset, es importante tener en cuenta la configuración de la base de datos y la seguridad. Se puede utilizar el comando `superset init` para inicializar la base de datos de Superset, y luego configurar la seguridad mediante el archivo `superset_config.py`. \n \n La documentación de Superset también ha sido actualizada, con la adición de nuevos componentes y una guía de diseño de sistema. Esto permite a los desarrolladores crear dashboards y visualizaciones de datos de manera más efectiva y personalizada.",
+    "sources": [
+      {
+        "title": "Apache Superset Community Update: February 2026",
+        "url": "https://preset.io/blog/apache-superset-community-update-february-2026/"
+      },
+      {
+        "title": "Core Components | Superset",
+        "url": "https://superset.apache.org/developer-docs/components/ui/"
+      },
+      {
+        "title": "Layout Components | Superset",
+        "url": "https://superset.apache.org/developer-docs/components/design-system/"
+      }
+    ]
+  },
   "2026-03-19_0852": {
     "slug": "superset",
     "title": "Superset: Mejores prácticas y solución de problemas",

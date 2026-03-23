@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-22T08:41:51.333640+00:00</updated>
+  <updated>2026-03-23T09:04:58.939381+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -104,5 +104,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-19_0852.html"/>
     <summary>Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. En este artículo, se presentan algunas mejores prácticas y soluciones a problemas comunes en Superset.</summary>
     <published>2026-03-19T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-23_0904.html</id>
+    <title>Superset: Mejoras y Novedades</title>
+    <updated>2026-03-23T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards personalizados y visualizar datos de manera efectiva. En la versión 6.1.0, se han corregido varios errores, como el problema de la barra de gráficos de ECharts que no podía ordenarse de manera descendente cuando se aplicaba una dimensión.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos de Superset. Además, se ha agregado la opción de pre-filtrado para el control de grano de tiempo, lo que permite a los usuarios limitar las opciones disponibles en este control.&lt;/p&gt;
+&lt;p&gt;La comunidad de Superset ha estado trabajando activamente en la mejora de la herramienta, con 48 colaboradores que han fusionado 330 solicitudes de extracción en febrero de 2026. Esto refleja el ritmo y la dedicación de la comunidad en la mejora de Superset.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, es importante tener en cuenta la configuración de la base de datos y la seguridad. Se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar la base de datos de Superset, y luego configurar la seguridad mediante el archivo &lt;code&gt;superset_config.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La documentación de Superset también ha sido actualizada, con la adición de nuevos componentes y una guía de diseño de sistema. Esto permite a los desarrolladores crear dashboards y visualizaciones de datos de manera más efectiva y personalizada.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://preset.io/blog/apache-superset-community-update-february-2026/"&gt;Apache Superset Community Update: February 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/developer-docs/components/ui/"&gt;Core Components | Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/developer-docs/components/design-system/"&gt;Layout Components | Superset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-23_0904.html"/>
+    <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.1.0, incluyendo la corrección de errores y la adición de nuevas características.</summary>
+    <published>2026-03-23T09:04:00+00:00</published>
   </entry>
 </feed>

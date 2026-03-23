@@ -1,4 +1,24 @@
 {
+  "2026-03-23_0904": {
+    "slug": "airflow",
+    "title": "Airflow 2.x: Mejores Prácticas y Nuevas Características",
+    "summary": "Airflow es una herramienta de orquestación de workflows que ha evolucionado significativamente en su versión 2.x. En este artículo, exploraremos las mejores prácticas y nuevas características de Airflow 2.x, incluyendo DAGs, operadores, sensores y conexiones.",
+    "content": "Airflow 2.x introduce varias novedades y mejoras en comparación con sus versiones anteriores. Una de las características más destacadas es el soporte para DeltaTriggerTimetable, que permite programar trabajos basados en deltas sin depender de intervalos de datos. Para utilizar esta característica, se puede crear un `DeltaTriggerTimetable` en el archivo `airflow.cfg` con el siguiente comando: `airflow config set core delta_trigger_timetable True`.\n\n \nLa versión 2.11.2 de Airflow también incluye mejoras en la gestión de proveedores, lo que facilita la integración con otros servicios y herramientas. Por ejemplo, se puede utilizar el comando `airflow providers list` para ver la lista de proveedores disponibles y `airflow providers install` para instalar nuevos proveedores.\n\n \nOtra característica importante de Airflow 2.x es el soporte para XCom, que permite la comunicación entre tareas y la reutilización de resultados. Para utilizar XCom, se puede crear un `XComArg` en el código de la tarea y luego utilizar el método `xcom_pull` para recuperar el valor. Por ejemplo: `xcom_arg = XComArg(task_id='mi_tarea', key='mi_valor')` y luego `valor = xcom_pull(task_id='mi_tarea', key='mi_valor')`.\n\n \nEn cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar DAGs bien estructurados y organizados. Un DAG bien diseñado debe tener una lógica clara y fácil de seguir, y debe incluir comentarios y documentación para facilitar su comprensión. También es importante utilizar operadores y sensores de manera efectiva para automatizar y controlar los flujos de trabajo.\n\n \nFinalmente, es importante destacar la importancia de mantener actualizado Airflow y utilizar las últimas versiones de los proveedores y dependencias. Esto garantiza que se aprovechen las últimas características y mejoras de seguridad, y reduce el riesgo de vulnerabilidades y errores.\n\n \nPara más información sobre Airflow y sus características, se puede consultar la documentación oficial y los recursos en línea, como la página de GitHub de Apache Airflow y los tutoriales y guías de Astronomer.",
+    "sources": [
+      {
+        "title": "Release Notes — Airflow 2.11.2 Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"
+      },
+      {
+        "title": "Apache Airflow 101: Local Setup and Core Concepts Tutorial",
+        "url": "https://medium.com/@dorangao/apache-airflow-101-local-setup-and-core-concepts-tutorial-20270bf3d17f"
+      },
+      {
+        "title": "Apache Airflow: A Practical Guide for Data Engineers",
+        "url": "https://medium.com/@sauhar/apache-airflow-a-practical-guide-for-data-engineers-30c4876fe8a0"
+      }
+    ]
+  },
   "2026-03-15_0843": {
     "slug": "airflow",
     "title": "Airflow: Mejores Practicas y Novedades",

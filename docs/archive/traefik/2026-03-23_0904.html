@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad y Mejoras en Traefik - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Seguridad y Mejoras en Traefik</h1>
+    <div class="meta">2026-03-23 0904 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Traefik es un proxy inverso y un balanceador de carga que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han identificado varias vulnerabilidades en Traefik que han sido abordadas en las versiones 2.11 y 3.6. Una de estas vulnerabilidades es la inyección de reglas en HTTPRoute, que permite a un atacante inyectar reglas maliciosas en el router de Traefik.</p>
+            
+        
+            
+        
+            
+            <p>Para mitigar esta vulnerabilidad, se puede utilizar la configuración de `HTTPRoute` con `match` y `kind` para restringir las reglas que se pueden inyectar. Por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: traefik.containo.us/v1alpha1</p>
+            
+        
+            
+            <p>kind: IngressRoute</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: ejemplo</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>entryPoints:</p>
+            
+        
+            
+            <p>- web</p>
+            
+        
+            
+            <p>routes:</p>
+            
+        
+            
+            <p>- match: Host(`example.com`)</p>
+            
+        
+            
+            <p>kind: Rule</p>
+            
+        
+            
+            <p>services:</p>
+            
+        
+            
+            <p>- name: servicio-ejemplo</p>
+            
+        
+            
+            <p>port: 80</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Otra vulnerabilidad que se ha abordado es la omisión de cabeceras X-Forwarded, que puede ser explotada por un atacante para obtener información sensible sobre el servidor. Para prevenir esto, se puede configurar Traefik para que incluya las cabeceras X-Forwarded en las solicitudes. Por ejemplo:</p>
+            
+        
+            
+            <p>```bash</p>
+            
+        
+            
+            <p>traefik --log.level=DEBUG --log.file=/var/log/traefik.log --api.insecure=true --providers.docker=true --providers.docker.exposedbydefault=false --entrypoints.web.address=:80 --entrypoints.web.http.middlewares=forwarded-headers@file</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Es importante tener en cuenta que la seguridad es un proceso continuo y que es fundamental mantener actualizado el software y configuraciones para prevenir vulnerabilidades.</p>
+            
+        
+            
+        
+            
+            <p>Además de las actualizaciones de seguridad, Traefik también ha lanzado nuevas características y mejoras en sus versiones 2.11 y 3.6. Una de estas características es el soporte para ingress-nginx annotations, que permite a los usuarios configurar Traefik utilizando anotaciones en sus recursos de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, las actualizaciones de seguridad y mejoras en Traefik son fundamentales para mantener la seguridad y el rendimiento de los entornos de contenedores y Kubernetes. Es importante mantener actualizado el software y configuraciones para prevenir vulnerabilidades y aprovechar las nuevas características y mejoras.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre las actualizaciones de seguridad y mejoras en Traefik, se pueden consultar las fuentes oficiales de Traefik y las notas de lanzamiento de las versiones 2.11 y 3.6.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://community.traefik.io/t/traefik-3-7-release/29694" target="_blank">Traefik 3.7 release</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://community.traefik.io/t/new-security-updates-for-traefik-2-11-2-11-38-and-3-6-3-6-9/29718" target="_blank">New Security Updates for Traefik 2.11 (2.11.38) and 3.6 (3.6.9)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-92mv-8f8w-wq52" target="_blank">Case-Sensitive Bypass in Connection Header Allows Removal of X-Forwarded Headers</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-19_0852.html">&larr; 2026-03-19 0852</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

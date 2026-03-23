@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-22T08:41:51.332301+00:00</updated>
+  <updated>2026-03-23T09:04:58.937872+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -73,5 +73,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-15_0843.html"/>
     <summary>Airflow es una herramienta de orquestación de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo complejos. En este artículo, se presentan las mejores prácticas y novedades en Airflow, incluyendo la configuración de DAGs, operadores y sensores.</summary>
     <published>2026-03-15T08:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-23_0904.html</id>
+    <title>Airflow 2.x: Mejores Prácticas y Nuevas Características</title>
+    <updated>2026-03-23T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow 2.x introduce varias novedades y mejoras en comparación con sus versiones anteriores. Una de las características más destacadas es el soporte para DeltaTriggerTimetable, que permite programar trabajos basados en deltas sin depender de intervalos de datos. Para utilizar esta característica, se puede crear un &lt;code&gt;DeltaTriggerTimetable&lt;/code&gt; en el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; con el siguiente comando: &lt;code&gt;airflow config set core delta_trigger_timetable True&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 2.11.2 de Airflow también incluye mejoras en la gestión de proveedores, lo que facilita la integración con otros servicios y herramientas. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow providers list&lt;/code&gt; para ver la lista de proveedores disponibles y &lt;code&gt;airflow providers install&lt;/code&gt; para instalar nuevos proveedores.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Airflow 2.x es el soporte para XCom, que permite la comunicación entre tareas y la reutilización de resultados. Para utilizar XCom, se puede crear un &lt;code&gt;XComArg&lt;/code&gt; en el código de la tarea y luego utilizar el método &lt;code&gt;xcom_pull&lt;/code&gt; para recuperar el valor. Por ejemplo: &lt;code&gt;xcom_arg = XComArg(task_id='mi_tarea', key='mi_valor')&lt;/code&gt; y luego &lt;code&gt;valor = xcom_pull(task_id='mi_tarea', key='mi_valor')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar DAGs bien estructurados y organizados. Un DAG bien diseñado debe tener una lógica clara y fácil de seguir, y debe incluir comentarios y documentación para facilitar su comprensión. También es importante utilizar operadores y sensores de manera efectiva para automatizar y controlar los flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de mantener actualizado Airflow y utilizar las últimas versiones de los proveedores y dependencias. Esto garantiza que se aprovechen las últimas características y mejoras de seguridad, y reduce el riesgo de vulnerabilidades y errores.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Airflow y sus características, se puede consultar la documentación oficial y los recursos en línea, como la página de GitHub de Apache Airflow y los tutoriales y guías de Astronomer.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"&gt;Release Notes — Airflow 2.11.2 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@dorangao/apache-airflow-101-local-setup-and-core-concepts-tutorial-20270bf3d17f"&gt;Apache Airflow 101: Local Setup and Core Concepts Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@sauhar/apache-airflow-a-practical-guide-for-data-engineers-30c4876fe8a0"&gt;Apache Airflow: A Practical Guide for Data Engineers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-23_0904.html"/>
+    <summary>Airflow es una herramienta de orquestación de workflows que ha evolucionado significativamente en su versión 2.x. En este artículo, exploraremos las mejores prácticas y nuevas características de Airflow 2.x, incluyendo DAGs, operadores, sensores y conexiones.</summary>
+    <published>2026-03-23T09:04:00+00:00</published>
   </entry>
 </feed>

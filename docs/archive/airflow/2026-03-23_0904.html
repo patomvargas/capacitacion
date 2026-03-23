@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow 2.x: Mejores Prácticas y Nuevas Características - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow 2.x: Mejores Prácticas y Nuevas Características</h1>
+    <div class="meta">2026-03-23 0904 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow 2.x introduce varias novedades y mejoras en comparación con sus versiones anteriores. Una de las características más destacadas es el soporte para DeltaTriggerTimetable, que permite programar trabajos basados en deltas sin depender de intervalos de datos. Para utilizar esta característica, se puede crear un `DeltaTriggerTimetable` en el archivo `airflow.cfg` con el siguiente comando: `airflow config set core delta_trigger_timetable True`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La versión 2.11.2 de Airflow también incluye mejoras en la gestión de proveedores, lo que facilita la integración con otros servicios y herramientas. Por ejemplo, se puede utilizar el comando `airflow providers list` para ver la lista de proveedores disponibles y `airflow providers install` para instalar nuevos proveedores.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Airflow 2.x es el soporte para XCom, que permite la comunicación entre tareas y la reutilización de resultados. Para utilizar XCom, se puede crear un `XComArg` en el código de la tarea y luego utilizar el método `xcom_pull` para recuperar el valor. Por ejemplo: `xcom_arg = XComArg(task_id='mi_tarea', key='mi_valor')` y luego `valor = xcom_pull(task_id='mi_tarea', key='mi_valor')`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar DAGs bien estructurados y organizados. Un DAG bien diseñado debe tener una lógica clara y fácil de seguir, y debe incluir comentarios y documentación para facilitar su comprensión. También es importante utilizar operadores y sensores de manera efectiva para automatizar y controlar los flujos de trabajo.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar la importancia de mantener actualizado Airflow y utilizar las últimas versiones de los proveedores y dependencias. Esto garantiza que se aprovechen las últimas características y mejoras de seguridad, y reduce el riesgo de vulnerabilidades y errores.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para más información sobre Airflow y sus características, se puede consultar la documentación oficial y los recursos en línea, como la página de GitHub de Apache Airflow y los tutoriales y guías de Astronomer.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html" target="_blank">Release Notes — Airflow 2.11.2 Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@dorangao/apache-airflow-101-local-setup-and-core-concepts-tutorial-20270bf3d17f" target="_blank">Apache Airflow 101: Local Setup and Core Concepts Tutorial</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@sauhar/apache-airflow-a-practical-guide-for-data-engineers-30c4876fe8a0" target="_blank">Apache Airflow: A Practical Guide for Data Engineers</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-15_0843.html">&larr; 2026-03-15 0843</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
