@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-23T09:04:58.942231+00:00</updated>
+  <updated>2026-03-24T09:00:05.380449+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -66,5 +66,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-20_0850.html"/>
     <summary>En este artículo, se presentan técnicas y herramientas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. Se cubren también las últimas novedades y mejoras en la versión 18.3 de PostgreSQL.</summary>
     <published>2026-03-20T08:50:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-24_0859.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-03-24T08:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas más efectivas de mejorar el rendimiento es mediante la creación de índices. Los índices permiten al motor de base de datos acceder rápidamente a los datos, reduciendo el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra característica importante de PostgreSQL que permite mantener una copia exacta de la base de datos en un servidor diferente. Esto es útil para garantizar la disponibilidad de los datos en caso de un fallo del servidor principal. Para configurar la replicación en PostgreSQL, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos y luego configurar el servidor esclavo para que se sincronice con el servidor principal.&lt;/p&gt;
+&lt;p&gt;Además de la creación de índices y la replicación, la creación de copias de seguridad es fundamental para garantizar la integridad de los datos. PostgreSQL ofrece varias herramientas para crear copias de seguridad, incluyendo &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;. El comando &lt;code&gt;pg_dump&lt;/code&gt; se utiliza para crear una copia de la base de datos en un archivo, mientras que el comando &lt;code&gt;pg_restore&lt;/code&gt; se utiliza para restaurar la base de datos desde una copia de seguridad.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil para optimizar el rendimiento de PostgreSQL es &lt;code&gt;pg_stat&lt;/code&gt;, que proporciona información detallada sobre el rendimiento de la base de datos. Esta herramienta puede ayudar a identificar cuellos de botella y a optimizar las consultas para mejorar el rendimiento.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de mantener la base de datos actualizada y segura. La última versión de PostgreSQL, la 18, ofrece varias mejoras y características nuevas, incluyendo la compatibilidad con la replicación asincrónica y la creación de índices concurrentes. Para actualizar a la última versión, se puede utilizar el comando &lt;code&gt;pg_upgrade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas, incluyendo la creación de índices, la replicación, la creación de copias de seguridad y el monitoreo del rendimiento. Al utilizar estas herramientas y técnicas, es posible mejorar significativamente el rendimiento y la disponibilidad de la base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/release/"&gt;Release Notes - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/young_gao/postgresql-performance-10-queries-you-are-writing-wrong-2o6d"&gt;PostgreSQL Performance: 10 Queries You Are Writing Wrong&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/elpic/scaling-postgresql-to-100m-vectors-production-optimization-guide-5fo8"&gt;Scaling PostgreSQL to 100M+ Vectors: Production Optimization Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-24_0859.html"/>
+    <summary>En este artículo, se presentan mejores prácticas y técnicas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. Se proporcionan ejemplos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-03-24T08:59:00+00:00</published>
   </entry>
 </feed>

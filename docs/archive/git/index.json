@@ -1,4 +1,32 @@
 {
+  "2026-03-24_0859": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para Workflows avanzados",
+    "summary": "Aprende a utilizar Git de manera efectiva con workflows avanzados, incluyendo el uso de hooks, rebase, bisect y worktrees. Mejora tu productividad y colaboración en equipo con estas best practices.",
+    "content": "En el mundo de la programación, Git es una herramienta indispensable para el control de versiones y la colaboración en equipo. Sin embargo, muchos desarrolladores no aprovechan al máximo sus capacidades. En este artículo, exploraremos algunas de las mejores prácticas de Git para workflows avanzados. \n \n Una de las características más poderosas de Git es la capacidad de crear ramas (branches) y fusionarlas (merge) de manera efectiva. Para hacer esto, podemos utilizar el comando `git checkout -b` para crear una nueva rama y `git merge` para fusionarla con la rama principal. Sin embargo, es importante tener en cuenta que el uso excesivo de ramas puede generar conflictos y dificultades para mantener el código organizado. \n   \n Para evitar esto, podemos utilizar el comando `git rebase` para reorganizar los commits y mantener la historia de la rama limpia. Esto se puede hacer con el comando `git rebase -i` para interactuar con los commits y reorganizarlos de manera efectiva. \n   \n Otra herramienta útil en Git es el comando `git bisect` que nos permite buscar el commit que introdujo un bug en el código. Esto se puede hacer con el comando `git bisect start` y `git bisect bad` para marcar el commit que contiene el bug. Luego, podemos utilizar `git bisect good` para marcar el commit que no contiene el bug y `git bisect reset` para regresar a la rama principal. \n   \n Finalmente, es importante mencionar el uso de worktrees en Git. Un worktree es una copia de la rama principal que se puede utilizar para probar cambios sin afectar la rama principal. Esto se puede hacer con el comando `git worktree add` para crear un nuevo worktree y `git worktree remove` para eliminarlo. \n   \n En resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para mejorar la productividad y la colaboración en equipo. Al utilizar estas best practices, podemos aprovechar al máximo sus capacidades y mantener nuestro código organizado y eficiente.",
+    "sources": [
+      {
+        "title": "GitHub - terryso/claude-auto-resume",
+        "url": "https://github.com/terryso/claude-auto-resume"
+      },
+      {
+        "title": "DuckDuckGo Android",
+        "url": "https://github.com/duckduckgo/Android"
+      },
+      {
+        "title": "Hugo Theme Stack Starter Template",
+        "url": "https://github.com/CaiJimmy/hugo-theme-stack-starter"
+      },
+      {
+        "title": "Lenny's Product Skills for Claude Code",
+        "url": "https://github.com/RefoundAI/lenny-skills"
+      },
+      {
+        "title": "openziti/ziti-sdk-nodejs",
+        "url": "https://github.com/openziti/ziti-sdk-nodejs"
+      }
+    ]
+  },
   "2026-03-20_0850": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-03-20 0850 · Git</div>
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-03-24 0859 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Git es un sistema de control de versiones ampliamente utilizado en la industria del software. Para aprovechar al máximo sus funcionalidades, es importante conocer algunas mejores prácticas y comandos avanzados. Por ejemplo, el comando `git rebase` se utiliza para reorganizar los commits y mantener un historial de cambios limpio y coherente.</p>
+            <p>Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, que son archivos YAML que definen una serie de tareas que se deben ejecutar en un conjunto de máquinas. Para empezar a usar Ansible, es necesario instalar el software en la máquina que se utilizará como controlador, utilizando el comando `sudo apt-get install ansible` en sistemas Ubuntu/Debian.</p>
             
         
             
         
             
-            <p>Una de las mejores prácticas es utilizar `git worktrees` para trabajar en diferentes ramas o versiones de un proyecto sin tener que clonar el repositorio completo. Esto se logra con el comando `git worktree add <nombre-rama> <ruta-rama>`. Además, es importante utilizar `git bisect` para identificar y solucionar problemas en el código de manera eficiente.</p>
+        
+            
+            <p>Una vez instalado Ansible, es posible empezar a crear playbooks. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de máquinas. Por ejemplo, un playbook puede definir una tarea para instalar y configurar un servidor web Apache, utilizando el comando `ansible-galaxy install geerlingguy.apache` para instalar el rol de Apache desde la galería de Ansible.</p>
             
         
             
         
             
-            <p>Otra herramienta útil es `git hook`, que permite ejecutar scripts personalizados en diferentes etapas del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar la calidad del código antes de realizar un commit. Esto se configura agregando un script en el directorio `.git/hooks` con el nombre `pre-commit`.</p>
+        
+            
+            <p>Para gestionar las configuraciones de las máquinas, Ansible utiliza un inventario, que es un archivo que define los grupos de máquinas y sus respectivas configuraciones. El inventario se puede definir en un archivo llamado `hosts`, utilizando el comando `ansible-inventory --graph` para visualizar la estructura del inventario.</p>
             
         
             
         
             
-            <p>La colaboración en equipo es fundamental en el desarrollo de software, y Git proporciona herramientas como `git merge` y `git pull` para integrar cambios de diferentes desarrolladores. Sin embargo, es importante utilizar estas herramientas de manera efectiva para evitar conflictos y mantener un historial de cambios coherente.</p>
+        
+            
+            <p>Ansible también proporciona una herramienta llamada AWX/Tower, que es una interfaz web para gestionar y automatizar las tareas de Ansible. AWX/Tower permite a los administradores de sistemas y desarrolladores crear y gestionar playbooks, inventarios y configuraciones de forma centralizada.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que requiere conocimiento y práctica para utilizarla de manera efectiva. Algunos comandos avanzados como `git rebase`, `git worktrees` y `git bisect` pueden mejorar significativamente la productividad y colaboración en proyectos de desarrollo de software.</p>
-            
         
             
-        
-            
-            <p>Finalmente, es importante mencionar que existen recursos en línea que pueden ayudar a mejorar las habilidades con Git, como la documentación oficial de Git y tutoriales en sitios web como GitHub y GitLab.</p>
+            <p>En cuanto a las best practices, es recomendable utilizar roles y colecciones para organizar y reutilizar el código de los playbooks. Los roles son conjuntos de tareas y configuraciones que se pueden reutilizar en diferentes playbooks, mientras que las colecciones son conjuntos de roles y módulos que se pueden instalar y utilizar en diferentes proyectos. También es importante utilizar el comando `ansible-vault` para cifrar y proteger las configuraciones y credenciales sensibles.</p>
             
         
     </div>
@@ -105,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/changelog/" target="_blank">GitHub Changelog</a>
+                <a href="https://github.com/fabriziosalmi/certmate" target="_blank">CertMate - SSL Certificate Management System</a>
                 
             </li>
             
             <li>
-                <a href="https://github.blog/latest/" target="_blank">The latest blogs from GitHub</a>
+                <a href="https://github.com/ibm-devops-engineers/devops-mastermind-lab" target="_blank">ibm-devops-engineers/devops-mastermind-lab</a>
                 
             </li>
             
             <li>
-                <a href="https://github.blog/changelog/2026-03-12-rest-api-version-2026-03-10-is-now-available/" target="_blank">REST API version 2026-03-10 is now available</a>
+                <a href="https://github.com/CiscoDevNet/sastre" target="_blank">Sastre - Cisco-SDWAN Automation Toolset</a>
                 
             </li>
             
@@ -126,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-16_0904.html">&larr; 2026-03-16 0904</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-16_0904.html">&larr; 2026-03-16 0904</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-24_0859.html">2026-03-24 0859 &rarr;</a>
             
         </div>
     </div>

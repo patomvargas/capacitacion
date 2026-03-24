@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-23T09:04:58.943046+00:00</updated>
+  <updated>2026-03-24T09:00:05.381938+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -64,5 +64,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-20_0850.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-03-20T08:50:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-03-24_0859.html</id>
+    <title>Mejores prácticas de Git para Workflows avanzados</title>
+    <updated>2026-03-24T08:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;En el mundo de la programación, Git es una herramienta indispensable para el control de versiones y la colaboración en equipo. Sin embargo, muchos desarrolladores no aprovechan al máximo sus capacidades. En este artículo, exploraremos algunas de las mejores prácticas de Git para workflows avanzados.&lt;/p&gt;
+&lt;p&gt;Una de las características más poderosas de Git es la capacidad de crear ramas (branches) y fusionarlas (merge) de manera efectiva. Para hacer esto, podemos utilizar el comando &lt;code&gt;git checkout -b&lt;/code&gt; para crear una nueva rama y &lt;code&gt;git merge&lt;/code&gt; para fusionarla con la rama principal. Sin embargo, es importante tener en cuenta que el uso excesivo de ramas puede generar conflictos y dificultades para mantener el código organizado.&lt;/p&gt;
+&lt;p&gt;Para evitar esto, podemos utilizar el comando &lt;code&gt;git rebase&lt;/code&gt; para reorganizar los commits y mantener la historia de la rama limpia. Esto se puede hacer con el comando &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con los commits y reorganizarlos de manera efectiva.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil en Git es el comando &lt;code&gt;git bisect&lt;/code&gt; que nos permite buscar el commit que introdujo un bug en el código. Esto se puede hacer con el comando &lt;code&gt;git bisect start&lt;/code&gt; y &lt;code&gt;git bisect bad&lt;/code&gt; para marcar el commit que contiene el bug. Luego, podemos utilizar &lt;code&gt;git bisect good&lt;/code&gt; para marcar el commit que no contiene el bug y &lt;code&gt;git bisect reset&lt;/code&gt; para regresar a la rama principal.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar el uso de worktrees en Git. Un worktree es una copia de la rama principal que se puede utilizar para probar cambios sin afectar la rama principal. Esto se puede hacer con el comando &lt;code&gt;git worktree add&lt;/code&gt; para crear un nuevo worktree y &lt;code&gt;git worktree remove&lt;/code&gt; para eliminarlo.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para mejorar la productividad y la colaboración en equipo. Al utilizar estas best practices, podemos aprovechar al máximo sus capacidades y mantener nuestro código organizado y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/terryso/claude-auto-resume"&gt;GitHub - terryso/claude-auto-resume&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/duckduckgo/Android"&gt;DuckDuckGo Android&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/CaiJimmy/hugo-theme-stack-starter"&gt;Hugo Theme Stack Starter Template&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/RefoundAI/lenny-skills"&gt;Lenny's Product Skills for Claude Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openziti/ziti-sdk-nodejs"&gt;openziti/ziti-sdk-nodejs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-03-24_0859.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows avanzados, incluyendo el uso de hooks, rebase, bisect y worktrees. Mejora tu productividad y colaboración en equipo con estas best practices.</summary>
+    <published>2026-03-24T08:59:00+00:00</published>
   </entry>
 </feed>
