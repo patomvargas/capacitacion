@@ -1,4 +1,20 @@
 {
+  "2026-03-25_0858": {
+    "slug": "openvpn",
+    "title": "Seguridad avanzada con OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.",
+    "content": "OpenVPN es una herramienta de tunneling que utiliza protocolos de seguridad como SSL/TLS para establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, se puede generar un certificado de servidor con el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365 -subj '/C=ES/ST=Madrid/L=Madrid/O=Organizacion/OU=Unidad/CN=server'`.\n\n \n Para mejorar la seguridad del servidor OpenVPN, es importante configurar el protocolo de autenticación y autorización. Se puede utilizar el protocolo de autenticación basado en certificados, que requiere que los clientes tengan un certificado válido para conectarse al servidor. Además, se puede configurar el servidor para que utilice una lista de control de acceso (ACL) para restringir el acceso a determinados recursos.\n\n \n Otra forma de mejorar la seguridad del servidor OpenVPN es mediante el uso de técnicas de hardening. Se puede configurar el servidor para que utilice un firewall para bloquear el tráfico no autorizado y se puede configurar el sistema operativo para que utilice un conjunto de reglas de seguridad para restringir el acceso a determinados recursos. Por ejemplo, se puede utilizar el comando `ufw` para configurar el firewall en un sistema Ubuntu.\n\n \n En cuanto a la configuración de un servidor OpenVPN, es importante mencionar que se puede utilizar la herramienta `easy-rsa` para generar certificados y claves de manera automatizada. Además, se puede utilizar la herramienta `openvpn-access-server` para configurar y administrar el servidor OpenVPN de manera centralizada.\n\n \n En resumen, OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. Para configurar y proteger un servidor OpenVPN, es importante generar certificados y claves de manera segura, configurar el protocolo de autenticación y autorización, y utilizar técnicas de hardening para restringir el acceso a determinados recursos.\n\n \n Finalmente, es importante mencionar que la seguridad de un servidor OpenVPN también depende de la configuración y el mantenimiento del sistema operativo y de la red subyacente. Es importante asegurarse de que el sistema operativo y la red estén configurados de manera segura y que se estén utilizando las últimas versiones de los software y firmware.",
+    "sources": [
+      {
+        "title": "trailofbits/algo",
+        "url": "https://github.com/trailofbits/algo"
+      },
+      {
+        "title": "proxycheck-php",
+        "url": "https://github.com/proxycheck/proxycheck-php"
+      }
+    ]
+  },
   "2026-03-21_0840": {
     "slug": "openvpn",
     "title": "Configuración y Seguridad de OpenVPN",

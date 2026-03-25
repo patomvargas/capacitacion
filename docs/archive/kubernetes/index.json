@@ -1,4 +1,60 @@
 {
+  "2026-03-25_0858": {
+    "slug": "kubernetes",
+    "title": "Novedades y Mejoras en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. En este artículo, se presentan las últimas novedades y se proporcionan ejemplos prácticos para su implementación.",
+    "content": "La última versión de Kubernetes, 1.35, se lanzó recientemente con varias mejoras y nuevas características. Una de las novedades más destacadas es la retirada de Ingress-NGINX, que se realizará en marzo de 2026. Esto significa que los administradores de clusters deben migrar a otras soluciones de ingreso, como `ingress-nginx` con `rewrite-target`.\n\nPara migrar a `ingress-nginx` con `rewrite-target`, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml`. Luego, se debe configurar el `ingress` con `rewrite-target` utilizando un archivo de configuración como el siguiente: \n```yaml\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: ejemplo\nspec:\n  rules:\n  - host: ejemplo.com\n    http:\n      paths:\n      - path: /\n        pathType: Prefix\n        backend:\n          service:\n            name: ejemplo\n            port:\n              number: 80\n  ingressClassName: nginx\n```\nOtra novedad importante es la mejora en la seguridad de Kubernetes, con la resolución de varias vulnerabilidades, como la CVE-2026-3288. Para protegerse contra este tipo de vulnerabilidades, se recomienda utilizar `network policies` para restringir el tráfico entre pods y servicios.\n\nAdemás, se han realizado mejoras en la gestión de almacenamiento, con la introducción de nuevas características como el soporte para `CSI` (Container Storage Interface). Esto permite a los administradores de clusters utilizar una variedad de soluciones de almacenamiento, como `Ceph` o `Gluster`, para almacenar datos de los pods.\n\nPara implementar `CSI` en un cluster de Kubernetes, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/kubernetes/csi-plugin/master/deploy/kubernetes/csi-plugin.yaml`. Luego, se debe configurar el `storage class` para utilizar la solución de almacenamiento deseada.\n\nEn resumen, las últimas novedades y mejoras en Kubernetes ofrecen una variedad de características y herramientas para mejorar la seguridad, el rendimiento y la gestión de los clusters. Los administradores de clusters deben estar al tanto de estas novedades y planificar su implementación para aprovechar al máximo las capacidades de Kubernetes.\n\nLas fuentes utilizadas para este artículo incluyen la documentación oficial de Kubernetes, así como artículos y repositorios de GitHub relacionados con la tecnología. \n\nPara más información sobre las mejores prácticas para la implementación de Kubernetes, se recomienda consultar la documentación oficial y recursos en línea, como el libro de Kubernetes Manifests Pack, que proporciona una guía completa para la implementación de patrones de despliegue y mejores prácticas en Kubernetes.\n\nPor último, es importante mencionar que la seguridad es un aspecto fundamental en la implementación de Kubernetes, y se deben tomar medidas para proteger los clusters contra vulnerabilidades y ataques. Se recomienda utilizar herramientas de seguridad, como `Jaeger Operator` y `Thundernetes`, para monitorear y proteger los clusters.\n\nEn cuanto a la observabilidad, es fundamental para entender el comportamiento de los clusters y identificar posibles problemas. Se pueden utilizar herramientas como `Prometheus` y `Grafana` para monitorear los clusters y visualizar los datos de rendimiento.\n\nEn conclusión, las novedades y mejoras en Kubernetes ofrecen una variedad de características y herramientas para mejorar la seguridad, el rendimiento y la gestión de los clusters. Los administradores de clusters deben estar al tanto de estas novedades y planificar su implementación para aprovechar al máximo las capacidades de Kubernetes.\n\n  ",
+    "sources": [
+      {
+        "title": "Releases | Kubernetes",
+        "url": "https://kubernetes.io/releases/"
+      },
+      {
+        "title": "CVE-2026-3288: ingress-nginx rewrite-target nginx",
+        "url": "https://github.com/kubernetes/kubernetes/issues/137560"
+      },
+      {
+        "title": "Kubernetes 1.35",
+        "url": "https://kubernetes.io/releases/1.35/"
+      },
+      {
+        "title": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/"
+      },
+      {
+        "title": "Before You Migrate: Five Surprising Ingress",
+        "url": "https://kubernetes.io/blog/2026/02/27/ingress-nginx-before-you-migrate/"
+      },
+      {
+        "title": "Kubernetes Manifests Pack: Kubernetes Deployment Patterns",
+        "url": "https://dev.to/thesius_code_7a136ae718b7/kubernetes-manifests-pack-kubernetes-deployment-patterns-best-practices-1enh"
+      },
+      {
+        "title": "Toxic combinations: when small signals add up to a security",
+        "url": "https://blog.cloudflare.com/toxic-combinations-security/"
+      },
+      {
+        "title": "The most insightful stories about Istio",
+        "url": "https://medium.com/tag/istio"
+      },
+      {
+        "title": "OpenClaw Explained: How the Hottest Agent Framework",
+        "url": "https://medium.com/@cenrunzhe/openclaw-explained-how-the-hottest-agent-framework-works-and-why-data-teams-should-pay-attention-69b41a033ca6"
+      },
+      {
+        "title": "How to: Exploring K8S on vCluster, Deploying a Observability",
+        "url": "https://medium.com/@georgelza/how-to-exploring-k8s-on-vcluster-deploying-a-observability-stack-part-1-bc563c2e7c87"
+      },
+      {
+        "title": "Jaeger Operator for Kubernetes",
+        "url": "https://github.com/jaegertracing/jaeger-operator"
+      },
+      {
+        "title": "Thundernetes makes it easy to run your game servers on Kubernetes",
+        "url": "https://github.com/PlayFab/thundernetes"
+      }
+    ]
+  },
   "2026-03-21_0840": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

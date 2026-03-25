@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Administración de Identidades - FreeIPA</title>
+    <title>FreeIPA: Identity Management - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,48 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Administración de Identidades</h1>
-    <div class="meta">2026-03-21 0840 · FreeIPA</div>
+    <h1>FreeIPA: Identity Management</h1>
+    <div class="meta">2026-03-25 0858 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es una herramienta poderosa para la administración de identidades en entornos de red. Permite la creación de un dominio de autenticación único, donde los usuarios y equipos pueden acceder a recursos y servicios de manera segura. Para instalar FreeIPA en un sistema Ubuntu, se puede utilizar el comando `sudo apt-get install freeipa-server`. Una vez instalado, se puede configurar el servidor FreeIPA utilizando el comando `sudo ipa-server-install`.</p>
+            <p>FreeIPA es un sistema de gestión de identidades que integra LDAP, Kerberos, DNS y administración de certificados en un solo paquete. Para instalar FreeIPA en Rocky Linux 10 o RHEL 10, se puede seguir la guía proporcionada en la fuente [1], que incluye comandos como `dnf install -y freeipa-server` y `ipa-server-install --setup-dns`.</p>
             
         
             
         
             
-            <p>La configuración de FreeIPA implica la creación de un dominio de autenticación, la configuración de los servidores DNS y la creación de certificados de autenticación. Para crear un dominio de autenticación, se puede utilizar el comando `sudo ipa domain-level 0`. Luego, se puede agregar un servidor DNS utilizando el comando `sudo ipa dnszone-add example.com`.</p>
+            <p>Una vez instalado, se puede configurar FreeIPA para utilizar IPv6, lo que permite la autenticación centralizada y la administración de DNS y certificados en redes IPv6. Para hacer esto, se puede seguir la guía proporcionada en la fuente [11], que incluye comandos como `ipa dnszone-add --name example.com --ipv6=true`.</p>
             
         
             
         
             
-            <p>FreeIPA también permite la creación de relaciones de confianza con otros dominios de autenticación, lo que permite la autenticación de usuarios y equipos entre dominios. Para crear una relación de confianza, se puede utilizar el comando `sudo ipa trust-add example.com`. Además, FreeIPA permite la configuración de reglas de sudo, que permiten a los administradores delegar permisos de administración a otros usuarios. Para crear una regla de sudo, se puede utilizar el comando `sudo ipa sudorule-add myrule`.</p>
+            <p>FreeIPA también se puede integrar con otros sistemas, como Rancher, para proporcionar autenticación y control de acceso basado en grupos. La fuente [12] proporciona una guía detallada sobre cómo integrar FreeIPA con Rancher, que incluye comandos como `ipa group-add --name admins` y `ipa role-add --name admin`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA utiliza protocolos de autenticación seguros como Kerberos y LDAP. También utiliza certificados de autenticación para verificar la identidad de los usuarios y equipos. Para configurar la autenticación Kerberos, se puede utilizar el comando `sudo ipa kerberos-config`. En resumen, FreeIPA es una herramienta poderosa para la administración de identidades en entornos de red, que permite la autenticación y autorización de usuarios y equipos de manera segura.</p>
+            <p>Además, FreeIPA se puede utilizar para establecer relaciones de confianza con Active Directory, lo que permite la autenticación y autorización entre dominios. La fuente [6] proporciona información sobre cómo configurar una relación de confianza entre FreeIPA y Active Directory, lo que incluye comandos como `ipa trust-add --type ad --name example.com`.</p>
             
         
             
         
             
-            <p>Para más información sobre la configuración y el uso de FreeIPA, se puede consultar la documentación oficial de FreeIPA. También se pueden encontrar tutoriales y guías en línea que explican cómo instalar y configurar FreeIPA en diferentes sistemas operativos.</p>
+            <p>En resumen, FreeIPA es un sistema de gestión de identidades potente y flexible que puede ser utilizado en una variedad de entornos y escenarios. Con su capacidad para integrarse con otros sistemas y establecer relaciones de confianza, FreeIPA es una excelente opción para aquellos que buscan una solución de autenticación y autorización centralizada.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades y mejoras en FreeIPA, se pueden encontrar en la página oficial de FreeIPA. También se pueden encontrar en las fuentes que se citan a continuación.</p>
-            
-        
-            
-        
+            <p>Finalmente, es importante mencionar que la configuración y el uso de FreeIPA requieren una comprensión profunda de los conceptos de autenticación y autorización, así como de los comandos y configuraciones específicas de FreeIPA. Es recomendable consultar las fuentes oficiales y la documentación de FreeIPA para obtener más información y orientación.</p>
             
         
     </div>
@@ -109,12 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/" target="_blank">Deploy FreeIPA Server On Cloud VPS</a>
+                <a href="https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/" target="_blank">Install FreeIPA Server on Rocky Linux 10 / RHEL 10 [Guide]</a>
                 
             </li>
             
             <li>
-                <a href="https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-freeipa-on-ubuntu/view" target="_blank">How to Set Up FreeIPA on Ubuntu</a>
+                <a href="https://github.com/OneUptime/blog/blob/master/posts/2026-03-20-configure-freeipa-with-ipv6/README.md" target="_blank">Configure FreeIPA with IPv6</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OneUptime/blog/blob/master/posts/2026-03-19-rancher-freeipa/README.md" target="_blank">Rancher FreeIPA</a>
                 
             </li>
             
@@ -130,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-17_0859.html">&larr; 2026-03-17 0859</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-21_0840.html">&larr; 2026-03-21 0840</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-25_0858.html">2026-03-25 0858 &rarr;</a>
             
         </div>
     </div>

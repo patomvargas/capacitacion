@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-24T09:00:05.371545+00:00</updated>
+  <updated>2026-03-25T08:58:50.524205+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -63,5 +63,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-21_0840.html"/>
     <summary>FreeIPA es un sistema de administración de identidades que combina LDAP, Kerberos, DNS y una autoridad de certificados. Permite la autenticación y autorización de usuarios y equipos en una red.</summary>
     <published>2026-03-21T08:40:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-25_0858.html</id>
+    <title>FreeIPA: Identity Management</title>
+    <updated>2026-03-25T08:58:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de gestión de identidades que integra LDAP, Kerberos, DNS y administración de certificados en un solo paquete. Para instalar FreeIPA en Rocky Linux 10 o RHEL 10, se puede seguir la guía proporcionada en la fuente [1], que incluye comandos como &lt;code&gt;dnf install -y freeipa-server&lt;/code&gt; y &lt;code&gt;ipa-server-install --setup-dns&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar FreeIPA para utilizar IPv6, lo que permite la autenticación centralizada y la administración de DNS y certificados en redes IPv6. Para hacer esto, se puede seguir la guía proporcionada en la fuente [11], que incluye comandos como &lt;code&gt;ipa dnszone-add --name example.com --ipv6=true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;FreeIPA también se puede integrar con otros sistemas, como Rancher, para proporcionar autenticación y control de acceso basado en grupos. La fuente [12] proporciona una guía detallada sobre cómo integrar FreeIPA con Rancher, que incluye comandos como &lt;code&gt;ipa group-add --name admins&lt;/code&gt; y &lt;code&gt;ipa role-add --name admin&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, FreeIPA se puede utilizar para establecer relaciones de confianza con Active Directory, lo que permite la autenticación y autorización entre dominios. La fuente [6] proporciona información sobre cómo configurar una relación de confianza entre FreeIPA y Active Directory, lo que incluye comandos como &lt;code&gt;ipa trust-add --type ad --name example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es un sistema de gestión de identidades potente y flexible que puede ser utilizado en una variedad de entornos y escenarios. Con su capacidad para integrarse con otros sistemas y establecer relaciones de confianza, FreeIPA es una excelente opción para aquellos que buscan una solución de autenticación y autorización centralizada.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la configuración y el uso de FreeIPA requieren una comprensión profunda de los conceptos de autenticación y autorización, así como de los comandos y configuraciones específicas de FreeIPA. Es recomendable consultar las fuentes oficiales y la documentación de FreeIPA para obtener más información y orientación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/"&gt;Install FreeIPA Server on Rocky Linux 10 / RHEL 10 [Guide]&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OneUptime/blog/blob/master/posts/2026-03-20-configure-freeipa-with-ipv6/README.md"&gt;Configure FreeIPA with IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OneUptime/blog/blob/master/posts/2026-03-19-rancher-freeipa/README.md"&gt;Rancher FreeIPA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mehmanjafarov1905/postgresql-ldap-authentication-integrating-freeipa-and-active-directory-445254f01df4"&gt;PostgreSQL LDAP Authentication: Integrating FreeIPA and Active Directory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-25_0858.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidades de código abierto que proporciona autenticación centralizada, autorización y administración de cuentas. En este artículo, se explora cómo configurar y utilizar FreeIPA en entornos Linux y Unix.</summary>
+    <published>2026-03-25T08:58:00+00:00</published>
   </entry>
 </feed>
