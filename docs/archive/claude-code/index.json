@@ -1,4 +1,28 @@
 {
+  "2026-03-26_0904": {
+    "slug": "claude-code",
+    "title": "Mejoras en Claude Code",
+    "summary": "Claude Code es una herramienta de codificación avanzada que ofrece funcionalidades como CLI features, hooks, MCP servers, workflows y tips de productividad. En este artículo, se presentan las novedades y mejoras en Claude Code, incluyendo la resolución de bugs y la optimización de la experiencia del usuario.",
+    "content": "Claude Code es una herramienta de codificación avanzada que ofrece una variedad de funcionalidades para mejorar la productividad y la eficiencia en el desarrollo de software. Recientemente, se han realizado varias mejoras y resoluciones de bugs en la herramienta, como la resolución del problema de la interfaz de usuario congelada en Windows 11 Build 26200, que se puede solucionar con el comando `claude --reset`. \n\nAdemás, se han agregado nuevas funcionalidades, como la capacidad de utilizar el comando `claude --context` para establecer el contexto de la sesión de codificación. Esto permite a los usuarios especificar los archivos y directorios relevantes para la sesión, lo que mejora la eficiencia y la precisión de la herramienta. \n\nOtra mejora notable es la resolución del problema de la ventana en blanco que se abre al iniciar Claude Code en el terminal integrado de VS Code. Esto se puede solucionar actualizando la versión de Claude Code a la última disponible, utilizando el comando `claude --update`. \n\nEn cuanto a la productividad, se han agregado varios consejos y trucos para mejorar la experiencia del usuario, como la capacidad de utilizar el comando `claude --help` para obtener ayuda y documentación sobre la herramienta. \n\nEn resumen, las mejoras y resoluciones de bugs en Claude Code han mejorado significativamente la experiencia del usuario y la eficiencia en el desarrollo de software. \n\nPara obtener más información sobre las funcionalidades y mejoras de Claude Code, se recomienda consultar la documentación oficial y los recursos en línea disponibles.",
+    "sources": [
+      {
+        "title": "DOCS /debug command docs outdated",
+        "url": "https://github.com/anthropics/claude-code/issues/31680"
+      },
+      {
+        "title": "anthropics/claude-plugins-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "title": "Long-running Claude for scientific computing",
+        "url": "https://www.anthropic.com/research/long-running-Claude"
+      },
+      {
+        "title": "Best Claude Code Prompts for Beginners",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/best-claude-code-prompts-for-beginners-25-prompts-that-actually-work-5emo"
+      }
+    ]
+  },
   "2026-03-22_0841": {
     "slug": "claude-code",
     "title": "Mejores prácticas para Claude Code",

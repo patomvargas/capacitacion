@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas para Claude Code - Claude Code</title>
-    <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
+    <title>OpenShift: Guía Técnica - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>Mejores prácticas para Claude Code</h1>
-    <div class="meta">2026-03-22 0841 · Claude Code</div>
+    <h1>OpenShift: Guía Técnica</h1>
+    <div class="meta">2026-03-26 0904 · OpenShift</div>
 
     <div class="content">
         
@@ -66,37 +66,31 @@
             
         
             
-            <p>La configuración de Claude Code es fundamental para aprovechar sus funcionalidades. Se puede configurar mediante el archivo `claude_desktop_config.json`, donde se pueden especificar los servidores MCP y otros parámetros. Por ejemplo, se puede agregar un servidor MCP con el comando `mcp-registry --server <direccion_del_servidor>`.</p>
+            <p>OpenShift es una familia de productos de contenerización desarrollados por Red Hat. Su producto principal, OpenShift Container Platform, es una plataforma híbrida de nube como servicio construida alrededor de contenedores de Linux orquestados y administrados por Kubernetes sobre una base de Red Hat Enterprise Linux.</p>
             
         
             
         
             
-            <p>Para mejorar la productividad, se pueden crear subagentes personalizados que realicen tareas específicas. Por ejemplo, se puede crear un subagente para revisar el código con el comando `claude plugin validate`. También se pueden utilizar los hooks para automatizar tareas, como la ejecución de comandos después de una acción específica.</p>
+            <p>Para empezar a trabajar con OpenShift, es importante entender los conceptos básicos de la plataforma. Uno de los conceptos clave es el de `BuildConfig`, que define cómo se construye una imagen de contenedor. Se puede crear un `BuildConfig` utilizando el comando `oc create -f buildconfig.yaml`, donde `buildconfig.yaml` es un archivo que define la configuración de la construcción.</p>
             
         
             
         
             
-            <p>La documentación oficial de Claude Code proporciona información valiosa sobre cómo utilizar la herramienta de manera efectiva. Por ejemplo, se puede utilizar el comando `claude --help` para obtener información sobre los parámetros y opciones disponibles. También se pueden utilizar las opciones de configuración, como `--output-style`, para personalizar la salida de la herramienta.</p>
+            <p>Otro concepto importante es el de `ImageStream`, que permite la gestión de versiones de imágenes de contenedores. Se puede crear un `ImageStream` utilizando el comando `oc create -f imagestream.yaml`. Para implementar una aplicación en OpenShift, se puede utilizar el comando `oc new-app`, que crea una nueva aplicación a partir de una imagen de contenedor.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante tener en cuenta las vulnerabilidades conocidas y parchear la herramienta regularmente. Por ejemplo, se puede utilizar el comando `claude --version` para verificar la versión actual y actualizarla si es necesario.</p>
+            <p>En cuanto a la seguridad, OpenShift proporciona una variedad de herramientas y características para proteger las aplicaciones y los datos. Una de las características más importantes es la autenticación y autorización mediante `OAuth`. Se puede configurar la autenticación `OAuth` utilizando el comando `oc create -f oauth.yaml`. Además, OpenShift proporciona herramientas de monitoreo y registro, como `Jaeger`, que permiten supervisar y analizar el rendimiento de las aplicaciones.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las funcionalidades de Claude Code, se recomienda utilizar las mejores prácticas recomendadas por la comunidad. Por ejemplo, se puede utilizar el formato `file_path:line_number` para referirse a líneas específicas de código, y proporcionar ejemplos y detalles de error para facilitar la depuración.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, Claude Code es una herramienta poderosa que requiere configuración y conocimiento para aprovechar al máximo sus funcionalidades. Siguiendo las mejores prácticas y utilizando los comandos y configuraciones adecuados, se puede mejorar la productividad y la eficiencia en el desarrollo y la administración de sistemas.</p>
+            <p>Finalmente, es importante mencionar que OpenShift proporciona una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el `OperatorHub`, que permite la instalación y configuración de operadores personalizados. Se puede acceder al `OperatorHub` utilizando el comando `oc get operators`.</p>
             
         
             
@@ -111,17 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code" target="_blank">Claude Code Docs</a>
+                <a href="https://en.wikipedia.org/wiki/OpenShift" target="_blank">OpenShift - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/godinhojoao/claude-code-tools-best-practices-for-real-productivity-295g" target="_blank">Claude Code Tools: Best Practices for Real Productivity</a>
+                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@knowsouravroy/claude-code-best-practices-564fa5f2a568" target="_blank">CLAUDE CODE — BEST PRACTICES</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:5127" target="_blank">RHSA-2026:5127 - Security Advisory</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30" target="_blank">Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds</a>
                 
             </li>
             
@@ -132,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-03-14_0841.html">&larr; 2026-03-14 0841</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-18_0857.html">&larr; 2026-03-18 0857</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-03-26_0904.html">2026-03-26 0904 &rarr;</a>
             
         </div>
     </div>

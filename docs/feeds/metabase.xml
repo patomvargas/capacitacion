@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-25T08:58:50.529498+00:00</updated>
+  <updated>2026-03-26T09:04:45.074422+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -30,5 +30,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-03-22_0841.html"/>
     <summary>Metabase 59 introduce una nueva API versionada y mejoras en la capa semántica, permitiendo una integración más sencilla con sistemas externos. Además, se han agregado nuevas características como Data Studio y generación de SQL mediante AI.</summary>
     <published>2026-03-22T08:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-03-26_0904.html</id>
+    <title>Metabase: Mejoras y Novedades</title>
+    <updated>2026-03-26T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En la versión 59, se ha introducido una nueva API versionada que expone la capa semántica definida en Metabase, lo que permite a los sistemas externos descubrir datos y ejecutar consultas de manera programática. Esto se puede lograr mediante el uso de comandos como &lt;code&gt;curl -X GET 'https://example.com/api/semantic-layer'&lt;/code&gt; para obtener la capa semántica.&lt;/p&gt;
+&lt;p&gt;La creación de dashboards en Metabase se ha mejorado con la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar datos y crear una capa semántica. Esto se puede lograr mediante el uso de la interfaz de usuario de Metabase, donde se pueden crear dashboards y agregar elementos como gráficos y tablas. Además, se ha agregado la función de generación de SQL mediante inteligencia artificial, lo que permite a los usuarios crear consultas de manera más sencilla.&lt;/p&gt;
+&lt;p&gt;La administración de la plataforma se ha mejorado con la introducción de una nueva versión de la API que permite a los administradores gestionar la plataforma de manera más eficiente. Esto se puede lograr mediante el uso de comandos como &lt;code&gt;docker run -d -p 3000:3000 metabase/metabase&lt;/code&gt; para iniciar el contenedor de Metabase. Además, se ha agregado la función de autenticación y autorización, lo que permite a los administradores controlar el acceso a la plataforma.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Metabase ha solucionado una vulnerabilidad en la versión 59, que se puede solucionar mediante la actualización a la última versión. Esto se puede lograr mediante el uso de comandos como &lt;code&gt;docker pull metabase/metabase&lt;/code&gt; para obtener la última versión del contenedor de Metabase.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En esta versión, se presentan mejoras y novedades en la API, la creación de dashboards y la administración de la plataforma. Es importante actualizar a la última versión para solucionar vulnerabilidades de seguridad y aprovechar las nuevas funcionalidades.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Metabase, donde se pueden encontrar documentación y recursos para aprender a utilizar la plataforma de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/releases/metabase-59"&gt;Metabase 59&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/70972"&gt;Migration failure on large metabase_table during upgrade to v59&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/blog/meet-data-studio-semantic-layer"&gt;Meet Data Studio: tools to curate your semantic layer in Metabase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-03-26_0904.html"/>
+    <summary>Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En esta versión, se presentan mejoras y novedades en la API, la creación de dashboards y la administración de la plataforma.</summary>
+    <published>2026-03-26T09:04:00+00:00</published>
   </entry>
 </feed>

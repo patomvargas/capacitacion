@@ -1,4 +1,32 @@
 {
+  "2026-03-26_0904": {
+    "slug": "gemini",
+    "title": "Gemini: Novedades y Mejoras",
+    "summary": "Gemini es una herramienta de inteligencia artificial que ofrece nuevas funcionalidades y mejoras en su API, modelos y integración con Workspace y Vertex AI. En este artículo, se presentan las novedades y cambios recientes en Gemini.",
+    "content": "\nGemini es una herramienta de inteligencia artificial desarrollada por Google que ofrece una variedad de funcionalidades para desarrolladores y usuarios finales. Recientemente, se han introducido nuevas funcionalidades y mejoras en la API de Gemini, incluyendo el modelo de facturación por uso y límites de velocidad aumentados para la capa de pago de Gemini 1.5 Pro. Para utilizar la API de Gemini, se puede utilizar el comando `gemini-api` con la opción `--version` para verificar la versión actual.\n\nLa integración de Gemini con Workspace y Vertex AI es otro aspecto importante de esta herramienta. Se pueden utilizar comandos como `gemini-2.5-flash-image` con modalidades de texto y imagen habilitadas para generar contenido creativo. Por ejemplo, se puede utilizar el comando `gemini-2.5-flash-image --text --image` para generar una imagen y un texto que se ajusten a un breve específico.\n\nEn cuanto a las mejoras en los modelos de Gemini, se ha introducido el modelo de incrustación 2, que es el primer modelo de incrustación multimodal nativo de Google. Este modelo ofrece mejores resultados en la generación de contenido y la comprensión del lenguaje natural. Para utilizar este modelo, se puede utilizar el comando `gemini-embedding-2-preview` con la opción `--mode` para especificar el modo de operación.\n\nAdemás, se han introducido nuevas funcionalidades en la aplicación de Gemini, como la capacidad de generar contenido creativo y la integración con otras herramientas de Google. Se pueden utilizar comandos como `gemini-cli` con la opción `--skills` para especificar las habilidades y los ganchos para generar contenido creativo.\n\nEn resumen, Gemini es una herramienta de inteligencia artificial que ofrece una variedad de funcionalidades y mejoras en su API, modelos y integración con Workspace y Vertex AI. Los desarrolladores y usuarios finales pueden aprovechar estas funcionalidades para generar contenido creativo, automatizar tareas y mejorar la comprensión del lenguaje natural.\n\nSe pueden encontrar más información sobre las novedades y mejoras de Gemini en las fuentes oficiales de Google y en la documentación de la API de Gemini.",
+    "sources": [
+      {
+        "title": "Release notes | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      },
+      {
+        "title": "Gemini Drops: New updates to the Gemini app, February 2026",
+        "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-drop-february-2026/"
+      },
+      {
+        "title": "Google shares Gemini updates to Docs, Sheets, Slides and Drive",
+        "url": "https://blog.google/products-and-platforms/products/workspace/gemini-workspace-updates-march-2026/"
+      },
+      {
+        "title": "Unlocking Gemini CLI with Skills, Hooks & Plan Mode",
+        "url": "https://dev.to/googleai/unlocking-gemini-cli-with-skills-hooks-plan-mode-2bgf"
+      }
+    ]
+  },
   "2026-03-14_0841": {
     "slug": "gemini",
     "title": "Integración de Gemini con Vertex AI",

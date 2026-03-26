@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-25T08:58:50.527016+00:00</updated>
+  <updated>2026-03-26T09:04:45.070448+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -95,5 +95,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-18_0857.html"/>
     <summary>OpenShift es una plataforma de aplicaciones híbridas en la nube que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
     <published>2026-03-18T08:57:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-26_0904.html</id>
+    <title>OpenShift: Guía Técnica</title>
+    <updated>2026-03-26T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una familia de productos de contenerización desarrollados por Red Hat. Su producto principal, OpenShift Container Platform, es una plataforma híbrida de nube como servicio construida alrededor de contenedores de Linux orquestados y administrados por Kubernetes sobre una base de Red Hat Enterprise Linux.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con OpenShift, es importante entender los conceptos básicos de la plataforma. Uno de los conceptos clave es el de &lt;code&gt;BuildConfig&lt;/code&gt;, que define cómo se construye una imagen de contenedor. Se puede crear un &lt;code&gt;BuildConfig&lt;/code&gt; utilizando el comando &lt;code&gt;oc create -f buildconfig.yaml&lt;/code&gt;, donde &lt;code&gt;buildconfig.yaml&lt;/code&gt; es un archivo que define la configuración de la construcción.&lt;/p&gt;
+&lt;p&gt;Otro concepto importante es el de &lt;code&gt;ImageStream&lt;/code&gt;, que permite la gestión de versiones de imágenes de contenedores. Se puede crear un &lt;code&gt;ImageStream&lt;/code&gt; utilizando el comando &lt;code&gt;oc create -f imagestream.yaml&lt;/code&gt;. Para implementar una aplicación en OpenShift, se puede utilizar el comando &lt;code&gt;oc new-app&lt;/code&gt;, que crea una nueva aplicación a partir de una imagen de contenedor.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift proporciona una variedad de herramientas y características para proteger las aplicaciones y los datos. Una de las características más importantes es la autenticación y autorización mediante &lt;code&gt;OAuth&lt;/code&gt;. Se puede configurar la autenticación &lt;code&gt;OAuth&lt;/code&gt; utilizando el comando &lt;code&gt;oc create -f oauth.yaml&lt;/code&gt;. Además, OpenShift proporciona herramientas de monitoreo y registro, como &lt;code&gt;Jaeger&lt;/code&gt;, que permiten supervisar y analizar el rendimiento de las aplicaciones.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift proporciona una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el &lt;code&gt;OperatorHub&lt;/code&gt;, que permite la instalación y configuración de operadores personalizados. Se puede acceder al &lt;code&gt;OperatorHub&lt;/code&gt; utilizando el comando &lt;code&gt;oc get operators&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/OpenShift"&gt;OpenShift - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5127"&gt;RHSA-2026:5127 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30"&gt;Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-26_0904.html"/>
+    <summary>OpenShift es una plataforma de contenerización que permite la creación de aplicaciones escalables y seguras. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
+    <published>2026-03-26T09:04:00+00:00</published>
   </entry>
 </feed>

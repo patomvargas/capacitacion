@@ -1,4 +1,24 @@
 {
+  "2026-03-26_0904": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Novedades",
+    "summary": "Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En esta versión, se presentan mejoras y novedades en la API, la creación de dashboards y la administración de la plataforma.",
+    "content": "Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En la versión 59, se ha introducido una nueva API versionada que expone la capa semántica definida en Metabase, lo que permite a los sistemas externos descubrir datos y ejecutar consultas de manera programática. Esto se puede lograr mediante el uso de comandos como `curl -X GET 'https://example.com/api/semantic-layer'` para obtener la capa semántica.\n\n \nLa creación de dashboards en Metabase se ha mejorado con la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar datos y crear una capa semántica. Esto se puede lograr mediante el uso de la interfaz de usuario de Metabase, donde se pueden crear dashboards y agregar elementos como gráficos y tablas. Además, se ha agregado la función de generación de SQL mediante inteligencia artificial, lo que permite a los usuarios crear consultas de manera más sencilla.\n\n \nLa administración de la plataforma se ha mejorado con la introducción de una nueva versión de la API que permite a los administradores gestionar la plataforma de manera más eficiente. Esto se puede lograr mediante el uso de comandos como `docker run -d -p 3000:3000 metabase/metabase` para iniciar el contenedor de Metabase. Además, se ha agregado la función de autenticación y autorización, lo que permite a los administradores controlar el acceso a la plataforma.\n\n \nEn cuanto a la seguridad, Metabase ha solucionado una vulnerabilidad en la versión 59, que se puede solucionar mediante la actualización a la última versión. Esto se puede lograr mediante el uso de comandos como `docker pull metabase/metabase` para obtener la última versión del contenedor de Metabase.\n\n \nEn resumen, Metabase es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y consultar datos de manera sencilla. En esta versión, se presentan mejoras y novedades en la API, la creación de dashboards y la administración de la plataforma. Es importante actualizar a la última versión para solucionar vulnerabilidades de seguridad y aprovechar las nuevas funcionalidades.\n\n \nPara más información, se pueden consultar las fuentes oficiales de Metabase, donde se pueden encontrar documentación y recursos para aprender a utilizar la plataforma de manera efectiva.",
+    "sources": [
+      {
+        "title": "Metabase 59",
+        "url": "https://www.metabase.com/releases/metabase-59"
+      },
+      {
+        "title": "Migration failure on large metabase_table during upgrade to v59",
+        "url": "https://github.com/metabase/metabase/issues/70972"
+      },
+      {
+        "title": "Meet Data Studio: tools to curate your semantic layer in Metabase",
+        "url": "https://www.metabase.com/blog/meet-data-studio-semantic-layer"
+      }
+    ]
+  },
   "2026-03-22_0841": {
     "slug": "metabase",
     "title": "Metabase 59: Nuevas Funcionalidades y Mejoras",
