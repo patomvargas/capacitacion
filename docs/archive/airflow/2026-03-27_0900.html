@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 2.x: Mejores Prácticas y Nuevas Características - Airflow</title>
+    <title>Airflow 3.x: Mejoras y Best Practices - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,14 +57,14 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow 2.x: Mejores Prácticas y Nuevas Características</h1>
-    <div class="meta">2026-03-23 0904 · Airflow</div>
+    <h1>Airflow 3.x: Mejoras y Best Practices</h1>
+    <div class="meta">2026-03-27 0900 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Airflow 2.x introduce varias novedades y mejoras en comparación con sus versiones anteriores. Una de las características más destacadas es el soporte para DeltaTriggerTimetable, que permite programar trabajos basados en deltas sin depender de intervalos de datos. Para utilizar esta característica, se puede crear un `DeltaTriggerTimetable` en el archivo `airflow.cfg` con el siguiente comando: `airflow config set core delta_trigger_timetable True`.</p>
+            <p>Airflow es una herramienta fundamental para los equipos de DevOps y sysadmins, ya que permite definir flujos de trabajo como código, lo que los hace más mantenibles, versionables y testables. En la versión 3.x, se han introducido varias mejoras, como la nueva forma de utilizar la API de Airflow a través de `airflowctl`.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>La versión 2.11.2 de Airflow también incluye mejoras en la gestión de proveedores, lo que facilita la integración con otros servicios y herramientas. Por ejemplo, se puede utilizar el comando `airflow providers list` para ver la lista de proveedores disponibles y `airflow providers install` para instalar nuevos proveedores.</p>
+            <p>La comunidad de Airflow ha estado trabajando activamente en mejorar la plataforma, y se han realizado varios lanzamientos recientes, como Airflow 3.1.7, que incluye mejoras en la seguridad y la estabilidad. Además, se han agregado nuevas características, como la timetable DeltaTriggerTimetable, que permite programar flujos de trabajo basados en deltas sin depender de intervalos de datos.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>Otra característica importante de Airflow 2.x es el soporte para XCom, que permite la comunicación entre tareas y la reutilización de resultados. Para utilizar XCom, se puede crear un `XComArg` en el código de la tarea y luego utilizar el método `xcom_pull` para recuperar el valor. Por ejemplo: `xcom_arg = XComArg(task_id='mi_tarea', key='mi_valor')` y luego `valor = xcom_pull(task_id='mi_tarea', key='mi_valor')`.</p>
+            <p>Para trabajar con Airflow 3.x, es importante seguir las best practices recomendadas, como utilizar DAGs (Directed Acyclic Graphs) para definir los flujos de trabajo, y operadores para ejecutar tareas específicas. También es importante configurar correctamente las conexiones y los sensores para monitorear y controlar los flujos de trabajo. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos de Airflow, y `airflow webserver` para iniciar el servidor web.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>En cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar DAGs bien estructurados y organizados. Un DAG bien diseñado debe tener una lógica clara y fácil de seguir, y debe incluir comentarios y documentación para facilitar su comprensión. También es importante utilizar operadores y sensores de manera efectiva para automatizar y controlar los flujos de trabajo.</p>
+            <p>Otra best practice importante es utilizar XCom (Cross-Communication) para compartir datos entre tareas y DAGs. Esto permite crear flujos de trabajo más complejos y flexibles. Además, es importante utilizar las herramientas de monitoreo y logging de Airflow para detectar y solucionar problemas en los flujos de trabajo.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>Finalmente, es importante destacar la importancia de mantener actualizado Airflow y utilizar las últimas versiones de los proveedores y dependencias. Esto garantiza que se aprovechen las últimas características y mejoras de seguridad, y reduce el riesgo de vulnerabilidades y errores.</p>
+            <p>En cuanto a las novedades, se ha anunciado la próxima release de Airflow 3.2, que incluirá nuevas características y mejoras. También se ha lanzado la herramienta `airflowctl` para gestionar y monitorear los despliegues de Airflow de manera segura.</p>
             
         
             
@@ -104,7 +104,7 @@
             
         
             
-            <p>Para más información sobre Airflow y sus características, se puede consultar la documentación oficial y los recursos en línea, como la página de GitHub de Apache Airflow y los tutoriales y guías de Astronomer.</p>
+            <p>En resumen, Airflow 3.x es una plataforma poderosa y flexible para autorizar, programar y monitorear flujos de trabajo. Siguiendo las best practices recomendadas y utilizando las herramientas y características disponibles, los equipos de DevOps y sysadmins pueden crear flujos de trabajo eficientes y escalables.</p>
             
         
     </div>
@@ -115,17 +115,22 @@
         <ul>
             
             <li>
-                <a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html" target="_blank">Release Notes — Airflow 2.11.2 Documentation</a>
+                <a href="https://github.com/apache/airflow" target="_blank">Apache Airflow</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@dorangao/apache-airflow-101-local-setup-and-core-concepts-tutorial-20270bf3d17f" target="_blank">Apache Airflow 101: Local Setup and Core Concepts Tutorial</a>
+                <a href="https://airflow.apache.org/blog/" target="_blank">Airflow Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@sauhar/apache-airflow-a-practical-guide-for-data-engineers-30c4876fe8a0" target="_blank">Apache Airflow: A Practical Guide for Data Engineers</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html" target="_blank">Airflow 2.11.2 Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj" target="_blank">Airflow DAG Templates: Airflow Best Practices Guide</a>
                 
             </li>
             
@@ -136,12 +141,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-15_0843.html">&larr; 2026-03-15 0843</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-23_0904.html">&larr; 2026-03-23 0904</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-27_0900.html">2026-03-27 0900 &rarr;</a>
             
         </div>
     </div>

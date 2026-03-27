@@ -1,4 +1,24 @@
 {
+  "2026-03-27_0900": {
+    "slug": "metallb",
+    "title": "MetalLB en Kubernetes",
+    "summary": "MetalLB es una herramienta de balanceo de carga para Kubernetes que permite asignar direcciones IP externas a servicios de tipo LoadBalancer en clusters bare-metal. En este artículo, se explora la configuración y el uso de MetalLB en un entorno de Kubernetes.",
+    "content": "MetalLB es una herramienta de balanceo de carga que se integra con Kubernetes para proporcionar direcciones IP externas a servicios de tipo LoadBalancer en clusters bare-metal. Para instalar MetalLB, se puede utilizar el comando `helm install metallb` o `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/manifests/metallb.yaml`. Una vez instalado, se debe configurar un pool de direcciones IP utilizando el comando `kubectl create -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.\n\n \nLa configuración de MetalLB se puede realizar en dos modos principales: L2 y BGP. El modo L2 utiliza el protocolo ARP para anunciar las direcciones IP en la red, mientras que el modo BGP utiliza el protocolo BGP para anunciar las direcciones IP a los routers de la red. Para configurar el modo L2, se debe crear un archivo `metallb-config.yaml` con la configuración del modo L2 y aplicarlo utilizando el comando `kubectl apply -f metallb-config.yaml`.\n\n \nPara solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `tcpdump` y `wireshark` para analizar el tráfico de red y identificar problemas de configuración. También se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los logs del controlador de MetalLB y identificar problemas de configuración o errores.\n\n \nLa integración de MetalLB con Kubernetes se puede realizar utilizando la API de Kubernetes para crear y gestionar servicios de tipo LoadBalancer. También se puede utilizar el comando `kubectl expose` para exponer un servicio como un LoadBalancer y asignarle una dirección IP externa utilizando MetalLB.\n\n \nEn resumen, MetalLB es una herramienta poderosa para proporcionar direcciones IP externas a servicios de tipo LoadBalancer en clusters bare-metal de Kubernetes. Su configuración y uso requieren una comprensión profunda de los protocolos de red y la arquitectura de Kubernetes, pero pueden ser muy beneficiosos para entornos de producción que requieren una alta disponibilidad y escalabilidad.",
+    "sources": [
+      {
+        "title": "MetalLB GitHub",
+        "url": "https://github.com/metallb/metallb"
+      },
+      {
+        "title": "Stop Using Cloud Load Balancers — Build Production Networking in Bare-Metal Kubernetes with MetalLB",
+        "url": "https://medium.com/@jobayer6735/stop-using-cloud-load-balancers-build-production-networking-in-bare-metal-kubernetes-with-metallb-7e5cff82e805"
+      },
+      {
+        "title": "MetalLB IPv4 Bare Metal Kubernetes",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-metallb-ipv4-bare-metal-kubernetes"
+      }
+    ]
+  },
   "2026-03-23_0904": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Clusters de Kubernetes",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-26T09:04:45.076490+00:00</updated>
+  <updated>2026-03-27T09:01:00.380758+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -122,5 +122,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-23_0904.html"/>
     <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.1.0, incluyendo la corrección de errores y la adición de nuevas características.</summary>
     <published>2026-03-23T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-27_0900.html</id>
+    <title>Superset: Mejoras y Soluciones</title>
+    <updated>2026-03-27T09:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto para la creación de dashboards y la visualización de datos. En las últimas versiones, se han incorporado varias mejoras y soluciones a problemas comunes. Por ejemplo, se ha encontrado que la función &lt;code&gt;re-encrypt-secrets&lt;/code&gt; no funciona correctamente en la versión 6.0.0, lo que puede ser solucionado mediante la actualización a una versión más reciente o la ejecución del comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de alertas, es importante tener en cuenta que Mattermost requiere un formato de payload específico para las alertas basadas en texto. El campo &lt;code&gt;text&lt;/code&gt; es obligatorio en el cuerpo JSON, y es posible que se requieran encabezados adicionales o reglas de formato. Para configurar las alertas en Superset, se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para editar la configuración del sistema.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la incorporación de la opción de pre-filtrado en los controles de grano de tiempo. Esto permite a los usuarios limitar las opciones disponibles en el control, lo que puede ser útil cuando no se necesitan todos los valores. Para agregar esta opción, se puede utilizar el comando &lt;code&gt;superset dashboard&lt;/code&gt; para editar la configuración del dashboard.&lt;/p&gt;
+&lt;p&gt;En cuanto a los gráficos, se ha encontrado que el gráfico de barras de ECharts no puede ser ordenado en orden descendente cuando se aplica una dimensión. Esto se debe a que el gráfico se ordena alfabéticamente en lugar de por el valor métrico. Para solucionar este problema, se puede utilizar la función &lt;code&gt;sort&lt;/code&gt; de Superset para ordenar los datos antes de visualizarlos.&lt;/p&gt;
+&lt;p&gt;Finalmente, se ha incorporado una nueva función para resaltar notas y advertencias utilizando blockquote. Esta función está en beta y puede tener algunos errores de renderizado, pero puede ser útil para destacar información importante en los dashboards.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38283"&gt;Inquiry Regarding 400 Error When Sending Superset Alert to Mattermost Incoming Webhook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/38413"&gt;[6.0.0] superset re-encrypt-secrets not working in 6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38245"&gt;ECharts Bar Chart: Cannot sort descending by total metric when applying a Dimension&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38306"&gt;Add pre-filter option to Time Grain dashboard control&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/orgs/community/discussions/16925"&gt;An option to highlight a “Note” and “Warning” using blockquote (Beta)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-27_0900.html"/>
+    <summary>Este artículo presenta las últimas novedades y soluciones para Superset, incluyendo la configuración de alertas y la administración de secretos. Se cubren también las mejoras en los gráficos y las opciones de pre-filtrado en los dashboards.</summary>
+    <published>2026-03-27T09:00:00+00:00</published>
   </entry>
 </feed>

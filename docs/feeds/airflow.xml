@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-26T09:04:45.075038+00:00</updated>
+  <updated>2026-03-27T09:01:00.378270+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -92,5 +92,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-23_0904.html"/>
     <summary>Airflow es una herramienta de orquestación de workflows que ha evolucionado significativamente en su versión 2.x. En este artículo, exploraremos las mejores prácticas y nuevas características de Airflow 2.x, incluyendo DAGs, operadores, sensores y conexiones.</summary>
     <published>2026-03-23T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-27_0900.html</id>
+    <title>Airflow 3.x: Mejoras y Best Practices</title>
+    <updated>2026-03-27T09:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta fundamental para los equipos de DevOps y sysadmins, ya que permite definir flujos de trabajo como código, lo que los hace más mantenibles, versionables y testables. En la versión 3.x, se han introducido varias mejoras, como la nueva forma de utilizar la API de Airflow a través de &lt;code&gt;airflowctl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La comunidad de Airflow ha estado trabajando activamente en mejorar la plataforma, y se han realizado varios lanzamientos recientes, como Airflow 3.1.7, que incluye mejoras en la seguridad y la estabilidad. Además, se han agregado nuevas características, como la timetable DeltaTriggerTimetable, que permite programar flujos de trabajo basados en deltas sin depender de intervalos de datos.&lt;/p&gt;
+&lt;p&gt;Para trabajar con Airflow 3.x, es importante seguir las best practices recomendadas, como utilizar DAGs (Directed Acyclic Graphs) para definir los flujos de trabajo, y operadores para ejecutar tareas específicas. También es importante configurar correctamente las conexiones y los sensores para monitorear y controlar los flujos de trabajo. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos de Airflow, y &lt;code&gt;airflow webserver&lt;/code&gt; para iniciar el servidor web.&lt;/p&gt;
+&lt;p&gt;Otra best practice importante es utilizar XCom (Cross-Communication) para compartir datos entre tareas y DAGs. Esto permite crear flujos de trabajo más complejos y flexibles. Además, es importante utilizar las herramientas de monitoreo y logging de Airflow para detectar y solucionar problemas en los flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha anunciado la próxima release de Airflow 3.2, que incluirá nuevas características y mejoras. También se ha lanzado la herramienta &lt;code&gt;airflowctl&lt;/code&gt; para gestionar y monitorear los despliegues de Airflow de manera segura.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 3.x es una plataforma poderosa y flexible para autorizar, programar y monitorear flujos de trabajo. Siguiendo las best practices recomendadas y utilizando las herramientas y características disponibles, los equipos de DevOps y sysadmins pueden crear flujos de trabajo eficientes y escalables.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/blog/"&gt;Airflow Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"&gt;Airflow 2.11.2 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj"&gt;Airflow DAG Templates: Airflow Best Practices Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-27_0900.html"/>
+    <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Airflow 3.x.</summary>
+    <published>2026-03-27T09:00:00+00:00</published>
   </entry>
 </feed>

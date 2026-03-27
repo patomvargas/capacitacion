@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-26T09:04:45.075753+00:00</updated>
+  <updated>2026-03-27T09:01:00.379463+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -86,5 +86,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-19_0852.html"/>
     <summary>n8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.</summary>
     <published>2026-03-19T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-27_0900.html</id>
+    <title>Automatización con n8n</title>
+    <updated>2026-03-27T09:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;La automatización con n8n se basa en la creación de flujos de trabajo que se pueden ejecutar automáticamente. Para crear un flujo de trabajo, se pueden utilizar nodos, que son componentes que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear un flujo de trabajo complejo.&lt;/p&gt;
+&lt;p&gt;Para gestionar errores en n8n, es importante utilizar la función de manejo de errores, que permite capturar y procesar errores de manera efectiva. Esto se puede hacer utilizando el nodo &lt;code&gt;Error Handler&lt;/code&gt;, que se puede agregar a un flujo de trabajo para capturar errores y realizar acciones específicas en caso de que ocurran. Por ejemplo, se puede utilizar el comando &lt;code&gt;n8n start --error-handler&lt;/code&gt; para iniciar un flujo de trabajo con un manejador de errores.&lt;/p&gt;
+&lt;p&gt;La integración con otras herramientas es otra característica importante de n8n. Se pueden utilizar nodos para interactuar con otras herramientas, como bases de datos o servicios de mensajería. Por ejemplo, se puede utilizar el nodo &lt;code&gt;MySQL&lt;/code&gt; para conectarse a una base de datos MySQL y realizar consultas. También se puede utilizar el nodo &lt;code&gt;Webhook&lt;/code&gt; para recibir notificaciones de otros servicios y disparar flujos de trabajo en n8n.&lt;/p&gt;
+&lt;p&gt;Para self-hosting de n8n, se puede utilizar el comando &lt;code&gt;docker run -p 5678:5678 n8n/n8n&lt;/code&gt; para iniciar un contenedor de Docker con n8n. Luego, se puede acceder a la interfaz web de n8n en &lt;code&gt;http://localhost:5678&lt;/code&gt; para crear y gestionar flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante probar los flujos de trabajo con datos reales antes de activarlos. También es importante utilizar la función de manejo de errores para capturar y procesar errores de manera efectiva. Además, se pueden utilizar nodos para interactuar con otras herramientas y servicios, lo que permite crear flujos de trabajo complejos y personalizados.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que n8n tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo documentación, tutoriales y plantillas de flujos de trabajo. Esto hace que sea más fácil aprender y utilizar n8n para la automatización de flujos de trabajo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/ebereplenty/learn-n8n-automation-in-1-hour-complete-beginner-guide-1i8c"&gt;Learn n8n Automation in 1 Hour – Complete Beginner Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h"&gt;n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/atlasdigital/n8n-tutorial-for-beginners-build-your-first-automation-workflow-in-15-minutes-2eej"&gt;n8n Tutorial: Build Your First Workflow in 15 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-27_0900.html"/>
+    <summary>n8n es una plataforma de automatización de flujos de trabajo que permite combinar la construcción visual con código personalizado. En este artículo, se presentan las mejores prácticas para la automatización con n8n, incluyendo la gestión de errores y la integración con otras herramientas.</summary>
+    <published>2026-03-27T09:00:00+00:00</published>
   </entry>
 </feed>

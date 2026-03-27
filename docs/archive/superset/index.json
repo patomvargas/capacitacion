@@ -1,4 +1,32 @@
 {
+  "2026-03-27_0900": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Soluciones",
+    "summary": "Este artículo presenta las últimas novedades y soluciones para Superset, incluyendo la configuración de alertas y la administración de secretos. Se cubren también las mejoras en los gráficos y las opciones de pre-filtrado en los dashboards.",
+    "content": "\nSuperset es una herramienta de código abierto para la creación de dashboards y la visualización de datos. En las últimas versiones, se han incorporado varias mejoras y soluciones a problemas comunes. Por ejemplo, se ha encontrado que la función `re-encrypt-secrets` no funciona correctamente en la versión 6.0.0, lo que puede ser solucionado mediante la actualización a una versión más reciente o la ejecución del comando `superset db upgrade` para actualizar la base de datos.\n\nEn cuanto a la configuración de alertas, es importante tener en cuenta que Mattermost requiere un formato de payload específico para las alertas basadas en texto. El campo `text` es obligatorio en el cuerpo JSON, y es posible que se requieran encabezados adicionales o reglas de formato. Para configurar las alertas en Superset, se puede utilizar el comando `superset config` para editar la configuración del sistema.\n\nOtra mejora importante es la incorporación de la opción de pre-filtrado en los controles de grano de tiempo. Esto permite a los usuarios limitar las opciones disponibles en el control, lo que puede ser útil cuando no se necesitan todos los valores. Para agregar esta opción, se puede utilizar el comando `superset dashboard` para editar la configuración del dashboard.\n\nEn cuanto a los gráficos, se ha encontrado que el gráfico de barras de ECharts no puede ser ordenado en orden descendente cuando se aplica una dimensión. Esto se debe a que el gráfico se ordena alfabéticamente en lugar de por el valor métrico. Para solucionar este problema, se puede utilizar la función `sort` de Superset para ordenar los datos antes de visualizarlos.\n\nFinalmente, se ha incorporado una nueva función para resaltar notas y advertencias utilizando blockquote. Esta función está en beta y puede tener algunos errores de renderizado, pero puede ser útil para destacar información importante en los dashboards.\n\n",
+    "sources": [
+      {
+        "title": "Inquiry Regarding 400 Error When Sending Superset Alert to Mattermost Incoming Webhook",
+        "url": "https://github.com/apache/superset/discussions/38283"
+      },
+      {
+        "title": "[6.0.0] superset re-encrypt-secrets not working in 6.0.0",
+        "url": "https://github.com/apache/superset/issues/38413"
+      },
+      {
+        "title": "ECharts Bar Chart: Cannot sort descending by total metric when applying a Dimension",
+        "url": "https://github.com/apache/superset/discussions/38245"
+      },
+      {
+        "title": "Add pre-filter option to Time Grain dashboard control",
+        "url": "https://github.com/apache/superset/discussions/38306"
+      },
+      {
+        "title": "An option to highlight a “Note” and “Warning” using blockquote (Beta)",
+        "url": "https://github.com/orgs/community/discussions/16925"
+      }
+    ]
+  },
   "2026-03-23_0904": {
     "slug": "superset",
     "title": "Superset: Mejoras y Novedades",

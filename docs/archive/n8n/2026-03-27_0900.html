@@ -58,53 +58,45 @@
     </div>
 
     <h1>Automatización con n8n</h1>
-    <div class="meta">2026-03-19 0852 · n8n</div>
+    <div class="meta">2026-03-27 0900 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>n8n es una herramienta de automatización de flujos de trabajo que se ejecuta en Node.js y permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. Para instalar n8n, se puede utilizar el comando `npm install -g n8n` o `docker pull n8n/n8n`. Una vez instalado, se puede acceder a la interfaz de usuario web mediante `http://localhost:5678`.</p>
+        
+            
+            <p>La automatización con n8n se basa en la creación de flujos de trabajo que se pueden ejecutar automáticamente. Para crear un flujo de trabajo, se pueden utilizar nodos, que son componentes que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear un flujo de trabajo complejo.</p>
             
         
             
         
             
-            <p>Para crear un flujo de trabajo en n8n, se deben definir nodos que representan las diferentes tareas que se deben realizar. Por ejemplo, se puede crear un nodo `HTTP Request` para realizar una solicitud HTTP a un servidor externo. Luego, se puede agregar un nodo `JSON Parser` para parsear la respuesta JSON.</p>
+            <p>Para gestionar errores en n8n, es importante utilizar la función de manejo de errores, que permite capturar y procesar errores de manera efectiva. Esto se puede hacer utilizando el nodo `Error Handler`, que se puede agregar a un flujo de trabajo para capturar errores y realizar acciones específicas en caso de que ocurran. Por ejemplo, se puede utilizar el comando `n8n start --error-handler` para iniciar un flujo de trabajo con un manejador de errores.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, n8n proporciona una función de credenciales que permite almacenar y gestionar credenciales de forma segura. Se pueden crear credenciales para diferentes servicios, como API keys o contraseñas, y luego utilizarlas en los nodos correspondientes. Por ejemplo, se puede crear una credencial para un servicio de API y luego utilizarla en un nodo `HTTP Request` para autenticar la solicitud.</p>
+            <p>La integración con otras herramientas es otra característica importante de n8n. Se pueden utilizar nodos para interactuar con otras herramientas, como bases de datos o servicios de mensajería. Por ejemplo, se puede utilizar el nodo `MySQL` para conectarse a una base de datos MySQL y realizar consultas. También se puede utilizar el nodo `Webhook` para recibir notificaciones de otros servicios y disparar flujos de trabajo en n8n.</p>
             
         
             
         
             
-            <p>Recientemente, se han reportado algunos problemas con la instalación de n8n mediante npm, como se indica en el issue #26960 en GitHub. Sin embargo, se puede instalar n8n mediante Docker para evitar estos problemas. Además, se han realizado cambios en la versión 2.8.4 de n8n, como se indica en el comparativo de versiones en GitHub.</p>
+            <p>Para self-hosting de n8n, se puede utilizar el comando `docker run -p 5678:5678 n8n/n8n` para iniciar un contenedor de Docker con n8n. Luego, se puede acceder a la interfaz web de n8n en `http://localhost:5678` para crear y gestionar flujos de trabajo.</p>
             
         
             
         
             
-            <p>Para aprender más sobre n8n, se pueden consultar los tutoriales y guías en el blog oficial de n8n. También se pueden encontrar recursos adicionales en la comunidad de n8n, como la guía para principiantes en DEV Community.</p>
+            <p>En cuanto a las mejores prácticas, es importante probar los flujos de trabajo con datos reales antes de activarlos. También es importante utilizar la función de manejo de errores para capturar y procesar errores de manera efectiva. Además, se pueden utilizar nodos para interactuar con otras herramientas y servicios, lo que permite crear flujos de trabajo complejos y personalizados.</p>
             
         
             
         
             
-            <p>En resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo que ofrece una gran flexibilidad y personalización. Con la creación de nodos y la gestión de credenciales, se pueden crear flujos de trabajo complejos y seguros. Sin embargo, es importante estar al tanto de las últimas novedades y problemas reportados en la comunidad de n8n.</p>
-            
-        
-            
-        
-            
-            <p>Se pueden encontrar más recursos y tutoriales en las fuentes citadas al final de este artículo.</p>
-            
-        
-            
-        
+            <p>Finalmente, es importante mencionar que n8n tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo documentación, tutoriales y plantillas de flujos de trabajo. Esto hace que sea más fácil aprender y utilizar n8n para la automatización de flujos de trabajo.</p>
             
         
     </div>
@@ -115,22 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/issues/26960" target="_blank">Issue #26960 en GitHub</a>
+                <a href="https://dev.to/ebereplenty/learn-n8n-automation-in-1-hour-complete-beginner-guide-1i8c" target="_blank">Learn n8n Automation in 1 Hour – Complete Beginner Guide</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/compare/n8n@2.8.3...n8n@2.8.4" target="_blank">Comparativo de versiones en GitHub</a>
+                <a href="https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h" target="_blank">n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.n8n.io/" target="_blank">Blog oficial de n8n</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/kaminade/getting-started-with-n8n-a-non-developers-complete-guide-4l2g" target="_blank">Guía para principiantes en DEV Community</a>
+                <a href="https://dev.to/atlasdigital/n8n-tutorial-for-beginners-build-your-first-automation-workflow-in-15-minutes-2eej" target="_blank">n8n Tutorial: Build Your First Workflow in 15 Minutes</a>
                 
             </li>
             
@@ -141,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-15_0843.html">&larr; 2026-03-15 0843</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-19_0852.html">&larr; 2026-03-19 0852</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-03-27_0900.html">2026-03-27 0900 &rarr;</a>
             
         </div>
     </div>
