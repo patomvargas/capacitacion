@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas de Docker - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+    </div>
+
+    <h1>Mejores prácticas de Docker</h1>
+    <div class="meta">2026-03-28 0851 · Docker</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La creación de imágenes de Docker es un paso fundamental para cualquier proyecto que utilice contenedores. Para crear una imagen de Docker, se puede utilizar el comando `docker build` con un archivo Dockerfile que especifique las instrucciones para crear la imagen. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker a partir de un archivo Dockerfile: `docker build -t mi-imagen .`.</p>
+            
+        
+            
+        
+            
+            <p>Una vez creada la imagen, se puede utilizar el comando `docker run` para ejecutar un contenedor a partir de la imagen. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor a partir de la imagen `mi-imagen`: `docker run -p 8080:8080 mi-imagen`. Esto ejecutará un contenedor que escuche en el puerto 8080 y redirija las solicitudes al puerto 8080 del contenedor.</p>
+            
+        
+            
+        
+            
+            <p>La seguridad de los contenedores es otro tema importante en Docker. Se pueden utilizar varias técnicas para mejorar la seguridad de los contenedores, como ejecutarlos con un usuario no root o limitar los privilegios del contenedor. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con un usuario no root: `docker run -u 1000:1000 mi-imagen`. Esto ejecutará el contenedor con el usuario con ID 1000 y grupo con ID 1000.</p>
+            
+        
+            
+        
+            
+            <p>La creación de redes de Docker es otro tema importante en la configuración de contenedores. Se pueden utilizar el comando `docker network` para crear y gestionar redes de Docker. Por ejemplo, se puede utilizar el siguiente comando para crear una red de Docker: `docker network create mi-red`. Esto creará una red de Docker con el nombre `mi-red`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, se pueden utilizar herramientas como Docker Compose para gestionar y orquestar contenedores de Docker. Docker Compose permite definir y ejecutar múltiples contenedores de Docker con una sola configuración. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un conjunto de contenedores definidos en un archivo docker-compose.yml: `docker-compose up`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Docker es una herramienta poderosa para crear y gestionar contenedores, pero requiere una configuración y seguridad adecuadas para garantizar su funcionamiento correcto y seguro.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://medium.com/@kienlt.qn/demystifying-docker-networking-a-deep-dive-into-bridge-veth-526b953c9b15" target="_blank">Demystifying Docker Networking</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@syed_usman_ahmed/docker-users-who-use-grafana-loki-with-promtail-need-to-migrate-to-grafana-alloy-as-promtail-the-a20a98ee2f15" target="_blank">Docker Tutorial: Getting started with Grafana Loki and Alloy</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@earchitha22/day-16-docker-security-best-practices-protecting-containerized-applications-f17ef28a5288" target="_blank">Day 16 — Docker Security Best Practices</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-03-20_0850.html">&larr; 2026-03-20 0850</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

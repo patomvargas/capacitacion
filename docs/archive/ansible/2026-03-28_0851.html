@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Mejoras y Best Practices - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Mejoras y Best Practices</h1>
+    <div class="meta">2026-03-28 0851 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores automatizar tareas repetitivas y complejas. Con la reciente actualización a `ansible-core 2.19` y `Ansible 12`, se han introducido cambios significativos en la plantilla de templating, lo que puede requerir actualizaciones en los playbooks y roles existentes. Para aprovechar al máximo estas nuevas características, es importante entender cómo funcionan los `playbooks`, `roles`, `collections`, `vault`, `inventory` y `AWX/Tower`.</p>
+            
+        
+            
+        
+            
+            <p>Un aspecto importante a considerar es la creación de `playbooks` idempotentes y seguros. Para lograr esto, se pueden utilizar herramientas como `ansible-lint` y `ansible-vault` para cifrar secrets y variables sensibles. Por ejemplo, se puede utilizar el comando `ansible-vault create` para crear un archivo de secrets cifrado.</p>
+            
+        
+            
+        
+            
+            <p>Además, la comunidad de Ansible ha publicado una guía de best practices para escribir `playbooks` mantenibles, idempotentes y seguros. Esta guía cubre temas como la estructura del proyecto, el manejo de variables, el diseño de roles y la implementación de patrones de despliegue en producción.</p>
+            
+        
+            
+        
+            
+            <p>Para aquellos que buscan automatizar la creación de entornos de desarrollo y prueba, se puede utilizar `ansible-creator` para crear entornos de desarrollo y prueba de manera rápida y sencilla. Por ejemplo, se puede utilizar el comando `ansible-creator create` para crear un entorno de desarrollo nuevo.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura, y con las últimas actualizaciones y best practices, se puede aprovechar al máximo su potencial para crear entornos de desarrollo y producción más eficientes y seguros.</p>
+            
+        
+            
+        
+            
+            <p>La documentación oficial de Ansible proporciona una guía detallada sobre cómo utilizar `AWX/Tower` para automatizar y orquestar tareas de manera centralizada. Por ejemplo, se puede utilizar el comando `awx-manage` para crear y gestionar instancias de `AWX/Tower`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las colecciones, se pueden utilizar para agrupar módulos y roles relacionados y compartirlos con la comunidad. Por ejemplo, se puede utilizar el comando `ansible-galaxy` para instalar y gestionar colecciones de manera sencilla.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, Ansible es una herramienta fundamental para cualquier equipo de DevOps o administración de sistemas, y con las últimas novedades y best practices, se puede crear entornos de desarrollo y producción más eficientes y seguros.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html" target="_blank">Roadmaps — Ansible Community Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-creator-v26-3-1/45532" target="_blank">Release Announcement: ansible-creator v26.3.1 - Ecosystem ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.ansible.com/projects/ansible/latest/community/collection_contributors/collection_releasing.html" target="_blank">Releasing collections — Ansible Community Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/thesius_code_7a136ae718b7/ansible-playbook-collection-ansible-best-practices-guide-g8n" target="_blank">Ansible Playbook Collection: Ansible Best Practices Guide</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-24_0859.html">&larr; 2026-03-24 0859</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

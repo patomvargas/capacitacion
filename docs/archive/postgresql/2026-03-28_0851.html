@@ -58,53 +58,43 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-03-24 0859 · PostgreSQL</div>
+    <div class="meta">2026-03-28 0851 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas más efectivas de mejorar el rendimiento es mediante la creación de índices. Los índices permiten al motor de base de datos acceder rápidamente a los datos, reduciendo el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`.</p>
+            <p>PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de los parámetros de la base de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para almacenar los datos en caché.</p>
             
         
             
         
             
-        
-            
-            <p>La replicación es otra característica importante de PostgreSQL que permite mantener una copia exacta de la base de datos en un servidor diferente. Esto es útil para garantizar la disponibilidad de los datos en caso de un fallo del servidor principal. Para configurar la replicación en PostgreSQL, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar el servidor esclavo para que se sincronice con el servidor principal.</p>
+            <p>Para hacer esto, se puede ejecutar el comando `ALTER SYSTEM SET shared_buffers TO '512MB';` para establecer el tamaño de los búferes compartidos en 512 MB. Otro parámetro importante es `effective_cache_size`, que se utiliza para estimar la cantidad de memoria que se utiliza para almacenar los datos en caché. Se puede ajustar este parámetro ejecutando el comando `ALTER SYSTEM SET effective_cache_size TO '1024MB';`.</p>
             
         
             
         
             
-        
-            
-            <p>Además de la creación de índices y la replicación, la creación de copias de seguridad es fundamental para garantizar la integridad de los datos. PostgreSQL ofrece varias herramientas para crear copias de seguridad, incluyendo `pg_dump` y `pg_restore`. El comando `pg_dump` se utiliza para crear una copia de la base de datos en un archivo, mientras que el comando `pg_restore` se utiliza para restaurar la base de datos desde una copia de seguridad.</p>
+            <p>La indexación es otra forma de optimizar el rendimiento de PostgreSQL. Los índices se utilizan para acelerar las consultas a la base de datos y se pueden crear utilizando el comando `CREATE INDEX`. Por ejemplo, se puede crear un índice en la columna `id` de la tabla `usuarios` ejecutando el comando `CREATE INDEX idx_usuarios_id ON usuarios (id);`.</p>
             
         
             
         
             
-        
-            
-            <p>Otra herramienta útil para optimizar el rendimiento de PostgreSQL es `pg_stat`, que proporciona información detallada sobre el rendimiento de la base de datos. Esta herramienta puede ayudar a identificar cuellos de botella y a optimizar las consultas para mejorar el rendimiento.</p>
+            <p>La replicación es una característica importante de PostgreSQL que permite replicar los datos de una base de datos en otra. Esto se puede hacer utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego restaurarla en la base de datos de destino.</p>
             
         
             
         
             
-        
-            
-            <p>Finalmente, es importante mencionar la importancia de mantener la base de datos actualizada y segura. La última versión de PostgreSQL, la 18, ofrece varias mejoras y características nuevas, incluyendo la compatibilidad con la replicación asincrónica y la creación de índices concurrentes. Para actualizar a la última versión, se puede utilizar el comando `pg_upgrade`.</p>
+            <p>La herramienta `pg_stat` se utiliza para monitorear el rendimiento de la base de datos y proporciona información sobre el uso de la CPU, la memoria y los discos. Se puede utilizar el comando `pg_stat_activity` para ver la actividad actual de la base de datos y `pg_stat_user_tables` para ver el uso de las tablas de la base de datos.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas, incluyendo la creación de índices, la replicación, la creación de copias de seguridad y el monitoreo del rendimiento. Al utilizar estas herramientas y técnicas, es posible mejorar significativamente el rendimiento y la disponibilidad de la base de datos.</p>
+            <p>Finalmente, es importante mencionar que la versión 18 de PostgreSQL incluye una característica llamada 'asynchronous I/O' (AIO) que permite realizar operaciones de entrada y salida de forma concurrente, lo que puede mejorar el rendimiento de la base de datos.</p>
             
         
     </div>
@@ -115,22 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
+                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/docs/release/" target="_blank">Release Notes - PostgreSQL</a>
+                <a href="https://pganalyze.com/blog" target="_blank">Postgres Monitoring, Database Optimization and more - pganalyze</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/young_gao/postgresql-performance-10-queries-you-are-writing-wrong-2o6d" target="_blank">PostgreSQL Performance: 10 Queries You Are Writing Wrong</a>
+                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">PostgreSQL: News Archive</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/elpic/scaling-postgresql-to-100m-vectors-production-optimization-guide-5fo8" target="_blank">Scaling PostgreSQL to 100M+ Vectors: Production Optimization Guide</a>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a" target="_blank">PostgreSQL Performance Tuning Checklist: 2026 Complete Guide</a>
                 
             </li>
             
@@ -141,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-20_0850.html">&larr; 2026-03-20 0850</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-24_0859.html">&larr; 2026-03-24 0859</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html">2026-03-28 0851 &rarr;</a>
             
         </div>
     </div>

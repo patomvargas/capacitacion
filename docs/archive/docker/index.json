@@ -1,4 +1,24 @@
 {
+  "2026-03-28_0851": {
+    "slug": "docker",
+    "title": "Mejores prácticas de Docker",
+    "summary": "En este artículo, se presentan las mejores prácticas para utilizar Docker de manera efectiva y segura. Se cubren temas como la creación de imágenes, la configuración de redes y la seguridad de los contenedores.",
+    "content": "\nLa creación de imágenes de Docker es un paso fundamental para cualquier proyecto que utilice contenedores. Para crear una imagen de Docker, se puede utilizar el comando `docker build` con un archivo Dockerfile que especifique las instrucciones para crear la imagen. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker a partir de un archivo Dockerfile: `docker build -t mi-imagen .`.\n\nUna vez creada la imagen, se puede utilizar el comando `docker run` para ejecutar un contenedor a partir de la imagen. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor a partir de la imagen `mi-imagen`: `docker run -p 8080:8080 mi-imagen`. Esto ejecutará un contenedor que escuche en el puerto 8080 y redirija las solicitudes al puerto 8080 del contenedor.\n\nLa seguridad de los contenedores es otro tema importante en Docker. Se pueden utilizar varias técnicas para mejorar la seguridad de los contenedores, como ejecutarlos con un usuario no root o limitar los privilegios del contenedor. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con un usuario no root: `docker run -u 1000:1000 mi-imagen`. Esto ejecutará el contenedor con el usuario con ID 1000 y grupo con ID 1000.\n\nLa creación de redes de Docker es otro tema importante en la configuración de contenedores. Se pueden utilizar el comando `docker network` para crear y gestionar redes de Docker. Por ejemplo, se puede utilizar el siguiente comando para crear una red de Docker: `docker network create mi-red`. Esto creará una red de Docker con el nombre `mi-red`.\n\nFinalmente, se pueden utilizar herramientas como Docker Compose para gestionar y orquestar contenedores de Docker. Docker Compose permite definir y ejecutar múltiples contenedores de Docker con una sola configuración. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un conjunto de contenedores definidos en un archivo docker-compose.yml: `docker-compose up`.\n\nEn resumen, Docker es una herramienta poderosa para crear y gestionar contenedores, pero requiere una configuración y seguridad adecuadas para garantizar su funcionamiento correcto y seguro.\n\n  ",
+    "sources": [
+      {
+        "title": "Demystifying Docker Networking",
+        "url": "https://medium.com/@kienlt.qn/demystifying-docker-networking-a-deep-dive-into-bridge-veth-526b953c9b15"
+      },
+      {
+        "title": "Docker Tutorial: Getting started with Grafana Loki and Alloy",
+        "url": "https://medium.com/@syed_usman_ahmed/docker-users-who-use-grafana-loki-with-promtail-need-to-migrate-to-grafana-alloy-as-promtail-the-a20a98ee2f15"
+      },
+      {
+        "title": "Day 16 — Docker Security Best Practices",
+        "url": "https://medium.com/@earchitha22/day-16-docker-security-best-practices-protecting-containerized-applications-f17ef28a5288"
+      }
+    ]
+  },
   "2026-03-20_0850": {
     "slug": "docker",
     "title": "Docker: Mejores prácticas y novedades",

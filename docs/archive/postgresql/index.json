@@ -1,4 +1,28 @@
 {
+  "2026-03-28_0851": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. En este artículo, se presentan algunas de las mejores prácticas para optimizar el rendimiento de PostgreSQL.",
+    "content": "PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de los parámetros de la base de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para almacenar los datos en caché. \n \n Para hacer esto, se puede ejecutar el comando `ALTER SYSTEM SET shared_buffers TO '512MB';` para establecer el tamaño de los búferes compartidos en 512 MB. Otro parámetro importante es `effective_cache_size`, que se utiliza para estimar la cantidad de memoria que se utiliza para almacenar los datos en caché. Se puede ajustar este parámetro ejecutando el comando `ALTER SYSTEM SET effective_cache_size TO '1024MB';`.\n \n La indexación es otra forma de optimizar el rendimiento de PostgreSQL. Los índices se utilizan para acelerar las consultas a la base de datos y se pueden crear utilizando el comando `CREATE INDEX`. Por ejemplo, se puede crear un índice en la columna `id` de la tabla `usuarios` ejecutando el comando `CREATE INDEX idx_usuarios_id ON usuarios (id);`. \n \n La replicación es una característica importante de PostgreSQL que permite replicar los datos de una base de datos en otra. Esto se puede hacer utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego restaurarla en la base de datos de destino. \n \n La herramienta `pg_stat` se utiliza para monitorear el rendimiento de la base de datos y proporciona información sobre el uso de la CPU, la memoria y los discos. Se puede utilizar el comando `pg_stat_activity` para ver la actividad actual de la base de datos y `pg_stat_user_tables` para ver el uso de las tablas de la base de datos.\n \n Finalmente, es importante mencionar que la versión 18 de PostgreSQL incluye una característica llamada 'asynchronous I/O' (AIO) que permite realizar operaciones de entrada y salida de forma concurrente, lo que puede mejorar el rendimiento de la base de datos.",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "Postgres Monitoring, Database Optimization and more - pganalyze",
+        "url": "https://pganalyze.com/blog"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "PostgreSQL Performance Tuning Checklist: 2026 Complete Guide",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a"
+      }
+    ]
+  },
   "2026-03-24_0859": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

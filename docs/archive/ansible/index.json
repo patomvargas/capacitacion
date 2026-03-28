@@ -1,4 +1,28 @@
 {
+  "2026-03-28_0851": {
+    "slug": "ansible",
+    "title": "Ansible: Mejoras y Best Practices",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo su potencial.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores automatizar tareas repetitivas y complejas. Con la reciente actualización a `ansible-core 2.19` y `Ansible 12`, se han introducido cambios significativos en la plantilla de templating, lo que puede requerir actualizaciones en los playbooks y roles existentes. Para aprovechar al máximo estas nuevas características, es importante entender cómo funcionan los `playbooks`, `roles`, `collections`, `vault`, `inventory` y `AWX/Tower`. \n\nUn aspecto importante a considerar es la creación de `playbooks` idempotentes y seguros. Para lograr esto, se pueden utilizar herramientas como `ansible-lint` y `ansible-vault` para cifrar secrets y variables sensibles. Por ejemplo, se puede utilizar el comando `ansible-vault create` para crear un archivo de secrets cifrado. \n\nAdemás, la comunidad de Ansible ha publicado una guía de best practices para escribir `playbooks` mantenibles, idempotentes y seguros. Esta guía cubre temas como la estructura del proyecto, el manejo de variables, el diseño de roles y la implementación de patrones de despliegue en producción. \n\nPara aquellos que buscan automatizar la creación de entornos de desarrollo y prueba, se puede utilizar `ansible-creator` para crear entornos de desarrollo y prueba de manera rápida y sencilla. Por ejemplo, se puede utilizar el comando `ansible-creator create` para crear un entorno de desarrollo nuevo. \n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura, y con las últimas actualizaciones y best practices, se puede aprovechar al máximo su potencial para crear entornos de desarrollo y producción más eficientes y seguros.\n\nLa documentación oficial de Ansible proporciona una guía detallada sobre cómo utilizar `AWX/Tower` para automatizar y orquestar tareas de manera centralizada. Por ejemplo, se puede utilizar el comando `awx-manage` para crear y gestionar instancias de `AWX/Tower`. \n\nEn cuanto a las colecciones, se pueden utilizar para agrupar módulos y roles relacionados y compartirlos con la comunidad. Por ejemplo, se puede utilizar el comando `ansible-galaxy` para instalar y gestionar colecciones de manera sencilla. \n\nEn conclusión, Ansible es una herramienta fundamental para cualquier equipo de DevOps o administración de sistemas, y con las últimas novedades y best practices, se puede crear entornos de desarrollo y producción más eficientes y seguros.",
+    "sources": [
+      {
+        "title": "Roadmaps — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"
+      },
+      {
+        "title": "Release Announcement: ansible-creator v26.3.1 - Ecosystem ...",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-creator-v26-3-1/45532"
+      },
+      {
+        "title": "Releasing collections — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/community/collection_contributors/collection_releasing.html"
+      },
+      {
+        "title": "Ansible Playbook Collection: Ansible Best Practices Guide",
+        "url": "https://dev.to/thesius_code_7a136ae718b7/ansible-playbook-collection-ansible-best-practices-guide-g8n"
+      }
+    ]
+  },
   "2026-03-24_0859": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

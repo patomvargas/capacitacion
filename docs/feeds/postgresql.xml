@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-27T09:01:00.383638+00:00</updated>
+  <updated>2026-03-28T08:52:10.610498+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -86,5 +86,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-24_0859.html"/>
     <summary>En este artículo, se presentan mejores prácticas y técnicas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la creación de copias de seguridad. Se proporcionan ejemplos y comandos para ilustrar cada concepto.</summary>
     <published>2026-03-24T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-03-28T08:51:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de los parámetros de la base de datos. Por ejemplo, se puede ajustar el parámetro &lt;code&gt;shared_buffers&lt;/code&gt; para aumentar la cantidad de memoria que se utiliza para almacenar los datos en caché.&lt;/p&gt;
+&lt;p&gt;Para hacer esto, se puede ejecutar el comando &lt;code&gt;ALTER SYSTEM SET shared_buffers TO '512MB';&lt;/code&gt; para establecer el tamaño de los búferes compartidos en 512 MB. Otro parámetro importante es &lt;code&gt;effective_cache_size&lt;/code&gt;, que se utiliza para estimar la cantidad de memoria que se utiliza para almacenar los datos en caché. Se puede ajustar este parámetro ejecutando el comando &lt;code&gt;ALTER SYSTEM SET effective_cache_size TO '1024MB';&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La indexación es otra forma de optimizar el rendimiento de PostgreSQL. Los índices se utilizan para acelerar las consultas a la base de datos y se pueden crear utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo, se puede crear un índice en la columna &lt;code&gt;id&lt;/code&gt; de la tabla &lt;code&gt;usuarios&lt;/code&gt; ejecutando el comando &lt;code&gt;CREATE INDEX idx_usuarios_id ON usuarios (id);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es una característica importante de PostgreSQL que permite replicar los datos de una base de datos en otra. Esto se puede hacer utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de seguridad de la base de datos y luego restaurarla en la base de datos de destino.&lt;/p&gt;
+&lt;p&gt;La herramienta &lt;code&gt;pg_stat&lt;/code&gt; se utiliza para monitorear el rendimiento de la base de datos y proporciona información sobre el uso de la CPU, la memoria y los discos. Se puede utilizar el comando &lt;code&gt;pg_stat_activity&lt;/code&gt; para ver la actividad actual de la base de datos y &lt;code&gt;pg_stat_user_tables&lt;/code&gt; para ver el uso de las tablas de la base de datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la versión 18 de PostgreSQL incluye una característica llamada 'asynchronous I/O' (AIO) que permite realizar operaciones de entrada y salida de forma concurrente, lo que puede mejorar el rendimiento de la base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/PostgreSQL"&gt;PostgreSQL - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pganalyze.com/blog"&gt;Postgres Monitoring, Database Optimization and more - pganalyze&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;PostgreSQL: News Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a"&gt;PostgreSQL Performance Tuning Checklist: 2026 Complete Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html"/>
+    <summary>PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. En este artículo, se presentan algunas de las mejores prácticas para optimizar el rendimiento de PostgreSQL.</summary>
+    <published>2026-03-28T08:51:00+00:00</published>
   </entry>
 </feed>
