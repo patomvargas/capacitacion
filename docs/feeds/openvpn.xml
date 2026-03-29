@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-28T08:52:10.601222+00:00</updated>
+  <updated>2026-03-29T08:50:03.622229+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -61,5 +61,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-25_0858.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-03-25T08:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-29_0849.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-03-29T08:49:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta poderosa para crear redes privadas virtuales (VPN) seguras. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Se puede utilizar la herramienta &lt;code&gt;easy-rsa&lt;/code&gt; para generar los certificados y claves necesarios. Por ejemplo, se puede utilizar el comando &lt;code&gt;./build-key-server&lt;/code&gt; para generar un certificado y clave para el servidor.&lt;/p&gt;
+&lt;p&gt;Una vez configurado el servidor, es importante protegerlo contra ataques. Se puede utilizar el protocolo de autenticación &lt;code&gt;tls-auth&lt;/code&gt; para agregar una capa adicional de seguridad. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: &lt;code&gt;tls-auth /etc/openvpn/ta.key 0&lt;/code&gt;. Además, se puede utilizar el parámetro &lt;code&gt;cipher&lt;/code&gt; para especificar el algoritmo de cifrado a utilizar. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: &lt;code&gt;cipher AES-256-CBC&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que la seguridad de la red también depende de la configuración del cliente. Se puede utilizar el comando &lt;code&gt;openvpn --config /etc/openvpn/client.conf&lt;/code&gt; para conectar al servidor. La configuración del cliente debe incluir la dirección del servidor, el certificado y la clave del cliente, y el algoritmo de cifrado a utilizar.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad del servidor, se puede utilizar la herramienta &lt;code&gt;openssl&lt;/code&gt; para generar certificados y claves más seguras. Por ejemplo, se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:4096 -nodes -keyout /etc/openvpn/server.key -out /etc/openvpn/server.crt -days 3650&lt;/code&gt; para generar un certificado y clave para el servidor.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, la versión 3.2.0 de &lt;code&gt;easy-rsa&lt;/code&gt; incluye nuevos comandos como &lt;code&gt;self-sign-server&lt;/code&gt; y &lt;code&gt;self-sign-client&lt;/code&gt; para generar certificados y claves de manera más sencilla. Además, se han publicado varias vulnerabilidades en productos de Mozilla que pueden afectar la seguridad de la red.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad de la red es un proceso continuo. Se deben realizar actualizaciones y revisiones periódicas para asegurarse de que la red siga siendo segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/OpenVPN"&gt;OpenVPN - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openvpn/easy-rsa/releases"&gt;Releases · OpenVPN/easy-rsa - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/IndianCERT/posts/cert-in-has-published-vulnerability-notes-on-its-website-domain-spoofing-vulnera/1231793489076728/"&gt;CERT-In has published Vulnerability notes on its website&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-29_0849.html"/>
+    <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto-a-punto o sitio-a-sitio. En este artículo, se explora cómo configurar y proteger un servidor OpenVPN.</summary>
+    <published>2026-03-29T08:49:00+00:00</published>
   </entry>
 </feed>

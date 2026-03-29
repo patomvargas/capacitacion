@@ -1,4 +1,20 @@
 {
+  "2026-03-29_0849": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Identity Management",
+    "summary": "FreeIPA es un sistema de gestión de identidades que integra LDAP, Kerberos, DNS y una autoridad de certificación. Este artículo cubre su configuración y mejores prácticas.",
+    "content": "FreeIPA es un proyecto de código abierto que proporciona una solución integral para la gestión de identidades en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos. Para instalar FreeIPA en Rocky Linux 10 o RHEL 10, se puede seguir la guía proporcionada en la fuente [3], que incluye los comandos `yum install -y ipa-server` y `ipa-server-install` para configurar el servidor.\n\n \n La configuración de FreeIPA implica la creación de una zona DNS y la configuración de la autoridad de certificación. Esto se puede hacer mediante la herramienta de línea de comandos `ipa` con comandos como `ipa dnszone-add` y `ipa ca-certmap`. También se pueden configurar reglas de sudo y relaciones de confianza entre dominios.\n\n \n Para configurar FreeIPA en Ubuntu, se puede seguir la guía proporcionada en la fuente [4], que incluye los comandos `apt-get install -y freeipa-server` y `ipa-server-install` para configurar el servidor. Es importante mencionar que FreeIPA es el proyecto upstream para Red Hat Identity Management.\n\n \n En cuanto a las mejores prácticas, es importante asegurarse de que el servidor FreeIPA esté configurado de manera segura, con una contraseña fuerte para el administrador y una configuración de firewall adecuada. También se debe realizar un respaldo regular de la base de datos de FreeIPA para evitar la pérdida de datos en caso de un fallo del sistema.\n\n \n Otra buena práctica es utilizar la herramienta de línea de comandos `ipa` para automatizar tareas comunes, como la creación de usuarios y grupos, en lugar de hacerlo manualmente a través de la interfaz web. Esto puede ayudar a reducir el tiempo y el esfuerzo necesarios para administrar el sistema de gestión de identidades.",
+    "sources": [
+      {
+        "title": "Install FreeIPA Server on Rocky Linux 10 / RHEL 10",
+        "url": "https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/"
+      },
+      {
+        "title": "How to Set Up FreeIPA on Ubuntu",
+        "url": "https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-freeipa-on-ubuntu/view"
+      }
+    ]
+  },
   "2026-03-25_0858": {
     "slug": "freeipa",
     "title": "FreeIPA: Identity Management",

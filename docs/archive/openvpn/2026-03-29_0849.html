@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad avanzada con OpenVPN - OpenVPN</title>
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,54 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Seguridad avanzada con OpenVPN</h1>
-    <div class="meta">2026-03-25 0858 · OpenVPN</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-03-29 0849 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>OpenVPN es una herramienta de tunneling que utiliza protocolos de seguridad como SSL/TLS para establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, se puede generar un certificado de servidor con el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365 -subj '/C=ES/ST=Madrid/L=Madrid/O=Organizacion/OU=Unidad/CN=server'`.</p>
+        
+            
+            <p>OpenVPN es una herramienta poderosa para crear redes privadas virtuales (VPN) seguras. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Se puede utilizar la herramienta `easy-rsa` para generar los certificados y claves necesarios. Por ejemplo, se puede utilizar el comando `./build-key-server` para generar un certificado y clave para el servidor.</p>
             
         
             
         
             
-        
-            
-            <p>Para mejorar la seguridad del servidor OpenVPN, es importante configurar el protocolo de autenticación y autorización. Se puede utilizar el protocolo de autenticación basado en certificados, que requiere que los clientes tengan un certificado válido para conectarse al servidor. Además, se puede configurar el servidor para que utilice una lista de control de acceso (ACL) para restringir el acceso a determinados recursos.</p>
+            <p>Una vez configurado el servidor, es importante protegerlo contra ataques. Se puede utilizar el protocolo de autenticación `tls-auth` para agregar una capa adicional de seguridad. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: `tls-auth /etc/openvpn/ta.key 0`. Además, se puede utilizar el parámetro `cipher` para especificar el algoritmo de cifrado a utilizar. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: `cipher AES-256-CBC`.</p>
             
         
             
         
             
-        
-            
-            <p>Otra forma de mejorar la seguridad del servidor OpenVPN es mediante el uso de técnicas de hardening. Se puede configurar el servidor para que utilice un firewall para bloquear el tráfico no autorizado y se puede configurar el sistema operativo para que utilice un conjunto de reglas de seguridad para restringir el acceso a determinados recursos. Por ejemplo, se puede utilizar el comando `ufw` para configurar el firewall en un sistema Ubuntu.</p>
+            <p>Es importante mencionar que la seguridad de la red también depende de la configuración del cliente. Se puede utilizar el comando `openvpn --config /etc/openvpn/client.conf` para conectar al servidor. La configuración del cliente debe incluir la dirección del servidor, el certificado y la clave del cliente, y el algoritmo de cifrado a utilizar.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a la configuración de un servidor OpenVPN, es importante mencionar que se puede utilizar la herramienta `easy-rsa` para generar certificados y claves de manera automatizada. Además, se puede utilizar la herramienta `openvpn-access-server` para configurar y administrar el servidor OpenVPN de manera centralizada.</p>
+            <p>Para mejorar la seguridad del servidor, se puede utilizar la herramienta `openssl` para generar certificados y claves más seguras. Por ejemplo, se puede utilizar el comando `openssl req -x509 -newkey rsa:4096 -nodes -keyout /etc/openvpn/server.key -out /etc/openvpn/server.crt -days 3650` para generar un certificado y clave para el servidor.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. Para configurar y proteger un servidor OpenVPN, es importante generar certificados y claves de manera segura, configurar el protocolo de autenticación y autorización, y utilizar técnicas de hardening para restringir el acceso a determinados recursos.</p>
+            <p>En cuanto a las novedades, la versión 3.2.0 de `easy-rsa` incluye nuevos comandos como `self-sign-server` y `self-sign-client` para generar certificados y claves de manera más sencilla. Además, se han publicado varias vulnerabilidades en productos de Mozilla que pueden afectar la seguridad de la red.</p>
             
         
             
         
             
-        
+            <p>Finalmente, es importante mencionar que la seguridad de la red es un proceso continuo. Se deben realizar actualizaciones y revisiones periódicas para asegurarse de que la red siga siendo segura.</p>
             
-            <p>Finalmente, es importante mencionar que la seguridad de un servidor OpenVPN también depende de la configuración y el mantenimiento del sistema operativo y de la red subyacente. Es importante asegurarse de que el sistema operativo y la red estén configurados de manera segura y que se estén utilizando las últimas versiones de los software y firmware.</p>
+        
             
         
     </div>
@@ -115,12 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/trailofbits/algo" target="_blank">trailofbits/algo</a>
+                <a href="https://en.wikipedia.org/wiki/OpenVPN" target="_blank">OpenVPN - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/proxycheck/proxycheck-php" target="_blank">proxycheck-php</a>
+                <a href="https://github.com/openvpn/easy-rsa/releases" target="_blank">Releases · OpenVPN/easy-rsa - GitHub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.facebook.com/IndianCERT/posts/cert-in-has-published-vulnerability-notes-on-its-website-domain-spoofing-vulnera/1231793489076728/" target="_blank">CERT-In has published Vulnerability notes on its website</a>
                 
             </li>
             
@@ -131,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-21_0840.html">&larr; 2026-03-21 0840</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-25_0858.html">&larr; 2026-03-25 0858</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-29_0849.html">2026-03-29 0849 &rarr;</a>
             
         </div>
     </div>

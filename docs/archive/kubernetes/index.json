@@ -1,4 +1,32 @@
 {
+  "2026-03-29_0849": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en áreas como networking, seguridad y almacenamiento. En este artículo, se presentan algunas de las novedades más destacadas y se proporcionan ejemplos prácticos de cómo implementarlas.",
+    "content": "\nLa versión más reciente de Kubernetes incluye importantes mejoras en la seguridad, como la corrección de la vulnerabilidad CVE-2026-4342, que permitía la inyección de configuraciones de nginx a través de comentarios en el ingress-nginx. Para mitigar esta vulnerabilidad, se puede actualizar el ingress-nginx a la última versión disponible utilizando el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml`.\n\nEn cuanto a la networking, se ha anunciado la versión 1.0 de Ingress2Gateway, que proporciona una forma más sencilla de migrar de Ingress a Gateway API. Esto se puede lograr utilizando el comando `kubectl ingress2gateway migrate -f ingress.yaml`. Además, se ha mejorado la compatibilidad con el proveedor de AWS en el Cluster API, lo que permite una mayor flexibilidad en la creación y gestión de clústeres en la nube.\n\nOtra área en la que se han realizado mejoras es en el almacenamiento. La herramienta Velero permite hacer copias de seguridad y restaurar clústeres de Kubernetes, incluyendo los datos de almacenamiento persistente. Para utilizar Velero, se puede instalar utilizando el comando `kubectl apply -f https://github.com/vmware-tanzu/velero/releases/latest/download/velero.yaml`. Luego, se puede crear una copia de seguridad del clúster utilizando el comando `velero backup create <nombre_de_la_copia_de_seguridad> --include-namespaces=<namespace>`.\n\nEn cuanto a la seguridad, se han publicado varios artículos y guías que proporcionan consejos y mejores prácticas para proteger los clústeres de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl get pods -o jsonpath='{.items[0].spec.containers[0].securityContext}'` para verificar la configuración de seguridad de un contenedor. Además, se pueden utilizar herramientas como Agentic RAG para gestionar y monitorear los clústeres de Kubernetes.\n\nFinalmente, se han anunciado varias novedades en la comunidad de Kubernetes, como la elección del comité de dirección para 2025 y la publicación de varios artículos y guías sobre cómo utilizar Kubernetes de manera efectiva. Para mantenerse al día con las últimas novedades, se puede seguir el blog oficial de Kubernetes y sus redes sociales.\n\nEn resumen, Kubernetes sigue evolucionando y mejorando en áreas como la seguridad, la networking y el almacenamiento. Es importante estar al día con las últimas novedades y mejores prácticas para aprovechar al máximo las funcionalidades de este sistema de orquestación de contenedores.",
+    "sources": [
+      {
+        "title": "CVE-2026-4342: ingress-nginx comment-based nginx configuration injection",
+        "url": "https://github.com/kubernetes/kubernetes/issues/137893"
+      },
+      {
+        "title": "Releases · kubernetes-sigs/kro",
+        "url": "https://github.com/kubernetes-sigs/kro/releases"
+      },
+      {
+        "title": "Running Agents on Kubernetes with Agent Sandbox",
+        "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/"
+      },
+      {
+        "title": "Backing up or Migrating a Kubernetes Deployment by Using Velero",
+        "url": "https://linbit.com/blog/using-velero-linbit-sds-to-back-up-restore-a-kubernetes-deployment/"
+      },
+      {
+        "title": "Announcing Ingress2Gateway 1.0: Your Path to Gateway API",
+        "url": "https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/"
+      }
+    ]
+  },
   "2026-03-25_0858": {
     "slug": "kubernetes",
     "title": "Novedades y Mejoras en Kubernetes",

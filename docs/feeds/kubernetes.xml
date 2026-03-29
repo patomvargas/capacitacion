@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-28T08:52:10.601836+00:00</updated>
+  <updated>2026-03-29T08:50:03.623436+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -117,5 +117,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-25_0858.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. En este artículo, se presentan las últimas novedades y se proporcionan ejemplos prácticos para su implementación.</summary>
     <published>2026-03-25T08:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-29_0849.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-03-29T08:49:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión más reciente de Kubernetes incluye importantes mejoras en la seguridad, como la corrección de la vulnerabilidad CVE-2026-4342, que permitía la inyección de configuraciones de nginx a través de comentarios en el ingress-nginx. Para mitigar esta vulnerabilidad, se puede actualizar el ingress-nginx a la última versión disponible utilizando el comando &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.5.1/deploy/static/provider/cloud/deploy.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la networking, se ha anunciado la versión 1.0 de Ingress2Gateway, que proporciona una forma más sencilla de migrar de Ingress a Gateway API. Esto se puede lograr utilizando el comando &lt;code&gt;kubectl ingress2gateway migrate -f ingress.yaml&lt;/code&gt;. Además, se ha mejorado la compatibilidad con el proveedor de AWS en el Cluster API, lo que permite una mayor flexibilidad en la creación y gestión de clústeres en la nube.&lt;/p&gt;
+&lt;p&gt;Otra área en la que se han realizado mejoras es en el almacenamiento. La herramienta Velero permite hacer copias de seguridad y restaurar clústeres de Kubernetes, incluyendo los datos de almacenamiento persistente. Para utilizar Velero, se puede instalar utilizando el comando &lt;code&gt;kubectl apply -f https://github.com/vmware-tanzu/velero/releases/latest/download/velero.yaml&lt;/code&gt;. Luego, se puede crear una copia de seguridad del clúster utilizando el comando &lt;code&gt;velero backup create &lt;nombre_de_la_copia_de_seguridad&gt; --include-namespaces=&lt;namespace&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se han publicado varios artículos y guías que proporcionan consejos y mejores prácticas para proteger los clústeres de Kubernetes. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl get pods -o jsonpath='{.items[0].spec.containers[0].securityContext}'&lt;/code&gt; para verificar la configuración de seguridad de un contenedor. Además, se pueden utilizar herramientas como Agentic RAG para gestionar y monitorear los clústeres de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Finalmente, se han anunciado varias novedades en la comunidad de Kubernetes, como la elección del comité de dirección para 2025 y la publicación de varios artículos y guías sobre cómo utilizar Kubernetes de manera efectiva. Para mantenerse al día con las últimas novedades, se puede seguir el blog oficial de Kubernetes y sus redes sociales.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando en áreas como la seguridad, la networking y el almacenamiento. Es importante estar al día con las últimas novedades y mejores prácticas para aprovechar al máximo las funcionalidades de este sistema de orquestación de contenedores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes/issues/137893"&gt;CVE-2026-4342: ingress-nginx comment-based nginx configuration injection&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/kro/releases"&gt;Releases · kubernetes-sigs/kro&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/"&gt;Running Agents on Kubernetes with Agent Sandbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linbit.com/blog/using-velero-linbit-sds-to-back-up-restore-a-kubernetes-deployment/"&gt;Backing up or Migrating a Kubernetes Deployment by Using Velero&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/20/ingress2gateway-1-0-release/"&gt;Announcing Ingress2Gateway 1.0: Your Path to Gateway API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-29_0849.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en áreas como networking, seguridad y almacenamiento. En este artículo, se presentan algunas de las novedades más destacadas y se proporcionan ejemplos prácticos de cómo implementarlas.</summary>
+    <published>2026-03-29T08:49:00+00:00</published>
   </entry>
 </feed>

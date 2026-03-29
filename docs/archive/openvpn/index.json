@@ -1,4 +1,24 @@
 {
+  "2026-03-29_0849": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto-a-punto o sitio-a-sitio. En este artículo, se explora cómo configurar y proteger un servidor OpenVPN.",
+    "content": "\nOpenVPN es una herramienta poderosa para crear redes privadas virtuales (VPN) seguras. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Se puede utilizar la herramienta `easy-rsa` para generar los certificados y claves necesarios. Por ejemplo, se puede utilizar el comando `./build-key-server` para generar un certificado y clave para el servidor.\n\nUna vez configurado el servidor, es importante protegerlo contra ataques. Se puede utilizar el protocolo de autenticación `tls-auth` para agregar una capa adicional de seguridad. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: `tls-auth /etc/openvpn/ta.key 0`. Además, se puede utilizar el parámetro `cipher` para especificar el algoritmo de cifrado a utilizar. Por ejemplo, se puede agregar la siguiente línea a la configuración del servidor: `cipher AES-256-CBC`.\n\nEs importante mencionar que la seguridad de la red también depende de la configuración del cliente. Se puede utilizar el comando `openvpn --config /etc/openvpn/client.conf` para conectar al servidor. La configuración del cliente debe incluir la dirección del servidor, el certificado y la clave del cliente, y el algoritmo de cifrado a utilizar.\n\nPara mejorar la seguridad del servidor, se puede utilizar la herramienta `openssl` para generar certificados y claves más seguras. Por ejemplo, se puede utilizar el comando `openssl req -x509 -newkey rsa:4096 -nodes -keyout /etc/openvpn/server.key -out /etc/openvpn/server.crt -days 3650` para generar un certificado y clave para el servidor.\n\nEn cuanto a las novedades, la versión 3.2.0 de `easy-rsa` incluye nuevos comandos como `self-sign-server` y `self-sign-client` para generar certificados y claves de manera más sencilla. Además, se han publicado varias vulnerabilidades en productos de Mozilla que pueden afectar la seguridad de la red.\n\nFinalmente, es importante mencionar que la seguridad de la red es un proceso continuo. Se deben realizar actualizaciones y revisiones periódicas para asegurarse de que la red siga siendo segura.\n",
+    "sources": [
+      {
+        "title": "OpenVPN - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/OpenVPN"
+      },
+      {
+        "title": "Releases · OpenVPN/easy-rsa - GitHub",
+        "url": "https://github.com/openvpn/easy-rsa/releases"
+      },
+      {
+        "title": "CERT-In has published Vulnerability notes on its website",
+        "url": "https://www.facebook.com/IndianCERT/posts/cert-in-has-published-vulnerability-notes-on-its-website-domain-spoofing-vulnera/1231793489076728/"
+      }
+    ]
+  },
   "2026-03-25_0858": {
     "slug": "openvpn",
     "title": "Seguridad avanzada con OpenVPN",

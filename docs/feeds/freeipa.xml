@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-28T08:52:10.600408+00:00</updated>
+  <updated>2026-03-29T08:50:03.621039+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -83,5 +83,22 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-25_0858.html"/>
     <summary>FreeIPA es un sistema de gestión de identidades de código abierto que proporciona autenticación centralizada, autorización y administración de cuentas. En este artículo, se explora cómo configurar y utilizar FreeIPA en entornos Linux y Unix.</summary>
     <published>2026-03-25T08:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-29_0849.html</id>
+    <title>FreeIPA: Identity Management</title>
+    <updated>2026-03-29T08:49:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un proyecto de código abierto que proporciona una solución integral para la gestión de identidades en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos. Para instalar FreeIPA en Rocky Linux 10 o RHEL 10, se puede seguir la guía proporcionada en la fuente [3], que incluye los comandos &lt;code&gt;yum install -y ipa-server&lt;/code&gt; y &lt;code&gt;ipa-server-install&lt;/code&gt; para configurar el servidor.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA implica la creación de una zona DNS y la configuración de la autoridad de certificación. Esto se puede hacer mediante la herramienta de línea de comandos &lt;code&gt;ipa&lt;/code&gt; con comandos como &lt;code&gt;ipa dnszone-add&lt;/code&gt; y &lt;code&gt;ipa ca-certmap&lt;/code&gt;. También se pueden configurar reglas de sudo y relaciones de confianza entre dominios.&lt;/p&gt;
+&lt;p&gt;Para configurar FreeIPA en Ubuntu, se puede seguir la guía proporcionada en la fuente [4], que incluye los comandos &lt;code&gt;apt-get install -y freeipa-server&lt;/code&gt; y &lt;code&gt;ipa-server-install&lt;/code&gt; para configurar el servidor. Es importante mencionar que FreeIPA es el proyecto upstream para Red Hat Identity Management.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante asegurarse de que el servidor FreeIPA esté configurado de manera segura, con una contraseña fuerte para el administrador y una configuración de firewall adecuada. También se debe realizar un respaldo regular de la base de datos de FreeIPA para evitar la pérdida de datos en caso de un fallo del sistema.&lt;/p&gt;
+&lt;p&gt;Otra buena práctica es utilizar la herramienta de línea de comandos &lt;code&gt;ipa&lt;/code&gt; para automatizar tareas comunes, como la creación de usuarios y grupos, en lugar de hacerlo manualmente a través de la interfaz web. Esto puede ayudar a reducir el tiempo y el esfuerzo necesarios para administrar el sistema de gestión de identidades.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/"&gt;Install FreeIPA Server on Rocky Linux 10 / RHEL 10&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-freeipa-on-ubuntu/view"&gt;How to Set Up FreeIPA on Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-03-29_0849.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidades que integra LDAP, Kerberos, DNS y una autoridad de certificación. Este artículo cubre su configuración y mejores prácticas.</summary>
+    <published>2026-03-29T08:49:00+00:00</published>
   </entry>
 </feed>
