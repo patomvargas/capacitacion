@@ -1,4 +1,24 @@
 {
+  "2026-03-30_0919": {
+    "slug": "openshift",
+    "title": "Mejoras y Novedades en OpenShift",
+    "summary": "OpenShift es una plataforma de contenedores que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo esta tecnología.",
+    "content": "OpenShift es una plataforma de contenedores líder en el mercado, y su última versión, OpenShift 4.21, introduce nuevas características y mejoras significativas. Una de las novedades más destacadas es la capacidad de escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Además, se han mejorado las funcionalidades de migración, lo que facilita la transición de aplicaciones a la plataforma.\n\nPara aprovechar estas nuevas características, es importante mantener la plataforma actualizada. Los administradores pueden verificar la disponibilidad de actualizaciones utilizando el comando `oc` o la consola web. Por ejemplo, para verificar la versión actual de la plataforma, se puede utilizar el comando `oc get clusterversion`. Si se detectan actualizaciones disponibles, se pueden aplicar utilizando el comando `oc apply`.\n\nOtra característica importante de OpenShift es la capacidad de monitorear y observar el rendimiento de las aplicaciones. La plataforma ofrece una variedad de herramientas y características para monitorear el rendimiento, incluyendo la capacidad de crear tableros personalizados con la tecnología Perses. Para crear un tablero personalizado, se puede utilizar el comando `oc create dashboard`. Además, la plataforma ofrece integración con otras herramientas de monitoreo, como Prometheus y Grafana.\n\nEn cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger las aplicaciones y los datos. Una de las características más destacadas es la capacidad de autenticación y autorización con OAuth. Para configurar la autenticación con OAuth, se puede utilizar el comando `oc create oauthclient`. Además, la plataforma ofrece una variedad de políticas de seguridad y controles de acceso para proteger los recursos y los datos.\n\nPara migrar aplicaciones a OpenShift, se pueden utilizar varias herramientas y técnicas. Una de las opciones más populares es utilizar la herramienta de migración de OpenShift, que ofrece una variedad de características y opciones para migrar aplicaciones de manera segura y eficiente. Para migrar una aplicación, se puede utilizar el comando `oc migrate`. Además, la plataforma ofrece una variedad de recursos y documentación para ayudar a los administradores a migrar sus aplicaciones de manera efectiva.\n\nEn resumen, OpenShift es una plataforma de contenedores líder en el mercado que ofrece una variedad de características y herramientas para aprovechar al máximo la tecnología de contenedores. Con sus últimas novedades y mejoras, la plataforma ofrece una mayor escalabilidad, flexibilidad y seguridad para las aplicaciones y los datos.\n\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:4434 - Security Advisory - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4434"
+      },
+      {
+        "title": "Red Hat OpenShift 4.21: Smarter scaling, faster migration, and AI ...",
+        "url": "https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency"
+      },
+      {
+        "title": "New observability features in Red Hat OpenShift 4.21 and Red Hat ...",
+        "url": "https://www.redhat.com/de/blog/new-observability-features-red-hat-openshift-421-and-red-hat-advanced-cluster-management-kubernetes-216"
+      }
+    ]
+  },
   "2026-03-26_0904": {
     "slug": "openshift",
     "title": "OpenShift: Guía Técnica",

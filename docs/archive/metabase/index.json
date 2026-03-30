@@ -1,4 +1,24 @@
 {
+  "2026-03-30_0919": {
+    "slug": "metabase",
+    "title": "Metabase: Herramienta de Análisis de Datos",
+    "summary": "Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, dashboards y visualizaciones de datos de manera sencilla. En este artículo, se presentan las características y funcionalidades de Metabase, así como algunas best practices para su uso.",
+    "content": "Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y visualizaciones de datos de manera sencilla. Una de las características más destacadas de Metabase es su capacidad para crear consultas y visualizaciones de datos de manera intuitiva, sin requerir conocimientos avanzados de SQL. Para crear una consulta en Metabase, se puede utilizar el comando `mbql` en la línea de comandos, seguido de la consulta que se desea realizar.\n\n \nPara crear un dashboard en Metabase, se puede utilizar el comando `metabase dashboard create` en la línea de comandos, seguido del nombre del dashboard que se desea crear. Luego, se pueden agregar visualizaciones de datos al dashboard utilizando el comando `metabase dashboard add-visualization`.\n\n \nEn cuanto a la seguridad, Metabase tiene algunas vulnerabilidades conocidas, como la vulnerabilidad CVE-2021-41277, que se puede solucionar actualizando la versión de Metabase a la última disponible. También es importante mencionar que Metabase tiene una comunidad activa de desarrolladores que trabajan en mejorar la herramienta y solucionar problemas.\n\n \nPara self-hostear Metabase, se puede utilizar un servidor como Docker o Kubernetes, y seguir los pasos indicados en la documentación oficial de Metabase. También es importante mencionar que Metabase tiene una versión gratuita que se puede utilizar para pequeños proyectos o para probar la herramienta.\n\n \nEn resumen, Metabase es una herramienta de análisis de datos poderosa y fácil de usar que permite a los usuarios crear consultas, dashboards y visualizaciones de datos de manera sencilla. Con su capacidad para crear consultas y visualizaciones de datos de manera intuitiva, Metabase es una herramienta ideal para aquellos que buscan analizar y visualizar datos de manera efectiva.",
+    "sources": [
+      {
+        "title": "Row chart with split series shows wrong formatting",
+        "url": "https://github.com/metabase/metabase/issues/70230"
+      },
+      {
+        "title": "Metabase Blog",
+        "url": "https://www.metabase.com/blog"
+      },
+      {
+        "title": "How I Self-Host Metabase & Why Your Team Should Too",
+        "url": "https://dev.to/paschalogu/how-i-self-host-metabase-why-your-team-should-too-1a6l"
+      }
+    ]
+  },
   "2026-03-26_0904": {
     "slug": "metabase",
     "title": "Metabase: Mejoras y Novedades",

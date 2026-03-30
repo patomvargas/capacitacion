@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejoras y Novedades en OpenShift - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>Mejoras y Novedades en OpenShift</h1>
+    <div class="meta">2026-03-30 0919 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+            <p>OpenShift es una plataforma de contenedores líder en el mercado, y su última versión, OpenShift 4.21, introduce nuevas características y mejoras significativas. Una de las novedades más destacadas es la capacidad de escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Además, se han mejorado las funcionalidades de migración, lo que facilita la transición de aplicaciones a la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar estas nuevas características, es importante mantener la plataforma actualizada. Los administradores pueden verificar la disponibilidad de actualizaciones utilizando el comando `oc` o la consola web. Por ejemplo, para verificar la versión actual de la plataforma, se puede utilizar el comando `oc get clusterversion`. Si se detectan actualizaciones disponibles, se pueden aplicar utilizando el comando `oc apply`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de OpenShift es la capacidad de monitorear y observar el rendimiento de las aplicaciones. La plataforma ofrece una variedad de herramientas y características para monitorear el rendimiento, incluyendo la capacidad de crear tableros personalizados con la tecnología Perses. Para crear un tablero personalizado, se puede utilizar el comando `oc create dashboard`. Además, la plataforma ofrece integración con otras herramientas de monitoreo, como Prometheus y Grafana.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger las aplicaciones y los datos. Una de las características más destacadas es la capacidad de autenticación y autorización con OAuth. Para configurar la autenticación con OAuth, se puede utilizar el comando `oc create oauthclient`. Además, la plataforma ofrece una variedad de políticas de seguridad y controles de acceso para proteger los recursos y los datos.</p>
+            
+        
+            
+        
+            
+            <p>Para migrar aplicaciones a OpenShift, se pueden utilizar varias herramientas y técnicas. Una de las opciones más populares es utilizar la herramienta de migración de OpenShift, que ofrece una variedad de características y opciones para migrar aplicaciones de manera segura y eficiente. Para migrar una aplicación, se puede utilizar el comando `oc migrate`. Además, la plataforma ofrece una variedad de recursos y documentación para ayudar a los administradores a migrar sus aplicaciones de manera efectiva.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores líder en el mercado que ofrece una variedad de características y herramientas para aprovechar al máximo la tecnología de contenedores. Con sus últimas novedades y mejoras, la plataforma ofrece una mayor escalabilidad, flexibilidad y seguridad para las aplicaciones y los datos.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:4434" target="_blank">RHSA-2026:4434 - Security Advisory - Red Hat Customer Portal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency" target="_blank">Red Hat OpenShift 4.21: Smarter scaling, faster migration, and AI ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.redhat.com/de/blog/new-observability-features-red-hat-openshift-421-and-red-hat-advanced-cluster-management-kubernetes-216" target="_blank">New observability features in Red Hat OpenShift 4.21 and Red Hat ...</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-26_0904.html">&larr; 2026-03-26 0904</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
