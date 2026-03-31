@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-30T09:20:20.973074+00:00</updated>
+  <updated>2026-03-31T09:08:37.774772+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -142,5 +142,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-27_0900.html"/>
     <summary>Este artículo presenta las últimas novedades y soluciones para Superset, incluyendo la configuración de alertas y la administración de secretos. Se cubren también las mejoras en los gráficos y las opciones de pre-filtrado en los dashboards.</summary>
     <published>2026-03-27T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-03-31_0907.html</id>
+    <title>Superset: Herramienta de Visualización de Datos</title>
+    <updated>2026-03-31T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta poderosa para la visualización de datos y creación de dashboards. Con la versión 6.0.0, se han incorporado varias mejoras y novedades, como el soporte oficial para el Extension Framework (.supx). Esto permite a los desarrolladores crear extensiones personalizadas para Superset utilizando el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos.&lt;/p&gt;
+&lt;p&gt;La versión 6.0.0 de Superset también incluye mejoras en la conexión con bases de datos, como Oracle, utilizando el comando &lt;code&gt;pip install cx_Oracle&lt;/code&gt; para instalar el driver de Oracle. Además, se han solucionado problemas con la creación de gráficos de tabla, donde los prefijos y sufijos no se agregaban correctamente.&lt;/p&gt;
+&lt;p&gt;Para crear un dashboard en Superset, se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar el proyecto, y luego &lt;code&gt;superset run&lt;/code&gt; para ejecutar el servidor de desarrollo. Luego, se puede acceder al dashboard mediante la URL &lt;code&gt;http://localhost:8088&lt;/code&gt; y crear gráficos y dashboards personalizados utilizando las herramientas de Superset.&lt;/p&gt;
+&lt;p&gt;La comunidad de Superset también ha estado trabajando en la creación de una guía completa para desarrolladores, que incluye tutoriales y ejemplos para crear aplicaciones personalizadas con Superset. Además, se han agregado nuevas características, como el soporte para OpenSearch y la refactorización de la carta de Helm.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión 6.0.0 de Superset ofrece varias mejoras y novedades para la visualización de datos y creación de dashboards. Con su arquitectura flexible y personalizable, Superset es una herramienta ideal para desarrolladores y administradores de sistemas que buscan crear aplicaciones de visualización de datos personalizadas.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset en &lt;code&gt;https://superset.apache.org/&lt;/code&gt; y la comunidad de Superset en &lt;code&gt;https://github.com/apache/superset&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38607"&gt;Superset 6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/37793"&gt;Conexión con Oracle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/37854"&gt;Gráficos de tabla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/38719"&gt;Soporte para OpenSearch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/pull/38597"&gt;Refactorización de la carta de Helm&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-31_0907.html"/>
+    <summary>Superset es una herramienta de código abierto para la visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.0.0 de Superset.</summary>
+    <published>2026-03-31T09:07:00+00:00</published>
   </entry>
 </feed>

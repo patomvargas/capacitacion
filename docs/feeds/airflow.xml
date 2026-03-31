@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-03-30T09:20:20.971683+00:00</updated>
+  <updated>2026-03-31T09:08:37.772110+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -112,5 +112,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-27_0900.html"/>
     <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Airflow 3.x.</summary>
     <published>2026-03-27T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-31_0907.html</id>
+    <title>Mejoras en Airflow 3.2</title>
+    <updated>2026-03-31T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. Con la versión 3.2, se han introducido varias mejoras y funcionalidades nuevas. Una de las características más destacadas es la expansión de la conciencia de activos y datos, lo que permite una mayor flexibilidad y personalización en la creación de flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo estas nuevas funcionalidades, es importante entender cómo se pueden utilizar los operadores y sensores en Airflow. Los operadores permiten ejecutar tareas específicas, como la ejecución de comandos &lt;code&gt;bash&lt;/code&gt; o la lectura de datos desde una base de datos. Por ejemplo, se puede utilizar el operador &lt;code&gt;BashOperator&lt;/code&gt; para ejecutar un comando &lt;code&gt;bash&lt;/code&gt; como &lt;code&gt;ls -l&lt;/code&gt;. Los sensores, por otro lado, permiten esperar a que se cumpla una condición específica antes de continuar con el flujo de trabajo.&lt;/p&gt;
+&lt;p&gt;Otra característica importante en Airflow es la utilización de XCom, que permite compartir datos entre tareas. Esto se puede lograr utilizando el comando &lt;code&gt;xcom_push&lt;/code&gt; para enviar datos y &lt;code&gt;xcom_pull&lt;/code&gt; para recibirlos. Por ejemplo, se puede utilizar &lt;code&gt;xcom_push&lt;/code&gt; para enviar un mensaje como &lt;code&gt;xcom_push key='mensaje' value='Hola, mundo!'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante diseñar flujos de trabajo que sean escalables y fáciles de mantener. Esto se puede lograr utilizando plantillas de DAG y siguiendo las guías de mejores prácticas de Airflow. También es importante monitorear y depurar los flujos de trabajo para asegurarse de que estén funcionando correctamente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow no es la única opción para la orquestación de flujos de trabajo. Otras herramientas, como Kubernetes, también pueden ser utilizadas para orquestar flujos de trabajo. Sin embargo, Airflow sigue siendo una de las opciones más populares y ampliamente utilizadas en la industria.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Airflow y sus funcionalidades, se pueden consultar las fuentes oficiales y la documentación en línea. También es importante seguir las mejores prácticas y guías de la comunidad para asegurarse de que los flujos de trabajo estén diseñados y ejecutados de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/milestone/106"&gt;Airflow 3.2.0 · Milestone #106 · apache/airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"&gt;Release Notes — Airflow 2.11.2 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj"&gt;Airflow DAG Templates: Airflow Best Practices Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-31_0907.html"/>
+    <summary>Airflow 3.2 introduce nuevas funcionalidades y mejoras en la programación de flujos de trabajo. Esta versión incluye avances en la conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow.</summary>
+    <published>2026-03-31T09:07:00+00:00</published>
   </entry>
 </feed>

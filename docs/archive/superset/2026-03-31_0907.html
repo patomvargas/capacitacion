@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.x: Mejoras y Best Practices - Airflow</title>
-    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <title>Superset: Herramienta de Visualización de Datos - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,17 +54,17 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Airflow 3.x: Mejoras y Best Practices</h1>
-    <div class="meta">2026-03-27 0900 · Airflow</div>
+    <h1>Superset: Herramienta de Visualización de Datos</h1>
+    <div class="meta">2026-03-31 0907 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Airflow es una herramienta fundamental para los equipos de DevOps y sysadmins, ya que permite definir flujos de trabajo como código, lo que los hace más mantenibles, versionables y testables. En la versión 3.x, se han introducido varias mejoras, como la nueva forma de utilizar la API de Airflow a través de `airflowctl`.</p>
+            <p>Superset es una herramienta poderosa para la visualización de datos y creación de dashboards. Con la versión 6.0.0, se han incorporado varias mejoras y novedades, como el soporte oficial para el Extension Framework (.supx). Esto permite a los desarrolladores crear extensiones personalizadas para Superset utilizando el comando `superset db upgrade` para actualizar la base de datos.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>La comunidad de Airflow ha estado trabajando activamente en mejorar la plataforma, y se han realizado varios lanzamientos recientes, como Airflow 3.1.7, que incluye mejoras en la seguridad y la estabilidad. Además, se han agregado nuevas características, como la timetable DeltaTriggerTimetable, que permite programar flujos de trabajo basados en deltas sin depender de intervalos de datos.</p>
+            <p>La versión 6.0.0 de Superset también incluye mejoras en la conexión con bases de datos, como Oracle, utilizando el comando `pip install cx_Oracle` para instalar el driver de Oracle. Además, se han solucionado problemas con la creación de gráficos de tabla, donde los prefijos y sufijos no se agregaban correctamente.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>Para trabajar con Airflow 3.x, es importante seguir las best practices recomendadas, como utilizar DAGs (Directed Acyclic Graphs) para definir los flujos de trabajo, y operadores para ejecutar tareas específicas. También es importante configurar correctamente las conexiones y los sensores para monitorear y controlar los flujos de trabajo. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos de Airflow, y `airflow webserver` para iniciar el servidor web.</p>
+            <p>Para crear un dashboard en Superset, se puede utilizar el comando `superset init` para inicializar el proyecto, y luego `superset run` para ejecutar el servidor de desarrollo. Luego, se puede acceder al dashboard mediante la URL `http://localhost:8088` y crear gráficos y dashboards personalizados utilizando las herramientas de Superset.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>Otra best practice importante es utilizar XCom (Cross-Communication) para compartir datos entre tareas y DAGs. Esto permite crear flujos de trabajo más complejos y flexibles. Además, es importante utilizar las herramientas de monitoreo y logging de Airflow para detectar y solucionar problemas en los flujos de trabajo.</p>
+            <p>La comunidad de Superset también ha estado trabajando en la creación de una guía completa para desarrolladores, que incluye tutoriales y ejemplos para crear aplicaciones personalizadas con Superset. Además, se han agregado nuevas características, como el soporte para OpenSearch y la refactorización de la carta de Helm.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>En cuanto a las novedades, se ha anunciado la próxima release de Airflow 3.2, que incluirá nuevas características y mejoras. También se ha lanzado la herramienta `airflowctl` para gestionar y monitorear los despliegues de Airflow de manera segura.</p>
+            <p>En resumen, la versión 6.0.0 de Superset ofrece varias mejoras y novedades para la visualización de datos y creación de dashboards. Con su arquitectura flexible y personalizable, Superset es una herramienta ideal para desarrolladores y administradores de sistemas que buscan crear aplicaciones de visualización de datos personalizadas.</p>
             
         
             
@@ -104,7 +104,7 @@
             
         
             
-            <p>En resumen, Airflow 3.x es una plataforma poderosa y flexible para autorizar, programar y monitorear flujos de trabajo. Siguiendo las best practices recomendadas y utilizando las herramientas y características disponibles, los equipos de DevOps y sysadmins pueden crear flujos de trabajo eficientes y escalables.</p>
+            <p>Para obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset en `https://superset.apache.org/` y la comunidad de Superset en `https://github.com/apache/superset`.</p>
             
         
     </div>
@@ -115,22 +115,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/airflow" target="_blank">Apache Airflow</a>
+                <a href="https://github.com/apache/superset/discussions/38607" target="_blank">Superset 6.0.0</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/blog/" target="_blank">Airflow Blog</a>
+                <a href="https://github.com/apache/superset/issues/37793" target="_blank">Conexión con Oracle</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html" target="_blank">Airflow 2.11.2 Documentation</a>
+                <a href="https://github.com/apache/superset/issues/37854" target="_blank">Gráficos de tabla</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj" target="_blank">Airflow DAG Templates: Airflow Best Practices Guide</a>
+                <a href="https://github.com/apache/superset/issues/38719" target="_blank">Soporte para OpenSearch</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/pull/38597" target="_blank">Refactorización de la carta de Helm</a>
                 
             </li>
             
@@ -141,12 +146,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-23_0904.html">&larr; 2026-03-23 0904</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-27_0900.html">&larr; 2026-03-27 0900</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-31_0907.html">2026-03-31 0907 &rarr;</a>
             
         </div>
     </div>

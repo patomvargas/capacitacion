@@ -1,4 +1,32 @@
 {
+  "2026-03-31_0907": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Visualización de Datos",
+    "summary": "Superset es una herramienta de código abierto para la visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.0.0 de Superset.",
+    "content": "Superset es una herramienta poderosa para la visualización de datos y creación de dashboards. Con la versión 6.0.0, se han incorporado varias mejoras y novedades, como el soporte oficial para el Extension Framework (.supx). Esto permite a los desarrolladores crear extensiones personalizadas para Superset utilizando el comando `superset db upgrade` para actualizar la base de datos.\n\n \n La versión 6.0.0 de Superset también incluye mejoras en la conexión con bases de datos, como Oracle, utilizando el comando `pip install cx_Oracle` para instalar el driver de Oracle. Además, se han solucionado problemas con la creación de gráficos de tabla, donde los prefijos y sufijos no se agregaban correctamente.\n\n \n Para crear un dashboard en Superset, se puede utilizar el comando `superset init` para inicializar el proyecto, y luego `superset run` para ejecutar el servidor de desarrollo. Luego, se puede acceder al dashboard mediante la URL `http://localhost:8088` y crear gráficos y dashboards personalizados utilizando las herramientas de Superset.\n\n \n La comunidad de Superset también ha estado trabajando en la creación de una guía completa para desarrolladores, que incluye tutoriales y ejemplos para crear aplicaciones personalizadas con Superset. Además, se han agregado nuevas características, como el soporte para OpenSearch y la refactorización de la carta de Helm.\n\n \n En resumen, la versión 6.0.0 de Superset ofrece varias mejoras y novedades para la visualización de datos y creación de dashboards. Con su arquitectura flexible y personalizable, Superset es una herramienta ideal para desarrolladores y administradores de sistemas que buscan crear aplicaciones de visualización de datos personalizadas.\n\n \n Para obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset en `https://superset.apache.org/` y la comunidad de Superset en `https://github.com/apache/superset`.",
+    "sources": [
+      {
+        "title": "Superset 6.0.0",
+        "url": "https://github.com/apache/superset/discussions/38607"
+      },
+      {
+        "title": "Conexión con Oracle",
+        "url": "https://github.com/apache/superset/issues/37793"
+      },
+      {
+        "title": "Gráficos de tabla",
+        "url": "https://github.com/apache/superset/issues/37854"
+      },
+      {
+        "title": "Soporte para OpenSearch",
+        "url": "https://github.com/apache/superset/issues/38719"
+      },
+      {
+        "title": "Refactorización de la carta de Helm",
+        "url": "https://github.com/apache/superset/pull/38597"
+      }
+    ]
+  },
   "2026-03-27_0900": {
     "slug": "superset",
     "title": "Superset: Mejoras y Soluciones",

@@ -1,4 +1,32 @@
 {
+  "2026-03-31_0907": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo que combina una interfaz visual con la flexibilidad de código personalizado. En este artículo, se explora cómo utilizar n8n para automatizar tareas y mejorar la eficiencia.",
+    "content": "n8n es una herramienta poderosa para automatizar flujos de trabajo, permitiendo a los usuarios crear nodos y workflows personalizados. Un nodo es un componente que realiza una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los workflows, por otro lado, son secuencias de nodos que se ejecutan en un orden determinado. \n \n Para empezar a utilizar n8n, es necesario instalar la plataforma y configurar los nodos y workflows necesarios. Por ejemplo, se puede crear un nodo de `Gmail Trigger` para recibir correos electrónicos y otro nodo de `Send Email` para enviar respuestas automáticas. Luego, se puede crear un workflow que conecte estos nodos y ejecute la secuencia de acciones.\n \n En cuanto a la seguridad, es importante tener en cuenta las vulnerabilidades conocidas y aplicar las actualizaciones y parches necesarios. Por ejemplo, se puede utilizar el comando `npm install` para actualizar las dependencias de n8n y aplicar las últimas actualizaciones de seguridad. Además, es recomendable utilizar credenciales seguras y autenticación para proteger los workflows y nodos.\n \n Para aquellos que desean self-hosting, es importante considerar la configuración de los webhooks y la integración con otros servicios. Por ejemplo, se puede utilizar el comando `n8n start` para iniciar el servidor de n8n y configurar los webhooks para recibir notificaciones de otros servicios. \n \n En resumen, n8n es una herramienta versátil y poderosa para automatizar flujos de trabajo, y su flexibilidad y personalización la hacen ideal para una variedad de aplicaciones y uso casos.",
+    "sources": [
+      {
+        "title": "Gmail Trigger stops firing for one mailbox while another Gmail Trigger in the same workflow continues to work",
+        "url": "https://github.com/n8n-io/n8n/issues/27071"
+      },
+      {
+        "title": "The n8n Workflow That Saved My 20 Hours a Week",
+        "url": "https://medium.com/@glasier067/the-n8n-workflow-that-saved-me-20-hours-a-week-089e72d6685d"
+      },
+      {
+        "title": "Top AI GitHub Repositories in 2026",
+        "url": "https://medium.com/write-a-catalyst/top-ai-github-repositories-in-2026-e08af3e88314"
+      },
+      {
+        "title": "Efe Güngör's Post",
+        "url": "https://www.linkedin.com/posts/efegungor1_n8n-automation-cybersecurity-activity-7439361253661134849-rSwI"
+      },
+      {
+        "title": "Rohit (@rohit4verse) / Posts / X",
+        "url": "https://x.com/rohit4verse"
+      }
+    ]
+  },
   "2026-03-27_0900": {
     "slug": "n8n",
     "title": "Automatización con n8n",

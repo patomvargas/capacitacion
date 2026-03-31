@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB en Kubernetes - MetalLB</title>
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
     <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
@@ -57,46 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>MetalLB en Kubernetes</h1>
-    <div class="meta">2026-03-27 0900 · MetalLB</div>
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-03-31 0907 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es una herramienta de balanceo de carga que se integra con Kubernetes para proporcionar direcciones IP externas a servicios de tipo LoadBalancer en clusters bare-metal. Para instalar MetalLB, se puede utilizar el comando `helm install metallb` o `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.15.2/manifests/metallb.yaml`. Una vez instalado, se debe configurar un pool de direcciones IP utilizando el comando `kubectl create -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.</p>
+        
+            
+            <p>MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite la configuración de redes en modo L2 y BGP. En modo L2, MetalLB utiliza la tabla de MAC para enrutar el tráfico hacia los pods correspondientes. En modo BGP, MetalLB utiliza el protocolo BGP para anunciar las rutas hacia los pods.</p>
             
         
             
         
             
-        
-            
-            <p>La configuración de MetalLB se puede realizar en dos modos principales: L2 y BGP. El modo L2 utiliza el protocolo ARP para anunciar las direcciones IP en la red, mientras que el modo BGP utiliza el protocolo BGP para anunciar las direcciones IP a los routers de la red. Para configurar el modo L2, se debe crear un archivo `metallb-config.yaml` con la configuración del modo L2 y aplicarlo utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
+            <p>Para configurar MetalLB en modo L2, es necesario crear un objeto `MetalLB` con la configuración deseada. Por ejemplo: `kubectl apply -f metallb-l2.yaml`, donde `metallb-l2.yaml` contiene la configuración de la red en modo L2. La configuración puede incluir la definición de pools de IP, la configuración de BGP y la definición de anuncios de rutas.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `tcpdump` y `wireshark` para analizar el tráfico de red y identificar problemas de configuración. También se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los logs del controlador de MetalLB y identificar problemas de configuración o errores.</p>
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede utilizar con el comando `kubectl` para crear y gestionar los objetos de configuración. Por ejemplo: `kubectl get metallb` para obtener la lista de objetos `MetalLB` configurados. También se puede utilizar el comando `kubectl describe` para obtener más información sobre un objeto `MetalLB` específico.</p>
             
         
             
         
             
-        
-            
-            <p>La integración de MetalLB con Kubernetes se puede realizar utilizando la API de Kubernetes para crear y gestionar servicios de tipo LoadBalancer. También se puede utilizar el comando `kubectl expose` para exponer un servicio como un LoadBalancer y asignarle una dirección IP externa utilizando MetalLB.</p>
+            <p>Para solucionar problemas comunes con MetalLB, se puede utilizar el comando `kubectl logs` para obtener los registros de los pods de MetalLB. También se puede utilizar el comando `tcpdump` para capturar el tráfico de red y analizar los paquetes. Por ejemplo: `tcpdump -i any -n -vv -s 0 -c 100 -W 100 port 179` para capturar los paquetes BGP.</p>
             
         
             
         
             
+            <p>En cuanto a las novedades y mejoras en MetalLB, se ha agregado soporte para la instalación de CRD (Custom Resource Definition) de manera separada. Esto permite una mayor flexibilidad en la configuración y el uso de MetalLB. Por ejemplo: `kubectl apply -f metallb-crd.yaml` para instalar el CRD de MetalLB.</p>
+            
         
             
-            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar direcciones IP externas a servicios de tipo LoadBalancer en clusters bare-metal de Kubernetes. Su configuración y uso requieren una comprensión profunda de los protocolos de red y la arquitectura de Kubernetes, pero pueden ser muy beneficiosos para entornos de producción que requieren una alta disponibilidad y escalabilidad.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que MetalLB se puede utilizar en conjunto con otros componentes de Kubernetes, como Traefik, para proporcionar una solución de equilibrio de carga completa. Por ejemplo: `helm install traefik` para instalar Traefik y configurarlo para utilizar MetalLB como proveedor de equilibrio de carga.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,7 +111,7 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metallb/metallb" target="_blank">MetalLB GitHub</a>
+                <a href="https://github.com/metallb/metallb/issues/2994" target="_blank">feature: Separate CRD installation</a>
                 
             </li>
             
@@ -117,7 +121,7 @@
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-metallb-ipv4-bare-metal-kubernetes" target="_blank">MetalLB IPv4 Bare Metal Kubernetes</a>
+                <a href="https://github.com/kubernetes-sigs/kubespray/issues/13126" target="_blank">Update metallb</a>
                 
             </li>
             
@@ -128,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-23_0904.html">&larr; 2026-03-23 0904</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-27_0900.html">&larr; 2026-03-27 0900</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-03-31_0907.html">2026-03-31 0907 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,28 @@
 {
+  "2026-03-31_0907": {
+    "slug": "airflow",
+    "title": "Mejoras en Airflow 3.2",
+    "summary": "Airflow 3.2 introduce nuevas funcionalidades y mejoras en la programación de flujos de trabajo. Esta versión incluye avances en la conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow.",
+    "content": "\nAirflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. Con la versión 3.2, se han introducido varias mejoras y funcionalidades nuevas. Una de las características más destacadas es la expansión de la conciencia de activos y datos, lo que permite una mayor flexibilidad y personalización en la creación de flujos de trabajo.\n\nPara aprovechar al máximo estas nuevas funcionalidades, es importante entender cómo se pueden utilizar los operadores y sensores en Airflow. Los operadores permiten ejecutar tareas específicas, como la ejecución de comandos `bash` o la lectura de datos desde una base de datos. Por ejemplo, se puede utilizar el operador `BashOperator` para ejecutar un comando `bash` como `ls -l`. Los sensores, por otro lado, permiten esperar a que se cumpla una condición específica antes de continuar con el flujo de trabajo.\n\nOtra característica importante en Airflow es la utilización de XCom, que permite compartir datos entre tareas. Esto se puede lograr utilizando el comando `xcom_push` para enviar datos y `xcom_pull` para recibirlos. Por ejemplo, se puede utilizar `xcom_push` para enviar un mensaje como `xcom_push key='mensaje' value='Hola, mundo!'`.\n\nEn cuanto a las mejores prácticas, es importante diseñar flujos de trabajo que sean escalables y fáciles de mantener. Esto se puede lograr utilizando plantillas de DAG y siguiendo las guías de mejores prácticas de Airflow. También es importante monitorear y depurar los flujos de trabajo para asegurarse de que estén funcionando correctamente.\n\nFinalmente, es importante mencionar que Airflow no es la única opción para la orquestación de flujos de trabajo. Otras herramientas, como Kubernetes, también pueden ser utilizadas para orquestar flujos de trabajo. Sin embargo, Airflow sigue siendo una de las opciones más populares y ampliamente utilizadas en la industria.\n\nPara obtener más información sobre Airflow y sus funcionalidades, se pueden consultar las fuentes oficiales y la documentación en línea. También es importante seguir las mejores prácticas y guías de la comunidad para asegurarse de que los flujos de trabajo estén diseñados y ejecutados de manera efectiva.",
+    "sources": [
+      {
+        "title": "Apache Airflow",
+        "url": "https://airflow.apache.org/"
+      },
+      {
+        "title": "Airflow 3.2.0 · Milestone #106 · apache/airflow",
+        "url": "https://github.com/apache/airflow/milestone/106"
+      },
+      {
+        "title": "Release Notes — Airflow 2.11.2 Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"
+      },
+      {
+        "title": "Airflow DAG Templates: Airflow Best Practices Guide",
+        "url": "https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj"
+      }
+    ]
+  },
   "2026-03-27_0900": {
     "slug": "airflow",
     "title": "Airflow 3.x: Mejoras y Best Practices",
