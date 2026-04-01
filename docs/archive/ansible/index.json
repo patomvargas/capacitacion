@@ -1,4 +1,32 @@
 {
+  "2026-04-01_0913": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente. En este artículo, se presentan las últimas novedades y mejores prácticas para utilizar Ansible de manera efectiva.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se utiliza comúnmente en entornos de DevOps. Permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente, utilizando playbooks y roles para definir la configuración deseada. \n \n Para empezar a utilizar Ansible, es necesario instalar el software en el equipo de administración. Esto se puede hacer utilizando el comando `pip install ansible`. Una vez instalado, se puede crear un archivo de inventario que define los hosts y grupos de hosts que se van a gestionar. \n \n La última versión de Ansible incluye varias novedades y mejoras, como la compatibilidad con Python 3.11 y la eliminación del soporte para Ansible Core 2.15. Es importante tener en cuenta que la compatibilidad con estas versiones cambiará en el futuro, por lo que es recomendable utilizar las últimas versiones de Ansible y Python. \n \n Para gestionar la configuración de la infraestructura, Ansible utiliza playbooks, que son archivos YAML que definen la configuración deseada. Los playbooks se pueden ejecutar utilizando el comando `ansible-playbook`. Por ejemplo, para ejecutar un playbook llamado `deploy.yml`, se puede utilizar el comando `ansible-playbook deploy.yml`. \n \n Ansible también incluye una herramienta llamada AWX, que es una interfaz web para gestionar la automatización de la infraestructura. AWX permite a los administradores de sistemas y desarrolladores crear y ejecutar playbooks de manera centralizada, y también incluye funcionalidades de seguimiento y monitoreo. \n \n En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura, que permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente. Es importante tener en cuenta las últimas novedades y mejoras en la herramienta, y utilizar las últimas versiones de Ansible y Python para asegurarse de que la configuración sea compatible con los requisitos actuales.",
+    "sources": [
+      {
+        "title": "community.aws Release Notes - Ansible documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html"
+      },
+      {
+        "title": "Red Hat Ansible Automation Platform is ending support for Ansible Core",
+        "url": "https://forum.ansible.com/t/red-hat-ansible-automation-platform-is-ending-support-for-ansible-core-2-15-and-python-3-11/45574"
+      },
+      {
+        "title": "mkdocs-ansible - PyPI",
+        "url": "https://pypi.org/project/mkdocs-ansible/"
+      },
+      {
+        "title": "ansible-dev-tools - PyPI",
+        "url": "https://pypi.org/project/ansible-dev-tools/"
+      },
+      {
+        "title": "Red Hat Ansible Automation Platform 2.6 Configuring automation execution",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/pdf/configuring_automation_execution/Red_Hat_Ansible_Automation_Platform-2.6-Configuring_automation_execution-en-US.pdf"
+      }
+    ]
+  },
   "2026-03-28_0851": {
     "slug": "ansible",
     "title": "Ansible: Mejoras y Best Practices",

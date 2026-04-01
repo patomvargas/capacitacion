@@ -1,4 +1,32 @@
 {
+  "2026-04-01_0913": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para sysadmins y DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren las novedades y cambios en Git y GitHub, así como las configuraciones y comandos necesarios para un uso eficiente.",
+    "content": "\nEl sistema de control de versiones Git es una herramienta fundamental para sysadmins y DevOps. En este artículo, se presentan las mejores prácticas de Git para un uso eficiente y seguro. \nUna de las características más importantes de Git es su capacidad para gestionar diferentes ramas y fusionar cambios de manera efectiva. Para ello, se pueden utilizar comandos como `git branch` para crear nuevas ramas y `git merge` para fusionar cambios. \nAdemás, Git proporciona herramientas como `git rebase` para reorganizar los commits y `git bisect` para identificar problemas en el código. \nOtra característica útil de Git es la capacidad de crear worktrees, que permiten trabajar en diferentes ramas de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add`. \nEn cuanto a la seguridad, es importante mencionar que GitHub ha anunciado mejoras en su roadmap de seguridad para 2026, que incluyen controles de política y observabilidad de CI/CD. \nPara más información, se pueden consultar las fuentes oficiales de GitHub y Git.\n\nLos hooks de Git son otro tema importante, ya que permiten automatizar tareas y validar cambios antes de que se comprometan. Por ejemplo, se puede utilizar el hook `pre-commit` para validar la sintaxis del código antes de que se comprometa. \nEn cuanto a las mejores prácticas, es importante mencionar que es recomendable utilizar `git reset` para ramas locales y `git revert` para ramas compartidas. \nAdemás, es importante utilizar `.gitignore` para ignorar archivos y directorios que no se desean incluir en el repositorio. \nEn resumen, Git es una herramienta poderosa que requiere prácticas y configuraciones adecuadas para un uso eficiente y seguro.\n\nPara los desarrolladores de AI, es importante mencionar que Visual Studio Code y GitHub proporcionan herramientas y extensiones para trabajar en proyectos de AI de manera efectiva. \nPor ejemplo, se puede utilizar la extensión `GitHub Copilot` para obtener sugerencias de código y automatizar tareas. \nEn cuanto a las fuentes, se pueden consultar los artículos y tutoriales oficiales de GitHub y Git para obtener más información.\n\nEn conclusión, Git es una herramienta fundamental para sysadmins y DevOps que requiere prácticas y configuraciones adecuadas para un uso eficiente y seguro. \nEs importante mencionar que las fuentes oficiales de GitHub y Git proporcionan información valiosa y actualizada sobre las mejores prácticas y novedades en Git.\n\n",
+    "sources": [
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "The latest developer news & insights - The GitHub Blog",
+        "url": "https://github.blog/news-insights/"
+      },
+      {
+        "title": "What’s coming to our GitHub Actions 2026 security roadmap",
+        "url": "https://github.blog/news-insights/product-news/whats-coming-to-our-github-actions-2026-security-roadmap/"
+      },
+      {
+        "title": "Git Doesn't Have to Be Hard: A No-Nonsense Guide for Beginners",
+        "url": "https://medium.com/@victorjy/git-doesnt-have-to-be-hard-a-no-nonsense-guide-for-beginners-who-want-to-stop-guessing-4573f675f827"
+      },
+      {
+        "title": "What Every Developer, Engineer and Researcher Should Know About Git",
+        "url": "https://medium.com/@rudradcruze/what-every-developer-engineer-and-researcher-should-know-about-git-and-github-part-1-4a05f68abf6d"
+      }
+    ]
+  },
   "2026-03-24_0859": {
     "slug": "git",
     "title": "Mejores prácticas de Git para Workflows avanzados",
