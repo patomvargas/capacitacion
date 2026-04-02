@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-01T09:14:36.461222+00:00</updated>
+  <updated>2026-04-02T09:05:46.406544+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -80,5 +80,28 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-29_0849.html"/>
     <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto-a-punto o sitio-a-sitio. En este artículo, se explora cómo configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-03-29T08:49:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-02_0905.html</id>
+    <title>Seguridad con OpenVPN</title>
+    <updated>2026-04-02T09:05:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer una conexión segura y cifrada entre dos puntos, utilizando protocolos como SSL/TLS. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, utilizando herramientas como &lt;code&gt;easy-rsa&lt;/code&gt;. La versión 3.2.0 de EasyRSA incluye nuevos comandos como &lt;code&gt;self-sign-server&lt;/code&gt; y &lt;code&gt;self-sign-client&lt;/code&gt;, que facilitan la generación de certificados.&lt;/p&gt;
+&lt;p&gt;Para proteger el servidor OpenVPN, es importante configurar la autenticación y la autorización de los usuarios. Se puede utilizar la opción &lt;code&gt;--auth-user-pass&lt;/code&gt; para solicitar el nombre de usuario y la contraseña a los clientes. También es importante configurar la opción &lt;code&gt;--tls-auth&lt;/code&gt; para habilitar la autenticación TLS.&lt;/p&gt;
+&lt;p&gt;Otra forma de proteger el servidor OpenVPN es mediante el uso de un Access Server, que permite controlar el acceso a la red y configurar políticas de seguridad. Se puede utilizar la opción &lt;code&gt;--port&lt;/code&gt; para especificar el puerto de escucha del servidor.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de la red, es importante configurar la opción &lt;code&gt;--server&lt;/code&gt; para especificar la dirección IP y la máscara de red del servidor. También es importante configurar la opción &lt;code&gt;--route&lt;/code&gt; para especificar las rutas que se deben establecer en el cliente.&lt;/p&gt;
+&lt;p&gt;Para hardening el servidor OpenVPN, se puede utilizar la opción &lt;code&gt;--cipher&lt;/code&gt; para especificar el algoritmo de cifrado que se debe utilizar. También es importante configurar la opción &lt;code&gt;--tls-cipher&lt;/code&gt; para especificar el algoritmo de cifrado TLS que se debe utilizar.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras y cifradas entre dos puntos. Al configurar y proteger un servidor OpenVPN, se puede garantizar la seguridad y la privacidad de la comunicación en la red.&lt;/p&gt;
+&lt;p&gt;Se pueden utilizar comandos como &lt;code&gt;openvpn --config /etc/openvpn/server.conf&lt;/code&gt; para iniciar el servidor OpenVPN, y &lt;code&gt;openvpn --config /etc/openvpn/client.conf&lt;/code&gt; para conectar un cliente al servidor. También se pueden utilizar herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar certificados y claves.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en OpenVPN, la versión más reciente incluye nuevas características como la autenticación de usuarios y la autorización de acceso. También se han mejorado las opciones de configuración y se han agregado nuevas opciones para la autenticación y la autorización.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que la seguridad de la red es un tema importante y que se deben tomar medidas para proteger la red y los datos que se transmiten a través de ella. OpenVPN es una herramienta que puede ayudar a proteger la red y los datos, pero es importante configurarla y utilizarla de manera segura.&lt;/p&gt;
+&lt;p&gt;Se pueden encontrar más información sobre OpenVPN y sus características en la documentación oficial de OpenVPN.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/openvpn/easy-rsa/releases"&gt;Releases · OpenVPN/easy-rsa&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/releases"&gt;Releases · OpenVPN/openvpn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/issues/1012"&gt;README not updated by Copyright-updating script&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-02_0905.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que proporciona una conexión segura y cifrada entre dos puntos. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
+    <published>2026-04-02T09:05:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,28 @@
 {
+  "2026-04-02_0905": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes 1.36",
+    "summary": "Kubernetes 1.36 se lanzará a finales de abril de 2026 con nuevas características y mejoras. Esta versión incluirá la remoción de funcionalidades obsoletas y deprecaciones, así como mejoras en el rendimiento y la seguridad.",
+    "content": "\nLa versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Según el blog oficial de Kubernetes, esta versión incluirá una serie de mejoras y nuevas características, como la remoción de funcionalidades obsoletas y deprecaciones. Para obtener más información sobre las novedades de esta versión, se puede consultar el artículo `Kubernetes v1.36 Sneak Peek` en el blog oficial de Kubernetes.\n\nUna de las características más destacadas de esta versión es la mejora en el rendimiento y la seguridad. Por ejemplo, se ha solucionado un problema de seguridad relacionado con el componente `ingress-nginx`, que se puede solucionar mediante la actualización a la versión más reciente. Para actualizar, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml`.\n\nEn cuanto a la configuración de Kubernetes, es importante mencionar la importancia de la gestión de los permisos de los volúmenes. Un ejemplo de cómo ajustar la política de cambios de grupo de archivos (`fsGroupChangePolicy`) se puede encontrar en el artículo `A one-line Kubernetes fix that saved 600 hours a year`. En este artículo, se explica cómo ajustar la política de cambios de grupo de archivos para reducir el tiempo de reinicio de los contenedores.\n\nOtra característica importante de Kubernetes es la capacidad de ejecutar aplicaciones de forma declarativa. Esto se puede lograr mediante el uso de comandos como `kubectl apply -f` para aplicar configuraciones a los recursos de Kubernetes. Para obtener más información sobre los comandos imperativos y declarativos en Kubernetes, se puede consultar el artículo `Imperative vs Declarative Commands in Kubernetes (k8s)`.\n\nEn resumen, la versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Esta versión incluirá mejoras en el rendimiento y la seguridad, así como la remoción de funcionalidades obsoletas y deprecaciones. Es importante mencionar la importancia de la gestión de los permisos de los volúmenes y la capacidad de ejecutar aplicaciones de forma declarativa.\n\nPara obtener más información sobre las novedades de Kubernetes, se pueden consultar las fuentes oficiales y artículos relacionados. Algunas de las fuentes utilizadas para este artículo incluyen el blog oficial de Kubernetes, el sitio web de Kubernetes y artículos de terceros que se centran en la tecnología de Kubernetes.\n",
+    "sources": [
+      {
+        "title": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/"
+      },
+      {
+        "title": "Kubernetes v1.36 Sneak Peek",
+        "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"
+      },
+      {
+        "title": "A one-line Kubernetes fix that saved 600 hours a year",
+        "url": "https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/"
+      },
+      {
+        "title": "Imperative vs Declarative Commands in Kubernetes (k8s)",
+        "url": "https://medium.com/@iamafjalkhan/imperative-vs-declarative-commands-in-kubernetes-k8s-2f98860f76e2"
+      }
+    ]
+  },
   "2026-03-29_0849": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-01T09:14:36.461907+00:00</updated>
+  <updated>2026-04-02T09:05:46.407823+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -138,5 +138,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-29_0849.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en áreas como networking, seguridad y almacenamiento. En este artículo, se presentan algunas de las novedades más destacadas y se proporcionan ejemplos prácticos de cómo implementarlas.</summary>
     <published>2026-03-29T08:49:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-02_0905.html</id>
+    <title>Novedades en Kubernetes 1.36</title>
+    <updated>2026-04-02T09:05:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Según el blog oficial de Kubernetes, esta versión incluirá una serie de mejoras y nuevas características, como la remoción de funcionalidades obsoletas y deprecaciones. Para obtener más información sobre las novedades de esta versión, se puede consultar el artículo &lt;code&gt;Kubernetes v1.36 Sneak Peek&lt;/code&gt; en el blog oficial de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de esta versión es la mejora en el rendimiento y la seguridad. Por ejemplo, se ha solucionado un problema de seguridad relacionado con el componente &lt;code&gt;ingress-nginx&lt;/code&gt;, que se puede solucionar mediante la actualización a la versión más reciente. Para actualizar, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Kubernetes, es importante mencionar la importancia de la gestión de los permisos de los volúmenes. Un ejemplo de cómo ajustar la política de cambios de grupo de archivos (&lt;code&gt;fsGroupChangePolicy&lt;/code&gt;) se puede encontrar en el artículo &lt;code&gt;A one-line Kubernetes fix that saved 600 hours a year&lt;/code&gt;. En este artículo, se explica cómo ajustar la política de cambios de grupo de archivos para reducir el tiempo de reinicio de los contenedores.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Kubernetes es la capacidad de ejecutar aplicaciones de forma declarativa. Esto se puede lograr mediante el uso de comandos como &lt;code&gt;kubectl apply -f&lt;/code&gt; para aplicar configuraciones a los recursos de Kubernetes. Para obtener más información sobre los comandos imperativos y declarativos en Kubernetes, se puede consultar el artículo &lt;code&gt;Imperative vs Declarative Commands in Kubernetes (k8s)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Esta versión incluirá mejoras en el rendimiento y la seguridad, así como la remoción de funcionalidades obsoletas y deprecaciones. Es importante mencionar la importancia de la gestión de los permisos de los volúmenes y la capacidad de ejecutar aplicaciones de forma declarativa.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las novedades de Kubernetes, se pueden consultar las fuentes oficiales y artículos relacionados. Algunas de las fuentes utilizadas para este artículo incluyen el blog oficial de Kubernetes, el sitio web de Kubernetes y artículos de terceros que se centran en la tecnología de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/"&gt;Kubernetes Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"&gt;Kubernetes v1.36 Sneak Peek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/"&gt;A one-line Kubernetes fix that saved 600 hours a year&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@iamafjalkhan/imperative-vs-declarative-commands-in-kubernetes-k8s-2f98860f76e2"&gt;Imperative vs Declarative Commands in Kubernetes (k8s)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-02_0905.html"/>
+    <summary>Kubernetes 1.36 se lanzará a finales de abril de 2026 con nuevas características y mejoras. Esta versión incluirá la remoción de funcionalidades obsoletas y deprecaciones, así como mejoras en el rendimiento y la seguridad.</summary>
+    <published>2026-04-02T09:05:00+00:00</published>
   </entry>
 </feed>

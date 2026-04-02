@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+    </div>
+
+    <h1>Novedades en Kubernetes 1.36</h1>
+    <div class="meta">2026-04-02 0905 · Kubernetes</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Según el blog oficial de Kubernetes, esta versión incluirá una serie de mejoras y nuevas características, como la remoción de funcionalidades obsoletas y deprecaciones. Para obtener más información sobre las novedades de esta versión, se puede consultar el artículo `Kubernetes v1.36 Sneak Peek` en el blog oficial de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más destacadas de esta versión es la mejora en el rendimiento y la seguridad. Por ejemplo, se ha solucionado un problema de seguridad relacionado con el componente `ingress-nginx`, que se puede solucionar mediante la actualización a la versión más reciente. Para actualizar, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de Kubernetes, es importante mencionar la importancia de la gestión de los permisos de los volúmenes. Un ejemplo de cómo ajustar la política de cambios de grupo de archivos (`fsGroupChangePolicy`) se puede encontrar en el artículo `A one-line Kubernetes fix that saved 600 hours a year`. En este artículo, se explica cómo ajustar la política de cambios de grupo de archivos para reducir el tiempo de reinicio de los contenedores.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Kubernetes es la capacidad de ejecutar aplicaciones de forma declarativa. Esto se puede lograr mediante el uso de comandos como `kubectl apply -f` para aplicar configuraciones a los recursos de Kubernetes. Para obtener más información sobre los comandos imperativos y declarativos en Kubernetes, se puede consultar el artículo `Imperative vs Declarative Commands in Kubernetes (k8s)`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Esta versión incluirá mejoras en el rendimiento y la seguridad, así como la remoción de funcionalidades obsoletas y deprecaciones. Es importante mencionar la importancia de la gestión de los permisos de los volúmenes y la capacidad de ejecutar aplicaciones de forma declarativa.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre las novedades de Kubernetes, se pueden consultar las fuentes oficiales y artículos relacionados. Algunas de las fuentes utilizadas para este artículo incluyen el blog oficial de Kubernetes, el sitio web de Kubernetes y artículos de terceros que se centran en la tecnología de Kubernetes.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/" target="_blank">A one-line Kubernetes fix that saved 600 hours a year</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@iamafjalkhan/imperative-vs-declarative-commands-in-kubernetes-k8s-2f98860f76e2" target="_blank">Imperative vs Declarative Commands in Kubernetes (k8s)</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-29_0849.html">&larr; 2026-03-29 0849</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

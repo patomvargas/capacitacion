@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad con OpenVPN - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
+    </div>
+
+    <h1>Seguridad con OpenVPN</h1>
+    <div class="meta">2026-04-02 0905 · OpenVPN</div>
+
+    <div class="content">
+        
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite establecer una conexión segura y cifrada entre dos puntos, utilizando protocolos como SSL/TLS. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, utilizando herramientas como `easy-rsa`. La versión 3.2.0 de EasyRSA incluye nuevos comandos como `self-sign-server` y `self-sign-client`, que facilitan la generación de certificados.</p>
+            
+        
+            
+        
+            
+            <p>Para proteger el servidor OpenVPN, es importante configurar la autenticación y la autorización de los usuarios. Se puede utilizar la opción `--auth-user-pass` para solicitar el nombre de usuario y la contraseña a los clientes. También es importante configurar la opción `--tls-auth` para habilitar la autenticación TLS.</p>
+            
+        
+            
+        
+            
+            <p>Otra forma de proteger el servidor OpenVPN es mediante el uso de un Access Server, que permite controlar el acceso a la red y configurar políticas de seguridad. Se puede utilizar la opción `--port` para especificar el puerto de escucha del servidor.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de la red, es importante configurar la opción `--server` para especificar la dirección IP y la máscara de red del servidor. También es importante configurar la opción `--route` para especificar las rutas que se deben establecer en el cliente.</p>
+            
+        
+            
+        
+            
+            <p>Para hardening el servidor OpenVPN, se puede utilizar la opción `--cipher` para especificar el algoritmo de cifrado que se debe utilizar. También es importante configurar la opción `--tls-cipher` para especificar el algoritmo de cifrado TLS que se debe utilizar.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras y cifradas entre dos puntos. Al configurar y proteger un servidor OpenVPN, se puede garantizar la seguridad y la privacidad de la comunicación en la red.</p>
+            
+        
+            
+        
+            
+            <p>Se pueden utilizar comandos como `openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN, y `openvpn --config /etc/openvpn/client.conf` para conectar un cliente al servidor. También se pueden utilizar herramientas como `openssl` para generar certificados y claves.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y mejoras en OpenVPN, la versión más reciente incluye nuevas características como la autenticación de usuarios y la autorización de acceso. También se han mejorado las opciones de configuración y se han agregado nuevas opciones para la autenticación y la autorización.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que la seguridad de la red es un tema importante y que se deben tomar medidas para proteger la red y los datos que se transmiten a través de ella. OpenVPN es una herramienta que puede ayudar a proteger la red y los datos, pero es importante configurarla y utilizarla de manera segura.</p>
+            
+        
+            
+        
+            
+            <p>Se pueden encontrar más información sobre OpenVPN y sus características en la documentación oficial de OpenVPN.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/openvpn/easy-rsa/releases" target="_blank">Releases · OpenVPN/easy-rsa</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OpenVPN/openvpn/releases" target="_blank">Releases · OpenVPN/openvpn</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OpenVPN/openvpn/issues/1012" target="_blank">README not updated by Copyright-updating script</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-03-29_0849.html">&larr; 2026-03-29 0849</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
