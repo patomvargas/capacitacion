@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-03 0901 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>OpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift, como la `RHSA-2026:5873`, que incluye actualizaciones para la plataforma OpenShift Container Platform 4.16.</p>
+            
+        
+            
+        
+            
+            <p>Para mantener la plataforma actualizada, se puede utilizar el comando `oc` para verificar la disponibilidad de actualizaciones. Por ejemplo, se puede ejecutar el comando `oc get clusterversion` para obtener la versión actual de la plataforma y `oc adm upgrade` para actualizarla. Además, se pueden utilizar herramientas como `oc debug` para depurar problemas en la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece varias características para proteger las aplicaciones, como la autenticación y autorización mediante `OAuth`. También se puede utilizar `OperatorHub` para instalar y gestionar operadores en la plataforma, lo que permite automatizar tareas y mejorar la eficiencia. Por ejemplo, se puede instalar el operador `cluster-monitoring` para habilitar el monitoreo de la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la eficiencia de las aplicaciones, se pueden utilizar `builds` y `routes` para automatizar la creación y despliegue de aplicaciones. Por ejemplo, se puede crear un `BuildConfig` para definir la configuración de la compilación de una aplicación y luego utilizar `oc start-build` para iniciar la compilación. También se pueden utilizar `ImageStreams` para gestionar las imágenes de las aplicaciones y `BuildConfigs` para definir la configuración de la compilación.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la migración, se pueden utilizar herramientas como `oc migrate` para migrar aplicaciones de una versión de OpenShift a otra. También se pueden utilizar `DAS` y `DRA` para migrar aplicaciones de una plataforma a otra. Por ejemplo, se puede utilizar el comando `oc migrate das-to-dra` para migrar una aplicación de `DAS` a `DRA`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Al mantener la plataforma actualizada, utilizar herramientas de seguridad y automatizar tareas, se puede mejorar la eficiencia y la seguridad de las aplicaciones en OpenShift.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:5873.html" target="_blank">RHSA-2026:5873</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@muhammadadel612/openshift-monitoring-a-practical-guide-to-observability-in-modern-kubernetes-platforms-58c0453c9f4d" target="_blank">OpenShift Monitoring: A Practical Guide to Observability in Modern Kubernetes Platforms</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30" target="_blank">Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-30_0919.html">&larr; 2026-03-30 0919</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

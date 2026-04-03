@@ -1,4 +1,24 @@
 {
+  "2026-04-03_0901": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Best Practices",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, así como algunas best practices para su uso efectivo.",
+    "content": "\nOpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift, como la `RHSA-2026:5873`, que incluye actualizaciones para la plataforma OpenShift Container Platform 4.16.\n\nPara mantener la plataforma actualizada, se puede utilizar el comando `oc` para verificar la disponibilidad de actualizaciones. Por ejemplo, se puede ejecutar el comando `oc get clusterversion` para obtener la versión actual de la plataforma y `oc adm upgrade` para actualizarla. Además, se pueden utilizar herramientas como `oc debug` para depurar problemas en la plataforma.\n\nEn cuanto a la seguridad, OpenShift ofrece varias características para proteger las aplicaciones, como la autenticación y autorización mediante `OAuth`. También se puede utilizar `OperatorHub` para instalar y gestionar operadores en la plataforma, lo que permite automatizar tareas y mejorar la eficiencia. Por ejemplo, se puede instalar el operador `cluster-monitoring` para habilitar el monitoreo de la plataforma.\n\nPara mejorar la eficiencia de las aplicaciones, se pueden utilizar `builds` y `routes` para automatizar la creación y despliegue de aplicaciones. Por ejemplo, se puede crear un `BuildConfig` para definir la configuración de la compilación de una aplicación y luego utilizar `oc start-build` para iniciar la compilación. También se pueden utilizar `ImageStreams` para gestionar las imágenes de las aplicaciones y `BuildConfigs` para definir la configuración de la compilación.\n\nEn cuanto a la migración, se pueden utilizar herramientas como `oc migrate` para migrar aplicaciones de una versión de OpenShift a otra. También se pueden utilizar `DAS` y `DRA` para migrar aplicaciones de una plataforma a otra. Por ejemplo, se puede utilizar el comando `oc migrate das-to-dra` para migrar una aplicación de `DAS` a `DRA`.\n\nEn resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Al mantener la plataforma actualizada, utilizar herramientas de seguridad y automatizar tareas, se puede mejorar la eficiencia y la seguridad de las aplicaciones en OpenShift.\n\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:5873",
+        "url": "https://access.redhat.com/errata/RHSA-2026:5873.html"
+      },
+      {
+        "title": "OpenShift Monitoring: A Practical Guide to Observability in Modern Kubernetes Platforms",
+        "url": "https://medium.com/@muhammadadel612/openshift-monitoring-a-practical-guide-to-observability-in-modern-kubernetes-platforms-58c0453c9f4d"
+      },
+      {
+        "title": "Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds",
+        "url": "https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30"
+      }
+    ]
+  },
   "2026-03-30_0919": {
     "slug": "openshift",
     "title": "Mejoras y Novedades en OpenShift",

@@ -1,4 +1,28 @@
 {
+  "2026-04-03_0901": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Best Practices",
+    "summary": "Metabase es una herramienta de inteligencia empresarial y análisis de datos que ofrece funcionalidades avanzadas para el análisis y visualización de datos. En este artículo, se presentan las últimas mejoras y best practices para aprovechar al máximo sus capacidades.",
+    "content": "\nMetabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas sobre sus datos de manera sencilla y eficiente. Recientemente, se han realizado mejoras significativas en la versión 59, que incluyen la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar y semantizar los datos de manera más efectiva.\n\nUna de las mejoras más destacadas es la capacidad de realizar transformaciones de datos entre bases de datos diferentes, lo que permite a los usuarios combinar y analizar datos de fuentes diversas de manera más sencilla. Para aprovechar esta funcionalidad, se puede utilizar el comando `cross-db-transform` en la consola de Metabase. Además, se han mejorado las capacidades de visualización de datos, con la introducción de gráficos de caja y mejora en la generación de SQL mediante inteligencia artificial.\n\nPara embeddings estáticos o de invitado, se ha solucionado un problema que impedía la traducción de tooltips personalizados en series de datos. Ahora, se puede utilizar el comando `static-embed` con la opción `--translate-tooltips` para habilitar esta funcionalidad. En cuanto a la administración, se han realizado mejoras en la migración de datos, aunque se han reportado algunos problemas con la migración de grandes tablas de Metabase durante la actualización a la versión 59.\n\nPara solucionar estos problemas, se pueden utilizar comandos como `liquibase migrate` con la opción `--batch-size` para limitar el tamaño de los lotes de migración y evitar errores de tiempo de espera. También se pueden utilizar herramientas como Data Studio para curar y semantizar los datos de manera más efectiva, lo que puede ayudar a reducir los errores de migración.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis y visualización de datos, y sus últimas mejoras y best practices ofrecen capacidades avanzadas para aprovechar al máximo sus funcionalidades. Al utilizar comandos y configuraciones como `cross-db-transform`, `static-embed` y `liquibase migrate`, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener insights valiosos de sus datos.\n\nFinalmente, es importante mencionar que la documentación oficial de Metabase ofrece recursos valiosos para aprender a utilizar la herramienta de manera efectiva, incluyendo tutoriales y ejemplos prácticos. Al combinar estas recursos con las mejores prácticas y comandos presentados en este artículo, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener resultados significativos en su análisis de datos.",
+    "sources": [
+      {
+        "title": "Metabase 59 es aquí",
+        "url": "https://discourse.metabase.com/t/metabase-59-is-here/296136"
+      },
+      {
+        "title": "Migration failure on large metabase_table during upgrade to v59",
+        "url": "https://github.com/metabase/metabase/issues/70972"
+      },
+      {
+        "title": "Cross DB Transforms",
+        "url": "https://github.com/metabase/metabase/issues/71238"
+      },
+      {
+        "title": "Meet Data Studio: herramientas para curar su capa semántica en Metabase",
+        "url": "https://www.metabase.com/blog/meet-data-studio-semantic-layer"
+      }
+    ]
+  },
   "2026-03-30_0919": {
     "slug": "metabase",
     "title": "Metabase: Herramienta de Análisis de Datos",

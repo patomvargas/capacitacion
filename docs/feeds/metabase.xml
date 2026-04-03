@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-02T09:05:46.411785+00:00</updated>
+  <updated>2026-04-03T09:03:05.565949+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -67,5 +67,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-03-30_0919.html"/>
     <summary>Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, dashboards y visualizaciones de datos de manera sencilla. En este artículo, se presentan las características y funcionalidades de Metabase, así como algunas best practices para su uso.</summary>
     <published>2026-03-30T09:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-03_0901.html</id>
+    <title>Metabase: Mejoras y Best Practices</title>
+    <updated>2026-04-03T09:01:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas sobre sus datos de manera sencilla y eficiente. Recientemente, se han realizado mejoras significativas en la versión 59, que incluyen la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar y semantizar los datos de manera más efectiva.&lt;/p&gt;
+&lt;p&gt;Una de las mejoras más destacadas es la capacidad de realizar transformaciones de datos entre bases de datos diferentes, lo que permite a los usuarios combinar y analizar datos de fuentes diversas de manera más sencilla. Para aprovechar esta funcionalidad, se puede utilizar el comando &lt;code&gt;cross-db-transform&lt;/code&gt; en la consola de Metabase. Además, se han mejorado las capacidades de visualización de datos, con la introducción de gráficos de caja y mejora en la generación de SQL mediante inteligencia artificial.&lt;/p&gt;
+&lt;p&gt;Para embeddings estáticos o de invitado, se ha solucionado un problema que impedía la traducción de tooltips personalizados en series de datos. Ahora, se puede utilizar el comando &lt;code&gt;static-embed&lt;/code&gt; con la opción &lt;code&gt;--translate-tooltips&lt;/code&gt; para habilitar esta funcionalidad. En cuanto a la administración, se han realizado mejoras en la migración de datos, aunque se han reportado algunos problemas con la migración de grandes tablas de Metabase durante la actualización a la versión 59.&lt;/p&gt;
+&lt;p&gt;Para solucionar estos problemas, se pueden utilizar comandos como &lt;code&gt;liquibase migrate&lt;/code&gt; con la opción &lt;code&gt;--batch-size&lt;/code&gt; para limitar el tamaño de los lotes de migración y evitar errores de tiempo de espera. También se pueden utilizar herramientas como Data Studio para curar y semantizar los datos de manera más efectiva, lo que puede ayudar a reducir los errores de migración.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta poderosa para el análisis y visualización de datos, y sus últimas mejoras y best practices ofrecen capacidades avanzadas para aprovechar al máximo sus funcionalidades. Al utilizar comandos y configuraciones como &lt;code&gt;cross-db-transform&lt;/code&gt;, &lt;code&gt;static-embed&lt;/code&gt; y &lt;code&gt;liquibase migrate&lt;/code&gt;, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener insights valiosos de sus datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Metabase ofrece recursos valiosos para aprender a utilizar la herramienta de manera efectiva, incluyendo tutoriales y ejemplos prácticos. Al combinar estas recursos con las mejores prácticas y comandos presentados en este artículo, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener resultados significativos en su análisis de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://discourse.metabase.com/t/metabase-59-is-here/296136"&gt;Metabase 59 es aquí&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/70972"&gt;Migration failure on large metabase_table during upgrade to v59&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/71238"&gt;Cross DB Transforms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/blog/meet-data-studio-semantic-layer"&gt;Meet Data Studio: herramientas para curar su capa semántica en Metabase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-03_0901.html"/>
+    <summary>Metabase es una herramienta de inteligencia empresarial y análisis de datos que ofrece funcionalidades avanzadas para el análisis y visualización de datos. En este artículo, se presentan las últimas mejoras y best practices para aprovechar al máximo sus capacidades.</summary>
+    <published>2026-04-03T09:01:00+00:00</published>
   </entry>
 </feed>

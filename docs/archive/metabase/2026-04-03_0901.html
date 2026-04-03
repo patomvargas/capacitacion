@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metabase: Mejoras y Best Practices - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+    </div>
+
+    <h1>Metabase: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-03 0901 · Metabase</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas sobre sus datos de manera sencilla y eficiente. Recientemente, se han realizado mejoras significativas en la versión 59, que incluyen la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar y semantizar los datos de manera más efectiva.</p>
+            
+        
+            
+        
+            
+            <p>Una de las mejoras más destacadas es la capacidad de realizar transformaciones de datos entre bases de datos diferentes, lo que permite a los usuarios combinar y analizar datos de fuentes diversas de manera más sencilla. Para aprovechar esta funcionalidad, se puede utilizar el comando `cross-db-transform` en la consola de Metabase. Además, se han mejorado las capacidades de visualización de datos, con la introducción de gráficos de caja y mejora en la generación de SQL mediante inteligencia artificial.</p>
+            
+        
+            
+        
+            
+            <p>Para embeddings estáticos o de invitado, se ha solucionado un problema que impedía la traducción de tooltips personalizados en series de datos. Ahora, se puede utilizar el comando `static-embed` con la opción `--translate-tooltips` para habilitar esta funcionalidad. En cuanto a la administración, se han realizado mejoras en la migración de datos, aunque se han reportado algunos problemas con la migración de grandes tablas de Metabase durante la actualización a la versión 59.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar estos problemas, se pueden utilizar comandos como `liquibase migrate` con la opción `--batch-size` para limitar el tamaño de los lotes de migración y evitar errores de tiempo de espera. También se pueden utilizar herramientas como Data Studio para curar y semantizar los datos de manera más efectiva, lo que puede ayudar a reducir los errores de migración.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis y visualización de datos, y sus últimas mejoras y best practices ofrecen capacidades avanzadas para aprovechar al máximo sus funcionalidades. Al utilizar comandos y configuraciones como `cross-db-transform`, `static-embed` y `liquibase migrate`, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener insights valiosos de sus datos.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la documentación oficial de Metabase ofrece recursos valiosos para aprender a utilizar la herramienta de manera efectiva, incluyendo tutoriales y ejemplos prácticos. Al combinar estas recursos con las mejores prácticas y comandos presentados en este artículo, los usuarios pueden aprovechar al máximo las capacidades de Metabase y obtener resultados significativos en su análisis de datos.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://discourse.metabase.com/t/metabase-59-is-here/296136" target="_blank">Metabase 59 es aquí</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/70972" target="_blank">Migration failure on large metabase_table during upgrade to v59</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/71238" target="_blank">Cross DB Transforms</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.metabase.com/blog/meet-data-studio-semantic-layer" target="_blank">Meet Data Studio: herramientas para curar su capa semántica en Metabase</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-03-30_0919.html">&larr; 2026-03-30 0919</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

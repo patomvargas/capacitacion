@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-02T09:05:46.408819+00:00</updated>
+  <updated>2026-04-03T09:03:05.561265+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -133,5 +133,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-03-30_0919.html"/>
     <summary>OpenShift es una plataforma de contenedores que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo esta tecnología.</summary>
     <published>2026-03-30T09:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-03_0901.html</id>
+    <title>OpenShift: Mejoras y Best Practices</title>
+    <updated>2026-04-03T09:01:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift, como la &lt;code&gt;RHSA-2026:5873&lt;/code&gt;, que incluye actualizaciones para la plataforma OpenShift Container Platform 4.16.&lt;/p&gt;
+&lt;p&gt;Para mantener la plataforma actualizada, se puede utilizar el comando &lt;code&gt;oc&lt;/code&gt; para verificar la disponibilidad de actualizaciones. Por ejemplo, se puede ejecutar el comando &lt;code&gt;oc get clusterversion&lt;/code&gt; para obtener la versión actual de la plataforma y &lt;code&gt;oc adm upgrade&lt;/code&gt; para actualizarla. Además, se pueden utilizar herramientas como &lt;code&gt;oc debug&lt;/code&gt; para depurar problemas en la plataforma.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift ofrece varias características para proteger las aplicaciones, como la autenticación y autorización mediante &lt;code&gt;OAuth&lt;/code&gt;. También se puede utilizar &lt;code&gt;OperatorHub&lt;/code&gt; para instalar y gestionar operadores en la plataforma, lo que permite automatizar tareas y mejorar la eficiencia. Por ejemplo, se puede instalar el operador &lt;code&gt;cluster-monitoring&lt;/code&gt; para habilitar el monitoreo de la plataforma.&lt;/p&gt;
+&lt;p&gt;Para mejorar la eficiencia de las aplicaciones, se pueden utilizar &lt;code&gt;builds&lt;/code&gt; y &lt;code&gt;routes&lt;/code&gt; para automatizar la creación y despliegue de aplicaciones. Por ejemplo, se puede crear un &lt;code&gt;BuildConfig&lt;/code&gt; para definir la configuración de la compilación de una aplicación y luego utilizar &lt;code&gt;oc start-build&lt;/code&gt; para iniciar la compilación. También se pueden utilizar &lt;code&gt;ImageStreams&lt;/code&gt; para gestionar las imágenes de las aplicaciones y &lt;code&gt;BuildConfigs&lt;/code&gt; para definir la configuración de la compilación.&lt;/p&gt;
+&lt;p&gt;En cuanto a la migración, se pueden utilizar herramientas como &lt;code&gt;oc migrate&lt;/code&gt; para migrar aplicaciones de una versión de OpenShift a otra. También se pueden utilizar &lt;code&gt;DAS&lt;/code&gt; y &lt;code&gt;DRA&lt;/code&gt; para migrar aplicaciones de una plataforma a otra. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc migrate das-to-dra&lt;/code&gt; para migrar una aplicación de &lt;code&gt;DAS&lt;/code&gt; a &lt;code&gt;DRA&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. Al mantener la plataforma actualizada, utilizar herramientas de seguridad y automatizar tareas, se puede mejorar la eficiencia y la seguridad de las aplicaciones en OpenShift.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5873.html"&gt;RHSA-2026:5873&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@muhammadadel612/openshift-monitoring-a-practical-guide-to-observability-in-modern-kubernetes-platforms-58c0453c9f4d"&gt;OpenShift Monitoring: A Practical Guide to Observability in Modern Kubernetes Platforms&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@devopsdiary/understanding-builds-in-openshift-imagestreams-buildconfigs-and-builds-5a165a18fd30"&gt;Understanding Builds in OpenShift: ImageStreams, BuildConfigs, and Builds&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-03_0901.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, así como algunas best practices para su uso efectivo.</summary>
+    <published>2026-04-03T09:01:00+00:00</published>
   </entry>
 </feed>
