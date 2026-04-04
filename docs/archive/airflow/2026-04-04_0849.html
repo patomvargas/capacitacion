@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow 2.x: Mejores Prácticas y Novedades - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow 2.x: Mejores Prácticas y Novedades</h1>
+    <div class="meta">2026-04-04 0849 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear, programar y monitorear flujos de trabajo complejos. En la versión 2.x, se han introducido varias mejoras y novedades, como el soporte para `DeltaTriggerTimetable` y la mejora de la seguridad con `airflowctl`.</p>
+            
+        
+            
+        
+            
+            <p>Una de las mejores prácticas para trabajar con Airflow es utilizar `DAGs` (Directed Acyclic Graphs) para definir los flujos de trabajo. Un `DAG` es un grafo que representa las tareas y sus dependencias, lo que permite a Airflow ejecutar las tareas en el orden correcto. Para crear un `DAG`, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego definir las tareas y sus dependencias utilizando el lenguaje de programación Python.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Airflow es el uso de `operators` y `sensors`. Los `operators` son elementos que realizan acciones específicas, como ejecutar un comando o copiar un archivo, mientras que los `sensors` son elementos que monitorean un recurso y disparan una acción cuando se cumple una condición. Por ejemplo, se puede utilizar el `Sensor` `ExternalTaskSensor` para monitorear el estado de una tarea externa y disparar una acción cuando se complete.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad y la gestión de los flujos de trabajo, se puede utilizar `airflowctl`, una herramienta de línea de comandos que permite gestionar y monitorear los flujos de trabajo de manera segura. Con `airflowctl`, se puede crear, editar y eliminar `DAGs`, así como monitorear el estado de las tareas y los flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, la versión 2.x de Airflow introduce el soporte para `DeltaTriggerTimetable`, que permite programar tareas en función de la diferencia entre dos fechas. También se ha mejorado la seguridad con la introducción de `airflowctl`, que permite gestionar y monitorear los flujos de trabajo de manera segura.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow 2.x es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece varias mejoras y novedades para la gestión y el monitoreo de tareas complejas. Al utilizar `DAGs`, `operators` y `sensors`, se puede crear y gestionar flujos de trabajo de manera eficiente y segura.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Airflow y las fuentes citadas a continuación.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/tree/main/dev" target="_blank">Apache Airflow source releases</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/issues/63243" target="_blank">Airflow task failed but spark kube app is running #63243</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/blog/?q=Airflow+latest+release+2026" target="_blank">Blog | Apache Airflow</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.astronomer.io/community-newsletter/march-2026/" target="_blank">Apache Airflow Community Newsletter, March 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html" target="_blank">Release Notes — Airflow 2.11.2 Documentation</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-31_0907.html">&larr; 2026-03-31 0907</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

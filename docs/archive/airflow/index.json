@@ -1,4 +1,32 @@
 {
+  "2026-04-04_0849": {
+    "slug": "airflow",
+    "title": "Airflow 2.x: Mejores Prácticas y Novedades",
+    "summary": "Airflow es una herramienta de orquestación de flujos de trabajo que permite a los desarrolladores y administradores de sistemas automatizar y gestionar tareas complejas. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.",
+    "content": "Airflow es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear, programar y monitorear flujos de trabajo complejos. En la versión 2.x, se han introducido varias mejoras y novedades, como el soporte para `DeltaTriggerTimetable` y la mejora de la seguridad con `airflowctl`.\n\nUna de las mejores prácticas para trabajar con Airflow es utilizar `DAGs` (Directed Acyclic Graphs) para definir los flujos de trabajo. Un `DAG` es un grafo que representa las tareas y sus dependencias, lo que permite a Airflow ejecutar las tareas en el orden correcto. Para crear un `DAG`, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego definir las tareas y sus dependencias utilizando el lenguaje de programación Python.\n\nOtra característica importante de Airflow es el uso de `operators` y `sensors`. Los `operators` son elementos que realizan acciones específicas, como ejecutar un comando o copiar un archivo, mientras que los `sensors` son elementos que monitorean un recurso y disparan una acción cuando se cumple una condición. Por ejemplo, se puede utilizar el `Sensor` `ExternalTaskSensor` para monitorear el estado de una tarea externa y disparar una acción cuando se complete.\n\nPara mejorar la seguridad y la gestión de los flujos de trabajo, se puede utilizar `airflowctl`, una herramienta de línea de comandos que permite gestionar y monitorear los flujos de trabajo de manera segura. Con `airflowctl`, se puede crear, editar y eliminar `DAGs`, así como monitorear el estado de las tareas y los flujos de trabajo.\n\nEn cuanto a las novedades, la versión 2.x de Airflow introduce el soporte para `DeltaTriggerTimetable`, que permite programar tareas en función de la diferencia entre dos fechas. También se ha mejorado la seguridad con la introducción de `airflowctl`, que permite gestionar y monitorear los flujos de trabajo de manera segura.\n\nEn resumen, Airflow 2.x es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece varias mejoras y novedades para la gestión y el monitoreo de tareas complejas. Al utilizar `DAGs`, `operators` y `sensors`, se puede crear y gestionar flujos de trabajo de manera eficiente y segura.\n\nPara más información, se puede consultar la documentación oficial de Airflow y las fuentes citadas a continuación.\n\n  ",
+    "sources": [
+      {
+        "title": "Apache Airflow source releases",
+        "url": "https://github.com/apache/airflow/tree/main/dev"
+      },
+      {
+        "title": "Airflow task failed but spark kube app is running #63243",
+        "url": "https://github.com/apache/airflow/issues/63243"
+      },
+      {
+        "title": "Blog | Apache Airflow",
+        "url": "https://airflow.apache.org/blog/?q=Airflow+latest+release+2026"
+      },
+      {
+        "title": "Apache Airflow Community Newsletter, March 2026",
+        "url": "https://www.astronomer.io/community-newsletter/march-2026/"
+      },
+      {
+        "title": "Release Notes — Airflow 2.11.2 Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"
+      }
+    ]
+  },
   "2026-03-31_0907": {
     "slug": "airflow",
     "title": "Mejoras en Airflow 3.2",

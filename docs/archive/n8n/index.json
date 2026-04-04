@@ -1,4 +1,60 @@
 {
+  "2026-04-04_0849": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados. En este artículo, se presentan las novedades y mejores prácticas para trabajar con n8n.",
+    "content": "n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados mediante la creación de nodos y conexiones entre ellos. Recientemente, se han agregado nuevas capacidades al servidor MCP de n8n, como la creación y actualización de flujos de trabajo mediante la API. Para aprovechar estas nuevas funcionalidades, es necesario actualizar la versión de n8n a la 2.14.0 beta o superior.\n\nPara crear un flujo de trabajo en n8n, es necesario definir los nodos y las conexiones entre ellos. Por ejemplo, se puede crear un nodo de `Trigger` para iniciar el flujo de trabajo y un nodo de `Action` para realizar una acción específica. Luego, se puede conectar el nodo de `Trigger` con el nodo de `Action` utilizando el comando `n8n node connect`.\n\nEn cuanto a la autenticación, n8n admite diferentes métodos, como la autenticación básica y la autenticación mediante tokens. Para configurar la autenticación, se puede utilizar el comando `n8n credentials create` y especificar el tipo de autenticación y los datos de autenticación correspondientes. Por ejemplo, `n8n credentials create --type basic --username usuario --password contraseña`.\n\nAdemás, n8n proporciona una variedad de nodos y funciones para trabajar con diferentes servicios y APIs. Por ejemplo, se puede utilizar el nodo de `Webhook` para recibir solicitudes HTTP y el nodo de `API` para realizar solicitudes a una API específica. Para configurar un webhook, se puede utilizar el comando `n8n webhook create` y especificar la URL y el método HTTP correspondientes.\n\nEn cuanto a las mejores prácticas, es importante manejar los errores de forma explícita para evitar fallos silenciosos en los flujos de trabajo. Se puede utilizar el nodo de `Error Trigger` para capturar errores y notificar a los administradores. Además, es recomendable utilizar la función de `Retry` para reintentar las acciones que fallen.\n\nFinalmente, n8n proporciona una variedad de recursos y documentación para ayudar a los usuarios a empezar a trabajar con la herramienta. Se puede encontrar más información en la documentación oficial de n8n y en la comunidad de n8n.\n\nPara self-hosting, se puede utilizar el comando `n8n start` para iniciar el servidor de n8n. Luego, se puede acceder a la interfaz de usuario de n8n mediante la URL `http://localhost:5678`.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo y proporciona una variedad de funciones y nodos para trabajar con diferentes servicios y APIs. Al seguir las mejores prácticas y utilizando las funciones de n8n, se puede crear flujos de trabajo personalizados y eficientes.\n\nEn cuanto a las integraciones, n8n admite una variedad de servicios y APIs, como Salesforce, Slack y Telegram. Se puede utilizar el nodo de `Salesforce` para interactuar con la API de Salesforce y el nodo de `Slack` para enviar mensajes a un canal de Slack. Para configurar una integración, se puede utilizar el comando `n8n integration create` y especificar el tipo de integración y los datos de autenticación correspondientes.\n\nEn cuanto a los webhooks, se puede utilizar el nodo de `Webhook` para recibir solicitudes HTTP y el nodo de `API` para realizar solicitudes a una API específica. Para configurar un webhook, se puede utilizar el comando `n8n webhook create` y especificar la URL y el método HTTP correspondientes.\n\nEn cuanto a las credenciales, se puede utilizar el comando `n8n credentials create` para crear una nueva credencial y especificar el tipo de autenticación y los datos de autenticación correspondientes. Luego, se puede utilizar la credencial en un flujo de trabajo para autenticar con un servicio o API específica.\n\nEn cuanto a los nodos, se puede utilizar el comando `n8n node create` para crear un nuevo nodo y especificar el tipo de nodo y los datos correspondientes. Luego, se puede utilizar el nodo en un flujo de trabajo para realizar una acción específica.\n\nEn cuanto a los flujos de trabajo, se puede utilizar el comando `n8n workflow create` para crear un nuevo flujo de trabajo y especificar los nodos y las conexiones entre ellos. Luego, se puede utilizar el flujo de trabajo para automatizar una tarea específica.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo y proporciona una variedad de funciones y nodos para trabajar con diferentes servicios y APIs. Al seguir las mejores prácticas y utilizando las funciones de n8n, se puede crear flujos de trabajo personalizados y eficientes.\n\nPara self-hosting, se puede utilizar el comando `n8n start` para iniciar el servidor de n8n. Luego, se puede acceder a la interfaz de usuario de n8n mediante la URL `http://localhost:5678`.\n\nEn cuanto a las novedades, se han agregado nuevas capacidades al servidor MCP de n8n, como la creación y actualización de flujos de trabajo mediante la API. Para aprovechar estas nuevas funcionalidades, es necesario actualizar la versión de n8n a la 2.14.0 beta o superior.\n\nEn cuanto a los cambios, se han realizado cambios en la autenticación y la autorización en n8n. Ahora, se puede utilizar la autenticación básica y la autenticación mediante tokens. Para configurar la autenticación, se puede utilizar el comando `n8n credentials create` y especificar el tipo de autenticación y los datos de autenticación correspondientes.\n\nEn cuanto a las mejoras, se han realizado mejoras en la interfaz de usuario de n8n. Ahora, se puede acceder a la interfaz de usuario de n8n mediante la URL `http://localhost:5678`. Además, se han agregado nuevas funciones y nodos para trabajar con diferentes servicios y APIs.\n\nEn cuanto a las best practices, es importante manejar los errores de forma explícita para evitar fallos silenciosos en los flujos de trabajo. Se puede utilizar el nodo de `Error Trigger` para capturar errores y notificar a los administradores. Además, es recomendable utilizar la función de `Retry` para reintentar las acciones que fallen.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo y proporciona una variedad de funciones y nodos para trabajar con diferentes servicios y APIs. Al seguir las mejores prácticas y utilizando las funciones de n8n, se puede crear flujos de trabajo personalizados y eficientes.\n\n  ",
+    "sources": [
+      {
+        "title": "Undefined behavior from code & tool nodes #26890",
+        "url": "https://github.com/n8n-io/n8n/issues/26890"
+      },
+      {
+        "title": "Comparing n8n@2.12.0...n8n@2.12.1 · n8n-io/n8n · GitHub",
+        "url": "https://github.com/n8n-io/n8n/compare/n8n@2.12.0...n8n@2.12.1"
+      },
+      {
+        "title": "Create workflows via MCP Now in Beta! - Announcements - n8n Community",
+        "url": "https://community.n8n.io/t/create-workflows-via-mcp-now-in-beta/280856"
+      },
+      {
+        "title": "Salesforce External Client Apps (ECAs) - Questions - n8n Community",
+        "url": "https://community.n8n.io/t/salesforce-external-client-apps-ecas/277740"
+      },
+      {
+        "title": "N8N errors after shifting to V2 - Questions - n8n Community",
+        "url": "https://community.n8n.io/t/n8n-errors-after-shifting-to-v2/278006"
+      },
+      {
+        "title": "[Bug] Connection error in AI Agent node after upgrading from n8n v2.2.4 ...",
+        "url": "https://community.n8n.io/t/bug-connection-error-in-ai-agent-node-after-upgrading-from-n8n-v2-2-4-to-v2-11-4-docker/277968"
+      },
+      {
+        "title": "n8n for Beginners: The Complete End-to-End Guide with Real Workflows, Code, Webhooks, APIs, and Automation | by Dr. Anil Pise | Mar, 2026 | Medium",
+        "url": "https://anilpise7.medium.com/n8n-for-beginners-the-complete-end-to-end-guide-with-real-workflows-code-webhooks-apis-and-d683b129dfa2"
+      },
+      {
+        "title": "n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business - DEV Community",
+        "url": "https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h"
+      },
+      {
+        "title": "How To Use n8n To Automate Your Business | by Travis Nicholson | Apr, 2026 | Medium",
+        "url": "https://travisnicholson.medium.com/how-to-use-n8n-to-automate-your-business-4585e6d8dfd2"
+      },
+      {
+        "title": "I Built 5 n8n Automations That Generate $3,200/Month Passively | by Ravinduhimansha | Write A Catalyst | Mar, 2026 | Medium",
+        "url": "https://medium.com/write-a-catalyst/i-built-5-n8n-automations-that-generate-3-200-month-passively-72e2a3050e17"
+      },
+      {
+        "title": "n8n Tutorial: Build Your First Workflow in 15 Minutes - DEV Community",
+        "url": "https://dev.to/atlasdigital/n8n-tutorial-for-beginners-build-your-first-automation-workflow-in-15-minutes-2eej"
+      },
+      {
+        "title": "Feature Request: Add projectId support to workflow create/update tools #644",
+        "url": "https://github.com/czlonkowski/n8n-mcp/issues/644"
+      }
+    ]
+  },
   "2026-03-31_0907": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",

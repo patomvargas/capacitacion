@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-03T09:03:05.566743+00:00</updated>
+  <updated>2026-04-04T08:51:07.455690+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -132,5 +132,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-03-31_0907.html"/>
     <summary>Airflow 3.2 introduce nuevas funcionalidades y mejoras en la programación de flujos de trabajo. Esta versión incluye avances en la conciencia de activos y datos, expansión de integraciones clave y mejoras en el núcleo de Airflow.</summary>
     <published>2026-03-31T09:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-04_0849.html</id>
+    <title>Airflow 2.x: Mejores Prácticas y Novedades</title>
+    <updated>2026-04-04T08:49:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear, programar y monitorear flujos de trabajo complejos. En la versión 2.x, se han introducido varias mejoras y novedades, como el soporte para &lt;code&gt;DeltaTriggerTimetable&lt;/code&gt; y la mejora de la seguridad con &lt;code&gt;airflowctl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para trabajar con Airflow es utilizar &lt;code&gt;DAGs&lt;/code&gt; (Directed Acyclic Graphs) para definir los flujos de trabajo. Un &lt;code&gt;DAG&lt;/code&gt; es un grafo que representa las tareas y sus dependencias, lo que permite a Airflow ejecutar las tareas en el orden correcto. Para crear un &lt;code&gt;DAG&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos y luego definir las tareas y sus dependencias utilizando el lenguaje de programación Python.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Airflow es el uso de &lt;code&gt;operators&lt;/code&gt; y &lt;code&gt;sensors&lt;/code&gt;. Los &lt;code&gt;operators&lt;/code&gt; son elementos que realizan acciones específicas, como ejecutar un comando o copiar un archivo, mientras que los &lt;code&gt;sensors&lt;/code&gt; son elementos que monitorean un recurso y disparan una acción cuando se cumple una condición. Por ejemplo, se puede utilizar el &lt;code&gt;Sensor&lt;/code&gt; &lt;code&gt;ExternalTaskSensor&lt;/code&gt; para monitorear el estado de una tarea externa y disparar una acción cuando se complete.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad y la gestión de los flujos de trabajo, se puede utilizar &lt;code&gt;airflowctl&lt;/code&gt;, una herramienta de línea de comandos que permite gestionar y monitorear los flujos de trabajo de manera segura. Con &lt;code&gt;airflowctl&lt;/code&gt;, se puede crear, editar y eliminar &lt;code&gt;DAGs&lt;/code&gt;, así como monitorear el estado de las tareas y los flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, la versión 2.x de Airflow introduce el soporte para &lt;code&gt;DeltaTriggerTimetable&lt;/code&gt;, que permite programar tareas en función de la diferencia entre dos fechas. También se ha mejorado la seguridad con la introducción de &lt;code&gt;airflowctl&lt;/code&gt;, que permite gestionar y monitorear los flujos de trabajo de manera segura.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 2.x es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece varias mejoras y novedades para la gestión y el monitoreo de tareas complejas. Al utilizar &lt;code&gt;DAGs&lt;/code&gt;, &lt;code&gt;operators&lt;/code&gt; y &lt;code&gt;sensors&lt;/code&gt;, se puede crear y gestionar flujos de trabajo de manera eficiente y segura.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Airflow y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main/dev"&gt;Apache Airflow source releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/63243"&gt;Airflow task failed but spark kube app is running #63243&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/blog/?q=Airflow+latest+release+2026"&gt;Blog | Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/community-newsletter/march-2026/"&gt;Apache Airflow Community Newsletter, March 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/2.11.2/release_notes.html"&gt;Release Notes — Airflow 2.11.2 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-04_0849.html"/>
+    <summary>Airflow es una herramienta de orquestación de flujos de trabajo que permite a los desarrolladores y administradores de sistemas automatizar y gestionar tareas complejas. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.</summary>
+    <published>2026-04-04T08:49:00+00:00</published>
   </entry>
 </feed>
