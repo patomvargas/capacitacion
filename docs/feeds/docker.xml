@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-04T08:51:07.461407+00:00</updated>
+  <updated>2026-04-05T08:53:51.143030+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -44,5 +44,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-03-28_0851.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para utilizar Docker de manera efectiva y segura. Se cubren temas como la creación de imágenes, la configuración de redes y la seguridad de los contenedores.</summary>
     <published>2026-03-28T08:51:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-05_0852.html</id>
+    <title>Docker: Mejoras y Best Practices</title>
+    <updated>2026-04-05T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una plataforma de contenerización que permite a los desarrolladores crear, implementar y ejecutar aplicaciones de manera rápida y segura. En los últimos meses, se han realizado varias mejoras y actualizaciones en la plataforma, como la versión 4.64.0 de Docker Desktop, que incluye características como &lt;code&gt;Faster container startup&lt;/code&gt; y &lt;code&gt;Persistent mode stability&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Docker es la capacidad de crear contenedores aislados y seguros. Para lograr esto, se pueden utilizar comandos como &lt;code&gt;docker run -it --rm --name mi_contenedor mi_imagen&lt;/code&gt; para crear un contenedor aislado y eliminarlo cuando se termine de utilizar. Además, se pueden utilizar herramientas como &lt;code&gt;docker-compose&lt;/code&gt; para definir y ejecutar múltiples contenedores de manera simultánea.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que Docker Desktop ha sido actualizado para incluir parches de seguridad para vulnerabilidades como &lt;code&gt;CVE-2026&lt;/code&gt;. Es recomendable actualizar a la versión más reciente de Docker Desktop y habilitar la &lt;code&gt;Enhanced Container Isolation (ECI)&lt;/code&gt; para bloquear el acceso a los contenedores no autorizados. Se puede hacer esto mediante el comando &lt;code&gt;docker desktop --enable-eci&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Docker es la capacidad de crear imágenes personalizadas mediante el uso de &lt;code&gt;Dockerfile&lt;/code&gt;. Un ejemplo de cómo crear una imagen personalizada es mediante el siguiente comando: &lt;code&gt;docker build -t mi_imagen .&lt;/code&gt;. Esto creará una imagen con el nombre &lt;code&gt;mi_imagen&lt;/code&gt; en el directorio actual.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa para los desarrolladores y administradores de sistemas. Con las últimas mejoras y best practices, es posible crear contenedores aislados y seguros de manera eficiente. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para garantizar la seguridad y estabilidad de los contenedores.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Docker y las comunidades de desarrolladores y administradores de sistemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/desktop/release-notes/"&gt;Release notes - Docker Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@kubeastronaut/docker-security-best-practices-57f3a33f06eb"&gt;Docker Security Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/docker-for-developers-essential-commands-guide-2026-480d"&gt;Docker for Developers: Essential Commands Guide (2026)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-05_0852.html"/>
+    <summary>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Docker de manera eficiente y segura.</summary>
+    <published>2026-04-05T08:52:00+00:00</published>
   </entry>
 </feed>

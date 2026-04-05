@@ -58,43 +58,45 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-03-28 0851 · PostgreSQL</div>
+    <div class="meta">2026-04-05 0852 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de los parámetros de la base de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para almacenar los datos en caché.</p>
+        
+            
+            <p>La optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
             
         
             
         
             
-            <p>Para hacer esto, se puede ejecutar el comando `ALTER SYSTEM SET shared_buffers TO '512MB';` para establecer el tamaño de los búferes compartidos en 512 MB. Otro parámetro importante es `effective_cache_size`, que se utiliza para estimar la cantidad de memoria que se utiliza para almacenar los datos en caché. Se puede ajustar este parámetro ejecutando el comando `ALTER SYSTEM SET effective_cache_size TO '1024MB';`.</p>
+            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en múltiples servidores, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -D /var/lib/postgresql/replica`.</p>
             
         
             
         
             
-            <p>La indexación es otra forma de optimizar el rendimiento de PostgreSQL. Los índices se utilizan para acelerar las consultas a la base de datos y se pueden crear utilizando el comando `CREATE INDEX`. Por ejemplo, se puede crear un índice en la columna `id` de la tabla `usuarios` ejecutando el comando `CREATE INDEX idx_usuarios_id ON usuarios (id);`.</p>
+            <p>El monitoreo es también fundamental para asegurar el rendimiento de tu base de datos. Puedes utilizar herramientas como `pg_stat` para monitorear el rendimiento de tus consultas y identificar problemas de rendimiento. Por ejemplo: `SELECT * FROM pg_stat_user_tables;`. Esta consulta te permite ver el número de lecturas y escrituras en cada tabla, lo que te puede ayudar a identificar problemas de rendimiento.</p>
             
         
             
         
             
-            <p>La replicación es una característica importante de PostgreSQL que permite replicar los datos de una base de datos en otra. Esto se puede hacer utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego restaurarla en la base de datos de destino.</p>
+            <p>La configuración de PostgreSQL es también importante para asegurar el rendimiento. Puedes configurar parámetros como `shared_buffers` y `effective_cache_size` para mejorar el rendimiento de tus consultas. Por ejemplo: `ALTER SYSTEM SET shared_buffers TO '512MB';`. Esta configuración establece el tamaño de los búferes compartidos en 512MB, lo que puede mejorar el rendimiento de tus consultas.</p>
             
         
             
         
             
-            <p>La herramienta `pg_stat` se utiliza para monitorear el rendimiento de la base de datos y proporciona información sobre el uso de la CPU, la memoria y los discos. Se puede utilizar el comando `pg_stat_activity` para ver la actividad actual de la base de datos y `pg_stat_user_tables` para ver el uso de las tablas de la base de datos.</p>
+            <p>Finalmente, es importante mencionar que la versión más reciente de PostgreSQL, la 18.3, incluye mejoras en la indexación y la replicación. Puedes actualizar a esta versión para aprovechar estas mejoras. Por ejemplo: `sudo apt-get install postgresql-18`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la versión 18 de PostgreSQL incluye una característica llamada 'asynchronous I/O' (AIO) que permite realizar operaciones de entrada y salida de forma concurrente, lo que puede mejorar el rendimiento de la base de datos.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de los parámetros de la base de datos.</p>
             
         
     </div>
@@ -105,22 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://pganalyze.com/blog" target="_blank">Postgres Monitoring, Database Optimization and more - pganalyze</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">PostgreSQL: News Archive</a>
+                <a href="https://www.postgresql.org/?lang=en" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a" target="_blank">PostgreSQL Performance Tuning Checklist: 2026 Complete Guide</a>
+                <a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/" target="_blank">CloudNativePG 1.29.0 Released! - PostgreSQL</a>
                 
             </li>
             
@@ -131,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-24_0859.html">&larr; 2026-03-24 0859</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html">&larr; 2026-03-28 0851</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-05_0852.html">2026-04-05 0852 &rarr;</a>
             
         </div>
     </div>

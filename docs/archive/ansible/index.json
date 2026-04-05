@@ -1,4 +1,28 @@
 {
+  "2026-04-05_0852": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente. En este artículo, se presentan las novedades y mejores prácticas para utilizar Ansible de manera efectiva.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura que se basa en la idea de Infrastructure as Code (IaC). Esto significa que los administradores de sistemas y desarrolladores pueden crear y gestionar entornos de manera programática, utilizando playbooks y roles para definir la configuración deseada. \n \nUn ejemplo de cómo utilizar Ansible para crear un servidor web es mediante el uso del módulo `apache2` para instalar y configurar el servidor web Apache. Esto se puede hacer mediante el comando `ansible-playbook -i inventory.ini playbook.yml`, donde `playbook.yml` es el archivo que define la configuración del servidor web. \n \nPara gestionar la seguridad de los servidores, Ansible proporciona la herramienta `ansible-vault`, que permite cifrar y descifrar archivos y variables de manera segura. Por ejemplo, se puede utilizar el comando `ansible-vault encrypt_string` para cifrar una cadena de texto. \n \nAdemás, Ansible proporciona la herramienta `AWX/Tower` para gestionar y automatizar la ejecución de playbooks de manera centralizada. Esto permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente y escalable. \n \nEn cuanto a las novedades, se han realizado cambios en las colecciones de Ansible, como la colección `community.aws`, que ha sido actualizada para incluir nuevas características y mejoras. También se ha aumentado la versión mínima requerida de `boto3` y `botocore` a 1.34.0 para alignar con la última versión de AWS SDK. \n \nPor último, es importante mencionar que Ansible es una herramienta en constante evolución, por lo que es importante mantenerse actualizado con las últimas novedades y mejores prácticas. Esto puede hacerse mediante la consulta de la documentación oficial de Ansible y la participación en la comunidad de desarrolladores y administradores de sistemas.",
+    "sources": [
+      {
+        "title": "community.aws Release Notes",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html"
+      },
+      {
+        "title": "amazon.aws Release Notes",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"
+      },
+      {
+        "title": "ansible-dev-tools",
+        "url": "https://pypi.org/project/ansible-dev-tools/"
+      },
+      {
+        "title": "Set it up once, test it properly, and let the system handle the rest",
+        "url": "https://medium.com/@omarelfarsaoui/set-it-up-once-test-it-properly-and-let-the-system-handle-the-rest-5a364b58ee5e"
+      }
+    ]
+  },
   "2026-04-01_0913": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

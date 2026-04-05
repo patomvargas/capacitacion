@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Docker - Docker</title>
+    <title>Docker: Mejoras y Best Practices - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejores prácticas de Docker</h1>
-    <div class="meta">2026-03-28 0851 · Docker</div>
+    <h1>Docker: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-05 0852 · Docker</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>La creación de imágenes de Docker es un paso fundamental para cualquier proyecto que utilice contenedores. Para crear una imagen de Docker, se puede utilizar el comando `docker build` con un archivo Dockerfile que especifique las instrucciones para crear la imagen. Por ejemplo, se puede utilizar el siguiente comando para crear una imagen de Docker a partir de un archivo Dockerfile: `docker build -t mi-imagen .`.</p>
+            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, implementar y ejecutar aplicaciones de manera rápida y segura. En los últimos meses, se han realizado varias mejoras y actualizaciones en la plataforma, como la versión 4.64.0 de Docker Desktop, que incluye características como `Faster container startup` y `Persistent mode stability`.</p>
             
         
             
         
             
-            <p>Una vez creada la imagen, se puede utilizar el comando `docker run` para ejecutar un contenedor a partir de la imagen. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor a partir de la imagen `mi-imagen`: `docker run -p 8080:8080 mi-imagen`. Esto ejecutará un contenedor que escuche en el puerto 8080 y redirija las solicitudes al puerto 8080 del contenedor.</p>
+            <p>Una de las características más importantes de Docker es la capacidad de crear contenedores aislados y seguros. Para lograr esto, se pueden utilizar comandos como `docker run -it --rm --name mi_contenedor mi_imagen` para crear un contenedor aislado y eliminarlo cuando se termine de utilizar. Además, se pueden utilizar herramientas como `docker-compose` para definir y ejecutar múltiples contenedores de manera simultánea.</p>
             
         
             
         
             
-            <p>La seguridad de los contenedores es otro tema importante en Docker. Se pueden utilizar varias técnicas para mejorar la seguridad de los contenedores, como ejecutarlos con un usuario no root o limitar los privilegios del contenedor. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un contenedor con un usuario no root: `docker run -u 1000:1000 mi-imagen`. Esto ejecutará el contenedor con el usuario con ID 1000 y grupo con ID 1000.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que Docker Desktop ha sido actualizado para incluir parches de seguridad para vulnerabilidades como `CVE-2026`. Es recomendable actualizar a la versión más reciente de Docker Desktop y habilitar la `Enhanced Container Isolation (ECI)` para bloquear el acceso a los contenedores no autorizados. Se puede hacer esto mediante el comando `docker desktop --enable-eci`.</p>
             
         
             
         
             
-            <p>La creación de redes de Docker es otro tema importante en la configuración de contenedores. Se pueden utilizar el comando `docker network` para crear y gestionar redes de Docker. Por ejemplo, se puede utilizar el siguiente comando para crear una red de Docker: `docker network create mi-red`. Esto creará una red de Docker con el nombre `mi-red`.</p>
+            <p>Otra característica importante de Docker es la capacidad de crear imágenes personalizadas mediante el uso de `Dockerfile`. Un ejemplo de cómo crear una imagen personalizada es mediante el siguiente comando: `docker build -t mi_imagen .`. Esto creará una imagen con el nombre `mi_imagen` en el directorio actual.</p>
             
         
             
         
             
-            <p>Finalmente, se pueden utilizar herramientas como Docker Compose para gestionar y orquestar contenedores de Docker. Docker Compose permite definir y ejecutar múltiples contenedores de Docker con una sola configuración. Por ejemplo, se puede utilizar el siguiente comando para ejecutar un conjunto de contenedores definidos en un archivo docker-compose.yml: `docker-compose up`.</p>
+            <p>En resumen, Docker es una herramienta poderosa para los desarrolladores y administradores de sistemas. Con las últimas mejoras y best practices, es posible crear contenedores aislados y seguros de manera eficiente. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para garantizar la seguridad y estabilidad de los contenedores.</p>
             
         
             
         
             
-            <p>En resumen, Docker es una herramienta poderosa para crear y gestionar contenedores, pero requiere una configuración y seguridad adecuadas para garantizar su funcionamiento correcto y seguro.</p>
+            <p>Para más información, se pueden consultar las fuentes oficiales de Docker y las comunidades de desarrolladores y administradores de sistemas.</p>
             
         
             
@@ -111,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://medium.com/@kienlt.qn/demystifying-docker-networking-a-deep-dive-into-bridge-veth-526b953c9b15" target="_blank">Demystifying Docker Networking</a>
+                <a href="https://docs.docker.com/desktop/release-notes/" target="_blank">Release notes - Docker Docs</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@syed_usman_ahmed/docker-users-who-use-grafana-loki-with-promtail-need-to-migrate-to-grafana-alloy-as-promtail-the-a20a98ee2f15" target="_blank">Docker Tutorial: Getting started with Grafana Loki and Alloy</a>
+                <a href="https://medium.com/@kubeastronaut/docker-security-best-practices-57f3a33f06eb" target="_blank">Docker Security Best Practices</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@earchitha22/day-16-docker-security-best-practices-protecting-containerized-applications-f17ef28a5288" target="_blank">Day 16 — Docker Security Best Practices</a>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/docker-for-developers-essential-commands-guide-2026-480d" target="_blank">Docker for Developers: Essential Commands Guide (2026)</a>
                 
             </li>
             
@@ -132,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-03-20_0850.html">&larr; 2026-03-20 0850</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-03-28_0851.html">&larr; 2026-03-28 0851</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-05_0852.html">2026-04-05 0852 &rarr;</a>
             
         </div>
     </div>

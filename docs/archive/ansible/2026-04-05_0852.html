@@ -58,43 +58,45 @@
     </div>
 
     <h1>Ansible: Automatización de Infraestructura</h1>
-    <div class="meta">2026-04-01 0913 · Ansible</div>
+    <div class="meta">2026-04-05 0852 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura que se utiliza comúnmente en entornos de DevOps. Permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente, utilizando playbooks y roles para definir la configuración deseada.</p>
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que se basa en la idea de Infrastructure as Code (IaC). Esto significa que los administradores de sistemas y desarrolladores pueden crear y gestionar entornos de manera programática, utilizando playbooks y roles para definir la configuración deseada.</p>
             
         
             
         
             
-            <p>Para empezar a utilizar Ansible, es necesario instalar el software en el equipo de administración. Esto se puede hacer utilizando el comando `pip install ansible`. Una vez instalado, se puede crear un archivo de inventario que define los hosts y grupos de hosts que se van a gestionar.</p>
+            <p>Un ejemplo de cómo utilizar Ansible para crear un servidor web es mediante el uso del módulo `apache2` para instalar y configurar el servidor web Apache. Esto se puede hacer mediante el comando `ansible-playbook -i inventory.ini playbook.yml`, donde `playbook.yml` es el archivo que define la configuración del servidor web.</p>
             
         
             
         
             
-            <p>La última versión de Ansible incluye varias novedades y mejoras, como la compatibilidad con Python 3.11 y la eliminación del soporte para Ansible Core 2.15. Es importante tener en cuenta que la compatibilidad con estas versiones cambiará en el futuro, por lo que es recomendable utilizar las últimas versiones de Ansible y Python.</p>
+            <p>Para gestionar la seguridad de los servidores, Ansible proporciona la herramienta `ansible-vault`, que permite cifrar y descifrar archivos y variables de manera segura. Por ejemplo, se puede utilizar el comando `ansible-vault encrypt_string` para cifrar una cadena de texto.</p>
             
         
             
         
             
-            <p>Para gestionar la configuración de la infraestructura, Ansible utiliza playbooks, que son archivos YAML que definen la configuración deseada. Los playbooks se pueden ejecutar utilizando el comando `ansible-playbook`. Por ejemplo, para ejecutar un playbook llamado `deploy.yml`, se puede utilizar el comando `ansible-playbook deploy.yml`.</p>
+            <p>Además, Ansible proporciona la herramienta `AWX/Tower` para gestionar y automatizar la ejecución de playbooks de manera centralizada. Esto permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente y escalable.</p>
             
         
             
         
             
-            <p>Ansible también incluye una herramienta llamada AWX, que es una interfaz web para gestionar la automatización de la infraestructura. AWX permite a los administradores de sistemas y desarrolladores crear y ejecutar playbooks de manera centralizada, y también incluye funcionalidades de seguimiento y monitoreo.</p>
+            <p>En cuanto a las novedades, se han realizado cambios en las colecciones de Ansible, como la colección `community.aws`, que ha sido actualizada para incluir nuevas características y mejoras. También se ha aumentado la versión mínima requerida de `boto3` y `botocore` a 1.34.0 para alignar con la última versión de AWS SDK.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura, que permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente. Es importante tener en cuenta las últimas novedades y mejoras en la herramienta, y utilizar las últimas versiones de Ansible y Python para asegurarse de que la configuración sea compatible con los requisitos actuales.</p>
+            <p>Por último, es importante mencionar que Ansible es una herramienta en constante evolución, por lo que es importante mantenerse actualizado con las últimas novedades y mejores prácticas. Esto puede hacerse mediante la consulta de la documentación oficial de Ansible y la participación en la comunidad de desarrolladores y administradores de sistemas.</p>
             
         
     </div>
@@ -105,27 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html" target="_blank">community.aws Release Notes - Ansible documentation</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html" target="_blank">community.aws Release Notes</a>
                 
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/red-hat-ansible-automation-platform-is-ending-support-for-ansible-core-2-15-and-python-3-11/45574" target="_blank">Red Hat Ansible Automation Platform is ending support for Ansible Core</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html" target="_blank">amazon.aws Release Notes</a>
                 
             </li>
             
             <li>
-                <a href="https://pypi.org/project/mkdocs-ansible/" target="_blank">mkdocs-ansible - PyPI</a>
+                <a href="https://pypi.org/project/ansible-dev-tools/" target="_blank">ansible-dev-tools</a>
                 
             </li>
             
             <li>
-                <a href="https://pypi.org/project/ansible-dev-tools/" target="_blank">ansible-dev-tools - PyPI</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/pdf/configuring_automation_execution/Red_Hat_Ansible_Automation_Platform-2.6-Configuring_automation_execution-en-US.pdf" target="_blank">Red Hat Ansible Automation Platform 2.6 Configuring automation execution</a>
+                <a href="https://medium.com/@omarelfarsaoui/set-it-up-once-test-it-properly-and-let-the-system-handle-the-rest-5a364b58ee5e" target="_blank">Set it up once, test it properly, and let the system handle the rest</a>
                 
             </li>
             
@@ -136,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-03-28_0851.html">&larr; 2026-03-28 0851</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-01_0913.html">&larr; 2026-04-01 0913</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-05_0852.html">2026-04-05 0852 &rarr;</a>
             
         </div>
     </div>

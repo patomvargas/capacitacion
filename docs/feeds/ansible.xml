@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-04T08:51:07.462887+00:00</updated>
+  <updated>2026-04-05T08:53:51.145535+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -108,5 +108,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-01_0913.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores configurar y gestionar entornos de manera eficiente. En este artículo, se presentan las últimas novedades y mejores prácticas para utilizar Ansible de manera efectiva.</summary>
     <published>2026-04-01T09:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-05_0852.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-04-05T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se basa en la idea de Infrastructure as Code (IaC). Esto significa que los administradores de sistemas y desarrolladores pueden crear y gestionar entornos de manera programática, utilizando playbooks y roles para definir la configuración deseada.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de cómo utilizar Ansible para crear un servidor web es mediante el uso del módulo &lt;code&gt;apache2&lt;/code&gt; para instalar y configurar el servidor web Apache. Esto se puede hacer mediante el comando &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;, donde &lt;code&gt;playbook.yml&lt;/code&gt; es el archivo que define la configuración del servidor web.&lt;/p&gt;
+&lt;p&gt;Para gestionar la seguridad de los servidores, Ansible proporciona la herramienta &lt;code&gt;ansible-vault&lt;/code&gt;, que permite cifrar y descifrar archivos y variables de manera segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-vault encrypt_string&lt;/code&gt; para cifrar una cadena de texto.&lt;/p&gt;
+&lt;p&gt;Además, Ansible proporciona la herramienta &lt;code&gt;AWX/Tower&lt;/code&gt; para gestionar y automatizar la ejecución de playbooks de manera centralizada. Esto permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente y escalable.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se han realizado cambios en las colecciones de Ansible, como la colección &lt;code&gt;community.aws&lt;/code&gt;, que ha sido actualizada para incluir nuevas características y mejoras. También se ha aumentado la versión mínima requerida de &lt;code&gt;boto3&lt;/code&gt; y &lt;code&gt;botocore&lt;/code&gt; a 1.34.0 para alignar con la última versión de AWS SDK.&lt;/p&gt;
+&lt;p&gt;Por último, es importante mencionar que Ansible es una herramienta en constante evolución, por lo que es importante mantenerse actualizado con las últimas novedades y mejores prácticas. Esto puede hacerse mediante la consulta de la documentación oficial de Ansible y la participación en la comunidad de desarrolladores y administradores de sistemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html"&gt;community.aws Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"&gt;amazon.aws Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/ansible-dev-tools/"&gt;ansible-dev-tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@omarelfarsaoui/set-it-up-once-test-it-properly-and-let-the-system-handle-the-rest-5a364b58ee5e"&gt;Set it up once, test it properly, and let the system handle the rest&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-05_0852.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente. En este artículo, se presentan las novedades y mejores prácticas para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-04-05T08:52:00+00:00</published>
   </entry>
 </feed>

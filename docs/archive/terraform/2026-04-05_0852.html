@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Best Practices - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-05 0852 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Una de las últimas mejoras es la capacidad de utilizar `destroy-time provisioners` en bloques eliminados, lo que permite ejecutar acciones específicas cuando se elimina un recurso. Por ejemplo, se puede utilizar el comando `terraform destroy` con la opción `-target` para eliminar un recurso específico.</p>
+            
+        
+            
+        
+            
+            <p>Otra mejora importante es la capacidad de utilizar módulos reutilizables en Terraform. Los módulos permiten encapsular lógica de infraestructura y reutilizarla en diferentes proyectos. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes utilizando el comando `terraform apply` con la opción `-var` para pasar variables de configuración.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la gestión de estado, Terraform utiliza un archivo de estado para almacenar la configuración de la infraestructura. Es importante mantener este archivo actualizado y sincronizado con la infraestructura real. Se puede utilizar el comando `terraform state` con la opción `push` para actualizar el estado de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de espacios de trabajo es otra característica importante de Terraform. Los espacios de trabajo permiten aislar diferentes configuraciones de infraestructura y gestionarlas de manera independiente. Se puede utilizar el comando `terraform workspace` con la opción `new` para crear un nuevo espacio de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar la importancia de utilizar best practices al trabajar con Terraform. Esto incluye utilizar comentarios y documentación clara en el código, así como seguir convenciones de nombramiento y estructura de archivos. Se puede utilizar el comando `terraform fmt` para formatear el código y seguir las convenciones de estilo de Terraform.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para gestionar infraestructura como código, y seguir las mejores prácticas y utilizar las últimas mejoras puede ayudar a mejorar la eficiencia y la productividad en el trabajo con infraestructura en la nube.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-kubernetes/issues/2435" target="_blank">Terraform tries to apply with the service account used to generate the plan</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-azurerm" target="_blank">Terraform Provider for Azure (Resource Manager)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@ntinyaribelinda/building-reusable-infrastructure-with-terraform-modules-76c4d41aeeff" target="_blank">Building Reusable Infrastructure with Terraform Modules</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-03-12_0852.html">&larr; 2026-03-12 0852</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

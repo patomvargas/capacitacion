@@ -1,4 +1,24 @@
 {
+  "2026-04-05_0852": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Docker de manera eficiente y segura.",
+    "content": "\nDocker es una plataforma de contenerización que permite a los desarrolladores crear, implementar y ejecutar aplicaciones de manera rápida y segura. En los últimos meses, se han realizado varias mejoras y actualizaciones en la plataforma, como la versión 4.64.0 de Docker Desktop, que incluye características como `Faster container startup` y `Persistent mode stability`.\n\nUna de las características más importantes de Docker es la capacidad de crear contenedores aislados y seguros. Para lograr esto, se pueden utilizar comandos como `docker run -it --rm --name mi_contenedor mi_imagen` para crear un contenedor aislado y eliminarlo cuando se termine de utilizar. Además, se pueden utilizar herramientas como `docker-compose` para definir y ejecutar múltiples contenedores de manera simultánea.\n\nEn cuanto a la seguridad, es importante mencionar que Docker Desktop ha sido actualizado para incluir parches de seguridad para vulnerabilidades como `CVE-2026`. Es recomendable actualizar a la versión más reciente de Docker Desktop y habilitar la `Enhanced Container Isolation (ECI)` para bloquear el acceso a los contenedores no autorizados. Se puede hacer esto mediante el comando `docker desktop --enable-eci`.\n\nOtra característica importante de Docker es la capacidad de crear imágenes personalizadas mediante el uso de `Dockerfile`. Un ejemplo de cómo crear una imagen personalizada es mediante el siguiente comando: `docker build -t mi_imagen .`. Esto creará una imagen con el nombre `mi_imagen` en el directorio actual.\n\nEn resumen, Docker es una herramienta poderosa para los desarrolladores y administradores de sistemas. Con las últimas mejoras y best practices, es posible crear contenedores aislados y seguros de manera eficiente. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para garantizar la seguridad y estabilidad de los contenedores.\n\nPara más información, se pueden consultar las fuentes oficiales de Docker y las comunidades de desarrolladores y administradores de sistemas.\n\n  ",
+    "sources": [
+      {
+        "title": "Release notes - Docker Docs",
+        "url": "https://docs.docker.com/desktop/release-notes/"
+      },
+      {
+        "title": "Docker Security Best Practices",
+        "url": "https://medium.com/@kubeastronaut/docker-security-best-practices-57f3a33f06eb"
+      },
+      {
+        "title": "Docker for Developers: Essential Commands Guide (2026)",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/docker-for-developers-essential-commands-guide-2026-480d"
+      }
+    ]
+  },
   "2026-03-28_0851": {
     "slug": "docker",
     "title": "Mejores prácticas de Docker",

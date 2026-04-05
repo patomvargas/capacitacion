@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-04T08:51:07.460787+00:00</updated>
+  <updated>2026-04-05T08:53:51.141922+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -106,5 +106,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html"/>
     <summary>PostgreSQL es una base de datos relacional de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. En este artículo, se presentan algunas de las mejores prácticas para optimizar el rendimiento de PostgreSQL.</summary>
     <published>2026-03-28T08:51:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-05_0852.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-04-05T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de consulta. Puedes crear un índice utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo: &lt;code&gt;CREATE INDEX idx_nombre ON tabla (nombre);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en múltiples servidores, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt;. Por ejemplo: &lt;code&gt;pg_basebackup -h localhost -D /var/lib/postgresql/replica&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El monitoreo es también fundamental para asegurar el rendimiento de tu base de datos. Puedes utilizar herramientas como &lt;code&gt;pg_stat&lt;/code&gt; para monitorear el rendimiento de tus consultas y identificar problemas de rendimiento. Por ejemplo: &lt;code&gt;SELECT * FROM pg_stat_user_tables;&lt;/code&gt;. Esta consulta te permite ver el número de lecturas y escrituras en cada tabla, lo que te puede ayudar a identificar problemas de rendimiento.&lt;/p&gt;
+&lt;p&gt;La configuración de PostgreSQL es también importante para asegurar el rendimiento. Puedes configurar parámetros como &lt;code&gt;shared_buffers&lt;/code&gt; y &lt;code&gt;effective_cache_size&lt;/code&gt; para mejorar el rendimiento de tus consultas. Por ejemplo: &lt;code&gt;ALTER SYSTEM SET shared_buffers TO '512MB';&lt;/code&gt;. Esta configuración establece el tamaño de los búferes compartidos en 512MB, lo que puede mejorar el rendimiento de tus consultas.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la versión más reciente de PostgreSQL, la 18.3, incluye mejoras en la indexación y la replicación. Puedes actualizar a esta versión para aprovechar estas mejoras. Por ejemplo: &lt;code&gt;sudo apt-get install postgresql-18&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de los parámetros de la base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://pganalyze.com/blog"&gt;Postgres Monitoring, Database Optimization and more - pganalyze&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/?lang=en"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"&gt;CloudNativePG 1.29.0 Released! - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-05_0852.html"/>
+    <summary>Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas de indexación, replicación y monitoreo. Descubre cómo mejorar la eficiencia de tus consultas y reducir los tiempos de respuesta.</summary>
+    <published>2026-04-05T08:52:00+00:00</published>
   </entry>
 </feed>

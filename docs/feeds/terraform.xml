@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-04T08:51:07.462481+00:00</updated>
+  <updated>2026-04-05T08:53:51.144616+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -27,5 +27,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-03-12_0852.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, espacios de trabajo y la importación de recursos.</summary>
     <published>2026-03-12T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-05_0852.html</id>
+    <title>Terraform: Mejoras y Best Practices</title>
+    <updated>2026-04-05T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Una de las últimas mejoras es la capacidad de utilizar &lt;code&gt;destroy-time provisioners&lt;/code&gt; en bloques eliminados, lo que permite ejecutar acciones específicas cuando se elimina un recurso. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform destroy&lt;/code&gt; con la opción &lt;code&gt;-target&lt;/code&gt; para eliminar un recurso específico.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la capacidad de utilizar módulos reutilizables en Terraform. Los módulos permiten encapsular lógica de infraestructura y reutilizarla en diferentes proyectos. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes utilizando el comando &lt;code&gt;terraform apply&lt;/code&gt; con la opción &lt;code&gt;-var&lt;/code&gt; para pasar variables de configuración.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de estado, Terraform utiliza un archivo de estado para almacenar la configuración de la infraestructura. Es importante mantener este archivo actualizado y sincronizado con la infraestructura real. Se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; con la opción &lt;code&gt;push&lt;/code&gt; para actualizar el estado de la infraestructura.&lt;/p&gt;
+&lt;p&gt;La gestión de espacios de trabajo es otra característica importante de Terraform. Los espacios de trabajo permiten aislar diferentes configuraciones de infraestructura y gestionarlas de manera independiente. Se puede utilizar el comando &lt;code&gt;terraform workspace&lt;/code&gt; con la opción &lt;code&gt;new&lt;/code&gt; para crear un nuevo espacio de trabajo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de utilizar best practices al trabajar con Terraform. Esto incluye utilizar comentarios y documentación clara en el código, así como seguir convenciones de nombramiento y estructura de archivos. Se puede utilizar el comando &lt;code&gt;terraform fmt&lt;/code&gt; para formatear el código y seguir las convenciones de estilo de Terraform.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para gestionar infraestructura como código, y seguir las mejores prácticas y utilizar las últimas mejoras puede ayudar a mejorar la eficiencia y la productividad en el trabajo con infraestructura en la nube.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-kubernetes/issues/2435"&gt;Terraform tries to apply with the service account used to generate the plan&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-azurerm"&gt;Terraform Provider for Azure (Resource Manager)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@ntinyaribelinda/building-reusable-infrastructure-with-terraform-modules-76c4d41aeeff"&gt;Building Reusable Infrastructure with Terraform Modules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-05_0852.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
+    <published>2026-04-05T08:52:00+00:00</published>
   </entry>
 </feed>

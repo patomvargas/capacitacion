@@ -1,4 +1,24 @@
 {
+  "2026-04-05_0852": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas de indexación, replicación y monitoreo. Descubre cómo mejorar la eficiencia de tus consultas y reducir los tiempos de respuesta.",
+    "content": "\nLa optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.\n\nOtra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en múltiples servidores, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -D /var/lib/postgresql/replica`.\n\nEl monitoreo es también fundamental para asegurar el rendimiento de tu base de datos. Puedes utilizar herramientas como `pg_stat` para monitorear el rendimiento de tus consultas y identificar problemas de rendimiento. Por ejemplo: `SELECT * FROM pg_stat_user_tables;`. Esta consulta te permite ver el número de lecturas y escrituras en cada tabla, lo que te puede ayudar a identificar problemas de rendimiento.\n\nLa configuración de PostgreSQL es también importante para asegurar el rendimiento. Puedes configurar parámetros como `shared_buffers` y `effective_cache_size` para mejorar el rendimiento de tus consultas. Por ejemplo: `ALTER SYSTEM SET shared_buffers TO '512MB';`. Esta configuración establece el tamaño de los búferes compartidos en 512MB, lo que puede mejorar el rendimiento de tus consultas.\n\nFinalmente, es importante mencionar que la versión más reciente de PostgreSQL, la 18.3, incluye mejoras en la indexación y la replicación. Puedes actualizar a esta versión para aprovechar estas mejoras. Por ejemplo: `sudo apt-get install postgresql-18`.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de los parámetros de la base de datos.",
+    "sources": [
+      {
+        "title": "Postgres Monitoring, Database Optimization and more - pganalyze",
+        "url": "https://pganalyze.com/blog"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/?lang=en"
+      },
+      {
+        "title": "CloudNativePG 1.29.0 Released! - PostgreSQL",
+        "url": "https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"
+      }
+    ]
+  },
   "2026-03-28_0851": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",
