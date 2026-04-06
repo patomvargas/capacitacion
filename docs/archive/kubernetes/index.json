@@ -1,4 +1,24 @@
 {
+  "2026-04-06_0915": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage, seguridad y más. En este artículo, exploraremos algunas de las novedades más destacadas en la versión 1.36 y cómo aprovecharlas en tus clústeres.",
+    "content": "La versión 1.36 de Kubernetes está a punto de ser lanzada y promete traer consigo una serie de mejoras y nuevas características. Una de las novedades más destacadas es la incorporación de la función de `Agent Sandbox`, que permite ejecutar agentes en el clúster de manera más segura y eficiente. Para aprovechar esta función, debes crear un `Deployment` con la configuración adecuada, como se muestra a continuación: `kubectl create deployment mi-agente --image=mi-imagen-agente --command=['mi-comando-agente']`.\n\n \nLa seguridad es otro aspecto en el que Kubernetes ha hecho grandes avances. La autenticación y autorización basadas en roles (RBAC) son fundamentales para garantizar el acceso controlado a los recursos del clúster. Para configurar RBAC, debes crear `Roles` y `ClusterRoles` que definan los permisos y accesos para cada usuario o servicio. Por ejemplo: `kubectl create role mi-rol --verb=get,list --resource=pods`.\n\n \nEn cuanto a la monitorización y logging, Kubernetes ofrece una variedad de herramientas y opciones. Una de las más populares es la combinación de `Prometheus` y `Grafana`, que permite recopilar métricas y visualizarlas de manera efectiva. Para implementar esta solución, debes instalar `Prometheus` y `Grafana` en tu clúster y configurarlos para recopilar las métricas deseadas. Por ejemplo: `kubectl apply -f prometheus-deployment.yaml`.\n\n \nOtra novedad destacada en la versión 1.36 es la mejora en la gestión de almacenamiento. Kubernetes ahora ofrece una mayor flexibilidad y control sobre los volúmenes y los almacenamientos persistentes. Para aprovechar estas mejoras, debes crear un `PersistentVolumeClaim` que defina los requisitos de almacenamiento para tu aplicación. Por ejemplo: `kubectl create pvc mi-pvc --access-modes=ReadWriteOnce --resources=requests.storage=1Gi`.\n\n \nFinalmente, es importante destacar la importancia de seguir las mejores prácticas en la configuración y gestión de los clústeres de Kubernetes. Esto incluye la implementación de políticas de seguridad, la monitorización y logging efectiva, y la gestión eficiente de los recursos. Para más información, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas a continuación.\n\n \nEn resumen, la versión 1.36 de Kubernetes trae consigo una serie de mejoras y nuevas características que pueden ayudar a los administradores y desarrolladores a crear clústeres más seguros, eficientes y escalables. Siguiendo las mejores prácticas y aprovechando las herramientas y funciones disponibles, es posible crear entornos de producción de alta calidad y confiabilidad.",
+    "sources": [
+      {
+        "title": "Kubernetes v1.36 Sneak Peek",
+        "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"
+      },
+      {
+        "title": "Running Agents on Kubernetes with Agent Sandbox",
+        "url": "https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/"
+      },
+      {
+        "title": "Kubernetes RBAC Tutorial: Roles, ClusterRoles & Service Accounts",
+        "url": "https://medium.com/k8slens/kubernetes-rbac-tutorial-roles-clusterroles-service-accounts-5aa4b3393fa4"
+      }
+    ]
+  },
   "2026-04-02_0905": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes 1.36",

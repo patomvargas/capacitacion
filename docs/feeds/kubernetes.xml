@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-05T08:53:51.131775+00:00</updated>
+  <updated>2026-04-06T09:17:01.599243+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -158,5 +158,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-02_0905.html"/>
     <summary>Kubernetes 1.36 se lanzará a finales de abril de 2026 con nuevas características y mejoras. Esta versión incluirá la remoción de funcionalidades obsoletas y deprecaciones, así como mejoras en el rendimiento y la seguridad.</summary>
     <published>2026-04-02T09:05:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-06_0915.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-04-06T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.36 de Kubernetes está a punto de ser lanzada y promete traer consigo una serie de mejoras y nuevas características. Una de las novedades más destacadas es la incorporación de la función de &lt;code&gt;Agent Sandbox&lt;/code&gt;, que permite ejecutar agentes en el clúster de manera más segura y eficiente. Para aprovechar esta función, debes crear un &lt;code&gt;Deployment&lt;/code&gt; con la configuración adecuada, como se muestra a continuación: &lt;code&gt;kubectl create deployment mi-agente --image=mi-imagen-agente --command=['mi-comando-agente']&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto en el que Kubernetes ha hecho grandes avances. La autenticación y autorización basadas en roles (RBAC) son fundamentales para garantizar el acceso controlado a los recursos del clúster. Para configurar RBAC, debes crear &lt;code&gt;Roles&lt;/code&gt; y &lt;code&gt;ClusterRoles&lt;/code&gt; que definan los permisos y accesos para cada usuario o servicio. Por ejemplo: &lt;code&gt;kubectl create role mi-rol --verb=get,list --resource=pods&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la monitorización y logging, Kubernetes ofrece una variedad de herramientas y opciones. Una de las más populares es la combinación de &lt;code&gt;Prometheus&lt;/code&gt; y &lt;code&gt;Grafana&lt;/code&gt;, que permite recopilar métricas y visualizarlas de manera efectiva. Para implementar esta solución, debes instalar &lt;code&gt;Prometheus&lt;/code&gt; y &lt;code&gt;Grafana&lt;/code&gt; en tu clúster y configurarlos para recopilar las métricas deseadas. Por ejemplo: &lt;code&gt;kubectl apply -f prometheus-deployment.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad destacada en la versión 1.36 es la mejora en la gestión de almacenamiento. Kubernetes ahora ofrece una mayor flexibilidad y control sobre los volúmenes y los almacenamientos persistentes. Para aprovechar estas mejoras, debes crear un &lt;code&gt;PersistentVolumeClaim&lt;/code&gt; que defina los requisitos de almacenamiento para tu aplicación. Por ejemplo: &lt;code&gt;kubectl create pvc mi-pvc --access-modes=ReadWriteOnce --resources=requests.storage=1Gi&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de seguir las mejores prácticas en la configuración y gestión de los clústeres de Kubernetes. Esto incluye la implementación de políticas de seguridad, la monitorización y logging efectiva, y la gestión eficiente de los recursos. Para más información, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión 1.36 de Kubernetes trae consigo una serie de mejoras y nuevas características que pueden ayudar a los administradores y desarrolladores a crear clústeres más seguros, eficientes y escalables. Siguiendo las mejores prácticas y aprovechando las herramientas y funciones disponibles, es posible crear entornos de producción de alta calidad y confiabilidad.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"&gt;Kubernetes v1.36 Sneak Peek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/"&gt;Running Agents on Kubernetes with Agent Sandbox&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/k8slens/kubernetes-rbac-tutorial-roles-clusterroles-service-accounts-5aa4b3393fa4"&gt;Kubernetes RBAC Tutorial: Roles, ClusterRoles &amp; Service Accounts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-06_0915.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage, seguridad y más. En este artículo, exploraremos algunas de las novedades más destacadas en la versión 1.36 y cómo aprovecharlas en tus clústeres.</summary>
+    <published>2026-04-06T09:15:00+00:00</published>
   </entry>
 </feed>

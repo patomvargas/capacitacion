@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
+  <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
+  <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
+  <updated>2026-04-06T09:17:01.596974+00:00</updated>
+  <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
+  <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
+  <subtitle>Noticias tecnicas sobre DNS BIND9: Configuracion de zonas, DNSSEC, views, RPZ, logging, performance tuning</subtitle>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-06_0915.html</id>
+    <title>Configuración y Mejoras en DNS BIND9</title>
+    <updated>2026-04-06T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;El sistema DNS BIND9 es uno de los servidores DNS más utilizados en Internet. Para configurar zonas en BIND9, se utiliza el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas y sus respectivos archivos de zona. Por ejemplo, para crear una zona llamada &lt;code&gt;example.com&lt;/code&gt;, se agregaría la siguiente línea en &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para implementar DNSSEC en BIND9, se deben generar claves de zona y de clave de zona utilizando herramientas como &lt;code&gt;dnssec-keygen&lt;/code&gt;. Luego, se deben configurar las opciones de firma y verificación en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo: &lt;code&gt;dnssec-validation yes;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido DNS en función de la dirección IP del cliente. Esto se logra mediante la directiva &lt;code&gt;view&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, BIND9 soporta la configuración de RPZ (Response Policy Zones), que permite bloquear o restringir el acceso a ciertos dominios. Esto se configura mediante la directiva &lt;code&gt;response-policy&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo: &lt;code&gt;response-policy { zone "rpz.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento de BIND9, se pueden ajustar varios parámetros en el archivo &lt;code&gt;named.conf&lt;/code&gt;, como el tamaño del caché y el número de hilos de procesamiento. Por ejemplo: &lt;code&gt;max-cache-size 100M;&lt;/code&gt; y &lt;code&gt;max-ncache-ttl 3600;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, para registrar logs en BIND9, se puede utilizar la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo: &lt;code&gt;logging { channel default_file { file "/var/log/named.log" versions 3 size 5m; print-time yes; print-severity yes; print-category yes; }; category default { default_file; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Estas son solo algunas de las muchas configuraciones y mejoras que se pueden realizar en BIND9. Es importante consultar la documentación oficial y seguir las mejores prácticas para asegurarse de que el servidor DNS esté configurado de manera segura y eficiente.&lt;/p&gt;
+&lt;p&gt;Para debuggear problemas de DNS, se pueden utilizar herramientas como &lt;code&gt;tcpdump&lt;/code&gt; y &lt;code&gt;wireshark&lt;/code&gt;. Estas herramientas permiten capturar y analizar el tráfico DNS, lo que puede ayudar a identificar problemas de configuración o de red. Por ejemplo, se puede utilizar el comando &lt;code&gt;tcpdump -i any -n -s 0 -w dump.pcap port 53&lt;/code&gt; para capturar todo el tráfico DNS en la interfaz de red.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración y el mantenimiento de un servidor DNS BIND9 requieren una comprensión profunda de las opciones de configuración y las mejores prácticas de seguridad y rendimiento. Al seguir estas recomendaciones y utilizar las herramientas adecuadas, se puede asegurar un servidor DNS seguro y eficiente.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que la documentación oficial de BIND9 es una fuente valiosa de información para la configuración y el mantenimiento del servidor DNS. Además, existen muchas herramientas y recursos en línea que pueden ayudar a los administradores de sistemas a configurar y depurar su servidor DNS.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es fundamental implementar medidas como DNSSEC y RPZ para proteger contra ataques de spoofing y phishing. Además, es importante mantener el servidor DNS actualizado con los últimos parches de seguridad y configurar las opciones de seguridad adecuadas en el archivo &lt;code&gt;named.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En conclusión, la configuración y el mantenimiento de un servidor DNS BIND9 requieren una comprensión profunda de las opciones de configuración y las mejores prácticas de seguridad y rendimiento. Al seguir estas recomendaciones y utilizar las herramientas adecuadas, se puede asegurar un servidor DNS seguro y eficiente.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la configuración y el mantenimiento de un servidor DNS BIND9, se recomienda consultar la documentación oficial y seguir las mejores prácticas de seguridad y rendimiento. Además, existen muchas herramientas y recursos en línea que pueden ayudar a los administradores de sistemas a configurar y depurar su servidor DNS.&lt;/p&gt;
+&lt;p&gt;En cuanto a las fuentes utilizadas en este artículo, se han consultado las siguientes:&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/isc-packages-for-bind-9"&gt;ISC Packages for BIND 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/dnssec-key-and-signing-policy"&gt;DNSSEC Key and Signing Policy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-debug-dns-tcpdump-wireshark"&gt;2026-03-20-debug-dns-tcpdump-wireshark&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-06_0915.html"/>
+    <summary>El sistema DNS BIND9 es fundamental para la resolución de nombres de dominio en Internet. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs, así como técnicas para mejorar el rendimiento.</summary>
+    <published>2026-04-06T09:15:00+00:00</published>
+  </entry>
+</feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
+    <title>Novedades en Kubernetes - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,48 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes 1.36</h1>
-    <div class="meta">2026-04-02 0905 · Kubernetes</div>
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-04-06 0915 · Kubernetes</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Según el blog oficial de Kubernetes, esta versión incluirá una serie de mejoras y nuevas características, como la remoción de funcionalidades obsoletas y deprecaciones. Para obtener más información sobre las novedades de esta versión, se puede consultar el artículo `Kubernetes v1.36 Sneak Peek` en el blog oficial de Kubernetes.</p>
+            <p>La versión 1.36 de Kubernetes está a punto de ser lanzada y promete traer consigo una serie de mejoras y nuevas características. Una de las novedades más destacadas es la incorporación de la función de `Agent Sandbox`, que permite ejecutar agentes en el clúster de manera más segura y eficiente. Para aprovechar esta función, debes crear un `Deployment` con la configuración adecuada, como se muestra a continuación: `kubectl create deployment mi-agente --image=mi-imagen-agente --command=['mi-comando-agente']`.</p>
             
         
             
         
             
-            <p>Una de las características más destacadas de esta versión es la mejora en el rendimiento y la seguridad. Por ejemplo, se ha solucionado un problema de seguridad relacionado con el componente `ingress-nginx`, que se puede solucionar mediante la actualización a la versión más reciente. Para actualizar, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/nginx-0.30.0/deploy/static/mandatory.yaml`.</p>
+        
+            
+            <p>La seguridad es otro aspecto en el que Kubernetes ha hecho grandes avances. La autenticación y autorización basadas en roles (RBAC) son fundamentales para garantizar el acceso controlado a los recursos del clúster. Para configurar RBAC, debes crear `Roles` y `ClusterRoles` que definan los permisos y accesos para cada usuario o servicio. Por ejemplo: `kubectl create role mi-rol --verb=get,list --resource=pods`.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Kubernetes, es importante mencionar la importancia de la gestión de los permisos de los volúmenes. Un ejemplo de cómo ajustar la política de cambios de grupo de archivos (`fsGroupChangePolicy`) se puede encontrar en el artículo `A one-line Kubernetes fix that saved 600 hours a year`. En este artículo, se explica cómo ajustar la política de cambios de grupo de archivos para reducir el tiempo de reinicio de los contenedores.</p>
+        
+            
+            <p>En cuanto a la monitorización y logging, Kubernetes ofrece una variedad de herramientas y opciones. Una de las más populares es la combinación de `Prometheus` y `Grafana`, que permite recopilar métricas y visualizarlas de manera efectiva. Para implementar esta solución, debes instalar `Prometheus` y `Grafana` en tu clúster y configurarlos para recopilar las métricas deseadas. Por ejemplo: `kubectl apply -f prometheus-deployment.yaml`.</p>
             
         
             
         
             
-            <p>Otra característica importante de Kubernetes es la capacidad de ejecutar aplicaciones de forma declarativa. Esto se puede lograr mediante el uso de comandos como `kubectl apply -f` para aplicar configuraciones a los recursos de Kubernetes. Para obtener más información sobre los comandos imperativos y declarativos en Kubernetes, se puede consultar el artículo `Imperative vs Declarative Commands in Kubernetes (k8s)`.</p>
+        
+            
+            <p>Otra novedad destacada en la versión 1.36 es la mejora en la gestión de almacenamiento. Kubernetes ahora ofrece una mayor flexibilidad y control sobre los volúmenes y los almacenamientos persistentes. Para aprovechar estas mejoras, debes crear un `PersistentVolumeClaim` que defina los requisitos de almacenamiento para tu aplicación. Por ejemplo: `kubectl create pvc mi-pvc --access-modes=ReadWriteOnce --resources=requests.storage=1Gi`.</p>
             
         
             
         
             
-            <p>En resumen, la versión 1.36 de Kubernetes se encuentra en desarrollo y se espera su lanzamiento a finales de abril de 2026. Esta versión incluirá mejoras en el rendimiento y la seguridad, así como la remoción de funcionalidades obsoletas y deprecaciones. Es importante mencionar la importancia de la gestión de los permisos de los volúmenes y la capacidad de ejecutar aplicaciones de forma declarativa.</p>
+        
+            
+            <p>Finalmente, es importante destacar la importancia de seguir las mejores prácticas en la configuración y gestión de los clústeres de Kubernetes. Esto incluye la implementación de políticas de seguridad, la monitorización y logging efectiva, y la gestión eficiente de los recursos. Para más información, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas a continuación.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre las novedades de Kubernetes, se pueden consultar las fuentes oficiales y artículos relacionados. Algunas de las fuentes utilizadas para este artículo incluyen el blog oficial de Kubernetes, el sitio web de Kubernetes y artículos de terceros que se centran en la tecnología de Kubernetes.</p>
-            
         
+            
+            <p>En resumen, la versión 1.36 de Kubernetes trae consigo una serie de mejoras y nuevas características que pueden ayudar a los administradores y desarrolladores a crear clústeres más seguros, eficientes y escalables. Siguiendo las mejores prácticas y aprovechando las herramientas y funciones disponibles, es posible crear entornos de producción de alta calidad y confiabilidad.</p>
             
         
     </div>
@@ -109,22 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.cloudflare.com/one-line-kubernetes-fix-saved-600-hours-a-year/" target="_blank">A one-line Kubernetes fix that saved 600 hours a year</a>
+                <a href="https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/" target="_blank">Running Agents on Kubernetes with Agent Sandbox</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@iamafjalkhan/imperative-vs-declarative-commands-in-kubernetes-k8s-2f98860f76e2" target="_blank">Imperative vs Declarative Commands in Kubernetes (k8s)</a>
+                <a href="https://medium.com/k8slens/kubernetes-rbac-tutorial-roles-clusterroles-service-accounts-5aa4b3393fa4" target="_blank">Kubernetes RBAC Tutorial: Roles, ClusterRoles & Service Accounts</a>
                 
             </li>
             
@@ -135,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-03-29_0849.html">&larr; 2026-03-29 0849</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-02_0905.html">&larr; 2026-04-02 0905</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-06_0915.html">2026-04-06 0915 &rarr;</a>
             
         </div>
     </div>

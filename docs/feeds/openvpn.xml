@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-05T08:53:51.130980+00:00</updated>
+  <updated>2026-04-06T09:17:01.597854+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -103,5 +103,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-02_0905.html"/>
     <summary>OpenVPN es una herramienta de tunneling que proporciona una conexión segura y cifrada entre dos puntos. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-04-02T09:05:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-06_0915.html</id>
+    <title>Seguridad avanzada con OpenVPN</title>
+    <updated>2026-04-06T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite crear túneles de red seguros entre redes. Para configurar OpenVPN, es necesario generar certificados y claves de cifrado. Se puede utilizar la herramienta &lt;code&gt;easy-rsa&lt;/code&gt; para generar los certificados y claves necesarios.&lt;/p&gt;
+&lt;p&gt;Una vez generados los certificados y claves, se puede configurar el servidor OpenVPN utilizando el archivo de configuración &lt;code&gt;server.conf&lt;/code&gt;. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo: &lt;code&gt;port 1194&lt;/code&gt; y &lt;code&gt;proto udp&lt;/code&gt;. También es importante configurar la autenticación y autorización de los clientes, utilizando comandos como &lt;code&gt;tls-auth&lt;/code&gt; y &lt;code&gt;client-cert-not-required&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de OpenVPN, se pueden implementar algunas best practices, como el uso de Fail2Ban para bloquear hosts que intentan autenticarse de manera incorrecta. Se puede configurar Fail2Ban para que analice los logs de OpenVPN y bloquee las direcciones IP que superen un umbral de intentos de autenticación fallidos. Por ejemplo, se puede utilizar el comando &lt;code&gt;fail2ban-client set openvpn banaction=iptables-multiport&lt;/code&gt; para bloquear las direcciones IP que intentan autenticarse de manera incorrecta.&lt;/p&gt;
+&lt;p&gt;Además, es importante mantener actualizados los certificados y claves de cifrado, y realizar auditorías de seguridad regulares para detectar posibles vulnerabilidades. Se pueden utilizar herramientas como &lt;code&gt;openssl&lt;/code&gt; para verificar la validez de los certificados y claves.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Access Server, se puede utilizar la herramienta &lt;code&gt;openvpn-access-server&lt;/code&gt; para configurar y administrar los servidores OpenVPN. Esta herramienta proporciona una interfaz web para configurar los parámetros de conexión y autenticación, y también permite administrar los clientes y sus permisos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN también puede ser utilizado para configurar túneles de red site-to-site, lo que permite conectar redes separadas de manera segura. Se pueden utilizar comandos como &lt;code&gt;tun&lt;/code&gt; y &lt;code&gt;tap&lt;/code&gt; para configurar los túneles de red, y también se pueden utilizar herramientas como &lt;code&gt;iptables&lt;/code&gt; para configurar las reglas de firewall y routing.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.reddit.com/r/OpenVPN/"&gt;r/OpenVPN - Reddit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/fail2ban/fail2ban"&gt;Fail2Ban: ban hosts that cause multiple authentication errors&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/"&gt;OpenVPN Community Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-06_0915.html"/>
+    <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas proteger la comunicación entre redes. En este artículo, se presentan algunas best practices para hardening y configuración de OpenVPN.</summary>
+    <published>2026-04-06T09:15:00+00:00</published>
   </entry>
 </feed>
