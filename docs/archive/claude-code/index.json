@@ -1,4 +1,24 @@
 {
+  "2026-04-07_0910": {
+    "slug": "claude-code",
+    "title": "Optimizando Claude Code",
+    "summary": "Claude Code es una herramienta poderosa para sysadmins y DevOps engineers, pero requiere una configuración y uso adecuados para aprovechar su potencial. En este artículo, se presentan algunas best practices y configuraciones para optimizar el uso de Claude Code.",
+    "content": "\nClaude Code es una herramienta de línea de comandos (CLI) que permite a los usuarios interactuar con la inteligencia artificial de Claude. Para empezar a usar Claude Code, es necesario configurar el archivo `CLAUDE.md`, que se utiliza para almacenar instrucciones y reglas para la sesión. Se puede utilizar el comando `claude init` para crear un archivo `CLAUDE.md` básico.\n\nUna de las características más útiles de Claude Code es la capacidad de crear habilidades personalizadas utilizando el comando `claude skill`. Esto permite a los usuarios crear habilidades específicas para sus necesidades, como la creación de un skill para describir principios de diseño. Para crear un skill, se puede utilizar el comando `claude skill --create <nombre_del_skill>`, seguido de la descripción del skill.\n\nOtra característica importante de Claude Code es la capacidad de utilizar hooks para automatizar tareas. Los hooks se pueden configurar en el archivo `CLAUDE.md` utilizando la sintaxis `hook <nombre_del_hook> <comando>`. Por ejemplo, se puede crear un hook para ejecutar un comando específico al inicio de cada sesión utilizando `hook start <comando>`.\n\nSin embargo, es importante tener en cuenta que Claude Code puede tener algunos problemas de estabilidad, como se ha reportado en algunas fuentes. Por ejemplo, se ha reportado que la versión Opus 4.6 de Claude Code puede tener problemas de degradación del servidor, lo que puede causar que las sesiones se bloqueen durante varios minutos. Para solucionar este problema, se puede intentar utilizar el comando `claude restart` para reiniciar la sesión.\n\nEn resumen, Claude Code es una herramienta poderosa que requiere una configuración y uso adecuados para aprovechar su potencial. Al seguir las best practices y configuraciones presentadas en este artículo, los usuarios pueden optimizar su uso de Claude Code y aprovechar al máximo sus características.\n\nFinalmente, es importante mencionar que existen varios recursos disponibles para aprender a utilizar Claude Code, como el kit de desarrollador para Claude Code, que proporciona una guía detallada para aprender a utilizar la herramienta. También se pueden encontrar tutoriales y guías en línea que proporcionan información adicional sobre cómo utilizar Claude Code de manera efectiva.\n\n",
+    "sources": [
+      {
+        "title": "anthropics/claude-plugins-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "title": "Long-running Claude for scientific computing",
+        "url": "https://www.anthropic.com/research/long-running-Claude"
+      },
+      {
+        "title": "Claude Code Best Practices",
+        "url": "https://medium.com/ux-planet/claude-code-best-practices-28609653abcf"
+      }
+    ]
+  },
   "2026-04-03_0901": {
     "slug": "claude-code",
     "title": "Mejoras y Novedades en Claude Code",

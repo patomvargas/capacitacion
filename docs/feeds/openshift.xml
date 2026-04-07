@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-06T09:17:01.600267+00:00</updated>
+  <updated>2026-04-07T09:11:31.071702+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -152,5 +152,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-03_0901.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de las aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, así como algunas best practices para su uso efectivo.</summary>
     <published>2026-04-03T09:01:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-07_0910.html</id>
+    <title>OpenShift 4: Mejoras y Novedades</title>
+    <updated>2026-04-07T09:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4 es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para desarrolladores y administradores de sistemas. En la versión 4.21, se han incluido mejoras en la escalabilidad, la migración y la seguridad. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc scale&lt;/code&gt; para escalar los pods y los servicios de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más interesantes es la integración con la inteligencia artificial (AI) para mejorar la eficiencia y la automatización de los procesos. Se puede utilizar el operador &lt;code&gt;OperatorHub&lt;/code&gt; para instalar y configurar los operadores de AI en el cluster. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc create -f https://operatorhub.io/install/ai-operator&lt;/code&gt; para instalar el operador de AI.&lt;/p&gt;
+&lt;p&gt;La migración de clústeres es otro tema importante en OpenShift 4. Se puede utilizar la herramienta &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar los clústeres de manera más segura y eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc adm migrate --from=old-cluster --to=new-cluster&lt;/code&gt; para migrar los clústeres. Es importante mencionar que la seguridad es un tema fundamental en OpenShift 4, y se pueden utilizar herramientas como &lt;code&gt;OAuth&lt;/code&gt; para autenticar y autorizar a los usuarios.&lt;/p&gt;
+&lt;p&gt;En cuanto a la monitorización, se puede utilizar la herramienta &lt;code&gt;oc get metrics&lt;/code&gt; para obtener información sobre el rendimiento y la utilización de los recursos en el clúster. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc get metrics --all-namespaces&lt;/code&gt; para obtener información sobre todos los namespaces en el clúster.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4 es una plataforma potente y flexible que ofrece una amplia gama de herramientas y características para desarrolladores y administradores de sistemas. Con las mejoras en la escalabilidad, la migración y la seguridad, es una excelente opción para aquellos que buscan una plataforma de contenedores segura y eficiente.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que la documentación oficial de OpenShift 4 es una excelente fuente de información para aquellos que buscan aprender más sobre esta plataforma. Se pueden encontrar tutoriales, guías y documentación detallada sobre las características y herramientas de OpenShift 4.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar que la automatización y la monitorización son fundamentales para mantener un clúster de OpenShift 4 seguro y eficiente. Se pueden utilizar herramientas como &lt;code&gt;Ansible&lt;/code&gt; y &lt;code&gt;Prometheus&lt;/code&gt; para automatizar y monitorizar los procesos en el clúster.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:4419"&gt;RHSA-2026:4419&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency"&gt;Red Hat OpenShift 4.21&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5873"&gt;RHSA-2026:5873&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-07_0910.html"/>
+    <summary>OpenShift 4 ofrece mejoras en escalabilidad, migración y seguridad. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta plataforma.</summary>
+    <published>2026-04-07T09:10:00+00:00</published>
   </entry>
 </feed>
