@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Router, Middlewares y Seguridad - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Router, Middlewares y Seguridad</h1>
+    <div class="meta">2026-04-08 0909 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Traefik es una herramienta poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes. Una de las características más destacadas de Traefik es su capacidad para gestionar routers y middlewares de manera flexible y escalable. Los routers en Traefik se configuran utilizando la directiva `routes` en el archivo de configuración, por ejemplo: `traefik.http.routers.my-router.rule=Host(`my-domain.com`)`.</p>
+            
+        
+            
+        
+            
+            <p>Los middlewares en Traefik se utilizan para agregar funcionalidades adicionales a los routers, como la autenticación, el rate limiting y la seguridad. Por ejemplo, se puede configurar un middleware de autenticación utilizando la directiva `traefik.http.middlewares.my-middleware.auth.basic.users`.</p>
+            
+        
+            
+        
+            
+            <p>La integración con Let's Encrypt es otra característica importante de Traefik, que permite obtener certificados SSL/TLS de manera automática y gratuita. Para configurar Let's Encrypt en Traefik, se debe agregar la directiva `traefik.certificatesResolvers.my-resolver.acme.email` y `traefik.certificatesResolvers.my-resolver.acme.storage` en el archivo de configuración.</p>
+            
+        
+            
+        
+            
+            <p>Además, Traefik ofrece soporte para protocolos TCP/UDP y la capacidad de monitorizar y analizar el tráfico utilizando herramientas de observabilidad como Prometheus y Grafana.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Traefik ofrece una variedad de características para proteger los servicios y aplicaciones, incluyendo la autenticación, la autorización y la cifrado de datos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta versátil y poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes, que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los desarrolladores y administradores de sistemas.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik-helm-chart" target="_blank">Traefik Helm Chart</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">Traefik Hub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://cosmo-edge.com/ddev-wordpress-403-forbidden-traefik-nginx-fix/" target="_blank">DDEV WordPress 403 Forbidden Fix</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-23_0904.html">&larr; 2026-03-23 0904</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

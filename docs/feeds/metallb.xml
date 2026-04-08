@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-07T09:11:31.081484+00:00</updated>
+  <updated>2026-04-08T09:10:32.353740+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -277,5 +277,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-04_0849.html"/>
     <summary>MetalLB es una implementación de equilibrio de carga de red para clústeres de Kubernetes que no se ejecutan en un proveedor de nube compatible. Ofrece una solución de software pura para el equilibrio de carga en entornos de red.</summary>
     <published>2026-04-04T08:49:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-08_0909.html</id>
+    <title>MetalLB: Load Balancer para Kubernetes</title>
+    <updated>2026-04-08T09:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es un proyecto de código abierto que proporciona un load balancer para clústeres de Kubernetes. Permite la distribución de tráfico de red entre los nodos del clúster, lo que mejora la disponibilidad y el rendimiento de las aplicaciones.&lt;/p&gt;
+&lt;p&gt;El modo L2 de MetalLB permite la distribución de tráfico de red en un mismo segmento de red, lo que reduce la complejidad de la configuración de red. Para configurar el modo L2, se puede utilizar el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;, donde &lt;code&gt;metallb-config.yaml&lt;/code&gt; es un archivo de configuración que define las opciones de MetalLB.&lt;/p&gt;
+&lt;p&gt;El modo BGP de MetalLB permite la distribución de tráfico de red entre diferentes segmentos de red, lo que permite la escalabilidad y la flexibilidad en la configuración de red. Para configurar el modo BGP, se puede utilizar el comando &lt;code&gt;kubectl apply -f metallb-bgp-config.yaml&lt;/code&gt;, donde &lt;code&gt;metallb-bgp-config.yaml&lt;/code&gt; es un archivo de configuración que define las opciones de BGP de MetalLB.&lt;/p&gt;
+&lt;p&gt;La integración de MetalLB con K8s se puede realizar mediante la creación de un objeto &lt;code&gt;MetalLB&lt;/code&gt; en el clúster de K8s. Esto se puede hacer utilizando el comando &lt;code&gt;kubectl apply -f metallb-k8s-config.yaml&lt;/code&gt;, donde &lt;code&gt;metallb-k8s-config.yaml&lt;/code&gt; es un archivo de configuración que define las opciones de integración de MetalLB con K8s.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas de MetalLB, se pueden utilizar herramientas como &lt;code&gt;tcpdump&lt;/code&gt; y &lt;code&gt;wireshark&lt;/code&gt; para analizar el tráfico de red y identificar problemas de configuración. También se pueden utilizar comandos como &lt;code&gt;kubectl logs -f metallb-controller&lt;/code&gt; para ver los registros de MetalLB y identificar problemas de configuración.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para la distribución de tráfico de red en clústeres de Kubernetes. Su configuración y uso pueden variar dependiendo de las necesidades específicas del clúster y de las aplicaciones que se ejecutan en él.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/2994"&gt;feature: Separate CRD installation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/3005"&gt;Helm chart does not allow setting `hostNetwork: false`&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@techpaul/metallb-ingress-nginx-migration-to-nginx-fabric-gateway-api-f57ff1fcfa20"&gt;MetalLB + Ingress Nginx migration to Nginx Fabric Gateway API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-08_0909.html"/>
+    <summary>MetalLB es un load balancer para Kubernetes que permite la distribución de tráfico de red en un clúster. En este artículo, se presentan las características y configuraciones de MetalLB, incluyendo el modo L2, BGP y la integración con K8s.</summary>
+    <published>2026-04-08T09:09:00+00:00</published>
   </entry>
 </feed>

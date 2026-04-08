@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-07T09:11:31.080845+00:00</updated>
+  <updated>2026-04-08T09:10:32.352526+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -63,5 +63,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-23_0904.html"/>
     <summary>Traefik ha lanzado actualizaciones de seguridad y mejoras en sus versiones 2.11 y 3.6. Estas actualizaciones abordan vulnerabilidades como la inyección de reglas en HTTPRoute y la omisión de cabeceras X-Forwarded.</summary>
     <published>2026-03-23T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-08_0909.html</id>
+    <title>Traefik: Router, Middlewares y Seguridad</title>
+    <updated>2026-04-08T09:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes. Una de las características más destacadas de Traefik es su capacidad para gestionar routers y middlewares de manera flexible y escalable. Los routers en Traefik se configuran utilizando la directiva &lt;code&gt;routes&lt;/code&gt; en el archivo de configuración, por ejemplo: &lt;code&gt;traefik.http.routers.my-router.rule=Host(&lt;/code&gt;my-domain.com&lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Los middlewares en Traefik se utilizan para agregar funcionalidades adicionales a los routers, como la autenticación, el rate limiting y la seguridad. Por ejemplo, se puede configurar un middleware de autenticación utilizando la directiva &lt;code&gt;traefik.http.middlewares.my-middleware.auth.basic.users&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La integración con Let's Encrypt es otra característica importante de Traefik, que permite obtener certificados SSL/TLS de manera automática y gratuita. Para configurar Let's Encrypt en Traefik, se debe agregar la directiva &lt;code&gt;traefik.certificatesResolvers.my-resolver.acme.email&lt;/code&gt; y &lt;code&gt;traefik.certificatesResolvers.my-resolver.acme.storage&lt;/code&gt; en el archivo de configuración.&lt;/p&gt;
+&lt;p&gt;Además, Traefik ofrece soporte para protocolos TCP/UDP y la capacidad de monitorizar y analizar el tráfico utilizando herramientas de observabilidad como Prometheus y Grafana.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Traefik ofrece una variedad de características para proteger los servicios y aplicaciones, incluyendo la autenticación, la autorización y la cifrado de datos.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta versátil y poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes, que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los desarrolladores y administradores de sistemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik-helm-chart"&gt;Traefik Helm Chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/api-management/release-notes"&gt;Traefik Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cosmo-edge.com/ddev-wordpress-403-forbidden-traefik-nginx-fix/"&gt;DDEV WordPress 403 Forbidden Fix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-08_0909.html"/>
+    <summary>Traefik es un proxy inverso y balanceador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico y la seguridad. En este artículo, se presentan las características y configuraciones clave de Traefik, incluyendo routers, middlewares y la integración con Let's Encrypt.</summary>
+    <published>2026-04-08T09:09:00+00:00</published>
   </entry>
 </feed>

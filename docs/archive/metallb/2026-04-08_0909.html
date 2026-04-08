@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Load Balancer para Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Load Balancer para Kubernetes</h1>
+    <div class="meta">2026-04-08 0909 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+            <p>MetalLB es un proyecto de código abierto que proporciona un load balancer para clústeres de Kubernetes. Permite la distribución de tráfico de red entre los nodos del clúster, lo que mejora la disponibilidad y el rendimiento de las aplicaciones.</p>
+            
+        
+            
+        
+            
+            <p>El modo L2 de MetalLB permite la distribución de tráfico de red en un mismo segmento de red, lo que reduce la complejidad de la configuración de red. Para configurar el modo L2, se puede utilizar el comando `kubectl apply -f metallb-config.yaml`, donde `metallb-config.yaml` es un archivo de configuración que define las opciones de MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>El modo BGP de MetalLB permite la distribución de tráfico de red entre diferentes segmentos de red, lo que permite la escalabilidad y la flexibilidad en la configuración de red. Para configurar el modo BGP, se puede utilizar el comando `kubectl apply -f metallb-bgp-config.yaml`, donde `metallb-bgp-config.yaml` es un archivo de configuración que define las opciones de BGP de MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>La integración de MetalLB con K8s se puede realizar mediante la creación de un objeto `MetalLB` en el clúster de K8s. Esto se puede hacer utilizando el comando `kubectl apply -f metallb-k8s-config.yaml`, donde `metallb-k8s-config.yaml` es un archivo de configuración que define las opciones de integración de MetalLB con K8s.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas de MetalLB, se pueden utilizar herramientas como `tcpdump` y `wireshark` para analizar el tráfico de red y identificar problemas de configuración. También se pueden utilizar comandos como `kubectl logs -f metallb-controller` para ver los registros de MetalLB y identificar problemas de configuración.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para la distribución de tráfico de red en clústeres de Kubernetes. Su configuración y uso pueden variar dependiendo de las necesidades específicas del clúster y de las aplicaciones que se ejecutan en él.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/2994" target="_blank">feature: Separate CRD installation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3005" target="_blank">Helm chart does not allow setting `hostNetwork: false`</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@techpaul/metallb-ingress-nginx-migration-to-nginx-fabric-gateway-api-f57ff1fcfa20" target="_blank">MetalLB + Ingress Nginx migration to Nginx Fabric Gateway API</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-04_0849.html">&larr; 2026-04-04 0849</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

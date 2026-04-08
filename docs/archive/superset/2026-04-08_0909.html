@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Herramienta de Visualización de Datos - Superset</title>
+    <title>Superset: Personalización y Mejoras - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,54 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Herramienta de Visualización de Datos</h1>
-    <div class="meta">2026-03-31 0907 · Superset</div>
+    <h1>Superset: Personalización y Mejoras</h1>
+    <div class="meta">2026-04-08 0909 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta poderosa para la visualización de datos y creación de dashboards. Con la versión 6.0.0, se han incorporado varias mejoras y novedades, como el soporte oficial para el Extension Framework (.supx). Esto permite a los desarrolladores crear extensiones personalizadas para Superset utilizando el comando `superset db upgrade` para actualizar la base de datos.</p>
+            <p>Superset es una herramienta poderosa para la visualización y exploración de datos, y su comunidad de desarrolladores está constantemente trabajando en mejorar y personalizar la plataforma. Una de las últimas novedades es la capacidad de cambiar el logotipo de Superset, lo que se puede hacer mediante la configuración del parámetro `APP_ICON` en el archivo `superset_config.py`. Por ejemplo, se puede utilizar el comando `export APP_ICON='https://example.com/logo.png'` para establecer un logotipo personalizado.</p>
             
         
             
         
             
-        
-            
-            <p>La versión 6.0.0 de Superset también incluye mejoras en la conexión con bases de datos, como Oracle, utilizando el comando `pip install cx_Oracle` para instalar el driver de Oracle. Además, se han solucionado problemas con la creación de gráficos de tabla, donde los prefijos y sufijos no se agregaban correctamente.</p>
+            <p>Para aquellos que deseen personalizar aún más su experiencia con Superset, se puede utilizar el Marco de Extensiones (Extension Framework), que permite a los desarrolladores crear y compartir sus propias extensiones para la plataforma. Sin embargo, es importante tener en cuenta que el soporte oficial para el Marco de Extensiones en Superset 6.0.0 aún no ha sido confirmado.</p>
             
         
             
         
             
-        
-            
-            <p>Para crear un dashboard en Superset, se puede utilizar el comando `superset init` para inicializar el proyecto, y luego `superset run` para ejecutar el servidor de desarrollo. Luego, se puede acceder al dashboard mediante la URL `http://localhost:8088` y crear gráficos y dashboards personalizados utilizando las herramientas de Superset.</p>
+            <p>En cuanto a la administración de Superset, se pueden utilizar herramientas como Helm para gestionar y desplegar la plataforma de manera eficiente. Por ejemplo, se puede utilizar el comando `helm install superset` para instalar Superset en un clúster de Kubernetes. Además, se pueden utilizar plantillas de Jinja para personalizar los dashboards y los informes de Superset.</p>
             
         
             
         
             
-        
-            
-            <p>La comunidad de Superset también ha estado trabajando en la creación de una guía completa para desarrolladores, que incluye tutoriales y ejemplos para crear aplicaciones personalizadas con Superset. Además, se han agregado nuevas características, como el soporte para OpenSearch y la refactorización de la carta de Helm.</p>
+            <p>Otra de las características destacadas de Superset es su capacidad para trabajar con conjuntos de datos y SQL Lab. Los desarrolladores pueden utilizar el comando `superset db upgrade` para actualizar la base de datos de Superset y asegurarse de que esté en sincronía con los cambios en los conjuntos de datos. Además, se pueden utilizar consultas SQL para analizar y visualizar los datos en Superset.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, la versión 6.0.0 de Superset ofrece varias mejoras y novedades para la visualización de datos y creación de dashboards. Con su arquitectura flexible y personalizable, Superset es una herramienta ideal para desarrolladores y administradores de sistemas que buscan crear aplicaciones de visualización de datos personalizadas.</p>
+            <p>En resumen, Superset es una plataforma de visualización y exploración de datos que ofrece una gran cantidad de personalización y mejoras continuas. Ya sea que desees cambiar el logotipo, crear extensiones personalizadas o administrar la plataforma de manera eficiente, Superset ofrece una variedad de herramientas y características para ayudarte a aprovechar al máximo tus datos.</p>
             
         
             
         
             
-        
-            
-            <p>Para obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset en `https://superset.apache.org/` y la comunidad de Superset en `https://github.com/apache/superset`.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de Superset es muy activa y ofrece una gran cantidad de recursos y documentación para ayudar a los desarrolladores a empezar a trabajar con la plataforma. Ya sea que desees aprender sobre las últimas novedades o buscar ayuda para resolver un problema, la comunidad de Superset es un excelente lugar para empezar.</p>
             
         
     </div>
@@ -115,27 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/38607" target="_blank">Superset 6.0.0</a>
+                <a href="https://github.com/apache/superset/discussions/38820" target="_blank">How can i change logo 'Superset' (APP_ICON)?</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37793" target="_blank">Conexión con Oracle</a>
+                <a href="https://github.com/apache/superset/discussions/38607" target="_blank">Does Superset 6.0.0 officially support the Extension Framework (.supx)?</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/37854" target="_blank">Gráficos de tabla</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/apache/superset/issues/38719" target="_blank">Soporte para OpenSearch</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/apache/superset/pull/38597" target="_blank">Refactorización de la carta de Helm</a>
+                <a href="https://github.com/apache/superset/issues/38597" target="_blank">feat(helm): Helm chart refactor</a>
                 
             </li>
             
@@ -146,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-27_0900.html">&larr; 2026-03-27 0900</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-31_0907.html">&larr; 2026-03-31 0907</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-08_0909.html">2026-04-08 0909 &rarr;</a>
             
         </div>
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-07T09:11:31.079853+00:00</updated>
+  <updated>2026-04-08T09:10:32.351174+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -163,5 +163,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-03-31_0907.html"/>
     <summary>Superset es una herramienta de código abierto para la visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejoras en la versión 6.0.0 de Superset.</summary>
     <published>2026-03-31T09:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-04-08_0909.html</id>
+    <title>Superset: Personalización y Mejoras</title>
+    <updated>2026-04-08T09:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta poderosa para la visualización y exploración de datos, y su comunidad de desarrolladores está constantemente trabajando en mejorar y personalizar la plataforma. Una de las últimas novedades es la capacidad de cambiar el logotipo de Superset, lo que se puede hacer mediante la configuración del parámetro &lt;code&gt;APP_ICON&lt;/code&gt; en el archivo &lt;code&gt;superset_config.py&lt;/code&gt;. Por ejemplo, se puede utilizar el comando &lt;code&gt;export APP_ICON='https://example.com/logo.png'&lt;/code&gt; para establecer un logotipo personalizado.&lt;/p&gt;
+&lt;p&gt;Para aquellos que deseen personalizar aún más su experiencia con Superset, se puede utilizar el Marco de Extensiones (Extension Framework), que permite a los desarrolladores crear y compartir sus propias extensiones para la plataforma. Sin embargo, es importante tener en cuenta que el soporte oficial para el Marco de Extensiones en Superset 6.0.0 aún no ha sido confirmado.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, se pueden utilizar herramientas como Helm para gestionar y desplegar la plataforma de manera eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;helm install superset&lt;/code&gt; para instalar Superset en un clúster de Kubernetes. Además, se pueden utilizar plantillas de Jinja para personalizar los dashboards y los informes de Superset.&lt;/p&gt;
+&lt;p&gt;Otra de las características destacadas de Superset es su capacidad para trabajar con conjuntos de datos y SQL Lab. Los desarrolladores pueden utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos de Superset y asegurarse de que esté en sincronía con los cambios en los conjuntos de datos. Además, se pueden utilizar consultas SQL para analizar y visualizar los datos en Superset.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una plataforma de visualización y exploración de datos que ofrece una gran cantidad de personalización y mejoras continuas. Ya sea que desees cambiar el logotipo, crear extensiones personalizadas o administrar la plataforma de manera eficiente, Superset ofrece una variedad de herramientas y características para ayudarte a aprovechar al máximo tus datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Superset es muy activa y ofrece una gran cantidad de recursos y documentación para ayudar a los desarrolladores a empezar a trabajar con la plataforma. Ya sea que desees aprender sobre las últimas novedades o buscar ayuda para resolver un problema, la comunidad de Superset es un excelente lugar para empezar.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38820"&gt;How can i change logo 'Superset' (APP_ICON)?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38607"&gt;Does Superset 6.0.0 officially support the Extension Framework (.supx)?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/38597"&gt;feat(helm): Helm chart refactor&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-08_0909.html"/>
+    <summary>Superset es una plataforma de visualización y exploración de datos que ofrece personalización y mejoras continuas. En este artículo, se presentan algunas de las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
+    <published>2026-04-08T09:09:00+00:00</published>
   </entry>
 </feed>

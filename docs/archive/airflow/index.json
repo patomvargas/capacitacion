@@ -1,4 +1,24 @@
 {
+  "2026-04-08_0909": {
+    "slug": "airflow",
+    "title": "Apache Airflow 3.x: Mejoras y Best Practices",
+    "summary": "Apache Airflow 3.x ofrece mejoras significativas en la gestión de flujos de trabajo y la colaboración entre equipos. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta herramienta.",
+    "content": "Apache Airflow es una plataforma para la creación, programación y monitoreo de flujos de trabajo. Con la versión 3.x, se han introducido mejoras significativas en la gestión de flujos de trabajo y la colaboración entre equipos. Una de las novedades más destacadas es la introducción de la API TaskFlow, que permite la creación de flujos de trabajo de manera más flexible y escalable.\n\n \nLa API TaskFlow permite la creación de flujos de trabajo mediante la definición de tareas y la configuración de sus dependencias. Esto se puede lograr mediante el uso de la función `expand()`, que permite la creación de tareas dinámicas. Por ejemplo, se puede crear un flujo de trabajo que ejecute una tarea para cada elemento de una lista utilizando el siguiente código: `task = TaskGroup('mi_tarea', [Task('tarea_1'), Task('tarea_2')])`.\n\n \nOtra de las mejoras significativas en Apache Airflow 3.x es la introducción de la función de ejecución distribuida, que permite la ejecución de flujos de trabajo en múltiples máquinas. Esto se puede lograr mediante la configuración de un cluster de Airflow y la definición de las tareas que se ejecutarán en cada máquina. Por ejemplo, se puede configurar un cluster de Airflow utilizando el comando `airflow db init` y luego definir las tareas que se ejecutarán en cada máquina utilizando el comando `airflow tasks create`.\n\n \nPara aprovechar al máximo las funcionalidades de Apache Airflow 3.x, es importante seguir las best practices recomendadas. Una de las más importantes es la creación de flujos de trabajo como código, lo que permite la versión y el monitoreo de los cambios en el flujo de trabajo. Otra best practice es la utilización de la función de ejecución distribuida para escalar los flujos de trabajo y mejorar el rendimiento.\n\n \nEn resumen, Apache Airflow 3.x ofrece mejoras significativas en la gestión de flujos de trabajo y la colaboración entre equipos. La introducción de la API TaskFlow, la función de ejecución distribuida y las best practices recomendadas permiten a los equipos de desarrollo crear flujos de trabajo escalables y eficientes. Para más información, se pueden consultar las fuentes citadas a continuación.\n\n \nLas fuentes citadas en este artículo incluyen la documentación oficial de Apache Airflow, así como artículos y tutoriales de expertos en la materia. Estas fuentes ofrecen información detallada sobre la configuración y el uso de Apache Airflow 3.x, así como consejos y trucos para aprovechar al máximo sus funcionalidades.",
+    "sources": [
+      {
+        "title": "Apache Airflow 3.2.0",
+        "url": "https://airflow.apache.org/blog/airflow-3.2.0/"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-github",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html"
+      },
+      {
+        "title": "Advanced Pipeline Development with Apache Airflow 3.x",
+        "url": "https://medium.com/towards-data-engineering/advanced-pipeline-development-with-apache-airflow-3-x-5fee831d2b8f"
+      }
+    ]
+  },
   "2026-04-04_0849": {
     "slug": "airflow",
     "title": "Airflow 2.x: Mejores Prácticas y Novedades",
