@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-08T09:10:32.357210+00:00</updated>
+  <updated>2026-04-09T09:17:03.271785+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -46,5 +46,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-05_0852.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
     <published>2026-04-05T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-09_0915.html</id>
+    <title>Terraform: Mejores prácticas y novedades</title>
+    <updated>2026-04-09T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar las credenciales de acceso a la nube. Luego, se puede crear un archivo &lt;code&gt;main.tf&lt;/code&gt; con la configuración de la infraestructura deseada y ejecutar los comandos &lt;code&gt;terraform init&lt;/code&gt;, &lt;code&gt;terraform plan&lt;/code&gt; y &lt;code&gt;terraform apply&lt;/code&gt; para crear la infraestructura.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas en Terraform es la gestión de estado. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado &lt;code&gt;terraform.tfstate&lt;/code&gt;. Es importante gestionar este archivo de manera adecuada para evitar conflictos y errores. Se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; para gestionar el estado de la infraestructura. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform state list&lt;/code&gt; para listar todos los recursos creados.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Terraform es la utilización de proveedores y módulos. Los proveedores son interfaces que permiten a Terraform interactuar con diferentes servicios de nube y plataformas. Los módulos son conjuntos de configuraciones predefinidas que se pueden reutilizar en diferentes proyectos. Se pueden utilizar comandos como &lt;code&gt;terraform provider&lt;/code&gt; y &lt;code&gt;terraform module&lt;/code&gt; para gestionar los proveedores y módulos. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform provider aws&lt;/code&gt; para configurar el proveedor de AWS.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se han producido algunos cambios en la gestión de claves PGP en Terraform. Según el issue #38273 en el repositorio de GitHub de HashiCorp, se ha producido un problema con la verificación de firmas en herramientas que utilizan la biblioteca &lt;code&gt;go-crypto/openpgp/v2&lt;/code&gt;. Para solucionar este problema, se puede utilizar el comando &lt;code&gt;gpg --export&lt;/code&gt; para exportar la clave PGP y luego reimportarla en Terraform.&lt;/p&gt;
+&lt;p&gt;Además, se han publicado algunas guías y tutoriales sobre cómo utilizar Terraform de manera efectiva. Por ejemplo, se puede consultar la guía de mejores prácticas de Terraform en el sitio web de DEV Community, que proporciona consejos y trucos para utilizar Terraform de manera eficiente. También se puede consultar el tutorial de deploy de un servidor web en AWS utilizando Terraform, que proporciona una guía paso a paso para crear y desplegar una infraestructura en la nube.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube. Al seguir las mejores prácticas y utilizar las características de Terraform de manera efectiva, se puede crear y gestionar infraestructuras de manera eficiente y escalable. Se pueden utilizar comandos como &lt;code&gt;terraform init&lt;/code&gt;, &lt;code&gt;terraform plan&lt;/code&gt; y &lt;code&gt;terraform apply&lt;/code&gt; para crear y gestionar la infraestructura, y se pueden utilizar proveedores y módulos para interactuar con diferentes servicios de nube y plataformas.&lt;/p&gt;
+&lt;p&gt;Se pueden encontrar más recursos y tutoriales sobre Terraform en las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38273"&gt;Terraform Issue #38273&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/thesius_code_7a136ae718b7b/terraform-starter-kit-terraform-best-practices-guide-3c49"&gt;Terraform Best Practices Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/naomi_ansah_d792faf7a1276/deploying-a-web-server-on-aws-using-terraform-beginner-friendly-guide-42c"&gt;Deploying a Web Server on AWS Using Terraform&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-09_0915.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, proveedores y módulos.</summary>
+    <published>2026-04-09T09:15:00+00:00</published>
   </entry>
 </feed>

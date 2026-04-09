@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Optimización de PostgreSQL - PostgreSQL</title>
+    <title>Mejoras en PostgreSQL para sysadmins y DevOps - PostgreSQL</title>
     <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-04-05 0852 · PostgreSQL</div>
+    <h1>Mejoras en PostgreSQL para sysadmins y DevOps</h1>
+    <div class="meta">2026-04-09 0915 · PostgreSQL</div>
 
     <div class="content">
         
@@ -66,37 +66,33 @@
             
         
             
-            <p>La optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
+            <p>PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que ha ganado una reputación sólida por su confiabilidad, robustez y rendimiento. Recientemente, el equipo de desarrollo de PostgreSQL ha lanzado actualizaciones para todas sus versiones soportadas, incluyendo 18.3, 17.9, 16.13, 15.17 y 14.22. Estas actualizaciones incluyen mejoras en la gestión de bloqueos y la seguridad.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en múltiples servidores, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -D /var/lib/postgresql/replica`.</p>
+            <p>Una de las mejoras más destacadas es la optimización del bloqueo de filas, que se logra mediante el uso de `SELECT FOR UPDATE`. Sin embargo, es importante tener en cuenta que este comando puede ser perjudicial en ciertas situaciones, como cuando se utiliza en transacciones que no modifican la clave principal o las restricciones únicas. En su lugar, se puede utilizar `SELECT FOR SHARE` para obtener un bloqueo compartido en la fila.</p>
             
         
             
         
             
-            <p>El monitoreo es también fundamental para asegurar el rendimiento de tu base de datos. Puedes utilizar herramientas como `pg_stat` para monitorear el rendimiento de tus consultas y identificar problemas de rendimiento. Por ejemplo: `SELECT * FROM pg_stat_user_tables;`. Esta consulta te permite ver el número de lecturas y escrituras en cada tabla, lo que te puede ayudar a identificar problemas de rendimiento.</p>
+            <p>Para aprovechar al máximo las mejoras en la gestión de bloqueos, es importante configurar adecuadamente el parámetro `max_locks_per_transaction`. Este parámetro controla el número máximo de bloqueos que se pueden adquirir en una transacción. Se puede configurar mediante el comando `ALTER SYSTEM SET max_locks_per_transaction = 256;`. Además, es recomendable utilizar `EXPLAIN (ANALYZE)` para analizar el plan de ejecución de las consultas y optimizar el rendimiento.</p>
             
         
             
         
             
-            <p>La configuración de PostgreSQL es también importante para asegurar el rendimiento. Puedes configurar parámetros como `shared_buffers` y `effective_cache_size` para mejorar el rendimiento de tus consultas. Por ejemplo: `ALTER SYSTEM SET shared_buffers TO '512MB';`. Esta configuración establece el tamaño de los búferes compartidos en 512MB, lo que puede mejorar el rendimiento de tus consultas.</p>
+            <p>En cuanto a la seguridad, las actualizaciones incluyen la corrección de varias vulnerabilidades y la mejora de la autenticación. Es importante actualizar a la versión más reciente para asegurarse de tener las últimas correcciones de seguridad. Además, se puede utilizar `pg_stat_statements` para monitorear el rendimiento de las consultas y detectar posibles problemas de seguridad.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la versión más reciente de PostgreSQL, la 18.3, incluye mejoras en la indexación y la replicación. Puedes actualizar a esta versión para aprovechar estas mejoras. Por ejemplo: `sudo apt-get install postgresql-18`.</p>
+            <p>En resumen, las actualizaciones de PostgreSQL ofrecen mejoras significativas en la gestión de bloqueos y la seguridad. Es importante configurar adecuadamente los parámetros del sistema y utilizar las herramientas adecuadas para monitorear y optimizar el rendimiento.</p>
             
         
-            
-        
-            
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de los parámetros de la base de datos.</p>
             
         
     </div>
@@ -107,17 +103,17 @@
         <ul>
             
             <li>
-                <a href="https://pganalyze.com/blog" target="_blank">Postgres Monitoring, Database Optimization and more - pganalyze</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/?lang=en" target="_blank">PostgreSQL: The world's most advanced open source database</a>
+                <a href="https://www.cybertec-postgresql.com/en/select-for-update-considered-harmful-postgresql/" target="_blank">SELECT FOR UPDATE considered harmful in PostgreSQL</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/" target="_blank">CloudNativePG 1.29.0 Released! - PostgreSQL</a>
+                <a href="https://www.postgresql.org/about/newsarchive/-/20260319/" target="_blank">PostgreSQL: News Archive</a>
                 
             </li>
             
@@ -128,12 +124,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-03-28_0851.html">&larr; 2026-03-28 0851</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-05_0852.html">&larr; 2026-04-05 0852</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-09_0915.html">2026-04-09 0915 &rarr;</a>
             
         </div>
     </div>

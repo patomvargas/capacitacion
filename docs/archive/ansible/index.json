@@ -1,4 +1,24 @@
 {
+  "2026-04-09_0915": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las novedades y mejores prácticas para utilizar Ansible de manera efectiva.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de 'Infrastructure as Code' (IaC). Esto significa que la configuración de la infraestructura se define en archivos de texto, lo que permite una gestión y versión más fácil de la configuración. Para empezar a utilizar Ansible, es necesario instalar el paquete `ansible-core` y configurar el archivo `hosts` con la información de los servidores que se desean gestionar.\n\n \nUna de las características más importantes de Ansible es la posibilidad de utilizar 'playbooks', que son archivos que definen una serie de tareas que se deben ejecutar en un servidor o grupo de servidores. Los playbooks se pueden crear utilizando el lenguaje YAML y se pueden ejecutar utilizando el comando `ansible-playbook`. Por ejemplo, para ejecutar un playbook llamado `mi_playbook.yml`, se puede utilizar el comando `ansible-playbook mi_playbook.yml`.\n\n \nOtra característica importante de Ansible es la posibilidad de utilizar 'roles', que son conjuntos de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Los roles se pueden crear y compartir en la comunidad de Ansible, lo que facilita la colaboración y la reutilización de código. Para utilizar un rol en un playbook, se puede agregar la línea `roles: - mi_rol` en el archivo de playbook.\n\n \nAdemás, Ansible proporciona una herramienta llamada `AWX` (Ansible Workstation) que permite gestionar y ejecutar playbooks de manera centralizada. AWX es una interfaz web que permite a los administradores de sistemas y desarrolladores crear, ejecutar y gestionar playbooks de manera sencilla. Para instalar AWX, se puede utilizar el comando `ansible-galaxy install awx.awx`.\n\n \nEn cuanto a las novedades, la versión 14.0.0a1 de Ansible incluye cambios importantes en la compatibilidad con Python 3.10 y la adición de nuevas características como la posibilidad de utilizar `ansible-core` con `molecule`. Además, la versión 26.4.0 de `molecule` incluye mejoras en la compatibilidad con Ansible y la adición de nuevas características como la posibilidad de utilizar `docker` como proveedor de infraestructura.\n\n \nPor último, es importante mencionar que Ansible es una herramienta muy flexible y personalizable, por lo que es importante leer la documentación oficial y buscar ayuda en la comunidad de Ansible para obtener la mayor cantidad de información posible sobre cómo utilizarla de manera efectiva.",
+    "sources": [
+      {
+        "title": "Ansible community package 14.0.0a1 (Pre-Release)",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a1-pre-release/45647"
+      },
+      {
+        "title": "Release Announcement: molecule v26.4.0",
+        "url": "https://forum.ansible.com/t/release-announcement-molecule-v26-4-0/45634"
+      },
+      {
+        "title": "community.aws Release Notes",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html"
+      }
+    ]
+  },
   "2026-04-05_0852": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

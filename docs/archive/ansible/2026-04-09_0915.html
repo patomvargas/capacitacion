@@ -58,45 +58,53 @@
     </div>
 
     <h1>Ansible: Automatización de Infraestructura</h1>
-    <div class="meta">2026-04-05 0852 · Ansible</div>
+    <div class="meta">2026-04-09 0915 · Ansible</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Ansible es una herramienta de automatización de infraestructura que se basa en la idea de Infrastructure as Code (IaC). Esto significa que los administradores de sistemas y desarrolladores pueden crear y gestionar entornos de manera programática, utilizando playbooks y roles para definir la configuración deseada.</p>
+            <p>Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de 'Infrastructure as Code' (IaC). Esto significa que la configuración de la infraestructura se define en archivos de texto, lo que permite una gestión y versión más fácil de la configuración. Para empezar a utilizar Ansible, es necesario instalar el paquete `ansible-core` y configurar el archivo `hosts` con la información de los servidores que se desean gestionar.</p>
             
         
             
         
             
-            <p>Un ejemplo de cómo utilizar Ansible para crear un servidor web es mediante el uso del módulo `apache2` para instalar y configurar el servidor web Apache. Esto se puede hacer mediante el comando `ansible-playbook -i inventory.ini playbook.yml`, donde `playbook.yml` es el archivo que define la configuración del servidor web.</p>
+        
+            
+            <p>Una de las características más importantes de Ansible es la posibilidad de utilizar 'playbooks', que son archivos que definen una serie de tareas que se deben ejecutar en un servidor o grupo de servidores. Los playbooks se pueden crear utilizando el lenguaje YAML y se pueden ejecutar utilizando el comando `ansible-playbook`. Por ejemplo, para ejecutar un playbook llamado `mi_playbook.yml`, se puede utilizar el comando `ansible-playbook mi_playbook.yml`.</p>
             
         
             
         
             
-            <p>Para gestionar la seguridad de los servidores, Ansible proporciona la herramienta `ansible-vault`, que permite cifrar y descifrar archivos y variables de manera segura. Por ejemplo, se puede utilizar el comando `ansible-vault encrypt_string` para cifrar una cadena de texto.</p>
+        
+            
+            <p>Otra característica importante de Ansible es la posibilidad de utilizar 'roles', que son conjuntos de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Los roles se pueden crear y compartir en la comunidad de Ansible, lo que facilita la colaboración y la reutilización de código. Para utilizar un rol en un playbook, se puede agregar la línea `roles: - mi_rol` en el archivo de playbook.</p>
             
         
             
         
             
-            <p>Además, Ansible proporciona la herramienta `AWX/Tower` para gestionar y automatizar la ejecución de playbooks de manera centralizada. Esto permite a los administradores de sistemas y desarrolladores crear y gestionar entornos de manera eficiente y escalable.</p>
+        
+            
+            <p>Además, Ansible proporciona una herramienta llamada `AWX` (Ansible Workstation) que permite gestionar y ejecutar playbooks de manera centralizada. AWX es una interfaz web que permite a los administradores de sistemas y desarrolladores crear, ejecutar y gestionar playbooks de manera sencilla. Para instalar AWX, se puede utilizar el comando `ansible-galaxy install awx.awx`.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades, se han realizado cambios en las colecciones de Ansible, como la colección `community.aws`, que ha sido actualizada para incluir nuevas características y mejoras. También se ha aumentado la versión mínima requerida de `boto3` y `botocore` a 1.34.0 para alignar con la última versión de AWS SDK.</p>
+        
+            
+            <p>En cuanto a las novedades, la versión 14.0.0a1 de Ansible incluye cambios importantes en la compatibilidad con Python 3.10 y la adición de nuevas características como la posibilidad de utilizar `ansible-core` con `molecule`. Además, la versión 26.4.0 de `molecule` incluye mejoras en la compatibilidad con Ansible y la adición de nuevas características como la posibilidad de utilizar `docker` como proveedor de infraestructura.</p>
             
         
             
         
             
-            <p>Por último, es importante mencionar que Ansible es una herramienta en constante evolución, por lo que es importante mantenerse actualizado con las últimas novedades y mejores prácticas. Esto puede hacerse mediante la consulta de la documentación oficial de Ansible y la participación en la comunidad de desarrolladores y administradores de sistemas.</p>
+        
+            
+            <p>Por último, es importante mencionar que Ansible es una herramienta muy flexible y personalizable, por lo que es importante leer la documentación oficial y buscar ayuda en la comunidad de Ansible para obtener la mayor cantidad de información posible sobre cómo utilizarla de manera efectiva.</p>
             
         
     </div>
@@ -107,22 +115,17 @@
         <ul>
             
             <li>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a1-pre-release/45647" target="_blank">Ansible community package 14.0.0a1 (Pre-Release)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/release-announcement-molecule-v26-4-0/45634" target="_blank">Release Announcement: molecule v26.4.0</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://docs.ansible.com/projects/ansible/latest/collections/community/aws/docsite/CHANGELOG.html" target="_blank">community.aws Release Notes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html" target="_blank">amazon.aws Release Notes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://pypi.org/project/ansible-dev-tools/" target="_blank">ansible-dev-tools</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@omarelfarsaoui/set-it-up-once-test-it-properly-and-let-the-system-handle-the-rest-5a364b58ee5e" target="_blank">Set it up once, test it properly, and let the system handle the rest</a>
                 
             </li>
             
@@ -133,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-01_0913.html">&larr; 2026-04-01 0913</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-05_0852.html">&larr; 2026-04-05 0852</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-09_0915.html">2026-04-09 0915 &rarr;</a>
             
         </div>
     </div>

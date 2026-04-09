@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-08T09:10:32.354984+00:00</updated>
+  <updated>2026-04-09T09:17:03.269168+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -125,5 +125,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-05_0852.html"/>
     <summary>Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas de indexación, replicación y monitoreo. Descubre cómo mejorar la eficiencia de tus consultas y reducir los tiempos de respuesta.</summary>
     <published>2026-04-05T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-09_0915.html</id>
+    <title>Mejoras en PostgreSQL para sysadmins y DevOps</title>
+    <updated>2026-04-09T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que ha ganado una reputación sólida por su confiabilidad, robustez y rendimiento. Recientemente, el equipo de desarrollo de PostgreSQL ha lanzado actualizaciones para todas sus versiones soportadas, incluyendo 18.3, 17.9, 16.13, 15.17 y 14.22. Estas actualizaciones incluyen mejoras en la gestión de bloqueos y la seguridad.&lt;/p&gt;
+&lt;p&gt;Una de las mejoras más destacadas es la optimización del bloqueo de filas, que se logra mediante el uso de &lt;code&gt;SELECT FOR UPDATE&lt;/code&gt;. Sin embargo, es importante tener en cuenta que este comando puede ser perjudicial en ciertas situaciones, como cuando se utiliza en transacciones que no modifican la clave principal o las restricciones únicas. En su lugar, se puede utilizar &lt;code&gt;SELECT FOR SHARE&lt;/code&gt; para obtener un bloqueo compartido en la fila.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las mejoras en la gestión de bloqueos, es importante configurar adecuadamente el parámetro &lt;code&gt;max_locks_per_transaction&lt;/code&gt;. Este parámetro controla el número máximo de bloqueos que se pueden adquirir en una transacción. Se puede configurar mediante el comando &lt;code&gt;ALTER SYSTEM SET max_locks_per_transaction = 256;&lt;/code&gt;. Además, es recomendable utilizar &lt;code&gt;EXPLAIN (ANALYZE)&lt;/code&gt; para analizar el plan de ejecución de las consultas y optimizar el rendimiento.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, las actualizaciones incluyen la corrección de varias vulnerabilidades y la mejora de la autenticación. Es importante actualizar a la versión más reciente para asegurarse de tener las últimas correcciones de seguridad. Además, se puede utilizar &lt;code&gt;pg_stat_statements&lt;/code&gt; para monitorear el rendimiento de las consultas y detectar posibles problemas de seguridad.&lt;/p&gt;
+&lt;p&gt;En resumen, las actualizaciones de PostgreSQL ofrecen mejoras significativas en la gestión de bloqueos y la seguridad. Es importante configurar adecuadamente los parámetros del sistema y utilizar las herramientas adecuadas para monitorear y optimizar el rendimiento.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cybertec-postgresql.com/en/select-for-update-considered-harmful-postgresql/"&gt;SELECT FOR UPDATE considered harmful in PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/-/20260319/"&gt;PostgreSQL: News Archive&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-09_0915.html"/>
+    <summary>PostgreSQL ha lanzado actualizaciones para todas sus versiones soportadas, incluyendo 18.3, 17.9, 16.13, 15.17 y 14.22. Estas actualizaciones incluyen mejoras en la gestión de bloqueos y la seguridad.</summary>
+    <published>2026-04-09T09:15:00+00:00</published>
   </entry>
 </feed>
