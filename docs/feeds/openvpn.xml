@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-09T09:17:03.257374+00:00</updated>
+  <updated>2026-04-10T09:17:46.674266+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -122,5 +122,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-06_0915.html"/>
     <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas proteger la comunicación entre redes. En este artículo, se presentan algunas best practices para hardening y configuración de OpenVPN.</summary>
     <published>2026-04-06T09:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-10_0916.html</id>
+    <title>OpenVPN: Mejoras y Best Practices</title>
+    <updated>2026-04-10T09:16:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de túneling que utiliza la biblioteca OpenSSL para proporcionar una conexión segura entre dos puntos. La versión más reciente de OpenVPN, 2.7.0, incluye varias mejoras y correcciones de seguridad, como la deshabilitación por defecto del soporte para &lt;code&gt;--secret&lt;/code&gt; debido a su falta de seguridad.&lt;/p&gt;
+&lt;p&gt;Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como OpenSSL. Por ejemplo, se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt; para generar un certificado y una clave para el servidor.&lt;/p&gt;
+&lt;p&gt;Además, es importante configurar el servidor OpenVPN para utilizar un protocolo de autenticación seguro, como TLS. Se puede hacer esto utilizando la directiva &lt;code&gt;tls-crypt-v2&lt;/code&gt; en el archivo de configuración del servidor. Por ejemplo, &lt;code&gt;tls-crypt-v2 /etc/openvpn/tls-crypt-v2.key&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para conectar a un servidor OpenVPN, se puede utilizar el comando &lt;code&gt;openvpn --config client.conf&lt;/code&gt;, donde &lt;code&gt;client.conf&lt;/code&gt; es el archivo de configuración del cliente. Es importante asegurarse de que el cliente esté configurado para utilizar el mismo protocolo de autenticación que el servidor.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mantener el servidor OpenVPN actualizado y configurado de manera segura. Se puede hacer esto utilizando herramientas como &lt;code&gt;apt-get update&lt;/code&gt; y &lt;code&gt;apt-get upgrade&lt;/code&gt; para actualizar el software y configurar el firewall para permitir solo el tráfico necesario.&lt;/p&gt;
+&lt;p&gt;Por último, es importante mencionar que OpenVPN no es la única herramienta de túneling disponible. Otras herramientas, como WireGuard, también ofrecen características de seguridad y flexibilidad similares. Sin embargo, OpenVPN sigue siendo una de las herramientas más populares y ampliamente utilizadas debido a su facilidad de uso y configuración.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/releases"&gt;Releases · OpenVPN/openvpn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/openvpn"&gt;OpenVPN | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.snbforums.com/threads/incoming-openvpn-changes-in-next-release.97039/"&gt;Incoming OpenVPN changes in next release | SNBForums&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.softpedia.com/get/Security/Security-Related/OpenVPN.shtml"&gt;OpenVPN - Download - Softpedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sourceforge.net/projects/openvpn/"&gt;OpenVPN download | SourceForge.net&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-10_0916.html"/>
+    <summary>OpenVPN es una herramienta de túneling segura y flexible que utiliza la biblioteca OpenSSL para tunelar redes IP de forma segura. En este artículo, se presentan las últimas mejoras y best practices para utilizar OpenVPN de manera efectiva.</summary>
+    <published>2026-04-10T09:16:00+00:00</published>
   </entry>
 </feed>

@@ -58,13 +58,13 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-04-06 0915 · Kubernetes</div>
+    <div class="meta">2026-04-10 0916 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>La versión 1.36 de Kubernetes está a punto de ser lanzada y promete traer consigo una serie de mejoras y nuevas características. Una de las novedades más destacadas es la incorporación de la función de `Agent Sandbox`, que permite ejecutar agentes en el clúster de manera más segura y eficiente. Para aprovechar esta función, debes crear un `Deployment` con la configuración adecuada, como se muestra a continuación: `kubectl create deployment mi-agente --image=mi-imagen-agente --command=['mi-comando-agente']`.</p>
+            <p>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con el tiempo. Una de las últimas novedades es el Jaeger Operator, que permite una mejor administración de la trazabilidad de aplicaciones en clústeres de Kubernetes. Para instalar el Jaeger Operator, se puede utilizar el comando `kubectl apply -f https://github.com/jaegertracing/jaeger-operator/releases/latest/download/jaeger-operator.yaml`.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>La seguridad es otro aspecto en el que Kubernetes ha hecho grandes avances. La autenticación y autorización basadas en roles (RBAC) son fundamentales para garantizar el acceso controlado a los recursos del clúster. Para configurar RBAC, debes crear `Roles` y `ClusterRoles` que definan los permisos y accesos para cada usuario o servicio. Por ejemplo: `kubectl create role mi-rol --verb=get,list --resource=pods`.</p>
+            <p>La seguridad es otro aspecto importante en Kubernetes. El proyecto Liqo permite crear topologías de clústeres múltiples de manera dinámica y segura, lo que facilita la administración de entornos complejos. Para instalar Liqo, se puede utilizar el comando `kubectl apply -f https://github.com/LiqoTech/liqo/releases/latest/download/liqo.yaml`.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>En cuanto a la monitorización y logging, Kubernetes ofrece una variedad de herramientas y opciones. Una de las más populares es la combinación de `Prometheus` y `Grafana`, que permite recopilar métricas y visualizarlas de manera efectiva. Para implementar esta solución, debes instalar `Prometheus` y `Grafana` en tu clúster y configurarlos para recopilar las métricas deseadas. Por ejemplo: `kubectl apply -f prometheus-deployment.yaml`.</p>
+            <p>En cuanto al almacenamiento, Kubernetes ofrece varias opciones para gestionar los datos de las aplicaciones. Una de ellas es el uso de almacenamiento persistente, que se puede configurar utilizando el comando `kubectl create -f persistent-volume.yaml`. Esto permite crear un volumen persistente que se puede utilizar por las aplicaciones en el clúster.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>Otra novedad destacada en la versión 1.36 es la mejora en la gestión de almacenamiento. Kubernetes ahora ofrece una mayor flexibilidad y control sobre los volúmenes y los almacenamientos persistentes. Para aprovechar estas mejoras, debes crear un `PersistentVolumeClaim` que defina los requisitos de almacenamiento para tu aplicación. Por ejemplo: `kubectl create pvc mi-pvc --access-modes=ReadWriteOnce --resources=requests.storage=1Gi`.</p>
+            <p>Otro proyecto interesante es Thundernetes, que permite ejecutar servidores de juegos en clústeres de Kubernetes. Esto abre nuevas posibilidades para la creación de entornos de juego escalables y seguros. Para instalar Thundernetes, se puede utilizar el comando `kubectl apply -f https://github.com/PlayFab/thundernetes/releases/latest/download/thundernetes.yaml`.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>Finalmente, es importante destacar la importancia de seguir las mejores prácticas en la configuración y gestión de los clústeres de Kubernetes. Esto incluye la implementación de políticas de seguridad, la monitorización y logging efectiva, y la gestión eficiente de los recursos. Para más información, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas a continuación.</p>
+            <p>En resumen, Kubernetes sigue evolucionando con el tiempo, y proyectos como Jaeger Operator, Liqo y Thundernetes ofrecen nuevas posibilidades para la administración de clústeres y la creación de aplicaciones escalables y seguras. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes.</p>
             
         
             
@@ -104,7 +104,7 @@
             
         
             
-            <p>En resumen, la versión 1.36 de Kubernetes trae consigo una serie de mejoras y nuevas características que pueden ayudar a los administradores y desarrolladores a crear clústeres más seguros, eficientes y escalables. Siguiendo las mejores prácticas y aprovechando las herramientas y funciones disponibles, es posible crear entornos de producción de alta calidad y confiabilidad.</p>
+            <p>Para más información, se pueden consultar las fuentes originales de estos proyectos, que se listan a continuación.</p>
             
         
     </div>
@@ -115,17 +115,27 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
+                <a href="https://github.com/jaegertracing/jaeger-operator" target="_blank">Jaeger Operator for Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/03/20/running-agents-on-kubernetes-with-agent-sandbox/" target="_blank">Running Agents on Kubernetes with Agent Sandbox</a>
+                <a href="https://github.com/PlayFab/thundernetes" target="_blank">Thundernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/k8slens/kubernetes-rbac-tutorial-roles-clusterroles-service-accounts-5aa4b3393fa4" target="_blank">Kubernetes RBAC Tutorial: Roles, ClusterRoles & Service Accounts</a>
+                <a href="https://github.com/LiqoTech/liqo" target="_blank">Liqo</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/kubernetes-sigs/cluster-api-provider-aws" target="_blank">Kubernetes Cluster API Provider AWS</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/civo/cli" target="_blank">Civo Command-Line Client</a>
                 
             </li>
             
@@ -136,12 +146,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-02_0905.html">&larr; 2026-04-02 0905</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-06_0915.html">&larr; 2026-04-06 0915</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-10_0916.html">2026-04-10 0916 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-04-10_0916": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es una solución de gestión de identidad y acceso que integra LDAP, Kerberos y otras tecnologías para proporcionar una plataforma de autenticación y autorización segura. En este artículo, se explora cómo implementar y configurar FreeIPA en un entorno de red.",
+    "content": "\nFreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red. Permite a los administradores gestionar usuarios, grupos y hosts de manera centralizada, y proporciona una plataforma de autenticación y autorización segura. Para implementar FreeIPA, se puede seguir la guía de instalación en Rocky Linux 10 o RHEL 10, que se encuentra disponible en la fuente [2].\n\nUna vez instalado FreeIPA, se puede configurar para utilizar LDAP y Kerberos para la autenticación y autorización. Por ejemplo, se puede utilizar el comando `ipa server-install` para instalar y configurar el servidor FreeIPA. Luego, se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios al sistema. Para configurar las reglas de acceso, se puede utilizar el comando `ipa hbacrule-add` para agregar nuevas reglas de acceso basadas en la ubicación y el tiempo.\n\nOtra característica importante de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios. Esto permite a los usuarios de un dominio acceder a recursos en otro dominio sin necesidad de autenticarse nuevamente. Para establecer una relación de confianza, se puede utilizar el comando `ipa trust-add` para agregar un nuevo dominio de confianza. Luego, se puede utilizar el comando `ipa trust-fetch-domains` para obtener la lista de dominios de confianza configurados.\n\nEn cuanto a la seguridad, FreeIPA proporciona una plataforma de autenticación y autorización segura. Se puede utilizar el protocolo Kerberos para autenticar a los usuarios y proporcionar acceso a los recursos. Además, se pueden configurar reglas de acceso basadas en la ubicación y el tiempo para restringir el acceso a los recursos. Por ejemplo, se puede utilizar el comando `ipa sudorule-add` para agregar una nueva regla de acceso para los comandos de sudo.\n\nFinalmente, es importante mencionar que FreeIPA se puede integrar con otras herramientas y tecnologías para proporcionar una plataforma de gestión de identidad y acceso completa. Por ejemplo, se puede integrar con herramientas de gestión de infraestructura como Ansible o Puppet para automatizar la configuración y el despliegue de los recursos.\n\nPara obtener más información sobre FreeIPA y su configuración, se pueden consultar las fuentes proporcionadas. La documentación oficial de FreeIPA se encuentra disponible en la fuente [1], y la guía de instalación en Rocky Linux 10 o RHEL 10 se encuentra disponible en la fuente [2].",
+    "sources": [
+      {
+        "title": "GitHub - freeipa/freeipa",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "Install FreeIPA Server on Rocky Linux 10 / RHEL 10 [Guide]",
+        "url": "https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/"
+      },
+      {
+        "title": "How to Deploy FreeIPA Identity Management with Flux CD",
+        "url": "https://oneuptime.com/blog/post/2026-03-13-deploy-freeipa-identity-management-with-flux-cd/view"
+      }
+    ]
+  },
   "2026-04-06_0915": {
     "slug": "freeipa",
     "title": "Administración de Identidad con FreeIPA",
