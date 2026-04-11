@@ -58,55 +58,43 @@
     </div>
 
     <h1>OpenShift 4: Mejoras y Novedades</h1>
-    <div class="meta">2026-04-07 0910 · OpenShift</div>
+    <div class="meta">2026-04-11 0852 · OpenShift</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenShift 4 es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para desarrolladores y administradores de sistemas. En la versión 4.21, se han incluido mejoras en la escalabilidad, la migración y la seguridad. Por ejemplo, se puede utilizar el comando `oc scale` para escalar los pods y los servicios de manera más eficiente.</p>
+            <p>OpenShift 4 es una plataforma de contenedores líder en la industria, y su última versión trae consigo mejoras significativas en escalabilidad, migración y eficiencia. Una de las novedades más destacadas es la capacidad de escalar de manera inteligente, lo que permite a los administradores ajustar los recursos de acuerdo a las necesidades de la aplicación.</p>
             
         
             
         
             
-            <p>Una de las novedades más interesantes es la integración con la inteligencia artificial (AI) para mejorar la eficiencia y la automatización de los procesos. Se puede utilizar el operador `OperatorHub` para instalar y configurar los operadores de AI en el cluster. Por ejemplo, se puede utilizar el comando `oc create -f https://operatorhub.io/install/ai-operator` para instalar el operador de AI.</p>
+            <p>Para aprovechar esta característica, se puede utilizar el comando `oc scale` para ajustar el número de réplicas de un deployment. Por ejemplo, `oc scale deployment mi-deployment --replicas=3` escalará el deployment a 3 réplicas.</p>
             
         
             
         
             
-            <p>La migración de clústeres es otro tema importante en OpenShift 4. Se puede utilizar la herramienta `oc adm migrate` para migrar los clústeres de manera más segura y eficiente. Por ejemplo, se puede utilizar el comando `oc adm migrate --from=old-cluster --to=new-cluster` para migrar los clústeres. Es importante mencionar que la seguridad es un tema fundamental en OpenShift 4, y se pueden utilizar herramientas como `OAuth` para autenticar y autorizar a los usuarios.</p>
+            <p>Otra característica importante es la migración de aplicaciones desde versiones anteriores de OpenShift. La herramienta de migración de OpenShift proporciona una forma sencilla de migrar aplicaciones y datos a la última versión de la plataforma. Para migrar una aplicación, se puede utilizar el comando `oc migrate` y seguir las instrucciones proporcionadas por la herramienta.</p>
             
         
             
         
             
-            <p>En cuanto a la monitorización, se puede utilizar la herramienta `oc get metrics` para obtener información sobre el rendimiento y la utilización de los recursos en el clúster. Por ejemplo, se puede utilizar el comando `oc get metrics --all-namespaces` para obtener información sobre todos los namespaces en el clúster.</p>
+            <p>En cuanto a la seguridad, OpenShift 4 incluye mejoras en la autenticación y autorización, lo que permite a los administradores controlar de manera más precisa el acceso a los recursos de la plataforma. Se puede utilizar el comando `oc create secret` para crear un secreto y luego utilizarlo para autenticar a los usuarios.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4 es una plataforma potente y flexible que ofrece una amplia gama de herramientas y características para desarrolladores y administradores de sistemas. Con las mejoras en la escalabilidad, la migración y la seguridad, es una excelente opción para aquellos que buscan una plataforma de contenedores segura y eficiente.</p>
+            <p>La monitorización y el logging son también aspectos importantes en OpenShift 4. La plataforma incluye herramientas como Loki y Prometheus para recopilar y analizar logs y métricas. Se puede utilizar el comando `oc create configmap` para crear un mapa de configuración para Loki y definir los parámetros de logging.</p>
             
         
             
         
             
-            <p>Es importante mencionar que la documentación oficial de OpenShift 4 es una excelente fuente de información para aquellos que buscan aprender más sobre esta plataforma. Se pueden encontrar tutoriales, guías y documentación detallada sobre las características y herramientas de OpenShift 4.</p>
-            
-        
-            
-        
-            
-            <p>En cuanto a las best practices, es importante mencionar que la automatización y la monitorización son fundamentales para mantener un clúster de OpenShift 4 seguro y eficiente. Se pueden utilizar herramientas como `Ansible` y `Prometheus` para automatizar y monitorizar los procesos en el clúster.</p>
-            
-        
-            
-        
+            <p>En resumen, OpenShift 4 es una plataforma potente y flexible que ofrece una amplia gama de herramientas y características para desarrollar, desplegar y administrar aplicaciones en contenedores. Al aprovechar estas características y seguir las best practices, los administradores y desarrolladores pueden crear aplicaciones escalables, seguras y eficientes.</p>
             
         
     </div>
@@ -117,17 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:4419" target="_blank">RHSA-2026:4419</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:6554" target="_blank">RHSA-2026:6554 - Security Advisory</a>
                 
             </li>
             
             <li>
-                <a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency" target="_blank">Red Hat OpenShift 4.21</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:5907" target="_blank">RHSA-2026:5907 - Security Advisory</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:5873" target="_blank">RHSA-2026:5873</a>
+                <a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency" target="_blank">Red Hat OpenShift 4.21: Smarter scaling, faster migration, and AI-powered efficiency</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/tosin2013/migrating-from-das-to-dra-in-openshift-the-pragmatic-guide-2a03" target="_blank">Migrating from DAS to DRA in OpenShift: The Pragmatic Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://fabreur.medium.com/understanding-loki-rate-limits-in-openshift-logging-25bd5497e2ca" target="_blank">Understanding Loki Rate Limits in OpenShift Logging</a>
                 
             </li>
             
@@ -138,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-03_0901.html">&larr; 2026-04-03 0901</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-07_0910.html">&larr; 2026-04-07 0910</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-11_0852.html">2026-04-11 0852 &rarr;</a>
             
         </div>
     </div>

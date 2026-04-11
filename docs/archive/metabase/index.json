@@ -1,4 +1,24 @@
 {
+  "2026-04-11_0852": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Novedades",
+    "summary": "Metabase ha lanzado varias mejoras y novedades en sus últimas versiones, incluyendo la introducción de Data Studio y la generación de SQL con inteligencia artificial. Estas mejoras buscan mejorar la experiencia del usuario y la capacidad de análisis de datos.",
+    "content": "Metabase es una herramienta de análisis de datos y visualización que permite a los usuarios crear dashboards y informes personalizados. En sus últimas versiones, Metabase ha incorporado varias mejoras y novedades, como la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar datos y crear una capa semántica. Además, se ha agregado la generación de SQL con inteligencia artificial, lo que facilita la creación de consultas y análisis de datos.\n\nPara aprovechar al máximo estas mejoras, es importante conocer las mejores prácticas para la configuración y el uso de Metabase. Por ejemplo, se puede utilizar el comando `metabase migrate` para actualizar la base de datos y aplicar las migraciones necesarias. También es importante configurar correctamente la conexión a la base de datos, utilizando comandos como `metabase config set database.host` y `metabase config set database.port`.\n\nEn cuanto a la seguridad, es fundamental mantener la base de datos actualizada y parchear cualquier vulnerabilidad conocida. Por ejemplo, se puede utilizar el comando `metabase update` para actualizar la versión de Metabase y aplicar los parches de seguridad necesarios. También es importante configurar la autenticación y la autorización adecuadamente, utilizando comandos como `metabase config set auth.type` y `metabase config set auth.secret`.\n\nAdemás, Metabase proporciona una API para interactuar con la herramienta de manera programática. Por ejemplo, se puede utilizar la API para crear dashboards y informes personalizados, o para integrar Metabase con otras herramientas y aplicaciones. Para más información, se puede consultar la documentación oficial de Metabase, que proporciona detalles sobre la API y cómo utilizarla.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos y la visualización, y sus últimas versiones han incorporado varias mejoras y novedades. Para aprovechar al máximo estas mejoras, es importante conocer las mejores prácticas para la configuración y el uso de Metabase, y mantener la base de datos actualizada y segura.\n\nFinalmente, es importante mencionar que Metabase ha lanzado la versión 59, que incluye varias mejoras y novedades, como la introducción de Data Studio y la generación de SQL con inteligencia artificial. Para más información, se puede consultar la documentación oficial de Metabase y las fuentes citadas al final de este artículo.",
+    "sources": [
+      {
+        "title": "Metabase 59",
+        "url": "https://discourse.metabase.com/t/metabase-59-is-here/296136"
+      },
+      {
+        "title": "Migration failure on large metabase_table",
+        "url": "https://github.com/metabase/metabase/issues/70972"
+      },
+      {
+        "title": "Error upgrading - Table 'metabase_cluster_lock' already exists",
+        "url": "https://discourse.metabase.com/t/error-upgrading-table-metabase-cluster-lock-already-exists/296235"
+      }
+    ]
+  },
   "2026-04-03_0901": {
     "slug": "metabase",
     "title": "Metabase: Mejoras y Best Practices",

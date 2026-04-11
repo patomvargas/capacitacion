@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-10T09:17:46.677099+00:00</updated>
+  <updated>2026-04-11T08:54:04.050352+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -172,5 +172,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-07_0910.html"/>
     <summary>OpenShift 4 ofrece mejoras en escalabilidad, migración y seguridad. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta plataforma.</summary>
     <published>2026-04-07T09:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-11_0852.html</id>
+    <title>OpenShift 4: Mejoras y Novedades</title>
+    <updated>2026-04-11T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4 es una plataforma de contenedores líder en la industria, y su última versión trae consigo mejoras significativas en escalabilidad, migración y eficiencia. Una de las novedades más destacadas es la capacidad de escalar de manera inteligente, lo que permite a los administradores ajustar los recursos de acuerdo a las necesidades de la aplicación.&lt;/p&gt;
+&lt;p&gt;Para aprovechar esta característica, se puede utilizar el comando &lt;code&gt;oc scale&lt;/code&gt; para ajustar el número de réplicas de un deployment. Por ejemplo, &lt;code&gt;oc scale deployment mi-deployment --replicas=3&lt;/code&gt; escalará el deployment a 3 réplicas.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la migración de aplicaciones desde versiones anteriores de OpenShift. La herramienta de migración de OpenShift proporciona una forma sencilla de migrar aplicaciones y datos a la última versión de la plataforma. Para migrar una aplicación, se puede utilizar el comando &lt;code&gt;oc migrate&lt;/code&gt; y seguir las instrucciones proporcionadas por la herramienta.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift 4 incluye mejoras en la autenticación y autorización, lo que permite a los administradores controlar de manera más precisa el acceso a los recursos de la plataforma. Se puede utilizar el comando &lt;code&gt;oc create secret&lt;/code&gt; para crear un secreto y luego utilizarlo para autenticar a los usuarios.&lt;/p&gt;
+&lt;p&gt;La monitorización y el logging son también aspectos importantes en OpenShift 4. La plataforma incluye herramientas como Loki y Prometheus para recopilar y analizar logs y métricas. Se puede utilizar el comando &lt;code&gt;oc create configmap&lt;/code&gt; para crear un mapa de configuración para Loki y definir los parámetros de logging.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4 es una plataforma potente y flexible que ofrece una amplia gama de herramientas y características para desarrollar, desplegar y administrar aplicaciones en contenedores. Al aprovechar estas características y seguir las best practices, los administradores y desarrolladores pueden crear aplicaciones escalables, seguras y eficientes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:6554"&gt;RHSA-2026:6554 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5907"&gt;RHSA-2026:5907 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency"&gt;Red Hat OpenShift 4.21: Smarter scaling, faster migration, and AI-powered efficiency&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/tosin2013/migrating-from-das-to-dra-in-openshift-the-pragmatic-guide-2a03"&gt;Migrating from DAS to DRA in OpenShift: The Pragmatic Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fabreur.medium.com/understanding-loki-rate-limits-in-openshift-logging-25bd5497e2ca"&gt;Understanding Loki Rate Limits in OpenShift Logging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-11_0852.html"/>
+    <summary>OpenShift 4 presenta mejoras en escalabilidad, migración y eficiencia, además de nuevas características de seguridad y logging. En este artículo, se exploran las novedades y best practices para aprovechar al máximo la plataforma.</summary>
+    <published>2026-04-11T08:52:00+00:00</published>
   </entry>
 </feed>

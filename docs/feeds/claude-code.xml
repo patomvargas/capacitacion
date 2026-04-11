@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-10T09:17:46.678456+00:00</updated>
+  <updated>2026-04-11T08:54:04.052098+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -165,5 +165,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-07_0910.html"/>
     <summary>Claude Code es una herramienta poderosa para sysadmins y DevOps engineers, pero requiere una configuración y uso adecuados para aprovechar su potencial. En este artículo, se presentan algunas best practices y configuraciones para optimizar el uso de Claude Code.</summary>
     <published>2026-04-07T09:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-11_0852.html</id>
+    <title>Mejores prácticas para Claude Code</title>
+    <updated>2026-04-11T08:52:00+00:00</updated>
+    <content type="html">&lt;p&gt;Para empezar, es importante entender cómo Claude Code utiliza las variables de entorno para configurar su comportamiento. Por ejemplo, la variable &lt;code&gt;ANTHROPIC_BETAS&lt;/code&gt; se utiliza para habilitar características beta de la API de Anthropic. Sin embargo, esta variable no está documentada en la página de variables de entorno de Claude Code, lo que puede causar confusión para los desarrolladores. Para solucionar este problema, se puede utilizar el comando &lt;code&gt;export ANTHROPIC_BETAS=&lt;valor&gt;&lt;/code&gt; para establecer la variable de entorno antes de ejecutar Claude Code.&lt;/p&gt;
+&lt;p&gt;La configuración de Claude Code también se puede realizar mediante el archivo &lt;code&gt;CLAUDE.md&lt;/code&gt;, que se utiliza como guía de inicio para el modelo de lenguaje. En este archivo, se pueden incluir descripciones del proyecto, explicaciones de los componentes principales y direcciones de los directorios. Por ejemplo, se puede incluir la siguiente estructura de directorios: &lt;code&gt;my-project/ ├── CLAUDE.md ├── package.json ├── src/ ├── docs/ └── scripts/&lt;/code&gt;. Esto ayuda a Claude Code a entender la estructura del proyecto y a proporcionar sugerencias y completados más precisos.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Claude Code es su capacidad para trabajar con flujos de trabajo y tareas. La herramienta Scopecraft Command es una herramienta de línea de comandos y servidor MCP que ayuda a gestionar archivos de gestión de tareas basados en Markdown. Se puede utilizar el comando &lt;code&gt;scopecraft init&lt;/code&gt; para inicializar un nuevo proyecto y &lt;code&gt;scopecraft run&lt;/code&gt; para ejecutar las tareas definidas en el archivo de configuración. Esto permite a los desarrolladores automatizar tareas y flujos de trabajo de manera eficiente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Claude Code tiene una comunidad activa de desarrolladores que comparten sus mejores prácticas y trucos para trabajar con la herramienta. Por ejemplo, se puede encontrar una guía de 10 mejores prácticas para Claude Code en el sitio web de DEV Community, que cubre temas como la configuración de la herramienta, la gestión de tareas y la depuración de código. Estas guías y recursos pueden ser muy útiles para los desarrolladores que buscan mejorar su productividad y eficiencia al trabajar con Claude Code.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que requiere una configuración y uso adecuados para aprovechar al máximo sus características. Al entender cómo utilizar las variables de entorno, configurar el archivo &lt;code&gt;CLAUDE.md&lt;/code&gt; y trabajar con flujos de trabajo y tareas, los desarrolladores pueden mejorar su productividad y eficiencia al trabajar con Claude Code.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/35632"&gt;Environment variables page missing ANTHROPIC_BETAS env var&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/mirfanarshad/claude-code-project-structure-best-practices-4fi4"&gt;Claude Code Project Structure Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/scopecraft/command"&gt;Scopecraft Command&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/evan-dong/10-battle-tested-claude-code-practices-4n81"&gt;10 Battle-Tested Claude Code Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-11_0852.html"/>
+    <summary>Claude Code es una herramienta poderosa para desarrolladores, pero requiere una configuración y uso adecuados para aprovechar al máximo sus características. En este artículo, se presentan algunas mejores prácticas y trucos para trabajar con Claude Code de manera eficiente.</summary>
+    <published>2026-04-11T08:52:00+00:00</published>
   </entry>
 </feed>

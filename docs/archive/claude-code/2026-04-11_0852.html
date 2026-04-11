@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas para Claude Code - Claude Code</title>
+    <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
+    </div>
+
+    <h1>Mejores prácticas para Claude Code</h1>
+    <div class="meta">2026-04-11 0852 · Claude Code</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Para empezar, es importante entender cómo Claude Code utiliza las variables de entorno para configurar su comportamiento. Por ejemplo, la variable `ANTHROPIC_BETAS` se utiliza para habilitar características beta de la API de Anthropic. Sin embargo, esta variable no está documentada en la página de variables de entorno de Claude Code, lo que puede causar confusión para los desarrolladores. Para solucionar este problema, se puede utilizar el comando `export ANTHROPIC_BETAS=<valor>` para establecer la variable de entorno antes de ejecutar Claude Code.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La configuración de Claude Code también se puede realizar mediante el archivo `CLAUDE.md`, que se utiliza como guía de inicio para el modelo de lenguaje. En este archivo, se pueden incluir descripciones del proyecto, explicaciones de los componentes principales y direcciones de los directorios. Por ejemplo, se puede incluir la siguiente estructura de directorios: `my-project/ ├── CLAUDE.md ├── package.json ├── src/ ├── docs/ └── scripts/`. Esto ayuda a Claude Code a entender la estructura del proyecto y a proporcionar sugerencias y completados más precisos.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Claude Code es su capacidad para trabajar con flujos de trabajo y tareas. La herramienta Scopecraft Command es una herramienta de línea de comandos y servidor MCP que ayuda a gestionar archivos de gestión de tareas basados en Markdown. Se puede utilizar el comando `scopecraft init` para inicializar un nuevo proyecto y `scopecraft run` para ejecutar las tareas definidas en el archivo de configuración. Esto permite a los desarrolladores automatizar tareas y flujos de trabajo de manera eficiente.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Claude Code tiene una comunidad activa de desarrolladores que comparten sus mejores prácticas y trucos para trabajar con la herramienta. Por ejemplo, se puede encontrar una guía de 10 mejores prácticas para Claude Code en el sitio web de DEV Community, que cubre temas como la configuración de la herramienta, la gestión de tareas y la depuración de código. Estas guías y recursos pueden ser muy útiles para los desarrolladores que buscan mejorar su productividad y eficiencia al trabajar con Claude Code.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Claude Code es una herramienta poderosa que requiere una configuración y uso adecuados para aprovechar al máximo sus características. Al entender cómo utilizar las variables de entorno, configurar el archivo `CLAUDE.md` y trabajar con flujos de trabajo y tareas, los desarrolladores pueden mejorar su productividad y eficiencia al trabajar con Claude Code.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/35632" target="_blank">Environment variables page missing ANTHROPIC_BETAS env var</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/mirfanarshad/claude-code-project-structure-best-practices-4fi4" target="_blank">Claude Code Project Structure Best Practices</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/scopecraft/command" target="_blank">Scopecraft Command</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/evan-dong/10-battle-tested-claude-code-practices-4n81" target="_blank">10 Battle-Tested Claude Code Practices</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-07_0910.html">&larr; 2026-04-07 0910</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
