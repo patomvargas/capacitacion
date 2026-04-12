@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Balanceo de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
+    <div class="meta">2026-04-12 0856 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+            <p>MetalLB es una herramienta esencial para los administradores de sistemas y desarrolladores de DevOps que trabajan con Kubernetes. Su función principal es proporcionar servicios de balanceo de carga para aplicaciones en ejecución en clústeres de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más destacadas de MetalLB es su capacidad para operar en modo L2, lo que permite que los servicios de balanceo de carga se comuniquen directamente con los nodos del clúster. Para configurar MetalLB en modo L2, se debe crear un archivo de configuración que especifique el modo de operación y la dirección IP del servicio. Por ejemplo, se puede utilizar el comando `kubectl apply -f metallb-config.yaml` para aplicar la configuración.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de MetalLB es su capacidad para operar en modo BGP, lo que permite que los servicios de balanceo de carga se comuniquen con los routers de la red para anunciar las direcciones IP de los servicios. Para configurar MetalLB en modo BGP, se debe crear un archivo de configuración que especifique el modo de operación y los parámetros de BGP. Por ejemplo, se puede utilizar el comando `kubectl apply -f metallb-bgp-config.yaml` para aplicar la configuración.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con los recursos de red de Kubernetes, como los servicios y los pods. Por ejemplo, se puede utilizar el comando `kubectl expose deployment mi-deploy --type=LoadBalancer --port=80` para crear un servicio de balanceo de carga para un deployment de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre los servicios y los pods en ejecución. Por ejemplo, se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los registros del controlador de MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar servicios de balanceo de carga en entornos de Kubernetes. Su capacidad para operar en modo L2 y BGP, así como su integración con los recursos de red de Kubernetes, la convierten en una herramienta esencial para los administradores de sistemas y desarrolladores de DevOps.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-keycloak-with-postgresql-backend-with-flux-cd" target="_blank">Deploy Keycloak with PostgreSQL Backend with Flux CD</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-test-lab-eve-ng" target="_blank">IPv6 Test Lab with EVE-NG</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-troubleshoot-artifactgenerator-build-failures-in-flux" target="_blank">How to Troubleshoot ArtifactGenerator Build Failures in Flux</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-assign-ipv4-lan-docker-containers-macvlan" target="_blank">Assign IPv4 LAN to Docker Containers with Macvlan</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-haproxy-connection-limits-per-ipv4" target="_blank">HAProxy Connection Limits per IPv4</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-08_0909.html">&larr; 2026-04-08 0909</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

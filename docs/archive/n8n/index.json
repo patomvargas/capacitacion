@@ -1,4 +1,24 @@
 {
+  "2026-04-12_0856": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados. En este artículo, se explora cómo utilizar n8n para automatizar tareas y procesos.",
+    "content": "n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados utilizando nodos y webhooks. Para empezar a utilizar n8n, es importante configurar las credenciales de acceso a los servicios que se van a automatizar. Esto se puede hacer mediante la opción `Settings → Credentials` en la interfaz de usuario de n8n.\n\nPara crear un flujo de trabajo en n8n, se deben arrastrar y soltar nodos en el editor de flujo de trabajo. Cada nodo representa una acción específica, como enviar un correo electrónico o crear un registro en una base de datos. Los nodos se pueden conectar entre sí para crear un flujo de trabajo lógico.\n\nUna de las características más importantes de n8n es la capacidad de manejar errores de manera efectiva. Esto se puede hacer mediante la utilización de nodos de error, como el nodo `Error Trigger`, que puede ser utilizado para capturar errores y notificar a los administradores. Por ejemplo, se puede utilizar el comando `n8n start --credentials ./credentials.json` para iniciar n8n con un archivo de credenciales específico.\n\nAdemás, n8n proporciona una variedad de integraciones con servicios de terceros, como Slack y Telegram, que pueden ser utilizados para notificar a los administradores en caso de errores o problemas. Por ejemplo, se puede utilizar el nodo `Slack` para enviar un mensaje de notificación a un canal de Slack específico.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de tareas y procesos. Con su interfaz de usuario intuitiva y su capacidad para manejar errores de manera efectiva, n8n es una excelente opción para los administradores de sistemas y desarrolladores que buscan automatizar sus flujos de trabajo.\n\nPara más información sobre cómo utilizar n8n, se pueden consultar las fuentes siguientes, que proporcionan guías detalladas y ejemplos prácticos de cómo utilizar n8n para automatizar tareas y procesos. Por ejemplo, se puede utilizar el comando `n8n cli` para acceder a la línea de comandos de n8n y ejecutar comandos específicos, como `n8n cli workflow:list` para listar todos los flujos de trabajo disponibles.",
+    "sources": [
+      {
+        "title": "n8n for Beginners: The Complete End-to-End Guide with Real Workflows, Code, Webhooks, APIs, and Automation",
+        "url": "https://anilpise7.medium.com/n8n-for-beginners-the-complete-end-to-end-guide-with-real-workflows-code-webhooks-apis-and-d683b129dfa2"
+      },
+      {
+        "title": "n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business",
+        "url": "https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h"
+      },
+      {
+        "title": "n8n Tutorial: Build Your First Workflow in 15 Minutes",
+        "url": "https://dev.to/atlasdigital/n8n-tutorial-for-beginners-build-your-first-automation-workflow-in-15-minutes-2eej"
+      }
+    ]
+  },
   "2026-04-04_0849": {
     "slug": "n8n",
     "title": "Automatización con n8n",

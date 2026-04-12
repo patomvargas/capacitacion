@@ -1,4 +1,32 @@
 {
+  "2026-04-12_0856": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en Kubernetes",
+    "summary": "MetalLB es un balanceador de carga para Kubernetes que proporciona servicios de red de capa 2 y capa 3. En este artículo, se explora su configuración y uso en entornos de producción.",
+    "content": "MetalLB es una herramienta esencial para los administradores de sistemas y desarrolladores de DevOps que trabajan con Kubernetes. Su función principal es proporcionar servicios de balanceo de carga para aplicaciones en ejecución en clústeres de Kubernetes. \n \n Una de las características más destacadas de MetalLB es su capacidad para operar en modo L2, lo que permite que los servicios de balanceo de carga se comuniquen directamente con los nodos del clúster. Para configurar MetalLB en modo L2, se debe crear un archivo de configuración que especifique el modo de operación y la dirección IP del servicio. Por ejemplo, se puede utilizar el comando `kubectl apply -f metallb-config.yaml` para aplicar la configuración. \n \n Otra característica importante de MetalLB es su capacidad para operar en modo BGP, lo que permite que los servicios de balanceo de carga se comuniquen con los routers de la red para anunciar las direcciones IP de los servicios. Para configurar MetalLB en modo BGP, se debe crear un archivo de configuración que especifique el modo de operación y los parámetros de BGP. Por ejemplo, se puede utilizar el comando `kubectl apply -f metallb-bgp-config.yaml` para aplicar la configuración. \n \n En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con los recursos de red de Kubernetes, como los servicios y los pods. Por ejemplo, se puede utilizar el comando `kubectl expose deployment mi-deploy --type=LoadBalancer --port=80` para crear un servicio de balanceo de carga para un deployment de Kubernetes. \n \n Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre los servicios y los pods en ejecución. Por ejemplo, se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los registros del controlador de MetalLB. \n \n En resumen, MetalLB es una herramienta poderosa para proporcionar servicios de balanceo de carga en entornos de Kubernetes. Su capacidad para operar en modo L2 y BGP, así como su integración con los recursos de red de Kubernetes, la convierten en una herramienta esencial para los administradores de sistemas y desarrolladores de DevOps.",
+    "sources": [
+      {
+        "title": "Deploy Keycloak with PostgreSQL Backend with Flux CD",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-keycloak-with-postgresql-backend-with-flux-cd"
+      },
+      {
+        "title": "IPv6 Test Lab with EVE-NG",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-test-lab-eve-ng"
+      },
+      {
+        "title": "How to Troubleshoot ArtifactGenerator Build Failures in Flux",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-troubleshoot-artifactgenerator-build-failures-in-flux"
+      },
+      {
+        "title": "Assign IPv4 LAN to Docker Containers with Macvlan",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-assign-ipv4-lan-docker-containers-macvlan"
+      },
+      {
+        "title": "HAProxy Connection Limits per IPv4",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-haproxy-connection-limits-per-ipv4"
+      }
+    ]
+  },
   "2026-04-08_0909": {
     "slug": "metallb",
     "title": "MetalLB: Load Balancer para Kubernetes",

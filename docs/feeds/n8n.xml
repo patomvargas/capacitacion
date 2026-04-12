@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-11T08:54:04.057711+00:00</updated>
+  <updated>2026-04-12T08:58:58.507000+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -167,5 +167,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-04_0849.html"/>
     <summary>n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados. En este artículo, se presentan las novedades y mejores prácticas para trabajar con n8n.</summary>
     <published>2026-04-04T08:49:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-12_0856.html</id>
+    <title>Automatización con n8n</title>
+    <updated>2026-04-12T08:56:00+00:00</updated>
+    <content type="html">&lt;p&gt;n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados utilizando nodos y webhooks. Para empezar a utilizar n8n, es importante configurar las credenciales de acceso a los servicios que se van a automatizar. Esto se puede hacer mediante la opción &lt;code&gt;Settings → Credentials&lt;/code&gt; en la interfaz de usuario de n8n.&lt;/p&gt;
+&lt;p&gt;Para crear un flujo de trabajo en n8n, se deben arrastrar y soltar nodos en el editor de flujo de trabajo. Cada nodo representa una acción específica, como enviar un correo electrónico o crear un registro en una base de datos. Los nodos se pueden conectar entre sí para crear un flujo de trabajo lógico.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de n8n es la capacidad de manejar errores de manera efectiva. Esto se puede hacer mediante la utilización de nodos de error, como el nodo &lt;code&gt;Error Trigger&lt;/code&gt;, que puede ser utilizado para capturar errores y notificar a los administradores. Por ejemplo, se puede utilizar el comando &lt;code&gt;n8n start --credentials ./credentials.json&lt;/code&gt; para iniciar n8n con un archivo de credenciales específico.&lt;/p&gt;
+&lt;p&gt;Además, n8n proporciona una variedad de integraciones con servicios de terceros, como Slack y Telegram, que pueden ser utilizados para notificar a los administradores en caso de errores o problemas. Por ejemplo, se puede utilizar el nodo &lt;code&gt;Slack&lt;/code&gt; para enviar un mensaje de notificación a un canal de Slack específico.&lt;/p&gt;
+&lt;p&gt;En resumen, n8n es una herramienta poderosa para la automatización de tareas y procesos. Con su interfaz de usuario intuitiva y su capacidad para manejar errores de manera efectiva, n8n es una excelente opción para los administradores de sistemas y desarrolladores que buscan automatizar sus flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Para más información sobre cómo utilizar n8n, se pueden consultar las fuentes siguientes, que proporcionan guías detalladas y ejemplos prácticos de cómo utilizar n8n para automatizar tareas y procesos. Por ejemplo, se puede utilizar el comando &lt;code&gt;n8n cli&lt;/code&gt; para acceder a la línea de comandos de n8n y ejecutar comandos específicos, como &lt;code&gt;n8n cli workflow:list&lt;/code&gt; para listar todos los flujos de trabajo disponibles.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://anilpise7.medium.com/n8n-for-beginners-the-complete-end-to-end-guide-with-real-workflows-code-webhooks-apis-and-d683b129dfa2"&gt;n8n for Beginners: The Complete End-to-End Guide with Real Workflows, Code, Webhooks, APIs, and Automation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h"&gt;n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/atlasdigital/n8n-tutorial-for-beginners-build-your-first-automation-workflow-in-15-minutes-2eej"&gt;n8n Tutorial: Build Your First Workflow in 15 Minutes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-12_0856.html"/>
+    <summary>n8n es una herramienta de automatización que permite crear flujos de trabajo personalizados. En este artículo, se explora cómo utilizar n8n para automatizar tareas y procesos.</summary>
+    <published>2026-04-12T08:56:00+00:00</published>
   </entry>
 </feed>
