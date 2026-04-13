@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas con Git - Git</title>
+    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+    </div>
+
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-04-13 1000 · Git</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Git es una herramienta fundamental en el desarrollo de software, ya que permite a los equipos colaborar de manera efectiva en proyectos de código abierto. Una de las mejores prácticas para utilizar Git es establecer un flujo de trabajo (workflow) claro y consistente. Esto puede incluir la creación de ramas (branches) para diferentes características o correcciones de errores, y la utilización de `git merge` y `git rebase` para integrar los cambios en la rama principal.</p>
+            
+        
+            
+        
+            
+            <p>La utilización de hooks en Git puede ayudar a automatizar tareas y garantizar la calidad del código. Por ejemplo, se puede utilizar un hook de pre-commit para ejecutar pruebas unitarias y asegurarse de que el código sea válido antes de realizar un commit. Otro ejemplo es el uso de `git bisect` para identificar el commit que introdujo un error en el código.</p>
+            
+        
+            
+        
+            
+            <p>La creación de worktrees en Git permite a los desarrolladores trabajar en diferentes ramas o proyectos de manera simultánea, sin tener que cambiar de directorio o clonar el repositorio completo. Esto se puede lograr utilizando el comando `git worktree add`. Además, se pueden utilizar comandos como `git status` y `git log` para obtener información sobre el estado del repositorio y el historial de commits.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y mejoras en Git, es importante mencionar la importancia de utilizar Docker y contenedores para simplificar la configuración del entorno de desarrollo. Esto se puede lograr utilizando comandos como `docker run` y `docker exec`. La utilización de herramientas como Apache Airflow también puede ayudar a automatizar y programar tareas en el flujo de trabajo de Git.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar la importancia de la planificación y el seguimiento de proyectos en Git. Herramientas como GitHub Issues y Project Planning pueden ayudar a los equipos a crear y asignar tareas, y a seguir el progreso de los proyectos de manera efectiva. Esto se puede lograr utilizando comandos como `git issue` y `git project`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la utilización de Git de manera efectiva requiere la combinación de buenas prácticas, herramientas y comandos avanzados. Al establecer un flujo de trabajo claro, utilizar hooks y worktrees, y automatizar tareas, los equipos pueden mejorar su productividad y colaboración en proyectos de desarrollo de software.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/official-stockfish/nnue-pytorch" target="_blank">official-stockfish/nnue-pytorch</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/dotnet/dotnet" target="_blank">dotnet/dotnet</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/lxqt/lxqt-panel" target="_blank">lxqt-panel</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/airflow" target="_blank">Apache Airflow</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/features/issues" target="_blank">Project planning for developers</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-01_0913.html">&larr; 2026-04-01 0913</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

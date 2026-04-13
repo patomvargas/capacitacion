@@ -1,4 +1,32 @@
 {
+  "2026-04-13_1000": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan algunas best practices y ejemplos de uso de Ansible.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un conjunto de servidores. Un playbook puede incluir varias tareas, como la instalación de software, la configuración de servicios y la ejecución de comandos. Para ejecutar un playbook, se utiliza el comando `ansible-playbook` seguido del nombre del playbook.\n\n \n Un ejemplo de playbook de Ansible es el siguiente:\n```yaml\n---\n- name: Instalar y configurar Apache\n  hosts: servidores_web\n  become: true\n  tasks:\n  - name: Instalar Apache\n    apt:\n      name: apache2\n      state: present\n  - name: Configurar Apache\n    template:\n      src: templates/apache2.conf.j2\n      dest: /etc/apache2/apache2.conf\n    notify: restart apache\n```\n \n Este playbook instala y configura Apache en un conjunto de servidores web. La directiva `become` se utiliza para ejecutar las tareas con privilegios de root. La tarea `Instalar Apache` utiliza el módulo `apt` para instalar el paquete `apache2`. La tarea `Configurar Apache` utiliza el módulo `template` para copiar un archivo de configuración desde un template.\n\n \n Otra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los servidores y grupos de servidores que se van a gestionar. El comando `ansible-inventory` se utiliza para gestionar los inventarios. Por ejemplo, para agregar un servidor a un inventario, se puede utilizar el comando `ansible-inventory --add-server <nombre_del_servidor>`.\n\n \n Ansible también incluye una característica llamada Vault, que permite cifrar datos sensibles como contraseñas y claves SSH. El comando `ansible-vault` se utiliza para gestionar los datos cifrados. Por ejemplo, para crear un archivo cifrado, se puede utilizar el comando `ansible-vault create <nombre_del_archivo>`.\n\n \n En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran flexibilidad y personalización. Con sus playbooks, inventarios y características de seguridad, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.\n\n \n AWX/Tower es una herramienta de gestión de Ansible que proporciona una interfaz web para gestionar playbooks, inventarios y jobs. Permite a los administradores de sistemas y desarrolladores crear y ejecutar playbooks de manera centralizada, y también ofrece funcionalidades de gestión de versiones y auditoría. El comando `awx-manage` se utiliza para gestionar AWX/Tower. Por ejemplo, para crear un nuevo proyecto, se puede utilizar el comando `awx-manage create-project <nombre_del_proyecto>`.\n\n \n En cuanto a las colecciones, Ansible ofrece una variedad de colecciones predefinidas que pueden ser utilizadas para realizar tareas comunes, como la instalación de software y la configuración de servicios. Las colecciones pueden ser instaladas utilizando el comando `ansible-galaxy`. Por ejemplo, para instalar la colección de Apache, se puede utilizar el comando `ansible-galaxy install apache`.\n\n \n Los roles son otro concepto importante en Ansible. Un rol es un conjunto de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Los roles pueden ser creados y compartidos utilizando el comando `ansible-galaxy`. Por ejemplo, para crear un nuevo rol, se puede utilizar el comando `ansible-galaxy init <nombre_del_rol>`.\n\n \n En resumen, Ansible es una herramienta muy poderosa y flexible que ofrece una gran variedad de características y funcionalidades para la automatización de infraestructura. Con sus playbooks, inventarios, Vault, AWX/Tower, colecciones y roles, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.\n\n \n Para obtener más información sobre Ansible y sus características, se pueden consultar las fuentes oficiales de Ansible y la documentación de la comunidad. También se pueden encontrar ejemplos de playbooks y roles en la galería de Ansible, que es un repositorio de contenido de Ansible creado y mantenido por la comunidad.\n\n \n En conclusión, Ansible es una herramienta muy útil para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades. Con su flexibilidad y personalización, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.",
+    "sources": [
+      {
+        "title": "2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql"
+      },
+      {
+        "title": "2026-03-20-full-observability-stack-rancher",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-full-observability-stack-rancher"
+      },
+      {
+        "title": "2026-03-20-private-ipv4-scheme-rfc1918-ranges",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges"
+      },
+      {
+        "title": "2026-03-20-ipip-tunnel-systemd-networkd",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipip-tunnel-systemd-networkd"
+      },
+      {
+        "title": "2026-03-20-vpc-endpoints-s3-dynamodb-opentofu",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-vpc-endpoints-s3-dynamodb-opentofu"
+      }
+    ]
+  },
   "2026-04-09_0915": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

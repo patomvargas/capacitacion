@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-04-13 1000 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un conjunto de servidores. Un playbook puede incluir varias tareas, como la instalación de software, la configuración de servicios y la ejecución de comandos. Para ejecutar un playbook, se utiliza el comando `ansible-playbook` seguido del nombre del playbook.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Un ejemplo de playbook de Ansible es el siguiente:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>---</p>
+            
+        
+            
+            <p>- name: Instalar y configurar Apache</p>
+            
+        
+            
+            <p>hosts: servidores_web</p>
+            
+        
+            
+            <p>become: true</p>
+            
+        
+            
+            <p>tasks:</p>
+            
+        
+            
+            <p>- name: Instalar Apache</p>
+            
+        
+            
+            <p>apt:</p>
+            
+        
+            
+            <p>name: apache2</p>
+            
+        
+            
+            <p>state: present</p>
+            
+        
+            
+            <p>- name: Configurar Apache</p>
+            
+        
+            
+            <p>template:</p>
+            
+        
+            
+            <p>src: templates/apache2.conf.j2</p>
+            
+        
+            
+            <p>dest: /etc/apache2/apache2.conf</p>
+            
+        
+            
+            <p>notify: restart apache</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+        
+            
+            <p>Este playbook instala y configura Apache en un conjunto de servidores web. La directiva `become` se utiliza para ejecutar las tareas con privilegios de root. La tarea `Instalar Apache` utiliza el módulo `apt` para instalar el paquete `apache2`. La tarea `Configurar Apache` utiliza el módulo `template` para copiar un archivo de configuración desde un template.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los servidores y grupos de servidores que se van a gestionar. El comando `ansible-inventory` se utiliza para gestionar los inventarios. Por ejemplo, para agregar un servidor a un inventario, se puede utilizar el comando `ansible-inventory --add-server <nombre_del_servidor>`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Ansible también incluye una característica llamada Vault, que permite cifrar datos sensibles como contraseñas y claves SSH. El comando `ansible-vault` se utiliza para gestionar los datos cifrados. Por ejemplo, para crear un archivo cifrado, se puede utilizar el comando `ansible-vault create <nombre_del_archivo>`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran flexibilidad y personalización. Con sus playbooks, inventarios y características de seguridad, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>AWX/Tower es una herramienta de gestión de Ansible que proporciona una interfaz web para gestionar playbooks, inventarios y jobs. Permite a los administradores de sistemas y desarrolladores crear y ejecutar playbooks de manera centralizada, y también ofrece funcionalidades de gestión de versiones y auditoría. El comando `awx-manage` se utiliza para gestionar AWX/Tower. Por ejemplo, para crear un nuevo proyecto, se puede utilizar el comando `awx-manage create-project <nombre_del_proyecto>`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a las colecciones, Ansible ofrece una variedad de colecciones predefinidas que pueden ser utilizadas para realizar tareas comunes, como la instalación de software y la configuración de servicios. Las colecciones pueden ser instaladas utilizando el comando `ansible-galaxy`. Por ejemplo, para instalar la colección de Apache, se puede utilizar el comando `ansible-galaxy install apache`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Los roles son otro concepto importante en Ansible. Un rol es un conjunto de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Los roles pueden ser creados y compartidos utilizando el comando `ansible-galaxy`. Por ejemplo, para crear un nuevo rol, se puede utilizar el comando `ansible-galaxy init <nombre_del_rol>`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta muy poderosa y flexible que ofrece una gran variedad de características y funcionalidades para la automatización de infraestructura. Con sus playbooks, inventarios, Vault, AWX/Tower, colecciones y roles, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Ansible y sus características, se pueden consultar las fuentes oficiales de Ansible y la documentación de la comunidad. También se pueden encontrar ejemplos de playbooks y roles en la galería de Ansible, que es un repositorio de contenido de Ansible creado y mantenido por la comunidad.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En conclusión, Ansible es una herramienta muy útil para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades. Con su flexibilidad y personalización, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql" target="_blank">2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-full-observability-stack-rancher" target="_blank">2026-03-20-full-observability-stack-rancher</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges" target="_blank">2026-03-20-private-ipv4-scheme-rfc1918-ranges</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipip-tunnel-systemd-networkd" target="_blank">2026-03-20-ipip-tunnel-systemd-networkd</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-vpc-endpoints-s3-dynamodb-opentofu" target="_blank">2026-03-20-vpc-endpoints-s3-dynamodb-opentofu</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-09_0915.html">&larr; 2026-04-09 0915</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

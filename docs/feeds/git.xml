@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-12T08:58:58.514546+00:00</updated>
+  <updated>2026-04-13T10:01:14.622728+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -115,5 +115,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-01_0913.html"/>
     <summary>En este artículo, se presentan las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren las novedades y cambios en Git y GitHub, así como las configuraciones y comandos necesarios para un uso eficiente.</summary>
     <published>2026-04-01T09:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-04-13_1000.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-04-13T10:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental en el desarrollo de software, ya que permite a los equipos colaborar de manera efectiva en proyectos de código abierto. Una de las mejores prácticas para utilizar Git es establecer un flujo de trabajo (workflow) claro y consistente. Esto puede incluir la creación de ramas (branches) para diferentes características o correcciones de errores, y la utilización de &lt;code&gt;git merge&lt;/code&gt; y &lt;code&gt;git rebase&lt;/code&gt; para integrar los cambios en la rama principal.&lt;/p&gt;
+&lt;p&gt;La utilización de hooks en Git puede ayudar a automatizar tareas y garantizar la calidad del código. Por ejemplo, se puede utilizar un hook de pre-commit para ejecutar pruebas unitarias y asegurarse de que el código sea válido antes de realizar un commit. Otro ejemplo es el uso de &lt;code&gt;git bisect&lt;/code&gt; para identificar el commit que introdujo un error en el código.&lt;/p&gt;
+&lt;p&gt;La creación de worktrees en Git permite a los desarrolladores trabajar en diferentes ramas o proyectos de manera simultánea, sin tener que cambiar de directorio o clonar el repositorio completo. Esto se puede lograr utilizando el comando &lt;code&gt;git worktree add&lt;/code&gt;. Además, se pueden utilizar comandos como &lt;code&gt;git status&lt;/code&gt; y &lt;code&gt;git log&lt;/code&gt; para obtener información sobre el estado del repositorio y el historial de commits.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en Git, es importante mencionar la importancia de utilizar Docker y contenedores para simplificar la configuración del entorno de desarrollo. Esto se puede lograr utilizando comandos como &lt;code&gt;docker run&lt;/code&gt; y &lt;code&gt;docker exec&lt;/code&gt;. La utilización de herramientas como Apache Airflow también puede ayudar a automatizar y programar tareas en el flujo de trabajo de Git.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de la planificación y el seguimiento de proyectos en Git. Herramientas como GitHub Issues y Project Planning pueden ayudar a los equipos a crear y asignar tareas, y a seguir el progreso de los proyectos de manera efectiva. Esto se puede lograr utilizando comandos como &lt;code&gt;git issue&lt;/code&gt; y &lt;code&gt;git project&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la utilización de Git de manera efectiva requiere la combinación de buenas prácticas, herramientas y comandos avanzados. Al establecer un flujo de trabajo claro, utilizar hooks y worktrees, y automatizar tareas, los equipos pueden mejorar su productividad y colaboración en proyectos de desarrollo de software.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/official-stockfish/nnue-pytorch"&gt;official-stockfish/nnue-pytorch&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/dotnet/dotnet"&gt;dotnet/dotnet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/lxqt/lxqt-panel"&gt;lxqt-panel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/features/issues"&gt;Project planning for developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-13_1000.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-04-13T10:00:00+00:00</published>
   </entry>
 </feed>

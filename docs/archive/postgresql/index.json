@@ -1,4 +1,24 @@
 {
+  "2026-04-13_1000": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "En este artículo, se presentan técnicas y mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la utilización de extensiones. Se proporcionan ejemplos concretos y comandos para implementar estas técnicas.",
+    "content": "La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y la escalabilidad de las aplicaciones que utilizan esta base de datos. Una de las formas de optimizar el rendimiento es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Por ejemplo, se puede crear un índice en una columna utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`. \n\nLa replicación es otra forma de optimizar el rendimiento de PostgreSQL. La replicación permite duplicar los datos en diferentes servidores, lo que permite mejorar la disponibilidad y la escalabilidad. Se puede configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego utilizar el comando `pg_ctl start` para iniciar el servidor de replicación.\n\nLas extensiones de PostgreSQL también pueden ser utilizadas para optimizar el rendimiento. Por ejemplo, la extensión `pg_stat_statements` permite recopilar estadísticas sobre las consultas ejecutadas en la base de datos, lo que puede ayudar a identificar cuellos de botella y optimizar el rendimiento. Se puede instalar esta extensión utilizando el comando `CREATE EXTENSION pg_stat_statements;`.\n\nLa utilización de herramientas como CloudNativePG también puede ser beneficiosa para optimizar el rendimiento de PostgreSQL. CloudNativePG es una herramienta de código abierto que permite gestionar y orquestar clústeres de PostgreSQL en entornos de nube. Permite automatizar tareas como la creación de copias de seguridad, la replicación y la escalabilidad.\n\nEn resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas y herramientas. La configuración de índices, la replicación y la utilización de extensiones son solo algunas de las formas de mejorar el rendimiento de la base de datos. La utilización de herramientas como CloudNativePG también puede ser beneficiosa para automatizar y optimizar el rendimiento de PostgreSQL.\n\nPara obtener más información sobre la optimización del rendimiento de PostgreSQL, se pueden consultar las fuentes proporcionadas a continuación.",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/?language=en"
+      },
+      {
+        "title": "CloudNativePG 1.29.0 Released!",
+        "url": "https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"
+      },
+      {
+        "title": "Database Indexes: The Secret Weapon Every Backend Engineer Should Master",
+        "url": "https://medium.com/@mohamedaymen.elarbi/database-indexes-the-secret-weapon-every-backend-engineer-should-master-2d2f77d3e62c"
+      }
+    ]
+  },
   "2026-04-09_0915": {
     "slug": "postgresql",
     "title": "Mejoras en PostgreSQL para sysadmins y DevOps",

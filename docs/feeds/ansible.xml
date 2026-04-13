@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-12T08:58:58.516015+00:00</updated>
+  <updated>2026-04-13T10:01:14.624671+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -147,5 +147,48 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-09_0915.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las novedades y mejores prácticas para utilizar Ansible de manera efectiva.</summary>
     <published>2026-04-09T09:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-13_1000.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-04-13T10:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un conjunto de servidores. Un playbook puede incluir varias tareas, como la instalación de software, la configuración de servicios y la ejecución de comandos. Para ejecutar un playbook, se utiliza el comando &lt;code&gt;ansible-playbook&lt;/code&gt; seguido del nombre del playbook.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de playbook de Ansible es el siguiente:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;---&lt;/p&gt;
+&lt;p&gt;- name: Instalar y configurar Apache&lt;/p&gt;
+&lt;p&gt;hosts: servidores_web&lt;/p&gt;
+&lt;p&gt;become: true&lt;/p&gt;
+&lt;p&gt;tasks:&lt;/p&gt;
+&lt;p&gt;- name: Instalar Apache&lt;/p&gt;
+&lt;p&gt;apt:&lt;/p&gt;
+&lt;p&gt;name: apache2&lt;/p&gt;
+&lt;p&gt;state: present&lt;/p&gt;
+&lt;p&gt;- name: Configurar Apache&lt;/p&gt;
+&lt;p&gt;template:&lt;/p&gt;
+&lt;p&gt;src: templates/apache2.conf.j2&lt;/p&gt;
+&lt;p&gt;dest: /etc/apache2/apache2.conf&lt;/p&gt;
+&lt;p&gt;notify: restart apache&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Este playbook instala y configura Apache en un conjunto de servidores web. La directiva &lt;code&gt;become&lt;/code&gt; se utiliza para ejecutar las tareas con privilegios de root. La tarea &lt;code&gt;Instalar Apache&lt;/code&gt; utiliza el módulo &lt;code&gt;apt&lt;/code&gt; para instalar el paquete &lt;code&gt;apache2&lt;/code&gt;. La tarea &lt;code&gt;Configurar Apache&lt;/code&gt; utiliza el módulo &lt;code&gt;template&lt;/code&gt; para copiar un archivo de configuración desde un template.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los servidores y grupos de servidores que se van a gestionar. El comando &lt;code&gt;ansible-inventory&lt;/code&gt; se utiliza para gestionar los inventarios. Por ejemplo, para agregar un servidor a un inventario, se puede utilizar el comando &lt;code&gt;ansible-inventory --add-server &lt;nombre_del_servidor&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ansible también incluye una característica llamada Vault, que permite cifrar datos sensibles como contraseñas y claves SSH. El comando &lt;code&gt;ansible-vault&lt;/code&gt; se utiliza para gestionar los datos cifrados. Por ejemplo, para crear un archivo cifrado, se puede utilizar el comando &lt;code&gt;ansible-vault create &lt;nombre_del_archivo&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran flexibilidad y personalización. Con sus playbooks, inventarios y características de seguridad, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.&lt;/p&gt;
+&lt;p&gt;AWX/Tower es una herramienta de gestión de Ansible que proporciona una interfaz web para gestionar playbooks, inventarios y jobs. Permite a los administradores de sistemas y desarrolladores crear y ejecutar playbooks de manera centralizada, y también ofrece funcionalidades de gestión de versiones y auditoría. El comando &lt;code&gt;awx-manage&lt;/code&gt; se utiliza para gestionar AWX/Tower. Por ejemplo, para crear un nuevo proyecto, se puede utilizar el comando &lt;code&gt;awx-manage create-project &lt;nombre_del_proyecto&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las colecciones, Ansible ofrece una variedad de colecciones predefinidas que pueden ser utilizadas para realizar tareas comunes, como la instalación de software y la configuración de servicios. Las colecciones pueden ser instaladas utilizando el comando &lt;code&gt;ansible-galaxy&lt;/code&gt;. Por ejemplo, para instalar la colección de Apache, se puede utilizar el comando &lt;code&gt;ansible-galaxy install apache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Los roles son otro concepto importante en Ansible. Un rol es un conjunto de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Los roles pueden ser creados y compartidos utilizando el comando &lt;code&gt;ansible-galaxy&lt;/code&gt;. Por ejemplo, para crear un nuevo rol, se puede utilizar el comando &lt;code&gt;ansible-galaxy init &lt;nombre_del_rol&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta muy poderosa y flexible que ofrece una gran variedad de características y funcionalidades para la automatización de infraestructura. Con sus playbooks, inventarios, Vault, AWX/Tower, colecciones y roles, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Ansible y sus características, se pueden consultar las fuentes oficiales de Ansible y la documentación de la comunidad. También se pueden encontrar ejemplos de playbooks y roles en la galería de Ansible, que es un repositorio de contenido de Ansible creado y mantenido por la comunidad.&lt;/p&gt;
+&lt;p&gt;En conclusión, Ansible es una herramienta muy útil para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades. Con su flexibilidad y personalización, Ansible es una excelente opción para los administradores de sistemas y desarrolladores que buscan simplificar y automatizar sus tareas de configuración y gestión de servidores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql"&gt;2026-03-31-mysql-how-to-set-a-default-value-for-a-column-in-mysql&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-full-observability-stack-rancher"&gt;2026-03-20-full-observability-stack-rancher&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges"&gt;2026-03-20-private-ipv4-scheme-rfc1918-ranges&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipip-tunnel-systemd-networkd"&gt;2026-03-20-ipip-tunnel-systemd-networkd&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-vpc-endpoints-s3-dynamodb-opentofu"&gt;2026-03-20-vpc-endpoints-s3-dynamodb-opentofu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-13_1000.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan algunas best practices y ejemplos de uso de Ansible.</summary>
+    <published>2026-04-13T10:00:00+00:00</published>
   </entry>
 </feed>

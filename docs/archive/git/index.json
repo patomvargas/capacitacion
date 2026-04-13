@@ -1,4 +1,32 @@
 {
+  "2026-04-13_1000": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.",
+    "content": "Git es una herramienta fundamental en el desarrollo de software, ya que permite a los equipos colaborar de manera efectiva en proyectos de código abierto. Una de las mejores prácticas para utilizar Git es establecer un flujo de trabajo (workflow) claro y consistente. Esto puede incluir la creación de ramas (branches) para diferentes características o correcciones de errores, y la utilización de `git merge` y `git rebase` para integrar los cambios en la rama principal.\n\nLa utilización de hooks en Git puede ayudar a automatizar tareas y garantizar la calidad del código. Por ejemplo, se puede utilizar un hook de pre-commit para ejecutar pruebas unitarias y asegurarse de que el código sea válido antes de realizar un commit. Otro ejemplo es el uso de `git bisect` para identificar el commit que introdujo un error en el código.\n\nLa creación de worktrees en Git permite a los desarrolladores trabajar en diferentes ramas o proyectos de manera simultánea, sin tener que cambiar de directorio o clonar el repositorio completo. Esto se puede lograr utilizando el comando `git worktree add`. Además, se pueden utilizar comandos como `git status` y `git log` para obtener información sobre el estado del repositorio y el historial de commits.\n\nEn cuanto a las novedades y mejoras en Git, es importante mencionar la importancia de utilizar Docker y contenedores para simplificar la configuración del entorno de desarrollo. Esto se puede lograr utilizando comandos como `docker run` y `docker exec`. La utilización de herramientas como Apache Airflow también puede ayudar a automatizar y programar tareas en el flujo de trabajo de Git.\n\nFinalmente, es importante mencionar la importancia de la planificación y el seguimiento de proyectos en Git. Herramientas como GitHub Issues y Project Planning pueden ayudar a los equipos a crear y asignar tareas, y a seguir el progreso de los proyectos de manera efectiva. Esto se puede lograr utilizando comandos como `git issue` y `git project`.\n\nEn resumen, la utilización de Git de manera efectiva requiere la combinación de buenas prácticas, herramientas y comandos avanzados. Al establecer un flujo de trabajo claro, utilizar hooks y worktrees, y automatizar tareas, los equipos pueden mejorar su productividad y colaboración en proyectos de desarrollo de software.\n\n",
+    "sources": [
+      {
+        "title": "official-stockfish/nnue-pytorch",
+        "url": "https://github.com/official-stockfish/nnue-pytorch"
+      },
+      {
+        "title": "dotnet/dotnet",
+        "url": "https://github.com/dotnet/dotnet"
+      },
+      {
+        "title": "lxqt-panel",
+        "url": "https://github.com/lxqt/lxqt-panel"
+      },
+      {
+        "title": "Apache Airflow",
+        "url": "https://github.com/apache/airflow"
+      },
+      {
+        "title": "Project planning for developers",
+        "url": "https://github.com/features/issues"
+      }
+    ]
+  },
   "2026-04-01_0913": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",

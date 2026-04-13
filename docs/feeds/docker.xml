@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-12T08:58:58.513931+00:00</updated>
+  <updated>2026-04-13T10:01:14.621352+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -63,5 +63,35 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-05_0852.html"/>
     <summary>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Docker de manera eficiente y segura.</summary>
     <published>2026-04-05T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-13_1000.html</id>
+    <title>Mejores Practicas de Seguridad en Docker</title>
+    <updated>2026-04-13T10:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;La seguridad es un aspecto fundamental en la implementacion de contenedores con Docker. Recientemente, se han detectado vulnerabilidades como CVE-2024-23650 y CVE-2024-24557, que han sido solucionadas en las ultimas versiones de BuildKit y Moby. Para aprovechar estas mejoras, es importante mantener actualizados los componentes de Docker.&lt;/p&gt;
+&lt;p&gt;Una de las mejores practicas para mejorar la seguridad en Docker es utilizar &lt;code&gt;BuildKit&lt;/code&gt; para compilar las imagenes de los contenedores. Esto se puede hacer mediante el comando &lt;code&gt;DOCKER_BUILDKIT=1 docker build -t mi-imagen .&lt;/code&gt;. Ademas, se puede utilizar &lt;code&gt;Docker Compose&lt;/code&gt; para definir y ejecutar multiples contenedores de manera segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker-compose up -d&lt;/code&gt; para iniciar los contenedores en segundo plano.&lt;/p&gt;
+&lt;p&gt;Otra medida importante para proteger los contenedores es utilizar redes seguras. Se puede crear una red segura con el comando &lt;code&gt;docker network create --driver overlay mi-red&lt;/code&gt;. Luego, se pueden conectar los contenedores a esta red utilizando el comando &lt;code&gt;docker run -d --net mi-red mi-imagen&lt;/code&gt;. Es importante tambien utilizar claves SSH seguras para acceder a los contenedores, en lugar de utilizar contrasenas en texto plano.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuracion de los contenedores, es importante utilizar &lt;code&gt;Docker Compose&lt;/code&gt; para definir los servicios y los volumenes de manera segura. Por ejemplo, se puede utilizar el siguiente archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; para definir un servicio con un volumen persistente:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;version: '3'&lt;/p&gt;
+&lt;p&gt;services:&lt;/p&gt;
+&lt;p&gt;mi-servicio:&lt;/p&gt;
+&lt;p&gt;image: mi-imagen&lt;/p&gt;
+&lt;p&gt;volumes:&lt;/p&gt;
+&lt;p&gt;- mi-volumen:/datos&lt;/p&gt;
+&lt;p&gt;volumes:&lt;/p&gt;
+&lt;p&gt;mi-volumen:&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad en Docker es un tema en constante evolucion. Es importante estar al tanto de las ultimas novedades y recomendaciones de seguridad, y aplicar las mejores practicas para proteger los contenedores y los datos.&lt;/p&gt;
+&lt;p&gt;En resumen, la seguridad en Docker es un aspecto fundamental que requiere una configuracion y una utilizacion adecuadas de los componentes de Docker. Al seguir las mejores practicas y mantener actualizados los componentes, se puede proteger los contenedores y los datos de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/security/security-announcements/"&gt;Security announcements | Docker Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/trivy-supply-chain-compromise-what-docker-hub-users-should-know/"&gt;Trivy supply chain compromise: What Docker Hub users should know&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@kubeastronaut/docker-security-best-practices-57f3a33f06eb"&gt;Docker Security Best Practices. Advanced Guide for Production-Grade…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-13_1000.html"/>
+    <summary>En este articulo se presentan las mejores practicas de seguridad en Docker, incluyendo la configuracion de BuildKit y la utilizacion de Docker Compose. Se discuten tambien las novedades en seguridad y las recomendaciones para proteger los contenedores.</summary>
+    <published>2026-04-13T10:00:00+00:00</published>
   </entry>
 </feed>

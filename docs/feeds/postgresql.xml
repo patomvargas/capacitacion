@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-12T08:58:58.513000+00:00</updated>
+  <updated>2026-04-13T10:01:14.620153+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -143,5 +143,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-09_0915.html"/>
     <summary>PostgreSQL ha lanzado actualizaciones para todas sus versiones soportadas, incluyendo 18.3, 17.9, 16.13, 15.17 y 14.22. Estas actualizaciones incluyen mejoras en la gestión de bloqueos y la seguridad.</summary>
     <published>2026-04-09T09:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-13_1000.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-04-13T10:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y la escalabilidad de las aplicaciones que utilizan esta base de datos. Una de las formas de optimizar el rendimiento es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Por ejemplo, se puede crear un índice en una columna utilizando el comando &lt;code&gt;CREATE INDEX idx_nombre ON tabla (columna);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra forma de optimizar el rendimiento de PostgreSQL. La replicación permite duplicar los datos en diferentes servidores, lo que permite mejorar la disponibilidad y la escalabilidad. Se puede configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de seguridad de la base de datos y luego utilizar el comando &lt;code&gt;pg_ctl start&lt;/code&gt; para iniciar el servidor de replicación.&lt;/p&gt;
+&lt;p&gt;Las extensiones de PostgreSQL también pueden ser utilizadas para optimizar el rendimiento. Por ejemplo, la extensión &lt;code&gt;pg_stat_statements&lt;/code&gt; permite recopilar estadísticas sobre las consultas ejecutadas en la base de datos, lo que puede ayudar a identificar cuellos de botella y optimizar el rendimiento. Se puede instalar esta extensión utilizando el comando &lt;code&gt;CREATE EXTENSION pg_stat_statements;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La utilización de herramientas como CloudNativePG también puede ser beneficiosa para optimizar el rendimiento de PostgreSQL. CloudNativePG es una herramienta de código abierto que permite gestionar y orquestar clústeres de PostgreSQL en entornos de nube. Permite automatizar tareas como la creación de copias de seguridad, la replicación y la escalabilidad.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas y herramientas. La configuración de índices, la replicación y la utilización de extensiones son solo algunas de las formas de mejorar el rendimiento de la base de datos. La utilización de herramientas como CloudNativePG también puede ser beneficiosa para automatizar y optimizar el rendimiento de PostgreSQL.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre la optimización del rendimiento de PostgreSQL, se pueden consultar las fuentes proporcionadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/?language=en"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"&gt;CloudNativePG 1.29.0 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mohamedaymen.elarbi/database-indexes-the-secret-weapon-every-backend-engineer-should-master-2d2f77d3e62c"&gt;Database Indexes: The Secret Weapon Every Backend Engineer Should Master&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-13_1000.html"/>
+    <summary>En este artículo, se presentan técnicas y mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la utilización de extensiones. Se proporcionan ejemplos concretos y comandos para implementar estas técnicas.</summary>
+    <published>2026-04-13T10:00:00+00:00</published>
   </entry>
 </feed>
