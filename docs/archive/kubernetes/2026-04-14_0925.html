@@ -58,53 +58,47 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-04-10 0916 · Kubernetes</div>
+    <div class="meta">2026-04-14 0925 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con el tiempo. Una de las últimas novedades es el Jaeger Operator, que permite una mejor administración de la trazabilidad de aplicaciones en clústeres de Kubernetes. Para instalar el Jaeger Operator, se puede utilizar el comando `kubectl apply -f https://github.com/jaegertracing/jaeger-operator/releases/latest/download/jaeger-operator.yaml`.</p>
+        
+            
+            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En las últimas versiones, se han agregado nuevas características y mejoras en seguridad, networking y almacenamiento. Por ejemplo, en la versión 1.36, se ha agregado la función de `--ingress-class` para mejorar la gestión de los ingress.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto importante en Kubernetes. El proyecto Liqo permite crear topologías de clústeres múltiples de manera dinámica y segura, lo que facilita la administración de entornos complejos. Para instalar Liqo, se puede utilizar el comando `kubectl apply -f https://github.com/LiqoTech/liqo/releases/latest/download/liqo.yaml`.</p>
+            <p>Una de las novedades más importantes es la mejora en la seguridad de los clústeres de Kubernetes. Se ha agregado la función de `CVE-2026-4342` para proteger contra ataques de comment-based nginx. Para aplicar esta actualización, se puede utilizar el comando `kubectl apply -f <nombre_del_archivo_de_configuracion>`. Además, se ha agregado la función de `fsGroupChangePolicy` para mejorar la gestión de los permisos de los volúmenes.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto al almacenamiento, Kubernetes ofrece varias opciones para gestionar los datos de las aplicaciones. Una de ellas es el uso de almacenamiento persistente, que se puede configurar utilizando el comando `kubectl create -f persistent-volume.yaml`. Esto permite crear un volumen persistente que se puede utilizar por las aplicaciones en el clúster.</p>
+            <p>En cuanto a la networking, se ha agregado la función de `ingress-nginx` para mejorar la gestión de los ingress. Sin embargo, se ha anunciado que esta función será reemplazada en el futuro. Para configurar un ingress con `ingress-nginx`, se puede utilizar el comando `kubectl create -f <nombre_del_archivo_de_configuracion>`. Por ejemplo: `kubectl create -f ingress-nginx.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>Otro proyecto interesante es Thundernetes, que permite ejecutar servidores de juegos en clústeres de Kubernetes. Esto abre nuevas posibilidades para la creación de entornos de juego escalables y seguros. Para instalar Thundernetes, se puede utilizar el comando `kubectl apply -f https://github.com/PlayFab/thundernetes/releases/latest/download/thundernetes.yaml`.</p>
+            <p>En cuanto a las best practices, se recomienda utilizar la versión más reciente de Kubernetes y aplicar las actualizaciones de seguridad de manera regular. También se recomienda utilizar herramientas de monitoreo y logging para detectar problemas en el clúster. Para monitorear el clúster, se puede utilizar el comando `kubectl get pods -o wide` para obtener información sobre los pods en ejecución.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Kubernetes sigue evolucionando con el tiempo, y proyectos como Jaeger Operator, Liqo y Thundernetes ofrecen nuevas posibilidades para la administración de clústeres y la creación de aplicaciones escalables y seguras. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes.</p>
+            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. Es importante estar al tanto de las últimas novedades y best practices para asegurarse de que el clúster esté seguro y funcionando de manera óptima.</p>
             
         
             
         
             
-        
+            <p>Para obtener más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y tecnologías utilizadas.</p>
             
-            <p>Para más información, se pueden consultar las fuentes originales de estos proyectos, que se listan a continuación.</p>
+        
             
         
     </div>
@@ -115,27 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/jaegertracing/jaeger-operator" target="_blank">Jaeger Operator for Kubernetes</a>
+                <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/PlayFab/thundernetes" target="_blank">Thundernetes</a>
+                <a href="https://github.com/kubernetes/kubernetes/issues/137893" target="_blank">CVE-2026-4342: ingress-nginx comment-based nginx</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/LiqoTech/liqo" target="_blank">Liqo</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/kubernetes-sigs/cluster-api-provider-aws" target="_blank">Kubernetes Cluster API Provider AWS</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/civo/cli" target="_blank">Civo Command-Line Client</a>
+                <a href="https://github.com/kubernetes/ingress-nginx" target="_blank">Ingress NGINX Controller for Kubernetes</a>
                 
             </li>
             
@@ -146,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-06_0915.html">&larr; 2026-04-06 0915</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-10_0916.html">&larr; 2026-04-10 0916</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-14_0925.html">2026-04-14 0925 &rarr;</a>
             
         </div>
     </div>

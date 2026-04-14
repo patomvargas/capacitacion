@@ -1,4 +1,32 @@
 {
+  "2026-04-14_0925": {
+    "slug": "bind9",
+    "title": "Configuración Avanzada de DNS BIND9",
+    "summary": "Este artículo cubre las mejores prácticas para la configuración de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y logging. Se proporcionan ejemplos concretos y comandos para una implementación efectiva.",
+    "content": "La configuración de DNS BIND9 es crucial para un funcionamiento eficiente de los servicios de red. Para empezar, es importante configurar las zonas DNS correctamente. Se puede hacer esto editando el archivo `named.conf` y agregando las zonas correspondientes con el comando `zone`. Por ejemplo, para agregar una zona llamada `example.com`, se puede utilizar el siguiente comando: `zone \"example.com\" IN { type master; file \"/etc/bind/db.example.com\"; };`.\n\n \n\nUna vez configuradas las zonas, es importante implementar DNSSEC para asegurar la autenticidad y la integridad de los datos DNS. Esto se puede hacer utilizando el comando `dnssec-keygen` para generar las claves de zona y luego configurar la zona para utilizar DNSSEC. Por ejemplo, se puede utilizar el siguiente comando para generar una clave de zona: `dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com`.\n\n \n\nOtra característica importante de DNS BIND9 es la capacidad de configurar vistas, que permiten servir diferentes respuestas DNS dependiendo de la ubicación del cliente. Se puede configurar una vista utilizando el comando `view` en el archivo `named.conf`. Por ejemplo, se puede utilizar el siguiente comando para configurar una vista llamada `internal`: `view \"internal\" { match-clients { 10.0.0.0/8; }; recursion yes; };`.\n\n \n\nAdemás, DNS BIND9 también admite la configuración de RPZ (Response Policy Zones), que permiten bloquear o restringir el acceso a ciertos dominios. Se puede configurar una RPZ utilizando el comando `response-policy` en el archivo `named.conf`. Por ejemplo, se puede utilizar el siguiente comando para configurar una RPZ llamada `blocklist`: `response-policy { zone \"blocklist\"; };`.\n\n \n\nFinalmente, es importante configurar el logging correctamente para poder monitorear y depurar el servidor DNS. Se puede configurar el logging utilizando el comando `logging` en el archivo `named.conf`. Por ejemplo, se puede utilizar el siguiente comando para configurar el logging para que se envíen los mensajes de error a un archivo llamado `error.log`: `logging { channel \"error_log\" { file \"/var/log/named/error.log\"; severity error; }; };`.\n\n \n\nEn resumen, la configuración de DNS BIND9 requiere una cuidadosa planificación y configuración para asegurar un funcionamiento eficiente y seguro. Al seguir estas mejores prácticas y utilizando los comandos y configuraciones proporcionados, se puede implementar un servidor DNS seguro y escalable.",
+    "sources": [
+      {
+        "title": "2026-03-14-how-to-troubleshoot-cilium-bugtool-completion-fish",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-14-how-to-troubleshoot-cilium-bugtool-completion-fish"
+      },
+      {
+        "title": "2026-03-20-configure-dns-over-tls-ipv6",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-dns-over-tls-ipv6"
+      },
+      {
+        "title": "2026-03-18-use-env-instruction-containerfiles-podman",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-use-env-instruction-containerfiles-podman"
+      },
+      {
+        "title": "2026-03-20-ikev2-vpn-server-ipv4-strongswan",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ikev2-vpn-server-ipv4-strongswan"
+      },
+      {
+        "title": "2026-03-20-azure-storage-shared-access-signatures-opentofu",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-azure-storage-shared-access-signatures-opentofu"
+      }
+    ]
+  },
   "2026-04-06_0915": {
     "slug": "bind9",
     "title": "Configuración y Mejoras en DNS BIND9",

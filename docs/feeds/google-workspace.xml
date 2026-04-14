@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml</id>
   <title>Google Workspace - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-13T10:01:14.605896+00:00</updated>
+  <updated>2026-04-14T09:26:00.430265+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -120,5 +120,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-10_0916.html"/>
     <summary>Google Workspace ha lanzado varias mejoras y novedades en los últimos meses, incluyendo la habilitación de compras iniciadas por el usuario y mejoras en la seguridad. En este artículo, se presentan las últimas novedades y se proporcionan ejemplos prácticos de cómo configurar y utilizar estas nuevas características.</summary>
     <published>2026-04-10T09:16:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-14_0925.html</id>
+    <title>Novedades en Google Workspace</title>
+    <updated>2026-04-14T09:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;Google Workspace es una suite de herramientas de productividad en la nube que ofrece una variedad de servicios, incluyendo Gmail, Google Drive y Google Meet. Recientemente, se han introducido varias novedades en la plataforma, como la capacidad de reservar recursos desde calendarios de terceros. Esto se logra mediante la API de Google Calendar, que permite a los desarrolladores crear aplicaciones que interactúan con los calendarios de los usuarios.&lt;/p&gt;
+&lt;p&gt;Para reservar un recurso, los desarrolladores pueden utilizar el comando &lt;code&gt;gcal resource create&lt;/code&gt; para crear un nuevo recurso y luego utilizar el comando &lt;code&gt;gcal event create&lt;/code&gt; para crear un evento que reserve el recurso. Por ejemplo: &lt;code&gt;gcal event create --resource-id=&lt;id-del-recurso&gt; --start=&lt;fecha-de-inicio&gt; --end=&lt;fecha-de-fin&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad es la discontinuación de Whisk, que se producirá el 30 de abril de 2026. Esto afectará a todos los clientes de Google Workspace y a los suscriptores de Workspace Individual. Los clientes deben migrar a otras soluciones antes de la fecha de discontinuación para evitar interrupciones en sus servicios.&lt;/p&gt;
+&lt;p&gt;Además, se han realizado cambios en las capacidades de inteligencia artificial avanzada en Google Workspace. A partir del 3 de febrero de 2026, se han actualizado los límites de uso para un subconjunto de capacidades de inteligencia artificial avanzada. Los clientes deben revisar sus configuraciones y ajustar sus límites de uso según sea necesario.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las novedades en Google Workspace, los clientes pueden consultar la documentación oficial de Google y las fuentes de información confiables.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/"&gt;Google Workspace Updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/2026/"&gt;Google Workspace Updates: 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.devoteam.com/expert-view/what-is-new-in-google-workspace/"&gt;What is new in Google Workspace&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-14_0925.html"/>
+    <summary>Google Workspace ha introducido varias novedades, incluyendo la capacidad de reservar recursos desde calendarios de terceros y la discontinuación de Whisk. Además, se han realizado cambios en las capacidades de inteligencia artificial avanzada.</summary>
+    <published>2026-04-14T09:25:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
+    <title>FreeIPA: Gestión de Identidad y Seguridad - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-04-10 0916 · FreeIPA</div>
+    <h1>FreeIPA: Gestión de Identidad y Seguridad</h1>
+    <div class="meta">2026-04-14 0925 · FreeIPA</div>
 
     <div class="content">
         
@@ -66,37 +66,41 @@
             
         
             
-            <p>FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red. Permite a los administradores gestionar usuarios, grupos y hosts de manera centralizada, y proporciona una plataforma de autenticación y autorización segura. Para implementar FreeIPA, se puede seguir la guía de instalación en Rocky Linux 10 o RHEL 10, que se encuentra disponible en la fuente [2].</p>
+            <p>FreeIPA es una herramienta de gestión de identidad y seguridad que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con Red Hat Enterprise Linux o CentOS.</p>
             
         
             
         
             
-            <p>Una vez instalado FreeIPA, se puede configurar para utilizar LDAP y Kerberos para la autenticación y autorización. Por ejemplo, se puede utilizar el comando `ipa server-install` para instalar y configurar el servidor FreeIPA. Luego, se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios al sistema. Para configurar las reglas de acceso, se puede utilizar el comando `ipa hbacrule-add` para agregar nuevas reglas de acceso basadas en la ubicación y el tiempo.</p>
+            <p>Una vez instalado, se puede configurar el servidor FreeIPA para utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando `ipa config-mod` para modificar la configuración del servidor. También se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios y `ipa group-add` para agregar nuevos grupos.</p>
             
         
             
         
             
-            <p>Otra característica importante de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios. Esto permite a los usuarios de un dominio acceder a recursos en otro dominio sin necesidad de autenticarse nuevamente. Para establecer una relación de confianza, se puede utilizar el comando `ipa trust-add` para agregar un nuevo dominio de confianza. Luego, se puede utilizar el comando `ipa trust-fetch-domains` para obtener la lista de dominios de confianza configurados.</p>
+            <p>En cuanto a la seguridad, FreeIPA proporciona características como la autenticación multifactor y la autorización basada en roles. También se puede integrar con otros sistemas de seguridad, como Cloudflare, para proporcionar una capa adicional de protección. Por ejemplo, se puede utilizar el comando `ipa trust-add` para agregar un dominio de confianza y `ipa sudo` para configurar reglas de sudo.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona una plataforma de autenticación y autorización segura. Se puede utilizar el protocolo Kerberos para autenticar a los usuarios y proporcionar acceso a los recursos. Además, se pueden configurar reglas de acceso basadas en la ubicación y el tiempo para restringir el acceso a los recursos. Por ejemplo, se puede utilizar el comando `ipa sudorule-add` para agregar una nueva regla de acceso para los comandos de sudo.</p>
+            <p>Además, FreeIPA proporciona herramientas para la gestión de certificados y la configuración de la infraestructura de claves públicas. Por ejemplo, se puede utilizar el comando `ipa cert-request` para solicitar un certificado y `ipa ca-configure` para configurar la autoridad de certificación.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que FreeIPA se puede integrar con otras herramientas y tecnologías para proporcionar una plataforma de gestión de identidad y acceso completa. Por ejemplo, se puede integrar con herramientas de gestión de infraestructura como Ansible o Puppet para automatizar la configuración y el despliegue de los recursos.</p>
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y seguridad en entornos de red. Con sus características de autenticación y autorización, así como su integración con otros sistemas de seguridad, FreeIPA es una excelente opción para los administradores de sistemas que buscan proteger sus redes de manera efectiva.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre FreeIPA y su configuración, se pueden consultar las fuentes proporcionadas. La documentación oficial de FreeIPA se encuentra disponible en la fuente [1], y la guía de instalación en Rocky Linux 10 o RHEL 10 se encuentra disponible en la fuente [2].</p>
+            <p>Finalmente, es importante mencionar que FreeIPA está en constante evolución, con nuevas características y mejoras en seguridad. Por ejemplo, se está trabajando en la implementación de la criptografía post-cuántica (PQC) como parte del proyecto Quantum-Resistant Cryptography in Practice (QARC). Esto permitirá a los administradores de sistemas proteger sus redes contra posibles ataques cuánticos en el futuro.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa" target="_blank">GitHub - freeipa/freeipa</a>
+                <a href="https://planet.freeipa.org/" target="_blank">FreeIPA Identity Management planet - technical blogs</a>
                 
             </li>
             
             <li>
-                <a href="https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/" target="_blank">Install FreeIPA Server on Rocky Linux 10 / RHEL 10 [Guide]</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:4907" target="_blank">RHSA-2026:4907 - Security Advisory - Red Hat Customer Portal</a>
                 
             </li>
             
             <li>
-                <a href="https://oneuptime.com/blog/post/2026-03-13-deploy-freeipa-identity-management-with-flux-cd/view" target="_blank">How to Deploy FreeIPA Identity Management with Flux CD</a>
+                <a href="https://github.com/freeipa/freeipa" target="_blank">GitHub - freeipa/freeipa: Mirror of FreeIPA, an integrated security information management solution</a>
                 
             </li>
             
@@ -128,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-06_0915.html">&larr; 2026-04-06 0915</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-10_0916.html">&larr; 2026-04-10 0916</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-14_0925.html">2026-04-14 0925 &rarr;</a>
             
         </div>
     </div>

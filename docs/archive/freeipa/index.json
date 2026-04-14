@@ -1,4 +1,24 @@
 {
+  "2026-04-14_0925": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Seguridad",
+    "summary": "FreeIPA es una solución de gestión de identidad y seguridad que integra LDAP, Kerberos y otros protocolos. En este artículo, se presentan las novedades y best practices para implementar FreeIPA de manera efectiva.",
+    "content": "\nFreeIPA es una herramienta de gestión de identidad y seguridad que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con Red Hat Enterprise Linux o CentOS.\n\nUna vez instalado, se puede configurar el servidor FreeIPA para utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando `ipa config-mod` para modificar la configuración del servidor. También se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios y `ipa group-add` para agregar nuevos grupos.\n\nEn cuanto a la seguridad, FreeIPA proporciona características como la autenticación multifactor y la autorización basada en roles. También se puede integrar con otros sistemas de seguridad, como Cloudflare, para proporcionar una capa adicional de protección. Por ejemplo, se puede utilizar el comando `ipa trust-add` para agregar un dominio de confianza y `ipa sudo` para configurar reglas de sudo.\n\nAdemás, FreeIPA proporciona herramientas para la gestión de certificados y la configuración de la infraestructura de claves públicas. Por ejemplo, se puede utilizar el comando `ipa cert-request` para solicitar un certificado y `ipa ca-configure` para configurar la autoridad de certificación.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y seguridad en entornos de red. Con sus características de autenticación y autorización, así como su integración con otros sistemas de seguridad, FreeIPA es una excelente opción para los administradores de sistemas que buscan proteger sus redes de manera efectiva.\n\nFinalmente, es importante mencionar que FreeIPA está en constante evolución, con nuevas características y mejoras en seguridad. Por ejemplo, se está trabajando en la implementación de la criptografía post-cuántica (PQC) como parte del proyecto Quantum-Resistant Cryptography in Practice (QARC). Esto permitirá a los administradores de sistemas proteger sus redes contra posibles ataques cuánticos en el futuro.\n\n  ",
+    "sources": [
+      {
+        "title": "FreeIPA Identity Management planet - technical blogs",
+        "url": "https://planet.freeipa.org/"
+      },
+      {
+        "title": "RHSA-2026:4907 - Security Advisory - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/errata/RHSA-2026:4907"
+      },
+      {
+        "title": "GitHub - freeipa/freeipa: Mirror of FreeIPA, an integrated security information management solution",
+        "url": "https://github.com/freeipa/freeipa"
+      }
+    ]
+  },
   "2026-04-10_0916": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",

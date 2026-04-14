@@ -1,4 +1,20 @@
 {
+  "2026-04-14_0925": {
+    "slug": "openvpn",
+    "title": "Configuración de OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes. En este artículo, se explica cómo configurar OpenVPN para establecer conexiones seguras y cómo optimizar el rendimiento.",
+    "content": "\nLa configuración de OpenVPN implica la creación de un archivo de configuración que especifique los parámetros de la conexión. Por ejemplo, se puede utilizar el comando `openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN con la configuración especificada en el archivo `/etc/openvpn/server.conf`. \n\nPara establecer una conexión segura, es importante configurar los certificados SSL/TLS. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout /etc/openvpn/server.key -out /etc/openvpn/server.crt -days 3650` para generar un certificado autofirmado.\n\nEn cuanto a la optimización del rendimiento, es importante configurar el MTU (Maximum Transmission Unit) de la interfaz de red. Según la fuente [1], se puede utilizar el comando `ip link set mtu 1400 dev tun0` para establecer el MTU en 1400 bytes. \n\nAdemás, es importante tener en cuenta la seguridad de la conexión. Se puede utilizar el comando `openvpn --tls-auth /etc/openvpn/ta.key --cipher AES-256-CBC --auth SHA256` para habilitar la autenticación TLS y cifrar la conexión con AES-256-CBC.\n\nEn cuanto a la conexión site-to-site, se puede utilizar el modo `--mode server` para configurar el servidor OpenVPN como un servidor de conexión site-to-site. Por ejemplo, se puede utilizar el comando `openvpn --mode server --port 1194 --proto udp --dev tun --ca /etc/openvpn/ca.crt --cert /etc/openvpn/server.crt --key /etc/openvpn/server.key --dh /etc/openvpn/dh2048.pem` para iniciar el servidor OpenVPN en modo site-to-site.\n\nFinalmente, es importante mencionar que la seguridad de la conexión es fundamental. Se debe asegurar de que los certificados y claves sean seguros y no sean accesibles para personas no autorizadas. \n",
+    "sources": [
+      {
+        "title": "Configurar MTU en VPN",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-mtu-ipv4-vpn-tunnels"
+      },
+      {
+        "title": "Apple Active Exploit Chain DarkSword",
+        "url": "https://github.com/wagov/wasocshared/blob/main/docs/advisories/20260319002-Apple-Active-Exploit-Chain-DarkSword.md"
+      }
+    ]
+  },
   "2026-04-10_0916": {
     "slug": "openvpn",
     "title": "OpenVPN: Mejoras y Best Practices",

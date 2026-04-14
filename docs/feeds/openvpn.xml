@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-13T10:01:14.608599+00:00</updated>
+  <updated>2026-04-14T09:26:00.434687+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -143,5 +143,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-10_0916.html"/>
     <summary>OpenVPN es una herramienta de túneling segura y flexible que utiliza la biblioteca OpenSSL para tunelar redes IP de forma segura. En este artículo, se presentan las últimas mejoras y best practices para utilizar OpenVPN de manera efectiva.</summary>
     <published>2026-04-10T09:16:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-14_0925.html</id>
+    <title>Configuración de OpenVPN</title>
+    <updated>2026-04-14T09:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de OpenVPN implica la creación de un archivo de configuración que especifique los parámetros de la conexión. Por ejemplo, se puede utilizar el comando &lt;code&gt;openvpn --config /etc/openvpn/server.conf&lt;/code&gt; para iniciar el servidor OpenVPN con la configuración especificada en el archivo &lt;code&gt;/etc/openvpn/server.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para establecer una conexión segura, es importante configurar los certificados SSL/TLS. Se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout /etc/openvpn/server.key -out /etc/openvpn/server.crt -days 3650&lt;/code&gt; para generar un certificado autofirmado.&lt;/p&gt;
+&lt;p&gt;En cuanto a la optimización del rendimiento, es importante configurar el MTU (Maximum Transmission Unit) de la interfaz de red. Según la fuente [1], se puede utilizar el comando &lt;code&gt;ip link set mtu 1400 dev tun0&lt;/code&gt; para establecer el MTU en 1400 bytes.&lt;/p&gt;
+&lt;p&gt;Además, es importante tener en cuenta la seguridad de la conexión. Se puede utilizar el comando &lt;code&gt;openvpn --tls-auth /etc/openvpn/ta.key --cipher AES-256-CBC --auth SHA256&lt;/code&gt; para habilitar la autenticación TLS y cifrar la conexión con AES-256-CBC.&lt;/p&gt;
+&lt;p&gt;En cuanto a la conexión site-to-site, se puede utilizar el modo &lt;code&gt;--mode server&lt;/code&gt; para configurar el servidor OpenVPN como un servidor de conexión site-to-site. Por ejemplo, se puede utilizar el comando &lt;code&gt;openvpn --mode server --port 1194 --proto udp --dev tun --ca /etc/openvpn/ca.crt --cert /etc/openvpn/server.crt --key /etc/openvpn/server.key --dh /etc/openvpn/dh2048.pem&lt;/code&gt; para iniciar el servidor OpenVPN en modo site-to-site.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad de la conexión es fundamental. Se debe asegurar de que los certificados y claves sean seguros y no sean accesibles para personas no autorizadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-mtu-ipv4-vpn-tunnels"&gt;Configurar MTU en VPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wagov/wasocshared/blob/main/docs/advisories/20260319002-Apple-Active-Exploit-Chain-DarkSword.md"&gt;Apple Active Exploit Chain DarkSword&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-14_0925.html"/>
+    <summary>OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes. En este artículo, se explica cómo configurar OpenVPN para establecer conexiones seguras y cómo optimizar el rendimiento.</summary>
+    <published>2026-04-14T09:25:00+00:00</published>
   </entry>
 </feed>

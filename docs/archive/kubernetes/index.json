@@ -1,4 +1,24 @@
 {
+  "2026-04-14_0925": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. En este artículo, se presentan las últimas novedades y best practices para sysadmins y DevOps engineers.",
+    "content": "\nKubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En las últimas versiones, se han agregado nuevas características y mejoras en seguridad, networking y almacenamiento. Por ejemplo, en la versión 1.36, se ha agregado la función de `--ingress-class` para mejorar la gestión de los ingress.\n\nUna de las novedades más importantes es la mejora en la seguridad de los clústeres de Kubernetes. Se ha agregado la función de `CVE-2026-4342` para proteger contra ataques de comment-based nginx. Para aplicar esta actualización, se puede utilizar el comando `kubectl apply -f <nombre_del_archivo_de_configuracion>`. Además, se ha agregado la función de `fsGroupChangePolicy` para mejorar la gestión de los permisos de los volúmenes.\n\nEn cuanto a la networking, se ha agregado la función de `ingress-nginx` para mejorar la gestión de los ingress. Sin embargo, se ha anunciado que esta función será reemplazada en el futuro. Para configurar un ingress con `ingress-nginx`, se puede utilizar el comando `kubectl create -f <nombre_del_archivo_de_configuracion>`. Por ejemplo: `kubectl create -f ingress-nginx.yaml`.\n\nEn cuanto a las best practices, se recomienda utilizar la versión más reciente de Kubernetes y aplicar las actualizaciones de seguridad de manera regular. También se recomienda utilizar herramientas de monitoreo y logging para detectar problemas en el clúster. Para monitorear el clúster, se puede utilizar el comando `kubectl get pods -o wide` para obtener información sobre los pods en ejecución.\n\nEn resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. Es importante estar al tanto de las últimas novedades y best practices para asegurarse de que el clúster esté seguro y funcionando de manera óptima.\n\nPara obtener más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y tecnologías utilizadas. \n",
+    "sources": [
+      {
+        "title": "Kubernetes v1.36 Sneak Peek",
+        "url": "https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"
+      },
+      {
+        "title": "CVE-2026-4342: ingress-nginx comment-based nginx",
+        "url": "https://github.com/kubernetes/kubernetes/issues/137893"
+      },
+      {
+        "title": "Ingress NGINX Controller for Kubernetes",
+        "url": "https://github.com/kubernetes/ingress-nginx"
+      }
+    ]
+  },
   "2026-04-10_0916": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-13T10:01:14.607315+00:00</updated>
+  <updated>2026-04-14T09:26:00.432292+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -156,5 +156,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-10_0916.html"/>
     <summary>FreeIPA es una solución de gestión de identidad y acceso que integra LDAP, Kerberos y otras tecnologías para proporcionar una plataforma de autenticación y autorización segura. En este artículo, se explora cómo implementar y configurar FreeIPA en un entorno de red.</summary>
     <published>2026-04-10T09:16:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-14_0925.html</id>
+    <title>FreeIPA: Gestión de Identidad y Seguridad</title>
+    <updated>2026-04-14T09:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de gestión de identidad y seguridad que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para instalar FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; en una máquina con Red Hat Enterprise Linux o CentOS.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar el servidor FreeIPA para utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa config-mod&lt;/code&gt; para modificar la configuración del servidor. También se puede utilizar el comando &lt;code&gt;ipa user-add&lt;/code&gt; para agregar nuevos usuarios y &lt;code&gt;ipa group-add&lt;/code&gt; para agregar nuevos grupos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona características como la autenticación multifactor y la autorización basada en roles. También se puede integrar con otros sistemas de seguridad, como Cloudflare, para proporcionar una capa adicional de protección. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa trust-add&lt;/code&gt; para agregar un dominio de confianza y &lt;code&gt;ipa sudo&lt;/code&gt; para configurar reglas de sudo.&lt;/p&gt;
+&lt;p&gt;Además, FreeIPA proporciona herramientas para la gestión de certificados y la configuración de la infraestructura de claves públicas. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa cert-request&lt;/code&gt; para solicitar un certificado y &lt;code&gt;ipa ca-configure&lt;/code&gt; para configurar la autoridad de certificación.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y seguridad en entornos de red. Con sus características de autenticación y autorización, así como su integración con otros sistemas de seguridad, FreeIPA es una excelente opción para los administradores de sistemas que buscan proteger sus redes de manera efectiva.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que FreeIPA está en constante evolución, con nuevas características y mejoras en seguridad. Por ejemplo, se está trabajando en la implementación de la criptografía post-cuántica (PQC) como parte del proyecto Quantum-Resistant Cryptography in Practice (QARC). Esto permitirá a los administradores de sistemas proteger sus redes contra posibles ataques cuánticos en el futuro.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://planet.freeipa.org/"&gt;FreeIPA Identity Management planet - technical blogs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:4907"&gt;RHSA-2026:4907 - Security Advisory - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;GitHub - freeipa/freeipa: Mirror of FreeIPA, an integrated security information management solution&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-14_0925.html"/>
+    <summary>FreeIPA es una solución de gestión de identidad y seguridad que integra LDAP, Kerberos y otros protocolos. En este artículo, se presentan las novedades y best practices para implementar FreeIPA de manera efectiva.</summary>
+    <published>2026-04-14T09:25:00+00:00</published>
   </entry>
 </feed>

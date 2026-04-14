@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-13T10:01:14.609599+00:00</updated>
+  <updated>2026-04-14T09:26:00.436294+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -198,5 +198,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-10_0916.html"/>
     <summary>En este artículo, se presentan las últimas novedades en Kubernetes, incluyendo nuevas características y mejoras en networking, almacenamiento y seguridad. Se destacan proyectos como Jaeger Operator y Liqo para mejorar la administración de clústeres.</summary>
     <published>2026-04-10T09:16:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-14_0925.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-04-14T09:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En las últimas versiones, se han agregado nuevas características y mejoras en seguridad, networking y almacenamiento. Por ejemplo, en la versión 1.36, se ha agregado la función de &lt;code&gt;--ingress-class&lt;/code&gt; para mejorar la gestión de los ingress.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más importantes es la mejora en la seguridad de los clústeres de Kubernetes. Se ha agregado la función de &lt;code&gt;CVE-2026-4342&lt;/code&gt; para proteger contra ataques de comment-based nginx. Para aplicar esta actualización, se puede utilizar el comando &lt;code&gt;kubectl apply -f &lt;nombre_del_archivo_de_configuracion&gt;&lt;/code&gt;. Además, se ha agregado la función de &lt;code&gt;fsGroupChangePolicy&lt;/code&gt; para mejorar la gestión de los permisos de los volúmenes.&lt;/p&gt;
+&lt;p&gt;En cuanto a la networking, se ha agregado la función de &lt;code&gt;ingress-nginx&lt;/code&gt; para mejorar la gestión de los ingress. Sin embargo, se ha anunciado que esta función será reemplazada en el futuro. Para configurar un ingress con &lt;code&gt;ingress-nginx&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl create -f &lt;nombre_del_archivo_de_configuracion&gt;&lt;/code&gt;. Por ejemplo: &lt;code&gt;kubectl create -f ingress-nginx.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, se recomienda utilizar la versión más reciente de Kubernetes y aplicar las actualizaciones de seguridad de manera regular. También se recomienda utilizar herramientas de monitoreo y logging para detectar problemas en el clúster. Para monitorear el clúster, se puede utilizar el comando &lt;code&gt;kubectl get pods -o wide&lt;/code&gt; para obtener información sobre los pods en ejecución.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. Es importante estar al tanto de las últimas novedades y best practices para asegurarse de que el clúster esté seguro y funcionando de manera óptima.&lt;/p&gt;
+&lt;p&gt;Para obtener más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y tecnologías utilizadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/"&gt;Kubernetes v1.36 Sneak Peek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes/issues/137893"&gt;CVE-2026-4342: ingress-nginx comment-based nginx&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/ingress-nginx"&gt;Ingress NGINX Controller for Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-14_0925.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. En este artículo, se presentan las últimas novedades y best practices para sysadmins y DevOps engineers.</summary>
+    <published>2026-04-14T09:25:00+00:00</published>
   </entry>
 </feed>
