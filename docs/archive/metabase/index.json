@@ -1,4 +1,28 @@
 {
+  "2026-04-15_0926": {
+    "slug": "metabase",
+    "title": "Mejoras y Novedades en Metabase",
+    "summary": "Metabase ha incorporado varias mejoras y novedades en su sistema, incluyendo la actualización de Netty para parchear vulnerabilidades de seguridad y la capacidad de revertir tablas auto-archivadas. Además, se han agregado características como la personalización de Metabot por inquilino y la transformación de datos entre bases de datos.",
+    "content": "Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y visualizaciones de datos de manera sencilla. Recientemente, se han incorporado varias mejoras y novedades en el sistema, como la actualización de Netty a la versión 4.2.10.Final para parchear la vulnerabilidad de seguridad CVE-2026-33870, como se indica en `https://github.com/metabase/metabase/issues/71652`. \n\nAdemás, se ha agregado la capacidad de revertir tablas auto-archivadas después de que regresen, como se describe en `https://github.com/metabase/metabase/issues/72135`. Esto permite a los usuarios recuperar tablas que han sido archivadas automáticamente por Metabase.\n\nOtra característica agregada es la personalización de Metabot por inquilino, que permite a los administradores configurar Metabot de manera personalizada para cada inquilino, como se indica en `https://github.com/metabase/metabase/issues/72116`. Esto es especialmente útil en entornos de multi-inquilino, donde cada inquilino puede tener requisitos y necesidades diferentes.\n\nLa transformación de datos entre bases de datos es otra característica agregada, que permite a los usuarios transformar datos entre diferentes bases de datos, como se describe en `https://github.com/metabase/metabase/issues/71238`. Esto es especialmente útil en entornos donde se necesitan combinar datos de diferentes fuentes.\n\nPara configurar estas características, los usuarios pueden utilizar comandos como `git clone https://github.com/metabase/metabase.git` para clonar el repositorio de Metabase y `docker run -p 3000:3000 metabase/metabase` para ejecutar Metabase en un contenedor Docker.\n\nEn resumen, Metabase ha incorporado varias mejoras y novedades en su sistema, que permiten a los usuarios tener más control y flexibilidad en el análisis de datos. \n\nPara más información, se puede consultar la documentación oficial de Metabase y las fuentes citadas en este artículo.",
+    "sources": [
+      {
+        "title": "Bump Netty to >=v4.2.10.Final to patch cve-2026-33870",
+        "url": "https://github.com/metabase/metabase/issues/71652"
+      },
+      {
+        "title": "Allow reversing auto-archived tables after they return",
+        "url": "https://github.com/metabase/metabase/issues/72135"
+      },
+      {
+        "title": "Per Tenant Metabot customization",
+        "url": "https://github.com/metabase/metabase/issues/72116"
+      },
+      {
+        "title": "Cross DB Transforms",
+        "url": "https://github.com/metabase/metabase/issues/71238"
+      }
+    ]
+  },
   "2026-04-11_0852": {
     "slug": "metabase",
     "title": "Metabase: Mejoras y Novedades",

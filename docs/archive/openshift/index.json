@@ -1,4 +1,24 @@
 {
+  "2026-04-15_0926": {
+    "slug": "openshift",
+    "title": "OpenShift: Novedades y Mejoras",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece nuevas características y mejoras en su versión 4.18.36. En este artículo, se presentan las novedades y mejores prácticas para trabajar con OpenShift.",
+    "content": "OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. En su versión 4.18.36, se han incluido varias mejoras y correcciones de errores. Para empezar a trabajar con OpenShift, es necesario crear un clúster y configurar los nodos. Esto se puede hacer utilizando el comando `oc cluster up` y especificando la configuración deseada.\n\nUna de las características más interesantes de OpenShift es la posibilidad de utilizar operadores para gestionar aplicaciones. Los operadores son paquetes de software que se encargan de la gestión de una aplicación, incluyendo la instalación, configuración y actualización. Para instalar un operador, se puede utilizar el comando `oc apply -f <archivo_de_configuracion>` y especificar el archivo de configuración del operador.\n\nOtra característica importante de OpenShift es la autenticación y autorización. OpenShift utiliza OAuth para la autenticación y autorización de usuarios. Para configurar la autenticación, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de la autenticación.\n\nEn cuanto a la monitorización, OpenShift ofrece varias herramientas para la monitorización de aplicaciones y clústeres. Una de las herramientas más populares es Prometheus, que se puede utilizar para recopilar métricas y alertas. Para configurar Prometheus, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de Prometheus.\n\nFinalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para la migración de aplicaciones. Para migrar una aplicación a OpenShift, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de la aplicación.\n\nEn resumen, OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. Con su versión 4.18.36, se han incluido varias mejoras y correcciones de errores, y se ofrecen nuevas características y herramientas para la monitorización y migración de aplicaciones.",
+    "sources": [
+      {
+        "title": "Red Hat OpenShift | endoflife.date",
+        "url": "https://endoflife.date/red-hat-openshift"
+      },
+      {
+        "title": "RHSA-2026:5127 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:5127"
+      },
+      {
+        "title": "Chapter 1. Red Hat OpenShift GitOps release notes | Release notes | Red Hat OpenShift GitOps | 1.20 | Red Hat Documentation",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.20/html/release_notes/gitops-release-notes"
+      }
+    ]
+  },
   "2026-04-11_0852": {
     "slug": "openshift",
     "title": "OpenShift 4: Mejoras y Novedades",

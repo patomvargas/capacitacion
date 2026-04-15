@@ -1,4 +1,32 @@
 {
+  "2026-04-15_0926": {
+    "slug": "claude-code",
+    "title": "Mejoras y Soluciones en Claude Code",
+    "summary": "Claude Code es una herramienta en constante evolución, con mejoras y soluciones para problemas comunes. En este artículo, se presentan algunas de las novedades y best practices para aprovechar al máximo su funcionalidad.",
+    "content": "Claude Code es una herramienta poderosa para desarrolladores y administradores de sistemas, que ofrece una variedad de características y funcionalidades para mejorar la productividad y eficiencia en el trabajo. Una de las características más destacadas es la capacidad de utilizar comandos y configuraciones personalizadas, como `--worktree` y `--dangerously-skip-permissions`, que permiten a los usuarios adaptar la herramienta a sus necesidades específicas.\n\nPara aprovechar al máximo la funcionalidad de Claude Code, es importante estar al tanto de las últimas novedades y mejoras. Por ejemplo, la versión 2.1.78 incluye una nueva característica llamada `--worktree`, que permite a los usuarios cargar habilidades y hooks desde un directorio de trabajo. Sin embargo, también se han reportado algunos problemas con esta característica, como el error `--dangerously-skip-permissions` que no funciona correctamente en la última versión.\n\nOtra característica importante de Claude Code es la capacidad de utilizar variables de entorno, como `ANTHROPIC_BETAS`, que permiten a los usuarios habilitar características de beta de la API de Anthropic. Sin embargo, la documentación oficial no incluye información sobre cómo utilizar esta variable, lo que puede causar confusión entre los usuarios.\n\nEn cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar comandos y configuraciones personalizadas de manera segura y responsable. Por ejemplo, el comando `--dangerously-skip-permissions` debe utilizarse con precaución, ya que puede suponer un riesgo para la seguridad del sistema. En su lugar, se recomienda utilizar comandos y configuraciones más seguras, como `--worktree` y `--skip-permissions`, que ofrecen una mayor flexibilidad y seguridad.\n\nEn resumen, Claude Code es una herramienta poderosa y versátil que ofrece una variedad de características y funcionalidades para mejorar la productividad y eficiencia en el trabajo. Sin embargo, es importante estar al tanto de las últimas novedades y mejoras, y utilizar comandos y configuraciones personalizadas de manera segura y responsable.\n\nFinalmente, es importante mencionar que la comunidad de desarrolladores de Claude Code es muy activa y ofrece una variedad de recursos y herramientas para ayudar a los usuarios a aprovechar al máximo la funcionalidad de la herramienta. Por ejemplo, el repositorio de GitHub de Claude Code incluye una variedad de ejemplos y tutoriales que pueden ser útiles para los usuarios que están empezando a utilizar la herramienta.",
+    "sources": [
+      {
+        "title": "anthropics claude-ai-mcp Discussions",
+        "url": "https://github.com/anthropics/claude-ai-mcp/discussions"
+      },
+      {
+        "title": "[BUG] Error: Claude Code on Windows requires git-bash #37908",
+        "url": "https://github.com/anthropics/claude-code/issues/37908"
+      },
+      {
+        "title": "[DOCS] Environment variables page missing ANTHROPIC_BETAS env var #35632",
+        "url": "https://github.com/anthropics/claude-code/issues/35632"
+      },
+      {
+        "title": "[DOCS] CLI reference missing --worktree skill and hook loading behavior #35628",
+        "url": "https://github.com/anthropics/claude-code/issues/35628"
+      },
+      {
+        "title": "manutej/luxor-claude-marketplace",
+        "url": "https://github.com/manutej/luxor-claude-marketplace"
+      }
+    ]
+  },
   "2026-04-11_0852": {
     "slug": "claude-code",
     "title": "Mejores prácticas para Claude Code",

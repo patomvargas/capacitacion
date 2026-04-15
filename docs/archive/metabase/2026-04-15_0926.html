@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metabase: Mejoras y Novedades - Metabase</title>
+    <title>Mejoras y Novedades en Metabase - Metabase</title>
     <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>Metabase: Mejoras y Novedades</h1>
-    <div class="meta">2026-04-11 0852 · Metabase</div>
+    <h1>Mejoras y Novedades en Metabase</h1>
+    <div class="meta">2026-04-15 0926 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>Metabase es una herramienta de análisis de datos y visualización que permite a los usuarios crear dashboards y informes personalizados. En sus últimas versiones, Metabase ha incorporado varias mejoras y novedades, como la introducción de Data Studio, un entorno de trabajo para analistas que permite estructurar datos y crear una capa semántica. Además, se ha agregado la generación de SQL con inteligencia artificial, lo que facilita la creación de consultas y análisis de datos.</p>
+            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y visualizaciones de datos de manera sencilla. Recientemente, se han incorporado varias mejoras y novedades en el sistema, como la actualización de Netty a la versión 4.2.10.Final para parchear la vulnerabilidad de seguridad CVE-2026-33870, como se indica en `https://github.com/metabase/metabase/issues/71652`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo estas mejoras, es importante conocer las mejores prácticas para la configuración y el uso de Metabase. Por ejemplo, se puede utilizar el comando `metabase migrate` para actualizar la base de datos y aplicar las migraciones necesarias. También es importante configurar correctamente la conexión a la base de datos, utilizando comandos como `metabase config set database.host` y `metabase config set database.port`.</p>
+            <p>Además, se ha agregado la capacidad de revertir tablas auto-archivadas después de que regresen, como se describe en `https://github.com/metabase/metabase/issues/72135`. Esto permite a los usuarios recuperar tablas que han sido archivadas automáticamente por Metabase.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es fundamental mantener la base de datos actualizada y parchear cualquier vulnerabilidad conocida. Por ejemplo, se puede utilizar el comando `metabase update` para actualizar la versión de Metabase y aplicar los parches de seguridad necesarios. También es importante configurar la autenticación y la autorización adecuadamente, utilizando comandos como `metabase config set auth.type` y `metabase config set auth.secret`.</p>
+            <p>Otra característica agregada es la personalización de Metabot por inquilino, que permite a los administradores configurar Metabot de manera personalizada para cada inquilino, como se indica en `https://github.com/metabase/metabase/issues/72116`. Esto es especialmente útil en entornos de multi-inquilino, donde cada inquilino puede tener requisitos y necesidades diferentes.</p>
             
         
             
         
             
-            <p>Además, Metabase proporciona una API para interactuar con la herramienta de manera programática. Por ejemplo, se puede utilizar la API para crear dashboards y informes personalizados, o para integrar Metabase con otras herramientas y aplicaciones. Para más información, se puede consultar la documentación oficial de Metabase, que proporciona detalles sobre la API y cómo utilizarla.</p>
+            <p>La transformación de datos entre bases de datos es otra característica agregada, que permite a los usuarios transformar datos entre diferentes bases de datos, como se describe en `https://github.com/metabase/metabase/issues/71238`. Esto es especialmente útil en entornos donde se necesitan combinar datos de diferentes fuentes.</p>
             
         
             
         
             
-            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos y la visualización, y sus últimas versiones han incorporado varias mejoras y novedades. Para aprovechar al máximo estas mejoras, es importante conocer las mejores prácticas para la configuración y el uso de Metabase, y mantener la base de datos actualizada y segura.</p>
+            <p>Para configurar estas características, los usuarios pueden utilizar comandos como `git clone https://github.com/metabase/metabase.git` para clonar el repositorio de Metabase y `docker run -p 3000:3000 metabase/metabase` para ejecutar Metabase en un contenedor Docker.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Metabase ha lanzado la versión 59, que incluye varias mejoras y novedades, como la introducción de Data Studio y la generación de SQL con inteligencia artificial. Para más información, se puede consultar la documentación oficial de Metabase y las fuentes citadas al final de este artículo.</p>
+            <p>En resumen, Metabase ha incorporado varias mejoras y novedades en su sistema, que permiten a los usuarios tener más control y flexibilidad en el análisis de datos.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Metabase y las fuentes citadas en este artículo.</p>
             
         
     </div>
@@ -105,17 +111,22 @@
         <ul>
             
             <li>
-                <a href="https://discourse.metabase.com/t/metabase-59-is-here/296136" target="_blank">Metabase 59</a>
+                <a href="https://github.com/metabase/metabase/issues/71652" target="_blank">Bump Netty to >=v4.2.10.Final to patch cve-2026-33870</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/70972" target="_blank">Migration failure on large metabase_table</a>
+                <a href="https://github.com/metabase/metabase/issues/72135" target="_blank">Allow reversing auto-archived tables after they return</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/t/error-upgrading-table-metabase-cluster-lock-already-exists/296235" target="_blank">Error upgrading - Table 'metabase_cluster_lock' already exists</a>
+                <a href="https://github.com/metabase/metabase/issues/72116" target="_blank">Per Tenant Metabot customization</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/71238" target="_blank">Cross DB Transforms</a>
                 
             </li>
             
@@ -126,12 +137,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-03_0901.html">&larr; 2026-04-03 0901</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-11_0852.html">&larr; 2026-04-11 0852</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-15_0926.html">2026-04-15 0926 &rarr;</a>
             
         </div>
     </div>

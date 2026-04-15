@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-14T09:26:00.437517+00:00</updated>
+  <updated>2026-04-15T09:27:38.709808+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -193,5 +193,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-11_0852.html"/>
     <summary>OpenShift 4 presenta mejoras en escalabilidad, migración y eficiencia, además de nuevas características de seguridad y logging. En este artículo, se exploran las novedades y best practices para aprovechar al máximo la plataforma.</summary>
     <published>2026-04-11T08:52:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-15_0926.html</id>
+    <title>OpenShift: Novedades y Mejoras</title>
+    <updated>2026-04-15T09:26:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. En su versión 4.18.36, se han incluido varias mejoras y correcciones de errores. Para empezar a trabajar con OpenShift, es necesario crear un clúster y configurar los nodos. Esto se puede hacer utilizando el comando &lt;code&gt;oc cluster up&lt;/code&gt; y especificando la configuración deseada.&lt;/p&gt;
+&lt;p&gt;Una de las características más interesantes de OpenShift es la posibilidad de utilizar operadores para gestionar aplicaciones. Los operadores son paquetes de software que se encargan de la gestión de una aplicación, incluyendo la instalación, configuración y actualización. Para instalar un operador, se puede utilizar el comando &lt;code&gt;oc apply -f &lt;archivo_de_configuracion&gt;&lt;/code&gt; y especificar el archivo de configuración del operador.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de OpenShift es la autenticación y autorización. OpenShift utiliza OAuth para la autenticación y autorización de usuarios. Para configurar la autenticación, se puede utilizar el comando &lt;code&gt;oc create -f &lt;archivo_de_configuracion&gt;&lt;/code&gt; y especificar el archivo de configuración de la autenticación.&lt;/p&gt;
+&lt;p&gt;En cuanto a la monitorización, OpenShift ofrece varias herramientas para la monitorización de aplicaciones y clústeres. Una de las herramientas más populares es Prometheus, que se puede utilizar para recopilar métricas y alertas. Para configurar Prometheus, se puede utilizar el comando &lt;code&gt;oc create -f &lt;archivo_de_configuracion&gt;&lt;/code&gt; y especificar el archivo de configuración de Prometheus.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para la migración de aplicaciones. Para migrar una aplicación a OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f &lt;archivo_de_configuracion&gt;&lt;/code&gt; y especificar el archivo de configuración de la aplicación.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. Con su versión 4.18.36, se han incluido varias mejoras y correcciones de errores, y se ofrecen nuevas características y herramientas para la monitorización y migración de aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/red-hat-openshift"&gt;Red Hat OpenShift | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5127"&gt;RHSA-2026:5127 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.20/html/release_notes/gitops-release-notes"&gt;Chapter 1. Red Hat OpenShift GitOps release notes | Release notes | Red Hat OpenShift GitOps | 1.20 | Red Hat Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-15_0926.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece nuevas características y mejoras en su versión 4.18.36. En este artículo, se presentan las novedades y mejores prácticas para trabajar con OpenShift.</summary>
+    <published>2026-04-15T09:26:00+00:00</published>
   </entry>
 </feed>
