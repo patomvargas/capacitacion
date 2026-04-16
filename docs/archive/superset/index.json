@@ -1,4 +1,24 @@
 {
+  "2026-04-16_0925": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Best Practices",
+    "summary": "Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas mejoras y best practices para su uso efectivo.",
+    "content": "\nSuperset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards personalizados y visualizar datos de manera efectiva. En las últimas versiones, se han agregado mejoras significativas, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando `superset-node`. Sin embargo, algunos usuarios han reportado problemas con esta función, como se puede ver en la discusión #38822 en GitHub.\n\nPara configurar una página personalizada en Superset, se puede utilizar el comando `superset config` para generar un archivo de configuración. Luego, se puede editar este archivo para agregar la página personalizada, utilizando la sintaxis `{{ url_for('custom_page') }}`. Además, se pueden utilizar plantillas Jinja para crear dashboards dinámicos y personalizados.\n\nEn cuanto a la administración de Superset, es importante mencionar que se pueden utilizar comandos como `superset db upgrade` para actualizar la base de datos y `superset init` para inicializar la aplicación. También se pueden utilizar herramientas como SQL Lab para crear consultas personalizadas y visualizar los resultados en un dashboard.\n\nOtra característica importante de Superset es la capacidad de crear conjuntos de datos personalizados, utilizando la función `Dataset Editor`. Esta función permite a los usuarios crear y editar conjuntos de datos de manera sencilla y efectiva. Además, se pueden utilizar comandos como `superset dataset create` para crear un nuevo conjunto de datos y `superset dataset edit` para editar un conjunto de datos existente.\n\nEn resumen, Superset es una herramienta poderosa y flexible para la visualización de datos y la creación de dashboards. Con las últimas mejoras y best practices, los usuarios pueden crear dashboards personalizados y visualizar datos de manera efectiva. Se pueden utilizar comandos como `superset config` y `superset db upgrade` para configurar y actualizar la aplicación, y herramientas como SQL Lab y Dataset Editor para crear consultas y conjuntos de datos personalizados.\n\nFinalmente, es importante mencionar que la comunidad de Superset es activa y está en constante evolución. Los usuarios pueden encontrar ayuda y recursos en la documentación oficial y en las discusiones de GitHub, como la discusión #38654, que solicita la liberación de la versión 6.1.0 o al menos la 6.0.1.\n\n",
+    "sources": [
+      {
+        "title": "Having issue with 'superset-node' #38822",
+        "url": "https://github.com/apache/superset/discussions/38822"
+      },
+      {
+        "title": "Please release 6.1.0 or at least 6.0.1 #38654",
+        "url": "https://github.com/apache/superset/discussions/38654"
+      },
+      {
+        "title": "Not able to setup custom page inside superset #38770",
+        "url": "https://github.com/apache/superset/discussions/38770"
+      }
+    ]
+  },
   "2026-04-12_0856": {
     "slug": "superset",
     "title": "Superset: Mejoras y Best Practices",

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow: Mejores prácticas y novedades - Airflow</title>
+    <title>Airflow 3.2: Mejoras y Novedades - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow: Mejores prácticas y novedades</h1>
-    <div class="meta">2026-04-12 0856 · Airflow</div>
+    <h1>Airflow 3.2: Mejoras y Novedades</h1>
+    <div class="meta">2026-04-16 0925 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Airflow es una herramienta poderosa para la automatización de flujos de trabajo, y su versión 2.x ofrece nuevas características y mejoras significativas. Una de las mejores prácticas para trabajar con Airflow es utilizar DAGs (Directed Acyclic Graphs) para definir los flujos de trabajo. Los DAGs permiten modelar los flujos de trabajo de manera visual y flexible, y se pueden utilizar para crear flujos de trabajo complejos y escalables.</p>
+            <p>Apache Airflow 3.2 es la última versión del popular sistema de gestión de flujos de trabajo. Esta versión introduce varias mejoras y novedades, incluyendo la partición de activos, que permite una gestión más granular de los pipelines. Para aprovechar esta función, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego configurar la partición de activos en el archivo `airflow.cfg`.</p>
             
         
             
         
             
-            <p>Para crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego `airflow dag create` para crear un nuevo DAG. Una vez creado el DAG, se puede definir el flujo de trabajo utilizando operadores y sensores. Los operadores son objetos que realizan tareas específicas, como la ejecución de comandos o la lectura de archivos, y se pueden utilizar para crear flujos de trabajo personalizados.</p>
+            <p>La separación de tareas es otra de las mejoras importantes en Airflow 3.2. Esto permite una mayor flexibilidad y escalabilidad en la gestión de flujos de trabajo. Para separar tareas, se puede utilizar el comando `airflow tasks list` para ver la lista de tareas disponibles y luego utilizar el comando `airflow tasks run` para ejecutar una tarea específica.</p>
             
         
             
         
             
-            <p>Otra característica importante de Airflow es la capacidad de utilizar XCom para compartir datos entre tareas. XCom es un sistema de comunicación que permite a las tareas compartir datos de manera segura y eficiente. Para utilizar XCom, se puede utilizar el comando `airflow xcom push` para enviar datos desde una tarea, y `airflow xcom pull` para recibir datos en otra tarea.</p>
+            <p>La nueva interfaz de usuario de Airflow 3.2 es otra de las mejoras significativas. La interfaz de usuario ha sido reescrita en React y ofrece una experiencia de usuario más intuitiva y fácil de usar. Para acceder a la interfaz de usuario, se puede utilizar el comando `airflow webserver` para iniciar el servidor web y luego acceder a la dirección `http://localhost:8080` en el navegador.</p>
             
         
             
         
             
-            <p>En cuanto a las conexiones, Airflow ofrece una variedad de opciones para conectar con diferentes sistemas y servicios. Se pueden utilizar conexiones predefinidas, como la conexión con bases de datos o servicios de almacenamiento en la nube, o se pueden crear conexiones personalizadas utilizando el comando `airflow connection create`.</p>
+            <p>En cuanto a la escalabilidad, Airflow 3.2 incluye varias mejoras, incluyendo la capacidad de ejecutar múltiples instancias del servidor web y la capacidad de utilizar bases de datos distribuidas. Para configurar la escalabilidad, se puede utilizar el comando `airflow config list` para ver la lista de configuraciones disponibles y luego utilizar el comando `airflow config set` para establecer una configuración específica.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Airflow 3.x ofrece nuevas características y mejoras significativas, como la API TaskFlow y la ejecución distribuida. La API TaskFlow permite a los desarrolladores crear flujos de trabajo de manera más flexible y eficiente, y la ejecución distribuida permite a los flujos de trabajo ser ejecutados en múltiples nodos de manera paralela.</p>
+            <p>En resumen, Airflow 3.2 es una versión importante que introduce varias mejoras y novedades en la gestión de flujos de trabajo. La partición de activos, la separación de tareas y la nueva interfaz de usuario son solo algunas de las mejoras que hacen de Airflow 3.2 una herramienta más poderosa y flexible para la gestión de flujos de trabajo.</p>
             
         
             
         
             
-            <p>Para más información sobre las novedades y mejoras de Airflow 3.x, se puede consultar la documentación oficial y los recursos en línea.</p>
+            <p>Para más información sobre Airflow 3.2, se puede consultar la documentación oficial en el sitio web de Apache Airflow. También se pueden consultar las fuentes citadas al final de este artículo para obtener más información sobre las mejoras y novedades de Airflow 3.2.</p>
             
         
     </div>
@@ -105,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://dev.to/thesius_code_7a136ae718b7/airflow-dag-templates-airflow-best-practices-guide-2ppj" target="_blank">Airflow DAG Templates: Airflow Best Practices Guide</a>
+                <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@dorangao/apache-airflow-101-local-setup-and-core-concepts-tutorial-20270bf3d17f" target="_blank">Apache Airflow 101: Local Setup and Core Concepts Tutorial</a>
+                <a href="https://airflow.apache.org/blog/airflow-3.2.0/" target="_blank">Apache Airflow 3.2.0: Data-Aware Workflows at Scale</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/towards-data-engineering/advanced-pipeline-development-with-apache-airflow-3-x-5fee831d2b8f" target="_blank">Advanced Pipeline Development with Apache Airflow 3.x</a>
+                <a href="https://www.astronomer.io/blog/apache-airflow-3-2-release/" target="_blank">Introducing Apache Airflow 3.2</a>
                 
             </li>
             
@@ -126,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-08_0909.html">&larr; 2026-04-08 0909</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-12_0856.html">&larr; 2026-04-12 0856</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-16_0925.html">2026-04-16 0925 &rarr;</a>
             
         </div>
     </div>

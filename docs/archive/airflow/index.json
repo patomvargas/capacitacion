@@ -1,4 +1,24 @@
 {
+  "2026-04-16_0925": {
+    "slug": "airflow",
+    "title": "Airflow 3.2: Mejoras y Novedades",
+    "summary": "Apache Airflow 3.2 introduce mejoras significativas en la gestión de flujos de trabajo, incluyendo la partición de activos y la separación de tareas. Esta versión también incluye una nueva interfaz de usuario y mejoras en la escalabilidad.",
+    "content": "Apache Airflow 3.2 es la última versión del popular sistema de gestión de flujos de trabajo. Esta versión introduce varias mejoras y novedades, incluyendo la partición de activos, que permite una gestión más granular de los pipelines. Para aprovechar esta función, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego configurar la partición de activos en el archivo `airflow.cfg`.\n\nLa separación de tareas es otra de las mejoras importantes en Airflow 3.2. Esto permite una mayor flexibilidad y escalabilidad en la gestión de flujos de trabajo. Para separar tareas, se puede utilizar el comando `airflow tasks list` para ver la lista de tareas disponibles y luego utilizar el comando `airflow tasks run` para ejecutar una tarea específica.\n\nLa nueva interfaz de usuario de Airflow 3.2 es otra de las mejoras significativas. La interfaz de usuario ha sido reescrita en React y ofrece una experiencia de usuario más intuitiva y fácil de usar. Para acceder a la interfaz de usuario, se puede utilizar el comando `airflow webserver` para iniciar el servidor web y luego acceder a la dirección `http://localhost:8080` en el navegador.\n\nEn cuanto a la escalabilidad, Airflow 3.2 incluye varias mejoras, incluyendo la capacidad de ejecutar múltiples instancias del servidor web y la capacidad de utilizar bases de datos distribuidas. Para configurar la escalabilidad, se puede utilizar el comando `airflow config list` para ver la lista de configuraciones disponibles y luego utilizar el comando `airflow config set` para establecer una configuración específica.\n\nEn resumen, Airflow 3.2 es una versión importante que introduce varias mejoras y novedades en la gestión de flujos de trabajo. La partición de activos, la separación de tareas y la nueva interfaz de usuario son solo algunas de las mejoras que hacen de Airflow 3.2 una herramienta más poderosa y flexible para la gestión de flujos de trabajo.\n\nPara más información sobre Airflow 3.2, se puede consultar la documentación oficial en el sitio web de Apache Airflow. También se pueden consultar las fuentes citadas al final de este artículo para obtener más información sobre las mejoras y novedades de Airflow 3.2.",
+    "sources": [
+      {
+        "title": "Apache Airflow",
+        "url": "https://airflow.apache.org/"
+      },
+      {
+        "title": "Apache Airflow 3.2.0: Data-Aware Workflows at Scale",
+        "url": "https://airflow.apache.org/blog/airflow-3.2.0/"
+      },
+      {
+        "title": "Introducing Apache Airflow 3.2",
+        "url": "https://www.astronomer.io/blog/apache-airflow-3-2-release/"
+      }
+    ]
+  },
   "2026-04-12_0856": {
     "slug": "airflow",
     "title": "Airflow: Mejores prácticas y novedades",

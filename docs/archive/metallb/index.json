@@ -1,4 +1,20 @@
 {
+  "2026-04-16_0925": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en Kubernetes",
+    "summary": "MetalLB es un equilibrador de carga para Kubernetes que permite la asignación de direcciones IP a servicios. En este artículo, se explora su configuración y uso en modo L2 y BGP.",
+    "content": "MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite la asignación de direcciones IP a servicios. Se puede configurar en modo L2 o BGP, dependiendo de las necesidades de la red. En modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP del servicio en la red.\n\nPara configurar MetalLB en modo L2, se debe crear un objeto de configuración que especifique el modo y la dirección IP del servicio. Por ejemplo: `kubectl apply -f metallb-config.yaml`, donde el archivo `metallb-config.yaml` contiene la configuración de MetalLB.\n\nEn modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP del servicio a los routers de la red. Para configurar MetalLB en modo BGP, se debe crear un objeto de configuración que especifique el modo y la dirección IP del servicio, así como la configuración de BGP. Por ejemplo: `kubectl apply -f metallb-bgp-config.yaml`, donde el archivo `metallb-bgp-config.yaml` contiene la configuración de MetalLB en modo BGP.\n\nPara solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl logs` para ver los registros de MetalLB, o `kubectl describe` para obtener más información sobre la configuración de MetalLB. También se pueden utilizar herramientas de red como `tcpdump` para analizar el tráfico de red y diagnosticar problemas.\n\nLa integración de MetalLB con Kubernetes es sencilla, ya que se puede configurar como un servicio de equilibrio de carga en el clúster de Kubernetes. Por ejemplo: `kubectl expose deployment mi-deployment --type=LoadBalancer --port=80`, donde `mi-deployment` es el nombre de la implementación que se desea exponer como un servicio de equilibrio de carga.\n\nEn cuanto a las mejores prácticas, es importante asegurarse de que la configuración de MetalLB esté segura y actualizada. Por ejemplo, se debe asegurar de que la dirección IP del servicio sea única y no esté en conflicto con otras direcciones IP en la red. También se debe asegurar de que la configuración de BGP esté correcta y segura, para evitar problemas de conectividad y seguridad en la red.",
+    "sources": [
+      {
+        "title": "OneUptime Blog",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts"
+      },
+      {
+        "title": "MetalLB Documentation",
+        "url": "https://metallb.universe.tf/"
+      }
+    ]
+  },
   "2026-04-12_0856": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

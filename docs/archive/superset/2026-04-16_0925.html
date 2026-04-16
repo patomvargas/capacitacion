@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superset: Mejoras y Best Practices - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Superset: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-16 0925 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards personalizados y visualizar datos de manera efectiva. En las últimas versiones, se han agregado mejoras significativas, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando `superset-node`. Sin embargo, algunos usuarios han reportado problemas con esta función, como se puede ver en la discusión #38822 en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar una página personalizada en Superset, se puede utilizar el comando `superset config` para generar un archivo de configuración. Luego, se puede editar este archivo para agregar la página personalizada, utilizando la sintaxis `{{ url_for('custom_page') }}`. Además, se pueden utilizar plantillas Jinja para crear dashboards dinámicos y personalizados.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la administración de Superset, es importante mencionar que se pueden utilizar comandos como `superset db upgrade` para actualizar la base de datos y `superset init` para inicializar la aplicación. También se pueden utilizar herramientas como SQL Lab para crear consultas personalizadas y visualizar los resultados en un dashboard.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Superset es la capacidad de crear conjuntos de datos personalizados, utilizando la función `Dataset Editor`. Esta función permite a los usuarios crear y editar conjuntos de datos de manera sencilla y efectiva. Además, se pueden utilizar comandos como `superset dataset create` para crear un nuevo conjunto de datos y `superset dataset edit` para editar un conjunto de datos existente.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa y flexible para la visualización de datos y la creación de dashboards. Con las últimas mejoras y best practices, los usuarios pueden crear dashboards personalizados y visualizar datos de manera efectiva. Se pueden utilizar comandos como `superset config` y `superset db upgrade` para configurar y actualizar la aplicación, y herramientas como SQL Lab y Dataset Editor para crear consultas y conjuntos de datos personalizados.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la comunidad de Superset es activa y está en constante evolución. Los usuarios pueden encontrar ayuda y recursos en la documentación oficial y en las discusiones de GitHub, como la discusión #38654, que solicita la liberación de la versión 6.1.0 o al menos la 6.0.1.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38822" target="_blank">Having issue with 'superset-node' #38822</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38654" target="_blank">Please release 6.1.0 or at least 6.0.1 #38654</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38770" target="_blank">Not able to setup custom page inside superset #38770</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-12_0856.html">&larr; 2026-04-12 0856</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

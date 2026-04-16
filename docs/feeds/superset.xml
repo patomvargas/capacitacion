@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-15T09:27:38.718396+00:00</updated>
+  <updated>2026-04-16T09:26:18.928284+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -204,5 +204,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-12_0856.html"/>
     <summary>Superset es una herramienta de visualización de datos que ofrece una variedad de características para la creación de dashboards y análisis de datos. En este artículo, se presentan las últimas mejoras y best practices para aprovechar al máximo Superset.</summary>
     <published>2026-04-12T08:56:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-04-16_0925.html</id>
+    <title>Superset: Mejoras y Best Practices</title>
+    <updated>2026-04-16T09:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards personalizados y visualizar datos de manera efectiva. En las últimas versiones, se han agregado mejoras significativas, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando &lt;code&gt;superset-node&lt;/code&gt;. Sin embargo, algunos usuarios han reportado problemas con esta función, como se puede ver en la discusión #38822 en GitHub.&lt;/p&gt;
+&lt;p&gt;Para configurar una página personalizada en Superset, se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para generar un archivo de configuración. Luego, se puede editar este archivo para agregar la página personalizada, utilizando la sintaxis &lt;code&gt;{{ url_for('custom_page') }}&lt;/code&gt;. Además, se pueden utilizar plantillas Jinja para crear dashboards dinámicos y personalizados.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, es importante mencionar que se pueden utilizar comandos como &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos y &lt;code&gt;superset init&lt;/code&gt; para inicializar la aplicación. También se pueden utilizar herramientas como SQL Lab para crear consultas personalizadas y visualizar los resultados en un dashboard.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Superset es la capacidad de crear conjuntos de datos personalizados, utilizando la función &lt;code&gt;Dataset Editor&lt;/code&gt;. Esta función permite a los usuarios crear y editar conjuntos de datos de manera sencilla y efectiva. Además, se pueden utilizar comandos como &lt;code&gt;superset dataset create&lt;/code&gt; para crear un nuevo conjunto de datos y &lt;code&gt;superset dataset edit&lt;/code&gt; para editar un conjunto de datos existente.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa y flexible para la visualización de datos y la creación de dashboards. Con las últimas mejoras y best practices, los usuarios pueden crear dashboards personalizados y visualizar datos de manera efectiva. Se pueden utilizar comandos como &lt;code&gt;superset config&lt;/code&gt; y &lt;code&gt;superset db upgrade&lt;/code&gt; para configurar y actualizar la aplicación, y herramientas como SQL Lab y Dataset Editor para crear consultas y conjuntos de datos personalizados.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Superset es activa y está en constante evolución. Los usuarios pueden encontrar ayuda y recursos en la documentación oficial y en las discusiones de GitHub, como la discusión #38654, que solicita la liberación de la versión 6.1.0 o al menos la 6.0.1.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38822"&gt;Having issue with 'superset-node' #38822&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38654"&gt;Please release 6.1.0 or at least 6.0.1 #38654&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38770"&gt;Not able to setup custom page inside superset #38770&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-16_0925.html"/>
+    <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas mejoras y best practices para su uso efectivo.</summary>
+    <published>2026-04-16T09:25:00+00:00</published>
   </entry>
 </feed>
