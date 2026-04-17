@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas de Git para DevOps - Git</title>
+    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+    </div>
+
+    <h1>Mejores prácticas de Git para DevOps</h1>
+    <div class="meta">2026-04-17 0923 · Git</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Los workflows de Git son fundamentales para el desarrollo de software. Un workflow bien definido puede mejorar la productividad y la calidad del código. Una de las mejores prácticas es utilizar ramas (branches) para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama `feature/nueva-caracteristica` para desarrollar una nueva característica, y luego fusionarla con la rama principal (`main`) cuando esté lista.</p>
+            
+        
+            
+        
+            
+            <p>Para implementar este workflow, se pueden utilizar comandos como `git checkout -b feature/nueva-caracteristica` para crear una nueva rama, y `git merge feature/nueva-caracteristica` para fusionarla con la rama principal. También se pueden utilizar hooks para automatizar tareas, como `git hook pre-commit` para verificar la calidad del código antes de commitear.</p>
+            
+        
+            
+        
+            
+            <p>Otra herramienta útil es `git rebase`, que permite reorganizar los commits para que el historial de cambios sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i HEAD~3` para reorganizar los últimos 3 commits. También se puede utilizar `git bisect` para encontrar el commit que introduce un error en el código.</p>
+            
+        
+            
+        
+            
+            <p>Además, se pueden utilizar worktrees para trabajar en diferentes ramas simultáneamente. Por ejemplo, se puede crear un worktree para la rama `feature/nueva-caracteristica` con `git worktree add feature/nueva-caracteristica`. Esto permite trabajar en la rama sin tener que cambiar de rama en el repositorio principal.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, las mejores prácticas de Git para DevOps incluyen utilizar ramas, hooks, rebase, bisect y worktrees para mejorar la productividad y la calidad del código. Se pueden utilizar comandos como `git checkout`, `git merge`, `git rebase`, `git bisect` y `git worktree` para implementar estas prácticas en proyectos de desarrollo de software.</p>
+            
+        
+            
+        
+            
+            <p>Se recomienda consultar las fuentes proporcionadas para obtener más información sobre estas prácticas y herramientas. También se recomienda utilizar herramientas como GitHub Actions para automatizar tareas y mejorar la calidad del código.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y mejoras en Git, se pueden mencionar las actualizaciones en GitHub Actions, que ahora permite utilizar entornos sin despliegues automáticos. También se han mejorado las funcionalidades de rebase y bisect para hacerlas más fáciles de usar.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, las mejores prácticas de Git para DevOps son fundamentales para mejorar la productividad y la calidad del código. Se pueden utilizar herramientas y comandos como los mencionados anteriormente para implementar estas prácticas en proyectos de desarrollo de software.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.blog/latest/" target="_blank">The latest blogs from GitHub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.blog/changelog/month/04-2026/" target="_blank">GitHub Changelog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02" target="_blank">Git Commit Message Best Practices</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0" target="_blank">Git Workflow Best Practices</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-13_1000.html">&larr; 2026-04-13 1000</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

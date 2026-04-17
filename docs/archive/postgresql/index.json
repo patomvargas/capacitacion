@@ -1,4 +1,24 @@
 {
+  "2026-04-17_0923": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas. Mejora la seguridad y el rendimiento con extensiones y configuraciones personalizadas.",
+    "content": "\nLa optimización de PostgreSQL es crucial para mejorar el rendimiento y la seguridad de la base de datos. Una de las formas de lograr esto es mediante la creación de índices personalizados. Por ejemplo, se puede crear un índice en una columna específica utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`. Esto puede mejorar significativamente la velocidad de las consultas que utilizan esa columna.\n\nOtra forma de optimizar el rendimiento es mediante la configuración de la replicación. La replicación en PostgreSQL se puede configurar de varias maneras, incluyendo la replicación maestro-esclavo y la replicación de streaming. Por ejemplo, se puede configurar la replicación maestro-esclavo utilizando los comandos `pg_basebackup` y `pg_ctl`. La replicación de streaming se puede configurar utilizando el comando `pg_recvlogical`.\n\nLa seguridad es otro aspecto importante en la optimización de PostgreSQL. Una de las formas de mejorar la seguridad es mediante la utilización de extensiones como `pg_audit` y `pg_crypto`. Estas extensiones permiten realizar auditorías y cifrado de datos, respectivamente. Por ejemplo, se puede instalar la extensión `pg_audit` utilizando el comando `CREATE EXTENSION pg_audit;`. Luego, se puede configurar la auditoría utilizando el comando `ALTER SYSTEM SET pg_audit.log = 'ddl, dml';`.\n\nLa monitorización del rendimiento también es crucial para optimizar la base de datos. Se puede utilizar la herramienta `pg_stat` para monitorizar el rendimiento de la base de datos. Por ejemplo, se puede utilizar el comando `SELECT * FROM pg_stat_activity;` para obtener información sobre las consultas que se están ejecutando en la base de datos. También se puede utilizar el comando `SELECT * FROM pg_stat_user_tables;` para obtener información sobre las tablas que se están utilizando con más frecuencia.\n\nFinalmente, es importante mencionar que la creación de respaldos regulares es fundamental para garantizar la integridad de la base de datos. Se puede utilizar el comando `pg_dump` para crear un respaldo de la base de datos. Por ejemplo, se puede utilizar el comando `pg_dump -U usuario -d base_de_datos > respaldo.sql;` para crear un respaldo de la base de datos.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas, incluyendo la creación de índices personalizados, la configuración de la replicación, la utilización de extensiones de seguridad y la monitorización del rendimiento. Al seguir estas técnicas, se puede mejorar significativamente el rendimiento y la seguridad de la base de datos.",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "CloudNativePG 1.29.0 Released!",
+        "url": "https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"
+      },
+      {
+        "title": "PostgreSQL Performance Tuning Checklist: 2026 Complete Guide",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a"
+      }
+    ]
+  },
   "2026-04-13_1000": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

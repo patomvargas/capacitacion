@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-16T09:26:18.933919+00:00</updated>
+  <updated>2026-04-17T09:25:43.595472+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -136,5 +136,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-13_1000.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-04-13T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-04-17_0923.html</id>
+    <title>Mejores prácticas de Git para DevOps</title>
+    <updated>2026-04-17T09:23:00+00:00</updated>
+    <content type="html">&lt;p&gt;Los workflows de Git son fundamentales para el desarrollo de software. Un workflow bien definido puede mejorar la productividad y la calidad del código. Una de las mejores prácticas es utilizar ramas (branches) para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama &lt;code&gt;feature/nueva-caracteristica&lt;/code&gt; para desarrollar una nueva característica, y luego fusionarla con la rama principal (&lt;code&gt;main&lt;/code&gt;) cuando esté lista.&lt;/p&gt;
+&lt;p&gt;Para implementar este workflow, se pueden utilizar comandos como &lt;code&gt;git checkout -b feature/nueva-caracteristica&lt;/code&gt; para crear una nueva rama, y &lt;code&gt;git merge feature/nueva-caracteristica&lt;/code&gt; para fusionarla con la rama principal. También se pueden utilizar hooks para automatizar tareas, como &lt;code&gt;git hook pre-commit&lt;/code&gt; para verificar la calidad del código antes de commitear.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git rebase&lt;/code&gt;, que permite reorganizar los commits para que el historial de cambios sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar &lt;code&gt;git rebase -i HEAD~3&lt;/code&gt; para reorganizar los últimos 3 commits. También se puede utilizar &lt;code&gt;git bisect&lt;/code&gt; para encontrar el commit que introduce un error en el código.&lt;/p&gt;
+&lt;p&gt;Además, se pueden utilizar worktrees para trabajar en diferentes ramas simultáneamente. Por ejemplo, se puede crear un worktree para la rama &lt;code&gt;feature/nueva-caracteristica&lt;/code&gt; con &lt;code&gt;git worktree add feature/nueva-caracteristica&lt;/code&gt;. Esto permite trabajar en la rama sin tener que cambiar de rama en el repositorio principal.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejores prácticas de Git para DevOps incluyen utilizar ramas, hooks, rebase, bisect y worktrees para mejorar la productividad y la calidad del código. Se pueden utilizar comandos como &lt;code&gt;git checkout&lt;/code&gt;, &lt;code&gt;git merge&lt;/code&gt;, &lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y &lt;code&gt;git worktree&lt;/code&gt; para implementar estas prácticas en proyectos de desarrollo de software.&lt;/p&gt;
+&lt;p&gt;Se recomienda consultar las fuentes proporcionadas para obtener más información sobre estas prácticas y herramientas. También se recomienda utilizar herramientas como GitHub Actions para automatizar tareas y mejorar la calidad del código.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en Git, se pueden mencionar las actualizaciones en GitHub Actions, que ahora permite utilizar entornos sin despliegues automáticos. También se han mejorado las funcionalidades de rebase y bisect para hacerlas más fáciles de usar.&lt;/p&gt;
+&lt;p&gt;En conclusión, las mejores prácticas de Git para DevOps son fundamentales para mejorar la productividad y la calidad del código. Se pueden utilizar herramientas y comandos como los mencionados anteriormente para implementar estas prácticas en proyectos de desarrollo de software.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/latest/"&gt;The latest blogs from GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/month/04-2026/"&gt;GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02"&gt;Git Commit Message Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0"&gt;Git Workflow Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-17_0923.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo de software.</summary>
+    <published>2026-04-17T09:23:00+00:00</published>
   </entry>
 </feed>

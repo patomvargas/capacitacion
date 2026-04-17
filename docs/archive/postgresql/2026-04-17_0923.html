@@ -58,43 +58,45 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-04-13 1000 · PostgreSQL</div>
+    <div class="meta">2026-04-17 0923 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y la escalabilidad de las aplicaciones que utilizan esta base de datos. Una de las formas de optimizar el rendimiento es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Por ejemplo, se puede crear un índice en una columna utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`.</p>
+        
+            
+            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la seguridad de la base de datos. Una de las formas de lograr esto es mediante la creación de índices personalizados. Por ejemplo, se puede crear un índice en una columna específica utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`. Esto puede mejorar significativamente la velocidad de las consultas que utilizan esa columna.</p>
             
         
             
         
             
-            <p>La replicación es otra forma de optimizar el rendimiento de PostgreSQL. La replicación permite duplicar los datos en diferentes servidores, lo que permite mejorar la disponibilidad y la escalabilidad. Se puede configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego utilizar el comando `pg_ctl start` para iniciar el servidor de replicación.</p>
+            <p>Otra forma de optimizar el rendimiento es mediante la configuración de la replicación. La replicación en PostgreSQL se puede configurar de varias maneras, incluyendo la replicación maestro-esclavo y la replicación de streaming. Por ejemplo, se puede configurar la replicación maestro-esclavo utilizando los comandos `pg_basebackup` y `pg_ctl`. La replicación de streaming se puede configurar utilizando el comando `pg_recvlogical`.</p>
             
         
             
         
             
-            <p>Las extensiones de PostgreSQL también pueden ser utilizadas para optimizar el rendimiento. Por ejemplo, la extensión `pg_stat_statements` permite recopilar estadísticas sobre las consultas ejecutadas en la base de datos, lo que puede ayudar a identificar cuellos de botella y optimizar el rendimiento. Se puede instalar esta extensión utilizando el comando `CREATE EXTENSION pg_stat_statements;`.</p>
+            <p>La seguridad es otro aspecto importante en la optimización de PostgreSQL. Una de las formas de mejorar la seguridad es mediante la utilización de extensiones como `pg_audit` y `pg_crypto`. Estas extensiones permiten realizar auditorías y cifrado de datos, respectivamente. Por ejemplo, se puede instalar la extensión `pg_audit` utilizando el comando `CREATE EXTENSION pg_audit;`. Luego, se puede configurar la auditoría utilizando el comando `ALTER SYSTEM SET pg_audit.log = 'ddl, dml';`.</p>
             
         
             
         
             
-            <p>La utilización de herramientas como CloudNativePG también puede ser beneficiosa para optimizar el rendimiento de PostgreSQL. CloudNativePG es una herramienta de código abierto que permite gestionar y orquestar clústeres de PostgreSQL en entornos de nube. Permite automatizar tareas como la creación de copias de seguridad, la replicación y la escalabilidad.</p>
+            <p>La monitorización del rendimiento también es crucial para optimizar la base de datos. Se puede utilizar la herramienta `pg_stat` para monitorizar el rendimiento de la base de datos. Por ejemplo, se puede utilizar el comando `SELECT * FROM pg_stat_activity;` para obtener información sobre las consultas que se están ejecutando en la base de datos. También se puede utilizar el comando `SELECT * FROM pg_stat_user_tables;` para obtener información sobre las tablas que se están utilizando con más frecuencia.</p>
             
         
             
         
             
-            <p>En resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas y herramientas. La configuración de índices, la replicación y la utilización de extensiones son solo algunas de las formas de mejorar el rendimiento de la base de datos. La utilización de herramientas como CloudNativePG también puede ser beneficiosa para automatizar y optimizar el rendimiento de PostgreSQL.</p>
+            <p>Finalmente, es importante mencionar que la creación de respaldos regulares es fundamental para garantizar la integridad de la base de datos. Se puede utilizar el comando `pg_dump` para crear un respaldo de la base de datos. Por ejemplo, se puede utilizar el comando `pg_dump -U usuario -d base_de_datos > respaldo.sql;` para crear un respaldo de la base de datos.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre la optimización del rendimiento de PostgreSQL, se pueden consultar las fuentes proporcionadas a continuación.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas, incluyendo la creación de índices personalizados, la configuración de la replicación, la utilización de extensiones de seguridad y la monitorización del rendimiento. Al seguir estas técnicas, se puede mejorar significativamente el rendimiento y la seguridad de la base de datos.</p>
             
         
     </div>
@@ -105,7 +107,7 @@
         <ul>
             
             <li>
-                <a href="https://www.postgresql.org/?language=en" target="_blank">PostgreSQL: The world's most advanced open source database</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
@@ -115,7 +117,7 @@
             </li>
             
             <li>
-                <a href="https://medium.com/@mohamedaymen.elarbi/database-indexes-the-secret-weapon-every-backend-engineer-should-master-2d2f77d3e62c" target="_blank">Database Indexes: The Secret Weapon Every Backend Engineer Should Master</a>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a" target="_blank">PostgreSQL Performance Tuning Checklist: 2026 Complete Guide</a>
                 
             </li>
             
@@ -126,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-09_0915.html">&larr; 2026-04-09 0915</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-13_1000.html">&larr; 2026-04-13 1000</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-17_0923.html">2026-04-17 0923 &rarr;</a>
             
         </div>
     </div>

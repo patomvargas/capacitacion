@@ -1,4 +1,24 @@
 {
+  "2026-04-17_0923": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible, incluyendo la creación de playbooks, roles y colecciones.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se utiliza para implementar y gestionar configuraciones de manera eficiente. Para empezar a trabajar con Ansible, es necesario crear un inventario de hosts, que se puede hacer utilizando el comando `ansible-inventory`. Luego, se pueden crear playbooks, que son archivos YAML que definen las tareas que se deben ejecutar en los hosts.\n\nUna de las características más poderosas de Ansible es la capacidad de crear roles, que son conjuntos de tareas que se pueden reutilizar en diferentes playbooks. Los roles se pueden crear utilizando el comando `ansible-galaxy`, que es una herramienta de gestión de roles de Ansible. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web utilizando el comando `ansible-galaxy init rol_servidor_web`.\n\nAnsible también proporciona una herramienta llamada AWX, que es una interfaz web para gestionar y ejecutar playbooks. AWX permite a los administradores de sistemas y desarrolladores crear y gestionar playbooks de manera centralizada, y también proporciona funcionalidades de seguimiento y monitoreo. Para instalar AWX, se puede utilizar el comando `ansible-playbook -i inventory awx.yml`.\n\nEn cuanto a las novedades en Ansible, una de las más recientes es la versión 2.6 de la plataforma de automatización de Ansible, que incluye mejoras en la gestión de roles y colecciones. También se ha anunciado la creación de un repositorio de AI Forge, que es un conjunto de herramientas y estándares para la automatización de Ansible utilizando inteligencia artificial.\n\nPara planificar la actualización a la versión 2.6 de la plataforma de automatización de Ansible, es importante considerar los cambios en la instalación y la configuración. Se puede encontrar más información en la documentación oficial de Ansible, que proporciona una guía detallada para la actualización.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura, y su capacidad para crear playbooks, roles y colecciones la hace muy flexible y escalable. Con las novedades y mejoras en la plataforma, es importante estar al tanto de las últimas características y funcionalidades para aprovechar al máximo su potencial.\n\nPara más información sobre Ansible y sus funcionalidades, se puede consultar la documentación oficial y los recursos en línea, como la comunidad de Ansible y los blogs de expertos en la materia.\n\n",
+    "sources": [
+      {
+        "title": "From Ping to Playbook: Writing Your First Practical Ansible Automation",
+        "url": "https://medium.com/@abhinavnegi101/from-ping-to-playbook-writing-your-first-practical-ansible-automation-8135b2abe276"
+      },
+      {
+        "title": "Building an End-to-End DevOps Pipeline with Terraform and Ansible on Azure",
+        "url": "https://medium.com/@adeyemiadeoye917/building-an-end-to-end-devops-pipeline-with-terraform-and-ansible-on-azure-f22db44f0fbe"
+      },
+      {
+        "title": "Planning your upgrade path to Ansible Automation Platform 2.6",
+        "url": "https://www.redhat.com/en/blog/planning-your-upgrade-path-ansible-automation-platform-26"
+      }
+    ]
+  },
   "2026-04-13_1000": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

@@ -1,4 +1,28 @@
 {
+  "2026-04-17_0923": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo de software.",
+    "content": "Los workflows de Git son fundamentales para el desarrollo de software. Un workflow bien definido puede mejorar la productividad y la calidad del código. Una de las mejores prácticas es utilizar ramas (branches) para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama `feature/nueva-caracteristica` para desarrollar una nueva característica, y luego fusionarla con la rama principal (`main`) cuando esté lista.\n\nPara implementar este workflow, se pueden utilizar comandos como `git checkout -b feature/nueva-caracteristica` para crear una nueva rama, y `git merge feature/nueva-caracteristica` para fusionarla con la rama principal. También se pueden utilizar hooks para automatizar tareas, como `git hook pre-commit` para verificar la calidad del código antes de commitear.\n\nOtra herramienta útil es `git rebase`, que permite reorganizar los commits para que el historial de cambios sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i HEAD~3` para reorganizar los últimos 3 commits. También se puede utilizar `git bisect` para encontrar el commit que introduce un error en el código.\n\nAdemás, se pueden utilizar worktrees para trabajar en diferentes ramas simultáneamente. Por ejemplo, se puede crear un worktree para la rama `feature/nueva-caracteristica` con `git worktree add feature/nueva-caracteristica`. Esto permite trabajar en la rama sin tener que cambiar de rama en el repositorio principal.\n\nEn resumen, las mejores prácticas de Git para DevOps incluyen utilizar ramas, hooks, rebase, bisect y worktrees para mejorar la productividad y la calidad del código. Se pueden utilizar comandos como `git checkout`, `git merge`, `git rebase`, `git bisect` y `git worktree` para implementar estas prácticas en proyectos de desarrollo de software.\n\nSe recomienda consultar las fuentes proporcionadas para obtener más información sobre estas prácticas y herramientas. También se recomienda utilizar herramientas como GitHub Actions para automatizar tareas y mejorar la calidad del código.\n\nEn cuanto a las novedades y mejoras en Git, se pueden mencionar las actualizaciones en GitHub Actions, que ahora permite utilizar entornos sin despliegues automáticos. También se han mejorado las funcionalidades de rebase y bisect para hacerlas más fáciles de usar.\n\nEn conclusión, las mejores prácticas de Git para DevOps son fundamentales para mejorar la productividad y la calidad del código. Se pueden utilizar herramientas y comandos como los mencionados anteriormente para implementar estas prácticas en proyectos de desarrollo de software.",
+    "sources": [
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/month/04-2026/"
+      },
+      {
+        "title": "Git Commit Message Best Practices",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02"
+      },
+      {
+        "title": "Git Workflow Best Practices",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0"
+      }
+    ]
+  },
   "2026-04-13_1000": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

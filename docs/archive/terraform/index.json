@@ -1,4 +1,24 @@
 {
+  "2026-04-17_0923": {
+    "slug": "terraform",
+    "title": "Terraform: Infraestructura como Código",
+    "summary": "Terraform es una herramienta esencial en la gestión de infraestructura como código, permitiendo a los equipos definir y gestionar su infraestructura de manera eficiente. En este artículo, se explorarán las mejores prácticas y características avanzadas de Terraform.",
+    "content": "Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos definir y gestionar su infraestructura de manera eficiente. Con Terraform, se pueden crear y gestionar recursos en la nube, como máquinas virtuales, redes y bases de datos, de manera programática. Una de las características clave de Terraform es su capacidad para gestionar el estado de la infraestructura, lo que permite a los equipos realizar cambios y actualizaciones de manera segura y controlada.\n\nPara empezar a trabajar con Terraform, es necesario instalar el comando `terraform` en el sistema. Luego, se puede crear un archivo de configuración `main.tf` que define la infraestructura que se desea crear. Por ejemplo, para crear una máquina virtual en AWS, se puede utilizar el siguiente código: `provider 'aws' { region = 'us-west-2' }` y `resource 'aws_instance' 'example' { ami = 'ami-abc123' instance_type = 't2.micro' }`.\n\nOtra característica importante de Terraform es su capacidad para utilizar módulos, que permiten reutilizar código y simplificar la gestión de la infraestructura. Los módulos se pueden crear y compartir entre equipos, lo que facilita la colaboración y la gestión de la infraestructura. Para utilizar un módulo, se puede agregar la siguiente línea de código: `module 'example' { source = './example' }`.\n\nTerraform también ofrece la capacidad de gestionar el estado de la infraestructura de manera remota, lo que permite a los equipos realizar cambios y actualizaciones de manera segura y controlada. Para configurar el estado remoto, se puede utilizar el comando `terraform remote config` y especificar la ubicación del estado remoto. Por ejemplo: `terraform remote config -backend=s3 -bucket=mybucket -key=terraform.tfstate`.\n\nEn cuanto a las mejores prácticas, es importante mencionar que se debe utilizar un sistema de control de versiones, como Git, para gestionar los cambios en la infraestructura. También es importante realizar pruebas y validaciones antes de realizar cambios en la infraestructura. Para realizar pruebas, se puede utilizar el comando `terraform validate` y `terraform plan` para verificar que los cambios sean correctos.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, que ofrece una variedad de características y mejores prácticas para simplificar la gestión de la infraestructura. Al utilizar Terraform, los equipos pueden definir y gestionar su infraestructura de manera eficiente y segura.\n\nFinalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, que ofrece recursos y guías para aprender y mejorar la gestión de la infraestructura. Algunos recursos recomendados incluyen la documentación oficial de Terraform, la comunidad de Terraform en GitHub y los cursos y tutoriales en línea.",
+    "sources": [
+      {
+        "title": "Understanding Terraform: Simplifying Infrastructure as Code",
+        "url": "https://medium.com/@bhavanakhandare2001/understanding-terraform-simplifying-infrastructure-as-code-in-devops-255d66cb2457"
+      },
+      {
+        "title": "Deploying a Static Website on AWS S3 with Terraform: A Beginner's Guide",
+        "url": "https://dev.to/stephanie_makori_845bb2c0/deploying-a-static-website-on-aws-s3-with-terraform-a-beginners-guide-koi"
+      },
+      {
+        "title": "Terraform Modules Done Right: Mono-Repo, Versioning, and Registry Patterns",
+        "url": "https://dev.to/instadevops/terraform-modules-done-right-mono-repo-versioning-and-registry-patterns-34g6"
+      }
+    ]
+  },
   "2026-04-09_0915": {
     "slug": "terraform",
     "title": "Terraform: Mejores prácticas y novedades",

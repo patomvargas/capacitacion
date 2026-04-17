@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-16T09:26:18.933182+00:00</updated>
+  <updated>2026-04-17T09:25:43.594198+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -93,5 +93,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-13_1000.html"/>
     <summary>En este articulo se presentan las mejores practicas de seguridad en Docker, incluyendo la configuracion de BuildKit y la utilizacion de Docker Compose. Se discuten tambien las novedades en seguridad y las recomendaciones para proteger los contenedores.</summary>
     <published>2026-04-13T10:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-17_0923.html</id>
+    <title>Seguridad y Mejoras en Docker</title>
+    <updated>2026-04-17T09:23:00+00:00</updated>
+    <content type="html">&lt;p&gt;La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Recientemente, Docker ha publicado varias actualizaciones de seguridad para corregir vulnerabilidades en sus herramientas. Por ejemplo, la vulnerabilidad &lt;code&gt;CVE-2025-3224&lt;/code&gt; permite a un atacante con acceso a una máquina de usuario realizar una elevación de privilegios cuando Docker Desktop se actualiza. Para corregir esta vulnerabilidad, se debe actualizar Docker Desktop a la versión &lt;code&gt;4.41.0&lt;/code&gt; o superior.&lt;/p&gt;
+&lt;p&gt;Otra vulnerabilidad importante es la relacionada con el plugin de autorización &lt;code&gt;AuthZ&lt;/code&gt;, que puede ser bypassed con un cuerpo de solicitud sobredimensionado. Sin embargo, si no se utiliza el plugin &lt;code&gt;AuthZ&lt;/code&gt;, no se está expuesto a esta vulnerabilidad. Para protegerse contra este tipo de ataques, se recomienda utilizar &lt;code&gt;BuildKit&lt;/code&gt; para construir imágenes de Docker, ya que ofrece una mayor seguridad y eficiencia. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker buildx build&lt;/code&gt; con la opción &lt;code&gt;--load&lt;/code&gt; para cargar la imagen en el registro de Docker.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejoras, Docker ha anunciado nuevas características para su herramienta &lt;code&gt;Docker Compose&lt;/code&gt;. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker compose up&lt;/code&gt; con la opción &lt;code&gt;--build&lt;/code&gt; para reconstruir las imágenes de los contenedores antes de iniciarlos. Además, se puede utilizar la opción &lt;code&gt;--scale&lt;/code&gt; para escalar el número de contenedores en ejecución.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de los contenedores, se recomienda utilizar &lt;code&gt;Docker Multi-Stage Builds&lt;/code&gt; para crear imágenes de producción más pequeñas y seguras. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para especificar la etapa de construcción. También se puede utilizar la opción &lt;code&gt;--no-cache&lt;/code&gt; para evitar el uso de la caché de Docker durante la construcción de la imagen.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas para mejorar la seguridad y el rendimiento de los contenedores. Se recomienda actualizar Docker Desktop y utilizar &lt;code&gt;BuildKit&lt;/code&gt; y &lt;code&gt;Docker Multi-Stage Builds&lt;/code&gt; para crear imágenes de producción más seguras.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2"&gt;AuthZ plugin bypass with oversized request body&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/security/security-announcements/"&gt;Security announcements | Docker Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/devopsstart/docker-multi-stage-builds-smaller-secure-production-images-52fg"&gt;Docker Multi-Stage Builds: Smaller, Secure Production Images&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-17_0923.html"/>
+    <summary>Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas. Estas actualizaciones incluyen correcciones de vulnerabilidades y nuevas características para mejorar la seguridad y el rendimiento de los contenedores.</summary>
+    <published>2026-04-17T09:23:00+00:00</published>
   </entry>
 </feed>

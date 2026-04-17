@@ -1,4 +1,24 @@
 {
+  "2026-04-17_0923": {
+    "slug": "docker",
+    "title": "Seguridad y Mejoras en Docker",
+    "summary": "Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas. Estas actualizaciones incluyen correcciones de vulnerabilidades y nuevas características para mejorar la seguridad y el rendimiento de los contenedores.",
+    "content": "\nLa seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Recientemente, Docker ha publicado varias actualizaciones de seguridad para corregir vulnerabilidades en sus herramientas. Por ejemplo, la vulnerabilidad `CVE-2025-3224` permite a un atacante con acceso a una máquina de usuario realizar una elevación de privilegios cuando Docker Desktop se actualiza. Para corregir esta vulnerabilidad, se debe actualizar Docker Desktop a la versión `4.41.0` o superior.\n\nOtra vulnerabilidad importante es la relacionada con el plugin de autorización `AuthZ`, que puede ser bypassed con un cuerpo de solicitud sobredimensionado. Sin embargo, si no se utiliza el plugin `AuthZ`, no se está expuesto a esta vulnerabilidad. Para protegerse contra este tipo de ataques, se recomienda utilizar `BuildKit` para construir imágenes de Docker, ya que ofrece una mayor seguridad y eficiencia. Por ejemplo, se puede utilizar el comando `docker buildx build` con la opción `--load` para cargar la imagen en el registro de Docker.\n\nEn cuanto a las mejoras, Docker ha anunciado nuevas características para su herramienta `Docker Compose`. Por ejemplo, se puede utilizar el comando `docker compose up` con la opción `--build` para reconstruir las imágenes de los contenedores antes de iniciarlos. Además, se puede utilizar la opción `--scale` para escalar el número de contenedores en ejecución.\n\nPara mejorar la seguridad de los contenedores, se recomienda utilizar `Docker Multi-Stage Builds` para crear imágenes de producción más pequeñas y seguras. Por ejemplo, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa de construcción. También se puede utilizar la opción `--no-cache` para evitar el uso de la caché de Docker durante la construcción de la imagen.\n\nEn resumen, Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas para mejorar la seguridad y el rendimiento de los contenedores. Se recomienda actualizar Docker Desktop y utilizar `BuildKit` y `Docker Multi-Stage Builds` para crear imágenes de producción más seguras.\n\nPara más información, se puede consultar la documentación oficial de Docker y las fuentes citadas a continuación.\n",
+    "sources": [
+      {
+        "title": "AuthZ plugin bypass with oversized request body",
+        "url": "https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2"
+      },
+      {
+        "title": "Security announcements | Docker Docs",
+        "url": "https://docs.docker.com/security/security-announcements/"
+      },
+      {
+        "title": "Docker Multi-Stage Builds: Smaller, Secure Production Images",
+        "url": "https://dev.to/devopsstart/docker-multi-stage-builds-smaller-secure-production-images-52fg"
+      }
+    ]
+  },
   "2026-04-13_1000": {
     "slug": "docker",
     "title": "Mejores Practicas de Seguridad en Docker",

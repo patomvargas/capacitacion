@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad y Mejoras en Docker - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+    </div>
+
+    <h1>Seguridad y Mejoras en Docker</h1>
+    <div class="meta">2026-04-17 0923 · Docker</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Recientemente, Docker ha publicado varias actualizaciones de seguridad para corregir vulnerabilidades en sus herramientas. Por ejemplo, la vulnerabilidad `CVE-2025-3224` permite a un atacante con acceso a una máquina de usuario realizar una elevación de privilegios cuando Docker Desktop se actualiza. Para corregir esta vulnerabilidad, se debe actualizar Docker Desktop a la versión `4.41.0` o superior.</p>
+            
+        
+            
+        
+            
+            <p>Otra vulnerabilidad importante es la relacionada con el plugin de autorización `AuthZ`, que puede ser bypassed con un cuerpo de solicitud sobredimensionado. Sin embargo, si no se utiliza el plugin `AuthZ`, no se está expuesto a esta vulnerabilidad. Para protegerse contra este tipo de ataques, se recomienda utilizar `BuildKit` para construir imágenes de Docker, ya que ofrece una mayor seguridad y eficiencia. Por ejemplo, se puede utilizar el comando `docker buildx build` con la opción `--load` para cargar la imagen en el registro de Docker.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejoras, Docker ha anunciado nuevas características para su herramienta `Docker Compose`. Por ejemplo, se puede utilizar el comando `docker compose up` con la opción `--build` para reconstruir las imágenes de los contenedores antes de iniciarlos. Además, se puede utilizar la opción `--scale` para escalar el número de contenedores en ejecución.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad de los contenedores, se recomienda utilizar `Docker Multi-Stage Builds` para crear imágenes de producción más pequeñas y seguras. Por ejemplo, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa de construcción. También se puede utilizar la opción `--no-cache` para evitar el uso de la caché de Docker durante la construcción de la imagen.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas para mejorar la seguridad y el rendimiento de los contenedores. Se recomienda actualizar Docker Desktop y utilizar `BuildKit` y `Docker Multi-Stage Builds` para crear imágenes de producción más seguras.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas a continuación.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2" target="_blank">AuthZ plugin bypass with oversized request body</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.docker.com/security/security-announcements/" target="_blank">Security announcements | Docker Docs</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/devopsstart/docker-multi-stage-builds-smaller-secure-production-images-52fg" target="_blank">Docker Multi-Stage Builds: Smaller, Secure Production Images</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-13_1000.html">&larr; 2026-04-13 1000</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
