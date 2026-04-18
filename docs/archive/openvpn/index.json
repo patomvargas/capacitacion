@@ -1,4 +1,24 @@
 {
+  "2026-04-18_0857": {
+    "slug": "openvpn",
+    "title": "Mejoras y Novedades en OpenVPN",
+    "summary": "OpenVPN sigue evolucionando con mejoras en seguridad y compatibilidad. Recientemente, se ha agregado soporte para OpenSSL 4.0 y se han realizado auditorías de seguridad para garantizar la integridad del sistema.",
+    "content": "\nOpenVPN es una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales (VPN). Recientemente, la comunidad de OpenVPN ha estado trabajando en mejorar la seguridad y la compatibilidad del sistema. Una de las novedades más destacadas es el soporte para OpenSSL 4.0, que requirió la creación de varios parches para garantizar la compatibilidad.\n\nPara configurar OpenVPN con soporte para OpenSSL 4.0, se pueden utilizar comandos como `./configure --with-openssl` para compilar el sistema con el nuevo protocolo de cifrado. Además, se han realizado auditorías de seguridad para garantizar la integridad del sistema. Según la auditoría realizada por Security Research Labs, se han identificado y solucionado varios problemas de seguridad en la versión 2.7 de OpenVPN.\n\nEn cuanto a la configuración de OpenVPN, es importante mencionar que se pueden utilizar comandos como `openvpn --config archivo_de_configuracion.ovpn` para establecer una conexión segura. Además, se pueden configurar opciones como `net_gateway` y `net_gateway_ipv6` para controlar el acceso a la red. Sin embargo, es importante tener en cuenta que la configuración de estas opciones puede variar dependiendo de la versión de OpenVPN y del sistema operativo que se esté utilizando.\n\nPara hardening y mejorar la seguridad de OpenVPN, se pueden utilizar técnicas como la autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Además, se pueden utilizar herramientas como Nmap para realizar escaneos de seguridad y detectar posibles vulnerabilidades en la red.\n\nEn resumen, OpenVPN sigue siendo una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales. Con las recientes mejoras en seguridad y compatibilidad, OpenVPN es una opción segura y confiable para cualquier organización que necesite proteger sus datos y comunicaciones.\n\nFinalmente, es importante mencionar que la documentación oficial de OpenVPN es una excelente fuente de información para aprender a configurar y utilizar el sistema. Además, se pueden encontrar tutoriales y guías en línea que proporcionan instrucciones detalladas para la configuración de OpenVPN en diferentes sistemas operativos y dispositivos.",
+    "sources": [
+      {
+        "title": "OpenVPN Community Wiki",
+        "url": "https://community.openvpn.net/Meetings/2026/2026-04-01/source"
+      },
+      {
+        "title": "OpenVPN v2.7 Security Audit Results",
+        "url": "https://blog.openvpn.net/openvpn-v2.7-security-audit-results-srlabs-independent-review"
+      },
+      {
+        "title": "GitHub - OpenVPN",
+        "url": "https://github.com/OpenVPN/openvpn/issues/1015"
+      }
+    ]
+  },
   "2026-04-14_0925": {
     "slug": "openvpn",
     "title": "Configuración de OpenVPN",

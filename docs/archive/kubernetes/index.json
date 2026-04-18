@@ -1,4 +1,36 @@
 {
+  "2026-04-18_0857": {
+    "slug": "kubernetes",
+    "title": "Nuevas Características de Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más destacadas.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con el tiempo. Una de las características más destacadas es la introducción de la bandera `--ingress-class` en la versión alpha/beta de nginx ingress. Esta bandera permite especificar la clase de ingreso para los recursos de ingress.\n\n \nLa seguridad es otro aspecto importante en Kubernetes. Para mejorar la seguridad, se pueden utilizar herramientas como los operadores de Kubernetes, que permiten automatizar la implementación y el mantenimiento de los componentes de seguridad. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar una configuración de seguridad a un clúster de Kubernetes.\n\n \nEn cuanto al almacenamiento, Kubernetes ofrece varias opciones para almacenar y gestionar datos. Una de las opciones más populares es el uso de Persistent Volumes (PV) y StatefulSets. Los PV permiten almacenar datos de manera persistente, incluso si los pods que los utilizan se reinician o se eliminan. Los StatefulSets permiten gestionar el estado de los pods y asegurarse de que los datos se conserven incluso en caso de fallos.\n\n \nPara mejorar la productividad y la eficiencia en el desarrollo de aplicaciones en Kubernetes, se pueden utilizar herramientas como Claude Code, Cursor, Codex CLI, Gemini CLI y Antigravity. Estas herramientas ofrecen una variedad de skills y plugins que permiten automatizar tareas y mejorar la experiencia del desarrollador.\n\n \nEn resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para mejorar la eficiencia y la productividad en el desarrollo y la implementación de aplicaciones en Kubernetes.\n\n \nPara más información, se pueden consultar las fuentes siguientes:",
+    "sources": [
+      {
+        "title": "nginx ingress release #999",
+        "url": "https://github.com/kubernetes/ingress-nginx/issues/999"
+      },
+      {
+        "title": "cc-skill-strategic-compact",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/cc-skill-strategic-compact"
+      },
+      {
+        "title": "SkillsHub — The Right Skill, One API Call",
+        "url": "https://github.com/ComeOnOliver/skillshub"
+      },
+      {
+        "title": "Agent Skills: Curated Agent Skills for Microsoft & Azure",
+        "url": "https://github.com/MicrosoftDocs/Agent-Skills/"
+      },
+      {
+        "title": "database-cloud-optimization-cost-optimize",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/database-cloud-optimization-cost-optimize"
+      },
+      {
+        "title": "cc-skill-continuous-learning",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/cc-skill-continuous-learning"
+      }
+    ]
+  },
   "2026-04-14_0925": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

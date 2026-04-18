@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
-    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <title>Mejoras y Novedades en OpenVPN - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-04-14 0925 · Kubernetes</div>
+    <h1>Mejoras y Novedades en OpenVPN</h1>
+    <div class="meta">2026-04-18 0857 · OpenVPN</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En las últimas versiones, se han agregado nuevas características y mejoras en seguridad, networking y almacenamiento. Por ejemplo, en la versión 1.36, se ha agregado la función de `--ingress-class` para mejorar la gestión de los ingress.</p>
+            <p>OpenVPN es una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales (VPN). Recientemente, la comunidad de OpenVPN ha estado trabajando en mejorar la seguridad y la compatibilidad del sistema. Una de las novedades más destacadas es el soporte para OpenSSL 4.0, que requirió la creación de varios parches para garantizar la compatibilidad.</p>
             
         
             
         
             
-            <p>Una de las novedades más importantes es la mejora en la seguridad de los clústeres de Kubernetes. Se ha agregado la función de `CVE-2026-4342` para proteger contra ataques de comment-based nginx. Para aplicar esta actualización, se puede utilizar el comando `kubectl apply -f <nombre_del_archivo_de_configuracion>`. Además, se ha agregado la función de `fsGroupChangePolicy` para mejorar la gestión de los permisos de los volúmenes.</p>
+            <p>Para configurar OpenVPN con soporte para OpenSSL 4.0, se pueden utilizar comandos como `./configure --with-openssl` para compilar el sistema con el nuevo protocolo de cifrado. Además, se han realizado auditorías de seguridad para garantizar la integridad del sistema. Según la auditoría realizada por Security Research Labs, se han identificado y solucionado varios problemas de seguridad en la versión 2.7 de OpenVPN.</p>
             
         
             
         
             
-            <p>En cuanto a la networking, se ha agregado la función de `ingress-nginx` para mejorar la gestión de los ingress. Sin embargo, se ha anunciado que esta función será reemplazada en el futuro. Para configurar un ingress con `ingress-nginx`, se puede utilizar el comando `kubectl create -f <nombre_del_archivo_de_configuracion>`. Por ejemplo: `kubectl create -f ingress-nginx.yaml`.</p>
+            <p>En cuanto a la configuración de OpenVPN, es importante mencionar que se pueden utilizar comandos como `openvpn --config archivo_de_configuracion.ovpn` para establecer una conexión segura. Además, se pueden configurar opciones como `net_gateway` y `net_gateway_ipv6` para controlar el acceso a la red. Sin embargo, es importante tener en cuenta que la configuración de estas opciones puede variar dependiendo de la versión de OpenVPN y del sistema operativo que se esté utilizando.</p>
             
         
             
         
             
-            <p>En cuanto a las best practices, se recomienda utilizar la versión más reciente de Kubernetes y aplicar las actualizaciones de seguridad de manera regular. También se recomienda utilizar herramientas de monitoreo y logging para detectar problemas en el clúster. Para monitorear el clúster, se puede utilizar el comando `kubectl get pods -o wide` para obtener información sobre los pods en ejecución.</p>
+            <p>Para hardening y mejorar la seguridad de OpenVPN, se pueden utilizar técnicas como la autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Además, se pueden utilizar herramientas como Nmap para realizar escaneos de seguridad y detectar posibles vulnerabilidades en la red.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. Es importante estar al tanto de las últimas novedades y best practices para asegurarse de que el clúster esté seguro y funcionando de manera óptima.</p>
+            <p>En resumen, OpenVPN sigue siendo una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales. Con las recientes mejoras en seguridad y compatibilidad, OpenVPN es una opción segura y confiable para cualquier organización que necesite proteger sus datos y comunicaciones.</p>
             
         
             
         
             
-            <p>Para obtener más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y tecnologías utilizadas.</p>
-            
-        
+            <p>Finalmente, es importante mencionar que la documentación oficial de OpenVPN es una excelente fuente de información para aprender a configurar y utilizar el sistema. Además, se pueden encontrar tutoriales y guías en línea que proporcionan instrucciones detalladas para la configuración de OpenVPN en diferentes sistemas operativos y dispositivos.</p>
             
         
     </div>
@@ -109,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
+                <a href="https://community.openvpn.net/Meetings/2026/2026-04-01/source" target="_blank">OpenVPN Community Wiki</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/kubernetes/issues/137893" target="_blank">CVE-2026-4342: ingress-nginx comment-based nginx</a>
+                <a href="https://blog.openvpn.net/openvpn-v2.7-security-audit-results-srlabs-independent-review" target="_blank">OpenVPN v2.7 Security Audit Results</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/ingress-nginx" target="_blank">Ingress NGINX Controller for Kubernetes</a>
+                <a href="https://github.com/OpenVPN/openvpn/issues/1015" target="_blank">GitHub - OpenVPN</a>
                 
             </li>
             
@@ -130,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-10_0916.html">&larr; 2026-04-10 0916</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-14_0925.html">&larr; 2026-04-14 0925</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-18_0857.html">2026-04-18 0857 &rarr;</a>
             
         </div>
     </div>

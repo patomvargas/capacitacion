@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-17T09:25:43.580720+00:00</updated>
+  <updated>2026-04-18T08:58:29.190425+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -217,5 +217,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-14_0925.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. En este artículo, se presentan las últimas novedades y best practices para sysadmins y DevOps engineers.</summary>
     <published>2026-04-14T09:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-18_0857.html</id>
+    <title>Nuevas Características de Kubernetes</title>
+    <updated>2026-04-18T08:57:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con el tiempo. Una de las características más destacadas es la introducción de la bandera &lt;code&gt;--ingress-class&lt;/code&gt; en la versión alpha/beta de nginx ingress. Esta bandera permite especificar la clase de ingreso para los recursos de ingress.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes. Para mejorar la seguridad, se pueden utilizar herramientas como los operadores de Kubernetes, que permiten automatizar la implementación y el mantenimiento de los componentes de seguridad. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl apply -f&lt;/code&gt; para aplicar una configuración de seguridad a un clúster de Kubernetes.&lt;/p&gt;
+&lt;p&gt;En cuanto al almacenamiento, Kubernetes ofrece varias opciones para almacenar y gestionar datos. Una de las opciones más populares es el uso de Persistent Volumes (PV) y StatefulSets. Los PV permiten almacenar datos de manera persistente, incluso si los pods que los utilizan se reinician o se eliminan. Los StatefulSets permiten gestionar el estado de los pods y asegurarse de que los datos se conserven incluso en caso de fallos.&lt;/p&gt;
+&lt;p&gt;Para mejorar la productividad y la eficiencia en el desarrollo de aplicaciones en Kubernetes, se pueden utilizar herramientas como Claude Code, Cursor, Codex CLI, Gemini CLI y Antigravity. Estas herramientas ofrecen una variedad de skills y plugins que permiten automatizar tareas y mejorar la experiencia del desarrollador.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para mejorar la eficiencia y la productividad en el desarrollo y la implementación de aplicaciones en Kubernetes.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes siguientes:&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/ingress-nginx/issues/999"&gt;nginx ingress release #999&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/cc-skill-strategic-compact"&gt;cc-skill-strategic-compact&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ComeOnOliver/skillshub"&gt;SkillsHub — The Right Skill, One API Call&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/MicrosoftDocs/Agent-Skills/"&gt;Agent Skills: Curated Agent Skills for Microsoft &amp; Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/database-cloud-optimization-cost-optimize"&gt;database-cloud-optimization-cost-optimize&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/cc-skill-continuous-learning"&gt;cc-skill-continuous-learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-18_0857.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más destacadas.</summary>
+    <published>2026-04-18T08:57:00+00:00</published>
   </entry>
 </feed>

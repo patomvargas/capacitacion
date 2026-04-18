@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-17T09:25:43.579146+00:00</updated>
+  <updated>2026-04-18T08:58:29.187408+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -54,5 +54,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-14_0925.html"/>
     <summary>Este artículo cubre las mejores prácticas para la configuración de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y logging. Se proporcionan ejemplos concretos y comandos para una implementación efectiva.</summary>
     <published>2026-04-14T09:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-18_0857.html</id>
+    <title>Configuración de DNS BIND9</title>
+    <updated>2026-04-18T08:57:00+00:00</updated>
+    <content type="html">&lt;p&gt;El sistema DNS BIND9 es una herramienta fundamental para la gestión de nombres de dominio en Internet. Para configurar zonas en BIND9, se utiliza el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas de autoridad y las zonas de caché. Por ejemplo, para configurar una zona de autoridad, se puede utilizar el siguiente comando: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de DNSSEC es crucial para la seguridad de los nombres de dominio. Para habilitar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma, utilizando herramientas como &lt;code&gt;dnssec-keygen&lt;/code&gt; y &lt;code&gt;dnssec-signzone&lt;/code&gt;. Por ejemplo, para generar una clave de zona, se puede utilizar el siguiente comando: &lt;code&gt;dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes respuestas DNS dependiendo de la dirección IP del cliente. Para configurar vistas en BIND9, se utiliza la directiva &lt;code&gt;view&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para configurar una vista para la red interna, se puede utilizar el siguiente comando: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de RPZ (Response Policy Zone) es útil para bloquear accesos a sitios web maliciosos. Para configurar RPZ en BIND9, se debe crear una zona de respuesta y configurar la directiva &lt;code&gt;response-policy&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para configurar una zona de respuesta, se puede utilizar el siguiente comando: &lt;code&gt;zone "rpz.example.com" { type master; file "/etc/bind/db.rpz.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, la configuración de registro de eventos es fundamental para monitorear y depurar el sistema DNS. Para configurar el registro de eventos en BIND9, se utiliza la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para configurar el registro de eventos en un archivo de registro, se puede utilizar el siguiente comando: &lt;code&gt;logging { channel default_log { file "/var/log/named.log"; }; };&lt;/code&gt;,&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración de DNS BIND9 requiere una comprensión profunda de las diferentes características y opciones disponibles. Al seguir las mejores prácticas y utilizar las herramientas adecuadas, se puede configurar un sistema DNS seguro y escalable.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-dns-over-tls-ipv6"&gt;Configure DNS over TLS IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-vmware-sdwan-velocloud-ipv6"&gt;VMware SD-WAN Velocloud IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-monitor-ipv4-ntopng-netflow-sflow"&gt;Monitor IPv4 ntopng NetFlow sFlow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-docker-host-network-mode-ipv4-access"&gt;Docker Host Network Mode IPv4 Access&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mongodb-how-to-use-mongodump-to-back-up-a-mongodb-database"&gt;MongoDB How to use mongodump to back up a MongoDB database&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-18_0857.html"/>
+    <summary>El sistema DNS BIND9 es una herramienta fundamental para la gestión de nombres de dominio en Internet. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos.</summary>
+    <published>2026-04-18T08:57:00+00:00</published>
   </entry>
 </feed>

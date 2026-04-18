@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-17T09:25:43.579724+00:00</updated>
+  <updated>2026-04-18T08:58:29.188605+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -161,5 +161,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-14_0925.html"/>
     <summary>OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes. En este artículo, se explica cómo configurar OpenVPN para establecer conexiones seguras y cómo optimizar el rendimiento.</summary>
     <published>2026-04-14T09:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-18_0857.html</id>
+    <title>Mejoras y Novedades en OpenVPN</title>
+    <updated>2026-04-18T08:57:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales (VPN). Recientemente, la comunidad de OpenVPN ha estado trabajando en mejorar la seguridad y la compatibilidad del sistema. Una de las novedades más destacadas es el soporte para OpenSSL 4.0, que requirió la creación de varios parches para garantizar la compatibilidad.&lt;/p&gt;
+&lt;p&gt;Para configurar OpenVPN con soporte para OpenSSL 4.0, se pueden utilizar comandos como &lt;code&gt;./configure --with-openssl&lt;/code&gt; para compilar el sistema con el nuevo protocolo de cifrado. Además, se han realizado auditorías de seguridad para garantizar la integridad del sistema. Según la auditoría realizada por Security Research Labs, se han identificado y solucionado varios problemas de seguridad en la versión 2.7 de OpenVPN.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de OpenVPN, es importante mencionar que se pueden utilizar comandos como &lt;code&gt;openvpn --config archivo_de_configuracion.ovpn&lt;/code&gt; para establecer una conexión segura. Además, se pueden configurar opciones como &lt;code&gt;net_gateway&lt;/code&gt; y &lt;code&gt;net_gateway_ipv6&lt;/code&gt; para controlar el acceso a la red. Sin embargo, es importante tener en cuenta que la configuración de estas opciones puede variar dependiendo de la versión de OpenVPN y del sistema operativo que se esté utilizando.&lt;/p&gt;
+&lt;p&gt;Para hardening y mejorar la seguridad de OpenVPN, se pueden utilizar técnicas como la autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Además, se pueden utilizar herramientas como Nmap para realizar escaneos de seguridad y detectar posibles vulnerabilidades en la red.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN sigue siendo una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales. Con las recientes mejoras en seguridad y compatibilidad, OpenVPN es una opción segura y confiable para cualquier organización que necesite proteger sus datos y comunicaciones.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de OpenVPN es una excelente fuente de información para aprender a configurar y utilizar el sistema. Además, se pueden encontrar tutoriales y guías en línea que proporcionan instrucciones detalladas para la configuración de OpenVPN en diferentes sistemas operativos y dispositivos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Meetings/2026/2026-04-01/source"&gt;OpenVPN Community Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.openvpn.net/openvpn-v2.7-security-audit-results-srlabs-independent-review"&gt;OpenVPN v2.7 Security Audit Results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/issues/1015"&gt;GitHub - OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-18_0857.html"/>
+    <summary>OpenVPN sigue evolucionando con mejoras en seguridad y compatibilidad. Recientemente, se ha agregado soporte para OpenSSL 4.0 y se han realizado auditorías de seguridad para garantizar la integridad del sistema.</summary>
+    <published>2026-04-18T08:57:00+00:00</published>
   </entry>
 </feed>

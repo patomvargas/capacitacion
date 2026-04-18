@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
+    <title>Nuevas Características de Kubernetes - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,48 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-04-14 0925 · Kubernetes</div>
+    <h1>Nuevas Características de Kubernetes</h1>
+    <div class="meta">2026-04-18 0857 · Kubernetes</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En las últimas versiones, se han agregado nuevas características y mejoras en seguridad, networking y almacenamiento. Por ejemplo, en la versión 1.36, se ha agregado la función de `--ingress-class` para mejorar la gestión de los ingress.</p>
+            <p>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con el tiempo. Una de las características más destacadas es la introducción de la bandera `--ingress-class` en la versión alpha/beta de nginx ingress. Esta bandera permite especificar la clase de ingreso para los recursos de ingress.</p>
             
         
             
         
             
-            <p>Una de las novedades más importantes es la mejora en la seguridad de los clústeres de Kubernetes. Se ha agregado la función de `CVE-2026-4342` para proteger contra ataques de comment-based nginx. Para aplicar esta actualización, se puede utilizar el comando `kubectl apply -f <nombre_del_archivo_de_configuracion>`. Además, se ha agregado la función de `fsGroupChangePolicy` para mejorar la gestión de los permisos de los volúmenes.</p>
+        
+            
+            <p>La seguridad es otro aspecto importante en Kubernetes. Para mejorar la seguridad, se pueden utilizar herramientas como los operadores de Kubernetes, que permiten automatizar la implementación y el mantenimiento de los componentes de seguridad. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar una configuración de seguridad a un clúster de Kubernetes.</p>
             
         
             
         
             
-            <p>En cuanto a la networking, se ha agregado la función de `ingress-nginx` para mejorar la gestión de los ingress. Sin embargo, se ha anunciado que esta función será reemplazada en el futuro. Para configurar un ingress con `ingress-nginx`, se puede utilizar el comando `kubectl create -f <nombre_del_archivo_de_configuracion>`. Por ejemplo: `kubectl create -f ingress-nginx.yaml`.</p>
+        
+            
+            <p>En cuanto al almacenamiento, Kubernetes ofrece varias opciones para almacenar y gestionar datos. Una de las opciones más populares es el uso de Persistent Volumes (PV) y StatefulSets. Los PV permiten almacenar datos de manera persistente, incluso si los pods que los utilizan se reinician o se eliminan. Los StatefulSets permiten gestionar el estado de los pods y asegurarse de que los datos se conserven incluso en caso de fallos.</p>
             
         
             
         
             
-            <p>En cuanto a las best practices, se recomienda utilizar la versión más reciente de Kubernetes y aplicar las actualizaciones de seguridad de manera regular. También se recomienda utilizar herramientas de monitoreo y logging para detectar problemas en el clúster. Para monitorear el clúster, se puede utilizar el comando `kubectl get pods -o wide` para obtener información sobre los pods en ejecución.</p>
+        
+            
+            <p>Para mejorar la productividad y la eficiencia en el desarrollo de aplicaciones en Kubernetes, se pueden utilizar herramientas como Claude Code, Cursor, Codex CLI, Gemini CLI y Antigravity. Estas herramientas ofrecen una variedad de skills y plugins que permiten automatizar tareas y mejorar la experiencia del desarrollador.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, networking y almacenamiento. Es importante estar al tanto de las últimas novedades y best practices para asegurarse de que el clúster esté seguro y funcionando de manera óptima.</p>
+        
+            
+            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para mejorar la eficiencia y la productividad en el desarrollo y la implementación de aplicaciones en Kubernetes.</p>
             
         
             
         
             
-            <p>Para obtener más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y tecnologías utilizadas.</p>
-            
         
+            
+            <p>Para más información, se pueden consultar las fuentes siguientes:</p>
             
         
     </div>
@@ -109,17 +115,32 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/03/30/kubernetes-v1-36-sneak-peek/" target="_blank">Kubernetes v1.36 Sneak Peek</a>
+                <a href="https://github.com/kubernetes/ingress-nginx/issues/999" target="_blank">nginx ingress release #999</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/kubernetes/issues/137893" target="_blank">CVE-2026-4342: ingress-nginx comment-based nginx</a>
+                <a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/cc-skill-strategic-compact" target="_blank">cc-skill-strategic-compact</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/ingress-nginx" target="_blank">Ingress NGINX Controller for Kubernetes</a>
+                <a href="https://github.com/ComeOnOliver/skillshub" target="_blank">SkillsHub — The Right Skill, One API Call</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/MicrosoftDocs/Agent-Skills/" target="_blank">Agent Skills: Curated Agent Skills for Microsoft & Azure</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/database-cloud-optimization-cost-optimize" target="_blank">database-cloud-optimization-cost-optimize</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/cc-skill-continuous-learning" target="_blank">cc-skill-continuous-learning</a>
                 
             </li>
             
@@ -130,12 +151,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-10_0916.html">&larr; 2026-04-10 0916</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-14_0925.html">&larr; 2026-04-14 0925</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-18_0857.html">2026-04-18 0857 &rarr;</a>
             
         </div>
     </div>
