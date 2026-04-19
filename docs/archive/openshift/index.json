@@ -1,4 +1,24 @@
 {
+  "2026-04-19_0900": {
+    "slug": "openshift",
+    "title": "Mejoras en OpenShift 4.21",
+    "summary": "OpenShift 4.21 ofrece nuevas características como escalado inteligente, migración más rápida y eficiencia impulsada por IA. Esta versión también incluye mejoras en la seguridad y el rendimiento.",
+    "content": "\nOpenShift 4.21 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de mejoras y nuevas características. Una de las características más destacadas es el escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Esto se puede lograr utilizando el comando `oc scale` para ajustar el número de réplicas de un deployment.\n\nOtra característica importante es la migración más rápida, que permite a los administradores migrar aplicaciones de una versión a otra de OpenShift de manera más eficiente. Esto se puede lograr utilizando el comando `oc migrate` para migrar los objetos de un namespace a otro. Además, OpenShift 4.21 incluye mejoras en la seguridad, como la capacidad de utilizar OAuth para autenticar a los usuarios y aplicaciones.\n\nPara aprovechar al máximo las características de OpenShift 4.21, es importante mantener el clúster actualizado. Los administradores pueden verificar si hay actualizaciones disponibles utilizando el comando `oc adm upgrade` o la consola web de OpenShift. Es importante mencionar que las versiones anteriores de OpenShift, como la 4.18, ya no reciben soporte y es recomendable migrar a la versión 4.21 lo antes posible.\n\nEn cuanto a la seguridad, es importante mencionar que las versiones anteriores de OpenShift tienen vulnerabilidades conocidas que pueden ser explotadas por atacantes. Por lo tanto, es fundamental mantener el clúster actualizado y aplicar las actualizaciones de seguridad lo antes posible. Los administradores pueden utilizar el comando `oc adm verify` para verificar la integridad del clúster y detectar cualquier problema de seguridad.\n\nFinalmente, es importante mencionar que OpenShift 4.21 es compatible con la mayoría de las aplicaciones y servicios de Red Hat, incluyendo OKD, OperatorHub, builds, routes y monitoring. Los administradores pueden utilizar el comando `oc new-project` para crear un nuevo proyecto y comenzar a utilizar las características de OpenShift 4.21.\n\nEn resumen, OpenShift 4.21 es una versión importante que ofrece mejoras en la seguridad, el rendimiento y la eficiencia. Los administradores deben considerar migrar a esta versión lo antes posible para aprovechar al máximo las características y mejorar la seguridad de sus clústeres.\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:6554",
+        "url": "https://access.redhat.com/errata/RHSA-2026:6554"
+      },
+      {
+        "title": "RHSA-2026:5127",
+        "url": "https://access.redhat.com/errata/RHSA-2026:5127"
+      },
+      {
+        "title": "Red Hat OpenShift 4.21",
+        "url": "https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency"
+      }
+    ]
+  },
   "2026-04-15_0926": {
     "slug": "openshift",
     "title": "OpenShift: Novedades y Mejoras",

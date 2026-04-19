@@ -1,4 +1,32 @@
 {
+  "2026-04-19_0900": {
+    "slug": "gemini",
+    "title": "Gemini: Nuevas Funcionalidades y Mejoras",
+    "summary": "Gemini ha lanzado nuevas funcionalidades y mejoras en su API y modelos, incluyendo la facturación por uso y aumentos en los límites de velocidad. Estas mejoras permiten a los desarrolladores crear agentes conversacionales más avanzados y personalizados.",
+    "content": "\nLa última versión de Gemini introduce la facturación por uso para los modelos Pro y Flash, lo que permite a los desarrolladores pagar solo por lo que utilizan. Además, se han aumentado los límites de velocidad para los modelos Pro y Flash, lo que permite una mayor cantidad de solicitudes por segundo. \nPara utilizar la API de Gemini, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando `gcloud ai gemini init` para inicializar el proyecto y `gcloud ai gemini deploy` para desplegar el modelo. \nLa documentación oficial de Gemini proporciona una guía práctica para empezar a utilizar la API, incluyendo la elección del modelo adecuado para cada proyecto. Por ejemplo, el modelo `gemini-2.5-flash` es una buena opción para proyectos educativos debido a su equilibrio entre velocidad y costo. \nAdemás, se han lanzado nuevas funcionalidades como Gemini 3.1 Flash Live, que permite a los desarrolladores crear agentes conversacionales en tiempo real. Para utilizar esta funcionalidad, es necesario utilizar el comando `gemini live init` y luego `gemini live deploy`. \nLa comunidad de desarrolladores de Gemini también ha creado herramientas y tutoriales para ayudar a los desarrolladores a aprovechar al máximo la API. Por ejemplo, el tutorial de Subagentes de Gemini CLI proporciona una guía paso a paso para crear agentes personalizados.\n\n",
+    "sources": [
+      {
+        "title": "Release notes | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Gemini for Google Cloud release notes",
+        "url": "https://docs.cloud.google.com/gemini/docs/release-notes"
+      },
+      {
+        "title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      },
+      {
+        "title": "Build real-time conversational agents with Gemini 3.1 Flash Live",
+        "url": "https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/"
+      },
+      {
+        "title": "Getting Started with the Gemini API: A Practical Guide",
+        "url": "https://dev.to/eleonorarocchi/getting-started-with-the-gemini-api-a-practical-guide-3hhd"
+      }
+    ]
+  },
   "2026-04-15_0926": {
     "slug": "gemini",
     "title": "Gemini: Integración con Vertex AI y Best Practices",

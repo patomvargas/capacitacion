@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas para Claude Code - Claude Code</title>
+    <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
+    </div>
+
+    <h1>Mejores prácticas para Claude Code</h1>
+    <div class="meta">2026-04-19 0900 · Claude Code</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Claude Code es una herramienta de código abierto que permite a los desarrolladores y científicos crear y ejecutar código de manera eficiente. Sin embargo, para aprovechar su potencial, es necesario configurar y utilizar algunas de sus características de manera efectiva. Por ejemplo, es importante utilizar el comando `git-bash` en Windows para evitar errores de compatibilidad, como se menciona en el issue #37908 de GitHub.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para mejorar la productividad, se pueden utilizar los hooks de formato en tiempo de guardado, que permiten automatizar la formateación del código después de cada edición. Sin embargo, es importante tener en cuenta que estos hooks pueden reescribir el archivo después de cada edición, incluso si se realizan ediciones consecutivas en el mismo archivo, como se menciona en el issue #42317 de GitHub.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Claude Code es la capacidad de utilizar servidores MCP (Message Control Protocol) para conectar con Claude.ai. Sin embargo, es importante configurar correctamente los conectores para evitar la duplicación de servidores, como se menciona en el issue #43369 de GitHub. Para configurar los conectores, se puede utilizar el comando `claude config` y especificar la dirección del servidor MCP.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Además, es importante mencionar que Claude Code tiene una característica de modo interactivo que permite a los usuarios ejecutar comandos de manera interactiva. Para utilizar esta característica, se puede utilizar el comando `! bash` y especificar el comando que se desea ejecutar. También es importante mencionar que Claude Code tiene una documentación completa que cubre todas las características y configuraciones posibles, como se menciona en el issue #36858 de GitHub.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Claude Code es una herramienta poderosa que requiere configuraciones y prácticas específicas para aprovechar su potencial. Al utilizar las características y configuraciones adecuadas, los desarrolladores y científicos pueden mejorar su productividad y crear código de manera eficiente.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Claude Code, como la documentación oficial y los issues de GitHub. También se pueden consultar las mejores prácticas y tutoriales de la comunidad de desarrolladores, como se menciona en el artículo '10 Battle-Tested Claude Code Practices' de DEV Community.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/37908" target="_blank">Issue #37908</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/42317" target="_blank">Issue #42317</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/43369" target="_blank">Issue #43369</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/36858" target="_blank">Issue #36858</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/evan-dong/10-battle-tested-claude-code-practices-4n81" target="_blank">10 Battle-Tested Claude Code Practices</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

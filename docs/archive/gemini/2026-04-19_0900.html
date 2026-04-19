@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gemini: Integración con Vertex AI y Best Practices - Gemini</title>
+    <title>Gemini: Nuevas Funcionalidades y Mejoras - Gemini</title>
     <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
     <style>
         :root {
@@ -57,44 +57,36 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
     </div>
 
-    <h1>Gemini: Integración con Vertex AI y Best Practices</h1>
-    <div class="meta">2026-04-15 0926 · Gemini</div>
+    <h1>Gemini: Nuevas Funcionalidades y Mejoras</h1>
+    <div class="meta">2026-04-19 0900 · Gemini</div>
 
     <div class="content">
         
         
             
-            <p>Gemini es una herramienta de IA que se enfoca en la integración con Vertex AI y Workspace para ofrecer capacidades avanzadas de procesamiento de lenguaje natural. Para utilizar Gemini, es necesario configurar la integración con Vertex AI mediante el comando `gcloud ai vertex-ai init`. Luego, se puede utilizar el comando `gemini init` para inicializar el proyecto.</p>
+        
+            
+            <p>La última versión de Gemini introduce la facturación por uso para los modelos Pro y Flash, lo que permite a los desarrolladores pagar solo por lo que utilizan. Además, se han aumentado los límites de velocidad para los modelos Pro y Flash, lo que permite una mayor cantidad de solicitudes por segundo.</p>
+            
+        
+            
+            <p>Para utilizar la API de Gemini, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando `gcloud ai gemini init` para inicializar el proyecto y `gcloud ai gemini deploy` para desplegar el modelo.</p>
+            
+        
+            
+            <p>La documentación oficial de Gemini proporciona una guía práctica para empezar a utilizar la API, incluyendo la elección del modelo adecuado para cada proyecto. Por ejemplo, el modelo `gemini-2.5-flash` es una buena opción para proyectos educativos debido a su equilibrio entre velocidad y costo.</p>
+            
+        
+            
+            <p>Además, se han lanzado nuevas funcionalidades como Gemini 3.1 Flash Live, que permite a los desarrolladores crear agentes conversacionales en tiempo real. Para utilizar esta funcionalidad, es necesario utilizar el comando `gemini live init` y luego `gemini live deploy`.</p>
+            
+        
+            
+            <p>La comunidad de desarrolladores de Gemini también ha creado herramientas y tutoriales para ayudar a los desarrolladores a aprovechar al máximo la API. Por ejemplo, el tutorial de Subagentes de Gemini CLI proporciona una guía paso a paso para crear agentes personalizados.</p>
             
         
             
         
-            
-            <p>La integración con Workspace es crucial para aprovechar al máximo las capacidades de Gemini. Se puede configurar la integración con Workspace mediante el comando `gcloud workspace init`. Luego, se puede utilizar el comando `gemini workspace` para interactuar con el espacio de trabajo.</p>
-            
-        
-            
-        
-            
-            <p>Una de las mejores prácticas para utilizar Gemini es definir los modelos de lenguaje natural de manera clara y concisa. Se puede utilizar el comando `gemini model` para definir los modelos y luego entrenarlos con datos de entrenamiento. Es importante mencionar que la documentación generada automáticamente es fundamental para mantener la consistencia y la claridad en la documentación del proyecto. Se puede utilizar la herramienta `documentation-generation-doc-generate` para generar documentación automáticamente.</p>
-            
-        
-            
-        
-            
-            <p>La seguridad es otro aspecto importante a considerar al utilizar Gemini. Es fundamental proteger los datos y los modelos de lenguaje natural para evitar accesos no autorizados. Se puede utilizar el comando `gcloud ai vertex-ai secure` para configurar la seguridad de la integración con Vertex AI.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, Gemini es una herramienta poderosa que se integra con Vertex AI y Workspace para ofrecer capacidades avanzadas de procesamiento de lenguaje natural. Al seguir las mejores prácticas y utilizar los comandos adecuados, se puede aprovechar al máximo las capacidades de Gemini y mantener la seguridad y la consistencia en la documentación del proyecto.</p>
-            
-        
-            
-        
-            
-            <p>Es importante mencionar que la biblioteca `bunny` es útil para interactuar con RabbitMQ y puede ser utilizada en conjunto con Gemini para procesar mensajes y eventos. También es importante mencionar que la plataforma `Microsoft Learn MCP Server` ofrece recursos y documentación oficial para aprender sobre las capacidades de Gemini y Vertex AI.</p>
             
         
     </div>
@@ -105,22 +97,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/tech-leads-club/agent-skills" target="_blank">The secure, validated skill registry for professional AI coding agents</a>
+                <a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank">Release notes | Gemini API | Google AI for Developers</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/ruby-amqp/bunny" target="_blank">Bunny, a Ruby RabbitMQ Client</a>
+                <a href="https://docs.cloud.google.com/gemini/docs/release-notes" target="_blank">Gemini for Google Cloud release notes</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/documentation-generation-doc-generate" target="_blank">documentation-generation-doc-generate</a>
+                <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank">Gemini Enterprise release notes | Google Cloud Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/microsoftdocs/mcp" target="_blank">Microsoft Learn MCP Server</a>
+                <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/" target="_blank">Build real-time conversational agents with Gemini 3.1 Flash Live</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/eleonorarocchi/getting-started-with-the-gemini-api-a-practical-guide-3hhd" target="_blank">Getting Started with the Gemini API: A Practical Guide</a>
                 
             </li>
             
@@ -131,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-11_0852.html">&larr; 2026-04-11 0852</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-19_0900.html">2026-04-19 0900 &rarr;</a>
             
         </div>
     </div>

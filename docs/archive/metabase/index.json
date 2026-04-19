@@ -1,4 +1,28 @@
 {
+  "2026-04-19_0900": {
+    "slug": "metabase",
+    "title": "Metabase: Novedades y Mejoras",
+    "summary": "Metabase es una herramienta de análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. En este artículo, se presentan las novedades y mejoras recientes en Metabase, incluyendo la actualización de Netty y la personalización de Metabot.",
+    "content": "Metabase es una herramienta de análisis de datos que ofrece una variedad de funcionalidades para ayudar a los usuarios a tomar decisiones informadas. Recientemente, se han realizado varias actualizaciones y mejoras en la plataforma, incluyendo la actualización de Netty a versión 4.2.10.Final para parchar la vulnerabilidad CVE-2026-33870. Esta actualización se puede realizar ejecutando el comando `git checkout v0.43.0` y luego `git pull` para obtener los cambios más recientes.\n\n \nLa personalización de Metabot es otra de las novedades recientes en Metabase. Metabot es un asistente de inteligencia artificial que ayuda a los usuarios a crear queries y dashboards. Ahora, los usuarios pueden personalizar Metabot para que se adapte a sus necesidades específicas. Por ejemplo, se puede configurar Metabot para que utilice un lenguaje natural específico o para que se conecte a una base de datos determinada.\n\n \nOtra característica importante de Metabase es la capacidad de crear dashboards personalizados. Los dashboards permiten a los usuarios visualizar sus datos de manera efectiva y tomar decisiones informadas. En Metabase, se pueden crear dashboards utilizando una variedad de herramientas y funciones, incluyendo gráficos, tablas y mapas. Por ejemplo, se puede crear un dashboard que muestre los resultados de una query utilizando el comando `SELECT * FROM tabla` y luego configurar el dashboard para que se actualice automáticamente cada hora.\n\n \nAdemás, Metabase ofrece una API que permite a los desarrolladores crear aplicaciones personalizadas que se conecten a la plataforma. La API de Metabase es muy completa y ofrece una variedad de funciones y herramientas para ayudar a los desarrolladores a crear aplicaciones efectivas. Por ejemplo, se puede utilizar la API para crear una aplicación que permita a los usuarios crear queries y dashboards de manera programática.\n\n \nEn cuanto a la administración de Metabase, la plataforma ofrece una variedad de herramientas y funciones para ayudar a los administradores a gestionar la plataforma de manera efectiva. Por ejemplo, se pueden configurar permisos y roles para controlar el acceso a la plataforma y se pueden crear informes y análisis para evaluar el rendimiento de la plataforma. Por ejemplo, se puede utilizar el comando `GET /api/user` para obtener una lista de todos los usuarios de la plataforma y luego configurar los permisos y roles para cada usuario.\n\n \nEn resumen, Metabase es una herramienta de análisis de datos muy completa y flexible que ofrece una variedad de funcionalidades y herramientas para ayudar a los usuarios a tomar decisiones informadas. Las novedades y mejoras recientes en Metabase, incluyendo la actualización de Netty y la personalización de Metabot, hacen que la plataforma sea aún más efectiva y fácil de usar.",
+    "sources": [
+      {
+        "title": "Bump Netty to >=v4.2.10.Final to patch cve-2026-33870",
+        "url": "https://github.com/metabase/metabase/issues/71652"
+      },
+      {
+        "title": "Data Residency Toggles for Metabot",
+        "url": "https://github.com/metabase/metabase/issues/72115"
+      },
+      {
+        "title": "Per Tenant Metabot customization",
+        "url": "https://github.com/metabase/metabase/issues/72116"
+      },
+      {
+        "title": "Metabase-mcp - Query Metabase from Claude using natural language",
+        "url": "https://discourse.metabase.com/t/metabase-mcp-query-metabase-from-claude-using-natural-language/299007"
+      }
+    ]
+  },
   "2026-04-15_0926": {
     "slug": "metabase",
     "title": "Mejoras y Novedades en Metabase",

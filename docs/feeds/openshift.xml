@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-18T08:58:29.191754+00:00</updated>
+  <updated>2026-04-19T09:01:11.872632+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -212,5 +212,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-15_0926.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece nuevas características y mejoras en su versión 4.18.36. En este artículo, se presentan las novedades y mejores prácticas para trabajar con OpenShift.</summary>
     <published>2026-04-15T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html</id>
+    <title>Mejoras en OpenShift 4.21</title>
+    <updated>2026-04-19T09:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4.21 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de mejoras y nuevas características. Una de las características más destacadas es el escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Esto se puede lograr utilizando el comando &lt;code&gt;oc scale&lt;/code&gt; para ajustar el número de réplicas de un deployment.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la migración más rápida, que permite a los administradores migrar aplicaciones de una versión a otra de OpenShift de manera más eficiente. Esto se puede lograr utilizando el comando &lt;code&gt;oc migrate&lt;/code&gt; para migrar los objetos de un namespace a otro. Además, OpenShift 4.21 incluye mejoras en la seguridad, como la capacidad de utilizar OAuth para autenticar a los usuarios y aplicaciones.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las características de OpenShift 4.21, es importante mantener el clúster actualizado. Los administradores pueden verificar si hay actualizaciones disponibles utilizando el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; o la consola web de OpenShift. Es importante mencionar que las versiones anteriores de OpenShift, como la 4.18, ya no reciben soporte y es recomendable migrar a la versión 4.21 lo antes posible.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que las versiones anteriores de OpenShift tienen vulnerabilidades conocidas que pueden ser explotadas por atacantes. Por lo tanto, es fundamental mantener el clúster actualizado y aplicar las actualizaciones de seguridad lo antes posible. Los administradores pueden utilizar el comando &lt;code&gt;oc adm verify&lt;/code&gt; para verificar la integridad del clúster y detectar cualquier problema de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift 4.21 es compatible con la mayoría de las aplicaciones y servicios de Red Hat, incluyendo OKD, OperatorHub, builds, routes y monitoring. Los administradores pueden utilizar el comando &lt;code&gt;oc new-project&lt;/code&gt; para crear un nuevo proyecto y comenzar a utilizar las características de OpenShift 4.21.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.21 es una versión importante que ofrece mejoras en la seguridad, el rendimiento y la eficiencia. Los administradores deben considerar migrar a esta versión lo antes posible para aprovechar al máximo las características y mejorar la seguridad de sus clústeres.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:6554"&gt;RHSA-2026:6554&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:5127"&gt;RHSA-2026:5127&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency"&gt;Red Hat OpenShift 4.21&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html"/>
+    <summary>OpenShift 4.21 ofrece nuevas características como escalado inteligente, migración más rápida y eficiencia impulsada por IA. Esta versión también incluye mejoras en la seguridad y el rendimiento.</summary>
+    <published>2026-04-19T09:00:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras y Novedades en Metabase - Metabase</title>
+    <title>Metabase: Novedades y Mejoras - Metabase</title>
     <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
@@ -57,50 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>Mejoras y Novedades en Metabase</h1>
-    <div class="meta">2026-04-15 0926 · Metabase</div>
+    <h1>Metabase: Novedades y Mejoras</h1>
+    <div class="meta">2026-04-19 0900 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y visualizaciones de datos de manera sencilla. Recientemente, se han incorporado varias mejoras y novedades en el sistema, como la actualización de Netty a la versión 4.2.10.Final para parchear la vulnerabilidad de seguridad CVE-2026-33870, como se indica en `https://github.com/metabase/metabase/issues/71652`.</p>
+            <p>Metabase es una herramienta de análisis de datos que ofrece una variedad de funcionalidades para ayudar a los usuarios a tomar decisiones informadas. Recientemente, se han realizado varias actualizaciones y mejoras en la plataforma, incluyendo la actualización de Netty a versión 4.2.10.Final para parchar la vulnerabilidad CVE-2026-33870. Esta actualización se puede realizar ejecutando el comando `git checkout v0.43.0` y luego `git pull` para obtener los cambios más recientes.</p>
             
         
             
         
             
-            <p>Además, se ha agregado la capacidad de revertir tablas auto-archivadas después de que regresen, como se describe en `https://github.com/metabase/metabase/issues/72135`. Esto permite a los usuarios recuperar tablas que han sido archivadas automáticamente por Metabase.</p>
+        
+            
+            <p>La personalización de Metabot es otra de las novedades recientes en Metabase. Metabot es un asistente de inteligencia artificial que ayuda a los usuarios a crear queries y dashboards. Ahora, los usuarios pueden personalizar Metabot para que se adapte a sus necesidades específicas. Por ejemplo, se puede configurar Metabot para que utilice un lenguaje natural específico o para que se conecte a una base de datos determinada.</p>
             
         
             
         
             
-            <p>Otra característica agregada es la personalización de Metabot por inquilino, que permite a los administradores configurar Metabot de manera personalizada para cada inquilino, como se indica en `https://github.com/metabase/metabase/issues/72116`. Esto es especialmente útil en entornos de multi-inquilino, donde cada inquilino puede tener requisitos y necesidades diferentes.</p>
+        
+            
+            <p>Otra característica importante de Metabase es la capacidad de crear dashboards personalizados. Los dashboards permiten a los usuarios visualizar sus datos de manera efectiva y tomar decisiones informadas. En Metabase, se pueden crear dashboards utilizando una variedad de herramientas y funciones, incluyendo gráficos, tablas y mapas. Por ejemplo, se puede crear un dashboard que muestre los resultados de una query utilizando el comando `SELECT * FROM tabla` y luego configurar el dashboard para que se actualice automáticamente cada hora.</p>
             
         
             
         
             
-            <p>La transformación de datos entre bases de datos es otra característica agregada, que permite a los usuarios transformar datos entre diferentes bases de datos, como se describe en `https://github.com/metabase/metabase/issues/71238`. Esto es especialmente útil en entornos donde se necesitan combinar datos de diferentes fuentes.</p>
+        
+            
+            <p>Además, Metabase ofrece una API que permite a los desarrolladores crear aplicaciones personalizadas que se conecten a la plataforma. La API de Metabase es muy completa y ofrece una variedad de funciones y herramientas para ayudar a los desarrolladores a crear aplicaciones efectivas. Por ejemplo, se puede utilizar la API para crear una aplicación que permita a los usuarios crear queries y dashboards de manera programática.</p>
             
         
             
         
             
-            <p>Para configurar estas características, los usuarios pueden utilizar comandos como `git clone https://github.com/metabase/metabase.git` para clonar el repositorio de Metabase y `docker run -p 3000:3000 metabase/metabase` para ejecutar Metabase en un contenedor Docker.</p>
+        
+            
+            <p>En cuanto a la administración de Metabase, la plataforma ofrece una variedad de herramientas y funciones para ayudar a los administradores a gestionar la plataforma de manera efectiva. Por ejemplo, se pueden configurar permisos y roles para controlar el acceso a la plataforma y se pueden crear informes y análisis para evaluar el rendimiento de la plataforma. Por ejemplo, se puede utilizar el comando `GET /api/user` para obtener una lista de todos los usuarios de la plataforma y luego configurar los permisos y roles para cada usuario.</p>
             
         
             
         
             
-            <p>En resumen, Metabase ha incorporado varias mejoras y novedades en su sistema, que permiten a los usuarios tener más control y flexibilidad en el análisis de datos.</p>
-            
         
             
-        
-            
-            <p>Para más información, se puede consultar la documentación oficial de Metabase y las fuentes citadas en este artículo.</p>
+            <p>En resumen, Metabase es una herramienta de análisis de datos muy completa y flexible que ofrece una variedad de funcionalidades y herramientas para ayudar a los usuarios a tomar decisiones informadas. Las novedades y mejoras recientes en Metabase, incluyendo la actualización de Netty y la personalización de Metabot, hacen que la plataforma sea aún más efectiva y fácil de usar.</p>
             
         
     </div>
@@ -116,7 +120,7 @@
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/72135" target="_blank">Allow reversing auto-archived tables after they return</a>
+                <a href="https://github.com/metabase/metabase/issues/72115" target="_blank">Data Residency Toggles for Metabot</a>
                 
             </li>
             
@@ -126,7 +130,7 @@
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/71238" target="_blank">Cross DB Transforms</a>
+                <a href="https://discourse.metabase.com/t/metabase-mcp-query-metabase-from-claude-using-natural-language/299007" target="_blank">Metabase-mcp - Query Metabase from Claude using natural language</a>
                 
             </li>
             
@@ -137,12 +141,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-11_0852.html">&larr; 2026-04-11 0852</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-19_0900.html">2026-04-19 0900 &rarr;</a>
             
         </div>
     </div>

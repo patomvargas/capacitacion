@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Novedades y Mejoras - OpenShift</title>
+    <title>Mejoras en OpenShift 4.21 - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,44 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Novedades y Mejoras</h1>
-    <div class="meta">2026-04-15 0926 · OpenShift</div>
+    <h1>Mejoras en OpenShift 4.21</h1>
+    <div class="meta">2026-04-19 0900 · OpenShift</div>
 
     <div class="content">
         
         
             
-            <p>OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. En su versión 4.18.36, se han incluido varias mejoras y correcciones de errores. Para empezar a trabajar con OpenShift, es necesario crear un clúster y configurar los nodos. Esto se puede hacer utilizando el comando `oc cluster up` y especificando la configuración deseada.</p>
+        
+            
+            <p>OpenShift 4.21 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de mejoras y nuevas características. Una de las características más destacadas es el escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Esto se puede lograr utilizando el comando `oc scale` para ajustar el número de réplicas de un deployment.</p>
             
         
             
         
             
-            <p>Una de las características más interesantes de OpenShift es la posibilidad de utilizar operadores para gestionar aplicaciones. Los operadores son paquetes de software que se encargan de la gestión de una aplicación, incluyendo la instalación, configuración y actualización. Para instalar un operador, se puede utilizar el comando `oc apply -f <archivo_de_configuracion>` y especificar el archivo de configuración del operador.</p>
+            <p>Otra característica importante es la migración más rápida, que permite a los administradores migrar aplicaciones de una versión a otra de OpenShift de manera más eficiente. Esto se puede lograr utilizando el comando `oc migrate` para migrar los objetos de un namespace a otro. Además, OpenShift 4.21 incluye mejoras en la seguridad, como la capacidad de utilizar OAuth para autenticar a los usuarios y aplicaciones.</p>
             
         
             
         
             
-            <p>Otra característica importante de OpenShift es la autenticación y autorización. OpenShift utiliza OAuth para la autenticación y autorización de usuarios. Para configurar la autenticación, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de la autenticación.</p>
+            <p>Para aprovechar al máximo las características de OpenShift 4.21, es importante mantener el clúster actualizado. Los administradores pueden verificar si hay actualizaciones disponibles utilizando el comando `oc adm upgrade` o la consola web de OpenShift. Es importante mencionar que las versiones anteriores de OpenShift, como la 4.18, ya no reciben soporte y es recomendable migrar a la versión 4.21 lo antes posible.</p>
             
         
             
         
             
-            <p>En cuanto a la monitorización, OpenShift ofrece varias herramientas para la monitorización de aplicaciones y clústeres. Una de las herramientas más populares es Prometheus, que se puede utilizar para recopilar métricas y alertas. Para configurar Prometheus, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de Prometheus.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que las versiones anteriores de OpenShift tienen vulnerabilidades conocidas que pueden ser explotadas por atacantes. Por lo tanto, es fundamental mantener el clúster actualizado y aplicar las actualizaciones de seguridad lo antes posible. Los administradores pueden utilizar el comando `oc adm verify` para verificar la integridad del clúster y detectar cualquier problema de seguridad.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para la migración de aplicaciones. Para migrar una aplicación a OpenShift, se puede utilizar el comando `oc create -f <archivo_de_configuracion>` y especificar el archivo de configuración de la aplicación.</p>
+            <p>Finalmente, es importante mencionar que OpenShift 4.21 es compatible con la mayoría de las aplicaciones y servicios de Red Hat, incluyendo OKD, OperatorHub, builds, routes y monitoring. Los administradores pueden utilizar el comando `oc new-project` para crear un nuevo proyecto y comenzar a utilizar las características de OpenShift 4.21.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en contenedores. Con su versión 4.18.36, se han incluido varias mejoras y correcciones de errores, y se ofrecen nuevas características y herramientas para la monitorización y migración de aplicaciones.</p>
+            <p>En resumen, OpenShift 4.21 es una versión importante que ofrece mejoras en la seguridad, el rendimiento y la eficiencia. Los administradores deben considerar migrar a esta versión lo antes posible para aprovechar al máximo las características y mejorar la seguridad de sus clústeres.</p>
+            
+        
             
         
     </div>
@@ -105,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://endoflife.date/red-hat-openshift" target="_blank">Red Hat OpenShift | endoflife.date</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:6554" target="_blank">RHSA-2026:6554</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:5127" target="_blank">RHSA-2026:5127 - Security Advisory</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:5127" target="_blank">RHSA-2026:5127</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.20/html/release_notes/gitops-release-notes" target="_blank">Chapter 1. Red Hat OpenShift GitOps release notes | Release notes | Red Hat OpenShift GitOps | 1.20 | Red Hat Documentation</a>
+                <a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency" target="_blank">Red Hat OpenShift 4.21</a>
                 
             </li>
             
@@ -126,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-11_0852.html">&larr; 2026-04-11 0852</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html">2026-04-19 0900 &rarr;</a>
             
         </div>
     </div>

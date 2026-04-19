@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-18T08:58:29.193057+00:00</updated>
+  <updated>2026-04-19T09:01:11.874706+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -205,5 +205,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-15_0926.html"/>
     <summary>Claude Code es una herramienta en constante evolución, con mejoras y soluciones para problemas comunes. En este artículo, se presentan algunas de las novedades y best practices para aprovechar al máximo su funcionalidad.</summary>
     <published>2026-04-15T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-19_0900.html</id>
+    <title>Mejores prácticas para Claude Code</title>
+    <updated>2026-04-19T09:00:00+00:00</updated>
+    <content type="html">&lt;p&gt;Claude Code es una herramienta de código abierto que permite a los desarrolladores y científicos crear y ejecutar código de manera eficiente. Sin embargo, para aprovechar su potencial, es necesario configurar y utilizar algunas de sus características de manera efectiva. Por ejemplo, es importante utilizar el comando &lt;code&gt;git-bash&lt;/code&gt; en Windows para evitar errores de compatibilidad, como se menciona en el issue #37908 de GitHub.&lt;/p&gt;
+&lt;p&gt;Para mejorar la productividad, se pueden utilizar los hooks de formato en tiempo de guardado, que permiten automatizar la formateación del código después de cada edición. Sin embargo, es importante tener en cuenta que estos hooks pueden reescribir el archivo después de cada edición, incluso si se realizan ediciones consecutivas en el mismo archivo, como se menciona en el issue #42317 de GitHub.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Claude Code es la capacidad de utilizar servidores MCP (Message Control Protocol) para conectar con Claude.ai. Sin embargo, es importante configurar correctamente los conectores para evitar la duplicación de servidores, como se menciona en el issue #43369 de GitHub. Para configurar los conectores, se puede utilizar el comando &lt;code&gt;claude config&lt;/code&gt; y especificar la dirección del servidor MCP.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que Claude Code tiene una característica de modo interactivo que permite a los usuarios ejecutar comandos de manera interactiva. Para utilizar esta característica, se puede utilizar el comando &lt;code&gt;! bash&lt;/code&gt; y especificar el comando que se desea ejecutar. También es importante mencionar que Claude Code tiene una documentación completa que cubre todas las características y configuraciones posibles, como se menciona en el issue #36858 de GitHub.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que requiere configuraciones y prácticas específicas para aprovechar su potencial. Al utilizar las características y configuraciones adecuadas, los desarrolladores y científicos pueden mejorar su productividad y crear código de manera eficiente.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Claude Code, como la documentación oficial y los issues de GitHub. También se pueden consultar las mejores prácticas y tutoriales de la comunidad de desarrolladores, como se menciona en el artículo '10 Battle-Tested Claude Code Practices' de DEV Community.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/37908"&gt;Issue #37908&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/42317"&gt;Issue #42317&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/43369"&gt;Issue #43369&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/36858"&gt;Issue #36858&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/evan-dong/10-battle-tested-claude-code-practices-4n81"&gt;10 Battle-Tested Claude Code Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-19_0900.html"/>
+    <summary>Claude Code es una herramienta poderosa para desarrolladores y científicos, pero requiere configuraciones y prácticas específicas para aprovechar su potencial. En este artículo, se presentan algunas de las mejores prácticas y configuraciones para Claude Code.</summary>
+    <published>2026-04-19T09:00:00+00:00</published>
   </entry>
 </feed>
