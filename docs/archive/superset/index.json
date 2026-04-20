@@ -1,4 +1,24 @@
 {
+  "2026-04-20_1003": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Novedades",
+    "summary": "Superset es una plataforma de análisis de datos que ofrece herramientas para crear dashboards y visualizaciones. En este artículo, se presentan las últimas mejoras y novedades en Superset, incluyendo cambios en la administración y la seguridad.",
+    "content": "\nSuperset es una herramienta poderosa para los administradores de sistemas y desarrolladores de DevOps, que les permite crear dashboards y visualizaciones personalizadas para analizar y monitorear sus datos. En las últimas versiones, se han incorporado varias mejoras y novedades, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando `superset-node`. \n\nPara configurar una página personalizada, es necesario ejecutar el comando `superset init` y luego `superset run`. Luego, se puede acceder a la página personalizada a través de la URL `http://localhost:8088`. Además, se ha mejorado la administración de dashboards, permitiendo a los usuarios ocultar la información de quién creó el dashboard, utilizando la opción `hide_created_by` en el panel de título del dashboard. \n\nEn cuanto a la seguridad, Superset ha incorporado varias mejoras, como la capacidad de ejecutar extensiones en un entorno aislado, utilizando la opción `sandboxed_execution` en el archivo de configuración `superset_config.py`. Esto permite a los administradores de sistemas proteger su entorno de posibles vulnerabilidades de seguridad. \n\nAdemás, se ha mejorado la compatibilidad con Oracle, permitiendo a los usuarios realizar cambios en la configuración de tipo de datos, utilizando la opción `type_casting` en el archivo de configuración `superset_config.py`. \n\nEn resumen, Superset es una herramienta poderosa y versátil que ofrece una amplia gama de herramientas y opciones para analizar y monitorear datos. Con las últimas mejoras y novedades, los administradores de sistemas y desarrolladores de DevOps pueden aprovechar al máximo sus capacidades.\n\nFinalmente, es importante mencionar que la documentación oficial de Superset se encuentra en constante actualización, por lo que es recomendable consultar la documentación más reciente en el sitio web oficial de Superset, utilizando la URL `https://superset.apache.org/`.\n\n  ",
+    "sources": [
+      {
+        "title": "Having issue with 'superset-node' #38822",
+        "url": "https://github.com/apache/superset/discussions/38822"
+      },
+      {
+        "title": "Layout Components | Superset",
+        "url": "https://superset.apache.org/developer-docs/components/design-system/"
+      },
+      {
+        "title": "Security | Superset",
+        "url": "https://superset.apache.org/developer_portal/extensions/security/"
+      }
+    ]
+  },
   "2026-04-16_0925": {
     "slug": "superset",
     "title": "Superset: Mejoras y Best Practices",

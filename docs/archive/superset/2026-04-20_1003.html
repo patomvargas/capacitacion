@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Traefik: Router, Middlewares y Seguridad - Traefik</title>
-    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <title>Superset: Mejoras y Novedades - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Traefik: Router, Middlewares y Seguridad</h1>
-    <div class="meta">2026-04-08 0909 · Traefik</div>
+    <h1>Superset: Mejoras y Novedades</h1>
+    <div class="meta">2026-04-20 1003 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es una herramienta poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes. Una de las características más destacadas de Traefik es su capacidad para gestionar routers y middlewares de manera flexible y escalable. Los routers en Traefik se configuran utilizando la directiva `routes` en el archivo de configuración, por ejemplo: `traefik.http.routers.my-router.rule=Host(`my-domain.com`)`.</p>
+        
+            
+            <p>Superset es una herramienta poderosa para los administradores de sistemas y desarrolladores de DevOps, que les permite crear dashboards y visualizaciones personalizadas para analizar y monitorear sus datos. En las últimas versiones, se han incorporado varias mejoras y novedades, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando `superset-node`.</p>
             
         
             
         
             
-            <p>Los middlewares en Traefik se utilizan para agregar funcionalidades adicionales a los routers, como la autenticación, el rate limiting y la seguridad. Por ejemplo, se puede configurar un middleware de autenticación utilizando la directiva `traefik.http.middlewares.my-middleware.auth.basic.users`.</p>
+            <p>Para configurar una página personalizada, es necesario ejecutar el comando `superset init` y luego `superset run`. Luego, se puede acceder a la página personalizada a través de la URL `http://localhost:8088`. Además, se ha mejorado la administración de dashboards, permitiendo a los usuarios ocultar la información de quién creó el dashboard, utilizando la opción `hide_created_by` en el panel de título del dashboard.</p>
             
         
             
         
             
-            <p>La integración con Let's Encrypt es otra característica importante de Traefik, que permite obtener certificados SSL/TLS de manera automática y gratuita. Para configurar Let's Encrypt en Traefik, se debe agregar la directiva `traefik.certificatesResolvers.my-resolver.acme.email` y `traefik.certificatesResolvers.my-resolver.acme.storage` en el archivo de configuración.</p>
+            <p>En cuanto a la seguridad, Superset ha incorporado varias mejoras, como la capacidad de ejecutar extensiones en un entorno aislado, utilizando la opción `sandboxed_execution` en el archivo de configuración `superset_config.py`. Esto permite a los administradores de sistemas proteger su entorno de posibles vulnerabilidades de seguridad.</p>
             
         
             
         
             
-            <p>Además, Traefik ofrece soporte para protocolos TCP/UDP y la capacidad de monitorizar y analizar el tráfico utilizando herramientas de observabilidad como Prometheus y Grafana.</p>
+            <p>Además, se ha mejorado la compatibilidad con Oracle, permitiendo a los usuarios realizar cambios en la configuración de tipo de datos, utilizando la opción `type_casting` en el archivo de configuración `superset_config.py`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Traefik ofrece una variedad de características para proteger los servicios y aplicaciones, incluyendo la autenticación, la autorización y la cifrado de datos.</p>
+            <p>En resumen, Superset es una herramienta poderosa y versátil que ofrece una amplia gama de herramientas y opciones para analizar y monitorear datos. Con las últimas mejoras y novedades, los administradores de sistemas y desarrolladores de DevOps pueden aprovechar al máximo sus capacidades.</p>
             
         
             
         
             
-            <p>En resumen, Traefik es una herramienta versátil y poderosa para la gestión de tráfico y la seguridad en entornos de contenedores y Kubernetes, que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los desarrolladores y administradores de sistemas.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Superset se encuentra en constante actualización, por lo que es recomendable consultar la documentación más reciente en el sitio web oficial de Superset, utilizando la URL `https://superset.apache.org/`.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik-helm-chart" target="_blank">Traefik Helm Chart</a>
+                <a href="https://github.com/apache/superset/discussions/38822" target="_blank">Having issue with 'superset-node' #38822</a>
                 
             </li>
             
             <li>
-                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">Traefik Hub</a>
+                <a href="https://superset.apache.org/developer-docs/components/design-system/" target="_blank">Layout Components | Superset</a>
                 
             </li>
             
             <li>
-                <a href="https://cosmo-edge.com/ddev-wordpress-403-forbidden-traefik-nginx-fix/" target="_blank">DDEV WordPress 403 Forbidden Fix</a>
+                <a href="https://superset.apache.org/developer_portal/extensions/security/" target="_blank">Security | Superset</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-03-23_0904.html">&larr; 2026-03-23 0904</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-16_0925.html">&larr; 2026-04-16 0925</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html">2026-04-20 1003 &rarr;</a>
             
         </div>
     </div>

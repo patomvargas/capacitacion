@@ -1,4 +1,32 @@
 {
+  "2026-04-20_1003": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las mejores prácticas y configuraciones para aprovechar al máximo n8n.",
+    "content": "\nn8n es una herramienta de automatización que se basa en nodos y flujos de trabajo. Los nodos son los bloques de construcción de los flujos de trabajo y pueden ser configurados para realizar tareas específicas, como la lectura de datos de una base de datos o el envío de correos electrónicos. Los flujos de trabajo son la secuencia de nodos que se ejecutan en un orden determinado.\n\nPara empezar a trabajar con n8n, es importante configurar las credenciales y los webhooks. Las credenciales son necesarias para autenticar con los servicios externos, como bases de datos o APIs, mientras que los webhooks permiten a n8n recibir notificaciones de eventos externos. Por ejemplo, se puede configurar un webhook para que se active cuando se crea un nuevo registro en una base de datos, lo que desencadenaría un flujo de trabajo en n8n.\n\nUno de los aspectos más importantes de n8n es la gestión de errores. Es fundamental configurar los nodos para que manejen los errores de manera explícita, utilizando nodos de error o ramas condicionales que capturen los fallos y notifiquen al administrador. Por ejemplo, se puede utilizar el nodo `Error Trigger` para capturar los errores y enviar una notificación por correo electrónico o mensaje de texto. También es importante utilizar comandos como `n8n start` para iniciar el servidor de n8n y `n8n stop` para detenerlo.\n\nEn cuanto a la seguridad, es importante mencionar la vulnerabilidad de contaminación de prototipo (prototype pollution) en el nodo GSuiteAdmin, que puede ser explotada por un atacante para ejecutar código arbitrario. Para mitigar esta vulnerabilidad, es importante actualizar el nodo GSuiteAdmin a la versión más reciente y configurar las credenciales de manera segura.\n\nn8n también ofrece una variedad de integraciones con servicios externos, como bases de datos, APIs y servicios de mensajería. Por ejemplo, se puede utilizar el nodo `MySQL` para conectarse a una base de datos MySQL y ejecutar consultas. También se puede utilizar el nodo `Slack` para enviar mensajes de notificación a un canal de Slack.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Sin embargo, es importante configurar las credenciales y los webhooks de manera segura, gestionar los errores de manera explícita y mantener las integraciones actualizadas para evitar vulnerabilidades de seguridad.\n",
+    "sources": [
+      {
+        "title": "Anthropic's Node Connection #27491",
+        "url": "https://github.com/n8n-io/n8n/issues/27491"
+      },
+      {
+        "title": "Prototype Pollution in GSuiteAdmin node parameters leads to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mxrg-77hm-89hv"
+      },
+      {
+        "title": "n8n for Beginners: The Complete End-to-End Guide with Real Workflows, Code, Webhooks, APIs, and Automation",
+        "url": "https://anilpise7.medium.com/n8n-for-beginners-the-complete-end-to-end-guide-with-real-workflows-code-webhooks-apis-and-d683b129dfa2"
+      },
+      {
+        "title": "How To Use n8n To Automate Your Business",
+        "url": "https://travisnicholson.medium.com/how-to-use-n8n-to-automate-your-business-4585e6d8dfd2"
+      },
+      {
+        "title": "n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business",
+        "url": "https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h"
+      }
+    ]
+  },
   "2026-04-12_0856": {
     "slug": "n8n",
     "title": "Automatización con n8n",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-19T09:01:11.882726+00:00</updated>
+  <updated>2026-04-20T10:04:37.573806+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -223,5 +223,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-16_0925.html"/>
     <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas mejoras y best practices para su uso efectivo.</summary>
     <published>2026-04-16T09:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-04-20_1003.html</id>
+    <title>Superset: Mejoras y Novedades</title>
+    <updated>2026-04-20T10:03:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta poderosa para los administradores de sistemas y desarrolladores de DevOps, que les permite crear dashboards y visualizaciones personalizadas para analizar y monitorear sus datos. En las últimas versiones, se han incorporado varias mejoras y novedades, como la capacidad de crear páginas personalizadas dentro de Superset, utilizando &lt;code&gt;superset-node&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para configurar una página personalizada, es necesario ejecutar el comando &lt;code&gt;superset init&lt;/code&gt; y luego &lt;code&gt;superset run&lt;/code&gt;. Luego, se puede acceder a la página personalizada a través de la URL &lt;code&gt;http://localhost:8088&lt;/code&gt;. Además, se ha mejorado la administración de dashboards, permitiendo a los usuarios ocultar la información de quién creó el dashboard, utilizando la opción &lt;code&gt;hide_created_by&lt;/code&gt; en el panel de título del dashboard.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Superset ha incorporado varias mejoras, como la capacidad de ejecutar extensiones en un entorno aislado, utilizando la opción &lt;code&gt;sandboxed_execution&lt;/code&gt; en el archivo de configuración &lt;code&gt;superset_config.py&lt;/code&gt;. Esto permite a los administradores de sistemas proteger su entorno de posibles vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;Además, se ha mejorado la compatibilidad con Oracle, permitiendo a los usuarios realizar cambios en la configuración de tipo de datos, utilizando la opción &lt;code&gt;type_casting&lt;/code&gt; en el archivo de configuración &lt;code&gt;superset_config.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa y versátil que ofrece una amplia gama de herramientas y opciones para analizar y monitorear datos. Con las últimas mejoras y novedades, los administradores de sistemas y desarrolladores de DevOps pueden aprovechar al máximo sus capacidades.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Superset se encuentra en constante actualización, por lo que es recomendable consultar la documentación más reciente en el sitio web oficial de Superset, utilizando la URL &lt;code&gt;https://superset.apache.org/&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/38822"&gt;Having issue with 'superset-node' #38822&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/developer-docs/components/design-system/"&gt;Layout Components | Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/developer_portal/extensions/security/"&gt;Security | Superset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-20_1003.html"/>
+    <summary>Superset es una plataforma de análisis de datos que ofrece herramientas para crear dashboards y visualizaciones. En este artículo, se presentan las últimas mejoras y novedades en Superset, incluyendo cambios en la administración y la seguridad.</summary>
+    <published>2026-04-20T10:03:00+00:00</published>
   </entry>
 </feed>

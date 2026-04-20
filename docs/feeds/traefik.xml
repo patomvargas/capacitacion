@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-19T09:01:11.884010+00:00</updated>
+  <updated>2026-04-20T10:04:37.575505+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -82,5 +82,28 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-08_0909.html"/>
     <summary>Traefik es un proxy inverso y balanceador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico y la seguridad. En este artículo, se presentan las características y configuraciones clave de Traefik, incluyendo routers, middlewares y la integración con Let's Encrypt.</summary>
     <published>2026-04-08T09:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html</id>
+    <title>Traefik: Routers, Middlewares y Providers</title>
+    <updated>2026-04-20T10:03:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta popular para gestionar tráfico de red en entornos de contenedores. Para empezar a configurar Traefik, es necesario entender los conceptos básicos de routers, middlewares y providers. Un router en Traefik es un componente que se encarga de dirigir el tráfico de red hacia un destino específico. Por ejemplo, se puede crear un router que redirija el tráfico de HTTP hacia un servicio específico utilizando el comando &lt;code&gt;traefik http routers add --router-name mi-router --rule Host:example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un middleware en Traefik es un componente que se encarga de procesar el tráfico de red antes de que llegue al destino final. Por ejemplo, se puede crear un middleware que agregue un encabezado HTTP personalizado utilizando el comando &lt;code&gt;traefik http middlewares add --middleware-name mi-middleware --header X-Custom-Header:example&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un provider en Traefik es un componente que se encarga de proporcionar información sobre los servicios que se están ejecutando en el entorno. Por ejemplo, se puede utilizar el provider de Docker para que Traefik sepa qué contenedores están en ejecución y cómo acceder a ellos. Para configurar el provider de Docker, se puede utilizar el comando &lt;code&gt;traefik providers docker add --endpoint unix:///var/run/docker.sock&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Traefik admite la configuración de certificados SSL/TLS utilizando Let's Encrypt. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando &lt;code&gt;traefik certificats add --cert-name mi-certificado --email example@example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik admite la configuración de métricas y registros para monitorear el rendimiento del sistema. Para configurar las métricas en Traefik, se puede utilizar el comando &lt;code&gt;traefik metrics add --metric-name mi-metrica --type prometheus&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa para gestionar tráfico de red en entornos de contenedores. Al entender cómo configurar routers, middlewares y providers, se puede crear un sistema de gestión de tráfico de red eficiente y seguro.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik-helm-chart/issues/1746"&gt;Traefik Helm Chart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/12842"&gt;Traefik Issues&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-zero-trust-staged-kubernetes-networkpolicy-calico"&gt;OneUptime Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-azure-container-registry-ipv6"&gt;OneUptime Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-464xlat-mobile-network-ipv6"&gt;OneUptime Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-test-lab-eve-ng"&gt;OneUptime Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-configure-apparmor-profiles-podman-containers"&gt;OneUptime Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html"/>
+    <summary>Traefik es un proxy inverso y balanceador de carga que permite gestionar tráfico de red de manera eficiente. En este artículo, se explora cómo configurar routers, middlewares y providers en Traefik.</summary>
+    <published>2026-04-20T10:03:00+00:00</published>
   </entry>
 </feed>
