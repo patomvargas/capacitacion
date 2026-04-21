@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas de Git para 2026 - Git</title>
+    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+    </div>
+
+    <h1>Mejores prácticas de Git para 2026</h1>
+    <div class="meta">2026-04-21 0944 · Git</div>
+
+    <div class="content">
+        
+        
+            
+            <p>En la actualidad, Git es una herramienta fundamental para el desarrollo de software. Para aprovechar al máximo sus funcionalidades, es importante seguir las mejores prácticas. Una de las más importantes es la estrategia de ramificación, que consiste en crear ramas separadas para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama `feature/nueva-caracteristica` para desarrollar una nueva característica, y otra rama `fix/erreur-123` para corregir un error específico.</p>
+            
+        
+            
+        
+            
+            <p>Para mantener un historial de cambios claro y conciso, es fundamental seguir convenciones de commit. Una convención común es utilizar el formato `tipo(descripción)`, donde `tipo` puede ser `feat` para nuevas características, `fix` para correcciones de errores, o `docs` para cambios en la documentación. Por ejemplo, `git commit -m 'feat(nueva característica de autenticación)'`.</p>
+            
+        
+            
+        
+            
+            <p>Otra herramienta avanzada de Git es el rebase, que permite reorganizar el historial de cambios para que sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i HEAD~3` para reorganizar los últimos tres commits. Sin embargo, es importante tener cuidado al utilizar rebase, ya que puede causar problemas si se utiliza de manera incorrecta.</p>
+            
+        
+            
+        
+            
+            <p>Además de rebase, Git también ofrece otras herramientas avanzadas como bisect y worktrees. Bisect es una herramienta que permite encontrar el commit que introdujo un error específico, utilizando una técnica de búsqueda binaria. Por ejemplo, se puede utilizar `git bisect start` para iniciar la búsqueda, y `git bisect bad` para marcar un commit como incorrecto. Worktrees, por otro lado, es una herramienta que permite crear múltiples copias de un repositorio, lo que puede ser útil para trabajar en diferentes características o correcciones de errores de manera simultánea.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, seguir las mejores prácticas de Git es fundamental para mantener un historial de cambios claro y conciso, y para aprovechar al máximo las funcionalidades de esta herramienta. Algunos comandos útiles para recordar son `git branch`, `git commit`, `git rebase`, `git bisect` y `git worktree`.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes citadas a continuación.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0" target="_blank">Git Workflow Best Practices: The Developer's Guide for 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02" target="_blank">Git Commit Message Best Practices + How AI Can Help You Write Better Commits</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@dhruvinbhalodiya752/git-commands-every-developer-should-know-daily-use-guide-2026-bcce98ae0836" target="_blank">Git Commands Every Developer Should Know (Daily Use Guide 2026)</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

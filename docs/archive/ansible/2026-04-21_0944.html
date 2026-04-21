@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-04-21 0944 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que utiliza playbooks, roles, collections, vault, inventory y AWX/Tower para gestionar y configurar entornos de manera eficiente. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Los roles son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Las collections son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks.</p>
+            
+        
+            
+        
+            
+            <p>Para empezar a utilizar Ansible, es necesario instalar el software en el servidor de control y configurar el inventario de hosts. El inventario se puede definir en un archivo `hosts.ini` o `hosts.yaml` que contiene la lista de hosts y sus respectivas variables. Por ejemplo, se puede definir un inventario con los siguientes hosts: `web`, `db` y `lb`. Luego, se puede crear un playbook que utilice este inventario para configurar los hosts.</p>
+            
+        
+            
+        
+            
+            <p>Un ejemplo de playbook que configura un servidor web Apache en un host `web` sería:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>---</p>
+            
+        
+            
+            <p>- name: Configurar servidor web Apache</p>
+            
+        
+            
+            <p>hosts: web</p>
+            
+        
+            
+            <p>become: yes</p>
+            
+        
+            
+            <p>tasks:</p>
+            
+        
+            
+            <p>- name: Instalar Apache</p>
+            
+        
+            
+            <p>apt:</p>
+            
+        
+            
+            <p>name: apache2</p>
+            
+        
+            
+            <p>state: present</p>
+            
+        
+            
+            <p>- name: Configurar archivo de configuración de Apache</p>
+            
+        
+            
+            <p>template:</p>
+            
+        
+            
+            <p>src: templates/apache.conf.j2</p>
+            
+        
+            
+            <p>dest: /etc/apache2/apache.conf</p>
+            
+        
+            
+            <p>mode: '0644'</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este playbook utiliza el módulo `apt` para instalar Apache y el módulo `template` para configurar el archivo de configuración de Apache.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Ansible proporciona la herramienta `ansible-vault` para cifrar archivos y variables sensibles. Por ejemplo, se puede cifrar un archivo de configuración de base de datos con la siguiente comando: `ansible-vault encrypt db.conf`. Luego, se puede utilizar el archivo cifrado en un playbook con la siguiente tarea:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>- name: Configurar base de datos</p>
+            
+        
+            
+            <p>template:</p>
+            
+        
+            
+            <p>src: templates/db.conf.j2</p>
+            
+        
+            
+            <p>dest: /etc/db.conf</p>
+            
+        
+            
+            <p>mode: '0644'</p>
+            
+        
+            
+            <p>vault: db.conf</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este playbook utiliza el archivo cifrado `db.conf` para configurar la base de datos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers gestionar y configurar sus entornos de manera eficiente. Con playbooks, roles, collections, vault, inventory y AWX/Tower, Ansible proporciona una amplia gama de herramientas para automatizar tareas y asegurar la configuración de los entornos.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre Ansible, se pueden consultar las fuentes siguientes:</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-subnet-matching-web-acls" target="_blank">IPv6 Subnet Matching Web ACLs</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-cisco-zone-based-firewall-ipv4" target="_blank">Cisco Zone-Based Firewall IPv4</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/danielmiessler/SecLists/blob/master/Discovery/DNS/subdomains-top1million-110000.txt" target="_blank">Subdomains Top 1 Million</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-palo-alto-prisma-sdwan-ipv6" target="_blank">Palo Alto Prisma SD-WAN IPv6</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges" target="_blank">Private IPv4 Scheme RFC 1918 Ranges</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

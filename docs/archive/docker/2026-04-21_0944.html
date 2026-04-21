@@ -58,7 +58,7 @@
     </div>
 
     <h1>Seguridad y Mejoras en Docker</h1>
-    <div class="meta">2026-04-17 0923 · Docker</div>
+    <div class="meta">2026-04-21 0944 · Docker</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Recientemente, Docker ha publicado varias actualizaciones de seguridad para corregir vulnerabilidades en sus herramientas. Por ejemplo, la vulnerabilidad `CVE-2025-3224` permite a un atacante con acceso a una máquina de usuario realizar una elevación de privilegios cuando Docker Desktop se actualiza. Para corregir esta vulnerabilidad, se debe actualizar Docker Desktop a la versión `4.41.0` o superior.</p>
+            <p>La seguridad es un tema fundamental en el uso de contenedores Docker. Recientemente, se ha descubierto una vulnerabilidad en el plugin de autenticación y autorización (AuthZ) que puede permitir a un atacante realizar solicitudes no autorizadas al daemon de Docker. Para mitigar este problema, se recomienda utilizar la versión más reciente de Docker y configurar correctamente el plugin de AuthZ. Por ejemplo, se puede utilizar el comando `docker exec` para verificar la configuración del plugin de AuthZ.</p>
             
         
             
         
             
-            <p>Otra vulnerabilidad importante es la relacionada con el plugin de autorización `AuthZ`, que puede ser bypassed con un cuerpo de solicitud sobredimensionado. Sin embargo, si no se utiliza el plugin `AuthZ`, no se está expuesto a esta vulnerabilidad. Para protegerse contra este tipo de ataques, se recomienda utilizar `BuildKit` para construir imágenes de Docker, ya que ofrece una mayor seguridad y eficiencia. Por ejemplo, se puede utilizar el comando `docker buildx build` con la opción `--load` para cargar la imagen en el registro de Docker.</p>
+            <p>Otro tema importante es la seguridad de la red en Docker. Se puede utilizar la función de red de Docker para aislar los contenedores y evitar que se comuniquen entre sí. Por ejemplo, se puede crear una red de Docker con el comando `docker network create` y luego asignar los contenedores a esa red con el comando `docker run -net`. También se puede utilizar el comando `docker-compose` para configurar la red y los contenedores de manera más sencilla.</p>
             
         
             
         
             
-            <p>En cuanto a las mejoras, Docker ha anunciado nuevas características para su herramienta `Docker Compose`. Por ejemplo, se puede utilizar el comando `docker compose up` con la opción `--build` para reconstruir las imágenes de los contenedores antes de iniciarlos. Además, se puede utilizar la opción `--scale` para escalar el número de contenedores en ejecución.</p>
+            <p>La configuración de Docker Compose es otro tema importante. Se puede utilizar el archivo `docker-compose.yml` para definir los servicios y los contenedores que se van a utilizar. Por ejemplo, se puede definir un servicio de base de datos con el comando `docker-compose up -d` y luego acceder a la base de datos con el comando `docker exec`. También se puede utilizar el comando `docker-compose exec` para ejecutar comandos dentro de los contenedores.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de los contenedores, se recomienda utilizar `Docker Multi-Stage Builds` para crear imágenes de producción más pequeñas y seguras. Por ejemplo, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa de construcción. También se puede utilizar la opción `--no-cache` para evitar el uso de la caché de Docker durante la construcción de la imagen.</p>
+            <p>Además, se pueden utilizar herramientas como `mkcert` y `caddy` para configurar el protocolo HTTPS en los contenedores de Docker. Por ejemplo, se puede utilizar el comando `mkcert` para generar certificados SSL y luego configurar el servidor web con el comando `caddy`. También se puede utilizar el comando `docker-compose` para configurar el servidor web y los certificados SSL de manera más sencilla.</p>
             
         
             
         
             
-            <p>En resumen, Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas para mejorar la seguridad y el rendimiento de los contenedores. Se recomienda actualizar Docker Desktop y utilizar `BuildKit` y `Docker Multi-Stage Builds` para crear imágenes de producción más seguras.</p>
+            <p>En resumen, la seguridad y la configuración de Docker son temas fundamentales para el uso de contenedores de manera segura y eficiente. Se pueden utilizar herramientas y comandos como `docker exec`, `docker network create`, `docker-compose` y `mkcert` para configurar y sécurizar los contenedores y los servicios de Docker.</p>
             
         
             
         
             
-            <p>Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas a continuación.</p>
-            
-        
+            <p>Finalmente, se pueden encontrar más información y recursos en las fuentes oficiales de Docker y en la comunidad de desarrolladores de Docker. Por ejemplo, se puede encontrar información sobre la seguridad de Docker en la página de seguridad de Docker y se puede encontrar información sobre la configuración de Docker Compose en la página de documentación de Docker Compose.</p>
             
         
     </div>
@@ -119,7 +117,12 @@
             </li>
             
             <li>
-                <a href="https://dev.to/devopsstart/docker-multi-stage-builds-smaller-secure-production-images-52fg" target="_blank">Docker Multi-Stage Builds: Smaller, Secure Production Images</a>
+                <a href="https://www.docker.com/blog/" target="_blank">Docker Blog | Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/moofoo/docker-basics-using-mkcert-and-caddy-with-docker-compose-to-host-web-services-over-https-for-local-2a3d" target="_blank">Docker basics: Using mkcert and caddy with docker compose to host web services over HTTPS</a>
                 
             </li>
             
@@ -130,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-13_1000.html">&larr; 2026-04-13 1000</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-21_0944.html">2026-04-21 0944 &rarr;</a>
             
         </div>
     </div>

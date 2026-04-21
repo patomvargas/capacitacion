@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-20T10:04:37.579052+00:00</updated>
+  <updated>2026-04-21T09:45:55.291058+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -181,5 +181,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-17_0923.html"/>
     <summary>Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas. Mejora la seguridad y el rendimiento con extensiones y configuraciones personalizadas.</summary>
     <published>2026-04-17T09:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-21_0944.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-04-21T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de lograr esto es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de respuesta. Puedes crear un índice en una tabla utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo: &lt;code&gt;CREATE INDEX idx_nombre ON tabla (nombre);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de optimizar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en un servidor secundario, lo que garantiza la disponibilidad y la recuperación en caso de fallos. Puedes configurar la replicación utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt; y el comando &lt;code&gt;pg_basebackup&lt;/code&gt;. Por ejemplo: &lt;code&gt;pg_basebackup -h localhost -U postgres -D /var/lib/postgresql/13/main -Ft -z&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La copia de seguridad es fundamental para garantizar la integridad de los datos. Puedes realizar copias de seguridad utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt; o &lt;code&gt;pg_dumpall&lt;/code&gt;. Por ejemplo: &lt;code&gt;pg_dump -U postgres -d nombre_base_de_datos &gt; nombre_copia_seguridad.sql&lt;/code&gt;. También puedes configurar la copia de seguridad automática utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt; y el comando &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante monitorear el rendimiento de PostgreSQL utilizando herramientas como &lt;code&gt;pg_stat&lt;/code&gt; y &lt;code&gt;pg_top&lt;/code&gt;. Estas herramientas te permiten analizar el rendimiento de las consultas y identificar posibles cuellos de botella. Puedes acceder a &lt;code&gt;pg_stat&lt;/code&gt; utilizando el comando &lt;code&gt;psql&lt;/code&gt; y ejecutando la consulta &lt;code&gt;SELECT * FROM pg_stat_activity;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La extensión &lt;code&gt;pg_cdc&lt;/code&gt; es otra herramienta útil para la captura de cambios en los datos. Permite a PostgreSQL capturar los cambios realizados en los datos y enviarlos a un destino específico. Puedes configurar &lt;code&gt;pg_cdc&lt;/code&gt; utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt; y el comando &lt;code&gt;CREATE EXTENSION&lt;/code&gt;. Por ejemplo: &lt;code&gt;CREATE EXTENSION IF NOT EXISTS pg_cdc;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y copias de seguridad. Al utilizar estas técnicas y herramientas, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-cdc-evolved-read-only-mode-iam-auth-partition-support-now-in-estuary-3261/"&gt;PostgreSQL CDC, Evolved: Read-Only Mode, IAM Auth ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/geekyfox90/postgresql-backup-and-recovery-a-complete-guide-34j2"&gt;PostgreSQL Backup and Recovery: A Complete Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mohamedaymen.elarbi/database-indexes-the-secret-weapon-every-backend-engineer-should-master-2d2f77d3e62c"&gt;Database Indexes: The Secret Weapon Every Backend Engineer ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-21_0944.html"/>
+    <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo mejorar la eficiencia de tus consultas y reducir los tiempos de respuesta.</summary>
+    <published>2026-04-21T09:44:00+00:00</published>
   </entry>
 </feed>

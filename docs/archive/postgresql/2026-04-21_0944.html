@@ -58,7 +58,7 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-04-17 0923 · PostgreSQL</div>
+    <div class="meta">2026-04-21 0944 · PostgreSQL</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la seguridad de la base de datos. Una de las formas de lograr esto es mediante la creación de índices personalizados. Por ejemplo, se puede crear un índice en una columna específica utilizando el comando `CREATE INDEX idx_nombre ON tabla (columna);`. Esto puede mejorar significativamente la velocidad de las consultas que utilizan esa columna.</p>
+            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de lograr esto es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de respuesta. Puedes crear un índice en una tabla utilizando el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
             
         
             
         
             
-            <p>Otra forma de optimizar el rendimiento es mediante la configuración de la replicación. La replicación en PostgreSQL se puede configurar de varias maneras, incluyendo la replicación maestro-esclavo y la replicación de streaming. Por ejemplo, se puede configurar la replicación maestro-esclavo utilizando los comandos `pg_basebackup` y `pg_ctl`. La replicación de streaming se puede configurar utilizando el comando `pg_recvlogical`.</p>
+            <p>Otra forma de optimizar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en un servidor secundario, lo que garantiza la disponibilidad y la recuperación en caso de fallos. Puedes configurar la replicación utilizando el archivo `postgresql.conf` y el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -U postgres -D /var/lib/postgresql/13/main -Ft -z`.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto importante en la optimización de PostgreSQL. Una de las formas de mejorar la seguridad es mediante la utilización de extensiones como `pg_audit` y `pg_crypto`. Estas extensiones permiten realizar auditorías y cifrado de datos, respectivamente. Por ejemplo, se puede instalar la extensión `pg_audit` utilizando el comando `CREATE EXTENSION pg_audit;`. Luego, se puede configurar la auditoría utilizando el comando `ALTER SYSTEM SET pg_audit.log = 'ddl, dml';`.</p>
+            <p>La copia de seguridad es fundamental para garantizar la integridad de los datos. Puedes realizar copias de seguridad utilizando el comando `pg_dump` o `pg_dumpall`. Por ejemplo: `pg_dump -U postgres -d nombre_base_de_datos > nombre_copia_seguridad.sql`. También puedes configurar la copia de seguridad automática utilizando el archivo `postgresql.conf` y el comando `cron`.</p>
             
         
             
         
             
-            <p>La monitorización del rendimiento también es crucial para optimizar la base de datos. Se puede utilizar la herramienta `pg_stat` para monitorizar el rendimiento de la base de datos. Por ejemplo, se puede utilizar el comando `SELECT * FROM pg_stat_activity;` para obtener información sobre las consultas que se están ejecutando en la base de datos. También se puede utilizar el comando `SELECT * FROM pg_stat_user_tables;` para obtener información sobre las tablas que se están utilizando con más frecuencia.</p>
+            <p>Además, es importante monitorear el rendimiento de PostgreSQL utilizando herramientas como `pg_stat` y `pg_top`. Estas herramientas te permiten analizar el rendimiento de las consultas y identificar posibles cuellos de botella. Puedes acceder a `pg_stat` utilizando el comando `psql` y ejecutando la consulta `SELECT * FROM pg_stat_activity;`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la creación de respaldos regulares es fundamental para garantizar la integridad de la base de datos. Se puede utilizar el comando `pg_dump` para crear un respaldo de la base de datos. Por ejemplo, se puede utilizar el comando `pg_dump -U usuario -d base_de_datos > respaldo.sql;` para crear un respaldo de la base de datos.</p>
+            <p>La extensión `pg_cdc` es otra herramienta útil para la captura de cambios en los datos. Permite a PostgreSQL capturar los cambios realizados en los datos y enviarlos a un destino específico. Puedes configurar `pg_cdc` utilizando el archivo `postgresql.conf` y el comando `CREATE EXTENSION`. Por ejemplo: `CREATE EXTENSION IF NOT EXISTS pg_cdc;`.</p>
             
         
             
         
             
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas, incluyendo la creación de índices personalizados, la configuración de la replicación, la utilización de extensiones de seguridad y la monitorización del rendimiento. Al seguir estas técnicas, se puede mejorar significativamente el rendimiento y la seguridad de la base de datos.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y copias de seguridad. Al utilizar estas técnicas y herramientas, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones.</p>
             
         
     </div>
@@ -112,12 +112,17 @@
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/" target="_blank">CloudNativePG 1.29.0 Released!</a>
+                <a href="https://www.postgresql.org/about/news/postgresql-cdc-evolved-read-only-mode-iam-auth-partition-support-now-in-estuary-3261/" target="_blank">PostgreSQL CDC, Evolved: Read-Only Mode, IAM Auth ...</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/_d7eb1c1703182e3ce1782/postgresql-performance-tuning-checklist-2026-complete-guide-65a" target="_blank">PostgreSQL Performance Tuning Checklist: 2026 Complete Guide</a>
+                <a href="https://dev.to/geekyfox90/postgresql-backup-and-recovery-a-complete-guide-34j2" target="_blank">PostgreSQL Backup and Recovery: A Complete Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@mohamedaymen.elarbi/database-indexes-the-secret-weapon-every-backend-engineer-should-master-2d2f77d3e62c" target="_blank">Database Indexes: The Secret Weapon Every Backend Engineer ...</a>
                 
             </li>
             
@@ -128,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-13_1000.html">&larr; 2026-04-13 1000</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-21_0944.html">2026-04-21 0944 &rarr;</a>
             
         </div>
     </div>

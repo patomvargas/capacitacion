@@ -1,4 +1,24 @@
 {
+  "2026-04-21_0944": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para 2026",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para 2026, incluyendo estrategias de ramificación, convenciones de commit y revisiones de código. Se cubren también temas avanzados como rebase, bisect y worktrees.",
+    "content": "En la actualidad, Git es una herramienta fundamental para el desarrollo de software. Para aprovechar al máximo sus funcionalidades, es importante seguir las mejores prácticas. Una de las más importantes es la estrategia de ramificación, que consiste en crear ramas separadas para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama `feature/nueva-caracteristica` para desarrollar una nueva característica, y otra rama `fix/erreur-123` para corregir un error específico.\n\nPara mantener un historial de cambios claro y conciso, es fundamental seguir convenciones de commit. Una convención común es utilizar el formato `tipo(descripción)`, donde `tipo` puede ser `feat` para nuevas características, `fix` para correcciones de errores, o `docs` para cambios en la documentación. Por ejemplo, `git commit -m 'feat(nueva característica de autenticación)'`.\n\nOtra herramienta avanzada de Git es el rebase, que permite reorganizar el historial de cambios para que sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i HEAD~3` para reorganizar los últimos tres commits. Sin embargo, es importante tener cuidado al utilizar rebase, ya que puede causar problemas si se utiliza de manera incorrecta.\n\nAdemás de rebase, Git también ofrece otras herramientas avanzadas como bisect y worktrees. Bisect es una herramienta que permite encontrar el commit que introdujo un error específico, utilizando una técnica de búsqueda binaria. Por ejemplo, se puede utilizar `git bisect start` para iniciar la búsqueda, y `git bisect bad` para marcar un commit como incorrecto. Worktrees, por otro lado, es una herramienta que permite crear múltiples copias de un repositorio, lo que puede ser útil para trabajar en diferentes características o correcciones de errores de manera simultánea.\n\nEn resumen, seguir las mejores prácticas de Git es fundamental para mantener un historial de cambios claro y conciso, y para aprovechar al máximo las funcionalidades de esta herramienta. Algunos comandos útiles para recordar son `git branch`, `git commit`, `git rebase`, `git bisect` y `git worktree`.\n\nPara más información, se pueden consultar las fuentes citadas a continuación.\n\n",
+    "sources": [
+      {
+        "title": "Git Workflow Best Practices: The Developer's Guide for 2026",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0"
+      },
+      {
+        "title": "Git Commit Message Best Practices + How AI Can Help You Write Better Commits",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02"
+      },
+      {
+        "title": "Git Commands Every Developer Should Know (Daily Use Guide 2026)",
+        "url": "https://medium.com/@dhruvinbhalodiya752/git-commands-every-developer-should-know-daily-use-guide-2026-bcce98ae0836"
+      }
+    ]
+  },
   "2026-04-17_0923": {
     "slug": "git",
     "title": "Mejores prácticas de Git para DevOps",

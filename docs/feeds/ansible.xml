@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-20T10:04:37.582736+00:00</updated>
+  <updated>2026-04-21T09:45:55.296598+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -210,5 +210,52 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-17_0923.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible, incluyendo la creación de playbooks, roles y colecciones.</summary>
     <published>2026-04-17T09:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-21_0944.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-04-21T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que utiliza playbooks, roles, collections, vault, inventory y AWX/Tower para gestionar y configurar entornos de manera eficiente. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Los roles son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Las collections son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks.&lt;/p&gt;
+&lt;p&gt;Para empezar a utilizar Ansible, es necesario instalar el software en el servidor de control y configurar el inventario de hosts. El inventario se puede definir en un archivo &lt;code&gt;hosts.ini&lt;/code&gt; o &lt;code&gt;hosts.yaml&lt;/code&gt; que contiene la lista de hosts y sus respectivas variables. Por ejemplo, se puede definir un inventario con los siguientes hosts: &lt;code&gt;web&lt;/code&gt;, &lt;code&gt;db&lt;/code&gt; y &lt;code&gt;lb&lt;/code&gt;. Luego, se puede crear un playbook que utilice este inventario para configurar los hosts.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de playbook que configura un servidor web Apache en un host &lt;code&gt;web&lt;/code&gt; sería:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;---&lt;/p&gt;
+&lt;p&gt;- name: Configurar servidor web Apache&lt;/p&gt;
+&lt;p&gt;hosts: web&lt;/p&gt;
+&lt;p&gt;become: yes&lt;/p&gt;
+&lt;p&gt;tasks:&lt;/p&gt;
+&lt;p&gt;- name: Instalar Apache&lt;/p&gt;
+&lt;p&gt;apt:&lt;/p&gt;
+&lt;p&gt;name: apache2&lt;/p&gt;
+&lt;p&gt;state: present&lt;/p&gt;
+&lt;p&gt;- name: Configurar archivo de configuración de Apache&lt;/p&gt;
+&lt;p&gt;template:&lt;/p&gt;
+&lt;p&gt;src: templates/apache.conf.j2&lt;/p&gt;
+&lt;p&gt;dest: /etc/apache2/apache.conf&lt;/p&gt;
+&lt;p&gt;mode: '0644'&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Este playbook utiliza el módulo &lt;code&gt;apt&lt;/code&gt; para instalar Apache y el módulo &lt;code&gt;template&lt;/code&gt; para configurar el archivo de configuración de Apache.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Ansible proporciona la herramienta &lt;code&gt;ansible-vault&lt;/code&gt; para cifrar archivos y variables sensibles. Por ejemplo, se puede cifrar un archivo de configuración de base de datos con la siguiente comando: &lt;code&gt;ansible-vault encrypt db.conf&lt;/code&gt;. Luego, se puede utilizar el archivo cifrado en un playbook con la siguiente tarea:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;- name: Configurar base de datos&lt;/p&gt;
+&lt;p&gt;template:&lt;/p&gt;
+&lt;p&gt;src: templates/db.conf.j2&lt;/p&gt;
+&lt;p&gt;dest: /etc/db.conf&lt;/p&gt;
+&lt;p&gt;mode: '0644'&lt;/p&gt;
+&lt;p&gt;vault: db.conf&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Este playbook utiliza el archivo cifrado &lt;code&gt;db.conf&lt;/code&gt; para configurar la base de datos.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers gestionar y configurar sus entornos de manera eficiente. Con playbooks, roles, collections, vault, inventory y AWX/Tower, Ansible proporciona una amplia gama de herramientas para automatizar tareas y asegurar la configuración de los entornos.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Ansible, se pueden consultar las fuentes siguientes:&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-subnet-matching-web-acls"&gt;IPv6 Subnet Matching Web ACLs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-cisco-zone-based-firewall-ipv4"&gt;Cisco Zone-Based Firewall IPv4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/danielmiessler/SecLists/blob/master/Discovery/DNS/subdomains-top1million-110000.txt"&gt;Subdomains Top 1 Million&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-palo-alto-prisma-sdwan-ipv6"&gt;Palo Alto Prisma SD-WAN IPv6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges"&gt;Private IPv4 Scheme RFC 1918 Ranges&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-21_0944.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers gestionar y configurar sus entornos de manera eficiente. En este artículo, se presentan las mejores prácticas para utilizar Ansible en la automatización de infraestructura.</summary>
+    <published>2026-04-21T09:44:00+00:00</published>
   </entry>
 </feed>

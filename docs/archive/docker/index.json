@@ -1,4 +1,28 @@
 {
+  "2026-04-21_0944": {
+    "slug": "docker",
+    "title": "Seguridad y Mejoras en Docker",
+    "summary": "En este artículo, se presentan las últimas novedades y mejoras en Docker, incluyendo la seguridad y las mejores prácticas para el uso de contenedores. Se cubren temas como la autenticación y autorización, la seguridad de la red y la configuración de Docker Compose.",
+    "content": "\nLa seguridad es un tema fundamental en el uso de contenedores Docker. Recientemente, se ha descubierto una vulnerabilidad en el plugin de autenticación y autorización (AuthZ) que puede permitir a un atacante realizar solicitudes no autorizadas al daemon de Docker. Para mitigar este problema, se recomienda utilizar la versión más reciente de Docker y configurar correctamente el plugin de AuthZ. Por ejemplo, se puede utilizar el comando `docker exec` para verificar la configuración del plugin de AuthZ.\n\nOtro tema importante es la seguridad de la red en Docker. Se puede utilizar la función de red de Docker para aislar los contenedores y evitar que se comuniquen entre sí. Por ejemplo, se puede crear una red de Docker con el comando `docker network create` y luego asignar los contenedores a esa red con el comando `docker run -net`. También se puede utilizar el comando `docker-compose` para configurar la red y los contenedores de manera más sencilla.\n\nLa configuración de Docker Compose es otro tema importante. Se puede utilizar el archivo `docker-compose.yml` para definir los servicios y los contenedores que se van a utilizar. Por ejemplo, se puede definir un servicio de base de datos con el comando `docker-compose up -d` y luego acceder a la base de datos con el comando `docker exec`. También se puede utilizar el comando `docker-compose exec` para ejecutar comandos dentro de los contenedores.\n\nAdemás, se pueden utilizar herramientas como `mkcert` y `caddy` para configurar el protocolo HTTPS en los contenedores de Docker. Por ejemplo, se puede utilizar el comando `mkcert` para generar certificados SSL y luego configurar el servidor web con el comando `caddy`. También se puede utilizar el comando `docker-compose` para configurar el servidor web y los certificados SSL de manera más sencilla.\n\nEn resumen, la seguridad y la configuración de Docker son temas fundamentales para el uso de contenedores de manera segura y eficiente. Se pueden utilizar herramientas y comandos como `docker exec`, `docker network create`, `docker-compose` y `mkcert` para configurar y sécurizar los contenedores y los servicios de Docker.\n\nFinalmente, se pueden encontrar más información y recursos en las fuentes oficiales de Docker y en la comunidad de desarrolladores de Docker. Por ejemplo, se puede encontrar información sobre la seguridad de Docker en la página de seguridad de Docker y se puede encontrar información sobre la configuración de Docker Compose en la página de documentación de Docker Compose.",
+    "sources": [
+      {
+        "title": "AuthZ plugin bypass with oversized request body",
+        "url": "https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2"
+      },
+      {
+        "title": "Security announcements | Docker Docs",
+        "url": "https://docs.docker.com/security/security-announcements/"
+      },
+      {
+        "title": "Docker Blog | Docker",
+        "url": "https://www.docker.com/blog/"
+      },
+      {
+        "title": "Docker basics: Using mkcert and caddy with docker compose to host web services over HTTPS",
+        "url": "https://dev.to/moofoo/docker-basics-using-mkcert-and-caddy-with-docker-compose-to-host-web-services-over-https-for-local-2a3d"
+      }
+    ]
+  },
   "2026-04-17_0923": {
     "slug": "docker",
     "title": "Seguridad y Mejoras en Docker",

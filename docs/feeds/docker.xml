@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-20T10:04:37.580156+00:00</updated>
+  <updated>2026-04-21T09:45:55.292675+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -112,5 +112,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-17_0923.html"/>
     <summary>Docker ha anunciado varias actualizaciones de seguridad y mejoras en sus herramientas. Estas actualizaciones incluyen correcciones de vulnerabilidades y nuevas características para mejorar la seguridad y el rendimiento de los contenedores.</summary>
     <published>2026-04-17T09:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-21_0944.html</id>
+    <title>Seguridad y Mejoras en Docker</title>
+    <updated>2026-04-21T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;La seguridad es un tema fundamental en el uso de contenedores Docker. Recientemente, se ha descubierto una vulnerabilidad en el plugin de autenticación y autorización (AuthZ) que puede permitir a un atacante realizar solicitudes no autorizadas al daemon de Docker. Para mitigar este problema, se recomienda utilizar la versión más reciente de Docker y configurar correctamente el plugin de AuthZ. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker exec&lt;/code&gt; para verificar la configuración del plugin de AuthZ.&lt;/p&gt;
+&lt;p&gt;Otro tema importante es la seguridad de la red en Docker. Se puede utilizar la función de red de Docker para aislar los contenedores y evitar que se comuniquen entre sí. Por ejemplo, se puede crear una red de Docker con el comando &lt;code&gt;docker network create&lt;/code&gt; y luego asignar los contenedores a esa red con el comando &lt;code&gt;docker run -net&lt;/code&gt;. También se puede utilizar el comando &lt;code&gt;docker-compose&lt;/code&gt; para configurar la red y los contenedores de manera más sencilla.&lt;/p&gt;
+&lt;p&gt;La configuración de Docker Compose es otro tema importante. Se puede utilizar el archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; para definir los servicios y los contenedores que se van a utilizar. Por ejemplo, se puede definir un servicio de base de datos con el comando &lt;code&gt;docker-compose up -d&lt;/code&gt; y luego acceder a la base de datos con el comando &lt;code&gt;docker exec&lt;/code&gt;. También se puede utilizar el comando &lt;code&gt;docker-compose exec&lt;/code&gt; para ejecutar comandos dentro de los contenedores.&lt;/p&gt;
+&lt;p&gt;Además, se pueden utilizar herramientas como &lt;code&gt;mkcert&lt;/code&gt; y &lt;code&gt;caddy&lt;/code&gt; para configurar el protocolo HTTPS en los contenedores de Docker. Por ejemplo, se puede utilizar el comando &lt;code&gt;mkcert&lt;/code&gt; para generar certificados SSL y luego configurar el servidor web con el comando &lt;code&gt;caddy&lt;/code&gt;. También se puede utilizar el comando &lt;code&gt;docker-compose&lt;/code&gt; para configurar el servidor web y los certificados SSL de manera más sencilla.&lt;/p&gt;
+&lt;p&gt;En resumen, la seguridad y la configuración de Docker son temas fundamentales para el uso de contenedores de manera segura y eficiente. Se pueden utilizar herramientas y comandos como &lt;code&gt;docker exec&lt;/code&gt;, &lt;code&gt;docker network create&lt;/code&gt;, &lt;code&gt;docker-compose&lt;/code&gt; y &lt;code&gt;mkcert&lt;/code&gt; para configurar y sécurizar los contenedores y los servicios de Docker.&lt;/p&gt;
+&lt;p&gt;Finalmente, se pueden encontrar más información y recursos en las fuentes oficiales de Docker y en la comunidad de desarrolladores de Docker. Por ejemplo, se puede encontrar información sobre la seguridad de Docker en la página de seguridad de Docker y se puede encontrar información sobre la configuración de Docker Compose en la página de documentación de Docker Compose.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/moby/security/advisories/GHSA-x744-4wpc-v9h2"&gt;AuthZ plugin bypass with oversized request body&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/security/security-announcements/"&gt;Security announcements | Docker Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/moofoo/docker-basics-using-mkcert-and-caddy-with-docker-compose-to-host-web-services-over-https-for-local-2a3d"&gt;Docker basics: Using mkcert and caddy with docker compose to host web services over HTTPS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-21_0944.html"/>
+    <summary>En este artículo, se presentan las últimas novedades y mejoras en Docker, incluyendo la seguridad y las mejores prácticas para el uso de contenedores. Se cubren temas como la autenticación y autorización, la seguridad de la red y la configuración de Docker Compose.</summary>
+    <published>2026-04-21T09:44:00+00:00</published>
   </entry>
 </feed>

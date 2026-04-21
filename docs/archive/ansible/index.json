@@ -1,4 +1,32 @@
 {
+  "2026-04-21_0944": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers gestionar y configurar sus entornos de manera eficiente. En este artículo, se presentan las mejores prácticas para utilizar Ansible en la automatización de infraestructura.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que utiliza playbooks, roles, collections, vault, inventory y AWX/Tower para gestionar y configurar entornos de manera eficiente. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Los roles son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Las collections son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks.\n\nPara empezar a utilizar Ansible, es necesario instalar el software en el servidor de control y configurar el inventario de hosts. El inventario se puede definir en un archivo `hosts.ini` o `hosts.yaml` que contiene la lista de hosts y sus respectivas variables. Por ejemplo, se puede definir un inventario con los siguientes hosts: `web`, `db` y `lb`. Luego, se puede crear un playbook que utilice este inventario para configurar los hosts.\n\nUn ejemplo de playbook que configura un servidor web Apache en un host `web` sería:\n```yaml\n---\n- name: Configurar servidor web Apache\n  hosts: web\n  become: yes\n  tasks:\n  - name: Instalar Apache\n    apt:\n      name: apache2\n      state: present\n  - name: Configurar archivo de configuración de Apache\n    template:\n      src: templates/apache.conf.j2\n      dest: /etc/apache2/apache.conf\n      mode: '0644'\n```\nEste playbook utiliza el módulo `apt` para instalar Apache y el módulo `template` para configurar el archivo de configuración de Apache.\n\nEn cuanto a la seguridad, Ansible proporciona la herramienta `ansible-vault` para cifrar archivos y variables sensibles. Por ejemplo, se puede cifrar un archivo de configuración de base de datos con la siguiente comando: `ansible-vault encrypt db.conf`. Luego, se puede utilizar el archivo cifrado en un playbook con la siguiente tarea:\n```yaml\n- name: Configurar base de datos\n  template:\n    src: templates/db.conf.j2\n    dest: /etc/db.conf\n    mode: '0644'\n  vault: db.conf\n```\nEste playbook utiliza el archivo cifrado `db.conf` para configurar la base de datos.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers gestionar y configurar sus entornos de manera eficiente. Con playbooks, roles, collections, vault, inventory y AWX/Tower, Ansible proporciona una amplia gama de herramientas para automatizar tareas y asegurar la configuración de los entornos.\n\nPara más información sobre Ansible, se pueden consultar las fuentes siguientes:\n\n",
+    "sources": [
+      {
+        "title": "IPv6 Subnet Matching Web ACLs",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ipv6-subnet-matching-web-acls"
+      },
+      {
+        "title": "Cisco Zone-Based Firewall IPv4",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-cisco-zone-based-firewall-ipv4"
+      },
+      {
+        "title": "Subdomains Top 1 Million",
+        "url": "https://github.com/danielmiessler/SecLists/blob/master/Discovery/DNS/subdomains-top1million-110000.txt"
+      },
+      {
+        "title": "Palo Alto Prisma SD-WAN IPv6",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-palo-alto-prisma-sdwan-ipv6"
+      },
+      {
+        "title": "Private IPv4 Scheme RFC 1918 Ranges",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-private-ipv4-scheme-rfc1918-ranges"
+      }
+    ]
+  },
   "2026-04-17_0923": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-20T10:04:37.581012+00:00</updated>
+  <updated>2026-04-21T09:45:55.294162+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -158,5 +158,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-17_0923.html"/>
     <summary>En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo de software.</summary>
     <published>2026-04-17T09:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-04-21_0944.html</id>
+    <title>Mejores prácticas de Git para 2026</title>
+    <updated>2026-04-21T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;En la actualidad, Git es una herramienta fundamental para el desarrollo de software. Para aprovechar al máximo sus funcionalidades, es importante seguir las mejores prácticas. Una de las más importantes es la estrategia de ramificación, que consiste en crear ramas separadas para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama &lt;code&gt;feature/nueva-caracteristica&lt;/code&gt; para desarrollar una nueva característica, y otra rama &lt;code&gt;fix/erreur-123&lt;/code&gt; para corregir un error específico.&lt;/p&gt;
+&lt;p&gt;Para mantener un historial de cambios claro y conciso, es fundamental seguir convenciones de commit. Una convención común es utilizar el formato &lt;code&gt;tipo(descripción)&lt;/code&gt;, donde &lt;code&gt;tipo&lt;/code&gt; puede ser &lt;code&gt;feat&lt;/code&gt; para nuevas características, &lt;code&gt;fix&lt;/code&gt; para correcciones de errores, o &lt;code&gt;docs&lt;/code&gt; para cambios en la documentación. Por ejemplo, &lt;code&gt;git commit -m 'feat(nueva característica de autenticación)'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta avanzada de Git es el rebase, que permite reorganizar el historial de cambios para que sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar &lt;code&gt;git rebase -i HEAD~3&lt;/code&gt; para reorganizar los últimos tres commits. Sin embargo, es importante tener cuidado al utilizar rebase, ya que puede causar problemas si se utiliza de manera incorrecta.&lt;/p&gt;
+&lt;p&gt;Además de rebase, Git también ofrece otras herramientas avanzadas como bisect y worktrees. Bisect es una herramienta que permite encontrar el commit que introdujo un error específico, utilizando una técnica de búsqueda binaria. Por ejemplo, se puede utilizar &lt;code&gt;git bisect start&lt;/code&gt; para iniciar la búsqueda, y &lt;code&gt;git bisect bad&lt;/code&gt; para marcar un commit como incorrecto. Worktrees, por otro lado, es una herramienta que permite crear múltiples copias de un repositorio, lo que puede ser útil para trabajar en diferentes características o correcciones de errores de manera simultánea.&lt;/p&gt;
+&lt;p&gt;En resumen, seguir las mejores prácticas de Git es fundamental para mantener un historial de cambios claro y conciso, y para aprovechar al máximo las funcionalidades de esta herramienta. Algunos comandos útiles para recordar son &lt;code&gt;git branch&lt;/code&gt;, &lt;code&gt;git commit&lt;/code&gt;, &lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y &lt;code&gt;git worktree&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0"&gt;Git Workflow Best Practices: The Developer's Guide for 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02"&gt;Git Commit Message Best Practices + How AI Can Help You Write Better Commits&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@dhruvinbhalodiya752/git-commands-every-developer-should-know-daily-use-guide-2026-bcce98ae0836"&gt;Git Commands Every Developer Should Know (Daily Use Guide 2026)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-21_0944.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Git para 2026, incluyendo estrategias de ramificación, convenciones de commit y revisiones de código. Se cubren también temas avanzados como rebase, bisect y worktrees.</summary>
+    <published>2026-04-21T09:44:00+00:00</published>
   </entry>
 </feed>
