@@ -1,4 +1,32 @@
 {
+  "2026-04-22_0926": {
+    "slug": "bind9",
+    "title": "Configuración avanzada de DNS BIND9",
+    "summary": "En este artículo, se presentan las mejores prácticas para configurar DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos. Se proporcionan ejemplos concretos y comandos para implementar estas configuraciones.",
+    "content": "La configuración de DNS BIND9 es crucial para garantizar la disponibilidad y seguridad de los servicios de red. Una de las primeras tareas es configurar las zonas DNS, que se pueden hacer mediante el archivo de configuración `named.conf`. Por ejemplo, para crear una zona primaria, se puede utilizar el siguiente comando: `zone \"example.com\" IN { type master; file \"example.com.zone\"; };`.\n\n \nPara implementar DNSSEC, es necesario generar claves y firmar las zonas DNS. Esto se puede hacer mediante el comando `dnssec-keygen` y `dnssec-signzone`. Por ejemplo: `dnssec-keygen -a RSASHA256 -b 2048 example.com` y `dnssec-signzone -o example.com -t example.com.zone`.\n\n \nOtra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes respuestas DNS en función de la dirección IP del cliente. Esto se puede hacer mediante la directiva `view` en el archivo de configuración. Por ejemplo: `view \"internal\" { match-clients { 10.0.0.0/8; }; recursion yes; };`.\n\n \nLa configuración de RPZ (Response Policy Zones) es otra característica importante de BIND9, que permite bloquear o redirigir consultas DNS maliciosas. Esto se puede hacer mediante la directiva `response-policy` en el archivo de configuración. Por ejemplo: `response-policy { zone \"rpz.example.com\"; };`.\n\n \nFinalmente, es importante configurar el registro de eventos de BIND9 para monitorear y depurar problemas. Esto se puede hacer mediante la directiva `logging` en el archivo de configuración. Por ejemplo: `logging { channel default_log { file \"named.log\"; severity info; }; };`.\n\n \nEn resumen, la configuración avanzada de DNS BIND9 requiere una comprensión profunda de las diferentes características y opciones de configuración disponibles. Al seguir estas mejores prácticas y ejemplos concretos, se puede garantizar la disponibilidad y seguridad de los servicios de red.",
+    "sources": [
+      {
+        "title": "Rook: Optimizar Ceph y OpenStack",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-rook-optimize-ceph-openstack-workloads"
+      },
+      {
+        "title": "ClickHouse: Cómo usar el driver de Python",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-clickhouse-how-to-use-clickhouse-python-driver-clickhouse-driver"
+      },
+      {
+        "title": "MySQL: Construir una API REST con Python y FastAPI",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-build-rest-api-python-fastapi"
+      },
+      {
+        "title": "Rook: Solucionar problemas de ObjectBucketClaims fallidos",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-rook-troubleshoot-failed-objectbucketclaims"
+      },
+      {
+        "title": "Rook: Crear un panel de Grafana para Ceph RGW",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-rook-grafana-dashboard-ceph-rgw-metrics"
+      }
+    ]
+  },
   "2026-04-18_0857": {
     "slug": "bind9",
     "title": "Configuración de DNS BIND9",

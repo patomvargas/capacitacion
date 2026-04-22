@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
+    <title>FreeIPA: Administración de Identidad - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-04-18 0857 · FreeIPA</div>
+    <h1>FreeIPA: Administración de Identidad</h1>
+    <div class="meta">2026-04-22 0926 · FreeIPA</div>
 
     <div class="content">
         
@@ -66,31 +66,31 @@
             
         
             
-            <p>FreeIPA es una herramienta de código abierto que permite la gestión de identidad y acceso en entornos de red. Su función principal es proporcionar una plataforma de autenticación y autorización segura para los usuarios y los sistemas. FreeIPA se basa en tecnologías como LDAP, Kerberos y DNS para proporcionar una solución integral de gestión de identidad.</p>
+            <p>FreeIPA es una herramienta de administración de identidad de código abierto que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de usuarios y servicios en una red. Para implementar FreeIPA en un entorno de Kubernetes, se puede utilizar Flux CD, una herramienta de automatización de despliegue y gestión de configuraciones.</p>
             
         
             
         
             
-            <p>Una de las características clave de FreeIPA es su capacidad para gestionar la autenticación y la autorización de los usuarios. Esto se logra mediante la configuración de `trust relationships` entre los sistemas y los dominios, lo que permite a los usuarios acceder a los recursos de manera segura. Para configurar un `trust relationship`, se puede utilizar el comando `ipa trust-add` seguido del nombre del dominio y la contraseña de administrador.</p>
+            <p>Para comenzar, es necesario crear un clúster de Kubernetes y configurar Flux CD para que se encargue de la gestión de la configuración de FreeIPA. Luego, se debe crear un archivo de configuración `freeipa-values.yaml` que contenga la configuración necesaria para el despliegue de FreeIPA, como la versión del software y la configuración de la base de datos. A continuación, se puede utilizar el comando `flux create` para crear un objeto de despliegue de FreeIPA en el clúster de Kubernetes.</p>
             
         
             
         
             
-            <p>Otra característica importante de FreeIPA es su capacidad para gestionar las reglas de acceso y los permisos de los usuarios. Esto se logra mediante la configuración de `sudo rules` y `HBAC` (Host-Based Access Control), que permiten definir qué acciones pueden realizar los usuarios en los sistemas y los recursos. Para configurar una `sudo rule`, se puede utilizar el comando `ipa sudorule-add` seguido del nombre de la regla y la descripción.</p>
+            <p>Una vez desplegado FreeIPA, se puede acceder a la interfaz de usuario web para configurar los servicios de LDAP, Kerberos y autoridad de certificados. Por ejemplo, se puede utilizar el comando `ipa user-add` para agregar un nuevo usuario al sistema, o `ipa host-add` para agregar un nuevo host al dominio. Además, se pueden configurar reglas de acceso y autorización utilizando el comando `ipa hbacrule-add`.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de FreeIPA, es importante mencionar que se puede realizar mediante la línea de comandos o a través de la interfaz web de administración. Para instalar y configurar FreeIPA en un sistema Rocky Linux 10 o RHEL 10, se puede seguir el tutorial disponible en la página de Computingforgeeks. En este tutorial, se proporcionan los pasos detallados para instalar y configurar FreeIPA, incluyendo la configuración de la base de datos y la creación de los certificados SSL.</p>
+            <p>Para asegurar la integridad y seguridad de la plataforma, es importante configurar adecuadamente los parámetros de seguridad, como la autenticación de dos factores y la cifrado de datos. También se pueden utilizar herramientas de monitoreo y análisis de logs para detectar y responder a posibles incidentes de seguridad.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que FreeIPA es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y mejoras. Para ello, se puede suscribir a la lista de correo `freeipa-announce` para recibir notificaciones sobre nuevas versiones y actualizaciones de seguridad.</p>
+            <p>En resumen, FreeIPA es una herramienta poderosa para la administración de identidad en entornos de Kubernetes, y su implementación y configuración pueden ser automatizadas utilizando Flux CD. Al seguir las mejores prácticas de seguridad y configuración, se puede asegurar la integridad y seguridad de la plataforma.</p>
             
         
             
@@ -105,12 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa" target="_blank">GitHub - freeipa/freeipa</a>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd" target="_blank">Deploy FreeIPA Identity Management with Flux CD</a>
                 
             </li>
             
             <li>
-                <a href="https://computingforgeeks.com/install-freeipa-server-rhel-rocky-almalinux/" target="_blank">Install FreeIPA Server on Rocky Linux 10 / RHEL 10 [Guide]</a>
+                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentation</a>
                 
             </li>
             
@@ -121,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-14_0925.html">&larr; 2026-04-14 0925</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-18_0857.html">&larr; 2026-04-18 0857</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-22_0926.html">2026-04-22 0926 &rarr;</a>
             
         </div>
     </div>

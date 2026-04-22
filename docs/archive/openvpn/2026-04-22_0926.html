@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras y Novedades en OpenVPN - OpenVPN</title>
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,46 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Mejoras y Novedades en OpenVPN</h1>
-    <div class="meta">2026-04-18 0857 · OpenVPN</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-04-22 0926 · OpenVPN</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenVPN es una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales (VPN). Recientemente, la comunidad de OpenVPN ha estado trabajando en mejorar la seguridad y la compatibilidad del sistema. Una de las novedades más destacadas es el soporte para OpenSSL 4.0, que requirió la creación de varios parches para garantizar la compatibilidad.</p>
+            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes y dispositivos. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando `openssl` para generar los certificados y claves. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`.</p>
             
         
             
         
             
-            <p>Para configurar OpenVPN con soporte para OpenSSL 4.0, se pueden utilizar comandos como `./configure --with-openssl` para compilar el sistema con el nuevo protocolo de cifrado. Además, se han realizado auditorías de seguridad para garantizar la integridad del sistema. Según la auditoría realizada por Security Research Labs, se han identificado y solucionado varios problemas de seguridad en la versión 2.7 de OpenVPN.</p>
+            <p>Para asegurar la conexión OpenVPN, es importante configurar el servidor para que utilice autenticación de dos factores. Se puede utilizar el protocolo `radius` o `ldap` para autenticar a los usuarios. También es importante configurar el firewall para que permita solo las conexiones necesarias.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de OpenVPN, es importante mencionar que se pueden utilizar comandos como `openvpn --config archivo_de_configuracion.ovpn` para establecer una conexión segura. Además, se pueden configurar opciones como `net_gateway` y `net_gateway_ipv6` para controlar el acceso a la red. Sin embargo, es importante tener en cuenta que la configuración de estas opciones puede variar dependiendo de la versión de OpenVPN y del sistema operativo que se esté utilizando.</p>
+            <p>Una de las mejores prácticas para asegurar OpenVPN es utilizar el protocolo `tls` para cifrar la conexión. Se puede configurar el servidor para que utilice `tls` mediante el comando `tls-server` en el archivo de configuración de OpenVPN. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.</p>
             
         
             
         
             
-            <p>Para hardening y mejorar la seguridad de OpenVPN, se pueden utilizar técnicas como la autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Además, se pueden utilizar herramientas como Nmap para realizar escaneos de seguridad y detectar posibles vulnerabilidades en la red.</p>
+            <p>Para configurar OpenVPN en modo `site-to-site`, es necesario configurar el servidor para que establezca una conexión con otro servidor OpenVPN. Se puede utilizar el comando `tls-client` en el archivo de configuración de OpenVPN para configurar el cliente. También es importante configurar el firewall para que permita las conexiones necesarias.</p>
             
         
             
         
             
-            <p>En resumen, OpenVPN sigue siendo una herramienta fundamental para la creación de túneles seguros y la configuración de redes privadas virtuales. Con las recientes mejoras en seguridad y compatibilidad, OpenVPN es una opción segura y confiable para cualquier organización que necesite proteger sus datos y comunicaciones.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que OpenVPN es vulnerable a ataques de fuerza bruta. Para prevenir esto, se puede utilizar el comando `fail2ban` para banear las direcciones IP que intentan conectarse al servidor de manera incorrecta. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de OpenVPN es una excelente fuente de información para aprender a configurar y utilizar el sistema. Además, se pueden encontrar tutoriales y guías en línea que proporcionan instrucciones detalladas para la configuración de OpenVPN en diferentes sistemas operativos y dispositivos.</p>
+            <p>Finalmente, es importante mencionar que OpenVPN tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la seguridad y la estabilidad del software. Se puede encontrar más información sobre OpenVPN en las fuentes oficiales, como el sitio web de OpenVPN y el repositorio de GitHub.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://community.openvpn.net/Meetings/2026/2026-04-01/source" target="_blank">OpenVPN Community Wiki</a>
+                <a href="https://github.com/OpenVPN/tap-windows6/releases" target="_blank">OpenVPN/tap-windows6</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.openvpn.net/openvpn-v2.7-security-audit-results-srlabs-independent-review" target="_blank">OpenVPN v2.7 Security Audit Results</a>
+                <a href="https://github.com/fail2ban/fail2ban" target="_blank">Fail2Ban</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn/issues/1015" target="_blank">GitHub - OpenVPN</a>
+                <a href="https://github.com/opnsense/core/issues/10166" target="_blank">OpenVPN: track “Last successful login” per user and ...</a>
                 
             </li>
             
@@ -128,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-14_0925.html">&larr; 2026-04-14 0925</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-18_0857.html">&larr; 2026-04-18 0857</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-22_0926.html">2026-04-22 0926 &rarr;</a>
             
         </div>
     </div>

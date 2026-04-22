@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-21T09:45:55.276281+00:00</updated>
+  <updated>2026-04-22T09:27:22.156987+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -180,5 +180,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-18_0857.html"/>
     <summary>OpenVPN sigue evolucionando con mejoras en seguridad y compatibilidad. Recientemente, se ha agregado soporte para OpenSSL 4.0 y se han realizado auditorías de seguridad para garantizar la integridad del sistema.</summary>
     <published>2026-04-18T08:57:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-22_0926.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-04-22T09:26:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes y dispositivos. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para asegurar la conexión OpenVPN, es importante configurar el servidor para que utilice autenticación de dos factores. Se puede utilizar el protocolo &lt;code&gt;radius&lt;/code&gt; o &lt;code&gt;ldap&lt;/code&gt; para autenticar a los usuarios. También es importante configurar el firewall para que permita solo las conexiones necesarias.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para asegurar OpenVPN es utilizar el protocolo &lt;code&gt;tls&lt;/code&gt; para cifrar la conexión. Se puede configurar el servidor para que utilice &lt;code&gt;tls&lt;/code&gt; mediante el comando &lt;code&gt;tls-server&lt;/code&gt; en el archivo de configuración de OpenVPN. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.&lt;/p&gt;
+&lt;p&gt;Para configurar OpenVPN en modo &lt;code&gt;site-to-site&lt;/code&gt;, es necesario configurar el servidor para que establezca una conexión con otro servidor OpenVPN. Se puede utilizar el comando &lt;code&gt;tls-client&lt;/code&gt; en el archivo de configuración de OpenVPN para configurar el cliente. También es importante configurar el firewall para que permita las conexiones necesarias.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que OpenVPN es vulnerable a ataques de fuerza bruta. Para prevenir esto, se puede utilizar el comando &lt;code&gt;fail2ban&lt;/code&gt; para banear las direcciones IP que intentan conectarse al servidor de manera incorrecta. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la seguridad y la estabilidad del software. Se puede encontrar más información sobre OpenVPN en las fuentes oficiales, como el sitio web de OpenVPN y el repositorio de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/tap-windows6/releases"&gt;OpenVPN/tap-windows6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/fail2ban/fail2ban"&gt;Fail2Ban&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/opnsense/core/issues/10166"&gt;OpenVPN: track “Last successful login” per user and ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-22_0926.html"/>
+    <summary>OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.</summary>
+    <published>2026-04-22T09:26:00+00:00</published>
   </entry>
 </feed>

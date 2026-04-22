@@ -1,4 +1,24 @@
 {
+  "2026-04-22_0926": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes y dispositivos. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando `openssl` para generar los certificados y claves. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`.\n\nPara asegurar la conexión OpenVPN, es importante configurar el servidor para que utilice autenticación de dos factores. Se puede utilizar el protocolo `radius` o `ldap` para autenticar a los usuarios. También es importante configurar el firewall para que permita solo las conexiones necesarias.\n\nUna de las mejores prácticas para asegurar OpenVPN es utilizar el protocolo `tls` para cifrar la conexión. Se puede configurar el servidor para que utilice `tls` mediante el comando `tls-server` en el archivo de configuración de OpenVPN. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.\n\nPara configurar OpenVPN en modo `site-to-site`, es necesario configurar el servidor para que establezca una conexión con otro servidor OpenVPN. Se puede utilizar el comando `tls-client` en el archivo de configuración de OpenVPN para configurar el cliente. También es importante configurar el firewall para que permita las conexiones necesarias.\n\nEn cuanto a la seguridad, es importante mencionar que OpenVPN es vulnerable a ataques de fuerza bruta. Para prevenir esto, se puede utilizar el comando `fail2ban` para banear las direcciones IP que intentan conectarse al servidor de manera incorrecta. También es importante configurar el servidor para que utilice un certificado de servidor válido y que los clientes utilicen un certificado de cliente válido.\n\nFinalmente, es importante mencionar que OpenVPN tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la seguridad y la estabilidad del software. Se puede encontrar más información sobre OpenVPN en las fuentes oficiales, como el sitio web de OpenVPN y el repositorio de GitHub.\n\n",
+    "sources": [
+      {
+        "title": "OpenVPN/tap-windows6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "Fail2Ban",
+        "url": "https://github.com/fail2ban/fail2ban"
+      },
+      {
+        "title": "OpenVPN: track “Last successful login” per user and ...",
+        "url": "https://github.com/opnsense/core/issues/10166"
+      }
+    ]
+  },
   "2026-04-18_0857": {
     "slug": "openvpn",
     "title": "Mejoras y Novedades en OpenVPN",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml</id>
   <title>Google Workspace - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-21T09:45:55.272744+00:00</updated>
+  <updated>2026-04-22T09:27:22.151716+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -159,5 +159,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-18_0857.html"/>
     <summary>Google Workspace ha introducido varias novedades, incluyendo controles dedicados para gestionar herramientas de inteligencia artificial generativa y la capacidad de reservar recursos de Google Workspace desde calendarios de terceros. Estas actualizaciones buscan mejorar la seguridad y la productividad en el entorno de trabajo.</summary>
     <published>2026-04-18T08:57:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-22_0926.html</id>
+    <title>Novedades en Google Workspace</title>
+    <updated>2026-04-22T09:26:00+00:00</updated>
+    <content type="html">&lt;p&gt;La función 'Connect Room' permite a los usuarios unirse a reuniones de manera más sencilla y eficiente. Esta función se encuentra disponible para todos los clientes de Google Workspace con hardware de Google Meet. Para utilizar esta función, los administradores deben configurar la función 'Connect Room' en la consola de administración de Google Workspace, utilizando el comando &lt;code&gt;gcloud alpha meet rooms create --room-name=&lt;nombre_de_la_sala&gt; --organization-id=&lt;id_de_la_organización&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además de la función 'Connect Room', Google Workspace ha mejorado las capacidades de seguridad para proteger a los usuarios y sus datos. Una de las novedades es la capacidad de utilizar la autenticación de dos factores (2FA) para acceder a las cuentas de Google Workspace. Los administradores pueden configurar la 2FA utilizando el comando &lt;code&gt;gcloud alpha identity providers create --provider-name=&lt;nombre_del_proveedor&gt; --organization-id=&lt;id_de_la_organización&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la integración de Google Workspace con otras herramientas y servicios de Google Cloud, como Google Cloud Storage y Google Cloud Functions. Los desarrolladores pueden utilizar la API de Google Workspace para crear aplicaciones personalizadas que se integren con estas herramientas y servicios. Por ejemplo, pueden utilizar el comando &lt;code&gt;gcloud alpha workspace api create --api-name=&lt;nombre_de_la_api&gt; --organization-id=&lt;id_de_la_organización&gt;&lt;/code&gt; para crear una API personalizada.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en Google Workspace, y los administradores pueden utilizar varias herramientas y funciones para proteger a los usuarios y sus datos. Una de las herramientas más importantes es la consola de administración de Google Workspace, que permite a los administradores configurar y gestionar las políticas de seguridad y los permisos de acceso. Los administradores también pueden utilizar el comando &lt;code&gt;gcloud alpha workspace security settings update --organization-id=&lt;id_de_la_organización&gt; --security-setting=&lt;configuración_de_seguridad&gt;&lt;/code&gt; para actualizar las configuraciones de seguridad.&lt;/p&gt;
+&lt;p&gt;En resumen, Google Workspace ha introducido varias novedades para mejorar la productividad y la seguridad de los usuarios. Los administradores y desarrolladores pueden utilizar estas novedades para crear aplicaciones personalizadas y configurar las políticas de seguridad para proteger a los usuarios y sus datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Google Workspace proporciona una variedad de recursos y documentación para ayudar a los administradores y desarrolladores a aprovechar al máximo las funciones y herramientas de la plataforma. Los desarrolladores pueden encontrar más información en la documentación oficial de Google Workspace, y los administradores pueden encontrar recursos y tutoriales en la consola de administración de Google Workspace.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/"&gt;Google Workspace Updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/2026/"&gt;Google Workspace Updates: 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"&gt;Gemini Enterprise release notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-22_0926.html"/>
+    <summary>Google Workspace ha introducido varias novedades, incluyendo la función 'Connect Room' para unirse a reuniones de manera más sencilla. Además, se han mejorado las capacidades de seguridad y se han agregado nuevas funciones para mejorar la productividad.</summary>
+    <published>2026-04-22T09:26:00+00:00</published>
   </entry>
 </feed>

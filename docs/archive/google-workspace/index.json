@@ -1,4 +1,24 @@
 {
+  "2026-04-22_0926": {
+    "slug": "google-workspace",
+    "title": "Novedades en Google Workspace",
+    "summary": "Google Workspace ha introducido varias novedades, incluyendo la función 'Connect Room' para unirse a reuniones de manera más sencilla. Además, se han mejorado las capacidades de seguridad y se han agregado nuevas funciones para mejorar la productividad.",
+    "content": "\nLa función 'Connect Room' permite a los usuarios unirse a reuniones de manera más sencilla y eficiente. Esta función se encuentra disponible para todos los clientes de Google Workspace con hardware de Google Meet. Para utilizar esta función, los administradores deben configurar la función 'Connect Room' en la consola de administración de Google Workspace, utilizando el comando `gcloud alpha meet rooms create --room-name=<nombre_de_la_sala> --organization-id=<id_de_la_organización>`.\n\nAdemás de la función 'Connect Room', Google Workspace ha mejorado las capacidades de seguridad para proteger a los usuarios y sus datos. Una de las novedades es la capacidad de utilizar la autenticación de dos factores (2FA) para acceder a las cuentas de Google Workspace. Los administradores pueden configurar la 2FA utilizando el comando `gcloud alpha identity providers create --provider-name=<nombre_del_proveedor> --organization-id=<id_de_la_organización>`.\n\nOtra novedad importante es la integración de Google Workspace con otras herramientas y servicios de Google Cloud, como Google Cloud Storage y Google Cloud Functions. Los desarrolladores pueden utilizar la API de Google Workspace para crear aplicaciones personalizadas que se integren con estas herramientas y servicios. Por ejemplo, pueden utilizar el comando `gcloud alpha workspace api create --api-name=<nombre_de_la_api> --organization-id=<id_de_la_organización>` para crear una API personalizada.\n\nLa seguridad es un aspecto fundamental en Google Workspace, y los administradores pueden utilizar varias herramientas y funciones para proteger a los usuarios y sus datos. Una de las herramientas más importantes es la consola de administración de Google Workspace, que permite a los administradores configurar y gestionar las políticas de seguridad y los permisos de acceso. Los administradores también pueden utilizar el comando `gcloud alpha workspace security settings update --organization-id=<id_de_la_organización> --security-setting=<configuración_de_seguridad>` para actualizar las configuraciones de seguridad.\n\nEn resumen, Google Workspace ha introducido varias novedades para mejorar la productividad y la seguridad de los usuarios. Los administradores y desarrolladores pueden utilizar estas novedades para crear aplicaciones personalizadas y configurar las políticas de seguridad para proteger a los usuarios y sus datos.\n\nFinalmente, es importante mencionar que Google Workspace proporciona una variedad de recursos y documentación para ayudar a los administradores y desarrolladores a aprovechar al máximo las funciones y herramientas de la plataforma. Los desarrolladores pueden encontrar más información en la documentación oficial de Google Workspace, y los administradores pueden encontrar recursos y tutoriales en la consola de administración de Google Workspace.",
+    "sources": [
+      {
+        "title": "Google Workspace Updates",
+        "url": "https://workspaceupdates.googleblog.com/"
+      },
+      {
+        "title": "Google Workspace Updates: 2026",
+        "url": "https://workspaceupdates.googleblog.com/2026/"
+      },
+      {
+        "title": "Gemini Enterprise release notes",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      }
+    ]
+  },
   "2026-04-18_0857": {
     "slug": "google-workspace",
     "title": "Novedades en Google Workspace",
