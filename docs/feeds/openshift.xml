@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-22T09:27:22.160133+00:00</updated>
+  <updated>2026-04-23T09:50:11.813144+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -231,5 +231,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html"/>
     <summary>OpenShift 4.21 ofrece nuevas características como escalado inteligente, migración más rápida y eficiencia impulsada por IA. Esta versión también incluye mejoras en la seguridad y el rendimiento.</summary>
     <published>2026-04-19T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-23_0948.html</id>
+    <title>OpenShift: Mejoras y Novedades</title>
+    <updated>2026-04-23T09:48:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores que se encuentra en constante evolución. Recientemente, se han publicado varias actualizaciones de seguridad, como la RHSA-2026:8423, que incluye parches para vulnerabilidades importantes. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc get clusterversion&lt;/code&gt; o acceder a la consola web de OpenShift.&lt;/p&gt;
+&lt;p&gt;La plataforma también ofrece herramientas para mejorar la seguridad y la confiabilidad, como los contenedores sandboxeados. La versión 1.12 de Red Hat OpenShift sandboxed containers ofrece soporte para contenedores en bare metal, lo que permite una mayor flexibilidad y seguridad. Para implementar contenedores sandboxeados, se puede utilizar el comando &lt;code&gt;oc create -f sandboxed-container.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la monitorización, OpenShift ofrece herramientas como Prometheus y Grafana para recopilar y visualizar métricas. Se puede utilizar el comando &lt;code&gt;oc get pods -n openshift-monitoring&lt;/code&gt; para verificar el estado de los pods de monitorización. Además, se puede configurar la autenticación OAuth para permitir el acceso seguro a la plataforma. Para configurar OAuth, se puede utilizar el comando &lt;code&gt;oc create -f oauth-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La migración a OpenShift también es un tema importante. Se puede utilizar la herramienta &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar aplicaciones desde otras plataformas. Es importante tener en cuenta que la migración puede requerir cambios en la configuración y el código de la aplicación. Para obtener más información sobre la migración, se puede consultar la documentación oficial de OpenShift.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. Es importante estar al tanto de las últimas actualizaciones y best practices para aprovechar al máximo sus características y herramientas.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre OpenShift, se puede consultar la documentación oficial y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:8423"&gt;RHSA-2026:8423&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/red-hat-openshift-sandboxed-containers-112-and-red-hat-build-trustee-11-bring-confidential-computing-bare-metal-and-ai-workloads"&gt;Red Hat OpenShift sandboxed containers 1.12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.openshift.com/"&gt;OpenShift Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-23_0948.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. En este artículo, se presentan las últimas actualizaciones y best practices para sysadmins y DevOps engineers.</summary>
+    <published>2026-04-23T09:48:00+00:00</published>
   </entry>
 </feed>

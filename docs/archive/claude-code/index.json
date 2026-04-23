@@ -1,4 +1,28 @@
 {
+  "2026-04-23_0948": {
+    "slug": "claude-code",
+    "title": "Mejores prácticas para Claude Code",
+    "summary": "Claude Code es una herramienta poderosa para los desarrolladores, pero requiere una configuración y uso adecuados para aprovechar al máximo sus capacidades. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Claude Code, incluyendo la configuración de la línea de comandos, el uso de hooks y la gestión de permisos.",
+    "content": "Claude Code es una herramienta de código abierto que permite a los desarrolladores crear y personalizar sus propias habilidades y flujos de trabajo. Para empezar a trabajar con Claude Code, es importante configurar la línea de comandos correctamente. Por ejemplo, se puede utilizar el comando `claude code --worktree` para especificar el directorio de trabajo. Además, es posible utilizar hooks para automatizar tareas y flujos de trabajo, como `claude code --hook <nombre_del_hook>`.\n\nUna de las mejores prácticas para trabajar con Claude Code es utilizar la configuración de `CLAUDE.md` para definir las habilidades y flujos de trabajo. Por ejemplo, se puede agregar una sección `skills` en el archivo `CLAUDE.md` para definir las habilidades que se desean utilizar. También es importante gestionar los permisos correctamente, utilizando comandos como `claude code --dangerously-skip-permissions` para omitir los permisos en caso de que sea necesario.\n\nOtra práctica recomendada es utilizar la función de depuración de Claude Code para identificar y solucionar problemas. Por ejemplo, se puede utilizar el comando `claude code --debug` para activar la depuración y obtener información detallada sobre los errores y problemas que se produzcan. Además, es posible utilizar herramientas como Notion Database para almacenar y gestionar las habilidades y flujos de trabajo de Claude Code.\n\nEn cuanto a la productividad, es importante utilizar las herramientas y funciones de Claude Code de manera efectiva. Por ejemplo, se puede utilizar la función de autocompletado para reducir el tiempo de escritura de código y mejorar la eficiencia. También es posible utilizar la función de resumen para obtener una visión general de los flujos de trabajo y habilidades que se están utilizando.\n\nEn resumen, Claude Code es una herramienta poderosa que requiere una configuración y uso adecuados para aprovechar al máximo sus capacidades. Al seguir estas mejores prácticas, los desarrolladores pueden mejorar su productividad y eficiencia al trabajar con Claude Code.\n\nFinalmente, es importante mencionar que la comunidad de Claude Code es muy activa y proporciona una gran cantidad de recursos y documentación para ayudar a los desarrolladores a empezar a trabajar con la herramienta. Por ejemplo, se puede encontrar documentación oficial en la página web de Claude Code, así como comunidades y foros en línea donde se pueden hacer preguntas y obtener ayuda de otros desarrolladores.",
+    "sources": [
+      {
+        "title": "anthropics claude-ai-mcp Discussions",
+        "url": "https://github.com/anthropics/claude-ai-mcp/discussions"
+      },
+      {
+        "title": "BUG: Error: Claude Code on Windows requires git-bash #37908",
+        "url": "https://github.com/anthropics/claude-code/issues/37908"
+      },
+      {
+        "title": "10 Battle-Tested Claude Code Practices",
+        "url": "https://dev.to/evan-dong/10-battle-tested-claude-code-practices-4n81"
+      },
+      {
+        "title": "50 Claude Code Best Practices Every AI Engineer Should Know",
+        "url": "https://medium.com/@sabita2025/50-claude-code-best-practices-every-ai-engineer-should-know-6ee3f2fdf669"
+      }
+    ]
+  },
   "2026-04-19_0900": {
     "slug": "claude-code",
     "title": "Mejores prácticas para Claude Code",

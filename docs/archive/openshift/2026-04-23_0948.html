@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras en OpenShift 4.21 - OpenShift</title>
+    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,48 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>Mejoras en OpenShift 4.21</h1>
-    <div class="meta">2026-04-19 0900 · OpenShift</div>
+    <h1>OpenShift: Mejoras y Novedades</h1>
+    <div class="meta">2026-04-23 0948 · OpenShift</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenShift 4.21 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de mejoras y nuevas características. Una de las características más destacadas es el escalado inteligente, que permite a los administradores ajustar automáticamente el tamaño de los clústeres en función de la demanda. Esto se puede lograr utilizando el comando `oc scale` para ajustar el número de réplicas de un deployment.</p>
+            <p>OpenShift es una plataforma de contenedores que se encuentra en constante evolución. Recientemente, se han publicado varias actualizaciones de seguridad, como la RHSA-2026:8423, que incluye parches para vulnerabilidades importantes. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc get clusterversion` o acceder a la consola web de OpenShift.</p>
             
         
             
         
             
-            <p>Otra característica importante es la migración más rápida, que permite a los administradores migrar aplicaciones de una versión a otra de OpenShift de manera más eficiente. Esto se puede lograr utilizando el comando `oc migrate` para migrar los objetos de un namespace a otro. Además, OpenShift 4.21 incluye mejoras en la seguridad, como la capacidad de utilizar OAuth para autenticar a los usuarios y aplicaciones.</p>
+            <p>La plataforma también ofrece herramientas para mejorar la seguridad y la confiabilidad, como los contenedores sandboxeados. La versión 1.12 de Red Hat OpenShift sandboxed containers ofrece soporte para contenedores en bare metal, lo que permite una mayor flexibilidad y seguridad. Para implementar contenedores sandboxeados, se puede utilizar el comando `oc create -f sandboxed-container.yaml`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las características de OpenShift 4.21, es importante mantener el clúster actualizado. Los administradores pueden verificar si hay actualizaciones disponibles utilizando el comando `oc adm upgrade` o la consola web de OpenShift. Es importante mencionar que las versiones anteriores de OpenShift, como la 4.18, ya no reciben soporte y es recomendable migrar a la versión 4.21 lo antes posible.</p>
+            <p>En cuanto a la monitorización, OpenShift ofrece herramientas como Prometheus y Grafana para recopilar y visualizar métricas. Se puede utilizar el comando `oc get pods -n openshift-monitoring` para verificar el estado de los pods de monitorización. Además, se puede configurar la autenticación OAuth para permitir el acceso seguro a la plataforma. Para configurar OAuth, se puede utilizar el comando `oc create -f oauth-config.yaml`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante mencionar que las versiones anteriores de OpenShift tienen vulnerabilidades conocidas que pueden ser explotadas por atacantes. Por lo tanto, es fundamental mantener el clúster actualizado y aplicar las actualizaciones de seguridad lo antes posible. Los administradores pueden utilizar el comando `oc adm verify` para verificar la integridad del clúster y detectar cualquier problema de seguridad.</p>
+            <p>La migración a OpenShift también es un tema importante. Se puede utilizar la herramienta `oc adm migrate` para migrar aplicaciones desde otras plataformas. Es importante tener en cuenta que la migración puede requerir cambios en la configuración y el código de la aplicación. Para obtener más información sobre la migración, se puede consultar la documentación oficial de OpenShift.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift 4.21 es compatible con la mayoría de las aplicaciones y servicios de Red Hat, incluyendo OKD, OperatorHub, builds, routes y monitoring. Los administradores pueden utilizar el comando `oc new-project` para crear un nuevo proyecto y comenzar a utilizar las características de OpenShift 4.21.</p>
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. Es importante estar al tanto de las últimas actualizaciones y best practices para aprovechar al máximo sus características y herramientas.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4.21 es una versión importante que ofrece mejoras en la seguridad, el rendimiento y la eficiencia. Los administradores deben considerar migrar a esta versión lo antes posible para aprovechar al máximo las características y mejorar la seguridad de sus clústeres.</p>
-            
-        
+            <p>Para obtener más información sobre OpenShift, se puede consultar la documentación oficial y las fuentes citadas a continuación.</p>
             
         
     </div>
@@ -109,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:6554" target="_blank">RHSA-2026:6554</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:8423" target="_blank">RHSA-2026:8423</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:5127" target="_blank">RHSA-2026:5127</a>
+                <a href="https://www.redhat.com/en/blog/red-hat-openshift-sandboxed-containers-112-and-red-hat-build-trustee-11-bring-confidential-computing-bare-metal-and-ai-workloads" target="_blank">Red Hat OpenShift sandboxed containers 1.12</a>
                 
             </li>
             
             <li>
-                <a href="https://www.redhat.com/en/blog/red-hat-openshift-421-smarter-scaling-faster-migration-and-ai-powered-efficiency" target="_blank">Red Hat OpenShift 4.21</a>
+                <a href="https://docs.openshift.com/" target="_blank">OpenShift Documentation</a>
                 
             </li>
             
@@ -130,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html">&larr; 2026-04-19 0900</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-23_0948.html">2026-04-23 0948 &rarr;</a>
             
         </div>
     </div>

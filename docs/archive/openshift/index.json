@@ -1,4 +1,24 @@
 {
+  "2026-04-23_0948": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Novedades",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. En este artículo, se presentan las últimas actualizaciones y best practices para sysadmins y DevOps engineers.",
+    "content": "OpenShift es una plataforma de contenedores que se encuentra en constante evolución. Recientemente, se han publicado varias actualizaciones de seguridad, como la RHSA-2026:8423, que incluye parches para vulnerabilidades importantes. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc get clusterversion` o acceder a la consola web de OpenShift.\n\nLa plataforma también ofrece herramientas para mejorar la seguridad y la confiabilidad, como los contenedores sandboxeados. La versión 1.12 de Red Hat OpenShift sandboxed containers ofrece soporte para contenedores en bare metal, lo que permite una mayor flexibilidad y seguridad. Para implementar contenedores sandboxeados, se puede utilizar el comando `oc create -f sandboxed-container.yaml`.\n\nEn cuanto a la monitorización, OpenShift ofrece herramientas como Prometheus y Grafana para recopilar y visualizar métricas. Se puede utilizar el comando `oc get pods -n openshift-monitoring` para verificar el estado de los pods de monitorización. Además, se puede configurar la autenticación OAuth para permitir el acceso seguro a la plataforma. Para configurar OAuth, se puede utilizar el comando `oc create -f oauth-config.yaml`.\n\nLa migración a OpenShift también es un tema importante. Se puede utilizar la herramienta `oc adm migrate` para migrar aplicaciones desde otras plataformas. Es importante tener en cuenta que la migración puede requerir cambios en la configuración y el código de la aplicación. Para obtener más información sobre la migración, se puede consultar la documentación oficial de OpenShift.\n\nEn resumen, OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. Es importante estar al tanto de las últimas actualizaciones y best practices para aprovechar al máximo sus características y herramientas.\n\nPara obtener más información sobre OpenShift, se puede consultar la documentación oficial y las fuentes citadas a continuación.",
+    "sources": [
+      {
+        "title": "RHSA-2026:8423",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8423"
+      },
+      {
+        "title": "Red Hat OpenShift sandboxed containers 1.12",
+        "url": "https://www.redhat.com/en/blog/red-hat-openshift-sandboxed-containers-112-and-red-hat-build-trustee-11-bring-confidential-computing-bare-metal-and-ai-workloads"
+      },
+      {
+        "title": "OpenShift Documentation",
+        "url": "https://docs.openshift.com/"
+      }
+    ]
+  },
   "2026-04-19_0900": {
     "slug": "openshift",
     "title": "Mejoras en OpenShift 4.21",
