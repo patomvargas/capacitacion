@@ -58,19 +58,21 @@
     </div>
 
     <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
-    <div class="meta">2026-04-20 1003 · MetalLB</div>
+    <div class="meta">2026-04-24 0948 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es un proyecto de código abierto que permite a los administradores de Kubernetes exponer servicios a Internet de manera segura y escalable. Una de las características más destacadas de MetalLB es su capacidad para funcionar en modo L2, lo que permite la comunicación directa entre los nodos del clúster y los clientes externos. Para configurar MetalLB en modo L2, se puede utilizar el comando `metallbctl create ipaddresspool -c <nombre_del_pool> --addresses=<dirección_IP>`.</p>
+            <p>MetalLB es una herramienta de balanceo de carga para Kubernetes que permite asignar direcciones IP a servicios. Esto se logra a través de dos modos principales: L2 y BGP. En el modo L2, MetalLB asigna una dirección IP a un servicio y luego utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP en la red. En el modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP a los routers de la red.</p>
             
         
             
         
             
-            <p>Para integrar MetalLB con Kubernetes, es necesario crear un objeto de tipo `MetalLB` en el clúster. Esto se puede hacer utilizando el comando `kubectl apply -f metallb.yaml`, donde `metallb.yaml` es un archivo de configuración que define las características del balanceador de carga. Un ejemplo de archivo de configuración podría ser:</p>
+        
+            
+            <p>Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación y la dirección IP que se desea asignar. Por ejemplo, se puede crear un objeto de configuración como el siguiente:</p>
             
         
             
@@ -78,11 +80,11 @@
             
         
             
-            <p>apiVersion: metallb.io/v1beta1</p>
+            <p>apiVersion: v1</p>
             
         
             
-            <p>kind: MetalLB</p>
+            <p>kind: ConfigMap</p>
             
         
             
@@ -90,11 +92,43 @@
             
         
             
-            <p>name: metallb</p>
+            <p>name: metallb-config</p>
             
         
             
-            <p>spec:</p>
+            <p>data:</p>
+            
+        
+            
+            <p>config: |</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- peer-address: 10.0.0.1</p>
+            
+        
+            
+            <p>peer-asn: 64512</p>
+            
+        
+            
+            <p>my-asn: 64512</p>
+            
+        
+            
+            <p>address-pools:</p>
+            
+        
+            
+            <p>- name: default</p>
+            
+        
+            
+            <p>protocol: bgp</p>
             
         
             
@@ -102,7 +136,7 @@
             
         
             
-            <p>- 192.168.1.100-192.168.1.150</p>
+            <p>- 10.0.0.0/24</p>
             
         
             
@@ -110,29 +144,87 @@
             
         
             
-            <p>En cuanto a la configuración de BGP, MetalLB admite la creación de sesiones BGP con routers externos. Para configurar BGP, se puede utilizar el comando `metallbctl create bgppeer -c <nombre_del_peer> --ip=<dirección_IP_del_peer> --asn=<número_ASN_del_peer>`.</p>
+        
+            
+            <p>Esto configurará MetalLB para operar en modo BGP y asignar direcciones IP en el rango 10.0.0.0/24. Para aplicar esta configuración, se puede ejecutar el comando `kubectl apply -f metallb-config.yaml`.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas para el uso de MetalLB, es importante mencionar la importancia de la seguridad. Se debe asegurar que los servicios expuestos a Internet estén correctamente configurados y que se utilicen mecanismos de autenticación y autorización adecuados. Además, es recomendable utilizar IP pools para asignar direcciones IP a los servicios de manera dinámica.</p>
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se integra con el sistema de servicios de Kubernetes para asignar direcciones IP a los servicios. Por ejemplo, se puede crear un servicio como el siguiente:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: Service</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: ejemplo</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>selector:</p>
+            
+        
+            
+            <p>app: ejemplo</p>
+            
+        
+            
+            <p>ports:</p>
+            
+        
+            
+            <p>- name: http</p>
+            
+        
+            
+            <p>port: 80</p>
+            
+        
+            
+            <p>targetPort: 8080</p>
+            
+        
+            
+            <p>type: LoadBalancer</p>
+            
+        
+            
+            <p>```</p>
             
         
             
         
             
-            <p>Para solucionar problemas comunes con MetalLB, se puede utilizar el comando `metallbctl debug` para obtener información detallada sobre el estado del balanceador de carga. También se puede utilizar el comando `kubectl logs -f metallb` para ver los registros de los contenedores de MetalLB.</p>
+            <p>Esto creará un servicio que se asignará a una dirección IP utilizando MetalLB.</p>
             
         
             
         
             
-            <p>En resumen, MetalLB es una herramienta poderosa para exponer servicios a Internet en un clúster de Kubernetes. Con sus características de modo L2, BGP y IP pools, MetalLB proporciona una forma eficiente y segura de escalar los servicios.</p>
-            
         
             
-        
+            <p>Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl` y `metallbctl`. Por ejemplo, se puede ejecutar el comando `kubectl get pods -n metallb-system` para ver los pods de MetalLB, o `metallbctl logs` para ver los registros de MetalLB.</p>
             
         
     </div>
@@ -143,27 +235,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-zero-trust-staged-kubernetes-networkpolicy-calico" target="_blank">2026-03-13-zero-trust-staged-kubernetes-networkpolicy-calico</a>
+                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-vmware-sdwan-velocloud-ipv6" target="_blank">2026-03-20-vmware-sdwan-velocloud-ipv6</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-configure-dns-over-tls-ipv6" target="_blank">2026-03-20-configure-dns-over-tls-ipv6</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-ikev2-vpn-server-ipv4-strongswan" target="_blank">2026-03-20-ikev2-vpn-server-ipv4-strongswan</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-17-run-containers-non-root-user-podman" target="_blank">2026-03-17-run-containers-non-root-user-podman</a>
+                <a href="https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/" target="_blank">Gateway API v1.5</a>
                 
             </li>
             
@@ -174,12 +251,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-16_0925.html">&larr; 2026-04-16 0925</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-20_1003.html">&larr; 2026-04-20 1003</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-24_0948.html">2026-04-24 0948 &rarr;</a>
             
         </div>
     </div>

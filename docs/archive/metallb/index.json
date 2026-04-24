@@ -1,4 +1,20 @@
 {
+  "2026-04-24_0948": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en Kubernetes",
+    "summary": "MetalLB es una herramienta de balanceo de carga para Kubernetes que permite asignar direcciones IP a servicios. En este artículo, se explora su funcionamiento y configuración.",
+    "content": "MetalLB es una herramienta de balanceo de carga para Kubernetes que permite asignar direcciones IP a servicios. Esto se logra a través de dos modos principales: L2 y BGP. En el modo L2, MetalLB asigna una dirección IP a un servicio y luego utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP en la red. En el modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP a los routers de la red.\n\n \n Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación y la dirección IP que se desea asignar. Por ejemplo, se puede crear un objeto de configuración como el siguiente: \n```yaml\napiVersion: v1\nkind: ConfigMap\nmetadata:\n  name: metallb-config\ndata:\n  config: |\n    peers:\n    - peer-address: 10.0.0.1\n      peer-asn: 64512\n      my-asn: 64512\n    address-pools:\n    - name: default\n      protocol: bgp\n      addresses:\n      - 10.0.0.0/24\n```\n \n Esto configurará MetalLB para operar en modo BGP y asignar direcciones IP en el rango 10.0.0.0/24. Para aplicar esta configuración, se puede ejecutar el comando `kubectl apply -f metallb-config.yaml`.\n\n \n En cuanto a la integración con Kubernetes, MetalLB se integra con el sistema de servicios de Kubernetes para asignar direcciones IP a los servicios. Por ejemplo, se puede crear un servicio como el siguiente:\n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: ejemplo\nspec:\n  selector:\n    app: ejemplo\n  ports:\n  - name: http\n    port: 80\n    targetPort: 8080\n  type: LoadBalancer\n```\n \n Esto creará un servicio que se asignará a una dirección IP utilizando MetalLB.\n\n \n Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl` y `metallbctl`. Por ejemplo, se puede ejecutar el comando `kubectl get pods -n metallb-system` para ver los pods de MetalLB, o `metallbctl logs` para ver los registros de MetalLB.",
+    "sources": [
+      {
+        "title": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/"
+      },
+      {
+        "title": "Gateway API v1.5",
+        "url": "https://kubernetes.io/blog/2026/04/21/gateway-api-v1-5/"
+      }
+    ]
+  },
   "2026-04-20_1003": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

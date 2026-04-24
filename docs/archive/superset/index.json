@@ -1,4 +1,24 @@
 {
+  "2026-04-24_0948": {
+    "slug": "superset",
+    "title": "Superset: Exploración y Visualización de Datos",
+    "summary": "Superset es una plataforma de exploración y visualización de datos moderna que permite a los usuarios explorar y visualizar sus datos de manera sencilla. En este artículo, se presentan las características y funcionalidades de Superset, incluyendo la creación de gráficos, tableros y la administración de conjuntos de datos.",
+    "content": "Superset es una herramienta de código abierto que permite a los usuarios crear gráficos y tableros personalizados para visualizar sus datos. Para empezar a utilizar Superset, es necesario instalarlo en un entorno de desarrollo, lo que se puede hacer utilizando `docker-compose up` para iniciar el contenedor de Docker. Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088` en el navegador.\n\nLa creación de gráficos en Superset es sencilla y se puede hacer mediante la interfaz de usuario. Por ejemplo, para crear un gráfico de línea, se puede seleccionar el tipo de gráfico y luego configurar las opciones de visualización, como el título, las etiquetas de los ejes y los colores. También se puede utilizar `SQL Lab` para ejecutar consultas SQL y visualizar los resultados en un gráfico.\n\nLa administración de conjuntos de datos en Superset es fundamental para garantizar que los datos estén organizados y sean fáciles de encontrar. Se pueden crear conjuntos de datos personalizados y agregarlos a tableros para visualizar los datos de manera efectiva. También se pueden utilizar `Jinja templates` para personalizar la apariencia de los tableros y gráficos.\n\nEn cuanto a la seguridad, es importante mencionar que Superset admite la autenticación y autorización de usuarios, lo que permite controlar el acceso a los datos y los recursos del sistema. Se pueden configurar roles y permisos para los usuarios y grupos para garantizar que solo los usuarios autorizados puedan acceder a los datos y recursos.\n\nFinalmente, es importante mencionar que Superset es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y mejoras. Por ejemplo, se pueden consultar las discusiones en GitHub para obtener información sobre las últimas características y correcciones de errores.\n\nEn resumen, Superset es una herramienta poderosa para la exploración y visualización de datos que ofrece una amplia gama de funcionalidades y características para ayudar a los usuarios a obtener insights valiosos de sus datos.",
+    "sources": [
+      {
+        "title": "Apache Superset",
+        "url": "https://github.com/apache/superset"
+      },
+      {
+        "title": "Part 12 - Superset Seeding and Dashboards",
+        "url": "https://dev.to/abdelrahman_adnan/part-12-superset-seeding-and-dashboards-4jmo"
+      },
+      {
+        "title": "Getting Familiar with Apache Superset",
+        "url": "https://medium.com/@ruthikkumbhar/getting-familiar-with-apache-superset-before-creating-your-first-chart-2de85a43d156"
+      }
+    ]
+  },
   "2026-04-20_1003": {
     "slug": "superset",
     "title": "Superset: Mejoras y Novedades",
