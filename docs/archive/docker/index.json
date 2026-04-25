@@ -1,4 +1,24 @@
 {
+  "2026-04-25_0859": {
+    "slug": "docker",
+    "title": "Mejores prácticas de seguridad en Docker",
+    "summary": "Aprende a proteger tus contenedores y imágenes en Docker con estas mejores prácticas de seguridad. Descubre cómo utilizar imágenes oficiales y verificar la seguridad de tus imágenes.",
+    "content": "La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en Docker. Una de las mejores prácticas es utilizar imágenes oficiales y verificadas de fuentes confiables, como Docker Hub. Esto se debe a que estas imágenes están mantenidas y actualizadas regularmente para evitar vulnerabilidades de seguridad. Por ejemplo, puedes utilizar la imagen oficial de Ubuntu con el comando `docker pull ubuntu:latest`.\n\nPara verificar la seguridad de tus imágenes, puedes utilizar herramientas como Docker Security Scanning, que analiza tus imágenes en busca de vulnerabilidades conocidas. También puedes utilizar comandos como `docker inspect` para obtener información detallada sobre tus contenedores y imágenes.\n\nOtra buena práctica es utilizar Docker Compose para definir y ejecutar tus contenedores de manera segura. Puedes utilizar el comando `docker-compose up` para iniciar tus contenedores y `docker-compose down` para detenerlos. También es importante utilizar redes y volúmenes para aislar y persistir datos sensibles.\n\nAdemás, es fundamental mantener tus imágenes y contenedores actualizados con las últimas versiones de seguridad. Puedes utilizar el comando `docker update` para actualizar tus contenedores y `docker build` para reconstruir tus imágenes con las últimas actualizaciones de seguridad.\n\nLa utilización de BuildKit es otra buena práctica para mejorar la seguridad y eficiencia en la creación de imágenes. BuildKit es una herramienta de compilación de imágenes que permite crear imágenes de manera más rápida y segura. Puedes utilizar el comando `docker buildx` para crear y gestionar tus imágenes con BuildKit.\n\nFinalmente, es importante mencionar la importancia de utilizar registros de confianza para almacenar y distribuir tus imágenes. Puedes utilizar registros como Docker Hub o Google Container Registry para almacenar y gestionar tus imágenes de manera segura.",
+    "sources": [
+      {
+        "title": "Docker Security Best Practices",
+        "url": "https://medium.com/@fabiuslihandaachevi/docker-security-best-practices-238589c1ea16"
+      },
+      {
+        "title": "5 Docker Scenarios Every Developer Should Practice",
+        "url": "https://dev.to/nazmur96/5-docker-scenarios-every-developer-should-practice-with-fixes-best-practices-3l70"
+      },
+      {
+        "title": "Docker Image Security Hardening Best Practices",
+        "url": "https://medium.com/@vasanthancomrads/docker-image-security-hardening-best-practices-0cca3a4ec9bb"
+      }
+    ]
+  },
   "2026-04-21_0944": {
     "slug": "docker",
     "title": "Seguridad y Mejoras en Docker",

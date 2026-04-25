@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-24T09:50:06.879010+00:00</updated>
+  <updated>2026-04-25T09:01:00.633904+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -201,5 +201,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-21_0944.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo mejorar la eficiencia de tus consultas y reducir los tiempos de respuesta.</summary>
     <published>2026-04-21T09:44:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-25_0859.html</id>
+    <title>Mejoras en PostgreSQL</title>
+    <updated>2026-04-25T08:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es uno de los sistemas de gestión de bases de datos más avanzados y populares en la actualidad. Recientemente, se han publicado varias actualizaciones y mejoras en el sistema, como la versión 18.3, que incluye correcciones de regresiones y mejoras en el rendimiento. Una de las características más destacadas es la reducción de la sobrecarga de temporización en EXPLAIN ANALYZE, lo que permite obtener resultados más precisos y rápidos en la análisis de consultas.&lt;/p&gt;
+&lt;p&gt;La gestión de extensiones en Kubernetes también ha sido mejorada con la versión 1.29.0 de CloudNativePG, que introduce un nuevo enfoque para la gestión de extensiones en entornos de contenedores. Esto permite a los desarrolladores y administradores de bases de datos aprovechar al máximo las funcionalidades de PostgreSQL en entornos de nube y contenedores.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la automatización de la creación y mantenimiento de índices en la base de datos. La herramienta Autobase 2.7.0, por ejemplo, incluye una función de edición de SQL integrada y automatización de mantenimiento de índices, lo que facilita la optimización del rendimiento de la base de datos. Para aprovechar al máximo estas funcionalidades, es importante utilizar comandos como &lt;code&gt;CREATE INDEX&lt;/code&gt; y &lt;code&gt;ANALYZE&lt;/code&gt; para crear y actualizar índices, y &lt;code&gt;EXPLAIN ANALYZE&lt;/code&gt; para analizar el rendimiento de las consultas.&lt;/p&gt;
+&lt;p&gt;Además, la comunidad de PostgreSQL sigue creciendo y evolucionando, con nuevas herramientas y recursos disponibles para los desarrolladores y administradores de bases de datos. La versión 2.0 de SQL Management Studio para PostgreSQL, por ejemplo, ofrece una interfaz visual más intuitiva y funcionalidades mejoradas para la administración de bases de datos.&lt;/p&gt;
+&lt;p&gt;En resumen, las últimas actualizaciones y mejoras en PostgreSQL ofrecen una serie de características y funcionalidades que pueden ayudar a los desarrolladores y administradores de bases de datos a mejorar el rendimiento y la eficiencia de sus sistemas. Es importante estar al tanto de estas novedades y aprovechar al máximo las funcionalidades de PostgreSQL para obtener los mejores resultados posibles.&lt;/p&gt;
+&lt;p&gt;Para configurar y optimizar el rendimiento de PostgreSQL, es importante utilizar comandos como &lt;code&gt;pg_stat_statements&lt;/code&gt; para analizar el rendimiento de las consultas, y &lt;code&gt;pg_ctl&lt;/code&gt; para controlar y configurar el servidor de base de datos. Además, es fundamental realizar copias de seguridad regulares de la base de datos utilizando comandos como &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt; para garantizar la integridad y disponibilidad de los datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"&gt;CloudNativePG 1.29.0 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/autobase-270-released-3269/"&gt;PostgreSQL: Autobase 2.7.0 released&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-25_0859.html"/>
+    <summary>PostgreSQL sigue evolucionando con mejoras en su rendimiento y funcionalidades. La versión 18.3 y otras actualizaciones recientes ofrecen características como la reducción de la sobrecarga de temporización en EXPLAIN ANALYZE y mejoras en la gestión de extensiones en Kubernetes.</summary>
+    <published>2026-04-25T08:59:00+00:00</published>
   </entry>
 </feed>

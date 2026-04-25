@@ -1,4 +1,24 @@
 {
+  "2026-04-25_0859": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para 2026",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para 2026, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren las novedades y cambios en la versión 2.54 de Git y se proporcionan ejemplos prácticos de comandos y configuraciones.",
+    "content": "La versión 2.54 de Git ha sido recientemente lanzada, con nuevas características y correcciones de errores de más de 137 contribuyentes. Una de las características más interesantes es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando `git workflow` para crear y gestionar workflows personalizados.\n\n \nLa gestión de commits es otro aspecto importante en Git. Es fundamental escribir commits claros y descriptivos, utilizando el formato de commit estándar, como se describe en la especificación Conventional Commits. Esto permite a los desarrolladores entender rápidamente el propósito de cada commit y facilita la revisión del código. Para escribir commits efectivos, se puede utilizar el comando `git commit -m` con un mensaje descriptivo.\n\n \nOtra característica útil en Git es la capacidad de utilizar hooks para automatizar tareas. Los hooks permiten a los desarrolladores ejecutar scripts personalizados en diferentes puntos del flujo de trabajo de Git, como antes de realizar un commit o después de realizar un push. Para configurar un hook, se puede utilizar el comando `git hook` y especificar el tipo de hook y el script que se desea ejecutar.\n\n \nFinalmente, es importante mencionar la importancia de utilizar comandos Git de manera efectiva. Comandos como `git rebase`, `git bisect` y `git worktree` pueden ser muy útiles para gestionar y depurar el código. Por ejemplo, el comando `git rebase` permite a los desarrolladores reorganizar los commits de una rama para que tengan un historial de commits más limpio y organizado.\n\n \nEn resumen, Git es una herramienta poderosa para la gestión de versiones, y utilizar las mejores prácticas y características avanzadas puede mejorar significativamente la productividad y la calidad del código. Al utilizar comandos y configuraciones efectivas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos complejos.\n\n \nPara obtener más información sobre las características y mejoras de Git, se puede consultar la documentación oficial de Git y las fuentes proporcionadas a continuación.",
+    "sources": [
+      {
+        "title": "Highlights from Git 2.54",
+        "url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
+      },
+      {
+        "title": "Git Workflow Best Practices: The Developer's Guide for 2026",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0"
+      },
+      {
+        "title": "Git Commit Message Best Practices + How AI Can Help You Write Better Commits",
+        "url": "https://dev.to/_d7eb1c1703182e3ce1782/git-commit-message-best-practices-how-ai-can-help-you-write-better-commits-2b02"
+      }
+    ]
+  },
   "2026-04-21_0944": {
     "slug": "git",
     "title": "Mejores prácticas de Git para 2026",

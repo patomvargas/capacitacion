@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-24T09:50:06.880036+00:00</updated>
+  <updated>2026-04-25T09:01:00.635496+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -132,5 +132,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-21_0944.html"/>
     <summary>En este artículo, se presentan las últimas novedades y mejoras en Docker, incluyendo la seguridad y las mejores prácticas para el uso de contenedores. Se cubren temas como la autenticación y autorización, la seguridad de la red y la configuración de Docker Compose.</summary>
     <published>2026-04-21T09:44:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-25_0859.html</id>
+    <title>Mejores prácticas de seguridad en Docker</title>
+    <updated>2026-04-25T08:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en Docker. Una de las mejores prácticas es utilizar imágenes oficiales y verificadas de fuentes confiables, como Docker Hub. Esto se debe a que estas imágenes están mantenidas y actualizadas regularmente para evitar vulnerabilidades de seguridad. Por ejemplo, puedes utilizar la imagen oficial de Ubuntu con el comando &lt;code&gt;docker pull ubuntu:latest&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para verificar la seguridad de tus imágenes, puedes utilizar herramientas como Docker Security Scanning, que analiza tus imágenes en busca de vulnerabilidades conocidas. También puedes utilizar comandos como &lt;code&gt;docker inspect&lt;/code&gt; para obtener información detallada sobre tus contenedores y imágenes.&lt;/p&gt;
+&lt;p&gt;Otra buena práctica es utilizar Docker Compose para definir y ejecutar tus contenedores de manera segura. Puedes utilizar el comando &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar tus contenedores y &lt;code&gt;docker-compose down&lt;/code&gt; para detenerlos. También es importante utilizar redes y volúmenes para aislar y persistir datos sensibles.&lt;/p&gt;
+&lt;p&gt;Además, es fundamental mantener tus imágenes y contenedores actualizados con las últimas versiones de seguridad. Puedes utilizar el comando &lt;code&gt;docker update&lt;/code&gt; para actualizar tus contenedores y &lt;code&gt;docker build&lt;/code&gt; para reconstruir tus imágenes con las últimas actualizaciones de seguridad.&lt;/p&gt;
+&lt;p&gt;La utilización de BuildKit es otra buena práctica para mejorar la seguridad y eficiencia en la creación de imágenes. BuildKit es una herramienta de compilación de imágenes que permite crear imágenes de manera más rápida y segura. Puedes utilizar el comando &lt;code&gt;docker buildx&lt;/code&gt; para crear y gestionar tus imágenes con BuildKit.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de utilizar registros de confianza para almacenar y distribuir tus imágenes. Puedes utilizar registros como Docker Hub o Google Container Registry para almacenar y gestionar tus imágenes de manera segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@fabiuslihandaachevi/docker-security-best-practices-238589c1ea16"&gt;Docker Security Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/nazmur96/5-docker-scenarios-every-developer-should-practice-with-fixes-best-practices-3l70"&gt;5 Docker Scenarios Every Developer Should Practice&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@vasanthancomrads/docker-image-security-hardening-best-practices-0cca3a4ec9bb"&gt;Docker Image Security Hardening Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-25_0859.html"/>
+    <summary>Aprende a proteger tus contenedores y imágenes en Docker con estas mejores prácticas de seguridad. Descubre cómo utilizar imágenes oficiales y verificar la seguridad de tus imágenes.</summary>
+    <published>2026-04-25T08:59:00+00:00</published>
   </entry>
 </feed>

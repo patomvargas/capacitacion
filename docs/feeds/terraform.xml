@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-24T09:50:06.881732+00:00</updated>
+  <updated>2026-04-25T09:01:00.638300+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -86,5 +86,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-17_0923.html"/>
     <summary>Terraform es una herramienta esencial en la gestión de infraestructura como código, permitiendo a los equipos definir y gestionar su infraestructura de manera eficiente. En este artículo, se explorarán las mejores prácticas y características avanzadas de Terraform.</summary>
     <published>2026-04-17T09:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-25_0859.html</id>
+    <title>Terraform: Administración de Infraestructura como Código</title>
+    <updated>2026-04-25T08:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de código abierto que permite a los usuarios crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Una de las características más importantes de Terraform es su capacidad para integrarse con diferentes proveedores de servicios en la nube, como AWS, Azure y Google Cloud, a través de sus respectivos providers. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform init&lt;/code&gt; para inicializar un proyecto de Terraform y luego utilizar el comando &lt;code&gt;terraform apply&lt;/code&gt; para aplicar los cambios a la infraestructura.&lt;/p&gt;
+&lt;p&gt;Los módulos de Terraform son otra característica importante que permite a los usuarios reutilizar código y crear infraestructuras complejas de manera más eficiente. Un módulo de Terraform es un conjunto de archivos de configuración que definen una infraestructura específica, como una red o un servidor. Se puede utilizar el comando &lt;code&gt;terraform get&lt;/code&gt; para descargar un módulo de Terraform desde un repositorio remoto.&lt;/p&gt;
+&lt;p&gt;El estado de la infraestructura es otro aspecto importante en Terraform. El estado de la infraestructura se refiere a la configuración actual de la infraestructura, incluyendo los recursos que se han creado y sus propiedades. Se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; para ver el estado actual de la infraestructura y el comando &lt;code&gt;terraform state rm&lt;/code&gt; para eliminar un recurso de la infraestructura.&lt;/p&gt;
+&lt;p&gt;Los workspaces de Terraform son otra característica útil que permite a los usuarios crear y gestionar diferentes versiones de una infraestructura. Un workspace es un conjunto de archivos de configuración que definen una infraestructura específica. Se puede utilizar el comando &lt;code&gt;terraform workspace&lt;/code&gt; para crear un nuevo workspace y luego utilizar el comando &lt;code&gt;terraform apply&lt;/code&gt; para aplicar los cambios a la infraestructura.&lt;/p&gt;
+&lt;p&gt;En cuanto a la importación de recursos, Terraform proporciona el comando &lt;code&gt;terraform import&lt;/code&gt; que permite importar recursos existentes en la infraestructura. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform import aws_instance.mi_instancia i-0123456789abcdef0&lt;/code&gt; para importar una instancia de AWS en la infraestructura de Terraform.&lt;/p&gt;
+&lt;p&gt;Finalmente, los moved blocks son una característica de Terraform que permite a los usuarios reorganizar los recursos en la infraestructura. Un moved block es un bloque de código que define un recurso que se ha movido de un lugar a otro en la infraestructura. Se puede utilizar el comando &lt;code&gt;terraform apply&lt;/code&gt; para aplicar los cambios a la infraestructura y luego utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; para ver el estado actual de la infraestructura.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa que permite a los administradores de sistemas y desarrolladores crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Sus características, como providers, modules, state management, workspaces, import y moved blocks, hacen que sea una herramienta indispensable para cualquier equipo de DevOps.&lt;/p&gt;
+&lt;p&gt;Los proveedores de servicios en la nube, como VMware Aria Automation, también ofrecen integraciones con Terraform, lo que permite a los usuarios crear y gestionar infraestructuras complejas de manera más eficiente. Por ejemplo, se puede utilizar el proveedor de VMware Aria Automation para crear y gestionar máquinas virtuales, redes y load balancers en la nube.&lt;/p&gt;
+&lt;p&gt;En conclusión, Terraform es una herramienta que debe ser considerada por cualquier equipo de DevOps que desee crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Su capacidad para integrarse con diferentes proveedores de servicios en la nube y su flexibilidad para crear y gestionar infraestructuras complejas la hacen una herramienta indispensable en el mundo de la administración de sistemas y el desarrollo de software.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/vmware/terraform-provider-vra"&gt;Terraform Provider for VMware Aria Automation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt"&gt;frequency_dictionary_en_82_765.txt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Janaashraf992/EvilTwin"&gt;EvilTwin — SDN-Powered Cyber Deception Platform&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-25_0859.html"/>
+    <summary>Terraform es una herramienta de administración de infraestructura como código que permite a los administradores de sistemas y desarrolladores crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. En este artículo, se explorarán las características y best practices de Terraform, incluyendo providers, modules, state management, workspaces, import y moved blocks.</summary>
+    <published>2026-04-25T08:59:00+00:00</published>
   </entry>
 </feed>

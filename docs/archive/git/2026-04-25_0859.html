@@ -58,47 +58,53 @@
     </div>
 
     <h1>Mejores prácticas de Git para 2026</h1>
-    <div class="meta">2026-04-21 0944 · Git</div>
+    <div class="meta">2026-04-25 0859 · Git</div>
 
     <div class="content">
         
         
             
-            <p>En la actualidad, Git es una herramienta fundamental para el desarrollo de software. Para aprovechar al máximo sus funcionalidades, es importante seguir las mejores prácticas. Una de las más importantes es la estrategia de ramificación, que consiste en crear ramas separadas para diferentes características o correcciones de errores. Por ejemplo, se puede crear una rama `feature/nueva-caracteristica` para desarrollar una nueva característica, y otra rama `fix/erreur-123` para corregir un error específico.</p>
+            <p>La versión 2.54 de Git ha sido recientemente lanzada, con nuevas características y correcciones de errores de más de 137 contribuyentes. Una de las características más interesantes es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando `git workflow` para crear y gestionar workflows personalizados.</p>
             
         
             
         
             
-            <p>Para mantener un historial de cambios claro y conciso, es fundamental seguir convenciones de commit. Una convención común es utilizar el formato `tipo(descripción)`, donde `tipo` puede ser `feat` para nuevas características, `fix` para correcciones de errores, o `docs` para cambios en la documentación. Por ejemplo, `git commit -m 'feat(nueva característica de autenticación)'`.</p>
+        
+            
+            <p>La gestión de commits es otro aspecto importante en Git. Es fundamental escribir commits claros y descriptivos, utilizando el formato de commit estándar, como se describe en la especificación Conventional Commits. Esto permite a los desarrolladores entender rápidamente el propósito de cada commit y facilita la revisión del código. Para escribir commits efectivos, se puede utilizar el comando `git commit -m` con un mensaje descriptivo.</p>
             
         
             
         
             
-            <p>Otra herramienta avanzada de Git es el rebase, que permite reorganizar el historial de cambios para que sea más lineal y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i HEAD~3` para reorganizar los últimos tres commits. Sin embargo, es importante tener cuidado al utilizar rebase, ya que puede causar problemas si se utiliza de manera incorrecta.</p>
+        
+            
+            <p>Otra característica útil en Git es la capacidad de utilizar hooks para automatizar tareas. Los hooks permiten a los desarrolladores ejecutar scripts personalizados en diferentes puntos del flujo de trabajo de Git, como antes de realizar un commit o después de realizar un push. Para configurar un hook, se puede utilizar el comando `git hook` y especificar el tipo de hook y el script que se desea ejecutar.</p>
             
         
             
         
             
-            <p>Además de rebase, Git también ofrece otras herramientas avanzadas como bisect y worktrees. Bisect es una herramienta que permite encontrar el commit que introdujo un error específico, utilizando una técnica de búsqueda binaria. Por ejemplo, se puede utilizar `git bisect start` para iniciar la búsqueda, y `git bisect bad` para marcar un commit como incorrecto. Worktrees, por otro lado, es una herramienta que permite crear múltiples copias de un repositorio, lo que puede ser útil para trabajar en diferentes características o correcciones de errores de manera simultánea.</p>
+        
+            
+            <p>Finalmente, es importante mencionar la importancia de utilizar comandos Git de manera efectiva. Comandos como `git rebase`, `git bisect` y `git worktree` pueden ser muy útiles para gestionar y depurar el código. Por ejemplo, el comando `git rebase` permite a los desarrolladores reorganizar los commits de una rama para que tengan un historial de commits más limpio y organizado.</p>
             
         
             
         
             
-            <p>En resumen, seguir las mejores prácticas de Git es fundamental para mantener un historial de cambios claro y conciso, y para aprovechar al máximo las funcionalidades de esta herramienta. Algunos comandos útiles para recordar son `git branch`, `git commit`, `git rebase`, `git bisect` y `git worktree`.</p>
+        
+            
+            <p>En resumen, Git es una herramienta poderosa para la gestión de versiones, y utilizar las mejores prácticas y características avanzadas puede mejorar significativamente la productividad y la calidad del código. Al utilizar comandos y configuraciones efectivas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos complejos.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes citadas a continuación.</p>
-            
         
             
-        
+            <p>Para obtener más información sobre las características y mejoras de Git, se puede consultar la documentación oficial de Git y las fuentes proporcionadas a continuación.</p>
             
         
     </div>
@@ -107,6 +113,11 @@
     <div class="sources">
         <h3>Fuentes</h3>
         <ul>
+            
+            <li>
+                <a href="https://github.blog/open-source/git/highlights-from-git-2-54/" target="_blank">Highlights from Git 2.54</a>
+                
+            </li>
             
             <li>
                 <a href="https://dev.to/_d7eb1c1703182e3ce1782/git-workflow-best-practices-the-developers-guide-for-2026-4gl0" target="_blank">Git Workflow Best Practices: The Developer's Guide for 2026</a>
@@ -118,11 +129,6 @@
                 
             </li>
             
-            <li>
-                <a href="https://medium.com/@dhruvinbhalodiya752/git-commands-every-developer-should-know-daily-use-guide-2026-bcce98ae0836" target="_blank">Git Commands Every Developer Should Know (Daily Use Guide 2026)</a>
-                
-            </li>
-            
         </ul>
     </div>
     
@@ -130,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-21_0944.html">&larr; 2026-04-21 0944</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-25_0859.html">2026-04-25 0859 &rarr;</a>
             
         </div>
     </div>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Administración de Infraestructura como Código - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Administración de Infraestructura como Código</h1>
+    <div class="meta">2026-04-25 0859 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de código abierto que permite a los usuarios crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Una de las características más importantes de Terraform es su capacidad para integrarse con diferentes proveedores de servicios en la nube, como AWS, Azure y Google Cloud, a través de sus respectivos providers. Por ejemplo, se puede utilizar el comando `terraform init` para inicializar un proyecto de Terraform y luego utilizar el comando `terraform apply` para aplicar los cambios a la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>Los módulos de Terraform son otra característica importante que permite a los usuarios reutilizar código y crear infraestructuras complejas de manera más eficiente. Un módulo de Terraform es un conjunto de archivos de configuración que definen una infraestructura específica, como una red o un servidor. Se puede utilizar el comando `terraform get` para descargar un módulo de Terraform desde un repositorio remoto.</p>
+            
+        
+            
+        
+            
+            <p>El estado de la infraestructura es otro aspecto importante en Terraform. El estado de la infraestructura se refiere a la configuración actual de la infraestructura, incluyendo los recursos que se han creado y sus propiedades. Se puede utilizar el comando `terraform state` para ver el estado actual de la infraestructura y el comando `terraform state rm` para eliminar un recurso de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>Los workspaces de Terraform son otra característica útil que permite a los usuarios crear y gestionar diferentes versiones de una infraestructura. Un workspace es un conjunto de archivos de configuración que definen una infraestructura específica. Se puede utilizar el comando `terraform workspace` para crear un nuevo workspace y luego utilizar el comando `terraform apply` para aplicar los cambios a la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la importación de recursos, Terraform proporciona el comando `terraform import` que permite importar recursos existentes en la infraestructura. Por ejemplo, se puede utilizar el comando `terraform import aws_instance.mi_instancia i-0123456789abcdef0` para importar una instancia de AWS en la infraestructura de Terraform.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, los moved blocks son una característica de Terraform que permite a los usuarios reorganizar los recursos en la infraestructura. Un moved block es un bloque de código que define un recurso que se ha movido de un lugar a otro en la infraestructura. Se puede utilizar el comando `terraform apply` para aplicar los cambios a la infraestructura y luego utilizar el comando `terraform state` para ver el estado actual de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa que permite a los administradores de sistemas y desarrolladores crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Sus características, como providers, modules, state management, workspaces, import y moved blocks, hacen que sea una herramienta indispensable para cualquier equipo de DevOps.</p>
+            
+        
+            
+        
+            
+            <p>Los proveedores de servicios en la nube, como VMware Aria Automation, también ofrecen integraciones con Terraform, lo que permite a los usuarios crear y gestionar infraestructuras complejas de manera más eficiente. Por ejemplo, se puede utilizar el proveedor de VMware Aria Automation para crear y gestionar máquinas virtuales, redes y load balancers en la nube.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, Terraform es una herramienta que debe ser considerada por cualquier equipo de DevOps que desee crear y gestionar infraestructuras en la nube y en entornos locales de manera eficiente. Su capacidad para integrarse con diferentes proveedores de servicios en la nube y su flexibilidad para crear y gestionar infraestructuras complejas la hacen una herramienta indispensable en el mundo de la administración de sistemas y el desarrollo de software.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/vmware/terraform-provider-vra" target="_blank">Terraform Provider for VMware Aria Automation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/wolfgarbe/SymSpell/blob/master/SymSpell/frequency_dictionary_en_82_765.txt" target="_blank">frequency_dictionary_en_82_765.txt</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Janaashraf992/EvilTwin" target="_blank">EvilTwin — SDN-Powered Cyber Deception Platform</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-17_0923.html">&larr; 2026-04-17 0923</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,24 @@
 {
+  "2026-04-25_0859": {
+    "slug": "postgresql",
+    "title": "Mejoras en PostgreSQL",
+    "summary": "PostgreSQL sigue evolucionando con mejoras en su rendimiento y funcionalidades. La versión 18.3 y otras actualizaciones recientes ofrecen características como la reducción de la sobrecarga de temporización en EXPLAIN ANALYZE y mejoras en la gestión de extensiones en Kubernetes.",
+    "content": "PostgreSQL es uno de los sistemas de gestión de bases de datos más avanzados y populares en la actualidad. Recientemente, se han publicado varias actualizaciones y mejoras en el sistema, como la versión 18.3, que incluye correcciones de regresiones y mejoras en el rendimiento. Una de las características más destacadas es la reducción de la sobrecarga de temporización en EXPLAIN ANALYZE, lo que permite obtener resultados más precisos y rápidos en la análisis de consultas.\n\nLa gestión de extensiones en Kubernetes también ha sido mejorada con la versión 1.29.0 de CloudNativePG, que introduce un nuevo enfoque para la gestión de extensiones en entornos de contenedores. Esto permite a los desarrolladores y administradores de bases de datos aprovechar al máximo las funcionalidades de PostgreSQL en entornos de nube y contenedores.\n\nOtra característica importante es la automatización de la creación y mantenimiento de índices en la base de datos. La herramienta Autobase 2.7.0, por ejemplo, incluye una función de edición de SQL integrada y automatización de mantenimiento de índices, lo que facilita la optimización del rendimiento de la base de datos. Para aprovechar al máximo estas funcionalidades, es importante utilizar comandos como `CREATE INDEX` y `ANALYZE` para crear y actualizar índices, y `EXPLAIN ANALYZE` para analizar el rendimiento de las consultas.\n\nAdemás, la comunidad de PostgreSQL sigue creciendo y evolucionando, con nuevas herramientas y recursos disponibles para los desarrolladores y administradores de bases de datos. La versión 2.0 de SQL Management Studio para PostgreSQL, por ejemplo, ofrece una interfaz visual más intuitiva y funcionalidades mejoradas para la administración de bases de datos.\n\nEn resumen, las últimas actualizaciones y mejoras en PostgreSQL ofrecen una serie de características y funcionalidades que pueden ayudar a los desarrolladores y administradores de bases de datos a mejorar el rendimiento y la eficiencia de sus sistemas. Es importante estar al tanto de estas novedades y aprovechar al máximo las funcionalidades de PostgreSQL para obtener los mejores resultados posibles.\n\nPara configurar y optimizar el rendimiento de PostgreSQL, es importante utilizar comandos como `pg_stat_statements` para analizar el rendimiento de las consultas, y `pg_ctl` para controlar y configurar el servidor de base de datos. Además, es fundamental realizar copias de seguridad regulares de la base de datos utilizando comandos como `pg_dump` y `pg_restore` para garantizar la integridad y disponibilidad de los datos.",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "CloudNativePG 1.29.0 Released!",
+        "url": "https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"
+      },
+      {
+        "title": "PostgreSQL: Autobase 2.7.0 released",
+        "url": "https://www.postgresql.org/about/news/autobase-270-released-3269/"
+      }
+    ]
+  },
   "2026-04-21_0944": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",
