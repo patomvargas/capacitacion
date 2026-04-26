@@ -1,4 +1,36 @@
 {
+  "2026-04-26_0907": {
+    "slug": "kubernetes",
+    "title": "Mejoras en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las mejores prácticas avanzadas y actualizaciones en el sistema.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que permite a los desarrolladores y administradores de sistemas implementar y gestionar aplicaciones escalables y seguras. Una de las características más importantes de Kubernetes es su capacidad para gestionar el tráfico de red y el almacenamiento de datos. Para mejorar la seguridad, se pueden utilizar `Network Policies` para controlar el tráfico de red entre pods y servicios.\n\n \nLa gestión de almacenamiento en Kubernetes se puede realizar mediante `Persistent Volumes` (PV) y `StatefulSets`. Los PV permiten a los administradores de sistemas provisionar almacenamiento persistente para las aplicaciones, mientras que los `StatefulSets` permiten a los desarrolladores implementar aplicaciones que requieren un estado persistente.\n\n \nEn cuanto a la seguridad, Kubernetes proporciona varias características para proteger las aplicaciones y los datos. Una de las características más importantes es la autenticación y autorización, que se puede realizar mediante `Role-Based Access Control` (RBAC) y `Service Accounts`. Los administradores de sistemas también pueden utilizar `Secrets` para almacenar información confidencial, como claves API y contraseñas.\n\n \nPara mejorar la gestión y el monitoreo de las aplicaciones en Kubernetes, se pueden utilizar herramientas como `Prometheus` y `Grafana`. Estas herramientas permiten a los administradores de sistemas monitorear el rendimiento de las aplicaciones y los recursos del clúster, lo que les permite identificar y solucionar problemas de manera más eficiente.\n\n \nEn resumen, Kubernetes es un sistema de orquestación de contenedores que ofrece una amplia gama de características y herramientas para implementar y gestionar aplicaciones escalables y seguras. Al utilizar `Network Policies`, `Persistent Volumes`, `StatefulSets`, `Role-Based Access Control` y `Secrets`, los administradores de sistemas y desarrolladores pueden mejorar la seguridad y el rendimiento de sus aplicaciones en Kubernetes.\n\n \nPara más información, se pueden consultar las fuentes oficiales de Kubernetes y las documentaciones de las herramientas y características mencionadas en este artículo.",
+    "sources": [
+      {
+        "title": "Kubernetes Issues",
+        "url": "https://github.com/kubernetes/kubernetes/issues/138124"
+      },
+      {
+        "title": "Antigravity Awesome Skills",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/skills/cc-skill-strategic-compact"
+      },
+      {
+        "title": "SkillsHub",
+        "url": "https://github.com/ComeOnOliver/skillshub"
+      },
+      {
+        "title": "Agent Skills",
+        "url": "https://github.com/MicrosoftDocs/Agent-Skills/"
+      },
+      {
+        "title": "Database Cloud Optimization",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/database-cloud-optimization-cost-optimize"
+      },
+      {
+        "title": "Continuous Learning",
+        "url": "https://github.com/sickn33/antigravity-awesome-skills/tree/main/plugins/antigravity-awesome-skills-claude/skills/cc-skill-continuous-learning"
+      }
+    ]
+  },
   "2026-04-18_0857": {
     "slug": "kubernetes",
     "title": "Nuevas Características de Kubernetes",

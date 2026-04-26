@@ -1,4 +1,32 @@
 {
+  "2026-04-26_0907": {
+    "slug": "google-workspace",
+    "title": "Novedades en Google Workspace",
+    "summary": "Google Workspace introduce nuevas características y mejoras en su plataforma, incluyendo la función 'Connect Room' para reuniones en línea. Además, se presentan actualizaciones en la integración de AI y mejoras en la seguridad.",
+    "content": "Google Workspace ha anunciado recientemente la disponibilidad de la función 'Connect Room' para todos los clientes con hardware de Google Meet. Esta característica permite a los usuarios unirse a reuniones de manera más sencilla y eficiente. Para habilitar esta función, los administradores pueden seguir los pasos descritos en la documentación oficial de Google Workspace, utilizando comandos como `gcloud auth login` y `gcloud alpha meeting-room-controllers update`.\n\nLa integración de AI en Google Workspace también ha sido objeto de atención, con la presentación de nuevas características y mejoras en la plataforma. Los desarrolladores pueden utilizar la API de AI de Cloudflare Workers para ejecutar modelos de AI en el borde de la red, utilizando comandos como `const embeddings = await env.AI.run('@cf/baai/bge-base-en-v1.5', { text: ['How to deploy a web app', 'Best practices for CI/CD'] });`. Esto permite a los desarrolladores crear aplicaciones más inteligentes y personalizadas para los usuarios de Google Workspace.\n\nEn cuanto a la seguridad, Google Workspace ha implementado varias mejoras para proteger a los usuarios y sus datos. Los administradores pueden utilizar la consola de administración de Google Workspace para configurar las políticas de seguridad y acceso, utilizando comandos como `gcloud alpha organizations update --security-settings`. Además, la plataforma ofrece herramientas de autenticación y autorización avanzadas, como la autenticación de dos factores y la autorización basada en roles.\n\nLa función 'Connect Room' de Google Workspace es una de las novedades más destacadas en la plataforma. Esta característica permite a los usuarios unirse a reuniones en línea de manera más sencilla y eficiente, utilizando hardware de Google Meet. Para configurar esta función, los administradores pueden seguir los pasos descritos en la documentación oficial de Google Workspace, utilizando comandos como `gcloud meeting-room-controllers update --enable-connect-room`.\n\nEn resumen, Google Workspace ha anunciado varias novedades y mejoras en su plataforma, incluyendo la función 'Connect Room' y la integración de AI. Los desarrolladores y administradores pueden utilizar estas características para crear aplicaciones más inteligentes y personalizadas, y para proteger a los usuarios y sus datos.\n\nFinalmente, es importante destacar que la seguridad es un aspecto fundamental en Google Workspace. Los administradores deben configurar las políticas de seguridad y acceso de manera adecuada, utilizando comandos como `gcloud alpha organizations update --security-settings`. Además, la plataforma ofrece herramientas de autenticación y autorización avanzadas, como la autenticación de dos factores y la autorización basada en roles.\n\n",
+    "sources": [
+      {
+        "title": "Google Workspace Updates",
+        "url": "https://workspaceupdates.googleblog.com/"
+      },
+      {
+        "title": "Google Workspace Updates: 2026",
+        "url": "https://workspaceupdates.googleblog.com/2026/"
+      },
+      {
+        "title": "Google Workspace Updates: Google Workspace Updates Weekly Recap - April 24, 2026",
+        "url": "https://workspaceupdates.googleblog.com/2026/04/weekly-recap-04-24-2026.html?m=1"
+      },
+      {
+        "title": "Google Workspace Updates: Seamlessly join meetings on Google Meet hardware with “Connect Room”",
+        "url": "https://workspaceupdates.googleblog.com/2026/04/seamlessly-join-meetings-on-google-meet-hardware-with-Connect-Room.html"
+      },
+      {
+        "title": "What is new in Google Workspace - [Last Update March 2026] | Devoteam",
+        "url": "https://www.devoteam.com/expert-view/what-is-new-in-google-workspace/"
+      }
+    ]
+  },
   "2026-04-22_0926": {
     "slug": "google-workspace",
     "title": "Novedades en Google Workspace",

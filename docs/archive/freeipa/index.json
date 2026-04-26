@@ -1,4 +1,28 @@
 {
+  "2026-04-26_0907": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad Avanzada",
+    "summary": "FreeIPA es una solución de gestión de identidad integrada que proporciona servicios de LDAP, Kerberos y autoridad de certificados. En este artículo, se exploran las características y configuraciones avanzadas de FreeIPA.",
+    "content": "FreeIPA es una herramienta poderosa para la gestión de identidad en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos. Para configurar FreeIPA, es necesario ejecutar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.\n\nUna vez instalado, se puede configurar la autenticación Kerberos utilizando el comando `kinit` para obtener un ticket de autenticación. Luego, se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios al sistema.\n\nLa gestión de acceso basada en host (HBAC) es otra característica importante de FreeIPA. Permite controlar el acceso a los hosts y servicios en función de la identidad del usuario y del host. Se puede configurar HBAC utilizando el comando `ipa hbacrule-add` y especificando las reglas de acceso.\n\nAdemás, FreeIPA proporciona una API de REST para la gestión de identidad, lo que permite la integración con otras herramientas y aplicaciones. Se puede utilizar el comando `ipa api-command` para ejecutar comandos de API y realizar operaciones de gestión de identidad.\n\nLa configuración de FreeIPA también se puede realizar utilizando herramientas de automatización como Ansible. Se puede crear un playbook de Ansible para configurar y desplegar FreeIPA en un entorno de red.\n\nEn resumen, FreeIPA es una herramienta avanzada para la gestión de identidad que proporciona una amplia gama de características y configuraciones para controlar el acceso y la autenticación en entornos de red.",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Identity Management planet",
+        "url": "https://planet.freeipa.org/"
+      },
+      {
+        "title": "FreeIPA - Leo's Notes",
+        "url": "https://leo.leung.xyz/wiki/FreeIPA"
+      },
+      {
+        "title": "Deploy FreeIPA Identity Management with Flux CD",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"
+      }
+    ]
+  },
   "2026-04-22_0926": {
     "slug": "freeipa",
     "title": "FreeIPA: Administración de Identidad",

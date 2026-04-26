@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-25T09:01:00.619284+00:00</updated>
+  <updated>2026-04-26T09:08:46.977759+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -96,5 +96,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-22_0926.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para configurar DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos. Se proporcionan ejemplos concretos y comandos para implementar estas configuraciones.</summary>
     <published>2026-04-22T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-26_0907.html</id>
+    <title>Configuración y Optimización de DNS BIND9</title>
+    <updated>2026-04-26T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;El sistema DNS BIND9 es una herramienta de código abierto ampliamente utilizada para la gestión de nombres de dominio en Internet. Para configurar un servidor DNS con BIND9, es necesario crear un archivo de configuración &lt;code&gt;/etc/named.conf&lt;/code&gt; que especifique las zonas y los parámetros de configuración. Por ejemplo, para configurar una zona &lt;code&gt;example.com&lt;/code&gt;, se puede utilizar la siguiente configuración: &lt;code&gt;zone "example.com" { type master; file "/etc/named/example.com.zone"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad del servidor DNS, se puede configurar DNSSEC, que utiliza criptografía para autenticar y verificar la integridad de los registros DNS. Para configurar DNSSEC, es necesario generar una clave de zona y una clave de firma, y luego configurar el servidor DNS para utilizarlas. Por ejemplo, se puede utilizar el comando &lt;code&gt;dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com&lt;/code&gt; para generar una clave de zona.&lt;/p&gt;
+&lt;p&gt;Otra característica importante del servidor DNS es la capacidad de configurar vistas, que permiten especificar diferentes conjuntos de registros DNS para diferentes redes o clientes. Por ejemplo, se puede configurar una vista para la red interna de una empresa y otra vista para la red externa. Para configurar vistas, se puede utilizar la directiva &lt;code&gt;view&lt;/code&gt; en el archivo de configuración &lt;code&gt;/etc/named.conf&lt;/code&gt;. Por ejemplo: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento del servidor DNS, se puede configurar el registro de logs para monitorear el tráfico DNS y detectar posibles problemas. Por ejemplo, se puede utilizar la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo de configuración &lt;code&gt;/etc/named.conf&lt;/code&gt; para especificar el nivel de registro y el archivo de registro. Por ejemplo: &lt;code&gt;logging { channel default_log { file "/var/log/named.log" versions 3 size 5m; print-time yes; }; category default { default_log; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, para proteger el servidor DNS contra ataques de malware y spam, se puede configurar RPZ (Response Policy Zone), que permite especificar reglas para bloquear o rechazar respuestas DNS maliciosas. Por ejemplo, se puede utilizar la directiva &lt;code&gt;response-policy&lt;/code&gt; en el archivo de configuración &lt;code&gt;/etc/named.conf&lt;/code&gt; para especificar una zona de política de respuesta. Por ejemplo: &lt;code&gt;response-policy { zone "rpz.example.com"; };&lt;/code&gt;,&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración y optimización de DNS BIND9 requiere una comprensión profunda de las características y parámetros de configuración del servidor DNS. Al seguir las mejores prácticas y configurar las características de seguridad y rendimiento, se puede garantizar la estabilidad y la seguridad del servidor DNS.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre la configuración y optimización de DNS BIND9, se pueden consultar las fuentes oficiales de ISC y otros recursos en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://lists.isc.org/pipermail/bind-users/2026-April/110553.html"&gt;BIND 9.21+/9.22: parent-centric delegations and no TTL-based ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/"&gt;The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/spatiumddi/spatiumddi/blob/main/docs/drivers/DNS_DRIVERS.md"&gt;spatiumddi/docs/drivers/DNS_DRIVERS.md at main - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-26_0907.html"/>
+    <summary>El sistema DNS BIND9 es una herramienta fundamental para la gestión de nombres de dominio en Internet. En este artículo, se presentan las mejores prácticas para la configuración y optimización de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs.</summary>
+    <published>2026-04-26T09:07:00+00:00</published>
   </entry>
 </feed>

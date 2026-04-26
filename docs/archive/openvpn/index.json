@@ -1,4 +1,24 @@
 {
+  "2026-04-26_0907": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Seguridad y Tunneling",
+    "summary": "OpenVPN es una herramienta de tunneling que permite crear conexiones seguras entre redes. En este artículo, se presentan las novedades y mejores prácticas para implementar OpenVPN de manera efectiva.",
+    "content": "\nOpenVPN es una herramienta de código abierto que permite crear túneles seguros entre redes. La versión más reciente, OpenVPN 2.7.2, incluye correcciones de seguridad importantes, como la solución a la vulnerabilidad CVE-2026-40215, que podría permitir la fuga de datos de paquetes en un handshake de TLS. Para instalar OpenVPN, se puede utilizar el comando `sudo apt-get install openvpn` en sistemas basados en Debian.\n\nLa configuración de OpenVPN requiere la creación de certificados y claves. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650` para generar un certificado autofirmado. Luego, se debe configurar el archivo de configuración de OpenVPN, que normalmente se encuentra en `/etc/openvpn/server.conf`. En este archivo, se deben especificar los parámetros de conexión, como el protocolo, el puerto y la dirección IP del servidor.\n\nPara mejorar la seguridad de la conexión, se pueden implementar medidas de hardening, como la autenticación de dos factores y la restricción de acceso a ciertos recursos. Se puede utilizar el comando `sudo openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN. En cuanto a la conexión de sitios, se puede utilizar el comando `sudo openvpn --config /etc/openvpn/client.conf` para conectar a un servidor OpenVPN.\n\nLa versión 2.7.2 de OpenVPN también incluye soporte para OpenSSL 4.0, lo que permite una mayor seguridad y compatibilidad con otros sistemas. Para actualizar a la versión más reciente de OpenVPN, se puede utilizar el comando `sudo apt-get update && sudo apt-get install openvpn`.\n\nEn resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras entre redes. La versión 2.7.2 incluye correcciones de seguridad importantes y soporte para OpenSSL 4.0. Para implementar OpenVPN de manera efectiva, se deben seguir las mejores prácticas de seguridad y configuración.\n\n",
+    "sources": [
+      {
+        "title": "Downloads – community wiki - OpenVPN",
+        "url": "https://community.openvpn.net/Downloads"
+      },
+      {
+        "title": "2026-04-22 – community wiki",
+        "url": "https://community.openvpn.net/Meetings/2026/2026-04-22/source"
+      },
+      {
+        "title": "2026-04-15 – community wiki",
+        "url": "https://community.openvpn.net/Meetings/2026/2026-04-15/source"
+      }
+    ]
+  },
   "2026-04-22_0926": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

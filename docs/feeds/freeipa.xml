@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-25T09:01:00.618199+00:00</updated>
+  <updated>2026-04-26T09:08:46.976028+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -209,5 +209,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-22_0926.html"/>
     <summary>FreeIPA es una plataforma de administración de identidad que proporciona servicios de LDAP, Kerberos y autoridad de certificados. En este artículo, se explora cómo implementar y configurar FreeIPA en un entorno de Kubernetes utilizando Flux CD.</summary>
     <published>2026-04-22T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-26_0907.html</id>
+    <title>FreeIPA: Gestión de Identidad Avanzada</title>
+    <updated>2026-04-26T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta poderosa para la gestión de identidad en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos. Para configurar FreeIPA, es necesario ejecutar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; y seguir las instrucciones del asistente de instalación.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar la autenticación Kerberos utilizando el comando &lt;code&gt;kinit&lt;/code&gt; para obtener un ticket de autenticación. Luego, se puede utilizar el comando &lt;code&gt;ipa user-add&lt;/code&gt; para agregar nuevos usuarios al sistema.&lt;/p&gt;
+&lt;p&gt;La gestión de acceso basada en host (HBAC) es otra característica importante de FreeIPA. Permite controlar el acceso a los hosts y servicios en función de la identidad del usuario y del host. Se puede configurar HBAC utilizando el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; y especificando las reglas de acceso.&lt;/p&gt;
+&lt;p&gt;Además, FreeIPA proporciona una API de REST para la gestión de identidad, lo que permite la integración con otras herramientas y aplicaciones. Se puede utilizar el comando &lt;code&gt;ipa api-command&lt;/code&gt; para ejecutar comandos de API y realizar operaciones de gestión de identidad.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA también se puede realizar utilizando herramientas de automatización como Ansible. Se puede crear un playbook de Ansible para configurar y desplegar FreeIPA en un entorno de red.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta avanzada para la gestión de identidad que proporciona una amplia gama de características y configuraciones para controlar el acceso y la autenticación en entornos de red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://planet.freeipa.org/"&gt;FreeIPA Identity Management planet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://leo.leung.xyz/wiki/FreeIPA"&gt;FreeIPA - Leo's Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"&gt;Deploy FreeIPA Identity Management with Flux CD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-26_0907.html"/>
+    <summary>FreeIPA es una solución de gestión de identidad integrada que proporciona servicios de LDAP, Kerberos y autoridad de certificados. En este artículo, se exploran las características y configuraciones avanzadas de FreeIPA.</summary>
+    <published>2026-04-26T09:07:00+00:00</published>
   </entry>
 </feed>

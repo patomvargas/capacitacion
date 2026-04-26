@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-25T09:01:00.620076+00:00</updated>
+  <updated>2026-04-26T09:08:46.979329+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -199,5 +199,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-22_0926.html"/>
     <summary>OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.</summary>
     <published>2026-04-22T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-26_0907.html</id>
+    <title>OpenVPN: Seguridad y Tunneling</title>
+    <updated>2026-04-26T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite crear túneles seguros entre redes. La versión más reciente, OpenVPN 2.7.2, incluye correcciones de seguridad importantes, como la solución a la vulnerabilidad CVE-2026-40215, que podría permitir la fuga de datos de paquetes en un handshake de TLS. Para instalar OpenVPN, se puede utilizar el comando &lt;code&gt;sudo apt-get install openvpn&lt;/code&gt; en sistemas basados en Debian.&lt;/p&gt;
+&lt;p&gt;La configuración de OpenVPN requiere la creación de certificados y claves. Se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650&lt;/code&gt; para generar un certificado autofirmado. Luego, se debe configurar el archivo de configuración de OpenVPN, que normalmente se encuentra en &lt;code&gt;/etc/openvpn/server.conf&lt;/code&gt;. En este archivo, se deben especificar los parámetros de conexión, como el protocolo, el puerto y la dirección IP del servidor.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de la conexión, se pueden implementar medidas de hardening, como la autenticación de dos factores y la restricción de acceso a ciertos recursos. Se puede utilizar el comando &lt;code&gt;sudo openvpn --config /etc/openvpn/server.conf&lt;/code&gt; para iniciar el servidor OpenVPN. En cuanto a la conexión de sitios, se puede utilizar el comando &lt;code&gt;sudo openvpn --config /etc/openvpn/client.conf&lt;/code&gt; para conectar a un servidor OpenVPN.&lt;/p&gt;
+&lt;p&gt;La versión 2.7.2 de OpenVPN también incluye soporte para OpenSSL 4.0, lo que permite una mayor seguridad y compatibilidad con otros sistemas. Para actualizar a la versión más reciente de OpenVPN, se puede utilizar el comando &lt;code&gt;sudo apt-get update &amp;&amp; sudo apt-get install openvpn&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras entre redes. La versión 2.7.2 incluye correcciones de seguridad importantes y soporte para OpenSSL 4.0. Para implementar OpenVPN de manera efectiva, se deben seguir las mejores prácticas de seguridad y configuración.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Downloads"&gt;Downloads – community wiki - OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Meetings/2026/2026-04-22/source"&gt;2026-04-22 – community wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Meetings/2026/2026-04-15/source"&gt;2026-04-15 – community wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-26_0907.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que permite crear conexiones seguras entre redes. En este artículo, se presentan las novedades y mejores prácticas para implementar OpenVPN de manera efectiva.</summary>
+    <published>2026-04-26T09:07:00+00:00</published>
   </entry>
 </feed>

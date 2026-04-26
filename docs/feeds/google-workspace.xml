@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml</id>
   <title>Google Workspace - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-25T09:01:00.616206+00:00</updated>
+  <updated>2026-04-26T09:08:46.973605+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -178,5 +178,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-22_0926.html"/>
     <summary>Google Workspace ha introducido varias novedades, incluyendo la función 'Connect Room' para unirse a reuniones de manera más sencilla. Además, se han mejorado las capacidades de seguridad y se han agregado nuevas funciones para mejorar la productividad.</summary>
     <published>2026-04-22T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-26_0907.html</id>
+    <title>Novedades en Google Workspace</title>
+    <updated>2026-04-26T09:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;Google Workspace ha anunciado recientemente la disponibilidad de la función 'Connect Room' para todos los clientes con hardware de Google Meet. Esta característica permite a los usuarios unirse a reuniones de manera más sencilla y eficiente. Para habilitar esta función, los administradores pueden seguir los pasos descritos en la documentación oficial de Google Workspace, utilizando comandos como &lt;code&gt;gcloud auth login&lt;/code&gt; y &lt;code&gt;gcloud alpha meeting-room-controllers update&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La integración de AI en Google Workspace también ha sido objeto de atención, con la presentación de nuevas características y mejoras en la plataforma. Los desarrolladores pueden utilizar la API de AI de Cloudflare Workers para ejecutar modelos de AI en el borde de la red, utilizando comandos como &lt;code&gt;const embeddings = await env.AI.run('@cf/baai/bge-base-en-v1.5', { text: ['How to deploy a web app', 'Best practices for CI/CD'] });&lt;/code&gt;. Esto permite a los desarrolladores crear aplicaciones más inteligentes y personalizadas para los usuarios de Google Workspace.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Google Workspace ha implementado varias mejoras para proteger a los usuarios y sus datos. Los administradores pueden utilizar la consola de administración de Google Workspace para configurar las políticas de seguridad y acceso, utilizando comandos como &lt;code&gt;gcloud alpha organizations update --security-settings&lt;/code&gt;. Además, la plataforma ofrece herramientas de autenticación y autorización avanzadas, como la autenticación de dos factores y la autorización basada en roles.&lt;/p&gt;
+&lt;p&gt;La función 'Connect Room' de Google Workspace es una de las novedades más destacadas en la plataforma. Esta característica permite a los usuarios unirse a reuniones en línea de manera más sencilla y eficiente, utilizando hardware de Google Meet. Para configurar esta función, los administradores pueden seguir los pasos descritos en la documentación oficial de Google Workspace, utilizando comandos como &lt;code&gt;gcloud meeting-room-controllers update --enable-connect-room&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Google Workspace ha anunciado varias novedades y mejoras en su plataforma, incluyendo la función 'Connect Room' y la integración de AI. Los desarrolladores y administradores pueden utilizar estas características para crear aplicaciones más inteligentes y personalizadas, y para proteger a los usuarios y sus datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar que la seguridad es un aspecto fundamental en Google Workspace. Los administradores deben configurar las políticas de seguridad y acceso de manera adecuada, utilizando comandos como &lt;code&gt;gcloud alpha organizations update --security-settings&lt;/code&gt;. Además, la plataforma ofrece herramientas de autenticación y autorización avanzadas, como la autenticación de dos factores y la autorización basada en roles.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/"&gt;Google Workspace Updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/2026/"&gt;Google Workspace Updates: 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/2026/04/weekly-recap-04-24-2026.html?m=1"&gt;Google Workspace Updates: Google Workspace Updates Weekly Recap - April 24, 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://workspaceupdates.googleblog.com/2026/04/seamlessly-join-meetings-on-google-meet-hardware-with-Connect-Room.html"&gt;Google Workspace Updates: Seamlessly join meetings on Google Meet hardware with “Connect Room”&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.devoteam.com/expert-view/what-is-new-in-google-workspace/"&gt;What is new in Google Workspace - [Last Update March 2026] | Devoteam&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-04-26_0907.html"/>
+    <summary>Google Workspace introduce nuevas características y mejoras en su plataforma, incluyendo la función 'Connect Room' para reuniones en línea. Además, se presentan actualizaciones en la integración de AI y mejoras en la seguridad.</summary>
+    <published>2026-04-26T09:07:00+00:00</published>
   </entry>
 </feed>
