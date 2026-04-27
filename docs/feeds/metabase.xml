@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-26T09:08:46.987894+00:00</updated>
+  <updated>2026-04-27T10:23:25.794781+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -147,5 +147,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-19_0900.html"/>
     <summary>Metabase es una herramienta de análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. En este artículo, se presentan las novedades y mejoras recientes en Metabase, incluyendo la actualización de Netty y la personalización de Metabot.</summary>
     <published>2026-04-19T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-27_1022.html</id>
+    <title>Mejoras y Novedades en Metabase</title>
+    <updated>2026-04-27T10:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de análisis de datos que permite a los usuarios crear queries, dashboards y embeddings personalizados. Recientemente, se han realizado varias actualizaciones en la plataforma, como la mejora en la administración de permisos para administradores delegados y la actualización de la API para incluir nuevas funcionalidades.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la actualización en la administración de permisos, que permite a los administradores delegados tener un control más granular sobre los accesos y permisos de los usuarios. Esto se logra mediante la configuración de &lt;code&gt;scoped collection permission updates&lt;/code&gt; en la interfaz de administración de Metabase. Además, se han realizado mejoras en la API para incluir nuevas funcionalidades, como la capacidad de crear y gestionar &lt;code&gt;custom expressions&lt;/code&gt; mediante comandos como &lt;code&gt;GET /api/expressions&lt;/code&gt; y &lt;code&gt;POST /api/expressions&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Metabase es su capacidad para crear dashboards personalizados. Los usuarios pueden crear dashboards utilizando &lt;code&gt;queries&lt;/code&gt; y &lt;code&gt;visualizaciones&lt;/code&gt; para mostrar datos de manera efectiva. Sin embargo, es importante tener en cuenta que se han reportado algunos problemas con la indexación de búsqueda, como se muestra en el issue #73001, que puede causar errores de &lt;code&gt;StackOverflowError&lt;/code&gt;. Para solucionar este problema, se puede intentar reiniciar el servidor de Metabase o ajustar la configuración de la indexación de búsqueda.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Metabase ofrece varias funcionalidades para proteger los datos de los usuarios. Una de ellas es la capacidad de configurar &lt;code&gt;Data Residency Toggles&lt;/code&gt; para el Metabot, lo que permite a los administradores controlar dónde se almacenan los datos de los usuarios. Esto se logra mediante la configuración de &lt;code&gt;data residency toggles&lt;/code&gt; en la interfaz de administración de Metabase.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Metabase es una herramienta en constante evolución, y se pueden encontrar recursos y guías para su implementación y configuración en la documentación oficial y en repositorios de GitHub, como el Self-Hosting-Guide de mikeroyal.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. Con las últimas actualizaciones y mejoras, los usuarios pueden aprovechar al máximo las capacidades de la plataforma para crear soluciones personalizadas y efectivas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/72863"&gt;Issue #72863&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/73001"&gt;Issue #73001&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/73013"&gt;Issue #73013&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mikeroyal/Self-Hosting-Guide"&gt;Self-Hosting-Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-27_1022.html"/>
+    <summary>Metabase es una herramienta de análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. En este artículo, se presentan las últimas novedades y mejoras en Metabase, incluyendo actualizaciones en la administración y la API.</summary>
+    <published>2026-04-27T10:22:00+00:00</published>
   </entry>
 </feed>

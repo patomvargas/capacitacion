@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejoras y Novedades en Metabase - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+    </div>
+
+    <h1>Mejoras y Novedades en Metabase</h1>
+    <div class="meta">2026-04-27 1022 · Metabase</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear queries, dashboards y embeddings personalizados. Recientemente, se han realizado varias actualizaciones en la plataforma, como la mejora en la administración de permisos para administradores delegados y la actualización de la API para incluir nuevas funcionalidades.</p>
+            
+        
+            
+        
+            
+            <p>Una de las novedades más destacadas es la actualización en la administración de permisos, que permite a los administradores delegados tener un control más granular sobre los accesos y permisos de los usuarios. Esto se logra mediante la configuración de `scoped collection permission updates` en la interfaz de administración de Metabase. Además, se han realizado mejoras en la API para incluir nuevas funcionalidades, como la capacidad de crear y gestionar `custom expressions` mediante comandos como `GET /api/expressions` y `POST /api/expressions`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Metabase es su capacidad para crear dashboards personalizados. Los usuarios pueden crear dashboards utilizando `queries` y `visualizaciones` para mostrar datos de manera efectiva. Sin embargo, es importante tener en cuenta que se han reportado algunos problemas con la indexación de búsqueda, como se muestra en el issue #73001, que puede causar errores de `StackOverflowError`. Para solucionar este problema, se puede intentar reiniciar el servidor de Metabase o ajustar la configuración de la indexación de búsqueda.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Metabase ofrece varias funcionalidades para proteger los datos de los usuarios. Una de ellas es la capacidad de configurar `Data Residency Toggles` para el Metabot, lo que permite a los administradores controlar dónde se almacenan los datos de los usuarios. Esto se logra mediante la configuración de `data residency toggles` en la interfaz de administración de Metabase.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Metabase es una herramienta en constante evolución, y se pueden encontrar recursos y guías para su implementación y configuración en la documentación oficial y en repositorios de GitHub, como el Self-Hosting-Guide de mikeroyal.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. Con las últimas actualizaciones y mejoras, los usuarios pueden aprovechar al máximo las capacidades de la plataforma para crear soluciones personalizadas y efectivas.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/72863" target="_blank">Issue #72863</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/73001" target="_blank">Issue #73001</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/73013" target="_blank">Issue #73013</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/mikeroyal/Self-Hosting-Guide" target="_blank">Self-Hosting-Guide</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-19_0900.html">&larr; 2026-04-19 0900</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

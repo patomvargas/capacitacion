@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
-    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <title>ChatGPT: Mejores prácticas y configuraciones - ChatGPT</title>
+    <link rel="alternate" type="application/atom+xml" title="ChatGPT" href="https://patomvargas.github.io/capacitacion/feeds/chatgpt.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/chatgpt/">ChatGPT</a>
     </div>
 
-    <h1>OpenShift: Mejoras y Novedades</h1>
-    <div class="meta">2026-04-23 0948 · OpenShift</div>
+    <h1>ChatGPT: Mejores prácticas y configuraciones</h1>
+    <div class="meta">2026-04-27 1022 · ChatGPT</div>
 
     <div class="content">
         
         
             
-            <p>OpenShift es una plataforma de contenedores que se encuentra en constante evolución. Recientemente, se han publicado varias actualizaciones de seguridad, como la RHSA-2026:8423, que incluye parches para vulnerabilidades importantes. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc get clusterversion` o acceder a la consola web de OpenShift.</p>
+            <p>La ingeniería de prompts es fundamental para obtener resultados precisos con ChatGPT. Según Cameron Tabatabaie, es importante escribir prompts claros y concisos, utilizando técnicas como la especificación de tareas y la provisión de contexto relevante. Por ejemplo, se puede utilizar el comando `prompt()` para generar un prompt personalizado.</p>
             
         
             
         
             
-            <p>La plataforma también ofrece herramientas para mejorar la seguridad y la confiabilidad, como los contenedores sandboxeados. La versión 1.12 de Red Hat OpenShift sandboxed containers ofrece soporte para contenedores en bare metal, lo que permite una mayor flexibilidad y seguridad. Para implementar contenedores sandboxeados, se puede utilizar el comando `oc create -f sandboxed-container.yaml`.</p>
+        
+            
+            <p>Para integrar ChatGPT con APIs, se pueden utilizar plugins como el Codex-plugin-cc, que permite utilizar Codex desde Claude Code para revisar código o delegar tareas. Esto se puede configurar utilizando el comando `codex-plugin-cc --install`.</p>
             
         
             
         
             
-            <p>En cuanto a la monitorización, OpenShift ofrece herramientas como Prometheus y Grafana para recopilar y visualizar métricas. Se puede utilizar el comando `oc get pods -n openshift-monitoring` para verificar el estado de los pods de monitorización. Además, se puede configurar la autenticación OAuth para permitir el acceso seguro a la plataforma. Para configurar OAuth, se puede utilizar el comando `oc create -f oauth-config.yaml`.</p>
+        
+            
+            <p>Además, es importante considerar las mejores prácticas para la configuración de ChatGPT, como la especificación de la versión del modelo y la configuración de la autenticación. Por ejemplo, se puede utilizar el comando `chatgpt --version 5.5` para especificar la versión del modelo.</p>
             
         
             
         
             
-            <p>La migración a OpenShift también es un tema importante. Se puede utilizar la herramienta `oc adm migrate` para migrar aplicaciones desde otras plataformas. Es importante tener en cuenta que la migración puede requerir cambios en la configuración y el código de la aplicación. Para obtener más información sobre la migración, se puede consultar la documentación oficial de OpenShift.</p>
+        
+            
+            <p>La integración de ChatGPT con herramientas de desarrollo como GitHub también es posible, utilizando aplicaciones como la GitHub App Agent, que permite invocar un agente en cada nueva solicitud de pull request o actualización. Esto se puede configurar utilizando el comando `github-app-agent --config`.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece mejoras y novedades constantes. Es importante estar al tanto de las últimas actualizaciones y best practices para aprovechar al máximo sus características y herramientas.</p>
+        
+            
+            <p>En resumen, la utilización efectiva de ChatGPT requiere una combinación de ingeniería de prompts, integración con APIs y configuración de plugins. Al seguir estas mejores prácticas, los desarrolladores pueden aprovechar al máximo las capacidades de ChatGPT.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre OpenShift, se puede consultar la documentación oficial y las fuentes citadas a continuación.</p>
+        
+            
+            <p>Por último, es importante mencionar que la investigación y el desarrollo en torno a ChatGPT están en constante evolución, por lo que es importante estar al tanto de las últimas novedades y actualizaciones. Esto se puede hacer siguiendo fuentes como el blog de Cloudflare, que presenta artículos sobre la utilización de ChatGPT en entornos de desarrollo.</p>
             
         
     </div>
@@ -105,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:8423" target="_blank">RHSA-2026:8423</a>
+                <a href="https://cam-tabatabaie.medium.com/prompt-engineering-best-practices-how-to-write-better-prompts-for-chatgpt-claude-and-gemini-7b1cd9c0bb02" target="_blank">Prompt engineering best practices</a>
                 
             </li>
             
             <li>
-                <a href="https://www.redhat.com/en/blog/red-hat-openshift-sandboxed-containers-112-and-red-hat-build-trustee-11-bring-confidential-computing-bare-metal-and-ai-workloads" target="_blank">Red Hat OpenShift sandboxed containers 1.12</a>
+                <a href="https://github.com/openai/codex-plugin-cc" target="_blank">Codex-plugin-cc</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.openshift.com/" target="_blank">OpenShift Documentation</a>
+                <a href="https://gist.github.com/xb01/feea1b6532323bef67568da1ee32b7b7" target="_blank">GitHub App Agent</a>
                 
             </li>
             
@@ -126,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-19_0900.html">&larr; 2026-04-19 0900</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/chatgpt/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-27_1022.html">2026-04-27 1022 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-04-27_1022": {
+    "slug": "chatgpt",
+    "title": "ChatGPT: Mejores prácticas y configuraciones",
+    "summary": "En este artículo, se presentan las mejores prácticas y configuraciones para utilizar ChatGPT de manera efectiva. Se cubren temas como la ingeniería de prompts, la integración con APIs y la configuración de plugins.",
+    "content": "La ingeniería de prompts es fundamental para obtener resultados precisos con ChatGPT. Según Cameron Tabatabaie, es importante escribir prompts claros y concisos, utilizando técnicas como la especificación de tareas y la provisión de contexto relevante. Por ejemplo, se puede utilizar el comando `prompt()` para generar un prompt personalizado.\n\n \nPara integrar ChatGPT con APIs, se pueden utilizar plugins como el Codex-plugin-cc, que permite utilizar Codex desde Claude Code para revisar código o delegar tareas. Esto se puede configurar utilizando el comando `codex-plugin-cc --install`.\n\n \nAdemás, es importante considerar las mejores prácticas para la configuración de ChatGPT, como la especificación de la versión del modelo y la configuración de la autenticación. Por ejemplo, se puede utilizar el comando `chatgpt --version 5.5` para especificar la versión del modelo.\n\n \nLa integración de ChatGPT con herramientas de desarrollo como GitHub también es posible, utilizando aplicaciones como la GitHub App Agent, que permite invocar un agente en cada nueva solicitud de pull request o actualización. Esto se puede configurar utilizando el comando `github-app-agent --config`.\n\n \nEn resumen, la utilización efectiva de ChatGPT requiere una combinación de ingeniería de prompts, integración con APIs y configuración de plugins. Al seguir estas mejores prácticas, los desarrolladores pueden aprovechar al máximo las capacidades de ChatGPT.\n\n \nPor último, es importante mencionar que la investigación y el desarrollo en torno a ChatGPT están en constante evolución, por lo que es importante estar al tanto de las últimas novedades y actualizaciones. Esto se puede hacer siguiendo fuentes como el blog de Cloudflare, que presenta artículos sobre la utilización de ChatGPT en entornos de desarrollo.",
+    "sources": [
+      {
+        "title": "Prompt engineering best practices",
+        "url": "https://cam-tabatabaie.medium.com/prompt-engineering-best-practices-how-to-write-better-prompts-for-chatgpt-claude-and-gemini-7b1cd9c0bb02"
+      },
+      {
+        "title": "Codex-plugin-cc",
+        "url": "https://github.com/openai/codex-plugin-cc"
+      },
+      {
+        "title": "GitHub App Agent",
+        "url": "https://gist.github.com/xb01/feea1b6532323bef67568da1ee32b7b7"
+      }
+    ]
+  },
   "2026-04-15_0926": {
     "slug": "chatgpt",
     "title": "Integración de ChatGPT con APIs y Herramientas",

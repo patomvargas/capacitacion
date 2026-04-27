@@ -1,4 +1,28 @@
 {
+  "2026-04-27_1022": {
+    "slug": "metabase",
+    "title": "Mejoras y Novedades en Metabase",
+    "summary": "Metabase es una herramienta de análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. En este artículo, se presentan las últimas novedades y mejoras en Metabase, incluyendo actualizaciones en la administración y la API.",
+    "content": "\nMetabase es una herramienta de análisis de datos que permite a los usuarios crear queries, dashboards y embeddings personalizados. Recientemente, se han realizado varias actualizaciones en la plataforma, como la mejora en la administración de permisos para administradores delegados y la actualización de la API para incluir nuevas funcionalidades.\n\nUna de las novedades más destacadas es la actualización en la administración de permisos, que permite a los administradores delegados tener un control más granular sobre los accesos y permisos de los usuarios. Esto se logra mediante la configuración de `scoped collection permission updates` en la interfaz de administración de Metabase. Además, se han realizado mejoras en la API para incluir nuevas funcionalidades, como la capacidad de crear y gestionar `custom expressions` mediante comandos como `GET /api/expressions` y `POST /api/expressions`.\n\nOtra característica importante de Metabase es su capacidad para crear dashboards personalizados. Los usuarios pueden crear dashboards utilizando `queries` y `visualizaciones` para mostrar datos de manera efectiva. Sin embargo, es importante tener en cuenta que se han reportado algunos problemas con la indexación de búsqueda, como se muestra en el issue #73001, que puede causar errores de `StackOverflowError`. Para solucionar este problema, se puede intentar reiniciar el servidor de Metabase o ajustar la configuración de la indexación de búsqueda.\n\nEn cuanto a la seguridad, Metabase ofrece varias funcionalidades para proteger los datos de los usuarios. Una de ellas es la capacidad de configurar `Data Residency Toggles` para el Metabot, lo que permite a los administradores controlar dónde se almacenan los datos de los usuarios. Esto se logra mediante la configuración de `data residency toggles` en la interfaz de administración de Metabase.\n\nFinalmente, es importante mencionar que Metabase es una herramienta en constante evolución, y se pueden encontrar recursos y guías para su implementación y configuración en la documentación oficial y en repositorios de GitHub, como el Self-Hosting-Guide de mikeroyal.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. Con las últimas actualizaciones y mejoras, los usuarios pueden aprovechar al máximo las capacidades de la plataforma para crear soluciones personalizadas y efectivas.\n\n",
+    "sources": [
+      {
+        "title": "Issue #72863",
+        "url": "https://github.com/metabase/metabase/issues/72863"
+      },
+      {
+        "title": "Issue #73001",
+        "url": "https://github.com/metabase/metabase/issues/73001"
+      },
+      {
+        "title": "Issue #73013",
+        "url": "https://github.com/metabase/metabase/issues/73013"
+      },
+      {
+        "title": "Self-Hosting-Guide",
+        "url": "https://github.com/mikeroyal/Self-Hosting-Guide"
+      }
+    ]
+  },
   "2026-04-19_0900": {
     "slug": "metabase",
     "title": "Metabase: Novedades y Mejoras",
