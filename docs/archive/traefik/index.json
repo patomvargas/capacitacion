@@ -1,4 +1,24 @@
 {
+  "2026-04-28_1020": {
+    "slug": "traefik",
+    "title": "Traefik: Mejoras de Seguridad y Funcionalidades",
+    "summary": "Traefik ha lanzado actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers. Estas actualizaciones incluyen la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrigen vulnerabilidades como CVE-2026-40912 y CVE-2026-39858.",
+    "content": "\nTraefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han lanzado varias actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers.\n\nUna de las actualizaciones más importantes es la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrige varias vulnerabilidades, incluyendo CVE-2026-40912 y CVE-2026-39858. Estas actualizaciones también incluyen mejoras en la gestión de logs y la compatibilidad con Redis Sentinel.\n\nPara configurar Traefik con Redis Sentinel, se puede utilizar el siguiente comando: `traefik --log.level=DEBUG --providers.redis.sentinel.addr=redis-sentinel:26379`. También se puede utilizar el proveedor de Docker para configurar Traefik: `docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock traefik:v2.11.43`.\n\nAdemás, se han agregado nuevas funcionalidades para mejorar la observabilidad y la gestión de routers y middlewares. Por ejemplo, se puede utilizar el comando `traefik --api.insecure=true --api.dashboard=true` para habilitar el panel de control de Traefik.\n\nEn cuanto a la configuración de Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/etc/traefik/acme.json`. Esto permitirá a Traefik obtener certificados SSL/TLS automáticamente.\n\nEn resumen, las últimas actualizaciones de Traefik incluyen mejoras de seguridad, nuevas funcionalidades y compatibilidad con diferentes proveedores de servicios. Estas actualizaciones pueden ser configuradas utilizando comandos y configuraciones específicas, como las mencionadas anteriormente.\n\nPara obtener más información sobre las últimas actualizaciones y funcionalidades de Traefik, se recomienda consultar la documentación oficial y las fuentes mencionadas a continuación.",
+    "sources": [
+      {
+        "title": "Document how to bind on privileged ports #1781",
+        "url": "https://github.com/traefik/traefik-helm-chart/issues/1781"
+      },
+      {
+        "title": "New Security Update for Traefik 2.11 (2.11.43), 3.6 (3.6.14 ...",
+        "url": "https://community.traefik.io/t/new-security-update-for-traefik-2-11-2-11-43-3-6-3-6-14-and-3-7-3-7-0-rc-2/29834"
+      },
+      {
+        "title": "SUSE + Traefik: Unified Governance Across VMs & Containers",
+        "url": "https://traefik.io/blog/govern-suse-rancher-vms-rke2-and-k3s-with-traefik"
+      }
+    ]
+  },
   "2026-04-20_1003": {
     "slug": "traefik",
     "title": "Traefik: Routers, Middlewares y Providers",

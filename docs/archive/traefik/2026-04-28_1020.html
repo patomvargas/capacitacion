@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Mejoras de Seguridad y Funcionalidades - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Mejoras de Seguridad y Funcionalidades</h1>
+    <div class="meta">2026-04-28 1020 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Traefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han lanzado varias actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers.</p>
+            
+        
+            
+        
+            
+            <p>Una de las actualizaciones más importantes es la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrige varias vulnerabilidades, incluyendo CVE-2026-40912 y CVE-2026-39858. Estas actualizaciones también incluyen mejoras en la gestión de logs y la compatibilidad con Redis Sentinel.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar Traefik con Redis Sentinel, se puede utilizar el siguiente comando: `traefik --log.level=DEBUG --providers.redis.sentinel.addr=redis-sentinel:26379`. También se puede utilizar el proveedor de Docker para configurar Traefik: `docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock traefik:v2.11.43`.</p>
+            
+        
+            
+        
+            
+            <p>Además, se han agregado nuevas funcionalidades para mejorar la observabilidad y la gestión de routers y middlewares. Por ejemplo, se puede utilizar el comando `traefik --api.insecure=true --api.dashboard=true` para habilitar el panel de control de Traefik.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/etc/traefik/acme.json`. Esto permitirá a Traefik obtener certificados SSL/TLS automáticamente.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, las últimas actualizaciones de Traefik incluyen mejoras de seguridad, nuevas funcionalidades y compatibilidad con diferentes proveedores de servicios. Estas actualizaciones pueden ser configuradas utilizando comandos y configuraciones específicas, como las mencionadas anteriormente.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre las últimas actualizaciones y funcionalidades de Traefik, se recomienda consultar la documentación oficial y las fuentes mencionadas a continuación.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik-helm-chart/issues/1781" target="_blank">Document how to bind on privileged ports #1781</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://community.traefik.io/t/new-security-update-for-traefik-2-11-2-11-43-3-6-3-6-14-and-3-7-3-7-0-rc-2/29834" target="_blank">New Security Update for Traefik 2.11 (2.11.43), 3.6 (3.6.14 ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://traefik.io/blog/govern-suse-rancher-vms-rke2-and-k3s-with-traefik" target="_blank">SUSE + Traefik: Unified Governance Across VMs & Containers</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html">&larr; 2026-04-20 1003</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

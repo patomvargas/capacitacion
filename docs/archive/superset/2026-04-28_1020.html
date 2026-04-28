@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejoras y Novedades en Superset - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Mejoras y Novedades en Superset</h1>
+    <div class="meta">2026-04-28 1020 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. Una de las características más recientes es la adición de una opción de pre-filtro para el control de grano temporal, lo que permite a los usuarios limitar las opciones disponibles en este control. Por ejemplo, se puede utilizar el comando `superset config.py` para configurar las opciones de pre-filtro.</p>
+            
+        
+            
+        
+            
+            <p>La ordenación descendente en gráficos de barras también ha sido mejorada en Superset. En versiones anteriores, la ordenación descendente no funcionaba correctamente cuando se aplicaba una dimensión, lo que causaba que los datos se ordenaran alfabéticamente en lugar de por el valor total. Sin embargo, este problema ha sido resuelto en versiones más recientes de Superset.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica interesante en Superset es la capacidad de enviar alertas a servicios de mensajería como Mattermost. Sin embargo, algunos usuarios han reportado problemas con la configuración de las alertas, incluyendo la forma en que se envían los payloads JSON. Para configurar las alertas en Superset, se puede utilizar el comando `superset alert` y especificar el payload JSON utilizando el parámetro `--payload`.</p>
+            
+        
+            
+        
+            
+            <p>La administración de Superset también ha sido mejorada en versiones recientes. Los administradores pueden utilizar la interfaz de línea de comandos de Superset para realizar tareas como la creación de usuarios y la configuración de permisos. Por ejemplo, se puede utilizar el comando `superset user` para crear un nuevo usuario y asignarle permisos específicos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. Las mejoras y novedades más recientes en Superset incluyen la adición de una opción de pre-filtro para el control de grano temporal, la resolución de problemas con la ordenación descendente en gráficos de barras y la mejora de la administración.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset y las fuentes proporcionadas a continuación.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38654" target="_blank">Please release 6.1.0 or at least 6.0.1 #38654</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38283" target="_blank">Inquiry Regarding 400 Error When Sending Superset Alert to Mattermost Incoming Webhook #38283</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38245" target="_blank">ECharts Bar Chart: Cannot sort descending by total metric when applying a Dimension (Sorts Alphabetically instead) #38245</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/38306" target="_blank">Add pre-filter option to Time Grain dashboard control #38306</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/orgs/community/discussions/16925" target="_blank">An option to highlight a “Note” and “Warning” using blockquote (Beta)</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-24_0948.html">&larr; 2026-04-24 0948</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

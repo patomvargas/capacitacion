@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.2: Mejoras y Novedades - Airflow</title>
+    <title>Apache Airflow 3.2: Mejoras y Best Practices - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow 3.2: Mejoras y Novedades</h1>
-    <div class="meta">2026-04-16 0925 · Airflow</div>
+    <h1>Apache Airflow 3.2: Mejoras y Best Practices</h1>
+    <div class="meta">2026-04-28 1020 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Apache Airflow 3.2 es la última versión del popular sistema de gestión de flujos de trabajo. Esta versión introduce varias mejoras y novedades, incluyendo la partición de activos, que permite una gestión más granular de los pipelines. Para aprovechar esta función, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego configurar la partición de activos en el archivo `airflow.cfg`.</p>
+        
+            
+            <p>La versión 3.2 de Apache Airflow introduce cambios importantes en la arquitectura y el modelo de ejecución de tareas. Una de las mejoras más destacadas es la partición de activos (Asset partitioning) para la orquestación de pipelines granulares. Esto permite a los desarrolladores crear pipelines más complejos y escalables.</p>
             
         
             
         
             
-            <p>La separación de tareas es otra de las mejoras importantes en Airflow 3.2. Esto permite una mayor flexibilidad y escalabilidad en la gestión de flujos de trabajo. Para separar tareas, se puede utilizar el comando `airflow tasks list` para ver la lista de tareas disponibles y luego utilizar el comando `airflow tasks run` para ejecutar una tarea específica.</p>
+            <p>Para aprovechar esta función, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego crear un nuevo DAG con el comando `airflow dags create`. Luego, se puede definir la partición de activos en el archivo `airflow.cfg` utilizando la configuración `asset_partitioning_enabled = True`.</p>
             
         
             
         
             
-            <p>La nueva interfaz de usuario de Airflow 3.2 es otra de las mejoras significativas. La interfaz de usuario ha sido reescrita en React y ofrece una experiencia de usuario más intuitiva y fácil de usar. Para acceder a la interfaz de usuario, se puede utilizar el comando `airflow webserver` para iniciar el servidor web y luego acceder a la dirección `http://localhost:8080` en el navegador.</p>
+            <p>Otra mejora importante es la introducción de la función de deadline de alertas sincrónicas (synchronous deadline alert callbacks). Esto permite a los desarrolladores crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Para utilizar esta función, se puede agregar un sensor de deadline a un DAG utilizando el comando `airflow sensors add`.</p>
             
         
             
         
             
-            <p>En cuanto a la escalabilidad, Airflow 3.2 incluye varias mejoras, incluyendo la capacidad de ejecutar múltiples instancias del servidor web y la capacidad de utilizar bases de datos distribuidas. Para configurar la escalabilidad, se puede utilizar el comando `airflow config list` para ver la lista de configuraciones disponibles y luego utilizar el comando `airflow config set` para establecer una configuración específica.</p>
+            <p>La versión 3.2 también introduce mejoras en la autorización de tareas y la gestión de usuarios. Se puede utilizar el comando `airflow users create` para crear nuevos usuarios y asignarles permisos utilizando el comando `airflow roles add`. Luego, se puede definir la autorización de tareas en el archivo `airflow.cfg` utilizando la configuración `authorization_enabled = True`.</p>
             
         
             
         
             
-            <p>En resumen, Airflow 3.2 es una versión importante que introduce varias mejoras y novedades en la gestión de flujos de trabajo. La partición de activos, la separación de tareas y la nueva interfaz de usuario son solo algunas de las mejoras que hacen de Airflow 3.2 una herramienta más poderosa y flexible para la gestión de flujos de trabajo.</p>
+            <p>En cuanto a best practices, se recomienda utilizar la función de partición de activos para crear pipelines más escalables y complejos. También se recomienda utilizar la función de deadline de alertas sincrónicas para crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Finalmente, se recomienda utilizar la función de autorización de tareas para gestionar los permisos de los usuarios y proteger la seguridad de la plataforma.</p>
             
         
             
         
             
-            <p>Para más información sobre Airflow 3.2, se puede consultar la documentación oficial en el sitio web de Apache Airflow. También se pueden consultar las fuentes citadas al final de este artículo para obtener más información sobre las mejoras y novedades de Airflow 3.2.</p>
+            <p>Para más información, se puede consultar la documentación oficial de Apache Airflow en <https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html>.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
+                <a href="https://airflow.apache.org/blog/airflow-3.2.0/" target="_blank">Apache Airflow 3.2.0</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/blog/airflow-3.2.0/" target="_blank">Apache Airflow 3.2.0: Data-Aware Workflows at Scale</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html" target="_blank">Release Notes — Airflow 3.2.0 Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://www.astronomer.io/blog/apache-airflow-3-2-release/" target="_blank">Introducing Apache Airflow 3.2</a>
+                <a href="https://github.com/apache/airflow/tree/main" target="_blank">GitHub - apache/airflow</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-12_0856.html">&larr; 2026-04-12 0856</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-16_0925.html">&larr; 2026-04-16 0925</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-28_1020.html">2026-04-28 1020 &rarr;</a>
             
         </div>
     </div>

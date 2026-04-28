@@ -1,4 +1,32 @@
 {
+  "2026-04-28_1020": {
+    "slug": "superset",
+    "title": "Mejoras y Novedades en Superset",
+    "summary": "Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. En este artículo, se presentan algunas de las mejoras y novedades más recientes en Superset, incluyendo la adición de una opción de pre-filtro para el control de grano temporal y la resolución de problemas con la ordenación descendente en gráficos de barras.",
+    "content": "Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. Una de las características más recientes es la adición de una opción de pre-filtro para el control de grano temporal, lo que permite a los usuarios limitar las opciones disponibles en este control. Por ejemplo, se puede utilizar el comando `superset config.py` para configurar las opciones de pre-filtro.\n\nLa ordenación descendente en gráficos de barras también ha sido mejorada en Superset. En versiones anteriores, la ordenación descendente no funcionaba correctamente cuando se aplicaba una dimensión, lo que causaba que los datos se ordenaran alfabéticamente en lugar de por el valor total. Sin embargo, este problema ha sido resuelto en versiones más recientes de Superset.\n\nOtra característica interesante en Superset es la capacidad de enviar alertas a servicios de mensajería como Mattermost. Sin embargo, algunos usuarios han reportado problemas con la configuración de las alertas, incluyendo la forma en que se envían los payloads JSON. Para configurar las alertas en Superset, se puede utilizar el comando `superset alert` y especificar el payload JSON utilizando el parámetro `--payload`.\n\nLa administración de Superset también ha sido mejorada en versiones recientes. Los administradores pueden utilizar la interfaz de línea de comandos de Superset para realizar tareas como la creación de usuarios y la configuración de permisos. Por ejemplo, se puede utilizar el comando `superset user` para crear un nuevo usuario y asignarle permisos específicos.\n\nEn resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. Las mejoras y novedades más recientes en Superset incluyen la adición de una opción de pre-filtro para el control de grano temporal, la resolución de problemas con la ordenación descendente en gráficos de barras y la mejora de la administración.\n\nPara obtener más información sobre Superset y sus características, se puede consultar la documentación oficial de Superset y las fuentes proporcionadas a continuación.",
+    "sources": [
+      {
+        "title": "Please release 6.1.0 or at least 6.0.1 #38654",
+        "url": "https://github.com/apache/superset/discussions/38654"
+      },
+      {
+        "title": "Inquiry Regarding 400 Error When Sending Superset Alert to Mattermost Incoming Webhook #38283",
+        "url": "https://github.com/apache/superset/discussions/38283"
+      },
+      {
+        "title": "ECharts Bar Chart: Cannot sort descending by total metric when applying a Dimension (Sorts Alphabetically instead) #38245",
+        "url": "https://github.com/apache/superset/discussions/38245"
+      },
+      {
+        "title": "Add pre-filter option to Time Grain dashboard control #38306",
+        "url": "https://github.com/apache/superset/discussions/38306"
+      },
+      {
+        "title": "An option to highlight a “Note” and “Warning” using blockquote (Beta)",
+        "url": "https://github.com/orgs/community/discussions/16925"
+      }
+    ]
+  },
   "2026-04-24_0948": {
     "slug": "superset",
     "title": "Superset: Exploración y Visualización de Datos",

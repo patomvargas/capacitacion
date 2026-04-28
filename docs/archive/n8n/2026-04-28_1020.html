@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Automatización con n8n - n8n</title>
+    <title>Automatización de Flujos de Trabajo con n8n - n8n</title>
     <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
@@ -57,48 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Automatización con n8n</h1>
-    <div class="meta">2026-04-20 1003 · n8n</div>
+    <h1>Automatización de Flujos de Trabajo con n8n</h1>
+    <div class="meta">2026-04-28 1020 · n8n</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>n8n es una herramienta de automatización que se basa en nodos y flujos de trabajo. Los nodos son los bloques de construcción de los flujos de trabajo y pueden ser configurados para realizar tareas específicas, como la lectura de datos de una base de datos o el envío de correos electrónicos. Los flujos de trabajo son la secuencia de nodos que se ejecutan en un orden determinado.</p>
+            <p>n8n es una plataforma de automatización de flujos de trabajo que ofrece una gran variedad de nodos y servicios para integrar con diferentes aplicaciones y servicios. Para empezar a trabajar con n8n, es necesario instalar el software y configurar el entorno. Se puede hacer esto utilizando el comando `docker run -p 5678:5678 n8nio/n8n` para iniciar el servidor de n8n.</p>
             
         
             
         
             
-            <p>Para empezar a trabajar con n8n, es importante configurar las credenciales y los webhooks. Las credenciales son necesarias para autenticar con los servicios externos, como bases de datos o APIs, mientras que los webhooks permiten a n8n recibir notificaciones de eventos externos. Por ejemplo, se puede configurar un webhook para que se active cuando se crea un nuevo registro en una base de datos, lo que desencadenaría un flujo de trabajo en n8n.</p>
+        
+            
+            <p>La seguridad es un aspecto importante a considerar al trabajar con n8n. Recientemente, se han descubierto vulnerabilidades en algunos nodos, como el nodo GSuiteAdmin y el nodo Merge, que pueden permitir la ejecución de código arbitrario. Para mitigar estos riesgos, se puede deshabilitar estos nodos agregando `n8n-nodes-base.xml` y `n8n-nodes-base.merge` a la variable de entorno `NODES_EXCLUDE`. Por ejemplo, se puede utilizar el comando `export NODES_EXCLUDE=n8n-nodes-base.xml,n8n-nodes-base.merge` para deshabilitar estos nodos.</p>
             
         
             
         
             
-            <p>Uno de los aspectos más importantes de n8n es la gestión de errores. Es fundamental configurar los nodos para que manejen los errores de manera explícita, utilizando nodos de error o ramas condicionales que capturen los fallos y notifiquen al administrador. Por ejemplo, se puede utilizar el nodo `Error Trigger` para capturar los errores y enviar una notificación por correo electrónico o mensaje de texto. También es importante utilizar comandos como `n8n start` para iniciar el servidor de n8n y `n8n stop` para detenerlo.</p>
+        
+            
+            <p>Otra forma de mejorar la seguridad es utilizar el modo Loki, que permite transformar un documento de requisitos de producto en un producto completamente construido, probado y desplegado sin intervención manual. También se puede utilizar el proyecto codex-skills, que proporciona una colección de herramientas para instalar, actualizar y gestionar habilidades de Codex de manera sencilla.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante mencionar la vulnerabilidad de contaminación de prototipo (prototype pollution) en el nodo GSuiteAdmin, que puede ser explotada por un atacante para ejecutar código arbitrario. Para mitigar esta vulnerabilidad, es importante actualizar el nodo GSuiteAdmin a la versión más reciente y configurar las credenciales de manera segura.</p>
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante manejar los errores de manera explícita y agregar nodos de error o ramas IF que capturen los fallos y notifiquen al equipo en Slack o Telegram. También es importante utilizar el modo de automatización de n8n para ahorrar tiempo y aumentar la productividad. Por ejemplo, se puede utilizar el nodo de automatización de correo electrónico para enviar correos electrónicos automáticamente o el nodo de programación de redes sociales para programar publicaciones en redes sociales.</p>
             
         
             
         
             
-            <p>n8n también ofrece una variedad de integraciones con servicios externos, como bases de datos, APIs y servicios de mensajería. Por ejemplo, se puede utilizar el nodo `MySQL` para conectarse a una base de datos MySQL y ejecutar consultas. También se puede utilizar el nodo `Slack` para enviar mensajes de notificación a un canal de Slack.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que n8n ofrece una gran variedad de integraciones con diferentes servicios y aplicaciones, lo que lo hace una herramienta muy versátil y útil para la automatización de flujos de trabajo. Se puede encontrar más información sobre las integraciones disponibles en la documentación oficial de n8n.</p>
             
         
             
         
             
-            <p>En resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Sin embargo, es importante configurar las credenciales y los webhooks de manera segura, gestionar los errores de manera explícita y mantener las integraciones actualizadas para evitar vulnerabilidades de seguridad.</p>
-            
         
+            
+            <p>En resumen, n8n es una plataforma de automatización de flujos de trabajo muy potente y versátil que ofrece una gran variedad de nodos y servicios para integrar con diferentes aplicaciones y servicios. Al seguir las mejores prácticas y utilizar las herramientas y servicios disponibles, se puede aprovechar al máximo el potencial de n8n y aumentar la productividad y la eficiencia en la automatización de flujos de trabajo.</p>
             
         
     </div>
@@ -109,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/issues/27491" target="_blank">Anthropic's Node Connection #27491</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-mxrg-77hm-89hv" target="_blank">Prototype Pollution in GSuiteAdmin node parameters leads to RCE</a>
                 
             </li>
             
             <li>
-                <a href="https://anilpise7.medium.com/n8n-for-beginners-the-complete-end-to-end-guide-with-real-workflows-code-webhooks-apis-and-d683b129dfa2" target="_blank">n8n for Beginners: The Complete End-to-End Guide with Real Workflows, Code, Webhooks, APIs, and Automation</a>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-58qr-rcgv-642v" target="_blank">RCE via SQL Mode of Merge Node</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc" target="_blank">Best n8n Workflows To Build with Claude Code (2026)</a>
                 
             </li>
             
@@ -129,7 +135,7 @@
             </li>
             
             <li>
-                <a href="https://dev.to/ciphernutz/n8n-error-handling-best-practices-stop-letting-silent-failures-break-your-business-1j8h" target="_blank">n8n Error Handling Best Practices: Stop Letting Silent Failures Break Your Business</a>
+                <a href="https://dev.to/_c53314221f3ba7d2574d/5-n8n-automation-workflows-that-save-me-10-hours-every-week-mid" target="_blank">5 n8n Automation Workflows That Save Me 10+ Hours Every Week</a>
                 
             </li>
             
@@ -140,12 +146,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-12_0856.html">&larr; 2026-04-12 0856</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-20_1003.html">&larr; 2026-04-20 1003</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-28_1020.html">2026-04-28 1020 &rarr;</a>
             
         </div>
     </div>

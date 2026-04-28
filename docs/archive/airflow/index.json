@@ -1,4 +1,24 @@
 {
+  "2026-04-28_1020": {
+    "slug": "airflow",
+    "title": "Apache Airflow 3.2: Mejoras y Best Practices",
+    "summary": "Apache Airflow 3.2 introduce mejoras significativas en la orquestación de pipelines y la autorización de tareas. En este artículo, se presentan las novedades y best practices para aprovechar al máximo la plataforma.",
+    "content": "\nLa versión 3.2 de Apache Airflow introduce cambios importantes en la arquitectura y el modelo de ejecución de tareas. Una de las mejoras más destacadas es la partición de activos (Asset partitioning) para la orquestación de pipelines granulares. Esto permite a los desarrolladores crear pipelines más complejos y escalables.\n\nPara aprovechar esta función, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego crear un nuevo DAG con el comando `airflow dags create`. Luego, se puede definir la partición de activos en el archivo `airflow.cfg` utilizando la configuración `asset_partitioning_enabled = True`.\n\nOtra mejora importante es la introducción de la función de deadline de alertas sincrónicas (synchronous deadline alert callbacks). Esto permite a los desarrolladores crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Para utilizar esta función, se puede agregar un sensor de deadline a un DAG utilizando el comando `airflow sensors add`.\n\nLa versión 3.2 también introduce mejoras en la autorización de tareas y la gestión de usuarios. Se puede utilizar el comando `airflow users create` para crear nuevos usuarios y asignarles permisos utilizando el comando `airflow roles add`. Luego, se puede definir la autorización de tareas en el archivo `airflow.cfg` utilizando la configuración `authorization_enabled = True`.\n\nEn cuanto a best practices, se recomienda utilizar la función de partición de activos para crear pipelines más escalables y complejos. También se recomienda utilizar la función de deadline de alertas sincrónicas para crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Finalmente, se recomienda utilizar la función de autorización de tareas para gestionar los permisos de los usuarios y proteger la seguridad de la plataforma.\n\nPara más información, se puede consultar la documentación oficial de Apache Airflow en <https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html>.\n\n  ",
+    "sources": [
+      {
+        "title": "Apache Airflow 3.2.0",
+        "url": "https://airflow.apache.org/blog/airflow-3.2.0/"
+      },
+      {
+        "title": "Release Notes — Airflow 3.2.0 Documentation",
+        "url": "https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html"
+      },
+      {
+        "title": "GitHub - apache/airflow",
+        "url": "https://github.com/apache/airflow/tree/main"
+      }
+    ]
+  },
   "2026-04-16_0925": {
     "slug": "airflow",
     "title": "Airflow 3.2: Mejoras y Novedades",

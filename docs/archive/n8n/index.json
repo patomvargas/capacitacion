@@ -1,4 +1,32 @@
 {
+  "2026-04-28_1020": {
+    "slug": "n8n",
+    "title": "Automatización de Flujos de Trabajo con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo que permite combinar la construcción visual con código personalizado. En este artículo, se presentan las mejores prácticas y novedades en la automatización de flujos de trabajo con n8n.",
+    "content": "n8n es una plataforma de automatización de flujos de trabajo que ofrece una gran variedad de nodos y servicios para integrar con diferentes aplicaciones y servicios. Para empezar a trabajar con n8n, es necesario instalar el software y configurar el entorno. Se puede hacer esto utilizando el comando `docker run -p 5678:5678 n8nio/n8n` para iniciar el servidor de n8n.\n\n \n La seguridad es un aspecto importante a considerar al trabajar con n8n. Recientemente, se han descubierto vulnerabilidades en algunos nodos, como el nodo GSuiteAdmin y el nodo Merge, que pueden permitir la ejecución de código arbitrario. Para mitigar estos riesgos, se puede deshabilitar estos nodos agregando `n8n-nodes-base.xml` y `n8n-nodes-base.merge` a la variable de entorno `NODES_EXCLUDE`. Por ejemplo, se puede utilizar el comando `export NODES_EXCLUDE=n8n-nodes-base.xml,n8n-nodes-base.merge` para deshabilitar estos nodos.\n\n \n Otra forma de mejorar la seguridad es utilizar el modo Loki, que permite transformar un documento de requisitos de producto en un producto completamente construido, probado y desplegado sin intervención manual. También se puede utilizar el proyecto codex-skills, que proporciona una colección de herramientas para instalar, actualizar y gestionar habilidades de Codex de manera sencilla.\n\n \n En cuanto a las mejores prácticas, es importante manejar los errores de manera explícita y agregar nodos de error o ramas IF que capturen los fallos y notifiquen al equipo en Slack o Telegram. También es importante utilizar el modo de automatización de n8n para ahorrar tiempo y aumentar la productividad. Por ejemplo, se puede utilizar el nodo de automatización de correo electrónico para enviar correos electrónicos automáticamente o el nodo de programación de redes sociales para programar publicaciones en redes sociales.\n\n \n Finalmente, es importante mencionar que n8n ofrece una gran variedad de integraciones con diferentes servicios y aplicaciones, lo que lo hace una herramienta muy versátil y útil para la automatización de flujos de trabajo. Se puede encontrar más información sobre las integraciones disponibles en la documentación oficial de n8n.\n\n \n En resumen, n8n es una plataforma de automatización de flujos de trabajo muy potente y versátil que ofrece una gran variedad de nodos y servicios para integrar con diferentes aplicaciones y servicios. Al seguir las mejores prácticas y utilizar las herramientas y servicios disponibles, se puede aprovechar al máximo el potencial de n8n y aumentar la productividad y la eficiencia en la automatización de flujos de trabajo.",
+    "sources": [
+      {
+        "title": "Prototype Pollution in GSuiteAdmin node parameters leads to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-mxrg-77hm-89hv"
+      },
+      {
+        "title": "RCE via SQL Mode of Merge Node",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-58qr-rcgv-642v"
+      },
+      {
+        "title": "Best n8n Workflows To Build with Claude Code (2026)",
+        "url": "https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc"
+      },
+      {
+        "title": "How To Use n8n To Automate Your Business",
+        "url": "https://travisnicholson.medium.com/how-to-use-n8n-to-automate-your-business-4585e6d8dfd2"
+      },
+      {
+        "title": "5 n8n Automation Workflows That Save Me 10+ Hours Every Week",
+        "url": "https://dev.to/_c53314221f3ba7d2574d/5-n8n-automation-workflows-that-save-me-10-hours-every-week-mid"
+      }
+    ]
+  },
   "2026-04-20_1003": {
     "slug": "n8n",
     "title": "Automatización con n8n",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-27T10:23:25.795920+00:00</updated>
+  <updated>2026-04-28T10:22:03.990413+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -211,5 +211,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-16_0925.html"/>
     <summary>Apache Airflow 3.2 introduce mejoras significativas en la gestión de flujos de trabajo, incluyendo la partición de activos y la separación de tareas. Esta versión también incluye una nueva interfaz de usuario y mejoras en la escalabilidad.</summary>
     <published>2026-04-16T09:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-28_1020.html</id>
+    <title>Apache Airflow 3.2: Mejoras y Best Practices</title>
+    <updated>2026-04-28T10:20:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 3.2 de Apache Airflow introduce cambios importantes en la arquitectura y el modelo de ejecución de tareas. Una de las mejoras más destacadas es la partición de activos (Asset partitioning) para la orquestación de pipelines granulares. Esto permite a los desarrolladores crear pipelines más complejos y escalables.&lt;/p&gt;
+&lt;p&gt;Para aprovechar esta función, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos y luego crear un nuevo DAG con el comando &lt;code&gt;airflow dags create&lt;/code&gt;. Luego, se puede definir la partición de activos en el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; utilizando la configuración &lt;code&gt;asset_partitioning_enabled = True&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la introducción de la función de deadline de alertas sincrónicas (synchronous deadline alert callbacks). Esto permite a los desarrolladores crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Para utilizar esta función, se puede agregar un sensor de deadline a un DAG utilizando el comando &lt;code&gt;airflow sensors add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 3.2 también introduce mejoras en la autorización de tareas y la gestión de usuarios. Se puede utilizar el comando &lt;code&gt;airflow users create&lt;/code&gt; para crear nuevos usuarios y asignarles permisos utilizando el comando &lt;code&gt;airflow roles add&lt;/code&gt;. Luego, se puede definir la autorización de tareas en el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; utilizando la configuración &lt;code&gt;authorization_enabled = True&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a best practices, se recomienda utilizar la función de partición de activos para crear pipelines más escalables y complejos. También se recomienda utilizar la función de deadline de alertas sincrónicas para crear tareas que se ejecuten de manera sincrónica y reciban alertas en tiempo real. Finalmente, se recomienda utilizar la función de autorización de tareas para gestionar los permisos de los usuarios y proteger la seguridad de la plataforma.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Apache Airflow en &lt;https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/blog/airflow-3.2.0/"&gt;Apache Airflow 3.2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/3.2.0/release_notes.html"&gt;Release Notes — Airflow 3.2.0 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main"&gt;GitHub - apache/airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-28_1020.html"/>
+    <summary>Apache Airflow 3.2 introduce mejoras significativas en la orquestación de pipelines y la autorización de tareas. En este artículo, se presentan las novedades y best practices para aprovechar al máximo la plataforma.</summary>
+    <published>2026-04-28T10:20:00+00:00</published>
   </entry>
 </feed>

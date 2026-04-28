@@ -1,4 +1,36 @@
 {
+  "2026-04-28_1020": {
+    "slug": "metallb",
+    "title": "MetalLB: Configuración y Troubleshooting",
+    "summary": "MetalLB es un componente clave en entornos de Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. En este artículo, exploraremos las mejores prácticas para configurar y solucionar problemas en MetalLB.",
+    "content": "\nMetalLB es un load balancer de código abierto que se integra perfectamente con Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. Una de las características más importantes de MetalLB es su capacidad para funcionar en modo L2, lo que permite la configuración de servicios de red en un entorno de red local.\n\nPara configurar MetalLB en modo L2, es necesario crear un objeto de configuración que especifique el modo de operación y la configuración de red. Por ejemplo, se puede crear un objeto de configuración como el siguiente: \n```yaml\napiVersion: metallb.io/v1beta1\nkind: Config\nmetadata:\n  name: metallb-config\nspec:\n  peers:\n  - name: peer1\n    ip: 10.0.0.1\n  addressPools:\n  - name: pool1\n    addresses:\n    - 10.0.0.10-10.0.0.20\n```\nEste objeto de configuración especifica un modo de operación en L2 y una configuración de red que incluye un grupo de direcciones IP.\n\nOtra característica importante de MetalLB es su capacidad para funcionar en modo BGP, lo que permite la configuración de servicios de red que se integran con routers BGP. Para configurar MetalLB en modo BGP, es necesario crear un objeto de configuración que especifique el modo de operación y la configuración de BGP. Por ejemplo, se puede crear un objeto de configuración como el siguiente: \n```yaml\napiVersion: metallb.io/v1beta1\nkind: Config\nmetadata:\n  name: metallb-config\nspec:\n  peers:\n  - name: peer1\n    ip: 10.0.0.1\n  bgp:\n    peers:\n    - name: peer1\n      ip: 10.0.0.1\n      asn: 64512\n```\nEste objeto de configuración especifica un modo de operación en BGP y una configuración de BGP que incluye un grupo de peers BGP.\n\nEn cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el sistema de orquestación de contenedores. Para integrar MetalLB con Kubernetes, es necesario crear un objeto de configuración que especifique la configuración de red y el modo de operación. Por ejemplo, se puede crear un objeto de configuración como el siguiente: \n```yaml\napiVersion: v1\nkind: Service\nmetadata:\n  name: servicio1\nspec:\n  selector:\n    app: app1\n  ports:\n  - name: http\n    port: 80\n    targetPort: 8080\n  type: LoadBalancer\n```\nEste objeto de configuración especifica un servicio de red que se integra con MetalLB y que utiliza el modo de operación en L2.\n\nEn cuanto a la solución de problemas, MetalLB proporciona una variedad de herramientas y comandos para solucionar problemas de configuración y operación. Por ejemplo, se puede utilizar el comando `kubectl get` para obtener información sobre la configuración de MetalLB: \n```bash\nkubectl get config -o yaml\n```\nEste comando devuelve la configuración de MetalLB en formato YAML.\n\nEn resumen, MetalLB es un componente clave en entornos de Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. En este artículo, hemos explorado las mejores prácticas para configurar y solucionar problemas en MetalLB, incluyendo la configuración en modo L2 y BGP, y la integración con Kubernetes.\n\n  ",
+    "sources": [
+      {
+        "title": "Shared-IP services can split across nodes when matched by different L2Advertisements #3025",
+        "url": "https://github.com/metallb/metallb/issues/3025"
+      },
+      {
+        "title": "2026-03-18-deploy-kubernetes-podman-desktop",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-deploy-kubernetes-podman-desktop"
+      },
+      {
+        "title": "2026-03-18-configure-registries-podman-desktop",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-configure-registries-podman-desktop"
+      },
+      {
+        "title": "2026-03-14-install-cilium-on-k3s",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-14-install-cilium-on-k3s"
+      },
+      {
+        "title": "2026-02-16-how-to-capture-a-generalized-image-from-an-azure-virtual-machine",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-02-16-how-to-capture-a-generalized-image-from-an-azure-virtual-machine"
+      },
+      {
+        "title": "How to Use Multiple Conditions with and/or in Ansible when",
+        "url": "https://github.com/OneUptime/blog/blob/master/posts/2026-02-21-how-to-use-multiple-conditions-with-and-or-in-ansible-when/README.md"
+      }
+    ]
+  },
   "2026-04-24_0948": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

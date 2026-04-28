@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Configuración y Troubleshooting - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Configuración y Troubleshooting</h1>
+    <div class="meta">2026-04-28 1020 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>MetalLB es un load balancer de código abierto que se integra perfectamente con Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. Una de las características más importantes de MetalLB es su capacidad para funcionar en modo L2, lo que permite la configuración de servicios de red en un entorno de red local.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar MetalLB en modo L2, es necesario crear un objeto de configuración que especifique el modo de operación y la configuración de red. Por ejemplo, se puede crear un objeto de configuración como el siguiente:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: Config</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: metallb-config</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- name: peer1</p>
+            
+        
+            
+            <p>ip: 10.0.0.1</p>
+            
+        
+            
+            <p>addressPools:</p>
+            
+        
+            
+            <p>- name: pool1</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 10.0.0.10-10.0.0.20</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este objeto de configuración especifica un modo de operación en L2 y una configuración de red que incluye un grupo de direcciones IP.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de MetalLB es su capacidad para funcionar en modo BGP, lo que permite la configuración de servicios de red que se integran con routers BGP. Para configurar MetalLB en modo BGP, es necesario crear un objeto de configuración que especifique el modo de operación y la configuración de BGP. Por ejemplo, se puede crear un objeto de configuración como el siguiente:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: Config</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: metallb-config</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- name: peer1</p>
+            
+        
+            
+            <p>ip: 10.0.0.1</p>
+            
+        
+            
+            <p>bgp:</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- name: peer1</p>
+            
+        
+            
+            <p>ip: 10.0.0.1</p>
+            
+        
+            
+            <p>asn: 64512</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este objeto de configuración especifica un modo de operación en BGP y una configuración de BGP que incluye un grupo de peers BGP.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el sistema de orquestación de contenedores. Para integrar MetalLB con Kubernetes, es necesario crear un objeto de configuración que especifique la configuración de red y el modo de operación. Por ejemplo, se puede crear un objeto de configuración como el siguiente:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: Service</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: servicio1</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>selector:</p>
+            
+        
+            
+            <p>app: app1</p>
+            
+        
+            
+            <p>ports:</p>
+            
+        
+            
+            <p>- name: http</p>
+            
+        
+            
+            <p>port: 80</p>
+            
+        
+            
+            <p>targetPort: 8080</p>
+            
+        
+            
+            <p>type: LoadBalancer</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este objeto de configuración especifica un servicio de red que se integra con MetalLB y que utiliza el modo de operación en L2.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la solución de problemas, MetalLB proporciona una variedad de herramientas y comandos para solucionar problemas de configuración y operación. Por ejemplo, se puede utilizar el comando `kubectl get` para obtener información sobre la configuración de MetalLB:</p>
+            
+        
+            
+            <p>```bash</p>
+            
+        
+            
+            <p>kubectl get config -o yaml</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este comando devuelve la configuración de MetalLB en formato YAML.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es un componente clave en entornos de Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. En este artículo, hemos explorado las mejores prácticas para configurar y solucionar problemas en MetalLB, incluyendo la configuración en modo L2 y BGP, y la integración con Kubernetes.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3025" target="_blank">Shared-IP services can split across nodes when matched by different L2Advertisements #3025</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-deploy-kubernetes-podman-desktop" target="_blank">2026-03-18-deploy-kubernetes-podman-desktop</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-18-configure-registries-podman-desktop" target="_blank">2026-03-18-configure-registries-podman-desktop</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-14-install-cilium-on-k3s" target="_blank">2026-03-14-install-cilium-on-k3s</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-02-16-how-to-capture-a-generalized-image-from-an-azure-virtual-machine" target="_blank">2026-02-16-how-to-capture-a-generalized-image-from-an-azure-virtual-machine</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OneUptime/blog/blob/master/posts/2026-02-21-how-to-use-multiple-conditions-with-and-or-in-ansible-when/README.md" target="_blank">How to Use Multiple Conditions with and/or in Ansible when</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-24_0948.html">&larr; 2026-04-24 0948</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

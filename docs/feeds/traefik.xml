@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-27T10:23:25.799876+00:00</updated>
+  <updated>2026-04-28T10:22:03.996394+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -105,5 +105,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html"/>
     <summary>Traefik es un proxy inverso y balanceador de carga que permite gestionar tráfico de red de manera eficiente. En este artículo, se explora cómo configurar routers, middlewares y providers en Traefik.</summary>
     <published>2026-04-20T10:03:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html</id>
+    <title>Traefik: Mejoras de Seguridad y Funcionalidades</title>
+    <updated>2026-04-28T10:20:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han lanzado varias actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers.&lt;/p&gt;
+&lt;p&gt;Una de las actualizaciones más importantes es la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrige varias vulnerabilidades, incluyendo CVE-2026-40912 y CVE-2026-39858. Estas actualizaciones también incluyen mejoras en la gestión de logs y la compatibilidad con Redis Sentinel.&lt;/p&gt;
+&lt;p&gt;Para configurar Traefik con Redis Sentinel, se puede utilizar el siguiente comando: &lt;code&gt;traefik --log.level=DEBUG --providers.redis.sentinel.addr=redis-sentinel:26379&lt;/code&gt;. También se puede utilizar el proveedor de Docker para configurar Traefik: &lt;code&gt;docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock traefik:v2.11.43&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se han agregado nuevas funcionalidades para mejorar la observabilidad y la gestión de routers y middlewares. Por ejemplo, se puede utilizar el comando &lt;code&gt;traefik --api.insecure=true --api.dashboard=true&lt;/code&gt; para habilitar el panel de control de Traefik.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Let's Encrypt, se puede utilizar el siguiente comando: &lt;code&gt;traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/etc/traefik/acme.json&lt;/code&gt;. Esto permitirá a Traefik obtener certificados SSL/TLS automáticamente.&lt;/p&gt;
+&lt;p&gt;En resumen, las últimas actualizaciones de Traefik incluyen mejoras de seguridad, nuevas funcionalidades y compatibilidad con diferentes proveedores de servicios. Estas actualizaciones pueden ser configuradas utilizando comandos y configuraciones específicas, como las mencionadas anteriormente.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las últimas actualizaciones y funcionalidades de Traefik, se recomienda consultar la documentación oficial y las fuentes mencionadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik-helm-chart/issues/1781"&gt;Document how to bind on privileged ports #1781&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.traefik.io/t/new-security-update-for-traefik-2-11-2-11-43-3-6-3-6-14-and-3-7-3-7-0-rc-2/29834"&gt;New Security Update for Traefik 2.11 (2.11.43), 3.6 (3.6.14 ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://traefik.io/blog/govern-suse-rancher-vms-rke2-and-k3s-with-traefik"&gt;SUSE + Traefik: Unified Governance Across VMs &amp; Containers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html"/>
+    <summary>Traefik ha lanzado actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers. Estas actualizaciones incluyen la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrigen vulnerabilidades como CVE-2026-40912 y CVE-2026-39858.</summary>
+    <published>2026-04-28T10:20:00+00:00</published>
   </entry>
 </feed>
