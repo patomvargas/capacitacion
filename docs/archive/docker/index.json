@@ -1,4 +1,28 @@
 {
+  "2026-04-29_1010": {
+    "slug": "docker",
+    "title": "Docker: Mejores prácticas y novedades",
+    "summary": "En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se proporcionan ejemplos prácticos y comandos para mejorar la comprensión y el uso de Docker.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores de manera eficiente y segura. Una de las mejores prácticas en Docker es utilizar multi-stage builds, que permite dividir el proceso de construcción en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para construir una imagen desde un Dockerfile.\n\nOtra herramienta importante en Docker es Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. Se puede utilizar el comando `docker-compose up` para iniciar los contenedores definidos en el archivo `docker-compose.yml`. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando herramientas como Docker Security Scanning, que analiza las imágenes de Docker en busca de vulnerabilidades.\n\nEn cuanto a las novedades, Docker ha anunciado la disponibilidad general de Docker Offload, que permite a los desarrolladores ejecutar contenedores de manera remota en la nube o en un clúster de Kubernetes. También se ha mejorado la compatibilidad con Windows, lo que permite a los desarrolladores crear y ejecutar contenedores en Windows de manera más eficiente. Para más información, se puede consultar el sitio web oficial de Docker y las fuentes proporcionadas.\n\nPara mejorar la comprensión y el uso de Docker, se recomienda consultar las fuentes proporcionadas y seguir las mejores prácticas recomendadas. Por ejemplo, se puede utilizar el comando `docker ps` para ver los contenedores en ejecución, y `docker logs` para ver los registros de los contenedores. También se puede utilizar `docker exec` para ejecutar comandos dentro de un contenedor en ejecución.\n\nEn resumen, Docker es una herramienta poderosa y flexible que requiere una comprensión profunda de sus características y mejores prácticas. Al seguir las recomendaciones y utilizar las herramientas proporcionadas, los desarrolladores y administradores de sistemas pueden mejorar la eficiencia y la seguridad de sus aplicaciones y servicios.\n\nFinalmente, es importante mencionar que la comunidad de Docker es muy activa y proporciona muchos recursos y herramientas para ayudar a los desarrolladores y administradores de sistemas a mejorar su comprensión y uso de Docker. Se pueden encontrar muchos ejemplos y tutoriales en el sitio web oficial de Docker y en las fuentes proporcionadas.",
+    "sources": [
+      {
+        "title": "Docker",
+        "url": "https://www.docker.com/"
+      },
+      {
+        "title": "Docker Compose",
+        "url": "https://docs.docker.com/compose/"
+      },
+      {
+        "title": "Docker Security Scanning",
+        "url": "https://docs.docker.com/docker-hub/security-scanning/"
+      },
+      {
+        "title": "Docker Offload",
+        "url": "https://www.docker.com/blog/docker-offload-now-generally-available/"
+      }
+    ]
+  },
   "2026-04-25_0859": {
     "slug": "docker",
     "title": "Mejores prácticas de seguridad en Docker",

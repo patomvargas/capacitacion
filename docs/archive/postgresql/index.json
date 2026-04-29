@@ -1,4 +1,24 @@
 {
+  "2026-04-29_1010": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "En este artículo, se presentan las mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la realización de copias de seguridad. Se discuten también las novedades en la versión 18.3 y las mejoras en la gestión de extensiones en CloudNativePG 1.29.0.",
+    "content": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para garantizar un rendimiento óptimo. Para empezar a optimizar el rendimiento de PostgreSQL, es importante entender cómo funciona el motor de la base de datos y cómo se pueden configurar los parámetros para mejorar el rendimiento. \n\nUna de las formas más efectivas de mejorar el rendimiento de PostgreSQL es mediante la configuración de índices. Los índices permiten al motor de la base de datos localizar rápidamente los datos que se necesitan, lo que reduce el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`. \n\nOtra forma de mejorar el rendimiento de PostgreSQL es mediante la replicación. La replicación permite crear copias de la base de datos en diferentes servidores, lo que puede mejorar la disponibilidad y el rendimiento. Para configurar la replicación en PostgreSQL, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -D /var/lib/postgresql/12/main -U postgres -v -P`. \n\nLa versión 18.3 de PostgreSQL incluye varias mejoras en la gestión de extensiones, incluyendo la capacidad de instalar y administrar extensiones de forma más sencilla. CloudNativePG 1.29.0 también ofrece mejoras en la gestión de extensiones, incluyendo la capacidad de instalar y administrar extensiones en entornos de Kubernetes. \n\nPara realizar copias de seguridad de la base de datos, se puede utilizar el comando `pg_dump`. Por ejemplo: `pg_dump -U postgres -d nombre_de_la_base_de_datos > nombre_de_la_copia_de_seguridad.sql`. Es importante realizar copias de seguridad regulares para garantizar la integridad de los datos en caso de una falla del sistema. \n\nEn resumen, la optimización de PostgreSQL requiere una comprensión profunda de cómo funciona el motor de la base de datos y cómo se pueden configurar los parámetros para mejorar el rendimiento. La configuración de índices, la replicación y la realización de copias de seguridad son algunas de las formas más efectivas de mejorar el rendimiento de PostgreSQL.",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "CloudNativePG 1.29.0 Released!",
+        "url": "https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"
+      },
+      {
+        "title": "PostgreSQL Index Usage and Optimization",
+        "url": "https://dev.to/philip_mcclarence_2ef9475/postgresql-index-usage-and-optimization-4jgf"
+      }
+    ]
+  },
   "2026-04-25_0859": {
     "slug": "postgresql",
     "title": "Mejoras en PostgreSQL",

@@ -1,4 +1,24 @@
 {
+  "2026-04-29_1010": {
+    "slug": "ansible",
+    "title": "Ansible: Nuevas Funcionalidades y Mejoras",
+    "summary": "Ansible ha lanzado varias actualizaciones recientemente, incluyendo la versión 2.21.0rc1 y la versión 2.20.5 de ansible-core. Estas actualizaciones incluyen mejoras en la depuración y la seguridad.",
+    "content": "Ansible es una herramienta de automatización de infraestructura muy popular en la industria. Recientemente, ha habido varias actualizaciones importantes en el ecosistema de Ansible. La versión 2.21.0rc1 de ansible-core ha sido lanzada, lo que incluye varias mejoras y correcciones de errores. \n \n Para instalar la última versión de ansible-core, se puede utilizar el comando `pip install ansible-core`. Es importante tener en cuenta que la versión 2.21.0rc1 es una versión de pre-lanzamiento, por lo que es posible que no sea adecuada para entornos de producción. \n \n La versión 2.20.5 de ansible-core también ha sido lanzada, lo que incluye correcciones de errores y mejoras en la depuración. Una de las mejoras incluidas en esta versión es la capacidad de agregar el nombre del host a los mensajes de error de WINRM, lo que facilita la depuración de problemas. \n \n Para aprovechar al máximo las funcionalidades de Ansible, es importante utilizar playbooks y roles de manera efectiva. Un playbook es un archivo que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Un role es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. \n \n La configuración de la inventario de Ansible es otro aspecto importante a considerar. La inventario define los hosts y grupos de hosts que se van a administrar con Ansible. Se puede utilizar el comando `ansible-inventory` para gestionar la inventario. \n \n Finalmente, es importante mencionar que Ansible tiene una comunidad activa y una gran cantidad de recursos disponibles para aprender y mejorar las habilidades. La documentación oficial de Ansible es un recurso valioso para aprender sobre las diferentes funcionalidades y configuraciones de la herramienta.",
+    "sources": [
+      {
+        "title": "New Release: ansible-core v2.21.0rc1",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-21-0rc1/45748"
+      },
+      {
+        "title": "New Release: ansible-core v2.20.5",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-20-5/45715"
+      },
+      {
+        "title": "Add host name to WINRM error message to ease debugging",
+        "url": "https://github.com/ansible/ansible/issues/86749"
+      }
+    ]
+  },
   "2026-04-25_0859": {
     "slug": "ansible",
     "title": "Ansible: Mejoras y Novedades",

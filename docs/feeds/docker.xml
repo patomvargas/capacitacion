@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-28T10:22:04.001084+00:00</updated>
+  <updated>2026-04-29T10:12:00.547395+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -151,5 +151,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-25_0859.html"/>
     <summary>Aprende a proteger tus contenedores y imágenes en Docker con estas mejores prácticas de seguridad. Descubre cómo utilizar imágenes oficiales y verificar la seguridad de tus imágenes.</summary>
     <published>2026-04-25T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-04-29_1010.html</id>
+    <title>Docker: Mejores prácticas y novedades</title>
+    <updated>2026-04-29T10:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores de manera eficiente y segura. Una de las mejores prácticas en Docker es utilizar multi-stage builds, que permite dividir el proceso de construcción en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker build -t mi-imagen .&lt;/code&gt; para construir una imagen desde un Dockerfile.&lt;/p&gt;
+&lt;p&gt;Otra herramienta importante en Docker es Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. Se puede utilizar el comando &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar los contenedores definidos en el archivo &lt;code&gt;docker-compose.yml&lt;/code&gt;. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando herramientas como Docker Security Scanning, que analiza las imágenes de Docker en busca de vulnerabilidades.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, Docker ha anunciado la disponibilidad general de Docker Offload, que permite a los desarrolladores ejecutar contenedores de manera remota en la nube o en un clúster de Kubernetes. También se ha mejorado la compatibilidad con Windows, lo que permite a los desarrolladores crear y ejecutar contenedores en Windows de manera más eficiente. Para más información, se puede consultar el sitio web oficial de Docker y las fuentes proporcionadas.&lt;/p&gt;
+&lt;p&gt;Para mejorar la comprensión y el uso de Docker, se recomienda consultar las fuentes proporcionadas y seguir las mejores prácticas recomendadas. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker ps&lt;/code&gt; para ver los contenedores en ejecución, y &lt;code&gt;docker logs&lt;/code&gt; para ver los registros de los contenedores. También se puede utilizar &lt;code&gt;docker exec&lt;/code&gt; para ejecutar comandos dentro de un contenedor en ejecución.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa y flexible que requiere una comprensión profunda de sus características y mejores prácticas. Al seguir las recomendaciones y utilizar las herramientas proporcionadas, los desarrolladores y administradores de sistemas pueden mejorar la eficiencia y la seguridad de sus aplicaciones y servicios.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Docker es muy activa y proporciona muchos recursos y herramientas para ayudar a los desarrolladores y administradores de sistemas a mejorar su comprensión y uso de Docker. Se pueden encontrar muchos ejemplos y tutoriales en el sitio web oficial de Docker y en las fuentes proporcionadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/"&gt;Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/compose/"&gt;Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/docker-hub/security-scanning/"&gt;Docker Security Scanning&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/docker-offload-now-generally-available/"&gt;Docker Offload&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-29_1010.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se proporcionan ejemplos prácticos y comandos para mejorar la comprensión y el uso de Docker.</summary>
+    <published>2026-04-29T10:10:00+00:00</published>
   </entry>
 </feed>

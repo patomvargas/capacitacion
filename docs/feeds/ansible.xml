@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-28T10:22:04.004086+00:00</updated>
+  <updated>2026-04-29T10:12:00.551864+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -276,5 +276,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-25_0859.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las últimas mejoras y novedades en Ansible, incluyendo la versión 2.20.5 y la versión beta 2.21.0b3.</summary>
     <published>2026-04-25T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-29_1010.html</id>
+    <title>Ansible: Nuevas Funcionalidades y Mejoras</title>
+    <updated>2026-04-29T10:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura muy popular en la industria. Recientemente, ha habido varias actualizaciones importantes en el ecosistema de Ansible. La versión 2.21.0rc1 de ansible-core ha sido lanzada, lo que incluye varias mejoras y correcciones de errores.&lt;/p&gt;
+&lt;p&gt;Para instalar la última versión de ansible-core, se puede utilizar el comando &lt;code&gt;pip install ansible-core&lt;/code&gt;. Es importante tener en cuenta que la versión 2.21.0rc1 es una versión de pre-lanzamiento, por lo que es posible que no sea adecuada para entornos de producción.&lt;/p&gt;
+&lt;p&gt;La versión 2.20.5 de ansible-core también ha sido lanzada, lo que incluye correcciones de errores y mejoras en la depuración. Una de las mejoras incluidas en esta versión es la capacidad de agregar el nombre del host a los mensajes de error de WINRM, lo que facilita la depuración de problemas.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las funcionalidades de Ansible, es importante utilizar playbooks y roles de manera efectiva. Un playbook es un archivo que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Un role es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks.&lt;/p&gt;
+&lt;p&gt;La configuración de la inventario de Ansible es otro aspecto importante a considerar. La inventario define los hosts y grupos de hosts que se van a administrar con Ansible. Se puede utilizar el comando &lt;code&gt;ansible-inventory&lt;/code&gt; para gestionar la inventario.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Ansible tiene una comunidad activa y una gran cantidad de recursos disponibles para aprender y mejorar las habilidades. La documentación oficial de Ansible es un recurso valioso para aprender sobre las diferentes funcionalidades y configuraciones de la herramienta.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-21-0rc1/45748"&gt;New Release: ansible-core v2.21.0rc1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-5/45715"&gt;New Release: ansible-core v2.20.5&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ansible/ansible/issues/86749"&gt;Add host name to WINRM error message to ease debugging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-29_1010.html"/>
+    <summary>Ansible ha lanzado varias actualizaciones recientemente, incluyendo la versión 2.21.0rc1 y la versión 2.20.5 de ansible-core. Estas actualizaciones incluyen mejoras en la depuración y la seguridad.</summary>
+    <published>2026-04-29T10:10:00+00:00</published>
   </entry>
 </feed>

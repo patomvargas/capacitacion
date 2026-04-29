@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejores prácticas para la gestión de infraestructura - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejores prácticas para la gestión de infraestructura</h1>
+    <div class="meta">2026-04-29 1010 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite a los administradores de sistemas y desarrolladores gestionar y provisionar recursos de infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es importante entender los conceptos básicos de la herramienta, como los proveedores, módulos, estado y espacios de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Un proveedor en Terraform es un conector que permite a la herramienta interactuar con un servicio de infraestructura en la nube, como AWS o Azure. Para configurar un proveedor, se puede utilizar el comando `terraform provider` y especificar el nombre del proveedor y la versión. Por ejemplo: `terraform provider aws 4.0.0`.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de estado en Terraform es crucial para mantener la integridad de la infraestructura. El estado de Terraform se almacena en un archivo llamado `terraform.tfstate`, que contiene información sobre los recursos provisionados. Para gestionar el estado, se puede utilizar el comando `terraform state` y opciones como `list`, `show` o `rm`. Por ejemplo: `terraform state list` para listar todos los recursos provisionados.</p>
+            
+        
+            
+        
+            
+            <p>Los módulos en Terraform son bloques de código reutilizables que permiten a los administradores de sistemas y desarrolladores crear y compartir configuraciones de infraestructura. Para crear un módulo, se puede utilizar el comando `terraform module` y especificar el nombre del módulo y la ruta del archivo de configuración. Por ejemplo: `terraform module create mymodule`.</p>
+            
+        
+            
+        
+            
+            <p>Los espacios de trabajo en Terraform permiten a los administradores de sistemas y desarrolladores crear y gestionar múltiples configuraciones de infraestructura de manera independiente. Para crear un espacio de trabajo, se puede utilizar el comando `terraform workspace` y opciones como `new` o `select`. Por ejemplo: `terraform workspace new myworkspace`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y mejoras en Terraform, es importante mencionar que la comunidad de desarrolladores está trabajando constantemente en mejorar la herramienta y agregar nuevas características. Por ejemplo, se ha agregado soporte para la gestión de instancias de ECS en AWS, como se menciona en la issue #47200 del repositorio de Terraform en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, y entender sus conceptos básicos y mejores prácticas es fundamental para aprovechar al máximo su potencial.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-aws/issues/47200" target="_blank">Managed Daemons for ECS Managed Instances #47200</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Cloud2BR-MSFTLearningHub" target="_blank">Cloud2BR Microsoft Cloud Sandbox - Learning Hub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Janaashraf992/EvilTwin" target="_blank">EvilTwin — SDN-Powered Cyber Deception Platform</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-25_0859.html">&larr; 2026-04-25 0859</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

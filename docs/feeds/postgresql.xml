@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-28T10:22:03.999824+00:00</updated>
+  <updated>2026-04-29T10:12:00.545493+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -220,5 +220,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-25_0859.html"/>
     <summary>PostgreSQL sigue evolucionando con mejoras en su rendimiento y funcionalidades. La versión 18.3 y otras actualizaciones recientes ofrecen características como la reducción de la sobrecarga de temporización en EXPLAIN ANALYZE y mejoras en la gestión de extensiones en Kubernetes.</summary>
     <published>2026-04-25T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-29_1010.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-04-29T10:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para garantizar un rendimiento óptimo. Para empezar a optimizar el rendimiento de PostgreSQL, es importante entender cómo funciona el motor de la base de datos y cómo se pueden configurar los parámetros para mejorar el rendimiento.&lt;/p&gt;
+&lt;p&gt;Una de las formas más efectivas de mejorar el rendimiento de PostgreSQL es mediante la configuración de índices. Los índices permiten al motor de la base de datos localizar rápidamente los datos que se necesitan, lo que reduce el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo: &lt;code&gt;CREATE INDEX idx_nombre ON tabla (nombre);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento de PostgreSQL es mediante la replicación. La replicación permite crear copias de la base de datos en diferentes servidores, lo que puede mejorar la disponibilidad y el rendimiento. Para configurar la replicación en PostgreSQL, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt;. Por ejemplo: &lt;code&gt;pg_basebackup -h localhost -D /var/lib/postgresql/12/main -U postgres -v -P&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 18.3 de PostgreSQL incluye varias mejoras en la gestión de extensiones, incluyendo la capacidad de instalar y administrar extensiones de forma más sencilla. CloudNativePG 1.29.0 también ofrece mejoras en la gestión de extensiones, incluyendo la capacidad de instalar y administrar extensiones en entornos de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Para realizar copias de seguridad de la base de datos, se puede utilizar el comando &lt;code&gt;pg_dump&lt;/code&gt;. Por ejemplo: &lt;code&gt;pg_dump -U postgres -d nombre_de_la_base_de_datos &gt; nombre_de_la_copia_de_seguridad.sql&lt;/code&gt;. Es importante realizar copias de seguridad regulares para garantizar la integridad de los datos en caso de una falla del sistema.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una comprensión profunda de cómo funciona el motor de la base de datos y cómo se pueden configurar los parámetros para mejorar el rendimiento. La configuración de índices, la replicación y la realización de copias de seguridad son algunas de las formas más efectivas de mejorar el rendimiento de PostgreSQL.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/cloudnativepg-1290-released-3266/"&gt;CloudNativePG 1.29.0 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/philip_mcclarence_2ef9475/postgresql-index-usage-and-optimization-4jgf"&gt;PostgreSQL Index Usage and Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-29_1010.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la realización de copias de seguridad. Se discuten también las novedades en la versión 18.3 y las mejoras en la gestión de extensiones en CloudNativePG 1.29.0.</summary>
+    <published>2026-04-29T10:10:00+00:00</published>
   </entry>
 </feed>

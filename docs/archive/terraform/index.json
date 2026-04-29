@@ -1,4 +1,24 @@
 {
+  "2026-04-29_1010": {
+    "slug": "terraform",
+    "title": "Terraform: Mejores prácticas para la gestión de infraestructura",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los administradores de sistemas y desarrolladores gestionar y provisionar recursos de infraestructura de manera eficiente. En este artículo, se presentan algunas de las mejores prácticas para la gestión de infraestructura con Terraform, incluyendo la gestión de proveedores, módulos, estado y espacios de trabajo.",
+    "content": "Terraform es una herramienta de infraestructura como código que permite a los administradores de sistemas y desarrolladores gestionar y provisionar recursos de infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es importante entender los conceptos básicos de la herramienta, como los proveedores, módulos, estado y espacios de trabajo.\n\nUn proveedor en Terraform es un conector que permite a la herramienta interactuar con un servicio de infraestructura en la nube, como AWS o Azure. Para configurar un proveedor, se puede utilizar el comando `terraform provider` y especificar el nombre del proveedor y la versión. Por ejemplo: `terraform provider aws 4.0.0`.\n\nLa gestión de estado en Terraform es crucial para mantener la integridad de la infraestructura. El estado de Terraform se almacena en un archivo llamado `terraform.tfstate`, que contiene información sobre los recursos provisionados. Para gestionar el estado, se puede utilizar el comando `terraform state` y opciones como `list`, `show` o `rm`. Por ejemplo: `terraform state list` para listar todos los recursos provisionados.\n\nLos módulos en Terraform son bloques de código reutilizables que permiten a los administradores de sistemas y desarrolladores crear y compartir configuraciones de infraestructura. Para crear un módulo, se puede utilizar el comando `terraform module` y especificar el nombre del módulo y la ruta del archivo de configuración. Por ejemplo: `terraform module create mymodule`.\n\nLos espacios de trabajo en Terraform permiten a los administradores de sistemas y desarrolladores crear y gestionar múltiples configuraciones de infraestructura de manera independiente. Para crear un espacio de trabajo, se puede utilizar el comando `terraform workspace` y opciones como `new` o `select`. Por ejemplo: `terraform workspace new myworkspace`.\n\nEn cuanto a las novedades y mejoras en Terraform, es importante mencionar que la comunidad de desarrolladores está trabajando constantemente en mejorar la herramienta y agregar nuevas características. Por ejemplo, se ha agregado soporte para la gestión de instancias de ECS en AWS, como se menciona en la issue #47200 del repositorio de Terraform en GitHub.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, y entender sus conceptos básicos y mejores prácticas es fundamental para aprovechar al máximo su potencial.\n\n",
+    "sources": [
+      {
+        "title": "Managed Daemons for ECS Managed Instances #47200",
+        "url": "https://github.com/hashicorp/terraform-provider-aws/issues/47200"
+      },
+      {
+        "title": "Cloud2BR Microsoft Cloud Sandbox - Learning Hub",
+        "url": "https://github.com/Cloud2BR-MSFTLearningHub"
+      },
+      {
+        "title": "EvilTwin — SDN-Powered Cyber Deception Platform",
+        "url": "https://github.com/Janaashraf992/EvilTwin"
+      }
+    ]
+  },
   "2026-04-25_0859": {
     "slug": "terraform",
     "title": "Terraform: Administración de Infraestructura como Código",

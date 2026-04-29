@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de seguridad en Docker - Docker</title>
+    <title>Docker: Mejores prácticas y novedades - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejores prácticas de seguridad en Docker</h1>
-    <div class="meta">2026-04-25 0859 · Docker</div>
+    <h1>Docker: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-04-29 1010 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en Docker. Una de las mejores prácticas es utilizar imágenes oficiales y verificadas de fuentes confiables, como Docker Hub. Esto se debe a que estas imágenes están mantenidas y actualizadas regularmente para evitar vulnerabilidades de seguridad. Por ejemplo, puedes utilizar la imagen oficial de Ubuntu con el comando `docker pull ubuntu:latest`.</p>
+        
+            
+            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores de manera eficiente y segura. Una de las mejores prácticas en Docker es utilizar multi-stage builds, que permite dividir el proceso de construcción en varias etapas, lo que reduce el tamaño de la imagen final y mejora la seguridad. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para construir una imagen desde un Dockerfile.</p>
             
         
             
         
             
-            <p>Para verificar la seguridad de tus imágenes, puedes utilizar herramientas como Docker Security Scanning, que analiza tus imágenes en busca de vulnerabilidades conocidas. También puedes utilizar comandos como `docker inspect` para obtener información detallada sobre tus contenedores y imágenes.</p>
+            <p>Otra herramienta importante en Docker es Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. Se puede utilizar el comando `docker-compose up` para iniciar los contenedores definidos en el archivo `docker-compose.yml`. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando herramientas como Docker Security Scanning, que analiza las imágenes de Docker en busca de vulnerabilidades.</p>
             
         
             
         
             
-            <p>Otra buena práctica es utilizar Docker Compose para definir y ejecutar tus contenedores de manera segura. Puedes utilizar el comando `docker-compose up` para iniciar tus contenedores y `docker-compose down` para detenerlos. También es importante utilizar redes y volúmenes para aislar y persistir datos sensibles.</p>
+            <p>En cuanto a las novedades, Docker ha anunciado la disponibilidad general de Docker Offload, que permite a los desarrolladores ejecutar contenedores de manera remota en la nube o en un clúster de Kubernetes. También se ha mejorado la compatibilidad con Windows, lo que permite a los desarrolladores crear y ejecutar contenedores en Windows de manera más eficiente. Para más información, se puede consultar el sitio web oficial de Docker y las fuentes proporcionadas.</p>
             
         
             
         
             
-            <p>Además, es fundamental mantener tus imágenes y contenedores actualizados con las últimas versiones de seguridad. Puedes utilizar el comando `docker update` para actualizar tus contenedores y `docker build` para reconstruir tus imágenes con las últimas actualizaciones de seguridad.</p>
+            <p>Para mejorar la comprensión y el uso de Docker, se recomienda consultar las fuentes proporcionadas y seguir las mejores prácticas recomendadas. Por ejemplo, se puede utilizar el comando `docker ps` para ver los contenedores en ejecución, y `docker logs` para ver los registros de los contenedores. También se puede utilizar `docker exec` para ejecutar comandos dentro de un contenedor en ejecución.</p>
             
         
             
         
             
-            <p>La utilización de BuildKit es otra buena práctica para mejorar la seguridad y eficiencia en la creación de imágenes. BuildKit es una herramienta de compilación de imágenes que permite crear imágenes de manera más rápida y segura. Puedes utilizar el comando `docker buildx` para crear y gestionar tus imágenes con BuildKit.</p>
+            <p>En resumen, Docker es una herramienta poderosa y flexible que requiere una comprensión profunda de sus características y mejores prácticas. Al seguir las recomendaciones y utilizar las herramientas proporcionadas, los desarrolladores y administradores de sistemas pueden mejorar la eficiencia y la seguridad de sus aplicaciones y servicios.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar la importancia de utilizar registros de confianza para almacenar y distribuir tus imágenes. Puedes utilizar registros como Docker Hub o Google Container Registry para almacenar y gestionar tus imágenes de manera segura.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de Docker es muy activa y proporciona muchos recursos y herramientas para ayudar a los desarrolladores y administradores de sistemas a mejorar su comprensión y uso de Docker. Se pueden encontrar muchos ejemplos y tutoriales en el sitio web oficial de Docker y en las fuentes proporcionadas.</p>
             
         
     </div>
@@ -105,17 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://medium.com/@fabiuslihandaachevi/docker-security-best-practices-238589c1ea16" target="_blank">Docker Security Best Practices</a>
+                <a href="https://www.docker.com/" target="_blank">Docker</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/nazmur96/5-docker-scenarios-every-developer-should-practice-with-fixes-best-practices-3l70" target="_blank">5 Docker Scenarios Every Developer Should Practice</a>
+                <a href="https://docs.docker.com/compose/" target="_blank">Docker Compose</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@vasanthancomrads/docker-image-security-hardening-best-practices-0cca3a4ec9bb" target="_blank">Docker Image Security Hardening Best Practices</a>
+                <a href="https://docs.docker.com/docker-hub/security-scanning/" target="_blank">Docker Security Scanning</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.docker.com/blog/docker-offload-now-generally-available/" target="_blank">Docker Offload</a>
                 
             </li>
             
@@ -126,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-21_0944.html">&larr; 2026-04-21 0944</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-25_0859.html">&larr; 2026-04-25 0859</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-29_1010.html">2026-04-29 1010 &rarr;</a>
             
         </div>
     </div>
