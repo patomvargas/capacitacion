@@ -1,4 +1,24 @@
 {
+  "2026-04-30_1010": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es una solución de gestión de identidad y acceso que proporciona servicios de LDAP, Kerberos y autoridad de certificación. En este artículo, se explora cómo implementar y configurar FreeIPA para una gestión de identidad y acceso segura.",
+    "content": "\nFreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para implementar FreeIPA, es necesario instalar el paquete `freeipa-server` y configurar el servicio con `ipa-server-install`.\n\nUna vez instalado, se puede acceder a la consola de administración de FreeIPA mediante `https://<servidor-freeipa>/ipa/ui`. Desde aquí, se pueden crear y gestionar usuarios, grupos y servicios, así como configurar las políticas de autenticación y autorización. Por ejemplo, se puede crear un nuevo usuario con `ipa user-add <nombre-usuario>` y asignarle un grupo con `ipa group-add-member <nombre-grupo> --users=<nombre-usuario>`.\n\nFreeIPA también proporciona servicios de Kerberos, que permiten a los usuarios acceder a los recursos de la red sin necesidad de introducir su contraseña cada vez. Para configurar Kerberos, es necesario crear un nuevo realm con `ipa realm-create <nombre-realm>` y configurar el cliente Kerberos con `ipa-client-install`. Luego, se pueden crear y gestionar claves de Kerberos con `ipa service-add <nombre-servicio>` y `ipa service-kerberos-add <nombre-servicio>`.\n\nAdemás, FreeIPA proporciona servicios de autoridad de certificación, que permiten a los administradores de sistemas emitir certificados digitales para los usuarios y servicios de la red. Para configurar la autoridad de certificación, es necesario crear un nuevo certificado con `ipa cert-request <nombre-certificado>` y configurar el servidor de certificados con `ipa-ca-install`. Luego, se pueden crear y gestionar certificados con `ipa cert-add <nombre-certificado>` y `ipa cert-revoke <nombre-certificado>`.\n\nEn cuanto a la seguridad, FreeIPA proporciona una serie de características y herramientas para proteger la identidad y el acceso de los usuarios y servicios. Por ejemplo, se puede configurar la autenticación de dos factores con `ipa otp-policy --type=otp` y `ipa user-mod <nombre-usuario> --otp`, y se pueden crear y gestionar políticas de acceso con `ipa hbacrule-add <nombre-regla>` y `ipa hbacrule-mod <nombre-regla>`.\n\nEn resumen, FreeIPA es una herramienta poderosa y flexible para la gestión de identidad y acceso en entornos de red. Con su conjunto de servicios y herramientas, los administradores de sistemas pueden gestionar de manera centralizada y segura la autenticación y autorización de los usuarios y servicios, y proteger la identidad y el acceso de los mismos.\n\n",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "RHSA-2026:9644 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:9644"
+      },
+      {
+        "title": "Deploy FreeIPA Identity Management with Flux CD",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"
+      }
+    ]
+  },
   "2026-04-26_0907": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad Avanzada",

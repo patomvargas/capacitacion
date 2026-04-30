@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenVPN: Seguridad y Tunneling - OpenVPN</title>
-    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
+    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>OpenVPN: Seguridad y Tunneling</h1>
-    <div class="meta">2026-04-26 0907 · OpenVPN</div>
+    <h1>Novedades en Kubernetes 1.36</h1>
+    <div class="meta">2026-04-30 1010 · Kubernetes</div>
 
     <div class="content">
         
@@ -66,35 +66,37 @@
             
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite crear túneles seguros entre redes. La versión más reciente, OpenVPN 2.7.2, incluye correcciones de seguridad importantes, como la solución a la vulnerabilidad CVE-2026-40215, que podría permitir la fuga de datos de paquetes en un handshake de TLS. Para instalar OpenVPN, se puede utilizar el comando `sudo apt-get install openvpn` en sistemas basados en Debian.</p>
+            <p>La versión 1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que incluye una serie de mejoras y características nuevas que permiten a los administradores de sistemas y desarrolladores trabajar de manera más eficiente. Una de las características más destacadas es la disponibilidad general de los espacios de nombres de usuario, que permite a los contenedores ejecutarse con permisos de usuario y grupo específicos.</p>
             
         
             
         
             
-            <p>La configuración de OpenVPN requiere la creación de certificados y claves. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650` para generar un certificado autofirmado. Luego, se debe configurar el archivo de configuración de OpenVPN, que normalmente se encuentra en `/etc/openvpn/server.conf`. En este archivo, se deben especificar los parámetros de conexión, como el protocolo, el puerto y la dirección IP del servidor.</p>
+            <p>Para aprovechar al máximo esta característica, es necesario configurar el parámetro `userns` en el archivo de configuración de Kubernetes, utilizando el comando `kubectl` de la siguiente manera: `kubectl config set-credentials <nombre-usuario> --userns=<id-usuario>`. Además, es importante mencionar que esta característica solo está disponible en sistemas Linux.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de la conexión, se pueden implementar medidas de hardening, como la autenticación de dos factores y la restricción de acceso a ciertos recursos. Se puede utilizar el comando `sudo openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN. En cuanto a la conexión de sitios, se puede utilizar el comando `sudo openvpn --config /etc/openvpn/client.conf` para conectar a un servidor OpenVPN.</p>
+            <p>En cuanto a la seguridad, la versión 1.36 de Kubernetes incluye varias mejoras, como la autenticación y autorización basadas en roles, que permiten a los administradores asignar permisos específicos a los usuarios y grupos. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create role` y `kubectl create rolebinding`, respectivamente.</p>
             
         
             
         
             
-            <p>La versión 2.7.2 de OpenVPN también incluye soporte para OpenSSL 4.0, lo que permite una mayor seguridad y compatibilidad con otros sistemas. Para actualizar a la versión más reciente de OpenVPN, se puede utilizar el comando `sudo apt-get update && sudo apt-get install openvpn`.</p>
+            <p>La versión 1.36 de Kubernetes también incluye mejoras en el almacenamiento y las redes, como el soporte para persistent volumes y la capacidad de configurar redes de manera más flexible. Para configurar un persistent volume, se puede utilizar el comando `kubectl create -f <archivo-de-configuracion>.yaml`, donde el archivo de configuración contiene la definición del volumen persistente.</p>
             
         
             
         
             
-            <p>En resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras entre redes. La versión 2.7.2 incluye correcciones de seguridad importantes y soporte para OpenSSL 4.0. Para implementar OpenVPN de manera efectiva, se deben seguir las mejores prácticas de seguridad y configuración.</p>
+            <p>En resumen, la versión 1.36 de Kubernetes es una versión muy completa que incluye mejoras en seguridad, almacenamiento y redes, y que permite a los administradores de sistemas y desarrolladores trabajar de manera más eficiente. Para obtener más información sobre esta versión, se puede consultar la documentación oficial de Kubernetes.</p>
             
         
             
         
+            
+            <p>Para más información sobre cómo configurar y utilizar las características de Kubernetes 1.36, se puede consultar la documentación oficial de Kubernetes, que incluye ejemplos y tutoriales detallados. Además, se pueden utilizar herramientas como `kubectl` para configurar y administrar los clusters de Kubernetes de manera más eficiente.</p>
             
         
     </div>
@@ -105,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://community.openvpn.net/Downloads" target="_blank">Downloads – community wiki - OpenVPN</a>
+                <a href="https://kubernetes.io/releases/1.36/" target="_blank">Kubernetes 1.36</a>
                 
             </li>
             
             <li>
-                <a href="https://community.openvpn.net/Meetings/2026/2026-04-22/source" target="_blank">2026-04-22 – community wiki</a>
+                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://community.openvpn.net/Meetings/2026/2026-04-15/source" target="_blank">2026-04-15 – community wiki</a>
+                <a href="https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/" target="_blank">Kubernetes v1.36: User Namespaces in Kubernetes are finally GA</a>
                 
             </li>
             
@@ -126,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-22_0926.html">&larr; 2026-04-22 0926</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-26_0907.html">&larr; 2026-04-26 0907</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-30_1010.html">2026-04-30 1010 &rarr;</a>
             
         </div>
     </div>

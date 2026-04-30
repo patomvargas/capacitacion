@@ -1,4 +1,36 @@
 {
+  "2026-04-30_1010": {
+    "slug": "openvpn",
+    "title": "Configuración y Seguridad de OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunneling de red segura que permite a los administradores de sistemas configurar conexiones VPN seguras. En este artículo, se cubren las mejores prácticas para configurar y asegurar OpenVPN, incluyendo la configuración de certificados y hardening de la infraestructura.",
+    "content": "OpenVPN es una herramienta de código abierto que permite a los administradores de sistemas configurar conexiones VPN seguras. Para configurar OpenVPN, es necesario generar certificados SSL/TLS para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como `openssl` para generar los certificados y claves. Por ejemplo, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado SSL/TLS para el servidor.\n\n \n La configuración de OpenVPN se realiza mediante un archivo de configuración que especifica los parámetros de la conexión, como la dirección IP del servidor, el puerto y el protocolo de transporte. Por ejemplo, se puede utilizar la siguiente configuración para establecer una conexión VPN con un servidor OpenVPN: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`. Es importante asegurarse de que la configuración sea segura y no permita conexiones no autorizadas.\n\n \n Para asegurar la infraestructura OpenVPN, es importante implementar medidas de hardening, como limitar el acceso a la configuración y a los certificados, y monitorear los logs de conexión para detectar posibles intentos de intrusión. También es importante mantener actualizados los certificados y las claves para evitar vulnerabilidades de seguridad. Por ejemplo, se puede utilizar el comando `openvpn --test-config` para verificar la configuración de OpenVPN y detectar posibles errores.\n\n \n En cuanto a las novedades y mejoras en OpenVPN, es importante mencionar que la versión más reciente de OpenVPN incluye mejoras en la seguridad y el rendimiento, como la compatibilidad con protocolos de transporte más seguros y la optimización de la conexión para reducir la latencia. También es importante mencionar que existen herramientas como `easyvpn` que permiten a los usuarios conectarse a servidores VPN de manera fácil y segura.\n\n \n En resumen, OpenVPN es una herramienta poderosa para configurar conexiones VPN seguras, y es importante seguir las mejores prácticas para asegurar la infraestructura y mantener actualizados los certificados y las claves. También es importante estar al tanto de las novedades y mejoras en OpenVPN para asegurarse de que la configuración sea lo más segura posible.\n\n \n Es importante mencionar que las fuentes proporcionadas no contienen información relevante sobre OpenVPN, por lo que se ha enfocado en proporcionar una guía general sobre la configuración y seguridad de OpenVPN. Sin embargo, es importante mencionar que existen herramientas como `algo` que permiten a los usuarios configurar VPN de manera fácil y segura en la nube.",
+    "sources": [
+      {
+        "title": "Releases: OpenVPN/tap-windows6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "trailofbits/algo",
+        "url": "https://github.com/trailofbits/algo"
+      },
+      {
+        "title": "mikeroyal/Self-Hosting-Guide",
+        "url": "https://github.com/mikeroyal/Self-Hosting-Guide"
+      },
+      {
+        "title": "powershell_fileless_process_injection_via_getprocaddress.yml",
+        "url": "https://github.com/splunk/security_content/blob/develop/detections/endpoint/powershell_fileless_process_injection_via_getprocaddress.yml"
+      },
+      {
+        "title": "malicious_powershell_process_with_obfuscation_techniques.yml",
+        "url": "https://github.com/splunk/security_content/blob/develop/detections/endpoint/malicious_powershell_process_with_obfuscation_techniques.yml"
+      },
+      {
+        "title": "rodrigogs/easyvpn",
+        "url": "https://github.com/rodrigogs/easyvpn"
+      }
+    ]
+  },
   "2026-04-26_0907": {
     "slug": "openvpn",
     "title": "OpenVPN: Seguridad y Tunneling",

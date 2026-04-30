@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-29T10:12:00.528353+00:00</updated>
+  <updated>2026-04-30T10:12:42.380338+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -116,5 +116,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-26_0907.html"/>
     <summary>El sistema DNS BIND9 es una herramienta fundamental para la gestión de nombres de dominio en Internet. En este artículo, se presentan las mejores prácticas para la configuración y optimización de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs.</summary>
     <published>2026-04-26T09:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-30_1010.html</id>
+    <title>Configuración de DNS BIND9</title>
+    <updated>2026-04-30T10:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de DNS BIND9 es un tema fundamental para los administradores de sistemas y DevOps. Para empezar, es importante configurar las zonas de DNS correctamente. Una zona de DNS es un conjunto de registros de DNS que se administran juntos. Para configurar una zona, se debe crear un archivo de zona en el directorio &lt;code&gt;/etc/bind/zones/&lt;/code&gt; y agregar la zona al archivo de configuración principal de BIND9, &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para agregar una zona llamada &lt;code&gt;example.com&lt;/code&gt;, se puede agregar la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/zones/example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de la resolución de nombres de dominio, se puede configurar DNSSEC. DNSSEC es un conjunto de extensiones de seguridad para DNS que permiten verificar la autenticidad y la integridad de los registros de DNS. Para configurar DNSSEC, se debe generar una clave de zona y agregarla al archivo de zona. Luego, se debe configurar el servidor DNS para firmar las respuestas con la clave de zona. Por ejemplo, se puede utilizar el comando &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar una clave de zona y agregarla al archivo de zona.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas. Una vista es un conjunto de registros de DNS que se presentan a un cliente dependiendo de su dirección IP. Por ejemplo, se puede configurar una vista para que los clientes internos vean una versión diferente de un sitio web que los clientes externos. Para configurar una vista, se debe agregar una sección &lt;code&gt;view&lt;/code&gt; al archivo &lt;code&gt;named.conf&lt;/code&gt; y especificar la dirección IP del cliente que se debe mostrar la vista. Por ejemplo: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; zone "example.com" { type master; file "/etc/bind/zones/example.com"; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se puede configurar RPZ (Response Policy Zone) para bloquear accesos no deseados a ciertos sitios web. RPZ es una zona de DNS que contiene registros de DNS que se utilizan para bloquear accesos a sitios web no deseados. Para configurar RPZ, se debe agregar una sección &lt;code&gt;response-policy&lt;/code&gt; al archivo &lt;code&gt;named.conf&lt;/code&gt; y especificar la zona de RPZ. Por ejemplo: &lt;code&gt;response-policy { zone "rpz"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante configurar el registro de logs para poder monitorear y depurar el servidor DNS. Se puede configurar el registro de logs en el archivo &lt;code&gt;named.conf&lt;/code&gt; utilizando la directiva &lt;code&gt;logging&lt;/code&gt;. Por ejemplo: &lt;code&gt;logging { channel default_log { file "/var/log/named.log"; severity info; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración de DNS BIND9 es un tema complejo que requiere una comprensión profunda de las diferentes características y opciones de configuración. Sin embargo, con la práctica y la experiencia, es posible configurar un servidor DNS seguro y eficiente que satisfaga las necesidades de la organización.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento del servidor DNS, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la base de datos. Por ejemplo, se puede configurar el tamaño del caché utilizando la directiva &lt;code&gt;max-cache-size&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. También se puede optimizar la base de datos utilizando herramientas como &lt;code&gt;named-checkzone&lt;/code&gt; y &lt;code&gt;named-compilezone&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En conclusión, la configuración de DNS BIND9 es un tema fundamental para los administradores de sistemas y DevOps. Con la configuración correcta de zonas, DNSSEC, vistas, RPZ y registro de logs, se puede crear un servidor DNS seguro y eficiente que satisfaga las necesidades de la organización.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://bind9.readthedocs.io/en/latest/"&gt; BIND9 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/"&gt;ISC Knowledge Base&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.dnssec.net/tutorial/"&gt;DNSSEC Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-30_1010.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas para configurar DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-04-30T10:10:00+00:00</published>
   </entry>
 </feed>

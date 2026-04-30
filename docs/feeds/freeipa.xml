@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-29T10:12:00.527057+00:00</updated>
+  <updated>2026-04-30T10:12:42.377951+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -229,5 +229,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-26_0907.html"/>
     <summary>FreeIPA es una solución de gestión de identidad integrada que proporciona servicios de LDAP, Kerberos y autoridad de certificados. En este artículo, se exploran las características y configuraciones avanzadas de FreeIPA.</summary>
     <published>2026-04-26T09:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-30_1010.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-04-30T10:10:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para implementar FreeIPA, es necesario instalar el paquete &lt;code&gt;freeipa-server&lt;/code&gt; y configurar el servicio con &lt;code&gt;ipa-server-install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede acceder a la consola de administración de FreeIPA mediante &lt;code&gt;https://&lt;servidor-freeipa&gt;/ipa/ui&lt;/code&gt;. Desde aquí, se pueden crear y gestionar usuarios, grupos y servicios, así como configurar las políticas de autenticación y autorización. Por ejemplo, se puede crear un nuevo usuario con &lt;code&gt;ipa user-add &lt;nombre-usuario&gt;&lt;/code&gt; y asignarle un grupo con &lt;code&gt;ipa group-add-member &lt;nombre-grupo&gt; --users=&lt;nombre-usuario&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;FreeIPA también proporciona servicios de Kerberos, que permiten a los usuarios acceder a los recursos de la red sin necesidad de introducir su contraseña cada vez. Para configurar Kerberos, es necesario crear un nuevo realm con &lt;code&gt;ipa realm-create &lt;nombre-realm&gt;&lt;/code&gt; y configurar el cliente Kerberos con &lt;code&gt;ipa-client-install&lt;/code&gt;. Luego, se pueden crear y gestionar claves de Kerberos con &lt;code&gt;ipa service-add &lt;nombre-servicio&gt;&lt;/code&gt; y &lt;code&gt;ipa service-kerberos-add &lt;nombre-servicio&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, FreeIPA proporciona servicios de autoridad de certificación, que permiten a los administradores de sistemas emitir certificados digitales para los usuarios y servicios de la red. Para configurar la autoridad de certificación, es necesario crear un nuevo certificado con &lt;code&gt;ipa cert-request &lt;nombre-certificado&gt;&lt;/code&gt; y configurar el servidor de certificados con &lt;code&gt;ipa-ca-install&lt;/code&gt;. Luego, se pueden crear y gestionar certificados con &lt;code&gt;ipa cert-add &lt;nombre-certificado&gt;&lt;/code&gt; y &lt;code&gt;ipa cert-revoke &lt;nombre-certificado&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona una serie de características y herramientas para proteger la identidad y el acceso de los usuarios y servicios. Por ejemplo, se puede configurar la autenticación de dos factores con &lt;code&gt;ipa otp-policy --type=otp&lt;/code&gt; y &lt;code&gt;ipa user-mod &lt;nombre-usuario&gt; --otp&lt;/code&gt;, y se pueden crear y gestionar políticas de acceso con &lt;code&gt;ipa hbacrule-add &lt;nombre-regla&gt;&lt;/code&gt; y &lt;code&gt;ipa hbacrule-mod &lt;nombre-regla&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa y flexible para la gestión de identidad y acceso en entornos de red. Con su conjunto de servicios y herramientas, los administradores de sistemas pueden gestionar de manera centralizada y segura la autenticación y autorización de los usuarios y servicios, y proteger la identidad y el acceso de los mismos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:9644"&gt;RHSA-2026:9644 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"&gt;Deploy FreeIPA Identity Management with Flux CD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-30_1010.html"/>
+    <summary>FreeIPA es una solución de gestión de identidad y acceso que proporciona servicios de LDAP, Kerberos y autoridad de certificación. En este artículo, se explora cómo implementar y configurar FreeIPA para una gestión de identidad y acceso segura.</summary>
+    <published>2026-04-30T10:10:00+00:00</published>
   </entry>
 </feed>

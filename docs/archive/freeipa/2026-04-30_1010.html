@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad Avanzada - FreeIPA</title>
+    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad Avanzada</h1>
-    <div class="meta">2026-04-26 0907 · FreeIPA</div>
+    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
+    <div class="meta">2026-04-30 1010 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es una herramienta poderosa para la gestión de identidad en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos. Para configurar FreeIPA, es necesario ejecutar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.</p>
+        
+            
+            <p>FreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada la autenticación y autorización de los usuarios y servicios en una red. Para implementar FreeIPA, es necesario instalar el paquete `freeipa-server` y configurar el servicio con `ipa-server-install`.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede configurar la autenticación Kerberos utilizando el comando `kinit` para obtener un ticket de autenticación. Luego, se puede utilizar el comando `ipa user-add` para agregar nuevos usuarios al sistema.</p>
+            <p>Una vez instalado, se puede acceder a la consola de administración de FreeIPA mediante `https://<servidor-freeipa>/ipa/ui`. Desde aquí, se pueden crear y gestionar usuarios, grupos y servicios, así como configurar las políticas de autenticación y autorización. Por ejemplo, se puede crear un nuevo usuario con `ipa user-add <nombre-usuario>` y asignarle un grupo con `ipa group-add-member <nombre-grupo> --users=<nombre-usuario>`.</p>
             
         
             
         
             
-            <p>La gestión de acceso basada en host (HBAC) es otra característica importante de FreeIPA. Permite controlar el acceso a los hosts y servicios en función de la identidad del usuario y del host. Se puede configurar HBAC utilizando el comando `ipa hbacrule-add` y especificando las reglas de acceso.</p>
+            <p>FreeIPA también proporciona servicios de Kerberos, que permiten a los usuarios acceder a los recursos de la red sin necesidad de introducir su contraseña cada vez. Para configurar Kerberos, es necesario crear un nuevo realm con `ipa realm-create <nombre-realm>` y configurar el cliente Kerberos con `ipa-client-install`. Luego, se pueden crear y gestionar claves de Kerberos con `ipa service-add <nombre-servicio>` y `ipa service-kerberos-add <nombre-servicio>`.</p>
             
         
             
         
             
-            <p>Además, FreeIPA proporciona una API de REST para la gestión de identidad, lo que permite la integración con otras herramientas y aplicaciones. Se puede utilizar el comando `ipa api-command` para ejecutar comandos de API y realizar operaciones de gestión de identidad.</p>
+            <p>Además, FreeIPA proporciona servicios de autoridad de certificación, que permiten a los administradores de sistemas emitir certificados digitales para los usuarios y servicios de la red. Para configurar la autoridad de certificación, es necesario crear un nuevo certificado con `ipa cert-request <nombre-certificado>` y configurar el servidor de certificados con `ipa-ca-install`. Luego, se pueden crear y gestionar certificados con `ipa cert-add <nombre-certificado>` y `ipa cert-revoke <nombre-certificado>`.</p>
             
         
             
         
             
-            <p>La configuración de FreeIPA también se puede realizar utilizando herramientas de automatización como Ansible. Se puede crear un playbook de Ansible para configurar y desplegar FreeIPA en un entorno de red.</p>
+            <p>En cuanto a la seguridad, FreeIPA proporciona una serie de características y herramientas para proteger la identidad y el acceso de los usuarios y servicios. Por ejemplo, se puede configurar la autenticación de dos factores con `ipa otp-policy --type=otp` y `ipa user-mod <nombre-usuario> --otp`, y se pueden crear y gestionar políticas de acceso con `ipa hbacrule-add <nombre-regla>` y `ipa hbacrule-mod <nombre-regla>`.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es una herramienta avanzada para la gestión de identidad que proporciona una amplia gama de características y configuraciones para controlar el acceso y la autenticación en entornos de red.</p>
+            <p>En resumen, FreeIPA es una herramienta poderosa y flexible para la gestión de identidad y acceso en entornos de red. Con su conjunto de servicios y herramientas, los administradores de sistemas pueden gestionar de manera centralizada y segura la autenticación y autorización de los usuarios y servicios, y proteger la identidad y el acceso de los mismos.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -110,12 +116,7 @@
             </li>
             
             <li>
-                <a href="https://planet.freeipa.org/" target="_blank">FreeIPA Identity Management planet</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://leo.leung.xyz/wiki/FreeIPA" target="_blank">FreeIPA - Leo's Notes</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:9644" target="_blank">RHSA-2026:9644 - Security Advisory</a>
                 
             </li>
             
@@ -131,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-22_0926.html">&larr; 2026-04-22 0926</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-26_0907.html">&larr; 2026-04-26 0907</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-30_1010.html">2026-04-30 1010 &rarr;</a>
             
         </div>
     </div>

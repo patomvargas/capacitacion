@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuración de DNS BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+    </div>
+
+    <h1>Configuración de DNS BIND9</h1>
+    <div class="meta">2026-04-30 1010 · DNS BIND9</div>
+
+    <div class="content">
+        
+        
+            
+            <p>La configuración de DNS BIND9 es un tema fundamental para los administradores de sistemas y DevOps. Para empezar, es importante configurar las zonas de DNS correctamente. Una zona de DNS es un conjunto de registros de DNS que se administran juntos. Para configurar una zona, se debe crear un archivo de zona en el directorio `/etc/bind/zones/` y agregar la zona al archivo de configuración principal de BIND9, `named.conf`. Por ejemplo, para agregar una zona llamada `example.com`, se puede agregar la siguiente línea al archivo `named.conf`: `zone "example.com" { type master; file "/etc/bind/zones/example.com"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad de la resolución de nombres de dominio, se puede configurar DNSSEC. DNSSEC es un conjunto de extensiones de seguridad para DNS que permiten verificar la autenticidad y la integridad de los registros de DNS. Para configurar DNSSEC, se debe generar una clave de zona y agregarla al archivo de zona. Luego, se debe configurar el servidor DNS para firmar las respuestas con la clave de zona. Por ejemplo, se puede utilizar el comando `dnssec-keygen` para generar una clave de zona y agregarla al archivo de zona.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de BIND9 es la capacidad de configurar vistas. Una vista es un conjunto de registros de DNS que se presentan a un cliente dependiendo de su dirección IP. Por ejemplo, se puede configurar una vista para que los clientes internos vean una versión diferente de un sitio web que los clientes externos. Para configurar una vista, se debe agregar una sección `view` al archivo `named.conf` y especificar la dirección IP del cliente que se debe mostrar la vista. Por ejemplo: `view "internal" { match-clients { 10.0.0.0/8; }; zone "example.com" { type master; file "/etc/bind/zones/example.com"; }; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>Además, se puede configurar RPZ (Response Policy Zone) para bloquear accesos no deseados a ciertos sitios web. RPZ es una zona de DNS que contiene registros de DNS que se utilizan para bloquear accesos a sitios web no deseados. Para configurar RPZ, se debe agregar una sección `response-policy` al archivo `named.conf` y especificar la zona de RPZ. Por ejemplo: `response-policy { zone "rpz"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante configurar el registro de logs para poder monitorear y depurar el servidor DNS. Se puede configurar el registro de logs en el archivo `named.conf` utilizando la directiva `logging`. Por ejemplo: `logging { channel default_log { file "/var/log/named.log"; severity info; }; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, la configuración de DNS BIND9 es un tema complejo que requiere una comprensión profunda de las diferentes características y opciones de configuración. Sin embargo, con la práctica y la experiencia, es posible configurar un servidor DNS seguro y eficiente que satisfaga las necesidades de la organización.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>Para mejorar el rendimiento del servidor DNS, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la base de datos. Por ejemplo, se puede configurar el tamaño del caché utilizando la directiva `max-cache-size` en el archivo `named.conf`. También se puede optimizar la base de datos utilizando herramientas como `named-checkzone` y `named-compilezone`.</p>
+            
+        
+            
+        
+            
+        
+            
+        
+            
+            <p>En conclusión, la configuración de DNS BIND9 es un tema fundamental para los administradores de sistemas y DevOps. Con la configuración correcta de zonas, DNSSEC, vistas, RPZ y registro de logs, se puede crear un servidor DNS seguro y eficiente que satisfaga las necesidades de la organización.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://bind9.readthedocs.io/en/latest/" target="_blank"> BIND9 Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kb.isc.org/" target="_blank">ISC Knowledge Base</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.dnssec.net/tutorial/" target="_blank">DNSSEC Tutorial</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-26_0907.html">&larr; 2026-04-26 0907</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
