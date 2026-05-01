@@ -1,4 +1,24 @@
 {
+  "2026-05-01_0950": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejores prácticas y novedades",
+    "summary": "OpenShift es una plataforma de contenedores de código abierto que ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. En este artículo, se presentan las mejores prácticas y novedades de OpenShift, incluyendo la implementación de operadores, la configuración de rutas y la monitorización de la plataforma.",
+    "content": "\nOpenShift es una plataforma de contenedores de código abierto que se basa en Kubernetes y ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. Una de las características más destacadas de OpenShift es la implementación de operadores, que son paquetes de software que se encargan de la gestión y la configuración de las aplicaciones en la plataforma. Para implementar un operador en OpenShift, se puede utilizar el comando `oc create -f operador.yaml`, donde `operador.yaml` es el archivo de configuración del operador.\n\nLa configuración de rutas en OpenShift es otro aspecto importante de la plataforma. Las rutas se utilizan para exponer las aplicaciones a Internet y permitir el acceso a los usuarios. Para configurar una ruta en OpenShift, se puede utilizar el comando `oc expose svc mi-servicio --hostname=mihostname`, donde `mi-servicio` es el nombre del servicio que se desea exponer y `mihostname` es el nombre del host que se desea utilizar.\n\nLa monitorización de la plataforma es fundamental para garantizar el funcionamiento correcto de las aplicaciones. OpenShift ofrece varias herramientas de monitorización, incluyendo Prometheus y Grafana. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml`, donde `prometheus.yaml` es el archivo de configuración de Prometheus.\n\nEn cuanto a las novedades, OpenShift ha anunciado recientemente la disponibilidad de OpenShift Virtualization, que permite a los usuarios crear y gestionar máquinas virtuales en la plataforma. Además, OpenShift ha mejorado la compatibilidad con Azure, lo que permite a los usuarios implementar y gestionar aplicaciones en la nube de Microsoft.\n\nFinalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y recursos para ayudar a los usuarios a migrar sus aplicaciones a la plataforma. Por ejemplo, la herramienta `oc migrate` permite a los usuarios migrar sus aplicaciones desde otros entornos de contenedores, como Docker.\n\n  ",
+    "sources": [
+      {
+        "title": "Red Hat - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Red_Hat"
+      },
+      {
+        "title": "What's new with Azure Red Hat OpenShift?",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026",
+        "url": "https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026"
+      }
+    ]
+  },
   "2026-04-27_1022": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Novedades",

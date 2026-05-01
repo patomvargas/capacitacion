@@ -1,4 +1,24 @@
 {
+  "2026-05-01_0950": {
+    "slug": "metabase",
+    "title": "Mejoras en Metabase",
+    "summary": "Metabase ha mejorado su seguridad y funcionalidad con actualizaciones recientes. Se han abordado vulnerabilidades de seguridad y se han agregado nuevas características para mejorar la experiencia del usuario.",
+    "content": "Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y informes personalizados. Recientemente, se han realizado actualizaciones para mejorar la seguridad y la funcionalidad de la plataforma. Por ejemplo, se ha actualizado la versión de Netty a `>=v4.2.10.Final` para parchar la vulnerabilidad `cve-2026-33870`. \n\nPara implementar esta actualización, los administradores de Metabase pueden ejecutar el comando `git pull` para obtener los cambios más recientes desde el repositorio de GitHub. Luego, pueden ejecutar `lein run` para iniciar el servidor de Metabase con la nueva versión de Netty.\n\nAdemás de las actualizaciones de seguridad, Metabase también ha agregado nuevas características para mejorar la experiencia del usuario. Por ejemplo, se ha agregado la función de `Data Residency Toggles` para Metabot, lo que permite a los usuarios controlar dónde se almacenan sus datos. Para habilitar esta función, los usuarios pueden ir a la configuración de Metabot y seleccionar la opción `Data Residency Toggles`.\n\nOtra característica nueva es la personalización de Metabot por inquilino, lo que permite a los administradores configurar Metabot para cada inquilino de manera individual. Para configurar esta función, los administradores pueden ejecutar el comando `lein config` y agregar la configuración necesaria para cada inquilino.\n\nEn cuanto a la visualización de datos, Metabase ha mejorado la representación de gráficos de series temporales mensuales para evitar que las barras se superpongan. Los usuarios pueden crear gráficos de series temporales utilizando la función `Timeseries` de Metabase y personalizar la apariencia del gráfico utilizando opciones como `:display` y `:format`.\n\nFinalmente, es importante mencionar que Metabase es una plataforma en constante evolución, y los usuarios pueden contribuir al desarrollo de la plataforma mediante la creación de issues y pull requests en el repositorio de GitHub.\n\n",
+    "sources": [
+      {
+        "title": "Bump Netty to >=v4.2.10.Final to patch cve-2026-33870",
+        "url": "https://github.com/metabase/metabase/issues/71652"
+      },
+      {
+        "title": "Data Residency Toggles for Metabot",
+        "url": "https://github.com/metabase/metabase/issues/72115"
+      },
+      {
+        "title": "Per Tenant Metabot customization",
+        "url": "https://github.com/metabase/metabase/issues/72116"
+      }
+    ]
+  },
   "2026-04-27_1022": {
     "slug": "metabase",
     "title": "Mejoras y Novedades en Metabase",

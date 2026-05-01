@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/gemini.xml</id>
   <title>Gemini - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-30T10:12:42.388761+00:00</updated>
+  <updated>2026-05-01T09:51:49.755127+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/gemini/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -203,5 +203,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-19_0900.html"/>
     <summary>Gemini ha lanzado nuevas funcionalidades y mejoras en su API y modelos, incluyendo la facturación por uso y aumentos en los límites de velocidad. Estas mejoras permiten a los desarrolladores crear agentes conversacionales más avanzados y personalizados.</summary>
     <published>2026-04-19T09:00:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/gemini/2026-05-01_0950.html</id>
+    <title>Integración de Gemini con Claude Code</title>
+    <updated>2026-05-01T09:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;La integración entre Gemini y Claude Code se logra a través del puente Claude-Gemini, que automáticamente delega tareas complejas de análisis de código desde Claude Code a Gemini. Esto permite combinar las capacidades de razonamiento de Claude con la capacidad de procesamiento de contexto grande de Gemini.&lt;/p&gt;
+&lt;p&gt;Para implementar esta integración, se puede utilizar el repositorio de GitHub &lt;code&gt;claude-gemini-bridge&lt;/code&gt;, que proporciona una guía detallada para configurar el puente. El proceso implica ejecutar el comando &lt;code&gt;git clone https://github.com/tkaufmann/claude-gemini-bridge.git&lt;/code&gt; y luego seguir las instrucciones del archivo &lt;code&gt;README.md&lt;/code&gt; para configurar el puente.&lt;/p&gt;
+&lt;p&gt;La integración de Gemini con Claude Code también se puede utilizar en conjunto con otras herramientas de desarrollo, como el kit de desarrollo de AI de Databricks. Este kit proporciona una forma de monitorear la integridad de la cadena de suministro y detectar vulnerabilidades conocidas en las dependencias. Para utilizar este kit, se puede ejecutar el comando &lt;code&gt;pip install databricks-ai-dev-kit&lt;/code&gt; y luego seguir las instrucciones del archivo &lt;code&gt;README.md&lt;/code&gt; para configurar el kit.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que la integración de Gemini con Claude Code también requiere considerar la seguridad de la máquina de desarrollo. Se puede utilizar herramientas como &lt;code&gt;dev-machine-guard&lt;/code&gt; para escanear la máquina de desarrollo en busca de agentes de AI, servidores MCP, extensiones de IDE y paquetes sospechosos. Para utilizar esta herramienta, se puede ejecutar el comando &lt;code&gt;git clone https://github.com/step-security/dev-machine-guard.git&lt;/code&gt; y luego seguir las instrucciones del archivo &lt;code&gt;README.md&lt;/code&gt; para configurar la herramienta.&lt;/p&gt;
+&lt;p&gt;En resumen, la integración de Gemini con Claude Code es una forma efectiva de mejorar la eficiencia en el análisis de código a gran escala. Al utilizar el puente Claude-Gemini y combinando esta integración con otras herramientas de desarrollo, como el kit de desarrollo de AI de Databricks, se puede lograr una mayor eficiencia y seguridad en el proceso de desarrollo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tkaufmann/claude-gemini-bridge"&gt;Intelligent integration between Claude Code and Google Gemini for large-scale code analysis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/databricks-solutions/ai-dev-kit"&gt;Databricks AI Dev Kit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/step-security/dev-machine-guard"&gt;Scan your dev machine for AI agents, MCP servers, IDE extensions, and suspicious packages — in seconds.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-05-01_0950.html"/>
+    <summary>Gemini es una herramienta de análisis de código a gran escala que se integra con Claude Code para mejorar la eficiencia en el análisis de código. Esta integración permite delegar tareas complejas de análisis de código a Gemini, aprovechando su capacidad de procesamiento de contexto grande.</summary>
+    <published>2026-05-01T09:50:00+00:00</published>
   </entry>
 </feed>

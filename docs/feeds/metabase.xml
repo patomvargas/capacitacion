@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-30T10:12:42.390714+00:00</updated>
+  <updated>2026-05-01T09:51:49.758209+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -167,5 +167,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-27_1022.html"/>
     <summary>Metabase es una herramienta de análisis de datos que ofrece funcionalidades como queries, dashboards y embedding. En este artículo, se presentan las últimas novedades y mejoras en Metabase, incluyendo actualizaciones en la administración y la API.</summary>
     <published>2026-04-27T10:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-01_0950.html</id>
+    <title>Mejoras en Metabase</title>
+    <updated>2026-05-01T09:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y informes personalizados. Recientemente, se han realizado actualizaciones para mejorar la seguridad y la funcionalidad de la plataforma. Por ejemplo, se ha actualizado la versión de Netty a &lt;code&gt;&gt;=v4.2.10.Final&lt;/code&gt; para parchar la vulnerabilidad &lt;code&gt;cve-2026-33870&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para implementar esta actualización, los administradores de Metabase pueden ejecutar el comando &lt;code&gt;git pull&lt;/code&gt; para obtener los cambios más recientes desde el repositorio de GitHub. Luego, pueden ejecutar &lt;code&gt;lein run&lt;/code&gt; para iniciar el servidor de Metabase con la nueva versión de Netty.&lt;/p&gt;
+&lt;p&gt;Además de las actualizaciones de seguridad, Metabase también ha agregado nuevas características para mejorar la experiencia del usuario. Por ejemplo, se ha agregado la función de &lt;code&gt;Data Residency Toggles&lt;/code&gt; para Metabot, lo que permite a los usuarios controlar dónde se almacenan sus datos. Para habilitar esta función, los usuarios pueden ir a la configuración de Metabot y seleccionar la opción &lt;code&gt;Data Residency Toggles&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica nueva es la personalización de Metabot por inquilino, lo que permite a los administradores configurar Metabot para cada inquilino de manera individual. Para configurar esta función, los administradores pueden ejecutar el comando &lt;code&gt;lein config&lt;/code&gt; y agregar la configuración necesaria para cada inquilino.&lt;/p&gt;
+&lt;p&gt;En cuanto a la visualización de datos, Metabase ha mejorado la representación de gráficos de series temporales mensuales para evitar que las barras se superpongan. Los usuarios pueden crear gráficos de series temporales utilizando la función &lt;code&gt;Timeseries&lt;/code&gt; de Metabase y personalizar la apariencia del gráfico utilizando opciones como &lt;code&gt;:display&lt;/code&gt; y &lt;code&gt;:format&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Metabase es una plataforma en constante evolución, y los usuarios pueden contribuir al desarrollo de la plataforma mediante la creación de issues y pull requests en el repositorio de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/71652"&gt;Bump Netty to &gt;=v4.2.10.Final to patch cve-2026-33870&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/72115"&gt;Data Residency Toggles for Metabot&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/72116"&gt;Per Tenant Metabot customization&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-01_0950.html"/>
+    <summary>Metabase ha mejorado su seguridad y funcionalidad con actualizaciones recientes. Se han abordado vulnerabilidades de seguridad y se han agregado nuevas características para mejorar la experiencia del usuario.</summary>
+    <published>2026-05-01T09:50:00+00:00</published>
   </entry>
 </feed>

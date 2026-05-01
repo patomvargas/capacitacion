@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gemini: Nuevas Funcionalidades y Mejoras - Gemini</title>
-    <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
+    <title>OpenShift: Mejores prácticas y novedades - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>Gemini: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-04-19 0900 · Gemini</div>
+    <h1>OpenShift: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-05-01 0950 · OpenShift</div>
 
     <div class="content">
         
@@ -66,23 +66,31 @@
             
         
             
-            <p>La última versión de Gemini introduce la facturación por uso para los modelos Pro y Flash, lo que permite a los desarrolladores pagar solo por lo que utilizan. Además, se han aumentado los límites de velocidad para los modelos Pro y Flash, lo que permite una mayor cantidad de solicitudes por segundo.</p>
+            <p>OpenShift es una plataforma de contenedores de código abierto que se basa en Kubernetes y ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. Una de las características más destacadas de OpenShift es la implementación de operadores, que son paquetes de software que se encargan de la gestión y la configuración de las aplicaciones en la plataforma. Para implementar un operador en OpenShift, se puede utilizar el comando `oc create -f operador.yaml`, donde `operador.yaml` es el archivo de configuración del operador.</p>
             
         
             
-            <p>Para utilizar la API de Gemini, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando `gcloud ai gemini init` para inicializar el proyecto y `gcloud ai gemini deploy` para desplegar el modelo.</p>
+        
+            
+            <p>La configuración de rutas en OpenShift es otro aspecto importante de la plataforma. Las rutas se utilizan para exponer las aplicaciones a Internet y permitir el acceso a los usuarios. Para configurar una ruta en OpenShift, se puede utilizar el comando `oc expose svc mi-servicio --hostname=mihostname`, donde `mi-servicio` es el nombre del servicio que se desea exponer y `mihostname` es el nombre del host que se desea utilizar.</p>
             
         
             
-            <p>La documentación oficial de Gemini proporciona una guía práctica para empezar a utilizar la API, incluyendo la elección del modelo adecuado para cada proyecto. Por ejemplo, el modelo `gemini-2.5-flash` es una buena opción para proyectos educativos debido a su equilibrio entre velocidad y costo.</p>
+        
+            
+            <p>La monitorización de la plataforma es fundamental para garantizar el funcionamiento correcto de las aplicaciones. OpenShift ofrece varias herramientas de monitorización, incluyendo Prometheus y Grafana. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml`, donde `prometheus.yaml` es el archivo de configuración de Prometheus.</p>
             
         
             
-            <p>Además, se han lanzado nuevas funcionalidades como Gemini 3.1 Flash Live, que permite a los desarrolladores crear agentes conversacionales en tiempo real. Para utilizar esta funcionalidad, es necesario utilizar el comando `gemini live init` y luego `gemini live deploy`.</p>
+        
+            
+            <p>En cuanto a las novedades, OpenShift ha anunciado recientemente la disponibilidad de OpenShift Virtualization, que permite a los usuarios crear y gestionar máquinas virtuales en la plataforma. Además, OpenShift ha mejorado la compatibilidad con Azure, lo que permite a los usuarios implementar y gestionar aplicaciones en la nube de Microsoft.</p>
             
         
             
-            <p>La comunidad de desarrolladores de Gemini también ha creado herramientas y tutoriales para ayudar a los desarrolladores a aprovechar al máximo la API. Por ejemplo, el tutorial de Subagentes de Gemini CLI proporciona una guía paso a paso para crear agentes personalizados.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y recursos para ayudar a los usuarios a migrar sus aplicaciones a la plataforma. Por ejemplo, la herramienta `oc migrate` permite a los usuarios migrar sus aplicaciones desde otros entornos de contenedores, como Docker.</p>
             
         
             
@@ -97,27 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank">Release notes | Gemini API | Google AI for Developers</a>
+                <a href="https://en.wikipedia.org/wiki/Red_Hat" target="_blank">Red Hat - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.cloud.google.com/gemini/docs/release-notes" target="_blank">Gemini for Google Cloud release notes</a>
+                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank">Gemini Enterprise release notes | Google Cloud Documentation</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/" target="_blank">Build real-time conversational agents with Gemini 3.1 Flash Live</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/eleonorarocchi/getting-started-with-the-gemini-api-a-practical-guide-3hhd" target="_blank">Getting Started with the Gemini API: A Practical Guide</a>
+                <a href="https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026" target="_blank">Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026</a>
                 
             </li>
             
@@ -128,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-27_1022.html">&larr; 2026-04-27 1022</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-05-01_0950.html">2026-05-01 0950 &rarr;</a>
             
         </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gemini: Nuevas Funcionalidades y Mejoras - Gemini</title>
+    <title>Integración de Gemini con Claude Code - Gemini</title>
     <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
     <style>
         :root {
@@ -57,36 +57,38 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
     </div>
 
-    <h1>Gemini: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-04-19 0900 · Gemini</div>
+    <h1>Integración de Gemini con Claude Code</h1>
+    <div class="meta">2026-05-01 0950 · Gemini</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La última versión de Gemini introduce la facturación por uso para los modelos Pro y Flash, lo que permite a los desarrolladores pagar solo por lo que utilizan. Además, se han aumentado los límites de velocidad para los modelos Pro y Flash, lo que permite una mayor cantidad de solicitudes por segundo.</p>
-            
-        
-            
-            <p>Para utilizar la API de Gemini, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando `gcloud ai gemini init` para inicializar el proyecto y `gcloud ai gemini deploy` para desplegar el modelo.</p>
-            
-        
-            
-            <p>La documentación oficial de Gemini proporciona una guía práctica para empezar a utilizar la API, incluyendo la elección del modelo adecuado para cada proyecto. Por ejemplo, el modelo `gemini-2.5-flash` es una buena opción para proyectos educativos debido a su equilibrio entre velocidad y costo.</p>
-            
-        
-            
-            <p>Además, se han lanzado nuevas funcionalidades como Gemini 3.1 Flash Live, que permite a los desarrolladores crear agentes conversacionales en tiempo real. Para utilizar esta funcionalidad, es necesario utilizar el comando `gemini live init` y luego `gemini live deploy`.</p>
-            
-        
-            
-            <p>La comunidad de desarrolladores de Gemini también ha creado herramientas y tutoriales para ayudar a los desarrolladores a aprovechar al máximo la API. Por ejemplo, el tutorial de Subagentes de Gemini CLI proporciona una guía paso a paso para crear agentes personalizados.</p>
+            <p>La integración entre Gemini y Claude Code se logra a través del puente Claude-Gemini, que automáticamente delega tareas complejas de análisis de código desde Claude Code a Gemini. Esto permite combinar las capacidades de razonamiento de Claude con la capacidad de procesamiento de contexto grande de Gemini.</p>
             
         
             
         
+            
+            <p>Para implementar esta integración, se puede utilizar el repositorio de GitHub `claude-gemini-bridge`, que proporciona una guía detallada para configurar el puente. El proceso implica ejecutar el comando `git clone https://github.com/tkaufmann/claude-gemini-bridge.git` y luego seguir las instrucciones del archivo `README.md` para configurar el puente.</p>
+            
+        
+            
+        
+            
+            <p>La integración de Gemini con Claude Code también se puede utilizar en conjunto con otras herramientas de desarrollo, como el kit de desarrollo de AI de Databricks. Este kit proporciona una forma de monitorear la integridad de la cadena de suministro y detectar vulnerabilidades conocidas en las dependencias. Para utilizar este kit, se puede ejecutar el comando `pip install databricks-ai-dev-kit` y luego seguir las instrucciones del archivo `README.md` para configurar el kit.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, es importante mencionar que la integración de Gemini con Claude Code también requiere considerar la seguridad de la máquina de desarrollo. Se puede utilizar herramientas como `dev-machine-guard` para escanear la máquina de desarrollo en busca de agentes de AI, servidores MCP, extensiones de IDE y paquetes sospechosos. Para utilizar esta herramienta, se puede ejecutar el comando `git clone https://github.com/step-security/dev-machine-guard.git` y luego seguir las instrucciones del archivo `README.md` para configurar la herramienta.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la integración de Gemini con Claude Code es una forma efectiva de mejorar la eficiencia en el análisis de código a gran escala. Al utilizar el puente Claude-Gemini y combinando esta integración con otras herramientas de desarrollo, como el kit de desarrollo de AI de Databricks, se puede lograr una mayor eficiencia y seguridad en el proceso de desarrollo.</p>
             
         
     </div>
@@ -97,27 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://ai.google.dev/gemini-api/docs/changelog" target="_blank">Release notes | Gemini API | Google AI for Developers</a>
+                <a href="https://github.com/tkaufmann/claude-gemini-bridge" target="_blank">Intelligent integration between Claude Code and Google Gemini for large-scale code analysis</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.cloud.google.com/gemini/docs/release-notes" target="_blank">Gemini for Google Cloud release notes</a>
+                <a href="https://github.com/databricks-solutions/ai-dev-kit" target="_blank">Databricks AI Dev Kit</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank">Gemini Enterprise release notes | Google Cloud Documentation</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-3-1-flash-live/" target="_blank">Build real-time conversational agents with Gemini 3.1 Flash Live</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/eleonorarocchi/getting-started-with-the-gemini-api-a-practical-guide-3hhd" target="_blank">Getting Started with the Gemini API: A Practical Guide</a>
+                <a href="https://github.com/step-security/dev-machine-guard" target="_blank">Scan your dev machine for AI agents, MCP servers, IDE extensions, and suspicious packages — in seconds.</a>
                 
             </li>
             
@@ -128,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-15_0926.html">&larr; 2026-04-15 0926</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-04-19_0900.html">&larr; 2026-04-19 0900</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-05-01_0950.html">2026-05-01 0950 &rarr;</a>
             
         </div>
     </div>

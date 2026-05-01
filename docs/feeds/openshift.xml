@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-04-30T10:12:42.385861+00:00</updated>
+  <updated>2026-05-01T09:51:49.750892+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -271,5 +271,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-27_1022.html"/>
     <summary>OpenShift es una plataforma de contenerización que ofrece una amplia gama de herramientas y características para la gestión de aplicaciones en la nube. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo la integración con Azure y la virtualización.</summary>
     <published>2026-04-27T10:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-01_0950.html</id>
+    <title>OpenShift: Mejores prácticas y novedades</title>
+    <updated>2026-05-01T09:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores de código abierto que se basa en Kubernetes y ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. Una de las características más destacadas de OpenShift es la implementación de operadores, que son paquetes de software que se encargan de la gestión y la configuración de las aplicaciones en la plataforma. Para implementar un operador en OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f operador.yaml&lt;/code&gt;, donde &lt;code&gt;operador.yaml&lt;/code&gt; es el archivo de configuración del operador.&lt;/p&gt;
+&lt;p&gt;La configuración de rutas en OpenShift es otro aspecto importante de la plataforma. Las rutas se utilizan para exponer las aplicaciones a Internet y permitir el acceso a los usuarios. Para configurar una ruta en OpenShift, se puede utilizar el comando &lt;code&gt;oc expose svc mi-servicio --hostname=mihostname&lt;/code&gt;, donde &lt;code&gt;mi-servicio&lt;/code&gt; es el nombre del servicio que se desea exponer y &lt;code&gt;mihostname&lt;/code&gt; es el nombre del host que se desea utilizar.&lt;/p&gt;
+&lt;p&gt;La monitorización de la plataforma es fundamental para garantizar el funcionamiento correcto de las aplicaciones. OpenShift ofrece varias herramientas de monitorización, incluyendo Prometheus y Grafana. Para configurar Prometheus en OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f prometheus.yaml&lt;/code&gt;, donde &lt;code&gt;prometheus.yaml&lt;/code&gt; es el archivo de configuración de Prometheus.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, OpenShift ha anunciado recientemente la disponibilidad de OpenShift Virtualization, que permite a los usuarios crear y gestionar máquinas virtuales en la plataforma. Además, OpenShift ha mejorado la compatibilidad con Azure, lo que permite a los usuarios implementar y gestionar aplicaciones en la nube de Microsoft.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y recursos para ayudar a los usuarios a migrar sus aplicaciones a la plataforma. Por ejemplo, la herramienta &lt;code&gt;oc migrate&lt;/code&gt; permite a los usuarios migrar sus aplicaciones desde otros entornos de contenedores, como Docker.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Red_Hat"&gt;Red Hat - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026"&gt;Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-01_0950.html"/>
+    <summary>OpenShift es una plataforma de contenedores de código abierto que ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. En este artículo, se presentan las mejores prácticas y novedades de OpenShift, incluyendo la implementación de operadores, la configuración de rutas y la monitorización de la plataforma.</summary>
+    <published>2026-05-01T09:50:00+00:00</published>
   </entry>
 </feed>
