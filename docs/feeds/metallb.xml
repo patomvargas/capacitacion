@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-01T09:51:49.764443+00:00</updated>
+  <updated>2026-05-02T09:13:45.531425+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -486,5 +486,46 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-28_1020.html"/>
     <summary>MetalLB es un componente clave en entornos de Kubernetes, permitiendo la configuración de servicios de red de manera flexible y escalable. En este artículo, exploraremos las mejores prácticas para configurar y solucionar problemas en MetalLB.</summary>
     <published>2026-04-28T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-02_0912.html</id>
+    <title>MetalLB: Balanceo de Carga en Kubernetes</title>
+    <updated>2026-05-02T09:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta de balanceo de carga para Kubernetes que se ejecuta en cada nodo del clúster y proporciona servicios de balanceo de carga de manera eficiente. Para configurar MetalLB en modo L2, es necesario crear un objeto de configuración que especifique el modo de operación y la dirección IP del servicio. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl apply -f&lt;/code&gt; para aplicar la configuración siguiente:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: metallb.io/v1beta1&lt;/p&gt;
+&lt;p&gt;kind: IPAddressPool&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: my-pool&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 192.168.1.1-192.168.1.10&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Luego, se puede crear un servicio de balanceo de carga que utilice el pool de direcciones IP configurado anteriormente. Para ello, se puede utilizar el comando &lt;code&gt;kubectl expose&lt;/code&gt; para exponer el servicio y asignarle una dirección IP del pool.&lt;/p&gt;
+&lt;p&gt;En cuanto al modo BGP, MetalLB permite a los administradores de sistemas configurar servicios de balanceo de carga que se anuncien a través del protocolo BGP. Para ello, es necesario crear un objeto de configuración que especifique el modo de operación BGP y la información de autenticación para el servidor BGP. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl apply -f&lt;/code&gt; para aplicar la configuración siguiente:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: metallb.io/v1beta1&lt;/p&gt;
+&lt;p&gt;kind: BGPAdvertisement&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: my-advertisement&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;peer:&lt;/p&gt;
+&lt;p&gt;ip: 192.168.1.100&lt;/p&gt;
+&lt;p&gt;port: 179&lt;/p&gt;
+&lt;p&gt;community:&lt;/p&gt;
+&lt;p&gt;- 64512:100&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas comunes con MetalLB, es importante verificar la configuración del servicio de balanceo de carga y asegurarse de que el pool de direcciones IP esté correctamente configurado. También es recomendable utilizar herramientas de depuración como &lt;code&gt;kubectl logs&lt;/code&gt; y &lt;code&gt;kubectl describe&lt;/code&gt; para obtener información detallada sobre el estado del servicio.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el sistema de orquestación de contenedores. Los administradores de sistemas pueden utilizar comandos como &lt;code&gt;kubectl get&lt;/code&gt; y &lt;code&gt;kubectl describe&lt;/code&gt; para obtener información sobre los servicios de balanceo de carga y los nodos del clúster.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para el balanceo de carga en Kubernetes que permite a los administradores de sistemas configurar y gestionar servicios de balanceo de carga de manera eficiente. Con su capacidad para configurar servicios de balanceo de carga en modo L2 y BGP, así como su integración con Kubernetes, MetalLB es una excelente opción para aquellos que buscan una solución de balanceo de carga escalable y segura.&lt;/p&gt;
+&lt;p&gt;Para más información sobre MetalLB y su configuración, se recomienda consultar la documentación oficial del proyecto.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb"&gt;MetalLB GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/"&gt;Kubernetes Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://metallb.universe.tf/"&gt;MetalLB Documentación&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-02_0912.html"/>
+    <summary>MetalLB es una herramienta de balanceo de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar servicios de balanceo de carga de manera eficiente. En este artículo, se explora cómo configurar MetalLB en modo L2 y BGP, así como cómo utilizar pools de direcciones IP y solucionar problemas comunes.</summary>
+    <published>2026-05-02T09:12:00+00:00</published>
   </entry>
 </feed>

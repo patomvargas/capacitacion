@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatización de flujos de trabajo con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+    </div>
+
+    <h1>Automatización de flujos de trabajo con n8n</h1>
+    <div class="meta">2026-05-02 0912 · n8n</div>
+
+    <div class="content">
+        
+        
+            
+            <p>n8n es una herramienta poderosa para la automatización de flujos de trabajo, con más de 1.400 integraciones y un editor de nodos visual. Para empezar a utilizar n8n, es importante entender cómo funcionan los nodos y los flujos de trabajo. Un nodo es un componente que realiza una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Un flujo de trabajo es una serie de nodos conectados que trabajan juntos para lograr un objetivo.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar un flujo de trabajo en n8n, es necesario crear un nuevo flujo de trabajo y agregar nodos a él. Cada nodo tiene sus propias configuraciones y parámetros que deben ser establecidos. Por ejemplo, para agregar un nodo de correo electrónico, es necesario establecer el servidor de correo electrónico, el remitente y el destinatario. Esto se puede hacer utilizando el comando `n8n-nodes-base.email` y configurando los parámetros necesarios.</p>
+            
+        
+            
+        
+            
+            <p>Es importante tener en cuenta que n8n tiene algunas vulnerabilidades de seguridad que deben ser abordadas. Por ejemplo, la vulnerabilidad de polución de prototipo en el nodo GSuiteAdmin puede ser explotada para realizar ataques de ejecución remota de código. Para mitigar esta vulnerabilidad, se puede deshabilitar el nodo XML agregando `n8n-nodes-base.xml` a la variable de entorno `NODES_EXCLUDE`. Esto se puede hacer utilizando el comando `export NODES_EXCLUDE=n8n-nodes-base.xml`.</p>
+            
+        
+            
+        
+            
+            <p>Además, n8n ofrece la posibilidad de autohospedarse utilizando Docker. Esto puede ser beneficioso para aquellos que desean tener control total sobre su infraestructura y no depender de la nube. Para autohospedar n8n con Docker, es necesario crear un contenedor Docker y configurar los parámetros necesarios. Esto se puede hacer utilizando el comando `docker run -d -p 5678:5678 n8n/n8n`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo que ofrece una gran variedad de integraciones y configuraciones. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad y tomar medidas para mitigarlas. Además, la autohospedación con Docker puede ser una opción viable para aquellos que desean tener control total sobre su infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>Para aceptar micropagos en criptomonedas en n8n sin escribir código, se puede utilizar un protocolo que permite hacer pagos HTTP 402. Esto se puede hacer utilizando el comando `n8n-nodes-base.crypto` y configurando los parámetros necesarios. Esto puede ser beneficioso para aquellos que desean ofrecer servicios de pago en criptomonedas sin tener que escribir código personalizado.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas para utilizar n8n, es importante entender cómo funcionan los nodos y los flujos de trabajo, y cómo configurarlos de manera efectiva. Además, es importante tener en cuenta las vulnerabilidades de seguridad y tomar medidas para mitigarlas. La autohospedación con Docker puede ser una opción viable para aquellos que desean tener control total sobre su infraestructura. Finalmente, es importante investigar y probar diferentes configuraciones y nodos para encontrar la solución que mejor se adapte a las necesidades específicas de cada proyecto.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-mxrg-77hm-89hv" target="_blank">Prototype Pollution in GSuiteAdmin node parameters leads to RCE</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-58qr-rcgv-642v" target="_blank">RCE via SQL Mode of Merge Node</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/_cbd692d476c5faf3b61bcf/n8ns-5-hidden-workflow-patterns-nobody-teaches-186k-stars-but-90-use-it-wrong-1ena" target="_blank">n8n's 5 Hidden Workflow Patterns Nobody Teaches</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/no-time/how-to-build-a-virtual-influencer-system-using-n8n-in-2026-fe94b7f7b396" target="_blank">How to Build a Virtual Influencer System Using n8n in 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jangwook_kim_e31e7291ad98/how-to-self-host-n8n-with-docker-ai-workflow-automation-guide-2026-3lec" target="_blank">How to Self-Host n8n with Docker — AI Workflow Automation Guide 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://tomsmart-ai.medium.com/how-to-accept-crypto-micropayments-in-n8n-without-writing-code-88491a90a865" target="_blank">How to Accept Crypto Micropayments in n8n Without Writing Code</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

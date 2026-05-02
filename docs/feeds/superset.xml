@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-01T09:51:49.762104+00:00</updated>
+  <updated>2026-05-02T09:13:45.528923+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -282,5 +282,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-28_1020.html"/>
     <summary>Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards y gráficos personalizados. En este artículo, se presentan algunas de las mejoras y novedades más recientes en Superset, incluyendo la adición de una opción de pre-filtro para el control de grano temporal y la resolución de problemas con la ordenación descendente en gráficos de barras.</summary>
     <published>2026-04-28T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-05-02_0912.html</id>
+    <title>Superset: Mejoras y Best Practices</title>
+    <updated>2026-05-02T09:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de visualización de datos y creación de dashboards desarrollada por Apache. En las últimas actualizaciones, se han abordado algunos problemas relacionados con la implementación de subdirectorios y la configuración de la raíz de la aplicación. Por ejemplo, se ha solucionado el problema de la doble prefijación del logotipo cuando se utiliza &lt;code&gt;SUPERSET_APP_ROOT&lt;/code&gt; en la configuración.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede utilizar la configuración &lt;code&gt;SUPERSET_APP_ROOT&lt;/code&gt; en el archivo &lt;code&gt;superset_config.py&lt;/code&gt;. Por ejemplo, se puede agregar la siguiente línea de código: &lt;code&gt;SUPERSET_APP_ROOT = '/path/to/superset'&lt;/code&gt;. Esto permitirá configurar la raíz de la aplicación correctamente y evitar la doble prefijación del logotipo.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la posibilidad de bypass de la protección CSRF (Cross-Site Request Forgery) para APIs personalizadas. Esto se puede lograr agregando la siguiente línea de código en el archivo &lt;code&gt;superset_config.py&lt;/code&gt;: &lt;code&gt;SUPERSET_CSRF_DISABLED = True&lt;/code&gt;. Sin embargo, es importante tener en cuenta que esta configuración puede suponer un riesgo de seguridad y debe ser utilizada con precaución.&lt;/p&gt;
+&lt;p&gt;En cuanto a la creación de dashboards, Superset ofrece una variedad de herramientas y características para personalizar la visualización de los datos. Por ejemplo, se pueden utilizar plantillas Jinja para crear dashboards personalizados. Para hacer esto, se puede crear un archivo de plantilla Jinja en el directorio &lt;code&gt;superset/templates&lt;/code&gt; y luego llamar a la plantilla en el archivo &lt;code&gt;superset_config.py&lt;/code&gt; utilizando la función &lt;code&gt;render_template&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Superset tiene una comunidad activa y ofrece una variedad de recursos y documentación para ayudar a los usuarios a aprovechar al máximo la herramienta. Por ejemplo, se pueden encontrar ejemplos de código y tutoriales en la página oficial de Superset en GitHub.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la visualización de datos y la creación de dashboards. Con las últimas mejoras y best practices, los usuarios pueden aprovechar al máximo la herramienta y crear dashboards personalizados y efectivos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/39432"&gt;Subdirectory deployment: logo double-prefixed when using SUPERSET_APP_ROOT&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39135"&gt;Bypass CSRF superset for custom API in superset_config.py&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/39213"&gt;Green/Red contrast colors doesn’t look great in dark mode, compared to light mode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-02_0912.html"/>
+    <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan algunas mejoras y best practices para su uso efectivo.</summary>
+    <published>2026-05-02T09:12:00+00:00</published>
   </entry>
 </feed>
