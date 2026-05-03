@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-02T09:13:45.536337+00:00</updated>
+  <updated>2026-05-03T09:25:18.989723+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -295,5 +295,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-29_1010.html"/>
     <summary>Ansible ha lanzado varias actualizaciones recientemente, incluyendo la versión 2.21.0rc1 y la versión 2.20.5 de ansible-core. Estas actualizaciones incluyen mejoras en la depuración y la seguridad.</summary>
     <published>2026-04-29T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-03_0924.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-05-03T09:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de 'infrastructure as code' (IaC). Esto significa que la configuración de la infraestructura se define en archivos de texto, como playbooks, que pueden ser versionados y gestionados de manera centralizada. Los playbooks en Ansible se escriben en YAML y pueden incluir tareas, handlers y variables. Por ejemplo, un playbook básico para instalar y configurar un servidor web podría incluir las siguientes tareas: &lt;code&gt;yum install -y httpd&lt;/code&gt; y &lt;code&gt;systemctl start httpd&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para gestionar la complejidad de los playbooks, Ansible proporciona el concepto de roles. Los roles son conjuntos de tareas y handlers que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para instalar y configurar un servidor de base de datos, y luego reutilizar ese rol en diferentes playbooks. Las colecciones en Ansible son otro concepto importante, ya que permiten agrupar roles y módulos relacionados en un solo paquete. Esto facilita la gestión y el intercambio de configuraciones entre equipos y proyectos.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es el vault. El vault es un mecanismo de cifrado que permite proteger información sensible, como claves y contraseñas, dentro de los playbooks. Esto es especialmente útil cuando se trabaja con infraestructuras en la nube o con servidores remotos. Por ejemplo, se puede cifrar una clave de acceso a un servidor de base de datos utilizando el comando &lt;code&gt;ansible-vault encrypt_string&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de inventarios, Ansible proporciona una variedad de opciones, incluyendo archivos de inventario en formato INI o YAML. Los archivos de inventario permiten definir grupos de servidores y variables específicas para cada grupo. Por ejemplo, se puede crear un archivo de inventario que incluya los siguientes grupos: &lt;code&gt;servidores_web&lt;/code&gt; y &lt;code&gt;servidores_db&lt;/code&gt;. Luego, se puede utilizar el comando &lt;code&gt;ansible-playbook&lt;/code&gt; para ejecutar un playbook en todos los servidores del grupo &lt;code&gt;servidores_web&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, Ansible también se puede integrar con herramientas de gestión de infraestructura como AWX/Tower. AWX/Tower es una plataforma de gestión de infraestructura que proporciona una interfaz gráfica de usuario para gestionar playbooks, inventarios y jobs. Esto permite a los administradores de sistemas y desarrolladores trabajar de manera más eficiente y colaborativa en la gestión de la infraestructura.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una variedad de características y herramientas para gestionar configuraciones de manera eficiente. Al utilizar playbooks, roles, colecciones, vault y inventarios, los administradores de sistemas y desarrolladores pueden implementar y gestionar infraestructuras complejas de manera centralizada y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/ansible-community/ai-forge"&gt;ansible-community/ai-forge&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/trailofbits/algo"&gt;trailofbits/algo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-03_0924.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible, incluyendo el uso de playbooks, roles, colecciones y vault.</summary>
+    <published>2026-05-03T09:24:00+00:00</published>
   </entry>
 </feed>

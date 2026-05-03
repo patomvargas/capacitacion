@@ -1,4 +1,20 @@
 {
+  "2026-05-03_0924": {
+    "slug": "docker",
+    "title": "Mejoras de seguridad en Docker",
+    "summary": "En este artículo, se presentan las mejores prácticas para mejorar la seguridad en Docker, incluyendo la utilización de multi-stage builds y la configuración de redes. Además, se discuten las últimas novedades en seguridad y las recomendaciones de OWASP.",
+    "content": "La seguridad es un aspecto fundamental en la implementación de contenedores Docker. Una de las mejores prácticas es utilizar `multi-stage builds` para minimizar el tamaño de las imágenes y reducir la superficie de ataque. Esto se puede lograr utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción.\n \n Para mejorar la seguridad de las redes en Docker, se pueden utilizar `docker network` para crear redes personalizadas y asignar direcciones IP estáticas a los contenedores. Por ejemplo, se puede crear una red con `docker network create --subnet=10.0.0.0/24 mi_red` y luego asignar una dirección IP a un contenedor con `docker run -it --net mi_red --ip 10.0.0.10 mi_contenedor`.\n \n Otra forma de mejorar la seguridad es utilizando `BuildKit`, que es una herramienta de construcción de imágenes de Docker que permite una mayor flexibilidad y seguridad en la construcción de imágenes. Se puede habilitar `BuildKit` con el comando `export DOCKER_BUILDKIT=1` antes de ejecutar `docker build`.\n \n En cuanto a la seguridad de los registros de Docker, es importante utilizar `docker login` para autenticar con el registro y `docker tag` para asignar un nombre y una versión a la imagen antes de subirla al registro. Por ejemplo, se puede subir una imagen al registro con `docker push mi_usuario/mi_imagen:latest`.\n \n La OWASP (Open Web Application Security Project) proporciona una serie de recomendaciones para mejorar la seguridad de las aplicaciones, incluyendo la utilización de `docker-compose` para definir y ejecutar múltiples contenedores de forma segura. Se puede utilizar `docker-compose up` para iniciar los contenedores y `docker-compose down` para detenerlos.\n \n En resumen, la seguridad en Docker es fundamental y se puede mejorar utilizando `multi-stage builds`, `docker network`, `BuildKit` y siguiendo las recomendaciones de OWASP.",
+    "sources": [
+      {
+        "title": "Issue #52337",
+        "url": "https://github.com/moby/moby/issues/52337"
+      },
+      {
+        "title": "OWASP Cheat Sheet Series",
+        "url": "https://github.com/OWASP/CheatSheetSeries"
+      }
+    ]
+  },
   "2026-04-29_1010": {
     "slug": "docker",
     "title": "Docker: Mejores prácticas y novedades",

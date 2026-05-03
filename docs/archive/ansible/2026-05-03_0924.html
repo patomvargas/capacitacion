@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Nuevas Funcionalidades y Mejoras - Ansible</title>
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
     <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Ansible: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-04-29 1010 · Ansible</div>
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-05-03 0924 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura muy popular en la industria. Recientemente, ha habido varias actualizaciones importantes en el ecosistema de Ansible. La versión 2.21.0rc1 de ansible-core ha sido lanzada, lo que incluye varias mejoras y correcciones de errores.</p>
+            <p>Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de 'infrastructure as code' (IaC). Esto significa que la configuración de la infraestructura se define en archivos de texto, como playbooks, que pueden ser versionados y gestionados de manera centralizada. Los playbooks en Ansible se escriben en YAML y pueden incluir tareas, handlers y variables. Por ejemplo, un playbook básico para instalar y configurar un servidor web podría incluir las siguientes tareas: `yum install -y httpd` y `systemctl start httpd`.</p>
             
         
             
         
             
-            <p>Para instalar la última versión de ansible-core, se puede utilizar el comando `pip install ansible-core`. Es importante tener en cuenta que la versión 2.21.0rc1 es una versión de pre-lanzamiento, por lo que es posible que no sea adecuada para entornos de producción.</p>
+            <p>Para gestionar la complejidad de los playbooks, Ansible proporciona el concepto de roles. Los roles son conjuntos de tareas y handlers que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para instalar y configurar un servidor de base de datos, y luego reutilizar ese rol en diferentes playbooks. Las colecciones en Ansible son otro concepto importante, ya que permiten agrupar roles y módulos relacionados en un solo paquete. Esto facilita la gestión y el intercambio de configuraciones entre equipos y proyectos.</p>
             
         
             
         
             
-            <p>La versión 2.20.5 de ansible-core también ha sido lanzada, lo que incluye correcciones de errores y mejoras en la depuración. Una de las mejoras incluidas en esta versión es la capacidad de agregar el nombre del host a los mensajes de error de WINRM, lo que facilita la depuración de problemas.</p>
+            <p>Otra característica importante de Ansible es el vault. El vault es un mecanismo de cifrado que permite proteger información sensible, como claves y contraseñas, dentro de los playbooks. Esto es especialmente útil cuando se trabaja con infraestructuras en la nube o con servidores remotos. Por ejemplo, se puede cifrar una clave de acceso a un servidor de base de datos utilizando el comando `ansible-vault encrypt_string`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las funcionalidades de Ansible, es importante utilizar playbooks y roles de manera efectiva. Un playbook es un archivo que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Un role es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks.</p>
+            <p>En cuanto a la gestión de inventarios, Ansible proporciona una variedad de opciones, incluyendo archivos de inventario en formato INI o YAML. Los archivos de inventario permiten definir grupos de servidores y variables específicas para cada grupo. Por ejemplo, se puede crear un archivo de inventario que incluya los siguientes grupos: `servidores_web` y `servidores_db`. Luego, se puede utilizar el comando `ansible-playbook` para ejecutar un playbook en todos los servidores del grupo `servidores_web`.</p>
             
         
             
         
             
-            <p>La configuración de la inventario de Ansible es otro aspecto importante a considerar. La inventario define los hosts y grupos de hosts que se van a administrar con Ansible. Se puede utilizar el comando `ansible-inventory` para gestionar la inventario.</p>
+            <p>Finalmente, Ansible también se puede integrar con herramientas de gestión de infraestructura como AWX/Tower. AWX/Tower es una plataforma de gestión de infraestructura que proporciona una interfaz gráfica de usuario para gestionar playbooks, inventarios y jobs. Esto permite a los administradores de sistemas y desarrolladores trabajar de manera más eficiente y colaborativa en la gestión de la infraestructura.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Ansible tiene una comunidad activa y una gran cantidad de recursos disponibles para aprender y mejorar las habilidades. La documentación oficial de Ansible es un recurso valioso para aprender sobre las diferentes funcionalidades y configuraciones de la herramienta.</p>
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una variedad de características y herramientas para gestionar configuraciones de manera eficiente. Al utilizar playbooks, roles, colecciones, vault y inventarios, los administradores de sistemas y desarrolladores pueden implementar y gestionar infraestructuras complejas de manera centralizada y segura.</p>
             
         
     </div>
@@ -105,17 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-21-0rc1/45748" target="_blank">New Release: ansible-core v2.21.0rc1</a>
+                <a href="https://github.com/ansible-community/ai-forge" target="_blank">ansible-community/ai-forge</a>
                 
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-5/45715" target="_blank">New Release: ansible-core v2.20.5</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/ansible/ansible/issues/86749" target="_blank">Add host name to WINRM error message to ease debugging</a>
+                <a href="https://github.com/trailofbits/algo" target="_blank">trailofbits/algo</a>
                 
             </li>
             
@@ -126,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-25_0859.html">&larr; 2026-04-25 0859</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-04-29_1010.html">&larr; 2026-04-29 1010</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-03_0924.html">2026-05-03 0924 &rarr;</a>
             
         </div>
     </div>

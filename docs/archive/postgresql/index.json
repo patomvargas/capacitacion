@@ -1,4 +1,28 @@
 {
+  "2026-05-03_0924": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. En este artículo, se exploran las mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la auditoría.",
+    "content": "\nPostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de índices. Los índices permiten a la base de datos acceder a los datos de manera más eficiente, lo que reduce el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`.\n\nOtra forma de mejorar el rendimiento de PostgreSQL es mediante la replicación. La replicación permite a la base de datos mantener una copia exacta de los datos en un servidor secundario, lo que permite mejorar la disponibilidad y la escalabilidad. Para configurar la replicación en PostgreSQL, se pueden utilizar comandos como `pg_basebackup` y `pg_ctl`. Además, se pueden utilizar herramientas como `pg_stat` para monitorear el rendimiento de la base de datos y identificar posibles problemas.\n\nLa seguridad es otro aspecto importante en la configuración de PostgreSQL. Una de las formas de mejorar la seguridad es mediante la auditoría. La auditoría permite a la base de datos registrar todas las acciones que se realizan en la base de datos, lo que permite identificar posibles problemas de seguridad. Para configurar la auditoría en PostgreSQL, se pueden utilizar comandos como `ALTER SYSTEM SET log_destination TO 'stderr'` y `ALTER SYSTEM SET log_min_duration_statement TO 1000`. Además, se pueden utilizar herramientas como `pg_audit` para analizar los registros de auditoría y identificar posibles problemas de seguridad.\n\nLa versión más reciente de PostgreSQL, la 18.3, incluye varias mejoras en el rendimiento y la seguridad. Una de las novedades más destacadas es la implementación de la E/S asíncrona (AIO), que permite a la base de datos realizar operaciones de E/S de manera concurrente, lo que mejora el rendimiento en general. Además, se han incluido varias mejoras en la seguridad, como la capacidad de cifrar los datos en tránsito y la capacidad de autenticar a los usuarios mediante protocolos como SSL/TLS.\n\nPara realizar copias de seguridad de la base de datos, se pueden utilizar comandos como `pg_dump` y `pg_restore`. Estos comandos permiten a los administradores de bases de datos crear copias de seguridad de la base de datos y restaurarlas en caso de que sea necesario. Además, se pueden utilizar herramientas como `pg_backup` para automatizar el proceso de copia de seguridad y restauración.\n\nEn resumen, PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. Mediante la configuración de índices, la replicación, la auditoría y la copia de seguridad, los administradores de bases de datos pueden mejorar el rendimiento y la seguridad de la base de datos y garantizar la disponibilidad y la escalabilidad de la misma.\n",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "The Complete Guide to PostgreSQL SQL Query Analysis & Optimization",
+        "url": "https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518"
+      },
+      {
+        "title": "Database Security Best Practices and Solutions",
+        "url": "https://ozwizard.medium.com/database-security-best-practices-and-solutions-aa7375ed9541"
+      }
+    ]
+  },
   "2026-04-29_1010": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-02T09:13:45.533913+00:00</updated>
+  <updated>2026-05-03T09:25:18.984260+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -171,5 +171,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-29_1010.html"/>
     <summary>En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se proporcionan ejemplos prácticos y comandos para mejorar la comprensión y el uso de Docker.</summary>
     <published>2026-04-29T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-05-03_0924.html</id>
+    <title>Mejoras de seguridad en Docker</title>
+    <updated>2026-05-03T09:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;La seguridad es un aspecto fundamental en la implementación de contenedores Docker. Una de las mejores prácticas es utilizar &lt;code&gt;multi-stage builds&lt;/code&gt; para minimizar el tamaño de las imágenes y reducir la superficie de ataque. Esto se puede lograr utilizando el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para especificar la etapa de construcción.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de las redes en Docker, se pueden utilizar &lt;code&gt;docker network&lt;/code&gt; para crear redes personalizadas y asignar direcciones IP estáticas a los contenedores. Por ejemplo, se puede crear una red con &lt;code&gt;docker network create --subnet=10.0.0.0/24 mi_red&lt;/code&gt; y luego asignar una dirección IP a un contenedor con &lt;code&gt;docker run -it --net mi_red --ip 10.0.0.10 mi_contenedor&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar la seguridad es utilizando &lt;code&gt;BuildKit&lt;/code&gt;, que es una herramienta de construcción de imágenes de Docker que permite una mayor flexibilidad y seguridad en la construcción de imágenes. Se puede habilitar &lt;code&gt;BuildKit&lt;/code&gt; con el comando &lt;code&gt;export DOCKER_BUILDKIT=1&lt;/code&gt; antes de ejecutar &lt;code&gt;docker build&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad de los registros de Docker, es importante utilizar &lt;code&gt;docker login&lt;/code&gt; para autenticar con el registro y &lt;code&gt;docker tag&lt;/code&gt; para asignar un nombre y una versión a la imagen antes de subirla al registro. Por ejemplo, se puede subir una imagen al registro con &lt;code&gt;docker push mi_usuario/mi_imagen:latest&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La OWASP (Open Web Application Security Project) proporciona una serie de recomendaciones para mejorar la seguridad de las aplicaciones, incluyendo la utilización de &lt;code&gt;docker-compose&lt;/code&gt; para definir y ejecutar múltiples contenedores de forma segura. Se puede utilizar &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar los contenedores y &lt;code&gt;docker-compose down&lt;/code&gt; para detenerlos.&lt;/p&gt;
+&lt;p&gt;En resumen, la seguridad en Docker es fundamental y se puede mejorar utilizando &lt;code&gt;multi-stage builds&lt;/code&gt;, &lt;code&gt;docker network&lt;/code&gt;, &lt;code&gt;BuildKit&lt;/code&gt; y siguiendo las recomendaciones de OWASP.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/moby/issues/52337"&gt;Issue #52337&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OWASP/CheatSheetSeries"&gt;OWASP Cheat Sheet Series&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-03_0924.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas para mejorar la seguridad en Docker, incluyendo la utilización de multi-stage builds y la configuración de redes. Además, se discuten las últimas novedades en seguridad y las recomendaciones de OWASP.</summary>
+    <published>2026-05-03T09:24:00+00:00</published>
   </entry>
 </feed>

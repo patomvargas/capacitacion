@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-02T09:13:45.534720+00:00</updated>
+  <updated>2026-05-03T09:25:18.986127+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -196,5 +196,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-04-25_0859.html"/>
     <summary>En este artículo, se presentan las mejores prácticas de Git para 2026, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren las novedades y cambios en la versión 2.54 de Git y se proporcionan ejemplos prácticos de comandos y configuraciones.</summary>
     <published>2026-04-25T08:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-05-03_0924.html</id>
+    <title>Mejores prácticas de Git para sysadmins y DevOps</title>
+    <updated>2026-05-03T09:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;El control de versiones es fundamental en el desarrollo de software y la administración de sistemas. Git es una de las herramientas más populares para este propósito. En este artículo, se presentan algunas de las mejores prácticas de Git para sysadmins y DevOps.&lt;/p&gt;
+&lt;p&gt;Un tema importante en Git es el uso de &lt;code&gt;git rebase&lt;/code&gt; y &lt;code&gt;git interactive rebase&lt;/code&gt;. El comando &lt;code&gt;git rebase&lt;/code&gt; se utiliza para reorganizar los commits en una rama, mientras que &lt;code&gt;git interactive rebase&lt;/code&gt; permite editar los commits de manera interactiva. Por ejemplo, se puede utilizar &lt;code&gt;git rebase -i&lt;/code&gt; para editar los últimos 5 commits.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil en Git es &lt;code&gt;git bisect&lt;/code&gt;. Esta herramienta permite buscar el commit que introduce un bug en el código. Se puede utilizar &lt;code&gt;git bisect start&lt;/code&gt; para iniciar la búsqueda y &lt;code&gt;git bisect bad&lt;/code&gt; o &lt;code&gt;git bisect good&lt;/code&gt; para marcar los commits como buenos o malos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la colaboración, GitHub ofrece varias herramientas para facilitar el trabajo en equipo. Por ejemplo, se puede utilizar &lt;code&gt;git worktree&lt;/code&gt; para crear varias copias de un repositorio en diferentes directorios. También se pueden utilizar los hooks de Git para automatizar tareas, como la ejecución de pruebas unitarias antes de realizar un commit.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar las novedades en Git y GitHub. Por ejemplo, se ha lanzado &lt;code&gt;GitHub Copilot for Azure&lt;/code&gt;, una herramienta que permite desarrollar aplicaciones para Azure de manera más eficiente. También se ha mejorado la seguridad en GitHub con la implementación de &lt;code&gt;cache-memory security hardening&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@awasthi027.ashish/git-basic-and-advance-concepts-and-terminal-commands-04fc984058b6"&gt;Git basic and advance concepts and terminal commands&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/codetodeploy/github-tricks-that-make-collaboration-easier-that-most-teams-dont-use-ab9bc63d572a"&gt;GitHub Tricks That Make Collaboration Easier&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/artifacts-git-for-agents-beta/"&gt;Artifacts: versioned storage that speaks Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-03_0924.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren también las novedades y mejoras en Git y GitHub.</summary>
+    <published>2026-05-03T09:24:00+00:00</published>
   </entry>
 </feed>

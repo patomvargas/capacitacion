@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-02T09:13:45.532878+00:00</updated>
+  <updated>2026-05-03T09:25:18.982210+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -239,5 +239,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-04-29_1010.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la realización de copias de seguridad. Se discuten también las novedades en la versión 18.3 y las mejoras en la gestión de extensiones en CloudNativePG 1.29.0.</summary>
     <published>2026-04-29T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-03_0924.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-05-03T09:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. Una de las formas de optimizar el rendimiento de PostgreSQL es mediante la configuración de índices. Los índices permiten a la base de datos acceder a los datos de manera más eficiente, lo que reduce el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento de PostgreSQL es mediante la replicación. La replicación permite a la base de datos mantener una copia exacta de los datos en un servidor secundario, lo que permite mejorar la disponibilidad y la escalabilidad. Para configurar la replicación en PostgreSQL, se pueden utilizar comandos como &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_ctl&lt;/code&gt;. Además, se pueden utilizar herramientas como &lt;code&gt;pg_stat&lt;/code&gt; para monitorear el rendimiento de la base de datos y identificar posibles problemas.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en la configuración de PostgreSQL. Una de las formas de mejorar la seguridad es mediante la auditoría. La auditoría permite a la base de datos registrar todas las acciones que se realizan en la base de datos, lo que permite identificar posibles problemas de seguridad. Para configurar la auditoría en PostgreSQL, se pueden utilizar comandos como &lt;code&gt;ALTER SYSTEM SET log_destination TO 'stderr'&lt;/code&gt; y &lt;code&gt;ALTER SYSTEM SET log_min_duration_statement TO 1000&lt;/code&gt;. Además, se pueden utilizar herramientas como &lt;code&gt;pg_audit&lt;/code&gt; para analizar los registros de auditoría y identificar posibles problemas de seguridad.&lt;/p&gt;
+&lt;p&gt;La versión más reciente de PostgreSQL, la 18.3, incluye varias mejoras en el rendimiento y la seguridad. Una de las novedades más destacadas es la implementación de la E/S asíncrona (AIO), que permite a la base de datos realizar operaciones de E/S de manera concurrente, lo que mejora el rendimiento en general. Además, se han incluido varias mejoras en la seguridad, como la capacidad de cifrar los datos en tránsito y la capacidad de autenticar a los usuarios mediante protocolos como SSL/TLS.&lt;/p&gt;
+&lt;p&gt;Para realizar copias de seguridad de la base de datos, se pueden utilizar comandos como &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;. Estos comandos permiten a los administradores de bases de datos crear copias de seguridad de la base de datos y restaurarlas en caso de que sea necesario. Además, se pueden utilizar herramientas como &lt;code&gt;pg_backup&lt;/code&gt; para automatizar el proceso de copia de seguridad y restauración.&lt;/p&gt;
+&lt;p&gt;En resumen, PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. Mediante la configuración de índices, la replicación, la auditoría y la copia de seguridad, los administradores de bases de datos pueden mejorar el rendimiento y la seguridad de la base de datos y garantizar la disponibilidad y la escalabilidad de la misma.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/PostgreSQL"&gt;PostgreSQL - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;PostgreSQL: News Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518"&gt;The Complete Guide to PostgreSQL SQL Query Analysis &amp; Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ozwizard.medium.com/database-security-best-practices-and-solutions-aa7375ed9541"&gt;Database Security Best Practices and Solutions&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-03_0924.html"/>
+    <summary>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una amplia gama de características para mejorar el rendimiento y la seguridad. En este artículo, se exploran las mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la auditoría.</summary>
+    <published>2026-05-03T09:24:00+00:00</published>
   </entry>
 </feed>

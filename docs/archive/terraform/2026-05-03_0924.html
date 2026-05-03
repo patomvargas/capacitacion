@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Best Practices - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-03 0924 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. Una de las últimas mejoras es la introducción del `terraform-plugin-framework`, que permite a los desarrolladores crear proveedores de Terraform de manera más sencilla y eficiente. Para utilizar este framework, se debe instalar el módulo de Go y configurar el archivo `main.go` con el comando `go mod init`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La gestión de estado es fundamental en Terraform, ya que permite a los administradores de sistemas mantener un registro de los cambios realizados en la infraestructura. Para gestionar el estado, se puede utilizar el comando `terraform state` para visualizar y modificar el estado de la infraestructura. Por ejemplo, se puede utilizar el comando `terraform state list` para visualizar todos los recursos creados en la infraestructura.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Terraform es la capacidad de crear módulos reutilizables. Los módulos son bloques de código que pueden ser reutilizados en diferentes proyectos, lo que permite a los desarrolladores crear infraestructuras de manera más eficiente. Para crear un módulo, se debe crear un archivo `main.tf` con la configuración del módulo y luego utilizar el comando `terraform init` para inicializar el módulo.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La importación de recursos es otra característica importante de Terraform. La importación de recursos permite a los administradores de sistemas importar recursos existentes en la infraestructura y gestionarlos con Terraform. Para importar un recurso, se debe utilizar el comando `terraform import` seguido del nombre del recurso y la ruta del archivo de configuración. Por ejemplo, se puede utilizar el comando `terraform import aws_instance.mi_instancia` para importar una instancia de AWS.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar la característica de workspaces en Terraform. Los workspaces permiten a los administradores de sistemas crear entornos de trabajo independientes para diferentes proyectos o equipos. Para crear un workspace, se debe utilizar el comando `terraform workspace new` seguido del nombre del workspace. Por ejemplo, se puede utilizar el comando `terraform workspace new mi_workspace` para crear un nuevo workspace llamado `mi_workspace`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube, y sus últimas mejoras y best practices permiten a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera más eficiente. Al utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo la potencia de Terraform y crear infraestructuras escalables y seguras.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-plugin-framework?tab=MPL-2.0-1-ov-file" target="_blank">Terraform Plugin Framework</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/vmware/terraform-provider-vra" target="_blank">Terraform Provider for VMware Aria Automation</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-29_1010.html">&larr; 2026-04-29 1010</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-02T09:13:45.535561+00:00</updated>
+  <updated>2026-05-03T09:25:18.987858+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -128,5 +128,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-04-29_1010.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los administradores de sistemas y desarrolladores gestionar y provisionar recursos de infraestructura de manera eficiente. En este artículo, se presentan algunas de las mejores prácticas para la gestión de infraestructura con Terraform, incluyendo la gestión de proveedores, módulos, estado y espacios de trabajo.</summary>
     <published>2026-04-29T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-03_0924.html</id>
+    <title>Terraform: Mejoras y Best Practices</title>
+    <updated>2026-05-03T09:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. Una de las últimas mejoras es la introducción del &lt;code&gt;terraform-plugin-framework&lt;/code&gt;, que permite a los desarrolladores crear proveedores de Terraform de manera más sencilla y eficiente. Para utilizar este framework, se debe instalar el módulo de Go y configurar el archivo &lt;code&gt;main.go&lt;/code&gt; con el comando &lt;code&gt;go mod init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La gestión de estado es fundamental en Terraform, ya que permite a los administradores de sistemas mantener un registro de los cambios realizados en la infraestructura. Para gestionar el estado, se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; para visualizar y modificar el estado de la infraestructura. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform state list&lt;/code&gt; para visualizar todos los recursos creados en la infraestructura.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Terraform es la capacidad de crear módulos reutilizables. Los módulos son bloques de código que pueden ser reutilizados en diferentes proyectos, lo que permite a los desarrolladores crear infraestructuras de manera más eficiente. Para crear un módulo, se debe crear un archivo &lt;code&gt;main.tf&lt;/code&gt; con la configuración del módulo y luego utilizar el comando &lt;code&gt;terraform init&lt;/code&gt; para inicializar el módulo.&lt;/p&gt;
+&lt;p&gt;La importación de recursos es otra característica importante de Terraform. La importación de recursos permite a los administradores de sistemas importar recursos existentes en la infraestructura y gestionarlos con Terraform. Para importar un recurso, se debe utilizar el comando &lt;code&gt;terraform import&lt;/code&gt; seguido del nombre del recurso y la ruta del archivo de configuración. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform import aws_instance.mi_instancia&lt;/code&gt; para importar una instancia de AWS.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la característica de workspaces en Terraform. Los workspaces permiten a los administradores de sistemas crear entornos de trabajo independientes para diferentes proyectos o equipos. Para crear un workspace, se debe utilizar el comando &lt;code&gt;terraform workspace new&lt;/code&gt; seguido del nombre del workspace. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform workspace new mi_workspace&lt;/code&gt; para crear un nuevo workspace llamado &lt;code&gt;mi_workspace&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube, y sus últimas mejoras y best practices permiten a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera más eficiente. Al utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo la potencia de Terraform y crear infraestructuras escalables y seguras.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-plugin-framework?tab=MPL-2.0-1-ov-file"&gt;Terraform Plugin Framework&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/vmware/terraform-provider-vra"&gt;Terraform Provider for VMware Aria Automation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-03_0924.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
+    <published>2026-05-03T09:24:00+00:00</published>
   </entry>
 </feed>

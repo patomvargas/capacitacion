@@ -1,4 +1,24 @@
 {
+  "2026-05-03_0924": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para sysadmins y DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se cubren también las novedades y mejoras en Git y GitHub.",
+    "content": "\nEl control de versiones es fundamental en el desarrollo de software y la administración de sistemas. Git es una de las herramientas más populares para este propósito. En este artículo, se presentan algunas de las mejores prácticas de Git para sysadmins y DevOps.\n\nUn tema importante en Git es el uso de `git rebase` y `git interactive rebase`. El comando `git rebase` se utiliza para reorganizar los commits en una rama, mientras que `git interactive rebase` permite editar los commits de manera interactiva. Por ejemplo, se puede utilizar `git rebase -i` para editar los últimos 5 commits.\n\nOtra herramienta útil en Git es `git bisect`. Esta herramienta permite buscar el commit que introduce un bug en el código. Se puede utilizar `git bisect start` para iniciar la búsqueda y `git bisect bad` o `git bisect good` para marcar los commits como buenos o malos.\n\nEn cuanto a la colaboración, GitHub ofrece varias herramientas para facilitar el trabajo en equipo. Por ejemplo, se puede utilizar `git worktree` para crear varias copias de un repositorio en diferentes directorios. También se pueden utilizar los hooks de Git para automatizar tareas, como la ejecución de pruebas unitarias antes de realizar un commit.\n\nFinalmente, es importante mencionar las novedades en Git y GitHub. Por ejemplo, se ha lanzado `GitHub Copilot for Azure`, una herramienta que permite desarrollar aplicaciones para Azure de manera más eficiente. También se ha mejorado la seguridad en GitHub con la implementación de `cache-memory security hardening`.\n\n",
+    "sources": [
+      {
+        "title": "Git basic and advance concepts and terminal commands",
+        "url": "https://medium.com/@awasthi027.ashish/git-basic-and-advance-concepts-and-terminal-commands-04fc984058b6"
+      },
+      {
+        "title": "GitHub Tricks That Make Collaboration Easier",
+        "url": "https://medium.com/codetodeploy/github-tricks-that-make-collaboration-easier-that-most-teams-dont-use-ab9bc63d572a"
+      },
+      {
+        "title": "Artifacts: versioned storage that speaks Git",
+        "url": "https://blog.cloudflare.com/artifacts-git-for-agents-beta/"
+      }
+    ]
+  },
   "2026-04-25_0859": {
     "slug": "git",
     "title": "Mejores prácticas de Git para 2026",
