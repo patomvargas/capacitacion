@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuración y Mejoras en BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+    </div>
+
+    <h1>Configuración y Mejoras en BIND9</h1>
+    <div class="meta">2026-05-04 1017 · DNS BIND9</div>
+
+    <div class="content">
+        
+        
+            
+            <p>La configuración de zonas en BIND9 se realiza mediante el archivo `named.conf`, donde se definen las zonas de autoridad y las zonas de caché. Es importante definir las zonas de autoridad para los dominios que se desean servir, y configurar las zonas de caché para mejorar el rendimiento. Por ejemplo, se puede configurar una zona de autoridad para el dominio `example.com` de la siguiente manera: `zone "example.com" { type master; file "/etc/bind/db.example.com"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad, es recomendable habilitar DNSSEC, que permite autenticar la respuesta del servidor DNS. Esto se puede hacer mediante la configuración de las claves de zona y la firma de las zonas. Por ejemplo, se puede generar una clave de zona con el comando `dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido según la ubicación del cliente. Esto se puede hacer mediante la configuración de las vistas en el archivo `named.conf`, por ejemplo: `view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para mejorar el rendimiento, es recomendable configurar el registro de eventos y el monitoreo del servidor. Esto se puede hacer mediante la configuración del archivo `named.conf`, por ejemplo: `logging { channel default_log { file "/var/log/named.log"; severity info; }; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que BIND9 tiene una serie de mejoras y novedades en las versiones más recientes, como la compatibilidad con DNS sobre TCP y la mejora del rendimiento en entornos de alta carga. Es recomendable consultar la documentación oficial de BIND9 para obtener más información sobre estas características y cómo configurarlas.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://lists.isc.org/pipermail/bind-users/2026-April/110553.html" target="_blank">BIND 9.21+/9.22: parent-centric delegations and no TTL-based</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.cloudflare.com/" target="_blank">The Cloudflare Blog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:8352" target="_blank">RHSA-2026:8352 - Security Advisory - Red Hat Customer Portal</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-30_1010.html">&larr; 2026-04-30 1010</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

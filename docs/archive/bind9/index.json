@@ -1,4 +1,24 @@
 {
+  "2026-05-04_1017": {
+    "slug": "bind9",
+    "title": "Configuración y Mejoras en BIND9",
+    "summary": "BIND9 es un servidor DNS ampliamente utilizado que requiere una configuración adecuada para garantizar un rendimiento óptimo y seguridad. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos, así como consejos para mejorar el rendimiento.",
+    "content": "La configuración de zonas en BIND9 se realiza mediante el archivo `named.conf`, donde se definen las zonas de autoridad y las zonas de caché. Es importante definir las zonas de autoridad para los dominios que se desean servir, y configurar las zonas de caché para mejorar el rendimiento. Por ejemplo, se puede configurar una zona de autoridad para el dominio `example.com` de la siguiente manera: `zone \"example.com\" { type master; file \"/etc/bind/db.example.com\"; };`.\n\n \n Para mejorar la seguridad, es recomendable habilitar DNSSEC, que permite autenticar la respuesta del servidor DNS. Esto se puede hacer mediante la configuración de las claves de zona y la firma de las zonas. Por ejemplo, se puede generar una clave de zona con el comando `dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com`.\n\n \n Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido según la ubicación del cliente. Esto se puede hacer mediante la configuración de las vistas en el archivo `named.conf`, por ejemplo: `view \"internal\" { match-clients { 10.0.0.0/8; }; recursion yes; };`.\n\n \n Para mejorar el rendimiento, es recomendable configurar el registro de eventos y el monitoreo del servidor. Esto se puede hacer mediante la configuración del archivo `named.conf`, por ejemplo: `logging { channel default_log { file \"/var/log/named.log\"; severity info; }; };`.\n\n \n Finalmente, es importante mencionar que BIND9 tiene una serie de mejoras y novedades en las versiones más recientes, como la compatibilidad con DNS sobre TCP y la mejora del rendimiento en entornos de alta carga. Es recomendable consultar la documentación oficial de BIND9 para obtener más información sobre estas características y cómo configurarlas.",
+    "sources": [
+      {
+        "title": "BIND 9.21+/9.22: parent-centric delegations and no TTL-based",
+        "url": "https://lists.isc.org/pipermail/bind-users/2026-April/110553.html"
+      },
+      {
+        "title": "The Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/"
+      },
+      {
+        "title": "RHSA-2026:8352 - Security Advisory - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8352"
+      }
+    ]
+  },
   "2026-04-30_1010": {
     "slug": "bind9",
     "title": "Configuración de DNS BIND9",

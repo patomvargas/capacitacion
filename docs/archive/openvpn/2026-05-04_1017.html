@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Seguridad y Tunneling con OpenVPN - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
+    </div>
+
+    <h1>Seguridad y Tunneling con OpenVPN</h1>
+    <div class="meta">2026-05-04 1017 · OpenVPN</div>
+
+    <div class="content">
+        
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre dos puntos. La versión más reciente, OpenVPN 2.6.20, incluye correcciones de seguridad y mejoras en la estabilidad. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, lo que se puede hacer utilizando herramientas como `openssl`.</p>
+            
+        
+            
+        
+            
+            <p>Una vez configurado el servidor, los clientes pueden conectarse utilizando el comando `openvpn --config cliente.conf`. Es importante mencionar que la seguridad de la conexión depende en gran medida de la configuración del servidor y del cliente, por lo que es fundamental seguir las mejores prácticas de seguridad, como utilizar claves y certificados seguros y mantener el software actualizado.</p>
+            
+        
+            
+        
+            
+            <p>La autenticación y autorización en OpenVPN se pueden configurar utilizando protocolos como TLS y SSL. El uso de certificados y claves permite una autenticación segura y confiable. Además, OpenVPN admite la configuración de túneles site-to-site, lo que permite conectar dos redes diferentes de manera segura.</p>
+            
+        
+            
+        
+            
+            <p>Para hardenar la configuración de OpenVPN, se pueden utilizar herramientas como `openssl` para generar claves y certificados seguros. También es importante configurar el acceso a los logs y monitorear el tráfico de red para detectar posibles amenazas. El uso de herramientas como `tcpdump` y `Wireshark` puede ser útil para analizar el tráfico de red y detectar posibles problemas.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, la versión 2.6.20 de OpenVPN incluye correcciones de seguridad y mejoras en la estabilidad. Es importante mencionar que la comunidad de OpenVPN está trabajando en la implementación de protocolos de post-cuantum, lo que permitirá una mayor seguridad en el futuro.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la configuración y el mantenimiento de un servidor OpenVPN requieren conocimientos técnicos y experiencia en la administración de redes y seguridad. Por lo tanto, es fundamental seguir las mejores prácticas de seguridad y mantener el software actualizado para garantizar la seguridad y la estabilidad de la conexión VPN.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/OpenVPN/tap-windows6/releases" target="_blank">Releases: OpenVPN/tap-windows6</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://community.openvpn.net/Downloads" target="_blank">Downloads – community wiki - OpenVPN</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OpenVPN/openvpn/compare/v2.7.3...v2.7.4" target="_blank">Comparing v2.7.3...v2.7.4 · OpenVPN/openvpn · GitHub</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-30_1010.html">&larr; 2026-04-30 1010</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

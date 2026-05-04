@@ -58,7 +58,7 @@
     </div>
 
     <h1>Novedades en Kubernetes 1.36</h1>
-    <div class="meta">2026-04-30 1010 · Kubernetes</div>
+    <div class="meta">2026-05-04 1017 · Kubernetes</div>
 
     <div class="content">
         
@@ -66,37 +66,39 @@
             
         
             
-            <p>La versión 1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que incluye una serie de mejoras y características nuevas que permiten a los administradores de sistemas y desarrolladores trabajar de manera más eficiente. Una de las características más destacadas es la disponibilidad general de los espacios de nombres de usuario, que permite a los contenedores ejecutarse con permisos de usuario y grupo específicos.</p>
+            <p>La versión 1.36 de Kubernetes es una actualización importante que incluye varias características y mejoras. Una de las novedades más destacadas es la disponibilidad general de User Namespaces, que permite a los administradores de clusters aislar y gestionar los recursos de los usuarios de manera más efectiva. Para habilitar esta característica, se puede utilizar el comando `kubectl create namespace <namespace> --dry-run=client -o yaml | kubectl apply -f -`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo esta característica, es necesario configurar el parámetro `userns` en el archivo de configuración de Kubernetes, utilizando el comando `kubectl` de la siguiente manera: `kubectl config set-credentials <nombre-usuario> --userns=<id-usuario>`. Además, es importante mencionar que esta característica solo está disponible en sistemas Linux.</p>
+            <p>Otra característica importante es la escalabilidad vertical en lugar para recursos de nivel de pod, que permite a los administradores ajustar los recursos de los pods sin tener que recrearlos. Esto se puede lograr utilizando el comando `kubectl scale --replicas=<num_replicas> <deployment>`. Además, la versión 1.36 incluye mejoras en la seguridad, como la autenticación y autorización basadas en roles, que se pueden configurar utilizando el comando `kubectl create role <role> --verb=<verb> --resource=<resource>`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, la versión 1.36 de Kubernetes incluye varias mejoras, como la autenticación y autorización basadas en roles, que permiten a los administradores asignar permisos específicos a los usuarios y grupos. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create role` y `kubectl create rolebinding`, respectivamente.</p>
+            <p>En cuanto al almacenamiento, la versión 1.36 de Kubernetes incluye mejoras en el soporte para almacenamiento persistente, como el uso de StatefulSets para gestionar los datos de los pods. Para crear un StatefulSet, se puede utilizar el comando `kubectl create statefulset <statefulset> --image=<image> --replicas=<num_replicas>`. Además, la versión 1.36 incluye mejoras en la gestión de los recursos de red, como el uso de Network Policies para controlar el tráfico de red entre los pods.</p>
             
         
             
         
             
-            <p>La versión 1.36 de Kubernetes también incluye mejoras en el almacenamiento y las redes, como el soporte para persistent volumes y la capacidad de configurar redes de manera más flexible. Para configurar un persistent volume, se puede utilizar el comando `kubectl create -f <archivo-de-configuracion>.yaml`, donde el archivo de configuración contiene la definición del volumen persistente.</p>
+            <p>La versión 1.36 de Kubernetes también incluye mejoras en la herramienta de línea de comandos `kubectl`, como la capacidad de utilizar comandos de forma más interactiva. Por ejemplo, se puede utilizar el comando `kubectl debug <pod> -- <command>` para depurar un pod en ejecución. Además, la versión 1.36 incluye mejoras en la documentación y la comunidad de Kubernetes, como la creación de un nuevo sitio web de documentación y la organización de eventos y webinars para la comunidad de desarrolladores.</p>
             
         
             
         
             
-            <p>En resumen, la versión 1.36 de Kubernetes es una versión muy completa que incluye mejoras en seguridad, almacenamiento y redes, y que permite a los administradores de sistemas y desarrolladores trabajar de manera más eficiente. Para obtener más información sobre esta versión, se puede consultar la documentación oficial de Kubernetes.</p>
+            <p>En resumen, la versión 1.36 de Kubernetes es una actualización importante que incluye varias características y mejoras en áreas como la escalabilidad, la seguridad y el almacenamiento. Los administradores de clusters y desarrolladores pueden aprovechar estas novedades para mejorar la gestión y el desempeño de sus aplicaciones en Kubernetes.</p>
             
         
             
         
             
-            <p>Para más información sobre cómo configurar y utilizar las características de Kubernetes 1.36, se puede consultar la documentación oficial de Kubernetes, que incluye ejemplos y tutoriales detallados. Además, se pueden utilizar herramientas como `kubectl` para configurar y administrar los clusters de Kubernetes de manera más eficiente.</p>
+            <p>Para obtener más información sobre la versión 1.36 de Kubernetes, se pueden consultar las fuentes oficiales de la comunidad de Kubernetes, como el sitio web de documentación y el blog de Kubernetes.</p>
+            
+        
             
         
     </div>
@@ -117,7 +119,17 @@
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/" target="_blank">Kubernetes v1.36: User Namespaces in Kubernetes are finally GA</a>
+                <a href="https://kubernetes.io/releases/" target="_blank">Releases | Kubernetes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-user-namespaces/" target="_blank">Kubernetes v1.36: User Namespaces in Kubernetes are finally GA</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/" target="_blank">Kubernetes v1.36: In-Place Vertical Scaling for Pod-Level Resources</a>
                 
             </li>
             
@@ -128,12 +140,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-26_0907.html">&larr; 2026-04-26 0907</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-04-30_1010.html">&larr; 2026-04-30 1010</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-04_1017.html">2026-05-04 1017 &rarr;</a>
             
         </div>
     </div>

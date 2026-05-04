@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-03T09:25:18.962038+00:00</updated>
+  <updated>2026-05-04T10:18:45.483080+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -248,5 +248,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-04-30_1010.html"/>
     <summary>FreeIPA es una solución de gestión de identidad y acceso que proporciona servicios de LDAP, Kerberos y autoridad de certificación. En este artículo, se explora cómo implementar y configurar FreeIPA para una gestión de identidad y acceso segura.</summary>
     <published>2026-04-30T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-04_1017.html</id>
+    <title>FreeIPA: Gestión de Identidad</title>
+    <updated>2026-05-04T10:17:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de código abierto que permite la gestión de identidad y acceso en entornos de red. Proporciona servicios de autenticación, autorización y gestión de identidad, lo que la convierte en una herramienta esencial para cualquier organización que desee implementar una plataforma de gestión de identidad robusta y segura.&lt;/p&gt;
+&lt;p&gt;Para implementar FreeIPA en un entorno de Kubernetes, podemos utilizar Flux CD, una herramienta de automatización de la configuración que nos permite gestionar y desplegar aplicaciones en un clúster de Kubernetes. Primero, debemos crear un archivo de configuración para FreeIPA utilizando el comando &lt;code&gt;ipa-server-install&lt;/code&gt;. Luego, podemos crear un archivo de definición de recursos de Kubernetes para desplegar FreeIPA en el clúster.&lt;/p&gt;
+&lt;p&gt;Una vez desplegado, podemos configurar FreeIPA para proporcionar servicios de LDAP, Kerberos y certificado de autoridad. Por ejemplo, podemos utilizar el comando &lt;code&gt;ipa user-add&lt;/code&gt; para agregar un nuevo usuario a la base de datos de FreeIPA. También podemos configurar reglas de acceso y autorización utilizando el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, podemos integrar FreeIPA con otras herramientas y servicios, como Cloudflare, para proporcionar una plataforma de gestión de identidad y acceso más completa. Por ejemplo, podemos utilizar la API de Cloudflare para registrar dominios y configurar reglas de acceso y autorización.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red. Al combinar FreeIPA con Flux CD y Kubernetes, podemos crear una plataforma de gestión de identidad robusta y segura que se adapte a las necesidades de nuestra organización.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la implementación y configuración de FreeIPA, podemos consultar la documentación oficial de FreeIPA y Flux CD. También podemos buscar ejemplos y tutoriales en línea para obtener más información sobre cómo integrar FreeIPA con otras herramientas y servicios.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/"&gt;FreeIPA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://fluxcd.io/"&gt;Flux CD&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/"&gt;Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cloudflare.com/"&gt;Cloudflare&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-04_1017.html"/>
+    <summary>FreeIPA es una plataforma de gestión de identidad que proporciona servicios de LDAP, Kerberos y certificado de autoridad. En este artículo, exploraremos cómo implementar y configurar FreeIPA en un entorno de Kubernetes utilizando Flux CD.</summary>
+    <published>2026-05-04T10:17:00+00:00</published>
   </entry>
 </feed>

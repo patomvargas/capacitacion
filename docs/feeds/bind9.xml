@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-03T09:25:18.963471+00:00</updated>
+  <updated>2026-05-04T10:18:45.484867+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -137,5 +137,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-04-30_1010.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para configurar DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
     <published>2026-04-30T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-04_1017.html</id>
+    <title>Configuración y Mejoras en BIND9</title>
+    <updated>2026-05-04T10:17:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de zonas en BIND9 se realiza mediante el archivo &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas de autoridad y las zonas de caché. Es importante definir las zonas de autoridad para los dominios que se desean servir, y configurar las zonas de caché para mejorar el rendimiento. Por ejemplo, se puede configurar una zona de autoridad para el dominio &lt;code&gt;example.com&lt;/code&gt; de la siguiente manera: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad, es recomendable habilitar DNSSEC, que permite autenticar la respuesta del servidor DNS. Esto se puede hacer mediante la configuración de las claves de zona y la firma de las zonas. Por ejemplo, se puede generar una clave de zona con el comando &lt;code&gt;dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido según la ubicación del cliente. Esto se puede hacer mediante la configuración de las vistas en el archivo &lt;code&gt;named.conf&lt;/code&gt;, por ejemplo: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento, es recomendable configurar el registro de eventos y el monitoreo del servidor. Esto se puede hacer mediante la configuración del archivo &lt;code&gt;named.conf&lt;/code&gt;, por ejemplo: &lt;code&gt;logging { channel default_log { file "/var/log/named.log"; severity info; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que BIND9 tiene una serie de mejoras y novedades en las versiones más recientes, como la compatibilidad con DNS sobre TCP y la mejora del rendimiento en entornos de alta carga. Es recomendable consultar la documentación oficial de BIND9 para obtener más información sobre estas características y cómo configurarlas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://lists.isc.org/pipermail/bind-users/2026-April/110553.html"&gt;BIND 9.21+/9.22: parent-centric delegations and no TTL-based&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/"&gt;The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:8352"&gt;RHSA-2026:8352 - Security Advisory - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-04_1017.html"/>
+    <summary>BIND9 es un servidor DNS ampliamente utilizado que requiere una configuración adecuada para garantizar un rendimiento óptimo y seguridad. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos, así como consejos para mejorar el rendimiento.</summary>
+    <published>2026-05-04T10:17:00+00:00</published>
   </entry>
 </feed>

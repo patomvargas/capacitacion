@@ -1,4 +1,24 @@
 {
+  "2026-05-04_1017": {
+    "slug": "openvpn",
+    "title": "Seguridad y Tunneling con OpenVPN",
+    "summary": "OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las últimas novedades y mejores prácticas para configurar y proteger tus conexiones VPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre dos puntos. La versión más reciente, OpenVPN 2.6.20, incluye correcciones de seguridad y mejoras en la estabilidad. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, lo que se puede hacer utilizando herramientas como `openssl`. \n\nUna vez configurado el servidor, los clientes pueden conectarse utilizando el comando `openvpn --config cliente.conf`. Es importante mencionar que la seguridad de la conexión depende en gran medida de la configuración del servidor y del cliente, por lo que es fundamental seguir las mejores prácticas de seguridad, como utilizar claves y certificados seguros y mantener el software actualizado.\n\nLa autenticación y autorización en OpenVPN se pueden configurar utilizando protocolos como TLS y SSL. El uso de certificados y claves permite una autenticación segura y confiable. Además, OpenVPN admite la configuración de túneles site-to-site, lo que permite conectar dos redes diferentes de manera segura.\n\nPara hardenar la configuración de OpenVPN, se pueden utilizar herramientas como `openssl` para generar claves y certificados seguros. También es importante configurar el acceso a los logs y monitorear el tráfico de red para detectar posibles amenazas. El uso de herramientas como `tcpdump` y `Wireshark` puede ser útil para analizar el tráfico de red y detectar posibles problemas.\n\nEn cuanto a las novedades, la versión 2.6.20 de OpenVPN incluye correcciones de seguridad y mejoras en la estabilidad. Es importante mencionar que la comunidad de OpenVPN está trabajando en la implementación de protocolos de post-cuantum, lo que permitirá una mayor seguridad en el futuro.\n\nFinalmente, es importante mencionar que la configuración y el mantenimiento de un servidor OpenVPN requieren conocimientos técnicos y experiencia en la administración de redes y seguridad. Por lo tanto, es fundamental seguir las mejores prácticas de seguridad y mantener el software actualizado para garantizar la seguridad y la estabilidad de la conexión VPN.",
+    "sources": [
+      {
+        "title": "Releases: OpenVPN/tap-windows6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "Downloads – community wiki - OpenVPN",
+        "url": "https://community.openvpn.net/Downloads"
+      },
+      {
+        "title": "Comparing v2.7.3...v2.7.4 · OpenVPN/openvpn · GitHub",
+        "url": "https://github.com/OpenVPN/openvpn/compare/v2.7.3...v2.7.4"
+      }
+    ]
+  },
   "2026-04-30_1010": {
     "slug": "openvpn",
     "title": "Configuración y Seguridad de OpenVPN",

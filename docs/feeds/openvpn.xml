@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-03T09:25:18.964573+00:00</updated>
+  <updated>2026-05-04T10:18:45.486500+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -239,5 +239,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-04-30_1010.html"/>
     <summary>OpenVPN es una herramienta de tunneling de red segura que permite a los administradores de sistemas configurar conexiones VPN seguras. En este artículo, se cubren las mejores prácticas para configurar y asegurar OpenVPN, incluyendo la configuración de certificados y hardening de la infraestructura.</summary>
     <published>2026-04-30T10:10:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-04_1017.html</id>
+    <title>Seguridad y Tunneling con OpenVPN</title>
+    <updated>2026-05-04T10:17:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre dos puntos. La versión más reciente, OpenVPN 2.6.20, incluye correcciones de seguridad y mejoras en la estabilidad. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, lo que se puede hacer utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez configurado el servidor, los clientes pueden conectarse utilizando el comando &lt;code&gt;openvpn --config cliente.conf&lt;/code&gt;. Es importante mencionar que la seguridad de la conexión depende en gran medida de la configuración del servidor y del cliente, por lo que es fundamental seguir las mejores prácticas de seguridad, como utilizar claves y certificados seguros y mantener el software actualizado.&lt;/p&gt;
+&lt;p&gt;La autenticación y autorización en OpenVPN se pueden configurar utilizando protocolos como TLS y SSL. El uso de certificados y claves permite una autenticación segura y confiable. Además, OpenVPN admite la configuración de túneles site-to-site, lo que permite conectar dos redes diferentes de manera segura.&lt;/p&gt;
+&lt;p&gt;Para hardenar la configuración de OpenVPN, se pueden utilizar herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar claves y certificados seguros. También es importante configurar el acceso a los logs y monitorear el tráfico de red para detectar posibles amenazas. El uso de herramientas como &lt;code&gt;tcpdump&lt;/code&gt; y &lt;code&gt;Wireshark&lt;/code&gt; puede ser útil para analizar el tráfico de red y detectar posibles problemas.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, la versión 2.6.20 de OpenVPN incluye correcciones de seguridad y mejoras en la estabilidad. Es importante mencionar que la comunidad de OpenVPN está trabajando en la implementación de protocolos de post-cuantum, lo que permitirá una mayor seguridad en el futuro.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la configuración y el mantenimiento de un servidor OpenVPN requieren conocimientos técnicos y experiencia en la administración de redes y seguridad. Por lo tanto, es fundamental seguir las mejores prácticas de seguridad y mantener el software actualizado para garantizar la seguridad y la estabilidad de la conexión VPN.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/tap-windows6/releases"&gt;Releases: OpenVPN/tap-windows6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Downloads"&gt;Downloads – community wiki - OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/compare/v2.7.3...v2.7.4"&gt;Comparing v2.7.3...v2.7.4 · OpenVPN/openvpn · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-04_1017.html"/>
+    <summary>OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las últimas novedades y mejores prácticas para configurar y proteger tus conexiones VPN.</summary>
+    <published>2026-05-04T10:17:00+00:00</published>
   </entry>
 </feed>
