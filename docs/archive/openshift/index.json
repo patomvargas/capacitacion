@@ -1,4 +1,32 @@
 {
+  "2026-05-05_1006": {
+    "slug": "openshift",
+    "title": "OpenShift: Despliegue y Administración",
+    "summary": "OpenShift es una plataforma de contenedores que permite desplegar y administrar aplicaciones de manera eficiente. En este artículo, se presentan las mejores prácticas para desplegar y administrar OpenShift, incluyendo la configuración de OperatorHub, builds, routes, OAuth y monitoring.",
+    "content": "\nOpenShift es una plataforma de contenedores basada en Kubernetes que permite desplegar y administrar aplicaciones de manera eficiente. Para empezar a trabajar con OpenShift, es necesario configurar el cluster y desplegar las aplicaciones. Una de las herramientas más importantes para esto es el `oc` comando, que se utiliza para interactuar con el cluster de OpenShift.\n\nPara desplegar una aplicación en OpenShift, se puede utilizar el comando `oc new-app`, que crea una nueva aplicación a partir de un repositorio de Git. Por ejemplo, para desplegar una aplicación de Node.js, se puede utilizar el siguiente comando: `oc new-app https://github.com/openshift/nodejs-ex.git`. Además, se pueden configurar los `builds` y `routes` para la aplicación, utilizando comandos como `oc start-build` y `oc expose`.\n\nLa seguridad es un aspecto importante en OpenShift, y se puede configurar el `OAuth` para autenticar a los usuarios. Para esto, se puede utilizar el comando `oc create secret`, que crea un secreto para la autenticación. Por ejemplo, para crear un secreto para un usuario de GitHub, se puede utilizar el siguiente comando: `oc create secret generic github-secret --from-literal=clientID=<clientID> --from-literal=clientSecret=<clientSecret>`.\n\nPara monitorizar el rendimiento de la aplicación, se puede utilizar la herramienta de `monitoring` de OpenShift, que proporciona información sobre el uso de recursos y el rendimiento de la aplicación. Se puede acceder a esta información utilizando el comando `oc get metrics`, que muestra las métricas de la aplicación.\n\nLa migración de aplicaciones a OpenShift es un proceso que requiere planificación y ejecución cuidadosas. Se pueden utilizar herramientas como `oc adm migrate` para migrar las aplicaciones de un cluster a otro. Es importante tener en cuenta que la migración puede afectar la disponibilidad de la aplicación, por lo que es importante planificarla cuidadosamente.\n\nEn resumen, OpenShift es una plataforma de contenedores que permite desplegar y administrar aplicaciones de manera eficiente. La configuración de OperatorHub, builds, routes, OAuth y monitoring son aspectos importantes para asegurar el correcto funcionamiento de la aplicación. La migración de aplicaciones a OpenShift requiere planificación y ejecución cuidadosas.\n\n",
+    "sources": [
+      {
+        "title": "Red Hat - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Red_Hat"
+      },
+      {
+        "title": "Red Hat OpenShift | endoflife.date",
+        "url": "https://endoflife.date/red-hat-openshift"
+      },
+      {
+        "title": "What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026",
+        "url": "https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026"
+      },
+      {
+        "title": "Red Hat OpenShift AI Self-Managed 2.25 Release notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.25/pdf/release_notes/Red_Hat_OpenShift_AI_Self-Managed-2.25-Release_notes-en-US.pdf"
+      }
+    ]
+  },
   "2026-05-01_0950": {
     "slug": "openshift",
     "title": "OpenShift: Mejores prácticas y novedades",

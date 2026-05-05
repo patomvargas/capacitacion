@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras en Metabase - Metabase</title>
+    <title>Metabase: Mejoras y Best Practices - Metabase</title>
     <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>Mejoras en Metabase</h1>
-    <div class="meta">2026-05-01 0950 · Metabase</div>
+    <h1>Metabase: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-05 1006 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y informes personalizados. Recientemente, se han realizado actualizaciones para mejorar la seguridad y la funcionalidad de la plataforma. Por ejemplo, se ha actualizado la versión de Netty a `>=v4.2.10.Final` para parchar la vulnerabilidad `cve-2026-33870`.</p>
+        
+            
+            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas de manera sencilla. Una de las características más destacadas de Metabase es su capacidad para crear `queries` personalizadas utilizando el lenguaje de consulta de Metabase. Por ejemplo, se puede utilizar el comando `SELECT * FROM tabla WHERE condición` para obtener los registros que cumplan con una condición específica.</p>
             
         
             
         
             
-            <p>Para implementar esta actualización, los administradores de Metabase pueden ejecutar el comando `git pull` para obtener los cambios más recientes desde el repositorio de GitHub. Luego, pueden ejecutar `lein run` para iniciar el servidor de Metabase con la nueva versión de Netty.</p>
+            <p>Otra característica importante de Metabase es la capacidad de crear `dashboards` personalizados. Los dashboards permiten a los usuarios visualizar los datos de manera clara y concisa, utilizando gráficos y tablas para presentar la información. Para crear un dashboard, se puede utilizar el comando `CREATE DASHBOARD nombre_dashboard` y luego agregar los elementos deseados, como gráficos o tablas, utilizando el comando `ADD ELEMENT tipo_elemento`.</p>
             
         
             
         
             
-            <p>Además de las actualizaciones de seguridad, Metabase también ha agregado nuevas características para mejorar la experiencia del usuario. Por ejemplo, se ha agregado la función de `Data Residency Toggles` para Metabot, lo que permite a los usuarios controlar dónde se almacenan sus datos. Para habilitar esta función, los usuarios pueden ir a la configuración de Metabot y seleccionar la opción `Data Residency Toggles`.</p>
+            <p>En cuanto a la administración de Metabase, es importante mencionar que se puede utilizar el comando `ADMINISTRAR USUARIOS` para gestionar los permisos y accesos de los usuarios. También se puede utilizar el comando `CONFIGURAR PARAMETROS` para configurar los parámetros de la instancia de Metabase, como la conexión a la base de datos o la autenticación.</p>
             
         
             
         
             
-            <p>Otra característica nueva es la personalización de Metabot por inquilino, lo que permite a los administradores configurar Metabot para cada inquilino de manera individual. Para configurar esta función, los administradores pueden ejecutar el comando `lein config` y agregar la configuración necesaria para cada inquilino.</p>
+            <p>Recientemente, se han reportado algunos problemas con la indexación de búsqueda en Metabase, como se menciona en el issue #71647 de GitHub. Para solucionar este problema, se puede utilizar el comando `REINDEXAR TABLA` para reindexar la tabla afectada. También se han reportado problemas con la visualización de tablas ocultas en el grafo de dependencias, como se menciona en el issue #71630 de GitHub.</p>
             
         
             
         
             
-            <p>En cuanto a la visualización de datos, Metabase ha mejorado la representación de gráficos de series temporales mensuales para evitar que las barras se superpongan. Los usuarios pueden crear gráficos de series temporales utilizando la función `Timeseries` de Metabase y personalizar la apariencia del gráfico utilizando opciones como `:display` y `:format`.</p>
+            <p>En cuanto a las mejores prácticas, es importante mencionar que se debe utilizar la autenticación y autorización adecuadas para proteger la instancia de Metabase. También se debe realizar una copia de seguridad regular de los datos y configuraciones de Metabase, utilizando comandos como `BACKUP BASE DE DATOS` y `BACKUP CONFIGURACION`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Metabase es una plataforma en constante evolución, y los usuarios pueden contribuir al desarrollo de la plataforma mediante la creación de issues y pull requests en el repositorio de GitHub.</p>
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos, y con las características y mejores prácticas mencionadas, se puede utilizar de manera efectiva para crear dashboards y realizar consultas de manera sencilla.</p>
             
         
             
@@ -109,17 +111,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/71652" target="_blank">Bump Netty to >=v4.2.10.Final to patch cve-2026-33870</a>
+                <a href="https://github.com/metabase/metabase/issues/71647" target="_blank">Issue #71647</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/72115" target="_blank">Data Residency Toggles for Metabot</a>
+                <a href="https://github.com/metabase/metabase/issues/71630" target="_blank">Issue #71630</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/72116" target="_blank">Per Tenant Metabot customization</a>
+                <a href="https://github.com/metabase/metabase/issues/71195" target="_blank">Issue #71195</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/70577" target="_blank">Issue #70577</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/70901" target="_blank">Issue #70901</a>
                 
             </li>
             
@@ -130,12 +142,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-04-27_1022.html">&larr; 2026-04-27 1022</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-01_0950.html">&larr; 2026-05-01 0950</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-05_1006.html">2026-05-05 1006 &rarr;</a>
             
         </div>
     </div>

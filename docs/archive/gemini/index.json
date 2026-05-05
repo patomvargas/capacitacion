@@ -1,4 +1,24 @@
 {
+  "2026-05-05_1006": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una herramienta de inteligencia artificial que se integra con various sistemas para mejorar la productividad y la toma de decisiones. En este artículo, se presentan las últimas novedades y mejoras de Gemini, incluyendo su integración con Claude Code y Vertex AI.",
+    "content": "Gemini es una herramienta de inteligencia artificial desarrollada por Google que se enfoca en la integración con otros sistemas para mejorar la productividad y la toma de decisiones. En las últimas semanas, se han lanzado varias actualizaciones y mejoras para Gemini, incluyendo la integración con Claude Code y Vertex AI.\n\nUna de las novedades más destacadas es la integración con Claude Code, que permite a los desarrolladores utilizar la capacidad de razonamiento de Claude para analizar y mejorar el código. Esto se logra a través de la herramienta `claude-gemini-bridge`, que se encarga de delegar tareas complejas de análisis de código a Gemini. Para utilizar esta herramienta, se puede ejecutar el comando `git clone https://github.com/tkaufmann/claude-gemini-bridge.git` y luego seguir las instrucciones de configuración.\n\nOtra mejora notable es la integración con Vertex AI, que permite a los desarrolladores utilizar la capacidad de procesamiento de lenguaje natural de Gemini para mejorar la inteligencia artificial de sus aplicaciones. Esto se logra a través de la API de Vertex AI, que se puede utilizar para enviar solicitudes a Gemini y recibir respuestas personalizadas. Para utilizar esta API, se puede ejecutar el comando `gcloud ai vertex-ai init` y luego seguir las instrucciones de configuración.\n\nAdemás, se han lanzado varias herramientas y plugins para mejorar la productividad y la integración de Gemini con otros sistemas. Por ejemplo, se ha lanzado un plugin para Visual Studio Code que permite a los desarrolladores utilizar la capacidad de razonamiento de Gemini para mejorar su código. Para instalar este plugin, se puede ejecutar el comando `code --install-extension google-gemini.gemini` y luego seguir las instrucciones de configuración.\n\nEn resumen, las últimas novedades y mejoras de Gemini han mejorado significativamente su capacidad para integrarse con otros sistemas y mejorar la productividad y la toma de decisiones. Con la integración con Claude Code y Vertex AI, los desarrolladores pueden utilizar la capacidad de razonamiento y procesamiento de lenguaje natural de Gemini para mejorar sus aplicaciones y servicios.\n\nPara obtener más información sobre Gemini y sus últimas novedades, se pueden consultar las fuentes oficiales de Google y las comunidades de desarrolladores que trabajan con esta herramienta.",
+    "sources": [
+      {
+        "title": "Gemini CLI Subagents",
+        "url": "https://medium.com/google-cloud/drop-to-demo-gemini-cli-subagents-1aea1b2f9578"
+      },
+      {
+        "title": "Introducing the Agent Readiness score",
+        "url": "https://blog.cloudflare.com/agent-readiness/"
+      },
+      {
+        "title": "A New Era of AI Engineering",
+        "url": "https://medium.com/@altshiftctrl/a-new-era-of-ai-engineering-the-ultimate-web-app-workflow-with-gemini-claude-code-and-cursor-ac8185def581"
+      }
+    ]
+  },
   "2026-05-01_0950": {
     "slug": "gemini",
     "title": "Integración de Gemini con Claude Code",

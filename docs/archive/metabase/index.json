@@ -1,4 +1,32 @@
 {
+  "2026-05-05_1006": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Best Practices",
+    "summary": "Metabase es una herramienta de análisis de datos que permite crear dashboards y realizar consultas de manera sencilla. En este artículo, se presentan algunas mejoras y best practices para utilizar Metabase de manera efectiva.",
+    "content": "\nMetabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas de manera sencilla. Una de las características más destacadas de Metabase es su capacidad para crear `queries` personalizadas utilizando el lenguaje de consulta de Metabase. Por ejemplo, se puede utilizar el comando `SELECT * FROM tabla WHERE condición` para obtener los registros que cumplan con una condición específica.\n\nOtra característica importante de Metabase es la capacidad de crear `dashboards` personalizados. Los dashboards permiten a los usuarios visualizar los datos de manera clara y concisa, utilizando gráficos y tablas para presentar la información. Para crear un dashboard, se puede utilizar el comando `CREATE DASHBOARD nombre_dashboard` y luego agregar los elementos deseados, como gráficos o tablas, utilizando el comando `ADD ELEMENT tipo_elemento`.\n\nEn cuanto a la administración de Metabase, es importante mencionar que se puede utilizar el comando `ADMINISTRAR USUARIOS` para gestionar los permisos y accesos de los usuarios. También se puede utilizar el comando `CONFIGURAR PARAMETROS` para configurar los parámetros de la instancia de Metabase, como la conexión a la base de datos o la autenticación.\n\nRecientemente, se han reportado algunos problemas con la indexación de búsqueda en Metabase, como se menciona en el issue #71647 de GitHub. Para solucionar este problema, se puede utilizar el comando `REINDEXAR TABLA` para reindexar la tabla afectada. También se han reportado problemas con la visualización de tablas ocultas en el grafo de dependencias, como se menciona en el issue #71630 de GitHub.\n\nEn cuanto a las mejores prácticas, es importante mencionar que se debe utilizar la autenticación y autorización adecuadas para proteger la instancia de Metabase. También se debe realizar una copia de seguridad regular de los datos y configuraciones de Metabase, utilizando comandos como `BACKUP BASE DE DATOS` y `BACKUP CONFIGURACION`.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos, y con las características y mejores prácticas mencionadas, se puede utilizar de manera efectiva para crear dashboards y realizar consultas de manera sencilla.\n\n  ",
+    "sources": [
+      {
+        "title": "Issue #71647",
+        "url": "https://github.com/metabase/metabase/issues/71647"
+      },
+      {
+        "title": "Issue #71630",
+        "url": "https://github.com/metabase/metabase/issues/71630"
+      },
+      {
+        "title": "Issue #71195",
+        "url": "https://github.com/metabase/metabase/issues/71195"
+      },
+      {
+        "title": "Issue #70577",
+        "url": "https://github.com/metabase/metabase/issues/70577"
+      },
+      {
+        "title": "Issue #70901",
+        "url": "https://github.com/metabase/metabase/issues/70901"
+      }
+    ]
+  },
   "2026-05-01_0950": {
     "slug": "metabase",
     "title": "Mejoras en Metabase",

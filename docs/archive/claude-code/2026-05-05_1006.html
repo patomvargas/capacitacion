@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Optimización de Claude Code - Claude Code</title>
+    <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
+    </div>
+
+    <h1>Optimización de Claude Code</h1>
+    <div class="meta">2026-05-05 1006 · Claude Code</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La configuración de Claude Code es crucial para evitar errores y optimizar su rendimiento. Un problema común es la invocación recursiva de `claude changelog` cuando se utiliza el comando `changelog` de forma incorrecta. Para evitar esto, se puede utilizar el comando `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` antes de ejecutar `claude changelog`.</p>
+            
+        
+            
+        
+            
+            <p>Otro problema común es la configuración de la caché TTL, que puede causar inflación de costos y quotas. Para solucionar esto, se puede utilizar el comando `cache ttl` para establecer un valor de caché adecuado. Por ejemplo, se puede utilizar `cache ttl 1h` para establecer una caché de 1 hora.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante utilizar los hooks y workflows de Claude Code de forma efectiva. Los hooks permiten ejecutar comandos personalizados antes o después de la ejecución de un comando, mientras que los workflows permiten automatizar tareas complejas. Por ejemplo, se puede utilizar el comando `claude hook add` para agregar un hook que ejecute un comando personalizado antes de la ejecución de un comando.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la productividad con Claude Code, se pueden utilizar herramientas como el registro de habilidades de Claude Code, que permite buscar y agregar habilidades personalizadas a la herramienta. También se pueden utilizar extensiones como GitHub Copilot for Azure, que proporciona funcionalidades adicionales para desarrollar aplicaciones en Azure.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la configuración y uso adecuados de Claude Code son fundamentales para evitar errores y optimizar su rendimiento. Al utilizar comandos y configuraciones adecuados, como `CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1` y `cache ttl 1h`, se puede mejorar la eficiencia y productividad con la herramienta.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante estar al tanto de las novedades y cambios en Claude Code, como la actualización de la caché TTL y la adición de nuevos hooks y workflows. Al seguir estas best practices y soluciones a problemas comunes, se puede aprovechar al máximo las funcionalidades de Claude Code y mejorar la productividad en el desarrollo de aplicaciones.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/48929" target="_blank">BUG: Bare prompt 'changelog' can trigger recursive 'claude changelog' self-invocation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/46829" target="_blank">Cache TTL silently regressed from 1h to 5m around early March 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/microsoft/GitHub-Copilot-for-Azure" target="_blank">GitHub Copilot for Azure</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/majiayu000/claude-skill-registry" target="_blank">Claude Skill Registry</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-23_0948.html">&larr; 2026-04-23 0948</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

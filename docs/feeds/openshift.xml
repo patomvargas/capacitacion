@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-04T10:18:45.490100+00:00</updated>
+  <updated>2026-05-05T10:07:44.438764+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -289,5 +289,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-01_0950.html"/>
     <summary>OpenShift es una plataforma de contenedores de código abierto que ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. En este artículo, se presentan las mejores prácticas y novedades de OpenShift, incluyendo la implementación de operadores, la configuración de rutas y la monitorización de la plataforma.</summary>
     <published>2026-05-01T09:50:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-05_1006.html</id>
+    <title>OpenShift: Despliegue y Administración</title>
+    <updated>2026-05-05T10:06:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores basada en Kubernetes que permite desplegar y administrar aplicaciones de manera eficiente. Para empezar a trabajar con OpenShift, es necesario configurar el cluster y desplegar las aplicaciones. Una de las herramientas más importantes para esto es el &lt;code&gt;oc&lt;/code&gt; comando, que se utiliza para interactuar con el cluster de OpenShift.&lt;/p&gt;
+&lt;p&gt;Para desplegar una aplicación en OpenShift, se puede utilizar el comando &lt;code&gt;oc new-app&lt;/code&gt;, que crea una nueva aplicación a partir de un repositorio de Git. Por ejemplo, para desplegar una aplicación de Node.js, se puede utilizar el siguiente comando: &lt;code&gt;oc new-app https://github.com/openshift/nodejs-ex.git&lt;/code&gt;. Además, se pueden configurar los &lt;code&gt;builds&lt;/code&gt; y &lt;code&gt;routes&lt;/code&gt; para la aplicación, utilizando comandos como &lt;code&gt;oc start-build&lt;/code&gt; y &lt;code&gt;oc expose&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto importante en OpenShift, y se puede configurar el &lt;code&gt;OAuth&lt;/code&gt; para autenticar a los usuarios. Para esto, se puede utilizar el comando &lt;code&gt;oc create secret&lt;/code&gt;, que crea un secreto para la autenticación. Por ejemplo, para crear un secreto para un usuario de GitHub, se puede utilizar el siguiente comando: &lt;code&gt;oc create secret generic github-secret --from-literal=clientID=&lt;clientID&gt; --from-literal=clientSecret=&lt;clientSecret&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para monitorizar el rendimiento de la aplicación, se puede utilizar la herramienta de &lt;code&gt;monitoring&lt;/code&gt; de OpenShift, que proporciona información sobre el uso de recursos y el rendimiento de la aplicación. Se puede acceder a esta información utilizando el comando &lt;code&gt;oc get metrics&lt;/code&gt;, que muestra las métricas de la aplicación.&lt;/p&gt;
+&lt;p&gt;La migración de aplicaciones a OpenShift es un proceso que requiere planificación y ejecución cuidadosas. Se pueden utilizar herramientas como &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar las aplicaciones de un cluster a otro. Es importante tener en cuenta que la migración puede afectar la disponibilidad de la aplicación, por lo que es importante planificarla cuidadosamente.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que permite desplegar y administrar aplicaciones de manera eficiente. La configuración de OperatorHub, builds, routes, OAuth y monitoring son aspectos importantes para asegurar el correcto funcionamiento de la aplicación. La migración de aplicaciones a OpenShift requiere planificación y ejecución cuidadosas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Red_Hat"&gt;Red Hat - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/red-hat-openshift"&gt;Red Hat OpenShift | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026"&gt;Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.25/pdf/release_notes/Red_Hat_OpenShift_AI_Self-Managed-2.25-Release_notes-en-US.pdf"&gt;Red Hat OpenShift AI Self-Managed 2.25 Release notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-05_1006.html"/>
+    <summary>OpenShift es una plataforma de contenedores que permite desplegar y administrar aplicaciones de manera eficiente. En este artículo, se presentan las mejores prácticas para desplegar y administrar OpenShift, incluyendo la configuración de OperatorHub, builds, routes, OAuth y monitoring.</summary>
+    <published>2026-05-05T10:06:00+00:00</published>
   </entry>
 </feed>

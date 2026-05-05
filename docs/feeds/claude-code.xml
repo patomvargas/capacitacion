@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-04T10:18:45.491547+00:00</updated>
+  <updated>2026-05-05T10:07:44.441254+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -246,5 +246,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-04-23_0948.html"/>
     <summary>Claude Code es una herramienta poderosa para los desarrolladores, pero requiere una configuración y uso adecuados para aprovechar al máximo sus capacidades. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Claude Code, incluyendo la configuración de la línea de comandos, el uso de hooks y la gestión de permisos.</summary>
     <published>2026-04-23T09:48:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-05-05_1006.html</id>
+    <title>Optimización de Claude Code</title>
+    <updated>2026-05-05T10:06:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de Claude Code es crucial para evitar errores y optimizar su rendimiento. Un problema común es la invocación recursiva de &lt;code&gt;claude changelog&lt;/code&gt; cuando se utiliza el comando &lt;code&gt;changelog&lt;/code&gt; de forma incorrecta. Para evitar esto, se puede utilizar el comando &lt;code&gt;CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1&lt;/code&gt; antes de ejecutar &lt;code&gt;claude changelog&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otro problema común es la configuración de la caché TTL, que puede causar inflación de costos y quotas. Para solucionar esto, se puede utilizar el comando &lt;code&gt;cache ttl&lt;/code&gt; para establecer un valor de caché adecuado. Por ejemplo, se puede utilizar &lt;code&gt;cache ttl 1h&lt;/code&gt; para establecer una caché de 1 hora.&lt;/p&gt;
+&lt;p&gt;Además, es importante utilizar los hooks y workflows de Claude Code de forma efectiva. Los hooks permiten ejecutar comandos personalizados antes o después de la ejecución de un comando, mientras que los workflows permiten automatizar tareas complejas. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude hook add&lt;/code&gt; para agregar un hook que ejecute un comando personalizado antes de la ejecución de un comando.&lt;/p&gt;
+&lt;p&gt;Para mejorar la productividad con Claude Code, se pueden utilizar herramientas como el registro de habilidades de Claude Code, que permite buscar y agregar habilidades personalizadas a la herramienta. También se pueden utilizar extensiones como GitHub Copilot for Azure, que proporciona funcionalidades adicionales para desarrollar aplicaciones en Azure.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración y uso adecuados de Claude Code son fundamentales para evitar errores y optimizar su rendimiento. Al utilizar comandos y configuraciones adecuados, como &lt;code&gt;CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS=1&lt;/code&gt; y &lt;code&gt;cache ttl 1h&lt;/code&gt;, se puede mejorar la eficiencia y productividad con la herramienta.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante estar al tanto de las novedades y cambios en Claude Code, como la actualización de la caché TTL y la adición de nuevos hooks y workflows. Al seguir estas best practices y soluciones a problemas comunes, se puede aprovechar al máximo las funcionalidades de Claude Code y mejorar la productividad en el desarrollo de aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/48929"&gt;BUG: Bare prompt 'changelog' can trigger recursive 'claude changelog' self-invocation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/46829"&gt;Cache TTL silently regressed from 1h to 5m around early March 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/GitHub-Copilot-for-Azure"&gt;GitHub Copilot for Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/majiayu000/claude-skill-registry"&gt;Claude Skill Registry&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-05-05_1006.html"/>
+    <summary>Claude Code es una herramienta que requiere una configuración y uso adecuados para evitar errores y optimizar su rendimiento. En este artículo, se presentan algunas best practices y soluciones a problemas comunes.</summary>
+    <published>2026-05-05T10:06:00+00:00</published>
   </entry>
 </feed>

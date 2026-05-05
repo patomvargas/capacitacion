@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Mejores prácticas y novedades - OpenShift</title>
+    <title>OpenShift: Despliegue y Administración - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Mejores prácticas y novedades</h1>
-    <div class="meta">2026-05-01 0950 · OpenShift</div>
+    <h1>OpenShift: Despliegue y Administración</h1>
+    <div class="meta">2026-05-05 1006 · OpenShift</div>
 
     <div class="content">
         
@@ -66,31 +66,37 @@
             
         
             
-            <p>OpenShift es una plataforma de contenedores de código abierto que se basa en Kubernetes y ofrece una forma eficiente de implementar y gestionar aplicaciones en la nube. Una de las características más destacadas de OpenShift es la implementación de operadores, que son paquetes de software que se encargan de la gestión y la configuración de las aplicaciones en la plataforma. Para implementar un operador en OpenShift, se puede utilizar el comando `oc create -f operador.yaml`, donde `operador.yaml` es el archivo de configuración del operador.</p>
+            <p>OpenShift es una plataforma de contenedores basada en Kubernetes que permite desplegar y administrar aplicaciones de manera eficiente. Para empezar a trabajar con OpenShift, es necesario configurar el cluster y desplegar las aplicaciones. Una de las herramientas más importantes para esto es el `oc` comando, que se utiliza para interactuar con el cluster de OpenShift.</p>
             
         
             
         
             
-            <p>La configuración de rutas en OpenShift es otro aspecto importante de la plataforma. Las rutas se utilizan para exponer las aplicaciones a Internet y permitir el acceso a los usuarios. Para configurar una ruta en OpenShift, se puede utilizar el comando `oc expose svc mi-servicio --hostname=mihostname`, donde `mi-servicio` es el nombre del servicio que se desea exponer y `mihostname` es el nombre del host que se desea utilizar.</p>
+            <p>Para desplegar una aplicación en OpenShift, se puede utilizar el comando `oc new-app`, que crea una nueva aplicación a partir de un repositorio de Git. Por ejemplo, para desplegar una aplicación de Node.js, se puede utilizar el siguiente comando: `oc new-app https://github.com/openshift/nodejs-ex.git`. Además, se pueden configurar los `builds` y `routes` para la aplicación, utilizando comandos como `oc start-build` y `oc expose`.</p>
             
         
             
         
             
-            <p>La monitorización de la plataforma es fundamental para garantizar el funcionamiento correcto de las aplicaciones. OpenShift ofrece varias herramientas de monitorización, incluyendo Prometheus y Grafana. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml`, donde `prometheus.yaml` es el archivo de configuración de Prometheus.</p>
+            <p>La seguridad es un aspecto importante en OpenShift, y se puede configurar el `OAuth` para autenticar a los usuarios. Para esto, se puede utilizar el comando `oc create secret`, que crea un secreto para la autenticación. Por ejemplo, para crear un secreto para un usuario de GitHub, se puede utilizar el siguiente comando: `oc create secret generic github-secret --from-literal=clientID=<clientID> --from-literal=clientSecret=<clientSecret>`.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades, OpenShift ha anunciado recientemente la disponibilidad de OpenShift Virtualization, que permite a los usuarios crear y gestionar máquinas virtuales en la plataforma. Además, OpenShift ha mejorado la compatibilidad con Azure, lo que permite a los usuarios implementar y gestionar aplicaciones en la nube de Microsoft.</p>
+            <p>Para monitorizar el rendimiento de la aplicación, se puede utilizar la herramienta de `monitoring` de OpenShift, que proporciona información sobre el uso de recursos y el rendimiento de la aplicación. Se puede acceder a esta información utilizando el comando `oc get metrics`, que muestra las métricas de la aplicación.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y recursos para ayudar a los usuarios a migrar sus aplicaciones a la plataforma. Por ejemplo, la herramienta `oc migrate` permite a los usuarios migrar sus aplicaciones desde otros entornos de contenedores, como Docker.</p>
+            <p>La migración de aplicaciones a OpenShift es un proceso que requiere planificación y ejecución cuidadosas. Se pueden utilizar herramientas como `oc adm migrate` para migrar las aplicaciones de un cluster a otro. Es importante tener en cuenta que la migración puede afectar la disponibilidad de la aplicación, por lo que es importante planificarla cuidadosamente.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores que permite desplegar y administrar aplicaciones de manera eficiente. La configuración de OperatorHub, builds, routes, OAuth y monitoring son aspectos importantes para asegurar el correcto funcionamiento de la aplicación. La migración de aplicaciones a OpenShift requiere planificación y ejecución cuidadosas.</p>
             
         
             
@@ -110,12 +116,22 @@
             </li>
             
             <li>
-                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
+                <a href="https://endoflife.date/red-hat-openshift" target="_blank">Red Hat OpenShift | endoflife.date</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn</a>
                 
             </li>
             
             <li>
                 <a href="https://www.redhat.com/en/blog/openshift-virtualization-sessions-red-hat-summit-2026" target="_blank">Customer stories and continued momentum: OpenShift Virtualization sessions at Red Hat Summit 2026</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_ai_self-managed/2.25/pdf/release_notes/Red_Hat_OpenShift_AI_Self-Managed-2.25-Release_notes-en-US.pdf" target="_blank">Red Hat OpenShift AI Self-Managed 2.25 Release notes</a>
                 
             </li>
             
@@ -126,12 +142,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-04-27_1022.html">&larr; 2026-04-27 1022</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-01_0950.html">&larr; 2026-05-01 0950</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-05_1006.html">2026-05-05 1006 &rarr;</a>
             
         </div>
     </div>

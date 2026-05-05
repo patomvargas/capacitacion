@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-04T10:18:45.494679+00:00</updated>
+  <updated>2026-05-05T10:07:44.446392+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -186,5 +186,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-01_0950.html"/>
     <summary>Metabase ha mejorado su seguridad y funcionalidad con actualizaciones recientes. Se han abordado vulnerabilidades de seguridad y se han agregado nuevas características para mejorar la experiencia del usuario.</summary>
     <published>2026-05-01T09:50:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-05_1006.html</id>
+    <title>Metabase: Mejoras y Best Practices</title>
+    <updated>2026-05-05T10:06:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas de manera sencilla. Una de las características más destacadas de Metabase es su capacidad para crear &lt;code&gt;queries&lt;/code&gt; personalizadas utilizando el lenguaje de consulta de Metabase. Por ejemplo, se puede utilizar el comando &lt;code&gt;SELECT * FROM tabla WHERE condición&lt;/code&gt; para obtener los registros que cumplan con una condición específica.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Metabase es la capacidad de crear &lt;code&gt;dashboards&lt;/code&gt; personalizados. Los dashboards permiten a los usuarios visualizar los datos de manera clara y concisa, utilizando gráficos y tablas para presentar la información. Para crear un dashboard, se puede utilizar el comando &lt;code&gt;CREATE DASHBOARD nombre_dashboard&lt;/code&gt; y luego agregar los elementos deseados, como gráficos o tablas, utilizando el comando &lt;code&gt;ADD ELEMENT tipo_elemento&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Metabase, es importante mencionar que se puede utilizar el comando &lt;code&gt;ADMINISTRAR USUARIOS&lt;/code&gt; para gestionar los permisos y accesos de los usuarios. También se puede utilizar el comando &lt;code&gt;CONFIGURAR PARAMETROS&lt;/code&gt; para configurar los parámetros de la instancia de Metabase, como la conexión a la base de datos o la autenticación.&lt;/p&gt;
+&lt;p&gt;Recientemente, se han reportado algunos problemas con la indexación de búsqueda en Metabase, como se menciona en el issue #71647 de GitHub. Para solucionar este problema, se puede utilizar el comando &lt;code&gt;REINDEXAR TABLA&lt;/code&gt; para reindexar la tabla afectada. También se han reportado problemas con la visualización de tablas ocultas en el grafo de dependencias, como se menciona en el issue #71630 de GitHub.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante mencionar que se debe utilizar la autenticación y autorización adecuadas para proteger la instancia de Metabase. También se debe realizar una copia de seguridad regular de los datos y configuraciones de Metabase, utilizando comandos como &lt;code&gt;BACKUP BASE DE DATOS&lt;/code&gt; y &lt;code&gt;BACKUP CONFIGURACION&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta poderosa para el análisis de datos, y con las características y mejores prácticas mencionadas, se puede utilizar de manera efectiva para crear dashboards y realizar consultas de manera sencilla.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/71647"&gt;Issue #71647&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/71630"&gt;Issue #71630&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/71195"&gt;Issue #71195&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/70577"&gt;Issue #70577&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/70901"&gt;Issue #70901&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-05_1006.html"/>
+    <summary>Metabase es una herramienta de análisis de datos que permite crear dashboards y realizar consultas de manera sencilla. En este artículo, se presentan algunas mejoras y best practices para utilizar Metabase de manera efectiva.</summary>
+    <published>2026-05-05T10:06:00+00:00</published>
   </entry>
 </feed>
