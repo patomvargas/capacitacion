@@ -1,4 +1,32 @@
 {
+  "2026-05-06_1022": {
+    "slug": "n8n",
+    "title": "Automatización de Workflows con n8n",
+    "summary": "n8n es una herramienta de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se explorarán las características y funcionalidades de n8n, incluyendo la creación de nodos, workflows, credenciales y webhooks.",
+    "content": "n8n es una herramienta de código abierto que se distribuye bajo la licencia Sustainable Use License. Permite a los usuarios crear workflows personalizados utilizando nodos, que son bloques de construcción que se pueden conectar para crear flujos de trabajo complejos. Los nodos pueden ser utilizados para realizar tareas como la autenticación, el procesamiento de datos y la integración con servicios externos.\n\nPara crear un workflow en n8n, se deben seguir los siguientes pasos: primero, se debe crear un nuevo workflow y agregar nodos al flujo de trabajo. Luego, se deben configurar los nodos para realizar las tareas deseadas. Por ejemplo, se puede utilizar el nodo `HTTP Request` para realizar una solicitud HTTP a un servidor externo. El comando para realizar una solicitud HTTP sería: `curl -X GET 'https://example.com/api/data'`.\n\nn8n también admite la creación de credenciales y webhooks. Las credenciales se pueden utilizar para autenticar con servicios externos, mientras que los webhooks permiten a los servicios externos enviar notificaciones a n8n. Para crear un webhook en n8n, se debe utilizar el comando `n8n webhook create --name <nombre_del_webhook> --url <url_del_webhook>`. \n\nAdemás, n8n se puede autoalojar utilizando Docker. Para hacerlo, se debe ejecutar el comando `docker run -d -p 5678:5678 n8n/n8n`. Esto iniciará un contenedor de n8n que se puede acceder a través de la URL `http://localhost:5678`.\n\nEn cuanto a las integraciones, n8n admite una amplia variedad de servicios externos, incluyendo Microsoft Azure, Jira y LinkedIn. Por ejemplo, se puede utilizar el nodo `Jira` para crear un nuevo ticket en Jira. El comando para crear un nuevo ticket sería: `n8n node jira create --title <titulo_del_ticket> --description <descripcion_del_ticket>`.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de workflows que ofrece una amplia variedad de características y funcionalidades. Su capacidad para crear nodos, workflows, credenciales y webhooks la convierte en una herramienta ideal para los desarrolladores y administradores de sistemas que buscan automatizar tareas complejas.\n\nLas fuentes utilizadas para este artículo incluyen la documentación oficial de n8n, así como artículos y tutoriales de terceros que demuestran cómo utilizar la herramienta para crear workflows personalizados y automatizar tareas complejas.\n\n  ",
+    "sources": [
+      {
+        "title": "n8n-desktop-app",
+        "url": "https://github.com/n8n-io/n8n-desktop-app"
+      },
+      {
+        "title": "Best n8n Workflows To Build with Claude Code (2026)",
+        "url": "https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc"
+      },
+      {
+        "title": "Integrating n8n with Microsoft Azure: A Practical Guide for Engineering Teams",
+        "url": "https://medium.com/@anishsingh17625/integrating-n8n-with-microsoft-azure-a-practical-guide-for-engineering-teams-6bb9fefef491"
+      },
+      {
+        "title": "n8n: The Complete Guide to Open-Source Workflow Automation",
+        "url": "https://medium.com/codetodeploy/n8n-the-complete-guide-to-open-source-workflow-automation-331b92ec7068"
+      },
+      {
+        "title": "How to Self-Host n8n with Docker — AI Workflow Automation Guide 2026",
+        "url": "https://dev.to/jangwook_kim_e31e7291ad98/how-to-self-host-n8n-with-docker-ai-workflow-automation-guide-2026-3lec"
+      }
+    ]
+  },
   "2026-05-02_0912": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",

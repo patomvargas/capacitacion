@@ -1,4 +1,24 @@
 {
+  "2026-05-06_1022": {
+    "slug": "metallb",
+    "title": "MetalLB en Kubernetes",
+    "summary": "MetalLB es un balanceador de carga para Kubernetes que permite asignar direcciones IP a servicios en un clúster. En este artículo, se explora cómo funciona MetalLB y cómo se puede configurar para trabajar con Kubernetes.",
+    "content": "\nMetalLB es un proyecto de código abierto que proporciona un balanceador de carga para Kubernetes. Su función principal es asignar direcciones IP a servicios en un clúster de Kubernetes. MetalLB se puede configurar para trabajar en dos modos: L2 y BGP. En el modo L2, MetalLB asigna direcciones IP a servicios utilizando el protocolo ARP. En el modo BGP, MetalLB utiliza el protocolo BGP para anunciar las direcciones IP de los servicios a los routers de la red.\n\nPara configurar MetalLB en un clúster de Kubernetes, es necesario crear un objeto `IPAddressPool` que defina el rango de direcciones IP que se pueden asignar a los servicios. Por ejemplo, se puede crear un objeto `IPAddressPool` con el siguiente comando: `kubectl create -f - <<EOF\napiVersion: metallb.io/v1beta1\nkind: IPAddressPool\nmetadata:\n  name: ip-pool\nspec:\n  addresses:\n  - 192.168.0.10-192.168.0.20\nEOF`. Luego, se puede crear un servicio que utilice el objeto `IPAddressPool` para asignar una dirección IP. Por ejemplo, se puede crear un servicio con el siguiente comando: `kubectl create -f - <<EOF\napiVersion: v1\nkind: Service\nmetadata:\n  name: mi-servicio\nspec:\n  selector:\n    app: mi-aplicacion\n  ports:\n  - name: http\n    port: 80\n    targetPort: 8080\n  type: LoadBalancer\nEOF`.\n\nPara solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl` y `wireshark` para analizar el tráfico de red y determinar si hay problemas con la configuración de MetalLB. Por ejemplo, se puede utilizar el comando `kubectl get pods -o wide` para verificar si los pods de MetalLB están funcionando correctamente. También se puede utilizar el comando `kubectl logs -f <nombre-del-pod>` para verificar los registros de los pods de MetalLB.\n\nEn cuanto a la integración con Kubernetes, MetalLB se puede integrar con otros componentes de Kubernetes, como `ingress-nginx`, para proporcionar un punto de entrada único para los servicios del clúster. Por ejemplo, se puede crear un objeto `Ingress` que utilice el servicio `ingress-nginx` para enrutar el tráfico a los servicios del clúster. Por ejemplo, se puede crear un objeto `Ingress` con el siguiente comando: `kubectl create -f - <<EOF\napiVersion: networking.k8s.io/v1\nkind: Ingress\nmetadata:\n  name: mi-ingreso\nspec:\n  rules:\n  - host: mi-dominio.com\n    http:\n      paths:\n      - path: /\n        pathType: Prefix\n        backend:\n          service:\n            name: mi-servicio\n            port:\n              number: 80\nEOF`.\n\n  ",
+    "sources": [
+      {
+        "title": "How MetalLB works in Kubernetes",
+        "url": "https://stackoverflow.com/questions/68224438/how-metallb-works-in-kubernetes"
+      },
+      {
+        "title": "Metallb Kubernetes installation: Failed calling webhook",
+        "url": "https://stackoverflow.com/questions/74783557/metallb-kubernetes-installation-failed-calling-webhook-ipaddresspoolvalidation"
+      },
+      {
+        "title": "Microk8s, MetalLB, ingress-nginx - How to route external traffic?",
+        "url": "https://stackoverflow.com/questions/63974879/microk8s-metallb-ingress-nginx-how-to-route-external-traffic"
+      }
+    ]
+  },
   "2026-05-02_0912": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

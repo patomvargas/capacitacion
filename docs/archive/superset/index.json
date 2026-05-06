@@ -1,4 +1,28 @@
 {
+  "2026-05-06_1022": {
+    "slug": "superset",
+    "title": "Superset: Administración y Visualización de Datos",
+    "summary": "Superset es una herramienta de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. En este artículo, se presentan las mejores prácticas para la administración y visualización de datos en Superset.",
+    "content": "\nSuperset es una aplicación web de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. Para empezar a trabajar con Superset, es necesario instalarlo en un entorno local o en un servidor. Se puede instalar utilizando `docker-compose up` en el directorio raíz del proyecto.\n\nUna vez instalado, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088` en el navegador. Desde aquí, se pueden crear nuevos conjuntos de datos, tableros y visualizaciones. Para crear un nuevo conjunto de datos, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos y luego `superset init` para inicializar el conjunto de datos.\n\nEn cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de línea, barras, scatter plots, entre otros. Se pueden crear visualizaciones personalizadas utilizando `Jinja templates` y `SQL Lab`. Además, se pueden crear tableros para mostrar múltiples visualizaciones en una sola pantalla. Para crear un nuevo tablero, se puede utilizar el comando `superset dashboard create` y luego agregar visualizaciones al tablero utilizando `superset dashboard add`.\n\nEn cuanto a la administración de Superset, es importante configurar la seguridad y la escalabilidad de la aplicación. Se pueden configurar los parámetros de seguridad utilizando `superset config` y se pueden escalar la aplicación utilizando `docker-compose scale`. Además, se pueden utilizar `guest tokens` para permitir el acceso a la aplicación a usuarios invitados.\n\nFinalmente, es importante mencionar que Superset tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la aplicación y la documentación. Se pueden encontrar recursos adicionales en la documentación oficial de Superset, incluyendo tutoriales y guías de inicio rápido.\n\n",
+    "sources": [
+      {
+        "title": "Superset",
+        "url": "https://superset.apache.org/"
+      },
+      {
+        "title": "Intro a Superset",
+        "url": "https://superset.apache.org/user-docs/intro/"
+      },
+      {
+        "title": "Quickstart",
+        "url": "https://superset.apache.org/user-docs/quickstart/"
+      },
+      {
+        "title": "Explorar datos en Superset",
+        "url": "https://superset.apache.org/user-docs/using-superset/exploring-data/"
+      }
+    ]
+  },
   "2026-05-02_0912": {
     "slug": "superset",
     "title": "Superset: Mejoras y Best Practices",

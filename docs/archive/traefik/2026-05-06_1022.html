@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Traefik: Mejoras de Seguridad y Funcionalidades - Traefik</title>
+    <title>Seguridad y configuración de Traefik - Traefik</title>
     <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
     <style>
         :root {
@@ -57,52 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
     </div>
 
-    <h1>Traefik: Mejoras de Seguridad y Funcionalidades</h1>
-    <div class="meta">2026-04-28 1020 · Traefik</div>
+    <h1>Seguridad y configuración de Traefik</h1>
+    <div class="meta">2026-05-06 1022 · Traefik</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Traefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de contenedores y Kubernetes. Recientemente, se han lanzado varias actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers.</p>
+            <p>Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible.</p>
             
         
             
         
             
-            <p>Una de las actualizaciones más importantes es la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrige varias vulnerabilidades, incluyendo CVE-2026-40912 y CVE-2026-39858. Estas actualizaciones también incluyen mejoras en la gestión de logs y la compatibilidad con Redis Sentinel.</p>
+            <p>Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura `providers.kubernetesCRD.allowCrossNamespace=false`, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar `providers.kubernetesCRD.allowCrossNamespace=true` y utilizar `middleware` para restringir el acceso a los routers.</p>
             
         
             
         
             
-            <p>Para configurar Traefik con Redis Sentinel, se puede utilizar el siguiente comando: `traefik --log.level=DEBUG --providers.redis.sentinel.addr=redis-sentinel:26379`. También se puede utilizar el proveedor de Docker para configurar Traefik: `docker run -d -p 80:80 -v /var/run/docker.sock:/var/run/docker.sock traefik:v2.11.43`.</p>
+            <p>Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando `traefik reload` para recargar la configuración de Traefik después de un failover de Sentinel.</p>
             
         
             
         
             
-            <p>Además, se han agregado nuevas funcionalidades para mejorar la observabilidad y la gestión de routers y middlewares. Por ejemplo, se puede utilizar el comando `traefik --api.insecure=true --api.dashboard=true` para habilitar el panel de control de Traefik.</p>
+            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando `traefik certificado` para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando `traefik certificado --email ejemplo@example.com --domain ejemplo.com` para obtener un certificado para el dominio ejemplo.com.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/etc/traefik/acme.json`. Esto permitirá a Traefik obtener certificados SSL/TLS automáticamente.</p>
+            <p>Para configurar el proveedor de TCP/UDP, se puede utilizar el comando `traefik provider` para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando `traefik provider --name ejemplo --type tcp --address ejemplo.com:8080` para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080.</p>
             
         
             
         
             
-            <p>En resumen, las últimas actualizaciones de Traefik incluyen mejoras de seguridad, nuevas funcionalidades y compatibilidad con diferentes proveedores de servicios. Estas actualizaciones pueden ser configuradas utilizando comandos y configuraciones específicas, como las mencionadas anteriormente.</p>
-            
-        
-            
-        
-            
-            <p>Para obtener más información sobre las últimas actualizaciones y funcionalidades de Traefik, se recomienda consultar la documentación oficial y las fuentes mencionadas a continuación.</p>
+            <p>En cuanto a la observabilidad, se puede utilizar el comando `traefik log` para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando `traefik log --level debug` para ver los registros de depuración de Traefik.</p>
             
         
     </div>
@@ -113,17 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik-helm-chart/issues/1781" target="_blank">Document how to bind on privileged ports #1781</a>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq" target="_blank">Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding</a>
                 
             </li>
             
             <li>
-                <a href="https://community.traefik.io/t/new-security-update-for-traefik-2-11-2-11-43-3-6-3-6-14-and-3-7-3-7-0-rc-2/29834" target="_blank">New Security Update for Traefik 2.11 (2.11.43), 3.6 (3.6.14 ...</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://traefik.io/blog/govern-suse-rancher-vms-rke2-and-k3s-with-traefik" target="_blank">SUSE + Traefik: Unified Governance Across VMs & Containers</a>
+                <a href="https://github.com/traefik/traefik/issues/12965" target="_blank">Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965</a>
                 
             </li>
             
@@ -134,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-20_1003.html">&larr; 2026-04-20 1003</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html">2026-05-06 1022 &rarr;</a>
             
         </div>
     </div>

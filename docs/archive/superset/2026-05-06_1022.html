@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Mejoras y Best Practices - Superset</title>
+    <title>Superset: Administración y Visualización de Datos - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-02 0912 · Superset</div>
+    <h1>Superset: Administración y Visualización de Datos</h1>
+    <div class="meta">2026-05-06 1022 · Superset</div>
 
     <div class="content">
         
@@ -66,37 +66,31 @@
             
         
             
-            <p>Superset es una herramienta de visualización de datos y creación de dashboards desarrollada por Apache. En las últimas actualizaciones, se han abordado algunos problemas relacionados con la implementación de subdirectorios y la configuración de la raíz de la aplicación. Por ejemplo, se ha solucionado el problema de la doble prefijación del logotipo cuando se utiliza `SUPERSET_APP_ROOT` en la configuración.</p>
+            <p>Superset es una aplicación web de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. Para empezar a trabajar con Superset, es necesario instalarlo en un entorno local o en un servidor. Se puede instalar utilizando `docker-compose up` en el directorio raíz del proyecto.</p>
             
         
             
         
             
-            <p>Para solucionar este problema, se puede utilizar la configuración `SUPERSET_APP_ROOT` en el archivo `superset_config.py`. Por ejemplo, se puede agregar la siguiente línea de código: `SUPERSET_APP_ROOT = '/path/to/superset'`. Esto permitirá configurar la raíz de la aplicación correctamente y evitar la doble prefijación del logotipo.</p>
+            <p>Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088` en el navegador. Desde aquí, se pueden crear nuevos conjuntos de datos, tableros y visualizaciones. Para crear un nuevo conjunto de datos, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos y luego `superset init` para inicializar el conjunto de datos.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la posibilidad de bypass de la protección CSRF (Cross-Site Request Forgery) para APIs personalizadas. Esto se puede lograr agregando la siguiente línea de código en el archivo `superset_config.py`: `SUPERSET_CSRF_DISABLED = True`. Sin embargo, es importante tener en cuenta que esta configuración puede suponer un riesgo de seguridad y debe ser utilizada con precaución.</p>
+            <p>En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de línea, barras, scatter plots, entre otros. Se pueden crear visualizaciones personalizadas utilizando `Jinja templates` y `SQL Lab`. Además, se pueden crear tableros para mostrar múltiples visualizaciones en una sola pantalla. Para crear un nuevo tablero, se puede utilizar el comando `superset dashboard create` y luego agregar visualizaciones al tablero utilizando `superset dashboard add`.</p>
             
         
             
         
             
-            <p>En cuanto a la creación de dashboards, Superset ofrece una variedad de herramientas y características para personalizar la visualización de los datos. Por ejemplo, se pueden utilizar plantillas Jinja para crear dashboards personalizados. Para hacer esto, se puede crear un archivo de plantilla Jinja en el directorio `superset/templates` y luego llamar a la plantilla en el archivo `superset_config.py` utilizando la función `render_template`.</p>
+            <p>En cuanto a la administración de Superset, es importante configurar la seguridad y la escalabilidad de la aplicación. Se pueden configurar los parámetros de seguridad utilizando `superset config` y se pueden escalar la aplicación utilizando `docker-compose scale`. Además, se pueden utilizar `guest tokens` para permitir el acceso a la aplicación a usuarios invitados.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Superset tiene una comunidad activa y ofrece una variedad de recursos y documentación para ayudar a los usuarios a aprovechar al máximo la herramienta. Por ejemplo, se pueden encontrar ejemplos de código y tutoriales en la página oficial de Superset en GitHub.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, Superset es una herramienta poderosa para la visualización de datos y la creación de dashboards. Con las últimas mejoras y best practices, los usuarios pueden aprovechar al máximo la herramienta y crear dashboards personalizados y efectivos.</p>
+            <p>Finalmente, es importante mencionar que Superset tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la aplicación y la documentación. Se pueden encontrar recursos adicionales en la documentación oficial de Superset, incluyendo tutoriales y guías de inicio rápido.</p>
             
         
             
@@ -111,17 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/39432" target="_blank">Subdirectory deployment: logo double-prefixed when using SUPERSET_APP_ROOT</a>
+                <a href="https://superset.apache.org/" target="_blank">Superset</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39135" target="_blank">Bypass CSRF superset for custom API in superset_config.py</a>
+                <a href="https://superset.apache.org/user-docs/intro/" target="_blank">Intro a Superset</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/39213" target="_blank">Green/Red contrast colors doesn’t look great in dark mode, compared to light mode</a>
+                <a href="https://superset.apache.org/user-docs/quickstart/" target="_blank">Quickstart</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://superset.apache.org/user-docs/using-superset/exploring-data/" target="_blank">Explorar datos en Superset</a>
                 
             </li>
             
@@ -132,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-02_0912.html">&larr; 2026-05-02 0912</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html">2026-05-06 1022 &rarr;</a>
             
         </div>
     </div>

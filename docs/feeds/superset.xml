@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-05T10:07:44.450654+00:00</updated>
+  <updated>2026-05-06T10:23:36.505104+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -301,5 +301,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-02_0912.html"/>
     <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan algunas mejoras y best practices para su uso efectivo.</summary>
     <published>2026-05-02T09:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html</id>
+    <title>Superset: Administración y Visualización de Datos</title>
+    <updated>2026-05-06T10:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una aplicación web de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. Para empezar a trabajar con Superset, es necesario instalarlo en un entorno local o en un servidor. Se puede instalar utilizando &lt;code&gt;docker-compose up&lt;/code&gt; en el directorio raíz del proyecto.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante &lt;code&gt;http://localhost:8088&lt;/code&gt; en el navegador. Desde aquí, se pueden crear nuevos conjuntos de datos, tableros y visualizaciones. Para crear un nuevo conjunto de datos, se puede utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos y luego &lt;code&gt;superset init&lt;/code&gt; para inicializar el conjunto de datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de línea, barras, scatter plots, entre otros. Se pueden crear visualizaciones personalizadas utilizando &lt;code&gt;Jinja templates&lt;/code&gt; y &lt;code&gt;SQL Lab&lt;/code&gt;. Además, se pueden crear tableros para mostrar múltiples visualizaciones en una sola pantalla. Para crear un nuevo tablero, se puede utilizar el comando &lt;code&gt;superset dashboard create&lt;/code&gt; y luego agregar visualizaciones al tablero utilizando &lt;code&gt;superset dashboard add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, es importante configurar la seguridad y la escalabilidad de la aplicación. Se pueden configurar los parámetros de seguridad utilizando &lt;code&gt;superset config&lt;/code&gt; y se pueden escalar la aplicación utilizando &lt;code&gt;docker-compose scale&lt;/code&gt;. Además, se pueden utilizar &lt;code&gt;guest tokens&lt;/code&gt; para permitir el acceso a la aplicación a usuarios invitados.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Superset tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la aplicación y la documentación. Se pueden encontrar recursos adicionales en la documentación oficial de Superset, incluyendo tutoriales y guías de inicio rápido.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/"&gt;Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/intro/"&gt;Intro a Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/quickstart/"&gt;Quickstart&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/using-superset/exploring-data/"&gt;Explorar datos en Superset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html"/>
+    <summary>Superset es una herramienta de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. En este artículo, se presentan las mejores prácticas para la administración y visualización de datos en Superset.</summary>
+    <published>2026-05-06T10:22:00+00:00</published>
   </entry>
 </feed>

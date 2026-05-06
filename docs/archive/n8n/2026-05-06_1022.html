@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatización de Workflows con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+    </div>
+
+    <h1>Automatización de Workflows con n8n</h1>
+    <div class="meta">2026-05-06 1022 · n8n</div>
+
+    <div class="content">
+        
+        
+            
+            <p>n8n es una herramienta de código abierto que se distribuye bajo la licencia Sustainable Use License. Permite a los usuarios crear workflows personalizados utilizando nodos, que son bloques de construcción que se pueden conectar para crear flujos de trabajo complejos. Los nodos pueden ser utilizados para realizar tareas como la autenticación, el procesamiento de datos y la integración con servicios externos.</p>
+            
+        
+            
+        
+            
+            <p>Para crear un workflow en n8n, se deben seguir los siguientes pasos: primero, se debe crear un nuevo workflow y agregar nodos al flujo de trabajo. Luego, se deben configurar los nodos para realizar las tareas deseadas. Por ejemplo, se puede utilizar el nodo `HTTP Request` para realizar una solicitud HTTP a un servidor externo. El comando para realizar una solicitud HTTP sería: `curl -X GET 'https://example.com/api/data'`.</p>
+            
+        
+            
+        
+            
+            <p>n8n también admite la creación de credenciales y webhooks. Las credenciales se pueden utilizar para autenticar con servicios externos, mientras que los webhooks permiten a los servicios externos enviar notificaciones a n8n. Para crear un webhook en n8n, se debe utilizar el comando `n8n webhook create --name <nombre_del_webhook> --url <url_del_webhook>`.</p>
+            
+        
+            
+        
+            
+            <p>Además, n8n se puede autoalojar utilizando Docker. Para hacerlo, se debe ejecutar el comando `docker run -d -p 5678:5678 n8n/n8n`. Esto iniciará un contenedor de n8n que se puede acceder a través de la URL `http://localhost:5678`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las integraciones, n8n admite una amplia variedad de servicios externos, incluyendo Microsoft Azure, Jira y LinkedIn. Por ejemplo, se puede utilizar el nodo `Jira` para crear un nuevo ticket en Jira. El comando para crear un nuevo ticket sería: `n8n node jira create --title <titulo_del_ticket> --description <descripcion_del_ticket>`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, n8n es una herramienta poderosa para la automatización de workflows que ofrece una amplia variedad de características y funcionalidades. Su capacidad para crear nodos, workflows, credenciales y webhooks la convierte en una herramienta ideal para los desarrolladores y administradores de sistemas que buscan automatizar tareas complejas.</p>
+            
+        
+            
+        
+            
+            <p>Las fuentes utilizadas para este artículo incluyen la documentación oficial de n8n, así como artículos y tutoriales de terceros que demuestran cómo utilizar la herramienta para crear workflows personalizados y automatizar tareas complejas.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n-desktop-app" target="_blank">n8n-desktop-app</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc" target="_blank">Best n8n Workflows To Build with Claude Code (2026)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@anishsingh17625/integrating-n8n-with-microsoft-azure-a-practical-guide-for-engineering-teams-6bb9fefef491" target="_blank">Integrating n8n with Microsoft Azure: A Practical Guide for Engineering Teams</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/codetodeploy/n8n-the-complete-guide-to-open-source-workflow-automation-331b92ec7068" target="_blank">n8n: The Complete Guide to Open-Source Workflow Automation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jangwook_kim_e31e7291ad98/how-to-self-host-n8n-with-docker-ai-workflow-automation-guide-2026-3lec" target="_blank">How to Self-Host n8n with Docker — AI Workflow Automation Guide 2026</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-02_0912.html">&larr; 2026-05-02 0912</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

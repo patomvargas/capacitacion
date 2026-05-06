@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB: Balanceo de Carga en Kubernetes - MetalLB</title>
+    <title>MetalLB en Kubernetes - MetalLB</title>
     <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
-    <div class="meta">2026-05-02 0912 · MetalLB</div>
+    <h1>MetalLB en Kubernetes</h1>
+    <div class="meta">2026-05-06 1022 · MetalLB</div>
 
     <div class="content">
         
@@ -66,11 +66,13 @@
             
         
             
-            <p>MetalLB es una herramienta de balanceo de carga para Kubernetes que se ejecuta en cada nodo del clúster y proporciona servicios de balanceo de carga de manera eficiente. Para configurar MetalLB en modo L2, es necesario crear un objeto de configuración que especifique el modo de operación y la dirección IP del servicio. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar la configuración siguiente:</p>
+            <p>MetalLB es un proyecto de código abierto que proporciona un balanceador de carga para Kubernetes. Su función principal es asignar direcciones IP a servicios en un clúster de Kubernetes. MetalLB se puede configurar para trabajar en dos modos: L2 y BGP. En el modo L2, MetalLB asigna direcciones IP a servicios utilizando el protocolo ARP. En el modo BGP, MetalLB utiliza el protocolo BGP para anunciar las direcciones IP de los servicios a los routers de la red.</p>
             
         
             
-            <p>```yaml</p>
+        
+            
+            <p>Para configurar MetalLB en un clúster de Kubernetes, es necesario crear un objeto `IPAddressPool` que defina el rango de direcciones IP que se pueden asignar a los servicios. Por ejemplo, se puede crear un objeto `IPAddressPool` con el siguiente comando: `kubectl create -f - <<EOF</p>
             
         
             
@@ -86,7 +88,7 @@
             
         
             
-            <p>name: my-pool</p>
+            <p>name: ip-pool</p>
             
         
             
@@ -98,33 +100,19 @@
             
         
             
-            <p>- 192.168.1.1-192.168.1.10</p>
+            <p>- 192.168.0.10-192.168.0.20</p>
             
         
             
-            <p>```</p>
+            <p>EOF`. Luego, se puede crear un servicio que utilice el objeto `IPAddressPool` para asignar una dirección IP. Por ejemplo, se puede crear un servicio con el siguiente comando: `kubectl create -f - <<EOF</p>
             
         
             
-            <p>Luego, se puede crear un servicio de balanceo de carga que utilice el pool de direcciones IP configurado anteriormente. Para ello, se puede utilizar el comando `kubectl expose` para exponer el servicio y asignarle una dirección IP del pool.</p>
+            <p>apiVersion: v1</p>
             
         
             
-        
-            
-            <p>En cuanto al modo BGP, MetalLB permite a los administradores de sistemas configurar servicios de balanceo de carga que se anuncien a través del protocolo BGP. Para ello, es necesario crear un objeto de configuración que especifique el modo de operación BGP y la información de autenticación para el servidor BGP. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar la configuración siguiente:</p>
-            
-        
-            
-            <p>```yaml</p>
-            
-        
-            
-            <p>apiVersion: metallb.io/v1beta1</p>
-            
-        
-            
-            <p>kind: BGPAdvertisement</p>
+            <p>kind: Service</p>
             
         
             
@@ -132,7 +120,7 @@
             
         
             
-            <p>name: my-advertisement</p>
+            <p>name: mi-servicio</p>
             
         
             
@@ -140,49 +128,115 @@
             
         
             
-            <p>peer:</p>
+            <p>selector:</p>
             
         
             
-            <p>ip: 192.168.1.100</p>
+            <p>app: mi-aplicacion</p>
             
         
             
-            <p>port: 179</p>
+            <p>ports:</p>
             
         
             
-            <p>community:</p>
+            <p>- name: http</p>
             
         
             
-            <p>- 64512:100</p>
+            <p>port: 80</p>
             
         
             
-            <p>```</p>
+            <p>targetPort: 8080</p>
             
         
             
-            <p>Para solucionar problemas comunes con MetalLB, es importante verificar la configuración del servicio de balanceo de carga y asegurarse de que el pool de direcciones IP esté correctamente configurado. También es recomendable utilizar herramientas de depuración como `kubectl logs` y `kubectl describe` para obtener información detallada sobre el estado del servicio.</p>
+            <p>type: LoadBalancer</p>
             
         
             
-        
-            
-            <p>En cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el sistema de orquestación de contenedores. Los administradores de sistemas pueden utilizar comandos como `kubectl get` y `kubectl describe` para obtener información sobre los servicios de balanceo de carga y los nodos del clúster.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, MetalLB es una herramienta poderosa para el balanceo de carga en Kubernetes que permite a los administradores de sistemas configurar y gestionar servicios de balanceo de carga de manera eficiente. Con su capacidad para configurar servicios de balanceo de carga en modo L2 y BGP, así como su integración con Kubernetes, MetalLB es una excelente opción para aquellos que buscan una solución de balanceo de carga escalable y segura.</p>
+            <p>EOF`.</p>
             
         
             
         
             
-            <p>Para más información sobre MetalLB y su configuración, se recomienda consultar la documentación oficial del proyecto.</p>
+            <p>Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl` y `wireshark` para analizar el tráfico de red y determinar si hay problemas con la configuración de MetalLB. Por ejemplo, se puede utilizar el comando `kubectl get pods -o wide` para verificar si los pods de MetalLB están funcionando correctamente. También se puede utilizar el comando `kubectl logs -f <nombre-del-pod>` para verificar los registros de los pods de MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede integrar con otros componentes de Kubernetes, como `ingress-nginx`, para proporcionar un punto de entrada único para los servicios del clúster. Por ejemplo, se puede crear un objeto `Ingress` que utilice el servicio `ingress-nginx` para enrutar el tráfico a los servicios del clúster. Por ejemplo, se puede crear un objeto `Ingress` con el siguiente comando: `kubectl create -f - <<EOF</p>
+            
+        
+            
+            <p>apiVersion: networking.k8s.io/v1</p>
+            
+        
+            
+            <p>kind: Ingress</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: mi-ingreso</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>rules:</p>
+            
+        
+            
+            <p>- host: mi-dominio.com</p>
+            
+        
+            
+            <p>http:</p>
+            
+        
+            
+            <p>paths:</p>
+            
+        
+            
+            <p>- path: /</p>
+            
+        
+            
+            <p>pathType: Prefix</p>
+            
+        
+            
+            <p>backend:</p>
+            
+        
+            
+            <p>service:</p>
+            
+        
+            
+            <p>name: mi-servicio</p>
+            
+        
+            
+            <p>port:</p>
+            
+        
+            
+            <p>number: 80</p>
+            
+        
+            
+            <p>EOF`.</p>
             
         
             
@@ -197,17 +251,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metallb/metallb" target="_blank">MetalLB GitHub</a>
+                <a href="https://stackoverflow.com/questions/68224438/how-metallb-works-in-kubernetes" target="_blank">How MetalLB works in Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
+                <a href="https://stackoverflow.com/questions/74783557/metallb-kubernetes-installation-failed-calling-webhook-ipaddresspoolvalidation" target="_blank">Metallb Kubernetes installation: Failed calling webhook</a>
                 
             </li>
             
             <li>
-                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentación</a>
+                <a href="https://stackoverflow.com/questions/63974879/microk8s-metallb-ingress-nginx-how-to-route-external-traffic" target="_blank">Microk8s, MetalLB, ingress-nginx - How to route external traffic?</a>
                 
             </li>
             
@@ -218,12 +272,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-02_0912.html">&larr; 2026-05-02 0912</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-06_1022.html">2026-05-06 1022 &rarr;</a>
             
         </div>
     </div>

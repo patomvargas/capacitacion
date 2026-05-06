@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-05T10:07:44.453225+00:00</updated>
+  <updated>2026-05-06T10:23:36.508674+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -527,5 +527,60 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-02_0912.html"/>
     <summary>MetalLB es una herramienta de balanceo de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar servicios de balanceo de carga de manera eficiente. En este artículo, se explora cómo configurar MetalLB en modo L2 y BGP, así como cómo utilizar pools de direcciones IP y solucionar problemas comunes.</summary>
     <published>2026-05-02T09:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-06_1022.html</id>
+    <title>MetalLB en Kubernetes</title>
+    <updated>2026-05-06T10:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es un proyecto de código abierto que proporciona un balanceador de carga para Kubernetes. Su función principal es asignar direcciones IP a servicios en un clúster de Kubernetes. MetalLB se puede configurar para trabajar en dos modos: L2 y BGP. En el modo L2, MetalLB asigna direcciones IP a servicios utilizando el protocolo ARP. En el modo BGP, MetalLB utiliza el protocolo BGP para anunciar las direcciones IP de los servicios a los routers de la red.&lt;/p&gt;
+&lt;p&gt;Para configurar MetalLB en un clúster de Kubernetes, es necesario crear un objeto &lt;code&gt;IPAddressPool&lt;/code&gt; que defina el rango de direcciones IP que se pueden asignar a los servicios. Por ejemplo, se puede crear un objeto &lt;code&gt;IPAddressPool&lt;/code&gt; con el siguiente comando: `kubectl create -f - &lt;&lt;EOF&lt;/p&gt;
+&lt;p&gt;apiVersion: metallb.io/v1beta1&lt;/p&gt;
+&lt;p&gt;kind: IPAddressPool&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: ip-pool&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 192.168.0.10-192.168.0.20&lt;/p&gt;
+&lt;p&gt;EOF&lt;code&gt;. Luego, se puede crear un servicio que utilice el objeto &lt;/code&gt;IPAddressPool&lt;code&gt; para asignar una dirección IP. Por ejemplo, se puede crear un servicio con el siguiente comando: &lt;/code&gt;kubectl create -f - &lt;&lt;EOF&lt;/p&gt;
+&lt;p&gt;apiVersion: v1&lt;/p&gt;
+&lt;p&gt;kind: Service&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: mi-servicio&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;selector:&lt;/p&gt;
+&lt;p&gt;app: mi-aplicacion&lt;/p&gt;
+&lt;p&gt;ports:&lt;/p&gt;
+&lt;p&gt;- name: http&lt;/p&gt;
+&lt;p&gt;port: 80&lt;/p&gt;
+&lt;p&gt;targetPort: 8080&lt;/p&gt;
+&lt;p&gt;type: LoadBalancer&lt;/p&gt;
+&lt;p&gt;EOF`.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas con MetalLB, se pueden utilizar herramientas como &lt;code&gt;kubectl&lt;/code&gt; y &lt;code&gt;wireshark&lt;/code&gt; para analizar el tráfico de red y determinar si hay problemas con la configuración de MetalLB. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl get pods -o wide&lt;/code&gt; para verificar si los pods de MetalLB están funcionando correctamente. También se puede utilizar el comando &lt;code&gt;kubectl logs -f &lt;nombre-del-pod&gt;&lt;/code&gt; para verificar los registros de los pods de MetalLB.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con Kubernetes, MetalLB se puede integrar con otros componentes de Kubernetes, como &lt;code&gt;ingress-nginx&lt;/code&gt;, para proporcionar un punto de entrada único para los servicios del clúster. Por ejemplo, se puede crear un objeto &lt;code&gt;Ingress&lt;/code&gt; que utilice el servicio &lt;code&gt;ingress-nginx&lt;/code&gt; para enrutar el tráfico a los servicios del clúster. Por ejemplo, se puede crear un objeto &lt;code&gt;Ingress&lt;/code&gt; con el siguiente comando: `kubectl create -f - &lt;&lt;EOF&lt;/p&gt;
+&lt;p&gt;apiVersion: networking.k8s.io/v1&lt;/p&gt;
+&lt;p&gt;kind: Ingress&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: mi-ingreso&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;rules:&lt;/p&gt;
+&lt;p&gt;- host: mi-dominio.com&lt;/p&gt;
+&lt;p&gt;http:&lt;/p&gt;
+&lt;p&gt;paths:&lt;/p&gt;
+&lt;p&gt;- path: /&lt;/p&gt;
+&lt;p&gt;pathType: Prefix&lt;/p&gt;
+&lt;p&gt;backend:&lt;/p&gt;
+&lt;p&gt;service:&lt;/p&gt;
+&lt;p&gt;name: mi-servicio&lt;/p&gt;
+&lt;p&gt;port:&lt;/p&gt;
+&lt;p&gt;number: 80&lt;/p&gt;
+&lt;p&gt;EOF`.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/68224438/how-metallb-works-in-kubernetes"&gt;How MetalLB works in Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/74783557/metallb-kubernetes-installation-failed-calling-webhook-ipaddresspoolvalidation"&gt;Metallb Kubernetes installation: Failed calling webhook&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/63974879/microk8s-metallb-ingress-nginx-how-to-route-external-traffic"&gt;Microk8s, MetalLB, ingress-nginx - How to route external traffic?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-06_1022.html"/>
+    <summary>MetalLB es un balanceador de carga para Kubernetes que permite asignar direcciones IP a servicios en un clúster. En este artículo, se explora cómo funciona MetalLB y cómo se puede configurar para trabajar con Kubernetes.</summary>
+    <published>2026-05-06T10:22:00+00:00</published>
   </entry>
 </feed>

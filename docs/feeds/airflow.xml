@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-05T10:07:44.447663+00:00</updated>
+  <updated>2026-05-06T10:23:36.500728+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -230,5 +230,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-04-28_1020.html"/>
     <summary>Apache Airflow 3.2 introduce mejoras significativas en la orquestación de pipelines y la autorización de tareas. En este artículo, se presentan las novedades y best practices para aprovechar al máximo la plataforma.</summary>
     <published>2026-04-28T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-06_1022.html</id>
+    <title>Airflow: Orquestación de Flujos de Datos</title>
+    <updated>2026-05-06T10:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta de código abierto que permite definir y ejecutar flujos de trabajo de manera eficiente. Un flujo de trabajo en Airflow se define como un grafo dirigido acíclico (DAG), que es un conjunto de tareas con dependencias definidas entre ellas. Las tareas en Airflow se pueden ejecutar de manera secuencial o paralela, lo que permite optimizar el uso de recursos y reducir el tiempo de ejecución.&lt;/p&gt;
+&lt;p&gt;Una de las características clave de Airflow es la capacidad de definir operadores, que son funciones que se pueden utilizar para realizar tareas específicas, como leer o escribir datos en una base de datos. Los operadores en Airflow se pueden utilizar para crear tareas personalizadas y flexibles. Por ejemplo, se puede utilizar el operador &lt;code&gt;BashOperator&lt;/code&gt; para ejecutar comandos de bash en un servidor remoto: &lt;code&gt;BashOperator(bash_command='ls -l')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Airflow también proporciona una variedad de sensores que permiten monitorear y controlar el flujo de trabajo. Los sensores en Airflow se pueden utilizar para detectar cambios en la base de datos, archivos o otros recursos, y para disparar tareas en respuesta a esos cambios. Por ejemplo, se puede utilizar el sensor &lt;code&gt;FileSensor&lt;/code&gt; para detectar la presencia de un archivo en un directorio: &lt;code&gt;FileSensor(filepath='/path/to/file.txt')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante mencionar la importancia de utilizar una configuración adecuada para la base de datos y la autenticación en Airflow. Por ejemplo, se puede utilizar la variable de entorno &lt;code&gt;AIRFLOW_DATABASE_HOST&lt;/code&gt; para configurar la dirección del host de la base de datos: &lt;code&gt;export AIRFLOW_DATABASE_HOST='localhost'&lt;/code&gt;. También es importante mencionar la importancia de utilizar una versión actualizada de Airflow, ya que las versiones más recientes incluyen mejoras y correcciones de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow es una herramienta muy flexible y personalizable, lo que la hace adecuada para una variedad de casos de uso y aplicaciones. Sin embargo, también es importante mencionar que la configuración y el uso de Airflow pueden ser complejos, por lo que es importante consultar la documentación oficial y buscar ayuda en la comunidad de desarrolladores si es necesario.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow es una herramienta poderosa y flexible para la orquestación de flujos de datos, que ofrece una variedad de características y funcionalidades para definir y ejecutar flujos de trabajo de manera eficiente. Al seguir las mejores prácticas y utilizar las características de Airflow de manera efectiva, es posible optimizar el uso de recursos y reducir el tiempo de ejecución de los flujos de trabajo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/79155490/airflow-dag-updates-not-reflecting-in-ui-without-file-rename-or-reserialization"&gt;Airflow DAG Updates Not Reflecting in UI Without File Rename or Reserialization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/77479560/airflow-xcom-pull-in-taskgroup"&gt;Airflow XCOM Pull in Taskgroup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://stackoverflow.com/questions/79743044/sending-logs-from-airflow-to-s3-minio"&gt;Sending logs from Airflow to S3/Minio&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-06_1022.html"/>
+    <summary>Airflow es una herramienta de orquestación de flujos de datos que permite definir y ejecutar flujos de trabajo de manera eficiente. En este artículo, se presentan las características y funcionalidades de Airflow, incluyendo DAGs, operadores, sensores y mejores prácticas.</summary>
+    <published>2026-05-06T10:22:00+00:00</published>
   </entry>
 </feed>

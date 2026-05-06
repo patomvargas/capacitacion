@@ -1,4 +1,20 @@
 {
+  "2026-05-06_1022": {
+    "slug": "traefik",
+    "title": "Seguridad y configuración de Traefik",
+    "summary": "Traefik es un sistema de proxy inverso que permite configurar routers, middlewares y proveedores de manera flexible. En este artículo, se presentan las mejores prácticas para configurar Traefik de manera segura y eficiente.",
+    "content": "Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible. \n \n Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura `providers.kubernetesCRD.allowCrossNamespace=false`, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar `providers.kubernetesCRD.allowCrossNamespace=true` y utilizar `middleware` para restringir el acceso a los routers. \n \n Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando `traefik reload` para recargar la configuración de Traefik después de un failover de Sentinel. \n \n En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando `traefik certificado` para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando `traefik certificado --email ejemplo@example.com --domain ejemplo.com` para obtener un certificado para el dominio ejemplo.com. \n \n Para configurar el proveedor de TCP/UDP, se puede utilizar el comando `traefik provider` para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando `traefik provider --name ejemplo --type tcp --address ejemplo.com:8080` para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080. \n \n En cuanto a la observabilidad, se puede utilizar el comando `traefik log` para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando `traefik log --level debug` para ver los registros de depuración de Traefik.",
+    "sources": [
+      {
+        "title": "Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq"
+      },
+      {
+        "title": "Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965",
+        "url": "https://github.com/traefik/traefik/issues/12965"
+      }
+    ]
+  },
   "2026-04-28_1020": {
     "slug": "traefik",
     "title": "Traefik: Mejoras de Seguridad y Funcionalidades",

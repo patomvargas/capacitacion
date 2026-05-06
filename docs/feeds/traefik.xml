@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-05T10:07:44.452177+00:00</updated>
+  <updated>2026-05-06T10:23:36.506924+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -125,5 +125,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html"/>
     <summary>Traefik ha lanzado actualizaciones de seguridad y nuevas funcionalidades para mejorar la gestión de routers, middlewares y providers. Estas actualizaciones incluyen la versión 2.11.43, 3.6.14 y 3.7.0-rc.2, que corrigen vulnerabilidades como CVE-2026-40912 y CVE-2026-39858.</summary>
     <published>2026-04-28T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html</id>
+    <title>Seguridad y configuración de Traefik</title>
+    <updated>2026-05-06T10:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible.&lt;/p&gt;
+&lt;p&gt;Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura &lt;code&gt;providers.kubernetesCRD.allowCrossNamespace=false&lt;/code&gt;, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar &lt;code&gt;providers.kubernetesCRD.allowCrossNamespace=true&lt;/code&gt; y utilizar &lt;code&gt;middleware&lt;/code&gt; para restringir el acceso a los routers.&lt;/p&gt;
+&lt;p&gt;Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando &lt;code&gt;traefik reload&lt;/code&gt; para recargar la configuración de Traefik después de un failover de Sentinel.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando &lt;code&gt;traefik certificado&lt;/code&gt; para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando &lt;code&gt;traefik certificado --email ejemplo@example.com --domain ejemplo.com&lt;/code&gt; para obtener un certificado para el dominio ejemplo.com.&lt;/p&gt;
+&lt;p&gt;Para configurar el proveedor de TCP/UDP, se puede utilizar el comando &lt;code&gt;traefik provider&lt;/code&gt; para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando &lt;code&gt;traefik provider --name ejemplo --type tcp --address ejemplo.com:8080&lt;/code&gt; para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, se puede utilizar el comando &lt;code&gt;traefik log&lt;/code&gt; para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando &lt;code&gt;traefik log --level debug&lt;/code&gt; para ver los registros de depuración de Traefik.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq"&gt;Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/12965"&gt;Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html"/>
+    <summary>Traefik es un sistema de proxy inverso que permite configurar routers, middlewares y proveedores de manera flexible. En este artículo, se presentan las mejores prácticas para configurar Traefik de manera segura y eficiente.</summary>
+    <published>2026-05-06T10:22:00+00:00</published>
   </entry>
 </feed>
