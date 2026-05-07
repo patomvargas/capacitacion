@@ -1,4 +1,32 @@
 {
+  "2026-05-07_1029": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. También cubriremos algunos consejos avanzados para mejorar la productividad y la colaboración en proyectos que utilizan Git.",
+    "content": "Git es un sistema de control de versiones ampliamente utilizado en la industria del software. Una de las características más poderosas de Git es su capacidad para manejar workflows complejos. Por ejemplo, se puede utilizar `git flow` para manejar el ciclo de vida de un proyecto, desde la creación de una rama de desarrollo hasta la fusión con la rama principal.\n\nUn hook es un script que se ejecuta automáticamente en respuesta a un evento específico en Git. Los hooks se pueden utilizar para automatizar tareas, como la verificación de código o la notificación de cambios. Por ejemplo, se puede utilizar el hook `pre-commit` para verificar que el código cumpla con ciertos estándares antes de que se confirme.\n\nEl comando `git rebase` se utiliza para reorganizar el historial de commits en una rama. Esto puede ser útil para mantener un historial de commits limpio y organizado. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con el historial de commits y eliminar o fusionar commits innecesarios.\n\nOtra característica avanzada de Git es el uso de worktrees. Un worktree es un directorio que contiene una copia de un repositorio Git. Los worktrees se pueden utilizar para trabajar en diferentes ramas o proyectos simultáneamente. Por ejemplo, se puede utilizar `git worktree add` para crear un nuevo worktree para una rama específica.\n\nFinalmente, es importante mencionar algunos consejos avanzados para mejorar la productividad y la colaboración en proyectos que utilizan Git. Por ejemplo, se puede utilizar `git status` para verificar el estado actual del repositorio, o `git log` para visualizar el historial de commits. También es importante establecer un conjunto de mejores prácticas para el uso de Git en el equipo, como la creación de ramas para características y la fusión de cambios en la rama principal.\n\nEn resumen, Git es una herramienta poderosa que ofrece una variedad de características avanzadas para mejorar la productividad y la colaboración en proyectos de software. Al utilizar estas características y seguir mejores prácticas, los desarrolladores pueden trabajar de manera más eficiente y efectiva en proyectos que utilizan Git.",
+    "sources": [
+      {
+        "title": "MDN Web Docs",
+        "url": "https://github.com/mdn/content"
+      },
+      {
+        "title": "HighwayofLife/awesome-chatgpt-plugins",
+        "url": "https://github.com/HighwayofLife/awesome-chatgpt-plugins"
+      },
+      {
+        "title": "Willie169/Android-Non-Root",
+        "url": "https://github.com/Willie169/Android-Non-Root"
+      },
+      {
+        "title": "TradingAgents: Multi-Agents LLM Financial Trading Framework",
+        "url": "https://github.com/TauricResearch/TradingAgents"
+      },
+      {
+        "title": "josix/awesome-claude-md",
+        "url": "https://github.com/josix/awesome-claude-md"
+      }
+    ]
+  },
   "2026-05-03_0924": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",

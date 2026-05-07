@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Providers y Módulos Avanzados - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Providers y Módulos Avanzados</h1>
+    <div class="meta">2026-05-07 1029 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para gestionar recursos en AWS, se puede utilizar el Terraform AWS Cloud Control Provider, que es un plugin para Terraform que permite el ciclo de vida completo de los recursos de AWS utilizando la API de Cloud Control de AWS CloudFormation. Para instalar este provider, se puede utilizar el comando `terraform init` y luego configurar el provider en el archivo `main.tf` con `provider "awscc" { region = "us-west-2" }`.</p>
+            
+        
+            
+        
+            
+            <p>El Terraform Nutanix Provider es otro ejemplo de un provider avanzado que permite interactuar con la plataforma de nube de Nutanix. Este provider se puede instalar de manera similar al provider de AWS, utilizando el comando `terraform init` y luego configurando el provider en el archivo `main.tf` con `provider "nutanix" { username = "mi_usuario" password = "mi_contraseña" }`.</p>
+            
+        
+            
+        
+            
+            <p>Los módulos son otra característica importante de Terraform que permiten reutilizar código y simplificar la gestión de la infraestructura. Un ejemplo de un módulo avanzado es el módulo `terraform-ibm-cos`, que permite provisionar y configurar una instancia de almacenamiento de objetos de IBM Cloud. Para utilizar este módulo, se puede agregar la siguiente configuración al archivo `main.tf`: `module "cos" { source = "terraform-ibm-modules/terraform-ibm-cos" instance_name = "mi_instancia" bucket_name = "mi_bucket" }`.</p>
+            
+        
+            
+        
+            
+            <p>Además de los providers y módulos, Terraform también ofrece otras características avanzadas como el estado de la infraestructura y los espacios de trabajo. El estado de la infraestructura se refiere a la configuración actual de la infraestructura, y se puede gestionar utilizando el comando `terraform state`. Los espacios de trabajo permiten gestionar múltiples infraestructuras de manera independiente, y se pueden crear utilizando el comando `terraform workspace`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la gestión de la infraestructura como código, y ofrece una variedad de características avanzadas como providers, módulos, estado de la infraestructura y espacios de trabajo. Al utilizar estas características, los administradores de sistemas y los ingenieros de DevOps pueden gestionar la infraestructura de manera más eficiente y escalable.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Terraform y sus características avanzadas, se pueden consultar las fuentes oficiales de HashiCorp y los repositorios de GitHub de los providers y módulos mencionados en este artículo.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-awscc" target="_blank">Terraform AWS Cloud Control Provider</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/nutanix/terraform-provider-nutanix" target="_blank">Terraform Nutanix Provider</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/terraform-ibm-modules/terraform-ibm-cos" target="_blank">Terraform IBM COS Module</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-03_0924.html">&larr; 2026-05-03 0924</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

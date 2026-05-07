@@ -1,4 +1,28 @@
 {
+  "2026-05-07_1029": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. En este artículo, se presentan algunas de las mejores prácticas y técnicas para optimizar el rendimiento de PostgreSQL.",
+    "content": "PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que ofrece una gran cantidad de características y herramientas para optimizar su rendimiento. Una de las formas más efectivas de optimizar el rendimiento de PostgreSQL es mediante la creación de índices. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, lo que reduce el tiempo de respuesta de las consultas. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.\n\nLa replicación es otra característica importante de PostgreSQL que puede ayudar a mejorar el rendimiento. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que permite a los administradores de bases de datos realizar tareas de mantenimiento y actualizaciones sin afectar la disponibilidad de la base de datos. Para configurar la replicación en PostgreSQL, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h servidor_principal -D /ruta/de/la/copia`.\n\nLa extensión `pg_stat` es otra herramienta útil para optimizar el rendimiento de PostgreSQL. `pg_stat` proporciona información detallada sobre el rendimiento de la base de datos, incluyendo el tiempo de respuesta de las consultas, el número de consultas ejecutadas y el uso de recursos del sistema. Para habilitar `pg_stat`, se puede utilizar el comando `ALTER SYSTEM SET pg_stat.stat_start = true;`.\n\nAdemás, es importante realizar copias de seguridad regulares de la base de datos para garantizar la integridad de los datos en caso de un fallo del sistema. Para realizar una copia de seguridad de la base de datos en PostgreSQL, se puede utilizar el comando `pg_dump`. Por ejemplo: `pg_dump -U usuario -d base_de_datos > copia_de_seguridad.sql`.\n\nFinalmente, es importante mencionar que la versión más reciente de PostgreSQL, la 18.3, incluye varias mejoras y características nuevas, como la implementación de I/O asíncrono, que permite a PostgreSQL realizar operaciones de entrada y salida de manera concurrente.\n\nLa herramienta `EXPLAIN ANALYZE` es fundamental para analizar y optimizar las consultas en PostgreSQL. Esta herramienta proporciona información detallada sobre el plan de ejecución de una consulta, incluyendo el tiempo de respuesta y el número de filas procesadas. Por ejemplo: `EXPLAIN ANALYZE SELECT * FROM tabla WHERE condicion;`.",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "The Complete Guide to PostgreSQL SQL Query Analysis & Optimization",
+        "url": "https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518"
+      },
+      {
+        "title": "PostgreSQL EXPLAIN ANALYZE: Reading Query Plans Like a Pro",
+        "url": "https://dev.to/whoffagents/postgresql-explain-analyze-reading-query-plans-like-a-pro-154i"
+      }
+    ]
+  },
   "2026-05-03_0924": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

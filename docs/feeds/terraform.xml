@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-06T10:23:36.514281+00:00</updated>
+  <updated>2026-05-07T10:29:55.786430+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -146,5 +146,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-03_0924.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
     <published>2026-05-03T09:24:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-07_1029.html</id>
+    <title>Terraform: Providers y Módulos Avanzados</title>
+    <updated>2026-05-07T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para gestionar recursos en AWS, se puede utilizar el Terraform AWS Cloud Control Provider, que es un plugin para Terraform que permite el ciclo de vida completo de los recursos de AWS utilizando la API de Cloud Control de AWS CloudFormation. Para instalar este provider, se puede utilizar el comando &lt;code&gt;terraform init&lt;/code&gt; y luego configurar el provider en el archivo &lt;code&gt;main.tf&lt;/code&gt; con &lt;code&gt;provider "awscc" { region = "us-west-2" }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El Terraform Nutanix Provider es otro ejemplo de un provider avanzado que permite interactuar con la plataforma de nube de Nutanix. Este provider se puede instalar de manera similar al provider de AWS, utilizando el comando &lt;code&gt;terraform init&lt;/code&gt; y luego configurando el provider en el archivo &lt;code&gt;main.tf&lt;/code&gt; con &lt;code&gt;provider "nutanix" { username = "mi_usuario" password = "mi_contraseña" }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Los módulos son otra característica importante de Terraform que permiten reutilizar código y simplificar la gestión de la infraestructura. Un ejemplo de un módulo avanzado es el módulo &lt;code&gt;terraform-ibm-cos&lt;/code&gt;, que permite provisionar y configurar una instancia de almacenamiento de objetos de IBM Cloud. Para utilizar este módulo, se puede agregar la siguiente configuración al archivo &lt;code&gt;main.tf&lt;/code&gt;: &lt;code&gt;module "cos" { source = "terraform-ibm-modules/terraform-ibm-cos" instance_name = "mi_instancia" bucket_name = "mi_bucket" }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además de los providers y módulos, Terraform también ofrece otras características avanzadas como el estado de la infraestructura y los espacios de trabajo. El estado de la infraestructura se refiere a la configuración actual de la infraestructura, y se puede gestionar utilizando el comando &lt;code&gt;terraform state&lt;/code&gt;. Los espacios de trabajo permiten gestionar múltiples infraestructuras de manera independiente, y se pueden crear utilizando el comando &lt;code&gt;terraform workspace&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de la infraestructura como código, y ofrece una variedad de características avanzadas como providers, módulos, estado de la infraestructura y espacios de trabajo. Al utilizar estas características, los administradores de sistemas y los ingenieros de DevOps pueden gestionar la infraestructura de manera más eficiente y escalable.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Terraform y sus características avanzadas, se pueden consultar las fuentes oficiales de HashiCorp y los repositorios de GitHub de los providers y módulos mencionados en este artículo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-awscc"&gt;Terraform AWS Cloud Control Provider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nutanix/terraform-provider-nutanix"&gt;Terraform Nutanix Provider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/terraform-ibm-modules/terraform-ibm-cos"&gt;Terraform IBM COS Module&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-07_1029.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se exploran los providers y módulos avanzados de Terraform, incluyendo el Terraform AWS Cloud Control Provider y el Terraform Nutanix Provider.</summary>
+    <published>2026-05-07T10:29:00+00:00</published>
   </entry>
 </feed>

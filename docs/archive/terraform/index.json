@@ -1,4 +1,24 @@
 {
+  "2026-05-07_1029": {
+    "slug": "terraform",
+    "title": "Terraform: Providers y Módulos Avanzados",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se exploran los providers y módulos avanzados de Terraform, incluyendo el Terraform AWS Cloud Control Provider y el Terraform Nutanix Provider.",
+    "content": "Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para gestionar recursos en AWS, se puede utilizar el Terraform AWS Cloud Control Provider, que es un plugin para Terraform que permite el ciclo de vida completo de los recursos de AWS utilizando la API de Cloud Control de AWS CloudFormation. Para instalar este provider, se puede utilizar el comando `terraform init` y luego configurar el provider en el archivo `main.tf` con `provider \"awscc\" { region = \"us-west-2\" }`.\n\nEl Terraform Nutanix Provider es otro ejemplo de un provider avanzado que permite interactuar con la plataforma de nube de Nutanix. Este provider se puede instalar de manera similar al provider de AWS, utilizando el comando `terraform init` y luego configurando el provider en el archivo `main.tf` con `provider \"nutanix\" { username = \"mi_usuario\" password = \"mi_contraseña\" }`.\n\nLos módulos son otra característica importante de Terraform que permiten reutilizar código y simplificar la gestión de la infraestructura. Un ejemplo de un módulo avanzado es el módulo `terraform-ibm-cos`, que permite provisionar y configurar una instancia de almacenamiento de objetos de IBM Cloud. Para utilizar este módulo, se puede agregar la siguiente configuración al archivo `main.tf`: `module \"cos\" { source = \"terraform-ibm-modules/terraform-ibm-cos\" instance_name = \"mi_instancia\" bucket_name = \"mi_bucket\" }`.\n\nAdemás de los providers y módulos, Terraform también ofrece otras características avanzadas como el estado de la infraestructura y los espacios de trabajo. El estado de la infraestructura se refiere a la configuración actual de la infraestructura, y se puede gestionar utilizando el comando `terraform state`. Los espacios de trabajo permiten gestionar múltiples infraestructuras de manera independiente, y se pueden crear utilizando el comando `terraform workspace`.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de la infraestructura como código, y ofrece una variedad de características avanzadas como providers, módulos, estado de la infraestructura y espacios de trabajo. Al utilizar estas características, los administradores de sistemas y los ingenieros de DevOps pueden gestionar la infraestructura de manera más eficiente y escalable.\n\nPara obtener más información sobre Terraform y sus características avanzadas, se pueden consultar las fuentes oficiales de HashiCorp y los repositorios de GitHub de los providers y módulos mencionados en este artículo.",
+    "sources": [
+      {
+        "title": "Terraform AWS Cloud Control Provider",
+        "url": "https://github.com/hashicorp/terraform-provider-awscc"
+      },
+      {
+        "title": "Terraform Nutanix Provider",
+        "url": "https://github.com/nutanix/terraform-provider-nutanix"
+      },
+      {
+        "title": "Terraform IBM COS Module",
+        "url": "https://github.com/terraform-ibm-modules/terraform-ibm-cos"
+      }
+    ]
+  },
   "2026-05-03_0924": {
     "slug": "terraform",
     "title": "Terraform: Mejoras y Best Practices",

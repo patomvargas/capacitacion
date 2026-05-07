@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-05-07 1029 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que utiliza playbooks, roles, collections y vault para gestionar configuraciones de servidores. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un servidor. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web Apache utilizando el comando `ansible-playbook -i inventory.ini playbook.yml`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para gestionar la configuración de los servidores, Ansible utiliza un inventario que define los servidores y sus características. El inventario se puede definir en un archivo `inventory.ini` o en una base de datos. Por ejemplo, se puede definir un inventario con los siguientes servidores: `server1`, `server2` y `server3`, cada uno con su propia configuración.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Ansible también proporciona una herramienta llamada AWX/Tower que permite a los administradores de sistemas gestionar y automatizar la configuración de los servidores de manera centralizada. AWX/Tower proporciona una interfaz web para crear y ejecutar playbooks, así como para gestionar el inventario y las configuraciones de los servidores.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades en Ansible, se ha anunciado la versión 2.6 de la plataforma de automatización de Red Hat, que incluye mejoras en la gestión de eventos y la integración con otros productos de Red Hat. Además, se han publicado varios repositorios en GitHub que proporcionan ejemplos y tutoriales para aprender Ansible, como el repositorio `ansible-community/ai-forge` que proporciona ejemplos de playbooks y roles para la automatización de infraestructura.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para empezar a trabajar con Ansible, se puede utilizar el comando `ansible --version` para verificar la versión instalada. Luego, se puede crear un nuevo playbook utilizando el comando `ansible-playbook --help` para obtener información sobre las opciones y los parámetros disponibles.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de servidores de manera eficiente. Con las novedades y las mejores prácticas presentadas en este artículo, se puede aprovechar al máximo la potencia de Ansible para automatizar y gestionar la infraestructura de la empresa.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e8X5vpkBMzty_jMs-hqlmpazVUCUwsfRGicjUXBslkpVk7ZKcL2eHDLrLBKu4K_ldnJsG6UUpyFYybV9laItO9bTKlLOw97FxSUNs1hJO-AK8j5n3_ExzPx1fBi7VhY2cNqeG7iM6xtzk0E8YrKxTdl6vEC0wloElFKNcsQCPFDBNs6s9KhgyR1bMTTtNqudTovpqPcIV0ocCsc0dMIH25htU5_ns&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmbWFzdGVyaW5nLWFuc2libGUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfS2V5d29yZF9CZXRhX1Byb2ZfbGEuRU5fY2MuVVMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctVVNBJTI2dXRtX2F1ZGllbmNlJTNkbXglMjZ1dG1fdGFjdGljJTNkbmIlMjZ1dG1fdGVybSUzZF8uX2FnXzEzMjI3MTQ4NjYyNTAyMDFfLl9hZF9fLl9rd19BbnNpYmxlJTI1MjBUcmFpbmluZyUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkYzlmMzNjYjk0MWFmMWM4MzQ4NDc1NTQ1MjgzMWQ3MmY&rlid=c9f33cb941af1c83484755452831d72f" target="_blank">Ansible Online Course</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@chimemichael11/deploying-a-full-stack-application-on-azure-using-terraform-and-ansible-72c38c0ea5c0" target="_blank">Deploying a Full-Stack Application on Azure</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/whats_new-aap_26_2026_02_25" target="_blank">Red Hat Ansible Automation Platform</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-03_0924.html">&larr; 2026-05-03 0924</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

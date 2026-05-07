@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-06T10:23:36.515284+00:00</updated>
+  <updated>2026-05-07T10:29:55.788493+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -313,5 +313,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-03_0924.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible, incluyendo el uso de playbooks, roles, colecciones y vault.</summary>
     <published>2026-05-03T09:24:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-07_1029.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-05-07T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que utiliza playbooks, roles, collections y vault para gestionar configuraciones de servidores. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un servidor. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web Apache utilizando el comando &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para gestionar la configuración de los servidores, Ansible utiliza un inventario que define los servidores y sus características. El inventario se puede definir en un archivo &lt;code&gt;inventory.ini&lt;/code&gt; o en una base de datos. Por ejemplo, se puede definir un inventario con los siguientes servidores: &lt;code&gt;server1&lt;/code&gt;, &lt;code&gt;server2&lt;/code&gt; y &lt;code&gt;server3&lt;/code&gt;, cada uno con su propia configuración.&lt;/p&gt;
+&lt;p&gt;Ansible también proporciona una herramienta llamada AWX/Tower que permite a los administradores de sistemas gestionar y automatizar la configuración de los servidores de manera centralizada. AWX/Tower proporciona una interfaz web para crear y ejecutar playbooks, así como para gestionar el inventario y las configuraciones de los servidores.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades en Ansible, se ha anunciado la versión 2.6 de la plataforma de automatización de Red Hat, que incluye mejoras en la gestión de eventos y la integración con otros productos de Red Hat. Además, se han publicado varios repositorios en GitHub que proporcionan ejemplos y tutoriales para aprender Ansible, como el repositorio &lt;code&gt;ansible-community/ai-forge&lt;/code&gt; que proporciona ejemplos de playbooks y roles para la automatización de infraestructura.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Ansible, se puede utilizar el comando &lt;code&gt;ansible --version&lt;/code&gt; para verificar la versión instalada. Luego, se puede crear un nuevo playbook utilizando el comando &lt;code&gt;ansible-playbook --help&lt;/code&gt; para obtener información sobre las opciones y los parámetros disponibles.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de servidores de manera eficiente. Con las novedades y las mejores prácticas presentadas en este artículo, se puede aprovechar al máximo la potencia de Ansible para automatizar y gestionar la infraestructura de la empresa.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e8X5vpkBMzty_jMs-hqlmpazVUCUwsfRGicjUXBslkpVk7ZKcL2eHDLrLBKu4K_ldnJsG6UUpyFYybV9laItO9bTKlLOw97FxSUNs1hJO-AK8j5n3_ExzPx1fBi7VhY2cNqeG7iM6xtzk0E8YrKxTdl6vEC0wloElFKNcsQCPFDBNs6s9KhgyR1bMTTtNqudTovpqPcIV0ocCsc0dMIH25htU5_ns&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmbWFzdGVyaW5nLWFuc2libGUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfS2V5d29yZF9CZXRhX1Byb2ZfbGEuRU5fY2MuVVMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctVVNBJTI2dXRtX2F1ZGllbmNlJTNkbXglMjZ1dG1fdGFjdGljJTNkbmIlMjZ1dG1fdGVybSUzZF8uX2FnXzEzMjI3MTQ4NjYyNTAyMDFfLl9hZF9fLl9rd19BbnNpYmxlJTI1MjBUcmFpbmluZyUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkYzlmMzNjYjk0MWFmMWM4MzQ4NDc1NTQ1MjgzMWQ3MmY&amp;rlid=c9f33cb941af1c83484755452831d72f"&gt;Ansible Online Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@chimemichael11/deploying-a-full-stack-application-on-azure-using-terraform-and-ansible-72c38c0ea5c0"&gt;Deploying a Full-Stack Application on Azure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.6/whats_new-aap_26_2026_02_25"&gt;Red Hat Ansible Automation Platform&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-07_1029.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de servidores de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible.</summary>
+    <published>2026-05-07T10:29:00+00:00</published>
   </entry>
 </feed>
