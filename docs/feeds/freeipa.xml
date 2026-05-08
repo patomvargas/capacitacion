@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-07T10:29:55.759163+00:00</updated>
+  <updated>2026-05-08T09:45:36.623741+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -268,5 +268,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-04_1017.html"/>
     <summary>FreeIPA es una plataforma de gestión de identidad que proporciona servicios de LDAP, Kerberos y certificado de autoridad. En este artículo, exploraremos cómo implementar y configurar FreeIPA en un entorno de Kubernetes utilizando Flux CD.</summary>
     <published>2026-05-04T10:17:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-08_0944.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-05-08T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de código abierto que combina los protocolos LDAP, Kerberos y Certificate Authority para proporcionar una solución integral de gestión de identidad y acceso. Para instalar FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; y seguir las instrucciones del asistente de instalación.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar FreeIPA para autenticar usuarios y grupos utilizando el comando &lt;code&gt;ipa user-add&lt;/code&gt; y &lt;code&gt;ipa group-add&lt;/code&gt;. También se pueden crear reglas de acceso y autorización utilizando el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; y &lt;code&gt;ipa sudorule-add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para integrar FreeIPA con otros sistemas, se pueden utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando &lt;code&gt;ldapsearch&lt;/code&gt; para buscar usuarios y grupos en el directorio LDAP de FreeIPA. También se puede utilizar el comando &lt;code&gt;kinit&lt;/code&gt; para autenticar con un ticket Kerberos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona una variedad de características para proteger la información de identidad y acceso. Por ejemplo, se pueden utilizar certificados SSL/TLS para cifrar las comunicaciones entre el servidor FreeIPA y los clientes. También se pueden configurar reglas de firewall para restringir el acceso al servidor FreeIPA.&lt;/p&gt;
+&lt;p&gt;Para mantener actualizado el servidor FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-upgrade&lt;/code&gt; para aplicar actualizaciones y parches de seguridad. También se pueden utilizar herramientas como Flux CD para automatizar la implementación y gestión de FreeIPA en entornos de Kubernetes.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que proporciona una variedad de características y configuraciones para satisfacer las necesidades de las organizaciones. Con su arquitectura escalable y segura, FreeIPA es una excelente opción para aquellos que buscan una solución integral de gestión de identidad y acceso.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://planet.freeipa.org/"&gt;FreeIPA Identity Management planet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://leo.leung.xyz/wiki/FreeIPA"&gt;FreeIPA - Leo's Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"&gt;Deploy FreeIPA Identity Management with Flux CD&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-08_0944.html"/>
+    <summary>FreeIPA es una plataforma de gestión de identidad y acceso que proporciona servicios de autenticación, autorización y administración de identidades. En este artículo, se exploran las características y configuraciones de FreeIPA.</summary>
+    <published>2026-05-08T09:44:00+00:00</published>
   </entry>
 </feed>

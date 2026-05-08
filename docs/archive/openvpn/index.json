@@ -1,4 +1,20 @@
 {
+  "2026-05-08_0944": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando `openssl` para generar los certificados y claves necesarios.\n\n \n Para establecer una conexión segura, es importante configurar el servidor OpenVPN con una política de seguridad adecuada. Esto incluye la configuración de la autenticación, la autorización y el cifrado de datos. Se puede utilizar el comando `openvpn --config` para especificar la configuración del servidor.\n\n \n Una de las mejores prácticas para proteger un servidor OpenVPN es utilizar una configuración de hardening. Esto incluye la desactivación de servicios innecesarios, la configuración de firewalls y la actualización regular del software. Se puede utilizar el comando `ufw` para configurar el firewall y permitir solo el tráfico necesario.\n\n \n Otra forma de proteger un servidor OpenVPN es utilizar el Access Server, que es una herramienta de administración de usuarios y grupos. Esto permite controlar el acceso a la red y asignar permisos a los usuarios. Se puede utilizar el comando `openvpn-as` para administrar el Access Server.\n\n \n En cuanto a la configuración de site-to-site, es importante utilizar una configuración de tunneling adecuada. Esto incluye la configuración de la autenticación y la autorización entre los servidores. Se puede utilizar el comando `openvpn --config` para especificar la configuración del tunnel.\n\n \n En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes. Es importante configurar el servidor con una política de seguridad adecuada y utilizar herramientas de administración y hardening para proteger la red.",
+    "sources": [
+      {
+        "title": "Releases: OpenVPN/tap-windows6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "OpenVPN Build",
+        "url": "https://github.com/OpenVPN/openvpn-build/blob/master/release/sign-and-push.sh"
+      }
+    ]
+  },
   "2026-05-04_1017": {
     "slug": "openvpn",
     "title": "Seguridad y Tunneling con OpenVPN",

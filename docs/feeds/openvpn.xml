@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-07T10:29:55.761873+00:00</updated>
+  <updated>2026-05-08T09:45:36.627153+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -258,5 +258,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-04_1017.html"/>
     <summary>OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las últimas novedades y mejores prácticas para configurar y proteger tus conexiones VPN.</summary>
     <published>2026-05-04T10:17:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-08_0944.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-05-08T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves necesarios.&lt;/p&gt;
+&lt;p&gt;Para establecer una conexión segura, es importante configurar el servidor OpenVPN con una política de seguridad adecuada. Esto incluye la configuración de la autenticación, la autorización y el cifrado de datos. Se puede utilizar el comando &lt;code&gt;openvpn --config&lt;/code&gt; para especificar la configuración del servidor.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para proteger un servidor OpenVPN es utilizar una configuración de hardening. Esto incluye la desactivación de servicios innecesarios, la configuración de firewalls y la actualización regular del software. Se puede utilizar el comando &lt;code&gt;ufw&lt;/code&gt; para configurar el firewall y permitir solo el tráfico necesario.&lt;/p&gt;
+&lt;p&gt;Otra forma de proteger un servidor OpenVPN es utilizar el Access Server, que es una herramienta de administración de usuarios y grupos. Esto permite controlar el acceso a la red y asignar permisos a los usuarios. Se puede utilizar el comando &lt;code&gt;openvpn-as&lt;/code&gt; para administrar el Access Server.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de site-to-site, es importante utilizar una configuración de tunneling adecuada. Esto incluye la configuración de la autenticación y la autorización entre los servidores. Se puede utilizar el comando &lt;code&gt;openvpn --config&lt;/code&gt; para especificar la configuración del tunnel.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes. Es importante configurar el servidor con una política de seguridad adecuada y utilizar herramientas de administración y hardening para proteger la red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/tap-windows6/releases"&gt;Releases: OpenVPN/tap-windows6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-build/blob/master/release/sign-and-push.sh"&gt;OpenVPN Build&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-08_0944.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
+    <published>2026-05-08T09:44:00+00:00</published>
   </entry>
 </feed>

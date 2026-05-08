@@ -1,4 +1,32 @@
 {
+  "2026-05-08_0944": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas.",
+    "content": "Una de las características más interesantes en la versión reciente de Kubernetes es la introducción de `DatadogAgentInternal`, que permite una integración más profunda con Datadog. Esta característica se habilitó por defecto en la versión 1.22.0 y se convertirá en obligatoria en la versión 1.27.0. Para configurar `DatadogAgentInternal`, debemos agregar la siguiente línea en nuestro archivo de configuración: `datadog-agent.internal: true`. \n\nLa seguridad es otro aspecto importante en Kubernetes, y la herramienta `Sealer` ofrece una forma innovadora de entregar aplicaciones distribuidas. `Sealer` permite empaquetar un clúster de Kubernetes y todas las dependencias de la aplicación en un solo archivo, lo que simplifica la implementación y el manejo de aplicaciones complejas. Para utilizar `Sealer`, debemos ejecutar el comando `sealer init` para inicializar el entorno.\n\nEn cuanto al almacenamiento, Kubernetes ofrece varias opciones para gestionar los datos de las aplicaciones. Una de las opciones más populares es el uso de `Persistent Volumes` (PV), que permiten a las aplicaciones acceder a almacenamiento persistente de manera independiente del ciclo de vida de los pods. Para crear un `Persistent Volume`, debemos ejecutar el comando `kubectl create -f pv.yaml`, donde `pv.yaml` es un archivo de configuración que define las características del volumen.\n\nLa herramienta `Datadog Operator` también ofrece funcionalidades avanzadas para la monitorización y el análisis de aplicaciones en Kubernetes. Para instalar `Datadog Operator`, debemos ejecutar el comando `kubectl apply -f datadog-operator.yaml`, donde `datadog-operator.yaml` es un archivo de configuración que define la instalación del operador.\n\nEn resumen, Kubernetes sigue evolucionando con nuevas características y mejoras que facilitan la implementación y el manejo de aplicaciones complejas. La integración con herramientas como `Datadog` y `Sealer` ofrece nuevas posibilidades para la monitorización y el análisis de aplicaciones.\n\nLa documentación oficial de Kubernetes y las herramientas mencionadas en este artículo ofrecen más información detallada sobre cómo configurar y utilizar estas características. Es importante consultar la documentación oficial para obtener la información más actualizada y precisa.",
+    "sources": [
+      {
+        "title": "Datadog Operator",
+        "url": "https://github.com/DataDog/datadog-operator"
+      },
+      {
+        "title": "Sealer",
+        "url": "https://github.com/sealerio/sealer"
+      },
+      {
+        "title": "Releases: oracle/oci-cli",
+        "url": "https://github.com/oracle/oci-cli/releases"
+      },
+      {
+        "title": "Altinn Studio",
+        "url": "https://github.com/Altinn/altinn-studio"
+      },
+      {
+        "title": "PoC auto collect from GitHub",
+        "url": "https://github.com/nomi-sec/PoC-in-GitHub"
+      }
+    ]
+  },
   "2026-05-04_1017": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes 1.36",

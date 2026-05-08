@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-07T10:29:55.763518+00:00</updated>
+  <updated>2026-05-08T09:45:36.629641+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -301,5 +301,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-04_1017.html"/>
     <summary>La versión 1.36 de Kubernetes introduce nuevas características y mejoras en áreas como la escalabilidad, la seguridad y el almacenamiento. Esta versión incluye la disponibilidad general de User Namespaces y la escalabilidad vertical en lugar para recursos de nivel de pod.</summary>
     <published>2026-05-04T10:17:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-05-08T09:44:00+00:00</updated>
+    <content type="html">&lt;p&gt;Una de las características más interesantes en la versión reciente de Kubernetes es la introducción de &lt;code&gt;DatadogAgentInternal&lt;/code&gt;, que permite una integración más profunda con Datadog. Esta característica se habilitó por defecto en la versión 1.22.0 y se convertirá en obligatoria en la versión 1.27.0. Para configurar &lt;code&gt;DatadogAgentInternal&lt;/code&gt;, debemos agregar la siguiente línea en nuestro archivo de configuración: &lt;code&gt;datadog-agent.internal: true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes, y la herramienta &lt;code&gt;Sealer&lt;/code&gt; ofrece una forma innovadora de entregar aplicaciones distribuidas. &lt;code&gt;Sealer&lt;/code&gt; permite empaquetar un clúster de Kubernetes y todas las dependencias de la aplicación en un solo archivo, lo que simplifica la implementación y el manejo de aplicaciones complejas. Para utilizar &lt;code&gt;Sealer&lt;/code&gt;, debemos ejecutar el comando &lt;code&gt;sealer init&lt;/code&gt; para inicializar el entorno.&lt;/p&gt;
+&lt;p&gt;En cuanto al almacenamiento, Kubernetes ofrece varias opciones para gestionar los datos de las aplicaciones. Una de las opciones más populares es el uso de &lt;code&gt;Persistent Volumes&lt;/code&gt; (PV), que permiten a las aplicaciones acceder a almacenamiento persistente de manera independiente del ciclo de vida de los pods. Para crear un &lt;code&gt;Persistent Volume&lt;/code&gt;, debemos ejecutar el comando &lt;code&gt;kubectl create -f pv.yaml&lt;/code&gt;, donde &lt;code&gt;pv.yaml&lt;/code&gt; es un archivo de configuración que define las características del volumen.&lt;/p&gt;
+&lt;p&gt;La herramienta &lt;code&gt;Datadog Operator&lt;/code&gt; también ofrece funcionalidades avanzadas para la monitorización y el análisis de aplicaciones en Kubernetes. Para instalar &lt;code&gt;Datadog Operator&lt;/code&gt;, debemos ejecutar el comando &lt;code&gt;kubectl apply -f datadog-operator.yaml&lt;/code&gt;, donde &lt;code&gt;datadog-operator.yaml&lt;/code&gt; es un archivo de configuración que define la instalación del operador.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras que facilitan la implementación y el manejo de aplicaciones complejas. La integración con herramientas como &lt;code&gt;Datadog&lt;/code&gt; y &lt;code&gt;Sealer&lt;/code&gt; ofrece nuevas posibilidades para la monitorización y el análisis de aplicaciones.&lt;/p&gt;
+&lt;p&gt;La documentación oficial de Kubernetes y las herramientas mencionadas en este artículo ofrecen más información detallada sobre cómo configurar y utilizar estas características. Es importante consultar la documentación oficial para obtener la información más actualizada y precisa.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/DataDog/datadog-operator"&gt;Datadog Operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sealerio/sealer"&gt;Sealer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oracle/oci-cli/releases"&gt;Releases: oracle/oci-cli&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Altinn/altinn-studio"&gt;Altinn Studio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nomi-sec/PoC-in-GitHub"&gt;PoC auto collect from GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas.</summary>
+    <published>2026-05-08T09:44:00+00:00</published>
   </entry>
 </feed>
