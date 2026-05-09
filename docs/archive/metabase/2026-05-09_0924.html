@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metabase: Mejoras y Best Practices - Metabase</title>
+    <title>Metabase: Mejoras de Seguridad y Funcionalidades - Metabase</title>
     <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
@@ -57,50 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>Metabase: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-05 1006 · Metabase</div>
+    <h1>Metabase: Mejoras de Seguridad y Funcionalidades</h1>
+    <div class="meta">2026-05-09 0924 · Metabase</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar consultas de manera sencilla. Una de las características más destacadas de Metabase es su capacidad para crear `queries` personalizadas utilizando el lenguaje de consulta de Metabase. Por ejemplo, se puede utilizar el comando `SELECT * FROM tabla WHERE condición` para obtener los registros que cumplan con una condición específica.</p>
+            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, tableros y embeds personalizados para visualizar y analizar datos. Recientemente, se han realizado mejoras de seguridad en la herramienta, como la actualización de Netty a la versión 4.2.10.Final para parchear la vulnerabilidad CVE-2026-33870, como se puede ver en el issue #71652 de GitHub.</p>
             
         
             
         
             
-            <p>Otra característica importante de Metabase es la capacidad de crear `dashboards` personalizados. Los dashboards permiten a los usuarios visualizar los datos de manera clara y concisa, utilizando gráficos y tablas para presentar la información. Para crear un dashboard, se puede utilizar el comando `CREATE DASHBOARD nombre_dashboard` y luego agregar los elementos deseados, como gráficos o tablas, utilizando el comando `ADD ELEMENT tipo_elemento`.</p>
+        
+            
+            <p>Para aprovechar al máximo las funcionalidades de Metabase, es importante configurar correctamente la herramienta. Por ejemplo, se puede utilizar el comando `docker run -d -p 3000:3000 --name metabase metabase/metabase` para ejecutar Metabase en un contenedor Docker.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Metabase, es importante mencionar que se puede utilizar el comando `ADMINISTRAR USUARIOS` para gestionar los permisos y accesos de los usuarios. También se puede utilizar el comando `CONFIGURAR PARAMETROS` para configurar los parámetros de la instancia de Metabase, como la conexión a la base de datos o la autenticación.</p>
+        
+            
+            <p>En cuanto a la creación de consultas, Metabase ofrece una variedad de opciones para personalizar las mismas. Por ejemplo, se puede utilizar la función `filter` para filtrar los resultados de una consulta, como se muestra en el siguiente ejemplo: `filter(my_table, my_column = 'valor')`. Además, se pueden crear tableros personalizados utilizando la función `dashboard` y agregar embeds utilizando la función `embed`.</p>
             
         
             
         
             
-            <p>Recientemente, se han reportado algunos problemas con la indexación de búsqueda en Metabase, como se menciona en el issue #71647 de GitHub. Para solucionar este problema, se puede utilizar el comando `REINDEXAR TABLA` para reindexar la tabla afectada. También se han reportado problemas con la visualización de tablas ocultas en el grafo de dependencias, como se menciona en el issue #71630 de GitHub.</p>
+        
+            
+            <p>Para obtener más información sobre las funcionalidades y configuraciones de Metabase, se recomienda consultar la documentación oficial de la herramienta. Además, se pueden encontrar ejemplos y tutoriales en la comunidad de GitHub, como el repositorio `punkpeye/awesome-mcp-servers`, que ofrece ejemplos de cómo utilizar Metabase para crear servidores de Minecraft.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, es importante mencionar que se debe utilizar la autenticación y autorización adecuadas para proteger la instancia de Metabase. También se debe realizar una copia de seguridad regular de los datos y configuraciones de Metabase, utilizando comandos como `BACKUP BASE DE DATOS` y `BACKUP CONFIGURACION`.</p>
-            
         
             
-        
-            
-            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos, y con las características y mejores prácticas mencionadas, se puede utilizar de manera efectiva para crear dashboards y realizar consultas de manera sencilla.</p>
-            
-        
-            
-        
+            <p>En resumen, Metabase es una herramienta poderosa para la creación de consultas, tableros y embeds personalizados. Con las últimas mejoras de seguridad y funcionalidades, es una excelente opción para aquellos que buscan una herramienta de inteligencia empresarial de código abierto y personalizable.</p>
             
         
     </div>
@@ -111,27 +107,32 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/71647" target="_blank">Issue #71647</a>
+                <a href="https://github.com/metabase/metabase/issues/71652" target="_blank">Issue #71652</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/71630" target="_blank">Issue #71630</a>
+                <a href="https://github.com/EvanLi/Github-Ranking/blob/master/Data/github-ranking-2025-07-06.csv" target="_blank">Github-Ranking</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/71195" target="_blank">Issue #71195</a>
+                <a href="https://github.com/nomi-sec/PoC-in-GitHub" target="_blank">PoC-in-GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/70577" target="_blank">Issue #70577</a>
+                <a href="https://github.com/punkpeye/awesome-mcp-servers" target="_blank">awesome-mcp-servers</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/70901" target="_blank">Issue #70901</a>
+                <a href="https://github.com/mikeroyal/Self-Hosting-Guide" target="_blank">Self-Hosting-Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/bestutsengineer/directory-list-2.4.txt/blob/main/directory-list-2.4.txt" target="_blank">directory-list-2.4.txt</a>
                 
             </li>
             
@@ -142,12 +143,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-01_0950.html">&larr; 2026-05-01 0950</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-05_1006.html">&larr; 2026-05-05 1006</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-09_0924.html">2026-05-09 0924 &rarr;</a>
             
         </div>
     </div>

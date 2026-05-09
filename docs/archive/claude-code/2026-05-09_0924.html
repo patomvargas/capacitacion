@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas para Claude Code - Claude Code</title>
+    <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
+    </div>
+
+    <h1>Mejores prácticas para Claude Code</h1>
+    <div class="meta">2026-05-09 0924 · Claude Code</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Claude Code es una herramienta poderosa para los desarrolladores, pero para aprovechar su potencial al máximo, es importante seguir algunas mejores prácticas. Una de las más importantes es la configuración de CLAUDE.md, que permite personalizar la forma en que Claude Code entiende y genera código. Por ejemplo, se puede utilizar el comando `/caveman` para activar el modo 'caveman', que reduce la cantidad de tokens generados hasta un 75% mientras mantiene la precisión técnica.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar CLAUDE.md, es importante seguir un patrón estructurado, como el presentado en el artículo 'CLAUDE.md Best Practices: 8 Patterns for Structuring AI-Assisted Codebases'. Esto permite a Claude Code entender mejor la estructura del código y generar soluciones más precisas.</p>
+            
+        
+            
+        
+            
+            <p>Otra práctica importante es la reducción de tokens, que se puede lograr mediante la utilización de comandos como `--reduce-tokens` o configurando la variable de entorno `TOKEN_USAGE`. Esto es especialmente útil cuando se trabaja con proyectos grandes o complejos, donde la cantidad de tokens generados puede ser muy alta.</p>
+            
+        
+            
+        
+            
+            <p>Además, se puede conectar Claude Code a bases de datos como Notion, lo que permite almacenar y recuperar prompts y resultados de manera más eficiente. Para hacer esto, se puede utilizar el comando `notion connect` y seguir las instrucciones proporcionadas en la documentación de Claude Code.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, seguir estas mejores prácticas permite a los desarrolladores aprovechar al máximo el potencial de Claude Code y mejorar su productividad en el desarrollo de software.</p>
+            
+        
+            
+        
+            
+            <p>Por último, es importante mencionar que la comunidad de Claude Code es muy activa y proporciona muchos recursos y tutoriales para ayudar a los desarrolladores a mejorar sus habilidades. Por ejemplo, se puede encontrar una lista de mejores prácticas en el artículo '50 Claude Code Best Practices Every AI Engineer Should Know'.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la instalación y actualización de Claude Code, es importante seguir las instrucciones proporcionadas en la documentación oficial, ya que puede haber cambios en la forma en que se instala y configura la herramienta. Por ejemplo, se puede utilizar el comando `winget install` para instalar Claude Code en Windows, o `brew install` en macOS.</p>
+            
+        
+            
+        
+            
+            <p>Para mantenerse actualizado con las últimas novedades y cambios en Claude Code, se puede seguir el blog oficial o la página de GitHub, donde se publican regularmente actualizaciones y anuncios sobre nuevas características y mejoras.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://dev.to/software_mvp-factory/claudemd-best-practices-8-patterns-for-structuring-ai-assisted-codebases-3cah" target="_blank">CLAUDE.md Best Practices: 8 Patterns for Structuring AI-Assisted Codebases</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@sabita2025/50-claude-code-best-practices-every-ai-engineer-should-know-6ee3f2fdf669" target="_blank">50 Claude Code Best Practices Every AI Engineer Should Know</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/data-science-in-your-pocket/best-claude-code-claude-md-file-for-programmers-4a95f77c9903" target="_blank">Best Claude Code Claude.md File for Programmers</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-05-05_1006.html">&larr; 2026-05-05 1006</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
