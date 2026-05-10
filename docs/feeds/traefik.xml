@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-09T09:25:05.690703+00:00</updated>
+  <updated>2026-05-10T09:42:46.549620+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -143,5 +143,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html"/>
     <summary>Traefik es un sistema de proxy inverso que permite configurar routers, middlewares y proveedores de manera flexible. En este artículo, se presentan las mejores prácticas para configurar Traefik de manera segura y eficiente.</summary>
     <published>2026-05-06T10:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html</id>
+    <title>Traefik: Routers y Middlewares</title>
+    <updated>2026-05-10T09:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un sistema de proxy inverso y servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. Un router en Traefik se define como un conjunto de reglas que determinan cómo se debe redirigir el tráfico de red. Por ejemplo, se puede crear un router que redirija el tráfico de la ruta &lt;code&gt;/api&lt;/code&gt; a un servicio específico. Para crear un router, se puede utilizar el comando &lt;code&gt;traefik router add --rule='PathPrefix(&lt;/code&gt;/api&lt;code&gt;)' --service=mi-servicio&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un middleware en Traefik es un componente que se ejecuta antes o después de que se procese la solicitud. Por ejemplo, se puede crear un middleware que autentique a los usuarios antes de permitirles acceder a un recurso. Para crear un middleware, se puede utilizar el comando &lt;code&gt;traefik middleware add --name=mi-middleware --type=basic-auth&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Traefik también admite la configuración de proveedores, como Redis Sentinel, que permite gestionar la conectividad a bases de datos. Sin embargo, es importante tener en cuenta que, según el issue #12965 en GitHub, el proveedor de Redis Sentinel puede tener problemas de reconexión después de un fallo en el Sentinel. Para configurar un proveedor de Redis Sentinel, se puede utilizar la configuración &lt;code&gt;providers.redis.sentinel&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Traefik también admite la configuración de Let's Encrypt para obtener certificados SSL/TLS gratuitos. Para configurar Let's Encrypt, se puede utilizar la configuración &lt;code&gt;certificatesResolvers.letsencrypt.acme&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, Traefik admite la configuración de protocolos TCP/UDP y la observabilidad mediante herramientas como Wireshark. Para configurar la observabilidad, se puede utilizar la configuración &lt;code&gt;log.level=DEBUG&lt;/code&gt; y &lt;code&gt;log.file=/var/log/traefik.log&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik-helm-chart/issues/1810"&gt;Support ListenerSet from GatewayAPI #1810&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/12965"&gt;Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-wireshark-ipv6-ipsec-traffic"&gt;2026-03-20-wireshark-ipv6-ipsec-traffic&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/mikeroyal/Self-Hosting-Guide"&gt;mikeroyal/Self-Hosting-Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/crazy-max/docker-nextcloud"&gt;crazy-max/docker-nextcloud&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html"/>
+    <summary>Traefik es un proxy inverso y un servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. En este artículo, se explorarán las características y configuraciones de Traefik.</summary>
+    <published>2026-05-10T09:41:00+00:00</published>
   </entry>
 </feed>

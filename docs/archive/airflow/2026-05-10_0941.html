@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow 3.2.0: Mejoras y Best Practices - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow 3.2.0: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-10 0941 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow es una herramienta de orquestación de workflows que permite a los equipos gestionar y automatizar procesos complejos de manera eficiente. Con la versión 3.2.0, Airflow introduce cambios significativos en la configuración de notificaciones y la gestión de DAGs. Una de las novedades más importantes es la deprecación de `email_on_failure` y su reemplazo por `smtpnotifier`, que utiliza la conexión `default_smtp` para enviar notificaciones.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para configurar `smtpnotifier`, es necesario agregar la siguiente configuración en el archivo `airflow.cfg`: `smtp_host = <host_smtp>`, `smtp_port = <puerto_smtp>`, `smtp_username = <usuario_smtp>` y `smtp_password = <contraseña_smtp>`. Luego, se puede utilizar el comando `airflow db upgrade` para aplicar los cambios.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra mejora importante en Airflow 3.2.0 es la capacidad de crear y gestionar DAGs de manera más flexible. Se puede utilizar el comando `airflow dags list` para obtener una lista de todos los DAGs disponibles, y `airflow dags trigger` para disparar la ejecución de un DAG específico. Además, se puede utilizar el comando `airflow tasks list` para obtener una lista de todas las tareas que componen un DAG.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante mencionar la importancia de utilizar `XCom` para compartir datos entre tareas y evitar la duplicación de código. También es recomendable utilizar `sensors` para monitorear y esperar a que se completen ciertas condiciones antes de continuar con la ejecución de un DAG. Finalmente, es fundamental seguir las mejores prácticas de seguridad y autenticación para proteger la infraestructura de Airflow y los datos que se procesan.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Airflow y sus funcionalidades, se pueden consultar las fuentes oficiales y la documentación en línea. También es recomendable seguir los tutoriales y cursos en línea para aprender a utilizar Airflow de manera efectiva.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow 3.2.0 ofrece mejoras significativas en la configuración de notificaciones y la gestión de DAGs, y es fundamental seguir las best practices para aprovechar al máximo las funcionalidades de esta herramienta de orquestación de workflows.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/issues/65012" target="_blank">Airflow 3.2.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e8c9yXtUwsIYynAg84cOoXgjVUCUxyj-jb8uFUv-WjjrE2IvWDpVPA0BtcmE5_56K_5PcsAp75JfVAA1M88cQXUyRVGWU-wEU6Z1dPZ-DS4FWyTUNMfUbaIaymJE1XT4r9HfMfi-vAFzdGZ8MADK0CVRb_LM0oOCgDIWNsqTTTPD1JU5lOyHM3L0XudwjulJoy9HnC-g&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmZGV2ZWxvcGluZy1kYXRhLXBpcGVsaW5lLXdvcmtmbG93LWluLXB5dGhvbi11c2luZy1haXJmbG93JTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLkVOX2NjLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzE1MDE4Mjg1ODgxMzMwXy5fYWRfXy5fa3dfQXBhY2hlJTI1MjBBaXJmbG93JTI1MjBUdXRvcmlhbCUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkMjhjZmM0MGE0OGNkMWJiYTk0NzBhZTBhMWExYmQ0MzE" target="_blank">Apache Airflow Online Course</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/geraldm/a-beginners-guide-to-apache-airflow-4ab7" target="_blank">A Beginners Guide to Apache Airflow</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

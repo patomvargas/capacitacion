@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-09T09:25:05.689084+00:00</updated>
+  <updated>2026-05-10T09:42:46.547438+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -320,5 +320,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html"/>
     <summary>Superset es una herramienta de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. En este artículo, se presentan las mejores prácticas para la administración y visualización de datos en Superset.</summary>
     <published>2026-05-06T10:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-05-10_0941.html</id>
+    <title>Superset: Administración y Mejoras</title>
+    <updated>2026-05-10T09:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla y eficiente. Para instalar Superset, se puede utilizar el comando &lt;code&gt;docker run -p 8088:8088 apache/superset&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las últimas novedades en Superset es la corrección del error &lt;code&gt;mcp no such command&lt;/code&gt; en la versión más reciente de Docker. Este error se solucionó mediante la actualización de la imagen de Docker a la versión más reciente.&lt;/p&gt;
+&lt;p&gt;Además, se han realizado mejoras en la administración de Superset, como la corrección del bug que impedía que los filtros reutilizaran la consulta de los conjuntos de datos virtuales. Esto se logró mediante la actualización de la configuración de &lt;code&gt;superset_config.py&lt;/code&gt; y la ejecución del comando &lt;code&gt;superset db upgrade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la corrección del error que ocultaba la etiqueta de fecha en el eje X de las gráficas de series temporales. Esto se solucionó mediante la actualización de la versión de Superset y la ejecución del comando &lt;code&gt;superset init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de Superset, se recomienda utilizar la autenticación de Kerberos y configurar los permisos de acceso adecuados. También es importante mantener la versión de Superset actualizada para evitar vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, se recomienda utilizar plantillas de Jinja para crear dashboards personalizados y aprovechar las funcionalidades de SQL Lab para crear consultas complejas. También es importante crear conjuntos de datos y gráficas de manera organizada y estructurada para facilitar la visualización y análisis de los datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/39872"&gt;Docker superset mcp no such command on latest #39872&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/39431"&gt;bug(Dockerfile): service-worker.js missing from lean/production image #39431&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/39342"&gt;Filters do not reuse the virtual dataset query #39342&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39361"&gt;Last date label hidden on Time Series X-axis #39361&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@gandheharshith21/superset-live-dashboard-267caa9784d1"&gt;Superset Live Dashboard. Functional validation on Acceldata ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-10_0941.html"/>
+    <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejores prácticas para la administración y mejora de Superset.</summary>
+    <published>2026-05-10T09:41:00+00:00</published>
   </entry>
 </feed>

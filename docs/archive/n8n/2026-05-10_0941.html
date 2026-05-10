@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad y configuración de Traefik - Traefik</title>
-    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <title>Automatización de Workflows con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Seguridad y configuración de Traefik</h1>
-    <div class="meta">2026-05-06 1022 · Traefik</div>
+    <h1>Automatización de Workflows con n8n</h1>
+    <div class="meta">2026-05-10 0941 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible.</p>
+            <p>n8n se basa en nodos, que son los bloques de construcción de los flujos de trabajo. Cada nodo puede realizar una tarea específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos.</p>
             
         
             
         
             
-            <p>Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura `providers.kubernetesCRD.allowCrossNamespace=false`, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar `providers.kubernetesCRD.allowCrossNamespace=true` y utilizar `middleware` para restringir el acceso a los routers.</p>
+            <p>Para empezar a usar n8n, se puede instalar la aplicación de escritorio o ejecutarla en un servidor. La aplicación de escritorio se puede instalar con el comando `npm install -g n8n-desktop-app`. Una vez instalada, se puede acceder a la interfaz web de n8n y empezar a crear flujos de trabajo.</p>
             
         
             
         
             
-            <p>Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando `traefik reload` para recargar la configuración de Traefik después de un failover de Sentinel.</p>
+            <p>n8n también admite la integración con diferentes servicios y herramientas, como Microsoft Azure, GitHub y Slack. Por ejemplo, se puede crear un flujo de trabajo que envíe un mensaje de Slack cuando se crea un nuevo issue en GitHub. Para hacer esto, se puede usar el nodo `GitHub` y configurarlo con las credenciales de GitHub y el webhook de Slack.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando `traefik certificado` para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando `traefik certificado --email ejemplo@example.com --domain ejemplo.com` para obtener un certificado para el dominio ejemplo.com.</p>
+            <p>Otro ejemplo de uso de n8n es la automatización de tareas de DevOps. Se puede crear un flujo de trabajo que realice una copia de seguridad de una base de datos y la envíe a un servidor de almacenamiento en la nube. Para hacer esto, se puede usar el nodo `MySQL` y configurarlo con las credenciales de la base de datos y el servidor de almacenamiento en la nube.</p>
             
         
             
         
             
-            <p>Para configurar el proveedor de TCP/UDP, se puede utilizar el comando `traefik provider` para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando `traefik provider --name ejemplo --type tcp --address ejemplo.com:8080` para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080.</p>
+            <p>En cuanto a la seguridad, n8n admite la autenticación con credenciales y la configuración de webhooks seguros. Se puede configurar un webhook con un token de autenticación para que solo se pueda acceder al flujo de trabajo si se proporciona el token correcto.</p>
             
         
             
         
             
-            <p>En cuanto a la observabilidad, se puede utilizar el comando `traefik log` para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando `traefik log --level debug` para ver los registros de depuración de Traefik.</p>
+            <p>En resumen, n8n es una herramienta poderosa para la automatización de workflows que admite la integración con diferentes servicios y herramientas. Con n8n, se pueden crear flujos de trabajo personalizados y seguros para automatizar tareas y procesos.</p>
             
         
     </div>
@@ -105,12 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq" target="_blank">Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding</a>
+                <a href="https://github.com/n8n-io/n8n-desktop-app" target="_blank">n8n-io/n8n-desktop-app</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/issues/12965" target="_blank">Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965</a>
+                <a href="https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc" target="_blank">Best n8n Workflows To Build with Claude Code (2026)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@anishsingh17625/integrating-n8n-with-microsoft-azure-a-practical-guide-for-engineering-teams-6bb9fefef491" target="_blank">Integrating n8n with Microsoft Azure: A Practical Guide for Engineering Teams</a>
                 
             </li>
             
@@ -121,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html">2026-05-10 0941 &rarr;</a>
             
         </div>
     </div>

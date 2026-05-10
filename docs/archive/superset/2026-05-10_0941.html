@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Administración y Visualización de Datos - Superset</title>
+    <title>Superset: Administración y Mejoras - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Administración y Visualización de Datos</h1>
-    <div class="meta">2026-05-06 1022 · Superset</div>
+    <h1>Superset: Administración y Mejoras</h1>
+    <div class="meta">2026-05-10 0941 · Superset</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Superset es una aplicación web de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera interactiva. Para empezar a trabajar con Superset, es necesario instalarlo en un entorno local o en un servidor. Se puede instalar utilizando `docker-compose up` en el directorio raíz del proyecto.</p>
+            <p>Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla y eficiente. Para instalar Superset, se puede utilizar el comando `docker run -p 8088:8088 apache/superset`.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante `http://localhost:8088` en el navegador. Desde aquí, se pueden crear nuevos conjuntos de datos, tableros y visualizaciones. Para crear un nuevo conjunto de datos, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos y luego `superset init` para inicializar el conjunto de datos.</p>
+            <p>Una de las últimas novedades en Superset es la corrección del error `mcp no such command` en la versión más reciente de Docker. Este error se solucionó mediante la actualización de la imagen de Docker a la versión más reciente.</p>
             
         
             
         
             
-            <p>En cuanto a la visualización de datos, Superset ofrece una variedad de opciones, incluyendo gráficos de línea, barras, scatter plots, entre otros. Se pueden crear visualizaciones personalizadas utilizando `Jinja templates` y `SQL Lab`. Además, se pueden crear tableros para mostrar múltiples visualizaciones en una sola pantalla. Para crear un nuevo tablero, se puede utilizar el comando `superset dashboard create` y luego agregar visualizaciones al tablero utilizando `superset dashboard add`.</p>
+            <p>Además, se han realizado mejoras en la administración de Superset, como la corrección del bug que impedía que los filtros reutilizaran la consulta de los conjuntos de datos virtuales. Esto se logró mediante la actualización de la configuración de `superset_config.py` y la ejecución del comando `superset db upgrade`.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Superset, es importante configurar la seguridad y la escalabilidad de la aplicación. Se pueden configurar los parámetros de seguridad utilizando `superset config` y se pueden escalar la aplicación utilizando `docker-compose scale`. Además, se pueden utilizar `guest tokens` para permitir el acceso a la aplicación a usuarios invitados.</p>
+            <p>Otra mejora importante es la corrección del error que ocultaba la etiqueta de fecha en el eje X de las gráficas de series temporales. Esto se solucionó mediante la actualización de la versión de Superset y la ejecución del comando `superset init`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Superset tiene una comunidad activa de desarrolladores y usuarios que contribuyen con la aplicación y la documentación. Se pueden encontrar recursos adicionales en la documentación oficial de Superset, incluyendo tutoriales y guías de inicio rápido.</p>
+            <p>Para mejorar la seguridad de Superset, se recomienda utilizar la autenticación de Kerberos y configurar los permisos de acceso adecuados. También es importante mantener la versión de Superset actualizada para evitar vulnerabilidades de seguridad.</p>
             
         
             
         
+            
+            <p>En cuanto a las mejores prácticas, se recomienda utilizar plantillas de Jinja para crear dashboards personalizados y aprovechar las funcionalidades de SQL Lab para crear consultas complejas. También es importante crear conjuntos de datos y gráficas de manera organizada y estructurada para facilitar la visualización y análisis de los datos.</p>
             
         
     </div>
@@ -105,22 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://superset.apache.org/" target="_blank">Superset</a>
+                <a href="https://github.com/apache/superset/issues/39872" target="_blank">Docker superset mcp no such command on latest #39872</a>
                 
             </li>
             
             <li>
-                <a href="https://superset.apache.org/user-docs/intro/" target="_blank">Intro a Superset</a>
+                <a href="https://github.com/apache/superset/issues/39431" target="_blank">bug(Dockerfile): service-worker.js missing from lean/production image #39431</a>
                 
             </li>
             
             <li>
-                <a href="https://superset.apache.org/user-docs/quickstart/" target="_blank">Quickstart</a>
+                <a href="https://github.com/apache/superset/issues/39342" target="_blank">Filters do not reuse the virtual dataset query #39342</a>
                 
             </li>
             
             <li>
-                <a href="https://superset.apache.org/user-docs/using-superset/exploring-data/" target="_blank">Explorar datos en Superset</a>
+                <a href="https://github.com/apache/superset/discussions/39361" target="_blank">Last date label hidden on Time Series X-axis #39361</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@gandheharshith21/superset-live-dashboard-267caa9784d1" target="_blank">Superset Live Dashboard. Functional validation on Acceldata ...</a>
                 
             </li>
             
@@ -131,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-02_0912.html">&larr; 2026-05-02 0912</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-10_0941.html">2026-05-10 0941 &rarr;</a>
             
         </div>
     </div>

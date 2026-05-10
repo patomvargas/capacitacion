@@ -1,4 +1,32 @@
 {
+  "2026-05-10_0941": {
+    "slug": "superset",
+    "title": "Superset: Administración y Mejoras",
+    "summary": "Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejores prácticas para la administración y mejora de Superset.",
+    "content": "Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla y eficiente. Para instalar Superset, se puede utilizar el comando `docker run -p 8088:8088 apache/superset`. \n\nUna de las últimas novedades en Superset es la corrección del error `mcp no such command` en la versión más reciente de Docker. Este error se solucionó mediante la actualización de la imagen de Docker a la versión más reciente. \n\nAdemás, se han realizado mejoras en la administración de Superset, como la corrección del bug que impedía que los filtros reutilizaran la consulta de los conjuntos de datos virtuales. Esto se logró mediante la actualización de la configuración de `superset_config.py` y la ejecución del comando `superset db upgrade`. \n\nOtra mejora importante es la corrección del error que ocultaba la etiqueta de fecha en el eje X de las gráficas de series temporales. Esto se solucionó mediante la actualización de la versión de Superset y la ejecución del comando `superset init`. \n\nPara mejorar la seguridad de Superset, se recomienda utilizar la autenticación de Kerberos y configurar los permisos de acceso adecuados. También es importante mantener la versión de Superset actualizada para evitar vulnerabilidades de seguridad. \n\nEn cuanto a las mejores prácticas, se recomienda utilizar plantillas de Jinja para crear dashboards personalizados y aprovechar las funcionalidades de SQL Lab para crear consultas complejas. También es importante crear conjuntos de datos y gráficas de manera organizada y estructurada para facilitar la visualización y análisis de los datos.",
+    "sources": [
+      {
+        "title": "Docker superset mcp no such command on latest #39872",
+        "url": "https://github.com/apache/superset/issues/39872"
+      },
+      {
+        "title": "bug(Dockerfile): service-worker.js missing from lean/production image #39431",
+        "url": "https://github.com/apache/superset/issues/39431"
+      },
+      {
+        "title": "Filters do not reuse the virtual dataset query #39342",
+        "url": "https://github.com/apache/superset/issues/39342"
+      },
+      {
+        "title": "Last date label hidden on Time Series X-axis #39361",
+        "url": "https://github.com/apache/superset/discussions/39361"
+      },
+      {
+        "title": "Superset Live Dashboard. Functional validation on Acceldata ...",
+        "url": "https://medium.com/@gandheharshith21/superset-live-dashboard-267caa9784d1"
+      }
+    ]
+  },
   "2026-05-06_1022": {
     "slug": "superset",
     "title": "Superset: Administración y Visualización de Datos",

@@ -1,4 +1,32 @@
 {
+  "2026-05-10_0941": {
+    "slug": "traefik",
+    "title": "Traefik: Routers y Middlewares",
+    "summary": "Traefik es un proxy inverso y un servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. En este artículo, se explorarán las características y configuraciones de Traefik.",
+    "content": "Traefik es un sistema de proxy inverso y servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. Un router en Traefik se define como un conjunto de reglas que determinan cómo se debe redirigir el tráfico de red. Por ejemplo, se puede crear un router que redirija el tráfico de la ruta `/api` a un servicio específico. Para crear un router, se puede utilizar el comando `traefik router add --rule='PathPrefix(`/api`)' --service=mi-servicio`.\n\n \nUn middleware en Traefik es un componente que se ejecuta antes o después de que se procese la solicitud. Por ejemplo, se puede crear un middleware que autentique a los usuarios antes de permitirles acceder a un recurso. Para crear un middleware, se puede utilizar el comando `traefik middleware add --name=mi-middleware --type=basic-auth`.\n\n \nTraefik también admite la configuración de proveedores, como Redis Sentinel, que permite gestionar la conectividad a bases de datos. Sin embargo, es importante tener en cuenta que, según el issue #12965 en GitHub, el proveedor de Redis Sentinel puede tener problemas de reconexión después de un fallo en el Sentinel. Para configurar un proveedor de Redis Sentinel, se puede utilizar la configuración `providers.redis.sentinel`.\n\n \nTraefik también admite la configuración de Let's Encrypt para obtener certificados SSL/TLS gratuitos. Para configurar Let's Encrypt, se puede utilizar la configuración `certificatesResolvers.letsencrypt.acme`.\n\n \nFinalmente, Traefik admite la configuración de protocolos TCP/UDP y la observabilidad mediante herramientas como Wireshark. Para configurar la observabilidad, se puede utilizar la configuración `log.level=DEBUG` y `log.file=/var/log/traefik.log`.",
+    "sources": [
+      {
+        "title": "Support ListenerSet from GatewayAPI #1810",
+        "url": "https://github.com/traefik/traefik-helm-chart/issues/1810"
+      },
+      {
+        "title": "Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965",
+        "url": "https://github.com/traefik/traefik/issues/12965"
+      },
+      {
+        "title": "2026-03-20-wireshark-ipv6-ipsec-traffic",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-wireshark-ipv6-ipsec-traffic"
+      },
+      {
+        "title": "mikeroyal/Self-Hosting-Guide",
+        "url": "https://github.com/mikeroyal/Self-Hosting-Guide"
+      },
+      {
+        "title": "crazy-max/docker-nextcloud",
+        "url": "https://github.com/crazy-max/docker-nextcloud"
+      }
+    ]
+  },
   "2026-05-06_1022": {
     "slug": "traefik",
     "title": "Seguridad y configuración de Traefik",

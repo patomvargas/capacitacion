@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad y configuración de Traefik - Traefik</title>
+    <title>Traefik: Routers y Middlewares - Traefik</title>
     <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
     </div>
 
-    <h1>Seguridad y configuración de Traefik</h1>
-    <div class="meta">2026-05-06 1022 · Traefik</div>
+    <h1>Traefik: Routers y Middlewares</h1>
+    <div class="meta">2026-05-10 0941 · Traefik</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible.</p>
+            <p>Traefik es un sistema de proxy inverso y servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. Un router en Traefik se define como un conjunto de reglas que determinan cómo se debe redirigir el tráfico de red. Por ejemplo, se puede crear un router que redirija el tráfico de la ruta `/api` a un servicio específico. Para crear un router, se puede utilizar el comando `traefik router add --rule='PathPrefix(`/api`)' --service=mi-servicio`.</p>
             
         
             
         
             
-            <p>Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura `providers.kubernetesCRD.allowCrossNamespace=false`, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar `providers.kubernetesCRD.allowCrossNamespace=true` y utilizar `middleware` para restringir el acceso a los routers.</p>
+        
+            
+            <p>Un middleware en Traefik es un componente que se ejecuta antes o después de que se procese la solicitud. Por ejemplo, se puede crear un middleware que autentique a los usuarios antes de permitirles acceder a un recurso. Para crear un middleware, se puede utilizar el comando `traefik middleware add --name=mi-middleware --type=basic-auth`.</p>
             
         
             
         
             
-            <p>Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando `traefik reload` para recargar la configuración de Traefik después de un failover de Sentinel.</p>
+        
+            
+            <p>Traefik también admite la configuración de proveedores, como Redis Sentinel, que permite gestionar la conectividad a bases de datos. Sin embargo, es importante tener en cuenta que, según el issue #12965 en GitHub, el proveedor de Redis Sentinel puede tener problemas de reconexión después de un fallo en el Sentinel. Para configurar un proveedor de Redis Sentinel, se puede utilizar la configuración `providers.redis.sentinel`.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando `traefik certificado` para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando `traefik certificado --email ejemplo@example.com --domain ejemplo.com` para obtener un certificado para el dominio ejemplo.com.</p>
+        
+            
+            <p>Traefik también admite la configuración de Let's Encrypt para obtener certificados SSL/TLS gratuitos. Para configurar Let's Encrypt, se puede utilizar la configuración `certificatesResolvers.letsencrypt.acme`.</p>
             
         
             
         
             
-            <p>Para configurar el proveedor de TCP/UDP, se puede utilizar el comando `traefik provider` para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando `traefik provider --name ejemplo --type tcp --address ejemplo.com:8080` para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080.</p>
-            
         
             
-        
-            
-            <p>En cuanto a la observabilidad, se puede utilizar el comando `traefik log` para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando `traefik log --level debug` para ver los registros de depuración de Traefik.</p>
+            <p>Finalmente, Traefik admite la configuración de protocolos TCP/UDP y la observabilidad mediante herramientas como Wireshark. Para configurar la observabilidad, se puede utilizar la configuración `log.level=DEBUG` y `log.file=/var/log/traefik.log`.</p>
             
         
     </div>
@@ -105,12 +107,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq" target="_blank">Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding</a>
+                <a href="https://github.com/traefik/traefik-helm-chart/issues/1810" target="_blank">Support ListenerSet from GatewayAPI #1810</a>
                 
             </li>
             
             <li>
                 <a href="https://github.com/traefik/traefik/issues/12965" target="_blank">Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-wireshark-ipv6-ipsec-traffic" target="_blank">2026-03-20-wireshark-ipv6-ipsec-traffic</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/mikeroyal/Self-Hosting-Guide" target="_blank">mikeroyal/Self-Hosting-Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/crazy-max/docker-nextcloud" target="_blank">crazy-max/docker-nextcloud</a>
                 
             </li>
             
@@ -121,12 +138,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html">2026-05-10 0941 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-05-10_0941": {
+    "slug": "airflow",
+    "title": "Airflow 3.2.0: Mejoras y Best Practices",
+    "summary": "Airflow 3.2.0 introduce cambios significativos en la configuración de notificaciones y la gestión de DAGs. En este artículo, se presentan las mejoras y best practices para aprovechar al máximo las funcionalidades de Airflow.",
+    "content": "Airflow es una herramienta de orquestación de workflows que permite a los equipos gestionar y automatizar procesos complejos de manera eficiente. Con la versión 3.2.0, Airflow introduce cambios significativos en la configuración de notificaciones y la gestión de DAGs. Una de las novedades más importantes es la deprecación de `email_on_failure` y su reemplazo por `smtpnotifier`, que utiliza la conexión `default_smtp` para enviar notificaciones.\n\n \n Para configurar `smtpnotifier`, es necesario agregar la siguiente configuración en el archivo `airflow.cfg`: `smtp_host = <host_smtp>`, `smtp_port = <puerto_smtp>`, `smtp_username = <usuario_smtp>` y `smtp_password = <contraseña_smtp>`. Luego, se puede utilizar el comando `airflow db upgrade` para aplicar los cambios.\n\n \n Otra mejora importante en Airflow 3.2.0 es la capacidad de crear y gestionar DAGs de manera más flexible. Se puede utilizar el comando `airflow dags list` para obtener una lista de todos los DAGs disponibles, y `airflow dags trigger` para disparar la ejecución de un DAG específico. Además, se puede utilizar el comando `airflow tasks list` para obtener una lista de todas las tareas que componen un DAG.\n\n \n En cuanto a las best practices, es importante mencionar la importancia de utilizar `XCom` para compartir datos entre tareas y evitar la duplicación de código. También es recomendable utilizar `sensors` para monitorear y esperar a que se completen ciertas condiciones antes de continuar con la ejecución de un DAG. Finalmente, es fundamental seguir las mejores prácticas de seguridad y autenticación para proteger la infraestructura de Airflow y los datos que se procesan.\n\n \n Para obtener más información sobre Airflow y sus funcionalidades, se pueden consultar las fuentes oficiales y la documentación en línea. También es recomendable seguir los tutoriales y cursos en línea para aprender a utilizar Airflow de manera efectiva.\n\n \n En resumen, Airflow 3.2.0 ofrece mejoras significativas en la configuración de notificaciones y la gestión de DAGs, y es fundamental seguir las best practices para aprovechar al máximo las funcionalidades de esta herramienta de orquestación de workflows.",
+    "sources": [
+      {
+        "title": "Airflow 3.2.0",
+        "url": "https://github.com/apache/airflow/issues/65012"
+      },
+      {
+        "title": "Apache Airflow Online Course",
+        "url": "https://www.bing.com/aclick?ld=e8c9yXtUwsIYynAg84cOoXgjVUCUxyj-jb8uFUv-WjjrE2IvWDpVPA0BtcmE5_56K_5PcsAp75JfVAA1M88cQXUyRVGWU-wEU6Z1dPZ-DS4FWyTUNMfUbaIaymJE1XT4r9HfMfi-vAFzdGZ8MADK0CVRb_LM0oOCgDIWNsqTTTPD1JU5lOyHM3L0XudwjulJoy9HnC-g&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmZGV2ZWxvcGluZy1kYXRhLXBpcGVsaW5lLXdvcmtmbG93LWluLXB5dGhvbi11c2luZy1haXJmbG93JTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLkVOX2NjLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzE1MDE4Mjg1ODgxMzMwXy5fYWRfXy5fa3dfQXBhY2hlJTI1MjBBaXJmbG93JTI1MjBUdXRvcmlhbCUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkMjhjZmM0MGE0OGNkMWJiYTk0NzBhZTBhMWExYmQ0MzE"
+      },
+      {
+        "title": "A Beginners Guide to Apache Airflow",
+        "url": "https://dev.to/geraldm/a-beginners-guide-to-apache-airflow-4ab7"
+      }
+    ]
+  },
   "2026-05-06_1022": {
     "slug": "airflow",
     "title": "Airflow: Orquestación de Flujos de Datos",

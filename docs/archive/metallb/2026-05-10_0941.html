@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad y configuración de Traefik - Traefik</title>
-    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <title>MetalLB: Balanceo de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>Seguridad y configuración de Traefik</h1>
-    <div class="meta">2026-05-06 1022 · Traefik</div>
+    <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
+    <div class="meta">2026-05-10 0941 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es un sistema de proxy inverso que se utiliza comúnmente en entornos de contenedores y orquestación de contenedores como Kubernetes. Una de las características clave de Traefik es su capacidad para configurar routers, middlewares y proveedores de manera flexible.</p>
+        
+            
+            <p>MetalLB es una herramienta de código abierto que proporciona balanceo de carga para servicios en Kubernetes. En modo L2, MetalLB asigna direcciones IP a servicios utilizando el protocolo ARP. Para configurar MetalLB en modo L2, se debe crear un objeto de configuración con el comando `kubectl apply -f metallb-config.yaml`, donde el archivo `metallb-config.yaml` contiene la configuración de MetalLB.</p>
             
         
             
         
             
-            <p>Para configurar Traefik de manera segura, es importante tener en cuenta la seguridad de los proveedores de Kubernetes. Según la fuente [1], cuando se configura `providers.kubernetesCRD.allowCrossNamespace=false`, Traefik rechaza las referencias directas de middleware entre namespaces, pero no aplica la misma restricción a las referencias indirectas. Para evitar este problema, se puede configurar `providers.kubernetesCRD.allowCrossNamespace=true` y utilizar `middleware` para restringir el acceso a los routers.</p>
+            <p>En modo BGP, MetalLB utiliza el protocolo BGP para anunciar las direcciones IP de los servicios a los routers de la red. Para configurar MetalLB en modo BGP, se debe crear un objeto de configuración con el comando `kubectl apply -f metallb-bgp-config.yaml`, donde el archivo `metallb-bgp-config.yaml` contiene la configuración de MetalLB en modo BGP.</p>
             
         
             
         
             
-            <p>Otro aspecto importante es la configuración de los proveedores de Redis Sentinel. Según la fuente [2], el proveedor de Redis Sentinel de Traefik no se reconecta después de un failover de Sentinel, lo que puede causar que las rutas se queden estancadas permanentemente. Para solucionar este problema, se puede utilizar el comando `traefik reload` para recargar la configuración de Traefik después de un failover de Sentinel.</p>
+            <p>Una de las características importantes de MetalLB es la capacidad de configurar pools de direcciones IP. Un pool de direcciones IP es un rango de direcciones IP que se pueden asignar a servicios. Para crear un pool de direcciones IP, se debe ejecutar el comando `kubectl create -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Let's Encrypt, se puede utilizar el comando `traefik certificado` para obtener un certificado SSL/TLS gratuito. Por ejemplo, se puede ejecutar el comando `traefik certificado --email ejemplo@example.com --domain ejemplo.com` para obtener un certificado para el dominio ejemplo.com.</p>
+            <p>En cuanto a la integración con Kubernetes, MetalLB se integra con el sistema de orquestación de contenedores para proporcionar balanceo de carga a los servicios. Para configurar la integración con Kubernetes, se debe crear un objeto de configuración con el comando `kubectl apply -f metallb-k8s-config.yaml`, donde el archivo `metallb-k8s-config.yaml` contiene la configuración de la integración con Kubernetes.</p>
             
         
             
         
             
-            <p>Para configurar el proveedor de TCP/UDP, se puede utilizar el comando `traefik provider` para definir el proveedor de TCP/UDP. Por ejemplo, se puede ejecutar el comando `traefik provider --name ejemplo --type tcp --address ejemplo.com:8080` para definir un proveedor de TCP/UDP para el dominio ejemplo.com en el puerto 8080.</p>
+            <p>Para solucionar problemas con MetalLB, se pueden utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre el estado de los servicios y los pods. También se puede utilizar el comando `metallbctl` para obtener información sobre la configuración y el estado de MetalLB.</p>
             
         
             
         
             
-            <p>En cuanto a la observabilidad, se puede utilizar el comando `traefik log` para ver los registros de Traefik. Por ejemplo, se puede ejecutar el comando `traefik log --level debug` para ver los registros de depuración de Traefik.</p>
+            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar balanceo de carga a servicios en Kubernetes. Su configuración y funcionamiento en modo L2 y BGP, así como su capacidad para configurar pools de direcciones IP, la hacen una herramienta valiosa para los administradores de sistemas y los desarrolladores de aplicaciones.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,12 +111,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-xhjw-95fp-8vgq" target="_blank">Traefik Kubernetes CRD allows unauthorized cross-namespace middleware binding</a>
+                <a href="https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/" target="_blank">Kubernetes v1.36: More Drivers, New Features, and the Next</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/issues/12965" target="_blank">Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965</a>
+                <a href="https://kubernetes.io/blog/2026/05/06/kubernetes-v1-36-server-side-sharded-list-and-watch/" target="_blank">Kubernetes v1.36: Server-Side Sharded List and Watch</a>
                 
             </li>
             
@@ -121,12 +127,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-04-28_1020.html">&larr; 2026-04-28 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html">2026-05-10 0941 &rarr;</a>
             
         </div>
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-09T09:25:05.686071+00:00</updated>
+  <updated>2026-05-10T09:42:46.542402+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -249,5 +249,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-06_1022.html"/>
     <summary>Airflow es una herramienta de orquestación de flujos de datos que permite definir y ejecutar flujos de trabajo de manera eficiente. En este artículo, se presentan las características y funcionalidades de Airflow, incluyendo DAGs, operadores, sensores y mejores prácticas.</summary>
     <published>2026-05-06T10:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-10_0941.html</id>
+    <title>Airflow 3.2.0: Mejoras y Best Practices</title>
+    <updated>2026-05-10T09:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta de orquestación de workflows que permite a los equipos gestionar y automatizar procesos complejos de manera eficiente. Con la versión 3.2.0, Airflow introduce cambios significativos en la configuración de notificaciones y la gestión de DAGs. Una de las novedades más importantes es la deprecación de &lt;code&gt;email_on_failure&lt;/code&gt; y su reemplazo por &lt;code&gt;smtpnotifier&lt;/code&gt;, que utiliza la conexión &lt;code&gt;default_smtp&lt;/code&gt; para enviar notificaciones.&lt;/p&gt;
+&lt;p&gt;Para configurar &lt;code&gt;smtpnotifier&lt;/code&gt;, es necesario agregar la siguiente configuración en el archivo &lt;code&gt;airflow.cfg&lt;/code&gt;: &lt;code&gt;smtp_host = &lt;host_smtp&gt;&lt;/code&gt;, &lt;code&gt;smtp_port = &lt;puerto_smtp&gt;&lt;/code&gt;, &lt;code&gt;smtp_username = &lt;usuario_smtp&gt;&lt;/code&gt; y &lt;code&gt;smtp_password = &lt;contraseña_smtp&gt;&lt;/code&gt;. Luego, se puede utilizar el comando &lt;code&gt;airflow db upgrade&lt;/code&gt; para aplicar los cambios.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante en Airflow 3.2.0 es la capacidad de crear y gestionar DAGs de manera más flexible. Se puede utilizar el comando &lt;code&gt;airflow dags list&lt;/code&gt; para obtener una lista de todos los DAGs disponibles, y &lt;code&gt;airflow dags trigger&lt;/code&gt; para disparar la ejecución de un DAG específico. Además, se puede utilizar el comando &lt;code&gt;airflow tasks list&lt;/code&gt; para obtener una lista de todas las tareas que componen un DAG.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar la importancia de utilizar &lt;code&gt;XCom&lt;/code&gt; para compartir datos entre tareas y evitar la duplicación de código. También es recomendable utilizar &lt;code&gt;sensors&lt;/code&gt; para monitorear y esperar a que se completen ciertas condiciones antes de continuar con la ejecución de un DAG. Finalmente, es fundamental seguir las mejores prácticas de seguridad y autenticación para proteger la infraestructura de Airflow y los datos que se procesan.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Airflow y sus funcionalidades, se pueden consultar las fuentes oficiales y la documentación en línea. También es recomendable seguir los tutoriales y cursos en línea para aprender a utilizar Airflow de manera efectiva.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 3.2.0 ofrece mejoras significativas en la configuración de notificaciones y la gestión de DAGs, y es fundamental seguir las best practices para aprovechar al máximo las funcionalidades de esta herramienta de orquestación de workflows.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/65012"&gt;Airflow 3.2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e8c9yXtUwsIYynAg84cOoXgjVUCUxyj-jb8uFUv-WjjrE2IvWDpVPA0BtcmE5_56K_5PcsAp75JfVAA1M88cQXUyRVGWU-wEU6Z1dPZ-DS4FWyTUNMfUbaIaymJE1XT4r9HfMfi-vAFzdGZ8MADK0CVRb_LM0oOCgDIWNsqTTTPD1JU5lOyHM3L0XudwjulJoy9HnC-g&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmZGV2ZWxvcGluZy1kYXRhLXBpcGVsaW5lLXdvcmtmbG93LWluLXB5dGhvbi11c2luZy1haXJmbG93JTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLkVOX2NjLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzE1MDE4Mjg1ODgxMzMwXy5fYWRfXy5fa3dfQXBhY2hlJTI1MjBBaXJmbG93JTI1MjBUdXRvcmlhbCUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkMjhjZmM0MGE0OGNkMWJiYTk0NzBhZTBhMWExYmQ0MzE"&gt;Apache Airflow Online Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/geraldm/a-beginners-guide-to-apache-airflow-4ab7"&gt;A Beginners Guide to Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-10_0941.html"/>
+    <summary>Airflow 3.2.0 introduce cambios significativos en la configuración de notificaciones y la gestión de DAGs. En este artículo, se presentan las mejoras y best practices para aprovechar al máximo las funcionalidades de Airflow.</summary>
+    <published>2026-05-10T09:41:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-05-10_0941": {
+    "slug": "n8n",
+    "title": "Automatización de Workflows con n8n",
+    "summary": "n8n es una herramienta de automatización de workflows de código abierto que permite a los desarrolladores y sysadmins crear flujos de trabajo personalizados. Con n8n, se pueden integrar diferentes servicios y herramientas para automatizar tareas y procesos.",
+    "content": "n8n se basa en nodos, que son los bloques de construcción de los flujos de trabajo. Cada nodo puede realizar una tarea específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos. \n \n Para empezar a usar n8n, se puede instalar la aplicación de escritorio o ejecutarla en un servidor. La aplicación de escritorio se puede instalar con el comando `npm install -g n8n-desktop-app`. Una vez instalada, se puede acceder a la interfaz web de n8n y empezar a crear flujos de trabajo.\n \n n8n también admite la integración con diferentes servicios y herramientas, como Microsoft Azure, GitHub y Slack. Por ejemplo, se puede crear un flujo de trabajo que envíe un mensaje de Slack cuando se crea un nuevo issue en GitHub. Para hacer esto, se puede usar el nodo `GitHub` y configurarlo con las credenciales de GitHub y el webhook de Slack.\n \n Otro ejemplo de uso de n8n es la automatización de tareas de DevOps. Se puede crear un flujo de trabajo que realice una copia de seguridad de una base de datos y la envíe a un servidor de almacenamiento en la nube. Para hacer esto, se puede usar el nodo `MySQL` y configurarlo con las credenciales de la base de datos y el servidor de almacenamiento en la nube.\n \n En cuanto a la seguridad, n8n admite la autenticación con credenciales y la configuración de webhooks seguros. Se puede configurar un webhook con un token de autenticación para que solo se pueda acceder al flujo de trabajo si se proporciona el token correcto.\n \n En resumen, n8n es una herramienta poderosa para la automatización de workflows que admite la integración con diferentes servicios y herramientas. Con n8n, se pueden crear flujos de trabajo personalizados y seguros para automatizar tareas y procesos.",
+    "sources": [
+      {
+        "title": "n8n-io/n8n-desktop-app",
+        "url": "https://github.com/n8n-io/n8n-desktop-app"
+      },
+      {
+        "title": "Best n8n Workflows To Build with Claude Code (2026)",
+        "url": "https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc"
+      },
+      {
+        "title": "Integrating n8n with Microsoft Azure: A Practical Guide for Engineering Teams",
+        "url": "https://medium.com/@anishsingh17625/integrating-n8n-with-microsoft-azure-a-practical-guide-for-engineering-teams-6bb9fefef491"
+      }
+    ]
+  },
   "2026-05-06_1022": {
     "slug": "n8n",
     "title": "Automatización de Workflows con n8n",
