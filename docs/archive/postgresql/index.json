@@ -1,4 +1,28 @@
 {
+  "2026-05-11_1129": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "PostgreSQL es una base de datos relacional de código abierto que ofrece alta performance y escalabilidad. En este artículo, se presentan algunas best practices para optimizar el rendimiento de PostgreSQL.",
+    "content": "PostgreSQL es una base de datos relacional de código abierto que ofrece alta performance y escalabilidad. Para optimizar su rendimiento, es importante entender cómo funciona el motor de base de datos y cómo se pueden configurar los parámetros para mejorar el rendimiento.\n\nUna de las formas de optimizar el rendimiento de PostgreSQL es mediante la creación de índices. Los índices permiten al motor de base de datos acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.\n\nOtra forma de optimizar el rendimiento de PostgreSQL es mediante la configuración de los parámetros de la base de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para almacenar los datos en caché. Esto se puede hacer mediante el comando `ALTER SYSTEM SET shared_buffers = '512MB';`. También se puede utilizar el comando `EXPLAIN ANALYZE` para analizar el plan de consulta y identificar posibles cuellos de botella.\n\nLa replicación es otra característica importante de PostgreSQL que permite mejorar la disponibilidad y la escalabilidad de la base de datos. Se puede configurar la replicación mediante el comando `pg_basebackup` y `pg_rewind`. Por ejemplo: `pg_basebackup -h localhost -D /var/lib/postgresql/12/main -U postgres -v -P`. También se puede utilizar el comando `pg_stat_statements` para monitorear el rendimiento de las consultas y identificar posibles problemas.\n\nFinalmente, es importante mencionar que la versión 18 de PostgreSQL introduce la característica de I/O asíncrono, lo que permite mejorar el rendimiento de la base de datos en entornos de alta concurrencia. Para aprovechar esta característica, se puede utilizar el comando `ALTER SYSTEM SET async_io = on;`.\n\nEn resumen, la optimización de PostgreSQL requiere una comprensión profunda del motor de base de datos y de las características que se pueden configurar para mejorar el rendimiento. Al seguir estas best practices, se puede mejorar la performance y la escalabilidad de la base de datos.\n\nPara obtener más información sobre la optimización de PostgreSQL, se pueden consultar las fuentes siguientes:\n\n",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "The Complete Guide to PostgreSQL SQL Query Analysis & Optimization",
+        "url": "https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518"
+      },
+      {
+        "title": "PostgreSQL EXPLAIN ANALYZE: Reading Query Plans Like a Pro",
+        "url": "https://dev.to/whoffagents/postgresql-explain-analyze-reading-query-plans-like-a-pro-154i"
+      }
+    ]
+  },
   "2026-05-07_1029": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

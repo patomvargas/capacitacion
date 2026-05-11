@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-10T09:42:46.555442+00:00</updated>
+  <updated>2026-05-11T11:30:37.689770+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -189,5 +189,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-03_0924.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para mejorar la seguridad en Docker, incluyendo la utilización de multi-stage builds y la configuración de redes. Además, se discuten las últimas novedades en seguridad y las recomendaciones de OWASP.</summary>
     <published>2026-05-03T09:24:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-05-11_1129.html</id>
+    <title>Docker: Mejores prácticas y novedades</title>
+    <updated>2026-05-11T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;La creación de imágenes de Docker con multi-stage builds es una de las mejores prácticas para reducir el tamaño de las imágenes y mejorar la seguridad. Esto se puede lograr utilizando el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para especificar la etapa de construcción. Por ejemplo: &lt;code&gt;docker build -t mi-imagen --target producción .&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Otra práctica importante es la configuración de redes en Docker. Se puede utilizar el comando &lt;code&gt;docker network create&lt;/code&gt; para crear una red y luego utilizar el comando &lt;code&gt;docker run&lt;/code&gt; con la opción &lt;code&gt;--net&lt;/code&gt; para conectar un contenedor a la red. Por ejemplo: &lt;code&gt;docker network create mi-red&lt;/code&gt; y luego &lt;code&gt;docker run -it --net mi-red mi-imagen&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Docker. Se puede utilizar el comando &lt;code&gt;docker exec&lt;/code&gt; con la opción &lt;code&gt;-u&lt;/code&gt; para ejecutar un comando como un usuario específico. Por ejemplo: &lt;code&gt;docker exec -it -u usuario mi-contenedor comando&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Además, se puede utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola unidad. Se puede crear un archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; con la configuración de los contenedores y luego utilizar el comando &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar los contenedores.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se puede mencionar la compatibilidad de Docker con BuildKit, que permite una construcción de imágenes más rápida y eficiente. Se puede habilitar BuildKit utilizando el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--buildkit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, se puede mencionar la importancia de utilizar un registro de Docker para almacenar y gestionar las imágenes de Docker. Se puede utilizar Docker Hub o un registro privado para almacenar las imágenes y luego utilizar el comando &lt;code&gt;docker pull&lt;/code&gt; para descargar las imágenes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/johalputt/the-definitive-guide-to-multi-cluster-with-pulumi-and-docker-25-lessons-learned-f9e"&gt;The Definitive Guide to multi-cluster with Pulumi and Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/google-cloud/running-an-ai-agent-locally-adk-gemma-4-and-docker-model-runner-95ca9e6f506d"&gt;Run AI Agents Locally with Google ADK, Gemma 4 &amp; Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@adhelia.20.27/building-a-serverless-api-and-dockerized-flask-todo-app-for-cloud-engineering-practice-6ca40a204391"&gt;Building a Serverless API and Dockerized Flask ToDo App for Cloud Engineering Practice&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-11_1129.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo la creación de imágenes de Docker con multi-stage builds y la configuración de redes y seguridad. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-05-11T11:29:00+00:00</published>
   </entry>
 </feed>

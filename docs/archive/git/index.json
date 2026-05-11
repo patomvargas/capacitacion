@@ -1,4 +1,32 @@
 {
+  "2026-05-11_1129": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git",
+    "summary": "En este artículo, se presentan algunas de las mejores prácticas y características avanzadas de Git, como el uso de workflows, hooks y rebase. Se incluyen ejemplos prácticos y comandos para ilustrar cada concepto.",
+    "content": "Git es un sistema de control de versiones ampliamente utilizado en el desarrollo de software. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, se puede crear una rama para desarrollar una nueva característica y luego mergearla con la rama principal una vez que esté completa. Para crear una nueva rama, se puede utilizar el comando `git branch -m <nombre_de_la_rama>`. \n\nOtra característica avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en diferentes momentos del proceso de Git, como antes de hacer un commit o después de hacer un push. Por ejemplo, se puede crear un hook para verificar que el código cumpla con ciertos estándares de calidad antes de hacer un commit. Para crear un hook, se puede utilizar el comando `git hook --install <tipo_de_hook>`. \n\nEl rebase es otra característica importante de Git que permite reorganizar los commits de una rama. Por ejemplo, si se ha hecho un commit que no es necesario, se puede eliminar utilizando el comando `git rebase -i <commit_hash>`. Luego, se puede seleccionar la opción 'drop' para eliminar el commit. \n\nAdemás, Git ofrece la característica de worktrees, que permite tener múltiples directorios de trabajo para una sola copia de un repositorio. Esto es útil cuando se necesita trabajar en diferentes características o ramas al mismo tiempo. Para crear un worktree, se puede utilizar el comando `git worktree add <nombre_del_worktree> <rama>`. \n\nEn resumen, Git ofrece una variedad de características avanzadas que pueden ayudar a mejorar la productividad y la calidad del código. Al utilizar estas características de manera efectiva, los desarrolladores pueden trabajar de manera más eficiente y colaborativa.\n\nNo se encontraron fuentes relevantes para este artículo, por lo que se ha enfocado en presentar algunas de las mejores prácticas y características avanzadas de Git.",
+    "sources": [
+      {
+        "title": "1-Complete-List-of-OSINT-Web-Resources.md",
+        "url": "https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/1-Complete-List-of-OSINT-Web-Resources.md"
+      },
+      {
+        "title": "HighwayofLife/awesome-chatgpt-plugins",
+        "url": "https://github.com/HighwayofLife/awesome-chatgpt-plugins"
+      },
+      {
+        "title": "Windows File Manager (WinFile)",
+        "url": "https://github.com/microsoft/winfile"
+      },
+      {
+        "title": "DarkFunct/TK-CVE-Repo",
+        "url": "https://github.com/DarkFunct/TK-CVE-Repo"
+      },
+      {
+        "title": "xianshang33/llm-paper-daily",
+        "url": "https://github.com/xianshang33/llm-paper-daily"
+      }
+    ]
+  },
   "2026-05-07_1029": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

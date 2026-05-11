@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-10T09:42:46.559164+00:00</updated>
+  <updated>2026-05-11T11:30:37.695153+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -332,5 +332,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-07_1029.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de servidores de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Ansible.</summary>
     <published>2026-05-07T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-11_1129.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-05-11T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, roles, collections, vault, inventory y AWX/Tower. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Los roles son una forma de organizar y reutilizar código en los playbooks. Las collections son una forma de agrupar roles y módulos relacionados. El vault es un mecanismo de cifrado que permite proteger información sensible, como contraseñas y claves SSH.&lt;/p&gt;
+&lt;p&gt;Para empezar a utilizar Ansible, es necesario instalarlo en el sistema operativo. Esto se puede hacer utilizando el comando &lt;code&gt;apt-get install ansible&lt;/code&gt; en sistemas basados en Debian o &lt;code&gt;yum install ansible&lt;/code&gt; en sistemas basados en Red Hat. Una vez instalado, es posible crear un nuevo playbook utilizando el comando &lt;code&gt;ansible-playbook --new-playbook mi_playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La gestión de la inventario es fundamental en Ansible. La inventario se refiere a la lista de hosts que se van a gestionar. Se puede definir la inventario en un archivo llamado &lt;code&gt;hosts&lt;/code&gt; o utilizando un comando como &lt;code&gt;ansible-inventory --graph&lt;/code&gt;. El comando &lt;code&gt;ansible -m ping&lt;/code&gt; se utiliza para verificar la conectividad con los hosts de la inventario.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que Ansible también se puede integrar con herramientas como AWX/Tower, que proporcionan una interfaz gráfica de usuario para gestionar y automatizar tareas. AWX/Tower también permite la creación de jobs y la gestión de la inventario de manera centralizada.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. Al utilizar playbooks, roles, collections, vault, inventory y AWX/Tower, es posible crear una infraestructura escalable y segura.&lt;/p&gt;
+&lt;p&gt;Sin embargo, las fuentes proporcionadas no contienen información relevante sobre Ansible. Por lo tanto, se ha proporcionado una visión general de las mejores prácticas para utilizar Ansible de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/nomi-sec/PoC-in-GitHub"&gt;PoC auto collect from GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DarkFunct/TK-CVE-Repo"&gt;DarkFunct/TK-CVE-Repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ds25041974/SecLists/blob/master/Discovery/DNS/bitquark-subdomains-top100000.txt"&gt;bitquark-subdomains-top100000.txt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/saveweb/xloglog/blob/main/xlog_cid_title_map.csv"&gt;xlog_cid_title_map.csv&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/the-clothing-loop/website"&gt;The Clothing Loop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-11_1129.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se explorarán las mejores prácticas para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-05-11T11:29:00+00:00</published>
   </entry>
 </feed>

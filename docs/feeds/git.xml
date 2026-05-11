@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-10T09:42:46.556643+00:00</updated>
+  <updated>2026-05-11T11:30:37.691744+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -235,5 +235,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-07_1029.html"/>
     <summary>En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. También cubriremos algunos consejos avanzados para mejorar la productividad y la colaboración en proyectos que utilizan Git.</summary>
     <published>2026-05-07T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-05-11_1129.html</id>
+    <title>Mejores prácticas de Git</title>
+    <updated>2026-05-11T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es un sistema de control de versiones ampliamente utilizado en el desarrollo de software. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, se puede crear una rama para desarrollar una nueva característica y luego mergearla con la rama principal una vez que esté completa. Para crear una nueva rama, se puede utilizar el comando &lt;code&gt;git branch -m &lt;nombre_de_la_rama&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en diferentes momentos del proceso de Git, como antes de hacer un commit o después de hacer un push. Por ejemplo, se puede crear un hook para verificar que el código cumpla con ciertos estándares de calidad antes de hacer un commit. Para crear un hook, se puede utilizar el comando &lt;code&gt;git hook --install &lt;tipo_de_hook&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El rebase es otra característica importante de Git que permite reorganizar los commits de una rama. Por ejemplo, si se ha hecho un commit que no es necesario, se puede eliminar utilizando el comando &lt;code&gt;git rebase -i &lt;commit_hash&gt;&lt;/code&gt;. Luego, se puede seleccionar la opción 'drop' para eliminar el commit.&lt;/p&gt;
+&lt;p&gt;Además, Git ofrece la característica de worktrees, que permite tener múltiples directorios de trabajo para una sola copia de un repositorio. Esto es útil cuando se necesita trabajar en diferentes características o ramas al mismo tiempo. Para crear un worktree, se puede utilizar el comando &lt;code&gt;git worktree add &lt;nombre_del_worktree&gt; &lt;rama&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Git ofrece una variedad de características avanzadas que pueden ayudar a mejorar la productividad y la calidad del código. Al utilizar estas características de manera efectiva, los desarrolladores pueden trabajar de manera más eficiente y colaborativa.&lt;/p&gt;
+&lt;p&gt;No se encontraron fuentes relevantes para este artículo, por lo que se ha enfocado en presentar algunas de las mejores prácticas y características avanzadas de Git.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/1-Complete-List-of-OSINT-Web-Resources.md"&gt;1-Complete-List-of-OSINT-Web-Resources.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/HighwayofLife/awesome-chatgpt-plugins"&gt;HighwayofLife/awesome-chatgpt-plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/winfile"&gt;Windows File Manager (WinFile)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/DarkFunct/TK-CVE-Repo"&gt;DarkFunct/TK-CVE-Repo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/xianshang33/llm-paper-daily"&gt;xianshang33/llm-paper-daily&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-11_1129.html"/>
+    <summary>En este artículo, se presentan algunas de las mejores prácticas y características avanzadas de Git, como el uso de workflows, hooks y rebase. Se incluyen ejemplos prácticos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-05-11T11:29:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,32 @@
 {
+  "2026-05-11_1129": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se explorarán las mejores prácticas para utilizar Ansible de manera efectiva.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se basa en el concepto de playbooks, roles, collections, vault, inventory y AWX/Tower. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Los roles son una forma de organizar y reutilizar código en los playbooks. Las collections son una forma de agrupar roles y módulos relacionados. El vault es un mecanismo de cifrado que permite proteger información sensible, como contraseñas y claves SSH.\n\nPara empezar a utilizar Ansible, es necesario instalarlo en el sistema operativo. Esto se puede hacer utilizando el comando `apt-get install ansible` en sistemas basados en Debian o `yum install ansible` en sistemas basados en Red Hat. Una vez instalado, es posible crear un nuevo playbook utilizando el comando `ansible-playbook --new-playbook mi_playbook.yml`.\n\nLa gestión de la inventario es fundamental en Ansible. La inventario se refiere a la lista de hosts que se van a gestionar. Se puede definir la inventario en un archivo llamado `hosts` o utilizando un comando como `ansible-inventory --graph`. El comando `ansible -m ping` se utiliza para verificar la conectividad con los hosts de la inventario.\n\nEs importante mencionar que Ansible también se puede integrar con herramientas como AWX/Tower, que proporcionan una interfaz gráfica de usuario para gestionar y automatizar tareas. AWX/Tower también permite la creación de jobs y la gestión de la inventario de manera centralizada.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. Al utilizar playbooks, roles, collections, vault, inventory y AWX/Tower, es posible crear una infraestructura escalable y segura.\n\nSin embargo, las fuentes proporcionadas no contienen información relevante sobre Ansible. Por lo tanto, se ha proporcionado una visión general de las mejores prácticas para utilizar Ansible de manera efectiva.",
+    "sources": [
+      {
+        "title": "PoC auto collect from GitHub",
+        "url": "https://github.com/nomi-sec/PoC-in-GitHub"
+      },
+      {
+        "title": "DarkFunct/TK-CVE-Repo",
+        "url": "https://github.com/DarkFunct/TK-CVE-Repo"
+      },
+      {
+        "title": "bitquark-subdomains-top100000.txt",
+        "url": "https://github.com/ds25041974/SecLists/blob/master/Discovery/DNS/bitquark-subdomains-top100000.txt"
+      },
+      {
+        "title": "xlog_cid_title_map.csv",
+        "url": "https://github.com/saveweb/xloglog/blob/main/xlog_cid_title_map.csv"
+      },
+      {
+        "title": "The Clothing Loop",
+        "url": "https://github.com/the-clothing-loop/website"
+      }
+    ]
+  },
   "2026-05-07_1029": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

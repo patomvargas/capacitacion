@@ -1,4 +1,24 @@
 {
+  "2026-05-11_1129": {
+    "slug": "docker",
+    "title": "Docker: Mejores prácticas y novedades",
+    "summary": "En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo la creación de imágenes de Docker con multi-stage builds y la configuración de redes y seguridad. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "\nLa creación de imágenes de Docker con multi-stage builds es una de las mejores prácticas para reducir el tamaño de las imágenes y mejorar la seguridad. Esto se puede lograr utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción. Por ejemplo: `docker build -t mi-imagen --target producción .`\n\nOtra práctica importante es la configuración de redes en Docker. Se puede utilizar el comando `docker network create` para crear una red y luego utilizar el comando `docker run` con la opción `--net` para conectar un contenedor a la red. Por ejemplo: `docker network create mi-red` y luego `docker run -it --net mi-red mi-imagen`\n\nLa seguridad es otro aspecto importante en Docker. Se puede utilizar el comando `docker exec` con la opción `-u` para ejecutar un comando como un usuario específico. Por ejemplo: `docker exec -it -u usuario mi-contenedor comando`\n\nAdemás, se puede utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola unidad. Se puede crear un archivo `docker-compose.yml` con la configuración de los contenedores y luego utilizar el comando `docker-compose up` para iniciar los contenedores.\n\nEn cuanto a las novedades, se puede mencionar la compatibilidad de Docker con BuildKit, que permite una construcción de imágenes más rápida y eficiente. Se puede habilitar BuildKit utilizando el comando `docker build` con la opción `--buildkit`.\n\nFinalmente, se puede mencionar la importancia de utilizar un registro de Docker para almacenar y gestionar las imágenes de Docker. Se puede utilizar Docker Hub o un registro privado para almacenar las imágenes y luego utilizar el comando `docker pull` para descargar las imágenes.\n\n",
+    "sources": [
+      {
+        "title": "The Definitive Guide to multi-cluster with Pulumi and Docker",
+        "url": "https://dev.to/johalputt/the-definitive-guide-to-multi-cluster-with-pulumi-and-docker-25-lessons-learned-f9e"
+      },
+      {
+        "title": "Run AI Agents Locally with Google ADK, Gemma 4 & Docker",
+        "url": "https://medium.com/google-cloud/running-an-ai-agent-locally-adk-gemma-4-and-docker-model-runner-95ca9e6f506d"
+      },
+      {
+        "title": "Building a Serverless API and Dockerized Flask ToDo App for Cloud Engineering Practice",
+        "url": "https://medium.com/@adhelia.20.27/building-a-serverless-api-and-dockerized-flask-todo-app-for-cloud-engineering-practice-6ca40a204391"
+      }
+    ]
+  },
   "2026-05-03_0924": {
     "slug": "docker",
     "title": "Mejoras de seguridad en Docker",

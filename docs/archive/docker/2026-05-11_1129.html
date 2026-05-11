@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras de seguridad en Docker - Docker</title>
+    <title>Docker: Mejores prácticas y novedades - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejoras de seguridad en Docker</h1>
-    <div class="meta">2026-05-03 0924 · Docker</div>
+    <h1>Docker: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-05-11 1129 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>La seguridad es un aspecto fundamental en la implementación de contenedores Docker. Una de las mejores prácticas es utilizar `multi-stage builds` para minimizar el tamaño de las imágenes y reducir la superficie de ataque. Esto se puede lograr utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción.</p>
+        
+            
+            <p>La creación de imágenes de Docker con multi-stage builds es una de las mejores prácticas para reducir el tamaño de las imágenes y mejorar la seguridad. Esto se puede lograr utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción. Por ejemplo: `docker build -t mi-imagen --target producción .`</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de las redes en Docker, se pueden utilizar `docker network` para crear redes personalizadas y asignar direcciones IP estáticas a los contenedores. Por ejemplo, se puede crear una red con `docker network create --subnet=10.0.0.0/24 mi_red` y luego asignar una dirección IP a un contenedor con `docker run -it --net mi_red --ip 10.0.0.10 mi_contenedor`.</p>
+            <p>Otra práctica importante es la configuración de redes en Docker. Se puede utilizar el comando `docker network create` para crear una red y luego utilizar el comando `docker run` con la opción `--net` para conectar un contenedor a la red. Por ejemplo: `docker network create mi-red` y luego `docker run -it --net mi-red mi-imagen`</p>
             
         
             
         
             
-            <p>Otra forma de mejorar la seguridad es utilizando `BuildKit`, que es una herramienta de construcción de imágenes de Docker que permite una mayor flexibilidad y seguridad en la construcción de imágenes. Se puede habilitar `BuildKit` con el comando `export DOCKER_BUILDKIT=1` antes de ejecutar `docker build`.</p>
+            <p>La seguridad es otro aspecto importante en Docker. Se puede utilizar el comando `docker exec` con la opción `-u` para ejecutar un comando como un usuario específico. Por ejemplo: `docker exec -it -u usuario mi-contenedor comando`</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad de los registros de Docker, es importante utilizar `docker login` para autenticar con el registro y `docker tag` para asignar un nombre y una versión a la imagen antes de subirla al registro. Por ejemplo, se puede subir una imagen al registro con `docker push mi_usuario/mi_imagen:latest`.</p>
+            <p>Además, se puede utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola unidad. Se puede crear un archivo `docker-compose.yml` con la configuración de los contenedores y luego utilizar el comando `docker-compose up` para iniciar los contenedores.</p>
             
         
             
         
             
-            <p>La OWASP (Open Web Application Security Project) proporciona una serie de recomendaciones para mejorar la seguridad de las aplicaciones, incluyendo la utilización de `docker-compose` para definir y ejecutar múltiples contenedores de forma segura. Se puede utilizar `docker-compose up` para iniciar los contenedores y `docker-compose down` para detenerlos.</p>
+            <p>En cuanto a las novedades, se puede mencionar la compatibilidad de Docker con BuildKit, que permite una construcción de imágenes más rápida y eficiente. Se puede habilitar BuildKit utilizando el comando `docker build` con la opción `--buildkit`.</p>
             
         
             
         
             
-            <p>En resumen, la seguridad en Docker es fundamental y se puede mejorar utilizando `multi-stage builds`, `docker network`, `BuildKit` y siguiendo las recomendaciones de OWASP.</p>
+            <p>Finalmente, se puede mencionar la importancia de utilizar un registro de Docker para almacenar y gestionar las imágenes de Docker. Se puede utilizar Docker Hub o un registro privado para almacenar las imágenes y luego utilizar el comando `docker pull` para descargar las imágenes.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,12 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/moby/moby/issues/52337" target="_blank">Issue #52337</a>
+                <a href="https://dev.to/johalputt/the-definitive-guide-to-multi-cluster-with-pulumi-and-docker-25-lessons-learned-f9e" target="_blank">The Definitive Guide to multi-cluster with Pulumi and Docker</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/OWASP/CheatSheetSeries" target="_blank">OWASP Cheat Sheet Series</a>
+                <a href="https://medium.com/google-cloud/running-an-ai-agent-locally-adk-gemma-4-and-docker-model-runner-95ca9e6f506d" target="_blank">Run AI Agents Locally with Google ADK, Gemma 4 & Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@adhelia.20.27/building-a-serverless-api-and-dockerized-flask-todo-app-for-cloud-engineering-practice-6ca40a204391" target="_blank">Building a Serverless API and Dockerized Flask ToDo App for Cloud Engineering Practice</a>
                 
             </li>
             
@@ -121,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-04-29_1010.html">&larr; 2026-04-29 1010</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-03_0924.html">&larr; 2026-05-03 0924</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-11_1129.html">2026-05-11 1129 &rarr;</a>
             
         </div>
     </div>
