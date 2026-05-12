@@ -1,4 +1,24 @@
 {
+  "2026-05-12_1036": {
+    "slug": "bind9",
+    "title": "Configuración y Seguridad de DNS con BIND9",
+    "summary": "BIND9 es un servidor DNS ampliamente utilizado que ofrece una gran variedad de características para la configuración y seguridad de dominios. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos en BIND9.",
+    "content": "La configuración de zonas en BIND9 se realiza mediante el archivo `named.conf`, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para crear una zona primaria, se puede utilizar la siguiente configuración: `zone \"example.com\" IN { type master; file \"example.com.db\"; };`. \n\nPara implementar DNSSEC en BIND9, es necesario generar las claves de zona y configurar el servidor para que firme las respuestas DNS. Esto se puede hacer utilizando los comandos `dnssec-keygen` y `dnssec-signzone`. Por ejemplo: `dnssec-keygen -a RSASHA256 -b 2048 example.com` y `dnssec-signzone -o example.com -t example.com.db`. \n\nLas vistas en BIND9 permiten configurar diferentes respuestas DNS para diferentes redes o clientes. Por ejemplo, se puede crear una vista para la red interna y otra para la red externa, utilizando la siguiente configuración: `view \"internal\" { match-clients { 10.0.0.0/8; }; recursion yes; };` y `view \"external\" { match-clients { any; }; recursion no; };`. \n\nLa configuración de RPZ (Response Policy Zone) en BIND9 permite bloquear o restringir el acceso a ciertos dominios. Por ejemplo, se puede crear una zona RPZ para bloquear el acceso a sitios web maliciosos, utilizando la siguiente configuración: `zone \"rpz.example.com\" { type master; file \"rpz.example.com.db\"; };` y `response-policy { zone \"rpz.example.com\"; };`. \n\nFinalmente, es importante configurar el registro de eventos en BIND9 para monitorear y depurar problemas. Por ejemplo, se puede utilizar la siguiente configuración: `logging { channel default_log { file \"named.log\"; severity info; }; };`.\n\nPara mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché, la optimización de la búsqueda de DNS y la utilización de servidores de nombres secundarios. Por ejemplo, se puede configurar el tamaño del caché utilizando la siguiente configuración: `options { cache-size 10000; };`. \n\nEn resumen, BIND9 es un servidor DNS poderoso y flexible que ofrece una gran variedad de características para la configuración y seguridad de dominios. Al seguir las mejores prácticas y configuraciones presentadas en este artículo, se puede garantizar un funcionamiento seguro y eficiente del servidor DNS.\n\nEn cuanto a la seguridad, es importante mencionar que BIND9 tiene una historia de vulnerabilidades, por lo que es fundamental mantener el software actualizado y aplicar las últimas correcciones de seguridad. Por ejemplo, la vulnerabilidad descrita en el RHSA-2026:8155 puede ser explotada para realizar un ataque de denegación de servicio contra el servidor DNS. \n\nPara mitigar este tipo de ataques, es importante configurar el servidor DNS para que utilice DNSSEC y para que bloquee el tráfico de DNS no autorizado. También es importante monitorear el registro de eventos del servidor DNS para detectar posibles ataques o problemas de configuración.\n\nEn conclusión, la configuración y seguridad de DNS con BIND9 requieren una gran atención al detalle y una comprensión profunda de las características y vulnerabilidades del software. Al seguir las mejores prácticas y configuraciones presentadas en este artículo, se puede garantizar un funcionamiento seguro y eficiente del servidor DNS.\n\nPara obtener más información sobre la configuración y seguridad de DNS con BIND9, se pueden consultar las fuentes siguientes:\n\n",
+    "sources": [
+      {
+        "title": "DNSSEC: The Developer's Setup Guide (2026)",
+        "url": "https://dev.to/rronyecz/dnssec-the-developers-setup-guide-2026-4hlj"
+      },
+      {
+        "title": "RHSA-2026:8155 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:8155"
+      },
+      {
+        "title": "hosts/alternates/fakenews-gambling/readme.md",
+        "url": "https://github.com/StevenBlack/hosts/blob/master/alternates/fakenews-gambling/readme.md"
+      }
+    ]
+  },
   "2026-05-04_1017": {
     "slug": "bind9",
     "title": "Configuración y Mejoras en BIND9",

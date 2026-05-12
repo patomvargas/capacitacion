@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-11T11:30:37.667982+00:00</updated>
+  <updated>2026-05-12T10:37:26.302888+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -276,5 +276,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-08_0944.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-05-08T09:44:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-12_1036.html</id>
+    <title>Implementación segura de OpenVPN</title>
+    <updated>2026-05-12T10:36:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer túneles de red seguros entre sitios. Para implementar OpenVPN, es necesario generar certificados y configurar los parámetros de conexión. Se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt; para generar un certificado de servidor.&lt;/p&gt;
+&lt;p&gt;Para configurar OpenVPN, se debe crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo, se puede utilizar el comando &lt;code&gt;openvpn --config /etc/openvpn/server.conf&lt;/code&gt; para iniciar el servidor OpenVPN.&lt;/p&gt;
+&lt;p&gt;Es importante implementar medidas de seguridad adicionales, como el uso de autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Se puede utilizar el comando &lt;code&gt;ufw allow openvpn&lt;/code&gt; para permitir el tráfico OpenVPN en el firewall.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de la conexión, se puede utilizar el protocolo de túneles de red seguros TLS (Transport Layer Security) en lugar de SSL (Secure Sockets Layer). Se puede configurar el protocolo TLS en el archivo de configuración de OpenVPN utilizando la directiva &lt;code&gt;tls-version-min 1.2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mantener actualizados los certificados y las configuraciones de seguridad para evitar vulnerabilidades. Se puede utilizar el comando &lt;code&gt;openvpn --version&lt;/code&gt; para verificar la versión de OpenVPN y asegurarse de que esté actualizada.&lt;/p&gt;
+&lt;p&gt;En resumen, la implementación segura de OpenVPN requiere la generación de certificados, la configuración de parámetros de conexión y la implementación de medidas de seguridad adicionales. Al seguir estas mejores prácticas, se puede establecer una conexión de red segura y confiable entre sitios.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-build/blob/master/release/full-release-build.sh"&gt;OpenVPN Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/tap-windows6/releases"&gt;OpenVPN Tap Windows 6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/eylandoo/openvpn_webpanel_manager"&gt;OpenVPN Web Panel Manager&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-12_1036.html"/>
+    <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas y desarrolladores de DevOps establecer conexiones cifradas entre sitios. En este artículo, se presentan las mejores prácticas para implementar OpenVPN de manera segura.</summary>
+    <published>2026-05-12T10:36:00+00:00</published>
   </entry>
 </feed>

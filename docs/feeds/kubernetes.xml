@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-11T11:30:37.669650+00:00</updated>
+  <updated>2026-05-12T10:37:26.305972+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -322,5 +322,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas.</summary>
     <published>2026-05-08T09:44:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-12_1036.html</id>
+    <title>Nuevas Características de Kubernetes 1.29</title>
+    <updated>2026-05-12T10:36:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes 1.29 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias nuevas características y mejoras, como la capacidad de utilizar &lt;code&gt;IPv6&lt;/code&gt; en los pods y servicios, y la mejora de la seguridad con la implementación de &lt;code&gt;TLS 1.3&lt;/code&gt; por defecto.&lt;/p&gt;
+&lt;p&gt;Para actualizar a Kubernetes 1.29, se puede utilizar el comando &lt;code&gt;kubeadm upgrade apply&lt;/code&gt; para actualizar el clúster. Luego, se puede verificar la versión actual con &lt;code&gt;kubectl get nodes -o wide&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Kubernetes 1.29 incluye la capacidad de utilizar &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico de red entre pods y servicios. Esto se puede configurar utilizando el comando &lt;code&gt;kubectl create network-policy&lt;/code&gt; y especificando las reglas de tráfico en el archivo de configuración.&lt;/p&gt;
+&lt;p&gt;Además, Kubernetes 1.29 incluye mejoras en la configuración y el troubleshooting, como la capacidad de utilizar &lt;code&gt;kubectl debug&lt;/code&gt; para depurar problemas en los pods y servicios. Esto se puede hacer utilizando el comando &lt;code&gt;kubectl debug -it &lt;pod-name&gt; --image=&lt;image-name&gt;&lt;/code&gt; para acceder al contenedor y depurar el problema.&lt;/p&gt;
+&lt;p&gt;La versión 1.29 también incluye la introducción de &lt;code&gt;agent-sandbox&lt;/code&gt;, un proyecto que permite la gestión de cargas de trabajo aisladas y con estado, ideales para casos de uso como la ejecución de modelos de inteligencia artificial.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Kubernetes proporciona guías detalladas para la configuración y el troubleshooting de la plataforma, lo que facilita la implementación y el mantenimiento de clústeres de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md"&gt;Release Notes de Kubernetes 1.29&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/community/blob/main/contributors/guide/release-notes.md"&gt;Documentación oficial de Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/agent-sandbox"&gt;Proyecto agent-sandbox&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-12_1036.html"/>
+    <summary>Kubernetes 1.29 introduce nuevas características y mejoras en networking, storage y seguridad. Esta versión también incluye cambios en la configuración y el troubleshooting.</summary>
+    <published>2026-05-12T10:36:00+00:00</published>
   </entry>
 </feed>

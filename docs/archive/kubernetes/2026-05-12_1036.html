@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
-    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <title>Nuevas Características de Kubernetes 1.29 - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-05-08 0944 · FreeIPA</div>
+    <h1>Nuevas Características de Kubernetes 1.29</h1>
+    <div class="meta">2026-05-12 1036 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es una herramienta de código abierto que combina los protocolos LDAP, Kerberos y Certificate Authority para proporcionar una solución integral de gestión de identidad y acceso. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.</p>
+            <p>Kubernetes 1.29 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias nuevas características y mejoras, como la capacidad de utilizar `IPv6` en los pods y servicios, y la mejora de la seguridad con la implementación de `TLS 1.3` por defecto.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede configurar FreeIPA para autenticar usuarios y grupos utilizando el comando `ipa user-add` y `ipa group-add`. También se pueden crear reglas de acceso y autorización utilizando el comando `ipa hbacrule-add` y `ipa sudorule-add`.</p>
+            <p>Para actualizar a Kubernetes 1.29, se puede utilizar el comando `kubeadm upgrade apply` para actualizar el clúster. Luego, se puede verificar la versión actual con `kubectl get nodes -o wide`.</p>
             
         
             
         
             
-            <p>Para integrar FreeIPA con otros sistemas, se pueden utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando `ldapsearch` para buscar usuarios y grupos en el directorio LDAP de FreeIPA. También se puede utilizar el comando `kinit` para autenticar con un ticket Kerberos.</p>
+            <p>En cuanto a la seguridad, Kubernetes 1.29 incluye la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods y servicios. Esto se puede configurar utilizando el comando `kubectl create network-policy` y especificando las reglas de tráfico en el archivo de configuración.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona una variedad de características para proteger la información de identidad y acceso. Por ejemplo, se pueden utilizar certificados SSL/TLS para cifrar las comunicaciones entre el servidor FreeIPA y los clientes. También se pueden configurar reglas de firewall para restringir el acceso al servidor FreeIPA.</p>
+            <p>Además, Kubernetes 1.29 incluye mejoras en la configuración y el troubleshooting, como la capacidad de utilizar `kubectl debug` para depurar problemas en los pods y servicios. Esto se puede hacer utilizando el comando `kubectl debug -it <pod-name> --image=<image-name>` para acceder al contenedor y depurar el problema.</p>
             
         
             
         
             
-            <p>Para mantener actualizado el servidor FreeIPA, se puede utilizar el comando `ipa-server-upgrade` para aplicar actualizaciones y parches de seguridad. También se pueden utilizar herramientas como Flux CD para automatizar la implementación y gestión de FreeIPA en entornos de Kubernetes.</p>
+            <p>La versión 1.29 también incluye la introducción de `agent-sandbox`, un proyecto que permite la gestión de cargas de trabajo aisladas y con estado, ideales para casos de uso como la ejecución de modelos de inteligencia artificial.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que proporciona una variedad de características y configuraciones para satisfacer las necesidades de las organizaciones. Con su arquitectura escalable y segura, FreeIPA es una excelente opción para aquellos que buscan una solución integral de gestión de identidad y acceso.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes proporciona guías detalladas para la configuración y el troubleshooting de la plataforma, lo que facilita la implementación y el mantenimiento de clústeres de Kubernetes.</p>
             
         
     </div>
@@ -105,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://planet.freeipa.org/" target="_blank">FreeIPA Identity Management planet</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md" target="_blank">Release Notes de Kubernetes 1.29</a>
                 
             </li>
             
             <li>
-                <a href="https://leo.leung.xyz/wiki/FreeIPA" target="_blank">FreeIPA - Leo's Notes</a>
+                <a href="https://github.com/kubernetes/community/blob/main/contributors/guide/release-notes.md" target="_blank">Documentación oficial de Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd" target="_blank">Deploy FreeIPA Identity Management with Flux CD</a>
+                <a href="https://github.com/kubernetes-sigs/agent-sandbox" target="_blank">Proyecto agent-sandbox</a>
                 
             </li>
             
@@ -126,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-04_1017.html">&larr; 2026-05-04 1017</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html">&larr; 2026-05-08 0944</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-12_1036.html">2026-05-12 1036 &rarr;</a>
             
         </div>
     </div>

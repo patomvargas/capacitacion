@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
-    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <title>Implementación segura de OpenVPN - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-05-08 0944 · FreeIPA</div>
+    <h1>Implementación segura de OpenVPN</h1>
+    <div class="meta">2026-05-12 1036 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es una herramienta de código abierto que combina los protocolos LDAP, Kerberos y Certificate Authority para proporcionar una solución integral de gestión de identidad y acceso. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.</p>
+            <p>OpenVPN es una herramienta de código abierto que permite establecer túneles de red seguros entre sitios. Para implementar OpenVPN, es necesario generar certificados y configurar los parámetros de conexión. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado de servidor.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede configurar FreeIPA para autenticar usuarios y grupos utilizando el comando `ipa user-add` y `ipa group-add`. También se pueden crear reglas de acceso y autorización utilizando el comando `ipa hbacrule-add` y `ipa sudorule-add`.</p>
+            <p>Para configurar OpenVPN, se debe crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo, se puede utilizar el comando `openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN.</p>
             
         
             
         
             
-            <p>Para integrar FreeIPA con otros sistemas, se pueden utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede utilizar el comando `ldapsearch` para buscar usuarios y grupos en el directorio LDAP de FreeIPA. También se puede utilizar el comando `kinit` para autenticar con un ticket Kerberos.</p>
+            <p>Es importante implementar medidas de seguridad adicionales, como el uso de autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Se puede utilizar el comando `ufw allow openvpn` para permitir el tráfico OpenVPN en el firewall.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona una variedad de características para proteger la información de identidad y acceso. Por ejemplo, se pueden utilizar certificados SSL/TLS para cifrar las comunicaciones entre el servidor FreeIPA y los clientes. También se pueden configurar reglas de firewall para restringir el acceso al servidor FreeIPA.</p>
+            <p>Para mejorar la seguridad de la conexión, se puede utilizar el protocolo de túneles de red seguros TLS (Transport Layer Security) en lugar de SSL (Secure Sockets Layer). Se puede configurar el protocolo TLS en el archivo de configuración de OpenVPN utilizando la directiva `tls-version-min 1.2`.</p>
             
         
             
         
             
-            <p>Para mantener actualizado el servidor FreeIPA, se puede utilizar el comando `ipa-server-upgrade` para aplicar actualizaciones y parches de seguridad. También se pueden utilizar herramientas como Flux CD para automatizar la implementación y gestión de FreeIPA en entornos de Kubernetes.</p>
+            <p>Además, es importante mantener actualizados los certificados y las configuraciones de seguridad para evitar vulnerabilidades. Se puede utilizar el comando `openvpn --version` para verificar la versión de OpenVPN y asegurarse de que esté actualizada.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que proporciona una variedad de características y configuraciones para satisfacer las necesidades de las organizaciones. Con su arquitectura escalable y segura, FreeIPA es una excelente opción para aquellos que buscan una solución integral de gestión de identidad y acceso.</p>
+            <p>En resumen, la implementación segura de OpenVPN requiere la generación de certificados, la configuración de parámetros de conexión y la implementación de medidas de seguridad adicionales. Al seguir estas mejores prácticas, se puede establecer una conexión de red segura y confiable entre sitios.</p>
             
         
     </div>
@@ -105,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://planet.freeipa.org/" target="_blank">FreeIPA Identity Management planet</a>
+                <a href="https://github.com/OpenVPN/openvpn-build/blob/master/release/full-release-build.sh" target="_blank">OpenVPN Build</a>
                 
             </li>
             
             <li>
-                <a href="https://leo.leung.xyz/wiki/FreeIPA" target="_blank">FreeIPA - Leo's Notes</a>
+                <a href="https://github.com/OpenVPN/tap-windows6/releases" target="_blank">OpenVPN Tap Windows 6</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd" target="_blank">Deploy FreeIPA Identity Management with Flux CD</a>
+                <a href="https://github.com/eylandoo/openvpn_webpanel_manager" target="_blank">OpenVPN Web Panel Manager</a>
                 
             </li>
             
@@ -126,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-04_1017.html">&larr; 2026-05-04 1017</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-08_0944.html">&larr; 2026-05-08 0944</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-12_1036.html">2026-05-12 1036 &rarr;</a>
             
         </div>
     </div>

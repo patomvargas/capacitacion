@@ -1,4 +1,20 @@
 {
+  "2026-05-12_1036": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es una plataforma de gestión de identidad y acceso que proporciona servicios de LDAP, Kerberos y autoridad de certificación. En este artículo, se explora cómo implementar y configurar FreeIPA en un entorno de Kubernetes con Flux CD.",
+    "content": "FreeIPA es una herramienta clave para la gestión de identidad y acceso en entornos de red. Permite la autenticación y autorización de usuarios y servicios, y proporciona una forma segura de gestionar las identidades y los permisos. Para implementar FreeIPA en un entorno de Kubernetes, se puede utilizar Flux CD, una herramienta de gestión de configuración y automatización de despliegues.\n\nPara comenzar, es necesario crear un clúster de Kubernetes y configurar Flux CD para que se encargue de la gestión de la configuración y el despliegue de FreeIPA. Esto se puede hacer mediante el comando `flux create cluster` y luego configurar el archivo de configuración de Flux CD con los parámetros necesarios. Una vez configurado, se puede desplegar FreeIPA en el clúster de Kubernetes mediante el comando `flux create deployment`.\n\nUna vez desplegado FreeIPA, es necesario configurar los servicios de LDAP, Kerberos y autoridad de certificación. Esto se puede hacer mediante la consola de administración de FreeIPA, donde se pueden crear y configurar los dominios, los usuarios y los grupos. También se pueden configurar las reglas de acceso y los permisos para cada recurso. Por ejemplo, se puede utilizar el comando `ipa user-add` para agregar un nuevo usuario al sistema, y luego configurar los permisos y las reglas de acceso para ese usuario mediante el comando `ipa permission-add`.\n\nEn cuanto a la seguridad, FreeIPA proporciona una forma segura de gestionar las identidades y los permisos. Se pueden configurar las reglas de acceso y los permisos para cada recurso, y se pueden utilizar protocolos de autenticación y autorización como Kerberos y SSL/TLS para proteger la comunicación entre los servicios. También se pueden configurar las auditorías y los registros de seguridad para monitorear y analizar los eventos de seguridad en el sistema.\n\nFinalmente, es importante mencionar que FreeIPA se puede integrar con otros servicios y herramientas de gestión de identidad y acceso, como Active Directory y OpenLDAP. Esto permite una mayor flexibilidad y escalabilidad en la gestión de identidad y acceso, y permite a las organizaciones aprovechar las ventajas de una plataforma de gestión de identidad y acceso unificada.\n\nPara más información sobre FreeIPA y su implementación en un entorno de Kubernetes con Flux CD, se pueden consultar las fuentes y documentación oficiales de FreeIPA y Flux CD.",
+    "sources": [
+      {
+        "title": "FreeIPA Identity Management planet - technical blogs",
+        "url": "https://planet.freeipa.org/"
+      },
+      {
+        "title": "Deploy FreeIPA Identity Management with Flux CD",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-deploy-freeipa-identity-management-with-flux-cd"
+      }
+    ]
+  },
   "2026-05-08_0944": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",

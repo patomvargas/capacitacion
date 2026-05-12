@@ -1,4 +1,24 @@
 {
+  "2026-05-12_1036": {
+    "slug": "openvpn",
+    "title": "Implementación segura de OpenVPN",
+    "summary": "OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas y desarrolladores de DevOps establecer conexiones cifradas entre sitios. En este artículo, se presentan las mejores prácticas para implementar OpenVPN de manera segura.",
+    "content": "OpenVPN es una herramienta de código abierto que permite establecer túneles de red seguros entre sitios. Para implementar OpenVPN, es necesario generar certificados y configurar los parámetros de conexión. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado de servidor.\n\nPara configurar OpenVPN, se debe crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo, se puede utilizar el comando `openvpn --config /etc/openvpn/server.conf` para iniciar el servidor OpenVPN.\n\nEs importante implementar medidas de seguridad adicionales, como el uso de autenticación de dos factores y la configuración de firewalls para restringir el acceso a la red. Se puede utilizar el comando `ufw allow openvpn` para permitir el tráfico OpenVPN en el firewall.\n\nPara mejorar la seguridad de la conexión, se puede utilizar el protocolo de túneles de red seguros TLS (Transport Layer Security) en lugar de SSL (Secure Sockets Layer). Se puede configurar el protocolo TLS en el archivo de configuración de OpenVPN utilizando la directiva `tls-version-min 1.2`.\n\nAdemás, es importante mantener actualizados los certificados y las configuraciones de seguridad para evitar vulnerabilidades. Se puede utilizar el comando `openvpn --version` para verificar la versión de OpenVPN y asegurarse de que esté actualizada.\n\nEn resumen, la implementación segura de OpenVPN requiere la generación de certificados, la configuración de parámetros de conexión y la implementación de medidas de seguridad adicionales. Al seguir estas mejores prácticas, se puede establecer una conexión de red segura y confiable entre sitios.",
+    "sources": [
+      {
+        "title": "OpenVPN Build",
+        "url": "https://github.com/OpenVPN/openvpn-build/blob/master/release/full-release-build.sh"
+      },
+      {
+        "title": "OpenVPN Tap Windows 6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "OpenVPN Web Panel Manager",
+        "url": "https://github.com/eylandoo/openvpn_webpanel_manager"
+      }
+    ]
+  },
   "2026-05-08_0944": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

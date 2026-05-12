@@ -1,4 +1,24 @@
 {
+  "2026-05-12_1036": {
+    "slug": "kubernetes",
+    "title": "Nuevas Características de Kubernetes 1.29",
+    "summary": "Kubernetes 1.29 introduce nuevas características y mejoras en networking, storage y seguridad. Esta versión también incluye cambios en la configuración y el troubleshooting.",
+    "content": "Kubernetes 1.29 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias nuevas características y mejoras, como la capacidad de utilizar `IPv6` en los pods y servicios, y la mejora de la seguridad con la implementación de `TLS 1.3` por defecto. \n\nPara actualizar a Kubernetes 1.29, se puede utilizar el comando `kubeadm upgrade apply` para actualizar el clúster. Luego, se puede verificar la versión actual con `kubectl get nodes -o wide`. \n\nEn cuanto a la seguridad, Kubernetes 1.29 incluye la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods y servicios. Esto se puede configurar utilizando el comando `kubectl create network-policy` y especificando las reglas de tráfico en el archivo de configuración. \n\nAdemás, Kubernetes 1.29 incluye mejoras en la configuración y el troubleshooting, como la capacidad de utilizar `kubectl debug` para depurar problemas en los pods y servicios. Esto se puede hacer utilizando el comando `kubectl debug -it <pod-name> --image=<image-name>` para acceder al contenedor y depurar el problema.\n\nLa versión 1.29 también incluye la introducción de `agent-sandbox`, un proyecto que permite la gestión de cargas de trabajo aisladas y con estado, ideales para casos de uso como la ejecución de modelos de inteligencia artificial. \n\nFinalmente, es importante mencionar que la documentación oficial de Kubernetes proporciona guías detalladas para la configuración y el troubleshooting de la plataforma, lo que facilita la implementación y el mantenimiento de clústeres de Kubernetes.",
+    "sources": [
+      {
+        "title": "Release Notes de Kubernetes 1.29",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md"
+      },
+      {
+        "title": "Documentación oficial de Kubernetes",
+        "url": "https://github.com/kubernetes/community/blob/main/contributors/guide/release-notes.md"
+      },
+      {
+        "title": "Proyecto agent-sandbox",
+        "url": "https://github.com/kubernetes-sigs/agent-sandbox"
+      }
+    ]
+  },
   "2026-05-08_0944": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",
