@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-12T10:37:26.307815+00:00</updated>
+  <updated>2026-05-13T10:35:40.690614+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -330,5 +330,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-09_0924.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para la gestión de aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo la versión 4.20.21 y la integración con Azure y IBM Cloud.</summary>
     <published>2026-05-09T09:24:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-13_1034.html</id>
+    <title>OpenShift: Mejoras y Best Practices</title>
+    <updated>2026-05-13T10:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores basada en Kubernetes que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Una de las características más destacadas de OpenShift es su capacidad para gestionar los operadores, que son paquetes de software que se encargan de instalar y configurar aplicaciones en el cluster. Para gestionar los operadores, OpenShift utiliza el Operator Lifecycle Manager (OLM), que se puede configurar utilizando comandos como &lt;code&gt;oc get operators&lt;/code&gt; para obtener una lista de los operadores disponibles.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de OpenShift es su capacidad para realizar builds y despliegues de aplicaciones de manera automática. Para ello, se puede utilizar el comando &lt;code&gt;oc start-build&lt;/code&gt; para iniciar un build de una aplicación, y luego &lt;code&gt;oc rollout latest&lt;/code&gt; para desplegar la versión más reciente de la aplicación. Además, OpenShift ofrece una variedad de herramientas para monitorear y gestionar los despliegues de aplicaciones, como el comando &lt;code&gt;oc get pods&lt;/code&gt; para obtener una lista de los pods que se están ejecutando en el cluster.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift ofrece una variedad de características para proteger los despliegues de aplicaciones, como la autenticación y autorización mediante OAuth. Para configurar la autenticación y autorización, se puede utilizar el comando &lt;code&gt;oc create secret&lt;/code&gt; para crear un secreto que contenga las credenciales de autenticación, y luego &lt;code&gt;oc apply&lt;/code&gt; para aplicar la configuración de autenticación y autorización. Además, OpenShift ofrece una variedad de herramientas para monitorear y gestionar la seguridad de los despliegues de aplicaciones, como el comando &lt;code&gt;oc get securitycontextconstraints&lt;/code&gt; para obtener una lista de las restricciones de seguridad que se están aplicando en el cluster.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Para aprovechar al máximo las características de OpenShift, es importante entender cómo funcionan los operadores, los builds y los despliegues de aplicaciones, así como las características de seguridad que se ofrecen.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift está en constante evolución, y se están agregando nuevas características y funciones para mejorar la plataforma. Por ejemplo, la versión 4.20.21 de OpenShift Container Platform incluye actualizaciones de paquetes y imágenes que solucionan varios errores y agregan mejoras. Para estar al tanto de las últimas novedades y best practices, es recomendable consultar las fuentes oficiales de OpenShift y participar en la comunidad de desarrolladores y administradores de sistemas.&lt;/p&gt;
+&lt;p&gt;Para migrar a OpenShift, es importante planificar cuidadosamente el proceso de migración, teniendo en cuenta los requisitos de la aplicación y la infraestructura existente. Se puede utilizar el comando &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar las aplicaciones y los datos a OpenShift. Además, es importante considerar la seguridad y la autenticación durante el proceso de migración, utilizando herramientas como OAuth y SSL/TLS para proteger los despliegues de aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Red_Hat"&gt;Red Hat - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/red-hat-openshift"&gt;Red Hat OpenShift | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:13862.html"&gt;RHSA-2026:13862 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/solutions/7142250"&gt;How to mitigate the 'Dirty Frag' CVE-2026-43284 and CVE-2026-43500 in OpenShift 4 - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-13_1034.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
+    <published>2026-05-13T10:34:00+00:00</published>
   </entry>
 </feed>

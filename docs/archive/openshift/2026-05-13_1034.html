@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-13 1034 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>OpenShift es una plataforma de contenedores basada en Kubernetes que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Una de las características más destacadas de OpenShift es su capacidad para gestionar los operadores, que son paquetes de software que se encargan de instalar y configurar aplicaciones en el cluster. Para gestionar los operadores, OpenShift utiliza el Operator Lifecycle Manager (OLM), que se puede configurar utilizando comandos como `oc get operators` para obtener una lista de los operadores disponibles.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de OpenShift es su capacidad para realizar builds y despliegues de aplicaciones de manera automática. Para ello, se puede utilizar el comando `oc start-build` para iniciar un build de una aplicación, y luego `oc rollout latest` para desplegar la versión más reciente de la aplicación. Además, OpenShift ofrece una variedad de herramientas para monitorear y gestionar los despliegues de aplicaciones, como el comando `oc get pods` para obtener una lista de los pods que se están ejecutando en el cluster.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece una variedad de características para proteger los despliegues de aplicaciones, como la autenticación y autorización mediante OAuth. Para configurar la autenticación y autorización, se puede utilizar el comando `oc create secret` para crear un secreto que contenga las credenciales de autenticación, y luego `oc apply` para aplicar la configuración de autenticación y autorización. Además, OpenShift ofrece una variedad de herramientas para monitorear y gestionar la seguridad de los despliegues de aplicaciones, como el comando `oc get securitycontextconstraints` para obtener una lista de las restricciones de seguridad que se están aplicando en el cluster.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. Para aprovechar al máximo las características de OpenShift, es importante entender cómo funcionan los operadores, los builds y los despliegues de aplicaciones, así como las características de seguridad que se ofrecen.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que OpenShift está en constante evolución, y se están agregando nuevas características y funciones para mejorar la plataforma. Por ejemplo, la versión 4.20.21 de OpenShift Container Platform incluye actualizaciones de paquetes y imágenes que solucionan varios errores y agregan mejoras. Para estar al tanto de las últimas novedades y best practices, es recomendable consultar las fuentes oficiales de OpenShift y participar en la comunidad de desarrolladores y administradores de sistemas.</p>
+            
+        
+            
+        
+            
+            <p>Para migrar a OpenShift, es importante planificar cuidadosamente el proceso de migración, teniendo en cuenta los requisitos de la aplicación y la infraestructura existente. Se puede utilizar el comando `oc adm migrate` para migrar las aplicaciones y los datos a OpenShift. Además, es importante considerar la seguridad y la autenticación durante el proceso de migración, utilizando herramientas como OAuth y SSL/TLS para proteger los despliegues de aplicaciones.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Red_Hat" target="_blank">Red Hat - Wikipedia</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://endoflife.date/red-hat-openshift" target="_blank">Red Hat OpenShift | endoflife.date</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:13862.html" target="_blank">RHSA-2026:13862 - Security Advisory</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/solutions/7142250" target="_blank">How to mitigate the 'Dirty Frag' CVE-2026-43284 and CVE-2026-43500 in OpenShift 4 - Red Hat Customer Portal</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-09_0924.html">&larr; 2026-05-09 0924</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

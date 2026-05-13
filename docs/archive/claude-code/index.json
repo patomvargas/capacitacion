@@ -1,4 +1,32 @@
 {
+  "2026-05-13_1034": {
+    "slug": "claude-code",
+    "title": "Claude Code: Mejoras y Best Practices",
+    "summary": "Claude Code es un sistema que ha recibido varias mejoras y correcciones en los últimos meses. En este artículo, se presentan las novedades y best practices para utilizar Claude Code de manera efectiva.",
+    "content": "\nEl sistema Claude Code ha sido objeto de varias mejoras y correcciones en los últimos meses. Una de las mejoras más destacadas es la inclusión del changelog completo en las notas de lanzamiento de GitHub y Atom feeds, como se puede ver en el issue #48271. Esto permite a los usuarios tener una visión clara de los cambios realizados en cada versión.\n\nOtra mejora importante es la corrección del bug que provocaba la invocación recursiva de `claude changelog`, lo que podía generar cientos de sesiones y agotar el límite de cuota. Este bug se ha solucionado en el issue #48929. Además, se ha corregido el problema de congelamiento del sistema, que podía durar desde 5 hasta 20 minutos o más, como se describe en el issue #26224.\n\nPara utilizar Claude Code de manera efectiva, es importante configurar las variables de entorno correctamente. Sin embargo, la documentación de las variables de entorno está desactualizada, como se menciona en el issue #47623. Es importante revisar la documentación oficial para obtener la información más actualizada. También es importante mencionar que la documentación de OpenTelemetry monitoring está incompleta, como se describe en el issue #51780.\n\nEn cuanto a las best practices, es importante utilizar comandos como `claude --help` para obtener información sobre los comandos disponibles y sus opciones. También es útil utilizar `claude --version` para verificar la versión del sistema. Además, se puede utilizar `claude changelog` para ver el historial de cambios del sistema.\n\nEn resumen, Claude Code es un sistema que ha recibido varias mejoras y correcciones en los últimos meses. Es importante estar al tanto de las novedades y best practices para utilizar el sistema de manera efectiva.\n\nPara obtener más información, se pueden consultar las fuentes oficiales de Claude Code, como la documentación oficial y los issues en GitHub.\n\n  ",
+    "sources": [
+      {
+        "title": "Issue #48271",
+        "url": "https://github.com/anthropics/claude-code/issues/48271"
+      },
+      {
+        "title": "Issue #48929",
+        "url": "https://github.com/anthropics/claude-code/issues/48929"
+      },
+      {
+        "title": "Issue #26224",
+        "url": "https://github.com/anthropics/claude-code/issues/26224"
+      },
+      {
+        "title": "Issue #47623",
+        "url": "https://github.com/anthropics/claude-code/issues/47623"
+      },
+      {
+        "title": "Issue #51780",
+        "url": "https://github.com/anthropics/claude-code/issues/51780"
+      }
+    ]
+  },
   "2026-05-09_0924": {
     "slug": "claude-code",
     "title": "Mejores prácticas para Claude Code",
