@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Administración y Mejoras - Superset</title>
+    <title>Superset: Mejoras y Best Practices - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Administración y Mejoras</h1>
-    <div class="meta">2026-05-10 0941 · Superset</div>
+    <h1>Superset: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-14 1024 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla y eficiente. Para instalar Superset, se puede utilizar el comando `docker run -p 8088:8088 apache/superset`.</p>
+            <p>Superset es una herramienta de código abierto que permite a los desarrolladores crear dashboards y gráficos personalizados para visualizar datos. Una de las características más destacadas de Superset es su capacidad para conectar con diferentes fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos.</p>
             
         
             
         
             
-            <p>Una de las últimas novedades en Superset es la corrección del error `mcp no such command` en la versión más reciente de Docker. Este error se solucionó mediante la actualización de la imagen de Docker a la versión más reciente.</p>
+            <p>Para crear un dashboard en Superset, se puede utilizar el comando `superset init` para inicializar el proyecto. Luego, se puede agregar un gráfico utilizando el comando `superset chart create`. Es importante mencionar que Superset admite diferentes tipos de gráficos, como gráficos de línea, barras y scatter plots.</p>
             
         
             
         
             
-            <p>Además, se han realizado mejoras en la administración de Superset, como la corrección del bug que impedía que los filtros reutilizaran la consulta de los conjuntos de datos virtuales. Esto se logró mediante la actualización de la configuración de `superset_config.py` y la ejecución del comando `superset db upgrade`.</p>
+            <p>En cuanto a las mejoras, se ha reportado un error inesperado al cargar filtros en un dashboard, como se menciona en el issue #28687 de GitHub. Para solucionar este problema, se puede intentar actualizar la versión de Superset a la última disponible. Además, se ha reportado un problema con los gráficos de línea cuando se tienen dos series con diferentes puntos de tiempo, como se menciona en el issue #31202.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la corrección del error que ocultaba la etiqueta de fecha en el eje X de las gráficas de series temporales. Esto se solucionó mediante la actualización de la versión de Superset y la ejecución del comando `superset init`.</p>
+            <p>Para solucionar este problema, se puede intentar utilizar el comando `superset chart update` para actualizar el gráfico. También se ha reportado un problema con la etiqueta de fecha en el eje x de los gráficos de serie de tiempo, como se menciona en el issue #39361. Para solucionar este problema, se puede intentar utilizar el comando `superset chart configure` para configurar el gráfico.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de Superset, se recomienda utilizar la autenticación de Kerberos y configurar los permisos de acceso adecuados. También es importante mantener la versión de Superset actualizada para evitar vulnerabilidades de seguridad.</p>
+            <p>En cuanto a las best practices, es importante mencionar que se debe utilizar el comando `superset db backup` para realizar copias de seguridad de la base de datos. También se debe utilizar el comando `superset chart delete` para eliminar gráficos que no se utilicen. Además, se debe utilizar el comando `superset user add` para agregar nuevos usuarios y asignarles permisos adecuados.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, se recomienda utilizar plantillas de Jinja para crear dashboards personalizados y aprovechar las funcionalidades de SQL Lab para crear consultas complejas. También es importante crear conjuntos de datos y gráficas de manera organizada y estructurada para facilitar la visualización y análisis de los datos.</p>
+            <p>En resumen, Superset es una herramienta poderosa para visualizar datos y crear dashboards personalizados. Sin embargo, es importante estar al tanto de las mejoras y best practices para trabajar con Superset de manera efectiva.</p>
             
         
     </div>
@@ -105,27 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/39872" target="_blank">Docker superset mcp no such command on latest #39872</a>
+                <a href="https://github.com/apache/superset/issues/28687" target="_blank">Superset throws unexpected error while loading filters in a dashboard</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/39431" target="_blank">bug(Dockerfile): service-worker.js missing from lean/production image #39431</a>
+                <a href="https://github.com/apache/superset/discussions/39570" target="_blank">Please release 6.1... or at least ANYTHING after 6.0.0</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/39342" target="_blank">Filters do not reuse the virtual dataset query #39342</a>
+                <a href="https://github.com/apache/superset/issues/31202" target="_blank">Line Chart not working when 2 series have 2 different time points</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39361" target="_blank">Last date label hidden on Time Series X-axis #39361</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@gandheharshith21/superset-live-dashboard-267caa9784d1" target="_blank">Superset Live Dashboard. Functional validation on Acceldata ...</a>
+                <a href="https://github.com/apache/superset/discussions/39361" target="_blank">Last date label hidden on Time Series X-axis</a>
                 
             </li>
             
@@ -136,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-10_0941.html">&larr; 2026-05-10 0941</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-14_1024.html">2026-05-14 1024 &rarr;</a>
             
         </div>
     </div>

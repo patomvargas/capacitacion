@@ -1,4 +1,28 @@
 {
+  "2026-05-14_1024": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Best Practices",
+    "summary": "Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. En este artículo, se presentan algunas de las mejoras y best practices para trabajar con Superset.",
+    "content": "Superset es una herramienta de código abierto que permite a los desarrolladores crear dashboards y gráficos personalizados para visualizar datos. Una de las características más destacadas de Superset es su capacidad para conectar con diferentes fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando `superset db upgrade` para actualizar la base de datos.\n\nPara crear un dashboard en Superset, se puede utilizar el comando `superset init` para inicializar el proyecto. Luego, se puede agregar un gráfico utilizando el comando `superset chart create`. Es importante mencionar que Superset admite diferentes tipos de gráficos, como gráficos de línea, barras y scatter plots.\n\nEn cuanto a las mejoras, se ha reportado un error inesperado al cargar filtros en un dashboard, como se menciona en el issue #28687 de GitHub. Para solucionar este problema, se puede intentar actualizar la versión de Superset a la última disponible. Además, se ha reportado un problema con los gráficos de línea cuando se tienen dos series con diferentes puntos de tiempo, como se menciona en el issue #31202.\n\nPara solucionar este problema, se puede intentar utilizar el comando `superset chart update` para actualizar el gráfico. También se ha reportado un problema con la etiqueta de fecha en el eje x de los gráficos de serie de tiempo, como se menciona en el issue #39361. Para solucionar este problema, se puede intentar utilizar el comando `superset chart configure` para configurar el gráfico.\n\nEn cuanto a las best practices, es importante mencionar que se debe utilizar el comando `superset db backup` para realizar copias de seguridad de la base de datos. También se debe utilizar el comando `superset chart delete` para eliminar gráficos que no se utilicen. Además, se debe utilizar el comando `superset user add` para agregar nuevos usuarios y asignarles permisos adecuados.\n\nEn resumen, Superset es una herramienta poderosa para visualizar datos y crear dashboards personalizados. Sin embargo, es importante estar al tanto de las mejoras y best practices para trabajar con Superset de manera efectiva.",
+    "sources": [
+      {
+        "title": "Superset throws unexpected error while loading filters in a dashboard",
+        "url": "https://github.com/apache/superset/issues/28687"
+      },
+      {
+        "title": "Please release 6.1... or at least ANYTHING after 6.0.0",
+        "url": "https://github.com/apache/superset/discussions/39570"
+      },
+      {
+        "title": "Line Chart not working when 2 series have 2 different time points",
+        "url": "https://github.com/apache/superset/issues/31202"
+      },
+      {
+        "title": "Last date label hidden on Time Series X-axis",
+        "url": "https://github.com/apache/superset/discussions/39361"
+      }
+    ]
+  },
   "2026-05-10_0941": {
     "slug": "superset",
     "title": "Superset: Administración y Mejoras",

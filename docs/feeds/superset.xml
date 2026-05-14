@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-13T10:35:40.703162+00:00</updated>
+  <updated>2026-05-14T10:25:30.977651+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -341,5 +341,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-10_0941.html"/>
     <summary>Superset es una herramienta de visualización de datos y creación de dashboards. En este artículo, se presentan las últimas novedades y mejores prácticas para la administración y mejora de Superset.</summary>
     <published>2026-05-10T09:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-05-14_1024.html</id>
+    <title>Superset: Mejoras y Best Practices</title>
+    <updated>2026-05-14T10:24:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite a los desarrolladores crear dashboards y gráficos personalizados para visualizar datos. Una de las características más destacadas de Superset es su capacidad para conectar con diferentes fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos.&lt;/p&gt;
+&lt;p&gt;Para crear un dashboard en Superset, se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar el proyecto. Luego, se puede agregar un gráfico utilizando el comando &lt;code&gt;superset chart create&lt;/code&gt;. Es importante mencionar que Superset admite diferentes tipos de gráficos, como gráficos de línea, barras y scatter plots.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejoras, se ha reportado un error inesperado al cargar filtros en un dashboard, como se menciona en el issue #28687 de GitHub. Para solucionar este problema, se puede intentar actualizar la versión de Superset a la última disponible. Además, se ha reportado un problema con los gráficos de línea cuando se tienen dos series con diferentes puntos de tiempo, como se menciona en el issue #31202.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede intentar utilizar el comando &lt;code&gt;superset chart update&lt;/code&gt; para actualizar el gráfico. También se ha reportado un problema con la etiqueta de fecha en el eje x de los gráficos de serie de tiempo, como se menciona en el issue #39361. Para solucionar este problema, se puede intentar utilizar el comando &lt;code&gt;superset chart configure&lt;/code&gt; para configurar el gráfico.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar que se debe utilizar el comando &lt;code&gt;superset db backup&lt;/code&gt; para realizar copias de seguridad de la base de datos. También se debe utilizar el comando &lt;code&gt;superset chart delete&lt;/code&gt; para eliminar gráficos que no se utilicen. Además, se debe utilizar el comando &lt;code&gt;superset user add&lt;/code&gt; para agregar nuevos usuarios y asignarles permisos adecuados.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para visualizar datos y crear dashboards personalizados. Sin embargo, es importante estar al tanto de las mejoras y best practices para trabajar con Superset de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/28687"&gt;Superset throws unexpected error while loading filters in a dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39570"&gt;Please release 6.1... or at least ANYTHING after 6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/31202"&gt;Line Chart not working when 2 series have 2 different time points&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39361"&gt;Last date label hidden on Time Series X-axis&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-14_1024.html"/>
+    <summary>Superset es una herramienta de visualización de datos que permite crear dashboards y gráficos personalizados. En este artículo, se presentan algunas de las mejoras y best practices para trabajar con Superset.</summary>
+    <published>2026-05-14T10:24:00+00:00</published>
   </entry>
 </feed>

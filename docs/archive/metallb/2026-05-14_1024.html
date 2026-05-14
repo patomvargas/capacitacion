@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Automatización de Workflows con n8n - n8n</title>
-    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>Automatización de Workflows con n8n</h1>
-    <div class="meta">2026-05-10 0941 · n8n</div>
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-05-14 1024 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>n8n se basa en nodos, que son los bloques de construcción de los flujos de trabajo. Cada nodo puede realizar una tarea específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos.</p>
+            <p>MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP a servicios. Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación, ya sea L2 o BGP. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f metallb-config.yaml`, donde `metallb-config.yaml` es un archivo de configuración que contiene la siguiente información: `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.100-192.168.1.200`.</p>
             
         
             
         
             
-            <p>Para empezar a usar n8n, se puede instalar la aplicación de escritorio o ejecutarla en un servidor. La aplicación de escritorio se puede instalar con el comando `npm install -g n8n-desktop-app`. Una vez instalada, se puede acceder a la interfaz web de n8n y empezar a crear flujos de trabajo.</p>
+        
+            
+            <p>Para configurar MetalLB en modo BGP, es necesario especificar los parámetros de configuración de BGP, como el AS y el router ID. Por ejemplo: `kubectl apply -f metallb-bgp-config.yaml`, donde `metallb-bgp-config.yaml` es un archivo de configuración que contiene la siguiente información: `bgp: - name: default - asn: 64512 - router-id: 10.0.0.1 - peers: - peer-address: 10.0.0.2 - peer-asn: 64513`.</p>
             
         
             
         
             
-            <p>n8n también admite la integración con diferentes servicios y herramientas, como Microsoft Azure, GitHub y Slack. Por ejemplo, se puede crear un flujo de trabajo que envíe un mensaje de Slack cuando se crea un nuevo issue en GitHub. Para hacer esto, se puede usar el nodo `GitHub` y configurarlo con las credenciales de GitHub y el webhook de Slack.</p>
+        
+            
+            <p>Una vez configurado MetalLB, es posible asignar direcciones IP a servicios utilizando el objeto `Service` de Kubernetes. Por ejemplo: `kubectl expose deployment mi-deployment --type=LoadBalancer --port=80`, donde `mi-deployment` es el nombre de la implementación que se desea exponer.</p>
             
         
             
         
             
-            <p>Otro ejemplo de uso de n8n es la automatización de tareas de DevOps. Se puede crear un flujo de trabajo que realice una copia de seguridad de una base de datos y la envíe a un servidor de almacenamiento en la nube. Para hacer esto, se puede usar el nodo `MySQL` y configurarlo con las credenciales de la base de datos y el servidor de almacenamiento en la nube.</p>
+        
+            
+            <p>Para solucionar problemas con MetalLB, es posible utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre el estado de los componentes de MetalLB. Por ejemplo: `kubectl logs -f metallb-controller`, donde `metallb-controller` es el nombre del pod que ejecuta el controlador de MetalLB.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, n8n admite la autenticación con credenciales y la configuración de webhooks seguros. Se puede configurar un webhook con un token de autenticación para que solo se pueda acceder al flujo de trabajo si se proporciona el token correcto.</p>
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se integra de manera nativa con el sistema de orquestación de contenedores. Por ejemplo, es posible utilizar `kubectl` para crear y gestionar objetos de configuración de MetalLB, como los pools de direcciones IP y los peers BGP.</p>
             
         
             
         
             
-            <p>En resumen, n8n es una herramienta poderosa para la automatización de workflows que admite la integración con diferentes servicios y herramientas. Con n8n, se pueden crear flujos de trabajo personalizados y seguros para automatizar tareas y procesos.</p>
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para equilibrar la carga en Kubernetes, que permite asignar direcciones IP a servicios de manera flexible y escalable. Su configuración y uso son relativamente sencillos, y su integración con Kubernetes es nativa.</p>
             
         
     </div>
@@ -105,17 +115,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n-desktop-app" target="_blank">n8n-io/n8n-desktop-app</a>
+                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/ai-systems-lab/best-n8n-workflows-to-build-with-claude-code-2026-a7974cabe9dc" target="_blank">Best n8n Workflows To Build with Claude Code (2026)</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@anishsingh17625/integrating-n8n-with-microsoft-azure-a-practical-guide-for-engineering-teams-6bb9fefef491" target="_blank">Integrating n8n with Microsoft Azure: A Practical Guide for Engineering Teams</a>
+                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
                 
             </li>
             
@@ -126,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-10_0941.html">&larr; 2026-05-10 0941</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-14_1024.html">2026-05-14 1024 &rarr;</a>
             
         </div>
     </div>

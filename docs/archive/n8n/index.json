@@ -1,4 +1,40 @@
 {
+  "2026-05-14_1024": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización que permite a los desarrolladores y administradores crear flujos de trabajo personalizados. En este artículo, se explorarán las características y funcionalidades de n8n, incluyendo nodos, workflows, credenciales y webhooks.",
+    "content": "n8n es una herramienta de automatización que se distribuye bajo la licencia Sustainable Use License. Permite a los usuarios crear flujos de trabajo personalizados utilizando nodos, que son bloques de código que se pueden combinar para realizar tareas específicas. Por ejemplo, se puede utilizar el nodo `n8n-nodes-base.jira` para conectar con Jira y recuperar issues utilizando JQL (Jira Query Language). \n\nPara crear un flujo de trabajo en n8n, se puede utilizar la interfaz de usuario web o la aplicación de escritorio. La aplicación de escritorio se puede instalar utilizando el comando `npm install -g n8n-desktop-app`. Una vez instalada, se puede acceder a la interfaz de usuario y crear un nuevo flujo de trabajo. \n\nLos workflows en n8n se componen de nodos que se pueden conectar para crear un flujo de trabajo personalizado. Por ejemplo, se puede crear un flujo de trabajo que utilice el nodo `Create branded LinkedIn carousels with GPT-4o-mini, Figma templates & Templated-9455` para crear carousels de LinkedIn personalizados. También se puede utilizar el nodo `Data Analytics Department with AI Team: CDO & Specialists Using OpenAI O3-6912` para agregar nuevos leads en Lemlist desde Airtable. \n\nEn cuanto a la seguridad, n8n utiliza credenciales para autenticar a los usuarios y proteger los flujos de trabajo. Se pueden utilizar credenciales de diferentes proveedores, como Jira o LinkedIn, para conectar con sus respectivas APIs. También se pueden utilizar webhooks para recibir notificaciones cuando se produzcan eventos específicos en el flujo de trabajo. \n\nPara self-hosting, se puede utilizar la imagen de Docker de n8n para crear un contenedor personalizado. Se puede utilizar el comando `docker run -p 5678:5678 n8n/n8n` para iniciar el contenedor y acceder a la interfaz de usuario. \n\nEn resumen, n8n es una herramienta de automatización poderosa que permite a los desarrolladores y administradores crear flujos de trabajo personalizados utilizando nodos, credenciales y webhooks. Se puede utilizar para automatizar tareas específicas, como la creación de carousels de LinkedIn o la agregación de nuevos leads en Lemlist.",
+    "sources": [
+      {
+        "title": "n8n-io/n8n-desktop-app",
+        "url": "https://github.com/n8n-io/n8n-desktop-app"
+      },
+      {
+        "title": "AI Agent use of Tools #15883",
+        "url": "https://github.com/n8n-io/n8n/issues/15883"
+      },
+      {
+        "title": "The complete X/Twitter automation toolkit",
+        "url": "https://github.com/nirholas/XActions"
+      },
+      {
+        "title": "n8n-nodes-base.jira.md",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/app-nodes/n8n-nodes-base.jira.md"
+      },
+      {
+        "title": "Create branded LinkedIn carousels with GPT-4o-mini, Figma templates & Templated-9455",
+        "url": "https://github.com/nusquama/n8nworkflows.xyz/tree/main/workflows/Create+branded+LinkedIn+carousels+with+GPT-4o-mini,+Figma+templates+&+Templated-9455"
+      },
+      {
+        "title": "Data Analytics Department with AI Team: CDO & Specialists Using OpenAI O3-6912",
+        "url": "https://github.com/nusquama/n8nworkflows.xyz/tree/main/workflows/Data+Analytics+Department+with+AI+Team:+CDO+&+Specialists+Using+OpenAI+O3-6912"
+      },
+      {
+        "title": "achiya-automation/safari-mcp",
+        "url": "https://github.com/achiya-automation/safari-mcp"
+      }
+    ]
+  },
   "2026-05-10_0941": {
     "slug": "n8n",
     "title": "Automatización de Workflows con n8n",

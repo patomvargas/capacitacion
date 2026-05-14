@@ -1,4 +1,20 @@
 {
+  "2026-05-14_1024": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en Kubernetes",
+    "summary": "MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP a servicios. En este artículo, se explora su configuración y uso en modo L2 y BGP.",
+    "content": "MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP a servicios. Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación, ya sea L2 o BGP. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f metallb-config.yaml`, donde `metallb-config.yaml` es un archivo de configuración que contiene la siguiente información: `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.100-192.168.1.200`.\n\n \nPara configurar MetalLB en modo BGP, es necesario especificar los parámetros de configuración de BGP, como el AS y el router ID. Por ejemplo: `kubectl apply -f metallb-bgp-config.yaml`, donde `metallb-bgp-config.yaml` es un archivo de configuración que contiene la siguiente información: `bgp: - name: default - asn: 64512 - router-id: 10.0.0.1 - peers: - peer-address: 10.0.0.2 - peer-asn: 64513`.\n\n \nUna vez configurado MetalLB, es posible asignar direcciones IP a servicios utilizando el objeto `Service` de Kubernetes. Por ejemplo: `kubectl expose deployment mi-deployment --type=LoadBalancer --port=80`, donde `mi-deployment` es el nombre de la implementación que se desea exponer.\n\n \nPara solucionar problemas con MetalLB, es posible utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre el estado de los componentes de MetalLB. Por ejemplo: `kubectl logs -f metallb-controller`, donde `metallb-controller` es el nombre del pod que ejecuta el controlador de MetalLB.\n\n \nEn cuanto a la integración con Kubernetes, MetalLB se integra de manera nativa con el sistema de orquestación de contenedores. Por ejemplo, es posible utilizar `kubectl` para crear y gestionar objetos de configuración de MetalLB, como los pools de direcciones IP y los peers BGP.\n\n \nEn resumen, MetalLB es una herramienta poderosa para equilibrar la carga en Kubernetes, que permite asignar direcciones IP a servicios de manera flexible y escalable. Su configuración y uso son relativamente sencillos, y su integración con Kubernetes es nativa.",
+    "sources": [
+      {
+        "title": "MetalLB Documentation",
+        "url": "https://metallb.universe.tf/"
+      },
+      {
+        "title": "Kubernetes Documentation",
+        "url": "https://kubernetes.io/docs/"
+      }
+    ]
+  },
   "2026-05-10_0941": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

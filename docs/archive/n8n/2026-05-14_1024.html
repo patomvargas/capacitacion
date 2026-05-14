@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatización con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+    </div>
+
+    <h1>Automatización con n8n</h1>
+    <div class="meta">2026-05-14 1024 · n8n</div>
+
+    <div class="content">
+        
+        
+            
+            <p>n8n es una herramienta de automatización que se distribuye bajo la licencia Sustainable Use License. Permite a los usuarios crear flujos de trabajo personalizados utilizando nodos, que son bloques de código que se pueden combinar para realizar tareas específicas. Por ejemplo, se puede utilizar el nodo `n8n-nodes-base.jira` para conectar con Jira y recuperar issues utilizando JQL (Jira Query Language).</p>
+            
+        
+            
+        
+            
+            <p>Para crear un flujo de trabajo en n8n, se puede utilizar la interfaz de usuario web o la aplicación de escritorio. La aplicación de escritorio se puede instalar utilizando el comando `npm install -g n8n-desktop-app`. Una vez instalada, se puede acceder a la interfaz de usuario y crear un nuevo flujo de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Los workflows en n8n se componen de nodos que se pueden conectar para crear un flujo de trabajo personalizado. Por ejemplo, se puede crear un flujo de trabajo que utilice el nodo `Create branded LinkedIn carousels with GPT-4o-mini, Figma templates & Templated-9455` para crear carousels de LinkedIn personalizados. También se puede utilizar el nodo `Data Analytics Department with AI Team: CDO & Specialists Using OpenAI O3-6912` para agregar nuevos leads en Lemlist desde Airtable.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, n8n utiliza credenciales para autenticar a los usuarios y proteger los flujos de trabajo. Se pueden utilizar credenciales de diferentes proveedores, como Jira o LinkedIn, para conectar con sus respectivas APIs. También se pueden utilizar webhooks para recibir notificaciones cuando se produzcan eventos específicos en el flujo de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Para self-hosting, se puede utilizar la imagen de Docker de n8n para crear un contenedor personalizado. Se puede utilizar el comando `docker run -p 5678:5678 n8n/n8n` para iniciar el contenedor y acceder a la interfaz de usuario.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, n8n es una herramienta de automatización poderosa que permite a los desarrolladores y administradores crear flujos de trabajo personalizados utilizando nodos, credenciales y webhooks. Se puede utilizar para automatizar tareas específicas, como la creación de carousels de LinkedIn o la agregación de nuevos leads en Lemlist.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n-desktop-app" target="_blank">n8n-io/n8n-desktop-app</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n/issues/15883" target="_blank">AI Agent use of Tools #15883</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/nirholas/XActions" target="_blank">The complete X/Twitter automation toolkit</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/app-nodes/n8n-nodes-base.jira.md" target="_blank">n8n-nodes-base.jira.md</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/nusquama/n8nworkflows.xyz/tree/main/workflows/Create+branded+LinkedIn+carousels+with+GPT-4o-mini,+Figma+templates+&+Templated-9455" target="_blank">Create branded LinkedIn carousels with GPT-4o-mini, Figma templates & Templated-9455</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/nusquama/n8nworkflows.xyz/tree/main/workflows/Data+Analytics+Department+with+AI+Team:+CDO+&+Specialists+Using+OpenAI+O3-6912" target="_blank">Data Analytics Department with AI Team: CDO & Specialists Using OpenAI O3-6912</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/achiya-automation/safari-mcp" target="_blank">achiya-automation/safari-mcp</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-10_0941.html">&larr; 2026-05-10 0941</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

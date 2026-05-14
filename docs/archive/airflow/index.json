@@ -1,4 +1,24 @@
 {
+  "2026-05-14_1024": {
+    "slug": "airflow",
+    "title": "Airflow: Orquestación de Datos",
+    "summary": "Airflow es una herramienta de orquestación de datos que permite definir y ejecutar flujos de trabajo de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.",
+    "content": "Airflow es una herramienta de orquestación de datos que permite definir y ejecutar flujos de trabajo de manera eficiente. Un DAG (Directed Acyclic Graph) es el concepto fundamental en Airflow, que representa un flujo de trabajo como un grafo dirigido acíclico. Los DAGs se componen de tareas y operadores, que se pueden configurar para ejecutar comandos específicos, como `bash` o `python`.\n\nPara crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego `airflow webserver` para iniciar el servidor web. Luego, se puede crear un archivo DAG que define el flujo de trabajo, utilizando operadores como `BashOperator` o `PythonOperator`. Por ejemplo, se puede crear un DAG que ejecuta un comando `bash` para extraer datos de una base de datos, y luego un comando `python` para procesar los datos.\n\nLos sensores en Airflow permiten esperar a que se cumplan ciertas condiciones antes de ejecutar una tarea. Por ejemplo, se puede utilizar un sensor `FileSensor` para esperar a que se cree un archivo en un directorio específico. Los sensores se pueden configurar para ejecutar comandos específicos, como `bash` o `python`, cuando se cumple la condición.\n\nLa comunicación entre tareas en Airflow se puede realizar mediante XCom, que permite compartir variables entre tareas. Por ejemplo, se puede utilizar XCom para compartir un archivo generado por una tarea con otra tarea. Las conexiones en Airflow permiten definir conexiones a bases de datos, servidores de archivos, etc. Por ejemplo, se puede crear una conexión a una base de datos MySQL utilizando el comando `airflow connections --add`.\n\nEn cuanto a las mejores prácticas, es importante definir los DAGs de manera modular, para que se puedan reutilizar en diferentes flujos de trabajo. También es importante utilizar sensores y XCom para comunicar entre tareas, en lugar de utilizar archivos temporales. Finalmente, es importante monitorear los flujos de trabajo y ajustar los parámetros de configuración según sea necesario.\n\nEn la versión 2.x de Airflow, se han introducido varias mejoras, como la compatibilidad con Celery Workers y la capacidad de definir topologías avanzadas. También se ha mejorado la interfaz de usuario, con una nueva vista de DAGs y una mejor navegación.\n\nEn resumen, Airflow es una herramienta poderosa para la orquestación de datos, que permite definir y ejecutar flujos de trabajo de manera eficiente. Con las mejores prácticas y novedades de Airflow 2.x, se pueden crear flujos de trabajo complejos y escalables.\n\nPara más información, se puede consultar la documentación oficial de Airflow, que incluye tutoriales y ejemplos de cómo utilizar la herramienta.\n\n",
+    "sources": [
+      {
+        "title": "Apache Airflow",
+        "url": "https://github.com/apache/airflow"
+      },
+      {
+        "title": "The Blueprint for Modern Data Orchestration",
+        "url": "https://dev.to/cliffe_okoth/a-beginners-guide-to-apache-airflow-3-4mp9"
+      },
+      {
+        "title": "Apache Airflow for Beginners",
+        "url": "https://dev.to/robert_njuguna/apache-airflow-for-beginners-dags-tasks-operators-and-scheduling-3f71"
+      }
+    ]
+  },
   "2026-05-10_0941": {
     "slug": "airflow",
     "title": "Airflow 3.2.0: Mejoras y Best Practices",
