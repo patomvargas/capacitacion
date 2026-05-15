@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-14T10:25:30.985446+00:00</updated>
+  <updated>2026-05-15T10:31:31.121275+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -165,5 +165,37 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-07_1029.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se exploran los providers y módulos avanzados de Terraform, incluyendo el Terraform AWS Cloud Control Provider y el Terraform Nutanix Provider.</summary>
     <published>2026-05-07T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-15_1030.html</id>
+    <title>Terraform: Infraestructura como Código</title>
+    <updated>2026-05-15T10:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras en la nube de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar el proveedor de nube correspondiente. Por ejemplo, para trabajar con AWS, se puede utilizar el comando &lt;code&gt;terraform init&lt;/code&gt; para inicializar el proyecto y luego configurar el proveedor de AWS con el comando &lt;code&gt;provider 'aws' { region = 'us-west-2' }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Terraform es la gestión de estados. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado &lt;code&gt;terraform.tfstate&lt;/code&gt;. Para gestionar el estado de Terraform, se pueden utilizar comandos como &lt;code&gt;terraform state list&lt;/code&gt; para ver la lista de recursos que se están gestionando y &lt;code&gt;terraform state rm&lt;/code&gt; para eliminar un recurso del estado.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Terraform es la capacidad de trabajar con módulos. Los módulos son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos. Para crear un módulo, se puede utilizar el comando &lt;code&gt;terraform module create&lt;/code&gt; y luego configurar el módulo con el comando &lt;code&gt;module 'mi_modulo' { source = './mi_modulo' }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha lanzado la versión 2.0.0 de Terraform Enterprise, que incluye nuevas características y mejoras en la gestión de la infraestructura. También se ha lanzado la versión 2.6.1 del proveedor de Nomad, que incluye nuevas características y correcciones de errores.&lt;/p&gt;
+&lt;p&gt;Para importar recursos existentes en Terraform, se puede utilizar el comando &lt;code&gt;terraform import&lt;/code&gt;. Por ejemplo, para importar un recurso de AWS, se puede utilizar el comando &lt;code&gt;terraform import aws_instance.mi_instancia i-0123456789abcdef0&lt;/code&gt;. También se puede utilizar el bloque &lt;code&gt;moved&lt;/code&gt; para mover recursos entre diferentes estados. Por ejemplo, para mover un recurso de un estado a otro, se puede utilizar el comando &lt;code&gt;terraform state mv aws_instance.mi_instancia aws_instance.nueva_instancia&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube y ofrece una variedad de características y comandos para gestionar y configurar la infraestructura de manera eficiente.&lt;/p&gt;
+&lt;p&gt;Los proveedores de Terraform son plugins que permiten a los usuarios interactuar con diferentes proveedores de nube y servicios. Algunos de los proveedores más comunes son AWS, Azure, Google Cloud y OpenStack. Cada proveedor tiene su propia configuración y comandos para gestionar los recursos.&lt;/p&gt;
+&lt;p&gt;Para trabajar con workspaces en Terraform, se puede utilizar el comando &lt;code&gt;terraform workspace&lt;/code&gt;. Por ejemplo, para crear un nuevo workspace, se puede utilizar el comando &lt;code&gt;terraform workspace new mi_workspace&lt;/code&gt;. Luego, se puede utilizar el comando &lt;code&gt;terraform workspace select mi_workspace&lt;/code&gt; para seleccionar el workspace y trabajar con él.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de la configuración, se puede utilizar el comando &lt;code&gt;terraform config&lt;/code&gt; para ver la configuración actual de Terraform. También se puede utilizar el comando &lt;code&gt;terraform config validate&lt;/code&gt; para validar la configuración de Terraform.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube y ofrece una variedad de características y comandos para gestionar y configurar la infraestructura de manera eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-awscc"&gt;Terraform AWS Cloud Control Provider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38402"&gt;Terraform Validate Crashing with Action #38402&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38451"&gt;Terraform crashes during Azure SQLMI deployment #38451&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-google/issues/27003"&gt;Consider using immutable releases in this repo #27003&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38418"&gt;Failed to install provider in Terraform 1.6.0 - openpgp: key expired #38418&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-enterprise-2-0-0-is-available/77368"&gt;Terraform Enterprise 2.0.0 is available&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/nomad-terraform-provider-v2-6-1-released/77356"&gt;Nomad Terraform Provider v2.6.1 Released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/consul/blob/main/CHANGELOG.md"&gt;Consul Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://spacelift.io/blog/multi-cloud-management-platforms"&gt;20+ Top Multi-Cloud Management Platforms &amp; Tools in 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/elastic-application-runtime/6-0/eart/runtime-rn.html"&gt;TAS for VMs v6.0 Release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/tdcyber_24/build-the-infrastructure-and-understand-terraform-2e4b"&gt;Build the infrastructure and understand Terraform&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/maria_harger_9eb67f1e777f/how-to-use-terraform-for-cloud-automation-a-complete-guide-14og"&gt;How to Use Terraform for Cloud Automation? A Complete Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-15_1030.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.</summary>
+    <published>2026-05-15T10:30:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-14T10:25:30.983425+00:00</updated>
+  <updated>2026-05-15T10:31:31.116378+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -208,5 +208,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-11_1129.html"/>
     <summary>En este artículo, se presentan las mejores prácticas y novedades en Docker, incluyendo la creación de imágenes de Docker con multi-stage builds y la configuración de redes y seguridad. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
     <published>2026-05-11T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-05-15_1030.html</id>
+    <title>Docker: Seguridad y Mejoras</title>
+    <updated>2026-05-15T10:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. Recientemente, se ha detectado una imagen maliciosa en Docker Hub, lo que ha llevado a mejorar la seguridad del sistema. Para mitigar este tipo de ataques, se recomienda utilizar &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--no-cache&lt;/code&gt; y &lt;code&gt;--pull&lt;/code&gt; para asegurarse de que se descarguen las imágenes más recientes.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto crucial en Docker. Para proteger los contenedores, se pueden utilizar redes virtuales y configurar el acceso a los puertos con &lt;code&gt;docker run -p&lt;/code&gt;. Además, se puede utilizar &lt;code&gt;docker compose&lt;/code&gt; para definir y ejecutar múltiples contenedores de manera segura. La versión 29.4.2 de Docker incluye una mitigación para el problema de seguridad CVE-2026-31431, que se puede solucionar ejecutando &lt;code&gt;docker update --disable-af-alg&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Docker es la capacidad de generar imágenes locales con Docker Model Runner. Esto se puede lograr utilizando el comando &lt;code&gt;docker buildx&lt;/code&gt; y la opción &lt;code&gt;--load&lt;/code&gt; para cargar la imagen en el registro local. Además, se puede utilizar &lt;code&gt;docker push&lt;/code&gt; para subir la imagen a un registro remoto.&lt;/p&gt;
+&lt;p&gt;Para mejorar la eficiencia y la seguridad, se recomienda utilizar &lt;code&gt;docker system df&lt;/code&gt; para monitorear el uso de disco y &lt;code&gt;docker system prune&lt;/code&gt; para eliminar recursos no utilizados. También se puede utilizar &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para crear imágenes más ligeras y eficientes.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, se recomienda utilizar volúmenes para almacenar datos persistentes y evitar almacenar datos importantes dentro de los contenedores. También se puede utilizar &lt;code&gt;docker-compose&lt;/code&gt; para definir y ejecutar múltiples contenedores de manera segura.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para garantizar la seguridad y la eficiencia. Al seguir las best practices y utilizar las herramientas adecuadas, se puede aprovechar al máximo el potencial de Docker.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/profiles/issues/19"&gt;Temporarily disable AF_ALG socket creation to mitigate CVE-2026-31431&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/blog-generate-images-locally-dmr-open-webui/"&gt;Generate Images Locally with Docker Model Runner&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/sreekanth_kuruba_91721e5d/docker-storage-volumes-internals-understanding-layers-overlayfs-persistence-4d9"&gt;Docker Storage &amp; Volumes Internals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-15_1030.html"/>
+    <summary>Docker ha mejorado su seguridad y funcionalidades. En este artículo, se presentan las novedades y best practices para utilizar Docker de manera segura y eficiente.</summary>
+    <published>2026-05-15T10:30:00+00:00</published>
   </entry>
 </feed>

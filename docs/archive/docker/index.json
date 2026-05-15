@@ -1,4 +1,28 @@
 {
+  "2026-05-15_1030": {
+    "slug": "docker",
+    "title": "Docker: Seguridad y Mejoras",
+    "summary": "Docker ha mejorado su seguridad y funcionalidades. En este artículo, se presentan las novedades y best practices para utilizar Docker de manera segura y eficiente.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas. Recientemente, se ha detectado una imagen maliciosa en Docker Hub, lo que ha llevado a mejorar la seguridad del sistema. Para mitigar este tipo de ataques, se recomienda utilizar `docker build` con la opción `--no-cache` y `--pull` para asegurarse de que se descarguen las imágenes más recientes.\n\nLa seguridad es un aspecto crucial en Docker. Para proteger los contenedores, se pueden utilizar redes virtuales y configurar el acceso a los puertos con `docker run -p`. Además, se puede utilizar `docker compose` para definir y ejecutar múltiples contenedores de manera segura. La versión 29.4.2 de Docker incluye una mitigación para el problema de seguridad CVE-2026-31431, que se puede solucionar ejecutando `docker update --disable-af-alg`.\n\nOtra característica importante de Docker es la capacidad de generar imágenes locales con Docker Model Runner. Esto se puede lograr utilizando el comando `docker buildx` y la opción `--load` para cargar la imagen en el registro local. Además, se puede utilizar `docker push` para subir la imagen a un registro remoto.\n\nPara mejorar la eficiencia y la seguridad, se recomienda utilizar `docker system df` para monitorear el uso de disco y `docker system prune` para eliminar recursos no utilizados. También se puede utilizar `docker build` con la opción `--target` para crear imágenes más ligeras y eficientes.\n\nEn cuanto a las best practices, se recomienda utilizar volúmenes para almacenar datos persistentes y evitar almacenar datos importantes dentro de los contenedores. También se puede utilizar `docker-compose` para definir y ejecutar múltiples contenedores de manera segura.\n\nEn resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para garantizar la seguridad y la eficiencia. Al seguir las best practices y utilizar las herramientas adecuadas, se puede aprovechar al máximo el potencial de Docker.\n\n",
+    "sources": [
+      {
+        "title": "Docker Blog",
+        "url": "https://www.docker.com/blog/"
+      },
+      {
+        "title": "Temporarily disable AF_ALG socket creation to mitigate CVE-2026-31431",
+        "url": "https://github.com/moby/profiles/issues/19"
+      },
+      {
+        "title": "Generate Images Locally with Docker Model Runner",
+        "url": "https://www.docker.com/blog/blog-generate-images-locally-dmr-open-webui/"
+      },
+      {
+        "title": "Docker Storage & Volumes Internals",
+        "url": "https://dev.to/sreekanth_kuruba_91721e5d/docker-storage-volumes-internals-understanding-layers-overlayfs-persistence-4d9"
+      }
+    ]
+  },
   "2026-05-11_1129": {
     "slug": "docker",
     "title": "Docker: Mejores prácticas y novedades",

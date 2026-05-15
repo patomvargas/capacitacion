@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-14T10:25:30.986379+00:00</updated>
+  <updated>2026-05-15T10:31:31.123868+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -353,5 +353,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-11_1129.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se explorarán las mejores prácticas para utilizar Ansible de manera efectiva.</summary>
     <published>2026-05-11T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-15_1030.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-05-15T10:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que sigue una arquitectura sin agente, lo que significa que no requiere la instalación de un daemon en los servidores que se van a gestionar. Esto la distingue de muchas otras herramientas de automatización. Para empezar a utilizar Ansible, es necesario instalar el paquete &lt;code&gt;ansible&lt;/code&gt; y configurar el archivo &lt;code&gt;hosts&lt;/code&gt; que define el inventario de servidores que se van a gestionar.&lt;/p&gt;
+&lt;p&gt;Una vez instalado Ansible, se puede empezar a crear playbooks que definan las tareas que se van a realizar en los servidores. Un playbook es un archivo YAML que define una serie de tareas que se van a ejecutar en un conjunto de servidores. Por ejemplo, se puede crear un playbook que instale y configure un servidor web Apache en un conjunto de servidores. Para ejecutar un playbook, se utiliza el comando &lt;code&gt;ansible-playbook -i hosts playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ansible también proporciona una serie de módulos que permiten interactuar con diferentes tecnologías, como bases de datos, servidores web, etc. Por ejemplo, se puede utilizar el módulo &lt;code&gt;mysql_db&lt;/code&gt; para crear una base de datos MySQL en un servidor. Para utilizar un módulo, se debe especificar el nombre del módulo y los parámetros necesarios en el playbook. Por ejemplo: &lt;code&gt;mysql_db: name: mydb state: present&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Ansible proporciona una serie de características para proteger la información sensible, como la autenticación y la autorización. Por ejemplo, se puede utilizar el módulo &lt;code&gt;vault&lt;/code&gt; para cifrar la información sensible, como las contraseñas y las claves SSH. Para utilizar el módulo &lt;code&gt;vault&lt;/code&gt;, se debe instalar el paquete &lt;code&gt;ansible-vault&lt;/code&gt; y configurar el archivo &lt;code&gt;vault.yml&lt;/code&gt; que define las claves de cifrado.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que proporciona una serie de características y módulos para interactuar con diferentes tecnologías. Con la configuración adecuada y el uso de los módulos y características de seguridad, Ansible puede ser una herramienta muy efectiva para los administradores de sistemas y desarrolladores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-6-0/45718"&gt;Release announcement: Ansible community package 13.6.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a3-pre-release/45725"&gt;Ansible community package 14.0.0a3 (Pre-Release)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-21-0b3/45720"&gt;New Release: ansible-core v2.21.0b3&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-15_1030.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar cambios de manera eficiente y segura. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-05-15T10:30:00+00:00</published>
   </entry>
 </feed>

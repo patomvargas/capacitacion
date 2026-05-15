@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-14T10:25:30.984391+00:00</updated>
+  <updated>2026-05-15T10:31:31.118535+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -256,5 +256,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-11_1129.html"/>
     <summary>En este artículo, se presentan algunas de las mejores prácticas y características avanzadas de Git, como el uso de workflows, hooks y rebase. Se incluyen ejemplos prácticos y comandos para ilustrar cada concepto.</summary>
     <published>2026-05-11T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-05-15_1030.html</id>
+    <title>Mejores prácticas de Git para DevOps</title>
+    <updated>2026-05-15T10:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 2.54 de Git ha introducido varias características interesantes, como se menciona en el blog de GitHub. Una de las características más destacadas es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando &lt;code&gt;git workflow&lt;/code&gt; para crear y gestionar flujos de trabajo personalizados.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la integración de hooks, que permite a los desarrolladores ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un proyecto. Por ejemplo, se puede utilizar el hook &lt;code&gt;pre-commit&lt;/code&gt; para ejecutar un script que verifique la calidad del código antes de realizar un commit. Para configurar un hook, se puede utilizar el comando &lt;code&gt;git config&lt;/code&gt; y establecer el valor de &lt;code&gt;core.hooksPath&lt;/code&gt; en la ruta del script.&lt;/p&gt;
+&lt;p&gt;El comando &lt;code&gt;git rebase&lt;/code&gt; es otra herramienta fundamental en Git, que permite a los desarrolladores reorganizar y fusionar commits de manera eficiente. Sin embargo, es importante tener cuidado al utilizar este comando, ya que puede causar problemas si no se utiliza correctamente. Para evitar problemas, se puede utilizar el comando &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con el proceso de rebase y asegurarse de que se estén realizando los cambios correctos.&lt;/p&gt;
+&lt;p&gt;La característica de worktrees es otra herramienta útil en Git, que permite a los desarrolladores trabajar en diferentes ramas y proyectos de manera simultánea. Para crear un worktree, se puede utilizar el comando &lt;code&gt;git worktree add&lt;/code&gt; y especificar la ruta y el nombre del worktree. Luego, se puede utilizar el comando &lt;code&gt;git worktree list&lt;/code&gt; para ver una lista de todos los worktrees actuales.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejores prácticas de Git para DevOps incluyen la utilización de workflows, hooks, rebase y worktrees para trabajar de manera eficiente en proyectos complejos. Al seguir estas prácticas y utilizar los comandos y configuraciones adecuados, los desarrolladores pueden mejorar la calidad y la eficiencia de su trabajo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Git y las fuentes de información en línea son recursos valiosos para los desarrolladores que buscan mejorar sus habilidades en Git. Algunas fuentes recomendadas incluyen el blog de GitHub y la documentación oficial de Git.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/open-source/git/highlights-from-git-2-54/"&gt;Highlights from Git 2.54&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"&gt;GitHub Actions: Upcoming image migrations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@lemapp09/adaptive-development-git-version-control-for-solo-devs-7347d7ba375e"&gt;Adaptive Development — Git Version Control for Solo Devs&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-15_1030.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo.</summary>
+    <published>2026-05-15T10:30:00+00:00</published>
   </entry>
 </feed>

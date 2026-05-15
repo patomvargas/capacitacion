@@ -1,4 +1,24 @@
 {
+  "2026-05-15_1030": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar cambios de manera eficiente y segura. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que sigue una arquitectura sin agente, lo que significa que no requiere la instalación de un daemon en los servidores que se van a gestionar. Esto la distingue de muchas otras herramientas de automatización. Para empezar a utilizar Ansible, es necesario instalar el paquete `ansible` y configurar el archivo `hosts` que define el inventario de servidores que se van a gestionar. \n   \n   Una vez instalado Ansible, se puede empezar a crear playbooks que definan las tareas que se van a realizar en los servidores. Un playbook es un archivo YAML que define una serie de tareas que se van a ejecutar en un conjunto de servidores. Por ejemplo, se puede crear un playbook que instale y configure un servidor web Apache en un conjunto de servidores. Para ejecutar un playbook, se utiliza el comando `ansible-playbook -i hosts playbook.yml`.\n   \n   Ansible también proporciona una serie de módulos que permiten interactuar con diferentes tecnologías, como bases de datos, servidores web, etc. Por ejemplo, se puede utilizar el módulo `mysql_db` para crear una base de datos MySQL en un servidor. Para utilizar un módulo, se debe especificar el nombre del módulo y los parámetros necesarios en el playbook. Por ejemplo: `mysql_db: name: mydb state: present`.\n   \n   En cuanto a la seguridad, Ansible proporciona una serie de características para proteger la información sensible, como la autenticación y la autorización. Por ejemplo, se puede utilizar el módulo `vault` para cifrar la información sensible, como las contraseñas y las claves SSH. Para utilizar el módulo `vault`, se debe instalar el paquete `ansible-vault` y configurar el archivo `vault.yml` que define las claves de cifrado.\n   \n   En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que proporciona una serie de características y módulos para interactuar con diferentes tecnologías. Con la configuración adecuada y el uso de los módulos y características de seguridad, Ansible puede ser una herramienta muy efectiva para los administradores de sistemas y desarrolladores.",
+    "sources": [
+      {
+        "title": "Release announcement: Ansible community package 13.6.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-13-6-0/45718"
+      },
+      {
+        "title": "Ansible community package 14.0.0a3 (Pre-Release)",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a3-pre-release/45725"
+      },
+      {
+        "title": "New Release: ansible-core v2.21.0b3",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-21-0b3/45720"
+      }
+    ]
+  },
   "2026-05-11_1129": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

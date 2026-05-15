@@ -1,4 +1,24 @@
 {
+  "2026-05-15_1030": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo.",
+    "content": "\nLa versión 2.54 de Git ha introducido varias características interesantes, como se menciona en el blog de GitHub. Una de las características más destacadas es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando `git workflow` para crear y gestionar flujos de trabajo personalizados.\n\nOtra característica importante es la integración de hooks, que permite a los desarrolladores ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un proyecto. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar un script que verifique la calidad del código antes de realizar un commit. Para configurar un hook, se puede utilizar el comando `git config` y establecer el valor de `core.hooksPath` en la ruta del script.\n\nEl comando `git rebase` es otra herramienta fundamental en Git, que permite a los desarrolladores reorganizar y fusionar commits de manera eficiente. Sin embargo, es importante tener cuidado al utilizar este comando, ya que puede causar problemas si no se utiliza correctamente. Para evitar problemas, se puede utilizar el comando `git rebase -i` para interactuar con el proceso de rebase y asegurarse de que se estén realizando los cambios correctos.\n\nLa característica de worktrees es otra herramienta útil en Git, que permite a los desarrolladores trabajar en diferentes ramas y proyectos de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add` y especificar la ruta y el nombre del worktree. Luego, se puede utilizar el comando `git worktree list` para ver una lista de todos los worktrees actuales.\n\nEn resumen, las mejores prácticas de Git para DevOps incluyen la utilización de workflows, hooks, rebase y worktrees para trabajar de manera eficiente en proyectos complejos. Al seguir estas prácticas y utilizar los comandos y configuraciones adecuados, los desarrolladores pueden mejorar la calidad y la eficiencia de su trabajo.\n\nFinalmente, es importante mencionar que la documentación oficial de Git y las fuentes de información en línea son recursos valiosos para los desarrolladores que buscan mejorar sus habilidades en Git. Algunas fuentes recomendadas incluyen el blog de GitHub y la documentación oficial de Git.\n\n  ",
+    "sources": [
+      {
+        "title": "Highlights from Git 2.54",
+        "url": "https://github.blog/open-source/git/highlights-from-git-2-54/"
+      },
+      {
+        "title": "GitHub Actions: Upcoming image migrations",
+        "url": "https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"
+      },
+      {
+        "title": "Adaptive Development — Git Version Control for Solo Devs",
+        "url": "https://medium.com/@lemapp09/adaptive-development-git-version-control-for-solo-devs-7347d7ba375e"
+      }
+    ]
+  },
   "2026-05-11_1129": {
     "slug": "git",
     "title": "Mejores prácticas de Git",

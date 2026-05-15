@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Git - Git</title>
+    <title>Mejores prácticas de Git para DevOps - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas de Git</h1>
-    <div class="meta">2026-05-11 1129 · Git</div>
+    <h1>Mejores prácticas de Git para DevOps</h1>
+    <div class="meta">2026-05-15 1030 · Git</div>
 
     <div class="content">
         
         
             
-            <p>Git es un sistema de control de versiones ampliamente utilizado en el desarrollo de software. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, se puede crear una rama para desarrollar una nueva característica y luego mergearla con la rama principal una vez que esté completa. Para crear una nueva rama, se puede utilizar el comando `git branch -m <nombre_de_la_rama>`.</p>
+        
+            
+            <p>La versión 2.54 de Git ha introducido varias características interesantes, como se menciona en el blog de GitHub. Una de las características más destacadas es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando `git workflow` para crear y gestionar flujos de trabajo personalizados.</p>
             
         
             
         
             
-            <p>Otra característica avanzada de Git es el uso de hooks. Los hooks son scripts que se ejecutan automáticamente en diferentes momentos del proceso de Git, como antes de hacer un commit o después de hacer un push. Por ejemplo, se puede crear un hook para verificar que el código cumpla con ciertos estándares de calidad antes de hacer un commit. Para crear un hook, se puede utilizar el comando `git hook --install <tipo_de_hook>`.</p>
+            <p>Otra característica importante es la integración de hooks, que permite a los desarrolladores ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un proyecto. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar un script que verifique la calidad del código antes de realizar un commit. Para configurar un hook, se puede utilizar el comando `git config` y establecer el valor de `core.hooksPath` en la ruta del script.</p>
             
         
             
         
             
-            <p>El rebase es otra característica importante de Git que permite reorganizar los commits de una rama. Por ejemplo, si se ha hecho un commit que no es necesario, se puede eliminar utilizando el comando `git rebase -i <commit_hash>`. Luego, se puede seleccionar la opción 'drop' para eliminar el commit.</p>
+            <p>El comando `git rebase` es otra herramienta fundamental en Git, que permite a los desarrolladores reorganizar y fusionar commits de manera eficiente. Sin embargo, es importante tener cuidado al utilizar este comando, ya que puede causar problemas si no se utiliza correctamente. Para evitar problemas, se puede utilizar el comando `git rebase -i` para interactuar con el proceso de rebase y asegurarse de que se estén realizando los cambios correctos.</p>
             
         
             
         
             
-            <p>Además, Git ofrece la característica de worktrees, que permite tener múltiples directorios de trabajo para una sola copia de un repositorio. Esto es útil cuando se necesita trabajar en diferentes características o ramas al mismo tiempo. Para crear un worktree, se puede utilizar el comando `git worktree add <nombre_del_worktree> <rama>`.</p>
+            <p>La característica de worktrees es otra herramienta útil en Git, que permite a los desarrolladores trabajar en diferentes ramas y proyectos de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add` y especificar la ruta y el nombre del worktree. Luego, se puede utilizar el comando `git worktree list` para ver una lista de todos los worktrees actuales.</p>
             
         
             
         
             
-            <p>En resumen, Git ofrece una variedad de características avanzadas que pueden ayudar a mejorar la productividad y la calidad del código. Al utilizar estas características de manera efectiva, los desarrolladores pueden trabajar de manera más eficiente y colaborativa.</p>
+            <p>En resumen, las mejores prácticas de Git para DevOps incluyen la utilización de workflows, hooks, rebase y worktrees para trabajar de manera eficiente en proyectos complejos. Al seguir estas prácticas y utilizar los comandos y configuraciones adecuados, los desarrolladores pueden mejorar la calidad y la eficiencia de su trabajo.</p>
             
         
             
         
             
-            <p>No se encontraron fuentes relevantes para este artículo, por lo que se ha enfocado en presentar algunas de las mejores prácticas y características avanzadas de Git.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Git y las fuentes de información en línea son recursos valiosos para los desarrolladores que buscan mejorar sus habilidades en Git. Algunas fuentes recomendadas incluyen el blog de GitHub y la documentación oficial de Git.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,27 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/OhShINT/ohshint.gitbook.io/blob/main/Lists_of_OSINT_Web_Resources/1-Complete-List-of-OSINT-Web-Resources.md" target="_blank">1-Complete-List-of-OSINT-Web-Resources.md</a>
+                <a href="https://github.blog/open-source/git/highlights-from-git-2-54/" target="_blank">Highlights from Git 2.54</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/HighwayofLife/awesome-chatgpt-plugins" target="_blank">HighwayofLife/awesome-chatgpt-plugins</a>
+                <a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/" target="_blank">GitHub Actions: Upcoming image migrations</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/microsoft/winfile" target="_blank">Windows File Manager (WinFile)</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/DarkFunct/TK-CVE-Repo" target="_blank">DarkFunct/TK-CVE-Repo</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/xianshang33/llm-paper-daily" target="_blank">xianshang33/llm-paper-daily</a>
+                <a href="https://medium.com/@lemapp09/adaptive-development-git-version-control-for-solo-devs-7347d7ba375e" target="_blank">Adaptive Development — Git Version Control for Solo Devs</a>
                 
             </li>
             
@@ -136,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-07_1029.html">&larr; 2026-05-07 1029</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-11_1129.html">&larr; 2026-05-11 1129</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-15_1030.html">2026-05-15 1030 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,60 @@
 {
+  "2026-05-15_1030": {
+    "slug": "terraform",
+    "title": "Terraform: Infraestructura como Código",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.",
+    "content": "Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras en la nube de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar el proveedor de nube correspondiente. Por ejemplo, para trabajar con AWS, se puede utilizar el comando `terraform init` para inicializar el proyecto y luego configurar el proveedor de AWS con el comando `provider 'aws' { region = 'us-west-2' }`.\n\nUna de las características más importantes de Terraform es la gestión de estados. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado `terraform.tfstate`. Para gestionar el estado de Terraform, se pueden utilizar comandos como `terraform state list` para ver la lista de recursos que se están gestionando y `terraform state rm` para eliminar un recurso del estado.\n\nOtra característica importante de Terraform es la capacidad de trabajar con módulos. Los módulos son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos. Para crear un módulo, se puede utilizar el comando `terraform module create` y luego configurar el módulo con el comando `module 'mi_modulo' { source = './mi_modulo' }`.\n\nEn cuanto a las novedades, se ha lanzado la versión 2.0.0 de Terraform Enterprise, que incluye nuevas características y mejoras en la gestión de la infraestructura. También se ha lanzado la versión 2.6.1 del proveedor de Nomad, que incluye nuevas características y correcciones de errores.\n\nPara importar recursos existentes en Terraform, se puede utilizar el comando `terraform import`. Por ejemplo, para importar un recurso de AWS, se puede utilizar el comando `terraform import aws_instance.mi_instancia i-0123456789abcdef0`. También se puede utilizar el bloque `moved` para mover recursos entre diferentes estados. Por ejemplo, para mover un recurso de un estado a otro, se puede utilizar el comando `terraform state mv aws_instance.mi_instancia aws_instance.nueva_instancia`.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube y ofrece una variedad de características y comandos para gestionar y configurar la infraestructura de manera eficiente.\n\nLos proveedores de Terraform son plugins que permiten a los usuarios interactuar con diferentes proveedores de nube y servicios. Algunos de los proveedores más comunes son AWS, Azure, Google Cloud y OpenStack. Cada proveedor tiene su propia configuración y comandos para gestionar los recursos.\n\nPara trabajar con workspaces en Terraform, se puede utilizar el comando `terraform workspace`. Por ejemplo, para crear un nuevo workspace, se puede utilizar el comando `terraform workspace new mi_workspace`. Luego, se puede utilizar el comando `terraform workspace select mi_workspace` para seleccionar el workspace y trabajar con él.\n\nEn cuanto a la gestión de la configuración, se puede utilizar el comando `terraform config` para ver la configuración actual de Terraform. También se puede utilizar el comando `terraform config validate` para validar la configuración de Terraform.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructuras en la nube y ofrece una variedad de características y comandos para gestionar y configurar la infraestructura de manera eficiente.\n\n  ",
+    "sources": [
+      {
+        "title": "Terraform AWS Cloud Control Provider",
+        "url": "https://github.com/hashicorp/terraform-provider-awscc"
+      },
+      {
+        "title": "Terraform Validate Crashing with Action #38402",
+        "url": "https://github.com/hashicorp/terraform/issues/38402"
+      },
+      {
+        "title": "Terraform crashes during Azure SQLMI deployment #38451",
+        "url": "https://github.com/hashicorp/terraform/issues/38451"
+      },
+      {
+        "title": "Consider using immutable releases in this repo #27003",
+        "url": "https://github.com/hashicorp/terraform-provider-google/issues/27003"
+      },
+      {
+        "title": "Failed to install provider in Terraform 1.6.0 - openpgp: key expired #38418",
+        "url": "https://github.com/hashicorp/terraform/issues/38418"
+      },
+      {
+        "title": "Terraform Enterprise 2.0.0 is available",
+        "url": "https://discuss.hashicorp.com/t/terraform-enterprise-2-0-0-is-available/77368"
+      },
+      {
+        "title": "Nomad Terraform Provider v2.6.1 Released",
+        "url": "https://discuss.hashicorp.com/t/nomad-terraform-provider-v2-6-1-released/77356"
+      },
+      {
+        "title": "Consul Changelog",
+        "url": "https://github.com/hashicorp/consul/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "20+ Top Multi-Cloud Management Platforms & Tools in 2026",
+        "url": "https://spacelift.io/blog/multi-cloud-management-platforms"
+      },
+      {
+        "title": "TAS for VMs v6.0 Release notes",
+        "url": "https://techdocs.broadcom.com/us/en/vmware-tanzu/platform/elastic-application-runtime/6-0/eart/runtime-rn.html"
+      },
+      {
+        "title": "Build the infrastructure and understand Terraform",
+        "url": "https://dev.to/tdcyber_24/build-the-infrastructure-and-understand-terraform-2e4b"
+      },
+      {
+        "title": "How to Use Terraform for Cloud Automation? A Complete Guide",
+        "url": "https://dev.to/maria_harger_9eb67f1e777f/how-to-use-terraform-for-cloud-automation-a-complete-guide-14og"
+      }
+    ]
+  },
   "2026-05-07_1029": {
     "slug": "terraform",
     "title": "Terraform: Providers y Módulos Avanzados",

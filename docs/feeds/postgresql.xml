@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-14T10:25:30.982226+00:00</updated>
+  <updated>2026-05-15T10:31:31.113983+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -300,5 +300,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-11_1129.html"/>
     <summary>PostgreSQL es una base de datos relacional de código abierto que ofrece alta performance y escalabilidad. En este artículo, se presentan algunas best practices para optimizar el rendimiento de PostgreSQL.</summary>
     <published>2026-05-11T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-15_1030.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-05-15T10:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para mejorar el rendimiento de la base de datos. Una de las formas de lograrlo es mediante la indexación. Los índices permiten a PostgreSQL acceder rápidamente a los datos, reduciendo el tiempo de ejecución de las consultas. Para crear un índice, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt; seguido del nombre del índice y la columna que se desea indexar.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor diferente, lo que permite mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos y luego configurar el servidor esclavo para que se conecte al servidor maestro.&lt;/p&gt;
+&lt;p&gt;La análisis de consultas es otro aspecto importante para optimizar el rendimiento de PostgreSQL. El comando &lt;code&gt;EXPLAIN&lt;/code&gt; permite analizar el plan de ejecución de una consulta, lo que permite identificar posibles problemas de rendimiento. Por ejemplo, el comando &lt;code&gt;EXPLAIN (ANALYZE) SELECT * FROM tabla&lt;/code&gt; muestra el plan de ejecución de la consulta y el tiempo que se tarda en ejecutarla.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que la versión más reciente de PostgreSQL, 18.4, incluye mejoras en la seguridad y el rendimiento. Según el anuncio de lanzamiento, esta versión corrige 11 vulnerabilidades de seguridad y más de 60 errores reportados en los últimos meses.&lt;/p&gt;
+&lt;p&gt;Para migrar una base de datos a AWS RDS, se pueden seguir los pasos descritos en la fuente [7]. Esto incluye crear una instancia de RDS, configurar la seguridad y realizar la migración de la base de datos. Es importante seguir las mejores prácticas de seguridad para garantizar la integridad de la base de datos.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y análisis de consultas. Al seguir estas mejores prácticas y utilizar las herramientas adecuadas, es posible mejorar significativamente el rendimiento de la base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518"&gt;The Complete Guide to PostgreSQL SQL Query Analysis &amp; Optimization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@chayanmann09/migrating-your-postgresql-database-to-aws-rds-step-by-step-with-security-best-practices-3b419c0d5318"&gt;Migrating Your PostgreSQL Database to AWS RDS (Step-by-Step with Security Best Practices)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-15_1030.html"/>
+    <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y análisis de consultas. Mejora la eficiencia de tu base de datos con estas mejores prácticas.</summary>
+    <published>2026-05-15T10:30:00+00:00</published>
   </entry>
 </feed>

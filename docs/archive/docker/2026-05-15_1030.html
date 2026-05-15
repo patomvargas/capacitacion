@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker: Mejores prácticas y novedades - Docker</title>
+    <title>Docker: Seguridad y Mejoras - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Docker: Mejores prácticas y novedades</h1>
-    <div class="meta">2026-05-11 1129 · Docker</div>
+    <h1>Docker: Seguridad y Mejoras</h1>
+    <div class="meta">2026-05-15 1030 · Docker</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>La creación de imágenes de Docker con multi-stage builds es una de las mejores prácticas para reducir el tamaño de las imágenes y mejorar la seguridad. Esto se puede lograr utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción. Por ejemplo: `docker build -t mi-imagen --target producción .`</p>
+            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. Recientemente, se ha detectado una imagen maliciosa en Docker Hub, lo que ha llevado a mejorar la seguridad del sistema. Para mitigar este tipo de ataques, se recomienda utilizar `docker build` con la opción `--no-cache` y `--pull` para asegurarse de que se descarguen las imágenes más recientes.</p>
             
         
             
         
             
-            <p>Otra práctica importante es la configuración de redes en Docker. Se puede utilizar el comando `docker network create` para crear una red y luego utilizar el comando `docker run` con la opción `--net` para conectar un contenedor a la red. Por ejemplo: `docker network create mi-red` y luego `docker run -it --net mi-red mi-imagen`</p>
+            <p>La seguridad es un aspecto crucial en Docker. Para proteger los contenedores, se pueden utilizar redes virtuales y configurar el acceso a los puertos con `docker run -p`. Además, se puede utilizar `docker compose` para definir y ejecutar múltiples contenedores de manera segura. La versión 29.4.2 de Docker incluye una mitigación para el problema de seguridad CVE-2026-31431, que se puede solucionar ejecutando `docker update --disable-af-alg`.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto importante en Docker. Se puede utilizar el comando `docker exec` con la opción `-u` para ejecutar un comando como un usuario específico. Por ejemplo: `docker exec -it -u usuario mi-contenedor comando`</p>
+            <p>Otra característica importante de Docker es la capacidad de generar imágenes locales con Docker Model Runner. Esto se puede lograr utilizando el comando `docker buildx` y la opción `--load` para cargar la imagen en el registro local. Además, se puede utilizar `docker push` para subir la imagen a un registro remoto.</p>
             
         
             
         
             
-            <p>Además, se puede utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola unidad. Se puede crear un archivo `docker-compose.yml` con la configuración de los contenedores y luego utilizar el comando `docker-compose up` para iniciar los contenedores.</p>
+            <p>Para mejorar la eficiencia y la seguridad, se recomienda utilizar `docker system df` para monitorear el uso de disco y `docker system prune` para eliminar recursos no utilizados. También se puede utilizar `docker build` con la opción `--target` para crear imágenes más ligeras y eficientes.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades, se puede mencionar la compatibilidad de Docker con BuildKit, que permite una construcción de imágenes más rápida y eficiente. Se puede habilitar BuildKit utilizando el comando `docker build` con la opción `--buildkit`.</p>
+            <p>En cuanto a las best practices, se recomienda utilizar volúmenes para almacenar datos persistentes y evitar almacenar datos importantes dentro de los contenedores. También se puede utilizar `docker-compose` para definir y ejecutar múltiples contenedores de manera segura.</p>
             
         
             
         
             
-            <p>Finalmente, se puede mencionar la importancia de utilizar un registro de Docker para almacenar y gestionar las imágenes de Docker. Se puede utilizar Docker Hub o un registro privado para almacenar las imágenes y luego utilizar el comando `docker pull` para descargar las imágenes.</p>
+            <p>En resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para garantizar la seguridad y la eficiencia. Al seguir las best practices y utilizar las herramientas adecuadas, se puede aprovechar al máximo el potencial de Docker.</p>
             
         
             
@@ -111,17 +111,22 @@
         <ul>
             
             <li>
-                <a href="https://dev.to/johalputt/the-definitive-guide-to-multi-cluster-with-pulumi-and-docker-25-lessons-learned-f9e" target="_blank">The Definitive Guide to multi-cluster with Pulumi and Docker</a>
+                <a href="https://www.docker.com/blog/" target="_blank">Docker Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/google-cloud/running-an-ai-agent-locally-adk-gemma-4-and-docker-model-runner-95ca9e6f506d" target="_blank">Run AI Agents Locally with Google ADK, Gemma 4 & Docker</a>
+                <a href="https://github.com/moby/profiles/issues/19" target="_blank">Temporarily disable AF_ALG socket creation to mitigate CVE-2026-31431</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@adhelia.20.27/building-a-serverless-api-and-dockerized-flask-todo-app-for-cloud-engineering-practice-6ca40a204391" target="_blank">Building a Serverless API and Dockerized Flask ToDo App for Cloud Engineering Practice</a>
+                <a href="https://www.docker.com/blog/blog-generate-images-locally-dmr-open-webui/" target="_blank">Generate Images Locally with Docker Model Runner</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/sreekanth_kuruba_91721e5d/docker-storage-volumes-internals-understanding-layers-overlayfs-persistence-4d9" target="_blank">Docker Storage & Volumes Internals</a>
                 
             </li>
             
@@ -132,12 +137,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-03_0924.html">&larr; 2026-05-03 0924</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-11_1129.html">&larr; 2026-05-11 1129</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-15_1030.html">2026-05-15 1030 &rarr;</a>
             
         </div>
     </div>
