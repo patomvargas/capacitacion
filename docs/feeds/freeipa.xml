@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-15T10:31:31.090955+00:00</updated>
+  <updated>2026-05-16T09:46:33.685933+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -305,5 +305,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-12_1036.html"/>
     <summary>FreeIPA es una plataforma de gestión de identidad y acceso que proporciona servicios de LDAP, Kerberos y autoridad de certificación. En este artículo, se explora cómo implementar y configurar FreeIPA en un entorno de Kubernetes con Flux CD.</summary>
     <published>2026-05-12T10:36:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-16_0945.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-05-16T09:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y HBAC. Permite a las organizaciones gestionar de manera centralizada los accesos y permisos de sus usuarios, lo que facilita la administración de la seguridad y la auditoría.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de FreeIPA es su capacidad para integrarse con otros sistemas y aplicaciones, como OpenShift. En el artículo de DEV Community, se explica cómo integrar FreeIPA con OpenShift y configurar un trabajo automatizado para sincronizar los grupos de usuarios periódicamente. Para hacer esto, se puede utilizar el comando &lt;code&gt;ipa group-add&lt;/code&gt; para crear un nuevo grupo y luego utilizar &lt;code&gt;ipa group-add-member&lt;/code&gt; para agregar miembros al grupo.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de FreeIPA es su capacidad para gestionar las reglas de sudo. Las reglas de sudo permiten a los administradores definir qué acciones pueden realizar los usuarios en un sistema. En FreeIPA, se pueden configurar reglas de sudo utilizando el comando &lt;code&gt;ipa sudorule-add&lt;/code&gt; y luego agregar comandos específicos que se pueden ejecutar con el comando &lt;code&gt;ipa sudorule-add-command&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA incluye varias características para proteger la autenticación y la autorización de los usuarios. Por ejemplo, se puede configurar la autenticación de dos factores utilizando el protocolo Kerberos. También se pueden configurar reglas de acceso basadas en la ubicación y el tiempo de acceso.&lt;/p&gt;
+&lt;p&gt;Para configurar FreeIPA, se puede utilizar la herramienta de línea de comandos &lt;code&gt;ipa&lt;/code&gt; para crear y gestionar los objetos de la base de datos LDAP. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa user-add&lt;/code&gt; para crear un nuevo usuario y luego utilizar &lt;code&gt;ipa user-mod&lt;/code&gt; para modificar sus atributos.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es un sistema de gestión de identidad y acceso que ofrece una variedad de características y configuraciones para gestionar de manera centralizada los accesos y permisos de los usuarios. Su capacidad para integrarse con otros sistemas y aplicaciones, como OpenShift, lo hace una herramienta valiosa para las organizaciones que buscan mejorar la seguridad y la eficiencia de su infraestructura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe"&gt;Integrating FreeIPA (LDAP) with OpenShift + Automated Group Sync Using CronJob&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:14819"&gt;RHSA-2026:14819 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-16_0945.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidad y acceso que permite a las organizaciones gestionar de manera centralizada los accesos y permisos de sus usuarios. En este artículo, se presentan las características y configuraciones básicas de FreeIPA.</summary>
+    <published>2026-05-16T09:45:00+00:00</published>
   </entry>
 </feed>

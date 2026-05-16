@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nuevas Características de Kubernetes 1.29 - Kubernetes</title>
+    <title>Novedades en Kubernetes v1.36 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Nuevas Características de Kubernetes 1.29</h1>
-    <div class="meta">2026-05-12 1036 · Kubernetes</div>
+    <h1>Novedades en Kubernetes v1.36</h1>
+    <div class="meta">2026-05-16 0945 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes 1.29 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias nuevas características y mejoras, como la capacidad de utilizar `IPv6` en los pods y servicios, y la mejora de la seguridad con la implementación de `TLS 1.3` por defecto.</p>
+            <p>La versión v1.36 de Kubernetes es una de las últimas actualizaciones del sistema de orquestación de contenedores más popular. Una de las características más destacadas de esta versión es la activación de los espacios de nombres de usuario en Linux, lo que permite una mayor seguridad y aislamiento en los entornos de producción. Para aprovechar esta característica, se puede utilizar el comando `kubectl` con la opción `--userns-mode` para especificar el modo de espacios de nombres de usuario.</p>
             
         
             
         
             
-            <p>Para actualizar a Kubernetes 1.29, se puede utilizar el comando `kubeadm upgrade apply` para actualizar el clúster. Luego, se puede verificar la versión actual con `kubectl get nodes -o wide`.</p>
+            <p>La seguridad es otro área en la que se han realizado mejoras en esta versión. Se han agregado nuevas características para proteger los clústeres de Kubernetes contra ataques y vulnerabilidades. Por ejemplo, se puede utilizar la herramienta `kustomize` para personalizar las configuraciones de seguridad de los clústeres. Para instalar `kustomize`, se puede utilizar el comando `go install kustomize`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Kubernetes 1.29 incluye la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods y servicios. Esto se puede configurar utilizando el comando `kubectl create network-policy` y especificando las reglas de tráfico en el archivo de configuración.</p>
+            <p>En cuanto a almacenamiento, la versión v1.36 de Kubernetes incluye mejoras en la gestión de volúmenes y almacenamiento persistente. Se puede utilizar el comando `kubectl` con la opción `--storage-class` para especificar la clase de almacenamiento para un volumen. Por ejemplo, `kubectl create -f persistent-volume.yaml --storage-class=gp2`.</p>
             
         
             
         
             
-            <p>Además, Kubernetes 1.29 incluye mejoras en la configuración y el troubleshooting, como la capacidad de utilizar `kubectl debug` para depurar problemas en los pods y servicios. Esto se puede hacer utilizando el comando `kubectl debug -it <pod-name> --image=<image-name>` para acceder al contenedor y depurar el problema.</p>
+            <p>La red es otro área en la que se han realizado mejoras en esta versión. Se han agregado nuevas características para mejorar la conectividad y el rendimiento de las redes en los clústeres de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl` con la opción `--network-policy` para especificar la política de red para un pod.</p>
             
         
             
         
             
-            <p>La versión 1.29 también incluye la introducción de `agent-sandbox`, un proyecto que permite la gestión de cargas de trabajo aisladas y con estado, ideales para casos de uso como la ejecución de modelos de inteligencia artificial.</p>
+            <p>En resumen, la versión v1.36 de Kubernetes es una actualización importante que incluye mejoras en áreas como seguridad, almacenamiento y redes. Los administradores de sistemas y desarrolladores pueden aprovechar estas características para mejorar la seguridad, el rendimiento y la escalabilidad de sus clústeres de Kubernetes.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes proporciona guías detalladas para la configuración y el troubleshooting de la plataforma, lo que facilita la implementación y el mantenimiento de clústeres de Kubernetes.</p>
+            <p>Para más información sobre la versión v1.36 de Kubernetes, se puede consultar la documentación oficial en el sitio web de Kubernetes. También se pueden encontrar tutoriales y ejemplos de código en sitios web como GitHub y Medium.</p>
             
         
     </div>
@@ -105,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md" target="_blank">Release Notes de Kubernetes 1.29</a>
+                <a href="https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/" target="_blank">Kubernetes v1.36: User Namespaces in Kubernetes are finally GA</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/community/blob/main/contributors/guide/release-notes.md" target="_blank">Documentación oficial de Kubernetes</a>
+                <a href="https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/" target="_blank">Kubernetes v1.36: ハル (Haru)</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes-sigs/agent-sandbox" target="_blank">Proyecto agent-sandbox</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md" target="_blank">release-notes-draft.md</a>
                 
             </li>
             
@@ -126,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html">&larr; 2026-05-08 0944</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-12_1036.html">&larr; 2026-05-12 1036</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-16_0945.html">2026-05-16 0945 &rarr;</a>
             
         </div>
     </div>

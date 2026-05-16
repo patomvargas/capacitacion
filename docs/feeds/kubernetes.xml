@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-15T10:31:31.095494+00:00</updated>
+  <updated>2026-05-16T09:46:33.691738+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -341,5 +341,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-12_1036.html"/>
     <summary>Kubernetes 1.29 introduce nuevas características y mejoras en networking, storage y seguridad. Esta versión también incluye cambios en la configuración y el troubleshooting.</summary>
     <published>2026-05-12T10:36:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-16_0945.html</id>
+    <title>Novedades en Kubernetes v1.36</title>
+    <updated>2026-05-16T09:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión v1.36 de Kubernetes es una de las últimas actualizaciones del sistema de orquestación de contenedores más popular. Una de las características más destacadas de esta versión es la activación de los espacios de nombres de usuario en Linux, lo que permite una mayor seguridad y aislamiento en los entornos de producción. Para aprovechar esta característica, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; con la opción &lt;code&gt;--userns-mode&lt;/code&gt; para especificar el modo de espacios de nombres de usuario.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro área en la que se han realizado mejoras en esta versión. Se han agregado nuevas características para proteger los clústeres de Kubernetes contra ataques y vulnerabilidades. Por ejemplo, se puede utilizar la herramienta &lt;code&gt;kustomize&lt;/code&gt; para personalizar las configuraciones de seguridad de los clústeres. Para instalar &lt;code&gt;kustomize&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;go install kustomize&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a almacenamiento, la versión v1.36 de Kubernetes incluye mejoras en la gestión de volúmenes y almacenamiento persistente. Se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; con la opción &lt;code&gt;--storage-class&lt;/code&gt; para especificar la clase de almacenamiento para un volumen. Por ejemplo, &lt;code&gt;kubectl create -f persistent-volume.yaml --storage-class=gp2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La red es otro área en la que se han realizado mejoras en esta versión. Se han agregado nuevas características para mejorar la conectividad y el rendimiento de las redes en los clústeres de Kubernetes. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; con la opción &lt;code&gt;--network-policy&lt;/code&gt; para especificar la política de red para un pod.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión v1.36 de Kubernetes es una actualización importante que incluye mejoras en áreas como seguridad, almacenamiento y redes. Los administradores de sistemas y desarrolladores pueden aprovechar estas características para mejorar la seguridad, el rendimiento y la escalabilidad de sus clústeres de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la versión v1.36 de Kubernetes, se puede consultar la documentación oficial en el sitio web de Kubernetes. También se pueden encontrar tutoriales y ejemplos de código en sitios web como GitHub y Medium.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/04/23/kubernetes-v1-36-userns-ga/"&gt;Kubernetes v1.36: User Namespaces in Kubernetes are finally GA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/04/22/kubernetes-v1-36-release/"&gt;Kubernetes v1.36: ハル (Haru)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md"&gt;release-notes-draft.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-16_0945.html"/>
+    <summary>La versión v1.36 de Kubernetes introduce nuevas características y mejoras en áreas como seguridad, almacenamiento y redes. Esta versión también incluye la activación de los espacios de nombres de usuario en Linux.</summary>
+    <published>2026-05-16T09:45:00+00:00</published>
   </entry>
 </feed>

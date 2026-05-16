@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Nuevas Características de Kubernetes 1.29 - Kubernetes</title>
-    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Nuevas Características de Kubernetes 1.29</h1>
-    <div class="meta">2026-05-12 1036 · Kubernetes</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-05-16 0945 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes 1.29 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias nuevas características y mejoras, como la capacidad de utilizar `IPv6` en los pods y servicios, y la mejora de la seguridad con la implementación de `TLS 1.3` por defecto.</p>
+        
+            
+            <p>OpenVPN es una herramienta popular para crear redes privadas virtuales (VPN) seguras. Permite a los administradores de sistemas crear conexiones seguras entre sitios o entre un sitio y un cliente. La configuración de OpenVPN implica la creación de certificados y la configuración de los parámetros de conexión.</p>
             
         
             
         
             
-            <p>Para actualizar a Kubernetes 1.29, se puede utilizar el comando `kubeadm upgrade apply` para actualizar el clúster. Luego, se puede verificar la versión actual con `kubectl get nodes -o wide`.</p>
+            <p>Para configurar OpenVPN, es necesario crear un certificado de servidor y un certificado de cliente. Esto se puede hacer utilizando herramientas como OpenSSL. Una vez creados los certificados, se deben configurar los parámetros de conexión en el archivo de configuración de OpenVPN, que suele ser `server.conf` o `client.conf`. Por ejemplo, se puede configurar el protocolo de túnel utilizando la directiva `proto` en el archivo de configuración: `proto tcp-server`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Kubernetes 1.29 incluye la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods y servicios. Esto se puede configurar utilizando el comando `kubectl create network-policy` y especificando las reglas de tráfico en el archivo de configuración.</p>
+            <p>La seguridad es un aspecto fundamental en la configuración de OpenVPN. Se pueden implementar medidas de seguridad como la autenticación de dos factores y la cifrado de datos. Además, se pueden configurar firewalls y reglas de acceso para restringir el acceso a la red. Por ejemplo, se puede utilizar la directiva `tls-auth` para autenticar los clientes: `tls-auth /path/to/tls-auth.key 0`.</p>
             
         
             
         
             
-            <p>Además, Kubernetes 1.29 incluye mejoras en la configuración y el troubleshooting, como la capacidad de utilizar `kubectl debug` para depurar problemas en los pods y servicios. Esto se puede hacer utilizando el comando `kubectl debug -it <pod-name> --image=<image-name>` para acceder al contenedor y depurar el problema.</p>
+            <p>OpenVPN también proporciona una herramienta llamada Access Server, que permite a los administradores de sistemas gestionar las conexiones de los clientes de manera centralizada. Esto puede ser útil en entornos de red grandes y complejos. Además, se pueden configurar conexiones sitio a sitio utilizando la directiva `route` en el archivo de configuración: `route 10.0.0.0 255.255.255.0`.</p>
             
         
             
         
             
-            <p>La versión 1.29 también incluye la introducción de `agent-sandbox`, un proyecto que permite la gestión de cargas de trabajo aisladas y con estado, ideales para casos de uso como la ejecución de modelos de inteligencia artificial.</p>
+            <p>En cuanto a la configuración de hardening, se pueden implementar medidas como la limitación de los intentos de conexión y la configuración de timeouts. Por ejemplo, se puede utilizar la directiva `max-clients` para limitar el número de clientes que pueden conectarse al servidor: `max-clients 10`. También se pueden configurar los logs y los mensajes de error para monitorear el estado de la conexión.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes proporciona guías detalladas para la configuración y el troubleshooting de la plataforma, lo que facilita la implementación y el mantenimiento de clústeres de Kubernetes.</p>
+            <p>En resumen, OpenVPN es una herramienta poderosa para crear redes privadas virtuales seguras. Su configuración requiere la creación de certificados y la configuración de parámetros de conexión, así como la implementación de medidas de seguridad y hardening.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md" target="_blank">Release Notes de Kubernetes 1.29</a>
+                <a href="https://github.com/OpenVPN/openvpn" target="_blank">OpenVPN GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/community/blob/main/contributors/guide/release-notes.md" target="_blank">Documentación oficial de Kubernetes</a>
+                <a href="https://en.wikipedia.org/wiki/OpenVPN" target="_blank">OpenVPN Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes-sigs/agent-sandbox" target="_blank">Proyecto agent-sandbox</a>
+                <a href="https://github.com/OpenVPN/openvpn/releases" target="_blank">OpenVPN Release Notes</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-08_0944.html">&larr; 2026-05-08 0944</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-12_1036.html">&larr; 2026-05-12 1036</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-16_0945.html">2026-05-16 0945 &rarr;</a>
             
         </div>
     </div>

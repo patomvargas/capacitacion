@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-15T10:31:31.093822+00:00</updated>
+  <updated>2026-05-16T09:46:33.689310+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -295,5 +295,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-12_1036.html"/>
     <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas y desarrolladores de DevOps establecer conexiones cifradas entre sitios. En este artículo, se presentan las mejores prácticas para implementar OpenVPN de manera segura.</summary>
     <published>2026-05-12T10:36:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-16_0945.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-05-16T09:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta popular para crear redes privadas virtuales (VPN) seguras. Permite a los administradores de sistemas crear conexiones seguras entre sitios o entre un sitio y un cliente. La configuración de OpenVPN implica la creación de certificados y la configuración de los parámetros de conexión.&lt;/p&gt;
+&lt;p&gt;Para configurar OpenVPN, es necesario crear un certificado de servidor y un certificado de cliente. Esto se puede hacer utilizando herramientas como OpenSSL. Una vez creados los certificados, se deben configurar los parámetros de conexión en el archivo de configuración de OpenVPN, que suele ser &lt;code&gt;server.conf&lt;/code&gt; o &lt;code&gt;client.conf&lt;/code&gt;. Por ejemplo, se puede configurar el protocolo de túnel utilizando la directiva &lt;code&gt;proto&lt;/code&gt; en el archivo de configuración: &lt;code&gt;proto tcp-server&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en la configuración de OpenVPN. Se pueden implementar medidas de seguridad como la autenticación de dos factores y la cifrado de datos. Además, se pueden configurar firewalls y reglas de acceso para restringir el acceso a la red. Por ejemplo, se puede utilizar la directiva &lt;code&gt;tls-auth&lt;/code&gt; para autenticar los clientes: &lt;code&gt;tls-auth /path/to/tls-auth.key 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;OpenVPN también proporciona una herramienta llamada Access Server, que permite a los administradores de sistemas gestionar las conexiones de los clientes de manera centralizada. Esto puede ser útil en entornos de red grandes y complejos. Además, se pueden configurar conexiones sitio a sitio utilizando la directiva &lt;code&gt;route&lt;/code&gt; en el archivo de configuración: &lt;code&gt;route 10.0.0.0 255.255.255.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de hardening, se pueden implementar medidas como la limitación de los intentos de conexión y la configuración de timeouts. Por ejemplo, se puede utilizar la directiva &lt;code&gt;max-clients&lt;/code&gt; para limitar el número de clientes que pueden conectarse al servidor: &lt;code&gt;max-clients 10&lt;/code&gt;. También se pueden configurar los logs y los mensajes de error para monitorear el estado de la conexión.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para crear redes privadas virtuales seguras. Su configuración requiere la creación de certificados y la configuración de parámetros de conexión, así como la implementación de medidas de seguridad y hardening.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn"&gt;OpenVPN GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/OpenVPN"&gt;OpenVPN Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/releases"&gt;OpenVPN Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-16_0945.html"/>
+    <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto a punto o sitio a sitio. En este artículo, se explora su funcionamiento y configuración.</summary>
+    <published>2026-05-16T09:45:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,20 @@
 {
+  "2026-05-16_0945": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es un sistema de gestión de identidad y acceso que permite a las organizaciones gestionar de manera centralizada los accesos y permisos de sus usuarios. En este artículo, se presentan las características y configuraciones básicas de FreeIPA.",
+    "content": "\nFreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y HBAC. Permite a las organizaciones gestionar de manera centralizada los accesos y permisos de sus usuarios, lo que facilita la administración de la seguridad y la auditoría.\n\nUna de las características más importantes de FreeIPA es su capacidad para integrarse con otros sistemas y aplicaciones, como OpenShift. En el artículo de DEV Community, se explica cómo integrar FreeIPA con OpenShift y configurar un trabajo automatizado para sincronizar los grupos de usuarios periódicamente. Para hacer esto, se puede utilizar el comando `ipa group-add` para crear un nuevo grupo y luego utilizar `ipa group-add-member` para agregar miembros al grupo.\n\nOtra característica importante de FreeIPA es su capacidad para gestionar las reglas de sudo. Las reglas de sudo permiten a los administradores definir qué acciones pueden realizar los usuarios en un sistema. En FreeIPA, se pueden configurar reglas de sudo utilizando el comando `ipa sudorule-add` y luego agregar comandos específicos que se pueden ejecutar con el comando `ipa sudorule-add-command`.\n\nEn cuanto a la seguridad, FreeIPA incluye varias características para proteger la autenticación y la autorización de los usuarios. Por ejemplo, se puede configurar la autenticación de dos factores utilizando el protocolo Kerberos. También se pueden configurar reglas de acceso basadas en la ubicación y el tiempo de acceso.\n\nPara configurar FreeIPA, se puede utilizar la herramienta de línea de comandos `ipa` para crear y gestionar los objetos de la base de datos LDAP. Por ejemplo, se puede utilizar el comando `ipa user-add` para crear un nuevo usuario y luego utilizar `ipa user-mod` para modificar sus atributos.\n\nEn resumen, FreeIPA es un sistema de gestión de identidad y acceso que ofrece una variedad de características y configuraciones para gestionar de manera centralizada los accesos y permisos de los usuarios. Su capacidad para integrarse con otros sistemas y aplicaciones, como OpenShift, lo hace una herramienta valiosa para las organizaciones que buscan mejorar la seguridad y la eficiencia de su infraestructura.\n\n",
+    "sources": [
+      {
+        "title": "Integrating FreeIPA (LDAP) with OpenShift + Automated Group Sync Using CronJob",
+        "url": "https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe"
+      },
+      {
+        "title": "RHSA-2026:14819 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14819"
+      }
+    ]
+  },
   "2026-05-12_1036": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",
