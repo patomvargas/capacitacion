@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-16T09:46:33.693444+00:00</updated>
+  <updated>2026-05-17T09:51:57.018325+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -351,5 +351,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-13_1034.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funciones para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
     <published>2026-05-13T10:34:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-17_0950.html</id>
+    <title>OpenShift: Mejoras y Best Practices</title>
+    <updated>2026-05-17T09:50:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para desarrollar y desplegar aplicaciones. Recientemente, se han publicado varias actualizaciones de seguridad y mejoras para la plataforma, como la versión 4.14.65, 4.15.64 y 4.16.62. Estas actualizaciones incluyen correcciones de bugs y mejoras en la seguridad, como se puede ver en las fuentes de Red Hat.&lt;/p&gt;
+&lt;p&gt;Para trabajar con OpenShift, es importante utilizar las herramientas y comandos adecuados. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc&lt;/code&gt; para interactuar con la plataforma, como &lt;code&gt;oc get pods&lt;/code&gt; para obtener una lista de los pods en ejecución. También se puede utilizar el comando &lt;code&gt;oc create&lt;/code&gt; para crear nuevos recursos, como &lt;code&gt;oc create deployment mi-deployment --image=mi-imagen&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante seguir las best practices para proteger la plataforma y las aplicaciones desplegadas. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc adm policy add-cluster-role-to-user&lt;/code&gt; para asignar roles a los usuarios y limitar su acceso a los recursos. También se puede utilizar el comando &lt;code&gt;oc get secrets&lt;/code&gt; para obtener una lista de los secretos almacenados en la plataforma.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que OpenShift ofrece una variedad de características para mejorar la seguridad y la escalabilidad de las aplicaciones. Por ejemplo, se puede utilizar la característica de autenticación OAuth para proteger las aplicaciones y limitar el acceso a los recursos. También se puede utilizar la característica de monitoring para supervisar el rendimiento de las aplicaciones y detectar posibles problemas.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para desarrollar y desplegar aplicaciones. Es importante seguir las best practices y utilizar las herramientas y comandos adecuados para trabajar con la plataforma y proteger las aplicaciones desplegadas.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes de Red Hat y otros recursos en línea. Por ejemplo, se puede consultar la documentación oficial de OpenShift para obtener más información sobre las características y herramientas de la plataforma.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:15087"&gt;RHSA-2026:15087&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:14773"&gt;RHSA-2026:14773&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:16171.html"&gt;RHSA-2026:16171&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:12118"&gt;RHSA-2026:12118&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHBA-2026:13863"&gt;RHBA-2026:13863&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-17_0950.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece mejoras y actualizaciones constantes. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
+    <published>2026-05-17T09:50:00+00:00</published>
   </entry>
 </feed>

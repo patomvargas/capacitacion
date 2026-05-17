@@ -1,4 +1,32 @@
 {
+  "2026-05-17_0950": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Best Practices",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece mejoras y actualizaciones constantes. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.",
+    "content": "OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para desarrollar y desplegar aplicaciones. Recientemente, se han publicado varias actualizaciones de seguridad y mejoras para la plataforma, como la versión 4.14.65, 4.15.64 y 4.16.62. Estas actualizaciones incluyen correcciones de bugs y mejoras en la seguridad, como se puede ver en las fuentes de Red Hat.\n\nPara trabajar con OpenShift, es importante utilizar las herramientas y comandos adecuados. Por ejemplo, se puede utilizar el comando `oc` para interactuar con la plataforma, como `oc get pods` para obtener una lista de los pods en ejecución. También se puede utilizar el comando `oc create` para crear nuevos recursos, como `oc create deployment mi-deployment --image=mi-imagen`.\n\nEn cuanto a la seguridad, es importante seguir las best practices para proteger la plataforma y las aplicaciones desplegadas. Por ejemplo, se puede utilizar el comando `oc adm policy add-cluster-role-to-user` para asignar roles a los usuarios y limitar su acceso a los recursos. También se puede utilizar el comando `oc get secrets` para obtener una lista de los secretos almacenados en la plataforma.\n\nAdemás, es importante mencionar que OpenShift ofrece una variedad de características para mejorar la seguridad y la escalabilidad de las aplicaciones. Por ejemplo, se puede utilizar la característica de autenticación OAuth para proteger las aplicaciones y limitar el acceso a los recursos. También se puede utilizar la característica de monitoring para supervisar el rendimiento de las aplicaciones y detectar posibles problemas.\n\nEn resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para desarrollar y desplegar aplicaciones. Es importante seguir las best practices y utilizar las herramientas y comandos adecuados para trabajar con la plataforma y proteger las aplicaciones desplegadas.\n\nPara más información, se pueden consultar las fuentes de Red Hat y otros recursos en línea. Por ejemplo, se puede consultar la documentación oficial de OpenShift para obtener más información sobre las características y herramientas de la plataforma.",
+    "sources": [
+      {
+        "title": "RHSA-2026:15087",
+        "url": "https://access.redhat.com/errata/RHSA-2026:15087"
+      },
+      {
+        "title": "RHSA-2026:14773",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14773"
+      },
+      {
+        "title": "RHSA-2026:16171",
+        "url": "https://access.redhat.com/errata/RHSA-2026:16171.html"
+      },
+      {
+        "title": "RHSA-2026:12118",
+        "url": "https://access.redhat.com/errata/RHSA-2026:12118"
+      },
+      {
+        "title": "RHBA-2026:13863",
+        "url": "https://access.redhat.com/errata/RHBA-2026:13863"
+      }
+    ]
+  },
   "2026-05-13_1034": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Best Practices",

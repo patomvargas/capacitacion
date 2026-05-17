@@ -1,4 +1,24 @@
 {
+  "2026-05-17_0950": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una plataforma de inteligencia artificial que ofrece integración con Workspace, Vertex AI y prompting. En este artículo, se presentan las novedades y mejoras en la plataforma.",
+    "content": "\nLa plataforma Gemini ofrece una variedad de herramientas y servicios para desarrollar y desplegar modelos de inteligencia artificial. Recientemente, se han anunciado mejoras en la integración con Workspace y Vertex AI, lo que permite a los desarrolladores crear y entrenar modelos de manera más eficiente. Para empezar a trabajar con Gemini, es necesario instalar el Gemini CLI, que se puede hacer mediante el comando `gem install geminicli`.\n\nUna vez instalado, se puede acceder a la documentación de la API de Gemini en la página oficial, donde se encuentran los detalles de los modelos disponibles y cómo interactuar con ellos. Por ejemplo, se puede utilizar el comando `gemini models list` para obtener una lista de los modelos disponibles. La plataforma también ofrece una variedad de modelos preentrenados que se pueden utilizar para tareas específicas, como el modelo `gemini-3.1-flash-lite-preview` que se puede utilizar para tareas de procesamiento de lenguaje natural.\n\nLa integración con Vertex AI es otra de las características destacadas de la plataforma Gemini. Vertex AI es una plataforma de aprendizaje automático que permite a los desarrolladores crear y desplegar modelos de manera más eficiente. La integración con Gemini permite a los desarrolladores utilizar los modelos de Gemini con Vertex AI, lo que puede mejorar significativamente el rendimiento de los modelos. Para utilizar Vertex AI con Gemini, se puede utilizar el comando `vertex ai models create` para crear un modelo de aprendizaje automático y luego utilizar el comando `gemini models deploy` para desplegar el modelo en la plataforma.\n\nAdemás de la integración con Vertex AI, la plataforma Gemini también ofrece una variedad de herramientas y servicios para desarrollar y desplegar modelos de inteligencia artificial. Por ejemplo, se puede utilizar el comando `gemini agents create` para crear un agente de inteligencia artificial y luego utilizar el comando `gemini agents deploy` para desplegar el agente en la plataforma. La plataforma también ofrece una variedad de tutoriales y guías para ayudar a los desarrolladores a empezar a trabajar con Gemini.\n\nEn resumen, la plataforma Gemini ofrece una variedad de herramientas y servicios para desarrollar y desplegar modelos de inteligencia artificial. La integración con Workspace y Vertex AI es una de las características destacadas de la plataforma, y los desarrolladores pueden utilizar los modelos preentrenados y las herramientas de la plataforma para crear y desplegar modelos de manera más eficiente.\n\nLa documentación oficial de la plataforma Gemini se puede encontrar en la página oficial, donde se encuentran los detalles de los modelos disponibles y cómo interactuar con ellos. Es importante mencionar que la plataforma Gemini está en constante evolución, por lo que es importante revisar la documentación oficial para obtener la información más actualizada sobre las características y herramientas de la plataforma.",
+    "sources": [
+      {
+        "title": "Gemini CLI release notes",
+        "url": "https://geminicli.com/docs/changelogs/"
+      },
+      {
+        "title": "Models | Gemini API - Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/models"
+      },
+      {
+        "title": "Tutorial Series : Gemini Enterprise Agent Platform — Part 1",
+        "url": "https://medium.com/google-cloud/tutorial-series-gemini-enterprise-agent-platform-part-1-platform-foundations-your-first-4f014ea3517d"
+      }
+    ]
+  },
   "2026-05-13_1034": {
     "slug": "gemini",
     "title": "Integración de Gemini con API y Workspace",
