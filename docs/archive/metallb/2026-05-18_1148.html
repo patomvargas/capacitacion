@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <title>MetalLB: Balanceo de Carga en Kubernetes - MetalLB</title>
     <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
@@ -57,54 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
-    <div class="meta">2026-05-14 1024 · MetalLB</div>
+    <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
+    <div class="meta">2026-05-18 1148 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite asignar direcciones IP a servicios. Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación, ya sea L2 o BGP. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f metallb-config.yaml`, donde `metallb-config.yaml` es un archivo de configuración que contiene la siguiente información: `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.100-192.168.1.200`.</p>
+            <p>MetalLB es una herramienta esencial para cualquier cluster de Kubernetes que requiera un balanceo de carga eficiente. En modo L2, MetalLB utiliza el protocolo ARP para asignar direcciones IP a los servicios del cluster. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/layer2.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>Para configurar MetalLB en modo BGP, es necesario especificar los parámetros de configuración de BGP, como el AS y el router ID. Por ejemplo: `kubectl apply -f metallb-bgp-config.yaml`, donde `metallb-bgp-config.yaml` es un archivo de configuración que contiene la siguiente información: `bgp: - name: default - asn: 64512 - router-id: 10.0.0.1 - peers: - peer-address: 10.0.0.2 - peer-asn: 64513`.</p>
+            <p>En cuanto al modo BGP, MetalLB utiliza el protocolo BGP para anunciar las rutas de los servicios del cluster a los routers de la red. Para configurar MetalLB en modo BGP, se debe crear un objeto de configuración que especifique los parámetros de BGP, como el ASN y la dirección IP del router BGP. Por ejemplo, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/bgp.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>Una vez configurado MetalLB, es posible asignar direcciones IP a servicios utilizando el objeto `Service` de Kubernetes. Por ejemplo: `kubectl expose deployment mi-deployment --type=LoadBalancer --port=80`, donde `mi-deployment` es el nombre de la implementación que se desea exponer.</p>
+            <p>La gestión de pools de IP es otra característica importante de MetalLB. Los pools de IP permiten asignar direcciones IP a los servicios del cluster de manera eficiente y escalable. Para crear un pool de IP, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/pool.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas con MetalLB, es posible utilizar herramientas como `kubectl logs` y `kubectl describe` para obtener información sobre el estado de los componentes de MetalLB. Por ejemplo: `kubectl logs -f metallb-controller`, donde `metallb-controller` es el nombre del pod que ejecuta el controlador de MetalLB.</p>
+            <p>En cuanto a la integración con K8s, MetalLB se integra perfectamente con el sistema de orquestación de contenedores. Por ejemplo, se puede utilizar el comando `kubectl get svc -o wide` para ver la lista de servicios del cluster y sus direcciones IP asignadas por MetalLB.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a la integración con Kubernetes, MetalLB se integra de manera nativa con el sistema de orquestación de contenedores. Por ejemplo, es posible utilizar `kubectl` para crear y gestionar objetos de configuración de MetalLB, como los pools de direcciones IP y los peers BGP.</p>
+            <p>Para solucionar problemas comunes con MetalLB, se puede utilizar el comando `kubectl logs -f -n metallb-system $(kubectl get pods -n metallb-system -o jsonpath='{.items[0].metadata.name}')` para ver los logs del componente de MetalLB.</p>
             
         
             
         
             
+            <p>En resumen, MetalLB es una herramienta poderosa para el balanceo de carga en Kubernetes que ofrece una gran flexibilidad y escalabilidad. Su configuración y gestión pueden ser realizadas de manera sencilla utilizando comandos de K8s y objetos de configuración.</p>
+            
         
             
-            <p>En resumen, MetalLB es una herramienta poderosa para equilibrar la carga en Kubernetes, que permite asignar direcciones IP a servicios de manera flexible y escalable. Su configuración y uso son relativamente sencillos, y su integración con Kubernetes es nativa.</p>
+        
             
         
     </div>
@@ -115,12 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentation</a>
+                <a href="https://medium.com/@BuildShift/i-built-a-production-kubernetes-platform-in-48-hours-and-hit-every-wall-imaginable-5ee87a2d20e4" target="_blank">I built a production Kubernetes platform in 48 hours</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
+                <a href="https://dev.to/ebelechukwu_lucyokafor/kubernetes-services-networking-my-week-15-hands-on-journey-clusterip-nodeport-loadbalancer-40o7" target="_blank">My Week 15 Hands-On Journey (ClusterIP, NodePort, LoadBalancer)</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/actions/runs/24646185849?pr=3020" target="_blank">Chore(deps): bump k8s.io/api from 0.34.1 to 0.35.4</a>
                 
             </li>
             
@@ -131,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-10_0941.html">&larr; 2026-05-10 0941</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-14_1024.html">&larr; 2026-05-14 1024</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-18_1148.html">2026-05-18 1148 &rarr;</a>
             
         </div>
     </div>

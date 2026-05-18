@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas con Airflow 2.x - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Mejores prácticas con Airflow 2.x</h1>
+    <div class="meta">2026-05-18 1148 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que permite a los desarrolladores crear, programar y monitorear tareas de manera eficiente. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la posibilidad de crear DAGs dinámicos utilizando la función `expand()` o el patrón de función de fábrica para generar múltiples DAGs.</p>
+            
+        
+            
+        
+            
+            <p>Para crear un DAG dinámico, se puede utilizar el siguiente código: `from airflow.operators.python import PythonOperator` y luego definir la función que se ejecutará en cada tarea. Por ejemplo: `task = PythonOperator(task_id='mi_tarea', python_callable=mi_funcion)`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Airflow es la posibilidad de configurar operadores para realizar tareas específicas. Por ejemplo, se puede utilizar el operador `BashOperator` para ejecutar comandos de bash en un servidor remoto: `from airflow.providers.bash.operators.bash import BashOperator` y luego definir el comando que se ejecutará: `task = BashOperator(task_id='mi_tarea', bash_command='mi_comando')`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de conexiones, Airflow proporciona una variedad de opciones para conectar con diferentes sistemas, como bases de datos, servidores de archivos y servicios en la nube. Por ejemplo, se puede utilizar el comando `airflow connections --add` para agregar una nueva conexión: `airflow connections --add --conn_id mi_conexion --conn_type mysql`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Airflow también proporciona una variedad de herramientas para monitorear y depurar flujos de trabajo, como la interfaz web de Airflow, que permite visualizar los flujos de trabajo y las tareas en tiempo real.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que ofrece una variedad de características y herramientas para crear, programar y monitorear tareas de manera eficiente. Al seguir las mejores prácticas y utilizar las características de Airflow de manera efectiva, los desarrolladores pueden crear flujos de trabajo complejos y escalables.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Airflow y las fuentes proporcionadas a continuación.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/issues/66333" target="_blank">Release Management for Java-SDK #66333</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@satyamsahu671/dynamic-dags-in-airflow-when-to-use-them-and-how-to-build-them-without-breaking-your-scheduler-a2038a5ca613" target="_blank">Dynamic DAGs in Airflow: When to Use Them and How to Build Them</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/airflow" target="_blank">Apache Airflow - A platform to programmatically author, schedule</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-14_1024.html">&larr; 2026-05-14 1024</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-17T09:51:57.028502+00:00</updated>
+  <updated>2026-05-18T11:49:24.985559+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -289,5 +289,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-14_1024.html"/>
     <summary>Airflow es una herramienta de orquestación de datos que permite definir y ejecutar flujos de trabajo de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.</summary>
     <published>2026-05-14T10:24:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-18_1148.html</id>
+    <title>Mejores prácticas con Airflow 2.x</title>
+    <updated>2026-05-18T11:48:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que permite a los desarrolladores crear, programar y monitorear tareas de manera eficiente. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la posibilidad de crear DAGs dinámicos utilizando la función &lt;code&gt;expand()&lt;/code&gt; o el patrón de función de fábrica para generar múltiples DAGs.&lt;/p&gt;
+&lt;p&gt;Para crear un DAG dinámico, se puede utilizar el siguiente código: &lt;code&gt;from airflow.operators.python import PythonOperator&lt;/code&gt; y luego definir la función que se ejecutará en cada tarea. Por ejemplo: &lt;code&gt;task = PythonOperator(task_id='mi_tarea', python_callable=mi_funcion)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Airflow es la posibilidad de configurar operadores para realizar tareas específicas. Por ejemplo, se puede utilizar el operador &lt;code&gt;BashOperator&lt;/code&gt; para ejecutar comandos de bash en un servidor remoto: &lt;code&gt;from airflow.providers.bash.operators.bash import BashOperator&lt;/code&gt; y luego definir el comando que se ejecutará: &lt;code&gt;task = BashOperator(task_id='mi_tarea', bash_command='mi_comando')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de conexiones, Airflow proporciona una variedad de opciones para conectar con diferentes sistemas, como bases de datos, servidores de archivos y servicios en la nube. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow connections --add&lt;/code&gt; para agregar una nueva conexión: &lt;code&gt;airflow connections --add --conn_id mi_conexion --conn_type mysql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow también proporciona una variedad de herramientas para monitorear y depurar flujos de trabajo, como la interfaz web de Airflow, que permite visualizar los flujos de trabajo y las tareas en tiempo real.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que ofrece una variedad de características y herramientas para crear, programar y monitorear tareas de manera eficiente. Al seguir las mejores prácticas y utilizar las características de Airflow de manera efectiva, los desarrolladores pueden crear flujos de trabajo complejos y escalables.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Airflow y las fuentes proporcionadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/66333"&gt;Release Management for Java-SDK #66333&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@satyamsahu671/dynamic-dags-in-airflow-when-to-use-them-and-how-to-build-them-without-breaking-your-scheduler-a2038a5ca613"&gt;Dynamic DAGs in Airflow: When to Use Them and How to Build Them&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow"&gt;Apache Airflow - A platform to programmatically author, schedule&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-18_1148.html"/>
+    <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo. En este artículo, se presentan mejores prácticas para trabajar con Airflow 2.x, incluyendo la creación de DAGs dinámicos y la configuración de operadores.</summary>
+    <published>2026-05-18T11:48:00+00:00</published>
   </entry>
 </feed>
