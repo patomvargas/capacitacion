@@ -58,47 +58,49 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-05-15 1030 · PostgreSQL</div>
+    <div class="meta">2026-05-19 1125 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento de la base de datos. Una de las formas de lograrlo es mediante la indexación. Los índices permiten a PostgreSQL acceder rápidamente a los datos, reduciendo el tiempo de ejecución de las consultas. Para crear un índice, se puede utilizar el comando `CREATE INDEX` seguido del nombre del índice y la columna que se desea indexar.</p>
+            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la escalabilidad de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo, para crear un índice en la columna `id` de la tabla `usuarios`, se puede ejecutar el comando `CREATE INDEX idx_usuarios_id ON usuarios (id)`.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor diferente, lo que permite mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar el servidor esclavo para que se conecte al servidor maestro.</p>
+            <p>La replicación es otra técnica importante para mejorar la disponibilidad y la escalabilidad de la base de datos. PostgreSQL proporciona varias opciones de replicación, incluyendo la replicación maestra-esclavo y la replicación de streaming. Para configurar la replicación maestra-esclavo, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos maestra, y luego configurar el esclavo para que se conecte a la maestra utilizando el comando `pg_rewind`.</p>
             
         
             
         
             
-            <p>La análisis de consultas es otro aspecto importante para optimizar el rendimiento de PostgreSQL. El comando `EXPLAIN` permite analizar el plan de ejecución de una consulta, lo que permite identificar posibles problemas de rendimiento. Por ejemplo, el comando `EXPLAIN (ANALYZE) SELECT * FROM tabla` muestra el plan de ejecución de la consulta y el tiempo que se tarda en ejecutarla.</p>
+            <p>La configuración de la replicación de streaming es similar, pero requiere la configuración adicional de la opción `wal_level` en el archivo `postgresql.conf`. Por ejemplo, se puede establecer `wal_level = hot_standby` para permitir la replicación de streaming. Luego, se puede configurar el esclavo para que se conecte a la maestra utilizando el comando `pg_rewind`.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar que la versión más reciente de PostgreSQL, 18.4, incluye mejoras en la seguridad y el rendimiento. Según el anuncio de lanzamiento, esta versión corrige 11 vulnerabilidades de seguridad y más de 60 errores reportados en los últimos meses.</p>
+            <p>Además de la configuración de índices y la replicación, es importante realizar backups regulares de la base de datos. PostgreSQL proporciona varias opciones para realizar backups, incluyendo el comando `pg_dump` y el comando `pg_dumpall`. El comando `pg_dump` se utiliza para realizar un backup de una sola base de datos, mientras que el comando `pg_dumpall` se utiliza para realizar un backup de todas las bases de datos en el servidor.</p>
             
         
             
         
             
-            <p>Para migrar una base de datos a AWS RDS, se pueden seguir los pasos descritos en la fuente [7]. Esto incluye crear una instancia de RDS, configurar la seguridad y realizar la migración de la base de datos. Es importante seguir las mejores prácticas de seguridad para garantizar la integridad de la base de datos.</p>
+            <p>Para realizar un backup de una sola base de datos, se puede ejecutar el comando `pg_dump -U usuario -d base_de_datos > backup.sql`. Esto creará un archivo `backup.sql` que contiene la estructura y los datos de la base de datos. Luego, se puede restaurar la base de datos utilizando el comando `psql -U usuario -d base_de_datos < backup.sql`.</p>
             
         
             
         
             
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y análisis de consultas. Al seguir estas mejores prácticas y utilizar las herramientas adecuadas, es posible mejorar significativamente el rendimiento de la base de datos.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que la versión 18.4 de PostgreSQL incluye una corrección de seguridad para prevenir la travesía de directorios en `pg_basebackup` y `pg_rewind`. Esta corrección es importante para prevenir ataques de seguridad que podrían permitir a un atacante acceder a archivos sensibles en el sistema.</p>
             
         
+            
+        
+            
+            <p>En resumen, la optimización de PostgreSQL requiere la configuración de índices, la replicación y los backups. Es importante seguir las mejores prácticas de seguridad y realizar actualizaciones regulares para mantener la base de datos segura y escalable.</p>
             
         
     </div>
@@ -109,17 +111,17 @@
         <ul>
             
             <li>
+                <a href="https://www.postgresql.org/docs/release/18.4/" target="_blank">PostgreSQL: Release Notes</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@philmcc/the-complete-guide-to-postgresql-sql-query-analysis-optimization-2cd091453518" target="_blank">The Complete Guide to PostgreSQL SQL Query Analysis & Optimization</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@chayanmann09/migrating-your-postgresql-database-to-aws-rds-step-by-step-with-security-best-practices-3b419c0d5318" target="_blank">Migrating Your PostgreSQL Database to AWS RDS (Step-by-Step with Security Best Practices)</a>
+                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">News Archive - PostgreSQL</a>
                 
             </li>
             
@@ -130,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-11_1129.html">&larr; 2026-05-11 1129</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-19_1125.html">2026-05-19 1125 &rarr;</a>
             
         </div>
     </div>

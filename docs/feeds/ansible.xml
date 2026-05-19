@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-18T11:49:25.003195+00:00</updated>
+  <updated>2026-05-19T11:27:34.027906+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -371,5 +371,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-15_1030.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar cambios de manera eficiente y segura. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.</summary>
     <published>2026-05-15T10:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-19_1125.html</id>
+    <title>Ansible: Nuevas Características y Mejoras</title>
+    <updated>2026-05-19T11:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que sigue siendo muy popular en la industria. Recientemente, se han lanzado nuevas versiones de Ansible, como la versión 13.6.0 y la versión 14.0.0a3, que incluyen mejoras y nuevas características. Por ejemplo, la versión 14.0.0a3 depende de &lt;code&gt;ansible-core 2.21.0b3&lt;/code&gt; y ofrece mejoras en la gestión de criptografía.&lt;/p&gt;
+&lt;p&gt;Una de las características más interesantes de Ansible es la posibilidad de utilizar &lt;code&gt;playbooks&lt;/code&gt; para automatizar tareas complejas. Un &lt;code&gt;playbook&lt;/code&gt; es un archivo YAML que define una serie de tareas que se deben ejecutar en un orden específico. Por ejemplo, se puede crear un &lt;code&gt;playbook&lt;/code&gt; para instalar y configurar un servidor web utilizando el módulo &lt;code&gt;yum&lt;/code&gt; y &lt;code&gt;template&lt;/code&gt;. Para ejecutar un &lt;code&gt;playbook&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los hosts que se van a gestionar con Ansible. Se puede utilizar el comando &lt;code&gt;ansible-inventory -i inventory.ini --list&lt;/code&gt; para ver la lista de hosts definidos en el inventario. También se puede utilizar el módulo &lt;code&gt;aws_ec2&lt;/code&gt; para gestionar instancias de EC2 en Amazon Web Services.&lt;/p&gt;
+&lt;p&gt;En cuanto a las colecciones, Ansible ofrece una variedad de colecciones para diferentes proveedores de cloud, como Amazon Web Services y Google Cloud Platform. Por ejemplo, la colección &lt;code&gt;amazon.aws&lt;/code&gt; ofrece módulos para gestionar instancias de EC2, buckets de S3 y más. Se puede instalar una colección utilizando el comando &lt;code&gt;ansible-galaxy collection install amazon.aws&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. Algunas de las características más interesantes de Ansible son los &lt;code&gt;playbooks&lt;/code&gt;, la gestión de inventarios y las colecciones. Para obtener más información, se pueden consultar las fuentes oficiales de Ansible y la documentación en línea.&lt;/p&gt;
+&lt;p&gt;Para mantener la seguridad de los datos, se puede utilizar el módulo &lt;code&gt;vault&lt;/code&gt; para cifrar los datos sensibles. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-vault encrypt_string&lt;/code&gt; para cifrar una cadena de texto. Luego, se puede utilizar el módulo &lt;code&gt;vault&lt;/code&gt; en un &lt;code&gt;playbook&lt;/code&gt; para descifrar la cadena de texto y utilizarla en una tarea.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Ansible ofrece una variedad de herramientas y recursos para ayudar a los usuarios a mejorar su productividad y eficiencia. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-doc&lt;/code&gt; para ver la documentación de un módulo específico. También se puede utilizar la herramienta &lt;code&gt;AWX/Tower&lt;/code&gt; para gestionar y automatizar tareas de manera centralizada.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-6-0/45718"&gt;Release announcement: Ansible community package 13.6.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a3-pre-release/45725"&gt;Ansible community package 14.0.0a3 (Pre-Release)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"&gt;amazon.aws Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-19_1125.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-05-19T11:25:00+00:00</published>
   </entry>
 </feed>

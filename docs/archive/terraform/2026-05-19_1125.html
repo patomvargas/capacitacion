@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejores Prácticas y Novedades - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejores Prácticas y Novedades</h1>
+    <div class="meta">2026-05-19 1125 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para utilizar Terraform de manera efectiva, es importante seguir las mejores prácticas. Una de las mejores prácticas es utilizar módulos de Terraform, que permiten reutilizar código y simplificar la gestión de la infraestructura. Por ejemplo, se puede crear un módulo para provisionar instancias EC2 en AWS utilizando el comando `terraform apply -target=module.ec2`.</p>
+            
+        
+            
+        
+            
+            <p>Para gestionar el estado de la infraestructura, Terraform utiliza un archivo de estado que se puede almacenar en un almacenamiento remoto, como Amazon S3. Se puede configurar el almacenamiento remoto utilizando el bloque `backend` en el archivo de configuración de Terraform, por ejemplo: `backend 's3' { bucket = 'nixuz-terraform-state' key = 'global/state.tfstate' region = 'us-east-1' }`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Terraform es la capacidad de gestionar diferentes entornos de trabajo utilizando workspaces. Los workspaces permiten aislar la infraestructura de diferentes entornos, como desarrollo, pruebas y producción. Se puede crear un nuevo workspace utilizando el comando `terraform workspace new <nombre_del_workspace>`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, Terraform ha lanzado varias versiones recientes, como la versión 1.15.0, que incluye varias mejoras y nuevas características. También se han lanzado versiones de prueba, como la versión 1.15.0-rc4, que incluye una actualización de dependencias.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que Terraform también cuenta con una comunidad activa que contribuye a su desarrollo y proporciona soporte. Por ejemplo, se pueden encontrar tutoriales y guías en la comunidad DEV, como la guía de mejores prácticas para provisionar instancias EC2 con Terraform.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para gestionar la infraestructura como código, y seguir las mejores prácticas y estar al tanto de las novedades es fundamental para utilizarla de manera efectiva.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Terraform y la comunidad DEV.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-awscc" target="_blank">Terraform AWS Cloud Control Provider</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38402" target="_blank">Terraform Validate Crashing with Action #38402</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/vvasylkovskyi/provisioning-ec2-instances-with-terraform-modules-best-practices-guide-e04" target="_blank">Provisioning EC2 Instances with Terraform Modules - Best Practices Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/maria_harger_9eb67f1e777f/how-to-use-terraform-for-cloud-automation-a-complete-guide-14og" target="_blank">How to Use Terraform for Cloud Automation? A Complete Guide</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

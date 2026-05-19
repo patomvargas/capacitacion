@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <title>Ansible: Nuevas Características y Mejoras - Ansible</title>
     <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
@@ -57,38 +57,52 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Ansible: Automatización de Infraestructura</h1>
-    <div class="meta">2026-05-15 1030 · Ansible</div>
+    <h1>Ansible: Nuevas Características y Mejoras</h1>
+    <div class="meta">2026-05-19 1125 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura que sigue una arquitectura sin agente, lo que significa que no requiere la instalación de un daemon en los servidores que se van a gestionar. Esto la distingue de muchas otras herramientas de automatización. Para empezar a utilizar Ansible, es necesario instalar el paquete `ansible` y configurar el archivo `hosts` que define el inventario de servidores que se van a gestionar.</p>
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que sigue siendo muy popular en la industria. Recientemente, se han lanzado nuevas versiones de Ansible, como la versión 13.6.0 y la versión 14.0.0a3, que incluyen mejoras y nuevas características. Por ejemplo, la versión 14.0.0a3 depende de `ansible-core 2.21.0b3` y ofrece mejoras en la gestión de criptografía.</p>
             
         
             
         
             
-            <p>Una vez instalado Ansible, se puede empezar a crear playbooks que definan las tareas que se van a realizar en los servidores. Un playbook es un archivo YAML que define una serie de tareas que se van a ejecutar en un conjunto de servidores. Por ejemplo, se puede crear un playbook que instale y configure un servidor web Apache en un conjunto de servidores. Para ejecutar un playbook, se utiliza el comando `ansible-playbook -i hosts playbook.yml`.</p>
+            <p>Una de las características más interesantes de Ansible es la posibilidad de utilizar `playbooks` para automatizar tareas complejas. Un `playbook` es un archivo YAML que define una serie de tareas que se deben ejecutar en un orden específico. Por ejemplo, se puede crear un `playbook` para instalar y configurar un servidor web utilizando el módulo `yum` y `template`. Para ejecutar un `playbook`, se puede utilizar el comando `ansible-playbook -i inventory.ini playbook.yml`.</p>
             
         
             
         
             
-            <p>Ansible también proporciona una serie de módulos que permiten interactuar con diferentes tecnologías, como bases de datos, servidores web, etc. Por ejemplo, se puede utilizar el módulo `mysql_db` para crear una base de datos MySQL en un servidor. Para utilizar un módulo, se debe especificar el nombre del módulo y los parámetros necesarios en el playbook. Por ejemplo: `mysql_db: name: mydb state: present`.</p>
+            <p>Otra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los hosts que se van a gestionar con Ansible. Se puede utilizar el comando `ansible-inventory -i inventory.ini --list` para ver la lista de hosts definidos en el inventario. También se puede utilizar el módulo `aws_ec2` para gestionar instancias de EC2 en Amazon Web Services.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Ansible proporciona una serie de características para proteger la información sensible, como la autenticación y la autorización. Por ejemplo, se puede utilizar el módulo `vault` para cifrar la información sensible, como las contraseñas y las claves SSH. Para utilizar el módulo `vault`, se debe instalar el paquete `ansible-vault` y configurar el archivo `vault.yml` que define las claves de cifrado.</p>
+            <p>En cuanto a las colecciones, Ansible ofrece una variedad de colecciones para diferentes proveedores de cloud, como Amazon Web Services y Google Cloud Platform. Por ejemplo, la colección `amazon.aws` ofrece módulos para gestionar instancias de EC2, buckets de S3 y más. Se puede instalar una colección utilizando el comando `ansible-galaxy collection install amazon.aws`.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que proporciona una serie de características y módulos para interactuar con diferentes tecnologías. Con la configuración adecuada y el uso de los módulos y características de seguridad, Ansible puede ser una herramienta muy efectiva para los administradores de sistemas y desarrolladores.</p>
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. Algunas de las características más interesantes de Ansible son los `playbooks`, la gestión de inventarios y las colecciones. Para obtener más información, se pueden consultar las fuentes oficiales de Ansible y la documentación en línea.</p>
+            
+        
+            
+        
+            
+            <p>Para mantener la seguridad de los datos, se puede utilizar el módulo `vault` para cifrar los datos sensibles. Por ejemplo, se puede utilizar el comando `ansible-vault encrypt_string` para cifrar una cadena de texto. Luego, se puede utilizar el módulo `vault` en un `playbook` para descifrar la cadena de texto y utilizarla en una tarea.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Ansible ofrece una variedad de herramientas y recursos para ayudar a los usuarios a mejorar su productividad y eficiencia. Por ejemplo, se puede utilizar el comando `ansible-doc` para ver la documentación de un módulo específico. También se puede utilizar la herramienta `AWX/Tower` para gestionar y automatizar tareas de manera centralizada.</p>
             
         
     </div>
@@ -109,7 +123,7 @@
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-21-0b3/45720" target="_blank">New Release: ansible-core v2.21.0b3</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html" target="_blank">amazon.aws Release Notes</a>
                 
             </li>
             
@@ -120,12 +134,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-11_1129.html">&larr; 2026-05-11 1129</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-19_1125.html">2026-05-19 1125 &rarr;</a>
             
         </div>
     </div>

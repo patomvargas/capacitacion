@@ -1,4 +1,24 @@
 {
+  "2026-05-19_1125": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "En este artículo, se presentan técnicas de optimización para mejorar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y los backups. Se proporcionan comandos y configuraciones específicas para cada técnica.",
+    "content": "La optimización de PostgreSQL es crucial para mejorar el rendimiento y la escalabilidad de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo, para crear un índice en la columna `id` de la tabla `usuarios`, se puede ejecutar el comando `CREATE INDEX idx_usuarios_id ON usuarios (id)`.\n\nLa replicación es otra técnica importante para mejorar la disponibilidad y la escalabilidad de la base de datos. PostgreSQL proporciona varias opciones de replicación, incluyendo la replicación maestra-esclavo y la replicación de streaming. Para configurar la replicación maestra-esclavo, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos maestra, y luego configurar el esclavo para que se conecte a la maestra utilizando el comando `pg_rewind`.\n\nLa configuración de la replicación de streaming es similar, pero requiere la configuración adicional de la opción `wal_level` en el archivo `postgresql.conf`. Por ejemplo, se puede establecer `wal_level = hot_standby` para permitir la replicación de streaming. Luego, se puede configurar el esclavo para que se conecte a la maestra utilizando el comando `pg_rewind`.\n\nAdemás de la configuración de índices y la replicación, es importante realizar backups regulares de la base de datos. PostgreSQL proporciona varias opciones para realizar backups, incluyendo el comando `pg_dump` y el comando `pg_dumpall`. El comando `pg_dump` se utiliza para realizar un backup de una sola base de datos, mientras que el comando `pg_dumpall` se utiliza para realizar un backup de todas las bases de datos en el servidor.\n\nPara realizar un backup de una sola base de datos, se puede ejecutar el comando `pg_dump -U usuario -d base_de_datos > backup.sql`. Esto creará un archivo `backup.sql` que contiene la estructura y los datos de la base de datos. Luego, se puede restaurar la base de datos utilizando el comando `psql -U usuario -d base_de_datos < backup.sql`.\n\nEn cuanto a la seguridad, es importante mencionar que la versión 18.4 de PostgreSQL incluye una corrección de seguridad para prevenir la travesía de directorios en `pg_basebackup` y `pg_rewind`. Esta corrección es importante para prevenir ataques de seguridad que podrían permitir a un atacante acceder a archivos sensibles en el sistema.\n\nEn resumen, la optimización de PostgreSQL requiere la configuración de índices, la replicación y los backups. Es importante seguir las mejores prácticas de seguridad y realizar actualizaciones regulares para mantener la base de datos segura y escalable.",
+    "sources": [
+      {
+        "title": "PostgreSQL: Release Notes",
+        "url": "https://www.postgresql.org/docs/release/18.4/"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "News Archive - PostgreSQL",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      }
+    ]
+  },
   "2026-05-15_1030": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

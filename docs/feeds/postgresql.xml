@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-18T11:49:24.997272+00:00</updated>
+  <updated>2026-05-19T11:27:34.020272+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -319,5 +319,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-15_1030.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y análisis de consultas. Mejora la eficiencia de tu base de datos con estas mejores prácticas.</summary>
     <published>2026-05-15T10:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-19_1125.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-05-19T11:25:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para mejorar el rendimiento y la escalabilidad de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Para crear un índice, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo, para crear un índice en la columna &lt;code&gt;id&lt;/code&gt; de la tabla &lt;code&gt;usuarios&lt;/code&gt;, se puede ejecutar el comando &lt;code&gt;CREATE INDEX idx_usuarios_id ON usuarios (id)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra técnica importante para mejorar la disponibilidad y la escalabilidad de la base de datos. PostgreSQL proporciona varias opciones de replicación, incluyendo la replicación maestra-esclavo y la replicación de streaming. Para configurar la replicación maestra-esclavo, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos maestra, y luego configurar el esclavo para que se conecte a la maestra utilizando el comando &lt;code&gt;pg_rewind&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de la replicación de streaming es similar, pero requiere la configuración adicional de la opción &lt;code&gt;wal_level&lt;/code&gt; en el archivo &lt;code&gt;postgresql.conf&lt;/code&gt;. Por ejemplo, se puede establecer &lt;code&gt;wal_level = hot_standby&lt;/code&gt; para permitir la replicación de streaming. Luego, se puede configurar el esclavo para que se conecte a la maestra utilizando el comando &lt;code&gt;pg_rewind&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además de la configuración de índices y la replicación, es importante realizar backups regulares de la base de datos. PostgreSQL proporciona varias opciones para realizar backups, incluyendo el comando &lt;code&gt;pg_dump&lt;/code&gt; y el comando &lt;code&gt;pg_dumpall&lt;/code&gt;. El comando &lt;code&gt;pg_dump&lt;/code&gt; se utiliza para realizar un backup de una sola base de datos, mientras que el comando &lt;code&gt;pg_dumpall&lt;/code&gt; se utiliza para realizar un backup de todas las bases de datos en el servidor.&lt;/p&gt;
+&lt;p&gt;Para realizar un backup de una sola base de datos, se puede ejecutar el comando &lt;code&gt;pg_dump -U usuario -d base_de_datos &gt; backup.sql&lt;/code&gt;. Esto creará un archivo &lt;code&gt;backup.sql&lt;/code&gt; que contiene la estructura y los datos de la base de datos. Luego, se puede restaurar la base de datos utilizando el comando &lt;code&gt;psql -U usuario -d base_de_datos &lt; backup.sql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que la versión 18.4 de PostgreSQL incluye una corrección de seguridad para prevenir la travesía de directorios en &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_rewind&lt;/code&gt;. Esta corrección es importante para prevenir ataques de seguridad que podrían permitir a un atacante acceder a archivos sensibles en el sistema.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere la configuración de índices, la replicación y los backups. Es importante seguir las mejores prácticas de seguridad y realizar actualizaciones regulares para mantener la base de datos segura y escalable.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/release/18.4/"&gt;PostgreSQL: Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;News Archive - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-19_1125.html"/>
+    <summary>En este artículo, se presentan técnicas de optimización para mejorar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y los backups. Se proporcionan comandos y configuraciones específicas para cada técnica.</summary>
+    <published>2026-05-19T11:25:00+00:00</published>
   </entry>
 </feed>

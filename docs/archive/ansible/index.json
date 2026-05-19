@@ -1,4 +1,24 @@
 {
+  "2026-05-19_1125": {
+    "slug": "ansible",
+    "title": "Ansible: Nuevas Características y Mejoras",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura que sigue siendo muy popular en la industria. Recientemente, se han lanzado nuevas versiones de Ansible, como la versión 13.6.0 y la versión 14.0.0a3, que incluyen mejoras y nuevas características. Por ejemplo, la versión 14.0.0a3 depende de `ansible-core 2.21.0b3` y ofrece mejoras en la gestión de criptografía.\n\nUna de las características más interesantes de Ansible es la posibilidad de utilizar `playbooks` para automatizar tareas complejas. Un `playbook` es un archivo YAML que define una serie de tareas que se deben ejecutar en un orden específico. Por ejemplo, se puede crear un `playbook` para instalar y configurar un servidor web utilizando el módulo `yum` y `template`. Para ejecutar un `playbook`, se puede utilizar el comando `ansible-playbook -i inventory.ini playbook.yml`.\n\nOtra característica importante de Ansible es la gestión de inventarios. Un inventario es un archivo que define los hosts que se van a gestionar con Ansible. Se puede utilizar el comando `ansible-inventory -i inventory.ini --list` para ver la lista de hosts definidos en el inventario. También se puede utilizar el módulo `aws_ec2` para gestionar instancias de EC2 en Amazon Web Services.\n\nEn cuanto a las colecciones, Ansible ofrece una variedad de colecciones para diferentes proveedores de cloud, como Amazon Web Services y Google Cloud Platform. Por ejemplo, la colección `amazon.aws` ofrece módulos para gestionar instancias de EC2, buckets de S3 y más. Se puede instalar una colección utilizando el comando `ansible-galaxy collection install amazon.aws`.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. Algunas de las características más interesantes de Ansible son los `playbooks`, la gestión de inventarios y las colecciones. Para obtener más información, se pueden consultar las fuentes oficiales de Ansible y la documentación en línea.\n\nPara mantener la seguridad de los datos, se puede utilizar el módulo `vault` para cifrar los datos sensibles. Por ejemplo, se puede utilizar el comando `ansible-vault encrypt_string` para cifrar una cadena de texto. Luego, se puede utilizar el módulo `vault` en un `playbook` para descifrar la cadena de texto y utilizarla en una tarea.\n\nFinalmente, es importante mencionar que Ansible ofrece una variedad de herramientas y recursos para ayudar a los usuarios a mejorar su productividad y eficiencia. Por ejemplo, se puede utilizar el comando `ansible-doc` para ver la documentación de un módulo específico. También se puede utilizar la herramienta `AWX/Tower` para gestionar y automatizar tareas de manera centralizada.",
+    "sources": [
+      {
+        "title": "Release announcement: Ansible community package 13.6.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-13-6-0/45718"
+      },
+      {
+        "title": "Ansible community package 14.0.0a3 (Pre-Release)",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0a3-pre-release/45725"
+      },
+      {
+        "title": "amazon.aws Release Notes",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"
+      }
+    ]
+  },
   "2026-05-15_1030": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

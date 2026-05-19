@@ -1,4 +1,28 @@
 {
+  "2026-05-19_1125": {
+    "slug": "terraform",
+    "title": "Terraform: Mejores Prácticas y Novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades para utilizar Terraform de manera efectiva.",
+    "content": "Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para utilizar Terraform de manera efectiva, es importante seguir las mejores prácticas. Una de las mejores prácticas es utilizar módulos de Terraform, que permiten reutilizar código y simplificar la gestión de la infraestructura. Por ejemplo, se puede crear un módulo para provisionar instancias EC2 en AWS utilizando el comando `terraform apply -target=module.ec2`.\n\nPara gestionar el estado de la infraestructura, Terraform utiliza un archivo de estado que se puede almacenar en un almacenamiento remoto, como Amazon S3. Se puede configurar el almacenamiento remoto utilizando el bloque `backend` en el archivo de configuración de Terraform, por ejemplo: `backend 's3' { bucket = 'nixuz-terraform-state' key = 'global/state.tfstate' region = 'us-east-1' }`.\n\nOtra característica importante de Terraform es la capacidad de gestionar diferentes entornos de trabajo utilizando workspaces. Los workspaces permiten aislar la infraestructura de diferentes entornos, como desarrollo, pruebas y producción. Se puede crear un nuevo workspace utilizando el comando `terraform workspace new <nombre_del_workspace>`.\n\nEn cuanto a las novedades, Terraform ha lanzado varias versiones recientes, como la versión 1.15.0, que incluye varias mejoras y nuevas características. También se han lanzado versiones de prueba, como la versión 1.15.0-rc4, que incluye una actualización de dependencias.\n\nEs importante mencionar que Terraform también cuenta con una comunidad activa que contribuye a su desarrollo y proporciona soporte. Por ejemplo, se pueden encontrar tutoriales y guías en la comunidad DEV, como la guía de mejores prácticas para provisionar instancias EC2 con Terraform.\n\nEn resumen, Terraform es una herramienta poderosa para gestionar la infraestructura como código, y seguir las mejores prácticas y estar al tanto de las novedades es fundamental para utilizarla de manera efectiva.\n\nPara más información, se pueden consultar las fuentes oficiales de Terraform y la comunidad DEV.\n\n",
+    "sources": [
+      {
+        "title": "Terraform AWS Cloud Control Provider",
+        "url": "https://github.com/hashicorp/terraform-provider-awscc"
+      },
+      {
+        "title": "Terraform Validate Crashing with Action #38402",
+        "url": "https://github.com/hashicorp/terraform/issues/38402"
+      },
+      {
+        "title": "Provisioning EC2 Instances with Terraform Modules - Best Practices Guide",
+        "url": "https://dev.to/vvasylkovskyi/provisioning-ec2-instances-with-terraform-modules-best-practices-guide-e04"
+      },
+      {
+        "title": "How to Use Terraform for Cloud Automation? A Complete Guide",
+        "url": "https://dev.to/maria_harger_9eb67f1e777f/how-to-use-terraform-for-cloud-automation-a-complete-guide-14og"
+      }
+    ]
+  },
   "2026-05-15_1030": {
     "slug": "terraform",
     "title": "Terraform: Infraestructura como Código",
