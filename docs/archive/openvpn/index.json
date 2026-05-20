@@ -1,4 +1,24 @@
 {
+  "2026-05-20_1056": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto a punto o sitio a sitio. En este artículo, se presentan las características y configuraciones de OpenVPN, incluyendo tunneling, certificados y hardening.",
+    "content": "OpenVPN es un sistema de red privada virtual que implementa técnicas para crear conexiones seguras punto a punto o sitio a sitio en configuraciones enrutadas o conmutadas y facilidades de acceso remoto. Permite a los pares autenticarse mediante certificados SSL/TLS o secretos compartidos. Para configurar OpenVPN, se puede utilizar el comando `openvpn --config archivo_de_configuracion.ovpn` para establecer una conexión.\n\nLa configuración de OpenVPN se puede realizar mediante archivos de configuración que especifican los parámetros de la conexión, como la dirección del servidor, el puerto y el protocolo de transporte. Por ejemplo, el archivo de configuración puede contener la línea `proto udp` para especificar el protocolo de transporte UDP. Además, se pueden utilizar certificados SSL/TLS para autenticar los pares y cifrar el tráfico de red.\n\nPara mejorar la seguridad de la conexión OpenVPN, se pueden implementar medidas de hardening, como la autenticación de dos factores y la limitación del acceso a la red privada virtual. También se puede utilizar el servidor de acceso OpenVPN para gestionar las conexiones y autenticar a los usuarios. El servidor de acceso OpenVPN proporciona una interfaz web para configurar y gestionar las conexiones, y se puede acceder a ella mediante el comando `https://direccion_del_servidor:443`.\n\nEn cuanto a las novedades y mejoras en OpenVPN, se han realizado esfuerzos para mejorar la seguridad y la escalabilidad del sistema. Por ejemplo, se ha agregado soporte para el protocolo de transporte TCP y se han mejorado las capacidades de autenticación y autorización. Además, se han publicado tutoriales y guías para ayudar a los administradores a configurar y gestionar las conexiones OpenVPN.\n\nPara actualizar el servidor de acceso OpenVPN, se puede seguir el tutorial proporcionado en la documentación oficial, que incluye los pasos para actualizar el software y configurar la conexión. El comando `sudo apt-get update && sudo apt-get install openvpn` se puede utilizar para actualizar el software OpenVPN en un sistema Ubuntu.\n\nEn resumen, OpenVPN es un sistema de red privada virtual que ofrece una amplia gama de características y configuraciones para crear conexiones seguras punto a punto o sitio a sitio. La configuración y el hardening de la conexión son fundamentales para garantizar la seguridad y la escalabilidad del sistema.\n\n",
+    "sources": [
+      {
+        "title": "OpenVPN - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/OpenVPN"
+      },
+      {
+        "title": "FreshPorts -- security/openvpn: Secure IP/Ethernet tunnel daemon",
+        "url": "https://www.freshports.org/security/openvpn/"
+      },
+      {
+        "title": "Tutorial: Update Your Access Server Version - OpenVPN",
+        "url": "https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html"
+      }
+    ]
+  },
   "2026-05-16_0945": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

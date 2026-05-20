@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-19T11:27:33.999173+00:00</updated>
+  <updated>2026-05-20T10:57:43.593233+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -314,5 +314,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-16_0945.html"/>
     <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto a punto o sitio a sitio. En este artículo, se explora su funcionamiento y configuración.</summary>
     <published>2026-05-16T09:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-20_1056.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-05-20T10:56:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es un sistema de red privada virtual que implementa técnicas para crear conexiones seguras punto a punto o sitio a sitio en configuraciones enrutadas o conmutadas y facilidades de acceso remoto. Permite a los pares autenticarse mediante certificados SSL/TLS o secretos compartidos. Para configurar OpenVPN, se puede utilizar el comando &lt;code&gt;openvpn --config archivo_de_configuracion.ovpn&lt;/code&gt; para establecer una conexión.&lt;/p&gt;
+&lt;p&gt;La configuración de OpenVPN se puede realizar mediante archivos de configuración que especifican los parámetros de la conexión, como la dirección del servidor, el puerto y el protocolo de transporte. Por ejemplo, el archivo de configuración puede contener la línea &lt;code&gt;proto udp&lt;/code&gt; para especificar el protocolo de transporte UDP. Además, se pueden utilizar certificados SSL/TLS para autenticar los pares y cifrar el tráfico de red.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de la conexión OpenVPN, se pueden implementar medidas de hardening, como la autenticación de dos factores y la limitación del acceso a la red privada virtual. También se puede utilizar el servidor de acceso OpenVPN para gestionar las conexiones y autenticar a los usuarios. El servidor de acceso OpenVPN proporciona una interfaz web para configurar y gestionar las conexiones, y se puede acceder a ella mediante el comando &lt;code&gt;https://direccion_del_servidor:443&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en OpenVPN, se han realizado esfuerzos para mejorar la seguridad y la escalabilidad del sistema. Por ejemplo, se ha agregado soporte para el protocolo de transporte TCP y se han mejorado las capacidades de autenticación y autorización. Además, se han publicado tutoriales y guías para ayudar a los administradores a configurar y gestionar las conexiones OpenVPN.&lt;/p&gt;
+&lt;p&gt;Para actualizar el servidor de acceso OpenVPN, se puede seguir el tutorial proporcionado en la documentación oficial, que incluye los pasos para actualizar el software y configurar la conexión. El comando &lt;code&gt;sudo apt-get update &amp;&amp; sudo apt-get install openvpn&lt;/code&gt; se puede utilizar para actualizar el software OpenVPN en un sistema Ubuntu.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es un sistema de red privada virtual que ofrece una amplia gama de características y configuraciones para crear conexiones seguras punto a punto o sitio a sitio. La configuración y el hardening de la conexión son fundamentales para garantizar la seguridad y la escalabilidad del sistema.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/OpenVPN"&gt;OpenVPN - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freshports.org/security/openvpn/"&gt;FreshPorts -- security/openvpn: Secure IP/Ethernet tunnel daemon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html"&gt;Tutorial: Update Your Access Server Version - OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-20_1056.html"/>
+    <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto a punto o sitio a sitio. En este artículo, se presentan las características y configuraciones de OpenVPN, incluyendo tunneling, certificados y hardening.</summary>
+    <published>2026-05-20T10:56:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-05-20_1056": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes 1.36",
+    "summary": "Kubernetes 1.36 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. Esta versión también incluye soporte para volume group snapshots y mejoras en la seguridad de los contenedores.",
+    "content": "\nLa versión 1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que incluye una serie de características y mejoras que mejorarán la experiencia del usuario y la seguridad de los contenedores. Una de las novedades más destacadas es el soporte para volume group snapshots, que permite a los administradores crear copias de seguridad de los volúmenes de los contenedores de manera más eficiente.\n\nPara utilizar esta característica, es necesario configurar el almacenamiento de los contenedores mediante el comando `kubectl` y especificar el tipo de almacenamiento que se desea utilizar. Por ejemplo, para utilizar el almacenamiento de tipo `persistentVolumeClaim`, se puede utilizar el siguiente comando: `kubectl create -f pvc.yaml`. Luego, se puede crear un snapshot del volumen utilizando el comando `kubectl create -f snapshot.yaml`.\n\nOtra característica importante en esta versión es la mejora en la seguridad de los contenedores. Ahora, es posible configurar la autenticación y autorización de los contenedores utilizando el comando `kubectl` y especificar las políticas de seguridad que se desean aplicar. Por ejemplo, para configurar la autenticación de los contenedores mediante el uso de tokens, se puede utilizar el siguiente comando: `kubectl create -f token.yaml`.\n\nLa versión 1.36 de Kubernetes también incluye mejoras en la networking de los contenedores. Ahora, es posible configurar la red de los contenedores utilizando el comando `kubectl` y especificar las políticas de red que se desean aplicar. Por ejemplo, para configurar la red de los contenedores mediante el uso de un servicio de red, se puede utilizar el siguiente comando: `kubectl create -f network.yaml`.\n\nEn resumen, la versión 1.36 de Kubernetes es una versión muy completa que incluye una serie de características y mejoras que mejorarán la experiencia del usuario y la seguridad de los contenedores. Es importante mencionar que, para utilizar estas características, es necesario configurar el almacenamiento, la seguridad y la red de los contenedores de manera adecuada.\n\nFinalmente, es importante mencionar que la versión 1.36 de Kubernetes es compatible con una variedad de plataformas y herramientas, lo que la hace una excelente opción para aquellos que buscan una solución de contenedores escalable y segura. Para obtener más información sobre la versión 1.36 de Kubernetes, se puede consultar la documentación oficial en el sitio web de Kubernetes.\n\n",
+    "sources": [
+      {
+        "title": "Release Notes de Kubernetes 1.36",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md"
+      },
+      {
+        "title": "Kubernetes 1.36",
+        "url": "https://kubernetes.io/releases/1.36/"
+      },
+      {
+        "title": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/"
+      }
+    ]
+  },
   "2026-05-16_0945": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes v1.36",

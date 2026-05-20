@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-19T11:27:33.996224+00:00</updated>
+  <updated>2026-05-20T10:57:43.589671+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -323,5 +323,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-16_0945.html"/>
     <summary>FreeIPA es un sistema de gestión de identidad y acceso que permite a las organizaciones gestionar de manera centralizada los accesos y permisos de sus usuarios. En este artículo, se presentan las características y configuraciones básicas de FreeIPA.</summary>
     <published>2026-05-16T09:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-20_1056.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-05-20T10:56:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un proyecto de código abierto que combina las tecnologías LDAP, Kerberos y DNS para proporcionar una solución integral de gestión de identidad y acceso. Para instalar FreeIPA en un sistema Ubuntu, se puede utilizar el comando &lt;code&gt;sudo apt-get install freeipa-server&lt;/code&gt; y seguir las instrucciones del asistente de instalación.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar FreeIPA utilizando el comando &lt;code&gt;ipa setup&lt;/code&gt; y seguir las instrucciones del asistente de configuración. Es importante configurar la autenticación Kerberos y el acceso LDAP para permitir a los usuarios acceder a los recursos del sistema.&lt;/p&gt;
+&lt;p&gt;Para agregar un usuario a FreeIPA, se puede utilizar el comando &lt;code&gt;ipa user-add&lt;/code&gt; seguido del nombre del usuario y la contraseña. Por ejemplo: &lt;code&gt;ipa user-add usuario -p contraseña&lt;/code&gt;. También se puede configurar el acceso a los recursos del sistema utilizando reglas de acceso basadas en la función del usuario (HBAC) con el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se puede configurar el acceso a los comandos del sistema utilizando reglas de acceso basadas en la función del usuario (sudo) con el comando &lt;code&gt;ipa sudorule-add&lt;/code&gt;. Por ejemplo: &lt;code&gt;ipa sudorule-add regla -c comando&lt;/code&gt;. Es importante mencionar que FreeIPA también admite la creación de relaciones de confianza entre dominios para permitir el acceso a los recursos de otros dominios.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que FreeIPA admite la autenticación multifactor y la cifrado de datos en tránsito. También se pueden configurar alertas y notificaciones para detectar posibles intentos de acceso no autorizados.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que proporciona una solución integral para la autenticación y autorización de usuarios y equipos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:13577"&gt;RHSA-2026:13577 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/chanuth_412/running-freeipa-on-ubuntu-using-podman-mdo"&gt;Running FreeIPA on Ubuntu Using Podman&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-20_1056.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidad y acceso que proporciona autenticación y autorización para usuarios y equipos. En este artículo, se presentan las características y configuraciones básicas de FreeIPA.</summary>
+    <published>2026-05-20T10:56:00+00:00</published>
   </entry>
 </feed>

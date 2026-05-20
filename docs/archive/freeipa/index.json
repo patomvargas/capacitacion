@@ -1,4 +1,20 @@
 {
+  "2026-05-20_1056": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es un sistema de gestión de identidad y acceso que proporciona autenticación y autorización para usuarios y equipos. En este artículo, se presentan las características y configuraciones básicas de FreeIPA.",
+    "content": "FreeIPA es un proyecto de código abierto que combina las tecnologías LDAP, Kerberos y DNS para proporcionar una solución integral de gestión de identidad y acceso. Para instalar FreeIPA en un sistema Ubuntu, se puede utilizar el comando `sudo apt-get install freeipa-server` y seguir las instrucciones del asistente de instalación.\n\nUna vez instalado, se puede configurar FreeIPA utilizando el comando `ipa setup` y seguir las instrucciones del asistente de configuración. Es importante configurar la autenticación Kerberos y el acceso LDAP para permitir a los usuarios acceder a los recursos del sistema.\n\nPara agregar un usuario a FreeIPA, se puede utilizar el comando `ipa user-add` seguido del nombre del usuario y la contraseña. Por ejemplo: `ipa user-add usuario -p contraseña`. También se puede configurar el acceso a los recursos del sistema utilizando reglas de acceso basadas en la función del usuario (HBAC) con el comando `ipa hbacrule-add`.\n\nAdemás, se puede configurar el acceso a los comandos del sistema utilizando reglas de acceso basadas en la función del usuario (sudo) con el comando `ipa sudorule-add`. Por ejemplo: `ipa sudorule-add regla -c comando`. Es importante mencionar que FreeIPA también admite la creación de relaciones de confianza entre dominios para permitir el acceso a los recursos de otros dominios.\n\nEn cuanto a la seguridad, es importante mencionar que FreeIPA admite la autenticación multifactor y la cifrado de datos en tránsito. También se pueden configurar alertas y notificaciones para detectar posibles intentos de acceso no autorizados.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que proporciona una solución integral para la autenticación y autorización de usuarios y equipos.",
+    "sources": [
+      {
+        "title": "RHSA-2026:13577 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:13577"
+      },
+      {
+        "title": "Running FreeIPA on Ubuntu Using Podman",
+        "url": "https://dev.to/chanuth_412/running-freeipa-on-ubuntu-using-podman-mdo"
+      }
+    ]
+  },
   "2026-05-16_0945": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",
