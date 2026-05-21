@@ -1,4 +1,24 @@
 {
+  "2026-05-21_1130": {
+    "slug": "openshift",
+    "title": "OpenShift: Despliegue y Administración de Aplicaciones",
+    "summary": "OpenShift es una plataforma de contenerización que permite desplegar y administrar aplicaciones de manera eficiente. En este artículo, se presentan las características y beneficios de OpenShift, así como ejemplos prácticos de su uso.",
+    "content": "\nOpenShift es una familia de productos de contenerización desarrollados por Red Hat. Su producto insignia, OpenShift Container Platform, es una plataforma de nube híbrida como servicio construida alrededor de contenedores de Linux orquestados y administrados por Kubernetes sobre una base de Red Hat Enterprise Linux. \n\nUna de las características clave de OpenShift es su capacidad para desplegar y administrar aplicaciones de manera eficiente. Para ello, se utilizan comandos como `oc new-app` para crear una nueva aplicación, y `oc expose` para exponer la aplicación a la red. Por ejemplo, para desplegar una aplicación de Node.js, se puede utilizar el comando `oc new-app nodejs:latest~https://github.com/openshift/nodejs-ex.git`. \n\nAdemás, OpenShift proporciona una variedad de herramientas y características para administrar y monitorear las aplicaciones, como el Operador de Vida (OLM) y el Operador de Registro (Registry Operator). El OLM es responsable de administrar el ciclo de vida de los operadores en el clúster, mientras que el Registro de Operadores es un catálogo de operadores certificados que se pueden instalar en el clúster. Para instalar un operador, se puede utilizar el comando `oc create -f https://operatorhub.io/install/<operator_name>.yaml`. \n\nEn cuanto a la seguridad, OpenShift proporciona una variedad de características y herramientas para proteger las aplicaciones y los datos. Por ejemplo, se pueden utilizar comandos como `oc adm policy` para administrar las políticas de seguridad, y `oc get secret` para obtener información sobre los secretos almacenados en el clúster. \n\nFinalmente, es importante mencionar que OpenShift es una plataforma en constante evolución, con nuevas características y herramientas que se agregan regularmente. Por ejemplo, la versión más reciente de OpenShift incluye soporte para la virtualización de aplicaciones y la integración con otras herramientas y plataformas de Red Hat.\n\nEn resumen, OpenShift es una plataforma de contenerización poderosa y flexible que permite desplegar y administrar aplicaciones de manera eficiente. Con sus características y herramientas avanzadas, OpenShift es una excelente opción para las organizaciones que buscan mejorar la eficiencia y la seguridad de sus aplicaciones.",
+    "sources": [
+      {
+        "title": "OpenShift - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/OpenShift"
+      },
+      {
+        "title": "Red Hat - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Red_Hat"
+      },
+      {
+        "title": "What's new with Azure Red Hat OpenShift?",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      }
+    ]
+  },
   "2026-05-17_0950": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Best Practices",

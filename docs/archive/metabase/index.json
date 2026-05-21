@@ -1,4 +1,24 @@
 {
+  "2026-05-21_1130": {
+    "slug": "metabase",
+    "title": "Metabase: Queries y Dashboards Avanzados",
+    "summary": "Metabase es una herramienta de análisis de datos que permite crear queries y dashboards personalizados. En este artículo, se exploran las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "\nMetabase es una herramienta de análisis de datos que permite a los usuarios crear queries y dashboards personalizados para visualizar y analizar sus datos. Recientemente, se han agregado nuevas funcionalidades, como la posibilidad de crear dashboards y preguntas a través de conversación con el servidor MCP. Por ejemplo, se puede utilizar el comando `Build me a dashboard from the Metabase sample database showing product performance, like total orders, revenue, and average rating by category` para crear un dashboard personalizado.\n\nPara aprovechar al máximo las funcionalidades de Metabase, es importante conocer las mejores prácticas para su implementación y configuración. Por ejemplo, se puede utilizar `docker-compose` para desplegar Metabase en un entorno de contenedores, utilizando el comando `docker-compose up -d` para iniciar el contenedor en segundo plano. También se puede utilizar `aws cli` para desplegar Metabase en AWS ECS (Fargate) con PostgreSQL (RDS), utilizando el comando `aws ecs create-cluster --cluster-name metabase-cluster` para crear un clúster de ECS.\n\nEn cuanto a la seguridad, es importante tener en cuenta las últimas vulnerabilidades conocidas y explotadas, como las listadas en el archivo `known_exploited_vulnerabilities.json`. También se puede utilizar herramientas como `n8n` para automatizar flujos de trabajo y integrar Metabase con otras herramientas y servicios.\n\nPara embeddar Metabase en una aplicación web, se puede utilizar la API de Metabase, que proporciona endpoints para crear y gestionar dashboards y preguntas. Por ejemplo, se puede utilizar el endpoint `POST /api/dashboard` para crear un nuevo dashboard, y el endpoint `GET /api/dashboard/:id` para obtener un dashboard existente.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos, y su implementación y configuración requieren conocimientos y habilidades específicas. Siguiendo las mejores prácticas y utilizando las herramientas y servicios adecuados, se puede aprovechar al máximo su potencial y crear dashboards y preguntas personalizados para visualizar y analizar los datos.\n\nFinalmente, es importante mencionar que Metabase tiene una comunidad activa y una documentación extensa, que proporcionan recursos y soporte para los usuarios. Por ejemplo, se puede encontrar documentación sobre cómo desplegar Metabase en EC2 con acceso a Athena en una cuenta diferente, utilizando el comando `aws ec2 run-instances --image-id ami-abc123 --instance-type t2.micro` para crear una instancia de EC2.\n",
+    "sources": [
+      {
+        "title": "Metabase 61: AI fun police, build questions and dashboards ...",
+        "url": "https://dev.to/metabase/metabase-61-ai-fun-police-build-questions-and-dashboards-with-mcp-and-much-more-4850"
+      },
+      {
+        "title": "How to Run Metabase on EC2 with Cross-Account Athena Access",
+        "url": "https://medium.com/@justin_26840/how-to-run-metabase-on-ec2-with-cross-account-athena-access-47f25f3c3b0e"
+      },
+      {
+        "title": "Deploying Metabase on AWS ECS (Fargate) with PostgreSQL (RDS)",
+        "url": "https://dev.to/ikoh_sylva/deploying-metabase-on-aws-ecs-fargate-with-postgresql-rds-41pa"
+      }
+    ]
+  },
   "2026-05-17_0950": {
     "slug": "metabase",
     "title": "Metabase: Herramienta de Inteligencia Empresarial",

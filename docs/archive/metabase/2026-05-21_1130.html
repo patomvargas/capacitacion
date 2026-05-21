@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metabase: Queries y Dashboards Avanzados - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+    </div>
+
+    <h1>Metabase: Queries y Dashboards Avanzados</h1>
+    <div class="meta">2026-05-21 1130 · Metabase</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear queries y dashboards personalizados para visualizar y analizar sus datos. Recientemente, se han agregado nuevas funcionalidades, como la posibilidad de crear dashboards y preguntas a través de conversación con el servidor MCP. Por ejemplo, se puede utilizar el comando `Build me a dashboard from the Metabase sample database showing product performance, like total orders, revenue, and average rating by category` para crear un dashboard personalizado.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo las funcionalidades de Metabase, es importante conocer las mejores prácticas para su implementación y configuración. Por ejemplo, se puede utilizar `docker-compose` para desplegar Metabase en un entorno de contenedores, utilizando el comando `docker-compose up -d` para iniciar el contenedor en segundo plano. También se puede utilizar `aws cli` para desplegar Metabase en AWS ECS (Fargate) con PostgreSQL (RDS), utilizando el comando `aws ecs create-cluster --cluster-name metabase-cluster` para crear un clúster de ECS.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, es importante tener en cuenta las últimas vulnerabilidades conocidas y explotadas, como las listadas en el archivo `known_exploited_vulnerabilities.json`. También se puede utilizar herramientas como `n8n` para automatizar flujos de trabajo y integrar Metabase con otras herramientas y servicios.</p>
+            
+        
+            
+        
+            
+            <p>Para embeddar Metabase en una aplicación web, se puede utilizar la API de Metabase, que proporciona endpoints para crear y gestionar dashboards y preguntas. Por ejemplo, se puede utilizar el endpoint `POST /api/dashboard` para crear un nuevo dashboard, y el endpoint `GET /api/dashboard/:id` para obtener un dashboard existente.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos, y su implementación y configuración requieren conocimientos y habilidades específicas. Siguiendo las mejores prácticas y utilizando las herramientas y servicios adecuados, se puede aprovechar al máximo su potencial y crear dashboards y preguntas personalizados para visualizar y analizar los datos.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Metabase tiene una comunidad activa y una documentación extensa, que proporcionan recursos y soporte para los usuarios. Por ejemplo, se puede encontrar documentación sobre cómo desplegar Metabase en EC2 con acceso a Athena en una cuenta diferente, utilizando el comando `aws ec2 run-instances --image-id ami-abc123 --instance-type t2.micro` para crear una instancia de EC2.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://dev.to/metabase/metabase-61-ai-fun-police-build-questions-and-dashboards-with-mcp-and-much-more-4850" target="_blank">Metabase 61: AI fun police, build questions and dashboards ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@justin_26840/how-to-run-metabase-on-ec2-with-cross-account-athena-access-47f25f3c3b0e" target="_blank">How to Run Metabase on EC2 with Cross-Account Athena Access</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/ikoh_sylva/deploying-metabase-on-aws-ecs-fargate-with-postgresql-rds-41pa" target="_blank">Deploying Metabase on AWS ECS (Fargate) with PostgreSQL (RDS)</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-17_0950.html">&larr; 2026-05-17 0950</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
