@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-21T11:31:36.457868+00:00</updated>
+  <updated>2026-05-22T10:57:03.440120+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -309,5 +309,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-18_1148.html"/>
     <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo. En este artículo, se presentan mejores prácticas para trabajar con Airflow 2.x, incluyendo la creación de DAGs dinámicos y la configuración de operadores.</summary>
     <published>2026-05-18T11:48:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html</id>
+    <title>Mejores prácticas para Airflow 3</title>
+    <updated>2026-05-22T10:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow 3 es la versión más reciente de la plataforma de orquestación de Apache, y trae consigo una serie de características y mejoras importantes. Una de las características más destacadas es la versión de DAGs, que permite tener un control más preciso sobre las versiones de los pipelines. Para aprovechar esta característica, se puede utilizar el comando &lt;code&gt;airflow db upgrade&lt;/code&gt; para actualizar la base de datos de Airflow.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la ejecución remota, que permite ejecutar tareas en máquinas remotas. Para configurar la ejecución remota, se puede utilizar el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; y establecer la opción &lt;code&gt;remote_execution&lt;/code&gt; en &lt;code&gt;True&lt;/code&gt;. Luego, se puede utilizar el comando &lt;code&gt;airflow trigger_dag&lt;/code&gt; para ejecutar un DAG en una máquina remota.&lt;/p&gt;
+&lt;p&gt;En cuanto al diseño de DAGs, es importante seguir las mejores prácticas para asegurarse de que los pipelines sean legibles, mantenibles y producción-listos. Una de las mejores prácticas es utilizar tareas atómicas, que son tareas que no pueden ser divididas en sub-tareas. Otra buena práctica es utilizar la idempotencia, que es la capacidad de una tarea de ser ejecutada múltiples veces sin afectar el resultado. Para lograr la idempotencia, se puede utilizar el comando &lt;code&gt;airflow task_state&lt;/code&gt; para verificar el estado de una tarea antes de ejecutarla.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de conexiones, es importante utilizar el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; para establecer las opciones de conexión. Por ejemplo, se puede utilizar la opción &lt;code&gt;sql_alchemy_conn&lt;/code&gt; para establecer la conexión a la base de datos. Luego, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow 3 también trae consigo una serie de mejoras en la seguridad, como la autenticación y la autorización. Para configurar la autenticación, se puede utilizar el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; y establecer la opción &lt;code&gt;auth_backend&lt;/code&gt; en &lt;code&gt;True&lt;/code&gt;. Luego, se puede utilizar el comando &lt;code&gt;airflow auth&lt;/code&gt; para autenticar a los usuarios.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/blog/airflow-3-0"&gt;Airflow 3.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/towards-data-engineering/5-dag-design-principles-that-make-your-airflow-pipelines-readable-maintainable-and-production-ready-05e2d8473886"&gt;Diseño de DAGs en Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html"&gt;Configuración de conexiones en Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html"/>
+    <summary>Airflow 3 es la versión más reciente de la plataforma de orquestación de Apache, con características como la versión de DAGs y la ejecución remota. En este artículo, se presentan las mejores prácticas para diseñar y implementar pipelines en Airflow 3. Se cubren temas como el diseño de DAGs, el uso de operadores y sensores, y la configuración de conexiones.</summary>
+    <published>2026-05-22T10:55:00+00:00</published>
   </entry>
 </feed>

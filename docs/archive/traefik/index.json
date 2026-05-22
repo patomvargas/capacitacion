@@ -1,4 +1,24 @@
 {
+  "2026-05-22_1055": {
+    "slug": "traefik",
+    "title": "Traefik: Mejoras y Best Practices",
+    "summary": "Traefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de Kubernetes y microservicios. En este artículo, se presentan las últimas mejoras y best practices para utilizar Traefik de manera efectiva.",
+    "content": "Traefik es un sistema de proxy inverso y servidor web que se utiliza para gestionar el tráfico de red en entornos de Kubernetes y microservicios. En las últimas versiones, se han incorporado mejoras significativas, como la compatibilidad con la versión 1.5.1 de la API de Gateway y la integración con el proveedor Knative.\n\nPara configurar Traefik, es necesario crear un archivo de configuración que especifique los routers, middlewares y proveedores que se utilizarán. Por ejemplo, se puede utilizar el siguiente comando para crear un router que redirija el tráfico a un servicio específico: `traefik http routers my-router --rule=Host:example.com --service=my-service`.\n\nEn cuanto a la seguridad, Traefik admite la configuración de SSL/TLS con Let's Encrypt. Para habilitar esta función, es necesario agregar la siguiente configuración al archivo de configuración: `traefik http middlewares my-https --tls --certResolver=le`. Luego, se puede utilizar el comando `traefik http routers my-router --rule=Host:example.com --middleware=my-https --service=my-service` para crear un router que utilice el middleware de SSL/TLS.\n\nEn cuanto a la observabilidad, Traefik proporciona una variedad de herramientas para monitorear y analizar el tráfico de red. Por ejemplo, se puede utilizar el comando `traefik logs` para visualizar los registros de acceso y errores. Además, se puede configurar Traefik para enviar los registros a un servidor de logs externo, como Elasticsearch o Splunk.\n\nEn resumen, Traefik es un sistema de proxy inverso y servidor web que se utiliza comúnmente en entornos de Kubernetes y microservicios. En este artículo, se han presentado las últimas mejoras y best practices para utilizar Traefik de manera efectiva, incluyendo la configuración de routers, middlewares y proveedores, así como la habilitación de SSL/TLS con Let's Encrypt y la observabilidad del tráfico de red.\n\nPara obtener más información sobre Traefik, se recomienda consultar la documentación oficial y las fuentes proporcionadas al final de este artículo.\n\nFinalmente, es importante mencionar que Traefik es un sistema en constante evolución, por lo que es recomendable mantenerse actualizado con las últimas versiones y mejoras. En este sentido, se puede utilizar el comando `traefik version` para verificar la versión actual de Traefik y `traefik update` para actualizar a la última versión disponible.",
+    "sources": [
+      {
+        "title": "Traefik GitHub",
+        "url": "https://github.com/traefik/traefik"
+      },
+      {
+        "title": "Traefik Hub",
+        "url": "https://doc.traefik.io/traefik-hub/api-management/release-notes"
+      },
+      {
+        "title": "Traefik para routing dinámico en Kubernetes y microservicios",
+        "url": "https://www.facebook.com/groups/devtitans/posts/1264951605805022/"
+      }
+    ]
+  },
   "2026-05-10_0941": {
     "slug": "traefik",
     "title": "Traefik: Routers y Middlewares",

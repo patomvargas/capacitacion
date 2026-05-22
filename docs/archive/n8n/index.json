@@ -1,4 +1,60 @@
 {
+  "2026-05-22_1055": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo de código abierto que permite combinar la construcción visual con código personalizado. En este artículo, se explora cómo utilizar n8n para automatizar flujos de trabajo y se presentan ejemplos prácticos de su uso.",
+    "content": "n8n es una herramienta poderosa para la automatización de flujos de trabajo que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y conexiones. Los nodos son bloques de funcionalidad que se pueden conectar para crear flujos de trabajo complejos. Por ejemplo, se puede utilizar el nodo `HTTP Request` para realizar una solicitud HTTP a un servidor y luego conectar el resultado a un nodo `JSON Parse` para parsear la respuesta en JSON.\n\nPara empezar a utilizar n8n, es necesario instalar la aplicación de escritorio o utilizar la versión en la nube. Una vez instalado, se puede crear un nuevo flujo de trabajo haciendo clic en el botón `+` en la pantalla de inicio. Luego, se puede agregar nodos y conexiones para crear el flujo de trabajo deseado. Por ejemplo, se puede agregar un nodo `Cron` para programar el flujo de trabajo para que se ejecute en un momento específico del día.\n\nn8n también proporciona una variedad de integraciones con servicios externos, como bases de datos y servicios de mensajería. Por ejemplo, se puede utilizar el nodo `MySQL` para conectarse a una base de datos MySQL y realizar consultas. También se puede utilizar el nodo `Slack` para enviar mensajes a un canal de Slack.\n\nEn cuanto a la seguridad, n8n ha publicado actualizaciones de seguridad para abordar vulnerabilidades en su plataforma. Es importante mantener la plataforma actualizada para asegurarse de que se estén utilizando las últimas versiones de seguridad. Por ejemplo, se puede utilizar el comando `npm install n8n@latest` para actualizar la plataforma a la última versión.\n\nAdemás, n8n proporciona una variedad de recursos para ayudar a los usuarios a aprender y dominar la plataforma. Por ejemplo, se puede encontrar una guía completa para principiantes en el sitio web de n8n, que cubre temas como la creación de flujos de trabajo y la configuración de nodos.\n\nEn resumen, n8n es una herramienta poderosa para la automatización de flujos de trabajo que ofrece una variedad de características y integraciones para ayudar a los usuarios a crear flujos de trabajo personalizados y complejos. Con su interfaz de usuario intuitiva y su amplia gama de recursos, n8n es una excelente opción para cualquier persona que busque automatizar flujos de trabajo y mejorar la eficiencia en su organización.\n\nPara self-hosting, se puede utilizar el comando `docker run -p 5678:5678 n8n/n8n` para ejecutar la plataforma en un contenedor Docker. Luego, se puede acceder a la plataforma mediante la URL `http://localhost:5678`.\n\nEn cuanto a webhooks, se puede utilizar el nodo `Webhook` para recibir solicitudes HTTP y disparar flujos de trabajo. Por ejemplo, se puede configurar un webhook para recibir solicitudes de un servicio de terceros y luego disparar un flujo de trabajo para procesar la solicitud.\n\nEn cuanto a credenciales, se puede utilizar el nodo `Credential` para almacenar y gestionar credenciales para servicios externos. Por ejemplo, se puede crear un credencial para un servicio de base de datos y luego utilizarlo en un nodo `MySQL` para conectarse a la base de datos.\n\nEn cuanto a integraciones, se puede utilizar el nodo `Integration` para conectar con servicios externos. Por ejemplo, se puede utilizar el nodo `Slack` para enviar mensajes a un canal de Slack.\n\nEn cuanto a best practices, es importante mantener la plataforma actualizada y utilizar las últimas versiones de seguridad. También es importante utilizar credenciales seguras y gestionarlas de manera adecuada. Además, es importante probar y depurar los flujos de trabajo antes de ponerlos en producción.\n\nFinalmente, es importante mencionar que n8n es una plataforma de código abierto y que se puede contribuir al desarrollo de la plataforma mediante la creación de nodos personalizados y la participación en la comunidad de desarrolladores.\n\n  ",
+    "sources": [
+      {
+        "title": "n8n-io/n8n-desktop-app",
+        "url": "https://github.com/n8n-io/n8n-desktop-app"
+      },
+      {
+        "title": "AI Agent use of Tools #15883",
+        "url": "https://github.com/n8n-io/n8n/issues/15883"
+      },
+      {
+        "title": "Releases · n8n-io/n8n - GitHub",
+        "url": "https://github.com/n8n-io/n8n/releases"
+      },
+      {
+        "title": "What is this and how can I try it? n8n browser use - n8n Community",
+        "url": "https://community.n8n.io/t/what-is-this-and-how-can-i-try-it-n8n-browser-use/292033"
+      },
+      {
+        "title": "n8nio/n8n:2.17.7 ships vulnerable OpenSSL 3.5.5-r0 (CVE-2026 ...",
+        "url": "https://github.com/n8n-io/n8n/issues/29093"
+      },
+      {
+        "title": "n8n has released security updates to address multiple vulnerabilities in ...",
+        "url": "https://www.facebook.com/CSAsingapore/posts/n8n-has-released-security-updates-to-address-multiple-vulnerabilities-in-its-ope/1287620053555567/"
+      },
+      {
+        "title": "n8n End User License Agreement",
+        "url": "https://n8n.io/legal/eula/"
+      },
+      {
+        "title": "Mastering n8n: Step-by-Step Beginner’s Guide | Data Science ... - Medium",
+        "url": "https://medium.com/data-science-collective/mastering-n8n-from-scratch-a-step-by-step-guide-for-beginners-its-easier-than-you-think-2d7ca5d47277"
+      },
+      {
+        "title": "Mastering n8n from Scratch: The Complete Beginner’s Guide (2025)",
+        "url": "https://medium.com/@anirbanmukherjee1311/mastering-n8n-from-scratch-the-complete-beginners-guide-2025-e9bf2322ec4e"
+      },
+      {
+        "title": "Mastering n8n: The Ultimate Guide to Open-Source Workflow ... - Medium",
+        "url": "https://medium.com/aimonks/mastering-n8n-the-ultimate-guide-to-open-source-workflow-automation-in-2025-4d870df766a7"
+      },
+      {
+        "title": "A practical n8n workflow example from A to Z - Medium",
+        "url": "https://medium.com/@syrom_85473/a-practical-n8n-workflow-example-from-a-to-z-part-1-use-case-learning-journey-and-setup-1f4efcfb81b1"
+      },
+      {
+        "title": "The Complete n8n Learning Curve: A Beginner’s Guide to ... - Medium",
+        "url": "https://medium.com/solo-devs/the-complete-n8n-learning-curve-a-beginners-guide-to-workflow-automation-6d2535bfeabe"
+      }
+    ]
+  },
   "2026-05-18_1148": {
     "slug": "n8n",
     "title": "Automatización de Workflows con n8n",

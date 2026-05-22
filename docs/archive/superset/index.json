@@ -1,4 +1,24 @@
 {
+  "2026-05-22_1055": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Visualización de Datos",
+    "summary": "Superset es una plataforma de exploración y visualización de datos moderna que permite a los equipos de desarrollo crear dashboards personalizados y analizar grandes cantidades de datos. En este artículo, se presentan las características y funcionalidades de Superset, así como algunas best practices para su implementación.",
+    "content": "\nSuperset es una herramienta de código abierto que permite a los desarrolladores crear dashboards personalizados para visualizar y analizar grandes cantidades de datos. Una de las características más destacadas de Superset es su capacidad para conectarse a diversas fuentes de datos, como bases de datos relacionales y NoSQL, así como servicios de almacenamiento en la nube.\n\nPara comenzar a utilizar Superset, es necesario instalarlo en un entorno de desarrollo. Esto se puede hacer utilizando el comando `pip install apache-superset`. Una vez instalado, es posible acceder a la interfaz de usuario de Superset mediante un navegador web. Desde allí, es posible crear nuevos dashboards y agregar elementos como gráficos, tablas y filtros.\n\nEn cuanto a la configuración de Superset, es posible personalizar la apariencia y el comportamiento de la herramienta mediante la edición de archivos de configuración. Por ejemplo, es posible agregar nuevos temas y personalizar la apariencia de los dashboards utilizando el comando `superset config.py`. Además, es posible integrar Superset con otras herramientas y servicios, como servicios de autenticación y autorización, utilizando protocolos como OAuth y JWT.\n\nEn cuanto a las best practices para la implementación de Superset, es importante mencionar la importancia de la seguridad y la privacidad de los datos. Es recomendable utilizar mecanismos de autenticación y autorización para controlar el acceso a los dashboards y a los datos. Además, es importante realizar copias de seguridad regulares de los datos y de la configuración de Superset para evitar la pérdida de información en caso de un fallo del sistema.\n\nFinalmente, es importante mencionar que Superset es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. La comunidad de Superset es muy activa, y es posible encontrar documentación y recursos adicionales en la página oficial de la herramienta.\n\n",
+    "sources": [
+      {
+        "title": "Apache Superset",
+        "url": "https://pypi.org/project/apache-superset/"
+      },
+      {
+        "title": "Fast, Secure, Embedded — Running Apache Superset in Production the Right Way",
+        "url": "https://medium.com/meghgen/fast-secure-embedded-running-apache-superset-in-production-the-right-way-67f3db643c53"
+      },
+      {
+        "title": "How to Build a Real-Time Analytics Dashboard with ClickHouse 24 and Superset 3.0",
+        "url": "https://dev.to/johalputt/how-to-build-a-real-time-analytics-dashboard-with-clickhouse-24-and-superset-30-2474"
+      }
+    ]
+  },
   "2026-05-18_1148": {
     "slug": "superset",
     "title": "Superset: Herramienta de Visualización de Datos",

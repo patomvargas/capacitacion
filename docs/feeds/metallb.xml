@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-21T11:31:36.464646+00:00</updated>
+  <updated>2026-05-22T10:57:03.450677+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -637,5 +637,42 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-18_1148.html"/>
     <summary>MetalLB es una implementación de balanceo de carga para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, se explora su funcionamiento y configuración en modo L2 y BGP, así como la gestión de pools de IP y la integración con K8s.</summary>
     <published>2026-05-18T11:48:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-22_1055.html</id>
+    <title>MetalLB: Balanceo de Carga en Kubernetes</title>
+    <updated>2026-05-22T10:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta de balanceo de carga para Kubernetes que permite la asignación de direcciones IP a servicios. Se puede configurar en dos modos principales: L2 y BGP. En el modo L2, MetalLB asigna direcciones IP a los servicios mediante el protocolo ARP. En el modo BGP, se utiliza el protocolo BGP para anunciar las rutas a los servicios.&lt;/p&gt;
+&lt;p&gt;Para configurar MetalLB en modo L2, se debe crear un objeto de configuración &lt;code&gt;metallb-config&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: v1&lt;/p&gt;
+&lt;p&gt;kind: ConfigMap&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;namespace: metallb-system&lt;/p&gt;
+&lt;p&gt;name: config&lt;/p&gt;
+&lt;p&gt;data:&lt;/p&gt;
+&lt;p&gt;config: |&lt;/p&gt;
+&lt;p&gt;address-pools:&lt;/p&gt;
+&lt;p&gt;- name: default&lt;/p&gt;
+&lt;p&gt;protocol: layer2&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 10.0.0.100-10.0.0.200&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Luego, se debe aplicar la configuración con el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con Kubernetes, MetalLB se puede utilizar con el comando &lt;code&gt;kubectl expose&lt;/code&gt; para asignar una dirección IP a un servicio. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;```bash&lt;/p&gt;
+&lt;p&gt;kubectl expose deployment mi-deployment --type=LoadBalancer --port=80&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Este comando crea un servicio de tipo LoadBalancer y asigna una dirección IP a la aplicación.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas con MetalLB, se pueden utilizar herramientas como &lt;code&gt;kubectl logs&lt;/code&gt; y &lt;code&gt;kubectl describe&lt;/code&gt; para obtener información sobre los pods y servicios. También se puede utilizar el comando &lt;code&gt;metallbctl&lt;/code&gt; para obtener información sobre la configuración y el estado de MetalLB.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que MetalLB se puede utilizar con otras herramientas de monitoreo y administración de Kubernetes, como Prometheus y Grafana, para obtener una visión completa del estado del clúster.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb"&gt;MetalLB GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/"&gt;Kubernetes Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://metallb.universe.tf/configuration/"&gt;MetalLB Config&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-05-22_1055.html"/>
+    <summary>MetalLB es una herramienta de balanceo de carga para Kubernetes que permite la asignación de direcciones IP a servicios. En este artículo, se explora su funcionamiento y configuración.</summary>
+    <published>2026-05-22T10:55:00+00:00</published>
   </entry>
 </feed>

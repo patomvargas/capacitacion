@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Airflow 2.x - Airflow</title>
+    <title>Mejores prácticas para Airflow 3 - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,50 +57,40 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Mejores prácticas con Airflow 2.x</h1>
-    <div class="meta">2026-05-18 1148 · Airflow</div>
+    <h1>Mejores prácticas para Airflow 3</h1>
+    <div class="meta">2026-05-22 1055 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que permite a los desarrolladores crear, programar y monitorear tareas de manera eficiente. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la posibilidad de crear DAGs dinámicos utilizando la función `expand()` o el patrón de función de fábrica para generar múltiples DAGs.</p>
+        
+            
+            <p>Airflow 3 es la versión más reciente de la plataforma de orquestación de Apache, y trae consigo una serie de características y mejoras importantes. Una de las características más destacadas es la versión de DAGs, que permite tener un control más preciso sobre las versiones de los pipelines. Para aprovechar esta característica, se puede utilizar el comando `airflow db upgrade` para actualizar la base de datos de Airflow.</p>
             
         
             
         
             
-            <p>Para crear un DAG dinámico, se puede utilizar el siguiente código: `from airflow.operators.python import PythonOperator` y luego definir la función que se ejecutará en cada tarea. Por ejemplo: `task = PythonOperator(task_id='mi_tarea', python_callable=mi_funcion)`.</p>
+            <p>Otra característica importante es la ejecución remota, que permite ejecutar tareas en máquinas remotas. Para configurar la ejecución remota, se puede utilizar el archivo `airflow.cfg` y establecer la opción `remote_execution` en `True`. Luego, se puede utilizar el comando `airflow trigger_dag` para ejecutar un DAG en una máquina remota.</p>
             
         
             
         
             
-            <p>Otra característica importante de Airflow es la posibilidad de configurar operadores para realizar tareas específicas. Por ejemplo, se puede utilizar el operador `BashOperator` para ejecutar comandos de bash en un servidor remoto: `from airflow.providers.bash.operators.bash import BashOperator` y luego definir el comando que se ejecutará: `task = BashOperator(task_id='mi_tarea', bash_command='mi_comando')`.</p>
+            <p>En cuanto al diseño de DAGs, es importante seguir las mejores prácticas para asegurarse de que los pipelines sean legibles, mantenibles y producción-listos. Una de las mejores prácticas es utilizar tareas atómicas, que son tareas que no pueden ser divididas en sub-tareas. Otra buena práctica es utilizar la idempotencia, que es la capacidad de una tarea de ser ejecutada múltiples veces sin afectar el resultado. Para lograr la idempotencia, se puede utilizar el comando `airflow task_state` para verificar el estado de una tarea antes de ejecutarla.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de conexiones, Airflow proporciona una variedad de opciones para conectar con diferentes sistemas, como bases de datos, servidores de archivos y servicios en la nube. Por ejemplo, se puede utilizar el comando `airflow connections --add` para agregar una nueva conexión: `airflow connections --add --conn_id mi_conexion --conn_type mysql`.</p>
+            <p>En cuanto a la configuración de conexiones, es importante utilizar el archivo `airflow.cfg` para establecer las opciones de conexión. Por ejemplo, se puede utilizar la opción `sql_alchemy_conn` para establecer la conexión a la base de datos. Luego, se puede utilizar el comando `airflow db init` para inicializar la base de datos.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Airflow también proporciona una variedad de herramientas para monitorear y depurar flujos de trabajo, como la interfaz web de Airflow, que permite visualizar los flujos de trabajo y las tareas en tiempo real.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, Airflow es una herramienta poderosa para la gestión de flujos de trabajo, que ofrece una variedad de características y herramientas para crear, programar y monitorear tareas de manera eficiente. Al seguir las mejores prácticas y utilizar las características de Airflow de manera efectiva, los desarrolladores pueden crear flujos de trabajo complejos y escalables.</p>
-            
-        
-            
-        
-            
-            <p>Para más información, se puede consultar la documentación oficial de Airflow y las fuentes proporcionadas a continuación.</p>
+            <p>Finalmente, es importante mencionar que Airflow 3 también trae consigo una serie de mejoras en la seguridad, como la autenticación y la autorización. Para configurar la autenticación, se puede utilizar el archivo `airflow.cfg` y establecer la opción `auth_backend` en `True`. Luego, se puede utilizar el comando `airflow auth` para autenticar a los usuarios.</p>
             
         
             
@@ -115,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/airflow/issues/66333" target="_blank">Release Management for Java-SDK #66333</a>
+                <a href="https://www.astronomer.io/blog/airflow-3-0" target="_blank">Airflow 3.0</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@satyamsahu671/dynamic-dags-in-airflow-when-to-use-them-and-how-to-build-them-without-breaking-your-scheduler-a2038a5ca613" target="_blank">Dynamic DAGs in Airflow: When to Use Them and How to Build Them</a>
+                <a href="https://medium.com/towards-data-engineering/5-dag-design-principles-that-make-your-airflow-pipelines-readable-maintainable-and-production-ready-05e2d8473886" target="_blank">Diseño de DAGs en Airflow</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/airflow" target="_blank">Apache Airflow - A platform to programmatically author, schedule</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html" target="_blank">Configuración de conexiones en Airflow</a>
                 
             </li>
             
@@ -136,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-14_1024.html">&larr; 2026-05-14 1024</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-18_1148.html">&larr; 2026-05-18 1148</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html">2026-05-22 1055 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-05-22_1055": {
+    "slug": "airflow",
+    "title": "Mejores prácticas para Airflow 3",
+    "summary": "Airflow 3 es la versión más reciente de la plataforma de orquestación de Apache, con características como la versión de DAGs y la ejecución remota. En este artículo, se presentan las mejores prácticas para diseñar y implementar pipelines en Airflow 3. Se cubren temas como el diseño de DAGs, el uso de operadores y sensores, y la configuración de conexiones.",
+    "content": "\nAirflow 3 es la versión más reciente de la plataforma de orquestación de Apache, y trae consigo una serie de características y mejoras importantes. Una de las características más destacadas es la versión de DAGs, que permite tener un control más preciso sobre las versiones de los pipelines. Para aprovechar esta característica, se puede utilizar el comando `airflow db upgrade` para actualizar la base de datos de Airflow.\n\nOtra característica importante es la ejecución remota, que permite ejecutar tareas en máquinas remotas. Para configurar la ejecución remota, se puede utilizar el archivo `airflow.cfg` y establecer la opción `remote_execution` en `True`. Luego, se puede utilizar el comando `airflow trigger_dag` para ejecutar un DAG en una máquina remota.\n\nEn cuanto al diseño de DAGs, es importante seguir las mejores prácticas para asegurarse de que los pipelines sean legibles, mantenibles y producción-listos. Una de las mejores prácticas es utilizar tareas atómicas, que son tareas que no pueden ser divididas en sub-tareas. Otra buena práctica es utilizar la idempotencia, que es la capacidad de una tarea de ser ejecutada múltiples veces sin afectar el resultado. Para lograr la idempotencia, se puede utilizar el comando `airflow task_state` para verificar el estado de una tarea antes de ejecutarla.\n\nEn cuanto a la configuración de conexiones, es importante utilizar el archivo `airflow.cfg` para establecer las opciones de conexión. Por ejemplo, se puede utilizar la opción `sql_alchemy_conn` para establecer la conexión a la base de datos. Luego, se puede utilizar el comando `airflow db init` para inicializar la base de datos.\n\nFinalmente, es importante mencionar que Airflow 3 también trae consigo una serie de mejoras en la seguridad, como la autenticación y la autorización. Para configurar la autenticación, se puede utilizar el archivo `airflow.cfg` y establecer la opción `auth_backend` en `True`. Luego, se puede utilizar el comando `airflow auth` para autenticar a los usuarios.\n\n  ",
+    "sources": [
+      {
+        "title": "Airflow 3.0",
+        "url": "https://www.astronomer.io/blog/airflow-3-0"
+      },
+      {
+        "title": "Diseño de DAGs en Airflow",
+        "url": "https://medium.com/towards-data-engineering/5-dag-design-principles-that-make-your-airflow-pipelines-readable-maintainable-and-production-ready-05e2d8473886"
+      },
+      {
+        "title": "Configuración de conexiones en Airflow",
+        "url": "https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html"
+      }
+    ]
+  },
   "2026-05-18_1148": {
     "slug": "airflow",
     "title": "Mejores prácticas con Airflow 2.x",

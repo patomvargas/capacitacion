@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Traefik: Routers y Middlewares - Traefik</title>
+    <title>Traefik: Mejoras y Best Practices - Traefik</title>
     <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
     <style>
         :root {
@@ -57,46 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
     </div>
 
-    <h1>Traefik: Routers y Middlewares</h1>
-    <div class="meta">2026-05-10 0941 · Traefik</div>
+    <h1>Traefik: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-22 1055 · Traefik</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es un sistema de proxy inverso y servidor de nombres que permite configurar routers y middlewares para gestionar el tráfico de red. Un router en Traefik se define como un conjunto de reglas que determinan cómo se debe redirigir el tráfico de red. Por ejemplo, se puede crear un router que redirija el tráfico de la ruta `/api` a un servicio específico. Para crear un router, se puede utilizar el comando `traefik router add --rule='PathPrefix(`/api`)' --service=mi-servicio`.</p>
+            <p>Traefik es un sistema de proxy inverso y servidor web que se utiliza para gestionar el tráfico de red en entornos de Kubernetes y microservicios. En las últimas versiones, se han incorporado mejoras significativas, como la compatibilidad con la versión 1.5.1 de la API de Gateway y la integración con el proveedor Knative.</p>
             
         
             
         
             
-        
-            
-            <p>Un middleware en Traefik es un componente que se ejecuta antes o después de que se procese la solicitud. Por ejemplo, se puede crear un middleware que autentique a los usuarios antes de permitirles acceder a un recurso. Para crear un middleware, se puede utilizar el comando `traefik middleware add --name=mi-middleware --type=basic-auth`.</p>
+            <p>Para configurar Traefik, es necesario crear un archivo de configuración que especifique los routers, middlewares y proveedores que se utilizarán. Por ejemplo, se puede utilizar el siguiente comando para crear un router que redirija el tráfico a un servicio específico: `traefik http routers my-router --rule=Host:example.com --service=my-service`.</p>
             
         
             
         
             
-        
-            
-            <p>Traefik también admite la configuración de proveedores, como Redis Sentinel, que permite gestionar la conectividad a bases de datos. Sin embargo, es importante tener en cuenta que, según el issue #12965 en GitHub, el proveedor de Redis Sentinel puede tener problemas de reconexión después de un fallo en el Sentinel. Para configurar un proveedor de Redis Sentinel, se puede utilizar la configuración `providers.redis.sentinel`.</p>
+            <p>En cuanto a la seguridad, Traefik admite la configuración de SSL/TLS con Let's Encrypt. Para habilitar esta función, es necesario agregar la siguiente configuración al archivo de configuración: `traefik http middlewares my-https --tls --certResolver=le`. Luego, se puede utilizar el comando `traefik http routers my-router --rule=Host:example.com --middleware=my-https --service=my-service` para crear un router que utilice el middleware de SSL/TLS.</p>
             
         
             
         
             
-        
-            
-            <p>Traefik también admite la configuración de Let's Encrypt para obtener certificados SSL/TLS gratuitos. Para configurar Let's Encrypt, se puede utilizar la configuración `certificatesResolvers.letsencrypt.acme`.</p>
+            <p>En cuanto a la observabilidad, Traefik proporciona una variedad de herramientas para monitorear y analizar el tráfico de red. Por ejemplo, se puede utilizar el comando `traefik logs` para visualizar los registros de acceso y errores. Además, se puede configurar Traefik para enviar los registros a un servidor de logs externo, como Elasticsearch o Splunk.</p>
             
         
             
         
             
+            <p>En resumen, Traefik es un sistema de proxy inverso y servidor web que se utiliza comúnmente en entornos de Kubernetes y microservicios. En este artículo, se han presentado las últimas mejoras y best practices para utilizar Traefik de manera efectiva, incluyendo la configuración de routers, middlewares y proveedores, así como la habilitación de SSL/TLS con Let's Encrypt y la observabilidad del tráfico de red.</p>
+            
         
             
-            <p>Finalmente, Traefik admite la configuración de protocolos TCP/UDP y la observabilidad mediante herramientas como Wireshark. Para configurar la observabilidad, se puede utilizar la configuración `log.level=DEBUG` y `log.file=/var/log/traefik.log`.</p>
+        
+            
+            <p>Para obtener más información sobre Traefik, se recomienda consultar la documentación oficial y las fuentes proporcionadas al final de este artículo.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Traefik es un sistema en constante evolución, por lo que es recomendable mantenerse actualizado con las últimas versiones y mejoras. En este sentido, se puede utilizar el comando `traefik version` para verificar la versión actual de Traefik y `traefik update` para actualizar a la última versión disponible.</p>
             
         
     </div>
@@ -107,27 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik-helm-chart/issues/1810" target="_blank">Support ListenerSet from GatewayAPI #1810</a>
+                <a href="https://github.com/traefik/traefik" target="_blank">Traefik GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/issues/12965" target="_blank">Redis Sentinel provider: WatchTree does not reconnect after Sentinel failover, routes go stale permanently #12965</a>
+                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">Traefik Hub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-wireshark-ipv6-ipsec-traffic" target="_blank">2026-03-20-wireshark-ipv6-ipsec-traffic</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/mikeroyal/Self-Hosting-Guide" target="_blank">mikeroyal/Self-Hosting-Guide</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/crazy-max/docker-nextcloud" target="_blank">crazy-max/docker-nextcloud</a>
+                <a href="https://www.facebook.com/groups/devtitans/posts/1264951605805022/" target="_blank">Traefik para routing dinámico en Kubernetes y microservicios</a>
                 
             </li>
             
@@ -138,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-06_1022.html">&larr; 2026-05-06 1022</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-10_0941.html">&larr; 2026-05-10 0941</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-22_1055.html">2026-05-22 1055 &rarr;</a>
             
         </div>
     </div>
