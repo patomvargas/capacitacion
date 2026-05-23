@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-22T10:57:03.453056+00:00</updated>
+  <updated>2026-05-23T09:59:01.494976+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -339,5 +339,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-19_1125.html"/>
     <summary>En este artículo, se presentan técnicas de optimización para mejorar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y los backups. Se proporcionan comandos y configuraciones específicas para cada técnica.</summary>
     <published>2026-05-19T11:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-23_0958.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-05-23T09:58:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para garantizar el rendimiento y la confiabilidad de tu base de datos. Una de las formas de optimizar PostgreSQL es mediante la configuración de parámetros como &lt;code&gt;shared_buffers&lt;/code&gt;, &lt;code&gt;effective_cache_size&lt;/code&gt; y &lt;code&gt;maintenance_work_mem&lt;/code&gt;. Por ejemplo, puedes ajustar el valor de &lt;code&gt;shared_buffers&lt;/code&gt; con el comando &lt;code&gt;ALTER SYSTEM SET shared_buffers TO '512MB';&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la creación de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos sin tener que escanear toda la tabla. Puedes crear un índice con el comando &lt;code&gt;CREATE INDEX idx_nombre ON tabla (columna);&lt;/code&gt;. También es importante monitorear el rendimiento de tu base de datos con herramientas como &lt;code&gt;pg_stat&lt;/code&gt; y &lt;code&gt;EXPLAIN&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra característica importante de PostgreSQL. La replicación permite a varias bases de datos mantener una copia idéntica de los datos, lo que garantiza la disponibilidad y la recuperación en caso de fallos. Puedes configurar la replicación con el comando &lt;code&gt;CREATE REPLICA slots;&lt;/code&gt;. También es importante realizar copias de seguridad regulares de tu base de datos con el comando &lt;code&gt;pg_dump&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 18 de PostgreSQL introduce varias mejoras, incluyendo la implementación de I/O asíncrono (AIO), que permite a los usuarios realizar tareas de I/O concurrentes como lectura anticipada y escaneo secuencial. También es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones el 12 de noviembre de 2026, por lo que se recomienda actualizar a una versión más reciente.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad y la confiabilidad de tu base de datos, es importante seguir las mejores prácticas de configuración y monitoreo. Puedes encontrar más información en la documentación oficial de PostgreSQL y en recursos en línea como la guía de optimización de PostgreSQL para Node.js.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de configuración, monitoreo y mejores prácticas. Al seguir estos consejos y mantener tu base de datos actualizada, puedes garantizar un rendimiento óptimo y una confiabilidad máxima.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/PostgreSQL"&gt;PostgreSQL - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;PostgreSQL: News Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/docs/current/release-18.html"&gt;PostgreSQL: Documentation: 18: E.5. Release 18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/asifthewebguy/postgresql-optimization-for-nodejs-complete-2026-guide-1okn"&gt;PostgreSQL Optimization for Node.js: Complete 2026 Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-23_0958.html"/>
+    <summary>Aprende a optimizar PostgreSQL para mejorar el rendimiento y la confiabilidad. Descubre las mejores prácticas para configurar y monitorear tu base de datos.</summary>
+    <published>2026-05-23T09:58:00+00:00</published>
   </entry>
 </feed>

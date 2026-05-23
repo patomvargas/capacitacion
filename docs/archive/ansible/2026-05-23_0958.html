@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Nuevas Características y Mejoras - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Nuevas Características y Mejoras</h1>
+    <div class="meta">2026-05-23 0958 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Ansible es una herramienta de automatización y gestión de configuraciones muy popular en la industria del desarrollo de software y la administración de sistemas. Recientemente, se han lanzado nuevas versiones de Ansible, como la `ansible-core v2.20.6` y la `ansible-core v2.21.0rc1`, que incluyen mejoras y nuevas características.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más destacadas de Ansible es su capacidad para gestionar y automatizar la configuración de infraestructuras complejas. Para ello, se utilizan los `playbooks`, que son archivos YAML que definen las tareas y los pasos necesarios para configurar y desplegar una aplicación. Los `roles` son otro componente fundamental de Ansible, ya que permiten reutilizar código y simplificar la gestión de la configuración.</p>
+            
+        
+            
+        
+            
+            <p>La seguridad es otro aspecto importante en Ansible, y para ello se utiliza el `vault`, que permite cifrar y proteger la información sensible, como las contraseñas y las claves de acceso. El `inventory` es otro componente clave, ya que permite definir y gestionar los hosts y los grupos de hosts que se van a configurar y automatizar.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo las funcionalidades de Ansible, es importante conocer las mejores prácticas y los patrones de diseño más comunes. Por ejemplo, se puede utilizar `AWX/Tower` para gestionar y automatizar la ejecución de los `playbooks` y los `roles`. También es importante conocer cómo utilizar los `collections` y los `modules` para ampliar las funcionalidades de Ansible y adaptarlas a las necesidades específicas de cada proyecto.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta muy poderosa y flexible que puede ser utilizada para automatizar y gestionar la configuración de infraestructuras complejas. Con las últimas versiones y características, Ansible sigue siendo una de las herramientas más populares y utilizadas en la industria del desarrollo de software y la administración de sistemas.</p>
+            
+        
+            
+        
+            
+            <p>Para empezar a trabajar con Ansible, se puede utilizar el comando `ansible --version` para verificar la versión instalada, y luego utilizar `ansible-playbook` para ejecutar un `playbook` de ejemplo. Por ejemplo: `ansible-playbook -i inventory.ini playbook.yml`.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-6/45813" target="_blank">New Release: ansible-core v2.20.6</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822" target="_blank">Release announcement: Ansible community package 13.7.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jamesli/ansible-deep-dive-architecture-playbooks-api-execution-internals-performance-tuning-26bm" target="_blank">Ansible Deep Dive: Architecture, Playbooks, API, Execution ...</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-19_1125.html">&larr; 2026-05-19 1125</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

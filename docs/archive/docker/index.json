@@ -1,4 +1,28 @@
 {
+  "2026-05-23_0958": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker es una plataforma de contenerización que sigue evolucionando. En este artículo, se presentan las últimas mejoras y best practices para utilizar Docker de manera efectiva. Se cubren temas como multi-stage builds, compose, networking, seguridad y BuildKit.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En los últimos años, ha experimentado un crecimiento significativo y ha incorporado nuevas características y mejoras. Una de las últimas actualizaciones es la inclusión de Amazon CloudFront como CDN para las imágenes de Docker, lo que mejora la confiabilidad de las descargas y subidas de imágenes. Para utilizar esta función, se puede configurar el archivo `docker.json` con el comando `docker config` y especificar la URL de CloudFront como el punto de entrega de las imágenes.\n\nOtra característica importante de Docker es la capacidad de crear builds multi-etapa. Esto permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes, ya que solo se incluyen los archivos necesarios en la imagen final. Para crear un build multi-etapa, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa del build que se desea crear. Por ejemplo, `docker build -t mi-imagen --target prod .` creará una imagen de Docker con el nombre `mi-imagen` y la etapa de producción.\n\nLa seguridad es un tema importante en Docker. Una de las mejores prácticas es utilizar el comando `docker exec` con la opción `-u` para especificar el usuario que se utilizará para ejecutar el contenedor. Por ejemplo, `docker exec -u root -it mi-contenedor /bin/bash` ejecutará una shell de root en el contenedor `mi-contenedor`. Otra forma de mejorar la seguridad es utilizar el comando `docker inspect` para verificar la configuración de los contenedores y asegurarse de que no haya vulnerabilidades de seguridad.\n\nBuildKit es una herramienta de compilación de Docker que permite a los desarrolladores crear imágenes de Docker de manera más eficiente. Para utilizar BuildKit, se puede agregar la opción `--buildkit` al comando `docker build`. Por ejemplo, `docker build -t mi-imagen --buildkit .` creará una imagen de Docker con el nombre `mi-imagen` utilizando BuildKit. \n\nFinalmente, es importante mencionar que Docker Compose es una herramienta que permite a los desarrolladores definir y ejecutar aplicaciones multi-contenedor de manera sencilla. Para utilizar Docker Compose, se puede crear un archivo `docker-compose.yml` que defina los servicios y contenedores que se desean ejecutar. Luego, se puede utilizar el comando `docker-compose up` para iniciar los contenedores y servicios definidos en el archivo.\n\nEn resumen, Docker es una plataforma de contenerización que sigue evolucionando y mejorando. Al utilizar las últimas características y best practices, los desarrolladores y administradores de sistemas pueden crear aplicaciones y servicios más eficientes y seguros.",
+    "sources": [
+      {
+        "title": "Docker Hub release notes",
+        "url": "https://docs.docker.com/docker-hub/release-notes/"
+      },
+      {
+        "title": "Release Notes | 2.41 STS - Portainer Documentation",
+        "url": "https://docs.portainer.io/sts/release-notes"
+      },
+      {
+        "title": "Docker Bake Tutorial: Replace Bash Scripts with Declarative Builds",
+        "url": "https://medium.com/google-cloud/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-bdb3bde0803f"
+      },
+      {
+        "title": "Stop Learning Docker for Dummies. Learn It Like a DevOps Engineer",
+        "url": "https://medium.com/@akhilesh-mishra/stop-learning-docker-for-dummies-learn-it-like-a-devops-engineer-4b531e170a72"
+      }
+    ]
+  },
   "2026-05-15_1030": {
     "slug": "docker",
     "title": "Docker: Seguridad y Mejoras",

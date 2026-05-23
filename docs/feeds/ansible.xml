@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-22T10:57:03.459162+00:00</updated>
+  <updated>2026-05-23T09:59:01.503928+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -391,5 +391,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-19_1125.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para utilizar Ansible de manera efectiva.</summary>
     <published>2026-05-19T11:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-23_0958.html</id>
+    <title>Ansible: Nuevas Características y Mejoras</title>
+    <updated>2026-05-23T09:58:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización y gestión de configuraciones muy popular en la industria del desarrollo de software y la administración de sistemas. Recientemente, se han lanzado nuevas versiones de Ansible, como la &lt;code&gt;ansible-core v2.20.6&lt;/code&gt; y la &lt;code&gt;ansible-core v2.21.0rc1&lt;/code&gt;, que incluyen mejoras y nuevas características.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de Ansible es su capacidad para gestionar y automatizar la configuración de infraestructuras complejas. Para ello, se utilizan los &lt;code&gt;playbooks&lt;/code&gt;, que son archivos YAML que definen las tareas y los pasos necesarios para configurar y desplegar una aplicación. Los &lt;code&gt;roles&lt;/code&gt; son otro componente fundamental de Ansible, ya que permiten reutilizar código y simplificar la gestión de la configuración.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Ansible, y para ello se utiliza el &lt;code&gt;vault&lt;/code&gt;, que permite cifrar y proteger la información sensible, como las contraseñas y las claves de acceso. El &lt;code&gt;inventory&lt;/code&gt; es otro componente clave, ya que permite definir y gestionar los hosts y los grupos de hosts que se van a configurar y automatizar.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las funcionalidades de Ansible, es importante conocer las mejores prácticas y los patrones de diseño más comunes. Por ejemplo, se puede utilizar &lt;code&gt;AWX/Tower&lt;/code&gt; para gestionar y automatizar la ejecución de los &lt;code&gt;playbooks&lt;/code&gt; y los &lt;code&gt;roles&lt;/code&gt;. También es importante conocer cómo utilizar los &lt;code&gt;collections&lt;/code&gt; y los &lt;code&gt;modules&lt;/code&gt; para ampliar las funcionalidades de Ansible y adaptarlas a las necesidades específicas de cada proyecto.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta muy poderosa y flexible que puede ser utilizada para automatizar y gestionar la configuración de infraestructuras complejas. Con las últimas versiones y características, Ansible sigue siendo una de las herramientas más populares y utilizadas en la industria del desarrollo de software y la administración de sistemas.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Ansible, se puede utilizar el comando &lt;code&gt;ansible --version&lt;/code&gt; para verificar la versión instalada, y luego utilizar &lt;code&gt;ansible-playbook&lt;/code&gt; para ejecutar un &lt;code&gt;playbook&lt;/code&gt; de ejemplo. Por ejemplo: &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-6/45813"&gt;New Release: ansible-core v2.20.6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822"&gt;Release announcement: Ansible community package 13.7.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/jamesli/ansible-deep-dive-architecture-playbooks-api-execution-internals-performance-tuning-26bm"&gt;Ansible Deep Dive: Architecture, Playbooks, API, Execution ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-23_0958.html"/>
+    <summary>Ansible es una herramienta de automatización y gestión de configuraciones que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
+    <published>2026-05-23T09:58:00+00:00</published>
   </entry>
 </feed>

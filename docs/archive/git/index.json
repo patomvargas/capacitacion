@@ -1,4 +1,24 @@
 {
+  "2026-05-23_0958": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados. También cubriremos algunas novedades y cambios recientes en el ecosistema Git.",
+    "content": "\nGit es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, su curva de aprendizaje puede ser empinada. Una de las mejores prácticas para trabajar con Git es utilizar `git worktree` para crear múltiples árboles de trabajo en un solo repositorio. Esto permite trabajar en diferentes características o ramas sin tener que cambiar de rama o clonar el repositorio.\n\nOtra herramienta útil es `git bisect`, que permite encontrar el commit que introdujo un bug en el código. Esto se hace ejecutando `git bisect start` y luego `git bisect bad` o `git bisect good` para marcar los commits como buenos o malos. Git luego busca el commit que causó el problema.\n\nEn cuanto a workflows, es importante establecer un flujo de trabajo claro y consistente para el equipo. Esto puede incluir utilizar `git flow` o `gitlab flow` para gestionar las ramas y los merges. También es importante configurar `git hooks` para automatizar tareas como la verificación de código o la ejecución de pruebas.\n\nRecientemente, GitHub ha anunciado algunas novedades en su plataforma, como la migración de imágenes de runners a Arm64 y la introducción de un nuevo formato de tokens para las aplicaciones de GitHub. Es importante estar al tanto de estos cambios y adaptar nuestros flujos de trabajo y configuraciones para aprovechar al máximo las nuevas características.\n\nPara más información sobre Git y sus mejores prácticas, se pueden consultar las fuentes citadas al final de este artículo.\n\nFinalmente, es importante recordar que la práctica y la experimentación son clave para dominar Git. No tengamos miedo de probar nuevas cosas y aprender de nuestros errores.\n",
+    "sources": [
+      {
+        "title": "GitHub Actions: Upcoming image migrations",
+        "url": "https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"
+      },
+      {
+        "title": "A Guide to Git & GitHub",
+        "url": "https://medium.com/codetodeploy/a-guide-to-git-github-1d7f83bc730f"
+      },
+      {
+        "title": "GitOps & DevSecOps: The Future of Shipping Software Safely",
+        "url": "https://medium.com/@puttt.spl/gitops-devsecops-the-future-of-shipping-software-safely-1795ada30025"
+      }
+    ]
+  },
   "2026-05-15_1030": {
     "slug": "git",
     "title": "Mejores prácticas de Git para DevOps",

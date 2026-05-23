@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Git para DevOps - Git</title>
+    <title>Mejores prácticas con Git - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas de Git para DevOps</h1>
-    <div class="meta">2026-05-15 1030 · Git</div>
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-05-23 0958 · Git</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La versión 2.54 de Git ha introducido varias características interesantes, como se menciona en el blog de GitHub. Una de las características más destacadas es la mejora en la gestión de workflows, lo que permite a los desarrolladores trabajar de manera más eficiente en proyectos complejos. Para aprovechar al máximo esta característica, se puede utilizar el comando `git workflow` para crear y gestionar flujos de trabajo personalizados.</p>
+            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, su curva de aprendizaje puede ser empinada. Una de las mejores prácticas para trabajar con Git es utilizar `git worktree` para crear múltiples árboles de trabajo en un solo repositorio. Esto permite trabajar en diferentes características o ramas sin tener que cambiar de rama o clonar el repositorio.</p>
             
         
             
         
             
-            <p>Otra característica importante es la integración de hooks, que permite a los desarrolladores ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un proyecto. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar un script que verifique la calidad del código antes de realizar un commit. Para configurar un hook, se puede utilizar el comando `git config` y establecer el valor de `core.hooksPath` en la ruta del script.</p>
+            <p>Otra herramienta útil es `git bisect`, que permite encontrar el commit que introdujo un bug en el código. Esto se hace ejecutando `git bisect start` y luego `git bisect bad` o `git bisect good` para marcar los commits como buenos o malos. Git luego busca el commit que causó el problema.</p>
             
         
             
         
             
-            <p>El comando `git rebase` es otra herramienta fundamental en Git, que permite a los desarrolladores reorganizar y fusionar commits de manera eficiente. Sin embargo, es importante tener cuidado al utilizar este comando, ya que puede causar problemas si no se utiliza correctamente. Para evitar problemas, se puede utilizar el comando `git rebase -i` para interactuar con el proceso de rebase y asegurarse de que se estén realizando los cambios correctos.</p>
+            <p>En cuanto a workflows, es importante establecer un flujo de trabajo claro y consistente para el equipo. Esto puede incluir utilizar `git flow` o `gitlab flow` para gestionar las ramas y los merges. También es importante configurar `git hooks` para automatizar tareas como la verificación de código o la ejecución de pruebas.</p>
             
         
             
         
             
-            <p>La característica de worktrees es otra herramienta útil en Git, que permite a los desarrolladores trabajar en diferentes ramas y proyectos de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add` y especificar la ruta y el nombre del worktree. Luego, se puede utilizar el comando `git worktree list` para ver una lista de todos los worktrees actuales.</p>
+            <p>Recientemente, GitHub ha anunciado algunas novedades en su plataforma, como la migración de imágenes de runners a Arm64 y la introducción de un nuevo formato de tokens para las aplicaciones de GitHub. Es importante estar al tanto de estos cambios y adaptar nuestros flujos de trabajo y configuraciones para aprovechar al máximo las nuevas características.</p>
             
         
             
         
             
-            <p>En resumen, las mejores prácticas de Git para DevOps incluyen la utilización de workflows, hooks, rebase y worktrees para trabajar de manera eficiente en proyectos complejos. Al seguir estas prácticas y utilizar los comandos y configuraciones adecuados, los desarrolladores pueden mejorar la calidad y la eficiencia de su trabajo.</p>
+            <p>Para más información sobre Git y sus mejores prácticas, se pueden consultar las fuentes citadas al final de este artículo.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de Git y las fuentes de información en línea son recursos valiosos para los desarrolladores que buscan mejorar sus habilidades en Git. Algunas fuentes recomendadas incluyen el blog de GitHub y la documentación oficial de Git.</p>
-            
-        
+            <p>Finalmente, es importante recordar que la práctica y la experimentación son clave para dominar Git. No tengamos miedo de probar nuevas cosas y aprender de nuestros errores.</p>
             
         
             
@@ -111,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/open-source/git/highlights-from-git-2-54/" target="_blank">Highlights from Git 2.54</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/" target="_blank">GitHub Actions: Upcoming image migrations</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@lemapp09/adaptive-development-git-version-control-for-solo-devs-7347d7ba375e" target="_blank">Adaptive Development — Git Version Control for Solo Devs</a>
+                <a href="https://medium.com/codetodeploy/a-guide-to-git-github-1d7f83bc730f" target="_blank">A Guide to Git & GitHub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@puttt.spl/gitops-devsecops-the-future-of-shipping-software-safely-1795ada30025" target="_blank">GitOps & DevSecOps: The Future of Shipping Software Safely</a>
                 
             </li>
             
@@ -132,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-11_1129.html">&larr; 2026-05-11 1129</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-23_0958.html">2026-05-23 0958 &rarr;</a>
             
         </div>
     </div>

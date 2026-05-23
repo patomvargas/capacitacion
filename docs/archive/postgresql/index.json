@@ -1,4 +1,32 @@
 {
+  "2026-05-23_0958": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar PostgreSQL para mejorar el rendimiento y la confiabilidad. Descubre las mejores prácticas para configurar y monitorear tu base de datos.",
+    "content": "\nLa optimización de PostgreSQL es crucial para garantizar el rendimiento y la confiabilidad de tu base de datos. Una de las formas de optimizar PostgreSQL es mediante la configuración de parámetros como `shared_buffers`, `effective_cache_size` y `maintenance_work_mem`. Por ejemplo, puedes ajustar el valor de `shared_buffers` con el comando `ALTER SYSTEM SET shared_buffers TO '512MB';`.\n\nOtra forma de mejorar el rendimiento es mediante la creación de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos sin tener que escanear toda la tabla. Puedes crear un índice con el comando `CREATE INDEX idx_nombre ON tabla (columna);`. También es importante monitorear el rendimiento de tu base de datos con herramientas como `pg_stat` y `EXPLAIN`.\n\nLa replicación es otra característica importante de PostgreSQL. La replicación permite a varias bases de datos mantener una copia idéntica de los datos, lo que garantiza la disponibilidad y la recuperación en caso de fallos. Puedes configurar la replicación con el comando `CREATE REPLICA slots;`. También es importante realizar copias de seguridad regulares de tu base de datos con el comando `pg_dump`.\n\nLa versión 18 de PostgreSQL introduce varias mejoras, incluyendo la implementación de I/O asíncrono (AIO), que permite a los usuarios realizar tareas de I/O concurrentes como lectura anticipada y escaneo secuencial. También es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones el 12 de noviembre de 2026, por lo que se recomienda actualizar a una versión más reciente.\n\nPara mejorar la seguridad y la confiabilidad de tu base de datos, es importante seguir las mejores prácticas de configuración y monitoreo. Puedes encontrar más información en la documentación oficial de PostgreSQL y en recursos en línea como la guía de optimización de PostgreSQL para Node.js.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de configuración, monitoreo y mejores prácticas. Al seguir estos consejos y mantener tu base de datos actualizada, puedes garantizar un rendimiento óptimo y una confiabilidad máxima.\n",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "PostgreSQL: Documentation: 18: E.5. Release 18",
+        "url": "https://www.postgresql.org/docs/current/release-18.html"
+      },
+      {
+        "title": "PostgreSQL Optimization for Node.js: Complete 2026 Guide",
+        "url": "https://dev.to/asifthewebguy/postgresql-optimization-for-nodejs-complete-2026-guide-1okn"
+      }
+    ]
+  },
   "2026-05-19_1125": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

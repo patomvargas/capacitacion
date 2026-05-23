@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-22T10:57:03.456256+00:00</updated>
+  <updated>2026-05-23T09:59:01.499928+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -275,5 +275,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-15_1030.html"/>
     <summary>En este artículo, se presentan las mejores prácticas de Git para DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para implementar estas prácticas en proyectos de desarrollo.</summary>
     <published>2026-05-15T10:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-05-23_0958.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-05-23T09:58:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, su curva de aprendizaje puede ser empinada. Una de las mejores prácticas para trabajar con Git es utilizar &lt;code&gt;git worktree&lt;/code&gt; para crear múltiples árboles de trabajo en un solo repositorio. Esto permite trabajar en diferentes características o ramas sin tener que cambiar de rama o clonar el repositorio.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git bisect&lt;/code&gt;, que permite encontrar el commit que introdujo un bug en el código. Esto se hace ejecutando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; o &lt;code&gt;git bisect good&lt;/code&gt; para marcar los commits como buenos o malos. Git luego busca el commit que causó el problema.&lt;/p&gt;
+&lt;p&gt;En cuanto a workflows, es importante establecer un flujo de trabajo claro y consistente para el equipo. Esto puede incluir utilizar &lt;code&gt;git flow&lt;/code&gt; o &lt;code&gt;gitlab flow&lt;/code&gt; para gestionar las ramas y los merges. También es importante configurar &lt;code&gt;git hooks&lt;/code&gt; para automatizar tareas como la verificación de código o la ejecución de pruebas.&lt;/p&gt;
+&lt;p&gt;Recientemente, GitHub ha anunciado algunas novedades en su plataforma, como la migración de imágenes de runners a Arm64 y la introducción de un nuevo formato de tokens para las aplicaciones de GitHub. Es importante estar al tanto de estos cambios y adaptar nuestros flujos de trabajo y configuraciones para aprovechar al máximo las nuevas características.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Git y sus mejores prácticas, se pueden consultar las fuentes citadas al final de este artículo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante recordar que la práctica y la experimentación son clave para dominar Git. No tengamos miedo de probar nuevas cosas y aprender de nuestros errores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"&gt;GitHub Actions: Upcoming image migrations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/codetodeploy/a-guide-to-git-github-1d7f83bc730f"&gt;A Guide to Git &amp; GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@puttt.spl/gitops-devsecops-the-future-of-shipping-software-safely-1795ada30025"&gt;GitOps &amp; DevSecOps: The Future of Shipping Software Safely&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-23_0958.html"/>
+    <summary>En este artículo, exploraremos algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados. También cubriremos algunas novedades y cambios recientes en el ecosistema Git.</summary>
+    <published>2026-05-23T09:58:00+00:00</published>
   </entry>
 </feed>
