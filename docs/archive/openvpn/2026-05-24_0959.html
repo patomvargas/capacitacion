@@ -58,43 +58,49 @@
     </div>
 
     <h1>OpenVPN: Tunneling y Seguridad</h1>
-    <div class="meta">2026-05-20 1056 · OpenVPN</div>
+    <div class="meta">2026-05-24 0959 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>OpenVPN es un sistema de red privada virtual que implementa técnicas para crear conexiones seguras punto a punto o sitio a sitio en configuraciones enrutadas o conmutadas y facilidades de acceso remoto. Permite a los pares autenticarse mediante certificados SSL/TLS o secretos compartidos. Para configurar OpenVPN, se puede utilizar el comando `openvpn --config archivo_de_configuracion.ovpn` para establecer una conexión.</p>
+            <p>OpenVPN es un software de código abierto que permite la creación de túneles seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves, lo que se puede hacer utilizando herramientas como `openssl`. Por ejemplo, para generar un certificado de servidor, se puede ejecutar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365 -subj '/C=ES/ST=Madrid/L=Madrid/O=Organizacion/CN=server'`.</p>
             
         
             
         
             
-            <p>La configuración de OpenVPN se puede realizar mediante archivos de configuración que especifican los parámetros de la conexión, como la dirección del servidor, el puerto y el protocolo de transporte. Por ejemplo, el archivo de configuración puede contener la línea `proto udp` para especificar el protocolo de transporte UDP. Además, se pueden utilizar certificados SSL/TLS para autenticar los pares y cifrar el tráfico de red.</p>
+            <p>Para aumentar la seguridad del servidor OpenVPN, es importante configurar el protocolo de autenticación y cifrado. Por ejemplo, se puede utilizar el protocolo `TLS` con el cifrado `AES-256-CBC`. También es importante configurar el servidor para que utilice un puerto no estándar y un protocolo de autenticación seguro, como `HMAC`.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de la conexión OpenVPN, se pueden implementar medidas de hardening, como la autenticación de dos factores y la limitación del acceso a la red privada virtual. También se puede utilizar el servidor de acceso OpenVPN para gestionar las conexiones y autenticar a los usuarios. El servidor de acceso OpenVPN proporciona una interfaz web para configurar y gestionar las conexiones, y se puede acceder a ella mediante el comando `https://direccion_del_servidor:443`.</p>
+            <p>Otra forma de aumentar la seguridad del servidor OpenVPN es mediante el uso de un servidor de acceso, como OpenVPN Access Server. Este servidor proporciona una interfaz web para la administración de usuarios y la configuración del servidor. También es posible configurar el servidor para que utilice una conexión sitio-a-sitio, lo que permite la conexión segura entre dos redes.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades y mejoras en OpenVPN, se han realizado esfuerzos para mejorar la seguridad y la escalabilidad del sistema. Por ejemplo, se ha agregado soporte para el protocolo de transporte TCP y se han mejorado las capacidades de autenticación y autorización. Además, se han publicado tutoriales y guías para ayudar a los administradores a configurar y gestionar las conexiones OpenVPN.</p>
+            <p>Para proteger el servidor OpenVPN contra ataques, es importante mantener el software actualizado y configurar un firewall para bloquear el tráfico no autorizado. También es importante configurar el servidor para que utilice un sistema de detección de intrusos, como `fail2ban`, para bloquear las IP que intentan acceder al servidor de forma no autorizada.</p>
             
         
             
         
             
-            <p>Para actualizar el servidor de acceso OpenVPN, se puede seguir el tutorial proporcionado en la documentación oficial, que incluye los pasos para actualizar el software y configurar la conexión. El comando `sudo apt-get update && sudo apt-get install openvpn` se puede utilizar para actualizar el software OpenVPN en un sistema Ubuntu.</p>
+            <p>En cuanto a las novedades y mejoras en OpenVPN, la versión 2.7.4 incluye correcciones de seguridad, como la corrección del error `CVE-2025-13086` que afectaba a la verificación de HMAC en el protocolo de autenticación. También se han mejorado las opciones de configuración y se han agregado nuevas características, como el soporte para `TLS 1.3`.</p>
             
         
             
         
             
-            <p>En resumen, OpenVPN es un sistema de red privada virtual que ofrece una amplia gama de características y configuraciones para crear conexiones seguras punto a punto o sitio a sitio. La configuración y el hardening de la conexión son fundamentales para garantizar la seguridad y la escalabilidad del sistema.</p>
+            <p>En resumen, OpenVPN es un software de código abierto que proporciona una forma segura de conectar redes y proteger el tráfico de datos. Al configurar un servidor OpenVPN con las mejores prácticas de seguridad y mantener el software actualizado, se puede garantizar la protección de la red y los datos contra ataques y accesos no autorizados.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre la configuración y seguridad de OpenVPN, se pueden consultar las fuentes oficiales del proyecto y la documentación en línea.</p>
             
         
             
@@ -109,17 +115,17 @@
         <ul>
             
             <li>
+                <a href="https://github.com/OpenVPN/openvpn" target="_blank">OpenVPN</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://en.wikipedia.org/wiki/OpenVPN" target="_blank">OpenVPN - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://www.freshports.org/security/openvpn/" target="_blank">FreshPorts -- security/openvpn: Secure IP/Ethernet tunnel daemon</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html" target="_blank">Tutorial: Update Your Access Server Version - OpenVPN</a>
+                <a href="https://github.com/OpenVPN/openvpn/releases" target="_blank">Releases · OpenVPN/openvpn</a>
                 
             </li>
             
@@ -130,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-16_0945.html">&larr; 2026-05-16 0945</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-20_1056.html">&larr; 2026-05-20 1056</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-05-24_0959.html">2026-05-24 0959 &rarr;</a>
             
         </div>
     </div>

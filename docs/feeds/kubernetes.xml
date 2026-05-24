@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-23T09:59:01.474368+00:00</updated>
+  <updated>2026-05-24T10:00:31.282063+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -379,5 +379,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-20_1056.html"/>
     <summary>Kubernetes 1.36 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. Esta versión también incluye soporte para volume group snapshots y mejoras en la seguridad de los contenedores.</summary>
     <published>2026-05-20T10:56:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-24_0959.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-05-24T09:59:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Kubernetes incluye varias mejoras en la gestión de redes, almacenamiento y seguridad. Una de las novedades más destacadas es la integración de &lt;code&gt;etcd 3.7.0-beta.0&lt;/code&gt;, que ofrece mejoras en la escalabilidad y la seguridad. Para implementar esta versión, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es fundamental seguir las mejores prácticas para la gestión de secretos. Esto incluye cifrar los secretos en reposo utilizando herramientas como &lt;code&gt;kubectl create secret generic&lt;/code&gt; y controlar el acceso con el mínimo privilegio necesario mediante &lt;code&gt;RBAC&lt;/code&gt;. Además, es importante proteger los componentes del clúster y monitorear el acceso a los secretos.&lt;/p&gt;
+&lt;p&gt;Otra área de mejora en Kubernetes es la implementación de GitOps. Herramientas como &lt;code&gt;ArgoCD&lt;/code&gt; permiten implementar la entrega continua y automatizar la configuración del clúster. Para instalar &lt;code&gt;ArgoCD&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, incluyendo &lt;code&gt;Persistent Volumes&lt;/code&gt; y &lt;code&gt;StatefulSets&lt;/code&gt;. Para crear un &lt;code&gt;Persistent Volume&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl create -f pv.yaml&lt;/code&gt;, donde &lt;code&gt;pv.yaml&lt;/code&gt; es un archivo de configuración que define el volumen persistente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Kubernetes está en constante evolución, y es fundamental estar al tanto de las últimas novedades y mejoras. Para ello, se pueden consultar las fuentes oficiales de Kubernetes y las comunidades de desarrolladores.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes ofrece una amplia gama de herramientas y características para la gestión de contenedores y la implementación de aplicaciones en la nube. Siguiendo las mejores prácticas y utilizando las herramientas adecuadas, es posible crear un clúster seguro y escalable que satisfaga las necesidades de la aplicación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/release_notes/index"&gt;Release notes | OpenShift Container Platform | 4.18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/20/etcd-370-beta/"&gt;Announcing etcd 3.7.0-beta.0 - Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/cedon/en-best-practices-for-managing-secrets-in-kubernetes-4g18"&gt;Best Practices for Managing Secrets in Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@bless2k/argocd-install-upgrade-guide-6a08be3514ff"&gt;ArgoCD Install &amp; Upgrade Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-24_0959.html"/>
+    <summary>En este artículo se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de red, almacenamiento y seguridad. Se discuten también las mejores prácticas para la gestión de secretos y la implementación de GitOps.</summary>
+    <published>2026-05-24T09:59:00+00:00</published>
   </entry>
 </feed>

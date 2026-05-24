@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
+    <title>Novedades en Kubernetes - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes 1.36</h1>
-    <div class="meta">2026-05-20 1056 · Kubernetes</div>
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-05-24 0959 · Kubernetes</div>
 
     <div class="content">
         
@@ -66,41 +66,37 @@
             
         
             
-            <p>La versión 1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que incluye una serie de características y mejoras que mejorarán la experiencia del usuario y la seguridad de los contenedores. Una de las novedades más destacadas es el soporte para volume group snapshots, que permite a los administradores crear copias de seguridad de los volúmenes de los contenedores de manera más eficiente.</p>
+            <p>La última versión de Kubernetes incluye varias mejoras en la gestión de redes, almacenamiento y seguridad. Una de las novedades más destacadas es la integración de `etcd 3.7.0-beta.0`, que ofrece mejoras en la escalabilidad y la seguridad. Para implementar esta versión, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/`.</p>
             
         
             
         
             
-            <p>Para utilizar esta característica, es necesario configurar el almacenamiento de los contenedores mediante el comando `kubectl` y especificar el tipo de almacenamiento que se desea utilizar. Por ejemplo, para utilizar el almacenamiento de tipo `persistentVolumeClaim`, se puede utilizar el siguiente comando: `kubectl create -f pvc.yaml`. Luego, se puede crear un snapshot del volumen utilizando el comando `kubectl create -f snapshot.yaml`.</p>
+            <p>En cuanto a la seguridad, es fundamental seguir las mejores prácticas para la gestión de secretos. Esto incluye cifrar los secretos en reposo utilizando herramientas como `kubectl create secret generic` y controlar el acceso con el mínimo privilegio necesario mediante `RBAC`. Además, es importante proteger los componentes del clúster y monitorear el acceso a los secretos.</p>
             
         
             
         
             
-            <p>Otra característica importante en esta versión es la mejora en la seguridad de los contenedores. Ahora, es posible configurar la autenticación y autorización de los contenedores utilizando el comando `kubectl` y especificar las políticas de seguridad que se desean aplicar. Por ejemplo, para configurar la autenticación de los contenedores mediante el uso de tokens, se puede utilizar el siguiente comando: `kubectl create -f token.yaml`.</p>
+            <p>Otra área de mejora en Kubernetes es la implementación de GitOps. Herramientas como `ArgoCD` permiten implementar la entrega continua y automatizar la configuración del clúster. Para instalar `ArgoCD`, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml`.</p>
             
         
             
         
             
-            <p>La versión 1.36 de Kubernetes también incluye mejoras en la networking de los contenedores. Ahora, es posible configurar la red de los contenedores utilizando el comando `kubectl` y especificar las políticas de red que se desean aplicar. Por ejemplo, para configurar la red de los contenedores mediante el uso de un servicio de red, se puede utilizar el siguiente comando: `kubectl create -f network.yaml`.</p>
+            <p>En cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, incluyendo `Persistent Volumes` y `StatefulSets`. Para crear un `Persistent Volume`, se puede utilizar el comando `kubectl create -f pv.yaml`, donde `pv.yaml` es un archivo de configuración que define el volumen persistente.</p>
             
         
             
         
             
-            <p>En resumen, la versión 1.36 de Kubernetes es una versión muy completa que incluye una serie de características y mejoras que mejorarán la experiencia del usuario y la seguridad de los contenedores. Es importante mencionar que, para utilizar estas características, es necesario configurar el almacenamiento, la seguridad y la red de los contenedores de manera adecuada.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de Kubernetes está en constante evolución, y es fundamental estar al tanto de las últimas novedades y mejoras. Para ello, se pueden consultar las fuentes oficiales de Kubernetes y las comunidades de desarrolladores.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la versión 1.36 de Kubernetes es compatible con una variedad de plataformas y herramientas, lo que la hace una excelente opción para aquellos que buscan una solución de contenedores escalable y segura. Para obtener más información sobre la versión 1.36 de Kubernetes, se puede consultar la documentación oficial en el sitio web de Kubernetes.</p>
-            
-        
-            
-        
+            <p>En resumen, Kubernetes ofrece una amplia gama de herramientas y características para la gestión de contenedores y la implementación de aplicaciones en la nube. Siguiendo las mejores prácticas y utilizando las herramientas adecuadas, es posible crear un clúster seguro y escalable que satisfaga las necesidades de la aplicación.</p>
             
         
     </div>
@@ -111,17 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.29/release-notes/release-notes-draft.md" target="_blank">Release Notes de Kubernetes 1.36</a>
+                <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/release_notes/index" target="_blank">Release notes | OpenShift Container Platform | 4.18</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/releases/1.36/" target="_blank">Kubernetes 1.36</a>
+                <a href="https://kubernetes.io/blog/2026/05/20/etcd-370-beta/" target="_blank">Announcing etcd 3.7.0-beta.0 - Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
+                <a href="https://dev.to/cedon/en-best-practices-for-managing-secrets-in-kubernetes-4g18" target="_blank">Best Practices for Managing Secrets in Kubernetes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@bless2k/argocd-install-upgrade-guide-6a08be3514ff" target="_blank">ArgoCD Install & Upgrade Guide</a>
                 
             </li>
             
@@ -132,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-16_0945.html">&larr; 2026-05-16 0945</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-20_1056.html">&larr; 2026-05-20 1056</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-24_0959.html">2026-05-24 0959 &rarr;</a>
             
         </div>
     </div>
