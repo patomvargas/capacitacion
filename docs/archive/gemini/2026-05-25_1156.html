@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gemini: Integración y Mejoras - Gemini</title>
+    <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
+    </div>
+
+    <h1>Gemini: Integración y Mejoras</h1>
+    <div class="meta">2026-05-25 1156 · Gemini</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La plataforma Gemini Enterprise Agent ofrece una forma comprehensiva de construir, escalar y gobernar agentes de inteligencia artificial. Con la última versión de la plataforma, se han agregado nuevas características y mejoras, como la integración con Vertex AI y BigQuery. Para empezar a utilizar la plataforma, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini.</p>
+            
+        
+            
+        
+            
+            <p>Una vez habilitada la API, se puede utilizar el comando `gcloud gemini agents create` para crear un nuevo agente. Luego, se puede utilizar el comando `gcloud gemini agents update` para actualizar la configuración del agente. La plataforma también ofrece una serie de modelos preentrenados que se pueden utilizar para construir agentes, como el modelo `gemini-3.1-flash-lite`.</p>
+            
+        
+            
+        
+            
+            <p>La integración con Vertex AI permite a los usuarios entrenar y desplegar modelos de inteligencia artificial de manera más eficiente. Para utilizar Vertex AI con Gemini, es necesario crear un conjunto de datos en Vertex AI y luego conectarlo a la plataforma Gemini. Luego, se puede utilizar el comando `gcloud vertex ai datasets create` para crear un nuevo conjunto de datos.</p>
+            
+        
+            
+        
+            
+            <p>La plataforma Gemini también se puede integrar con BigQuery, lo que permite a los usuarios analizar y visualizar los datos de los agentes de manera más efectiva. Para utilizar BigQuery con Gemini, es necesario crear un conjunto de datos en BigQuery y luego conectarlo a la plataforma Gemini. Luego, se puede utilizar el comando `bq query` para ejecutar consultas en los datos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la plataforma Gemini Enterprise Agent ofrece una forma comprehensiva de construir, escalar y gobernar agentes de inteligencia artificial. Con la última versión de la plataforma, se han agregado nuevas características y mejoras, como la integración con Vertex AI y BigQuery. Para obtener más información, se pueden consultar las fuentes oficiales de la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la seguridad y la gobernanza son fundamentales en la plataforma Gemini. Los usuarios deben seguir las mejores prácticas de seguridad y gobernanza para asegurarse de que los agentes estén configurados y ejecutándose de manera segura. Para obtener más información sobre las mejores prácticas de seguridad y gobernanza, se pueden consultar las fuentes oficiales de la plataforma.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions" target="_blank">Model versions and lifecycle | Gemini Enterprise Agent Platform</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month" target="_blank">What Google Cloud announced in AI this month – and how it helps you</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.cloud.google.com/gemini/docs/release-notes" target="_blank">Gemini for Google Cloud release notes</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-05-17_0950.html">&larr; 2026-05-17 0950</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

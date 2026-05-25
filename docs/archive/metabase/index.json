@@ -1,4 +1,24 @@
 {
+  "2026-05-25_1156": {
+    "slug": "metabase",
+    "title": "Metabase: Nuevas Funcionalidades y Mejoras",
+    "summary": "Metabase 61 introduce una capa de gobernanza de inteligencia artificial y mejoras en la personalización de Metabot. Además, se presentan soluciones para problemas comunes en la configuración y uso de la herramienta.",
+    "content": "\nLa versión 61 de Metabase incluye una capa de gobernanza de inteligencia artificial que permite el control de acceso por grupo, límites de tokens y mensajes, y personalización de Metabot con prompts del sistema. Esto se logra mediante la configuración de `per-group access controls` y `token and message limits` en la interfaz de administración de Metabase.\n\nPara aprovechar al máximo estas nuevas funcionalidades, es importante entender cómo configurar y utilizar la herramienta de manera efectiva. Por ejemplo, para crear un dashboard personalizado, se puede utilizar el comando `metabase dashboard create` y luego configurar los parámetros deseados utilizando `metabase dashboard update`. Además, se pueden crear expresiones personalizadas utilizando `metabase expression create` y luego agregarlas a los dashboards como se necesite.\n\nSin embargo, como con cualquier herramienta, pueden surgir problemas y errores. Por ejemplo, se ha reportado un problema con la sintaxis SQL generada para SQL Server 2019, que se puede solucionar utilizando la opción `--sql-server-2019` al ejecutar el comando `metabase sync`. Otro problema común es la falla en la re-indexación de la búsqueda, que se puede solucionar ejecutando el comando `metabase search re-init` con los parámetros adecuados.\n\nPara solucionar estos problemas y aprovechar al máximo las funcionalidades de Metabase, es importante consultar la documentación oficial y buscar ayuda en la comunidad de desarrolladores. Además, se pueden utilizar herramientas como `n8n` para automatizar tareas y flujos de trabajo, y `GitHub` para colaborar con otros desarrolladores y compartir código.\n\nEn resumen, Metabase 61 ofrece nuevas funcionalidades y mejoras que permiten una mayor personalización y control sobre la herramienta. Sin embargo, es importante entender cómo configurar y utilizar la herramienta de manera efectiva, y buscar ayuda cuando sea necesario.\n\nFinalmente, es importante mencionar que la comunidad de desarrolladores de Metabase es muy activa y ofrece una gran cantidad de recursos y herramientas para ayudar a los usuarios a aprovechar al máximo la herramienta. Por ejemplo, se pueden encontrar ejemplos de código y tutoriales en la documentación oficial, y se pueden unir a la comunidad de desarrolladores en `GitHub` para colaborar con otros y compartir conocimientos.",
+    "sources": [
+      {
+        "title": "Metabase 61: AI governance, MCP updates, and more!",
+        "url": "https://discourse.metabase.com/t/metabase-61-ai-governance-mcp-updates-and-more/304452"
+      },
+      {
+        "title": "Issues · metabase/metabase",
+        "url": "https://github.com/metabase/metabase/issues?q=state:open+label:.Team/UXWest"
+      },
+      {
+        "title": "Bug: Invalid SQL syntax generated for SQL Server 2019 (TOP ...",
+        "url": "https://github.com/metabase/metabase/issues/73483"
+      }
+    ]
+  },
   "2026-05-21_1130": {
     "slug": "metabase",
     "title": "Metabase: Queries y Dashboards Avanzados",

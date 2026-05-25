@@ -1,4 +1,24 @@
 {
+  "2026-05-25_1156": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una plataforma de agentes empresariales que permite construir, escalar y gobernar agentes de inteligencia artificial. En este artículo, se presentan las últimas novedades y mejoras de la plataforma, incluyendo la integración con Vertex AI y BigQuery.",
+    "content": "\nLa plataforma Gemini Enterprise Agent ofrece una forma comprehensiva de construir, escalar y gobernar agentes de inteligencia artificial. Con la última versión de la plataforma, se han agregado nuevas características y mejoras, como la integración con Vertex AI y BigQuery. Para empezar a utilizar la plataforma, es necesario crear un proyecto en Google Cloud y habilitar la API de Gemini.\n\nUna vez habilitada la API, se puede utilizar el comando `gcloud gemini agents create` para crear un nuevo agente. Luego, se puede utilizar el comando `gcloud gemini agents update` para actualizar la configuración del agente. La plataforma también ofrece una serie de modelos preentrenados que se pueden utilizar para construir agentes, como el modelo `gemini-3.1-flash-lite`.\n\nLa integración con Vertex AI permite a los usuarios entrenar y desplegar modelos de inteligencia artificial de manera más eficiente. Para utilizar Vertex AI con Gemini, es necesario crear un conjunto de datos en Vertex AI y luego conectarlo a la plataforma Gemini. Luego, se puede utilizar el comando `gcloud vertex ai datasets create` para crear un nuevo conjunto de datos.\n\nLa plataforma Gemini también se puede integrar con BigQuery, lo que permite a los usuarios analizar y visualizar los datos de los agentes de manera más efectiva. Para utilizar BigQuery con Gemini, es necesario crear un conjunto de datos en BigQuery y luego conectarlo a la plataforma Gemini. Luego, se puede utilizar el comando `bq query` para ejecutar consultas en los datos.\n\nEn resumen, la plataforma Gemini Enterprise Agent ofrece una forma comprehensiva de construir, escalar y gobernar agentes de inteligencia artificial. Con la última versión de la plataforma, se han agregado nuevas características y mejoras, como la integración con Vertex AI y BigQuery. Para obtener más información, se pueden consultar las fuentes oficiales de la plataforma.\n\nFinalmente, es importante mencionar que la seguridad y la gobernanza son fundamentales en la plataforma Gemini. Los usuarios deben seguir las mejores prácticas de seguridad y gobernanza para asegurarse de que los agentes estén configurados y ejecutándose de manera segura. Para obtener más información sobre las mejores prácticas de seguridad y gobernanza, se pueden consultar las fuentes oficiales de la plataforma.",
+    "sources": [
+      {
+        "title": "Model versions and lifecycle | Gemini Enterprise Agent Platform",
+        "url": "https://docs.cloud.google.com/gemini-enterprise-agent-platform/models/model-versions"
+      },
+      {
+        "title": "What Google Cloud announced in AI this month – and how it helps you",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/what-google-cloud-announced-in-ai-this-month"
+      },
+      {
+        "title": "Gemini for Google Cloud release notes",
+        "url": "https://docs.cloud.google.com/gemini/docs/release-notes"
+      }
+    ]
+  },
   "2026-05-17_0950": {
     "slug": "gemini",
     "title": "Gemini: Integración y Mejoras",

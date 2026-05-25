@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Metabase: Nuevas Funcionalidades y Mejoras - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+    </div>
+
+    <h1>Metabase: Nuevas Funcionalidades y Mejoras</h1>
+    <div class="meta">2026-05-25 1156 · Metabase</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La versión 61 de Metabase incluye una capa de gobernanza de inteligencia artificial que permite el control de acceso por grupo, límites de tokens y mensajes, y personalización de Metabot con prompts del sistema. Esto se logra mediante la configuración de `per-group access controls` y `token and message limits` en la interfaz de administración de Metabase.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo estas nuevas funcionalidades, es importante entender cómo configurar y utilizar la herramienta de manera efectiva. Por ejemplo, para crear un dashboard personalizado, se puede utilizar el comando `metabase dashboard create` y luego configurar los parámetros deseados utilizando `metabase dashboard update`. Además, se pueden crear expresiones personalizadas utilizando `metabase expression create` y luego agregarlas a los dashboards como se necesite.</p>
+            
+        
+            
+        
+            
+            <p>Sin embargo, como con cualquier herramienta, pueden surgir problemas y errores. Por ejemplo, se ha reportado un problema con la sintaxis SQL generada para SQL Server 2019, que se puede solucionar utilizando la opción `--sql-server-2019` al ejecutar el comando `metabase sync`. Otro problema común es la falla en la re-indexación de la búsqueda, que se puede solucionar ejecutando el comando `metabase search re-init` con los parámetros adecuados.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar estos problemas y aprovechar al máximo las funcionalidades de Metabase, es importante consultar la documentación oficial y buscar ayuda en la comunidad de desarrolladores. Además, se pueden utilizar herramientas como `n8n` para automatizar tareas y flujos de trabajo, y `GitHub` para colaborar con otros desarrolladores y compartir código.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Metabase 61 ofrece nuevas funcionalidades y mejoras que permiten una mayor personalización y control sobre la herramienta. Sin embargo, es importante entender cómo configurar y utilizar la herramienta de manera efectiva, y buscar ayuda cuando sea necesario.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la comunidad de desarrolladores de Metabase es muy activa y ofrece una gran cantidad de recursos y herramientas para ayudar a los usuarios a aprovechar al máximo la herramienta. Por ejemplo, se pueden encontrar ejemplos de código y tutoriales en la documentación oficial, y se pueden unir a la comunidad de desarrolladores en `GitHub` para colaborar con otros y compartir conocimientos.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://discourse.metabase.com/t/metabase-61-ai-governance-mcp-updates-and-more/304452" target="_blank">Metabase 61: AI governance, MCP updates, and more!</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues?q=state:open+label:.Team/UXWest" target="_blank">Issues · metabase/metabase</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metabase/metabase/issues/73483" target="_blank">Bug: Invalid SQL syntax generated for SQL Server 2019 (TOP ...</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-21_1130.html">&larr; 2026-05-21 1130</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

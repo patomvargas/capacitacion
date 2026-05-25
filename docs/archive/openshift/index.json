@@ -1,4 +1,24 @@
 {
+  "2026-05-25_1156": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Novedades",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo la versión 4.14.65 y la versión 4.17.54.",
+    "content": "La plataforma OpenShift es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan desplegar aplicaciones de manera eficiente y segura. En las últimas versiones, se han incluido mejoras y actualizaciones importantes, como la versión 4.14.65 y la versión 4.17.54, que ofrecen soluciones a problemas de seguridad y bugs conocidos. \n \n Para actualizar a la última versión de OpenShift, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Por ejemplo, para actualizar a la versión 4.14.65, se puede ejecutar el comando `oc adm upgrade --to=4.14.65`. \n \n Otra característica importante de OpenShift es la capacidad de utilizar operadores para gestionar los despliegues de aplicaciones. Los operadores son paquetes de software que se encargan de gestionar y mantener los despliegues de aplicaciones de manera automática. Para instalar un operador en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de definición del operador. \n \n En cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger los despliegues de aplicaciones. Una de las características más importantes es la autenticación y autorización mediante OAuth, que permite a los administradores de sistemas controlar el acceso a los recursos de la plataforma. Para configurar la autenticación y autorización mediante OAuth en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de configuración de OAuth. \n \n Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el comando `oc adm migrate`, que permite a los administradores de sistemas migrar aplicaciones de manera automática. Para migrar una aplicación a OpenShift, se puede ejecutar el comando `oc adm migrate --from=<origen> --to=<destino>`. \n",
+    "sources": [
+      {
+        "title": "RHSA-2026:15087",
+        "url": "https://access.redhat.com/errata/RHSA-2026:15087"
+      },
+      {
+        "title": "RHSA-2026:17596",
+        "url": "https://access.redhat.com/errata/RHSA-2026:17596"
+      },
+      {
+        "title": "Migrating Workloads to OpenShift: A Practical Approach",
+        "url": "https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440"
+      }
+    ]
+  },
   "2026-05-21_1130": {
     "slug": "openshift",
     "title": "OpenShift: Despliegue y Administración de Aplicaciones",

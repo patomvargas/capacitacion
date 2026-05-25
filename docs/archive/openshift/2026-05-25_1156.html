@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Despliegue y Administración de Aplicaciones - OpenShift</title>
+    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,46 +57,40 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Despliegue y Administración de Aplicaciones</h1>
-    <div class="meta">2026-05-21 1130 · OpenShift</div>
+    <h1>OpenShift: Mejoras y Novedades</h1>
+    <div class="meta">2026-05-25 1156 · OpenShift</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenShift es una familia de productos de contenerización desarrollados por Red Hat. Su producto insignia, OpenShift Container Platform, es una plataforma de nube híbrida como servicio construida alrededor de contenedores de Linux orquestados y administrados por Kubernetes sobre una base de Red Hat Enterprise Linux.</p>
+            <p>La plataforma OpenShift es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan desplegar aplicaciones de manera eficiente y segura. En las últimas versiones, se han incluido mejoras y actualizaciones importantes, como la versión 4.14.65 y la versión 4.17.54, que ofrecen soluciones a problemas de seguridad y bugs conocidos.</p>
             
         
             
         
             
-            <p>Una de las características clave de OpenShift es su capacidad para desplegar y administrar aplicaciones de manera eficiente. Para ello, se utilizan comandos como `oc new-app` para crear una nueva aplicación, y `oc expose` para exponer la aplicación a la red. Por ejemplo, para desplegar una aplicación de Node.js, se puede utilizar el comando `oc new-app nodejs:latest~https://github.com/openshift/nodejs-ex.git`.</p>
+            <p>Para actualizar a la última versión de OpenShift, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Por ejemplo, para actualizar a la versión 4.14.65, se puede ejecutar el comando `oc adm upgrade --to=4.14.65`.</p>
             
         
             
         
             
-            <p>Además, OpenShift proporciona una variedad de herramientas y características para administrar y monitorear las aplicaciones, como el Operador de Vida (OLM) y el Operador de Registro (Registry Operator). El OLM es responsable de administrar el ciclo de vida de los operadores en el clúster, mientras que el Registro de Operadores es un catálogo de operadores certificados que se pueden instalar en el clúster. Para instalar un operador, se puede utilizar el comando `oc create -f https://operatorhub.io/install/<operator_name>.yaml`.</p>
+            <p>Otra característica importante de OpenShift es la capacidad de utilizar operadores para gestionar los despliegues de aplicaciones. Los operadores son paquetes de software que se encargan de gestionar y mantener los despliegues de aplicaciones de manera automática. Para instalar un operador en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de definición del operador.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, OpenShift proporciona una variedad de características y herramientas para proteger las aplicaciones y los datos. Por ejemplo, se pueden utilizar comandos como `oc adm policy` para administrar las políticas de seguridad, y `oc get secret` para obtener información sobre los secretos almacenados en el clúster.</p>
+            <p>En cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger los despliegues de aplicaciones. Una de las características más importantes es la autenticación y autorización mediante OAuth, que permite a los administradores de sistemas controlar el acceso a los recursos de la plataforma. Para configurar la autenticación y autorización mediante OAuth en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de configuración de OAuth.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift es una plataforma en constante evolución, con nuevas características y herramientas que se agregan regularmente. Por ejemplo, la versión más reciente de OpenShift incluye soporte para la virtualización de aplicaciones y la integración con otras herramientas y plataformas de Red Hat.</p>
+            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el comando `oc adm migrate`, que permite a los administradores de sistemas migrar aplicaciones de manera automática. Para migrar una aplicación a OpenShift, se puede ejecutar el comando `oc adm migrate --from=<origen> --to=<destino>`.</p>
             
         
-            
-        
-            
-            <p>En resumen, OpenShift es una plataforma de contenerización poderosa y flexible que permite desplegar y administrar aplicaciones de manera eficiente. Con sus características y herramientas avanzadas, OpenShift es una excelente opción para las organizaciones que buscan mejorar la eficiencia y la seguridad de sus aplicaciones.</p>
             
         
     </div>
@@ -107,17 +101,17 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/OpenShift" target="_blank">OpenShift - Wikipedia</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:15087" target="_blank">RHSA-2026:15087</a>
                 
             </li>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/Red_Hat" target="_blank">Red Hat - Wikipedia</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:17596" target="_blank">RHSA-2026:17596</a>
                 
             </li>
             
             <li>
-                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
+                <a href="https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440" target="_blank">Migrating Workloads to OpenShift: A Practical Approach</a>
                 
             </li>
             
@@ -128,12 +122,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-17_0950.html">&larr; 2026-05-17 0950</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-21_1130.html">&larr; 2026-05-21 1130</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-25_1156.html">2026-05-25 1156 &rarr;</a>
             
         </div>
     </div>

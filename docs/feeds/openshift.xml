@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-24T10:00:31.284211+00:00</updated>
+  <updated>2026-05-25T11:57:06.094257+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -391,5 +391,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-21_1130.html"/>
     <summary>OpenShift es una plataforma de contenerización que permite desplegar y administrar aplicaciones de manera eficiente. En este artículo, se presentan las características y beneficios de OpenShift, así como ejemplos prácticos de su uso.</summary>
     <published>2026-05-21T11:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-25_1156.html</id>
+    <title>OpenShift: Mejoras y Novedades</title>
+    <updated>2026-05-25T11:56:00+00:00</updated>
+    <content type="html">&lt;p&gt;La plataforma OpenShift es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan desplegar aplicaciones de manera eficiente y segura. En las últimas versiones, se han incluido mejoras y actualizaciones importantes, como la versión 4.14.65 y la versión 4.17.54, que ofrecen soluciones a problemas de seguridad y bugs conocidos.&lt;/p&gt;
+&lt;p&gt;Para actualizar a la última versión de OpenShift, se puede utilizar el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; en la línea de comandos. Por ejemplo, para actualizar a la versión 4.14.65, se puede ejecutar el comando &lt;code&gt;oc adm upgrade --to=4.14.65&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de OpenShift es la capacidad de utilizar operadores para gestionar los despliegues de aplicaciones. Los operadores son paquetes de software que se encargan de gestionar y mantener los despliegues de aplicaciones de manera automática. Para instalar un operador en OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f&lt;/code&gt; con el archivo de definición del operador.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger los despliegues de aplicaciones. Una de las características más importantes es la autenticación y autorización mediante OAuth, que permite a los administradores de sistemas controlar el acceso a los recursos de la plataforma. Para configurar la autenticación y autorización mediante OAuth en OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f&lt;/code&gt; con el archivo de configuración de OAuth.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el comando &lt;code&gt;oc adm migrate&lt;/code&gt;, que permite a los administradores de sistemas migrar aplicaciones de manera automática. Para migrar una aplicación a OpenShift, se puede ejecutar el comando &lt;code&gt;oc adm migrate --from=&lt;origen&gt; --to=&lt;destino&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:15087"&gt;RHSA-2026:15087&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:17596"&gt;RHSA-2026:17596&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440"&gt;Migrating Workloads to OpenShift: A Practical Approach&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-25_1156.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para mejorar la eficiencia y la seguridad de los despliegues de aplicaciones. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo la versión 4.14.65 y la versión 4.17.54.</summary>
+    <published>2026-05-25T11:56:00+00:00</published>
   </entry>
 </feed>
