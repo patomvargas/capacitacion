@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-25T11:57:06.114776+00:00</updated>
+  <updated>2026-05-27T11:43:29.430454+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -248,5 +248,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-23_0958.html"/>
     <summary>Docker es una plataforma de contenerización que sigue evolucionando. En este artículo, se presentan las últimas mejoras y best practices para utilizar Docker de manera efectiva. Se cubren temas como multi-stage builds, compose, networking, seguridad y BuildKit.</summary>
     <published>2026-05-23T09:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html</id>
+    <title>Docker: Mejoras y Best Practices</title>
+    <updated>2026-05-27T11:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos meses, se han producido varias actualizaciones y mejoras en la plataforma, como la versión 29.5.1 del Docker Engine, que incluye correcciones de errores y mejoras en la seguridad.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Docker es la capacidad de crear builds multi-estadio, lo que permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker buildx build --load&lt;/code&gt; para crear una imagen de Docker con un tamaño reducido. Además, la herramienta &lt;code&gt;docker bake&lt;/code&gt; permite a los desarrolladores crear builds declarativos y paralelos, lo que mejora la eficiencia y la productividad.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es fundamental utilizar buenas prácticas para proteger los contenedores y las imágenes de Docker. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker scan&lt;/code&gt; para analizar las imágenes de Docker en busca de vulnerabilidades de seguridad. Además, es importante utilizar redes de Docker seguras, como la red &lt;code&gt;bridge&lt;/code&gt; o la red &lt;code&gt;overlay&lt;/code&gt;, para aislar los contenedores y prevenir ataques de red.&lt;/p&gt;
+&lt;p&gt;La configuración de la red en Docker es fundamental para el despliegue de aplicaciones en producción. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker network create&lt;/code&gt; para crear una red de Docker personalizada. Además, se puede utilizar el comando &lt;code&gt;docker run -p&lt;/code&gt; para mapear los puertos de los contenedores a los puertos del host.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa para los sysadmins y DevOps engineers, y es fundamental estar al tanto de las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker. Algunas de las mejores prácticas incluyen utilizar builds multi-estadio, herramientas como &lt;code&gt;docker bake&lt;/code&gt;, redes de Docker seguras y configuraciones de red personalizadas.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Docker y las documentaciones de las herramientas y tecnologías relacionadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/docker-hub/release-notes/"&gt;Docker Hub release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.portainer.io/sts/release-notes"&gt;Release Notes | 2.42 STS - Portainer Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/meet-gordon-dockers-ai-agent-for-your-entire-container-workflow/"&gt;Meet Gordon: Docker's AI Agent For Your Entire Container Workflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@vedantbhavsar/docker-network-configuration-for-deployment-how-it-really-works-6456075fd63b"&gt;Docker Network Configuration for Deployment: How It Really Works&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@ujjawalr/spring-boot-docker-the-image-size-optimization-secret-devops-engineers-dont-want-you-to-know-557894433329"&gt;Spring Boot + Docker: The Image Size Optimization Secret DevOps Engineers Don't Want You To Know&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html"/>
+    <summary>Docker es una herramienta fundamental para los sysadmins y DevOps engineers. En este artículo, se presentan las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker.</summary>
+    <published>2026-05-27T11:42:00+00:00</published>
   </entry>
 </feed>

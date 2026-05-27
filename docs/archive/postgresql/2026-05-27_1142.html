@@ -58,7 +58,7 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-05-23 0958 · PostgreSQL</div>
+    <div class="meta">2026-05-27 1142 · PostgreSQL</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la confiabilidad de tu base de datos. Una de las formas de optimizar PostgreSQL es mediante la configuración de parámetros como `shared_buffers`, `effective_cache_size` y `maintenance_work_mem`. Por ejemplo, puedes ajustar el valor de `shared_buffers` con el comando `ALTER SYSTEM SET shared_buffers TO '512MB';`.</p>
+            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de búsqueda y consulta. Puedes crear índices utilizando el comando `CREATE INDEX` y especificar la columna o columnas que deseas indexar.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar el rendimiento es mediante la creación de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos sin tener que escanear toda la tabla. Puedes crear un índice con el comando `CREATE INDEX idx_nombre ON tabla (columna);`. También es importante monitorear el rendimiento de tu base de datos con herramientas como `pg_stat` y `EXPLAIN`.</p>
+            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de tus datos en diferentes servidores, lo que garantiza la disponibilidad y la integridad de tus datos en caso de fallas o desastres. Puedes configurar la replicación utilizando el comando `pg_basebackup` y `pg_replication_slot`.</p>
             
         
             
         
             
-            <p>La replicación es otra característica importante de PostgreSQL. La replicación permite a varias bases de datos mantener una copia idéntica de los datos, lo que garantiza la disponibilidad y la recuperación en caso de fallos. Puedes configurar la replicación con el comando `CREATE REPLICA slots;`. También es importante realizar copias de seguridad regulares de tu base de datos con el comando `pg_dump`.</p>
+            <p>La configuración de PostgreSQL también es fundamental para el rendimiento. Puedes ajustar parámetros como `shared_buffers`, `effective_cache_size` y `maintenance_work_mem` para mejorar el rendimiento de tus consultas. Por ejemplo, puedes aumentar el valor de `shared_buffers` para permitir que PostgreSQL almacene más datos en la memoria RAM, lo que reduce los tiempos de acceso a disco.</p>
             
         
             
         
             
-            <p>La versión 18 de PostgreSQL introduce varias mejoras, incluyendo la implementación de I/O asíncrono (AIO), que permite a los usuarios realizar tareas de I/O concurrentes como lectura anticipada y escaneo secuencial. También es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones el 12 de noviembre de 2026, por lo que se recomienda actualizar a una versión más reciente.</p>
+            <p>Además, es importante monitorear el rendimiento de tus consultas utilizando herramientas como `pg_stat_statements` y `pg_stat_user_tables`. Estas herramientas te permiten identificar las consultas que están consumiendo más recursos y optimizarlas para mejorar el rendimiento. Puedes utilizar comandos como `EXPLAIN` y `EXPLAIN ANALYZE` para analizar el plan de ejecución de tus consultas y identificar posibles problemas de rendimiento.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad y la confiabilidad de tu base de datos, es importante seguir las mejores prácticas de configuración y monitoreo. Puedes encontrar más información en la documentación oficial de PostgreSQL y en recursos en línea como la guía de optimización de PostgreSQL para Node.js.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y configuración, así como un monitoreo constante del rendimiento de tus consultas. Al seguir estas recomendaciones, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones que utilizan PostgreSQL.</p>
             
         
             
         
             
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de configuración, monitoreo y mejores prácticas. Al seguir estos consejos y mantener tu base de datos actualizada, puedes garantizar un rendimiento óptimo y una confiabilidad máxima.</p>
-            
-        
+            <p>Por último, es importante mencionar que la versión más reciente de PostgreSQL, la 18.4, incluye varias mejoras y correcciones de errores que pueden afectar el rendimiento y la seguridad de tus aplicaciones. Es recomendable actualizar a la versión más reciente para aprovechar estas mejoras y garantizar la estabilidad y el rendimiento de tus aplicaciones.</p>
             
         
     </div>
@@ -109,27 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">PostgreSQL: News Archive</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/docs/current/release-18.html" target="_blank">PostgreSQL: Documentation: 18: E.5. Release 18</a>
+                <a href="https://www.postgresql.org/about/news/postgresql-184-1710-1614-1518-and-1423-released-3297/" target="_blank">PostgreSQL 18.4, 17.10, 16.14, 15.18, and 14.23 Released!</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/asifthewebguy/postgresql-optimization-for-nodejs-complete-2026-guide-1okn" target="_blank">PostgreSQL Optimization for Node.js: Complete 2026 Guide</a>
+                <a href="https://medium.com/@philmcc/postgresql-query-anti-patterns-and-common-mistakes-a08636852aec" target="_blank">PostgreSQL Query Anti-Patterns and Common Mistakes</a>
                 
             </li>
             
@@ -140,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-19_1125.html">&larr; 2026-05-19 1125</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-23_0958.html">&larr; 2026-05-23 0958</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-27_1142.html">2026-05-27 1142 &rarr;</a>
             
         </div>
     </div>

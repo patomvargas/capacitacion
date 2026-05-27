@@ -1,4 +1,24 @@
 {
+  "2026-05-27_1142": {
+    "slug": "ansible",
+    "title": "Ansible: Mejoras y Novedades",
+    "summary": "Ansible ha lanzado varias actualizaciones recientemente, incluyendo ansible-core v2.20.6, v2.21.0 y v2.18.17. Estas versiones incluyen mejoras y correcciones de errores para mejorar la estabilidad y el rendimiento de la herramienta.",
+    "content": "Ansible es una herramienta de automatización de infraestructura y configuración que permite a los administradores de sistemas y desarrolladores implementar y gestionar entornos de manera eficiente. Recientemente, se han lanzado varias actualizaciones de ansible-core, incluyendo las versiones v2.20.6, v2.21.0 y v2.18.17. Estas versiones incluyen mejoras y correcciones de errores para mejorar la estabilidad y el rendimiento de la herramienta.\n\nPara instalar la última versión de ansible-core, se puede utilizar el comando `pip install ansible-core==2.21.0`. Es importante tener en cuenta que la versión v2.21.0 es la más reciente y contiene las últimas características y correcciones de errores. \n\nAdemás, se ha lanzado el paquete Ansible 13.7.0, que depende de ansible-core 2.20.6 y incluye una colección curada de módulos, plugins y roles de Ansible. Este paquete se puede instalar utilizando el comando `ansible-galaxy collection install ansible.community.package`.\n\nEs importante mencionar que Ansible también se puede integrar con otras herramientas de DevOps, como Jenkins y Docker, para crear un entorno de automatización completo. Por ejemplo, se puede utilizar el comando `ansible-playbook` para ejecutar un playbook de Ansible desde un job de Jenkins.\n\nEn resumen, las últimas actualizaciones de Ansible ofrecen mejoras y correcciones de errores para mejorar la estabilidad y el rendimiento de la herramienta. Es importante estar al tanto de las últimas versiones y características para aprovechar al máximo las capacidades de Ansible.\n\nPara más información sobre las últimas versiones y características de Ansible, se puede consultar la documentación oficial de Ansible, que incluye ejemplos y tutoriales para ayudar a los usuarios a empezar a trabajar con la herramienta.",
+    "sources": [
+      {
+        "title": "New Release: ansible-core v2.20.6",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-20-6/45813"
+      },
+      {
+        "title": "New Release: ansible-core v2.21.0",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-21-0/45814"
+      },
+      {
+        "title": "Release announcement: Ansible community package 13.7.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822"
+      }
+    ]
+  },
   "2026-05-23_0958": {
     "slug": "ansible",
     "title": "Ansible: Nuevas Características y Mejoras",

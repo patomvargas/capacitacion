@@ -58,7 +58,7 @@
     </div>
 
     <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-23 0958 · Docker</div>
+    <div class="meta">2026-05-27 1142 · Docker</div>
 
     <div class="content">
         
@@ -66,37 +66,41 @@
             
         
             
-            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En los últimos años, ha experimentado un crecimiento significativo y ha incorporado nuevas características y mejoras. Una de las últimas actualizaciones es la inclusión de Amazon CloudFront como CDN para las imágenes de Docker, lo que mejora la confiabilidad de las descargas y subidas de imágenes. Para utilizar esta función, se puede configurar el archivo `docker.json` con el comando `docker config` y especificar la URL de CloudFront como el punto de entrega de las imágenes.</p>
+            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos meses, se han producido varias actualizaciones y mejoras en la plataforma, como la versión 29.5.1 del Docker Engine, que incluye correcciones de errores y mejoras en la seguridad.</p>
             
         
             
         
             
-            <p>Otra característica importante de Docker es la capacidad de crear builds multi-etapa. Esto permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes, ya que solo se incluyen los archivos necesarios en la imagen final. Para crear un build multi-etapa, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa del build que se desea crear. Por ejemplo, `docker build -t mi-imagen --target prod .` creará una imagen de Docker con el nombre `mi-imagen` y la etapa de producción.</p>
+            <p>Una de las características más importantes de Docker es la capacidad de crear builds multi-estadio, lo que permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes. Por ejemplo, se puede utilizar el comando `docker buildx build --load` para crear una imagen de Docker con un tamaño reducido. Además, la herramienta `docker bake` permite a los desarrolladores crear builds declarativos y paralelos, lo que mejora la eficiencia y la productividad.</p>
             
         
             
         
             
-            <p>La seguridad es un tema importante en Docker. Una de las mejores prácticas es utilizar el comando `docker exec` con la opción `-u` para especificar el usuario que se utilizará para ejecutar el contenedor. Por ejemplo, `docker exec -u root -it mi-contenedor /bin/bash` ejecutará una shell de root en el contenedor `mi-contenedor`. Otra forma de mejorar la seguridad es utilizar el comando `docker inspect` para verificar la configuración de los contenedores y asegurarse de que no haya vulnerabilidades de seguridad.</p>
+            <p>En cuanto a la seguridad, es fundamental utilizar buenas prácticas para proteger los contenedores y las imágenes de Docker. Por ejemplo, se puede utilizar el comando `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades de seguridad. Además, es importante utilizar redes de Docker seguras, como la red `bridge` o la red `overlay`, para aislar los contenedores y prevenir ataques de red.</p>
             
         
             
         
             
-            <p>BuildKit es una herramienta de compilación de Docker que permite a los desarrolladores crear imágenes de Docker de manera más eficiente. Para utilizar BuildKit, se puede agregar la opción `--buildkit` al comando `docker build`. Por ejemplo, `docker build -t mi-imagen --buildkit .` creará una imagen de Docker con el nombre `mi-imagen` utilizando BuildKit.</p>
+            <p>La configuración de la red en Docker es fundamental para el despliegue de aplicaciones en producción. Por ejemplo, se puede utilizar el comando `docker network create` para crear una red de Docker personalizada. Además, se puede utilizar el comando `docker run -p` para mapear los puertos de los contenedores a los puertos del host.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Docker Compose es una herramienta que permite a los desarrolladores definir y ejecutar aplicaciones multi-contenedor de manera sencilla. Para utilizar Docker Compose, se puede crear un archivo `docker-compose.yml` que defina los servicios y contenedores que se desean ejecutar. Luego, se puede utilizar el comando `docker-compose up` para iniciar los contenedores y servicios definidos en el archivo.</p>
+            <p>En resumen, Docker es una herramienta poderosa para los sysadmins y DevOps engineers, y es fundamental estar al tanto de las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker. Algunas de las mejores prácticas incluyen utilizar builds multi-estadio, herramientas como `docker bake`, redes de Docker seguras y configuraciones de red personalizadas.</p>
             
         
             
         
             
-            <p>En resumen, Docker es una plataforma de contenerización que sigue evolucionando y mejorando. Al utilizar las últimas características y best practices, los desarrolladores y administradores de sistemas pueden crear aplicaciones y servicios más eficientes y seguros.</p>
+            <p>Para más información, se pueden consultar las fuentes oficiales de Docker y las documentaciones de las herramientas y tecnologías relacionadas.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -112,17 +116,22 @@
             </li>
             
             <li>
-                <a href="https://docs.portainer.io/sts/release-notes" target="_blank">Release Notes | 2.41 STS - Portainer Documentation</a>
+                <a href="https://docs.portainer.io/sts/release-notes" target="_blank">Release Notes | 2.42 STS - Portainer Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/google-cloud/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-bdb3bde0803f" target="_blank">Docker Bake Tutorial: Replace Bash Scripts with Declarative Builds</a>
+                <a href="https://www.docker.com/blog/meet-gordon-dockers-ai-agent-for-your-entire-container-workflow/" target="_blank">Meet Gordon: Docker's AI Agent For Your Entire Container Workflow</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@akhilesh-mishra/stop-learning-docker-for-dummies-learn-it-like-a-devops-engineer-4b531e170a72" target="_blank">Stop Learning Docker for Dummies. Learn It Like a DevOps Engineer</a>
+                <a href="https://medium.com/@vedantbhavsar/docker-network-configuration-for-deployment-how-it-really-works-6456075fd63b" target="_blank">Docker Network Configuration for Deployment: How It Really Works</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@ujjawalr/spring-boot-docker-the-image-size-optimization-secret-devops-engineers-dont-want-you-to-know-557894433329" target="_blank">Spring Boot + Docker: The Image Size Optimization Secret DevOps Engineers Don't Want You To Know</a>
                 
             </li>
             
@@ -133,12 +142,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-23_0958.html">&larr; 2026-05-23 0958</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html">2026-05-27 1142 &rarr;</a>
             
         </div>
     </div>

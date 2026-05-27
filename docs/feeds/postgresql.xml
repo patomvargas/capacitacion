@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-25T11:57:06.113107+00:00</updated>
+  <updated>2026-05-27T11:43:29.427753+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -360,5 +360,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-23_0958.html"/>
     <summary>Aprende a optimizar PostgreSQL para mejorar el rendimiento y la confiabilidad. Descubre las mejores prácticas para configurar y monitorear tu base de datos.</summary>
     <published>2026-05-23T09:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-27_1142.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-05-27T11:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de búsqueda y consulta. Puedes crear índices utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt; y especificar la columna o columnas que deseas indexar.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de tus datos en diferentes servidores, lo que garantiza la disponibilidad y la integridad de tus datos en caso de fallas o desastres. Puedes configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_replication_slot&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de PostgreSQL también es fundamental para el rendimiento. Puedes ajustar parámetros como &lt;code&gt;shared_buffers&lt;/code&gt;, &lt;code&gt;effective_cache_size&lt;/code&gt; y &lt;code&gt;maintenance_work_mem&lt;/code&gt; para mejorar el rendimiento de tus consultas. Por ejemplo, puedes aumentar el valor de &lt;code&gt;shared_buffers&lt;/code&gt; para permitir que PostgreSQL almacene más datos en la memoria RAM, lo que reduce los tiempos de acceso a disco.&lt;/p&gt;
+&lt;p&gt;Además, es importante monitorear el rendimiento de tus consultas utilizando herramientas como &lt;code&gt;pg_stat_statements&lt;/code&gt; y &lt;code&gt;pg_stat_user_tables&lt;/code&gt;. Estas herramientas te permiten identificar las consultas que están consumiendo más recursos y optimizarlas para mejorar el rendimiento. Puedes utilizar comandos como &lt;code&gt;EXPLAIN&lt;/code&gt; y &lt;code&gt;EXPLAIN ANALYZE&lt;/code&gt; para analizar el plan de ejecución de tus consultas y identificar posibles problemas de rendimiento.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y configuración, así como un monitoreo constante del rendimiento de tus consultas. Al seguir estas recomendaciones, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones que utilizan PostgreSQL.&lt;/p&gt;
+&lt;p&gt;Por último, es importante mencionar que la versión más reciente de PostgreSQL, la 18.4, incluye varias mejoras y correcciones de errores que pueden afectar el rendimiento y la seguridad de tus aplicaciones. Es recomendable actualizar a la versión más reciente para aprovechar estas mejoras y garantizar la estabilidad y el rendimiento de tus aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-184-1710-1614-1518-and-1423-released-3297/"&gt;PostgreSQL 18.4, 17.10, 16.14, 15.18, and 14.23 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@philmcc/postgresql-query-anti-patterns-and-common-mistakes-a08636852aec"&gt;PostgreSQL Query Anti-Patterns and Common Mistakes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-05-27_1142.html"/>
+    <summary>Aprende a optimizar el rendimiento de tu base de datos PostgreSQL con técnicas avanzadas de indexación, replicación y configuración. Mejora la eficiencia de tus consultas y reduce los tiempos de respuesta.</summary>
+    <published>2026-05-27T11:42:00+00:00</published>
   </entry>
 </feed>

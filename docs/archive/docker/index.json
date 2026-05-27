@@ -1,4 +1,32 @@
 {
+  "2026-05-27_1142": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker es una herramienta fundamental para los sysadmins y DevOps engineers. En este artículo, se presentan las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker.",
+    "content": "\nDocker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos meses, se han producido varias actualizaciones y mejoras en la plataforma, como la versión 29.5.1 del Docker Engine, que incluye correcciones de errores y mejoras en la seguridad.\n\nUna de las características más importantes de Docker es la capacidad de crear builds multi-estadio, lo que permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes. Por ejemplo, se puede utilizar el comando `docker buildx build --load` para crear una imagen de Docker con un tamaño reducido. Además, la herramienta `docker bake` permite a los desarrolladores crear builds declarativos y paralelos, lo que mejora la eficiencia y la productividad.\n\nEn cuanto a la seguridad, es fundamental utilizar buenas prácticas para proteger los contenedores y las imágenes de Docker. Por ejemplo, se puede utilizar el comando `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades de seguridad. Además, es importante utilizar redes de Docker seguras, como la red `bridge` o la red `overlay`, para aislar los contenedores y prevenir ataques de red.\n\nLa configuración de la red en Docker es fundamental para el despliegue de aplicaciones en producción. Por ejemplo, se puede utilizar el comando `docker network create` para crear una red de Docker personalizada. Además, se puede utilizar el comando `docker run -p` para mapear los puertos de los contenedores a los puertos del host.\n\nEn resumen, Docker es una herramienta poderosa para los sysadmins y DevOps engineers, y es fundamental estar al tanto de las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker. Algunas de las mejores prácticas incluyen utilizar builds multi-estadio, herramientas como `docker bake`, redes de Docker seguras y configuraciones de red personalizadas.\n\nPara más información, se pueden consultar las fuentes oficiales de Docker y las documentaciones de las herramientas y tecnologías relacionadas.\n\n  ",
+    "sources": [
+      {
+        "title": "Docker Hub release notes",
+        "url": "https://docs.docker.com/docker-hub/release-notes/"
+      },
+      {
+        "title": "Release Notes | 2.42 STS - Portainer Documentation",
+        "url": "https://docs.portainer.io/sts/release-notes"
+      },
+      {
+        "title": "Meet Gordon: Docker's AI Agent For Your Entire Container Workflow",
+        "url": "https://www.docker.com/blog/meet-gordon-dockers-ai-agent-for-your-entire-container-workflow/"
+      },
+      {
+        "title": "Docker Network Configuration for Deployment: How It Really Works",
+        "url": "https://medium.com/@vedantbhavsar/docker-network-configuration-for-deployment-how-it-really-works-6456075fd63b"
+      },
+      {
+        "title": "Spring Boot + Docker: The Image Size Optimization Secret DevOps Engineers Don't Want You To Know",
+        "url": "https://medium.com/@ujjawalr/spring-boot-docker-the-image-size-optimization-secret-devops-engineers-dont-want-you-to-know-557894433329"
+      }
+    ]
+  },
   "2026-05-23_0958": {
     "slug": "docker",
     "title": "Docker: Mejoras y Best Practices",
