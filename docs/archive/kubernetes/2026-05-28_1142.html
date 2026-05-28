@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
+    <title>Novedades en Kubernetes v1.36 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,46 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-05-24 0959 · Kubernetes</div>
+    <h1>Novedades en Kubernetes v1.36</h1>
+    <div class="meta">2026-05-28 1142 · Kubernetes</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La última versión de Kubernetes incluye varias mejoras en la gestión de redes, almacenamiento y seguridad. Una de las novedades más destacadas es la integración de `etcd 3.7.0-beta.0`, que ofrece mejoras en la escalabilidad y la seguridad. Para implementar esta versión, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/gateway-api/`.</p>
+            <p>La versión v1.36 de Kubernetes incluye varias novedades importantes, como el escalado vertical en lugar para recursos de nivel de pod, que permite ajustar los recursos asignados a un pod sin tener que reiniciar el pod. Esto se logra mediante el comando `kubectl scale` con la opción `--resource`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es fundamental seguir las mejores prácticas para la gestión de secretos. Esto incluye cifrar los secretos en reposo utilizando herramientas como `kubectl create secret generic` y controlar el acceso con el mínimo privilegio necesario mediante `RBAC`. Además, es importante proteger los componentes del clúster y monitorear el acceso a los secretos.</p>
+            <p>Además, se introduce la característica de administradores de recursos de nivel de pod, que permite una gestión más flexible y poderosa de los recursos en los pods. Esta característica se encuentra en versión alpha y se puede habilitar mediante la opción `--feature-gates` en el comando `kubectl`.</p>
             
         
             
         
             
-            <p>Otra área de mejora en Kubernetes es la implementación de GitOps. Herramientas como `ArgoCD` permiten implementar la entrega continua y automatizar la configuración del clúster. Para instalar `ArgoCD`, se puede utilizar el comando `kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml`.</p>
+            <p>Otra característica importante es la compatibilidad con GPU en los nodos de Kubernetes, lo que permite ejecutar cargas de trabajo de aprendizaje automático y alto rendimiento en los clústeres de Kubernetes. Para aprovechar esta característica, se pueden crear nodos dedicados para GPU mediante el comando `kubectl create node` con la opción `--gpu`.</p>
             
         
             
         
             
-            <p>En cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, incluyendo `Persistent Volumes` y `StatefulSets`. Para crear un `Persistent Volume`, se puede utilizar el comando `kubectl create -f pv.yaml`, donde `pv.yaml` es un archivo de configuración que define el volumen persistente.</p>
+            <p>La seguridad también es un aspecto importante en esta versión, con mejoras en la autenticación y autorización de los usuarios y servicios en el clúster. Se pueden configurar políticas de seguridad mediante el comando `kubectl create policy` con la opción `--security`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la comunidad de Kubernetes está en constante evolución, y es fundamental estar al tanto de las últimas novedades y mejoras. Para ello, se pueden consultar las fuentes oficiales de Kubernetes y las comunidades de desarrolladores.</p>
+            <p>En cuanto a la configuración y administración de los clústeres de Kubernetes, se pueden utilizar herramientas como `kubeadm` para crear y administrar clústeres de manera sencilla y segura. El comando `kubeadm init` se utiliza para inicializar un clúster de Kubernetes, mientras que el comando `kubeadm join` se utiliza para unir nodos a un clúster existente.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes ofrece una amplia gama de herramientas y características para la gestión de contenedores y la implementación de aplicaciones en la nube. Siguiendo las mejores prácticas y utilizando las herramientas adecuadas, es posible crear un clúster seguro y escalable que satisfaga las necesidades de la aplicación.</p>
+            <p>En resumen, la versión v1.36 de Kubernetes ofrece varias novedades y mejoras importantes para la gestión de recursos, la escalabilidad y la seguridad en los clústeres de Kubernetes. Estas características pueden ser aprovechadas mediante comandos y configuraciones específicas, como las mencionadas anteriormente.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre las novedades y características de Kubernetes v1.36, se pueden consultar las fuentes oficiales de Kubernetes y los artículos de la comunidad de desarrolladores de Kubernetes.</p>
             
         
     </div>
@@ -107,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/release_notes/index" target="_blank">Release notes | OpenShift Container Platform | 4.18</a>
+                <a href="https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/" target="_blank">Kubernetes v1.36: In-Place Vertical Scaling for Pod-Level Resources</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/05/20/etcd-370-beta/" target="_blank">Announcing etcd 3.7.0-beta.0 - Kubernetes</a>
+                <a href="https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha/" target="_blank">Kubernetes v1.36: Pod-Level Resource Managers (Alpha)</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/cedon/en-best-practices-for-managing-secrets-in-kubernetes-4g18" target="_blank">Best Practices for Managing Secrets in Kubernetes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@bless2k/argocd-install-upgrade-guide-6a08be3514ff" target="_blank">ArgoCD Install & Upgrade Guide</a>
+                <a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c" target="_blank">GPU Scheduling in Kubernetes Explained</a>
                 
             </li>
             
@@ -133,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-20_1056.html">&larr; 2026-05-20 1056</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-24_0959.html">&larr; 2026-05-24 0959</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-28_1142.html">2026-05-28 1142 &rarr;</a>
             
         </div>
     </div>

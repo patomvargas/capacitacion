@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-27T11:43:29.404142+00:00</updated>
+  <updated>2026-05-28T11:43:29.813235+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -179,5 +179,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-12_1036.html"/>
     <summary>BIND9 es un servidor DNS ampliamente utilizado que ofrece una gran variedad de características para la configuración y seguridad de dominios. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos en BIND9.</summary>
     <published>2026-05-12T10:36:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-28_1142.html</id>
+    <title>Configuración y seguridad de DNS con BIND9</title>
+    <updated>2026-05-28T11:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de un servidor DNS con BIND9 requiere una comprensión profunda de los conceptos de DNS y de la sintaxis de configuración de BIND9. Para empezar, es necesario configurar las zonas DNS, que se pueden hacer utilizando el comando &lt;code&gt;named-checkzone&lt;/code&gt; para verificar la sintaxis de la zona. Luego, se debe configurar el archivo de configuración de BIND9, &lt;code&gt;named.conf&lt;/code&gt;, para especificar las zonas y los parámetros de configuración.&lt;/p&gt;
+&lt;p&gt;Para asegurar el servidor DNS, es importante configurar DNSSEC, que proporciona autenticación y integridad de los datos DNS. Se puede hacer utilizando el comando &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar las claves de zona y &lt;code&gt;dnssec-signzone&lt;/code&gt; para firmar la zona. También se deben configurar las vistas, que permiten controlar el acceso a las zonas DNS en función de la dirección IP del cliente.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la RPZ (Response Policy Zone), que permite bloquear o redirigir consultas DNS maliciosas. Se puede configurar utilizando el comando &lt;code&gt;rpz&lt;/code&gt; en el archivo de configuración de BIND9. Es importante mencionar que, según la última matriz de vulnerabilidades de BIND9, es recomendable actualizar a la versión 9.18.49, 9.20.23 o 9.21.22 para mitigar las últimas vulnerabilidades.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de logging y performance tuning, es importante configurar los parámetros de logging para recopilar información sobre las consultas DNS y los errores que ocurren. Se puede hacer utilizando el comando &lt;code&gt;logging&lt;/code&gt; en el archivo de configuración de BIND9. También se deben configurar los parámetros de performance tuning, como el tamaño del cache y el número de hilos, para optimizar el rendimiento del servidor DNS.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la configuración de un servidor DNS con BIND9 requiere una comprensión profunda de los conceptos de DNS y de la sintaxis de configuración de BIND9. Es recomendable consultar la documentación oficial de BIND9 y seguir las mejores prácticas para asegurar y optimizar el servidor DNS.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la configuración y seguridad de DNS con BIND9, se pueden consultar las fuentes siguientes:&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/aa-00913"&gt;BIND 9 Software Vulnerability Matrix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-5946"&gt;CVE-2026-5946: Invalid handling of CLASS != IN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@amilakothalawala/how-i-built-a-hybrid-post-quantum-dnssec-gateway-in-rust-and-why-the-internet-needs-it-now-ca874c5b9534"&gt;How I Built a Hybrid Post Quantum DNSSEC Gateway in Rust&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-28_1142.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas para configurar y asegurar un servidor DNS con BIND9, incluyendo la configuración de zonas, DNSSEC, vistas y RPZ. Se discuten también las últimas vulnerabilidades y cómo mitigarlas.</summary>
+    <published>2026-05-28T11:42:00+00:00</published>
   </entry>
 </feed>

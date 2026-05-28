@@ -1,4 +1,24 @@
 {
+  "2026-05-28_1142": {
+    "slug": "bind9",
+    "title": "Configuración y seguridad de DNS con BIND9",
+    "summary": "En este artículo, se presentan las mejores prácticas para configurar y asegurar un servidor DNS con BIND9, incluyendo la configuración de zonas, DNSSEC, vistas y RPZ. Se discuten también las últimas vulnerabilidades y cómo mitigarlas.",
+    "content": "La configuración de un servidor DNS con BIND9 requiere una comprensión profunda de los conceptos de DNS y de la sintaxis de configuración de BIND9. Para empezar, es necesario configurar las zonas DNS, que se pueden hacer utilizando el comando `named-checkzone` para verificar la sintaxis de la zona. Luego, se debe configurar el archivo de configuración de BIND9, `named.conf`, para especificar las zonas y los parámetros de configuración.\n\nPara asegurar el servidor DNS, es importante configurar DNSSEC, que proporciona autenticación y integridad de los datos DNS. Se puede hacer utilizando el comando `dnssec-keygen` para generar las claves de zona y `dnssec-signzone` para firmar la zona. También se deben configurar las vistas, que permiten controlar el acceso a las zonas DNS en función de la dirección IP del cliente.\n\nOtra característica importante de BIND9 es la RPZ (Response Policy Zone), que permite bloquear o redirigir consultas DNS maliciosas. Se puede configurar utilizando el comando `rpz` en el archivo de configuración de BIND9. Es importante mencionar que, según la última matriz de vulnerabilidades de BIND9, es recomendable actualizar a la versión 9.18.49, 9.20.23 o 9.21.22 para mitigar las últimas vulnerabilidades.\n\nEn cuanto a la configuración de logging y performance tuning, es importante configurar los parámetros de logging para recopilar información sobre las consultas DNS y los errores que ocurren. Se puede hacer utilizando el comando `logging` en el archivo de configuración de BIND9. También se deben configurar los parámetros de performance tuning, como el tamaño del cache y el número de hilos, para optimizar el rendimiento del servidor DNS.\n\nFinalmente, es importante mencionar que la configuración de un servidor DNS con BIND9 requiere una comprensión profunda de los conceptos de DNS y de la sintaxis de configuración de BIND9. Es recomendable consultar la documentación oficial de BIND9 y seguir las mejores prácticas para asegurar y optimizar el servidor DNS.\n\nPara más información sobre la configuración y seguridad de DNS con BIND9, se pueden consultar las fuentes siguientes:",
+    "sources": [
+      {
+        "title": "BIND 9 Software Vulnerability Matrix",
+        "url": "https://kb.isc.org/docs/aa-00913"
+      },
+      {
+        "title": "CVE-2026-5946: Invalid handling of CLASS != IN",
+        "url": "https://kb.isc.org/docs/cve-2026-5946"
+      },
+      {
+        "title": "How I Built a Hybrid Post Quantum DNSSEC Gateway in Rust",
+        "url": "https://medium.com/@amilakothalawala/how-i-built-a-hybrid-post-quantum-dnssec-gateway-in-rust-and-why-the-internet-needs-it-now-ca874c5b9534"
+      }
+    ]
+  },
   "2026-05-12_1036": {
     "slug": "bind9",
     "title": "Configuración y Seguridad de DNS con BIND9",

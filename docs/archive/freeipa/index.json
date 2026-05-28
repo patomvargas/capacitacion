@@ -1,4 +1,24 @@
 {
+  "2026-05-28_1142": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidades y Acceso",
+    "summary": "FreeIPA es un sistema de gestión de identidades y acceso que permite centralizar la autenticación y autorización de usuarios y grupos. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "FreeIPA es un sistema de gestión de identidades y acceso que combina tecnologías como LDAP, Kerberos y PKI para proporcionar una solución integral de autenticación y autorización. Para instalar y configurar un servidor FreeIPA, se pueden seguir los pasos descritos en la documentación oficial, que incluyen la ejecución de comandos como `ipa-server-install` y la configuración de la base de datos y la autenticación.\n\nUna de las características clave de FreeIPA es la gestión de identidades y acceso basada en roles, que permite asignar permisos y derechos a usuarios y grupos de manera flexible y escalable. Para configurar los roles y permisos en FreeIPA, se pueden utilizar comandos como `ipa role-add` y `ipa privilege-add`.\n\nAdemás, FreeIPA proporciona una serie de características de seguridad avanzadas, como la autenticación multifactor y la cifrado de datos, que pueden ser configuradas utilizando comandos como `ipa config-mod` y `ipa certificate-mod`. La integración de FreeIPA con otras herramientas y plataformas, como OpenShift y Cloudflare, también es posible mediante la utilización de protocolos como LDAP y SAML.\n\nLa configuración de la autenticación y autorización en FreeIPA se puede realizar mediante la utilización de comandos como `ipa authconfig` y `ipa sudorule-add`. Además, la gestión de certificados y claves en FreeIPA se puede realizar mediante la utilización de comandos como `ipa cert-mod` y `ipa keytab-add`.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidades y acceso que ofrece una serie de características y configuraciones avanzadas para asegurar la autenticación y autorización de usuarios y grupos en entornos de red complejos.\n\nPara obtener más información sobre la configuración y utilización de FreeIPA, se pueden consultar las fuentes oficiales y la documentación en línea.",
+    "sources": [
+      {
+        "title": "Deploy FreeIPA Server On Cloud VPS",
+        "url": "https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/"
+      },
+      {
+        "title": "Integrating FreeIPA (LDAP) with OpenShift + Automated Group Sync Using CronJob",
+        "url": "https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe"
+      },
+      {
+        "title": "Certificate Authority | freeipa/freeipa",
+        "url": "https://deepwiki.com/freeipa/freeipa/6.1-certificate-authority"
+      }
+    ]
+  },
   "2026-05-24_0959": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidades y Acceso",

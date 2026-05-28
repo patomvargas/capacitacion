@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-27T11:43:29.407375+00:00</updated>
+  <updated>2026-05-28T11:43:29.817707+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -399,5 +399,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-24_0959.html"/>
     <summary>En este artículo se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de red, almacenamiento y seguridad. Se discuten también las mejores prácticas para la gestión de secretos y la implementación de GitOps.</summary>
     <published>2026-05-24T09:59:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-28_1142.html</id>
+    <title>Novedades en Kubernetes v1.36</title>
+    <updated>2026-05-28T11:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión v1.36 de Kubernetes incluye varias novedades importantes, como el escalado vertical en lugar para recursos de nivel de pod, que permite ajustar los recursos asignados a un pod sin tener que reiniciar el pod. Esto se logra mediante el comando &lt;code&gt;kubectl scale&lt;/code&gt; con la opción &lt;code&gt;--resource&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se introduce la característica de administradores de recursos de nivel de pod, que permite una gestión más flexible y poderosa de los recursos en los pods. Esta característica se encuentra en versión alpha y se puede habilitar mediante la opción &lt;code&gt;--feature-gates&lt;/code&gt; en el comando &lt;code&gt;kubectl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la compatibilidad con GPU en los nodos de Kubernetes, lo que permite ejecutar cargas de trabajo de aprendizaje automático y alto rendimiento en los clústeres de Kubernetes. Para aprovechar esta característica, se pueden crear nodos dedicados para GPU mediante el comando &lt;code&gt;kubectl create node&lt;/code&gt; con la opción &lt;code&gt;--gpu&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad también es un aspecto importante en esta versión, con mejoras en la autenticación y autorización de los usuarios y servicios en el clúster. Se pueden configurar políticas de seguridad mediante el comando &lt;code&gt;kubectl create policy&lt;/code&gt; con la opción &lt;code&gt;--security&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración y administración de los clústeres de Kubernetes, se pueden utilizar herramientas como &lt;code&gt;kubeadm&lt;/code&gt; para crear y administrar clústeres de manera sencilla y segura. El comando &lt;code&gt;kubeadm init&lt;/code&gt; se utiliza para inicializar un clúster de Kubernetes, mientras que el comando &lt;code&gt;kubeadm join&lt;/code&gt; se utiliza para unir nodos a un clúster existente.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión v1.36 de Kubernetes ofrece varias novedades y mejoras importantes para la gestión de recursos, la escalabilidad y la seguridad en los clústeres de Kubernetes. Estas características pueden ser aprovechadas mediante comandos y configuraciones específicas, como las mencionadas anteriormente.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las novedades y características de Kubernetes v1.36, se pueden consultar las fuentes oficiales de Kubernetes y los artículos de la comunidad de desarrolladores de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/04/30/kubernetes-v1-36-inplace-pod-level-resources-beta/"&gt;Kubernetes v1.36: In-Place Vertical Scaling for Pod-Level Resources&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/01/kubernetes-v1-36-feature-pod-level-resource-managers-alpha/"&gt;Kubernetes v1.36: Pod-Level Resource Managers (Alpha)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c"&gt;GPU Scheduling in Kubernetes Explained&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-05-28_1142.html"/>
+    <summary>Kubernetes v1.36 introduce nuevas características como el escalado vertical en lugar para recursos de nivel de pod y administradores de recursos de nivel de pod. Estas características mejoran la gestión de recursos y la escalabilidad en clústeres de Kubernetes.</summary>
+    <published>2026-05-28T11:42:00+00:00</published>
   </entry>
 </feed>
