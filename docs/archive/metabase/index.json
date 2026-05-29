@@ -1,4 +1,24 @@
 {
+  "2026-05-29_1133": {
+    "slug": "metabase",
+    "title": "Metabase: Queries y Dashboards Avanzados",
+    "summary": "Metabase es una herramienta de código abierto para crear dashboards y realizar queries de manera sencilla. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "Metabase es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear dashboards y realizar queries de manera sencilla. Para empezar a utilizar Metabase, es necesario instalarlo en un servidor o utilizar la versión en la nube. Una vez instalado, se puede acceder a la interfaz de usuario y empezar a crear dashboards y queries. \n \n Para crear un dashboard, se puede utilizar el comando `metabase create-dashboard` y seguir las instrucciones para configurar los parámetros. Una vez creado el dashboard, se puede agregar diferentes tipos de visualizaciones, como gráficos de barras o líneas, utilizando el comando `metabase add-visualization`. \n   \n La administración de Metabase también es importante para asegurarse de que la herramienta esté funcionando correctamente. Se puede utilizar el comando `metabase backup` para crear una copia de seguridad de la base de datos y el comando `metabase restore` para restaurar la base de datos en caso de que se produzca un error. \n   \n En cuanto a las novedades, se ha detectado un problema con la versión 60.3 de Metabase Cloud que puede causar la eliminación de tarjetas después de cambiar la base de datos. Para solucionar este problema, se puede utilizar el comando `metabase fix-cards` para restaurar las tarjetas eliminadas. \n   \n Para aprovechar al máximo las funcionalidades de Metabase, es importante seguir las best practices de seguridad y administración. Se debe asegurarse de que la base de datos esté segura y que se realicen copias de seguridad regulares. También es importante utilizar los comandos y configuraciones adecuados para evitar errores y problemas de rendimiento.",
+    "sources": [
+      {
+        "title": "Metabase GitHub",
+        "url": "https://github.com/metabase/metabase"
+      },
+      {
+        "title": "Issue 73453",
+        "url": "https://github.com/metabase/metabase/issues/73453"
+      },
+      {
+        "title": "Issue 73645",
+        "url": "https://github.com/metabase/metabase/issues/73645"
+      }
+    ]
+  },
   "2026-05-25_1156": {
     "slug": "metabase",
     "title": "Metabase: Nuevas Funcionalidades y Mejoras",

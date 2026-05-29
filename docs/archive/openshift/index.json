@@ -1,4 +1,28 @@
 {
+  "2026-05-29_1133": {
+    "slug": "openshift",
+    "title": "OpenShift: Novedades y Mejoras",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para simplificar la implementación y administración de aplicaciones en contenedores. En este artículo, se presentan las novedades y mejoras más recientes de OpenShift, incluyendo la versión 4.17 y 4.18.",
+    "content": "\nLa versión 4.17 de OpenShift Container Platform incluye varias novedades y mejoras, como el soporte para Kubernetes 1.30 y el runtime CRI-O. Para actualizar a esta versión, se puede utilizar el comando `oc adm upgrade` con la opción `--to-image` para especificar la imagen de la versión deseada. Por ejemplo: `oc adm upgrade --to-image=registry.redhat.io/openshift4/ose-operator-registry:v4.17`.\n\nOtra característica importante de OpenShift es el OperatorHub, que permite a los administradores instalar y gestionar operadores de manera sencilla. Los operadores son paquetes de software que se encargan de la implementación y administración de aplicaciones en contenedores. Para instalar un operador desde el OperatorHub, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del operador. Por ejemplo: `oc create -f --from=operatorhub.io/openshift-operators`.\n\nEn cuanto a la seguridad, OpenShift ofrece varias características para proteger las aplicaciones y los datos. Una de ellas es el sistema de autenticación y autorización OAuth, que permite a los administradores controlar el acceso a las aplicaciones y los recursos. Para configurar OAuth en OpenShift, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del proveedor de identidad. Por ejemplo: `oc create -f --from=oauth-openshift-config`.\n\nAdemás, OpenShift ofrece herramientas de monitoreo y registro para supervisar el rendimiento y la seguridad de las aplicaciones. Una de ellas es el sistema de logging de OpenShift, que permite a los administradores recopilar y analizar los registros de las aplicaciones. Para configurar el sistema de logging en OpenShift, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del configuración de logging. Por ejemplo: `oc create -f --from=logging-openshift-config`.\n\nEn cuanto a la migración de aplicaciones a OpenShift, se pueden utilizar varias herramientas y técnicas. Una de ellas es el uso de contenedores para empaquetar las aplicaciones y sus dependencias. Para crear un contenedor en OpenShift, se puede utilizar el comando `oc new-build` con la opción `--image-stream` para especificar la imagen base del contenedor. Por ejemplo: `oc new-build --image-stream=openshift/nodejs:14`.\n\nFinalmente, es importante mencionar que OpenShift ofrece una variedad de recursos y herramientas para ayudar a los administradores y desarrolladores a aprender y mejorar sus habilidades. Una de ellas es el sitio web de OpenShift, que ofrece documentación, tutoriales y ejemplos de código para ayudar a los usuarios a empezar a trabajar con la plataforma.\n\n  ",
+    "sources": [
+      {
+        "title": "OpenShift Container Platform 4.17 release notes",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/release_notes/ocp-4-17-release-notes"
+      },
+      {
+        "title": "Red Hat Security Data Changelog",
+        "url": "https://access.redhat.com/articles/5554431"
+      },
+      {
+        "title": "CVE-2026-31431 - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/security/cve/cve-2026-31431"
+      },
+      {
+        "title": "Release notes | OpenShift Container Platform | 4.18",
+        "url": "https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/release_notes/index"
+      }
+    ]
+  },
   "2026-05-25_1156": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Novedades",

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Novedades y Mejoras - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Novedades y Mejoras</h1>
+    <div class="meta">2026-05-29 1133 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La versión 4.17 de OpenShift Container Platform incluye varias novedades y mejoras, como el soporte para Kubernetes 1.30 y el runtime CRI-O. Para actualizar a esta versión, se puede utilizar el comando `oc adm upgrade` con la opción `--to-image` para especificar la imagen de la versión deseada. Por ejemplo: `oc adm upgrade --to-image=registry.redhat.io/openshift4/ose-operator-registry:v4.17`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de OpenShift es el OperatorHub, que permite a los administradores instalar y gestionar operadores de manera sencilla. Los operadores son paquetes de software que se encargan de la implementación y administración de aplicaciones en contenedores. Para instalar un operador desde el OperatorHub, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del operador. Por ejemplo: `oc create -f --from=operatorhub.io/openshift-operators`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece varias características para proteger las aplicaciones y los datos. Una de ellas es el sistema de autenticación y autorización OAuth, que permite a los administradores controlar el acceso a las aplicaciones y los recursos. Para configurar OAuth en OpenShift, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del proveedor de identidad. Por ejemplo: `oc create -f --from=oauth-openshift-config`.</p>
+            
+        
+            
+        
+            
+            <p>Además, OpenShift ofrece herramientas de monitoreo y registro para supervisar el rendimiento y la seguridad de las aplicaciones. Una de ellas es el sistema de logging de OpenShift, que permite a los administradores recopilar y analizar los registros de las aplicaciones. Para configurar el sistema de logging en OpenShift, se puede utilizar el comando `oc create -f` con la opción `--from` para especificar el nombre del configuración de logging. Por ejemplo: `oc create -f --from=logging-openshift-config`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la migración de aplicaciones a OpenShift, se pueden utilizar varias herramientas y técnicas. Una de ellas es el uso de contenedores para empaquetar las aplicaciones y sus dependencias. Para crear un contenedor en OpenShift, se puede utilizar el comando `oc new-build` con la opción `--image-stream` para especificar la imagen base del contenedor. Por ejemplo: `oc new-build --image-stream=openshift/nodejs:14`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de recursos y herramientas para ayudar a los administradores y desarrolladores a aprender y mejorar sus habilidades. Una de ellas es el sitio web de OpenShift, que ofrece documentación, tutoriales y ejemplos de código para ayudar a los usuarios a empezar a trabajar con la plataforma.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.17/html/release_notes/ocp-4-17-release-notes" target="_blank">OpenShift Container Platform 4.17 release notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/articles/5554431" target="_blank">Red Hat Security Data Changelog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/security/cve/cve-2026-31431" target="_blank">CVE-2026-31431 - Red Hat Customer Portal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html-single/release_notes/index" target="_blank">Release notes | OpenShift Container Platform | 4.18</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-25_1156.html">&larr; 2026-05-25 1156</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

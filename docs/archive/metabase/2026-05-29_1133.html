@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
-    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <title>Metabase: Queries y Dashboards Avanzados - Metabase</title>
+    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,43 +54,41 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>OpenShift: Mejoras y Novedades</h1>
-    <div class="meta">2026-05-25 1156 · OpenShift</div>
+    <h1>Metabase: Queries y Dashboards Avanzados</h1>
+    <div class="meta">2026-05-29 1133 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>La plataforma OpenShift es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan desplegar aplicaciones de manera eficiente y segura. En las últimas versiones, se han incluido mejoras y actualizaciones importantes, como la versión 4.14.65 y la versión 4.17.54, que ofrecen soluciones a problemas de seguridad y bugs conocidos.</p>
+            <p>Metabase es una herramienta de código abierto que permite a los desarrolladores y administradores de sistemas crear dashboards y realizar queries de manera sencilla. Para empezar a utilizar Metabase, es necesario instalarlo en un servidor o utilizar la versión en la nube. Una vez instalado, se puede acceder a la interfaz de usuario y empezar a crear dashboards y queries.</p>
             
         
             
         
             
-            <p>Para actualizar a la última versión de OpenShift, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Por ejemplo, para actualizar a la versión 4.14.65, se puede ejecutar el comando `oc adm upgrade --to=4.14.65`.</p>
+            <p>Para crear un dashboard, se puede utilizar el comando `metabase create-dashboard` y seguir las instrucciones para configurar los parámetros. Una vez creado el dashboard, se puede agregar diferentes tipos de visualizaciones, como gráficos de barras o líneas, utilizando el comando `metabase add-visualization`.</p>
             
         
             
         
             
-            <p>Otra característica importante de OpenShift es la capacidad de utilizar operadores para gestionar los despliegues de aplicaciones. Los operadores son paquetes de software que se encargan de gestionar y mantener los despliegues de aplicaciones de manera automática. Para instalar un operador en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de definición del operador.</p>
+            <p>La administración de Metabase también es importante para asegurarse de que la herramienta esté funcionando correctamente. Se puede utilizar el comando `metabase backup` para crear una copia de seguridad de la base de datos y el comando `metabase restore` para restaurar la base de datos en caso de que se produzca un error.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, OpenShift ofrece una variedad de características y herramientas para proteger los despliegues de aplicaciones. Una de las características más importantes es la autenticación y autorización mediante OAuth, que permite a los administradores de sistemas controlar el acceso a los recursos de la plataforma. Para configurar la autenticación y autorización mediante OAuth en OpenShift, se puede utilizar el comando `oc create -f` con el archivo de configuración de OAuth.</p>
+            <p>En cuanto a las novedades, se ha detectado un problema con la versión 60.3 de Metabase Cloud que puede causar la eliminación de tarjetas después de cambiar la base de datos. Para solucionar este problema, se puede utilizar el comando `metabase fix-cards` para restaurar las tarjetas eliminadas.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift ofrece una variedad de herramientas y características para migrar aplicaciones a la plataforma. Una de las herramientas más importantes es el comando `oc adm migrate`, que permite a los administradores de sistemas migrar aplicaciones de manera automática. Para migrar una aplicación a OpenShift, se puede ejecutar el comando `oc adm migrate --from=<origen> --to=<destino>`.</p>
-            
-        
+            <p>Para aprovechar al máximo las funcionalidades de Metabase, es importante seguir las best practices de seguridad y administración. Se debe asegurarse de que la base de datos esté segura y que se realicen copias de seguridad regulares. También es importante utilizar los comandos y configuraciones adecuados para evitar errores y problemas de rendimiento.</p>
             
         
     </div>
@@ -101,17 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:15087" target="_blank">RHSA-2026:15087</a>
+                <a href="https://github.com/metabase/metabase" target="_blank">Metabase GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:17596" target="_blank">RHSA-2026:17596</a>
+                <a href="https://github.com/metabase/metabase/issues/73453" target="_blank">Issue 73453</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440" target="_blank">Migrating Workloads to OpenShift: A Practical Approach</a>
+                <a href="https://github.com/metabase/metabase/issues/73645" target="_blank">Issue 73645</a>
                 
             </li>
             
@@ -122,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-21_1130.html">&larr; 2026-05-21 1130</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-05-25_1156.html">&larr; 2026-05-25 1156</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-29_1133.html">2026-05-29 1133 &rarr;</a>
             
         </div>
     </div>
