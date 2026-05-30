@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-29T11:34:33.570643+00:00</updated>
+  <updated>2026-05-30T10:05:51.312781+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -398,5 +398,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-22_1055.html"/>
     <summary>Superset es una plataforma de exploración y visualización de datos moderna que permite a los equipos de desarrollo crear dashboards personalizados y analizar grandes cantidades de datos. En este artículo, se presentan las características y funcionalidades de Superset, así como algunas best practices para su implementación.</summary>
     <published>2026-05-22T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-05-30_1004.html</id>
+    <title>Superset: Mejoras y Best Practices</title>
+    <updated>2026-05-30T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite a los desarrolladores y administradores crear paneles de control personalizados y explorar datos de manera efectiva. Recientemente, se han reportado algunos errores y problemas en la versión 6.0.0, como el error al cargar filtros en un panel de control, que se puede solucionar utilizando el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos.&lt;/p&gt;
+&lt;p&gt;Para crear un nuevo panel de control en Superset, se puede utilizar el comando &lt;code&gt;superset create-dashboard&lt;/code&gt; y luego configurar los gráficos y filtros según sea necesario. También se puede utilizar el laboratorio de SQL para explorar y analizar los datos de manera más detallada.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante asegurarse de que la configuración de Superset esté correcta y segura. Se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para verificar la configuración actual y realizar cambios según sea necesario. También es importante mantener la base de datos actualizada y realizar copias de seguridad regulares para evitar la pérdida de datos.&lt;/p&gt;
+&lt;p&gt;Además, se pueden utilizar plantillas de Jinja para personalizar los paneles de control y gráficos, lo que permite una mayor flexibilidad y customización. Se puede utilizar el comando &lt;code&gt;superset render-template&lt;/code&gt; para renderizar las plantillas y crear los gráficos y paneles de control personalizados.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa y flexible que ofrece una amplia gama de funcionalidades para la creación de paneles de control y la exploración de datos. Al seguir las best practices y utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo esta herramienta y obtener insights valiosos de los datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/28687"&gt;Superset throws unexpected error while loading filters in a dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39570"&gt;Please release 6.1... or at least ANYTHING after 6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39487"&gt;Front-end build fails for clean Superset 6.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/31202"&gt;Line Chart not working when 2 series have 2 different time points&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/apache-superset/"&gt;apache-superset - PyPI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-30_1004.html"/>
+    <summary>Superset es una herramienta de inteligencia empresarial que ofrece funcionalidades como gráficos, paneles de control y laboratorios de SQL. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo esta herramienta.</summary>
+    <published>2026-05-30T10:04:00+00:00</published>
   </entry>
 </feed>

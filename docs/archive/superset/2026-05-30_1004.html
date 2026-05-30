@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Herramienta de Visualización de Datos - Superset</title>
+    <title>Superset: Mejoras y Best Practices - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Herramienta de Visualización de Datos</h1>
-    <div class="meta">2026-05-22 1055 · Superset</div>
+    <h1>Superset: Mejoras y Best Practices</h1>
+    <div class="meta">2026-05-30 1004 · Superset</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Superset es una herramienta de código abierto que permite a los desarrolladores crear dashboards personalizados para visualizar y analizar grandes cantidades de datos. Una de las características más destacadas de Superset es su capacidad para conectarse a diversas fuentes de datos, como bases de datos relacionales y NoSQL, así como servicios de almacenamiento en la nube.</p>
+            <p>Superset es una herramienta de código abierto que permite a los desarrolladores y administradores crear paneles de control personalizados y explorar datos de manera efectiva. Recientemente, se han reportado algunos errores y problemas en la versión 6.0.0, como el error al cargar filtros en un panel de control, que se puede solucionar utilizando el comando `superset db upgrade` para actualizar la base de datos.</p>
             
         
             
         
             
-            <p>Para comenzar a utilizar Superset, es necesario instalarlo en un entorno de desarrollo. Esto se puede hacer utilizando el comando `pip install apache-superset`. Una vez instalado, es posible acceder a la interfaz de usuario de Superset mediante un navegador web. Desde allí, es posible crear nuevos dashboards y agregar elementos como gráficos, tablas y filtros.</p>
+        
+            
+            <p>Para crear un nuevo panel de control en Superset, se puede utilizar el comando `superset create-dashboard` y luego configurar los gráficos y filtros según sea necesario. También se puede utilizar el laboratorio de SQL para explorar y analizar los datos de manera más detallada.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Superset, es posible personalizar la apariencia y el comportamiento de la herramienta mediante la edición de archivos de configuración. Por ejemplo, es posible agregar nuevos temas y personalizar la apariencia de los dashboards utilizando el comando `superset config.py`. Además, es posible integrar Superset con otras herramientas y servicios, como servicios de autenticación y autorización, utilizando protocolos como OAuth y JWT.</p>
+        
+            
+            <p>En cuanto a las best practices, es importante asegurarse de que la configuración de Superset esté correcta y segura. Se puede utilizar el comando `superset config` para verificar la configuración actual y realizar cambios según sea necesario. También es importante mantener la base de datos actualizada y realizar copias de seguridad regulares para evitar la pérdida de datos.</p>
             
         
             
         
             
-            <p>En cuanto a las best practices para la implementación de Superset, es importante mencionar la importancia de la seguridad y la privacidad de los datos. Es recomendable utilizar mecanismos de autenticación y autorización para controlar el acceso a los dashboards y a los datos. Además, es importante realizar copias de seguridad regulares de los datos y de la configuración de Superset para evitar la pérdida de información en caso de un fallo del sistema.</p>
+        
+            
+            <p>Además, se pueden utilizar plantillas de Jinja para personalizar los paneles de control y gráficos, lo que permite una mayor flexibilidad y customización. Se puede utilizar el comando `superset render-template` para renderizar las plantillas y crear los gráficos y paneles de control personalizados.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Superset es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. La comunidad de Superset es muy activa, y es posible encontrar documentación y recursos adicionales en la página oficial de la herramienta.</p>
-            
         
             
-        
+            <p>En resumen, Superset es una herramienta poderosa y flexible que ofrece una amplia gama de funcionalidades para la creación de paneles de control y la exploración de datos. Al seguir las best practices y utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo esta herramienta y obtener insights valiosos de los datos.</p>
             
         
     </div>
@@ -105,17 +107,27 @@
         <ul>
             
             <li>
-                <a href="https://pypi.org/project/apache-superset/" target="_blank">Apache Superset</a>
+                <a href="https://github.com/apache/superset/issues/28687" target="_blank">Superset throws unexpected error while loading filters in a dashboard</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/meghgen/fast-secure-embedded-running-apache-superset-in-production-the-right-way-67f3db643c53" target="_blank">Fast, Secure, Embedded — Running Apache Superset in Production the Right Way</a>
+                <a href="https://github.com/apache/superset/discussions/39570" target="_blank">Please release 6.1... or at least ANYTHING after 6.0.0</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/johalputt/how-to-build-a-real-time-analytics-dashboard-with-clickhouse-24-and-superset-30-2474" target="_blank">How to Build a Real-Time Analytics Dashboard with ClickHouse 24 and Superset 3.0</a>
+                <a href="https://github.com/apache/superset/discussions/39487" target="_blank">Front-end build fails for clean Superset 6.0.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/issues/31202" target="_blank">Line Chart not working when 2 series have 2 different time points</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://pypi.org/project/apache-superset/" target="_blank">apache-superset - PyPI</a>
                 
             </li>
             
@@ -126,12 +138,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-18_1148.html">&larr; 2026-05-18 1148</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-30_1004.html">2026-05-30 1004 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,32 @@
 {
+  "2026-05-30_1004": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Best Practices",
+    "summary": "Superset es una herramienta de inteligencia empresarial que ofrece funcionalidades como gráficos, paneles de control y laboratorios de SQL. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo esta herramienta.",
+    "content": "Superset es una herramienta de código abierto que permite a los desarrolladores y administradores crear paneles de control personalizados y explorar datos de manera efectiva. Recientemente, se han reportado algunos errores y problemas en la versión 6.0.0, como el error al cargar filtros en un panel de control, que se puede solucionar utilizando el comando `superset db upgrade` para actualizar la base de datos.\n\n \nPara crear un nuevo panel de control en Superset, se puede utilizar el comando `superset create-dashboard` y luego configurar los gráficos y filtros según sea necesario. También se puede utilizar el laboratorio de SQL para explorar y analizar los datos de manera más detallada.\n\n \nEn cuanto a las best practices, es importante asegurarse de que la configuración de Superset esté correcta y segura. Se puede utilizar el comando `superset config` para verificar la configuración actual y realizar cambios según sea necesario. También es importante mantener la base de datos actualizada y realizar copias de seguridad regulares para evitar la pérdida de datos.\n\n \nAdemás, se pueden utilizar plantillas de Jinja para personalizar los paneles de control y gráficos, lo que permite una mayor flexibilidad y customización. Se puede utilizar el comando `superset render-template` para renderizar las plantillas y crear los gráficos y paneles de control personalizados.\n\n \nEn resumen, Superset es una herramienta poderosa y flexible que ofrece una amplia gama de funcionalidades para la creación de paneles de control y la exploración de datos. Al seguir las best practices y utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo esta herramienta y obtener insights valiosos de los datos.",
+    "sources": [
+      {
+        "title": "Superset throws unexpected error while loading filters in a dashboard",
+        "url": "https://github.com/apache/superset/issues/28687"
+      },
+      {
+        "title": "Please release 6.1... or at least ANYTHING after 6.0.0",
+        "url": "https://github.com/apache/superset/discussions/39570"
+      },
+      {
+        "title": "Front-end build fails for clean Superset 6.0.0",
+        "url": "https://github.com/apache/superset/discussions/39487"
+      },
+      {
+        "title": "Line Chart not working when 2 series have 2 different time points",
+        "url": "https://github.com/apache/superset/issues/31202"
+      },
+      {
+        "title": "apache-superset - PyPI",
+        "url": "https://pypi.org/project/apache-superset/"
+      }
+    ]
+  },
   "2026-05-22_1055": {
     "slug": "superset",
     "title": "Superset: Herramienta de Visualización de Datos",
