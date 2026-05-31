@@ -58,7 +58,7 @@
     </div>
 
     <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-27 1142 · Docker</div>
+    <div class="meta">2026-05-31 1019 · Docker</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos meses, se han producido varias actualizaciones y mejoras en la plataforma, como la versión 29.5.1 del Docker Engine, que incluye correcciones de errores y mejoras en la seguridad.</p>
+            <p>Docker es una herramienta que permite a los desarrolladores crear, ejecutar y distribuir aplicaciones de manera eficiente y segura. En los últimos tiempos, se han realizado varias mejoras y actualizaciones en la plataforma, como la introducción de multi-stage builds, que permiten a los desarrolladores crear imágenes de Docker más pequeñas y eficientes.</p>
             
         
             
         
             
-            <p>Una de las características más importantes de Docker es la capacidad de crear builds multi-estadio, lo que permite a los desarrolladores crear imágenes de Docker más pequeñas y eficientes. Por ejemplo, se puede utilizar el comando `docker buildx build --load` para crear una imagen de Docker con un tamaño reducido. Además, la herramienta `docker bake` permite a los desarrolladores crear builds declarativos y paralelos, lo que mejora la eficiencia y la productividad.</p>
+            <p>Una de las mejores prácticas para utilizar Docker es utilizar `docker-compose` para definir y ejecutar múltiples contenedores de manera simultánea. Esto se puede lograr mediante el comando `docker-compose up -d`, que permite ejecutar los contenedores en segundo plano. Además, se puede utilizar `docker network` para crear redes de contenedores y permitir la comunicación entre ellos.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es fundamental utilizar buenas prácticas para proteger los contenedores y las imágenes de Docker. Por ejemplo, se puede utilizar el comando `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades de seguridad. Además, es importante utilizar redes de Docker seguras, como la red `bridge` o la red `overlay`, para aislar los contenedores y prevenir ataques de red.</p>
+            <p>En cuanto a la seguridad, es importante utilizar `docker secret` para almacenar y gestionar secretos y credenciales de manera segura. También se puede utilizar `docker build --no-cache` para evitar que Docker utilice la caché y garantizar que las imágenes se construyan desde cero.</p>
             
         
             
         
             
-            <p>La configuración de la red en Docker es fundamental para el despliegue de aplicaciones en producción. Por ejemplo, se puede utilizar el comando `docker network create` para crear una red de Docker personalizada. Además, se puede utilizar el comando `docker run -p` para mapear los puertos de los contenedores a los puertos del host.</p>
+            <p>Otra herramienta importante es BuildKit, que permite a los desarrolladores crear imágenes de Docker de manera más eficiente y segura. Se puede utilizar mediante el comando `docker buildx build --load`, que permite cargar la imagen en el registro de Docker.</p>
             
         
             
         
             
-            <p>En resumen, Docker es una herramienta poderosa para los sysadmins y DevOps engineers, y es fundamental estar al tanto de las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker. Algunas de las mejores prácticas incluyen utilizar builds multi-estadio, herramientas como `docker bake`, redes de Docker seguras y configuraciones de red personalizadas.</p>
+            <p>Finalmente, es importante mencionar que Docker Hub es el registro oficial de Docker, donde se pueden almacenar y compartir imágenes de Docker. Se puede utilizar el comando `docker push` para subir imágenes al registro y `docker pull` para descargarlas.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Docker y las documentaciones de las herramientas y tecnologías relacionadas.</p>
+            <p>En resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para aprovechar al máximo sus beneficios. Al seguir estas best practices y utilizar las herramientas adecuadas, los desarrolladores y sysadmins pueden crear aplicaciones de manera eficiente y segura.</p>
             
         
             
@@ -116,22 +116,12 @@
             </li>
             
             <li>
-                <a href="https://docs.portainer.io/sts/release-notes" target="_blank">Release Notes | 2.42 STS - Portainer Documentation</a>
+                <a href="https://community.chocolatey.org/packages/docker-engine" target="_blank">Docker Engine 29.5.1 - Chocolatey Community</a>
                 
             </li>
             
             <li>
-                <a href="https://www.docker.com/blog/meet-gordon-dockers-ai-agent-for-your-entire-container-workflow/" target="_blank">Meet Gordon: Docker's AI Agent For Your Entire Container Workflow</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@vedantbhavsar/docker-network-configuration-for-deployment-how-it-really-works-6456075fd63b" target="_blank">Docker Network Configuration for Deployment: How It Really Works</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@ujjawalr/spring-boot-docker-the-image-size-optimization-secret-devops-engineers-dont-want-you-to-know-557894433329" target="_blank">Spring Boot + Docker: The Image Size Optimization Secret DevOps Engineers Don't Want You To Know</a>
+                <a href="https://dev.to/armorbreak/docker-deep-dive-beyond-docker-run-2026-510j" target="_blank">Docker Deep Dive: Beyond docker run (2026) - DEV Community</a>
                 
             </li>
             
@@ -142,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-23_0958.html">&larr; 2026-05-23 0958</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html">&larr; 2026-05-27 1142</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-31_1019.html">2026-05-31 1019 &rarr;</a>
             
         </div>
     </div>

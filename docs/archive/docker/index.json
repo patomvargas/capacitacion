@@ -1,4 +1,24 @@
 {
+  "2026-05-31_1019": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker es una herramienta fundamental para los desarrolladores y sysadmins. En este artículo, se presentan las últimas mejoras y best practices para utilizar Docker de manera efectiva.",
+    "content": "\nDocker es una herramienta que permite a los desarrolladores crear, ejecutar y distribuir aplicaciones de manera eficiente y segura. En los últimos tiempos, se han realizado varias mejoras y actualizaciones en la plataforma, como la introducción de multi-stage builds, que permiten a los desarrolladores crear imágenes de Docker más pequeñas y eficientes.\n\nUna de las mejores prácticas para utilizar Docker es utilizar `docker-compose` para definir y ejecutar múltiples contenedores de manera simultánea. Esto se puede lograr mediante el comando `docker-compose up -d`, que permite ejecutar los contenedores en segundo plano. Además, se puede utilizar `docker network` para crear redes de contenedores y permitir la comunicación entre ellos.\n\nEn cuanto a la seguridad, es importante utilizar `docker secret` para almacenar y gestionar secretos y credenciales de manera segura. También se puede utilizar `docker build --no-cache` para evitar que Docker utilice la caché y garantizar que las imágenes se construyan desde cero.\n\nOtra herramienta importante es BuildKit, que permite a los desarrolladores crear imágenes de Docker de manera más eficiente y segura. Se puede utilizar mediante el comando `docker buildx build --load`, que permite cargar la imagen en el registro de Docker.\n\nFinalmente, es importante mencionar que Docker Hub es el registro oficial de Docker, donde se pueden almacenar y compartir imágenes de Docker. Se puede utilizar el comando `docker push` para subir imágenes al registro y `docker pull` para descargarlas.\n\nEn resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para aprovechar al máximo sus beneficios. Al seguir estas best practices y utilizar las herramientas adecuadas, los desarrolladores y sysadmins pueden crear aplicaciones de manera eficiente y segura.\n\n",
+    "sources": [
+      {
+        "title": "Docker Hub release notes",
+        "url": "https://docs.docker.com/docker-hub/release-notes/"
+      },
+      {
+        "title": "Docker Engine 29.5.1 - Chocolatey Community",
+        "url": "https://community.chocolatey.org/packages/docker-engine"
+      },
+      {
+        "title": "Docker Deep Dive: Beyond docker run (2026) - DEV Community",
+        "url": "https://dev.to/armorbreak/docker-deep-dive-beyond-docker-run-2026-510j"
+      }
+    ]
+  },
   "2026-05-27_1142": {
     "slug": "docker",
     "title": "Docker: Mejoras y Best Practices",

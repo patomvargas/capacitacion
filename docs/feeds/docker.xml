@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-30T10:05:51.351522+00:00</updated>
+  <updated>2026-05-31T10:21:05.416053+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -269,5 +269,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html"/>
     <summary>Docker es una herramienta fundamental para los sysadmins y DevOps engineers. En este artículo, se presentan las últimas novedades y best practices para mejorar la seguridad, el rendimiento y la eficiencia en el uso de Docker.</summary>
     <published>2026-05-27T11:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-05-31_1019.html</id>
+    <title>Docker: Mejoras y Best Practices</title>
+    <updated>2026-05-31T10:19:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta que permite a los desarrolladores crear, ejecutar y distribuir aplicaciones de manera eficiente y segura. En los últimos tiempos, se han realizado varias mejoras y actualizaciones en la plataforma, como la introducción de multi-stage builds, que permiten a los desarrolladores crear imágenes de Docker más pequeñas y eficientes.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para utilizar Docker es utilizar &lt;code&gt;docker-compose&lt;/code&gt; para definir y ejecutar múltiples contenedores de manera simultánea. Esto se puede lograr mediante el comando &lt;code&gt;docker-compose up -d&lt;/code&gt;, que permite ejecutar los contenedores en segundo plano. Además, se puede utilizar &lt;code&gt;docker network&lt;/code&gt; para crear redes de contenedores y permitir la comunicación entre ellos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante utilizar &lt;code&gt;docker secret&lt;/code&gt; para almacenar y gestionar secretos y credenciales de manera segura. También se puede utilizar &lt;code&gt;docker build --no-cache&lt;/code&gt; para evitar que Docker utilice la caché y garantizar que las imágenes se construyan desde cero.&lt;/p&gt;
+&lt;p&gt;Otra herramienta importante es BuildKit, que permite a los desarrolladores crear imágenes de Docker de manera más eficiente y segura. Se puede utilizar mediante el comando &lt;code&gt;docker buildx build --load&lt;/code&gt;, que permite cargar la imagen en el registro de Docker.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Docker Hub es el registro oficial de Docker, donde se pueden almacenar y compartir imágenes de Docker. Se puede utilizar el comando &lt;code&gt;docker push&lt;/code&gt; para subir imágenes al registro y &lt;code&gt;docker pull&lt;/code&gt; para descargarlas.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para aprovechar al máximo sus beneficios. Al seguir estas best practices y utilizar las herramientas adecuadas, los desarrolladores y sysadmins pueden crear aplicaciones de manera eficiente y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/docker-hub/release-notes/"&gt;Docker Hub release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.chocolatey.org/packages/docker-engine"&gt;Docker Engine 29.5.1 - Chocolatey Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/armorbreak/docker-deep-dive-beyond-docker-run-2026-510j"&gt;Docker Deep Dive: Beyond docker run (2026) - DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-31_1019.html"/>
+    <summary>Docker es una herramienta fundamental para los desarrolladores y sysadmins. En este artículo, se presentan las últimas mejoras y best practices para utilizar Docker de manera efectiva.</summary>
+    <published>2026-05-31T10:19:00+00:00</published>
   </entry>
 </feed>

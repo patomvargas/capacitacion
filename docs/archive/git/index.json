@@ -1,4 +1,24 @@
 {
+  "2026-05-31_1019": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para sysadmins y DevOps",
+    "summary": "Aprende a utilizar Git de manera efectiva con workflows, hooks, rebase, bisect y worktrees. Mejora tus habilidades con estos trucos y técnicas avanzadas.",
+    "content": "\nEl sistema de control de versiones Git es una herramienta fundamental para los desarrolladores y sysadmins. Una de las mejores prácticas es utilizar `git worktree` para crear múltiples árboles de trabajo en un solo repositorio. Esto te permite trabajar en diferentes ramas o proyectos sin tener que clonar el repositorio varias veces.\n\nOtra herramienta útil es `git bisect`, que te permite encontrar el commit que introdujo un bug en tu código. Con `git bisect`, puedes identificar el commit problemático de manera eficiente. Por ejemplo, si tienes un bug en tu código, puedes ejecutar `git bisect start` y luego `git bisect bad` para marcar el commit actual como defectuoso. Luego, puedes ejecutar `git bisect good` para marcar un commit anterior como bueno. Git entonces te ayudará a encontrar el commit que introdujo el bug.\n\nLos hooks de Git también son muy útiles para automatizar tareas. Por ejemplo, puedes crear un hook `pre-commit` para ejecutar pruebas unitarias antes de que se realice un commit. De esta manera, puedes asegurarte de que tu código esté funcionando correctamente antes de commitarlo. Puedes crear un hook `pre-commit` con el comando `git hook pre-commit` y luego agregar el código que desees ejecutar en el hook.\n\nAdemás, es importante mencionar que la migración a Git 2026 está en marcha, y es importante estar al tanto de los cambios y mejoras que se están realizando. Por ejemplo, la imagen de Windows 2025 se migrará a Visual Studio 2026. Es importante revisar las fuentes oficiales de Git y GitHub para obtener la información más actualizada sobre los cambios y mejoras.\n\nFinalmente, es importante recordar que la práctica y la experimentación son clave para dominar Git. No tengas miedo de probar nuevos comandos y técnicas, y siempre asegúrate de leer la documentación oficial de Git para obtener la información más actualizada y precisa.\n\nEn resumen, Git es una herramienta poderosa que requiere práctica y dedicación para dominarla. Con las mejores prácticas y técnicas avanzadas, puedes mejorar tus habilidades y trabajar de manera más eficiente con Git.\n",
+    "sources": [
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"
+      },
+      {
+        "title": "8 Git Tricks So Good They Feel Illegal in 2026",
+        "url": "https://medium.com/codetodeploy/8-git-tricks-so-good-they-feel-illegal-in-2026-0dbc9350a1cb"
+      },
+      {
+        "title": "Master Git: Simulating Real Team Collaboration on a Single Ubuntu Machine",
+        "url": "https://medium.com/@marzoukrayen99/master-git-simulating-real-team-collaboration-on-a-single-ubuntu-machine-97ff11839f73"
+      }
+    ]
+  },
   "2026-05-23_0958": {
     "slug": "git",
     "title": "Mejores prácticas con Git",
