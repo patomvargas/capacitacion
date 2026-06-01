@@ -1,4 +1,24 @@
 {
+  "2026-06-01_1342": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidades",
+    "summary": "FreeIPA es una herramienta de gestión de identidades que permite la autenticación y autorización de usuarios en entornos de red. En este artículo, se presentan las características y configuraciones de FreeIPA.",
+    "content": "\nFreeIPA es una herramienta de código abierto que combina las tecnologías LDAP, Kerberos y PKI para proporcionar una solución de gestión de identidades completa. La instalación de FreeIPA se puede realizar en una máquina virtual o en un servidor físico, y se puede configurar para autenticar usuarios y grupos en un entorno de red.\n\nUna de las características clave de FreeIPA es su capacidad para establecer relaciones de confianza entre dominios, lo que permite a los usuarios acceder a recursos en diferentes dominios sin necesidad de autenticarse múltiples veces. Para configurar una relación de confianza en FreeIPA, se puede utilizar el comando `ipa trust-add` seguido del nombre del dominio con el que se desea establecer la relación de confianza.\n\nOtra característica importante de FreeIPA es su capacidad para configurar reglas de acceso basadas en el host (HBAC) y reglas de acceso de sudo. Las reglas de acceso basadas en el host permiten controlar qué hosts pueden acceder a qué servicios, mientras que las reglas de acceso de sudo permiten controlar qué usuarios pueden ejecutar qué comandos con permisos de superusuario. Para configurar una regla de acceso basada en el host, se puede utilizar el comando `ipa hbacrule-add` seguido del nombre de la regla y la descripción de la misma.\n\nFreeIPA también proporciona una interfaz de usuario web para la administración de la gestión de identidades, que permite a los administradores crear y gestionar usuarios, grupos y hosts de manera centralizada. La interfaz de usuario web de FreeIPA también proporciona funcionalidades de informes y monitoreo, lo que permite a los administradores supervisar el estado de la gestión de identidades en tiempo real.\n\nEn cuanto a la integración con otros sistemas, FreeIPA se puede integrar con OpenShift para proporcionar una solución de gestión de identidades para entornos de contenedores. Para integrar FreeIPA con OpenShift, se puede utilizar el comando `ipa-openshift-config` para configurar la conexión entre FreeIPA y OpenShift.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidades que proporciona una solución completa para la autenticación y autorización de usuarios en entornos de red. Su capacidad para establecer relaciones de confianza entre dominios, configurar reglas de acceso basadas en el host y reglas de acceso de sudo, y su integración con otros sistemas como OpenShift, la convierten en una herramienta ideal para entornos de red complejos.\n\n  ",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Documentación",
+        "url": "https://www.freeipa.org/page/Documentation"
+      },
+      {
+        "title": "Integrating FreeIPA (LDAP) with OpenShift",
+        "url": "https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe"
+      }
+    ]
+  },
   "2026-05-28_1142": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidades y Acceso",

@@ -1,4 +1,24 @@
 {
+  "2026-06-01_1342": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes v1.36",
+    "summary": "Kubernetes v1.36 introduce nuevas características y mejoras en el sistema de orquestación de contenedores. Esta versión incluye mejoras en la gestión de recursos, seguridad y almacenamiento.",
+    "content": "\nKubernetes v1.36 es la última versión del sistema de orquestación de contenedores más popular del mundo. Esta versión incluye varias mejoras y nuevas características, como la graduación de características de DRA (Device Plugin Registration API) y mejoras en la usabilidad. Para actualizar a esta versión, se puede utilizar el comando `kubeadm upgrade apply v1.36.0`.\n\nUna de las características más destacadas de esta versión es la mejora en la gestión de recursos. Ahora, es posible utilizar el comando `kubectl` para gestionar los recursos de forma más eficiente. Por ejemplo, se puede utilizar `kubectl get nodes` para obtener información sobre los nodos del clúster, o `kubectl describe node <nombre_nodo>` para obtener información detallada sobre un nodo específico.\n\nEn cuanto a la seguridad, Kubernetes v1.36 incluye varias mejoras, como la implementación de Network Policies para controlar el tráfico de red entre los pods. Esto se puede configurar utilizando el comando `kubectl create network-policy <nombre_politica> --pod-selector=<selector>`. Además, se puede utilizar el comando `kubectl get network-policies` para obtener información sobre las políticas de red configuradas.\n\nOtra característica importante de esta versión es la mejora en el almacenamiento. Ahora, es posible utilizar el comando `kubectl` para gestionar los volúmenes de forma más eficiente. Por ejemplo, se puede utilizar `kubectl create persistent-volume <nombre_volumen> --capacity=<capacidad>` para crear un volumen persistente, o `kubectl get persistent-volumes` para obtener información sobre los volúmenes configurados.\n\nEn resumen, Kubernetes v1.36 es una versión que incluye varias mejoras y nuevas características que pueden ayudar a los administradores de sistemas a gestionar sus clústeres de forma más eficiente. Es importante destacar que, para aprovechar al máximo estas características, es necesario tener una buena comprensión de la arquitectura y la configuración de Kubernetes.\n\nPara más información sobre las características y la configuración de Kubernetes v1.36, se puede consultar la documentación oficial de Kubernetes. Además, se pueden utilizar herramientas como `kubeadm` y `kubectl` para gestionar y configurar los clústeres de Kubernetes.",
+    "sources": [
+      {
+        "title": "Kubernetes v1.36: More Drivers, New Features, and the Next Era of DRA",
+        "url": "https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/"
+      },
+      {
+        "title": "From counting GPUs to reasoning about them: How Kubernetes DRA powers AI-native infrastructure",
+        "url": "https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e"
+      },
+      {
+        "title": "Kubernetes Orchestration: The Complete Guide — Architecture, Autoscaling, and Real-World Best Practices",
+        "url": "https://medium.com/@dparente/kubernetes-orchestration-the-complete-guide-architecture-autoscaling-and-real-world-490ffa08aa9b"
+      }
+    ]
+  },
   "2026-05-28_1142": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes v1.36",

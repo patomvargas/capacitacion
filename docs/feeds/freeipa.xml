@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-31T10:21:05.387504+00:00</updated>
+  <updated>2026-06-01T13:43:06.393962+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -379,5 +379,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-28_1142.html"/>
     <summary>FreeIPA es un sistema de gestión de identidades y acceso que permite centralizar la autenticación y autorización de usuarios y grupos. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
     <published>2026-05-28T11:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-01_1342.html</id>
+    <title>FreeIPA: Gestión de Identidades</title>
+    <updated>2026-06-01T13:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de código abierto que combina las tecnologías LDAP, Kerberos y PKI para proporcionar una solución de gestión de identidades completa. La instalación de FreeIPA se puede realizar en una máquina virtual o en un servidor físico, y se puede configurar para autenticar usuarios y grupos en un entorno de red.&lt;/p&gt;
+&lt;p&gt;Una de las características clave de FreeIPA es su capacidad para establecer relaciones de confianza entre dominios, lo que permite a los usuarios acceder a recursos en diferentes dominios sin necesidad de autenticarse múltiples veces. Para configurar una relación de confianza en FreeIPA, se puede utilizar el comando &lt;code&gt;ipa trust-add&lt;/code&gt; seguido del nombre del dominio con el que se desea establecer la relación de confianza.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de FreeIPA es su capacidad para configurar reglas de acceso basadas en el host (HBAC) y reglas de acceso de sudo. Las reglas de acceso basadas en el host permiten controlar qué hosts pueden acceder a qué servicios, mientras que las reglas de acceso de sudo permiten controlar qué usuarios pueden ejecutar qué comandos con permisos de superusuario. Para configurar una regla de acceso basada en el host, se puede utilizar el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; seguido del nombre de la regla y la descripción de la misma.&lt;/p&gt;
+&lt;p&gt;FreeIPA también proporciona una interfaz de usuario web para la administración de la gestión de identidades, que permite a los administradores crear y gestionar usuarios, grupos y hosts de manera centralizada. La interfaz de usuario web de FreeIPA también proporciona funcionalidades de informes y monitoreo, lo que permite a los administradores supervisar el estado de la gestión de identidades en tiempo real.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con otros sistemas, FreeIPA se puede integrar con OpenShift para proporcionar una solución de gestión de identidades para entornos de contenedores. Para integrar FreeIPA con OpenShift, se puede utilizar el comando &lt;code&gt;ipa-openshift-config&lt;/code&gt; para configurar la conexión entre FreeIPA y OpenShift.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidades que proporciona una solución completa para la autenticación y autorización de usuarios en entornos de red. Su capacidad para establecer relaciones de confianza entre dominios, configurar reglas de acceso basadas en el host y reglas de acceso de sudo, y su integración con otros sistemas como OpenShift, la convierten en una herramienta ideal para entornos de red complejos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/page/Documentation"&gt;FreeIPA Documentación&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe"&gt;Integrating FreeIPA (LDAP) with OpenShift&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-01_1342.html"/>
+    <summary>FreeIPA es una herramienta de gestión de identidades que permite la autenticación y autorización de usuarios en entornos de red. En este artículo, se presentan las características y configuraciones de FreeIPA.</summary>
+    <published>2026-06-01T13:42:00+00:00</published>
   </entry>
 </feed>

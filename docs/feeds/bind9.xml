@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-05-31T10:21:05.389385+00:00</updated>
+  <updated>2026-06-01T13:43:06.396652+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -198,5 +198,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-28_1142.html"/>
     <summary>En este artículo, se presentan las mejores prácticas para configurar y asegurar un servidor DNS con BIND9, incluyendo la configuración de zonas, DNSSEC, vistas y RPZ. Se discuten también las últimas vulnerabilidades y cómo mitigarlas.</summary>
     <published>2026-05-28T11:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-01_1342.html</id>
+    <title>Configuración y Mejoras de BIND9</title>
+    <updated>2026-06-01T13:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de zonas en BIND9 se realiza mediante el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas y sus respectivos tipos. Por ejemplo, para configurar una zona de tipo &lt;code&gt;master&lt;/code&gt;, se puede utilizar la siguiente directiva: &lt;code&gt;zone "example.com" { type master; file "example.com.db"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de BIND9, se puede configurar DNSSEC, que permite autenticar y verificar la integridad de los registros DNS. Esto se logra mediante la generación de claves y la configuración de la zona con la directiva &lt;code&gt;dnssec-validation yes;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se pueden configurar vistas en BIND9 para controlar el acceso a los registros DNS según la ubicación del cliente. Por ejemplo, se puede crear una vista para clientes que se encuentran en una red interna y otra para clientes que se encuentran en Internet.&lt;/p&gt;
+&lt;p&gt;La configuración de RPZ (Response Policy Zones) en BIND9 permite bloquear o restringir el acceso a ciertos dominios o IP. Esto se logra mediante la configuración de una zona RPZ y la directiva &lt;code&gt;response-policy { zone "rpz"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento de BIND9, se pueden ajustar los parámetros de configuración, como el tamaño del caché y el número de hilos. Por ejemplo, se puede aumentar el tamaño del caché con la directiva &lt;code&gt;cache-size 10000;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante configurar el registro de logs en BIND9 para poder monitorear y depurar cualquier problema que surja. Esto se logra mediante la directiva &lt;code&gt;logging { channel default_log { file "logs/named.log"; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/aa-00913"&gt;BIND 9 Software Vulnerability Matrix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/codex/part-17-how-i-run-my-entire-digital-life-on-a-raspberry-pi-encrypted-dns-on-the-road-2882b8e6e2d2"&gt;Part 17 — How I Run My Entire Digital Life on a Raspberry Pi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/advisories/GHSA-8v2c-7qqj-7wp7"&gt;A use-after-free vulnerability exists within the DNS-over&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-01_1342.html"/>
+    <summary>BIND9 es un servidor DNS ampliamente utilizado que requiere configuración y mantenimiento adecuados para garantizar su seguridad y rendimiento. En este artículo, se presentan algunas mejores prácticas y configuraciones para BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs.</summary>
+    <published>2026-06-01T13:42:00+00:00</published>
   </entry>
 </feed>

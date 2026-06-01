@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidades y Acceso - FreeIPA</title>
-    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <title>Configuración y Mejoras de BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidades y Acceso</h1>
-    <div class="meta">2026-05-28 1142 · FreeIPA</div>
+    <h1>Configuración y Mejoras de BIND9</h1>
+    <div class="meta">2026-06-01 1342 · DNS BIND9</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es un sistema de gestión de identidades y acceso que combina tecnologías como LDAP, Kerberos y PKI para proporcionar una solución integral de autenticación y autorización. Para instalar y configurar un servidor FreeIPA, se pueden seguir los pasos descritos en la documentación oficial, que incluyen la ejecución de comandos como `ipa-server-install` y la configuración de la base de datos y la autenticación.</p>
+            <p>La configuración de zonas en BIND9 se realiza mediante el archivo de configuración `named.conf`, donde se definen las zonas y sus respectivos tipos. Por ejemplo, para configurar una zona de tipo `master`, se puede utilizar la siguiente directiva: `zone "example.com" { type master; file "example.com.db"; };`.</p>
             
         
             
         
             
-            <p>Una de las características clave de FreeIPA es la gestión de identidades y acceso basada en roles, que permite asignar permisos y derechos a usuarios y grupos de manera flexible y escalable. Para configurar los roles y permisos en FreeIPA, se pueden utilizar comandos como `ipa role-add` y `ipa privilege-add`.</p>
+            <p>Para mejorar la seguridad de BIND9, se puede configurar DNSSEC, que permite autenticar y verificar la integridad de los registros DNS. Esto se logra mediante la generación de claves y la configuración de la zona con la directiva `dnssec-validation yes;`.</p>
             
         
             
         
             
-            <p>Además, FreeIPA proporciona una serie de características de seguridad avanzadas, como la autenticación multifactor y la cifrado de datos, que pueden ser configuradas utilizando comandos como `ipa config-mod` y `ipa certificate-mod`. La integración de FreeIPA con otras herramientas y plataformas, como OpenShift y Cloudflare, también es posible mediante la utilización de protocolos como LDAP y SAML.</p>
+            <p>Además, se pueden configurar vistas en BIND9 para controlar el acceso a los registros DNS según la ubicación del cliente. Por ejemplo, se puede crear una vista para clientes que se encuentran en una red interna y otra para clientes que se encuentran en Internet.</p>
             
         
             
         
             
-            <p>La configuración de la autenticación y autorización en FreeIPA se puede realizar mediante la utilización de comandos como `ipa authconfig` y `ipa sudorule-add`. Además, la gestión de certificados y claves en FreeIPA se puede realizar mediante la utilización de comandos como `ipa cert-mod` y `ipa keytab-add`.</p>
+            <p>La configuración de RPZ (Response Policy Zones) en BIND9 permite bloquear o restringir el acceso a ciertos dominios o IP. Esto se logra mediante la configuración de una zona RPZ y la directiva `response-policy { zone "rpz"; };`.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidades y acceso que ofrece una serie de características y configuraciones avanzadas para asegurar la autenticación y autorización de usuarios y grupos en entornos de red complejos.</p>
+            <p>Para mejorar el rendimiento de BIND9, se pueden ajustar los parámetros de configuración, como el tamaño del caché y el número de hilos. Por ejemplo, se puede aumentar el tamaño del caché con la directiva `cache-size 10000;`.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre la configuración y utilización de FreeIPA, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
+            <p>Finalmente, es importante configurar el registro de logs en BIND9 para poder monitorear y depurar cualquier problema que surja. Esto se logra mediante la directiva `logging { channel default_log { file "logs/named.log"; }; };`.</p>
             
         
     </div>
@@ -105,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/" target="_blank">Deploy FreeIPA Server On Cloud VPS</a>
+                <a href="https://kb.isc.org/docs/aa-00913" target="_blank">BIND 9 Software Vulnerability Matrix</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/ashish_nair_d9b10ba4f8126/integrating-freeipa-ldap-with-openshift-automated-group-sync-using-cronjob-2boe" target="_blank">Integrating FreeIPA (LDAP) with OpenShift + Automated Group Sync Using CronJob</a>
+                <a href="https://medium.com/codex/part-17-how-i-run-my-entire-digital-life-on-a-raspberry-pi-encrypted-dns-on-the-road-2882b8e6e2d2" target="_blank">Part 17 — How I Run My Entire Digital Life on a Raspberry Pi</a>
                 
             </li>
             
             <li>
-                <a href="https://deepwiki.com/freeipa/freeipa/6.1-certificate-authority" target="_blank">Certificate Authority | freeipa/freeipa</a>
+                <a href="https://github.com/advisories/GHSA-8v2c-7qqj-7wp7" target="_blank">A use-after-free vulnerability exists within the DNS-over</a>
                 
             </li>
             
@@ -126,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-05-24_0959.html">&larr; 2026-05-24 0959</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-05-28_1142.html">&larr; 2026-05-28 1142</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-01_1342.html">2026-06-01 1342 &rarr;</a>
             
         </div>
     </div>
