@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-02T12:10:41.850935+00:00</updated>
+  <updated>2026-06-03T12:46:57.437262+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -418,5 +418,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-30_1004.html"/>
     <summary>Superset es una herramienta de inteligencia empresarial que ofrece funcionalidades como gráficos, paneles de control y laboratorios de SQL. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo esta herramienta.</summary>
     <published>2026-05-30T10:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html</id>
+    <title>Superset: Herramienta de Inteligencia Empresarial</title>
+    <updated>2026-06-03T12:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de inteligencia empresarial de código abierto que permite a los usuarios crear dashboards y gráficos personalizados para visualizar y analizar datos. Para instalar Superset, se puede utilizar el paquete &lt;code&gt;apache-superset&lt;/code&gt; disponible en PyPI, ejecutando el comando &lt;code&gt;pip install apache-superset&lt;/code&gt;. Una vez instalado, se puede configurar la conexión a una base de datos utilizando el comando &lt;code&gt;superset db upgrade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para crear un dashboard, se puede seguir el tutorial oficial de Superset, que incluye conectar Superset a una base de datos y configurar los gráficos y tablas. También se puede utilizar la función de SQL Lab para ejecutar consultas SQL y visualizar los resultados en un gráfico. Sin embargo, es importante tener en cuenta que se han reportado algunos problemas con la resolución de MCP en la versión 6.1.0, como se indica en el issue #40225 de GitHub.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede intentar utilizar la versión más reciente de Superset o buscar ayuda en la comunidad de desarrolladores. Además, se pueden configurar alertas y reportes automatizados para enviar dashboards o gráficos a un destinatario de correo electrónico o canal de Slack, utilizando la función de Alerts and Reports de Superset. Para hacer esto, se puede seguir la documentación oficial de Superset, que incluye ejemplos de configuración y comandos para utilizar la función de alertas y reportes.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se puede integrar Superset con Keycloak para utilizar la autenticación y autorización basada en OIDC. Esto se puede hacer siguiendo el tutorial de Medium que explica cómo integrar Keycloak con Superset. Para hacer esto, se debe configurar la conexión a Keycloak utilizando el comando &lt;code&gt;superset config set KEYCLOAK_URL &lt;url_de_keycloak&gt;&lt;/code&gt; y luego configurar la autenticación y autorización en la aplicación de Superset.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para crear dashboards y gráficos personalizados, y su configuración y uso requieren una comprensión de las diferentes funciones y comandos disponibles. Aunque se han reportado algunos problemas con la resolución de MCP, se pueden solucionar utilizando la versión más reciente de Superset o buscando ayuda en la comunidad de desarrolladores.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Superset es una herramienta en constante evolución, y se pueden encontrar nuevas funciones y mejoras en la documentación oficial y en la comunidad de desarrolladores. Por lo tanto, es importante mantenerse actualizado sobre las últimas novedades y cambios en la herramienta para aprovechar al máximo sus capacidades.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39787"&gt;Superset 6.1.0.rc2 not using postgres as meta database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/using-superset/creating-your-first-dashboard/"&gt;Creating Your First Dashboard - Apache Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/admin-docs/configuration/alerts-reports/"&gt;Alerts and Reports - Apache Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mrsandeep253/integrating-keycloak-iam-with-apache-superset-a-complete-sso-guide-3d6921a0bf0d"&gt;Setup Apache superset with Keycloak-Integrating ... - Medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html"/>
+    <summary>Superset es una herramienta de inteligencia empresarial que permite crear dashboards y gráficos personalizados. En este artículo, se explora su configuración y uso.</summary>
+    <published>2026-06-03T12:45:00+00:00</published>
   </entry>
 </feed>

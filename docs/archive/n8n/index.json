@@ -1,4 +1,28 @@
 {
+  "2026-06-03_1245": {
+    "slug": "n8n",
+    "title": "Automatización de Workflows con n8n",
+    "summary": "n8n es una plataforma de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las novedades y mejores prácticas para utilizar n8n de manera efectiva.",
+    "content": "n8n es una herramienta de automatización de workflows que se ejecuta en un entorno de servidor y permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y credenciales. Para empezar a utilizar n8n, es necesario instalar el paquete `n8n` mediante `npm` o `yarn` con el comando `npm install n8n` o `yarn add n8n`. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante la URL `http://localhost:5678`.\n\n \n La plataforma de n8n ofrece una variedad de nodos integrados para diferentes servicios y aplicaciones, como GitLab, Stripe y más. Por ejemplo, el nodo de GitLab se puede utilizar para automatizar tareas en GitLab, como crear, actualizar, eliminar y más. Para utilizar el nodo de GitLab, es necesario configurar las credenciales de GitLab en n8n con el comando `n8n credentials create --type gitlab`.\n\n \n En cuanto a la seguridad, n8n ha lanzado actualizaciones de seguridad para abordar vulnerabilidades en su plataforma. Es importante mantener la plataforma actualizada para asegurarse de que se tienen las últimas correcciones de seguridad. Además, se pueden utilizar webhooks para recibir notificaciones de eventos específicos en la plataforma.\n\n \n Para crear un flujo de trabajo en n8n, se pueden utilizar los nodos y credenciales configurados anteriormente. Por ejemplo, se puede crear un flujo de trabajo que envíe un correo electrónico cuando se crea un nuevo issue en GitLab. Para hacer esto, se puede utilizar el nodo de correo electrónico y configurar las credenciales de correo electrónico en n8n con el comando `n8n credentials create --type email`.\n\n \n En resumen, n8n es una plataforma de automatización de workflows poderosa y flexible que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados para una variedad de servicios y aplicaciones. Al seguir las mejores prácticas y mantener la plataforma actualizada, se pueden asegurar la seguridad y eficiencia de los flujos de trabajo.",
+    "sources": [
+      {
+        "title": "n8n-io/n8n-desktop-app",
+        "url": "https://github.com/n8n-io/n8n-desktop-app"
+      },
+      {
+        "title": "News on Workflow Automation: Latest from Product - n8n Blog",
+        "url": "https://blog.n8n.io/tag/news/"
+      },
+      {
+        "title": "How to Set Up an Error Workflow in n8n Before Production Fails",
+        "url": "https://community.n8n.io/t/how-to-set-up-an-error-workflow-in-n8n-before-production-fails/293914"
+      },
+      {
+        "title": "Building a Production n8n Webhook Agent: Idempotency, Retry, DLQ",
+        "url": "https://medium.com/@automation.labs/building-a-production-n8n-webhook-agent-idempotency-retry-dlq-ab00024bd39a"
+      }
+    ]
+  },
   "2026-05-22_1055": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",

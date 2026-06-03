@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Mejoras y Best Practices - Superset</title>
-    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <title>Airflow: Orquestación de Datos - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,49 +54,41 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Superset: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-30 1004 · Superset</div>
+    <h1>Airflow: Orquestación de Datos</h1>
+    <div class="meta">2026-06-03 1245 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto que permite a los desarrolladores y administradores crear paneles de control personalizados y explorar datos de manera efectiva. Recientemente, se han reportado algunos errores y problemas en la versión 6.0.0, como el error al cargar filtros en un panel de control, que se puede solucionar utilizando el comando `superset db upgrade` para actualizar la base de datos.</p>
+            <p>Airflow es una herramienta poderosa para la orquestación de datos, que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo complejos de manera programática. Un DAG (Directed Acyclic Graph) es el corazón de Airflow, y se define como un grafo dirigido acíclico que representa el flujo de trabajo. Los operadores son los bloques de construcción de los DAGs, y se utilizan para realizar tareas específicas, como la ejecución de scripts o la lectura de datos de una base de datos.</p>
             
         
             
         
             
-        
-            
-            <p>Para crear un nuevo panel de control en Superset, se puede utilizar el comando `superset create-dashboard` y luego configurar los gráficos y filtros según sea necesario. También se puede utilizar el laboratorio de SQL para explorar y analizar los datos de manera más detallada.</p>
+            <p>Para crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego se puede definir el DAG utilizando el comando `airflow dag create`. Los sensores son otro componente importante de Airflow, y se utilizan para monitorear y esperar a que ocurran ciertos eventos, como la llegada de un archivo o la disponibilidad de un recurso.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a las best practices, es importante asegurarse de que la configuración de Superset esté correcta y segura. Se puede utilizar el comando `superset config` para verificar la configuración actual y realizar cambios según sea necesario. También es importante mantener la base de datos actualizada y realizar copias de seguridad regulares para evitar la pérdida de datos.</p>
+            <p>La comunicación entre tareas en Airflow se logra mediante XCom, que es un sistema de intercambio de mensajes que permite a las tareas compartir información. Para utilizar XCom, se puede utilizar el comando `airflow xcom` para enviar y recibir mensajes.</p>
             
         
             
         
             
-        
-            
-            <p>Además, se pueden utilizar plantillas de Jinja para personalizar los paneles de control y gráficos, lo que permite una mayor flexibilidad y customización. Se puede utilizar el comando `superset render-template` para renderizar las plantillas y crear los gráficos y paneles de control personalizados.</p>
+            <p>En cuanto a las mejores prácticas, es importante seguir el principio de 'separación de preocupaciones' y mantener los DAGs y las tareas lo más simples posible. También es importante utilizar los operadores y sensores de manera efectiva para evitar la complejidad innecesaria.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Superset es una herramienta poderosa y flexible que ofrece una amplia gama de funcionalidades para la creación de paneles de control y la exploración de datos. Al seguir las best practices y utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo esta herramienta y obtener insights valiosos de los datos.</p>
+            <p>Finalmente, es importante mencionar que Airflow 2.x trae consigo varias mejoras y cambios, como la compatibilidad con Python 3.8 y la mejora de la seguridad. Para aprovechar al máximo estas características, es importante leer la documentación oficial y seguir las mejores prácticas recomendadas.</p>
             
         
     </div>
@@ -107,27 +99,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/28687" target="_blank">Superset throws unexpected error while loading filters in a dashboard</a>
+                <a href="https://github.com/apache/airflow/tree/main" target="_blank">Apache Airflow</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39570" target="_blank">Please release 6.1... or at least ANYTHING after 6.0.0</a>
+                <a href="https://github.com/apache/airflow/issues/66938" target="_blank">Release Management for Go SDK, airflow-go-pack, and apache-airflow-providers-sdk-executable</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39487" target="_blank">Front-end build fails for clean Superset 6.0.0</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/31202" target="_blank">Line Chart not working when 2 series have 2 different time points</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-apache-spark/stable/changelog.html" target="_blank">Changelog - Apache Airflow</a>
                 
             </li>
             
             <li>
-                <a href="https://pypi.org/project/apache-superset/" target="_blank">apache-superset - PyPI</a>
+                <a href="https://dev.to/cliffe_okoth/a-beginners-guide-to-apache-airflow-3-4mp9" target="_blank">The Blueprint for Modern Data Orchestration - DEV Community</a>
                 
             </li>
             
@@ -138,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html">2026-06-03 1245 &rarr;</a>
             
         </div>
     </div>

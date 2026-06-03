@@ -1,4 +1,32 @@
 {
+  "2026-06-03_1245": {
+    "slug": "airflow",
+    "title": "Airflow: Orquestación de Datos",
+    "summary": "Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se exploran las características y mejores prácticas de Airflow, incluyendo DAGs, operadores, sensores y XCom.",
+    "content": "Airflow es una herramienta poderosa para la orquestación de datos, que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo complejos de manera programática. Un DAG (Directed Acyclic Graph) es el corazón de Airflow, y se define como un grafo dirigido acíclico que representa el flujo de trabajo. Los operadores son los bloques de construcción de los DAGs, y se utilizan para realizar tareas específicas, como la ejecución de scripts o la lectura de datos de una base de datos. \n \n Para crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego se puede definir el DAG utilizando el comando `airflow dag create`. Los sensores son otro componente importante de Airflow, y se utilizan para monitorear y esperar a que ocurran ciertos eventos, como la llegada de un archivo o la disponibilidad de un recurso. \n \n La comunicación entre tareas en Airflow se logra mediante XCom, que es un sistema de intercambio de mensajes que permite a las tareas compartir información. Para utilizar XCom, se puede utilizar el comando `airflow xcom` para enviar y recibir mensajes. \n \n En cuanto a las mejores prácticas, es importante seguir el principio de 'separación de preocupaciones' y mantener los DAGs y las tareas lo más simples posible. También es importante utilizar los operadores y sensores de manera efectiva para evitar la complejidad innecesaria. \n \n Finalmente, es importante mencionar que Airflow 2.x trae consigo varias mejoras y cambios, como la compatibilidad con Python 3.8 y la mejora de la seguridad. Para aprovechar al máximo estas características, es importante leer la documentación oficial y seguir las mejores prácticas recomendadas.",
+    "sources": [
+      {
+        "title": "Apache Airflow",
+        "url": "https://github.com/apache/airflow/tree/main"
+      },
+      {
+        "title": "Release Management for Go SDK, airflow-go-pack, and apache-airflow-providers-sdk-executable",
+        "url": "https://github.com/apache/airflow/issues/66938"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-google",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"
+      },
+      {
+        "title": "Changelog - Apache Airflow",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-apache-spark/stable/changelog.html"
+      },
+      {
+        "title": "The Blueprint for Modern Data Orchestration - DEV Community",
+        "url": "https://dev.to/cliffe_okoth/a-beginners-guide-to-apache-airflow-3-4mp9"
+      }
+    ]
+  },
   "2026-05-22_1055": {
     "slug": "airflow",
     "title": "Mejores prácticas para Airflow 3",

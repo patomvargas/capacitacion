@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-02T12:10:41.847006+00:00</updated>
+  <updated>2026-06-03T12:46:57.431057+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -327,5 +327,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html"/>
     <summary>Airflow 3 es la versión más reciente de la plataforma de orquestación de Apache, con características como la versión de DAGs y la ejecución remota. En este artículo, se presentan las mejores prácticas para diseñar y implementar pipelines en Airflow 3. Se cubren temas como el diseño de DAGs, el uso de operadores y sensores, y la configuración de conexiones.</summary>
     <published>2026-05-22T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-03_1245.html</id>
+    <title>Airflow: Orquestación de Datos</title>
+    <updated>2026-06-03T12:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta poderosa para la orquestación de datos, que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo complejos de manera programática. Un DAG (Directed Acyclic Graph) es el corazón de Airflow, y se define como un grafo dirigido acíclico que representa el flujo de trabajo. Los operadores son los bloques de construcción de los DAGs, y se utilizan para realizar tareas específicas, como la ejecución de scripts o la lectura de datos de una base de datos.&lt;/p&gt;
+&lt;p&gt;Para crear un DAG en Airflow, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos, y luego se puede definir el DAG utilizando el comando &lt;code&gt;airflow dag create&lt;/code&gt;. Los sensores son otro componente importante de Airflow, y se utilizan para monitorear y esperar a que ocurran ciertos eventos, como la llegada de un archivo o la disponibilidad de un recurso.&lt;/p&gt;
+&lt;p&gt;La comunicación entre tareas en Airflow se logra mediante XCom, que es un sistema de intercambio de mensajes que permite a las tareas compartir información. Para utilizar XCom, se puede utilizar el comando &lt;code&gt;airflow xcom&lt;/code&gt; para enviar y recibir mensajes.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante seguir el principio de 'separación de preocupaciones' y mantener los DAGs y las tareas lo más simples posible. También es importante utilizar los operadores y sensores de manera efectiva para evitar la complejidad innecesaria.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow 2.x trae consigo varias mejoras y cambios, como la compatibilidad con Python 3.8 y la mejora de la seguridad. Para aprovechar al máximo estas características, es importante leer la documentación oficial y seguir las mejores prácticas recomendadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/66938"&gt;Release Management for Go SDK, airflow-go-pack, and apache-airflow-providers-sdk-executable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"&gt;Changelog — apache-airflow-providers-google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-apache-spark/stable/changelog.html"&gt;Changelog - Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/cliffe_okoth/a-beginners-guide-to-apache-airflow-3-4mp9"&gt;The Blueprint for Modern Data Orchestration - DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-03_1245.html"/>
+    <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se exploran las características y mejores prácticas de Airflow, incluyendo DAGs, operadores, sensores y XCom.</summary>
+    <published>2026-06-03T12:45:00+00:00</published>
   </entry>
 </feed>

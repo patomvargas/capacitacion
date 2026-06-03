@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-02T12:10:41.852980+00:00</updated>
+  <updated>2026-06-03T12:46:57.439857+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -183,5 +183,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-22_1055.html"/>
     <summary>Traefik es un proxy inverso y un servidor web que se utiliza comúnmente en entornos de Kubernetes y microservicios. En este artículo, se presentan las últimas mejoras y best practices para utilizar Traefik de manera efectiva.</summary>
     <published>2026-05-22T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-03_1245.html</id>
+    <title>Traefik: Mejoras y Novedades</title>
+    <updated>2026-06-03T12:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Traefik, 3.7, codenamed Langres, es la más importante que se ha lanzado este año. Trae más de 85 anotaciones de Ingress NGINX que ahora son compatibles de forma nativa. Esto significa que los usuarios de Traefik pueden aprovechar las funcionalidades de Ingress NGINX sin tener que utilizar un proxy inverso adicional.&lt;/p&gt;
+&lt;p&gt;Una de las mejoras más destacadas de Traefik 3.7 es la compatibilidad con la API de Gateway, que permite a los usuarios definir rutas y reglas de tráfico de forma más flexible y escalable. Para habilitar esta función, se puede utilizar el comando &lt;code&gt;traefik --config-file=traefik.yml&lt;/code&gt;, donde &lt;code&gt;traefik.yml&lt;/code&gt; es el archivo de configuración de Traefik.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la compatibilidad con Let's Encrypt, que permite a los usuarios obtener certificados SSL/TLS de forma automática y gratuita. Para habilitar esta función, se puede utilizar el comando &lt;code&gt;traefik --certificates-resolver=letsencrypt --tls=true&lt;/code&gt;. Además, se pueden configurar middlewares y routers para gestionar el tráfico y la seguridad de forma más eficiente.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Traefik 3.7 incluye varias mejoras, como la compatibilidad con la autenticación y autorización basada en tokens y la capacidad de configurar reglas de firewall para proteger los servicios expuestos. Para configurar la autenticación y autorización, se puede utilizar el comando &lt;code&gt;traefik --auth-token=true --auth-token-secret=mi_secret&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik 3.7 es una versión importante que ofrece funcionalidades avanzadas para la gestión de tráfico y seguridad en entornos de Kubernetes y microservicios. Con su compatibilidad con Ingress NGINX annotations, la API de Gateway y Let's Encrypt, Traefik se posiciona como una de las opciones más atractivas para los administradores de sistemas y desarrolladores que buscan un proxy inverso de código abierto y escalable.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Traefik y sus funcionalidades, se puede consultar la documentación oficial de Traefik en &lt;code&gt;https://doc.traefik.io/&lt;/code&gt;. También se pueden encontrar ejemplos de configuración y tutoriales en la página oficial de Traefik en &lt;code&gt;https://traefik.io/&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://traefik.io/blog/traefik-proxy-3-7-is-available"&gt;Traefik Proxy v3.7: 85+ Ingress NGINX Annotations and More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/api-management/release-notes"&gt;Traefik Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://support.scc.suse.com/s/kb/How-to-deploy-NeuVector-in-a-RKE2-cluster-with-Traefik"&gt;How to deploy NeuVector in a RKE2 cluster with Traefik&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-03_1245.html"/>
+    <summary>Traefik es un proxy inverso de código abierto que ofrece funcionalidades avanzadas para la gestión de tráfico y seguridad en entornos de Kubernetes y microservicios. En este artículo, se presentan las últimas mejoras y novedades de Traefik, incluyendo la versión 3.7 y la compatibilidad con Ingress NGINX annotations.</summary>
+    <published>2026-06-03T12:45:00+00:00</published>
   </entry>
 </feed>

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Mejoras y Best Practices - Superset</title>
-    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <title>Automatización de Workflows con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,17 +54,17 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Superset: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-30 1004 · Superset</div>
+    <h1>Automatización de Workflows con n8n</h1>
+    <div class="meta">2026-06-03 1245 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto que permite a los desarrolladores y administradores crear paneles de control personalizados y explorar datos de manera efectiva. Recientemente, se han reportado algunos errores y problemas en la versión 6.0.0, como el error al cargar filtros en un panel de control, que se puede solucionar utilizando el comando `superset db upgrade` para actualizar la base de datos.</p>
+            <p>n8n es una herramienta de automatización de workflows que se ejecuta en un entorno de servidor y permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y credenciales. Para empezar a utilizar n8n, es necesario instalar el paquete `n8n` mediante `npm` o `yarn` con el comando `npm install n8n` o `yarn add n8n`. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante la URL `http://localhost:5678`.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>Para crear un nuevo panel de control en Superset, se puede utilizar el comando `superset create-dashboard` y luego configurar los gráficos y filtros según sea necesario. También se puede utilizar el laboratorio de SQL para explorar y analizar los datos de manera más detallada.</p>
+            <p>La plataforma de n8n ofrece una variedad de nodos integrados para diferentes servicios y aplicaciones, como GitLab, Stripe y más. Por ejemplo, el nodo de GitLab se puede utilizar para automatizar tareas en GitLab, como crear, actualizar, eliminar y más. Para utilizar el nodo de GitLab, es necesario configurar las credenciales de GitLab en n8n con el comando `n8n credentials create --type gitlab`.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>En cuanto a las best practices, es importante asegurarse de que la configuración de Superset esté correcta y segura. Se puede utilizar el comando `superset config` para verificar la configuración actual y realizar cambios según sea necesario. También es importante mantener la base de datos actualizada y realizar copias de seguridad regulares para evitar la pérdida de datos.</p>
+            <p>En cuanto a la seguridad, n8n ha lanzado actualizaciones de seguridad para abordar vulnerabilidades en su plataforma. Es importante mantener la plataforma actualizada para asegurarse de que se tienen las últimas correcciones de seguridad. Además, se pueden utilizar webhooks para recibir notificaciones de eventos específicos en la plataforma.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>Además, se pueden utilizar plantillas de Jinja para personalizar los paneles de control y gráficos, lo que permite una mayor flexibilidad y customización. Se puede utilizar el comando `superset render-template` para renderizar las plantillas y crear los gráficos y paneles de control personalizados.</p>
+            <p>Para crear un flujo de trabajo en n8n, se pueden utilizar los nodos y credenciales configurados anteriormente. Por ejemplo, se puede crear un flujo de trabajo que envíe un correo electrónico cuando se crea un nuevo issue en GitLab. Para hacer esto, se puede utilizar el nodo de correo electrónico y configurar las credenciales de correo electrónico en n8n con el comando `n8n credentials create --type email`.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>En resumen, Superset es una herramienta poderosa y flexible que ofrece una amplia gama de funcionalidades para la creación de paneles de control y la exploración de datos. Al seguir las best practices y utilizar los comandos y configuraciones adecuados, se puede aprovechar al máximo esta herramienta y obtener insights valiosos de los datos.</p>
+            <p>En resumen, n8n es una plataforma de automatización de workflows poderosa y flexible que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados para una variedad de servicios y aplicaciones. Al seguir las mejores prácticas y mantener la plataforma actualizada, se pueden asegurar la seguridad y eficiencia de los flujos de trabajo.</p>
             
         
     </div>
@@ -107,27 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/28687" target="_blank">Superset throws unexpected error while loading filters in a dashboard</a>
+                <a href="https://github.com/n8n-io/n8n-desktop-app" target="_blank">n8n-io/n8n-desktop-app</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39570" target="_blank">Please release 6.1... or at least ANYTHING after 6.0.0</a>
+                <a href="https://blog.n8n.io/tag/news/" target="_blank">News on Workflow Automation: Latest from Product - n8n Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/39487" target="_blank">Front-end build fails for clean Superset 6.0.0</a>
+                <a href="https://community.n8n.io/t/how-to-set-up-an-error-workflow-in-n8n-before-production-fails/293914" target="_blank">How to Set Up an Error Workflow in n8n Before Production Fails</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/31202" target="_blank">Line Chart not working when 2 series have 2 different time points</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://pypi.org/project/apache-superset/" target="_blank">apache-superset - PyPI</a>
+                <a href="https://medium.com/@automation.labs/building-a-production-n8n-webhook-agent-idempotency-retry-dlq-ab00024bd39a" target="_blank">Building a Production n8n Webhook Agent: Idempotency, Retry, DLQ</a>
                 
             </li>
             
@@ -138,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html">2026-06-03 1245 &rarr;</a>
             
         </div>
     </div>

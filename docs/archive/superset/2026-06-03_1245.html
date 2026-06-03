@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superset: Herramienta de Inteligencia Empresarial - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Superset: Herramienta de Inteligencia Empresarial</h1>
+    <div class="meta">2026-06-03 1245 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Superset es una herramienta de inteligencia empresarial de código abierto que permite a los usuarios crear dashboards y gráficos personalizados para visualizar y analizar datos. Para instalar Superset, se puede utilizar el paquete `apache-superset` disponible en PyPI, ejecutando el comando `pip install apache-superset`. Una vez instalado, se puede configurar la conexión a una base de datos utilizando el comando `superset db upgrade`.</p>
+            
+        
+            
+        
+            
+            <p>Para crear un dashboard, se puede seguir el tutorial oficial de Superset, que incluye conectar Superset a una base de datos y configurar los gráficos y tablas. También se puede utilizar la función de SQL Lab para ejecutar consultas SQL y visualizar los resultados en un gráfico. Sin embargo, es importante tener en cuenta que se han reportado algunos problemas con la resolución de MCP en la versión 6.1.0, como se indica en el issue #40225 de GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar este problema, se puede intentar utilizar la versión más reciente de Superset o buscar ayuda en la comunidad de desarrolladores. Además, se pueden configurar alertas y reportes automatizados para enviar dashboards o gráficos a un destinatario de correo electrónico o canal de Slack, utilizando la función de Alerts and Reports de Superset. Para hacer esto, se puede seguir la documentación oficial de Superset, que incluye ejemplos de configuración y comandos para utilizar la función de alertas y reportes.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, se puede integrar Superset con Keycloak para utilizar la autenticación y autorización basada en OIDC. Esto se puede hacer siguiendo el tutorial de Medium que explica cómo integrar Keycloak con Superset. Para hacer esto, se debe configurar la conexión a Keycloak utilizando el comando `superset config set KEYCLOAK_URL <url_de_keycloak>` y luego configurar la autenticación y autorización en la aplicación de Superset.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para crear dashboards y gráficos personalizados, y su configuración y uso requieren una comprensión de las diferentes funciones y comandos disponibles. Aunque se han reportado algunos problemas con la resolución de MCP, se pueden solucionar utilizando la versión más reciente de Superset o buscando ayuda en la comunidad de desarrolladores.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Superset es una herramienta en constante evolución, y se pueden encontrar nuevas funciones y mejoras en la documentación oficial y en la comunidad de desarrolladores. Por lo tanto, es importante mantenerse actualizado sobre las últimas novedades y cambios en la herramienta para aprovechar al máximo sus capacidades.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/39787" target="_blank">Superset 6.1.0.rc2 not using postgres as meta database</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://superset.apache.org/user-docs/using-superset/creating-your-first-dashboard/" target="_blank">Creating Your First Dashboard - Apache Superset</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://superset.apache.org/admin-docs/configuration/alerts-reports/" target="_blank">Alerts and Reports - Apache Superset</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@mrsandeep253/integrating-keycloak-iam-with-apache-superset-a-complete-sso-guide-3d6921a0bf0d" target="_blank">Setup Apache superset with Keycloak-Integrating ... - Medium</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-05-30_1004.html">&larr; 2026-05-30 1004</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
