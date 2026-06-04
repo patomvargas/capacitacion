@@ -1,4 +1,24 @@
 {
+  "2026-06-04_1118": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Mejora del rendimiento de PostgreSQL mediante la configuración de índices, replicación y copias de seguridad. Se presentan ejemplos prácticos y comandos para mejorar la eficiencia de la base de datos.",
+    "content": "La optimización de PostgreSQL es crucial para mejorar el rendimiento de la base de datos. Una de las formas de lograr esto es mediante la configuración de índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX`. Por ejemplo, para crear un índice en la columna 'nombre' de la tabla 'usuarios', se puede ejecutar el comando `CREATE INDEX idx_nombre ON usuarios (nombre)`.\n\nLa replicación es otra forma de mejorar la disponibilidad y el rendimiento de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestra-esclava y la replicación de streaming. Para configurar la replicación maestra-esclava, se puede utilizar el comando `pg_basebackup` para crear una copia de la base de datos maestra y luego configurar el esclavo para que se conecte a la maestra.\n\nLas copias de seguridad son fundamentales para garantizar la integridad de los datos. PostgreSQL ofrece varias opciones para realizar copias de seguridad, incluyendo el comando `pg_dump` y `pg_dumpall`. El comando `pg_dump` se utiliza para realizar una copia de seguridad de una base de datos específica, mientras que el comando `pg_dumpall` se utiliza para realizar una copia de seguridad de todas las bases de datos en el servidor. Por ejemplo, para realizar una copia de seguridad de la base de datos 'mi_base_de_datos', se puede ejecutar el comando `pg_dump -U mi_usuario mi_base_de_datos > mi_copia_de_seguridad.sql`.\n\nLa monitorización del rendimiento de la base de datos es también importante para identificar posibles problemas y optimizar el rendimiento. PostgreSQL ofrece varias herramientas para monitorizar el rendimiento, incluyendo el comando `pg_stat_activity` y `pg_stat_user_tables`. El comando `pg_stat_activity` se utiliza para mostrar la actividad actual de la base de datos, mientras que el comando `pg_stat_user_tables` se utiliza para mostrar estadísticas sobre las tablas de la base de datos.\n\nLa instalación de extensiones es otra forma de mejorar la funcionalidad de la base de datos. PostgreSQL ofrece varias extensiones, incluyendo la extensión 'postgis' para el manejo de datos geoespaciales. Para instalar una extensión, se puede utilizar el comando `CREATE EXTENSION`. Por ejemplo, para instalar la extensión 'postgis', se puede ejecutar el comando `CREATE EXTENSION postgis`.\n\nFinalmente, es importante mencionar que la versión 18 de PostgreSQL ofrece varias mejoras y nuevas características, incluyendo la mejora del optimizador y la adición de nuevas funciones de seguridad. Para obtener más información sobre las novedades de la versión 18, se puede consultar la documentación oficial de PostgreSQL.\n\n",
+    "sources": [
+      {
+        "title": "PostgreSQL: Documentation: 18: E.5. Release 18",
+        "url": "https://www.postgresql.org/docs/current/release-18.html"
+      },
+      {
+        "title": "PostgreSQL: Documentation: 18: Appendix E. Release Notes",
+        "url": "https://www.postgresql.org/docs/current/release.html"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      }
+    ]
+  },
   "2026-05-27_1142": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

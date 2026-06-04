@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-03T12:46:57.449320+00:00</updated>
+  <updated>2026-06-04T11:20:08.223836+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -218,5 +218,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-19_1125.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades para utilizar Terraform de manera efectiva.</summary>
     <published>2026-05-19T11:25:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-04_1118.html</id>
+    <title>Terraform: Gestión de Infraestructura como Código</title>
+    <updated>2026-06-04T11:18:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. Una de las características clave de Terraform es su capacidad para trabajar con diferentes proveedores de nube, como AWS, Azure y Google Cloud.&lt;/p&gt;
+&lt;p&gt;Para trabajar con Terraform, es necesario crear un archivo de configuración que defina la infraestructura que se desea crear. Por ejemplo, para crear un recurso en AWS, se puede utilizar el siguiente comando: &lt;code&gt;terraform init&lt;/code&gt; y luego &lt;code&gt;terraform apply&lt;/code&gt;. También es importante gestionar el estado de la infraestructura, para lo cual se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Terraform es su capacidad para trabajar con módulos. Los módulos permiten reutilizar configuraciones de infraestructura y crear estructuras de infraestructura más complejas. Por ejemplo, se puede crear un módulo para un servidor web y otro para una base de datos, y luego combinarlos para crear una infraestructura más completa.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha anunciado la disponibilidad del proveedor de AWS Cloud Control, que permite gestionar recursos de AWS de manera más eficiente. También se han reportado algunos problemas con la instalación de Terraform en algunas distribuciones de Linux, por lo que es importante verificar la compatibilidad antes de instalar.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, lo que facilita el aprendizaje y la resolución de problemas. Para más información, se puede consultar la documentación oficial de Terraform y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-awscc"&gt;Terraform AWS Cloud Control Provider&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@ecoufalleano/terraform-state-locks-and-lessons-from-the-trenches-e963eee097cb"&gt;Terraform State, Locks, and Lessons from the Trenches&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@iftekharkhan245/the-infrastructure-testing-pyramid-6ad293bbb13d"&gt;The Infrastructure Testing Pyramid&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-04_1118.html"/>
+    <summary>Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.</summary>
+    <published>2026-06-04T11:18:00+00:00</published>
   </entry>
 </feed>

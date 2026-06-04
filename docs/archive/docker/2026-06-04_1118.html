@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker: Mejoras y Best Practices - Docker</title>
+    <title>Docker: Mejores Practicas y Novedades - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-05-31 1019 · Docker</div>
+    <h1>Docker: Mejores Practicas y Novedades</h1>
+    <div class="meta">2026-06-04 1118 · Docker</div>
 
     <div class="content">
         
@@ -66,41 +66,37 @@
             
         
             
-            <p>Docker es una herramienta que permite a los desarrolladores crear, ejecutar y distribuir aplicaciones de manera eficiente y segura. En los últimos tiempos, se han realizado varias mejoras y actualizaciones en la plataforma, como la introducción de multi-stage builds, que permiten a los desarrolladores crear imágenes de Docker más pequeñas y eficientes.</p>
+            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores ligeros y portables. Una de las mejores practicas en Docker es utilizar multi-stage builds, que permiten dividir el proceso de construcción de una imagen en varias etapas, reduciendo el tamaño de la imagen final. Por ejemplo, se puede utilizar el comando `docker build -t mi-aplicacion .` para construir una imagen desde un Dockerfile.</p>
             
         
             
         
             
-            <p>Una de las mejores prácticas para utilizar Docker es utilizar `docker-compose` para definir y ejecutar múltiples contenedores de manera simultánea. Esto se puede lograr mediante el comando `docker-compose up -d`, que permite ejecutar los contenedores en segundo plano. Además, se puede utilizar `docker network` para crear redes de contenedores y permitir la comunicación entre ellos.</p>
+            <p>Otra herramienta importante en Docker es Compose, que permite definir y ejecutar múltiples contenedores como una sola aplicación. Se puede utilizar el comando `docker-compose up` para iniciar los contenedores definidos en el archivo docker-compose.yml. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando BuildKit, que es una herramienta de construcción de imágenes que proporciona una mayor seguridad y velocidad.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante utilizar `docker secret` para almacenar y gestionar secretos y credenciales de manera segura. También se puede utilizar `docker build --no-cache` para evitar que Docker utilice la caché y garantizar que las imágenes se construyan desde cero.</p>
+            <p>En cuanto a la networking, Docker proporciona varias opciones para configurar la red de los contenedores, como el uso de `docker network create` para crear una red personalizada. También se pueden utilizar comandos como `docker run -p 8080:80` para mapear un puerto del contenedor a un puerto del host. La seguridad es fundamental en Docker, y se puede mejorar utilizando comandos como `docker exec -it` para acceder a un contenedor en ejecución y realizar tareas de administración.</p>
             
         
             
         
             
-            <p>Otra herramienta importante es BuildKit, que permite a los desarrolladores crear imágenes de Docker de manera más eficiente y segura. Se puede utilizar mediante el comando `docker buildx build --load`, que permite cargar la imagen en el registro de Docker.</p>
+            <p>Además, es importante mencionar que Docker Hub es un registro de imágenes de Docker que proporciona una gran variedad de imágenes oficiales y de la comunidad. Se puede utilizar el comando `docker pull` para descargar una imagen desde Docker Hub, y `docker push` para subir una imagen personalizada al registro. En resumen, Docker es una herramienta poderosa que requiere una buena comprensión de sus mejores practicas y novedades para aprovechar al máximo sus beneficios.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Docker Hub es el registro oficial de Docker, donde se pueden almacenar y compartir imágenes de Docker. Se puede utilizar el comando `docker push` para subir imágenes al registro y `docker pull` para descargarlas.</p>
+            <p>La documentación oficial de Docker proporciona una gran cantidad de información sobre cómo utilizar la herramienta de manera efectiva. Por ejemplo, se puede encontrar información sobre cómo utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola aplicación. También se pueden encontrar ejemplos de cómo utilizar BuildKit para mejorar la seguridad y velocidad de la construcción de imágenes.</p>
             
         
             
         
             
-            <p>En resumen, Docker es una herramienta poderosa que requiere una configuración y un uso adecuados para aprovechar al máximo sus beneficios. Al seguir estas best practices y utilizar las herramientas adecuadas, los desarrolladores y sysadmins pueden crear aplicaciones de manera eficiente y segura.</p>
-            
-        
-            
-        
+            <p>En conclusión, Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, y su uso efectivo requiere una buena comprensión de sus mejores practicas y novedades. Al utilizar herramientas como multi-stage builds, Compose, networking y BuildKit, se puede crear y ejecutar contenedores ligeros y portables de manera segura y eficiente.</p>
             
         
     </div>
@@ -116,12 +112,17 @@
             </li>
             
             <li>
+                <a href="https://docs.portainer.io/sts/release-notes" target="_blank">Release Notes | 2.42 STS - Portainer Documentation</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://community.chocolatey.org/packages/docker-engine" target="_blank">Docker Engine 29.5.1 - Chocolatey Community</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/armorbreak/docker-deep-dive-beyond-docker-run-2026-510j" target="_blank">Docker Deep Dive: Beyond docker run (2026) - DEV Community</a>
+                <a href="https://medium.com/@kovvururajesh8/docker-compose-explained-the-smart-way-to-run-multi-container-applications-4fab50044883" target="_blank">Docker Compose Explained: The Smart Way to Run Multi-Container ...</a>
                 
             </li>
             
@@ -132,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-27_1142.html">&larr; 2026-05-27 1142</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-05-31_1019.html">&larr; 2026-05-31 1019</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-04_1118.html">2026-06-04 1118 &rarr;</a>
             
         </div>
     </div>

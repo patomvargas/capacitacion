@@ -1,4 +1,28 @@
 {
+  "2026-06-04_1118": {
+    "slug": "docker",
+    "title": "Docker: Mejores Practicas y Novedades",
+    "summary": "Este articulo cubre las mejores practicas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se presentan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores ligeros y portables. Una de las mejores practicas en Docker es utilizar multi-stage builds, que permiten dividir el proceso de construcción de una imagen en varias etapas, reduciendo el tamaño de la imagen final. Por ejemplo, se puede utilizar el comando `docker build -t mi-aplicacion .` para construir una imagen desde un Dockerfile.\n\nOtra herramienta importante en Docker es Compose, que permite definir y ejecutar múltiples contenedores como una sola aplicación. Se puede utilizar el comando `docker-compose up` para iniciar los contenedores definidos en el archivo docker-compose.yml. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando BuildKit, que es una herramienta de construcción de imágenes que proporciona una mayor seguridad y velocidad.\n\nEn cuanto a la networking, Docker proporciona varias opciones para configurar la red de los contenedores, como el uso de `docker network create` para crear una red personalizada. También se pueden utilizar comandos como `docker run -p 8080:80` para mapear un puerto del contenedor a un puerto del host. La seguridad es fundamental en Docker, y se puede mejorar utilizando comandos como `docker exec -it` para acceder a un contenedor en ejecución y realizar tareas de administración.\n\nAdemás, es importante mencionar que Docker Hub es un registro de imágenes de Docker que proporciona una gran variedad de imágenes oficiales y de la comunidad. Se puede utilizar el comando `docker pull` para descargar una imagen desde Docker Hub, y `docker push` para subir una imagen personalizada al registro. En resumen, Docker es una herramienta poderosa que requiere una buena comprensión de sus mejores practicas y novedades para aprovechar al máximo sus beneficios.\n\nLa documentación oficial de Docker proporciona una gran cantidad de información sobre cómo utilizar la herramienta de manera efectiva. Por ejemplo, se puede encontrar información sobre cómo utilizar Docker Compose para definir y ejecutar múltiples contenedores como una sola aplicación. También se pueden encontrar ejemplos de cómo utilizar BuildKit para mejorar la seguridad y velocidad de la construcción de imágenes.\n\nEn conclusión, Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, y su uso efectivo requiere una buena comprensión de sus mejores practicas y novedades. Al utilizar herramientas como multi-stage builds, Compose, networking y BuildKit, se puede crear y ejecutar contenedores ligeros y portables de manera segura y eficiente.",
+    "sources": [
+      {
+        "title": "Docker Hub release notes",
+        "url": "https://docs.docker.com/docker-hub/release-notes/"
+      },
+      {
+        "title": "Release Notes | 2.42 STS - Portainer Documentation",
+        "url": "https://docs.portainer.io/sts/release-notes"
+      },
+      {
+        "title": "Docker Engine 29.5.1 - Chocolatey Community",
+        "url": "https://community.chocolatey.org/packages/docker-engine"
+      },
+      {
+        "title": "Docker Compose Explained: The Smart Way to Run Multi-Container ...",
+        "url": "https://medium.com/@kovvururajesh8/docker-compose-explained-the-smart-way-to-run-multi-container-applications-4fab50044883"
+      }
+    ]
+  },
   "2026-05-31_1019": {
     "slug": "docker",
     "title": "Docker: Mejoras y Best Practices",

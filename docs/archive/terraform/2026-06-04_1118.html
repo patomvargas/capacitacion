@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terraform: Mejores Prácticas y Novedades - Terraform</title>
+    <title>Terraform: Gestión de Infraestructura como Código - Terraform</title>
     <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
     <style>
         :root {
@@ -57,50 +57,40 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
     </div>
 
-    <h1>Terraform: Mejores Prácticas y Novedades</h1>
-    <div class="meta">2026-05-19 1125 · Terraform</div>
+    <h1>Terraform: Gestión de Infraestructura como Código</h1>
+    <div class="meta">2026-06-04 1118 · Terraform</div>
 
     <div class="content">
         
         
             
-            <p>Terraform es una herramienta de infraestructura como código que permite gestionar recursos en la nube de manera eficiente. Para utilizar Terraform de manera efectiva, es importante seguir las mejores prácticas. Una de las mejores prácticas es utilizar módulos de Terraform, que permiten reutilizar código y simplificar la gestión de la infraestructura. Por ejemplo, se puede crear un módulo para provisionar instancias EC2 en AWS utilizando el comando `terraform apply -target=module.ec2`.</p>
+        
+            
+            <p>Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. Una de las características clave de Terraform es su capacidad para trabajar con diferentes proveedores de nube, como AWS, Azure y Google Cloud.</p>
             
         
             
         
             
-            <p>Para gestionar el estado de la infraestructura, Terraform utiliza un archivo de estado que se puede almacenar en un almacenamiento remoto, como Amazon S3. Se puede configurar el almacenamiento remoto utilizando el bloque `backend` en el archivo de configuración de Terraform, por ejemplo: `backend 's3' { bucket = 'nixuz-terraform-state' key = 'global/state.tfstate' region = 'us-east-1' }`.</p>
+            <p>Para trabajar con Terraform, es necesario crear un archivo de configuración que defina la infraestructura que se desea crear. Por ejemplo, para crear un recurso en AWS, se puede utilizar el siguiente comando: `terraform init` y luego `terraform apply`. También es importante gestionar el estado de la infraestructura, para lo cual se puede utilizar el comando `terraform state`.</p>
             
         
             
         
             
-            <p>Otra característica importante de Terraform es la capacidad de gestionar diferentes entornos de trabajo utilizando workspaces. Los workspaces permiten aislar la infraestructura de diferentes entornos, como desarrollo, pruebas y producción. Se puede crear un nuevo workspace utilizando el comando `terraform workspace new <nombre_del_workspace>`.</p>
+            <p>Otra característica importante de Terraform es su capacidad para trabajar con módulos. Los módulos permiten reutilizar configuraciones de infraestructura y crear estructuras de infraestructura más complejas. Por ejemplo, se puede crear un módulo para un servidor web y otro para una base de datos, y luego combinarlos para crear una infraestructura más completa.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades, Terraform ha lanzado varias versiones recientes, como la versión 1.15.0, que incluye varias mejoras y nuevas características. También se han lanzado versiones de prueba, como la versión 1.15.0-rc4, que incluye una actualización de dependencias.</p>
+            <p>En cuanto a las novedades, se ha anunciado la disponibilidad del proveedor de AWS Cloud Control, que permite gestionar recursos de AWS de manera más eficiente. También se han reportado algunos problemas con la instalación de Terraform en algunas distribuciones de Linux, por lo que es importante verificar la compatibilidad antes de instalar.</p>
             
         
             
         
             
-            <p>Es importante mencionar que Terraform también cuenta con una comunidad activa que contribuye a su desarrollo y proporciona soporte. Por ejemplo, se pueden encontrar tutoriales y guías en la comunidad DEV, como la guía de mejores prácticas para provisionar instancias EC2 con Terraform.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, Terraform es una herramienta poderosa para gestionar la infraestructura como código, y seguir las mejores prácticas y estar al tanto de las novedades es fundamental para utilizarla de manera efectiva.</p>
-            
-        
-            
-        
-            
-            <p>Para más información, se pueden consultar las fuentes oficiales de Terraform y la comunidad DEV.</p>
+            <p>Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, lo que facilita el aprendizaje y la resolución de problemas. Para más información, se puede consultar la documentación oficial de Terraform y las fuentes citadas a continuación.</p>
             
         
             
@@ -120,17 +110,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/hashicorp/terraform/issues/38402" target="_blank">Terraform Validate Crashing with Action #38402</a>
+                <a href="https://medium.com/@ecoufalleano/terraform-state-locks-and-lessons-from-the-trenches-e963eee097cb" target="_blank">Terraform State, Locks, and Lessons from the Trenches</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/vvasylkovskyi/provisioning-ec2-instances-with-terraform-modules-best-practices-guide-e04" target="_blank">Provisioning EC2 Instances with Terraform Modules - Best Practices Guide</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/maria_harger_9eb67f1e777f/how-to-use-terraform-for-cloud-automation-a-complete-guide-14og" target="_blank">How to Use Terraform for Cloud Automation? A Complete Guide</a>
+                <a href="https://medium.com/@iftekharkhan245/the-infrastructure-testing-pyramid-6ad293bbb13d" target="_blank">The Infrastructure Testing Pyramid</a>
                 
             </li>
             
@@ -141,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-15_1030.html">&larr; 2026-05-15 1030</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-05-19_1125.html">&larr; 2026-05-19 1125</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-04_1118.html">2026-06-04 1118 &rarr;</a>
             
         </div>
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-03T12:46:57.447687+00:00</updated>
+  <updated>2026-06-04T11:20:08.221600+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -313,5 +313,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-31_1019.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks, rebase, bisect y worktrees. Mejora tus habilidades con estos trucos y técnicas avanzadas.</summary>
     <published>2026-05-31T10:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-06-04_1118.html</id>
+    <title>Mejores prácticas de Git para profesionales</title>
+    <updated>2026-06-04T11:18:00+00:00</updated>
+    <content type="html">&lt;p&gt;La gestión de versiones es un aspecto crucial en el desarrollo de software, y Git es una de las herramientas más populares para ello. Sin embargo, muchos desarrolladores no aprovechan al máximo sus características. Una de las mejores prácticas es utilizar &lt;code&gt;git rebase&lt;/code&gt; en lugar de &lt;code&gt;git merge&lt;/code&gt; para mantener un historial de commits lineal. Esto se puede lograr utilizando el comando &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con el historial de commits.&lt;/p&gt;
+&lt;p&gt;Para mantener un workflow eficiente, es importante utilizar &lt;code&gt;git worktrees&lt;/code&gt; para crear ramas de trabajo paralelas. Esto permite trabajar en diferentes características sin afectar la rama principal. Por ejemplo, se puede crear una rama de trabajo utilizando &lt;code&gt;git worktree add &lt;nombre-rama&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git bisect&lt;/code&gt; para identificar commits problemáticos. Esto se puede hacer utilizando el comando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; o &lt;code&gt;git bisect good&lt;/code&gt; para marcar los commits como buenos o malos. Finalmente, se puede utilizar &lt;code&gt;git bisect reset&lt;/code&gt; para regresar al estado original.&lt;/p&gt;
+&lt;p&gt;Además, es importante seguir las mejores prácticas para escribir mensajes de commit claros y concisos. Esto se puede lograr utilizando el comando &lt;code&gt;git commit -m&lt;/code&gt; con un mensaje que describa claramente los cambios realizados. Por ejemplo, &lt;code&gt;git commit -m 'Agregar función de autenticación'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de utilizar hooks en Git para automatizar tareas y mantener la calidad del código. Por ejemplo, se puede utilizar &lt;code&gt;git hook pre-commit&lt;/code&gt; para ejecutar pruebas unitarias antes de realizar un commit.&lt;/p&gt;
+&lt;p&gt;En resumen, seguir estas mejores prácticas de Git puede ayudar a mantener un historial de commits limpio y predecible, lo que a su vez puede mejorar la productividad y la calidad del código.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/guroosh/git-best-practices-for-professionals-1ek5"&gt;Git: Best Practices for Professionals&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/guroosh/git-best-practices-for-beginners-1h3c"&gt;Git: Best Practices for Beginners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@samurai.stateless.coder/git-commit-message-best-practices-b092acb8813d"&gt;Git Commit Message Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-04_1118.html"/>
+    <summary>Este artículo presenta las mejores prácticas de Git para profesionales, cubriendo temas como workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se enfoca en la importancia de mantener un historial de commits limpio y predecible.</summary>
+    <published>2026-06-04T11:18:00+00:00</published>
   </entry>
 </feed>

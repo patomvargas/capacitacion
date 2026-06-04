@@ -1,4 +1,24 @@
 {
+  "2026-06-04_1118": {
+    "slug": "terraform",
+    "title": "Terraform: Gestión de Infraestructura como Código",
+    "summary": "Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.",
+    "content": "\nTerraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. Una de las características clave de Terraform es su capacidad para trabajar con diferentes proveedores de nube, como AWS, Azure y Google Cloud.\n\nPara trabajar con Terraform, es necesario crear un archivo de configuración que defina la infraestructura que se desea crear. Por ejemplo, para crear un recurso en AWS, se puede utilizar el siguiente comando: `terraform init` y luego `terraform apply`. También es importante gestionar el estado de la infraestructura, para lo cual se puede utilizar el comando `terraform state`.\n\nOtra característica importante de Terraform es su capacidad para trabajar con módulos. Los módulos permiten reutilizar configuraciones de infraestructura y crear estructuras de infraestructura más complejas. Por ejemplo, se puede crear un módulo para un servidor web y otro para una base de datos, y luego combinarlos para crear una infraestructura más completa.\n\nEn cuanto a las novedades, se ha anunciado la disponibilidad del proveedor de AWS Cloud Control, que permite gestionar recursos de AWS de manera más eficiente. También se han reportado algunos problemas con la instalación de Terraform en algunas distribuciones de Linux, por lo que es importante verificar la compatibilidad antes de instalar.\n\nFinalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, lo que facilita el aprendizaje y la resolución de problemas. Para más información, se puede consultar la documentación oficial de Terraform y las fuentes citadas a continuación.\n\n",
+    "sources": [
+      {
+        "title": "Terraform AWS Cloud Control Provider",
+        "url": "https://github.com/hashicorp/terraform-provider-awscc"
+      },
+      {
+        "title": "Terraform State, Locks, and Lessons from the Trenches",
+        "url": "https://medium.com/@ecoufalleano/terraform-state-locks-and-lessons-from-the-trenches-e963eee097cb"
+      },
+      {
+        "title": "The Infrastructure Testing Pyramid",
+        "url": "https://medium.com/@iftekharkhan245/the-infrastructure-testing-pyramid-6ad293bbb13d"
+      }
+    ]
+  },
   "2026-05-19_1125": {
     "slug": "terraform",
     "title": "Terraform: Mejores Prácticas y Novedades",

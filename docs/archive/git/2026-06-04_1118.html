@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Git para sysadmins y DevOps - Git</title>
+    <title>Mejores prácticas de Git para profesionales - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,48 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas de Git para sysadmins y DevOps</h1>
-    <div class="meta">2026-05-31 1019 · Git</div>
+    <h1>Mejores prácticas de Git para profesionales</h1>
+    <div class="meta">2026-06-04 1118 · Git</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>El sistema de control de versiones Git es una herramienta fundamental para los desarrolladores y sysadmins. Una de las mejores prácticas es utilizar `git worktree` para crear múltiples árboles de trabajo en un solo repositorio. Esto te permite trabajar en diferentes ramas o proyectos sin tener que clonar el repositorio varias veces.</p>
+            <p>La gestión de versiones es un aspecto crucial en el desarrollo de software, y Git es una de las herramientas más populares para ello. Sin embargo, muchos desarrolladores no aprovechan al máximo sus características. Una de las mejores prácticas es utilizar `git rebase` en lugar de `git merge` para mantener un historial de commits lineal. Esto se puede lograr utilizando el comando `git rebase -i` para interactuar con el historial de commits.</p>
             
         
             
         
             
-            <p>Otra herramienta útil es `git bisect`, que te permite encontrar el commit que introdujo un bug en tu código. Con `git bisect`, puedes identificar el commit problemático de manera eficiente. Por ejemplo, si tienes un bug en tu código, puedes ejecutar `git bisect start` y luego `git bisect bad` para marcar el commit actual como defectuoso. Luego, puedes ejecutar `git bisect good` para marcar un commit anterior como bueno. Git entonces te ayudará a encontrar el commit que introdujo el bug.</p>
+            <p>Para mantener un workflow eficiente, es importante utilizar `git worktrees` para crear ramas de trabajo paralelas. Esto permite trabajar en diferentes características sin afectar la rama principal. Por ejemplo, se puede crear una rama de trabajo utilizando `git worktree add <nombre-rama>`.</p>
             
         
             
         
             
-            <p>Los hooks de Git también son muy útiles para automatizar tareas. Por ejemplo, puedes crear un hook `pre-commit` para ejecutar pruebas unitarias antes de que se realice un commit. De esta manera, puedes asegurarte de que tu código esté funcionando correctamente antes de commitarlo. Puedes crear un hook `pre-commit` con el comando `git hook pre-commit` y luego agregar el código que desees ejecutar en el hook.</p>
+            <p>Otra herramienta útil es `git bisect` para identificar commits problemáticos. Esto se puede hacer utilizando el comando `git bisect start` y luego `git bisect bad` o `git bisect good` para marcar los commits como buenos o malos. Finalmente, se puede utilizar `git bisect reset` para regresar al estado original.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar que la migración a Git 2026 está en marcha, y es importante estar al tanto de los cambios y mejoras que se están realizando. Por ejemplo, la imagen de Windows 2025 se migrará a Visual Studio 2026. Es importante revisar las fuentes oficiales de Git y GitHub para obtener la información más actualizada sobre los cambios y mejoras.</p>
+            <p>Además, es importante seguir las mejores prácticas para escribir mensajes de commit claros y concisos. Esto se puede lograr utilizando el comando `git commit -m` con un mensaje que describa claramente los cambios realizados. Por ejemplo, `git commit -m 'Agregar función de autenticación'`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante recordar que la práctica y la experimentación son clave para dominar Git. No tengas miedo de probar nuevos comandos y técnicas, y siempre asegúrate de leer la documentación oficial de Git para obtener la información más actualizada y precisa.</p>
+            <p>Finalmente, es importante destacar la importancia de utilizar hooks en Git para automatizar tareas y mantener la calidad del código. Por ejemplo, se puede utilizar `git hook pre-commit` para ejecutar pruebas unitarias antes de realizar un commit.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que requiere práctica y dedicación para dominarla. Con las mejores prácticas y técnicas avanzadas, puedes mejorar tus habilidades y trabajar de manera más eficiente con Git.</p>
-            
-        
+            <p>En resumen, seguir estas mejores prácticas de Git puede ayudar a mantener un historial de commits limpio y predecible, lo que a su vez puede mejorar la productividad y la calidad del código.</p>
             
         
     </div>
@@ -109,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/" target="_blank">GitHub Changelog</a>
+                <a href="https://dev.to/guroosh/git-best-practices-for-professionals-1ek5" target="_blank">Git: Best Practices for Professionals</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/codetodeploy/8-git-tricks-so-good-they-feel-illegal-in-2026-0dbc9350a1cb" target="_blank">8 Git Tricks So Good They Feel Illegal in 2026</a>
+                <a href="https://dev.to/guroosh/git-best-practices-for-beginners-1h3c" target="_blank">Git: Best Practices for Beginners</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@marzoukrayen99/master-git-simulating-real-team-collaboration-on-a-single-ubuntu-machine-97ff11839f73" target="_blank">Master Git: Simulating Real Team Collaboration on a Single Ubuntu Machine</a>
+                <a href="https://medium.com/@samurai.stateless.coder/git-commit-message-best-practices-b092acb8813d" target="_blank">Git Commit Message Best Practices</a>
                 
             </li>
             
@@ -130,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-23_0958.html">&larr; 2026-05-23 0958</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-05-31_1019.html">&larr; 2026-05-31 1019</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-04_1118.html">2026-06-04 1118 &rarr;</a>
             
         </div>
     </div>

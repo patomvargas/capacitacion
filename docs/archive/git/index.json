@@ -1,4 +1,24 @@
 {
+  "2026-06-04_1118": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para profesionales",
+    "summary": "Este artículo presenta las mejores prácticas de Git para profesionales, cubriendo temas como workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se enfoca en la importancia de mantener un historial de commits limpio y predecible.",
+    "content": "La gestión de versiones es un aspecto crucial en el desarrollo de software, y Git es una de las herramientas más populares para ello. Sin embargo, muchos desarrolladores no aprovechan al máximo sus características. Una de las mejores prácticas es utilizar `git rebase` en lugar de `git merge` para mantener un historial de commits lineal. Esto se puede lograr utilizando el comando `git rebase -i` para interactuar con el historial de commits.\n\nPara mantener un workflow eficiente, es importante utilizar `git worktrees` para crear ramas de trabajo paralelas. Esto permite trabajar en diferentes características sin afectar la rama principal. Por ejemplo, se puede crear una rama de trabajo utilizando `git worktree add <nombre-rama>`.\n\nOtra herramienta útil es `git bisect` para identificar commits problemáticos. Esto se puede hacer utilizando el comando `git bisect start` y luego `git bisect bad` o `git bisect good` para marcar los commits como buenos o malos. Finalmente, se puede utilizar `git bisect reset` para regresar al estado original.\n\nAdemás, es importante seguir las mejores prácticas para escribir mensajes de commit claros y concisos. Esto se puede lograr utilizando el comando `git commit -m` con un mensaje que describa claramente los cambios realizados. Por ejemplo, `git commit -m 'Agregar función de autenticación'`.\n\nFinalmente, es importante destacar la importancia de utilizar hooks en Git para automatizar tareas y mantener la calidad del código. Por ejemplo, se puede utilizar `git hook pre-commit` para ejecutar pruebas unitarias antes de realizar un commit.\n\nEn resumen, seguir estas mejores prácticas de Git puede ayudar a mantener un historial de commits limpio y predecible, lo que a su vez puede mejorar la productividad y la calidad del código.",
+    "sources": [
+      {
+        "title": "Git: Best Practices for Professionals",
+        "url": "https://dev.to/guroosh/git-best-practices-for-professionals-1ek5"
+      },
+      {
+        "title": "Git: Best Practices for Beginners",
+        "url": "https://dev.to/guroosh/git-best-practices-for-beginners-1h3c"
+      },
+      {
+        "title": "Git Commit Message Best Practices",
+        "url": "https://medium.com/@samurai.stateless.coder/git-commit-message-best-practices-b092acb8813d"
+      }
+    ]
+  },
   "2026-05-31_1019": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",
