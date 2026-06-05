@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-04T11:20:08.196032+00:00</updated>
+  <updated>2026-06-05T11:32:57.080217+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -438,5 +438,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-01_1342.html"/>
     <summary>Kubernetes v1.36 introduce nuevas características y mejoras en el sistema de orquestación de contenedores. Esta versión incluye mejoras en la gestión de recursos, seguridad y almacenamiento.</summary>
     <published>2026-06-01T13:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-05_1131.html</id>
+    <title>Novedades en Kubernetes v1.36</title>
+    <updated>2026-06-05T11:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión v1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que introduce una serie de características y mejoras que simplifican la gestión de clústeres y la implementación de aplicaciones. Una de las novedades más destacadas es la graduación de la función de Device Plugin, que permite a los administradores de clústeres gestionar dispositivos de hardware de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la mejora en la gestión de redes, que incluye la capacidad de configurar redes de manera más flexible y segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear una red de manera sencilla: &lt;code&gt;kubectl create network-policy my-network --pod-selector app=my-app&lt;/code&gt;. Además, se han mejorado las capacidades de seguridad, con la introducción de la función de RBAC (Role-Based Access Control) para controlar el acceso a los recursos del clúster.&lt;/p&gt;
+&lt;p&gt;La gestión de almacenamiento también ha sido mejorada, con la introducción de la función de StorageClass, que permite a los administradores de clústeres definir clases de almacenamiento personalizadas para sus aplicaciones. Por ejemplo, se puede crear una clase de almacenamiento con el comando: &lt;code&gt;kubectl create storageclass my-storageclass --parameters type=gp2&lt;/code&gt;. Además, se han mejorado las capacidades de monitoreo y registro, con la introducción de la función de Prometheus y Grafana para monitorear el rendimiento del clúster.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se han introducido varias mejoras, incluyendo la capacidad de configurar la autenticación y autorización de manera más segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear un usuario y asignarle un rol: &lt;code&gt;kubectl create user my-user --role=my-role&lt;/code&gt;. Además, se han mejorado las capacidades de respaldo y recuperación, con la introducción de la función de Velero para respaldar y restaurar los recursos del clúster.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión v1.36 de Kubernetes es una importante actualización que introduce una serie de características y mejoras que simplifican la gestión de clústeres y la implementación de aplicaciones. Los administradores de clústeres pueden aprovechar estas novedades para mejorar la seguridad, el rendimiento y la eficiencia de sus clústeres.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Kubernetes ha anunciado el fin de la vida útil del controlador de ingreso NGINX, por lo que es recomendable migrar a una versión más reciente del controlador de ingreso. Se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para verificar la versión del controlador de ingreso: &lt;code&gt;kubectl get ingresscontroller --version&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/"&gt;Kubernetes v1.36: More Drivers, New Features, and the Next Era of DRA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/"&gt;In Ingress Nginx EOL 2026! Time to upgrade.&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://msalinas92.medium.com/nobody-understands-kubernetes-networking-26e733fd119a"&gt;Nobody Understands Kubernetes Networking&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-05_1131.html"/>
+    <summary>La versión v1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres. En este artículo, se presentan las novedades más destacadas y se proporcionan ejemplos prácticos de cómo aprovecharlas.</summary>
+    <published>2026-06-05T11:31:00+00:00</published>
   </entry>
 </feed>

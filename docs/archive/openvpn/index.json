@@ -1,4 +1,32 @@
 {
+  "2026-06-05_1131": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling de red que proporciona una conexión segura entre dispositivos. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite crear túneles de red seguros entre dispositivos. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación. Se pueden utilizar herramientas como `openssl` para generar los certificados y claves. Por ejemplo, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado de servidor.\n\nPara asegurar la conexión, es importante configurar el protocolo de autenticación y cifrado. OpenVPN admite varios protocolos de autenticación, incluyendo SSL/TLS y HMAC. Se puede configurar el protocolo de autenticación utilizando la directiva `tls-auth` en el archivo de configuración de OpenVPN. Por ejemplo, se puede agregar la línea `tls-auth ta.key 0` al archivo de configuración para habilitar la autenticación SSL/TLS.\n\nAdemás, es importante configurar el servidor de acceso de OpenVPN para permitir el acceso a los dispositivos de la red. El servidor de acceso de OpenVPN proporciona una interfaz web para administrar los dispositivos y configurar las políticas de acceso. Se puede acceder al servidor de acceso de OpenVPN mediante la URL `https://<dirección_IP>:943/`.\n\nPara asegurar el servidor de acceso de OpenVPN, es importante configurar la autenticación y autorización de los usuarios. Se puede configurar la autenticación utilizando la directiva `auth` en el archivo de configuración de OpenVPN. Por ejemplo, se puede agregar la línea `auth user-pass-verify` al archivo de configuración para habilitar la autenticación de usuario y contraseña.\n\nEs importante mencionar que OpenVPN ha lanzado recientemente una actualización de seguridad para su versión 2.7.5, que corrige varias vulnerabilidades de seguridad. Se recomienda actualizar a la última versión de OpenVPN para asegurar la conexión.\n\nFinalmente, es importante mencionar que OpenVPN proporciona una herramienta de línea de comandos para configurar y administrar la conexión. Se puede utilizar el comando `openvpn --config archivo_de_configuracion.ovpn` para iniciar la conexión de OpenVPN.",
+    "sources": [
+      {
+        "title": "OpenVPN Build",
+        "url": "https://github.com/OpenVPN/openvpn-build/blob/master/release/full-release-build.sh"
+      },
+      {
+        "title": "OpenVPN Tap Windows6",
+        "url": "https://github.com/OpenVPN/tap-windows6/releases"
+      },
+      {
+        "title": "OpenVPN GUI",
+        "url": "https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560"
+      },
+      {
+        "title": "Tutorial de Actualización de Access Server",
+        "url": "https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html"
+      },
+      {
+        "title": "Notas de Lanzamiento de OpenVPN Connect para macOS",
+        "url": "https://openvpn.net/connect-docs/macos-release-notes.html"
+      }
+    ]
+  },
   "2026-06-01_1342": {
     "slug": "openvpn",
     "title": "OpenVPN: Configuración y Seguridad",

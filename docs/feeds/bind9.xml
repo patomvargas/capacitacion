@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-04T11:20:08.192746+00:00</updated>
+  <updated>2026-06-05T11:32:57.074261+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -217,5 +217,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-01_1342.html"/>
     <summary>BIND9 es un servidor DNS ampliamente utilizado que requiere configuración y mantenimiento adecuados para garantizar su seguridad y rendimiento. En este artículo, se presentan algunas mejores prácticas y configuraciones para BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs.</summary>
     <published>2026-06-01T13:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-05_1131.html</id>
+    <title>Seguridad y configuración de BIND9</title>
+    <updated>2026-06-05T11:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;El servidor DNS BIND9 es una herramienta fundamental para la administración de redes y la resolución de nombres de dominio. Sin embargo, su configuración y seguridad son cruciales para evitar problemas de rendimiento y vulnerabilidades de seguridad. En primer lugar, es importante configurar las zonas DNS de manera adecuada, utilizando comandos como &lt;code&gt;named-checkzone&lt;/code&gt; para verificar la sintaxis y la consistencia de las zonas.&lt;/p&gt;
+&lt;p&gt;La configuración de DNSSEC es otro aspecto importante de la seguridad de BIND9. DNSSEC utiliza criptografía para autenticar y verificar la integridad de los registros DNS, lo que ayuda a prevenir ataques de spoofing y phishing. Para configurar DNSSEC, se pueden utilizar comandos como &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar claves y &lt;code&gt;dnssec-signzone&lt;/code&gt; para firmar las zonas. Además, es importante configurar las vistas (views) para controlar el acceso a las zonas DNS y restringir el tráfico de red.&lt;/p&gt;
+&lt;p&gt;La configuración de RPZ (Response Policy Zones) es otra característica importante de BIND9, que permite bloquear o restringir el acceso a ciertos dominios o IP. Para configurar RPZ, se pueden utilizar comandos como &lt;code&gt;named-checkconf&lt;/code&gt; para verificar la configuración y &lt;code&gt;rndc reload&lt;/code&gt; para recargar la configuración. Finalmente, es importante configurar el registro de eventos (logging) para monitorear y analizar el tráfico de red y detectar posibles problemas de seguridad.&lt;/p&gt;
+&lt;p&gt;En cuanto a la resolución de problemas de rendimiento, es importante utilizar herramientas como &lt;code&gt;named-checkconf&lt;/code&gt; y &lt;code&gt;rndc stats&lt;/code&gt; para analizar el rendimiento del servidor DNS. Además, se pueden utilizar comandos como &lt;code&gt;tcpdump&lt;/code&gt; y &lt;code&gt;wireshark&lt;/code&gt; para analizar el tráfico de red y detectar posibles problemas de configuración. En caso de problemas de seguridad, es importante actualizar el software y aplicar parches de seguridad de manera regular, como se indica en las fuentes [1] y [2].&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración y seguridad de BIND9 son fundamentales para la administración de redes y la resolución de nombres de dominio. Al seguir las mejores prácticas y utilizar las herramientas adecuadas, se pueden evitar problemas de rendimiento y vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que las fuentes [4] y [5] proporcionan información sobre vulnerabilidades de seguridad específicas en BIND9, como la vulnerabilidad de uso de memoria después de la liberación (use-after-free) y la vulnerabilidad de agotamiento de memoria durante la autenticación GSS-API. Es importante actualizar el software y aplicar parches de seguridad de manera regular para evitar estos problemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.isc.org/blogs/2026-05-12-bind-security-updates/"&gt;Prepare for more frequent BIND security updates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lists.isc.org/pipermail/bind-announce/2026-May/001293.html"&gt;Prepare for more frequent security updates for 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-3593"&gt;CVE-2026-3593: Heap use-after-free vulnerability in BIND 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-3039"&gt;CVE-2026-3039: BIND 9 server memory exhaustion during GSS-API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-05_1131.html"/>
+    <summary>BIND9 es un servidor DNS ampliamente utilizado que requiere una configuración y seguridad adecuadas. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos, así como la resolución de problemas de rendimiento.</summary>
+    <published>2026-06-05T11:31:00+00:00</published>
   </entry>
 </feed>

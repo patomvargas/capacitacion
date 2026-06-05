@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-04T11:20:08.194127+00:00</updated>
+  <updated>2026-06-05T11:32:57.076859+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -372,5 +372,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-01_1342.html"/>
     <summary>OpenVPN es un sistema de red privada virtual que permite crear conexiones seguras punto a punto o sitio a sitio. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.</summary>
     <published>2026-06-01T13:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-05_1131.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-06-05T11:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite crear túneles de red seguros entre dispositivos. Para configurar OpenVPN, es necesario generar certificados y claves de autenticación. Se pueden utilizar herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves. Por ejemplo, se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt; para generar un certificado de servidor.&lt;/p&gt;
+&lt;p&gt;Para asegurar la conexión, es importante configurar el protocolo de autenticación y cifrado. OpenVPN admite varios protocolos de autenticación, incluyendo SSL/TLS y HMAC. Se puede configurar el protocolo de autenticación utilizando la directiva &lt;code&gt;tls-auth&lt;/code&gt; en el archivo de configuración de OpenVPN. Por ejemplo, se puede agregar la línea &lt;code&gt;tls-auth ta.key 0&lt;/code&gt; al archivo de configuración para habilitar la autenticación SSL/TLS.&lt;/p&gt;
+&lt;p&gt;Además, es importante configurar el servidor de acceso de OpenVPN para permitir el acceso a los dispositivos de la red. El servidor de acceso de OpenVPN proporciona una interfaz web para administrar los dispositivos y configurar las políticas de acceso. Se puede acceder al servidor de acceso de OpenVPN mediante la URL &lt;code&gt;https://&lt;dirección_IP&gt;:943/&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para asegurar el servidor de acceso de OpenVPN, es importante configurar la autenticación y autorización de los usuarios. Se puede configurar la autenticación utilizando la directiva &lt;code&gt;auth&lt;/code&gt; en el archivo de configuración de OpenVPN. Por ejemplo, se puede agregar la línea &lt;code&gt;auth user-pass-verify&lt;/code&gt; al archivo de configuración para habilitar la autenticación de usuario y contraseña.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que OpenVPN ha lanzado recientemente una actualización de seguridad para su versión 2.7.5, que corrige varias vulnerabilidades de seguridad. Se recomienda actualizar a la última versión de OpenVPN para asegurar la conexión.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN proporciona una herramienta de línea de comandos para configurar y administrar la conexión. Se puede utilizar el comando &lt;code&gt;openvpn --config archivo_de_configuracion.ovpn&lt;/code&gt; para iniciar la conexión de OpenVPN.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-build/blob/master/release/full-release-build.sh"&gt;OpenVPN Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/tap-windows6/releases"&gt;OpenVPN Tap Windows6&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560"&gt;OpenVPN GUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html"&gt;Tutorial de Actualización de Access Server&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/connect-docs/macos-release-notes.html"&gt;Notas de Lanzamiento de OpenVPN Connect para macOS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-05_1131.html"/>
+    <summary>OpenVPN es una herramienta de tunneling de red que proporciona una conexión segura entre dispositivos. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.</summary>
+    <published>2026-06-05T11:31:00+00:00</published>
   </entry>
 </feed>

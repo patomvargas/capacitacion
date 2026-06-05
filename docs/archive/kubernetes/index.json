@@ -1,4 +1,24 @@
 {
+  "2026-06-05_1131": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes v1.36",
+    "summary": "La versión v1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres. En este artículo, se presentan las novedades más destacadas y se proporcionan ejemplos prácticos de cómo aprovecharlas.",
+    "content": "\nLa versión v1.36 de Kubernetes es una de las más importantes en los últimos tiempos, ya que introduce una serie de características y mejoras que simplifican la gestión de clústeres y la implementación de aplicaciones. Una de las novedades más destacadas es la graduación de la función de Device Plugin, que permite a los administradores de clústeres gestionar dispositivos de hardware de manera más eficiente.\n\nOtra característica importante es la mejora en la gestión de redes, que incluye la capacidad de configurar redes de manera más flexible y segura. Por ejemplo, se puede utilizar el comando `kubectl` para crear una red de manera sencilla: `kubectl create network-policy my-network --pod-selector app=my-app`. Además, se han mejorado las capacidades de seguridad, con la introducción de la función de RBAC (Role-Based Access Control) para controlar el acceso a los recursos del clúster.\n\nLa gestión de almacenamiento también ha sido mejorada, con la introducción de la función de StorageClass, que permite a los administradores de clústeres definir clases de almacenamiento personalizadas para sus aplicaciones. Por ejemplo, se puede crear una clase de almacenamiento con el comando: `kubectl create storageclass my-storageclass --parameters type=gp2`. Además, se han mejorado las capacidades de monitoreo y registro, con la introducción de la función de Prometheus y Grafana para monitorear el rendimiento del clúster.\n\nEn cuanto a la seguridad, se han introducido varias mejoras, incluyendo la capacidad de configurar la autenticación y autorización de manera más segura. Por ejemplo, se puede utilizar el comando `kubectl` para crear un usuario y asignarle un rol: `kubectl create user my-user --role=my-role`. Además, se han mejorado las capacidades de respaldo y recuperación, con la introducción de la función de Velero para respaldar y restaurar los recursos del clúster.\n\nEn resumen, la versión v1.36 de Kubernetes es una importante actualización que introduce una serie de características y mejoras que simplifican la gestión de clústeres y la implementación de aplicaciones. Los administradores de clústeres pueden aprovechar estas novedades para mejorar la seguridad, el rendimiento y la eficiencia de sus clústeres.\n\nFinalmente, es importante mencionar que la comunidad de Kubernetes ha anunciado el fin de la vida útil del controlador de ingreso NGINX, por lo que es recomendable migrar a una versión más reciente del controlador de ingreso. Se puede utilizar el comando `kubectl` para verificar la versión del controlador de ingreso: `kubectl get ingresscontroller --version`.\n\n",
+    "sources": [
+      {
+        "title": "Kubernetes v1.36: More Drivers, New Features, and the Next Era of DRA",
+        "url": "https://kubernetes.io/blog/2026/05/07/kubernetes-v1-36-dra-136-updates/"
+      },
+      {
+        "title": "In Ingress Nginx EOL 2026! Time to upgrade.",
+        "url": "https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/"
+      },
+      {
+        "title": "Nobody Understands Kubernetes Networking",
+        "url": "https://msalinas92.medium.com/nobody-understands-kubernetes-networking-26e733fd119a"
+      }
+    ]
+  },
   "2026-06-01_1342": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes v1.36",
