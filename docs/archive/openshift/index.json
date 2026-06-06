@@ -1,4 +1,28 @@
 {
+  "2026-06-06_1009": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Best Practices",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece mejoras y actualizaciones constantes. En este artículo, se presentan las últimas novedades y best practices para la configuración y administración de OpenShift.",
+    "content": "\nLa plataforma OpenShift es una solución de contenedores líder en el mercado, que ofrece una amplia gama de herramientas y características para la administración y configuración de clusters de contenedores. En las últimas actualizaciones, se han incluido mejoras en la seguridad, como la actualización de la versión 4.15.64, que incluye parches de seguridad y mejoras en la estabilidad del sistema.\n\nPara instalar OpenShift, se pueden utilizar diferentes métodos, como la instalación en bare metal o en la nube. Por ejemplo, se puede utilizar el comando `oc cluster up` para crear un cluster de OpenShift en un entorno de desarrollo. También se puede utilizar la herramienta de línea de comandos `oc` para administrar y configurar el cluster.\n\nEn cuanto a la migración de workloads a OpenShift, es importante seguir un enfoque práctico y estructurado. Esto incluye la evaluación de las aplicaciones y servicios que se van a migrar, la creación de un plan de migración y la ejecución de pruebas y validaciones. Se pueden utilizar herramientas como `oc adm migrate` para migrar aplicaciones y servicios a OpenShift.\n\nLa gestión de almacenamiento compartido en OpenShift es otro tema importante. Se pueden utilizar soluciones como NFS para proporcionar almacenamiento compartido a las aplicaciones y servicios. Por ejemplo, se puede utilizar el comando `oc create -f nfs-pvc.yaml` para crear un objeto de almacenamiento persistente (PVC) que utilice un servidor NFS.\n\nEn cuanto a la seguridad, OpenShift ofrece una amplia gama de características y herramientas para proteger los clusters y las aplicaciones. Se pueden utilizar herramientas como `oc adm policy` para configurar y administrar las políticas de seguridad en OpenShift. También se pueden utilizar soluciones como Zero Trust Workload Identity Manager para proporcionar una capa adicional de seguridad a las aplicaciones y servicios.\n\nFinalmente, es importante destacar la importancia de seguir las best practices y recomendaciones de la comunidad OpenShift para la configuración y administración de la plataforma. Esto incluye la utilización de herramientas y características como OperatorHub, builds, routes, OAuth y monitoring para proporcionar una plataforma de contenedores segura y escalable.\n\n  ",
+    "sources": [
+      {
+        "title": "RHSA-2026:14773",
+        "url": "https://access.redhat.com/errata/RHSA-2026:14773"
+      },
+      {
+        "title": "RHSA-2026:20087",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20087.html"
+      },
+      {
+        "title": "Installing OpenShift 4.19.10 on Bare Metal",
+        "url": "https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-3e0a6032b1d8"
+      },
+      {
+        "title": "Migrating Workloads to OpenShift: A Practical Approach",
+        "url": "https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440"
+      }
+    ]
+  },
   "2026-05-29_1133": {
     "slug": "openshift",
     "title": "OpenShift: Novedades y Mejoras",

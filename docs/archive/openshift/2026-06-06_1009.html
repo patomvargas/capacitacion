@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>OpenShift: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-06 1009 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La plataforma OpenShift es una solución de contenedores líder en el mercado, que ofrece una amplia gama de herramientas y características para la administración y configuración de clusters de contenedores. En las últimas actualizaciones, se han incluido mejoras en la seguridad, como la actualización de la versión 4.15.64, que incluye parches de seguridad y mejoras en la estabilidad del sistema.</p>
+            
+        
+            
+        
+            
+            <p>Para instalar OpenShift, se pueden utilizar diferentes métodos, como la instalación en bare metal o en la nube. Por ejemplo, se puede utilizar el comando `oc cluster up` para crear un cluster de OpenShift en un entorno de desarrollo. También se puede utilizar la herramienta de línea de comandos `oc` para administrar y configurar el cluster.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la migración de workloads a OpenShift, es importante seguir un enfoque práctico y estructurado. Esto incluye la evaluación de las aplicaciones y servicios que se van a migrar, la creación de un plan de migración y la ejecución de pruebas y validaciones. Se pueden utilizar herramientas como `oc adm migrate` para migrar aplicaciones y servicios a OpenShift.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de almacenamiento compartido en OpenShift es otro tema importante. Se pueden utilizar soluciones como NFS para proporcionar almacenamiento compartido a las aplicaciones y servicios. Por ejemplo, se puede utilizar el comando `oc create -f nfs-pvc.yaml` para crear un objeto de almacenamiento persistente (PVC) que utilice un servidor NFS.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift ofrece una amplia gama de características y herramientas para proteger los clusters y las aplicaciones. Se pueden utilizar herramientas como `oc adm policy` para configurar y administrar las políticas de seguridad en OpenShift. También se pueden utilizar soluciones como Zero Trust Workload Identity Manager para proporcionar una capa adicional de seguridad a las aplicaciones y servicios.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar la importancia de seguir las best practices y recomendaciones de la comunidad OpenShift para la configuración y administración de la plataforma. Esto incluye la utilización de herramientas y características como OperatorHub, builds, routes, OAuth y monitoring para proporcionar una plataforma de contenedores segura y escalable.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:14773" target="_blank">RHSA-2026:14773</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://access.redhat.com/errata/RHSA-2026:20087.html" target="_blank">RHSA-2026:20087</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-3e0a6032b1d8" target="_blank">Installing OpenShift 4.19.10 on Bare Metal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440" target="_blank">Migrating Workloads to OpenShift: A Practical Approach</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-29_1133.html">&larr; 2026-05-29 1133</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
