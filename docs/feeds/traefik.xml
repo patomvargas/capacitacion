@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-06T10:10:25.654909+00:00</updated>
+  <updated>2026-06-07T10:33:14.426230+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -202,5 +202,40 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-03_1245.html"/>
     <summary>Traefik es un proxy inverso de código abierto que ofrece funcionalidades avanzadas para la gestión de tráfico y seguridad en entornos de Kubernetes y microservicios. En este artículo, se presentan las últimas mejoras y novedades de Traefik, incluyendo la versión 3.7 y la compatibilidad con Ingress NGINX annotations.</summary>
     <published>2026-06-03T12:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html</id>
+    <title>Traefik: Mejoras y Novedades</title>
+    <updated>2026-06-07T10:32:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta fundamental para los sysadmins y DevOps engineers, ya que ofrece una forma sencilla y eficiente de gestionar el tráfico de red y proteger los servicios detrás de un proxy inverso. En la versión 3.7.0, se han incluido varias mejoras y novedades, como la actualización de la compatibilidad con el protocolo TLS 1.3 y la mejora de la configuración de routers y middlewares.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más interesantes es la posibilidad de configurar &lt;code&gt;Let's Encrypt&lt;/code&gt; para obtener certificados SSL/TLS de forma automática. Esto se puede hacer mediante la configuración de un &lt;code&gt;TLSOptions&lt;/code&gt; en el archivo de configuración de Traefik, como se muestra a continuación: `tls:&lt;/p&gt;
+&lt;p&gt;certificates:&lt;/p&gt;
+&lt;p&gt;- certFile: /path/to/cert.pem&lt;/p&gt;
+&lt;p&gt;keyFile: /path/to/key.pem&lt;/p&gt;
+&lt;p&gt;stores:&lt;/p&gt;
+&lt;p&gt;- default&lt;/p&gt;
+&lt;p&gt;stores:&lt;/p&gt;
+&lt;p&gt;default:&lt;/p&gt;
+&lt;p&gt;defaultCertificate:&lt;/p&gt;
+&lt;p&gt;certFile: /path/to/cert.pem&lt;/p&gt;
+&lt;p&gt;keyFile: /path/to/key.pem`.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la posibilidad de configurar middlewares para realizar tareas como la autenticación y la autorización. Por ejemplo, se puede configurar un middleware de autenticación basado en tokens JWT utilizando la siguiente configuración: `middleware:&lt;/p&gt;
+&lt;p&gt;jwt:&lt;/p&gt;
+&lt;p&gt;secret: mi-secreto&lt;/p&gt;
+&lt;p&gt;realm: mi-realm&lt;/p&gt;
+&lt;p&gt;header: Authorization&lt;/p&gt;
+&lt;p&gt;query: token`.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se han publicado varias actualizaciones para corregir vulnerabilidades y mejorar la protección de los servicios. Por ejemplo, se ha publicado una actualización para corregir una vulnerabilidad en la configuración de &lt;code&gt;SNICheck&lt;/code&gt; que permitía eludir la autenticación en algunos casos.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta fundamental para la gestión de tráfico de red y la protección de servicios, y las mejoras y novedades publicadas en la versión 3.7.0 la hacen aún más segura y eficiente.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las mejoras y novedades de Traefik, se pueden consultar las fuentes oficiales y la documentación de la herramienta.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Traefik es una herramienta en constante evolución, y es importante mantenerse al día con las últimas novedades y mejoras para asegurarse de que los servicios estén protegidos y funcionen de forma óptima.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik"&gt;Traefik GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/"&gt;Traefik Hub Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"&gt;Traefik Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html"/>
+    <summary>Traefik es un proxy inverso y balanceador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico de red. Recientemente, se han publicado varias mejoras y novedades en la versión 3.7.0, incluyendo actualizaciones de seguridad y mejoras en la configuración de routers y middlewares.</summary>
+    <published>2026-06-07T10:32:00+00:00</published>
   </entry>
 </feed>

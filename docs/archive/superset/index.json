@@ -1,4 +1,32 @@
 {
+  "2026-06-07_1032": {
+    "slug": "superset",
+    "title": "Superset: Mejoras y Best Practices",
+    "summary": "Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards personalizados. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizados para visualizar y analizar datos. En la versión 6.1.0, se han introducido varias mejoras, como la capacidad de utilizar PostgreSQL como base de datos de metadatos. Sin embargo, algunos usuarios han reportado problemas al intentar utilizar esta función, como se muestra en el tema `Superset 6.1.0.rc2 not using postgres as meta database #39787` en GitHub.\n\nPara configurar Superset para utilizar PostgreSQL, es necesario agregar la siguiente línea en el archivo `superset_config.py`: `SQLALCHEMY_DATABASE_URI = 'postgresql://usuario:contraseña@host:puerto/base_de_datos'`. Luego, se debe ejecutar el comando `superset db upgrade` para aplicar los cambios.\n\nEn cuanto a las mejoras en la visualización de datos, Superset ofrece una variedad de gráficos y tablas para presentar los datos de manera efectiva. Sin embargo, algunos usuarios han reportado problemas con la visualización de gráficos de líneas cuando se tienen dos series de datos con puntos de tiempo diferentes, como se muestra en el tema `Line Chart not working when 2 series have 2 different time points #31202` en GitHub.\n\nPara solucionar este problema, se puede intentar utilizar la función `time_range` para especificar el rango de tiempo que se desea visualizar. Por ejemplo, se puede utilizar la siguiente consulta SQL: `SELECT * FROM tabla WHERE fecha BETWEEN '2022-01-01' AND '2022-01-31'`. Luego, se puede utilizar la función `chart` para crear el gráfico de líneas.\n\nEn cuanto a la administración de Superset, es importante mencionar que se puede personalizar la interfaz de usuario para adaptarla a las necesidades específicas de cada organización. Por ejemplo, se puede agregar un enlace personalizado en el menú superior utilizando la función `custom_link`, como se muestra en el tema `Custom Link in the top menu #40163` en GitHub.\n\nPara agregar un enlace personalizado, se puede utilizar la siguiente línea en el archivo `superset_config.py`: `CUSTOM_LINKS = [{'label': 'Enlace personalizado', 'url': 'https://www.example.com'}]`. Luego, se debe reiniciar el servidor Superset para aplicar los cambios.\n\nEn resumen, Superset es una herramienta poderosa para visualizar y analizar datos, y ofrece una variedad de características para personalizar la interfaz de usuario y adaptarla a las necesidades específicas de cada organización. Al seguir las best practices y utilizar las funciones y configuraciones adecuadas, se puede aprovechar al máximo sus funcionalidades y obtener insights valiosos de los datos.\n\nFinalmente, es importante mencionar que Superset es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y los temas en GitHub para obtener la información más actualizada sobre sus funcionalidades y configuraciones.",
+    "sources": [
+      {
+        "title": "Superset 6.1.0.rc2 not using postgres as meta database #39787",
+        "url": "https://github.com/apache/superset/discussions/39787"
+      },
+      {
+        "title": "Line Chart not working when 2 series have 2 different time points #31202",
+        "url": "https://github.com/apache/superset/issues/31202"
+      },
+      {
+        "title": "Custom Link in the top menu #40163",
+        "url": "https://github.com/apache/superset/discussions/40163"
+      },
+      {
+        "title": "MCP user resolution not working in release 6.1.0",
+        "url": "https://github.com/apache/superset/issues/40225"
+      },
+      {
+        "title": "Overview | Superset",
+        "url": "https://superset.apache.org/developer-docs/contributing/overview/"
+      }
+    ]
+  },
   "2026-06-03_1245": {
     "slug": "superset",
     "title": "Superset: Herramienta de Inteligencia Empresarial",

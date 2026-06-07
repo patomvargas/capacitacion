@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-06T10:10:25.652933+00:00</updated>
+  <updated>2026-06-07T10:33:14.423589+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -438,5 +438,28 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html"/>
     <summary>Superset es una herramienta de inteligencia empresarial que permite crear dashboards y gráficos personalizados. En este artículo, se explora su configuración y uso.</summary>
     <published>2026-06-03T12:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-06-07_1032.html</id>
+    <title>Superset: Mejoras y Best Practices</title>
+    <updated>2026-06-07T10:32:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizados para visualizar y analizar datos. En la versión 6.1.0, se han introducido varias mejoras, como la capacidad de utilizar PostgreSQL como base de datos de metadatos. Sin embargo, algunos usuarios han reportado problemas al intentar utilizar esta función, como se muestra en el tema &lt;code&gt;Superset 6.1.0.rc2 not using postgres as meta database #39787&lt;/code&gt; en GitHub.&lt;/p&gt;
+&lt;p&gt;Para configurar Superset para utilizar PostgreSQL, es necesario agregar la siguiente línea en el archivo &lt;code&gt;superset_config.py&lt;/code&gt;: &lt;code&gt;SQLALCHEMY_DATABASE_URI = 'postgresql://usuario:contraseña@host:puerto/base_de_datos'&lt;/code&gt;. Luego, se debe ejecutar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para aplicar los cambios.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejoras en la visualización de datos, Superset ofrece una variedad de gráficos y tablas para presentar los datos de manera efectiva. Sin embargo, algunos usuarios han reportado problemas con la visualización de gráficos de líneas cuando se tienen dos series de datos con puntos de tiempo diferentes, como se muestra en el tema &lt;code&gt;Line Chart not working when 2 series have 2 different time points #31202&lt;/code&gt; en GitHub.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se puede intentar utilizar la función &lt;code&gt;time_range&lt;/code&gt; para especificar el rango de tiempo que se desea visualizar. Por ejemplo, se puede utilizar la siguiente consulta SQL: &lt;code&gt;SELECT * FROM tabla WHERE fecha BETWEEN '2022-01-01' AND '2022-01-31'&lt;/code&gt;. Luego, se puede utilizar la función &lt;code&gt;chart&lt;/code&gt; para crear el gráfico de líneas.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, es importante mencionar que se puede personalizar la interfaz de usuario para adaptarla a las necesidades específicas de cada organización. Por ejemplo, se puede agregar un enlace personalizado en el menú superior utilizando la función &lt;code&gt;custom_link&lt;/code&gt;, como se muestra en el tema &lt;code&gt;Custom Link in the top menu #40163&lt;/code&gt; en GitHub.&lt;/p&gt;
+&lt;p&gt;Para agregar un enlace personalizado, se puede utilizar la siguiente línea en el archivo &lt;code&gt;superset_config.py&lt;/code&gt;: &lt;code&gt;CUSTOM_LINKS = [{'label': 'Enlace personalizado', 'url': 'https://www.example.com'}]&lt;/code&gt;. Luego, se debe reiniciar el servidor Superset para aplicar los cambios.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para visualizar y analizar datos, y ofrece una variedad de características para personalizar la interfaz de usuario y adaptarla a las necesidades específicas de cada organización. Al seguir las best practices y utilizar las funciones y configuraciones adecuadas, se puede aprovechar al máximo sus funcionalidades y obtener insights valiosos de los datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Superset es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y los temas en GitHub para obtener la información más actualizada sobre sus funcionalidades y configuraciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/39787"&gt;Superset 6.1.0.rc2 not using postgres as meta database #39787&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/31202"&gt;Line Chart not working when 2 series have 2 different time points #31202&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/40163"&gt;Custom Link in the top menu #40163&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/40225"&gt;MCP user resolution not working in release 6.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/developer-docs/contributing/overview/"&gt;Overview | Superset&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-07_1032.html"/>
+    <summary>Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards personalizados. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
+    <published>2026-06-07T10:32:00+00:00</published>
   </entry>
 </feed>

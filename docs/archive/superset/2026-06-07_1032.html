@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superset: Mejoras y Best Practices - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Superset: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-07 1032 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Superset es una herramienta de código abierto que permite a los usuarios crear dashboards personalizados para visualizar y analizar datos. En la versión 6.1.0, se han introducido varias mejoras, como la capacidad de utilizar PostgreSQL como base de datos de metadatos. Sin embargo, algunos usuarios han reportado problemas al intentar utilizar esta función, como se muestra en el tema `Superset 6.1.0.rc2 not using postgres as meta database #39787` en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar Superset para utilizar PostgreSQL, es necesario agregar la siguiente línea en el archivo `superset_config.py`: `SQLALCHEMY_DATABASE_URI = 'postgresql://usuario:contraseña@host:puerto/base_de_datos'`. Luego, se debe ejecutar el comando `superset db upgrade` para aplicar los cambios.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejoras en la visualización de datos, Superset ofrece una variedad de gráficos y tablas para presentar los datos de manera efectiva. Sin embargo, algunos usuarios han reportado problemas con la visualización de gráficos de líneas cuando se tienen dos series de datos con puntos de tiempo diferentes, como se muestra en el tema `Line Chart not working when 2 series have 2 different time points #31202` en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar este problema, se puede intentar utilizar la función `time_range` para especificar el rango de tiempo que se desea visualizar. Por ejemplo, se puede utilizar la siguiente consulta SQL: `SELECT * FROM tabla WHERE fecha BETWEEN '2022-01-01' AND '2022-01-31'`. Luego, se puede utilizar la función `chart` para crear el gráfico de líneas.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la administración de Superset, es importante mencionar que se puede personalizar la interfaz de usuario para adaptarla a las necesidades específicas de cada organización. Por ejemplo, se puede agregar un enlace personalizado en el menú superior utilizando la función `custom_link`, como se muestra en el tema `Custom Link in the top menu #40163` en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Para agregar un enlace personalizado, se puede utilizar la siguiente línea en el archivo `superset_config.py`: `CUSTOM_LINKS = [{'label': 'Enlace personalizado', 'url': 'https://www.example.com'}]`. Luego, se debe reiniciar el servidor Superset para aplicar los cambios.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para visualizar y analizar datos, y ofrece una variedad de características para personalizar la interfaz de usuario y adaptarla a las necesidades específicas de cada organización. Al seguir las best practices y utilizar las funciones y configuraciones adecuadas, se puede aprovechar al máximo sus funcionalidades y obtener insights valiosos de los datos.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Superset es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y los temas en GitHub para obtener la información más actualizada sobre sus funcionalidades y configuraciones.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/39787" target="_blank">Superset 6.1.0.rc2 not using postgres as meta database #39787</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/issues/31202" target="_blank">Line Chart not working when 2 series have 2 different time points #31202</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/40163" target="_blank">Custom Link in the top menu #40163</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/issues/40225" target="_blank">MCP user resolution not working in release 6.1.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://superset.apache.org/developer-docs/contributing/overview/" target="_blank">Overview | Superset</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-03_1245.html">&larr; 2026-06-03 1245</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

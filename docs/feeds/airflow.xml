@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-06T10:10:25.648962+00:00</updated>
+  <updated>2026-06-07T10:33:14.417149+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -347,5 +347,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-03_1245.html"/>
     <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se exploran las características y mejores prácticas de Airflow, incluyendo DAGs, operadores, sensores y XCom.</summary>
     <published>2026-06-03T12:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-07_1032.html</id>
+    <title>Mejores prácticas para Airflow 2.x</title>
+    <updated>2026-06-07T10:32:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta poderosa para la gestión de flujos de trabajo, especialmente en entornos de data engineering. Para aprovechar al máximo sus capacidades, es importante seguir las mejores prácticas. Una de las más importantes es evitar el código a nivel superior en los DAGs, ya que esto puede afectar negativamente el rendimiento del programador. En su lugar, se deben utilizar funciones y clases para organizar el código.&lt;/p&gt;
+&lt;p&gt;Para crear un DAG en Airflow, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos, y luego &lt;code&gt;airflow webserver&lt;/code&gt; para iniciar el servidor web. Luego, se puede crear un nuevo DAG utilizando el comando &lt;code&gt;airflow dags create&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 2.x de Airflow introduce varias mejoras y cambios importantes, como la compatibilidad con Python 3.8 y 3.9, y la adición de nuevos operadores y sensores. Para aprovechar estas características, se deben actualizar los DAGs y las configuraciones para que sean compatibles con la nueva versión.&lt;/p&gt;
+&lt;p&gt;Otra buena práctica es utilizar XCom para compartir datos entre tareas en un DAG. XCom es un mecanismo de comunicación que permite a las tareas compartir información de manera segura y eficiente. Para utilizar XCom, se deben configurar las tareas para que utilicen el mismo &lt;code&gt;xcom_key&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las conexiones, es importante configurarlas de manera segura para evitar problemas de autenticación y autorización. Se pueden utilizar los archivos de configuración de Airflow para establecer las conexiones y los parámetros de autenticación.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y cambios. Se pueden consultar las fuentes oficiales de Airflow y las comunidades de desarrolladores para obtener más información y apoyo.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Airflow y las comunidades de desarrolladores. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Airflow de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/66938"&gt;Release Management for Go SDK, airflow-go-pack, and apache-airflow-providers-sdk-executable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main/.github"&gt;airflow/.github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/issues/67213"&gt;Status of testing Providers that were prepared on May 19, 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/tree/main/providers/amazon"&gt;airflow/providers/amazon&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-07_1032.html"/>
+    <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se presentan las mejores prácticas para utilizar Airflow 2.x de manera efectiva.</summary>
+    <published>2026-06-07T10:32:00+00:00</published>
   </entry>
 </feed>

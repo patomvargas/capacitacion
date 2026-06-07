@@ -58,47 +58,109 @@
     </div>
 
     <h1>Traefik: Mejoras y Novedades</h1>
-    <div class="meta">2026-06-03 1245 · Traefik</div>
+    <div class="meta">2026-06-07 1032 · Traefik</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La última versión de Traefik, 3.7, codenamed Langres, es la más importante que se ha lanzado este año. Trae más de 85 anotaciones de Ingress NGINX que ahora son compatibles de forma nativa. Esto significa que los usuarios de Traefik pueden aprovechar las funcionalidades de Ingress NGINX sin tener que utilizar un proxy inverso adicional.</p>
+            <p>Traefik es una herramienta fundamental para los sysadmins y DevOps engineers, ya que ofrece una forma sencilla y eficiente de gestionar el tráfico de red y proteger los servicios detrás de un proxy inverso. En la versión 3.7.0, se han incluido varias mejoras y novedades, como la actualización de la compatibilidad con el protocolo TLS 1.3 y la mejora de la configuración de routers y middlewares.</p>
             
         
             
         
             
-            <p>Una de las mejoras más destacadas de Traefik 3.7 es la compatibilidad con la API de Gateway, que permite a los usuarios definir rutas y reglas de tráfico de forma más flexible y escalable. Para habilitar esta función, se puede utilizar el comando `traefik --config-file=traefik.yml`, donde `traefik.yml` es el archivo de configuración de Traefik.</p>
+            <p>Una de las novedades más interesantes es la posibilidad de configurar `Let's Encrypt` para obtener certificados SSL/TLS de forma automática. Esto se puede hacer mediante la configuración de un `TLSOptions` en el archivo de configuración de Traefik, como se muestra a continuación: `tls:</p>
+            
+        
+            
+            <p>certificates:</p>
+            
+        
+            
+            <p>- certFile: /path/to/cert.pem</p>
+            
+        
+            
+            <p>keyFile: /path/to/key.pem</p>
+            
+        
+            
+            <p>stores:</p>
+            
+        
+            
+            <p>- default</p>
+            
+        
+            
+            <p>stores:</p>
+            
+        
+            
+            <p>default:</p>
+            
+        
+            
+            <p>defaultCertificate:</p>
+            
+        
+            
+            <p>certFile: /path/to/cert.pem</p>
+            
+        
+            
+            <p>keyFile: /path/to/key.pem`.</p>
             
         
             
         
             
-            <p>Otra novedad importante es la compatibilidad con Let's Encrypt, que permite a los usuarios obtener certificados SSL/TLS de forma automática y gratuita. Para habilitar esta función, se puede utilizar el comando `traefik --certificates-resolver=letsencrypt --tls=true`. Además, se pueden configurar middlewares y routers para gestionar el tráfico y la seguridad de forma más eficiente.</p>
+            <p>Otra mejora importante es la posibilidad de configurar middlewares para realizar tareas como la autenticación y la autorización. Por ejemplo, se puede configurar un middleware de autenticación basado en tokens JWT utilizando la siguiente configuración: `middleware:</p>
+            
+        
+            
+            <p>jwt:</p>
+            
+        
+            
+            <p>secret: mi-secreto</p>
+            
+        
+            
+            <p>realm: mi-realm</p>
+            
+        
+            
+            <p>header: Authorization</p>
+            
+        
+            
+            <p>query: token`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Traefik 3.7 incluye varias mejoras, como la compatibilidad con la autenticación y autorización basada en tokens y la capacidad de configurar reglas de firewall para proteger los servicios expuestos. Para configurar la autenticación y autorización, se puede utilizar el comando `traefik --auth-token=true --auth-token-secret=mi_secret`.</p>
+            <p>En cuanto a la seguridad, se han publicado varias actualizaciones para corregir vulnerabilidades y mejorar la protección de los servicios. Por ejemplo, se ha publicado una actualización para corregir una vulnerabilidad en la configuración de `SNICheck` que permitía eludir la autenticación en algunos casos.</p>
             
         
             
         
             
-            <p>En resumen, Traefik 3.7 es una versión importante que ofrece funcionalidades avanzadas para la gestión de tráfico y seguridad en entornos de Kubernetes y microservicios. Con su compatibilidad con Ingress NGINX annotations, la API de Gateway y Let's Encrypt, Traefik se posiciona como una de las opciones más atractivas para los administradores de sistemas y desarrolladores que buscan un proxy inverso de código abierto y escalable.</p>
+            <p>En resumen, Traefik es una herramienta fundamental para la gestión de tráfico de red y la protección de servicios, y las mejoras y novedades publicadas en la versión 3.7.0 la hacen aún más segura y eficiente.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre Traefik y sus funcionalidades, se puede consultar la documentación oficial de Traefik en `https://doc.traefik.io/`. También se pueden encontrar ejemplos de configuración y tutoriales en la página oficial de Traefik en `https://traefik.io/`.</p>
+            <p>Para obtener más información sobre las mejoras y novedades de Traefik, se pueden consultar las fuentes oficiales y la documentación de la herramienta.</p>
             
         
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Traefik es una herramienta en constante evolución, y es importante mantenerse al día con las últimas novedades y mejoras para asegurarse de que los servicios estén protegidos y funcionen de forma óptima.</p>
             
         
     </div>
@@ -109,17 +171,17 @@
         <ul>
             
             <li>
-                <a href="https://traefik.io/blog/traefik-proxy-3-7-is-available" target="_blank">Traefik Proxy v3.7: 85+ Ingress NGINX Annotations and More</a>
+                <a href="https://github.com/traefik/traefik" target="_blank">Traefik GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">Traefik Hub</a>
+                <a href="https://doc.traefik.io/traefik-hub/" target="_blank">Traefik Hub Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://support.scc.suse.com/s/kb/How-to-deploy-NeuVector-in-a-RKE2-cluster-with-Traefik" target="_blank">How to deploy NeuVector in a RKE2 cluster with Traefik</a>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">Traefik Security Advisory</a>
                 
             </li>
             
@@ -130,12 +192,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-03_1245.html">&larr; 2026-06-03 1245</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html">2026-06-07 1032 &rarr;</a>
             
         </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow: Orquestación de Datos - Airflow</title>
+    <title>Mejores prácticas para Airflow 2.x - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,38 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow: Orquestación de Datos</h1>
-    <div class="meta">2026-06-03 1245 · Airflow</div>
+    <h1>Mejores prácticas para Airflow 2.x</h1>
+    <div class="meta">2026-06-07 1032 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Airflow es una herramienta poderosa para la orquestación de datos, que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo complejos de manera programática. Un DAG (Directed Acyclic Graph) es el corazón de Airflow, y se define como un grafo dirigido acíclico que representa el flujo de trabajo. Los operadores son los bloques de construcción de los DAGs, y se utilizan para realizar tareas específicas, como la ejecución de scripts o la lectura de datos de una base de datos.</p>
+            <p>Airflow es una herramienta poderosa para la gestión de flujos de trabajo, especialmente en entornos de data engineering. Para aprovechar al máximo sus capacidades, es importante seguir las mejores prácticas. Una de las más importantes es evitar el código a nivel superior en los DAGs, ya que esto puede afectar negativamente el rendimiento del programador. En su lugar, se deben utilizar funciones y clases para organizar el código.</p>
             
         
             
         
             
-            <p>Para crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego se puede definir el DAG utilizando el comando `airflow dag create`. Los sensores son otro componente importante de Airflow, y se utilizan para monitorear y esperar a que ocurran ciertos eventos, como la llegada de un archivo o la disponibilidad de un recurso.</p>
+            <p>Para crear un DAG en Airflow, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego `airflow webserver` para iniciar el servidor web. Luego, se puede crear un nuevo DAG utilizando el comando `airflow dags create`.</p>
             
         
             
         
             
-            <p>La comunicación entre tareas en Airflow se logra mediante XCom, que es un sistema de intercambio de mensajes que permite a las tareas compartir información. Para utilizar XCom, se puede utilizar el comando `airflow xcom` para enviar y recibir mensajes.</p>
+            <p>La versión 2.x de Airflow introduce varias mejoras y cambios importantes, como la compatibilidad con Python 3.8 y 3.9, y la adición de nuevos operadores y sensores. Para aprovechar estas características, se deben actualizar los DAGs y las configuraciones para que sean compatibles con la nueva versión.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, es importante seguir el principio de 'separación de preocupaciones' y mantener los DAGs y las tareas lo más simples posible. También es importante utilizar los operadores y sensores de manera efectiva para evitar la complejidad innecesaria.</p>
+            <p>Otra buena práctica es utilizar XCom para compartir datos entre tareas en un DAG. XCom es un mecanismo de comunicación que permite a las tareas compartir información de manera segura y eficiente. Para utilizar XCom, se deben configurar las tareas para que utilicen el mismo `xcom_key`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Airflow 2.x trae consigo varias mejoras y cambios, como la compatibilidad con Python 3.8 y la mejora de la seguridad. Para aprovechar al máximo estas características, es importante leer la documentación oficial y seguir las mejores prácticas recomendadas.</p>
+            <p>En cuanto a las conexiones, es importante configurarlas de manera segura para evitar problemas de autenticación y autorización. Se pueden utilizar los archivos de configuración de Airflow para establecer las conexiones y los parámetros de autenticación.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Airflow es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y cambios. Se pueden consultar las fuentes oficiales de Airflow y las comunidades de desarrolladores para obtener más información y apoyo.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Airflow y las comunidades de desarrolladores. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Airflow de manera efectiva.</p>
             
         
     </div>
@@ -109,17 +121,17 @@
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
+                <a href="https://github.com/apache/airflow/tree/main/.github" target="_blank">airflow/.github</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/docs/apache-airflow-providers-apache-spark/stable/changelog.html" target="_blank">Changelog - Apache Airflow</a>
+                <a href="https://github.com/apache/airflow/issues/67213" target="_blank">Status of testing Providers that were prepared on May 19, 2026</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/cliffe_okoth/a-beginners-guide-to-apache-airflow-3-4mp9" target="_blank">The Blueprint for Modern Data Orchestration - DEV Community</a>
+                <a href="https://github.com/apache/airflow/tree/main/providers/amazon" target="_blank">airflow/providers/amazon</a>
                 
             </li>
             
@@ -130,12 +142,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-05-22_1055.html">&larr; 2026-05-22 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-03_1245.html">&larr; 2026-06-03 1245</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-07_1032.html">2026-06-07 1032 &rarr;</a>
             
         </div>
     </div>

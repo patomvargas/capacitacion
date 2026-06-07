@@ -1,4 +1,28 @@
 {
+  "2026-06-07_1032": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en Kubernetes",
+    "summary": "MetalLB es una implementación de balanceo de carga para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, se explora su configuración y uso en entornos de producción.",
+    "content": "\nMetalLB es una herramienta esencial para los administradores de clústeres de Kubernetes, ya que proporciona una forma de balancear la carga de tráfico hacia los servicios expuestos en el clúster. Una de las formas de configurar MetalLB es mediante el modo L2, que permite la asignación de direcciones IP a los servicios sin la necesidad de un enrutador dedicado. Para habilitar el modo L2, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.16.0/config/layer2.yaml`.\n\nOtra forma de configurar MetalLB es mediante el modo BGP, que permite la publicación de rutas hacia los servicios expuestos en el clúster. Para habilitar el modo BGP, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.16.0/config/bgp.yaml`. Es importante mencionar que, para utilizar el modo BGP, se requiere la configuración de un enrutador BGP en el clúster.\n\nEn cuanto a la configuración de las piscinas de direcciones IP, MetalLB proporciona la opción de definir varias piscinas de direcciones IP para asignar a los servicios. Por ejemplo, se puede crear una piscina de direcciones IP para los servicios de frontend y otra para los servicios de backend. Para crear una piscina de direcciones IP, se puede utilizar el siguiente comando: `kubectl apply -f - <<EOF\napiVersion: metallb.io/v1beta1\nkind: IPPool\nmetadata:\n  name: frontend-pool\nspec:\n  addresses:\n  - 10.0.0.1-10.0.0.100\nEOF\n`.\n\nEn caso de problemas con la configuración de MetalLB, es importante revisar los registros del controlador y del hablante para identificar el origen del problema. Por ejemplo, se puede utilizar el siguiente comando para revisar los registros del controlador: `kubectl logs -f -n metallb-system deploy/controller`. Además, es importante mencionar que, en caso de problemas con la configuración de las piscinas de direcciones IP, se puede utilizar el comando `kubectl describe ippool` para obtener más información sobre la configuración de la piscina.\n\nFinalmente, es importante mencionar que MetalLB se integra perfectamente con otros componentes de Kubernetes, como Calico, para proporcionar una forma de balancear la carga de tráfico hacia los servicios expuestos en el clúster. Por ejemplo, se puede utilizar el siguiente comando para configurar Calico para utilizar MetalLB: `kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.24.0/manifests/calico.yaml`.\n\nEn resumen, MetalLB es una herramienta esencial para los administradores de clústeres de Kubernetes, ya que proporciona una forma de balancear la carga de tráfico hacia los servicios expuestos en el clúster. Su configuración y uso son relativamente sencillos, y se integra perfectamente con otros componentes de Kubernetes.",
+    "sources": [
+      {
+        "title": "Issue · metallb/metallb",
+        "url": "https://github.com/metallb/metallb/issues/3053"
+      },
+      {
+        "title": "Controller fails to start with speaker disabled #3068",
+        "url": "https://github.com/metallb/metallb/issues/3068"
+      },
+      {
+        "title": "Helm installation failed for v0.16.0 · Issue #3060 · metallb",
+        "url": "https://github.com/metallb/metallb/issues/3060"
+      },
+      {
+        "title": "Kubernetes Cluster Building and Application Deployment ... - Medium",
+        "url": "https://medium.com/@vuhuy999999/kubernetes-cluster-building-and-application-deployment-with-integrated-monitoring-alerting-and-a38529c35b6b"
+      }
+    ]
+  },
   "2026-05-30_1004": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en Kubernetes",
