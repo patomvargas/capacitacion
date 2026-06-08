@@ -1,4 +1,28 @@
 {
+  "2026-06-08_1237": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y DevOps gestionar y configurar sus entornos de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Ansible.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura que se utiliza para gestionar y configurar entornos de manera eficiente. Permite a los administradores de sistemas y DevOps crear playbooks que definen las tareas que se deben realizar en los servidores y dispositivos de red. Los playbooks se pueden ejecutar de manera manual o automatizada, lo que permite a los equipos de TI trabajar de manera más eficiente y reducir los errores humanos.\n\nUna de las características más importantes de Ansible es su capacidad para trabajar con roles y colecciones. Los roles son conjuntos de tareas que se pueden reutilizar en diferentes playbooks, lo que permite a los administradores de sistemas crear bibliotecas de tareas comunes. Las colecciones son conjuntos de roles y módulos que se pueden instalar y gestionar de manera centralizada. Por ejemplo, se puede utilizar el comando `ansible-galaxy` para instalar una colección de roles y módulos relacionados con la gestión de bases de datos.\n\nOtra característica importante de Ansible es su capacidad para trabajar con vault. El vault es un mecanismo de cifrado que permite a los administradores de sistemas proteger sus claves y credenciales de manera segura. Se puede utilizar el comando `ansible-vault` para crear y gestionar claves y credenciales cifradas. Por ejemplo, se puede utilizar el comando `ansible-vault create` para crear un nuevo archivo de claves cifrado.\n\nEn cuanto a las novedades, se ha anunciado la versión 13.0.0 de la colección community.general, que incluye varias mejoras y correcciones de errores. También se ha anunciado la versión 14 de Ansible, que se espera que se lance en mayo de 2026. Los administradores de sistemas y DevOps pueden seguir las últimas novedades y best practices en la documentación oficial de Ansible y en la comunidad de Ansible.\n\nEn cuanto a las best practices, se recomienda seguir los principios de la automatización de infraestructura, como la creación de playbooks y roles reutilizables, la utilización de colecciones y módulos, y la protección de claves y credenciales con el vault. También se recomienda seguir las mejores prácticas de seguridad, como la utilización de claves SSH y la configuración de firewalls y redes privadas virtuales.\n\nFinalmente, se puede utilizar Ansible en conjunto con otras herramientas de automatización, como AWX y Tower, para crear entornos de automatización de infraestructura más complejos y escalables. Por ejemplo, se puede utilizar el comando `awx-manage` para crear y gestionar instancias de AWX.",
+    "sources": [
+      {
+        "title": "Community.General Release Notes",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/community/general/changelog.html"
+      },
+      {
+        "title": "The Bullhorn #230",
+        "url": "https://forum.ansible.com/t/the-bullhorn-230/45889"
+      },
+      {
+        "title": "ansible-community/awx-tui",
+        "url": "https://github.com/ansible-community/awx-tui"
+      },
+      {
+        "title": "Getting Started with Ansible",
+        "url": "https://medium.com/@deepikapm74/getting-started-with-ansible-a-practical-guide-to-modern-it-automation-111873eae327"
+      }
+    ]
+  },
   "2026-05-27_1142": {
     "slug": "ansible",
     "title": "Ansible: Mejoras y Novedades",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-07T10:33:14.438057+00:00</updated>
+  <updated>2026-06-08T12:39:17.418255+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -429,5 +429,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-27_1142.html"/>
     <summary>Ansible ha lanzado varias actualizaciones recientemente, incluyendo ansible-core v2.20.6, v2.21.0 y v2.18.17. Estas versiones incluyen mejoras y correcciones de errores para mejorar la estabilidad y el rendimiento de la herramienta.</summary>
     <published>2026-05-27T11:42:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-08_1237.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-06-08T12:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se utiliza para gestionar y configurar entornos de manera eficiente. Permite a los administradores de sistemas y DevOps crear playbooks que definen las tareas que se deben realizar en los servidores y dispositivos de red. Los playbooks se pueden ejecutar de manera manual o automatizada, lo que permite a los equipos de TI trabajar de manera más eficiente y reducir los errores humanos.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Ansible es su capacidad para trabajar con roles y colecciones. Los roles son conjuntos de tareas que se pueden reutilizar en diferentes playbooks, lo que permite a los administradores de sistemas crear bibliotecas de tareas comunes. Las colecciones son conjuntos de roles y módulos que se pueden instalar y gestionar de manera centralizada. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-galaxy&lt;/code&gt; para instalar una colección de roles y módulos relacionados con la gestión de bases de datos.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es su capacidad para trabajar con vault. El vault es un mecanismo de cifrado que permite a los administradores de sistemas proteger sus claves y credenciales de manera segura. Se puede utilizar el comando &lt;code&gt;ansible-vault&lt;/code&gt; para crear y gestionar claves y credenciales cifradas. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-vault create&lt;/code&gt; para crear un nuevo archivo de claves cifrado.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha anunciado la versión 13.0.0 de la colección community.general, que incluye varias mejoras y correcciones de errores. También se ha anunciado la versión 14 de Ansible, que se espera que se lance en mayo de 2026. Los administradores de sistemas y DevOps pueden seguir las últimas novedades y best practices en la documentación oficial de Ansible y en la comunidad de Ansible.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, se recomienda seguir los principios de la automatización de infraestructura, como la creación de playbooks y roles reutilizables, la utilización de colecciones y módulos, y la protección de claves y credenciales con el vault. También se recomienda seguir las mejores prácticas de seguridad, como la utilización de claves SSH y la configuración de firewalls y redes privadas virtuales.&lt;/p&gt;
+&lt;p&gt;Finalmente, se puede utilizar Ansible en conjunto con otras herramientas de automatización, como AWX y Tower, para crear entornos de automatización de infraestructura más complejos y escalables. Por ejemplo, se puede utilizar el comando &lt;code&gt;awx-manage&lt;/code&gt; para crear y gestionar instancias de AWX.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/collections/community/general/changelog.html"&gt;Community.General Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/the-bullhorn-230/45889"&gt;The Bullhorn #230&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ansible-community/awx-tui"&gt;ansible-community/awx-tui&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@deepikapm74/getting-started-with-ansible-a-practical-guide-to-modern-it-automation-111873eae327"&gt;Getting Started with Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-08_1237.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y DevOps gestionar y configurar sus entornos de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Ansible.</summary>
+    <published>2026-06-08T12:37:00+00:00</published>
   </entry>
 </feed>

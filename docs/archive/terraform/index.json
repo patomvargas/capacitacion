@@ -1,4 +1,32 @@
 {
+  "2026-06-08_1237": {
+    "slug": "terraform",
+    "title": "Terraform: Mejoras y Best Practices",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.",
+    "content": "Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera declarativa. Una de las características más importantes de Terraform es su capacidad para trabajar con diferentes proveedores de servicios en la nube, como AWS, Azure y Google Cloud. Para utilizar Terraform, es necesario instalar el comando `terraform` en el sistema y configurar el proveedor de servicios en la nube deseado.\n\nPara crear una infraestructura con Terraform, se debe crear un archivo de configuración que describa la infraestructura deseada. Por ejemplo, para crear una máquina virtual en Azure, se puede utilizar el siguiente código: `provider 'azurerm' { version = '2.34.0' }` y `resource 'azurerm_virtual_machine' 'example' { ... }`. Es importante mencionar que Terraform utiliza un estado para mantener un registro de la infraestructura creada, por lo que es importante utilizar el comando `terraform state` para gestionar el estado de la infraestructura.\n\nEn cuanto a las best practices, es importante mencionar que es recomendable utilizar módulos para organizar y reutilizar el código de Terraform. Los módulos son carpetas que contienen código de Terraform que se puede reutilizar en diferentes proyectos. Por ejemplo, se puede crear un módulo para crear una máquina virtual en Azure y reutilizarlo en diferentes proyectos. Otro consejo es utilizar el comando `terraform plan` para verificar los cambios antes de aplicarlos, y el comando `terraform apply` para aplicar los cambios.\n\nEn cuanto a las novedades, es importante mencionar que Terraform ha mejorado su compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 1.0 de Terraform es compatible con Terraform Plugin Protocol Version 6, que es compatible con Terraform versions 1.0 y superiores. También es importante mencionar que Terraform ha mejorado su seguridad, por ejemplo, con la adición de un mutex para evitar problemas de carrera en el estado de la infraestructura.\n\nEn resumen, Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera eficiente. Es importante utilizar best practices como la utilización de módulos y el comando `terraform plan` para verificar los cambios antes de aplicarlos. También es importante estar al tanto de las últimas novedades y mejoras de Terraform para aprovechar al máximo sus características.\n\nFinalmente, es importante mencionar que Terraform es una herramienta que se puede integrar con otras herramientas de DevOps, como Jenkins y GitLab, para automatizar la creación y gestión de infraestructuras. Por ejemplo, se puede utilizar el comando `terraform apply` en un pipeline de Jenkins para crear una infraestructura en la nube. También se puede utilizar Terraform con herramientas de seguridad, como Vault, para gestionar las credenciales y los secretos de la infraestructura.",
+    "sources": [
+      {
+        "title": "Terraform Issue #38595",
+        "url": "https://github.com/hashicorp/terraform/issues/38595"
+      },
+      {
+        "title": "Terraform Provider Helm v3 Upgrade Guide",
+        "url": "https://github.com/hashicorp/terraform-provider-helm/blob/main/docs/guides/v3-upgrade-guide.md"
+      },
+      {
+        "title": "Terraform Issue #38578",
+        "url": "https://github.com/hashicorp/terraform/issues/38578"
+      },
+      {
+        "title": "Terraform Provider AzureRM Issue #32362",
+        "url": "https://github.com/hashicorp/terraform-provider-azurerm/issues/32362"
+      },
+      {
+        "title": "Top 12 Policy as Code (PaC) Tools in 2026",
+        "url": "https://spacelift.io/blog/policy-as-code-tools"
+      }
+    ]
+  },
   "2026-06-04_1118": {
     "slug": "terraform",
     "title": "Terraform: Gestión de Infraestructura como Código",

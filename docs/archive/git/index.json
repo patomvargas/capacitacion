@@ -1,4 +1,24 @@
 {
+  "2026-06-08_1237": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para sysadmins y DevOps",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. También cubriremos algunas novedades y cambios recientes en el sistema.",
+    "content": "Git es una herramienta fundamental para el control de versiones y la colaboración en proyectos de software. Sin embargo, su uso efectivo requiere una buena comprensión de sus características y mejores prácticas. Una de las formas de mejorar la productividad con Git es utilizar `git worktree`, que permite crear múltiples directorios de trabajo a partir de un solo repositorio. Por ejemplo, se puede utilizar `git worktree add` para crear un nuevo directorio de trabajo para una rama específica.\n\nOtra herramienta útil es `git bisect`, que permite identificar el commit que introdujo un bug en el código. Esto se puede hacer utilizando `git bisect start` y `git bisect bad` para marcar el commit actual como defectuoso, y luego `git bisect good` para marcar un commit anterior como bueno. Git entonces realizará una búsqueda binaria para encontrar el commit que introdujo el bug.\n\nEn cuanto a los workflows, es importante establecer un proceso claro para la colaboración en el equipo. Esto puede incluir el uso de ramas de características, revisiones de código y merge requests. Por ejemplo, se puede utilizar `git checkout -b` para crear una nueva rama de características, y luego `git push` para subir los cambios al repositorio remoto.\n\nRecientemente, GitHub ha anunciado algunas novedades y cambios en su plataforma, incluyendo la migración de imágenes en GitHub Actions y la introducción de un nuevo formato de token para las aplicaciones de GitHub. Es importante estar al tanto de estos cambios para asegurarse de que los flujos de trabajo y las herramientas de Git estén actualizados y funcionen correctamente.\n\nEn resumen, Git es una herramienta poderosa que requiere una buena comprensión de sus características y mejores prácticas para ser utilizada de manera efectiva. Algunas de las herramientas y técnicas más útiles incluyen `git worktree`, `git bisect`, ramas de características y revisiones de código. También es importante estar al tanto de las novedades y cambios en la plataforma de GitHub para asegurarse de que los flujos de trabajo estén actualizados y funcionen correctamente.\n\nPara más información, se pueden consultar las fuentes oficiales de GitHub y otros recursos en línea. Algunos ejemplos de comandos Git útiles incluyen `git status`, `git log`, `git branch` y `git remote`. También es importante configurar correctamente el archivo `gitconfig` para asegurarse de que los ajustes de Git estén personalizados para las necesidades del equipo.",
+    "sources": [
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/"
+      },
+      {
+        "title": "GitHub Advisory Database",
+        "url": "https://github.com/advisories"
+      },
+      {
+        "title": "Dev.to",
+        "url": "https://dev.to/"
+      }
+    ]
+  },
   "2026-06-04_1118": {
     "slug": "git",
     "title": "Mejores prácticas de Git para profesionales",

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-06-08 1237 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que se utiliza para gestionar y configurar entornos de manera eficiente. Permite a los administradores de sistemas y DevOps crear playbooks que definen las tareas que se deben realizar en los servidores y dispositivos de red. Los playbooks se pueden ejecutar de manera manual o automatizada, lo que permite a los equipos de TI trabajar de manera más eficiente y reducir los errores humanos.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más importantes de Ansible es su capacidad para trabajar con roles y colecciones. Los roles son conjuntos de tareas que se pueden reutilizar en diferentes playbooks, lo que permite a los administradores de sistemas crear bibliotecas de tareas comunes. Las colecciones son conjuntos de roles y módulos que se pueden instalar y gestionar de manera centralizada. Por ejemplo, se puede utilizar el comando `ansible-galaxy` para instalar una colección de roles y módulos relacionados con la gestión de bases de datos.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Ansible es su capacidad para trabajar con vault. El vault es un mecanismo de cifrado que permite a los administradores de sistemas proteger sus claves y credenciales de manera segura. Se puede utilizar el comando `ansible-vault` para crear y gestionar claves y credenciales cifradas. Por ejemplo, se puede utilizar el comando `ansible-vault create` para crear un nuevo archivo de claves cifrado.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, se ha anunciado la versión 13.0.0 de la colección community.general, que incluye varias mejoras y correcciones de errores. También se ha anunciado la versión 14 de Ansible, que se espera que se lance en mayo de 2026. Los administradores de sistemas y DevOps pueden seguir las últimas novedades y best practices en la documentación oficial de Ansible y en la comunidad de Ansible.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, se recomienda seguir los principios de la automatización de infraestructura, como la creación de playbooks y roles reutilizables, la utilización de colecciones y módulos, y la protección de claves y credenciales con el vault. También se recomienda seguir las mejores prácticas de seguridad, como la utilización de claves SSH y la configuración de firewalls y redes privadas virtuales.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, se puede utilizar Ansible en conjunto con otras herramientas de automatización, como AWX y Tower, para crear entornos de automatización de infraestructura más complejos y escalables. Por ejemplo, se puede utilizar el comando `awx-manage` para crear y gestionar instancias de AWX.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.ansible.com/projects/ansible/latest/collections/community/general/changelog.html" target="_blank">Community.General Release Notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/the-bullhorn-230/45889" target="_blank">The Bullhorn #230</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/ansible-community/awx-tui" target="_blank">ansible-community/awx-tui</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@deepikapm74/getting-started-with-ansible-a-practical-guide-to-modern-it-automation-111873eae327" target="_blank">Getting Started with Ansible</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-05-27_1142.html">&larr; 2026-05-27 1142</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

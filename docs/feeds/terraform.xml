@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-07T10:33:14.436614+00:00</updated>
+  <updated>2026-06-08T12:39:17.415688+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -236,5 +236,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-04_1118.html"/>
     <summary>Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y administradores de sistemas crear y gestionar infraestructuras en la nube de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.</summary>
     <published>2026-06-04T11:18:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-08_1237.html</id>
+    <title>Terraform: Mejoras y Best Practices</title>
+    <updated>2026-06-08T12:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera declarativa. Una de las características más importantes de Terraform es su capacidad para trabajar con diferentes proveedores de servicios en la nube, como AWS, Azure y Google Cloud. Para utilizar Terraform, es necesario instalar el comando &lt;code&gt;terraform&lt;/code&gt; en el sistema y configurar el proveedor de servicios en la nube deseado.&lt;/p&gt;
+&lt;p&gt;Para crear una infraestructura con Terraform, se debe crear un archivo de configuración que describa la infraestructura deseada. Por ejemplo, para crear una máquina virtual en Azure, se puede utilizar el siguiente código: &lt;code&gt;provider 'azurerm' { version = '2.34.0' }&lt;/code&gt; y &lt;code&gt;resource 'azurerm_virtual_machine' 'example' { ... }&lt;/code&gt;. Es importante mencionar que Terraform utiliza un estado para mantener un registro de la infraestructura creada, por lo que es importante utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; para gestionar el estado de la infraestructura.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar que es recomendable utilizar módulos para organizar y reutilizar el código de Terraform. Los módulos son carpetas que contienen código de Terraform que se puede reutilizar en diferentes proyectos. Por ejemplo, se puede crear un módulo para crear una máquina virtual en Azure y reutilizarlo en diferentes proyectos. Otro consejo es utilizar el comando &lt;code&gt;terraform plan&lt;/code&gt; para verificar los cambios antes de aplicarlos, y el comando &lt;code&gt;terraform apply&lt;/code&gt; para aplicar los cambios.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, es importante mencionar que Terraform ha mejorado su compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 1.0 de Terraform es compatible con Terraform Plugin Protocol Version 6, que es compatible con Terraform versions 1.0 y superiores. También es importante mencionar que Terraform ha mejorado su seguridad, por ejemplo, con la adición de un mutex para evitar problemas de carrera en el estado de la infraestructura.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera eficiente. Es importante utilizar best practices como la utilización de módulos y el comando &lt;code&gt;terraform plan&lt;/code&gt; para verificar los cambios antes de aplicarlos. También es importante estar al tanto de las últimas novedades y mejoras de Terraform para aprovechar al máximo sus características.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform es una herramienta que se puede integrar con otras herramientas de DevOps, como Jenkins y GitLab, para automatizar la creación y gestión de infraestructuras. Por ejemplo, se puede utilizar el comando &lt;code&gt;terraform apply&lt;/code&gt; en un pipeline de Jenkins para crear una infraestructura en la nube. También se puede utilizar Terraform con herramientas de seguridad, como Vault, para gestionar las credenciales y los secretos de la infraestructura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38595"&gt;Terraform Issue #38595&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-helm/blob/main/docs/guides/v3-upgrade-guide.md"&gt;Terraform Provider Helm v3 Upgrade Guide&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38578"&gt;Terraform Issue #38578&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/32362"&gt;Terraform Provider AzureRM Issue #32362&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://spacelift.io/blog/policy-as-code-tools"&gt;Top 12 Policy as Code (PaC) Tools in 2026&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-08_1237.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.</summary>
+    <published>2026-06-08T12:37:00+00:00</published>
   </entry>
 </feed>

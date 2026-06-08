@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-07T10:33:14.434960+00:00</updated>
+  <updated>2026-06-08T12:39:17.413191+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -332,5 +332,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-04_1118.html"/>
     <summary>Este artículo presenta las mejores prácticas de Git para profesionales, cubriendo temas como workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se enfoca en la importancia de mantener un historial de commits limpio y predecible.</summary>
     <published>2026-06-04T11:18:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-06-08_1237.html</id>
+    <title>Mejores prácticas de Git para sysadmins y DevOps</title>
+    <updated>2026-06-08T12:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para el control de versiones y la colaboración en proyectos de software. Sin embargo, su uso efectivo requiere una buena comprensión de sus características y mejores prácticas. Una de las formas de mejorar la productividad con Git es utilizar &lt;code&gt;git worktree&lt;/code&gt;, que permite crear múltiples directorios de trabajo a partir de un solo repositorio. Por ejemplo, se puede utilizar &lt;code&gt;git worktree add&lt;/code&gt; para crear un nuevo directorio de trabajo para una rama específica.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git bisect&lt;/code&gt;, que permite identificar el commit que introdujo un bug en el código. Esto se puede hacer utilizando &lt;code&gt;git bisect start&lt;/code&gt; y &lt;code&gt;git bisect bad&lt;/code&gt; para marcar el commit actual como defectuoso, y luego &lt;code&gt;git bisect good&lt;/code&gt; para marcar un commit anterior como bueno. Git entonces realizará una búsqueda binaria para encontrar el commit que introdujo el bug.&lt;/p&gt;
+&lt;p&gt;En cuanto a los workflows, es importante establecer un proceso claro para la colaboración en el equipo. Esto puede incluir el uso de ramas de características, revisiones de código y merge requests. Por ejemplo, se puede utilizar &lt;code&gt;git checkout -b&lt;/code&gt; para crear una nueva rama de características, y luego &lt;code&gt;git push&lt;/code&gt; para subir los cambios al repositorio remoto.&lt;/p&gt;
+&lt;p&gt;Recientemente, GitHub ha anunciado algunas novedades y cambios en su plataforma, incluyendo la migración de imágenes en GitHub Actions y la introducción de un nuevo formato de token para las aplicaciones de GitHub. Es importante estar al tanto de estos cambios para asegurarse de que los flujos de trabajo y las herramientas de Git estén actualizados y funcionen correctamente.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que requiere una buena comprensión de sus características y mejores prácticas para ser utilizada de manera efectiva. Algunas de las herramientas y técnicas más útiles incluyen &lt;code&gt;git worktree&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt;, ramas de características y revisiones de código. También es importante estar al tanto de las novedades y cambios en la plataforma de GitHub para asegurarse de que los flujos de trabajo estén actualizados y funcionen correctamente.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de GitHub y otros recursos en línea. Algunos ejemplos de comandos Git útiles incluyen &lt;code&gt;git status&lt;/code&gt;, &lt;code&gt;git log&lt;/code&gt;, &lt;code&gt;git branch&lt;/code&gt; y &lt;code&gt;git remote&lt;/code&gt;. También es importante configurar correctamente el archivo &lt;code&gt;gitconfig&lt;/code&gt; para asegurarse de que los ajustes de Git estén personalizados para las necesidades del equipo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/"&gt;GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/advisories"&gt;GitHub Advisory Database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/"&gt;Dev.to&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-08_1237.html"/>
+    <summary>En este artículo, exploraremos algunas de las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. También cubriremos algunas novedades y cambios recientes en el sistema.</summary>
+    <published>2026-06-08T12:37:00+00:00</published>
   </entry>
 </feed>

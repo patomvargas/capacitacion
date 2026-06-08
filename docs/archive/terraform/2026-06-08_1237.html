@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Best Practices - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-08 1237 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera declarativa. Una de las características más importantes de Terraform es su capacidad para trabajar con diferentes proveedores de servicios en la nube, como AWS, Azure y Google Cloud. Para utilizar Terraform, es necesario instalar el comando `terraform` en el sistema y configurar el proveedor de servicios en la nube deseado.</p>
+            
+        
+            
+        
+            
+            <p>Para crear una infraestructura con Terraform, se debe crear un archivo de configuración que describa la infraestructura deseada. Por ejemplo, para crear una máquina virtual en Azure, se puede utilizar el siguiente código: `provider 'azurerm' { version = '2.34.0' }` y `resource 'azurerm_virtual_machine' 'example' { ... }`. Es importante mencionar que Terraform utiliza un estado para mantener un registro de la infraestructura creada, por lo que es importante utilizar el comando `terraform state` para gestionar el estado de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante mencionar que es recomendable utilizar módulos para organizar y reutilizar el código de Terraform. Los módulos son carpetas que contienen código de Terraform que se puede reutilizar en diferentes proyectos. Por ejemplo, se puede crear un módulo para crear una máquina virtual en Azure y reutilizarlo en diferentes proyectos. Otro consejo es utilizar el comando `terraform plan` para verificar los cambios antes de aplicarlos, y el comando `terraform apply` para aplicar los cambios.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, es importante mencionar que Terraform ha mejorado su compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 1.0 de Terraform es compatible con Terraform Plugin Protocol Version 6, que es compatible con Terraform versions 1.0 y superiores. También es importante mencionar que Terraform ha mejorado su seguridad, por ejemplo, con la adición de un mutex para evitar problemas de carrera en el estado de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta muy poderosa que permite a los usuarios crear y gestionar infraestructuras de manera eficiente. Es importante utilizar best practices como la utilización de módulos y el comando `terraform plan` para verificar los cambios antes de aplicarlos. También es importante estar al tanto de las últimas novedades y mejoras de Terraform para aprovechar al máximo sus características.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Terraform es una herramienta que se puede integrar con otras herramientas de DevOps, como Jenkins y GitLab, para automatizar la creación y gestión de infraestructuras. Por ejemplo, se puede utilizar el comando `terraform apply` en un pipeline de Jenkins para crear una infraestructura en la nube. También se puede utilizar Terraform con herramientas de seguridad, como Vault, para gestionar las credenciales y los secretos de la infraestructura.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38595" target="_blank">Terraform Issue #38595</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-helm/blob/main/docs/guides/v3-upgrade-guide.md" target="_blank">Terraform Provider Helm v3 Upgrade Guide</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38578" target="_blank">Terraform Issue #38578</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/32362" target="_blank">Terraform Provider AzureRM Issue #32362</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://spacelift.io/blog/policy-as-code-tools" target="_blank">Top 12 Policy as Code (PaC) Tools in 2026</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-04_1118.html">&larr; 2026-06-04 1118</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
