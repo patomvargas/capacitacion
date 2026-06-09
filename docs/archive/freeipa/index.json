@@ -1,4 +1,24 @@
 {
+  "2026-06-09_1121": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es un sistema de gestión de identidad y acceso que proporciona una forma segura y escalable de gestionar usuarios, grupos y permisos. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "\nFreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y HBAC. Permite a los administradores gestionar usuarios, grupos y permisos de forma centralizada y segura. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con sistema operativo compatible, como Red Hat Enterprise Linux o Fedora.\n\nUna vez instalado, se puede configurar FreeIPA para utilizar diferentes proveedores de autenticación, como Kerberos o LDAP. Por ejemplo, se puede utilizar el comando `ipa config-mod --defaultshell=/bin/bash` para establecer el shell por defecto para los usuarios. También se puede configurar el acceso a recursos específicos utilizando reglas de HBAC, como `ipa hbacrule-add --hostcategory=all --servicecategory=all --accessallowed`.\n\nFreeIPA también proporciona una interfaz de usuario web para gestionar usuarios, grupos y permisos. Se puede acceder a esta interfaz utilizando el comando `ipa ui` y luego acceder a la URL `https://<servidor_FreeIPA>/ipa/ui`. Desde allí, se pueden crear y gestionar usuarios, grupos y permisos de forma gráfica.\n\nEn cuanto a la seguridad, FreeIPA proporciona varias características para proteger la autenticación y el acceso a recursos. Por ejemplo, se puede utilizar el protocolo Kerberos para autenticar a los usuarios de forma segura. También se pueden configurar reglas de sudo para restringir el acceso a comandos específicos.\n\nFinalmente, es importante mencionar que FreeIPA se puede integrar con otros sistemas y herramientas, como Samba o TrueNAS. Por ejemplo, se puede utilizar el comando `ipa-samba-config` para configurar la integración con Samba.\n\n  ",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa-webui"
+      },
+      {
+        "title": "Red Hat Enterprise Linux Release Dates",
+        "url": "https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates"
+      },
+      {
+        "title": "Configuring FreeIPA | TrueNAS Documentation Hub",
+        "url": "https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"
+      }
+    ]
+  },
   "2026-06-05_1131": {
     "slug": "freeipa",
     "title": "Implementación de FreeIPA",

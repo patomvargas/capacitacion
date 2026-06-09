@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-08T12:39:17.380204+00:00</updated>
+  <updated>2026-06-09T11:22:46.057683+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -417,5 +417,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-05_1131.html"/>
     <summary>FreeIPA es un sistema de gestión de identidades que proporciona autenticación, autorización y administración de acceso. En este artículo, se presentan los pasos para implementar FreeIPA en un entorno de producción.</summary>
     <published>2026-06-05T11:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-09_1121.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-06-09T11:21:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y HBAC. Permite a los administradores gestionar usuarios, grupos y permisos de forma centralizada y segura. Para instalar FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; en una máquina con sistema operativo compatible, como Red Hat Enterprise Linux o Fedora.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar FreeIPA para utilizar diferentes proveedores de autenticación, como Kerberos o LDAP. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa config-mod --defaultshell=/bin/bash&lt;/code&gt; para establecer el shell por defecto para los usuarios. También se puede configurar el acceso a recursos específicos utilizando reglas de HBAC, como &lt;code&gt;ipa hbacrule-add --hostcategory=all --servicecategory=all --accessallowed&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;FreeIPA también proporciona una interfaz de usuario web para gestionar usuarios, grupos y permisos. Se puede acceder a esta interfaz utilizando el comando &lt;code&gt;ipa ui&lt;/code&gt; y luego acceder a la URL &lt;code&gt;https://&lt;servidor_FreeIPA&gt;/ipa/ui&lt;/code&gt;. Desde allí, se pueden crear y gestionar usuarios, grupos y permisos de forma gráfica.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona varias características para proteger la autenticación y el acceso a recursos. Por ejemplo, se puede utilizar el protocolo Kerberos para autenticar a los usuarios de forma segura. También se pueden configurar reglas de sudo para restringir el acceso a comandos específicos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que FreeIPA se puede integrar con otros sistemas y herramientas, como Samba o TrueNAS. Por ejemplo, se puede utilizar el comando &lt;code&gt;ipa-samba-config&lt;/code&gt; para configurar la integración con Samba.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa-webui"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates"&gt;Red Hat Enterprise Linux Release Dates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"&gt;Configuring FreeIPA | TrueNAS Documentation Hub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-09_1121.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidad y acceso que proporciona una forma segura y escalable de gestionar usuarios, grupos y permisos. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
+    <published>2026-06-09T11:21:00+00:00</published>
   </entry>
 </feed>

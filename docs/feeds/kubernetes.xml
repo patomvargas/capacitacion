@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-08T12:39:17.386002+00:00</updated>
+  <updated>2026-06-09T11:22:46.066991+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -457,5 +457,28 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-05_1131.html"/>
     <summary>La versión v1.36 de Kubernetes introduce nuevas características y mejoras en la gestión de clústeres. En este artículo, se presentan las novedades más destacadas y se proporcionan ejemplos prácticos de cómo aprovecharlas.</summary>
     <published>2026-06-05T11:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-09_1121.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-06-09T11:21:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En la versión 1.36, se han introducido varias mejoras y características nuevas, como la deprecación y eliminación de Service ExternalIPs. Esto significa que los usuarios deben migrar a otros métodos de configuración de IP externas, como el uso de &lt;code&gt;LoadBalancer&lt;/code&gt; o &lt;code&gt;Ingress&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para configurar un &lt;code&gt;LoadBalancer&lt;/code&gt; en Kubernetes, se puede utilizar el comando &lt;code&gt;kubectl expose&lt;/code&gt; con la opción &lt;code&gt;--type=LoadBalancer&lt;/code&gt;. Por ejemplo: &lt;code&gt;kubectl expose deployment mi-deployment --type=LoadBalancer --port=80&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la introducción de un nuevo métrico para la sincronización de rutas en el Cloud Controller Manager. Esto permite a los administradores monitorear y depurar problemas de conectividad en la nube. El métrico se puede consultar utilizando el comando &lt;code&gt;kubectl get --raw /apis/metrics.k8s.io/v1beta1/pods/&lt;nombre-del-pod&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que el controlador de entrada NGINX ha alcanzado su fin de vida (EOL) en 2026. Los usuarios deben migrar a otros controladores de entrada, como el controlador de entrada de Kubernetes nativo.&lt;/p&gt;
+&lt;p&gt;Para configurar el controlador de entrada nativo, se puede utilizar el comando &lt;code&gt;kubectl apply&lt;/code&gt; con un archivo de configuración YAML. Por ejemplo: &lt;code&gt;kubectl apply -f ingress-configuration.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Los sysadmins y DevOps engineers deben estar al tanto de estas novedades y best practices para asegurarse de que sus clústeres estén configurados de manera segura y eficiente.&lt;/p&gt;
+&lt;p&gt;La documentación oficial de Kubernetes es una excelente fuente de información para aprender más sobre estas características y cómo configurarlas. Además, existen muchas herramientas y recursos disponibles en la comunidad de Kubernetes para ayudar a los administradores a depurar y solucionar problemas en sus clústeres.&lt;/p&gt;
+&lt;p&gt;En cuanto a la autoscaling, Kubernetes ofrece varias opciones, como el uso de &lt;code&gt;HorizontalPodAutoscaler&lt;/code&gt; (HPA) o &lt;code&gt;ClusterAutoscaler&lt;/code&gt;. Estas herramientas permiten a los administradores ajustar automáticamente el número de réplicas de un pod o el número de nodos en un clúster en función de la carga y los recursos disponibles.&lt;/p&gt;
+&lt;p&gt;Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl autoscale&lt;/code&gt; para configurar la autoscaling para un deployment. Por ejemplo: &lt;code&gt;kubectl autoscale deployment mi-deployment --min=1 --max=10 --cpu-percent=50&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la autoscaling es una característica importante en Kubernetes que permite a los administradores ajustar automáticamente la capacidad de sus clústeres en función de la carga y los recursos disponibles.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/"&gt;Kubernetes v1.36: Deprecation and removal of Service ExternalIPs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/"&gt;Kubernetes v1.36: New Metric for Route Sync in the Cloud Controller&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/"&gt;Ingress Nginx EOL 2026! Time to upgrade. Native Header/URL Rewriting, RBAC, DUA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-09_1121.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan las últimas novedades y best practices para sysadmins y DevOps engineers.</summary>
+    <published>2026-06-09T11:21:00+00:00</published>
   </entry>
 </feed>
