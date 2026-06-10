@@ -1,4 +1,32 @@
 {
+  "2026-06-10_1141": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una herramienta de inteligencia artificial que se integra con Google Search y otros servicios de Google Cloud. Ofrece mejoras en la investigación y el análisis de datos.",
+    "content": "\nLa integración de Gemini con Google Search le da una ventaja real en tareas de investigación, ya que puede acceder a información actual y con fuentes confiables. Además, la herramienta ofrece mejoras en la investigación y el análisis de datos, lo que la hace ideal para tareas complejas.\n\nPara empezar a utilizar Gemini, es necesario configurar la OAuth 2.0 flow y deployar el Gmail Federated Connector, lo que se puede hacer utilizando `Terraform`. Esto se puede lograr ejecutando el comando `terraform apply` después de configurar los archivos de configuración necesarios.\n\nLa herramienta también ofrece la posibilidad de crear agentes personalizados utilizando el Gemini Enterprise Agent Platform. Esto se puede hacer utilizando el Agent Development Kit (ADK) y configurando los parámetros necesarios, como la opción `Enable logging of prompt inputs and response outputs`. Esto se puede hacer ejecutando el comando `gemini-agent configure` y siguiendo las instrucciones del sistema.\n\nAdemás, Gemini ofrece la posibilidad de integrarse con otros servicios de Google Cloud, como Vertex AI. Esto se puede hacer utilizando la API de Gemini y configurando los parámetros necesarios, como la opción `--project` y `--location`. Esto se puede hacer ejecutando el comando `gcloud ai gemini create` y siguiendo las instrucciones del sistema.\n\nEs importante mencionar que Gemini tiene algunas limitaciones y deprecaciones, como la desaparición del modelo `gemini-2.5-flash-lite-preview-09-2025` el 31 de marzo de 2026. Por lo tanto, es importante estar al tanto de las últimas novedades y cambios en la herramienta.\n\nEn resumen, Gemini es una herramienta poderosa que ofrece mejoras en la investigación y el análisis de datos, y se integra con otros servicios de Google Cloud. Es importante configurar la herramienta correctamente y estar al tanto de las últimas novedades y cambios.\n",
+    "sources": [
+      {
+        "title": "Release notes | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Gemini Code Assist release notes | Google for Developers",
+        "url": "https://developers.google.com/gemini-code-assist/resources/release-notes"
+      },
+      {
+        "title": "Gemini for Google Cloud release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/docs/release-notes"
+      },
+      {
+        "title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      },
+      {
+        "title": "Connecting Gemini Enterprise to Gmail using Terraform - Medium",
+        "url": "https://medium.com/google-cloud/connecting-gemini-enterprise-to-gmail-using-terraform-5b3092de85cb"
+      }
+    ]
+  },
   "2026-06-02_1209": {
     "slug": "gemini",
     "title": "Gemini: La Plataforma de Agentes Empresariales",

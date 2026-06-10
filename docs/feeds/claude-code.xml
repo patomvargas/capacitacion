@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-09T11:22:46.071854+00:00</updated>
+  <updated>2026-06-10T11:43:07.180126+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -408,5 +408,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-06_1009.html"/>
     <summary>Claude Code es una herramienta en constante evolución, con mejoras y nuevas características que permiten a los desarrolladores y sysadmins optimizar su flujo de trabajo. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo Claude Code.</summary>
     <published>2026-06-06T10:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-10_1141.html</id>
+    <title>Mejoras en Claude Code</title>
+    <updated>2026-06-10T11:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Claude Code incluye mejoras en su arquitectura, como la implementación de &lt;code&gt;sandbox.bwrapPath&lt;/code&gt; y &lt;code&gt;sandbox.socatPath&lt;/code&gt; para mejorar la seguridad en entornos Linux/WSL. Además, se han añadido nuevas funcionalidades como la capacidad de conectar a sesiones activas de Claude Code desde dispositivos móviles.&lt;/p&gt;
+&lt;p&gt;Para aprovechar estas funcionalidades, es importante configurar correctamente el archivo &lt;code&gt;CLAUDE.md&lt;/code&gt;. Un ejemplo de configuración básica es el siguiente: &lt;code&gt;subagents: { enable: true, skills: ['python', 'java'] }&lt;/code&gt;. Esto permite habilitar los subagentes y especificar las habilidades que se desean utilizar.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la implementación de &lt;code&gt;hooks&lt;/code&gt; para personalizar el flujo de trabajo. Por ejemplo, se puede utilizar el hook &lt;code&gt;pre-commit&lt;/code&gt; para ejecutar un script antes de realizar un commit: &lt;code&gt;hooks: { pre-commit: 'npm run test' }&lt;/code&gt;. Esto permite asegurarse de que los cambios se prueban antes de ser confirmados.&lt;/p&gt;
+&lt;p&gt;Además, se han añadido mejoras en la documentación y el soporte para los desarrolladores. La guía de best practices para &lt;code&gt;CLAUDE.md&lt;/code&gt; proporciona recomendaciones detalladas para configurar y utilizar Claude Code de manera efectiva. Por ejemplo, se recomienda utilizar un linter para mantener el código organizado y evitar errores.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejoras en Claude Code ofrecen una mayor flexibilidad y personalización para los desarrolladores. Al configurar correctamente el archivo &lt;code&gt;CLAUDE.md&lt;/code&gt; y utilizar las funcionalidades de &lt;code&gt;hooks&lt;/code&gt; y &lt;code&gt;subagents&lt;/code&gt;, es posible aprovechar al máximo las capacidades de esta herramienta.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Claude Code, que proporcionan documentación detallada y ejemplos de código para ayudar a los desarrolladores a empezar a trabajar con esta herramienta.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.claudelog.com/claude-code-changelog/"&gt;Claude Code Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.anthropic.com/engineering/how-we-contain-claude"&gt;How we contain Claude across products&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j"&gt;CLAUDE.md Best Practices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-10_1141.html"/>
+    <summary>Claude Code ha experimentado mejoras significativas en su arquitectura y funcionalidades. Este artículo explora las novedades y best practices para aprovechar al máximo esta herramienta.</summary>
+    <published>2026-06-10T11:41:00+00:00</published>
   </entry>
 </feed>

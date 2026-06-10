@@ -1,4 +1,24 @@
 {
+  "2026-06-10_1141": {
+    "slug": "claude-code",
+    "title": "Mejoras en Claude Code",
+    "summary": "Claude Code ha experimentado mejoras significativas en su arquitectura y funcionalidades. Este artículo explora las novedades y best practices para aprovechar al máximo esta herramienta.",
+    "content": "\nLa última versión de Claude Code incluye mejoras en su arquitectura, como la implementación de `sandbox.bwrapPath` y `sandbox.socatPath` para mejorar la seguridad en entornos Linux/WSL. Además, se han añadido nuevas funcionalidades como la capacidad de conectar a sesiones activas de Claude Code desde dispositivos móviles.\n\nPara aprovechar estas funcionalidades, es importante configurar correctamente el archivo `CLAUDE.md`. Un ejemplo de configuración básica es el siguiente: `subagents: { enable: true, skills: ['python', 'java'] }`. Esto permite habilitar los subagentes y especificar las habilidades que se desean utilizar.\n\nOtra mejora importante es la implementación de `hooks` para personalizar el flujo de trabajo. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar un script antes de realizar un commit: `hooks: { pre-commit: 'npm run test' }`. Esto permite asegurarse de que los cambios se prueban antes de ser confirmados.\n\nAdemás, se han añadido mejoras en la documentación y el soporte para los desarrolladores. La guía de best practices para `CLAUDE.md` proporciona recomendaciones detalladas para configurar y utilizar Claude Code de manera efectiva. Por ejemplo, se recomienda utilizar un linter para mantener el código organizado y evitar errores.\n\nEn resumen, las mejoras en Claude Code ofrecen una mayor flexibilidad y personalización para los desarrolladores. Al configurar correctamente el archivo `CLAUDE.md` y utilizar las funcionalidades de `hooks` y `subagents`, es posible aprovechar al máximo las capacidades de esta herramienta.\n\nPara más información, se pueden consultar las fuentes oficiales de Claude Code, que proporcionan documentación detallada y ejemplos de código para ayudar a los desarrolladores a empezar a trabajar con esta herramienta.",
+    "sources": [
+      {
+        "title": "Claude Code Changelog",
+        "url": "https://www.claudelog.com/claude-code-changelog/"
+      },
+      {
+        "title": "How we contain Claude across products",
+        "url": "https://www.anthropic.com/engineering/how-we-contain-claude"
+      },
+      {
+        "title": "CLAUDE.md Best Practices",
+        "url": "https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j"
+      }
+    ]
+  },
   "2026-06-06_1009": {
     "slug": "claude-code",
     "title": "Claude Code: Mejoras y Best Practices",
