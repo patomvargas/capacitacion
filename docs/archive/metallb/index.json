@@ -1,4 +1,24 @@
 {
+  "2026-06-11_1213": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en K8s",
+    "summary": "MetalLB es una herramienta de balanceo de carga para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, se exploran las características y configuraciones de MetalLB, incluyendo el modo L2, BGP y pools de direcciones IP.",
+    "content": "MetalLB es una herramienta de balanceo de carga para Kubernetes que permite asignar direcciones IP a servicios de carga de trabajo. Una de las características principales de MetalLB es su capacidad para funcionar en modo L2, lo que permite que los servicios de carga de trabajo se comuniquen directamente con los clientes sin necesidad de un enrutador adicional. Para configurar MetalLB en modo L2, se puede utilizar el comando `kubectl apply -f metallb-config.yaml` con un archivo de configuración que contenga las siguientes líneas: `address-pools: - name: default pool: 10.0.0.0/24`.\n\n \n\nOtra característica importante de MetalLB es su capacidad para funcionar en modo BGP, lo que permite que los servicios de carga de trabajo se anuncien en la red utilizando el protocolo BGP. Para configurar MetalLB en modo BGP, se puede utilizar el comando `kubectl apply -f metallb-bgp-config.yaml` con un archivo de configuración que contenga las siguientes líneas: `bgp: enabled: true peers: - peer-address: 10.0.0.1 peer-asn: 64512`.\n\n \n\nEn cuanto a la configuración de pools de direcciones IP, MetalLB proporciona una forma flexible de asignar direcciones IP a los servicios de carga de trabajo. Se puede crear un pool de direcciones IP utilizando el comando `kubectl apply -f metallb-pool.yaml` con un archivo de configuración que contenga las siguientes líneas: `apiVersion: metallb.io/v1beta1 kind: IPAddressPool metadata: name: default spec: addresses: - 10.0.0.0/24`.\n\n \n\nPara solucionar problemas comunes con MetalLB, se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los registros del controlador de MetalLB. También se puede utilizar el comando `kubectl get ipaddresspools` para ver la lista de pools de direcciones IP configurados.\n\n \n\nEn resumen, MetalLB es una herramienta poderosa para el balanceo de carga en Kubernetes que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los servicios de carga de trabajo. Al utilizar las características de modo L2, BGP y pools de direcciones IP, se puede crear un entorno de balanceo de carga flexible y escalable.",
+    "sources": [
+      {
+        "title": "Issue · metallb/metallb",
+        "url": "https://github.com/metallb/metallb/issues/3053"
+      },
+      {
+        "title": "Controller fails to start with speaker disabled #3068",
+        "url": "https://github.com/metallb/metallb/issues/3068"
+      },
+      {
+        "title": "Helm installation failed for v0.16.0 · Issue #3060",
+        "url": "https://github.com/metallb/metallb/issues/3060"
+      }
+    ]
+  },
   "2026-06-07_1032": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en Kubernetes",

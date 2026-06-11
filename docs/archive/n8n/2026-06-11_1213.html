@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Automatización de workflows con n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+    </div>
+
+    <h1>Automatización de workflows con n8n</h1>
+    <div class="meta">2026-06-11 1213 · n8n</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La automatización de workflows es un tema cada vez más importante en el mundo del desarrollo de software y la administración de sistemas. n8n es una herramienta que se está convirtiendo en una de las más populares en este campo, gracias a su flexibilidad y personalización. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más interesantes de n8n es su capacidad para crear nodos personalizados. Un nodo es un componente que se puede agregar a un flujo de trabajo para realizar una tarea específica. Por ejemplo, se puede crear un nodo para enviar correos electrónicos o para interactuar con una API. Para crear un nodo, se puede utilizar el comando `n8n-nodes-generator` y seguir las instrucciones del generador.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de n8n es su sistema de credenciales. Las credenciales son información sensible que se utiliza para autenticar a los usuarios y permitirles acceder a los recursos del sistema. En n8n, se pueden crear credenciales personalizadas para cada nodo y flujo de trabajo. Para crear una credencial, se puede utilizar el comando `n8n-credentials` y seguir las instrucciones del sistema.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, n8n ha sido objeto de algunas vulnerabilidades recientes. Una de ellas es la vulnerabilidad de polución de prototipos de nodos XML, que se puede mitigar deshabilitando el nodo XML y agregando `n8n-nodes-base.xml` a la variable de entorno `NODES_EXCLUDE`. Esto se puede hacer ejecutando el comando `export NODES_EXCLUDE=n8n-nodes-base.xml` antes de iniciar el servidor n8n.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que n8n tiene una comunidad activa y en constante crecimiento. La comunidad de n8n ofrece una variedad de recursos y tutoriales para ayudar a los desarrolladores y administradores de sistemas a aprender y mejorar sus habilidades con la herramienta. Algunos de los recursos más útiles incluyen la documentación oficial de n8n, los foros de la comunidad y los tutoriales en línea.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, n8n es una herramienta poderosa y flexible para la automatización de workflows. Con sus nodos personalizados, sistema de credenciales y comunidad activa, n8n es una excelente opción para cualquier desarrollador o administrador de sistemas que desee automatizar sus tareas y flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre n8n y cómo utilizarla, se puede consultar la documentación oficial y los recursos en línea. Algunos de los comandos más útiles para trabajar con n8n incluyen `n8n-nodes-generator`, `n8n-credentials` y `export NODES_EXCLUDE=n8n-nodes-base.xml`.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-wrwr-h859-xh2r" target="_blank">XML Node Prototype Pollution Patch Bypass</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://community.n8n.io/t/from-paper-to-digital-in-n8n-5-lessons-from-building-a-business-card-scanner-and-a-meeting-notes-digitizer/295955" target="_blank">From paper to digital in n8n: 5 lessons from building a business card scanner and a meeting notes digitizer</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://community.n8n.io/t/mcp-server-returns-wrong-generic-responses-in-n8n-chat/295948" target="_blank">MCP Server Returns Wrong/Generic Responses in n8n Chat - Questions</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.n8n.io/tag/news/" target="_blank">News on Workflow Automation: Latest from Product - n8n Blog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.n8n.io/author/jan/" target="_blank">Jan Oberhauser - n8n Blog</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-06-07_1032.html">&larr; 2026-06-07 1032</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

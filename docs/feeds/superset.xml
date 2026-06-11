@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-10T11:43:07.192389+00:00</updated>
+  <updated>2026-06-11T12:13:57.988645+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -461,5 +461,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-07_1032.html"/>
     <summary>Superset es una herramienta de visualización de datos que ofrece una variedad de características para crear dashboards personalizados. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
     <published>2026-06-07T10:32:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-06-11_1213.html</id>
+    <title>Superset: Herramienta de Inteligencia Empresarial</title>
+    <updated>2026-06-11T12:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite crear dashboards y gráficos personalizados para visualizar datos. Para instalar Superset, se puede utilizar el paquete &lt;code&gt;apache-superset&lt;/code&gt; disponible en PyPI, utilizando el comando &lt;code&gt;pip install apache-superset&lt;/code&gt;. Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante el comando &lt;code&gt;superset run -p 8088&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La creación de dashboards en Superset se puede realizar mediante la interfaz de usuario, donde se pueden agregar gráficos y tablas personalizadas. También se puede utilizar SQL Lab para ejecutar consultas SQL y visualizar los resultados en un gráfico. Para crear un nuevo dashboard, se puede utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para crear la base de datos y luego acceder a la interfaz de usuario para agregar los componentes deseados.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar la configuración de la herramienta. También se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para ver la configuración actual de la herramienta. Para agregar un nuevo usuario, se puede utilizar el comando &lt;code&gt;superset user add&lt;/code&gt; seguido del nombre de usuario y la contraseña.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, se recomienda utilizar un entorno de desarrollo separado para probar y depurar los dashboards antes de implementarlos en producción. También se recomienda utilizar un sistema de control de versiones como Git para mantener un registro de los cambios realizados en la configuración de Superset.&lt;/p&gt;
+&lt;p&gt;Para utilizar Superset con OAuth, se puede configurar la herramienta para utilizar un proveedor de autenticación externo. Se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para ver la configuración actual de la herramienta y agregar la configuración necesaria para OAuth.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se recomienda utilizar un firewall y un sistema de detección de intrusiones para proteger la instancia de Superset. También se recomienda utilizar un sistema de autenticación y autorización para controlar el acceso a la herramienta.&lt;/p&gt;
+&lt;p&gt;Finalmente, se puede utilizar Superset con otras herramientas de inteligencia empresarial como Tableau o Power BI. Se puede utilizar el comando &lt;code&gt;superset export&lt;/code&gt; para exportar los datos de Superset a un formato compatible con estas herramientas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/"&gt;Apache Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pypi.org/project/apache-superset/"&gt;PyPI - Apache Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset"&gt;Superset en GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-11_1213.html"/>
+    <summary>Superset es una herramienta de inteligencia empresarial que permite crear dashboards y gráficos personalizados. En este artículo, se presentan las características y configuraciones de Superset, así como algunas best practices para su uso.</summary>
+    <published>2026-06-11T12:13:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,32 @@
 {
+  "2026-06-11_1213": {
+    "slug": "n8n",
+    "title": "Automatización de workflows con n8n",
+    "summary": "n8n es una herramienta de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.",
+    "content": "\nLa automatización de workflows es un tema cada vez más importante en el mundo del desarrollo de software y la administración de sistemas. n8n es una herramienta que se está convirtiendo en una de las más populares en este campo, gracias a su flexibilidad y personalización. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.\n\nUna de las características más interesantes de n8n es su capacidad para crear nodos personalizados. Un nodo es un componente que se puede agregar a un flujo de trabajo para realizar una tarea específica. Por ejemplo, se puede crear un nodo para enviar correos electrónicos o para interactuar con una API. Para crear un nodo, se puede utilizar el comando `n8n-nodes-generator` y seguir las instrucciones del generador.\n\nOtra característica importante de n8n es su sistema de credenciales. Las credenciales son información sensible que se utiliza para autenticar a los usuarios y permitirles acceder a los recursos del sistema. En n8n, se pueden crear credenciales personalizadas para cada nodo y flujo de trabajo. Para crear una credencial, se puede utilizar el comando `n8n-credentials` y seguir las instrucciones del sistema.\n\nEn cuanto a la seguridad, n8n ha sido objeto de algunas vulnerabilidades recientes. Una de ellas es la vulnerabilidad de polución de prototipos de nodos XML, que se puede mitigar deshabilitando el nodo XML y agregando `n8n-nodes-base.xml` a la variable de entorno `NODES_EXCLUDE`. Esto se puede hacer ejecutando el comando `export NODES_EXCLUDE=n8n-nodes-base.xml` antes de iniciar el servidor n8n.\n\nFinalmente, es importante mencionar que n8n tiene una comunidad activa y en constante crecimiento. La comunidad de n8n ofrece una variedad de recursos y tutoriales para ayudar a los desarrolladores y administradores de sistemas a aprender y mejorar sus habilidades con la herramienta. Algunos de los recursos más útiles incluyen la documentación oficial de n8n, los foros de la comunidad y los tutoriales en línea.\n\nEn resumen, n8n es una herramienta poderosa y flexible para la automatización de workflows. Con sus nodos personalizados, sistema de credenciales y comunidad activa, n8n es una excelente opción para cualquier desarrollador o administrador de sistemas que desee automatizar sus tareas y flujos de trabajo.\n\nPara obtener más información sobre n8n y cómo utilizarla, se puede consultar la documentación oficial y los recursos en línea. Algunos de los comandos más útiles para trabajar con n8n incluyen `n8n-nodes-generator`, `n8n-credentials` y `export NODES_EXCLUDE=n8n-nodes-base.xml`.\n\n  ",
+    "sources": [
+      {
+        "title": "XML Node Prototype Pollution Patch Bypass",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-wrwr-h859-xh2r"
+      },
+      {
+        "title": "From paper to digital in n8n: 5 lessons from building a business card scanner and a meeting notes digitizer",
+        "url": "https://community.n8n.io/t/from-paper-to-digital-in-n8n-5-lessons-from-building-a-business-card-scanner-and-a-meeting-notes-digitizer/295955"
+      },
+      {
+        "title": "MCP Server Returns Wrong/Generic Responses in n8n Chat - Questions",
+        "url": "https://community.n8n.io/t/mcp-server-returns-wrong-generic-responses-in-n8n-chat/295948"
+      },
+      {
+        "title": "News on Workflow Automation: Latest from Product - n8n Blog",
+        "url": "https://blog.n8n.io/tag/news/"
+      },
+      {
+        "title": "Jan Oberhauser - n8n Blog",
+        "url": "https://blog.n8n.io/author/jan/"
+      }
+    ]
+  },
   "2026-06-07_1032": {
     "slug": "n8n",
     "title": "Automatización de Workflows con n8n",
