@@ -1,4 +1,24 @@
 {
+  "2026-06-12_1147": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados. Se cubren también algunas novedades y mejoras en la herramienta.",
+    "content": "Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, muchos usuarios solo utilizan una pequeña parte de su funcionalidad. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados. \n\nUn ejemplo de comando avanzado es `git rebase -i`, que permite reorganizar y fusionar commits de manera interactiva. Otro comando útil es `git bisect`, que ayuda a identificar el commit que introduce un bug en el código. \n\nAdemás, se pueden utilizar hooks para automatizar tareas y validar cambios en el código. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar pruebas unitarias antes de realizar un commit. \n\nOtra característica útil de Git es la posibilidad de utilizar worktrees, que permiten trabajar en diferentes ramas de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add`. \n\nEn cuanto a novedades, se han anunciado cambios en la forma en que se utilizan las imágenes en GitHub Actions. A partir de ahora, las etiquetas `windows-latest` y `windows-2025` se migrarán a utilizar Visual Studio 2026 por defecto. \n\nFinalmente, es importante mencionar que la seguridad es un aspecto fundamental al trabajar con Git. Se deben tomar medidas para proteger el código y los datos, como utilizar tokens de instalación de aplicaciones y validar la seguridad de los agentes de codificación de terceros.",
+    "sources": [
+      {
+        "title": "GitHub Actions: Upcoming image migrations",
+        "url": "https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"
+      },
+      {
+        "title": "Git Survival Guide: Commands You Should Actually Understand",
+        "url": "https://dev.to/noriuki/git-survival-guide-commands-you-should-actually-understand-h8h"
+      },
+      {
+        "title": "A Practical Git-First Deployment Orchestration",
+        "url": "https://dev.to/therizwansaleem/a-practical-git-first-deployment-orchestration-1k7l"
+      }
+    ]
+  },
   "2026-06-08_1237": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",

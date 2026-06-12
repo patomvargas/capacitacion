@@ -1,4 +1,28 @@
 {
+  "2026-06-12_1147": {
+    "slug": "terraform",
+    "title": "Terraform: Gestión de Infraestructura como Código",
+    "summary": "Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y sysadmins automatizar la creación y gestión de infraestructuras en la nube y en entornos locales. En este artículo, se presentan las últimas novedades y best practices para trabajar con Terraform.",
+    "content": "\nTerraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y sysadmins automatizar la creación y gestión de infraestructuras en la nube y en entornos locales. Con Terraform, se pueden definir infraestructuras complejas utilizando un lenguaje de configuración simple y declarativo.\n\nUna de las características más importantes de Terraform es su capacidad para trabajar con proveedores de infraestructura en la nube, como AWS, Azure y Google Cloud. Para trabajar con estos proveedores, se pueden utilizar módulos de Terraform, como el módulo `terraform-azurerm-aks` para deployar clústeres de AKS en Azure. Por ejemplo, para deployar un clúster de AKS, se puede utilizar el siguiente comando: `terraform apply -var 'resource_group_name=example' -var 'location=westus2'`.\n\nOtra característica importante de Terraform es su capacidad para gestionar el estado de la infraestructura. Para ello, se puede utilizar el comando `terraform state` para ver el estado actual de la infraestructura, y el comando `terraform state rm` para eliminar recursos de la infraestructura. Además, se pueden utilizar workspaces para gestionar diferentes versiones de la infraestructura.\n\nEn cuanto a las novedades, recientemente se ha lanzado una nueva versión del proveedor de Terraform para Backstage, que permite a los equipos de DevOps y sysadmins gestionar la infraestructura de Backstage de manera más eficiente. También se han publicado artículos sobre cómo utilizar Terraform con herramientas de codificación asistida por IA, como Claude Code, para mejorar la velocidad y la eficiencia en la creación de infraestructuras.\n\nPara importar recursos existentes en Terraform, se puede utilizar el comando `terraform import`. Por ejemplo, para importar un recurso de Azure, se puede utilizar el siguiente comando: `terraform import azurerm_resource_group.example /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/example`. Además, se pueden utilizar bloques `moved` para reorganizar la infraestructura y mejorar su estructura.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, que permite a los equipos de DevOps y sysadmins automatizar la creación y gestión de infraestructuras en la nube y en entornos locales. Con sus características de proveedores, módulos, gestión de estado, workspaces, importación y bloques `moved`, Terraform es una herramienta esencial para cualquier equipo de DevOps y sysadmins que desee mejorar la eficiencia y la velocidad en la creación y gestión de infraestructuras.\n\n",
+    "sources": [
+      {
+        "title": "Terraform Issue #38595",
+        "url": "https://github.com/hashicorp/terraform/issues/38595"
+      },
+      {
+        "title": "Terraform Module for AKS",
+        "url": "https://github.com/Azure/terraform-azurerm-aks/releases"
+      },
+      {
+        "title": "Terraform Provider for Backstage",
+        "url": "https://github.com/datolabs-io/terraform-provider-backstage"
+      },
+      {
+        "title": "Terraform en 10 días",
+        "url": "https://medium.com/@thetechfusionist/terraform-in-10-days-from-beginner-to-building-real-infrastructure-4ee1da613188"
+      }
+    ]
+  },
   "2026-06-08_1237": {
     "slug": "terraform",
     "title": "Terraform: Mejoras y Best Practices",

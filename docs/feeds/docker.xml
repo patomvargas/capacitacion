@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-11T12:13:57.997414+00:00</updated>
+  <updated>2026-06-12T11:48:20.218765+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -328,5 +328,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-08_1237.html"/>
     <summary>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, y en este artículo se presentan las mejores prácticas y novedades para su uso eficiente. Se cubren temas como multi-stage builds, compose, networking, seguridad y BuildKit.</summary>
     <published>2026-06-08T12:37:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-06-12_1147.html</id>
+    <title>Docker: Mejoras y Best Practices</title>
+    <updated>2026-06-12T11:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;En los últimos tiempos, Docker ha anunciado varias mejoras y novedades en su plataforma. Una de las más destacadas es la introducción de Docker Hardened System Packages (HSP), que proporcionan una capa adicional de seguridad para los contenedores. Para aprovechar esta característica, se puede utilizar el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--security-opt&lt;/code&gt; para habilitar las características de seguridad avanzadas.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Docker proporciona varias herramientas y características para proteger los contenedores y los datos que se almacenan en ellos. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker exec&lt;/code&gt; con la opción &lt;code&gt;-u&lt;/code&gt; para ejecutar comandos dentro de un contenedor con un usuario específico, lo que ayuda a reducir los riesgos de seguridad.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Docker es la capacidad de crear contenedores con multi-stage builds. Esto permite crear imágenes de contenedores más pequeñas y eficientes, lo que reduce el tiempo de descarga y ejecución. Para crear un contenedor con multi-stage build, se puede utilizar el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para especificar la etapa de construcción que se desea utilizar.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar la importancia de utilizar Docker Compose para orquestar y gestionar los contenedores. Docker Compose proporciona una forma sencilla de definir y ejecutar múltiples contenedores de manera simultánea, lo que facilita la creación de entornos de desarrollo y producción. Para utilizar Docker Compose, se puede crear un archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; que defina los servicios y contenedores que se desean ejecutar.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de utilizar registros de contenedores seguros para almacenar y distribuir las imágenes de contenedores. Docker proporciona varios registros de contenedores, como Docker Hub, que ofrecen características de seguridad avanzadas para proteger las imágenes de contenedores. Para utilizar un registro de contenedores seguro, se puede utilizar el comando &lt;code&gt;docker login&lt;/code&gt; para autenticarse en el registro y luego utilizar el comando &lt;code&gt;docker push&lt;/code&gt; para subir las imágenes de contenedores al registro.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Al aprovechar las últimas novedades y best practices, los desarrolladores y administradores de sistemas pueden crear entornos de desarrollo y producción más seguros y eficientes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/dhi/release-notes/platform/"&gt;Docker Hardened Images release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/ai-coding-agent-horror-stories-security-risks/"&gt;AI Coding Agent Horror Stories: Security Risks Explained - Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/google-cloud/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-bdb3bde0803f"&gt;Docker Bake Tutorial: Replace Bash Scripts with Declarative Builds&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-12_1147.html"/>
+    <summary>Docker sigue evolucionando con mejoras en seguridad y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.</summary>
+    <published>2026-06-12T11:47:00+00:00</published>
   </entry>
 </feed>

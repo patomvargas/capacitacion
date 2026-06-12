@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docker: Mejoras y Best Practices - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+    </div>
+
+    <h1>Docker: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-12 1147 · Docker</div>
+
+    <div class="content">
+        
+        
+            
+            <p>En los últimos tiempos, Docker ha anunciado varias mejoras y novedades en su plataforma. Una de las más destacadas es la introducción de Docker Hardened System Packages (HSP), que proporcionan una capa adicional de seguridad para los contenedores. Para aprovechar esta característica, se puede utilizar el comando `docker build` con la opción `--security-opt` para habilitar las características de seguridad avanzadas.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Docker proporciona varias herramientas y características para proteger los contenedores y los datos que se almacenan en ellos. Por ejemplo, se puede utilizar el comando `docker exec` con la opción `-u` para ejecutar comandos dentro de un contenedor con un usuario específico, lo que ayuda a reducir los riesgos de seguridad.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Docker es la capacidad de crear contenedores con multi-stage builds. Esto permite crear imágenes de contenedores más pequeñas y eficientes, lo que reduce el tiempo de descarga y ejecución. Para crear un contenedor con multi-stage build, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa de construcción que se desea utilizar.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante mencionar la importancia de utilizar Docker Compose para orquestar y gestionar los contenedores. Docker Compose proporciona una forma sencilla de definir y ejecutar múltiples contenedores de manera simultánea, lo que facilita la creación de entornos de desarrollo y producción. Para utilizar Docker Compose, se puede crear un archivo `docker-compose.yml` que defina los servicios y contenedores que se desean ejecutar.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar la importancia de utilizar registros de contenedores seguros para almacenar y distribuir las imágenes de contenedores. Docker proporciona varios registros de contenedores, como Docker Hub, que ofrecen características de seguridad avanzadas para proteger las imágenes de contenedores. Para utilizar un registro de contenedores seguro, se puede utilizar el comando `docker login` para autenticarse en el registro y luego utilizar el comando `docker push` para subir las imágenes de contenedores al registro.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Al aprovechar las últimas novedades y best practices, los desarrolladores y administradores de sistemas pueden crear entornos de desarrollo y producción más seguros y eficientes.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.docker.com/dhi/release-notes/platform/" target="_blank">Docker Hardened Images release notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.docker.com/blog/ai-coding-agent-horror-stories-security-risks/" target="_blank">AI Coding Agent Horror Stories: Security Risks Explained - Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/google-cloud/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-bdb3bde0803f" target="_blank">Docker Bake Tutorial: Replace Bash Scripts with Declarative Builds</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-08_1237.html">&larr; 2026-06-08 1237</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

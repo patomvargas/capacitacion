@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-11T12:13:57.999056+00:00</updated>
+  <updated>2026-06-12T11:48:20.221696+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -351,5 +351,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-08_1237.html"/>
     <summary>En este artículo, exploraremos algunas de las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect y worktrees. También cubriremos algunas novedades y cambios recientes en el sistema.</summary>
     <published>2026-06-08T12:37:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-06-12_1147.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-06-12T11:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, muchos usuarios solo utilizan una pequeña parte de su funcionalidad. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados.&lt;/p&gt;
+&lt;p&gt;Un ejemplo de comando avanzado es &lt;code&gt;git rebase -i&lt;/code&gt;, que permite reorganizar y fusionar commits de manera interactiva. Otro comando útil es &lt;code&gt;git bisect&lt;/code&gt;, que ayuda a identificar el commit que introduce un bug en el código.&lt;/p&gt;
+&lt;p&gt;Además, se pueden utilizar hooks para automatizar tareas y validar cambios en el código. Por ejemplo, se puede utilizar el hook &lt;code&gt;pre-commit&lt;/code&gt; para ejecutar pruebas unitarias antes de realizar un commit.&lt;/p&gt;
+&lt;p&gt;Otra característica útil de Git es la posibilidad de utilizar worktrees, que permiten trabajar en diferentes ramas de manera simultánea. Para crear un worktree, se puede utilizar el comando &lt;code&gt;git worktree add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a novedades, se han anunciado cambios en la forma en que se utilizan las imágenes en GitHub Actions. A partir de ahora, las etiquetas &lt;code&gt;windows-latest&lt;/code&gt; y &lt;code&gt;windows-2025&lt;/code&gt; se migrarán a utilizar Visual Studio 2026 por defecto.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad es un aspecto fundamental al trabajar con Git. Se deben tomar medidas para proteger el código y los datos, como utilizar tokens de instalación de aplicaciones y validar la seguridad de los agentes de codificación de terceros.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/"&gt;GitHub Actions: Upcoming image migrations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/noriuki/git-survival-guide-commands-you-should-actually-understand-h8h"&gt;Git Survival Guide: Commands You Should Actually Understand&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/therizwansaleem/a-practical-git-first-deployment-orchestration-1k7l"&gt;A Practical Git-First Deployment Orchestration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-12_1147.html"/>
+    <summary>En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados. Se cubren también algunas novedades y mejoras en la herramienta.</summary>
+    <published>2026-06-12T11:47:00+00:00</published>
   </entry>
 </feed>

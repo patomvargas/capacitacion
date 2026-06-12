@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-11T12:13:57.995499+00:00</updated>
+  <updated>2026-06-12T11:48:20.215534+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -398,5 +398,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-04_1118.html"/>
     <summary>Mejora del rendimiento de PostgreSQL mediante la configuración de índices, replicación y copias de seguridad. Se presentan ejemplos prácticos y comandos para mejorar la eficiencia de la base de datos.</summary>
     <published>2026-06-04T11:18:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-12_1147.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-06-12T11:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es una base de datos relacional de código abierto que ofrece alta performance y escalabilidad. Para optimizar el rendimiento de PostgreSQL, es importante configurar adecuadamente los índices. Los índices permiten acelerar las consultas y reducir el tiempo de respuesta. Se pueden crear índices utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo, para crear un índice en la columna &lt;code&gt;id&lt;/code&gt; de la tabla &lt;code&gt;usuarios&lt;/code&gt;, se puede utilizar el siguiente comando: &lt;code&gt;CREATE INDEX idx_id ON usuarios (id)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra forma de mejorar el rendimiento de PostgreSQL. La replicación permite mantener una copia exacta de la base de datos en un servidor secundario, lo que permite distribuir la carga y mejorar la disponibilidad. Se puede configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt;. Por ejemplo, para realizar una copia de seguridad de la base de datos &lt;code&gt;mi_base_de_datos&lt;/code&gt; en el servidor &lt;code&gt;servidor_secundario&lt;/code&gt;, se puede utilizar el siguiente comando: &lt;code&gt;pg_basebackup -h servidor_secundario -D /var/lib/postgresql/13/main -U postgres -d mi_base_de_datos&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La realización de copias de seguridad es fundamental para garantizar la integridad de los datos. Se pueden realizar copias de seguridad utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt;. Por ejemplo, para realizar una copia de seguridad de la base de datos &lt;code&gt;mi_base_de_datos&lt;/code&gt; en un archivo llamado &lt;code&gt;mi_base_de_datos.sql&lt;/code&gt;, se puede utilizar el siguiente comando: &lt;code&gt;pg_dump -U postgres -d mi_base_de_datos &gt; mi_base_de_datos.sql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante monitorear el rendimiento de la base de datos utilizando herramientas como &lt;code&gt;pg_stat&lt;/code&gt;. &lt;code&gt;pg_stat&lt;/code&gt; proporciona información detallada sobre el rendimiento de la base de datos, incluyendo el tiempo de respuesta, el número de consultas y el uso de recursos. Se puede acceder a &lt;code&gt;pg_stat&lt;/code&gt; utilizando el comando &lt;code&gt;psql -U postgres -d mi_base_de_datos -c 'SELECT * FROM pg_stat_activity;'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización del rendimiento de PostgreSQL requiere una configuración adecuada de los índices, la replicación y la realización de copias de seguridad. Además, es importante monitorear el rendimiento de la base de datos utilizando herramientas como &lt;code&gt;pg_stat&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la versión 19 de PostgreSQL ya está disponible en beta, lo que ofrece nuevas características y mejoras en el rendimiento. Se puede descargar la versión beta desde el sitio web oficial de PostgreSQL.&lt;/p&gt;
+&lt;p&gt;La versión 14 de PostgreSQL dejará de recibir actualizaciones en noviembre de 2026, por lo que se recomienda actualizar a una versión más reciente lo antes posible.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/PostgreSQL"&gt;PostgreSQL - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;PostgreSQL: News Archive&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-184-1710-1614-1518-and-1423-released-3297/"&gt;PostgreSQL: PostgreSQL 18.4, 17.10, 16.14, 15.18, and 14.23 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-12_1147.html"/>
+    <summary>PostgreSQL es una base de datos relacional de código abierto que ofrece alta performance y escalabilidad. En este artículo, se presentan algunas mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de índices, la replicación y la realización de copias de seguridad.</summary>
+    <published>2026-06-12T11:47:00+00:00</published>
   </entry>
 </feed>

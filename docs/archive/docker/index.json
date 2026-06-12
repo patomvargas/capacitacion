@@ -1,4 +1,24 @@
 {
+  "2026-06-12_1147": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker sigue evolucionando con mejoras en seguridad y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.",
+    "content": "En los últimos tiempos, Docker ha anunciado varias mejoras y novedades en su plataforma. Una de las más destacadas es la introducción de Docker Hardened System Packages (HSP), que proporcionan una capa adicional de seguridad para los contenedores. Para aprovechar esta característica, se puede utilizar el comando `docker build` con la opción `--security-opt` para habilitar las características de seguridad avanzadas.\n\n \nLa seguridad es un aspecto fundamental en el desarrollo y despliegue de aplicaciones en contenedores. Docker proporciona varias herramientas y características para proteger los contenedores y los datos que se almacenan en ellos. Por ejemplo, se puede utilizar el comando `docker exec` con la opción `-u` para ejecutar comandos dentro de un contenedor con un usuario específico, lo que ayuda a reducir los riesgos de seguridad.\n\n \nOtra característica importante de Docker es la capacidad de crear contenedores con multi-stage builds. Esto permite crear imágenes de contenedores más pequeñas y eficientes, lo que reduce el tiempo de descarga y ejecución. Para crear un contenedor con multi-stage build, se puede utilizar el comando `docker build` con la opción `--target` para especificar la etapa de construcción que se desea utilizar.\n\n \nEn cuanto a las best practices, es importante mencionar la importancia de utilizar Docker Compose para orquestar y gestionar los contenedores. Docker Compose proporciona una forma sencilla de definir y ejecutar múltiples contenedores de manera simultánea, lo que facilita la creación de entornos de desarrollo y producción. Para utilizar Docker Compose, se puede crear un archivo `docker-compose.yml` que defina los servicios y contenedores que se desean ejecutar.\n\n \nFinalmente, es importante destacar la importancia de utilizar registros de contenedores seguros para almacenar y distribuir las imágenes de contenedores. Docker proporciona varios registros de contenedores, como Docker Hub, que ofrecen características de seguridad avanzadas para proteger las imágenes de contenedores. Para utilizar un registro de contenedores seguro, se puede utilizar el comando `docker login` para autenticarse en el registro y luego utilizar el comando `docker push` para subir las imágenes de contenedores al registro.\n\n \nEn resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Al aprovechar las últimas novedades y best practices, los desarrolladores y administradores de sistemas pueden crear entornos de desarrollo y producción más seguros y eficientes.",
+    "sources": [
+      {
+        "title": "Docker Hardened Images release notes",
+        "url": "https://docs.docker.com/dhi/release-notes/platform/"
+      },
+      {
+        "title": "AI Coding Agent Horror Stories: Security Risks Explained - Docker",
+        "url": "https://www.docker.com/blog/ai-coding-agent-horror-stories-security-risks/"
+      },
+      {
+        "title": "Docker Bake Tutorial: Replace Bash Scripts with Declarative Builds",
+        "url": "https://medium.com/google-cloud/docker-bake-in-practice-part-1-from-bash-scripts-to-declarative-builds-bdb3bde0803f"
+      }
+    ]
+  },
   "2026-06-08_1237": {
     "slug": "docker",
     "title": "Docker: Mejores prácticas y novedades",

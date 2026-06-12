@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Gestión de Infraestructura como Código - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Gestión de Infraestructura como Código</h1>
+    <div class="meta">2026-06-12 1147 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Terraform es una herramienta de gestión de infraestructura como código que permite a los equipos de DevOps y sysadmins automatizar la creación y gestión de infraestructuras en la nube y en entornos locales. Con Terraform, se pueden definir infraestructuras complejas utilizando un lenguaje de configuración simple y declarativo.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más importantes de Terraform es su capacidad para trabajar con proveedores de infraestructura en la nube, como AWS, Azure y Google Cloud. Para trabajar con estos proveedores, se pueden utilizar módulos de Terraform, como el módulo `terraform-azurerm-aks` para deployar clústeres de AKS en Azure. Por ejemplo, para deployar un clúster de AKS, se puede utilizar el siguiente comando: `terraform apply -var 'resource_group_name=example' -var 'location=westus2'`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Terraform es su capacidad para gestionar el estado de la infraestructura. Para ello, se puede utilizar el comando `terraform state` para ver el estado actual de la infraestructura, y el comando `terraform state rm` para eliminar recursos de la infraestructura. Además, se pueden utilizar workspaces para gestionar diferentes versiones de la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, recientemente se ha lanzado una nueva versión del proveedor de Terraform para Backstage, que permite a los equipos de DevOps y sysadmins gestionar la infraestructura de Backstage de manera más eficiente. También se han publicado artículos sobre cómo utilizar Terraform con herramientas de codificación asistida por IA, como Claude Code, para mejorar la velocidad y la eficiencia en la creación de infraestructuras.</p>
+            
+        
+            
+        
+            
+            <p>Para importar recursos existentes en Terraform, se puede utilizar el comando `terraform import`. Por ejemplo, para importar un recurso de Azure, se puede utilizar el siguiente comando: `terraform import azurerm_resource_group.example /subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/example`. Además, se pueden utilizar bloques `moved` para reorganizar la infraestructura y mejorar su estructura.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, que permite a los equipos de DevOps y sysadmins automatizar la creación y gestión de infraestructuras en la nube y en entornos locales. Con sus características de proveedores, módulos, gestión de estado, workspaces, importación y bloques `moved`, Terraform es una herramienta esencial para cualquier equipo de DevOps y sysadmins que desee mejorar la eficiencia y la velocidad en la creación y gestión de infraestructuras.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38595" target="_blank">Terraform Issue #38595</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Azure/terraform-azurerm-aks/releases" target="_blank">Terraform Module for AKS</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/datolabs-io/terraform-provider-backstage" target="_blank">Terraform Provider for Backstage</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@thetechfusionist/terraform-in-10-days-from-beginner-to-building-real-infrastructure-4ee1da613188" target="_blank">Terraform en 10 días</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-08_1237.html">&larr; 2026-06-08 1237</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
