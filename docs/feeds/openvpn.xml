@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-12T11:48:20.188590+00:00</updated>
+  <updated>2026-06-13T10:34:07.704463+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -412,5 +412,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-09_1121.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-06-09T11:21:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-13_1033.html</id>
+    <title>Seguridad y configuración de OpenVPN</title>
+    <updated>2026-06-13T10:33:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite a los administradores de sistemas configurar túneles de red seguros entre redes. Para configurar OpenVPN, es necesario generar certificados y claves para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves.&lt;/p&gt;
+&lt;p&gt;Una vez que se han generado los certificados y claves, es posible configurar el servidor OpenVPN utilizando el archivo de configuración &lt;code&gt;server.conf&lt;/code&gt;. En este archivo, se pueden especificar parámetros como la dirección IP del servidor, el puerto de escucha y la ruta de los certificados y claves. Por ejemplo, se puede utilizar la siguiente configuración: &lt;code&gt;port 1194&lt;/code&gt;, &lt;code&gt;proto udp&lt;/code&gt;, &lt;code&gt;dev tun&lt;/code&gt;, &lt;code&gt;ca ca.crt&lt;/code&gt;, &lt;code&gt;cert server.crt&lt;/code&gt;, &lt;code&gt;key server.key&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para endurecer la configuración de OpenVPN, es recomendable utilizar protocolos de autenticación y cifrado seguros, como TLS y AES. También es importante limitar el acceso a la red y configurar firewalls para bloquear el tráfico no autorizado. Por ejemplo, se puede utilizar la siguiente configuración: &lt;code&gt;tls-auth ta.key 0&lt;/code&gt;, &lt;code&gt;cipher AES-256-CBC&lt;/code&gt;, &lt;code&gt;auth SHA256&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mantener actualizado el software OpenVPN y aplicar las últimas actualizaciones de seguridad. Según la fuente [2], se ha descubierto una vulnerabilidad de seguridad en OpenVPN, por lo que es importante aplicar la actualización correspondiente. También es recomendable utilizar herramientas de monitoreo y análisis de tráfico para detectar posibles problemas de seguridad.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Access Server, es posible utilizar la herramienta de línea de comandos &lt;code&gt;openvpn-as&lt;/code&gt; para configurar y administrar el servidor. Por ejemplo, se puede utilizar el comando &lt;code&gt;openvpn-as --config /etc/openvpn/as.conf&lt;/code&gt; para iniciar el servidor con la configuración especificada en el archivo &lt;code&gt;as.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para configurar túneles de red seguros, pero requiere una configuración y un endurecimiento adecuados para garantizar la seguridad de la red.&lt;/p&gt;
+&lt;p&gt;La configuración de site-to-site es otro tema importante en OpenVPN, ya que permite a los administradores de sistemas configurar conexiones seguras entre redes diferentes. Para configurar site-to-site, es necesario generar certificados y claves para autenticar los servidores y clientes, y luego configurar los servidores OpenVPN para establecer la conexión segura entre las redes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Security+Announcements/CVE-2026-11604"&gt;CVE-2026-11604&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560"&gt;Update github actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html"&gt;Tutorial: Update Your Access Server Version&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-13_1033.html"/>
+    <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas configurar conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para la configuración y el endurecimiento de OpenVPN.</summary>
+    <published>2026-06-13T10:33:00+00:00</published>
   </entry>
 </feed>

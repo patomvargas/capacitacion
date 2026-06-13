@@ -1,4 +1,24 @@
 {
+  "2026-06-13_1033": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas en la versión 1.36 y mejores prácticas para su implementación.",
+    "content": "La versión 1.36 de Kubernetes introduce la desaparición de `Service ExternalIPs`, que ya no se recomienda utilizar. En su lugar, se sugiere utilizar `Ingress` o `LoadBalancer` para exponer servicios al exterior. Para crear un `Ingress`, se puede utilizar el comando `kubectl create ingress` con un archivo de configuración en formato YAML, como el siguiente: \n`kubectl create -f ingress.yaml`\ndonde `ingress.yaml` contiene la definición del `Ingress`.\n\nLa seguridad es otro aspecto importante en Kubernetes. Se recomienda utilizar `Network Policies` para controlar el tráfico entre pods y servicios. Un ejemplo de política de red se puede definir con el comando `kubectl create -f network-policy.yaml`, donde `network-policy.yaml` contiene la definición de la política.\n\nEn cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, como `Persistent Volumes` (PV) y `StatefulSets`. Un `StatefulSet` se puede crear con el comando `kubectl create -f statefulset.yaml`, donde `statefulset.yaml` contiene la definición del `StatefulSet`.\n\nPara solucionar problemas en un cluster de Kubernetes, se pueden utilizar herramientas como `kubectl debug` o `kubectl logs`. Estas herramientas permiten inspeccionar y depurar los pods y servicios en ejecución.\n\nFinalmente, es importante mencionar que la comunidad de Kubernetes ofrece una variedad de herramientas y recursos para ayudar a los administradores y desarrolladores a trabajar con la plataforma. Algunas de estas herramientas incluyen `kubeadm` para la instalación y configuración de clusters, y `kubectl` para la administración y depuración de aplicaciones.\n\nEn resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Para aprovechar al máximo estas características, es importante seguir las mejores prácticas y utilizar las herramientas y recursos disponibles en la comunidad de Kubernetes.\n\nPara obtener más información sobre las novedades en Kubernetes, se pueden consultar las fuentes oficiales y la documentación en línea.\n\n",
+    "sources": [
+      {
+        "title": "Kubernetes v1.36: Deprecation and removal of Service ExternalIPs",
+        "url": "https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/"
+      },
+      {
+        "title": "GPU Scheduling in Kubernetes Explained",
+        "url": "https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c"
+      },
+      {
+        "title": "Kubernetes YAML Explained Line by Line",
+        "url": "https://medium.com/@nelson32709/kubernetes-yaml-explained-line-by-line-the-foundation-of-modern-cloud-deployments-cca22fae1467"
+      }
+    ]
+  },
   "2026-06-09_1121": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

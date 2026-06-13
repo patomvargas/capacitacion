@@ -58,67 +58,61 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-06-09 1121 · Kubernetes</div>
+    <div class="meta">2026-06-13 1033 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo en popularidad. En la versión 1.36, se han introducido varias mejoras y características nuevas, como la deprecación y eliminación de Service ExternalIPs. Esto significa que los usuarios deben migrar a otros métodos de configuración de IP externas, como el uso de `LoadBalancer` o `Ingress`.</p>
+            <p>La versión 1.36 de Kubernetes introduce la desaparición de `Service ExternalIPs`, que ya no se recomienda utilizar. En su lugar, se sugiere utilizar `Ingress` o `LoadBalancer` para exponer servicios al exterior. Para crear un `Ingress`, se puede utilizar el comando `kubectl create ingress` con un archivo de configuración en formato YAML, como el siguiente:</p>
+            
+        
+            
+            <p>`kubectl create -f ingress.yaml`</p>
+            
+        
+            
+            <p>donde `ingress.yaml` contiene la definición del `Ingress`.</p>
             
         
             
         
             
-            <p>Para configurar un `LoadBalancer` en Kubernetes, se puede utilizar el comando `kubectl expose` con la opción `--type=LoadBalancer`. Por ejemplo: `kubectl expose deployment mi-deployment --type=LoadBalancer --port=80`.</p>
+            <p>La seguridad es otro aspecto importante en Kubernetes. Se recomienda utilizar `Network Policies` para controlar el tráfico entre pods y servicios. Un ejemplo de política de red se puede definir con el comando `kubectl create -f network-policy.yaml`, donde `network-policy.yaml` contiene la definición de la política.</p>
             
         
             
         
             
-            <p>Otra característica importante es la introducción de un nuevo métrico para la sincronización de rutas en el Cloud Controller Manager. Esto permite a los administradores monitorear y depurar problemas de conectividad en la nube. El métrico se puede consultar utilizando el comando `kubectl get --raw /apis/metrics.k8s.io/v1beta1/pods/<nombre-del-pod>`.</p>
+            <p>En cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, como `Persistent Volumes` (PV) y `StatefulSets`. Un `StatefulSet` se puede crear con el comando `kubectl create -f statefulset.yaml`, donde `statefulset.yaml` contiene la definición del `StatefulSet`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante mencionar que el controlador de entrada NGINX ha alcanzado su fin de vida (EOL) en 2026. Los usuarios deben migrar a otros controladores de entrada, como el controlador de entrada de Kubernetes nativo.</p>
+            <p>Para solucionar problemas en un cluster de Kubernetes, se pueden utilizar herramientas como `kubectl debug` o `kubectl logs`. Estas herramientas permiten inspeccionar y depurar los pods y servicios en ejecución.</p>
             
         
             
         
             
-            <p>Para configurar el controlador de entrada nativo, se puede utilizar el comando `kubectl apply` con un archivo de configuración YAML. Por ejemplo: `kubectl apply -f ingress-configuration.yaml`.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de Kubernetes ofrece una variedad de herramientas y recursos para ayudar a los administradores y desarrolladores a trabajar con la plataforma. Algunas de estas herramientas incluyen `kubeadm` para la instalación y configuración de clusters, y `kubectl` para la administración y depuración de aplicaciones.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Los sysadmins y DevOps engineers deben estar al tanto de estas novedades y best practices para asegurarse de que sus clústeres estén configurados de manera segura y eficiente.</p>
+            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Para aprovechar al máximo estas características, es importante seguir las mejores prácticas y utilizar las herramientas y recursos disponibles en la comunidad de Kubernetes.</p>
             
         
             
         
             
-            <p>La documentación oficial de Kubernetes es una excelente fuente de información para aprender más sobre estas características y cómo configurarlas. Además, existen muchas herramientas y recursos disponibles en la comunidad de Kubernetes para ayudar a los administradores a depurar y solucionar problemas en sus clústeres.</p>
+            <p>Para obtener más información sobre las novedades en Kubernetes, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
             
         
             
         
-            
-            <p>En cuanto a la autoscaling, Kubernetes ofrece varias opciones, como el uso de `HorizontalPodAutoscaler` (HPA) o `ClusterAutoscaler`. Estas herramientas permiten a los administradores ajustar automáticamente el número de réplicas de un pod o el número de nodos en un clúster en función de la carga y los recursos disponibles.</p>
-            
-        
-            
-        
-            
-            <p>Por ejemplo, se puede utilizar el comando `kubectl autoscale` para configurar la autoscaling para un deployment. Por ejemplo: `kubectl autoscale deployment mi-deployment --min=1 --max=10 --cpu-percent=50`.</p>
-            
-        
-            
-        
-            
-            <p>En resumen, la autoscaling es una característica importante en Kubernetes que permite a los administradores ajustar automáticamente la capacidad de sus clústeres en función de la carga y los recursos disponibles.</p>
             
         
     </div>
@@ -134,12 +128,12 @@
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/05/15/ccm-new-metric-route-sync-total/" target="_blank">Kubernetes v1.36: New Metric for Route Sync in the Cloud Controller</a>
+                <a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c" target="_blank">GPU Scheduling in Kubernetes Explained</a>
                 
             </li>
             
             <li>
-                <a href="https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/" target="_blank">Ingress Nginx EOL 2026! Time to upgrade. Native Header/URL Rewriting, RBAC, DUA</a>
+                <a href="https://medium.com/@nelson32709/kubernetes-yaml-explained-line-by-line-the-foundation-of-modern-cloud-deployments-cca22fae1467" target="_blank">Kubernetes YAML Explained Line by Line</a>
                 
             </li>
             
@@ -150,12 +144,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-05_1131.html">&larr; 2026-06-05 1131</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-09_1121.html">&larr; 2026-06-09 1121</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-13_1033.html">2026-06-13 1033 &rarr;</a>
             
         </div>
     </div>

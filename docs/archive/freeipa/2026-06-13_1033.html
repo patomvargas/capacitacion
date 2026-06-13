@@ -58,43 +58,43 @@
     </div>
 
     <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-06-09 1121 · FreeIPA</div>
+    <div class="meta">2026-06-13 1033 · FreeIPA</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>FreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y HBAC. Permite a los administradores gestionar usuarios, grupos y permisos de forma centralizada y segura. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con sistema operativo compatible, como Red Hat Enterprise Linux o Fedora.</p>
+            <p>FreeIPA es un proyecto de código abierto que proporciona una solución integral para la gestión de identidad y acceso en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede configurar FreeIPA para utilizar diferentes proveedores de autenticación, como Kerberos o LDAP. Por ejemplo, se puede utilizar el comando `ipa config-mod --defaultshell=/bin/bash` para establecer el shell por defecto para los usuarios. También se puede configurar el acceso a recursos específicos utilizando reglas de HBAC, como `ipa hbacrule-add --hostcategory=all --servicecategory=all --accessallowed`.</p>
+            <p>Para instalar y configurar un servidor FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina virtual o física con un sistema operativo compatible. Una vez instalado, se puede acceder a la interfaz de usuario web de FreeIPA mediante el comando `https://<direccion_IP>:443` y autenticarse con el usuario y contraseña administrativos.</p>
             
         
             
         
             
-            <p>FreeIPA también proporciona una interfaz de usuario web para gestionar usuarios, grupos y permisos. Se puede acceder a esta interfaz utilizando el comando `ipa ui` y luego acceder a la URL `https://<servidor_FreeIPA>/ipa/ui`. Desde allí, se pueden crear y gestionar usuarios, grupos y permisos de forma gráfica.</p>
+            <p>La configuración de FreeIPA implica la creación de dominios, usuarios, grupos y hosts, así como la definición de políticas de acceso y autorización. Se pueden utilizar comandos como `ipa user-add` y `ipa group-add` para crear nuevos usuarios y grupos, y `ipa host-add` para agregar nuevos hosts al dominio.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona varias características para proteger la autenticación y el acceso a recursos. Por ejemplo, se puede utilizar el protocolo Kerberos para autenticar a los usuarios de forma segura. También se pueden configurar reglas de sudo para restringir el acceso a comandos específicos.</p>
+            <p>FreeIPA también proporciona funcionalidades de gestión de confianza y autorización, como la configuración de relaciones de confianza entre dominios y la definición de reglas de acceso basadas en el protocolo HBAC (Host-Based Access Control). Se pueden utilizar comandos como `ipa trust-add` y `ipa hbacrule-add` para configurar estas funcionalidades.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que FreeIPA se puede integrar con otros sistemas y herramientas, como Samba o TrueNAS. Por ejemplo, se puede utilizar el comando `ipa-samba-config` para configurar la integración con Samba.</p>
+            <p>En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger la autenticación y autorización de usuarios y servicios, como el uso de protocolos de autenticación seguros como Kerberos y la implementación de políticas de acceso y autorización basadas en roles.</p>
             
         
             
         
+            
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red, que proporciona una serie de funcionalidades y configuraciones para asegurar la autenticación y autorización de usuarios y servicios de manera segura y eficiente.</p>
             
         
     </div>
@@ -105,17 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa-webui" target="_blank">FreeIPA GitHub</a>
+                <a href="https://github.com/freeipa/deploy-pki-workshop-devconfcz-2026" target="_blank">FreeIPA GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates" target="_blank">Red Hat Enterprise Linux Release Dates</a>
+                <a href="https://github.com/freeipa/freeipa-webui/issues/1112" target="_blank">FreeIPA WebUI</a>
                 
             </li>
             
             <li>
-                <a href="https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/" target="_blank">Configuring FreeIPA | TrueNAS Documentation Hub</a>
+                <a href="https://sumble.com/tech/free-ipa" target="_blank">Sumble</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/" target="_blank">Rad Web Hosting Blog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345" target="_blank">Linux Security</a>
                 
             </li>
             
@@ -126,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-05_1131.html">&larr; 2026-06-05 1131</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-09_1121.html">&larr; 2026-06-09 1121</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-13_1033.html">2026-06-13 1033 &rarr;</a>
             
         </div>
     </div>

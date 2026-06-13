@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-12T11:48:20.183714+00:00</updated>
+  <updated>2026-06-13T10:34:07.699389+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -435,5 +435,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-09_1121.html"/>
     <summary>FreeIPA es un sistema de gestión de identidad y acceso que proporciona una forma segura y escalable de gestionar usuarios, grupos y permisos. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
     <published>2026-06-09T11:21:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-13_1033.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-06-13T10:33:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un proyecto de código abierto que proporciona una solución integral para la gestión de identidad y acceso en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos.&lt;/p&gt;
+&lt;p&gt;Para instalar y configurar un servidor FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; en una máquina virtual o física con un sistema operativo compatible. Una vez instalado, se puede acceder a la interfaz de usuario web de FreeIPA mediante el comando &lt;code&gt;https://&lt;direccion_IP&gt;:443&lt;/code&gt; y autenticarse con el usuario y contraseña administrativos.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA implica la creación de dominios, usuarios, grupos y hosts, así como la definición de políticas de acceso y autorización. Se pueden utilizar comandos como &lt;code&gt;ipa user-add&lt;/code&gt; y &lt;code&gt;ipa group-add&lt;/code&gt; para crear nuevos usuarios y grupos, y &lt;code&gt;ipa host-add&lt;/code&gt; para agregar nuevos hosts al dominio.&lt;/p&gt;
+&lt;p&gt;FreeIPA también proporciona funcionalidades de gestión de confianza y autorización, como la configuración de relaciones de confianza entre dominios y la definición de reglas de acceso basadas en el protocolo HBAC (Host-Based Access Control). Se pueden utilizar comandos como &lt;code&gt;ipa trust-add&lt;/code&gt; y &lt;code&gt;ipa hbacrule-add&lt;/code&gt; para configurar estas funcionalidades.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger la autenticación y autorización de usuarios y servicios, como el uso de protocolos de autenticación seguros como Kerberos y la implementación de políticas de acceso y autorización basadas en roles.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red, que proporciona una serie de funcionalidades y configuraciones para asegurar la autenticación y autorización de usuarios y servicios de manera segura y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/deploy-pki-workshop-devconfcz-2026"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa-webui/issues/1112"&gt;FreeIPA WebUI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sumble.com/tech/free-ipa"&gt;Sumble&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/"&gt;Rad Web Hosting Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345"&gt;Linux Security&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-13_1033.html"/>
+    <summary>FreeIPA es un sistema de gestión de identidad y acceso que proporciona autenticación, autorización y administración de cuentas centralizadas para sistemas Linux y Unix-like. En este artículo, se presentan las funcionalidades y configuraciones básicas de FreeIPA.</summary>
+    <published>2026-06-13T10:33:00+00:00</published>
   </entry>
 </feed>

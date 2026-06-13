@@ -1,4 +1,32 @@
 {
+  "2026-06-13_1033": {
+    "slug": "google-workspace",
+    "title": "Novedades en Google Workspace",
+    "summary": "Google Workspace ha lanzado varias novedades y mejoras en sus herramientas y APIs. Estas novedades incluyen la introducción de badges para prevenir la exfiltración de datos y ataques de phishing, así como mejoras en la integración con Google AI Studio y Antigravity.",
+    "content": "Google Workspace ha estado trabajando en mejorar la seguridad y la productividad de sus usuarios. Una de las novedades más destacadas es la introducción de badges que alertan a los usuarios sobre documentos y usuarios fuera de su organización de Workspace. Esto ayuda a prevenir la exfiltración de datos y ataques de phishing que imitan contenido interno. Para configurar estas badges, los administradores pueden utilizar la consola de administración de Google Workspace y ejecutar comandos como `gcloud organizations get-iam-policy` para obtener la política de IAM de su organización.\n\nLa integración con Google AI Studio también ha sido mejorada, permitiendo a los usuarios construir y lanzar aplicaciones full-stack directamente desde la plataforma. Esto se logra mediante la utilización de comandos como `gcloud ai-platform models create` para crear modelos de machine learning y `gcloud app deploy` para desplegar aplicaciones en Cloud Run.\n\nOtra herramienta interesante es Antigravity, que es un comando centralizado que ayuda a gestionar agentes de AI que ejecutan tareas complejas de conocimiento y codificación. Para empezar a utilizar Antigravity, los usuarios pueden ejecutar el comando `antigravity init` para inicializar el entorno de trabajo y luego `antigravity run` para ejecutar los agentes.\n\nAdemás, Google Workspace ha lanzado una serie de tutoriales y guías para ayudar a los usuarios a aprovechar al máximo sus herramientas y APIs. Estos recursos incluyen tutoriales sobre cómo conectar Gemini Enterprise a Gmail utilizando Terraform y cómo utilizar el kit de desarrollo de agentes para Google Apps Script.\n\nEn resumen, Google Workspace ha estado trabajando en mejorar la seguridad, la productividad y la integración de sus herramientas y APIs. Estas novedades y mejoras ayudarán a los usuarios a aprovechar al máximo sus herramientas y a construir aplicaciones y soluciones más avanzadas.\n\nPara más información, los usuarios pueden consultar la documentación oficial de Google Workspace y las fuentes citadas a continuación.\n\n",
+    "sources": [
+      {
+        "title": "Google Workspace Updates: 2026",
+        "url": "https://workspaceupdates.googleblog.com/2026/"
+      },
+      {
+        "title": "Google Workspace Updates",
+        "url": "https://workspaceupdates.googleblog.com/"
+      },
+      {
+        "title": "What's new in Google Workspace (recent releases) | Getting started | Google Workspace Help",
+        "url": "https://support.google.com/a/table/7314896?hl=en"
+      },
+      {
+        "title": "Google Workspace Updates: Google Workspace Updates Weekly Recap - May 29, 2026",
+        "url": "https://workspaceupdates.googleblog.com/2026/05/weekly-recap-05-29-2026.html"
+      },
+      {
+        "title": "All the news from the Google I/O 2026 Developer keynote - Google Developers Blog",
+        "url": "https://developers.googleblog.com/en/all-the-news-from-the-google-io-2026-developer-keynote/"
+      }
+    ]
+  },
   "2026-06-09_1121": {
     "slug": "google-workspace",
     "title": "Novedades en Google Workspace",

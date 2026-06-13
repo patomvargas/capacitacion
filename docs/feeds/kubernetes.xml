@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-12T11:48:20.191337+00:00</updated>
+  <updated>2026-06-13T10:34:07.707977+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -480,5 +480,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-09_1121.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan las últimas novedades y best practices para sysadmins y DevOps engineers.</summary>
     <published>2026-06-09T11:21:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-13_1033.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-06-13T10:33:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.36 de Kubernetes introduce la desaparición de &lt;code&gt;Service ExternalIPs&lt;/code&gt;, que ya no se recomienda utilizar. En su lugar, se sugiere utilizar &lt;code&gt;Ingress&lt;/code&gt; o &lt;code&gt;LoadBalancer&lt;/code&gt; para exponer servicios al exterior. Para crear un &lt;code&gt;Ingress&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl create ingress&lt;/code&gt; con un archivo de configuración en formato YAML, como el siguiente:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;kubectl create -f ingress.yaml&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;donde &lt;code&gt;ingress.yaml&lt;/code&gt; contiene la definición del &lt;code&gt;Ingress&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes. Se recomienda utilizar &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico entre pods y servicios. Un ejemplo de política de red se puede definir con el comando &lt;code&gt;kubectl create -f network-policy.yaml&lt;/code&gt;, donde &lt;code&gt;network-policy.yaml&lt;/code&gt; contiene la definición de la política.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de almacenamiento, Kubernetes ofrece varias opciones, como &lt;code&gt;Persistent Volumes&lt;/code&gt; (PV) y &lt;code&gt;StatefulSets&lt;/code&gt;. Un &lt;code&gt;StatefulSet&lt;/code&gt; se puede crear con el comando &lt;code&gt;kubectl create -f statefulset.yaml&lt;/code&gt;, donde &lt;code&gt;statefulset.yaml&lt;/code&gt; contiene la definición del &lt;code&gt;StatefulSet&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas en un cluster de Kubernetes, se pueden utilizar herramientas como &lt;code&gt;kubectl debug&lt;/code&gt; o &lt;code&gt;kubectl logs&lt;/code&gt;. Estas herramientas permiten inspeccionar y depurar los pods y servicios en ejecución.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Kubernetes ofrece una variedad de herramientas y recursos para ayudar a los administradores y desarrolladores a trabajar con la plataforma. Algunas de estas herramientas incluyen &lt;code&gt;kubeadm&lt;/code&gt; para la instalación y configuración de clusters, y &lt;code&gt;kubectl&lt;/code&gt; para la administración y depuración de aplicaciones.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. Para aprovechar al máximo estas características, es importante seguir las mejores prácticas y utilizar las herramientas y recursos disponibles en la comunidad de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las novedades en Kubernetes, se pueden consultar las fuentes oficiales y la documentación en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/14/kubernetes-v1-36-deprecation-and-removal-of-service-externalips/"&gt;Kubernetes v1.36: Deprecation and removal of Service ExternalIPs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c"&gt;GPU Scheduling in Kubernetes Explained&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@nelson32709/kubernetes-yaml-explained-line-by-line-the-foundation-of-modern-cloud-deployments-cca22fae1467"&gt;Kubernetes YAML Explained Line by Line&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-13_1033.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas en la versión 1.36 y mejores prácticas para su implementación.</summary>
+    <published>2026-06-13T10:33:00+00:00</published>
   </entry>
 </feed>
