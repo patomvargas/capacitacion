@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-13T10:34:07.712889+00:00</updated>
+  <updated>2026-06-14T10:51:56.320091+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -427,5 +427,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-10_1141.html"/>
     <summary>Claude Code ha experimentado mejoras significativas en su arquitectura y funcionalidades. Este artículo explora las novedades y best practices para aprovechar al máximo esta herramienta.</summary>
     <published>2026-06-10T11:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-14_1051.html</id>
+    <title>Claude Code: Mejoras y Configuraciones</title>
+    <updated>2026-06-14T10:51:00+00:00</updated>
+    <content type="html">&lt;p&gt;La comunidad de Claude Code ha estado trabajando en mejorar la herramienta, con solicitudes de características como cambiar el nombre del feed RSS de "Changelog" a "Claude Changelog". Además, se ha solicitado la eliminación de sesiones de Claude Code y la integración con Visual Studio 2026.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las funcionalidades de Claude Code, es importante configurar algunas opciones. Por ejemplo, se puede ejecutar el comando &lt;code&gt;claude doctor&lt;/code&gt; para verificar la configuración y detectar problemas. También se puede configurar la variable de entorno &lt;code&gt;CLAUD_CODE_EXECUTION_POLICY&lt;/code&gt; para establecer la política de ejecución por defecto.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la integración con otros herramientas, como la CLI de Claude Code. Se puede utilizar el comando &lt;code&gt;claude code&lt;/code&gt; para interactuar con la herramienta y ejecutar comandos. Por ejemplo, se puede ejecutar &lt;code&gt;claude code --help&lt;/code&gt; para obtener información sobre los comandos disponibles.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante tener en cuenta algunas configuraciones. Por ejemplo, se puede establecer la política de ejecución para evitar que Claude Code lea archivos &lt;code&gt;.env&lt;/code&gt; sensibles. Se puede hacer esto ejecutando el comando &lt;code&gt;claude code --execution-policy bypass --env-file /path/to/.env&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se pueden configurar opciones de productividad, como la autoaprobación de comandos seguros. Se puede hacer esto estableciendo la variable de entorno &lt;code&gt;CLAUD_CODE_AUTO_APPROVE_SAFE_COMMANDS&lt;/code&gt; en &lt;code&gt;true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que requiere configuraciones y ajustes para aprovechar al máximo sus funcionalidades. Al seguir estas best practices y configuraciones, se puede optimizar el uso de la herramienta y mejorar la productividad.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las características y configuraciones de Claude Code, se puede consultar la documentación oficial y las fuentes proporcionadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/64870"&gt;FEATURE: Can you please change the RSS feed name from 'Changelog' to something like 'Claude Changelog'&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/15942"&gt;Add support for Visual Studio 2026 Integration&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.claudelog.com/claude-code-changelog/"&gt;Claude Code Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@joe.njenga/9-claude-code-settings-that-most-developers-ignore-big-mistake-51c31900b7cb"&gt;9 Claude Code Settings That Most Developers Ignore (Big Mistake)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-14_1051.html"/>
+    <summary>Claude Code es una herramienta en constante evolución, con mejoras y configuraciones que pueden optimizar su uso. En este artículo, se presentan algunas de las novedades y best practices para aprovechar al máximo sus funcionalidades.</summary>
+    <published>2026-06-14T10:51:00+00:00</published>
   </entry>
 </feed>

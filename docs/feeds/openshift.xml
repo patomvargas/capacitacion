@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-13T10:34:07.710528+00:00</updated>
+  <updated>2026-06-14T10:51:56.316890+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -449,5 +449,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-06_1009.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece mejoras y actualizaciones constantes. En este artículo, se presentan las últimas novedades y best practices para la configuración y administración de OpenShift.</summary>
     <published>2026-06-06T10:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-14_1051.html</id>
+    <title>Actualizaciones y Mejoras en OpenShift</title>
+    <updated>2026-06-14T10:51:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift Container Platform es una plataforma de contenedores líder en la industria que permite a los desarrolladores y administradores de sistemas crear, implementar y gestionar aplicaciones en contenedores de manera eficiente y segura. Recientemente, se han lanzado varias actualizaciones de seguridad y mejoras en las versiones 4.15, 4.16, 4.17 y 4.18 de OpenShift Container Platform.&lt;/p&gt;
+&lt;p&gt;Para verificar si hay actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; en la línea de comandos. Por ejemplo, para verificar si hay actualizaciones disponibles para la versión 4.17, se puede ejecutar el comando &lt;code&gt;oc adm upgrade --to=4.17&lt;/code&gt;. Si hay actualizaciones disponibles, se pueden aplicar utilizando el comando &lt;code&gt;oc adm upgrade --to=4.17 --confirm&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, además de las actualizaciones de seguridad y mejoras en el rendimiento, OpenShift Container Platform también ofrece una variedad de herramientas y características para ayudar a los desarrolladores y administradores de sistemas a crear y implementar aplicaciones en contenedores de manera eficiente y segura. Por ejemplo, la plataforma incluye soporte para OKD, OperatorHub, builds, routes, OAuth y monitoring, entre otras características.&lt;/p&gt;
+&lt;p&gt;En cuanto a la migración de cargas de trabajo a OpenShift, es importante seguir una aproximación práctica y sistemática. Esto incluye evaluar las aplicaciones y los servicios que se van a migrar, identificar los requisitos de infraestructura y seguridad, y planificar la implementación y la configuración de la plataforma. Se puede utilizar el comando &lt;code&gt;oc new-project&lt;/code&gt; para crear un nuevo proyecto en OpenShift y, a continuación, utilizar el comando &lt;code&gt;oc create&lt;/code&gt; para crear los recursos necesarios, como pods, servicios y rutas.&lt;/p&gt;
+&lt;p&gt;Para garantizar la seguridad y la integridad de las aplicaciones y los datos en OpenShift, es fundamental seguir las mejores prácticas de seguridad y configuración. Esto incluye utilizar autenticación y autorización basadas en OAuth, configurar el acceso a los recursos y los servicios, y monitorear el rendimiento y la seguridad de la plataforma. Se puede utilizar el comando &lt;code&gt;oc get&lt;/code&gt; para obtener información sobre los recursos y los servicios en la plataforma, y el comando &lt;code&gt;oc describe&lt;/code&gt; para obtener información detallada sobre los recursos y los servicios.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift Container Platform es una plataforma de contenedores líder en la industria que ofrece una variedad de herramientas y características para ayudar a los desarrolladores y administradores de sistemas a crear y implementar aplicaciones en contenedores de manera eficiente y segura. Es importante seguir las mejores prácticas de seguridad y configuración, y utilizar las herramientas y características de la plataforma para garantizar la seguridad y la integridad de las aplicaciones y los datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:17596"&gt;RHSA-2026:17596&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:23233"&gt;RHSA-2026:23233&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/bascoibm/migrating-workloads-to-openshift-a-practical-approach-5440"&gt;Migrating Workloads to OpenShift: A Practical Approach&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-14_1051.html"/>
+    <summary>OpenShift Container Platform ha lanzado varias actualizaciones de seguridad y mejoras en las versiones 4.15, 4.16, 4.17 y 4.18. Estas actualizaciones incluyen correcciones de vulnerabilidades y mejoras en la seguridad y el rendimiento.</summary>
+    <published>2026-06-14T10:51:00+00:00</published>
   </entry>
 </feed>

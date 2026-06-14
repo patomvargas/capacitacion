@@ -1,4 +1,28 @@
 {
+  "2026-06-14_1051": {
+    "slug": "claude-code",
+    "title": "Claude Code: Mejoras y Configuraciones",
+    "summary": "Claude Code es una herramienta en constante evolución, con mejoras y configuraciones que pueden optimizar su uso. En este artículo, se presentan algunas de las novedades y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "\nLa comunidad de Claude Code ha estado trabajando en mejorar la herramienta, con solicitudes de características como cambiar el nombre del feed RSS de \"Changelog\" a \"Claude Changelog\". Además, se ha solicitado la eliminación de sesiones de Claude Code y la integración con Visual Studio 2026.\n\nPara aprovechar al máximo las funcionalidades de Claude Code, es importante configurar algunas opciones. Por ejemplo, se puede ejecutar el comando `claude doctor` para verificar la configuración y detectar problemas. También se puede configurar la variable de entorno `CLAUD_CODE_EXECUTION_POLICY` para establecer la política de ejecución por defecto.\n\nOtra característica importante es la integración con otros herramientas, como la CLI de Claude Code. Se puede utilizar el comando `claude code` para interactuar con la herramienta y ejecutar comandos. Por ejemplo, se puede ejecutar `claude code --help` para obtener información sobre los comandos disponibles.\n\nEn cuanto a la seguridad, es importante tener en cuenta algunas configuraciones. Por ejemplo, se puede establecer la política de ejecución para evitar que Claude Code lea archivos `.env` sensibles. Se puede hacer esto ejecutando el comando `claude code --execution-policy bypass --env-file /path/to/.env`.\n\nAdemás, se pueden configurar opciones de productividad, como la autoaprobación de comandos seguros. Se puede hacer esto estableciendo la variable de entorno `CLAUD_CODE_AUTO_APPROVE_SAFE_COMMANDS` en `true`.\n\nEn resumen, Claude Code es una herramienta poderosa que requiere configuraciones y ajustes para aprovechar al máximo sus funcionalidades. Al seguir estas best practices y configuraciones, se puede optimizar el uso de la herramienta y mejorar la productividad.\n\nPara obtener más información sobre las características y configuraciones de Claude Code, se puede consultar la documentación oficial y las fuentes proporcionadas.\n\n  ",
+    "sources": [
+      {
+        "title": "FEATURE: Can you please change the RSS feed name from 'Changelog' to something like 'Claude Changelog'",
+        "url": "https://github.com/anthropics/claude-code/issues/64870"
+      },
+      {
+        "title": "Add support for Visual Studio 2026 Integration",
+        "url": "https://github.com/anthropics/claude-code/issues/15942"
+      },
+      {
+        "title": "Claude Code Changelog",
+        "url": "https://www.claudelog.com/claude-code-changelog/"
+      },
+      {
+        "title": "9 Claude Code Settings That Most Developers Ignore (Big Mistake)",
+        "url": "https://medium.com/@joe.njenga/9-claude-code-settings-that-most-developers-ignore-big-mistake-51c31900b7cb"
+      }
+    ]
+  },
   "2026-06-10_1141": {
     "slug": "claude-code",
     "title": "Mejoras en Claude Code",

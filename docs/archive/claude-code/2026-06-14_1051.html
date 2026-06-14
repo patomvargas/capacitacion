@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras en Claude Code - Claude Code</title>
+    <title>Claude Code: Mejoras y Configuraciones - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Mejoras en Claude Code</h1>
-    <div class="meta">2026-06-10 1141 · Claude Code</div>
+    <h1>Claude Code: Mejoras y Configuraciones</h1>
+    <div class="meta">2026-06-14 1051 · Claude Code</div>
 
     <div class="content">
         
@@ -66,37 +66,47 @@
             
         
             
-            <p>La última versión de Claude Code incluye mejoras en su arquitectura, como la implementación de `sandbox.bwrapPath` y `sandbox.socatPath` para mejorar la seguridad en entornos Linux/WSL. Además, se han añadido nuevas funcionalidades como la capacidad de conectar a sesiones activas de Claude Code desde dispositivos móviles.</p>
+            <p>La comunidad de Claude Code ha estado trabajando en mejorar la herramienta, con solicitudes de características como cambiar el nombre del feed RSS de "Changelog" a "Claude Changelog". Además, se ha solicitado la eliminación de sesiones de Claude Code y la integración con Visual Studio 2026.</p>
             
         
             
         
             
-            <p>Para aprovechar estas funcionalidades, es importante configurar correctamente el archivo `CLAUDE.md`. Un ejemplo de configuración básica es el siguiente: `subagents: { enable: true, skills: ['python', 'java'] }`. Esto permite habilitar los subagentes y especificar las habilidades que se desean utilizar.</p>
+            <p>Para aprovechar al máximo las funcionalidades de Claude Code, es importante configurar algunas opciones. Por ejemplo, se puede ejecutar el comando `claude doctor` para verificar la configuración y detectar problemas. También se puede configurar la variable de entorno `CLAUD_CODE_EXECUTION_POLICY` para establecer la política de ejecución por defecto.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la implementación de `hooks` para personalizar el flujo de trabajo. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar un script antes de realizar un commit: `hooks: { pre-commit: 'npm run test' }`. Esto permite asegurarse de que los cambios se prueban antes de ser confirmados.</p>
+            <p>Otra característica importante es la integración con otros herramientas, como la CLI de Claude Code. Se puede utilizar el comando `claude code` para interactuar con la herramienta y ejecutar comandos. Por ejemplo, se puede ejecutar `claude code --help` para obtener información sobre los comandos disponibles.</p>
             
         
             
         
             
-            <p>Además, se han añadido mejoras en la documentación y el soporte para los desarrolladores. La guía de best practices para `CLAUDE.md` proporciona recomendaciones detalladas para configurar y utilizar Claude Code de manera efectiva. Por ejemplo, se recomienda utilizar un linter para mantener el código organizado y evitar errores.</p>
+            <p>En cuanto a la seguridad, es importante tener en cuenta algunas configuraciones. Por ejemplo, se puede establecer la política de ejecución para evitar que Claude Code lea archivos `.env` sensibles. Se puede hacer esto ejecutando el comando `claude code --execution-policy bypass --env-file /path/to/.env`.</p>
             
         
             
         
             
-            <p>En resumen, las mejoras en Claude Code ofrecen una mayor flexibilidad y personalización para los desarrolladores. Al configurar correctamente el archivo `CLAUDE.md` y utilizar las funcionalidades de `hooks` y `subagents`, es posible aprovechar al máximo las capacidades de esta herramienta.</p>
+            <p>Además, se pueden configurar opciones de productividad, como la autoaprobación de comandos seguros. Se puede hacer esto estableciendo la variable de entorno `CLAUD_CODE_AUTO_APPROVE_SAFE_COMMANDS` en `true`.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Claude Code, que proporcionan documentación detallada y ejemplos de código para ayudar a los desarrolladores a empezar a trabajar con esta herramienta.</p>
+            <p>En resumen, Claude Code es una herramienta poderosa que requiere configuraciones y ajustes para aprovechar al máximo sus funcionalidades. Al seguir estas best practices y configuraciones, se puede optimizar el uso de la herramienta y mejorar la productividad.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre las características y configuraciones de Claude Code, se puede consultar la documentación oficial y las fuentes proporcionadas.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,17 +117,22 @@
         <ul>
             
             <li>
+                <a href="https://github.com/anthropics/claude-code/issues/64870" target="_blank">FEATURE: Can you please change the RSS feed name from 'Changelog' to something like 'Claude Changelog'</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/15942" target="_blank">Add support for Visual Studio 2026 Integration</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://www.claudelog.com/claude-code-changelog/" target="_blank">Claude Code Changelog</a>
                 
             </li>
             
             <li>
-                <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank">How we contain Claude across products</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j" target="_blank">CLAUDE.md Best Practices</a>
+                <a href="https://medium.com/@joe.njenga/9-claude-code-settings-that-most-developers-ignore-big-mistake-51c31900b7cb" target="_blank">9 Claude Code Settings That Most Developers Ignore (Big Mistake)</a>
                 
             </li>
             
@@ -128,12 +143,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-06_1009.html">&larr; 2026-06-06 1009</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-10_1141.html">&larr; 2026-06-10 1141</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-14_1051.html">2026-06-14 1051 &rarr;</a>
             
         </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <title>Actualizaciones y Mejoras en OpenShift - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Mejoras y Best Practices</h1>
-    <div class="meta">2026-06-06 1009 · OpenShift</div>
+    <h1>Actualizaciones y Mejoras en OpenShift</h1>
+    <div class="meta">2026-06-14 1051 · OpenShift</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>La plataforma OpenShift es una solución de contenedores líder en el mercado, que ofrece una amplia gama de herramientas y características para la administración y configuración de clusters de contenedores. En las últimas actualizaciones, se han incluido mejoras en la seguridad, como la actualización de la versión 4.15.64, que incluye parches de seguridad y mejoras en la estabilidad del sistema.</p>
+            <p>OpenShift Container Platform es una plataforma de contenedores líder en la industria que permite a los desarrolladores y administradores de sistemas crear, implementar y gestionar aplicaciones en contenedores de manera eficiente y segura. Recientemente, se han lanzado varias actualizaciones de seguridad y mejoras en las versiones 4.15, 4.16, 4.17 y 4.18 de OpenShift Container Platform.</p>
             
         
             
         
             
-            <p>Para instalar OpenShift, se pueden utilizar diferentes métodos, como la instalación en bare metal o en la nube. Por ejemplo, se puede utilizar el comando `oc cluster up` para crear un cluster de OpenShift en un entorno de desarrollo. También se puede utilizar la herramienta de línea de comandos `oc` para administrar y configurar el cluster.</p>
+            <p>Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Por ejemplo, para verificar si hay actualizaciones disponibles para la versión 4.17, se puede ejecutar el comando `oc adm upgrade --to=4.17`. Si hay actualizaciones disponibles, se pueden aplicar utilizando el comando `oc adm upgrade --to=4.17 --confirm`.</p>
             
         
             
         
             
-            <p>En cuanto a la migración de workloads a OpenShift, es importante seguir un enfoque práctico y estructurado. Esto incluye la evaluación de las aplicaciones y servicios que se van a migrar, la creación de un plan de migración y la ejecución de pruebas y validaciones. Se pueden utilizar herramientas como `oc adm migrate` para migrar aplicaciones y servicios a OpenShift.</p>
+            <p>Es importante mencionar que, además de las actualizaciones de seguridad y mejoras en el rendimiento, OpenShift Container Platform también ofrece una variedad de herramientas y características para ayudar a los desarrolladores y administradores de sistemas a crear y implementar aplicaciones en contenedores de manera eficiente y segura. Por ejemplo, la plataforma incluye soporte para OKD, OperatorHub, builds, routes, OAuth y monitoring, entre otras características.</p>
             
         
             
         
             
-            <p>La gestión de almacenamiento compartido en OpenShift es otro tema importante. Se pueden utilizar soluciones como NFS para proporcionar almacenamiento compartido a las aplicaciones y servicios. Por ejemplo, se puede utilizar el comando `oc create -f nfs-pvc.yaml` para crear un objeto de almacenamiento persistente (PVC) que utilice un servidor NFS.</p>
+            <p>En cuanto a la migración de cargas de trabajo a OpenShift, es importante seguir una aproximación práctica y sistemática. Esto incluye evaluar las aplicaciones y los servicios que se van a migrar, identificar los requisitos de infraestructura y seguridad, y planificar la implementación y la configuración de la plataforma. Se puede utilizar el comando `oc new-project` para crear un nuevo proyecto en OpenShift y, a continuación, utilizar el comando `oc create` para crear los recursos necesarios, como pods, servicios y rutas.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, OpenShift ofrece una amplia gama de características y herramientas para proteger los clusters y las aplicaciones. Se pueden utilizar herramientas como `oc adm policy` para configurar y administrar las políticas de seguridad en OpenShift. También se pueden utilizar soluciones como Zero Trust Workload Identity Manager para proporcionar una capa adicional de seguridad a las aplicaciones y servicios.</p>
+            <p>Para garantizar la seguridad y la integridad de las aplicaciones y los datos en OpenShift, es fundamental seguir las mejores prácticas de seguridad y configuración. Esto incluye utilizar autenticación y autorización basadas en OAuth, configurar el acceso a los recursos y los servicios, y monitorear el rendimiento y la seguridad de la plataforma. Se puede utilizar el comando `oc get` para obtener información sobre los recursos y los servicios en la plataforma, y el comando `oc describe` para obtener información detallada sobre los recursos y los servicios.</p>
             
         
             
         
             
-            <p>Finalmente, es importante destacar la importancia de seguir las best practices y recomendaciones de la comunidad OpenShift para la configuración y administración de la plataforma. Esto incluye la utilización de herramientas y características como OperatorHub, builds, routes, OAuth y monitoring para proporcionar una plataforma de contenedores segura y escalable.</p>
+            <p>En resumen, OpenShift Container Platform es una plataforma de contenedores líder en la industria que ofrece una variedad de herramientas y características para ayudar a los desarrolladores y administradores de sistemas a crear y implementar aplicaciones en contenedores de manera eficiente y segura. Es importante seguir las mejores prácticas de seguridad y configuración, y utilizar las herramientas y características de la plataforma para garantizar la seguridad y la integridad de las aplicaciones y los datos.</p>
             
         
             
@@ -111,17 +111,12 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:14773" target="_blank">RHSA-2026:14773</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:17596" target="_blank">RHSA-2026:17596</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:20087.html" target="_blank">RHSA-2026:20087</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-3e0a6032b1d8" target="_blank">Installing OpenShift 4.19.10 on Bare Metal</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:23233" target="_blank">RHSA-2026:23233</a>
                 
             </li>
             
@@ -137,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-05-29_1133.html">&larr; 2026-05-29 1133</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-06_1009.html">&larr; 2026-06-06 1009</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-14_1051.html">2026-06-14 1051 &rarr;</a>
             
         </div>
     </div>

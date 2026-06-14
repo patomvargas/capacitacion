@@ -1,4 +1,32 @@
 {
+  "2026-06-14_1051": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una herramienta de AI que ofrece integración con Workspace, Vertex AI y prompting. Recientemente, se han anunciado cambios y mejoras en la plataforma.",
+    "content": "Gemini es una herramienta de AI desarrollada por Google que permite la integración con diversas plataformas, incluyendo Workspace y Vertex AI. Recientemente, se ha anunciado la deprecación del modelo `gemini-2.5-flash-lite-preview-09-2025`, que será reemplazado por nuevos modelos con mejoras en la precisión y la eficiencia. \n\nPara utilizar Gemini, es necesario configurar la CLI con el comando `gemini init` y luego autenticarse con `gemini login`. Luego, se puede utilizar el comando `gemini prompt` para generar texto o imágenes basadas en un prompt específico. \n\nLa integración con Workspace permite a los usuarios crear y editar documentos y presentaciones utilizando la herramienta de AI. Por ejemplo, se puede utilizar el comando `gemini doc create` para crear un nuevo documento y luego editar su contenido con `gemini doc edit`. \n\nAdemás, se ha anunciado la deprecación de la herramienta de código asistido Gemini Code Assist, que será reemplazada por una nueva herramienta de código asistido. Los usuarios deben migrar a la nueva herramienta antes del 18 de junio de 2026. \n\nEs importante mencionar que Gemini también ofrece una API para la integración con otras herramientas y plataformas. La API de Gemini permite a los desarrolladores crear aplicaciones personalizadas que utilicen la herramienta de AI. Por ejemplo, se puede utilizar el comando `gemini api create` para crear una nueva aplicación y luego configurar su API con `gemini api config`. \n\nEn resumen, Gemini es una herramienta de AI poderosa que ofrece integración con diversas plataformas y herramientas. Es importante estar al tanto de las últimas actualizaciones y cambios en la plataforma para aprovechar al máximo sus capacidades.",
+    "sources": [
+      {
+        "title": "Google Gemini - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Google_Gemini"
+      },
+      {
+        "title": "Release notes | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      },
+      {
+        "title": "Gemini Code Assist release notes | Google for Developers",
+        "url": "https://developers.google.com/gemini-code-assist/resources/release-notes"
+      },
+      {
+        "title": "Gemini for Google Cloud release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/docs/release-notes"
+      }
+    ]
+  },
   "2026-06-10_1141": {
     "slug": "gemini",
     "title": "Gemini: Integración y Mejoras",
