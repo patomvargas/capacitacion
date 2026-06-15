@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-14T10:51:56.331402+00:00</updated>
+  <updated>2026-06-15T14:28:42.455094+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -481,5 +481,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-11_1213.html"/>
     <summary>Superset es una herramienta de inteligencia empresarial que permite crear dashboards y gráficos personalizados. En este artículo, se presentan las características y configuraciones de Superset, así como algunas best practices para su uso.</summary>
     <published>2026-06-11T12:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-06-15_1427.html</id>
+    <title>Superset: Exploración de Datos y Visualización</title>
+    <updated>2026-06-15T14:27:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de código abierto que permite a los equipos de datos explorar y visualizar grandes conjuntos de datos de manera eficiente. Para empezar a utilizar Superset, es necesario configurar el entorno de desarrollo y conectar las fuentes de datos. Esto se puede hacer mediante el archivo &lt;code&gt;superset_config.py&lt;/code&gt;, donde se pueden establecer variables como &lt;code&gt;MCP_DEV_USERNAME&lt;/code&gt; para delegar acceso a un usuario con permisos amplios.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de Superset es su capacidad para crear dashboards personalizados con diferentes tipos de gráficos y visualizaciones. Para crear un dashboard, es necesario crear un nuevo dataset y luego agregar los gráficos y visualizaciones deseados. Por ejemplo, se puede utilizar el comando &lt;code&gt;superset db upgrade&lt;/code&gt; para actualizar la base de datos y luego crear un nuevo dashboard con &lt;code&gt;superset init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración, Superset ofrece una variedad de herramientas y configuraciones para gestionar los usuarios y los permisos. Por ejemplo, se puede utilizar el comando &lt;code&gt;superset user add&lt;/code&gt; para agregar un nuevo usuario y luego asignar permisos con &lt;code&gt;superset role add&lt;/code&gt;. Además, se puede configurar la autenticación y autorización mediante el archivo &lt;code&gt;superset_config.py&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Superset también ofrece una variedad de herramientas y características para la exploración de datos, incluyendo SQL Lab, que permite a los usuarios ejecutar consultas SQL y visualizar los resultados. Para utilizar SQL Lab, es necesario configurar la conexión a la base de datos y luego crear un nuevo query con &lt;code&gt;superset sql lab&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa y flexible para la exploración de datos y visualización. Con sus características y configuraciones avanzadas, es posible crear dashboards personalizados y gestionar grandes conjuntos de datos de manera eficiente.&lt;/p&gt;
+&lt;p&gt;En la versión 6.1.0 de Superset, se han agregado algunas características nuevas y mejoras, como la capacidad de delegar acceso a un usuario con permisos amplios mediante la variable &lt;code&gt;MCP_DEV_USERNAME&lt;/code&gt;. Sin embargo, también se han reportado algunos problemas y errores, como el problema con la resolución de usuarios MCP en la versión 6.1.0, que se puede solucionar mediante la configuración del archivo &lt;code&gt;superset_config.py&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/"&gt;Superset&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/40225"&gt;MCP user resolution not working in release 6.1.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://superset.apache.org/user-docs/6.0.0/faq/"&gt;FAQ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-15_1427.html"/>
+    <summary>Superset es una plataforma de exploración de datos y visualización moderna y empresarial. En este artículo, se presentan las características y configuraciones clave de Superset, incluyendo charts, dashboards, SQL Lab y administración.</summary>
+    <published>2026-06-15T14:27:00+00:00</published>
   </entry>
 </feed>

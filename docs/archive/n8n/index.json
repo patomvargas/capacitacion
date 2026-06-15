@@ -1,4 +1,24 @@
 {
+  "2026-06-15_1427": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una plataforma de automatización de flujos de trabajo que permite combinar nodos y credenciales para crear flujos de trabajo personalizados. Recientemente, se han agregado nuevas características y mejoras a la plataforma.",
+    "content": "\nLa plataforma n8n permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y credenciales. Un nodo es un componente que realiza una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos. \n \nPara utilizar n8n, es necesario configurar las credenciales y los nodos necesarios. Por ejemplo, para utilizar el nodo de solicitud HTTP, es necesario configurar la `URL` y los parámetros de la solicitud utilizando el comando `n8n-nodes-base.httpRequest`. Sin embargo, debido a una vulnerabilidad reciente, es recomendable deshabilitar el nodo de solicitud HTTP utilizando el comando `NODES_EXCLUDE=n8n-nodes-base.httpRequest`.\n \nRecientemente, se han agregado nuevas características a la plataforma n8n, como la compatibilidad con Claude Managed Agents en Cloudflare. Esto permite a los usuarios crear flujos de trabajo que se ejecutan en un entorno aislado y seguro. Además, se han realizado mejoras en la interfaz de usuario y en la documentación de la plataforma.\n \nPara self-hostear n8n, es posible utilizar servicios como Render y Supabase. Esto permite a los usuarios crear una instancia de n8n personalizada y segura, sin tener que pagar por la plataforma. Por ejemplo, se puede utilizar el comando `docker run -p 5678:5678 -v /path/to/data:/data n8n/n8n` para iniciar una instancia de n8n en un contenedor Docker.\n \nEn resumen, n8n es una plataforma de automatización de flujos de trabajo que ofrece una gran flexibilidad y personalización. Con las nuevas características y mejoras recientes, la plataforma es aún más segura y fácil de utilizar. \n",
+    "sources": [
+      {
+        "title": "HTTP Request Node Pagination Prototype Pollution to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-c8xv-5998-g76h"
+      },
+      {
+        "title": "2.23 · Releases · n8n-io/n8n",
+        "url": "https://github.com/n8n-io/n8n/releases?q=2.23&expanded=true"
+      },
+      {
+        "title": "How to Self-Host n8n for Free Using Render and Supabase",
+        "url": "https://medium.com/@santhankrishna18/how-to-self-host-n8n-for-free-using-render-and-supabase-f63114bffb92"
+      }
+    ]
+  },
   "2026-06-11_1213": {
     "slug": "n8n",
     "title": "Automatización de workflows con n8n",

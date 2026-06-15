@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejoras en Airflow 2.x - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Mejoras en Airflow 2.x</h1>
+    <div class="meta">2026-06-15 1427 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow 2.x es una versión importante en la evolución de esta herramienta de gestión de flujos de trabajo. Una de las mejoras clave es la introducción de `DAGs` (Directed Acyclic Graphs) más flexibles y personalizables. Los `operators` y `sensors` también han sido mejorados para ofrecer una mayor variedad de opciones para la creación de flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Para aprovechar estas mejoras, es importante entender cómo configurar y utilizar los `DAGs` y `operators` de manera efectiva. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos de Airflow y luego crear un `DAG` utilizando el comando `airflow dag create`.</p>
+            
+        
+            
+        
+            
+            <p>Otra mejora importante es la integración con otros servicios y herramientas, como `Google Cloud` y `Tableau`. Los proveedores de Airflow, como `apache-airflow-providers-google` y `apache-airflow-providers-tableau`, ofrecen una forma sencilla de integrar estos servicios con Airflow. Por ejemplo, se puede utilizar el comando `pip install apache-airflow-providers-google` para instalar el proveedor de Google Cloud y luego configurar la conexión utilizando el comando `airflow connections add`.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de las conexiones y la seguridad es fundamental en Airflow. Se puede utilizar el comando `airflow connections list` para ver las conexiones existentes y `airflow connections delete` para eliminarlas. También es importante configurar la autenticación y la autorización adecuadamente para garantizar la seguridad de los flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow 2.x ofrece una amplia gama de mejoras y funcionalidades para la gestión de flujos de trabajo. Al entender cómo configurar y utilizar los `DAGs`, `operators` y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la documentación oficial de Airflow es una excelente fuente de información para aprender sobre las mejores prácticas y la configuración de la herramienta. Se puede encontrar la documentación oficial en el sitio web de Apache Airflow.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante destacar que la comunidad de Airflow es muy activa y ofrece una variedad de recursos y tutoriales para aprender sobre la herramienta. Se pueden encontrar tutoriales y ejemplos de código en el sitio web de Apache Airflow y en otros sitios web de la comunidad.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante seguir las recomendaciones de la comunidad de Airflow y utilizar las herramientas y recursos disponibles para garantizar la seguridad y la eficiencia de los flujos de trabajo. Algunas de las best practices incluyen utilizar `XCom` para compartir datos entre tareas, utilizar `sensors` para monitorear y esperar a que se completen las tareas y utilizar `connections` para gestionar las conexiones con otros servicios y herramientas.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, Airflow 2.x es una herramienta poderosa para la gestión de flujos de trabajo y ofrece una amplia gama de mejoras y funcionalidades. Al entender cómo configurar y utilizar los `DAGs`, `operators` y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Airflow y otros recursos de la comunidad.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/releases?after=1.10.11rc2" target="_blank">Releases: apache/airflow</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-github</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-tableau/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-tableau</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-07_1032.html">&larr; 2026-06-07 1032</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

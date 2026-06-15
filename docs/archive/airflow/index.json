@@ -1,4 +1,28 @@
 {
+  "2026-06-15_1427": {
+    "slug": "airflow",
+    "title": "Mejoras en Airflow 2.x",
+    "summary": "Airflow 2.x ofrece mejoras significativas en su arquitectura y funcionalidades. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta herramienta de gestión de flujos de trabajo.",
+    "content": "Airflow 2.x es una versión importante en la evolución de esta herramienta de gestión de flujos de trabajo. Una de las mejoras clave es la introducción de `DAGs` (Directed Acyclic Graphs) más flexibles y personalizables. Los `operators` y `sensors` también han sido mejorados para ofrecer una mayor variedad de opciones para la creación de flujos de trabajo.\n\nPara aprovechar estas mejoras, es importante entender cómo configurar y utilizar los `DAGs` y `operators` de manera efectiva. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos de Airflow y luego crear un `DAG` utilizando el comando `airflow dag create`. \n\nOtra mejora importante es la integración con otros servicios y herramientas, como `Google Cloud` y `Tableau`. Los proveedores de Airflow, como `apache-airflow-providers-google` y `apache-airflow-providers-tableau`, ofrecen una forma sencilla de integrar estos servicios con Airflow. Por ejemplo, se puede utilizar el comando `pip install apache-airflow-providers-google` para instalar el proveedor de Google Cloud y luego configurar la conexión utilizando el comando `airflow connections add`.\n\nLa gestión de las conexiones y la seguridad es fundamental en Airflow. Se puede utilizar el comando `airflow connections list` para ver las conexiones existentes y `airflow connections delete` para eliminarlas. También es importante configurar la autenticación y la autorización adecuadamente para garantizar la seguridad de los flujos de trabajo.\n\nEn resumen, Airflow 2.x ofrece una amplia gama de mejoras y funcionalidades para la gestión de flujos de trabajo. Al entender cómo configurar y utilizar los `DAGs`, `operators` y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.\n\nFinalmente, es importante mencionar que la documentación oficial de Airflow es una excelente fuente de información para aprender sobre las mejores prácticas y la configuración de la herramienta. Se puede encontrar la documentación oficial en el sitio web de Apache Airflow.\n\nAdemás, es importante destacar que la comunidad de Airflow es muy activa y ofrece una variedad de recursos y tutoriales para aprender sobre la herramienta. Se pueden encontrar tutoriales y ejemplos de código en el sitio web de Apache Airflow y en otros sitios web de la comunidad.\n\nEn cuanto a las best practices, es importante seguir las recomendaciones de la comunidad de Airflow y utilizar las herramientas y recursos disponibles para garantizar la seguridad y la eficiencia de los flujos de trabajo. Algunas de las best practices incluyen utilizar `XCom` para compartir datos entre tareas, utilizar `sensors` para monitorear y esperar a que se completen las tareas y utilizar `connections` para gestionar las conexiones con otros servicios y herramientas.\n\nEn conclusión, Airflow 2.x es una herramienta poderosa para la gestión de flujos de trabajo y ofrece una amplia gama de mejoras y funcionalidades. Al entender cómo configurar y utilizar los `DAGs`, `operators` y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.\n\nPara más información, se puede consultar la documentación oficial de Airflow y otros recursos de la comunidad.\n\n",
+    "sources": [
+      {
+        "title": "Releases: apache/airflow",
+        "url": "https://github.com/apache/airflow/releases?after=1.10.11rc2"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-github",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-tableau",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-tableau/stable/changelog.html"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-google",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"
+      }
+    ]
+  },
   "2026-06-07_1032": {
     "slug": "airflow",
     "title": "Mejores prácticas para Airflow 2.x",

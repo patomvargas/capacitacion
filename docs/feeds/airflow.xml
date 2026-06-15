@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-14T10:51:56.327596+00:00</updated>
+  <updated>2026-06-15T14:28:42.451177+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -369,5 +369,29 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-07_1032.html"/>
     <summary>Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. En este artículo, se presentan las mejores prácticas para utilizar Airflow 2.x de manera efectiva.</summary>
     <published>2026-06-07T10:32:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-15_1427.html</id>
+    <title>Mejoras en Airflow 2.x</title>
+    <updated>2026-06-15T14:27:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow 2.x es una versión importante en la evolución de esta herramienta de gestión de flujos de trabajo. Una de las mejoras clave es la introducción de &lt;code&gt;DAGs&lt;/code&gt; (Directed Acyclic Graphs) más flexibles y personalizables. Los &lt;code&gt;operators&lt;/code&gt; y &lt;code&gt;sensors&lt;/code&gt; también han sido mejorados para ofrecer una mayor variedad de opciones para la creación de flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Para aprovechar estas mejoras, es importante entender cómo configurar y utilizar los &lt;code&gt;DAGs&lt;/code&gt; y &lt;code&gt;operators&lt;/code&gt; de manera efectiva. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos de Airflow y luego crear un &lt;code&gt;DAG&lt;/code&gt; utilizando el comando &lt;code&gt;airflow dag create&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la integración con otros servicios y herramientas, como &lt;code&gt;Google Cloud&lt;/code&gt; y &lt;code&gt;Tableau&lt;/code&gt;. Los proveedores de Airflow, como &lt;code&gt;apache-airflow-providers-google&lt;/code&gt; y &lt;code&gt;apache-airflow-providers-tableau&lt;/code&gt;, ofrecen una forma sencilla de integrar estos servicios con Airflow. Por ejemplo, se puede utilizar el comando &lt;code&gt;pip install apache-airflow-providers-google&lt;/code&gt; para instalar el proveedor de Google Cloud y luego configurar la conexión utilizando el comando &lt;code&gt;airflow connections add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La gestión de las conexiones y la seguridad es fundamental en Airflow. Se puede utilizar el comando &lt;code&gt;airflow connections list&lt;/code&gt; para ver las conexiones existentes y &lt;code&gt;airflow connections delete&lt;/code&gt; para eliminarlas. También es importante configurar la autenticación y la autorización adecuadamente para garantizar la seguridad de los flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 2.x ofrece una amplia gama de mejoras y funcionalidades para la gestión de flujos de trabajo. Al entender cómo configurar y utilizar los &lt;code&gt;DAGs&lt;/code&gt;, &lt;code&gt;operators&lt;/code&gt; y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Airflow es una excelente fuente de información para aprender sobre las mejores prácticas y la configuración de la herramienta. Se puede encontrar la documentación oficial en el sitio web de Apache Airflow.&lt;/p&gt;
+&lt;p&gt;Además, es importante destacar que la comunidad de Airflow es muy activa y ofrece una variedad de recursos y tutoriales para aprender sobre la herramienta. Se pueden encontrar tutoriales y ejemplos de código en el sitio web de Apache Airflow y en otros sitios web de la comunidad.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante seguir las recomendaciones de la comunidad de Airflow y utilizar las herramientas y recursos disponibles para garantizar la seguridad y la eficiencia de los flujos de trabajo. Algunas de las best practices incluyen utilizar &lt;code&gt;XCom&lt;/code&gt; para compartir datos entre tareas, utilizar &lt;code&gt;sensors&lt;/code&gt; para monitorear y esperar a que se completen las tareas y utilizar &lt;code&gt;connections&lt;/code&gt; para gestionar las conexiones con otros servicios y herramientas.&lt;/p&gt;
+&lt;p&gt;En conclusión, Airflow 2.x es una herramienta poderosa para la gestión de flujos de trabajo y ofrece una amplia gama de mejoras y funcionalidades. Al entender cómo configurar y utilizar los &lt;code&gt;DAGs&lt;/code&gt;, &lt;code&gt;operators&lt;/code&gt; y proveedores de manera efectiva, se puede aprovechar al máximo esta herramienta y mejorar la eficiencia y la productividad en la gestión de flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Airflow y otros recursos de la comunidad.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/releases?after=1.10.11rc2"&gt;Releases: apache/airflow&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html"&gt;Changelog — apache-airflow-providers-github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-tableau/stable/changelog.html"&gt;Changelog — apache-airflow-providers-tableau&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"&gt;Changelog — apache-airflow-providers-google&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-15_1427.html"/>
+    <summary>Airflow 2.x ofrece mejoras significativas en su arquitectura y funcionalidades. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta herramienta de gestión de flujos de trabajo.</summary>
+    <published>2026-06-15T14:27:00+00:00</published>
   </entry>
 </feed>
