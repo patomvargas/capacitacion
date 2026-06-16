@@ -1,4 +1,24 @@
 {
+  "2026-06-16_1258": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran cantidad de características para mejorar el rendimiento y la escalabilidad. En este artículo, se presentan algunas mejores prácticas y configuraciones para optimizar el rendimiento de PostgreSQL.",
+    "content": "\nLa optimización de PostgreSQL es crucial para mejorar el rendimiento y la escalabilidad de la base de datos. Una de las formas de hacerlo es mediante la utilización de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos sin tener que escanear toda la tabla. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.\n\nOtra forma de optimizar el rendimiento de PostgreSQL es mediante la configuración de la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h servidor_principal -D /ruta/de/la/copia`.\n\nLa utilización de extensiones también puede mejorar el rendimiento de PostgreSQL. Las extensiones permiten a los desarrolladores agregar nuevas características y funcionalidades a la base de datos. Por ejemplo, la extensión `pg_stat_statements` permite a los administradores de base de datos monitorear el rendimiento de las consultas. Para instalar una extensión, se puede utilizar el comando `CREATE EXTENSION`. Por ejemplo: `CREATE EXTENSION pg_stat_statements;`.\n\nAdemás, es importante mencionar que la versión 19 de PostgreSQL ya está disponible en beta, lo que ofrece nuevas características y mejoras en el rendimiento. Es importante estar al tanto de las últimas versiones y actualizaciones para aprovechar al máximo las características de PostgreSQL.\n\nLa utilización de `EXPLAIN ANALYZE` es fundamental para entender el plan de ejecución de una consulta y optimizar su rendimiento. Este comando permite a los desarrolladores analizar el plan de ejecución de una consulta y identificar posibles cuellos de botella. Por ejemplo: `EXPLAIN ANALYZE SELECT * FROM tabla;`.\n\nFinalmente, es importante mencionar que la creación de copias de seguridad es crucial para proteger los datos. PostgreSQL ofrece varias opciones para crear copias de seguridad, incluyendo el comando `pg_dump`. Por ejemplo: `pg_dump -U usuario -d base_de_datos > copia_de_seguridad.sql;`",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "Release Notes - PostgreSQL",
+        "url": "https://www.postgresql.org/docs/release/"
+      },
+      {
+        "title": "I Optimized Our PostgreSQL Query from 47 Seconds to 83 Milliseconds. Here’s the One Thing I Changed",
+        "url": "https://medium.com/engineering-playbook/i-optimized-our-postgresql-query-from-47-seconds-to-83-milliseconds-heres-the-one-thing-i-changed-c35e2d4b036a"
+      }
+    ]
+  },
   "2026-06-12_1147": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

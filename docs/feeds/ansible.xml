@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-15T14:28:42.464923+00:00</updated>
+  <updated>2026-06-16T13:00:03.078645+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -469,5 +469,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-12_1147.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo su potencial.</summary>
     <published>2026-06-12T11:47:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-16_1258.html</id>
+    <title>Ansible: Nuevas Características y Mejoras</title>
+    <updated>2026-06-16T12:58:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura y configuración que ha ganado popularidad en los últimos años. Recientemente, se han lanzado nuevas versiones de Ansible con mejoras significativas en playbooks, roles y colecciones. Por ejemplo, la versión 13.7.0 de Ansible incluye el cambio de versión de &lt;code&gt;ansible-core&lt;/code&gt; a 2.20, lo que trae consigo cambios en la forma en que se manejan los templates y las variables.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo estas nuevas características, es importante entender cómo funcionan los playbooks y los roles en Ansible. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de servidores. Un rol, por otro lado, es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para configurar un servidor web Apache, y luego reutilizar ese rol en diferentes playbooks para configurar diferentes servidores.&lt;/p&gt;
+&lt;p&gt;La colección &lt;code&gt;amazon.aws&lt;/code&gt; también ha sido actualizada para incluir nuevas características y correcciones de errores. Por ejemplo, la variable &lt;code&gt;tags&lt;/code&gt; en el módulo &lt;code&gt;aws_rds&lt;/code&gt; ha sido deprecada para evitar conflictos con los nombres de variables reservadas de Ansible. En su lugar, se debe utilizar la variable &lt;code&gt;host&lt;/code&gt; para especificar las etiquetas para el recurso RDS. Esto se puede hacer utilizando el comando &lt;code&gt;aws_rds&lt;/code&gt; con la opción &lt;code&gt;--tags&lt;/code&gt; o &lt;code&gt;--host&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 2.20 de &lt;code&gt;ansible-core&lt;/code&gt; incluye soporte para la nueva versión de la API de AWS. Esto significa que los usuarios de Ansible pueden aprovechar las últimas características y mejoras de AWS en sus playbooks y roles.&lt;/p&gt;
+&lt;p&gt;Para mantenerse al día con las últimas novedades y mejoras de Ansible, es importante consultar la documentación oficial y las fuentes de noticias y blogs de la comunidad. Por ejemplo, el sitio web de Ansible incluye una sección de noticias y anuncios que proporciona información sobre las últimas versiones y características de la herramienta.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa y flexible que puede ayudar a los administradores de sistemas y desarrolladores a automatizar y configurar sus infraestructuras de manera eficiente. Con las nuevas características y mejoras incluidas en las últimas versiones, Ansible es una opción aún más atractiva para aquellos que buscan simplificar y optimizar sus procesos de automatización y configuración.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822"&gt;Release announcement: Ansible community package 13.7.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"&gt;amazon.aws Release Notes — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/porting_guides/porting_guide_14.html"&gt;Ansible 14 Porting Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-16_1258.html"/>
+    <summary>Ansible ha lanzado nuevas versiones con mejoras significativas en playbooks, roles y colecciones. Además, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube.</summary>
+    <published>2026-06-16T12:58:00+00:00</published>
   </entry>
 </feed>

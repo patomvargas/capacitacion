@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Mejoras y Novedades - Ansible</title>
+    <title>Ansible: Nuevas Características y Mejoras - Ansible</title>
     <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Ansible: Mejoras y Novedades</h1>
-    <div class="meta">2026-06-12 1147 · Ansible</div>
+    <h1>Ansible: Nuevas Características y Mejoras</h1>
+    <div class="meta">2026-06-16 1258 · Ansible</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar sus entornos de manera eficiente. En las últimas versiones, se han incluido varias mejoras y novedades que vale la pena destacar.</p>
+            <p>Ansible es una herramienta de automatización de infraestructura y configuración que ha ganado popularidad en los últimos años. Recientemente, se han lanzado nuevas versiones de Ansible con mejoras significativas en playbooks, roles y colecciones. Por ejemplo, la versión 13.7.0 de Ansible incluye el cambio de versión de `ansible-core` a 2.20, lo que trae consigo cambios en la forma en que se manejan los templates y las variables.</p>
             
         
             
         
             
-            <p>Una de las características más interesantes es la posibilidad de utilizar `ansible-core` en versión 2.20, que incluye cambios significativos en la plantilla de templating. Para aprovechar esta característica, es necesario actualizar los playbooks y roles existentes. Por ejemplo, se puede utilizar el comando `ansible-playbook --version` para verificar la versión instalada y `ansible-galaxy install` para instalar nuevas colecciones.</p>
+            <p>Para aprovechar al máximo estas nuevas características, es importante entender cómo funcionan los playbooks y los roles en Ansible. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de servidores. Un rol, por otro lado, es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para configurar un servidor web Apache, y luego reutilizar ese rol en diferentes playbooks para configurar diferentes servidores.</p>
             
         
             
         
             
-            <p>Otra característica importante es la inclusión de `ansible-vault` para cifrar y proteger la información sensible. Se puede utilizar el comando `ansible-vault create` para crear un nuevo archivo cifrado y `ansible-vault edit` para editar un archivo existente. Además, se puede utilizar `ansible-inventory` para gestionar los inventarios de manera más eficiente.</p>
+            <p>La colección `amazon.aws` también ha sido actualizada para incluir nuevas características y correcciones de errores. Por ejemplo, la variable `tags` en el módulo `aws_rds` ha sido deprecada para evitar conflictos con los nombres de variables reservadas de Ansible. En su lugar, se debe utilizar la variable `host` para especificar las etiquetas para el recurso RDS. Esto se puede hacer utilizando el comando `aws_rds` con la opción `--tags` o `--host`.</p>
             
         
             
         
             
-            <p>En cuanto a las colecciones, se han incluido varias novedades en la versión 13.7.0 de Ansible Community Package. Por ejemplo, se puede utilizar `ansible-galaxy collection install` para instalar nuevas colecciones y `ansible-galaxy collection list` para listar las colecciones instaladas.</p>
+            <p>Además, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 2.20 de `ansible-core` incluye soporte para la nueva versión de la API de AWS. Esto significa que los usuarios de Ansible pueden aprovechar las últimas características y mejoras de AWS en sus playbooks y roles.</p>
             
         
             
         
             
-            <p>En resumen, Ansible sigue evolucionando y mejorando con cada nueva versión. Es importante estar al tanto de las últimas novedades y best practices para aprovechar al máximo su potencial.</p>
+            <p>Para mantenerse al día con las últimas novedades y mejoras de Ansible, es importante consultar la documentación oficial y las fuentes de noticias y blogs de la comunidad. Por ejemplo, el sitio web de Ansible incluye una sección de noticias y anuncios que proporciona información sobre las últimas versiones y características de la herramienta.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Ansible y las documentaciones relacionadas.</p>
+            <p>En resumen, Ansible es una herramienta poderosa y flexible que puede ayudar a los administradores de sistemas y desarrolladores a automatizar y configurar sus infraestructuras de manera eficiente. Con las nuevas características y mejoras incluidas en las últimas versiones, Ansible es una opción aún más atractiva para aquellos que buscan simplificar y optimizar sus procesos de automatización y configuración.</p>
             
         
             
@@ -111,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/ansible/ansible/issues/86999" target="_blank">Ansible GitHub</a>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822" target="_blank">Release announcement: Ansible community package 13.7.0</a>
                 
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822" target="_blank">Ansible Forum</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html" target="_blank">amazon.aws Release Notes — Ansible Community Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.ansible.com/projects/ansible/latest/collections/community/general/changelog.html" target="_blank">Ansible Documentation</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://docs.ansible.com/projects/ansible/latest/porting_guides/porting_guide_14.html" target="_blank">Ansible Porting Guide</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/porting_guides/porting_guide_14.html" target="_blank">Ansible 14 Porting Guide</a>
                 
             </li>
             
@@ -137,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-08_1237.html">&larr; 2026-06-08 1237</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-16_1258.html">2026-06-16 1258 &rarr;</a>
             
         </div>
     </div>

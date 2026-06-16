@@ -1,4 +1,24 @@
 {
+  "2026-06-16_1258": {
+    "slug": "ansible",
+    "title": "Ansible: Nuevas Características y Mejoras",
+    "summary": "Ansible ha lanzado nuevas versiones con mejoras significativas en playbooks, roles y colecciones. Además, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura y configuración que ha ganado popularidad en los últimos años. Recientemente, se han lanzado nuevas versiones de Ansible con mejoras significativas en playbooks, roles y colecciones. Por ejemplo, la versión 13.7.0 de Ansible incluye el cambio de versión de `ansible-core` a 2.20, lo que trae consigo cambios en la forma en que se manejan los templates y las variables.\n\nPara aprovechar al máximo estas nuevas características, es importante entender cómo funcionan los playbooks y los roles en Ansible. Un playbook es un archivo YAML que define una serie de tareas que se deben ejecutar en un conjunto de servidores. Un rol, por otro lado, es un conjunto de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para configurar un servidor web Apache, y luego reutilizar ese rol en diferentes playbooks para configurar diferentes servidores.\n\nLa colección `amazon.aws` también ha sido actualizada para incluir nuevas características y correcciones de errores. Por ejemplo, la variable `tags` en el módulo `aws_rds` ha sido deprecada para evitar conflictos con los nombres de variables reservadas de Ansible. En su lugar, se debe utilizar la variable `host` para especificar las etiquetas para el recurso RDS. Esto se puede hacer utilizando el comando `aws_rds` con la opción `--tags` o `--host`.\n\nAdemás, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube. Por ejemplo, la versión 2.20 de `ansible-core` incluye soporte para la nueva versión de la API de AWS. Esto significa que los usuarios de Ansible pueden aprovechar las últimas características y mejoras de AWS en sus playbooks y roles.\n\nPara mantenerse al día con las últimas novedades y mejoras de Ansible, es importante consultar la documentación oficial y las fuentes de noticias y blogs de la comunidad. Por ejemplo, el sitio web de Ansible incluye una sección de noticias y anuncios que proporciona información sobre las últimas versiones y características de la herramienta.\n\nEn resumen, Ansible es una herramienta poderosa y flexible que puede ayudar a los administradores de sistemas y desarrolladores a automatizar y configurar sus infraestructuras de manera eficiente. Con las nuevas características y mejoras incluidas en las últimas versiones, Ansible es una opción aún más atractiva para aquellos que buscan simplificar y optimizar sus procesos de automatización y configuración.\n\n",
+    "sources": [
+      {
+        "title": "Release announcement: Ansible community package 13.7.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-13-7-0/45822"
+      },
+      {
+        "title": "amazon.aws Release Notes — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/collections/amazon/aws/docsite/CHANGELOG.html"
+      },
+      {
+        "title": "Ansible 14 Porting Guide",
+        "url": "https://docs.ansible.com/projects/ansible/latest/porting_guides/porting_guide_14.html"
+      }
+    ]
+  },
   "2026-06-12_1147": {
     "slug": "ansible",
     "title": "Ansible: Mejoras y Novedades",

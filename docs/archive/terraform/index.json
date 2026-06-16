@@ -1,4 +1,24 @@
 {
+  "2026-06-16_1258": {
+    "slug": "terraform",
+    "title": "Terraform: Infraestructura como Código",
+    "summary": "Terraform es una herramienta de Infraestructura como Código (IaC) que permite a los desarrolladores y administradores de sistemas provisionar y gestionar infraestructura en la nube de manera eficiente. En este artículo, se presentan las características y beneficios de Terraform, así como sus últimos desarrollos y mejoras.",
+    "content": "Terraform es una herramienta de código abierto desarrollada por HashiCorp que permite a los usuarios definir y provisionar infraestructura en la nube utilizando un lenguaje de configuración simple y legible. La herramienta admite múltiples proveedores de nube, incluyendo AWS, Azure y Google Cloud Platform. \n   \n  Para empezar a utilizar Terraform, es necesario instalar la herramienta en el sistema operativo y configurar el proveedor de nube deseado. Por ejemplo, para configurar el proveedor de Azure, se puede utilizar el comando `terraform init` y luego `terraform apply` para provisionar la infraestructura. \n   \n  Uno de los beneficios clave de Terraform es su capacidad para gestionar el estado de la infraestructura de manera eficiente. La herramienta utiliza un archivo de estado para almacenar la configuración de la infraestructura y realizar cambios en la configuración de manera segura. Para gestionar el estado de la infraestructura, se pueden utilizar comandos como `terraform state list` y `terraform state show`. \n   \n  Además, Terraform admite la creación de módulos y espacios de trabajo, lo que permite a los usuarios organizar y reutilizar código de configuración de manera eficiente. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes utilizando el comando `terraform module create` y luego utilizar el módulo en un espacio de trabajo utilizando el comando `terraform workspace create`. \n   \n  En cuanto a las novedades y mejoras, Terraform ha anunciado recientemente la disponibilidad de un nuevo proveedor para ZITADEL, lo que permite a los usuarios provisionar y gestionar recursos de ZITADEL de manera eficiente. Además, la herramienta ha mejorado su compatibilidad con Kubernetes y otros proveedores de nube.",
+    "sources": [
+      {
+        "title": "Terraform GitHub",
+        "url": "https://github.com/hashicorp/terraform"
+      },
+      {
+        "title": "Terraform Azure Provider",
+        "url": "https://github.com/Azure/terraform-azurerm-aks"
+      },
+      {
+        "title": "ZITADEL Terraform Provider",
+        "url": "https://github.com/zitadel/terraform-provider-zitadel"
+      }
+    ]
+  },
   "2026-06-12_1147": {
     "slug": "terraform",
     "title": "Terraform: Gestión de Infraestructura como Código",

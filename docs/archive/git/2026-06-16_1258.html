@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
+    <title>Mejores prácticas de Git para DevOps - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-06-12 1147 · Git</div>
+    <h1>Mejores prácticas de Git para DevOps</h1>
+    <div class="meta">2026-06-16 1258 · Git</div>
 
     <div class="content">
         
         
             
-            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, muchos usuarios solo utilizan una pequeña parte de su funcionalidad. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados.</p>
+            <p>Git es una herramienta fundamental en el desarrollo de software y DevOps. Para aprovechar al máximo sus capacidades, es importante seguir mejores prácticas y utilizar técnicas avanzadas. Una de las formas de mejorar la productividad es utilizando `git worktree`, que permite tener múltiples directorios de trabajo para un solo repositorio. Por ejemplo, se puede crear un nuevo directorio de trabajo con `git worktree add <nombre-del-directorio>`.</p>
             
         
             
         
             
-            <p>Un ejemplo de comando avanzado es `git rebase -i`, que permite reorganizar y fusionar commits de manera interactiva. Otro comando útil es `git bisect`, que ayuda a identificar el commit que introduce un bug en el código.</p>
+            <p>Para mantener un historial de cambios limpio y organizado, es importante utilizar `git rebase` en lugar de `git merge`. Esto se logra con el comando `git rebase -i <commit-hash>`, que permite reorganizar y combinar commits de manera interactiva.</p>
             
         
             
         
             
-            <p>Además, se pueden utilizar hooks para automatizar tareas y validar cambios en el código. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar pruebas unitarias antes de realizar un commit.</p>
+            <p>Otra técnica útil es la utilización de hooks de Git, que permiten automatizar tareas y validaciones antes de realizar cambios en el repositorio. Por ejemplo, se puede crear un hook de pre-commit para verificar la sintaxis del código con `git hook pre-commit <comando-de-verificación>`.</p>
             
         
             
         
             
-            <p>Otra característica útil de Git es la posibilidad de utilizar worktrees, que permiten trabajar en diferentes ramas de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add`.</p>
+            <p>Además, es importante mencionar la importancia de utilizar `git bisect` para identificar y solucionar problemas en el código. Este comando permite realizar una búsqueda binaria en el historial de cambios para encontrar el commit que introdujo un error o problema.</p>
             
         
             
         
             
-            <p>En cuanto a novedades, se han anunciado cambios en la forma en que se utilizan las imágenes en GitHub Actions. A partir de ahora, las etiquetas `windows-latest` y `windows-2025` se migrarán a utilizar Visual Studio 2026 por defecto.</p>
+            <p>En resumen, seguir estas mejores prácticas y técnicas avanzadas puede mejorar significativamente la productividad y la calidad del código en entornos de desarrollo y DevOps.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la seguridad es un aspecto fundamental al trabajar con Git. Se deben tomar medidas para proteger el código y los datos, como utilizar tokens de instalación de aplicaciones y validar la seguridad de los agentes de codificación de terceros.</p>
+            <p>Para más información, se recomienda consultar la documentación oficial de Git y recursos en línea como GitHub y Medium, que ofrecen una gran cantidad de tutoriales y guías para aprender y mejorar habilidades en Git y DevOps.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar la importancia de la seguridad en el desarrollo de software y DevOps. Se deben seguir las mejores prácticas de seguridad, como la validación de código y la utilización de herramientas de seguridad para proteger el repositorio y el código.</p>
             
         
     </div>
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/" target="_blank">GitHub Actions: Upcoming image migrations</a>
+                <a href="https://mayursurani.medium.com/git-and-github-a-comprehensive-workflow-guide-for-data-professionals-master-branching-pull-9bb3591a767d" target="_blank">Git and GitHub: A Comprehensive Workflow Guide For Data Professionals</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/noriuki/git-survival-guide-commands-you-should-actually-understand-h8h" target="_blank">Git Survival Guide: Commands You Should Actually Understand</a>
+                <a href="https://medium.com/@eloquentcoder/the-complete-guide-to-git-init-from-your-first-repository-to-advanced-configuration-7f6bfb1ef6b9" target="_blank">The Complete Guide to git init: From Your First Repository to Advanced Configuration</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/therizwansaleem/a-practical-git-first-deployment-orchestration-1k7l" target="_blank">A Practical Git-First Deployment Orchestration</a>
+                <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank">Security validation for third-party coding agents</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-08_1237.html">&larr; 2026-06-08 1237</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-16_1258.html">2026-06-16 1258 &rarr;</a>
             
         </div>
     </div>

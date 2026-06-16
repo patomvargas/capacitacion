@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Terraform: Infraestructura como Código - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,41 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-06-12 1147 · Git</div>
+    <h1>Terraform: Infraestructura como Código</h1>
+    <div class="meta">2026-06-16 1258 · Terraform</div>
 
     <div class="content">
         
         
             
-            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Sin embargo, muchos usuarios solo utilizan una pequeña parte de su funcionalidad. En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks y comandos avanzados.</p>
+            <p>Terraform es una herramienta de código abierto desarrollada por HashiCorp que permite a los usuarios definir y provisionar infraestructura en la nube utilizando un lenguaje de configuración simple y legible. La herramienta admite múltiples proveedores de nube, incluyendo AWS, Azure y Google Cloud Platform.</p>
             
         
             
         
             
-            <p>Un ejemplo de comando avanzado es `git rebase -i`, que permite reorganizar y fusionar commits de manera interactiva. Otro comando útil es `git bisect`, que ayuda a identificar el commit que introduce un bug en el código.</p>
+            <p>Para empezar a utilizar Terraform, es necesario instalar la herramienta en el sistema operativo y configurar el proveedor de nube deseado. Por ejemplo, para configurar el proveedor de Azure, se puede utilizar el comando `terraform init` y luego `terraform apply` para provisionar la infraestructura.</p>
             
         
             
         
             
-            <p>Además, se pueden utilizar hooks para automatizar tareas y validar cambios en el código. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar pruebas unitarias antes de realizar un commit.</p>
+            <p>Uno de los beneficios clave de Terraform es su capacidad para gestionar el estado de la infraestructura de manera eficiente. La herramienta utiliza un archivo de estado para almacenar la configuración de la infraestructura y realizar cambios en la configuración de manera segura. Para gestionar el estado de la infraestructura, se pueden utilizar comandos como `terraform state list` y `terraform state show`.</p>
             
         
             
         
             
-            <p>Otra característica útil de Git es la posibilidad de utilizar worktrees, que permiten trabajar en diferentes ramas de manera simultánea. Para crear un worktree, se puede utilizar el comando `git worktree add`.</p>
+            <p>Además, Terraform admite la creación de módulos y espacios de trabajo, lo que permite a los usuarios organizar y reutilizar código de configuración de manera eficiente. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes utilizando el comando `terraform module create` y luego utilizar el módulo en un espacio de trabajo utilizando el comando `terraform workspace create`.</p>
             
         
             
         
             
-            <p>En cuanto a novedades, se han anunciado cambios en la forma en que se utilizan las imágenes en GitHub Actions. A partir de ahora, las etiquetas `windows-latest` y `windows-2025` se migrarán a utilizar Visual Studio 2026 por defecto.</p>
-            
-        
-            
-        
-            
-            <p>Finalmente, es importante mencionar que la seguridad es un aspecto fundamental al trabajar con Git. Se deben tomar medidas para proteger el código y los datos, como utilizar tokens de instalación de aplicaciones y validar la seguridad de los agentes de codificación de terceros.</p>
+            <p>En cuanto a las novedades y mejoras, Terraform ha anunciado recientemente la disponibilidad de un nuevo proveedor para ZITADEL, lo que permite a los usuarios provisionar y gestionar recursos de ZITADEL de manera eficiente. Además, la herramienta ha mejorado su compatibilidad con Kubernetes y otros proveedores de nube.</p>
             
         
     </div>
@@ -105,17 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/changelog/2026-05-14-github-actions-upcoming-image-migrations/" target="_blank">GitHub Actions: Upcoming image migrations</a>
+                <a href="https://github.com/hashicorp/terraform" target="_blank">Terraform GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/noriuki/git-survival-guide-commands-you-should-actually-understand-h8h" target="_blank">Git Survival Guide: Commands You Should Actually Understand</a>
+                <a href="https://github.com/Azure/terraform-azurerm-aks" target="_blank">Terraform Azure Provider</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/therizwansaleem/a-practical-git-first-deployment-orchestration-1k7l" target="_blank">A Practical Git-First Deployment Orchestration</a>
+                <a href="https://github.com/zitadel/terraform-provider-zitadel" target="_blank">ZITADEL Terraform Provider</a>
                 
             </li>
             
@@ -126,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-08_1237.html">&larr; 2026-06-08 1237</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-16_1258.html">2026-06-16 1258 &rarr;</a>
             
         </div>
     </div>
