@@ -1,4 +1,24 @@
 {
+  "2026-06-17_1220": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.",
+    "content": "\nOpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Esto se puede hacer utilizando herramientas como `openssl` y `easy-rsa`. \n\nUna vez generados los certificados y claves, es necesario configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas: \n`port 1194`, \n`proto udp`, \n`dev tun`, \n`ca ca.crt`, \n`cert server.crt`, \n`key server.key`, \n`dh dh2048.pem`. \n\nEs importante mencionar que la seguridad es un aspecto clave en la configuración de un servidor OpenVPN. Para proteger el servidor, es recomendable utilizar `tls-auth` y `tls-crypt` para autenticar los clientes y cifrar el tráfico. También es importante mantener el servidor actualizado y parchear cualquier vulnerabilidad conocida, como la descrita en `CVE-2026-11604`. \n\nPara establecer una conexión segura entre dos redes, se puede utilizar el modo `site-to-site` de OpenVPN. Esto permite a los clientes de una red acceder a los recursos de otra red de manera segura. \n\nFinalmente, es importante mencionar que OpenVPN también ofrece una herramienta llamada Access Server, que permite a los administradores gestionar y configurar los servidores OpenVPN de manera centralizada.\n\n",
+    "sources": [
+      {
+        "title": "CVE-2026-11604",
+        "url": "https://community.openvpn.net/Security+Announcements/CVE-2026-11604"
+      },
+      {
+        "title": "OpenVPN GUI",
+        "url": "https://github.com/OpenVPN/openvpn-gui/actions/runs/26244157527"
+      },
+      {
+        "title": "UPDATING",
+        "url": "https://cgit.freebsd.org/ports/tree/UPDATING"
+      }
+    ]
+  },
   "2026-06-13_1033": {
     "slug": "openvpn",
     "title": "Seguridad y configuración de OpenVPN",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-16T13:00:03.044223+00:00</updated>
+  <updated>2026-06-17T12:21:13.126778+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -502,5 +502,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-13_1033.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas en la versión 1.36 y mejores prácticas para su implementación.</summary>
     <published>2026-06-13T10:33:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-17_1220.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-06-17T12:20:00+00:00</updated>
+    <content type="html">&lt;p&gt;La comunidad de Kubernetes sigue trabajando arduamente para mejorar y expandir las capacidades del sistema. Una de las novedades más destacadas es la inclusión de características de AI/ML en la plataforma, como se menciona en el artículo &lt;code&gt;From counting GPUs to reasoning about them: How Kubernetes DRA ...&lt;/code&gt;. Esto permite a los desarrolladores crear infraestructuras nativas de AI/ML en Kubernetes.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la mejora en la gestión de almacenamiento, como se describe en el artículo &lt;code&gt;Spotlight on SIG Storage - Kubernetes&lt;/code&gt;. Esto incluye la capacidad de crear y gestionar volúmenes de almacenamiento de manera más eficiente, lo que es fundamental para las aplicaciones que requieren grandes cantidades de datos. Por ejemplo, se puede crear un volumen de almacenamiento utilizando el comando &lt;code&gt;kubectl create -f &lt;/code&gt; y especificando el tipo de almacenamiento y la capacidad deseada.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Kubernetes sigue mejorando sus características de autenticación y autorización. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl create rolebinding&lt;/code&gt; para asignar permisos a un usuario o grupo específico. Además, se pueden utilizar &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico de red entre los pods y servicios, como se describe en el artículo &lt;code&gt;GPU Scheduling in Kubernetes Explained: What Actually Works for ...&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La comunidad de Kubernetes también proporciona una variedad de herramientas y recursos para ayudar a los desarrolladores a crear y gestionar sus aplicaciones. Por ejemplo, se puede utilizar &lt;code&gt;Terraform&lt;/code&gt; para crear y gestionar infraestructuras de Kubernetes, como se describe en el artículo &lt;code&gt;GitHub - Azure/terraform-azurerm-aks&lt;/code&gt;. Además, se pueden utilizar herramientas como &lt;code&gt;Kubectl&lt;/code&gt; y &lt;code&gt;Kustomize&lt;/code&gt; para gestionar y personalizar las configuraciones de los pods y servicios.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando sus características y capacidades. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para crear infraestructuras más eficientes, seguras y escalables.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en la plataforma. Por ejemplo, se puede utilizar la documentación oficial para aprender a crear y gestionar &lt;code&gt;Deployments&lt;/code&gt;, &lt;code&gt;ConfigMaps&lt;/code&gt; y &lt;code&gt;Secrets&lt;/code&gt;, como se describe en el artículo &lt;code&gt;How I Used Kubernetes Documentation Effectively During ...&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e"&gt;From counting GPUs to reasoning about them: How Kubernetes DRA ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/"&gt;Spotlight on SIG Storage - Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c"&gt;GPU Scheduling in Kubernetes Explained: What Actually Works for ...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Azure/terraform-azurerm-aks"&gt;GitHub - Azure/terraform-azurerm-aks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@shahzadaliahmad/how-i-used-kubernetes-documentation-effectively-during-the-cka-exam-2c7f4d3a2c3c"&gt;How I Used Kubernetes Documentation Effectively During ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-17_1220.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas y proporcionaremos ejemplos prácticos para implementarlas.</summary>
+    <published>2026-06-17T12:20:00+00:00</published>
   </entry>
 </feed>

@@ -58,43 +58,43 @@
     </div>
 
     <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-06-13 1033 · FreeIPA</div>
+    <div class="meta">2026-06-17 1220 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es un proyecto de código abierto que proporciona una solución integral para la gestión de identidad y acceso en entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP y Kerberos.</p>
+            <p>FreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y SSL/TLS. Permite la autenticación y autorización de usuarios y servicios en una red, así como la administración de cuentas y grupos. Para instalar y configurar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración.</p>
             
         
             
         
             
-            <p>Para instalar y configurar un servidor FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina virtual o física con un sistema operativo compatible. Una vez instalado, se puede acceder a la interfaz de usuario web de FreeIPA mediante el comando `https://<direccion_IP>:443` y autenticarse con el usuario y contraseña administrativos.</p>
+            <p>Una de las características clave de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios, lo que permite la autenticación y autorización de usuarios entre diferentes dominios. Esto se puede lograr mediante el comando `ipa trust-add` y especificando el dominio de confianza.</p>
             
         
             
         
             
-            <p>La configuración de FreeIPA implica la creación de dominios, usuarios, grupos y hosts, así como la definición de políticas de acceso y autorización. Se pueden utilizar comandos como `ipa user-add` y `ipa group-add` para crear nuevos usuarios y grupos, y `ipa host-add` para agregar nuevos hosts al dominio.</p>
+            <p>La configuración de FreeIPA también incluye la definición de reglas de acceso y autorización, como las reglas de acceso basadas en hosts (HBAC) y las reglas de acceso basadas en usuarios y grupos. Estas reglas se pueden definir utilizando el comando `ipa hbacrule-add` y especificando los criterios de acceso.</p>
             
         
             
         
             
-            <p>FreeIPA también proporciona funcionalidades de gestión de confianza y autorización, como la configuración de relaciones de confianza entre dominios y la definición de reglas de acceso basadas en el protocolo HBAC (Host-Based Access Control). Se pueden utilizar comandos como `ipa trust-add` y `ipa hbacrule-add` para configurar estas funcionalidades.</p>
+            <p>Además, FreeIPA proporciona una API de programación de aplicaciones (API) que permite a los desarrolladores integrar la gestión de identidad y acceso en sus aplicaciones. La API de FreeIPA se basa en el protocolo REST y proporciona métodos para autenticar y autorizar a los usuarios, así como para administrar cuentas y grupos.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger la autenticación y autorización de usuarios y servicios, como el uso de protocolos de autenticación seguros como Kerberos y la implementación de políticas de acceso y autorización basadas en roles.</p>
+            <p>Para asegurar la integridad y la confidencialidad de la información, FreeIPA utiliza protocolos de seguridad como SSL/TLS y Kerberos. También proporciona herramientas para monitorear y auditar el acceso y la actividad en el sistema.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos de red, que proporciona una serie de funcionalidades y configuraciones para asegurar la autenticación y autorización de usuarios y servicios de manera segura y eficiente.</p>
+            <p>En resumen, FreeIPA es un sistema de gestión de identidad y acceso que proporciona una amplia gama de características y herramientas para autenticar y autorizar a los usuarios y servicios en una red, así como para administrar cuentas y grupos.</p>
             
         
     </div>
@@ -105,27 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/freeipa/deploy-pki-workshop-devconfcz-2026" target="_blank">FreeIPA GitHub</a>
+                <a href="https://github.com/freeipa/freeipa" target="_blank">FreeIPA GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa-webui/issues/1112" target="_blank">FreeIPA WebUI</a>
+                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentación</a>
                 
             </li>
             
             <li>
-                <a href="https://sumble.com/tech/free-ipa" target="_blank">Sumble</a>
+                <a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/" target="_blank">Deploy FreeIPA Server On Cloud VPS</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/" target="_blank">Rad Web Hosting Blog</a>
+                <a href="https://wiki.gentoo.org/wiki/Join_FreeIPA" target="_blank">Join FreeIPA - Gentoo wiki</a>
                 
             </li>
             
             <li>
-                <a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345" target="_blank">Linux Security</a>
+                <a href="https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/" target="_blank">Configuring FreeIPA | TrueNAS Documentation Hub</a>
                 
             </li>
             
@@ -136,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-09_1121.html">&larr; 2026-06-09 1121</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-13_1033.html">&larr; 2026-06-13 1033</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-17_1220.html">2026-06-17 1220 &rarr;</a>
             
         </div>
     </div>

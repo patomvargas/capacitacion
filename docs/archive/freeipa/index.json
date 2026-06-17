@@ -1,4 +1,32 @@
 {
+  "2026-06-17_1220": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es un sistema de gestión de identidad y acceso que proporciona autenticación, autorización y administración de cuentas para sistemas Linux y Unix-like. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "FreeIPA es un sistema de gestión de identidad y acceso que se basa en tecnologías como LDAP, Kerberos y SSL/TLS. Permite la autenticación y autorización de usuarios y servicios en una red, así como la administración de cuentas y grupos. Para instalar y configurar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración.\n\nUna de las características clave de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios, lo que permite la autenticación y autorización de usuarios entre diferentes dominios. Esto se puede lograr mediante el comando `ipa trust-add` y especificando el dominio de confianza.\n\nLa configuración de FreeIPA también incluye la definición de reglas de acceso y autorización, como las reglas de acceso basadas en hosts (HBAC) y las reglas de acceso basadas en usuarios y grupos. Estas reglas se pueden definir utilizando el comando `ipa hbacrule-add` y especificando los criterios de acceso.\n\nAdemás, FreeIPA proporciona una API de programación de aplicaciones (API) que permite a los desarrolladores integrar la gestión de identidad y acceso en sus aplicaciones. La API de FreeIPA se basa en el protocolo REST y proporciona métodos para autenticar y autorizar a los usuarios, así como para administrar cuentas y grupos.\n\nPara asegurar la integridad y la confidencialidad de la información, FreeIPA utiliza protocolos de seguridad como SSL/TLS y Kerberos. También proporciona herramientas para monitorear y auditar el acceso y la actividad en el sistema.\n\nEn resumen, FreeIPA es un sistema de gestión de identidad y acceso que proporciona una amplia gama de características y herramientas para autenticar y autorizar a los usuarios y servicios en una red, así como para administrar cuentas y grupos.",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Documentación",
+        "url": "https://www.freeipa.org/page/Documentation"
+      },
+      {
+        "title": "Deploy FreeIPA Server On Cloud VPS",
+        "url": "https://blog.radwebhosting.com/deploy-freeipa-server-on-cloud-vps/"
+      },
+      {
+        "title": "Join FreeIPA - Gentoo wiki",
+        "url": "https://wiki.gentoo.org/wiki/Join_FreeIPA"
+      },
+      {
+        "title": "Configuring FreeIPA | TrueNAS Documentation Hub",
+        "url": "https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"
+      }
+    ]
+  },
   "2026-06-13_1033": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",

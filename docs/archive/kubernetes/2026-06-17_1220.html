@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Novedades en Kubernetes - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+    </div>
+
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-06-17 1220 · Kubernetes</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La comunidad de Kubernetes sigue trabajando arduamente para mejorar y expandir las capacidades del sistema. Una de las novedades más destacadas es la inclusión de características de AI/ML en la plataforma, como se menciona en el artículo `From counting GPUs to reasoning about them: How Kubernetes DRA ...`. Esto permite a los desarrolladores crear infraestructuras nativas de AI/ML en Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante es la mejora en la gestión de almacenamiento, como se describe en el artículo `Spotlight on SIG Storage - Kubernetes`. Esto incluye la capacidad de crear y gestionar volúmenes de almacenamiento de manera más eficiente, lo que es fundamental para las aplicaciones que requieren grandes cantidades de datos. Por ejemplo, se puede crear un volumen de almacenamiento utilizando el comando `kubectl create -f ` y especificando el tipo de almacenamiento y la capacidad deseada.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Kubernetes sigue mejorando sus características de autenticación y autorización. Por ejemplo, se puede utilizar el comando `kubectl create rolebinding` para asignar permisos a un usuario o grupo específico. Además, se pueden utilizar `Network Policies` para controlar el tráfico de red entre los pods y servicios, como se describe en el artículo `GPU Scheduling in Kubernetes Explained: What Actually Works for ...`.</p>
+            
+        
+            
+        
+            
+            <p>La comunidad de Kubernetes también proporciona una variedad de herramientas y recursos para ayudar a los desarrolladores a crear y gestionar sus aplicaciones. Por ejemplo, se puede utilizar `Terraform` para crear y gestionar infraestructuras de Kubernetes, como se describe en el artículo `GitHub - Azure/terraform-azurerm-aks`. Además, se pueden utilizar herramientas como `Kubectl` y `Kustomize` para gestionar y personalizar las configuraciones de los pods y servicios.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Kubernetes sigue evolucionando y mejorando sus características y capacidades. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para crear infraestructuras más eficientes, seguras y escalables.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en la plataforma. Por ejemplo, se puede utilizar la documentación oficial para aprender a crear y gestionar `Deployments`, `ConfigMaps` y `Secrets`, como se describe en el artículo `How I Used Kubernetes Documentation Effectively During ...`.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e" target="_blank">From counting GPUs to reasoning about them: How Kubernetes DRA ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/" target="_blank">Spotlight on SIG Storage - Kubernetes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/aegisops/gpu-scheduling-in-kubernetes-explained-what-actually-works-for-ai-and-high-performance-workloads-302334f3419c" target="_blank">GPU Scheduling in Kubernetes Explained: What Actually Works for ...</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Azure/terraform-azurerm-aks" target="_blank">GitHub - Azure/terraform-azurerm-aks</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@shahzadaliahmad/how-i-used-kubernetes-documentation-effectively-during-the-cka-exam-2c7f4d3a2c3c" target="_blank">How I Used Kubernetes Documentation Effectively During ...</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-13_1033.html">&larr; 2026-06-13 1033</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

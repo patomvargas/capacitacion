@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad y configuración de OpenVPN - OpenVPN</title>
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,50 +57,72 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Seguridad y configuración de OpenVPN</h1>
-    <div class="meta">2026-06-13 1033 · OpenVPN</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-06-17 1220 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite a los administradores de sistemas configurar túneles de red seguros entre redes. Para configurar OpenVPN, es necesario generar certificados y claves para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como `openssl` para generar los certificados y claves.</p>
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Esto se puede hacer utilizando herramientas como `openssl` y `easy-rsa`.</p>
             
         
             
         
             
-            <p>Una vez que se han generado los certificados y claves, es posible configurar el servidor OpenVPN utilizando el archivo de configuración `server.conf`. En este archivo, se pueden especificar parámetros como la dirección IP del servidor, el puerto de escucha y la ruta de los certificados y claves. Por ejemplo, se puede utilizar la siguiente configuración: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`.</p>
+            <p>Una vez generados los certificados y claves, es necesario configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas:</p>
+            
+        
+            
+            <p>`port 1194`,</p>
+            
+        
+            
+            <p>`proto udp`,</p>
+            
+        
+            
+            <p>`dev tun`,</p>
+            
+        
+            
+            <p>`ca ca.crt`,</p>
+            
+        
+            
+            <p>`cert server.crt`,</p>
+            
+        
+            
+            <p>`key server.key`,</p>
+            
+        
+            
+            <p>`dh dh2048.pem`.</p>
             
         
             
         
             
-            <p>Para endurecer la configuración de OpenVPN, es recomendable utilizar protocolos de autenticación y cifrado seguros, como TLS y AES. También es importante limitar el acceso a la red y configurar firewalls para bloquear el tráfico no autorizado. Por ejemplo, se puede utilizar la siguiente configuración: `tls-auth ta.key 0`, `cipher AES-256-CBC`, `auth SHA256`.</p>
+            <p>Es importante mencionar que la seguridad es un aspecto clave en la configuración de un servidor OpenVPN. Para proteger el servidor, es recomendable utilizar `tls-auth` y `tls-crypt` para autenticar los clientes y cifrar el tráfico. También es importante mantener el servidor actualizado y parchear cualquier vulnerabilidad conocida, como la descrita en `CVE-2026-11604`.</p>
             
         
             
         
             
-            <p>Además, es importante mantener actualizado el software OpenVPN y aplicar las últimas actualizaciones de seguridad. Según la fuente [2], se ha descubierto una vulnerabilidad de seguridad en OpenVPN, por lo que es importante aplicar la actualización correspondiente. También es recomendable utilizar herramientas de monitoreo y análisis de tráfico para detectar posibles problemas de seguridad.</p>
+            <p>Para establecer una conexión segura entre dos redes, se puede utilizar el modo `site-to-site` de OpenVPN. Esto permite a los clientes de una red acceder a los recursos de otra red de manera segura.</p>
             
         
             
         
             
-            <p>En cuanto a la configuración de Access Server, es posible utilizar la herramienta de línea de comandos `openvpn-as` para configurar y administrar el servidor. Por ejemplo, se puede utilizar el comando `openvpn-as --config /etc/openvpn/as.conf` para iniciar el servidor con la configuración especificada en el archivo `as.conf`.</p>
+            <p>Finalmente, es importante mencionar que OpenVPN también ofrece una herramienta llamada Access Server, que permite a los administradores gestionar y configurar los servidores OpenVPN de manera centralizada.</p>
             
         
             
         
-            
-            <p>En resumen, OpenVPN es una herramienta poderosa para configurar túneles de red seguros, pero requiere una configuración y un endurecimiento adecuados para garantizar la seguridad de la red.</p>
-            
-        
-            
-        
-            
-            <p>La configuración de site-to-site es otro tema importante en OpenVPN, ya que permite a los administradores de sistemas configurar conexiones seguras entre redes diferentes. Para configurar site-to-site, es necesario generar certificados y claves para autenticar los servidores y clientes, y luego configurar los servidores OpenVPN para establecer la conexión segura entre las redes.</p>
             
         
     </div>
@@ -116,12 +138,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560" target="_blank">Update github actions</a>
+                <a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26244157527" target="_blank">OpenVPN GUI</a>
                 
             </li>
             
             <li>
-                <a href="https://openvpn.net/as-docs/tutorials/tutorial--update-access-server.html" target="_blank">Tutorial: Update Your Access Server Version</a>
+                <a href="https://cgit.freebsd.org/ports/tree/UPDATING" target="_blank">UPDATING</a>
                 
             </li>
             
@@ -132,12 +154,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-09_1121.html">&larr; 2026-06-09 1121</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-13_1033.html">&larr; 2026-06-13 1033</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-17_1220.html">2026-06-17 1220 &rarr;</a>
             
         </div>
     </div>
