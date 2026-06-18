@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Claude Code: Mejoras y Configuraciones - Claude Code</title>
+    <title>Claude Code: Mejoras y Best Practices - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Claude Code: Mejoras y Configuraciones</h1>
-    <div class="meta">2026-06-14 1051 · Claude Code</div>
+    <h1>Claude Code: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-18 1153 · Claude Code</div>
 
     <div class="content">
         
@@ -66,45 +66,37 @@
             
         
             
-            <p>La comunidad de Claude Code ha estado trabajando en mejorar la herramienta, con solicitudes de características como cambiar el nombre del feed RSS de "Changelog" a "Claude Changelog". Además, se ha solicitado la eliminación de sesiones de Claude Code y la integración con Visual Studio 2026.</p>
+            <p>La última versión de Claude Code, Opus 4.7, se lanzó recientemente y muestra mejoras en software y codificación. Para utilizar Claude Code, es necesario configurar el entorno de desarrollo adecuadamente. Por ejemplo, se puede utilizar el comando `claude init` para inicializar el proyecto y `claude code` para comenzar a codificar.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las funcionalidades de Claude Code, es importante configurar algunas opciones. Por ejemplo, se puede ejecutar el comando `claude doctor` para verificar la configuración y detectar problemas. También se puede configurar la variable de entorno `CLAUD_CODE_EXECUTION_POLICY` para establecer la política de ejecución por defecto.</p>
+            <p>Una de las mejores prácticas para utilizar Claude Code es empezar con rutas no críticas, como utilities, generación de documentación y herramientas internas. También es importante requerir archivos compartidos `CLAUDE.md` en el repositorio y aplicar las mismas políticas de seguridad en todos los proyectos. Para implementar estas políticas, se pueden utilizar comandos como `claude security` para verificar la seguridad del proyecto.</p>
             
         
             
         
             
-            <p>Otra característica importante es la integración con otros herramientas, como la CLI de Claude Code. Se puede utilizar el comando `claude code` para interactuar con la herramienta y ejecutar comandos. Por ejemplo, se puede ejecutar `claude code --help` para obtener información sobre los comandos disponibles.</p>
+            <p>Otra característica importante de Claude Code es la capacidad de crear y gestionar sesiones. Se puede utilizar el comando `claude sessions` para listar todas las sesiones actuales y `claude delete session` para eliminar una sesión específica. Además, se pueden utilizar hooks para automatizar tareas y mejorar la productividad. Por ejemplo, se puede utilizar el comando `claude hook` para crear un hook que ejecute una tarea específica al iniciar la sesión.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante tener en cuenta algunas configuraciones. Por ejemplo, se puede establecer la política de ejecución para evitar que Claude Code lea archivos `.env` sensibles. Se puede hacer esto ejecutando el comando `claude code --execution-policy bypass --env-file /path/to/.env`.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que Claude Code tiene un programa de divulgación responsable para reportar vulnerabilidades. Se pueden encontrar más detalles sobre cómo contener Claude en productos en el artículo de Anthropic. Además, se pueden encontrar tutoriales y cursos en línea para aprender a utilizar Claude Code de manera efectiva, como el curso gratuito de Claude.</p>
             
         
             
         
             
-            <p>Además, se pueden configurar opciones de productividad, como la autoaprobación de comandos seguros. Se puede hacer esto estableciendo la variable de entorno `CLAUD_CODE_AUTO_APPROVE_SAFE_COMMANDS` en `true`.</p>
+            <p>Para mantenerse actualizado con las últimas mejoras y características de Claude Code, se pueden seguir las notas de lanzamiento en el centro de ayuda de Claude. También se pueden encontrar más recursos y documentación en el repositorio de GitHub de Claude Code.</p>
             
         
             
         
             
-            <p>En resumen, Claude Code es una herramienta poderosa que requiere configuraciones y ajustes para aprovechar al máximo sus funcionalidades. Al seguir estas best practices y configuraciones, se puede optimizar el uso de la herramienta y mejorar la productividad.</p>
-            
-        
-            
-        
-            
-            <p>Para obtener más información sobre las características y configuraciones de Claude Code, se puede consultar la documentación oficial y las fuentes proporcionadas.</p>
-            
-        
+            <p>En resumen, Claude Code es una herramienta poderosa para codificar más rápido y de manera más efectiva. Al seguir las mejores prácticas y configurar el entorno de desarrollo adecuadamente, se puede aprovechar al máximo las características de Claude Code y mejorar la productividad.</p>
             
         
             
@@ -117,22 +109,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/issues/64870" target="_blank">FEATURE: Can you please change the RSS feed name from 'Changelog' to something like 'Claude Changelog'</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/anthropics/claude-code/issues/15942" target="_blank">Add support for Visual Studio 2026 Integration</a>
-                
-            </li>
-            
-            <li>
                 <a href="https://www.claudelog.com/claude-code-changelog/" target="_blank">Claude Code Changelog</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@joe.njenga/9-claude-code-settings-that-most-developers-ignore-big-mistake-51c31900b7cb" target="_blank">9 Claude Code Settings That Most Developers Ignore (Big Mistake)</a>
+                <a href="https://docs.anthropic.com/en/release-notes/claude-apps" target="_blank">Release notes - Claude Help Center</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.anthropic.com/engineering/how-we-contain-claude" target="_blank">How we contain Claude across products - Anthropic</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://alirezarezvani.medium.com/claude-code-workflow-best-practices-340-sessions-94-success-the-system-that-works-9218754a9f34" target="_blank">Claude Code Workflow Best Practices</a>
                 
             </li>
             
@@ -143,12 +135,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-10_1141.html">&larr; 2026-06-10 1141</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-14_1051.html">&larr; 2026-06-14 1051</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-18_1153.html">2026-06-18 1153 &rarr;</a>
             
         </div>
     </div>

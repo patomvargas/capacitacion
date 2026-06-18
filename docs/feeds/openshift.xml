@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-17T12:21:13.129347+00:00</updated>
+  <updated>2026-06-18T11:54:54.933803+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -468,5 +468,29 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-14_1051.html"/>
     <summary>OpenShift Container Platform ha lanzado varias actualizaciones de seguridad y mejoras en las versiones 4.15, 4.16, 4.17 y 4.18. Estas actualizaciones incluyen correcciones de vulnerabilidades y mejoras en la seguridad y el rendimiento.</summary>
     <published>2026-06-14T10:51:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-18_1153.html</id>
+    <title>OpenShift: Mejoras y Best Practices</title>
+    <updated>2026-06-18T11:53:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una familia de productos de contenerización desarrollados por Red Hat, que incluye la plataforma OpenShift Container Platform, una plataforma híbrida en la nube como servicio construida alrededor de contenedores Linux orquestados y gestionados por Kubernetes sobre una base de Red Hat Enterprise Linux.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de OpenShift es su capacidad para automatizar la gestión de recursos y la orquestación de contenedores. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc get pods&lt;/code&gt; para obtener una lista de los pods que se están ejecutando en un clúster.&lt;/p&gt;
+&lt;p&gt;Además, OpenShift ofrece una variedad de herramientas y características para mejorar la seguridad y la gestión de aplicaciones en la nube. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc create secret&lt;/code&gt; para crear un secreto que contenga información sensible, como claves de API o credenciales de acceso.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha anunciado que OpenShift Container Platform 4.20.23 incluye actualizaciones de imágenes de contenedores y paquetes RPM que corrigen varias vulnerabilidades de seguridad y errores. También se ha introducido una característica que permite calcular y asignar automáticamente recursos reservados para clústeres nuevos, lo que puede ayudar a mejorar la eficiencia y la escalabilidad de las aplicaciones.&lt;/p&gt;
+&lt;p&gt;Para migrar aplicaciones a OpenShift, se pueden seguir las siguientes etapas:&lt;/p&gt;
+&lt;p&gt;1. Crear un nuevo proyecto en OpenShift utilizando el comando &lt;code&gt;oc new-project&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;2. Crear un nuevo build de la aplicación utilizando el comando &lt;code&gt;oc start-build&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;3. Crear un nuevo despliegue de la aplicación utilizando el comando &lt;code&gt;oc rollout latest&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;4. Configurar las rutas de acceso a la aplicación utilizando el comando &lt;code&gt;oc expose&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma poderosa y flexible que ofrece una variedad de herramientas y características para mejorar la gestión de aplicaciones en la nube. Al seguir las best practices y utilizar las herramientas y características adecuadas, los desarrolladores y administradores de sistemas pueden aprovechar al máximo las capacidades de OpenShift y mejorar la eficiencia y la escalabilidad de sus aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/OpenShift"&gt;OpenShift - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://radar.offseq.com/threat/red-hat-security-advisory-openshift-container-plat-a9e48fb8"&gt;Red Hat Security Advisory: OpenShift Container Platform 4.20.23 bug fix and security update - Live Threat Intelligence - Threat Radar | OffSeq.com&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/05/29/whats-new-openshift-container-platform-system-management"&gt;What's new in OpenShift Container Platform system management | Red Hat Developer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-18_1153.html"/>
+    <summary>OpenShift es una plataforma de contenerización que ofrece una variedad de herramientas y características para mejorar la gestión de aplicaciones en la nube. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.</summary>
+    <published>2026-06-18T11:53:00+00:00</published>
   </entry>
 </feed>

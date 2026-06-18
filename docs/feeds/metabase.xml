@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-17T12:21:13.137265+00:00</updated>
+  <updated>2026-06-18T11:54:54.945500+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -322,5 +322,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-06_1009.html"/>
     <summary>Metabase 61 introduce una capa de gobernanza de IA con controles de acceso, límites de tokens y personalización de Metabot. Además, se incluyen mejoras en la administración y el análisis de datos.</summary>
     <published>2026-06-06T10:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-18_1153.html</id>
+    <title>Metabase: Mejoras y Best Practices</title>
+    <updated>2026-06-18T11:53:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, tableros y analíticas integradas de manera sencilla. En la versión 62, se han agregado nuevas características como el SDK de plugins para crear tipos de gráficos personalizados, gráficos interactivos desde el servidor MCP en el cliente AI, la CLI de Metabase para flujos de trabajo nativos de terminal, un visor de esquema interactivo y colecciones en la biblioteca.&lt;/p&gt;
+&lt;p&gt;Para utilizar Metabase de manera efectiva, es importante configurar correctamente la instancia. Por ejemplo, para configurar la conexión a una base de datos, se puede utilizar el comando &lt;code&gt;metabase config set database.host &lt;host&gt;&lt;/code&gt;. También es importante tener en cuenta las limitaciones de la versión 62, como la incompatibilidad con MariaDB, como se menciona en el issue #75458 de GitHub.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Metabase proporciona características como el control de acceso basado en roles y la autenticación mediante tokens. Para configurar la autenticación, se puede utilizar el comando &lt;code&gt;metabase config set auth.token &lt;token&gt;&lt;/code&gt;. También es importante mencionar que la versión 61 de Metabase agregó una capa de gobernanza de AI, que permite a los administradores controlar el acceso a las funcionalidades de AI y establecer límites de uso.&lt;/p&gt;
+&lt;p&gt;Para embeddings, Metabase proporciona una API que permite a los desarrolladores integrar las analíticas en sus aplicaciones. Por ejemplo, se puede utilizar el comando &lt;code&gt;metabase api embed &lt;id&gt;&lt;/code&gt; para obtener el código de embedding para un tablero específico. También es importante mencionar que la versión 62 de Metabase agregó soporte para programmatic filter control para embedded analytics.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta poderosa para la inteligencia empresarial y la analítica integrada. Con las últimas mejoras y best practices, los usuarios pueden aprovechar al máximo sus características y funciones para tomar decisiones informadas basadas en datos.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Metabase y la documentación técnica.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/releases/metabase-62"&gt;Metabase 62&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/75458"&gt;Issue #75458&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discourse.metabase.com/t/metabase-61-ai-governance-mcp-updates-and-more/304452"&gt;Metabase 61: AI governance, MCP updates, and more!&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-18_1153.html"/>
+    <summary>Metabase es una herramienta de inteligencia empresarial y analítica integrada que permite a los usuarios trabajar con datos de manera efectiva. En este artículo, se presentan las últimas mejoras y best practices para utilizar Metabase de manera óptima.</summary>
+    <published>2026-06-18T11:53:00+00:00</published>
   </entry>
 </feed>

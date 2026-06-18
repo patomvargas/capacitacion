@@ -1,4 +1,28 @@
 {
+  "2026-06-18_1153": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Best Practices",
+    "summary": "OpenShift es una plataforma de contenerización que ofrece una variedad de herramientas y características para mejorar la gestión de aplicaciones en la nube. En este artículo, se presentan las últimas novedades y best practices para trabajar con OpenShift.",
+    "content": "\nOpenShift es una familia de productos de contenerización desarrollados por Red Hat, que incluye la plataforma OpenShift Container Platform, una plataforma híbrida en la nube como servicio construida alrededor de contenedores Linux orquestados y gestionados por Kubernetes sobre una base de Red Hat Enterprise Linux. \n\nUna de las características más importantes de OpenShift es su capacidad para automatizar la gestión de recursos y la orquestación de contenedores. Por ejemplo, se puede utilizar el comando `oc get pods` para obtener una lista de los pods que se están ejecutando en un clúster. \n\nAdemás, OpenShift ofrece una variedad de herramientas y características para mejorar la seguridad y la gestión de aplicaciones en la nube. Por ejemplo, se puede utilizar el comando `oc create secret` para crear un secreto que contenga información sensible, como claves de API o credenciales de acceso. \n\nEn cuanto a las novedades, se ha anunciado que OpenShift Container Platform 4.20.23 incluye actualizaciones de imágenes de contenedores y paquetes RPM que corrigen varias vulnerabilidades de seguridad y errores. También se ha introducido una característica que permite calcular y asignar automáticamente recursos reservados para clústeres nuevos, lo que puede ayudar a mejorar la eficiencia y la escalabilidad de las aplicaciones. \n\nPara migrar aplicaciones a OpenShift, se pueden seguir las siguientes etapas: \n1. Crear un nuevo proyecto en OpenShift utilizando el comando `oc new-project`.\n2. Crear un nuevo build de la aplicación utilizando el comando `oc start-build`.\n3. Crear un nuevo despliegue de la aplicación utilizando el comando `oc rollout latest`.\n4. Configurar las rutas de acceso a la aplicación utilizando el comando `oc expose`.\n\nEn resumen, OpenShift es una plataforma poderosa y flexible que ofrece una variedad de herramientas y características para mejorar la gestión de aplicaciones en la nube. Al seguir las best practices y utilizar las herramientas y características adecuadas, los desarrolladores y administradores de sistemas pueden aprovechar al máximo las capacidades de OpenShift y mejorar la eficiencia y la escalabilidad de sus aplicaciones.\n\n",
+    "sources": [
+      {
+        "title": "OpenShift - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/OpenShift"
+      },
+      {
+        "title": "What's new with Azure Red Hat OpenShift? - Azure Red Hat OpenShift | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "Red Hat Security Advisory: OpenShift Container Platform 4.20.23 bug fix and security update - Live Threat Intelligence - Threat Radar | OffSeq.com",
+        "url": "https://radar.offseq.com/threat/red-hat-security-advisory-openshift-container-plat-a9e48fb8"
+      },
+      {
+        "title": "What's new in OpenShift Container Platform system management | Red Hat Developer",
+        "url": "https://developers.redhat.com/articles/2026/05/29/whats-new-openshift-container-platform-system-management"
+      }
+    ]
+  },
   "2026-06-14_1051": {
     "slug": "openshift",
     "title": "Actualizaciones y Mejoras en OpenShift",

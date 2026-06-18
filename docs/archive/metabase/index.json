@@ -1,4 +1,24 @@
 {
+  "2026-06-18_1153": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Best Practices",
+    "summary": "Metabase es una herramienta de inteligencia empresarial y analítica integrada que permite a los usuarios trabajar con datos de manera efectiva. En este artículo, se presentan las últimas mejoras y best practices para utilizar Metabase de manera óptima.",
+    "content": "\nMetabase es una herramienta de código abierto que permite a los usuarios crear consultas, tableros y analíticas integradas de manera sencilla. En la versión 62, se han agregado nuevas características como el SDK de plugins para crear tipos de gráficos personalizados, gráficos interactivos desde el servidor MCP en el cliente AI, la CLI de Metabase para flujos de trabajo nativos de terminal, un visor de esquema interactivo y colecciones en la biblioteca.\n\nPara utilizar Metabase de manera efectiva, es importante configurar correctamente la instancia. Por ejemplo, para configurar la conexión a una base de datos, se puede utilizar el comando `metabase config set database.host <host>`. También es importante tener en cuenta las limitaciones de la versión 62, como la incompatibilidad con MariaDB, como se menciona en el issue #75458 de GitHub.\n\nEn cuanto a la seguridad, Metabase proporciona características como el control de acceso basado en roles y la autenticación mediante tokens. Para configurar la autenticación, se puede utilizar el comando `metabase config set auth.token <token>`. También es importante mencionar que la versión 61 de Metabase agregó una capa de gobernanza de AI, que permite a los administradores controlar el acceso a las funcionalidades de AI y establecer límites de uso.\n\nPara embeddings, Metabase proporciona una API que permite a los desarrolladores integrar las analíticas en sus aplicaciones. Por ejemplo, se puede utilizar el comando `metabase api embed <id>` para obtener el código de embedding para un tablero específico. También es importante mencionar que la versión 62 de Metabase agregó soporte para programmatic filter control para embedded analytics.\n\nEn resumen, Metabase es una herramienta poderosa para la inteligencia empresarial y la analítica integrada. Con las últimas mejoras y best practices, los usuarios pueden aprovechar al máximo sus características y funciones para tomar decisiones informadas basadas en datos.\n\nPara más información, se pueden consultar las fuentes oficiales de Metabase y la documentación técnica.",
+    "sources": [
+      {
+        "title": "Metabase 62",
+        "url": "https://www.metabase.com/releases/metabase-62"
+      },
+      {
+        "title": "Issue #75458",
+        "url": "https://github.com/metabase/metabase/issues/75458"
+      },
+      {
+        "title": "Metabase 61: AI governance, MCP updates, and more!",
+        "url": "https://discourse.metabase.com/t/metabase-61-ai-governance-mcp-updates-and-more/304452"
+      }
+    ]
+  },
   "2026-06-06_1009": {
     "slug": "metabase",
     "title": "Metabase 61: Gobernanza de IA y mejoras",
