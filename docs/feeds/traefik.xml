@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-18T11:54:54.954167+00:00</updated>
+  <updated>2026-06-19T12:13:30.725972+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -237,5 +237,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html"/>
     <summary>Traefik es un proxy inverso y balanceador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico de red. Recientemente, se han publicado varias mejoras y novedades en la versión 3.7.0, incluyendo actualizaciones de seguridad y mejoras en la configuración de routers y middlewares.</summary>
     <published>2026-06-07T10:32:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-19_1212.html</id>
+    <title>Traefik: Routers, Middlewares y Seguridad</title>
+    <updated>2026-06-19T12:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta popular para la gestión de tráfico web, que ofrece funcionalidades como routers, middlewares y proveedores de configuración. En la versión 3.7.2, se han corregido errores como el problema de &lt;code&gt;unknown TLS options&lt;/code&gt; que se presentaba al intentar configurar opciones de TLS personalizadas. Para evitar este problema, se puede utilizar la opción &lt;code&gt;--tls.options&lt;/code&gt; al iniciar Traefik, como se muestra en el siguiente comando: &lt;code&gt;traefik --tls.options=/path/to/tls/options&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Traefik ofrece funcionalidades como el soporte para Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Sin embargo, recientemente se ha descubierto una vulnerabilidad en la función SNICheck de Traefik, que permite a un atacante realizar un bypass de autenticación. Para evitar esta vulnerabilidad, se recomienda actualizar a la última versión de Traefik y configurar las opciones de seguridad de manera adecuada, como se muestra en el siguiente ejemplo: `tls:&lt;/p&gt;
+&lt;p&gt;options:&lt;/p&gt;
+&lt;p&gt;default:&lt;/p&gt;
+&lt;p&gt;sniStrict: true`.&lt;/p&gt;
+&lt;p&gt;Para configurar Traefik con Let's Encrypt, se puede utilizar el siguiente comando: &lt;code&gt;traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/path/to/acme.json&lt;/code&gt;. Esto configurará Traefik para obtener un certificado SSL/TLS de Let's Encrypt y almacenarlo en el archivo especificado.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik ofrece funcionalidades como la monitorización de tráfico y la generación de logs. Para configurar la monitorización de tráfico, se puede utilizar la opción &lt;code&gt;--metrics&lt;/code&gt; al iniciar Traefik, como se muestra en el siguiente comando: &lt;code&gt;traefik --metrics.prometheus=true&lt;/code&gt;. Esto configurará Traefik para generar métricas de tráfico que pueden ser recogidas por herramientas como Prometheus.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Traefik es una herramienta muy configurable y personalizable, por lo que es recomendable consultar la documentación oficial para obtener más información sobre las opciones y funcionalidades disponibles.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa para la gestión de tráfico web, que ofrece funcionalidades avanzadas para la configuración y seguridad. Al seguir las mejores prácticas y configurar Traefik de manera adecuada, se puede asegurar la seguridad y el rendimiento de los servicios web.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13218"&gt;Traefik v3 WRR load balancer occasionally dispatches to DOWN servers in steady state&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"&gt;SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13289"&gt;3.7.2: error="unknown TLS options: "&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-19_1212.html"/>
+    <summary>Traefik es un proxy inverso y equilibrador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico web. En este artículo, se presentan las novedades y mejores prácticas para la configuración y seguridad de Traefik.</summary>
+    <published>2026-06-19T12:12:00+00:00</published>
   </entry>
 </feed>

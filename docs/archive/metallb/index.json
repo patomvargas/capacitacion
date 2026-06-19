@@ -1,4 +1,24 @@
 {
+  "2026-06-19_1212": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en Kubernetes",
+    "summary": "MetalLB es una implementación de balanceo de carga de red para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, exploraremos sus características y configuraciones.",
+    "content": "\nMetalLB es una herramienta esencial para los administradores de Kubernetes, ya que proporciona una forma de balancear la carga de tráfico en sus clústeres. Una de las características más importantes de MetalLB es su capacidad para funcionar en modo L2, lo que permite que los paquetes de red se envíen directamente al pod destino sin necesidad de NAT.\n\nPara configurar MetalLB en modo L2, debemos crear un objeto de configuración `MetalLB` con el modo `layer2` especificado. Por ejemplo: \n```yaml\napiVersion: metallb.io/v1beta1\nkind: MetalLB\nmetadata:\n  name: metallb\nspec:\n  mode: layer2\n```\nOtro modo de funcionamiento importante es el modo BGP, que permite a MetalLB anunciar rutas a los routers de la red. Para configurar el modo BGP, debemos crear un objeto de configuración `BGPAdvertisement` con la información de la ruta que se desea anunciar. Por ejemplo: \n```yaml\napiVersion: metallb.io/v1beta1\nkind: BGPAdvertisement\nmetadata:\n  name: bgp-advertisement\nspec:\n  peer: metallb-peer\n  communities:\n  - no-export\n```\nEn cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con IP pools, lo que permite asignar direcciones IP a los pods de manera automática. Para crear un IP pool, debemos crear un objeto de configuración `IPPoll` con la información de la pool de direcciones IP. Por ejemplo: \n```bash\n`kubectl create -f ip-pool.yaml`\n```\nCon el comando anterior, creamos un IP pool con el nombre `ip-pool` y la configuración especificada en el archivo `ip-pool.yaml`.\n\nEn caso de problemas con MetalLB, es importante saber cómo realizar troubleshooting. Una de las herramientas más útiles para esto es el comando `kubectl logs`, que permite ver los logs de los pods de MetalLB. Por ejemplo: \n```bash\n`kubectl logs -f metallb-controller`\n```\nCon este comando, podemos ver los logs del controlador de MetalLB y diagnosticar problemas.\n\nFinalmente, es importante mencionar que MetalLB se puede integrar con otras herramientas de Kubernetes, como Cilium y FRR, para proporcionar una solución de balanceo de carga más completa.\n\n \n  ",
+    "sources": [
+      {
+        "title": "MetalLB GitHub",
+        "url": "https://github.com/metallb/metallb"
+      },
+      {
+        "title": "Red Hat Solutions",
+        "url": "https://access.redhat.com/solutions/7142024"
+      },
+      {
+        "title": "MetalLB CRDs",
+        "url": "https://github.com/metallb/metallb/blob/main/charts/metallb/charts/crds/templates/crds.yaml"
+      }
+    ]
+  },
   "2026-06-11_1213": {
     "slug": "metallb",
     "title": "MetalLB: Balanceo de Carga en K8s",

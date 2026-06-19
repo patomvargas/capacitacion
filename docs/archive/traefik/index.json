@@ -1,4 +1,24 @@
 {
+  "2026-06-19_1212": {
+    "slug": "traefik",
+    "title": "Traefik: Routers, Middlewares y Seguridad",
+    "summary": "Traefik es un proxy inverso y equilibrador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico web. En este artículo, se presentan las novedades y mejores prácticas para la configuración y seguridad de Traefik.",
+    "content": "\nTraefik es una herramienta popular para la gestión de tráfico web, que ofrece funcionalidades como routers, middlewares y proveedores de configuración. En la versión 3.7.2, se han corregido errores como el problema de `unknown TLS options` que se presentaba al intentar configurar opciones de TLS personalizadas. Para evitar este problema, se puede utilizar la opción `--tls.options` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --tls.options=/path/to/tls/options`.\n\nEn cuanto a la seguridad, Traefik ofrece funcionalidades como el soporte para Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Sin embargo, recientemente se ha descubierto una vulnerabilidad en la función SNICheck de Traefik, que permite a un atacante realizar un bypass de autenticación. Para evitar esta vulnerabilidad, se recomienda actualizar a la última versión de Traefik y configurar las opciones de seguridad de manera adecuada, como se muestra en el siguiente ejemplo: `tls:\n  options:\n    default:\n      sniStrict: true`.\n\nPara configurar Traefik con Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/path/to/acme.json`. Esto configurará Traefik para obtener un certificado SSL/TLS de Let's Encrypt y almacenarlo en el archivo especificado.\n\nEn cuanto a la observabilidad, Traefik ofrece funcionalidades como la monitorización de tráfico y la generación de logs. Para configurar la monitorización de tráfico, se puede utilizar la opción `--metrics` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --metrics.prometheus=true`. Esto configurará Traefik para generar métricas de tráfico que pueden ser recogidas por herramientas como Prometheus.\n\nFinalmente, es importante mencionar que Traefik es una herramienta muy configurable y personalizable, por lo que es recomendable consultar la documentación oficial para obtener más información sobre las opciones y funcionalidades disponibles.\n\nEn resumen, Traefik es una herramienta poderosa para la gestión de tráfico web, que ofrece funcionalidades avanzadas para la configuración y seguridad. Al seguir las mejores prácticas y configurar Traefik de manera adecuada, se puede asegurar la seguridad y el rendimiento de los servicios web.",
+    "sources": [
+      {
+        "title": "Traefik v3 WRR load balancer occasionally dispatches to DOWN servers in steady state",
+        "url": "https://github.com/traefik/traefik/issues/13218"
+      },
+      {
+        "title": "SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"
+      },
+      {
+        "title": "3.7.2: error=\"unknown TLS options: \"",
+        "url": "https://github.com/traefik/traefik/issues/13289"
+      }
+    ]
+  },
   "2026-06-07_1032": {
     "slug": "traefik",
     "title": "Traefik: Mejoras y Novedades",

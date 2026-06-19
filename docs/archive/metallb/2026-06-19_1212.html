@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Traefik: Mejoras y Novedades - Traefik</title>
-    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <title>MetalLB: Balanceo de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,113 +54,155 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>Traefik: Mejoras y Novedades</h1>
-    <div class="meta">2026-06-07 1032 · Traefik</div>
+    <h1>MetalLB: Balanceo de Carga en Kubernetes</h1>
+    <div class="meta">2026-06-19 1212 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>Traefik es una herramienta fundamental para los sysadmins y DevOps engineers, ya que ofrece una forma sencilla y eficiente de gestionar el tráfico de red y proteger los servicios detrás de un proxy inverso. En la versión 3.7.0, se han incluido varias mejoras y novedades, como la actualización de la compatibilidad con el protocolo TLS 1.3 y la mejora de la configuración de routers y middlewares.</p>
+        
+            
+            <p>MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que proporciona una forma de balancear la carga de tráfico en sus clústeres. Una de las características más importantes de MetalLB es su capacidad para funcionar en modo L2, lo que permite que los paquetes de red se envíen directamente al pod destino sin necesidad de NAT.</p>
             
         
             
         
             
-            <p>Una de las novedades más interesantes es la posibilidad de configurar `Let's Encrypt` para obtener certificados SSL/TLS de forma automática. Esto se puede hacer mediante la configuración de un `TLSOptions` en el archivo de configuración de Traefik, como se muestra a continuación: `tls:</p>
+            <p>Para configurar MetalLB en modo L2, debemos crear un objeto de configuración `MetalLB` con el modo `layer2` especificado. Por ejemplo:</p>
             
         
             
-            <p>certificates:</p>
+            <p>```yaml</p>
             
         
             
-            <p>- certFile: /path/to/cert.pem</p>
+            <p>apiVersion: metallb.io/v1beta1</p>
             
         
             
-            <p>keyFile: /path/to/key.pem</p>
+            <p>kind: MetalLB</p>
             
         
             
-            <p>stores:</p>
+            <p>metadata:</p>
             
         
             
-            <p>- default</p>
+            <p>name: metallb</p>
             
         
             
-            <p>stores:</p>
+            <p>spec:</p>
             
         
             
-            <p>default:</p>
+            <p>mode: layer2</p>
             
         
             
-            <p>defaultCertificate:</p>
+            <p>```</p>
             
         
             
-            <p>certFile: /path/to/cert.pem</p>
+            <p>Otro modo de funcionamiento importante es el modo BGP, que permite a MetalLB anunciar rutas a los routers de la red. Para configurar el modo BGP, debemos crear un objeto de configuración `BGPAdvertisement` con la información de la ruta que se desea anunciar. Por ejemplo:</p>
             
         
             
-            <p>keyFile: /path/to/key.pem`.</p>
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: BGPAdvertisement</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: bgp-advertisement</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>peer: metallb-peer</p>
+            
+        
+            
+            <p>communities:</p>
+            
+        
+            
+            <p>- no-export</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con IP pools, lo que permite asignar direcciones IP a los pods de manera automática. Para crear un IP pool, debemos crear un objeto de configuración `IPPoll` con la información de la pool de direcciones IP. Por ejemplo:</p>
+            
+        
+            
+            <p>```bash</p>
+            
+        
+            
+            <p>`kubectl create -f ip-pool.yaml`</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Con el comando anterior, creamos un IP pool con el nombre `ip-pool` y la configuración especificada en el archivo `ip-pool.yaml`.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la posibilidad de configurar middlewares para realizar tareas como la autenticación y la autorización. Por ejemplo, se puede configurar un middleware de autenticación basado en tokens JWT utilizando la siguiente configuración: `middleware:</p>
+            <p>En caso de problemas con MetalLB, es importante saber cómo realizar troubleshooting. Una de las herramientas más útiles para esto es el comando `kubectl logs`, que permite ver los logs de los pods de MetalLB. Por ejemplo:</p>
             
         
             
-            <p>jwt:</p>
+            <p>```bash</p>
             
         
             
-            <p>secret: mi-secreto</p>
+            <p>`kubectl logs -f metallb-controller`</p>
             
         
             
-            <p>realm: mi-realm</p>
+            <p>```</p>
             
         
             
-            <p>header: Authorization</p>
-            
-        
-            
-            <p>query: token`.</p>
+            <p>Con este comando, podemos ver los logs del controlador de MetalLB y diagnosticar problemas.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, se han publicado varias actualizaciones para corregir vulnerabilidades y mejorar la protección de los servicios. Por ejemplo, se ha publicado una actualización para corregir una vulnerabilidad en la configuración de `SNICheck` que permitía eludir la autenticación en algunos casos.</p>
+            <p>Finalmente, es importante mencionar que MetalLB se puede integrar con otras herramientas de Kubernetes, como Cilium y FRR, para proporcionar una solución de balanceo de carga más completa.</p>
             
         
             
         
             
-            <p>En resumen, Traefik es una herramienta fundamental para la gestión de tráfico de red y la protección de servicios, y las mejoras y novedades publicadas en la versión 3.7.0 la hacen aún más segura y eficiente.</p>
-            
         
-            
-        
-            
-            <p>Para obtener más información sobre las mejoras y novedades de Traefik, se pueden consultar las fuentes oficiales y la documentación de la herramienta.</p>
-            
-        
-            
-        
-            
-            <p>Finalmente, es importante mencionar que Traefik es una herramienta en constante evolución, y es importante mantenerse al día con las últimas novedades y mejoras para asegurarse de que los servicios estén protegidos y funcionen de forma óptima.</p>
             
         
     </div>
@@ -171,17 +213,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik" target="_blank">Traefik GitHub</a>
+                <a href="https://github.com/metallb/metallb" target="_blank">MetalLB GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://doc.traefik.io/traefik-hub/" target="_blank">Traefik Hub Documentation</a>
+                <a href="https://access.redhat.com/solutions/7142024" target="_blank">Red Hat Solutions</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">Traefik Security Advisory</a>
+                <a href="https://github.com/metallb/metallb/blob/main/charts/metallb/charts/crds/templates/crds.yaml" target="_blank">MetalLB CRDs</a>
                 
             </li>
             
@@ -192,12 +234,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-03_1245.html">&larr; 2026-06-03 1245</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-11_1213.html">&larr; 2026-06-11 1213</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-19_1212.html">2026-06-19 1212 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-06-19_1212": {
+    "slug": "n8n",
+    "title": "N8n: Automatización de Workflows",
+    "summary": "N8n es una herramienta de automatización de workflows que permite a los desarrolladores crear flujos de trabajo personalizados. En este artículo, se explora cómo utilizar n8n para automatizar tareas y procesos.",
+    "content": "N8n es una herramienta de código abierto que permite a los desarrolladores crear flujos de trabajo personalizados utilizando nodos y workflows. Para empezar a utilizar n8n, es necesario instalar el software en un servidor o en una máquina local. Una vez instalado, se puede acceder a la interfaz de usuario de n8n y comenzar a crear workflows.\n\nPara crear un workflow en n8n, es necesario agregar nodos y conectarlos entre sí. Los nodos pueden ser de diferentes tipos, como nodos de entrada, nodos de procesamiento y nodos de salida. Por ejemplo, se puede agregar un nodo de entrada para recibir datos de un formulario web, y luego conectarlo a un nodo de procesamiento para realizar operaciones con los datos.\n\nUna de las características más interesantes de n8n es la capacidad de utilizar credenciales y webhooks para interactuar con otros servicios y aplicaciones. Por ejemplo, se puede utilizar un nodo de credenciales para autenticar con un servicio de almacenamiento en la nube, y luego utilizar un nodo de webhook para recibir notificaciones cuando se produzcan cambios en el almacenamiento. `n8n credentials:create --name=my-credential --type=oauth2` es un comando que se puede utilizar para crear una credencial en n8n.\n\nAdemás, n8n también admite la integración con otros servicios y herramientas, como bases de datos y servicios de mensajería. Por ejemplo, se puede utilizar un nodo de base de datos para almacenar y recuperar datos, y luego utilizar un nodo de mensajería para enviar notificaciones a los usuarios. `n8n workflow:create --name=my-workflow --node=node1 --node=node2` es un comando que se puede utilizar para crear un workflow en n8n.\n\nEn resumen, n8n es una herramienta poderosa para automatizar workflows y procesos, y su flexibilidad y personalización la hacen ideal para una variedad de aplicaciones y servicios. Al utilizar nodos, workflows, credenciales y webhooks, los desarrolladores pueden crear flujos de trabajo personalizados y eficientes que se adapten a sus necesidades específicas.\n\nPara self-hosting de n8n, se puede utilizar un contenedor de Docker, como `docker run -d -p 5678:5678 n8n/n8n`. Esto permitirá acceder a la interfaz de usuario de n8n a través del puerto 5678.\n\nEn cuanto a las mejores prácticas para utilizar n8n, es importante seguir los siguientes consejos: utilizar credenciales y webhooks para interactuar con otros servicios y aplicaciones, personalizar los workflows y nodos para adaptarlos a las necesidades específicas, y utilizar la documentación y la comunidad de n8n para obtener ayuda y soporte cuando sea necesario.",
+    "sources": [
+      {
+        "title": "N8n Updates 2026",
+        "url": "https://www.softomatesolutions.com/blog/n8n-updates-2026-whats-new/"
+      },
+      {
+        "title": "Your First Prompt-Built n8n Workflow",
+        "url": "https://medium.com/@automation.labs/your-first-prompt-built-n8n-workflow-instance-level-mcp-claude-desktop-step-by-step-3d6533c8c8bc"
+      },
+      {
+        "title": "Hugging Face Transformers: Complete Guide (2026)",
+        "url": "https://medium.com/towards-artificial-intelligence/hugging-face-transformers-complete-guide-2026-cdb452c055da"
+      }
+    ]
+  },
   "2026-06-15_1427": {
     "slug": "n8n",
     "title": "Automatización con n8n",

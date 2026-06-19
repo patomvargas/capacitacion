@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Routers, Middlewares y Seguridad - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Routers, Middlewares y Seguridad</h1>
+    <div class="meta">2026-06-19 1212 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Traefik es una herramienta popular para la gestión de tráfico web, que ofrece funcionalidades como routers, middlewares y proveedores de configuración. En la versión 3.7.2, se han corregido errores como el problema de `unknown TLS options` que se presentaba al intentar configurar opciones de TLS personalizadas. Para evitar este problema, se puede utilizar la opción `--tls.options` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --tls.options=/path/to/tls/options`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, Traefik ofrece funcionalidades como el soporte para Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Sin embargo, recientemente se ha descubierto una vulnerabilidad en la función SNICheck de Traefik, que permite a un atacante realizar un bypass de autenticación. Para evitar esta vulnerabilidad, se recomienda actualizar a la última versión de Traefik y configurar las opciones de seguridad de manera adecuada, como se muestra en el siguiente ejemplo: `tls:</p>
+            
+        
+            
+            <p>options:</p>
+            
+        
+            
+            <p>default:</p>
+            
+        
+            
+            <p>sniStrict: true`.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar Traefik con Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/path/to/acme.json`. Esto configurará Traefik para obtener un certificado SSL/TLS de Let's Encrypt y almacenarlo en el archivo especificado.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la observabilidad, Traefik ofrece funcionalidades como la monitorización de tráfico y la generación de logs. Para configurar la monitorización de tráfico, se puede utilizar la opción `--metrics` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --metrics.prometheus=true`. Esto configurará Traefik para generar métricas de tráfico que pueden ser recogidas por herramientas como Prometheus.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Traefik es una herramienta muy configurable y personalizable, por lo que es recomendable consultar la documentación oficial para obtener más información sobre las opciones y funcionalidades disponibles.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta poderosa para la gestión de tráfico web, que ofrece funcionalidades avanzadas para la configuración y seguridad. Al seguir las mejores prácticas y configurar Traefik de manera adecuada, se puede asegurar la seguridad y el rendimiento de los servicios web.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/13218" target="_blank">Traefik v3 WRR load balancer occasionally dispatches to DOWN servers in steady state</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/13289" target="_blank">3.7.2: error="unknown TLS options: "</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html">&larr; 2026-06-07 1032</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
