@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejores prácticas y novedades - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-06-20 1035 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar el proveedor de cloud deseado. Por ejemplo, para configurar el proveedor de AWS, se puede utilizar el comando `terraform provider aws` y configurar las credenciales de acceso.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de estado es un aspecto fundamental en Terraform, ya que permite a los usuarios gestionar el estado de su infraestructura de manera eficiente. Para gestionar el estado, se puede utilizar el comando `terraform state` y sus subcomandos, como `terraform state list` para listar los recursos en el estado actual, o `terraform state rm` para eliminar un recurso del estado.</p>
+            
+        
+            
+        
+            
+            <p>Los módulos son otra característica importante en Terraform, ya que permiten a los usuarios reutilizar código y crear infraestructuras complejas de manera más sencilla. Para crear un módulo, se puede utilizar el comando `terraform module` y definir los recursos y variables necesarios. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes en AWS utilizando el proveedor de AWS y el módulo de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades, Terraform ha anunciado recientemente la compatibilidad con la integración de Cloudwatch Logs S3 Tables, lo que permite a los usuarios duplicar los logs de Cloudwatch en S3 Tables. Además, se ha anunciado la versión 11.7.0 del módulo de Terraform para Azure, que incluye mejoras y correcciones de errores.</p>
+            
+        
+            
+        
+            
+            <p>Para importar un recurso existente en Terraform, se puede utilizar el comando `terraform import` y especificar el recurso y el proveedor correspondientes. Por ejemplo, se puede importar un recurso de AWS utilizando el comando `terraform import aws_instance.mi_instancia`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo documentación, tutoriales y ejemplos de código. Para obtener más información, se puede consultar la documentación oficial de Terraform o buscar en línea recursos y tutoriales de terceros.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38670" target="_blank">Terraform target validation issue #38670</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38641" target="_blank">JSON Plan: resources being removed from state ('forget') are included in planned_values #38641</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/topics/reference-documentation-standards.md" target="_blank">reference-documentation-standards.md</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/Azure/terraform-azurerm-aks/releases" target="_blank">Releases · Azure/terraform-azurerm-aks - GitHub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-aws/issues/48137" target="_blank">Cloudwatch Logs S3 Tables integration · Issue #48137 - GitHub</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-16_1258.html">&larr; 2026-06-16 1258</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-19T12:13:30.733752+00:00</updated>
+  <updated>2026-06-20T10:36:55.468835+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -347,5 +347,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-12_1147.html"/>
     <summary>Docker sigue evolucionando con mejoras en seguridad y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.</summary>
     <published>2026-06-12T11:47:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-06-20_1035.html</id>
+    <title>Mejoras de seguridad en Docker</title>
+    <updated>2026-06-20T10:35:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker ha estado trabajando en mejorar la seguridad de sus imágenes y paquetes. Recientemente, se han anunciado las nuevas características de Docker Hardened System Packages (HSP), que buscan proporcionar una capa adicional de seguridad para los contenedores. Estas mejoras incluyen la capacidad de firmar y verificar las imágenes, lo que ayuda a prevenir la ejecución de código malicioso.&lt;/p&gt;
+&lt;p&gt;Para aprovechar estas nuevas características, es necesario actualizar a la última versión de Docker. Se puede hacer esto ejecutando el comando &lt;code&gt;docker pull&lt;/code&gt; para obtener la última imagen de Docker. Luego, se puede verificar la versión actual con &lt;code&gt;docker --version&lt;/code&gt;. Es importante tener en cuenta que estas mejoras de seguridad también requieren la actualización de los paquetes del sistema operativo.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad de los contenedores, es fundamental seguir las mejores prácticas para protegerlos. Esto incluye el uso de imágenes mínimas, como se recomienda en la guía de Docker para desarrolladores. Se puede crear una imagen mínima utilizando el comando &lt;code&gt;docker build -t mi-imagen .&lt;/code&gt; y especificando la imagen base en el archivo Dockerfile. Por ejemplo, &lt;code&gt;FROM python:3.9-slim&lt;/code&gt; crea una imagen con Python 3.9 en un entorno minimalista.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que la limpieza de los contenedores y las imágenes es crucial para mantener la seguridad y el rendimiento del sistema. Se puede utilizar el comando &lt;code&gt;docker system df&lt;/code&gt; para verificar el espacio utilizado por los contenedores y las imágenes. Luego, se puede utilizar &lt;code&gt;docker system prune&lt;/code&gt; para eliminar los contenedores y las imágenes no utilizados.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejoras de seguridad en Docker son fundamentales para proteger los contenedores y los paquetes. Es importante seguir las mejores prácticas y mantener el sistema actualizado para prevenir vulnerabilidades.&lt;/p&gt;
+&lt;p&gt;Se han utilizado fuentes como Docker Hardened Images release notes y SUSE Critical Security Patch para Docker-Stable 2026-21851-1 para obtener la información necesaria para este artículo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/dhi/release-notes/platform/"&gt;Docker Hardened Images release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxsecurity.com/advisories/suse/suse-21851-1-docker-stable"&gt;SUSE Critical Security Patch for Docker-Stable 2026-21851-1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@dparente/docker-containerization-the-complete-developers-guide-331299d90075"&gt;Docker Containerization: The Complete Developer's Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-20_1035.html"/>
+    <summary>Docker ha anunciado mejoras de seguridad en sus imágenes y paquetes. Se han agregado nuevas características para proteger los contenedores y se han solucionado vulnerabilidades.</summary>
+    <published>2026-06-20T10:35:00+00:00</published>
   </entry>
 </feed>

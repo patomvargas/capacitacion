@@ -1,4 +1,24 @@
 {
+  "2026-06-20_1035": {
+    "slug": "docker",
+    "title": "Mejoras de seguridad en Docker",
+    "summary": "Docker ha anunciado mejoras de seguridad en sus imágenes y paquetes. Se han agregado nuevas características para proteger los contenedores y se han solucionado vulnerabilidades.",
+    "content": "\nDocker ha estado trabajando en mejorar la seguridad de sus imágenes y paquetes. Recientemente, se han anunciado las nuevas características de Docker Hardened System Packages (HSP), que buscan proporcionar una capa adicional de seguridad para los contenedores. Estas mejoras incluyen la capacidad de firmar y verificar las imágenes, lo que ayuda a prevenir la ejecución de código malicioso.\n\nPara aprovechar estas nuevas características, es necesario actualizar a la última versión de Docker. Se puede hacer esto ejecutando el comando `docker pull` para obtener la última imagen de Docker. Luego, se puede verificar la versión actual con `docker --version`. Es importante tener en cuenta que estas mejoras de seguridad también requieren la actualización de los paquetes del sistema operativo.\n\nEn cuanto a la seguridad de los contenedores, es fundamental seguir las mejores prácticas para protegerlos. Esto incluye el uso de imágenes mínimas, como se recomienda en la guía de Docker para desarrolladores. Se puede crear una imagen mínima utilizando el comando `docker build -t mi-imagen .` y especificando la imagen base en el archivo Dockerfile. Por ejemplo, `FROM python:3.9-slim` crea una imagen con Python 3.9 en un entorno minimalista.\n\nAdemás, es importante mencionar que la limpieza de los contenedores y las imágenes es crucial para mantener la seguridad y el rendimiento del sistema. Se puede utilizar el comando `docker system df` para verificar el espacio utilizado por los contenedores y las imágenes. Luego, se puede utilizar `docker system prune` para eliminar los contenedores y las imágenes no utilizados.\n\nEn resumen, las mejoras de seguridad en Docker son fundamentales para proteger los contenedores y los paquetes. Es importante seguir las mejores prácticas y mantener el sistema actualizado para prevenir vulnerabilidades.\n\nSe han utilizado fuentes como Docker Hardened Images release notes y SUSE Critical Security Patch para Docker-Stable 2026-21851-1 para obtener la información necesaria para este artículo.",
+    "sources": [
+      {
+        "title": "Docker Hardened Images release notes",
+        "url": "https://docs.docker.com/dhi/release-notes/platform/"
+      },
+      {
+        "title": "SUSE Critical Security Patch for Docker-Stable 2026-21851-1",
+        "url": "https://linuxsecurity.com/advisories/suse/suse-21851-1-docker-stable"
+      },
+      {
+        "title": "Docker Containerization: The Complete Developer's Guide",
+        "url": "https://medium.com/@dparente/docker-containerization-the-complete-developers-guide-331299d90075"
+      }
+    ]
+  },
   "2026-06-12_1147": {
     "slug": "docker",
     "title": "Docker: Mejoras y Best Practices",

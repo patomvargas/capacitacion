@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terraform: Infraestructura como Código - Terraform</title>
-    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <title>Mejoras de seguridad en Docker - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,41 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Terraform: Infraestructura como Código</h1>
-    <div class="meta">2026-06-16 1258 · Terraform</div>
+    <h1>Mejoras de seguridad en Docker</h1>
+    <div class="meta">2026-06-20 1035 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>Terraform es una herramienta de código abierto desarrollada por HashiCorp que permite a los usuarios definir y provisionar infraestructura en la nube utilizando un lenguaje de configuración simple y legible. La herramienta admite múltiples proveedores de nube, incluyendo AWS, Azure y Google Cloud Platform.</p>
+        
+            
+            <p>Docker ha estado trabajando en mejorar la seguridad de sus imágenes y paquetes. Recientemente, se han anunciado las nuevas características de Docker Hardened System Packages (HSP), que buscan proporcionar una capa adicional de seguridad para los contenedores. Estas mejoras incluyen la capacidad de firmar y verificar las imágenes, lo que ayuda a prevenir la ejecución de código malicioso.</p>
             
         
             
         
             
-            <p>Para empezar a utilizar Terraform, es necesario instalar la herramienta en el sistema operativo y configurar el proveedor de nube deseado. Por ejemplo, para configurar el proveedor de Azure, se puede utilizar el comando `terraform init` y luego `terraform apply` para provisionar la infraestructura.</p>
+            <p>Para aprovechar estas nuevas características, es necesario actualizar a la última versión de Docker. Se puede hacer esto ejecutando el comando `docker pull` para obtener la última imagen de Docker. Luego, se puede verificar la versión actual con `docker --version`. Es importante tener en cuenta que estas mejoras de seguridad también requieren la actualización de los paquetes del sistema operativo.</p>
             
         
             
         
             
-            <p>Uno de los beneficios clave de Terraform es su capacidad para gestionar el estado de la infraestructura de manera eficiente. La herramienta utiliza un archivo de estado para almacenar la configuración de la infraestructura y realizar cambios en la configuración de manera segura. Para gestionar el estado de la infraestructura, se pueden utilizar comandos como `terraform state list` y `terraform state show`.</p>
+            <p>En cuanto a la seguridad de los contenedores, es fundamental seguir las mejores prácticas para protegerlos. Esto incluye el uso de imágenes mínimas, como se recomienda en la guía de Docker para desarrolladores. Se puede crear una imagen mínima utilizando el comando `docker build -t mi-imagen .` y especificando la imagen base en el archivo Dockerfile. Por ejemplo, `FROM python:3.9-slim` crea una imagen con Python 3.9 en un entorno minimalista.</p>
             
         
             
         
             
-            <p>Además, Terraform admite la creación de módulos y espacios de trabajo, lo que permite a los usuarios organizar y reutilizar código de configuración de manera eficiente. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes utilizando el comando `terraform module create` y luego utilizar el módulo en un espacio de trabajo utilizando el comando `terraform workspace create`.</p>
+            <p>Además, es importante mencionar que la limpieza de los contenedores y las imágenes es crucial para mantener la seguridad y el rendimiento del sistema. Se puede utilizar el comando `docker system df` para verificar el espacio utilizado por los contenedores y las imágenes. Luego, se puede utilizar `docker system prune` para eliminar los contenedores y las imágenes no utilizados.</p>
             
         
             
         
             
-            <p>En cuanto a las novedades y mejoras, Terraform ha anunciado recientemente la disponibilidad de un nuevo proveedor para ZITADEL, lo que permite a los usuarios provisionar y gestionar recursos de ZITADEL de manera eficiente. Además, la herramienta ha mejorado su compatibilidad con Kubernetes y otros proveedores de nube.</p>
+            <p>En resumen, las mejoras de seguridad en Docker son fundamentales para proteger los contenedores y los paquetes. Es importante seguir las mejores prácticas y mantener el sistema actualizado para prevenir vulnerabilidades.</p>
+            
+        
+            
+        
+            
+            <p>Se han utilizado fuentes como Docker Hardened Images release notes y SUSE Critical Security Patch para Docker-Stable 2026-21851-1 para obtener la información necesaria para este artículo.</p>
             
         
     </div>
@@ -99,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/hashicorp/terraform" target="_blank">Terraform GitHub</a>
+                <a href="https://docs.docker.com/dhi/release-notes/platform/" target="_blank">Docker Hardened Images release notes</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/Azure/terraform-azurerm-aks" target="_blank">Terraform Azure Provider</a>
+                <a href="https://linuxsecurity.com/advisories/suse/suse-21851-1-docker-stable" target="_blank">SUSE Critical Security Patch for Docker-Stable 2026-21851-1</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/zitadel/terraform-provider-zitadel" target="_blank">ZITADEL Terraform Provider</a>
+                <a href="https://medium.com/@dparente/docker-containerization-the-complete-developers-guide-331299d90075" target="_blank">Docker Containerization: The Complete Developer's Guide</a>
                 
             </li>
             
@@ -120,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-20_1035.html">2026-06-20 1035 &rarr;</a>
             
         </div>
     </div>

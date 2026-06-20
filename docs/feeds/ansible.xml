@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-19T12:13:30.739362+00:00</updated>
+  <updated>2026-06-20T10:36:55.477804+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -488,5 +488,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-16_1258.html"/>
     <summary>Ansible ha lanzado nuevas versiones con mejoras significativas en playbooks, roles y colecciones. Además, se han realizado cambios en la compatibilidad con diferentes proveedores de servicios en la nube.</summary>
     <published>2026-06-16T12:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-20_1035.html</id>
+    <title>Ansible: Mejoras y Novedades en la Automatización</title>
+    <updated>2026-06-20T10:35:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización muy popular en el mundo de la administración de sistemas y el desarrollo de aplicaciones. En los últimos meses, se han realizado varias actualizaciones y mejoras en la plataforma, como la versión 13.8.0 del paquete de la comunidad, que incluye cambios en el núcleo de Ansible 2.20. Para aprovechar estas nuevas características, es importante estar al tanto de las últimas novedades y best practices.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la inclusión de &lt;code&gt;ansible-core 2.20.7&lt;/code&gt;, que se puede instalar utilizando el comando &lt;code&gt;pip install ansible-core==2.20.7&lt;/code&gt;. Esta versión incluye varias mejoras en la seguridad y el rendimiento, como la corrección de un problema con la interpretación de Python en &lt;code&gt;INJECT_INVOCATION&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la compatibilidad con &lt;code&gt;AWX/Tower&lt;/code&gt;, que permite a los administradores de sistemas crear y gestionar playbooks de manera centralizada. Para configurar &lt;code&gt;AWX/Tower&lt;/code&gt;, es necesario crear un archivo &lt;code&gt;inventory&lt;/code&gt; que contenga la información de los hosts y grupos, y luego ejecutar el comando &lt;code&gt;ansible-playbook -i inventory playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar la importancia de utilizar &lt;code&gt;roles&lt;/code&gt; y &lt;code&gt;collections&lt;/code&gt; para organizar y reutilizar el código de los playbooks. Los &lt;code&gt;roles&lt;/code&gt; permiten agrupar tareas relacionadas y ejecutarlas de manera secuencial, mientras que las &lt;code&gt;collections&lt;/code&gt; permiten agrupar varios &lt;code&gt;roles&lt;/code&gt; y ejecutarlos de manera concurrente. Por ejemplo, se puede crear un &lt;code&gt;role&lt;/code&gt; para instalar y configurar un servidor web, y luego ejecutarlo utilizando el comando &lt;code&gt;ansible-playbook -e role=web_server playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar la seguridad de los playbooks y la gestión de las credenciales. Para proteger las credenciales, se puede utilizar &lt;code&gt;ansible-vault&lt;/code&gt; para cifrar los archivos de configuración y los playbooks. Por ejemplo, se puede crear un archivo &lt;code&gt;vault.yml&lt;/code&gt; que contenga las credenciales cifradas, y luego ejecutar el comando &lt;code&gt;ansible-vault decrypt vault.yml&lt;/code&gt; para descifrar el archivo.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta de automatización muy poderosa que sigue evolucionando con nuevas características y mejoras. Para aprovechar al máximo su potencial, es importante estar al tanto de las últimas novedades y best practices, y utilizar herramientas como &lt;code&gt;AWX/Tower&lt;/code&gt;, &lt;code&gt;roles&lt;/code&gt; y &lt;code&gt;collections&lt;/code&gt; para organizar y ejecutar los playbooks de manera eficiente y segura.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Ansible es una excelente fuente de información para aprender y mejorar las habilidades en la automatización. La documentación incluye tutoriales, ejemplos y referencias para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo la plataforma.&lt;/p&gt;
+&lt;p&gt;En cuanto a las fuentes utilizadas, se han consultado varios sitios web y documentaciones oficiales de Ansible, como la página de GitHub de Ansible y la documentación oficial de Ansible.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-8-0/45944"&gt;Release announcement: Ansible community package 13.8.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-7/45940"&gt;New Release: ansible-core v2.20.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/06/19/get-ready-ansible-automation-platform-2-7"&gt;Get ready for Ansible Automation Platform 2.7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-20_1035.html"/>
+    <summary>Ansible es una herramienta de automatización que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo su potencial.</summary>
+    <published>2026-06-20T10:35:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,32 @@
 {
+  "2026-06-20_1035": {
+    "slug": "terraform",
+    "title": "Terraform: Mejores prácticas y novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, módulos y proveedores.",
+    "content": "Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar el proveedor de cloud deseado. Por ejemplo, para configurar el proveedor de AWS, se puede utilizar el comando `terraform provider aws` y configurar las credenciales de acceso.\n\nLa gestión de estado es un aspecto fundamental en Terraform, ya que permite a los usuarios gestionar el estado de su infraestructura de manera eficiente. Para gestionar el estado, se puede utilizar el comando `terraform state` y sus subcomandos, como `terraform state list` para listar los recursos en el estado actual, o `terraform state rm` para eliminar un recurso del estado.\n\nLos módulos son otra característica importante en Terraform, ya que permiten a los usuarios reutilizar código y crear infraestructuras complejas de manera más sencilla. Para crear un módulo, se puede utilizar el comando `terraform module` y definir los recursos y variables necesarios. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes en AWS utilizando el proveedor de AWS y el módulo de Kubernetes.\n\nEn cuanto a las novedades, Terraform ha anunciado recientemente la compatibilidad con la integración de Cloudwatch Logs S3 Tables, lo que permite a los usuarios duplicar los logs de Cloudwatch en S3 Tables. Además, se ha anunciado la versión 11.7.0 del módulo de Terraform para Azure, que incluye mejoras y correcciones de errores.\n\nPara importar un recurso existente en Terraform, se puede utilizar el comando `terraform import` y especificar el recurso y el proveedor correspondientes. Por ejemplo, se puede importar un recurso de AWS utilizando el comando `terraform import aws_instance.mi_instancia`. \n\nFinalmente, es importante mencionar que Terraform tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo documentación, tutoriales y ejemplos de código. Para obtener más información, se puede consultar la documentación oficial de Terraform o buscar en línea recursos y tutoriales de terceros.\n\n",
+    "sources": [
+      {
+        "title": "Terraform target validation issue #38670",
+        "url": "https://github.com/hashicorp/terraform/issues/38670"
+      },
+      {
+        "title": "JSON Plan: resources being removed from state ('forget') are included in planned_values #38641",
+        "url": "https://github.com/hashicorp/terraform/issues/38641"
+      },
+      {
+        "title": "reference-documentation-standards.md",
+        "url": "https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/topics/reference-documentation-standards.md"
+      },
+      {
+        "title": "Releases · Azure/terraform-azurerm-aks - GitHub",
+        "url": "https://github.com/Azure/terraform-azurerm-aks/releases"
+      },
+      {
+        "title": "Cloudwatch Logs S3 Tables integration · Issue #48137 - GitHub",
+        "url": "https://github.com/hashicorp/terraform-provider-aws/issues/48137"
+      }
+    ]
+  },
   "2026-06-16_1258": {
     "slug": "terraform",
     "title": "Terraform: Infraestructura como Código",

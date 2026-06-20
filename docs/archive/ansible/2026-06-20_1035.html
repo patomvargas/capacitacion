@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Mejoras y Novedades en la Automatización - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Mejoras y Novedades en la Automatización</h1>
+    <div class="meta">2026-06-20 1035 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización muy popular en el mundo de la administración de sistemas y el desarrollo de aplicaciones. En los últimos meses, se han realizado varias actualizaciones y mejoras en la plataforma, como la versión 13.8.0 del paquete de la comunidad, que incluye cambios en el núcleo de Ansible 2.20. Para aprovechar estas nuevas características, es importante estar al tanto de las últimas novedades y best practices.</p>
+            
+        
+            
+        
+            
+            <p>Una de las novedades más destacadas es la inclusión de `ansible-core 2.20.7`, que se puede instalar utilizando el comando `pip install ansible-core==2.20.7`. Esta versión incluye varias mejoras en la seguridad y el rendimiento, como la corrección de un problema con la interpretación de Python en `INJECT_INVOCATION`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante es la compatibilidad con `AWX/Tower`, que permite a los administradores de sistemas crear y gestionar playbooks de manera centralizada. Para configurar `AWX/Tower`, es necesario crear un archivo `inventory` que contenga la información de los hosts y grupos, y luego ejecutar el comando `ansible-playbook -i inventory playbook.yml`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante mencionar la importancia de utilizar `roles` y `collections` para organizar y reutilizar el código de los playbooks. Los `roles` permiten agrupar tareas relacionadas y ejecutarlas de manera secuencial, mientras que las `collections` permiten agrupar varios `roles` y ejecutarlos de manera concurrente. Por ejemplo, se puede crear un `role` para instalar y configurar un servidor web, y luego ejecutarlo utilizando el comando `ansible-playbook -e role=web_server playbook.yml`.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante mencionar la seguridad de los playbooks y la gestión de las credenciales. Para proteger las credenciales, se puede utilizar `ansible-vault` para cifrar los archivos de configuración y los playbooks. Por ejemplo, se puede crear un archivo `vault.yml` que contenga las credenciales cifradas, y luego ejecutar el comando `ansible-vault decrypt vault.yml` para descifrar el archivo.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta de automatización muy poderosa que sigue evolucionando con nuevas características y mejoras. Para aprovechar al máximo su potencial, es importante estar al tanto de las últimas novedades y best practices, y utilizar herramientas como `AWX/Tower`, `roles` y `collections` para organizar y ejecutar los playbooks de manera eficiente y segura.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la documentación oficial de Ansible es una excelente fuente de información para aprender y mejorar las habilidades en la automatización. La documentación incluye tutoriales, ejemplos y referencias para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las fuentes utilizadas, se han consultado varios sitios web y documentaciones oficiales de Ansible, como la página de GitHub de Ansible y la documentación oficial de Ansible.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-13-8-0/45944" target="_blank">Release announcement: Ansible community package 13.8.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-7/45940" target="_blank">New Release: ansible-core v2.20.7</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://developers.redhat.com/articles/2026/06/19/get-ready-ansible-automation-platform-2-7" target="_blank">Get ready for Ansible Automation Platform 2.7</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-16_1258.html">&larr; 2026-06-16 1258</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

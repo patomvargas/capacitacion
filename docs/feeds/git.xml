@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-19T12:13:30.735653+00:00</updated>
+  <updated>2026-06-20T10:36:55.471811+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -390,5 +390,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-16_1258.html"/>
     <summary>En este artículo, se presentan mejores prácticas y técnicas avanzadas para utilizar Git de manera efectiva en entornos de desarrollo y DevOps. Se cubren temas como workflows, hooks, rebase y worktrees.</summary>
     <published>2026-06-16T12:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-06-20_1035.html</id>
+    <title>Mejores prácticas de Git para sysadmins y DevOps</title>
+    <updated>2026-06-20T10:35:00+00:00</updated>
+    <content type="html">&lt;p&gt;La herramienta Git es fundamental para cualquier proyecto de desarrollo de software. Sin embargo, su uso efectivo requiere más que simplemente conocer los comandos básicos. En este artículo, exploraremos algunas de las mejores prácticas y técnicas avanzadas para aprovechar al máximo Git.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas es utilizar &lt;code&gt;git pull&lt;/code&gt; con la opción &lt;code&gt;--rebase&lt;/code&gt; para mantener un historial de commits limpio y lineal. Esto se puede configurar como comportamiento predeterminado con el comando &lt;code&gt;git config --global pull.rebase true&lt;/code&gt;. Además, es importante utilizar mensajes de commit claros y descriptivos, utilizando la convención de &lt;code&gt;feat&lt;/code&gt; para nuevas características, &lt;code&gt;fix&lt;/code&gt; para correcciones de errores y &lt;code&gt;docs&lt;/code&gt; para actualizaciones de documentación.&lt;/p&gt;
+&lt;p&gt;Otra técnica avanzada es utilizar &lt;code&gt;git worktrees&lt;/code&gt; para trabajar en varias ramas de manera simultánea. Esto se puede lograr con el comando &lt;code&gt;git worktree add &lt;nombre-rama&gt; &lt;ruta-rama&gt;&lt;/code&gt;. De esta manera, se pueden tener varias ramas en diferentes directorios, lo que facilita la colaboración y el desarrollo en paralelo.&lt;/p&gt;
+&lt;p&gt;Para aquellos que buscan mejorar la seguridad de sus proyectos, es importante mencionar la validación de seguridad para agentes de codificación de terceros, como se menciona en la fuente [2]. Esto puede ayudar a prevenir posibles fugas de seguridad y mantener el código fuente protegido.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de utilizar herramientas como GitHub Actions y GitHub Copilot para automatizar flujos de trabajo y mejorar la productividad. Estas herramientas pueden ayudar a reducir el tiempo de debugging y mejorar la calidad del código.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que requiere práctica y dedicación para dominar. Siguiendo estas mejores prácticas y técnicas avanzadas, los sysadmins y DevOps pueden mejorar la colaboración, la productividad y la seguridad de sus proyectos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/open-source/git/"&gt;The latest on Git updates - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/"&gt;Security validation for third-party coding agents - GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/guroosh/git-best-practices-for-beginners-1h3c"&gt;Git: Best Practices for Beginners - DEV Community&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@eloquentcoder/the-complete-guide-to-git-pull-from-your-first-fetch-and-merge-to-mastering-rebase-strategies-and-c4f54890fe2a"&gt;The Complete Guide to git pull: From Your First Fetch-and-Merge to Mastering Rebase Strategies and Advanced Configuration&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-20_1035.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con mejores prácticas y técnicas avanzadas. Descubre cómo optimizar tus flujos de trabajo y mejorar la colaboración en equipo.</summary>
+    <published>2026-06-20T10:35:00+00:00</published>
   </entry>
 </feed>

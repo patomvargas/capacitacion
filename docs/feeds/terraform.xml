@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-19T12:13:30.737622+00:00</updated>
+  <updated>2026-06-20T10:36:55.474729+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -295,5 +295,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-16_1258.html"/>
     <summary>Terraform es una herramienta de Infraestructura como Código (IaC) que permite a los desarrolladores y administradores de sistemas provisionar y gestionar infraestructura en la nube de manera eficiente. En este artículo, se presentan las características y beneficios de Terraform, así como sus últimos desarrollos y mejoras.</summary>
     <published>2026-06-16T12:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-20_1035.html</id>
+    <title>Terraform: Mejores prácticas y novedades</title>
+    <updated>2026-06-20T10:35:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar la herramienta y configurar el proveedor de cloud deseado. Por ejemplo, para configurar el proveedor de AWS, se puede utilizar el comando &lt;code&gt;terraform provider aws&lt;/code&gt; y configurar las credenciales de acceso.&lt;/p&gt;
+&lt;p&gt;La gestión de estado es un aspecto fundamental en Terraform, ya que permite a los usuarios gestionar el estado de su infraestructura de manera eficiente. Para gestionar el estado, se puede utilizar el comando &lt;code&gt;terraform state&lt;/code&gt; y sus subcomandos, como &lt;code&gt;terraform state list&lt;/code&gt; para listar los recursos en el estado actual, o &lt;code&gt;terraform state rm&lt;/code&gt; para eliminar un recurso del estado.&lt;/p&gt;
+&lt;p&gt;Los módulos son otra característica importante en Terraform, ya que permiten a los usuarios reutilizar código y crear infraestructuras complejas de manera más sencilla. Para crear un módulo, se puede utilizar el comando &lt;code&gt;terraform module&lt;/code&gt; y definir los recursos y variables necesarios. Por ejemplo, se puede crear un módulo para provisionar un clúster de Kubernetes en AWS utilizando el proveedor de AWS y el módulo de Kubernetes.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, Terraform ha anunciado recientemente la compatibilidad con la integración de Cloudwatch Logs S3 Tables, lo que permite a los usuarios duplicar los logs de Cloudwatch en S3 Tables. Además, se ha anunciado la versión 11.7.0 del módulo de Terraform para Azure, que incluye mejoras y correcciones de errores.&lt;/p&gt;
+&lt;p&gt;Para importar un recurso existente en Terraform, se puede utilizar el comando &lt;code&gt;terraform import&lt;/code&gt; y especificar el recurso y el proveedor correspondientes. Por ejemplo, se puede importar un recurso de AWS utilizando el comando &lt;code&gt;terraform import aws_instance.mi_instancia&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo documentación, tutoriales y ejemplos de código. Para obtener más información, se puede consultar la documentación oficial de Terraform o buscar en línea recursos y tutoriales de terceros.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38670"&gt;Terraform target validation issue #38670&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38641"&gt;JSON Plan: resources being removed from state ('forget') are included in planned_values #38641&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/topics/reference-documentation-standards.md"&gt;reference-documentation-standards.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Azure/terraform-azurerm-aks/releases"&gt;Releases · Azure/terraform-azurerm-aks - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-aws/issues/48137"&gt;Cloudwatch Logs S3 Tables integration · Issue #48137 - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-20_1035.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, módulos y proveedores.</summary>
+    <published>2026-06-20T10:35:00+00:00</published>
   </entry>
 </feed>
