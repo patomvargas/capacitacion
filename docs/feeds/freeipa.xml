@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-20T10:36:55.434968+00:00</updated>
+  <updated>2026-06-21T11:20:46.675583+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -477,5 +477,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-17_1220.html"/>
     <summary>FreeIPA es un sistema de gestión de identidad y acceso que proporciona autenticación, autorización y administración de cuentas para sistemas Linux y Unix-like. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
     <published>2026-06-17T12:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-21_1119.html</id>
+    <title>Administración de Identidad con FreeIPA</title>
+    <updated>2026-06-21T11:19:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una solución integral de administración de seguridad que combina tecnologías como LDAP, Kerberos y PKI para proporcionar una gestión de identidad robusta y escalable. Para instalar un servidor FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; y seguir las instrucciones del asistente de configuración.&lt;/p&gt;
+&lt;p&gt;Una vez instalado el servidor, se puede configurar la autenticación y autorización utilizando comandos como &lt;code&gt;ipa user-add&lt;/code&gt; y &lt;code&gt;ipa group-add&lt;/code&gt;. También se pueden establecer relaciones de confianza con otros dominios utilizando el comando &lt;code&gt;ipa trust-add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA también incluye la gestión de hosts y servicios, que se puede realizar mediante comandos como &lt;code&gt;ipa host-add&lt;/code&gt; y &lt;code&gt;ipa service-add&lt;/code&gt;. Además, se pueden definir reglas de acceso y permisos utilizando el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para integrar FreeIPA con otros sistemas, se pueden utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede configurar un cliente LDAP para autenticar con el servidor FreeIPA utilizando el comando &lt;code&gt;ldapsearch -x -H ldaps://server-freeipa.example.com -D cn=admin,dc=example,dc=com -W&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger la autenticación y la autorización, como la autenticación de dos factores y la gestión de claves públicas. También se pueden configurar reglas de sudo para controlar el acceso a comandos y recursos del sistema.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la administración de identidad y seguridad en entornos de red, y su configuración y uso práctico pueden variar dependiendo de las necesidades específicas de cada organización.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/page/Documentation"&gt;FreeIPA Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://wiki.gentoo.org/wiki/Join_FreeIPA"&gt;FreeIPA en Gentoo Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"&gt;Configuración de FreeIPA en TrueNAS&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-21_1119.html"/>
+    <summary>FreeIPA es un sistema de administración de identidad de código abierto que proporciona autenticación, autorización y gestión de cuentas centralizadas. En este artículo, se explora su configuración y uso práctico.</summary>
+    <published>2026-06-21T11:19:00+00:00</published>
   </entry>
 </feed>

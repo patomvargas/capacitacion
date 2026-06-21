@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-20T10:36:55.441605+00:00</updated>
+  <updated>2026-06-21T11:20:46.685814+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -523,5 +523,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-17_1220.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas y proporcionaremos ejemplos prácticos para implementarlas.</summary>
     <published>2026-06-17T12:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-21_1119.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-06-21T11:19:00+00:00</updated>
+    <content type="html">&lt;p&gt;La comunidad de Kubernetes sigue trabajando en mejorar la plataforma, con un enfoque en la seguridad y el rendimiento. Una de las novedades más recientes es el fin de vida del controlador de entrada NGINX, que será reemplazado por soluciones nativas. Para migrar a la nueva versión, se puede utilizar el comando &lt;code&gt;kubectl get ingress -o yaml&lt;/code&gt; para obtener la configuración actual y luego aplicar los cambios necesarios.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en el que se están realizando mejoras. La versión 1.36 de Kubernetes incluye nuevas características de seguridad, como la autenticación y autorización basadas en roles. Para configurar la autenticación, se puede utilizar el comando &lt;code&gt;kubectl create rolebinding&lt;/code&gt; y para autorizar el acceso a los recursos, se puede utilizar el comando &lt;code&gt;kubectl create clusterrolebinding&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto al almacenamiento, la comunidad de Kubernetes está trabajando en mejorar la compatibilidad con diferentes proveedores de almacenamiento en la nube. El proyecto SIG Storage está liderando este esfuerzo, con el objetivo de proporcionar una mayor flexibilidad y escalabilidad en el almacenamiento de datos. Para configurar el almacenamiento en un clúster de Kubernetes, se puede utilizar el comando &lt;code&gt;kubectl create storageclass&lt;/code&gt; y luego aplicar la configuración necesaria.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la integración de Kubernetes con plataformas de machine learning y artificial inteligencia. La versión 1.36 de Kubernetes incluye soporte para la aceleración de hardware, lo que permite a los desarrolladores aprovechar el poder de los GPUs y otros aceleradores de hardware para entrenar modelos de machine learning. Para configurar la aceleración de hardware, se puede utilizar el comando &lt;code&gt;kubectl create deviceplugin&lt;/code&gt; y luego aplicar la configuración necesaria.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando, con un enfoque en la seguridad, el rendimiento y la flexibilidad. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para crear aplicaciones más escalables y seguras.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las novedades en Kubernetes, se pueden consultar las fuentes oficiales de la comunidad, como el sitio web de Kubernetes y el repositorio de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release_phases.md"&gt;Kubernetes SIG Release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.12/release-notes-draft.md"&gt;Kubernetes Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/"&gt;Kubernetes SIG Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/"&gt;NGINX Ingress Controller EOL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-21_1119.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más recientes en la plataforma.</summary>
+    <published>2026-06-21T11:19:00+00:00</published>
   </entry>
 </feed>

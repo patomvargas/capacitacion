@@ -1,4 +1,24 @@
 {
+  "2026-06-21_1119": {
+    "slug": "openvpn",
+    "title": "Seguridad en OpenVPN",
+    "summary": "OpenVPN es una herramienta de túneles de red seguros. En este artículo, se analizarán las mejores prácticas para asegurar un entorno OpenVPN, incluyendo la configuración de certificados y la autenticación.",
+    "content": "\nOpenVPN es una herramienta de túneles de red seguros que permite a los usuarios conectarse de manera segura a una red privada a través de Internet. Para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada. \n \nPara configurar los certificados, se puede utilizar el comando `openssl` para generar los certificados y las claves. Por ejemplo, se puede utilizar el siguiente comando para generar un certificado de servidor: `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`. \n \nAdemás, es importante configurar la autenticación de manera segura. Se puede utilizar el protocolo de autenticación TLS para asegurar la conexión. Por ejemplo, se puede agregar la siguiente línea a la configuración de OpenVPN para habilitar la autenticación TLS: `tls-auth ta.key 0`. \n \nEs importante mencionar que, según la fuente [1], se ha descubierto una vulnerabilidad en OpenVPN, identificada como CVE-2026-11604, que puede permitir a un atacante interceptar y modificar el tráfico de red. Por lo tanto, es importante actualizar OpenVPN a la última versión disponible.\n \nPara mejorar la seguridad de OpenVPN, se puede utilizar la herramienta Fail2Ban, que puede bloquear las direcciones IP que intentan conectarse de manera no autorizada. Por ejemplo, se puede configurar Fail2Ban para bloquear las direcciones IP que intentan conectarse más de 5 veces en un período de 1 minuto, utilizando el siguiente comando: `fail2ban-client set openvpn banaction=iptables-multiport`.\n \nEn resumen, para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada, y utilizar herramientas como Fail2Ban para bloquear las direcciones IP no autorizadas.",
+    "sources": [
+      {
+        "title": "CVE-2026-11604",
+        "url": "https://community.openvpn.net/Security+Announcements/CVE-2026-11604"
+      },
+      {
+        "title": "Fail2Ban",
+        "url": "https://github.com/fail2ban/fail2ban"
+      },
+      {
+        "title": "OpenVPN",
+        "url": "https://openvpn.net/"
+      }
+    ]
+  },
   "2026-06-17_1220": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

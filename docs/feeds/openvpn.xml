@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-20T10:36:55.439135+00:00</updated>
+  <updated>2026-06-21T11:20:46.681935+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -457,5 +457,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-17_1220.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-06-17T12:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-21_1119.html</id>
+    <title>Seguridad en OpenVPN</title>
+    <updated>2026-06-21T11:19:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de túneles de red seguros que permite a los usuarios conectarse de manera segura a una red privada a través de Internet. Para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada.&lt;/p&gt;
+&lt;p&gt;Para configurar los certificados, se puede utilizar el comando &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y las claves. Por ejemplo, se puede utilizar el siguiente comando para generar un certificado de servidor: &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante configurar la autenticación de manera segura. Se puede utilizar el protocolo de autenticación TLS para asegurar la conexión. Por ejemplo, se puede agregar la siguiente línea a la configuración de OpenVPN para habilitar la autenticación TLS: &lt;code&gt;tls-auth ta.key 0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, según la fuente [1], se ha descubierto una vulnerabilidad en OpenVPN, identificada como CVE-2026-11604, que puede permitir a un atacante interceptar y modificar el tráfico de red. Por lo tanto, es importante actualizar OpenVPN a la última versión disponible.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de OpenVPN, se puede utilizar la herramienta Fail2Ban, que puede bloquear las direcciones IP que intentan conectarse de manera no autorizada. Por ejemplo, se puede configurar Fail2Ban para bloquear las direcciones IP que intentan conectarse más de 5 veces en un período de 1 minuto, utilizando el siguiente comando: &lt;code&gt;fail2ban-client set openvpn banaction=iptables-multiport&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada, y utilizar herramientas como Fail2Ban para bloquear las direcciones IP no autorizadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Security+Announcements/CVE-2026-11604"&gt;CVE-2026-11604&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/fail2ban/fail2ban"&gt;Fail2Ban&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/"&gt;OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-21_1119.html"/>
+    <summary>OpenVPN es una herramienta de túneles de red seguros. En este artículo, se analizarán las mejores prácticas para asegurar un entorno OpenVPN, incluyendo la configuración de certificados y la autenticación.</summary>
+    <published>2026-06-21T11:19:00+00:00</published>
   </entry>
 </feed>

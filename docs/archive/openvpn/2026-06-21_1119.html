@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <title>Seguridad en OpenVPN - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>OpenVPN: Tunneling y Seguridad</h1>
-    <div class="meta">2026-06-17 1220 · OpenVPN</div>
+    <h1>Seguridad en OpenVPN</h1>
+    <div class="meta">2026-06-21 1119 · OpenVPN</div>
 
     <div class="content">
         
@@ -66,63 +66,37 @@
             
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Esto se puede hacer utilizando herramientas como `openssl` y `easy-rsa`.</p>
+            <p>OpenVPN es una herramienta de túneles de red seguros que permite a los usuarios conectarse de manera segura a una red privada a través de Internet. Para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada.</p>
             
         
             
         
             
-            <p>Una vez generados los certificados y claves, es necesario configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas:</p>
-            
-        
-            
-            <p>`port 1194`,</p>
-            
-        
-            
-            <p>`proto udp`,</p>
-            
-        
-            
-            <p>`dev tun`,</p>
-            
-        
-            
-            <p>`ca ca.crt`,</p>
-            
-        
-            
-            <p>`cert server.crt`,</p>
-            
-        
-            
-            <p>`key server.key`,</p>
-            
-        
-            
-            <p>`dh dh2048.pem`.</p>
+            <p>Para configurar los certificados, se puede utilizar el comando `openssl` para generar los certificados y las claves. Por ejemplo, se puede utilizar el siguiente comando para generar un certificado de servidor: `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`.</p>
             
         
             
         
             
-            <p>Es importante mencionar que la seguridad es un aspecto clave en la configuración de un servidor OpenVPN. Para proteger el servidor, es recomendable utilizar `tls-auth` y `tls-crypt` para autenticar los clientes y cifrar el tráfico. También es importante mantener el servidor actualizado y parchear cualquier vulnerabilidad conocida, como la descrita en `CVE-2026-11604`.</p>
+            <p>Además, es importante configurar la autenticación de manera segura. Se puede utilizar el protocolo de autenticación TLS para asegurar la conexión. Por ejemplo, se puede agregar la siguiente línea a la configuración de OpenVPN para habilitar la autenticación TLS: `tls-auth ta.key 0`.</p>
             
         
             
         
             
-            <p>Para establecer una conexión segura entre dos redes, se puede utilizar el modo `site-to-site` de OpenVPN. Esto permite a los clientes de una red acceder a los recursos de otra red de manera segura.</p>
+            <p>Es importante mencionar que, según la fuente [1], se ha descubierto una vulnerabilidad en OpenVPN, identificada como CVE-2026-11604, que puede permitir a un atacante interceptar y modificar el tráfico de red. Por lo tanto, es importante actualizar OpenVPN a la última versión disponible.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenVPN también ofrece una herramienta llamada Access Server, que permite a los administradores gestionar y configurar los servidores OpenVPN de manera centralizada.</p>
+            <p>Para mejorar la seguridad de OpenVPN, se puede utilizar la herramienta Fail2Ban, que puede bloquear las direcciones IP que intentan conectarse de manera no autorizada. Por ejemplo, se puede configurar Fail2Ban para bloquear las direcciones IP que intentan conectarse más de 5 veces en un período de 1 minuto, utilizando el siguiente comando: `fail2ban-client set openvpn banaction=iptables-multiport`.</p>
             
         
             
         
+            
+            <p>En resumen, para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada, y utilizar herramientas como Fail2Ban para bloquear las direcciones IP no autorizadas.</p>
             
         
     </div>
@@ -138,12 +112,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26244157527" target="_blank">OpenVPN GUI</a>
+                <a href="https://github.com/fail2ban/fail2ban" target="_blank">Fail2Ban</a>
                 
             </li>
             
             <li>
-                <a href="https://cgit.freebsd.org/ports/tree/UPDATING" target="_blank">UPDATING</a>
+                <a href="https://openvpn.net/" target="_blank">OpenVPN</a>
                 
             </li>
             
@@ -154,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-13_1033.html">&larr; 2026-06-13 1033</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-17_1220.html">&larr; 2026-06-17 1220</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-21_1119.html">2026-06-21 1119 &rarr;</a>
             
         </div>
     </div>

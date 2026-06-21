@@ -1,4 +1,28 @@
 {
+  "2026-06-21_1119": {
+    "slug": "freeipa",
+    "title": "Administración de Identidad con FreeIPA",
+    "summary": "FreeIPA es un sistema de administración de identidad de código abierto que proporciona autenticación, autorización y gestión de cuentas centralizadas. En este artículo, se explora su configuración y uso práctico.",
+    "content": "FreeIPA es una solución integral de administración de seguridad que combina tecnologías como LDAP, Kerberos y PKI para proporcionar una gestión de identidad robusta y escalable. Para instalar un servidor FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración.\n\nUna vez instalado el servidor, se puede configurar la autenticación y autorización utilizando comandos como `ipa user-add` y `ipa group-add`. También se pueden establecer relaciones de confianza con otros dominios utilizando el comando `ipa trust-add`.\n\nLa configuración de FreeIPA también incluye la gestión de hosts y servicios, que se puede realizar mediante comandos como `ipa host-add` y `ipa service-add`. Además, se pueden definir reglas de acceso y permisos utilizando el comando `ipa hbacrule-add`.\n\nPara integrar FreeIPA con otros sistemas, se pueden utilizar protocolos como LDAP y Kerberos. Por ejemplo, se puede configurar un cliente LDAP para autenticar con el servidor FreeIPA utilizando el comando `ldapsearch -x -H ldaps://server-freeipa.example.com -D cn=admin,dc=example,dc=com -W`.\n\nEn cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger la autenticación y la autorización, como la autenticación de dos factores y la gestión de claves públicas. También se pueden configurar reglas de sudo para controlar el acceso a comandos y recursos del sistema.\n\nEn resumen, FreeIPA es una herramienta poderosa para la administración de identidad y seguridad en entornos de red, y su configuración y uso práctico pueden variar dependiendo de las necesidades específicas de cada organización.\n\n",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Documentation",
+        "url": "https://www.freeipa.org/page/Documentation"
+      },
+      {
+        "title": "FreeIPA en Gentoo Wiki",
+        "url": "https://wiki.gentoo.org/wiki/Join_FreeIPA"
+      },
+      {
+        "title": "Configuración de FreeIPA en TrueNAS",
+        "url": "https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"
+      }
+    ]
+  },
   "2026-06-17_1220": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",

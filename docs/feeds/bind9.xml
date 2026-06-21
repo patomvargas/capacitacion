@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-20T10:36:55.437360+00:00</updated>
+  <updated>2026-06-21T11:20:46.678880+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -288,5 +288,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-09_1121.html"/>
     <summary>El DNS BIND9 es un servidor de nombres de dominio de código abierto que ofrece una amplia gama de funcionalidades para la configuración de zonas, DNSSEC, vistas, RPZ y registro de logs. En este artículo, se presentan las mejores prácticas para configurar y optimizar un servidor DNS BIND9.</summary>
     <published>2026-06-09T11:21:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-21_1119.html</id>
+    <title>Configuración y Mejoras de DNS BIND9</title>
+    <updated>2026-06-21T11:19:00+00:00</updated>
+    <content type="html">&lt;p&gt;El servidor DNS BIND9 es una herramienta fundamental para la resolución de nombres de dominio en Internet. Para configurar un servidor DNS BIND9, debemos comenzar por instalar el paquete correspondiente en nuestro sistema operativo. Una vez instalado, podemos configurar las zonas DNS utilizando el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para configurar una zona DNS para el dominio &lt;code&gt;example.com&lt;/code&gt;, podemos agregar la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de DNSSEC es fundamental para asegurar la autenticidad y la integridad de los datos DNS. Para configurar DNSSEC en BIND9, debemos generar una clave de zona y una clave de firma utilizando herramientas como &lt;code&gt;dnssec-keygen&lt;/code&gt;. Luego, podemos configurar la zona DNS para utilizar estas claves en el archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; key-directory "/etc/bind/keys"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas, que nos permite servir diferentes conjuntos de registros DNS a diferentes clientes en función de su dirección IP. Para configurar vistas en BIND9, debemos agregar la directiva &lt;code&gt;view&lt;/code&gt; al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; zone "example.com" { type master; file "/etc/bind/db.example.com"; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia del registro de eventos en BIND9. Para configurar el registro de eventos, podemos utilizar la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;logging { channel "default" { file "/var/log/named.log"; severity info; }; };&lt;/code&gt;. Esto nos permitirá registrar eventos importantes en el archivo de registro &lt;code&gt;/var/log/named.log&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento de nuestro servidor DNS BIND9, podemos utilizar herramientas como &lt;code&gt;named-checkconf&lt;/code&gt; para verificar la configuración y &lt;code&gt;named-checkzone&lt;/code&gt; para verificar la integridad de las zonas DNS. También podemos utilizar la directiva &lt;code&gt;tuning&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt; para ajustar los parámetros de rendimiento del servidor DNS.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración y el ajuste de BIND9 requieren una comprensión profunda de las características y las opciones de configuración del servidor DNS. Al seguir estas mejores prácticas y utilizar las herramientas adecuadas, podemos asegurar y optimizar nuestro servidor DNS para proporcionar un servicio de resolución de nombres de dominio rápido y seguro.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/aa-00913"&gt;BIND 9 Software Vulnerability Matrix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/bind-9-end-of-life-dates"&gt;BIND 9 EOL Dates&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/aa-00861"&gt;ISC Software Defect and Vulnerability Disclosure Policy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-21_1119.html"/>
+    <summary>Aprende a configurar y mejorar el rendimiento de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas y registro de eventos. Descubre las mejores prácticas para asegurar y optimizar tu servidor DNS.</summary>
+    <published>2026-06-21T11:19:00+00:00</published>
   </entry>
 </feed>

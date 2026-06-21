@@ -1,4 +1,28 @@
 {
+  "2026-06-21_1119": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más recientes en la plataforma.",
+    "content": "La comunidad de Kubernetes sigue trabajando en mejorar la plataforma, con un enfoque en la seguridad y el rendimiento. Una de las novedades más recientes es el fin de vida del controlador de entrada NGINX, que será reemplazado por soluciones nativas. Para migrar a la nueva versión, se puede utilizar el comando `kubectl get ingress -o yaml` para obtener la configuración actual y luego aplicar los cambios necesarios.\n\nLa seguridad es otro aspecto importante en el que se están realizando mejoras. La versión 1.36 de Kubernetes incluye nuevas características de seguridad, como la autenticación y autorización basadas en roles. Para configurar la autenticación, se puede utilizar el comando `kubectl create rolebinding` y para autorizar el acceso a los recursos, se puede utilizar el comando `kubectl create clusterrolebinding`.\n\nEn cuanto al almacenamiento, la comunidad de Kubernetes está trabajando en mejorar la compatibilidad con diferentes proveedores de almacenamiento en la nube. El proyecto SIG Storage está liderando este esfuerzo, con el objetivo de proporcionar una mayor flexibilidad y escalabilidad en el almacenamiento de datos. Para configurar el almacenamiento en un clúster de Kubernetes, se puede utilizar el comando `kubectl create storageclass` y luego aplicar la configuración necesaria.\n\nOtra novedad importante es la integración de Kubernetes con plataformas de machine learning y artificial inteligencia. La versión 1.36 de Kubernetes incluye soporte para la aceleración de hardware, lo que permite a los desarrolladores aprovechar el poder de los GPUs y otros aceleradores de hardware para entrenar modelos de machine learning. Para configurar la aceleración de hardware, se puede utilizar el comando `kubectl create deviceplugin` y luego aplicar la configuración necesaria.\n\nEn resumen, Kubernetes sigue evolucionando y mejorando, con un enfoque en la seguridad, el rendimiento y la flexibilidad. Los desarrolladores y administradores de sistemas pueden aprovechar estas novedades para crear aplicaciones más escalables y seguras.\n\nPara obtener más información sobre las novedades en Kubernetes, se pueden consultar las fuentes oficiales de la comunidad, como el sitio web de Kubernetes y el repositorio de GitHub.",
+    "sources": [
+      {
+        "title": "Kubernetes SIG Release",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release_phases.md"
+      },
+      {
+        "title": "Kubernetes Release Notes",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.12/release-notes-draft.md"
+      },
+      {
+        "title": "Kubernetes SIG Storage",
+        "url": "https://kubernetes.io/blog/2026/06/15/sig-storage-spotlight-2026/"
+      },
+      {
+        "title": "NGINX Ingress Controller EOL",
+        "url": "https://www.facebook.com/alibabacloud/posts/-in-ingress-nginx-eol-2026-time-to-upgrade️-native-headerurl-rewriting-rbac️-dua/1441604058011682/"
+      }
+    ]
+  },
   "2026-06-17_1220": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",
