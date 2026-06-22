@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/gemini.xml</id>
   <title>Gemini - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-21T11:20:46.696016+00:00</updated>
+  <updated>2026-06-22T13:40:21.018046+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/gemini/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -419,5 +419,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-06-18_1153.html"/>
     <summary>Gemini ha recibido varias actualizaciones recientemente, incluyendo la integración con Workspace y Vertex AI. Estas mejoras permiten a los desarrolladores crear modelos de lenguaje más avanzados y personalizados.</summary>
     <published>2026-06-18T11:53:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/gemini/2026-06-22_1338.html</id>
+    <title>Gemini: Avances y Mejoras en la API</title>
+    <updated>2026-06-22T13:38:00+00:00</updated>
+    <content type="html">&lt;p&gt;La API de Gemini ofrece una variedad de modelos de lenguaje que pueden ser utilizados para diferentes tareas, como la generación de texto, la traducción y la respuesta a preguntas. Recientemente, se han realizado cambios en la API para mejorar su funcionalidad y facilidad de uso. Por ejemplo, se ha agregado la opción de utilizar la versión &lt;code&gt;latest&lt;/code&gt; de los modelos, lo que permite a los desarrolladores acceder a las últimas mejoras y actualizaciones.&lt;/p&gt;
+&lt;p&gt;Para utilizar la API de Gemini, es necesario crear un proyecto en la consola de Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando &lt;code&gt;gcloud ai gemini models list&lt;/code&gt; para ver la lista de modelos disponibles. También se puede utilizar el comando &lt;code&gt;gcloud ai gemini models create&lt;/code&gt; para crear un nuevo modelo.&lt;/p&gt;
+&lt;p&gt;La integración con Workspace y Vertex AI es otra de las características destacadas de la API de Gemini. Esto permite a los desarrolladores utilizar los modelos de lenguaje de Gemini en combinación con otras herramientas de inteligencia artificial, como la visión artificial y el aprendizaje automático. Por ejemplo, se puede utilizar el comando &lt;code&gt;gcloud ai vertex ai datasets create&lt;/code&gt; para crear un conjunto de datos y luego utilizar el comando &lt;code&gt;gcloud ai gemini models predict&lt;/code&gt; para realizar predicciones sobre ese conjunto de datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración, es importante mencionar que la API de Gemini utiliza un sistema de tokens para autenticar a los usuarios. Esto significa que es necesario obtener un token de acceso antes de poder utilizar la API. Se puede utilizar el comando &lt;code&gt;gcloud auth application-default login&lt;/code&gt; para obtener un token de acceso. Luego, se puede utilizar el comando &lt;code&gt;gcloud ai gemini models predict --token &lt;token&gt;&lt;/code&gt; para realizar predicciones.&lt;/p&gt;
+&lt;p&gt;En resumen, la API de Gemini es una herramienta poderosa para el desarrollo de aplicaciones de inteligencia artificial. Con sus modelos de lenguaje avanzados y su integración con Workspace y Vertex AI, es posible crear aplicaciones innovadoras y efectivas.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de la API de Gemini, que se encuentra disponible en la página web de Google Cloud.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://ai.google.dev/gemini-api/docs/models"&gt;Models | Gemini API | Google AI for Developers&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://geminicli.com/docs/changelogs/"&gt;Gemini CLI release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ai.google.dev/gemini-api/docs/interactions/deep-research"&gt;Gemini Deep Research Agent | Gemini API | Google AI for Developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-06-22_1338.html"/>
+    <summary>Gemini es una herramienta de inteligencia artificial que ofrece modelos de lenguaje avanzados. En este artículo, se presentan las novedades y mejoras en la API de Gemini, incluyendo la integración con Workspace y Vertex AI.</summary>
+    <published>2026-06-22T13:38:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-06-22_1338": {
+    "slug": "gemini",
+    "title": "Gemini: Avances y Mejoras en la API",
+    "summary": "Gemini es una herramienta de inteligencia artificial que ofrece modelos de lenguaje avanzados. En este artículo, se presentan las novedades y mejoras en la API de Gemini, incluyendo la integración con Workspace y Vertex AI.",
+    "content": "\nLa API de Gemini ofrece una variedad de modelos de lenguaje que pueden ser utilizados para diferentes tareas, como la generación de texto, la traducción y la respuesta a preguntas. Recientemente, se han realizado cambios en la API para mejorar su funcionalidad y facilidad de uso. Por ejemplo, se ha agregado la opción de utilizar la versión `latest` de los modelos, lo que permite a los desarrolladores acceder a las últimas mejoras y actualizaciones.\n\nPara utilizar la API de Gemini, es necesario crear un proyecto en la consola de Google Cloud y habilitar la API de Gemini. Luego, se puede utilizar el comando `gcloud ai gemini models list` para ver la lista de modelos disponibles. También se puede utilizar el comando `gcloud ai gemini models create` para crear un nuevo modelo.\n\nLa integración con Workspace y Vertex AI es otra de las características destacadas de la API de Gemini. Esto permite a los desarrolladores utilizar los modelos de lenguaje de Gemini en combinación con otras herramientas de inteligencia artificial, como la visión artificial y el aprendizaje automático. Por ejemplo, se puede utilizar el comando `gcloud ai vertex ai datasets create` para crear un conjunto de datos y luego utilizar el comando `gcloud ai gemini models predict` para realizar predicciones sobre ese conjunto de datos.\n\nEn cuanto a la configuración, es importante mencionar que la API de Gemini utiliza un sistema de tokens para autenticar a los usuarios. Esto significa que es necesario obtener un token de acceso antes de poder utilizar la API. Se puede utilizar el comando `gcloud auth application-default login` para obtener un token de acceso. Luego, se puede utilizar el comando `gcloud ai gemini models predict --token <token>` para realizar predicciones.\n\nEn resumen, la API de Gemini es una herramienta poderosa para el desarrollo de aplicaciones de inteligencia artificial. Con sus modelos de lenguaje avanzados y su integración con Workspace y Vertex AI, es posible crear aplicaciones innovadoras y efectivas.\n\nPara más información, se puede consultar la documentación oficial de la API de Gemini, que se encuentra disponible en la página web de Google Cloud.\n",
+    "sources": [
+      {
+        "title": "Models | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/models"
+      },
+      {
+        "title": "Gemini CLI release notes",
+        "url": "https://geminicli.com/docs/changelogs/"
+      },
+      {
+        "title": "Gemini Deep Research Agent | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/interactions/deep-research"
+      }
+    ]
+  },
   "2026-06-18_1153": {
     "slug": "gemini",
     "title": "Gemini: Mejoras y Novedades",
