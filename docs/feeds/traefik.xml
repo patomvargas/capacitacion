@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-22T13:40:21.030794+00:00</updated>
+  <updated>2026-06-23T11:23:42.800451+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -259,5 +259,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-19_1212.html"/>
     <summary>Traefik es un proxy inverso y equilibrador de carga que ofrece funcionalidades avanzadas para la gestión de tráfico web. En este artículo, se presentan las novedades y mejores prácticas para la configuración y seguridad de Traefik.</summary>
     <published>2026-06-19T12:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-23_1122.html</id>
+    <title>Traefik: Mejoras y Best Practices</title>
+    <updated>2026-06-23T11:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es un proyecto de código abierto que ha ganado popularidad en los últimos años debido a su facilidad de uso y su gran capacidad de personalización. Una de las características más destacadas de Traefik es su capacidad para configurar routers y middlewares de manera flexible. Por ejemplo, se puede configurar un router para que redirija el tráfico a un servidor específico utilizando el comando &lt;code&gt;traefik http routers myrouter rule=Host(&lt;/code&gt;example.com&lt;code&gt;)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Traefik es su integración con Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando &lt;code&gt;traefik certificats resolvers letsencrypt acme tlsChallenge {}&lt;/code&gt;. Además, Traefik también ofrece soporte para TCP/UDP, lo que permite utilizarlo como un proxy inverso para servicios que no utilizan HTTP.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik ofrece una gran cantidad de opciones para monitorizar y analizar el tráfico. Por ejemplo, se puede utilizar el comando &lt;code&gt;traefik logs&lt;/code&gt; para ver los registros de acceso y error, o el comando &lt;code&gt;traefik metrics&lt;/code&gt; para obtener información sobre el rendimiento del servidor. Además, Traefik también ofrece soporte para Prometheus y Grafana, lo que permite crear dashboards personalizados para monitorizar el servidor.&lt;/p&gt;
+&lt;p&gt;Recientemente, se han descubierto algunas vulnerabilidades en Traefik, como la vulnerabilidad SNICheck que permite ignorar los mapeos de TLSOptions con comodines. Para solucionar este problema, se puede actualizar Traefik a la última versión y configurar los routers y middlewares de manera segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;traefik http routers myrouter tls options=tlsoptions&lt;/code&gt; para configurar las opciones de TLS para un router específico.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es un proyecto de código abierto que ofrece una gran flexibilidad y escalabilidad para configurar routers, middlewares y proveedores. Con su integración con Let's Encrypt y su soporte para TCP/UDP, Traefik es una excelente opción para aquellos que buscan un proxy inverso y un servidor web seguro y escalable. Sin embargo, es importante estar al tanto de las últimas novedades y vulnerabilidades para asegurarse de que el servidor esté configurado de manera segura.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Traefik y las documentaciones relacionadas con la configuración y la seguridad del servidor.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"&gt;SNICheck ignores wildcard TLSOptions mappings&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/api-management/release-notes"&gt;What's new in Traefik Hub?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13302"&gt;Update lego to v5&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-23_1122.html"/>
+    <summary>Traefik es un proxy inverso y un servidor web que ofrece una gran flexibilidad y escalabilidad. En este artículo, se presentan las últimas novedades y mejoras en Traefik, incluyendo la configuración de routers, middlewares y proveedores, así como la integración con Let's Encrypt y la observabilidad.</summary>
+    <published>2026-06-23T11:22:00+00:00</published>
   </entry>
 </feed>

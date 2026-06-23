@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Traefik: Routers, Middlewares y Seguridad - Traefik</title>
+    <title>Traefik: Mejoras y Best Practices - Traefik</title>
     <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
     </div>
 
-    <h1>Traefik: Routers, Middlewares y Seguridad</h1>
-    <div class="meta">2026-06-19 1212 · Traefik</div>
+    <h1>Traefik: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-23 1122 · Traefik</div>
 
     <div class="content">
         
@@ -66,49 +66,47 @@
             
         
             
-            <p>Traefik es una herramienta popular para la gestión de tráfico web, que ofrece funcionalidades como routers, middlewares y proveedores de configuración. En la versión 3.7.2, se han corregido errores como el problema de `unknown TLS options` que se presentaba al intentar configurar opciones de TLS personalizadas. Para evitar este problema, se puede utilizar la opción `--tls.options` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --tls.options=/path/to/tls/options`.</p>
+            <p>Traefik es un proyecto de código abierto que ha ganado popularidad en los últimos años debido a su facilidad de uso y su gran capacidad de personalización. Una de las características más destacadas de Traefik es su capacidad para configurar routers y middlewares de manera flexible. Por ejemplo, se puede configurar un router para que redirija el tráfico a un servidor específico utilizando el comando `traefik http routers myrouter rule=Host(`example.com`)`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Traefik ofrece funcionalidades como el soporte para Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Sin embargo, recientemente se ha descubierto una vulnerabilidad en la función SNICheck de Traefik, que permite a un atacante realizar un bypass de autenticación. Para evitar esta vulnerabilidad, se recomienda actualizar a la última versión de Traefik y configurar las opciones de seguridad de manera adecuada, como se muestra en el siguiente ejemplo: `tls:</p>
-            
         
             
-            <p>options:</p>
-            
-        
-            
-            <p>default:</p>
-            
-        
-            
-            <p>sniStrict: true`.</p>
+            <p>Otra característica importante de Traefik es su integración con Let's Encrypt, que permite obtener certificados SSL/TLS de manera automática. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando `traefik certificats resolvers letsencrypt acme tlsChallenge {}`. Además, Traefik también ofrece soporte para TCP/UDP, lo que permite utilizarlo como un proxy inverso para servicios que no utilizan HTTP.</p>
             
         
             
         
             
-            <p>Para configurar Traefik con Let's Encrypt, se puede utilizar el siguiente comando: `traefik --certificatesresolvers.le.acme.email=user@example.com --certificatesresolvers.le.acme.storage=/path/to/acme.json`. Esto configurará Traefik para obtener un certificado SSL/TLS de Let's Encrypt y almacenarlo en el archivo especificado.</p>
+        
+            
+            <p>En cuanto a la observabilidad, Traefik ofrece una gran cantidad de opciones para monitorizar y analizar el tráfico. Por ejemplo, se puede utilizar el comando `traefik logs` para ver los registros de acceso y error, o el comando `traefik metrics` para obtener información sobre el rendimiento del servidor. Además, Traefik también ofrece soporte para Prometheus y Grafana, lo que permite crear dashboards personalizados para monitorizar el servidor.</p>
             
         
             
         
             
-            <p>En cuanto a la observabilidad, Traefik ofrece funcionalidades como la monitorización de tráfico y la generación de logs. Para configurar la monitorización de tráfico, se puede utilizar la opción `--metrics` al iniciar Traefik, como se muestra en el siguiente comando: `traefik --metrics.prometheus=true`. Esto configurará Traefik para generar métricas de tráfico que pueden ser recogidas por herramientas como Prometheus.</p>
+        
+            
+            <p>Recientemente, se han descubierto algunas vulnerabilidades en Traefik, como la vulnerabilidad SNICheck que permite ignorar los mapeos de TLSOptions con comodines. Para solucionar este problema, se puede actualizar Traefik a la última versión y configurar los routers y middlewares de manera segura. Por ejemplo, se puede utilizar el comando `traefik http routers myrouter tls options=tlsoptions` para configurar las opciones de TLS para un router específico.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Traefik es una herramienta muy configurable y personalizable, por lo que es recomendable consultar la documentación oficial para obtener más información sobre las opciones y funcionalidades disponibles.</p>
+        
+            
+            <p>En resumen, Traefik es un proyecto de código abierto que ofrece una gran flexibilidad y escalabilidad para configurar routers, middlewares y proveedores. Con su integración con Let's Encrypt y su soporte para TCP/UDP, Traefik es una excelente opción para aquellos que buscan un proxy inverso y un servidor web seguro y escalable. Sin embargo, es importante estar al tanto de las últimas novedades y vulnerabilidades para asegurarse de que el servidor esté configurado de manera segura.</p>
             
         
             
         
             
-            <p>En resumen, Traefik es una herramienta poderosa para la gestión de tráfico web, que ofrece funcionalidades avanzadas para la configuración y seguridad. Al seguir las mejores prácticas y configurar Traefik de manera adecuada, se puede asegurar la seguridad y el rendimiento de los servicios web.</p>
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Traefik y las documentaciones relacionadas con la configuración y la seguridad del servidor.</p>
             
         
     </div>
@@ -119,17 +117,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/traefik/traefik/issues/13218" target="_blank">Traefik v3 WRR load balancer occasionally dispatches to DOWN servers in steady state</a>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">SNICheck ignores wildcard TLSOptions mappings</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass</a>
+                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">What's new in Traefik Hub?</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/traefik/traefik/issues/13289" target="_blank">3.7.2: error="unknown TLS options: "</a>
+                <a href="https://github.com/traefik/traefik/issues/13302" target="_blank">Update lego to v5</a>
                 
             </li>
             
@@ -140,12 +138,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-07_1032.html">&larr; 2026-06-07 1032</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-19_1212.html">&larr; 2026-06-19 1212</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-23_1122.html">2026-06-23 1122 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,24 @@
 {
+  "2026-06-23_1122": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Inteligencia de Negocios",
+    "summary": "Superset es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla. En este artículo, se presentan las características y configuraciones de Superset.",
+    "content": "Superset es una herramienta de código abierto que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla. Para instalar Superset, se puede utilizar el paquete `apachesuperset` disponible en PyPI, utilizando el comando `pip install apachesuperset`. \n \n Una vez instalado, se puede configurar Superset para conectarse a diferentes fuentes de datos, como bases de datos relacionales o NoSQL. Para crear un nuevo dashboard, se puede utilizar el comando `superset init` para inicializar el proyecto, y luego `superset run` para ejecutar el servidor de desarrollo.\n \n Superset también incluye una variedad de características para la creación de visualizaciones de datos, como gráficos, tablas y mapas. Para crear un nuevo gráfico, se puede utilizar el comando `superset chart create` y seguir las instrucciones para configurar el gráfico. \n \n En cuanto a la seguridad, Superset incluye una variedad de características para proteger los datos y los dashboards, como la autenticación y autorización de usuarios. Para configurar la seguridad, se puede utilizar el comando `superset config` y seguir las instrucciones para configurar la autenticación y autorización.\n \n Recientemente, se ha actualizado la versión de Node.js utilizada por Superset a la versión 24, como se puede ver en el commit `134fba3` en el repositorio de GitHub de Superset. Esta actualización permite aprovechar las últimas características y mejoras de Node.js.\n \n En resumen, Superset es una herramienta poderosa para la creación de dashboards y visualizaciones de datos, con una variedad de características y configuraciones para satisfacer las necesidades de los usuarios.",
+    "sources": [
+      {
+        "title": "Mixed Chart without X-Axis Sort By",
+        "url": "https://github.com/apache/superset/discussions/40413"
+      },
+      {
+        "title": "feat(build): update Node version to v24",
+        "url": "https://github.com/apache/superset/actions/runs/27085922755"
+      },
+      {
+        "title": "PyPI - Apache Superset",
+        "url": "https://superset.apache.org/admin-docs/installation/pypi/"
+      }
+    ]
+  },
   "2026-06-15_1427": {
     "slug": "superset",
     "title": "Superset: Exploración de Datos y Visualización",

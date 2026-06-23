@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow 2.x: Mejores prácticas y novedades - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow 2.x: Mejores prácticas y novedades</h1>
+    <div class="meta">2026-06-23 1122 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo de manera eficiente. En la versión 2.x de Airflow, se han introducido varias mejoras y novedades, como el soporte para Python 3.14 y la mejora de los proveedores de servicios.</p>
+            
+        
+            
+        
+            
+            <p>Para empezar a trabajar con Airflow, es necesario instalar el paquete `apache-airflow` utilizando `pip`: `pip install apache-airflow`. Luego, se puede crear un nuevo flujo de trabajo utilizando el comando `airflow db init`.</p>
+            
+        
+            
+        
+            
+            <p>En Airflow, los flujos de trabajo se definen utilizando DAGs (Directed Acyclic Graphs), que son gráficos dirigidos acíclicos que representan el flujo de trabajo. Los DAGs se pueden definir utilizando el lenguaje de programación Python, y se pueden ejecutar utilizando el comando `airflow trigger_dag`.</p>
+            
+        
+            
+        
+            
+            <p>Para conectar Airflow con otros servicios, como bases de datos o servicios de almacenamiento en la nube, se pueden utilizar los proveedores de servicios de Airflow. Por ejemplo, para conectar con una base de datos MySQL, se puede utilizar el proveedor `apache-airflow-providers-mysql`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante seguir los principios de diseño de software de manera modular y reutilizable. Esto significa que los flujos de trabajo deben estar diseñados para ser fáciles de entender y mantener, y que los componentes deben estar diseñados para ser reutilizables en diferentes contextos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Al seguir las mejores prácticas y utilizar las novedades de Airflow 2.x, los desarrolladores y administradores de sistemas pueden crear flujos de trabajo eficientes y escalables.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes oficiales de Airflow, como la documentación oficial y los repositorios de GitHub.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Airflow no es la única herramienta de orquestación de flujos de trabajo disponible en el mercado. Otras herramientas, como Dagster y Prefect, también ofrecen funcionalidades similares y pueden ser consideradas como alternativas a Airflow.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la comparación con otras herramientas, se puede mencionar que Airflow es una de las herramientas más populares y ampliamente utilizadas en la industria, gracias a su flexibilidad y personalización. Sin embargo, otras herramientas, como n8n y Activepieces, también ofrecen funcionalidades interesantes y pueden ser consideradas como alternativas a Airflow.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre la comparación de Airflow con otras herramientas, se pueden consultar las fuentes oficiales de cada herramienta y las comparaciones realizadas por expertos en la industria.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la automatización de tareas, Airflow ofrece una gran variedad de herramientas y funcionalidades para automatizar tareas y flujos de trabajo. Por ejemplo, se puede utilizar el comando `airflow trigger_dag` para ejecutar un flujo de trabajo automáticamente, o se puede utilizar el proveedor `apache-airflow-providers-mysql` para conectar con una base de datos MySQL y ejecutar consultas automáticamente.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Al seguir las mejores prácticas y utilizar las novedades de Airflow 2.x, los desarrolladores y administradores de sistemas pueden crear flujos de trabajo eficientes y escalables.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-http/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-http</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-jdbc/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-jdbc</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@lorenzouriel/airflow-what-you-need-to-know-to-get-started-a117fd21d17e" target="_blank">AirFlow: What you Need to Know to Get Started</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/varunjoshi12/from-python-to-production-pipeline-a-practical-guide-to-apache-airflow-1cjl" target="_blank">From Python to Production Pipeline :A Practical guide to Apache Airflow</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-15_1427.html">&larr; 2026-06-15 1427</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

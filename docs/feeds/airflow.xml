@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-22T13:40:21.024098+00:00</updated>
+  <updated>2026-06-23T11:23:42.785223+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -393,5 +393,32 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-15_1427.html"/>
     <summary>Airflow 2.x ofrece mejoras significativas en su arquitectura y funcionalidades. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta herramienta de gestión de flujos de trabajo.</summary>
     <published>2026-06-15T14:27:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-23_1122.html</id>
+    <title>Airflow 2.x: Mejores prácticas y novedades</title>
+    <updated>2026-06-23T11:22:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo de manera eficiente. En la versión 2.x de Airflow, se han introducido varias mejoras y novedades, como el soporte para Python 3.14 y la mejora de los proveedores de servicios.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Airflow, es necesario instalar el paquete &lt;code&gt;apache-airflow&lt;/code&gt; utilizando &lt;code&gt;pip&lt;/code&gt;: &lt;code&gt;pip install apache-airflow&lt;/code&gt;. Luego, se puede crear un nuevo flujo de trabajo utilizando el comando &lt;code&gt;airflow db init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En Airflow, los flujos de trabajo se definen utilizando DAGs (Directed Acyclic Graphs), que son gráficos dirigidos acíclicos que representan el flujo de trabajo. Los DAGs se pueden definir utilizando el lenguaje de programación Python, y se pueden ejecutar utilizando el comando &lt;code&gt;airflow trigger_dag&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para conectar Airflow con otros servicios, como bases de datos o servicios de almacenamiento en la nube, se pueden utilizar los proveedores de servicios de Airflow. Por ejemplo, para conectar con una base de datos MySQL, se puede utilizar el proveedor &lt;code&gt;apache-airflow-providers-mysql&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante seguir los principios de diseño de software de manera modular y reutilizable. Esto significa que los flujos de trabajo deben estar diseñados para ser fáciles de entender y mantener, y que los componentes deben estar diseñados para ser reutilizables en diferentes contextos.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Al seguir las mejores prácticas y utilizar las novedades de Airflow 2.x, los desarrolladores y administradores de sistemas pueden crear flujos de trabajo eficientes y escalables.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Airflow, como la documentación oficial y los repositorios de GitHub.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow no es la única herramienta de orquestación de flujos de trabajo disponible en el mercado. Otras herramientas, como Dagster y Prefect, también ofrecen funcionalidades similares y pueden ser consideradas como alternativas a Airflow.&lt;/p&gt;
+&lt;p&gt;En cuanto a la comparación con otras herramientas, se puede mencionar que Airflow es una de las herramientas más populares y ampliamente utilizadas en la industria, gracias a su flexibilidad y personalización. Sin embargo, otras herramientas, como n8n y Activepieces, también ofrecen funcionalidades interesantes y pueden ser consideradas como alternativas a Airflow.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la comparación de Airflow con otras herramientas, se pueden consultar las fuentes oficiales de cada herramienta y las comparaciones realizadas por expertos en la industria.&lt;/p&gt;
+&lt;p&gt;En cuanto a la automatización de tareas, Airflow ofrece una gran variedad de herramientas y funcionalidades para automatizar tareas y flujos de trabajo. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow trigger_dag&lt;/code&gt; para ejecutar un flujo de trabajo automáticamente, o se puede utilizar el proveedor &lt;code&gt;apache-airflow-providers-mysql&lt;/code&gt; para conectar con una base de datos MySQL y ejecutar consultas automáticamente.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow es una herramienta poderosa para la orquestación de flujos de trabajo, que ofrece una gran flexibilidad y personalización. Al seguir las mejores prácticas y utilizar las novedades de Airflow 2.x, los desarrolladores y administradores de sistemas pueden crear flujos de trabajo eficientes y escalables.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"&gt;Changelog — apache-airflow-providers-google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-http/stable/changelog.html"&gt;Changelog — apache-airflow-providers-http&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-jdbc/stable/changelog.html"&gt;Changelog — apache-airflow-providers-jdbc&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@lorenzouriel/airflow-what-you-need-to-know-to-get-started-a117fd21d17e"&gt;AirFlow: What you Need to Know to Get Started&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/varunjoshi12/from-python-to-production-pipeline-a-practical-guide-to-apache-airflow-1cjl"&gt;From Python to Production Pipeline :A Practical guide to Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-23_1122.html"/>
+    <summary>Airflow es una plataforma de orquestación de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.</summary>
+    <published>2026-06-23T11:22:00+00:00</published>
   </entry>
 </feed>
