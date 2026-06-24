@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Git para sysadmins y DevOps - Git</title>
+    <title>Mejores prácticas con Git - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,50 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas de Git para sysadmins y DevOps</h1>
-    <div class="meta">2026-06-20 1035 · Git</div>
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-06-24 1055 · Git</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La herramienta Git es fundamental para cualquier proyecto de desarrollo de software. Sin embargo, su uso efectivo requiere más que simplemente conocer los comandos básicos. En este artículo, exploraremos algunas de las mejores prácticas y técnicas avanzadas para aprovechar al máximo Git.</p>
+            <p>Git es una herramienta fundamental para el control de versiones y la colaboración en equipo. Para aprovechar al máximo sus funcionalidades, es importante entender cómo utilizar workflows, hooks y comandos avanzados. Un workflow bien definido puede ayudar a mantener un historial de cambios limpio y organizado. Por ejemplo, se puede utilizar `git flow` para gestionar las ramas y los releases.</p>
             
         
             
         
             
-            <p>Una de las mejores prácticas es utilizar `git pull` con la opción `--rebase` para mantener un historial de commits limpio y lineal. Esto se puede configurar como comportamiento predeterminado con el comando `git config --global pull.rebase true`. Además, es importante utilizar mensajes de commit claros y descriptivos, utilizando la convención de `feat` para nuevas características, `fix` para correcciones de errores y `docs` para actualizaciones de documentación.</p>
+            <p>Un hook es un script que se ejecuta automáticamente en respuesta a un evento específico en Git. Los hooks pueden ser utilizados para validar los commits, verificar la sintaxis del código y más. Por ejemplo, se puede utilizar un hook de pre-commit para ejecutar `git lint` y asegurarse de que el código cumpla con las reglas de estilo.</p>
             
         
             
         
             
-            <p>Otra técnica avanzada es utilizar `git worktrees` para trabajar en varias ramas de manera simultánea. Esto se puede lograr con el comando `git worktree add <nombre-rama> <ruta-rama>`. De esta manera, se pueden tener varias ramas en diferentes directorios, lo que facilita la colaboración y el desarrollo en paralelo.</p>
+            <p>El comando `git rebase` es una herramienta poderosa para reorganizar el historial de cambios. Permite reordenar los commits, fusionarlos o eliminarlos. Sin embargo, debe utilizarse con cuidado, ya que puede causar problemas si no se utiliza correctamente. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con el historial de cambios y reorganizar los commits.</p>
             
         
             
         
             
-            <p>Para aquellos que buscan mejorar la seguridad de sus proyectos, es importante mencionar la validación de seguridad para agentes de codificación de terceros, como se menciona en la fuente [2]. Esto puede ayudar a prevenir posibles fugas de seguridad y mantener el código fuente protegido.</p>
+            <p>Otra herramienta útil es `git bisect`, que permite encontrar el commit que introdujo un bug o un problema en el código. Esto se logra mediante una búsqueda binaria, donde se prueba el código en diferentes puntos del historial de cambios hasta encontrar el commit culpable. Por ejemplo, se puede utilizar `git bisect start` para iniciar la búsqueda y `git bisect bad` para marcar un commit como defectuoso.</p>
             
         
             
         
             
-            <p>Finalmente, es importante destacar la importancia de utilizar herramientas como GitHub Actions y GitHub Copilot para automatizar flujos de trabajo y mejorar la productividad. Estas herramientas pueden ayudar a reducir el tiempo de debugging y mejorar la calidad del código.</p>
+            <p>Finalmente, es importante mencionar la importancia de utilizar `git worktrees` para gestionar múltiples ramas y proyectos en un solo repositorio. Esto puede ser especialmente útil cuando se trabaja en proyectos complejos con múltiples dependencias y ramas.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que requiere práctica y dedicación para dominar. Siguiendo estas mejores prácticas y técnicas avanzadas, los sysadmins y DevOps pueden mejorar la colaboración, la productividad y la seguridad de sus proyectos.</p>
-            
-        
-            
-        
+            <p>En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para mejorar el flujo de trabajo y la colaboración en equipo. Al entender cómo utilizar workflows, hooks, comandos avanzados y herramientas como `git rebase`, `git bisect` y `git worktrees`, se puede aprovechar al máximo su potencial.</p>
             
         
     </div>
@@ -116,17 +110,7 @@
             </li>
             
             <li>
-                <a href="https://github.blog/changelog/2026-06-09-security-validation-for-third-party-coding-agents/" target="_blank">Security validation for third-party coding agents - GitHub Changelog</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://dev.to/guroosh/git-best-practices-for-beginners-1h3c" target="_blank">Git: Best Practices for Beginners - DEV Community</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@eloquentcoder/the-complete-guide-to-git-pull-from-your-first-fetch-and-merge-to-mastering-rebase-strategies-and-c4f54890fe2a" target="_blank">The Complete Guide to git pull: From Your First Fetch-and-Merge to Mastering Rebase Strategies and Advanced Configuration</a>
+                <a href="https://dev.to/armorbreak/git-workflows-from-solo-to-team-2026-5fo9" target="_blank">Git Workflows: From Solo to Team (2026) - DEV Community</a>
                 
             </li>
             
@@ -137,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-16_1258.html">&larr; 2026-06-16 1258</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-20_1035.html">&larr; 2026-06-20 1035</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-24_1055.html">2026-06-24 1055 &rarr;</a>
             
         </div>
     </div>

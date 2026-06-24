@@ -1,4 +1,24 @@
 {
+  "2026-06-24_1055": {
+    "slug": "postgresql",
+    "title": "Mejoras en PostgreSQL 19",
+    "summary": "PostgreSQL 19 Beta 1 ya está disponible, con mejoras en rendimiento y nuevas características. En este artículo, exploraremos algunas de las novedades más destacadas y cómo aprovecharlas en tus proyectos.",
+    "content": "La versión Beta 1 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. En esta versión, se han incluido varias mejoras en el rendimiento, como la optimización de las consultas y la reducción de la latencia en la replicación. \n\nPara aprovechar al máximo estas mejoras, es importante configurar adecuadamente el servidor PostgreSQL. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para mejorar el rendimiento de las consultas: `ALTER SYSTEM SET shared_buffers TO '512MB';`. \n\nOtra característica destacada de PostgreSQL 19 es la inclusión de nuevas extensiones, como `pg_infer`, que permite exponer los internos de la base de datos. Para instalar esta extensión, se puede utilizar el comando `CREATE EXTENSION pg_infer;`. \n\nAdemás, es importante mencionar que la replicación en PostgreSQL 19 ha sido mejorada, lo que permite una mayor disponibilidad y escalabilidad de la base de datos. Se puede configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de la base de datos: `pg_basebackup -h localhost -D /var/lib/pgsql/data`. \n\nPara monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta `pg_stat`, que proporciona información detallada sobre el uso de los recursos y el rendimiento de las consultas. Por ejemplo, se puede utilizar el comando `pg_stat_activity` para ver las consultas actuales: `SELECT * FROM pg_stat_activity;`. \n\nEn resumen, PostgreSQL 19 ofrece importantes mejoras en el rendimiento y la escalabilidad, lo que la convierte en una excelente opción para proyectos que requieren una base de datos robusta y segura.",
+    "sources": [
+      {
+        "title": "PostgreSQL 19 Beta 1 Released!",
+        "url": "https://www.postgresql.org/about/news/postgresql-19-beta-1-released-3313/"
+      },
+      {
+        "title": "News Archive - PostgreSQL",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "Postgres - The Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/tag/postgres/"
+      }
+    ]
+  },
   "2026-06-16_1258": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

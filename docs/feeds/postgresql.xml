@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-23T11:23:42.805307+00:00</updated>
+  <updated>2026-06-24T10:56:50.557115+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -438,5 +438,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-16_1258.html"/>
     <summary>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran cantidad de características para mejorar el rendimiento y la escalabilidad. En este artículo, se presentan algunas mejores prácticas y configuraciones para optimizar el rendimiento de PostgreSQL.</summary>
     <published>2026-06-16T12:58:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-24_1055.html</id>
+    <title>Mejoras en PostgreSQL 19</title>
+    <updated>2026-06-24T10:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión Beta 1 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. En esta versión, se han incluido varias mejoras en el rendimiento, como la optimización de las consultas y la reducción de la latencia en la replicación.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo estas mejoras, es importante configurar adecuadamente el servidor PostgreSQL. Por ejemplo, se puede ajustar el parámetro &lt;code&gt;shared_buffers&lt;/code&gt; para mejorar el rendimiento de las consultas: &lt;code&gt;ALTER SYSTEM SET shared_buffers TO '512MB';&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica destacada de PostgreSQL 19 es la inclusión de nuevas extensiones, como &lt;code&gt;pg_infer&lt;/code&gt;, que permite exponer los internos de la base de datos. Para instalar esta extensión, se puede utilizar el comando &lt;code&gt;CREATE EXTENSION pg_infer;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que la replicación en PostgreSQL 19 ha sido mejorada, lo que permite una mayor disponibilidad y escalabilidad de la base de datos. Se puede configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos: &lt;code&gt;pg_basebackup -h localhost -D /var/lib/pgsql/data&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta &lt;code&gt;pg_stat&lt;/code&gt;, que proporciona información detallada sobre el uso de los recursos y el rendimiento de las consultas. Por ejemplo, se puede utilizar el comando &lt;code&gt;pg_stat_activity&lt;/code&gt; para ver las consultas actuales: &lt;code&gt;SELECT * FROM pg_stat_activity;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, PostgreSQL 19 ofrece importantes mejoras en el rendimiento y la escalabilidad, lo que la convierte en una excelente opción para proyectos que requieren una base de datos robusta y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-19-beta-1-released-3313/"&gt;PostgreSQL 19 Beta 1 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/newsarchive/"&gt;News Archive - PostgreSQL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/tag/postgres/"&gt;Postgres - The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-24_1055.html"/>
+    <summary>PostgreSQL 19 Beta 1 ya está disponible, con mejoras en rendimiento y nuevas características. En este artículo, exploraremos algunas de las novedades más destacadas y cómo aprovecharlas en tus proyectos.</summary>
+    <published>2026-06-24T10:55:00+00:00</published>
   </entry>
 </feed>

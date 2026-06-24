@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras de seguridad en Docker - Docker</title>
+    <title>Docker: Mejoras y Best Practices - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,46 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejoras de seguridad en Docker</h1>
-    <div class="meta">2026-06-20 1035 · Docker</div>
+    <h1>Docker: Mejoras y Best Practices</h1>
+    <div class="meta">2026-06-24 1055 · Docker</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Docker ha estado trabajando en mejorar la seguridad de sus imágenes y paquetes. Recientemente, se han anunciado las nuevas características de Docker Hardened System Packages (HSP), que buscan proporcionar una capa adicional de seguridad para los contenedores. Estas mejoras incluyen la capacidad de firmar y verificar las imágenes, lo que ayuda a prevenir la ejecución de código malicioso.</p>
+            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos tiempos, Docker ha introducido varias mejoras y características nuevas, como los multi-stage builds, que permiten crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para crear una imagen de Docker a partir de un Dockerfile.</p>
             
         
             
         
             
-            <p>Para aprovechar estas nuevas características, es necesario actualizar a la última versión de Docker. Se puede hacer esto ejecutando el comando `docker pull` para obtener la última imagen de Docker. Luego, se puede verificar la versión actual con `docker --version`. Es importante tener en cuenta que estas mejoras de seguridad también requieren la actualización de los paquetes del sistema operativo.</p>
+        
+            
+            <p>La seguridad es otro aspecto importante en Docker, y se han introducido varias características para mejorar la seguridad de los contenedores, como el uso de `seccomp`, `AppArmor` y `SELinux` para restringir los permisos de los contenedores. Además, se ha introducido la característica de mitigación de vulnerabilidades, como la mitigación de CVE-2026-31431, que se puede realizar utilizando comandos como `docker run -it --rm --security-opt seccomp:unconfined mi-imagen`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad de los contenedores, es fundamental seguir las mejores prácticas para protegerlos. Esto incluye el uso de imágenes mínimas, como se recomienda en la guía de Docker para desarrolladores. Se puede crear una imagen mínima utilizando el comando `docker build -t mi-imagen .` y especificando la imagen base en el archivo Dockerfile. Por ejemplo, `FROM python:3.9-slim` crea una imagen con Python 3.9 en un entorno minimalista.</p>
+        
+            
+            <p>Otra característica importante en Docker es la networking, que permite a los contenedores comunicarse entre sí y con el exterior. Se puede utilizar el comando `docker network create mi-red` para crear una red de Docker, y luego utilizar el comando `docker run -it --rm --net mi-red mi-imagen` para ejecutar un contenedor en esa red.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar que la limpieza de los contenedores y las imágenes es crucial para mantener la seguridad y el rendimiento del sistema. Se puede utilizar el comando `docker system df` para verificar el espacio utilizado por los contenedores y las imágenes. Luego, se puede utilizar `docker system prune` para eliminar los contenedores y las imágenes no utilizados.</p>
+        
+            
+            <p>Docker Content Trust es otra característica importante que ha sido mejorada recientemente. Se ha anunciado el retiro de Docker Content Trust y la migración a alternativas modernas. Se puede utilizar el comando `docker trust inspect mi-imagen` para verificar la integridad de una imagen de Docker.</p>
             
         
             
         
             
-            <p>En resumen, las mejoras de seguridad en Docker son fundamentales para proteger los contenedores y los paquetes. Es importante seguir las mejores prácticas y mantener el sistema actualizado para prevenir vulnerabilidades.</p>
+        
+            
+            <p>En resumen, Docker es una plataforma de contenerización que ofrece varias características y mejoras para crear, probar y desplegar aplicaciones de manera rápida y segura. Se han introducido varias características nuevas, como los multi-stage builds, la seguridad y la networking, que permiten a los desarrolladores crear aplicaciones más eficientes y seguras.</p>
             
         
             
         
             
-            <p>Se han utilizado fuentes como Docker Hardened Images release notes y SUSE Critical Security Patch para Docker-Stable 2026-21851-1 para obtener la información necesaria para este artículo.</p>
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas al final de este artículo.</p>
             
         
     </div>
@@ -107,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.docker.com/dhi/release-notes/platform/" target="_blank">Docker Hardened Images release notes</a>
+                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
                 
             </li>
             
             <li>
-                <a href="https://linuxsecurity.com/advisories/suse/suse-21851-1-docker-stable" target="_blank">SUSE Critical Security Patch for Docker-Stable 2026-21851-1</a>
+                <a href="https://www.docker.com/blog/docker-content-trust-retirement-and-migration-guidance/" target="_blank">Docker Content Trust: Retirement and Migration Guidance</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@dparente/docker-containerization-the-complete-developers-guide-331299d90075" target="_blank">Docker Containerization: The Complete Developer's Guide</a>
+                <a href="https://www.docker.com/blog/mitigating-cve-2026-31431-copy-fail-in-docker-engine/" target="_blank">Mitigating CVE-2026-31431 ("Copy Fail") in Docker Engine</a>
                 
             </li>
             
@@ -128,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-20_1035.html">&larr; 2026-06-20 1035</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-24_1055.html">2026-06-24 1055 &rarr;</a>
             
         </div>
     </div>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Optimización de PostgreSQL - PostgreSQL</title>
+    <title>Mejoras en PostgreSQL 19 - PostgreSQL</title>
     <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
@@ -57,46 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-06-16 1258 · PostgreSQL</div>
+    <h1>Mejoras en PostgreSQL 19</h1>
+    <div class="meta">2026-06-24 1055 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la escalabilidad de la base de datos. Una de las formas de hacerlo es mediante la utilización de índices. Los índices permiten a PostgreSQL acceder rápidamente a los datos sin tener que escanear toda la tabla. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
+            <p>La versión Beta 1 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. En esta versión, se han incluido varias mejoras en el rendimiento, como la optimización de las consultas y la reducción de la latencia en la replicación.</p>
             
         
             
         
             
-            <p>Otra forma de optimizar el rendimiento de PostgreSQL es mediante la configuración de la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h servidor_principal -D /ruta/de/la/copia`.</p>
+            <p>Para aprovechar al máximo estas mejoras, es importante configurar adecuadamente el servidor PostgreSQL. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para mejorar el rendimiento de las consultas: `ALTER SYSTEM SET shared_buffers TO '512MB';`.</p>
             
         
             
         
             
-            <p>La utilización de extensiones también puede mejorar el rendimiento de PostgreSQL. Las extensiones permiten a los desarrolladores agregar nuevas características y funcionalidades a la base de datos. Por ejemplo, la extensión `pg_stat_statements` permite a los administradores de base de datos monitorear el rendimiento de las consultas. Para instalar una extensión, se puede utilizar el comando `CREATE EXTENSION`. Por ejemplo: `CREATE EXTENSION pg_stat_statements;`.</p>
+            <p>Otra característica destacada de PostgreSQL 19 es la inclusión de nuevas extensiones, como `pg_infer`, que permite exponer los internos de la base de datos. Para instalar esta extensión, se puede utilizar el comando `CREATE EXTENSION pg_infer;`.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar que la versión 19 de PostgreSQL ya está disponible en beta, lo que ofrece nuevas características y mejoras en el rendimiento. Es importante estar al tanto de las últimas versiones y actualizaciones para aprovechar al máximo las características de PostgreSQL.</p>
+            <p>Además, es importante mencionar que la replicación en PostgreSQL 19 ha sido mejorada, lo que permite una mayor disponibilidad y escalabilidad de la base de datos. Se puede configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de la base de datos: `pg_basebackup -h localhost -D /var/lib/pgsql/data`.</p>
             
         
             
         
             
-            <p>La utilización de `EXPLAIN ANALYZE` es fundamental para entender el plan de ejecución de una consulta y optimizar su rendimiento. Este comando permite a los desarrolladores analizar el plan de ejecución de una consulta y identificar posibles cuellos de botella. Por ejemplo: `EXPLAIN ANALYZE SELECT * FROM tabla;`.</p>
+            <p>Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta `pg_stat`, que proporciona información detallada sobre el uso de los recursos y el rendimiento de las consultas. Por ejemplo, se puede utilizar el comando `pg_stat_activity` para ver las consultas actuales: `SELECT * FROM pg_stat_activity;`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la creación de copias de seguridad es crucial para proteger los datos. PostgreSQL ofrece varias opciones para crear copias de seguridad, incluyendo el comando `pg_dump`. Por ejemplo: `pg_dump -U usuario -d base_de_datos > copia_de_seguridad.sql;`</p>
+            <p>En resumen, PostgreSQL 19 ofrece importantes mejoras en el rendimiento y la escalabilidad, lo que la convierte en una excelente opción para proyectos que requieren una base de datos robusta y segura.</p>
             
         
     </div>
@@ -107,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
+                <a href="https://www.postgresql.org/about/news/postgresql-19-beta-1-released-3313/" target="_blank">PostgreSQL 19 Beta 1 Released!</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/docs/release/" target="_blank">Release Notes - PostgreSQL</a>
+                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">News Archive - PostgreSQL</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/engineering-playbook/i-optimized-our-postgresql-query-from-47-seconds-to-83-milliseconds-heres-the-one-thing-i-changed-c35e2d4b036a" target="_blank">I Optimized Our PostgreSQL Query from 47 Seconds to 83 Milliseconds. Here’s the One Thing I Changed</a>
+                <a href="https://blog.cloudflare.com/tag/postgres/" target="_blank">Postgres - The Cloudflare Blog</a>
                 
             </li>
             
@@ -128,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-12_1147.html">&larr; 2026-06-12 1147</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-16_1258.html">&larr; 2026-06-16 1258</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-24_1055.html">2026-06-24 1055 &rarr;</a>
             
         </div>
     </div>

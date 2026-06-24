@@ -1,4 +1,24 @@
 {
+  "2026-06-24_1055": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "En este artículo, se presentan las últimas mejoras y best practices en Docker, incluyendo multi-stage builds, compose, networking, security y BuildKit. Se cubren también las novedades en Docker Content Trust y mitigación de vulnerabilidades.",
+    "content": "Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos tiempos, Docker ha introducido varias mejoras y características nuevas, como los multi-stage builds, que permiten crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para crear una imagen de Docker a partir de un Dockerfile.\n\n \nLa seguridad es otro aspecto importante en Docker, y se han introducido varias características para mejorar la seguridad de los contenedores, como el uso de `seccomp`, `AppArmor` y `SELinux` para restringir los permisos de los contenedores. Además, se ha introducido la característica de mitigación de vulnerabilidades, como la mitigación de CVE-2026-31431, que se puede realizar utilizando comandos como `docker run -it --rm --security-opt seccomp:unconfined mi-imagen`.\n\n \nOtra característica importante en Docker es la networking, que permite a los contenedores comunicarse entre sí y con el exterior. Se puede utilizar el comando `docker network create mi-red` para crear una red de Docker, y luego utilizar el comando `docker run -it --rm --net mi-red mi-imagen` para ejecutar un contenedor en esa red.\n\n \nDocker Content Trust es otra característica importante que ha sido mejorada recientemente. Se ha anunciado el retiro de Docker Content Trust y la migración a alternativas modernas. Se puede utilizar el comando `docker trust inspect mi-imagen` para verificar la integridad de una imagen de Docker.\n\n \nEn resumen, Docker es una plataforma de contenerización que ofrece varias características y mejoras para crear, probar y desplegar aplicaciones de manera rápida y segura. Se han introducido varias características nuevas, como los multi-stage builds, la seguridad y la networking, que permiten a los desarrolladores crear aplicaciones más eficientes y seguras.\n\n \nPara más información, se puede consultar la documentación oficial de Docker y las fuentes citadas al final de este artículo.",
+    "sources": [
+      {
+        "title": "Docker Sandboxes release notes",
+        "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+      },
+      {
+        "title": "Docker Content Trust: Retirement and Migration Guidance",
+        "url": "https://www.docker.com/blog/docker-content-trust-retirement-and-migration-guidance/"
+      },
+      {
+        "title": "Mitigating CVE-2026-31431 (\"Copy Fail\") in Docker Engine",
+        "url": "https://www.docker.com/blog/mitigating-cve-2026-31431-copy-fail-in-docker-engine/"
+      }
+    ]
+  },
   "2026-06-20_1035": {
     "slug": "docker",
     "title": "Mejoras de seguridad en Docker",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-23T11:23:42.813978+00:00</updated>
+  <updated>2026-06-24T10:56:50.568912+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -509,5 +509,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-20_1035.html"/>
     <summary>Ansible es una herramienta de automatización que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo su potencial.</summary>
     <published>2026-06-20T10:35:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-24_1055.html</id>
+    <title>Ansible: Nuevas Características y Mejoras</title>
+    <updated>2026-06-24T10:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 14.0.0 de Ansible es la primera versión estable de Ansible 14 y depende de &lt;code&gt;ansible-core 2.21.0&lt;/code&gt;. Esta versión incluye un conjunto curado de colecciones de Ansible que proporcionan una gran cantidad de módulos, plugins y roles.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Ansible, es necesario instalar &lt;code&gt;ansible-core&lt;/code&gt; y luego instalar las colecciones necesarias. Por ejemplo, para instalar la colección &lt;code&gt;ansible.posix&lt;/code&gt;, se puede ejecutar el comando &lt;code&gt;ansible-galaxy collection install ansible.posix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de Ansible es la capacidad de crear playbooks y roles personalizados. Un playbook es un archivo que define una serie de tareas que se deben ejecutar en un conjunto de hosts. Un rol es un conjunto de tareas y handlers que se pueden reutilizar en diferentes playbooks.&lt;/p&gt;
+&lt;p&gt;Para crear un playbook, se puede utilizar el comando &lt;code&gt;ansible-playbook --help&lt;/code&gt; para obtener información sobre las opciones disponibles. Por ejemplo, para ejecutar un playbook llamado &lt;code&gt;site.yml&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;ansible-playbook -i inventory site.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ansible también proporciona una herramienta llamada &lt;code&gt;AWX&lt;/code&gt; (Ansible Workstation) que permite gestionar y ejecutar playbooks de manera centralizada. &lt;code&gt;AWX&lt;/code&gt; proporciona una interfaz web para crear y gestionar playbooks, así como para ejecutarlos en diferentes entornos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Ansible proporciona una herramienta llamada &lt;code&gt;vault&lt;/code&gt; que permite cifrar y descifrar datos sensibles, como contraseñas y claves SSH. Para utilizar &lt;code&gt;vault&lt;/code&gt;, se puede ejecutar el comando &lt;code&gt;ansible-vault --help&lt;/code&gt; para obtener información sobre las opciones disponibles.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-0-0/45873"&gt;Release announcement: Ansible community package 14.0.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-20-7/45940"&gt;New Release: ansible-core v2.20.7 - Ecosystem Releases - Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-24_1055.html"/>
+    <summary>Ansible ha lanzado recientemente la versión 14.0.0, que incluye una serie de mejoras y nuevas características. En este artículo, se presentan las novedades más destacadas de esta versión.</summary>
+    <published>2026-06-24T10:55:00+00:00</published>
   </entry>
 </feed>

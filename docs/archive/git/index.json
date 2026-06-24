@@ -1,4 +1,20 @@
 {
+  "2026-06-24_1055": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu flujo de trabajo y colaboración en equipo.",
+    "content": "Git es una herramienta fundamental para el control de versiones y la colaboración en equipo. Para aprovechar al máximo sus funcionalidades, es importante entender cómo utilizar workflows, hooks y comandos avanzados. Un workflow bien definido puede ayudar a mantener un historial de cambios limpio y organizado. Por ejemplo, se puede utilizar `git flow` para gestionar las ramas y los releases.\n\nUn hook es un script que se ejecuta automáticamente en respuesta a un evento específico en Git. Los hooks pueden ser utilizados para validar los commits, verificar la sintaxis del código y más. Por ejemplo, se puede utilizar un hook de pre-commit para ejecutar `git lint` y asegurarse de que el código cumpla con las reglas de estilo.\n\nEl comando `git rebase` es una herramienta poderosa para reorganizar el historial de cambios. Permite reordenar los commits, fusionarlos o eliminarlos. Sin embargo, debe utilizarse con cuidado, ya que puede causar problemas si no se utiliza correctamente. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con el historial de cambios y reorganizar los commits.\n\nOtra herramienta útil es `git bisect`, que permite encontrar el commit que introdujo un bug o un problema en el código. Esto se logra mediante una búsqueda binaria, donde se prueba el código en diferentes puntos del historial de cambios hasta encontrar el commit culpable. Por ejemplo, se puede utilizar `git bisect start` para iniciar la búsqueda y `git bisect bad` para marcar un commit como defectuoso.\n\nFinalmente, es importante mencionar la importancia de utilizar `git worktrees` para gestionar múltiples ramas y proyectos en un solo repositorio. Esto puede ser especialmente útil cuando se trabaja en proyectos complejos con múltiples dependencias y ramas.\n\nEn resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para mejorar el flujo de trabajo y la colaboración en equipo. Al entender cómo utilizar workflows, hooks, comandos avanzados y herramientas como `git rebase`, `git bisect` y `git worktrees`, se puede aprovechar al máximo su potencial.",
+    "sources": [
+      {
+        "title": "The latest on Git updates - The GitHub Blog",
+        "url": "https://github.blog/open-source/git/"
+      },
+      {
+        "title": "Git Workflows: From Solo to Team (2026) - DEV Community",
+        "url": "https://dev.to/armorbreak/git-workflows-from-solo-to-team-2026-5fo9"
+      }
+    ]
+  },
   "2026-06-20_1035": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",
