@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-24T10:56:50.527143+00:00</updated>
+  <updated>2026-06-25T10:47:54.254163+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -307,5 +307,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-21_1119.html"/>
     <summary>Aprende a configurar y mejorar el rendimiento de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas y registro de eventos. Descubre las mejores prácticas para asegurar y optimizar tu servidor DNS.</summary>
     <published>2026-06-21T11:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html</id>
+    <title>BIND 9: Configuración y Mejoras</title>
+    <updated>2026-06-25T10:46:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de zonas en BIND 9 se realiza mediante el archivo &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para configurar una zona de tipo &lt;code&gt;master&lt;/code&gt;, se puede utilizar la siguiente sintaxis: &lt;code&gt;zone "example.com" IN { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para implementar DNSSEC, es necesario generar una clave de zona y una clave de firma, utilizando herramientas como &lt;code&gt;dnssec-keygen&lt;/code&gt; y &lt;code&gt;dnssec-signzone&lt;/code&gt;. Por ejemplo, para generar una clave de zona, se puede ejecutar el comando &lt;code&gt;dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La función de vistas (views) en BIND 9 permite servir diferentes conjuntos de datos DNS a diferentes clientes en función de su dirección IP. Esto se logra mediante la configuración de vistas en el archivo &lt;code&gt;named.conf&lt;/code&gt;, utilizando la directiva &lt;code&gt;view&lt;/code&gt;. Por ejemplo, para definir una vista para clientes en la red 192.168.1.0/24, se puede utilizar la siguiente configuración: &lt;code&gt;view "internal" { match-clients { 192.168.1.0/24; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El mecanismo de protección contra ataques de DNS (RPZ) en BIND 9 permite bloquear o restringir el acceso a ciertos dominios o direcciones IP. Esto se configura mediante la directiva &lt;code&gt;response-policy&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para bloquear el acceso a un dominio específico, se puede utilizar la siguiente configuración: &lt;code&gt;response-policy { zone "rpz.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto al registro de eventos (logging), BIND 9 ofrece varias opciones para configurar el registro de eventos, incluyendo la posibilidad de especificar el nivel de registro y el destino de los registros. Por ejemplo, para configurar el registro de eventos en un archivo, se puede utilizar la siguiente configuración: &lt;code&gt;logging { channel "default" { file "/var/log/named.log"; severity info; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, para mejorar el rendimiento de BIND 9, es recomendable ajustar los parámetros de configuración, como el tamaño del caché y el número de procesos. Por ejemplo, para aumentar el tamaño del caché, se puede utilizar la directiva &lt;code&gt;max-cache-size&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante tener en cuenta que, según la fuente [1], la versión 9.18 de BIND ha alcanzado el fin de su vida útil, por lo que se recomienda migrar a la versión 9.20 lo antes posible.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.isc.org/blogs/2026-06-10-bind9-18-eol/"&gt;June 2026 release marks the End of Life for BIND 9.18&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://gitlab.isc.org/isc-projects/bind9/-/milestones"&gt;Milestones · ISC Open Source Projects / BIND · GitLab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://lists.isc.org/pipermail/bind-users/2026-May/110626.html"&gt;named.rfc1912.zones + named.root.key&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html"/>
+    <summary>El artículo cubre la configuración de zonas, DNSSEC, views, RPZ y logging en BIND 9, así como las mejores prácticas para mejorar el rendimiento. Se analiza la transición a la versión 9.20 debido al fin de la vida útil de la versión 9.18.</summary>
+    <published>2026-06-25T10:46:00+00:00</published>
   </entry>
 </feed>

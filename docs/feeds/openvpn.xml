@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-24T10:56:50.528937+00:00</updated>
+  <updated>2026-06-25T10:47:54.257326+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -476,5 +476,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-21_1119.html"/>
     <summary>OpenVPN es una herramienta de túneles de red seguros. En este artículo, se analizarán las mejores prácticas para asegurar un entorno OpenVPN, incluyendo la configuración de certificados y la autenticación.</summary>
     <published>2026-06-21T11:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-25_1046.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-06-25T10:46:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de tunneling que permite crear conexiones seguras entre redes. Utiliza protocolos de cifrado como SSL/TLS para proteger los datos transmitidos. Para configurar OpenVPN, es necesario generar certificados y claves, lo que se puede hacer utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez configurado, OpenVPN puede ser utilizado para crear conexiones de acceso remoto, ya sea mediante la autenticación de usuario y contraseña o mediante la autenticación basada en certificados. Para establecer una conexión, se puede utilizar el comando &lt;code&gt;openvpn --config archivo_de_configuracion.ovpn&lt;/code&gt;. Es importante mencionar que OpenVPN también ofrece una herramienta de servidor, llamada Access Server, que permite gestionar y configurar las conexiones de VPN de manera centralizada.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenVPN ofrece varias características para proteger las conexiones, como el cifrado de datos y la autenticación de usuarios. También es posible configurar OpenVPN para utilizar protocolos de autenticación adicionales, como el protocolo de autenticación de dos factores. Para hardening, se pueden utilizar herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar claves y certificados seguros.&lt;/p&gt;
+&lt;p&gt;OpenVPN también ofrece soporte para conexiones site-to-site, lo que permite conectar varias redes de manera segura. Para configurar una conexión site-to-site, se deben establecer los parámetros de conexión en el archivo de configuración de OpenVPN, utilizando comandos como &lt;code&gt;server&lt;/code&gt; y &lt;code&gt;port&lt;/code&gt;. Es importante mencionar que OpenVPN también ofrece soporte para protocolos de tunneling como UDP y TCP.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras y confiables. Con su capacidad para configurar conexiones de acceso remoto, site-to-site y su soporte para protocolos de autenticación y cifrado, OpenVPN es una excelente opción para cualquier organización que requiera una solución de VPN segura y escalable.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN tiene una comunidad activa y ofrece documentación y soporte para ayudar a los usuarios a configurar y utilizar la herramienta de manera efectiva. Para más información, se pueden consultar las fuentes oficiales de OpenVPN y la documentación técnica disponible en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/"&gt;Secure VPN Solutions for Business &amp; Remote Access | OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN-Connect-Windows"&gt;OpenVPN Connect Windows - Official Client for Secure VPN Profiles · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.kali.org/tools/openvpn/"&gt;openvpn | Kali Linux Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-25_1046.html"/>
+    <summary>OpenVPN es una solución de VPN de código abierto que proporciona tunneling y seguridad para conexiones de red. En este artículo, se exploran las características y configuraciones de OpenVPN.</summary>
+    <published>2026-06-25T10:46:00+00:00</published>
   </entry>
 </feed>

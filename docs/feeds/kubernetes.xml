@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-24T10:56:50.531438+00:00</updated>
+  <updated>2026-06-25T10:47:54.261272+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -543,5 +543,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-21_1119.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más recientes en la plataforma.</summary>
     <published>2026-06-21T11:19:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-25_1046.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-06-25T10:46:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.32 de Kubernetes incluye cambios importantes en la gestión de sistemas de archivos y montajes en Windows, gracias a la actualización a golang 1.23. Sin embargo, el paquete &lt;code&gt;k8s.io/mount-utils&lt;/code&gt; no ha sido validado con estos cambios, lo que puede afectar a los desarrolladores de controladores CSI y &lt;code&gt;csi-proxy&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para solucionar este problema, se recomienda utilizar la versión más reciente del paquete &lt;code&gt;k8s.io/mount-utils&lt;/code&gt; y seguir las instrucciones de instalación y configuración proporcionadas en la documentación oficial de Kubernetes. Por ejemplo, para instalar el paquete, se puede utilizar el comando &lt;code&gt;go get k8s.io/mount-utils&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Kubernetes sigue trabajando en la corrección de vulnerabilidades y la mejora de la protección de los clusters. Recientemente, se han publicado actualizaciones para corregir tres vulnerabilidades importantes, y se recomienda a los administradores de clusters que apliquen estas actualizaciones lo antes posible.&lt;/p&gt;
+&lt;p&gt;Además, Kubernetes sigue mejorando su soporte para GPUs y otros dispositivos de aceleración, lo que permite a los desarrolladores crear aplicaciones más eficientes y escalables. La convergencia de la adopción de proveedores, el programa de conformidad de AI de CNCF y otras iniciativas están impulsando el uso de Kubernetes en entornos de inteligencia artificial y aprendizaje automático.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las novedades y mejoras en Kubernetes, se recomienda consultar la documentación oficial y las fuentes de noticias y blogs especializados en DevOps y cloud computing.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de la comunidad de Kubernetes y la colaboración entre desarrolladores y administradores de clusters. La participación en proyectos y grupos de trabajo, como el grupo de trabajo de gestión de dispositivos, puede ser muy beneficiosa para estar al tanto de las últimas novedades y mejores prácticas en el uso de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md"&gt;Release Notes Draft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/"&gt;Reconciling the Past: Correcting Records for Unfixed Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e"&gt;From counting GPUs to reasoning about them: How Kubernetes DRA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-25_1046.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, almacenamiento y redes. En este artículo, se presentan algunas de las novedades más destacadas en la versión 1.32.</summary>
+    <published>2026-06-25T10:46:00+00:00</published>
   </entry>
 </feed>

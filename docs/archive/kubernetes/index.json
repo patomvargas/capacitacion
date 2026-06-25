@@ -1,4 +1,24 @@
 {
+  "2026-06-25_1046": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, almacenamiento y redes. En este artículo, se presentan algunas de las novedades más destacadas en la versión 1.32.",
+    "content": "La versión 1.32 de Kubernetes incluye cambios importantes en la gestión de sistemas de archivos y montajes en Windows, gracias a la actualización a golang 1.23. Sin embargo, el paquete `k8s.io/mount-utils` no ha sido validado con estos cambios, lo que puede afectar a los desarrolladores de controladores CSI y `csi-proxy`. \n\nPara solucionar este problema, se recomienda utilizar la versión más reciente del paquete `k8s.io/mount-utils` y seguir las instrucciones de instalación y configuración proporcionadas en la documentación oficial de Kubernetes. Por ejemplo, para instalar el paquete, se puede utilizar el comando `go get k8s.io/mount-utils`.\n\nEn cuanto a la seguridad, Kubernetes sigue trabajando en la corrección de vulnerabilidades y la mejora de la protección de los clusters. Recientemente, se han publicado actualizaciones para corregir tres vulnerabilidades importantes, y se recomienda a los administradores de clusters que apliquen estas actualizaciones lo antes posible. \n\nAdemás, Kubernetes sigue mejorando su soporte para GPUs y otros dispositivos de aceleración, lo que permite a los desarrolladores crear aplicaciones más eficientes y escalables. La convergencia de la adopción de proveedores, el programa de conformidad de AI de CNCF y otras iniciativas están impulsando el uso de Kubernetes en entornos de inteligencia artificial y aprendizaje automático.\n\nPara más información sobre las novedades y mejoras en Kubernetes, se recomienda consultar la documentación oficial y las fuentes de noticias y blogs especializados en DevOps y cloud computing.\n\nFinalmente, es importante destacar la importancia de la comunidad de Kubernetes y la colaboración entre desarrolladores y administradores de clusters. La participación en proyectos y grupos de trabajo, como el grupo de trabajo de gestión de dispositivos, puede ser muy beneficiosa para estar al tanto de las últimas novedades y mejores prácticas en el uso de Kubernetes.",
+    "sources": [
+      {
+        "title": "Release Notes Draft",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md"
+      },
+      {
+        "title": "Reconciling the Past: Correcting Records for Unfixed Kubernetes",
+        "url": "https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/"
+      },
+      {
+        "title": "From counting GPUs to reasoning about them: How Kubernetes DRA",
+        "url": "https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e"
+      }
+    ]
+  },
   "2026-06-21_1119": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

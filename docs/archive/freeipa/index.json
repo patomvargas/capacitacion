@@ -1,4 +1,28 @@
 {
+  "2026-06-25_1046": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Administración de Identidades",
+    "summary": "FreeIPA es un sistema de administración de identidades de código abierto que proporciona autenticación, autorización y gestión de cuentas centralizadas. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "\nFreeIPA es una herramienta integral para la administración de identidades en entornos Linux y Unix-like. Combina un directorio LDAP completo con un servidor Kerberos, lo que permite una autenticación y autorización seguras. Para configurar FreeIPA, se pueden utilizar comandos como `ipa server-install` para instalar el servidor y `ipa client-install` para instalar el cliente.\n\nUna de las características clave de FreeIPA es la gestión de relaciones de confianza, que permite a los administradores configurar relaciones de confianza entre diferentes dominios y servidores. Esto se puede lograr utilizando comandos como `ipa trust-add` y `ipa trust-fetch-domains`. Además, FreeIPA incluye una política de control de acceso basada en host (HBAC) que permite a los administradores definir reglas de acceso para diferentes hosts y servicios.\n\nPara configurar el servidor DNS en FreeIPA, se puede utilizar el archivo de configuración `bind.named.conf.template` que se encuentra en el repositorio de GitHub de FreeIPA. Este archivo proporciona un ejemplo de configuración para el servidor DNS que se puede personalizar según las necesidades del entorno. También es importante mencionar que FreeIPA proporciona soporte para protocolos de autenticación como Kerberos y LDAP, lo que permite a los administradores configurar la autenticación y autorización de manera segura.\n\nEn cuanto a la seguridad, FreeIPA incluye características como la autenticación de dos factores y la gestión de claves públicas. Los administradores pueden configurar la autenticación de dos factores utilizando comandos como `ipa otptoken-add` y `ipa otptoken-fetch`. Además, FreeIPA proporciona soporte para la gestión de claves públicas, lo que permite a los administradores configurar la autenticación y autorización basada en claves.\n\nEs importante mencionar que FreeIPA es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. Por ejemplo, la versión más reciente de FreeIPA incluye correcciones de seguridad para vulnerabilidades como CVE-2026-4480 y CVE-2026-2340. Los administradores deben asegurarse de actualizar su versión de FreeIPA para asegurarse de que estén utilizando la versión más segura.\n\nEn resumen, FreeIPA es una herramienta poderosa para la administración de identidades en entornos Linux y Unix-like. Proporciona autenticación y autorización seguras, gestión de relaciones de confianza y control de acceso basado en host. Los administradores pueden configurar FreeIPA utilizando comandos y archivos de configuración, y es importante estar al tanto de las últimas novedades y actualizaciones para asegurarse de que estén utilizando la versión más segura.\n",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Documentation",
+        "url": "https://www.freeipa.org/page/Documentation"
+      },
+      {
+        "title": "FreeIPA Pentesting",
+        "url": "https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"
+      },
+      {
+        "title": "Configuring FreeIPA",
+        "url": "https://www.truenas.com/docs/scale/25.04/scaletutorials/credentials/directoryservices/configfreeipa/"
+      }
+    ]
+  },
   "2026-06-21_1119": {
     "slug": "freeipa",
     "title": "Administración de Identidad con FreeIPA",

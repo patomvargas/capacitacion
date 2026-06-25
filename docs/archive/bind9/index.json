@@ -1,4 +1,24 @@
 {
+  "2026-06-25_1046": {
+    "slug": "bind9",
+    "title": "BIND 9: Configuración y Mejoras",
+    "summary": "El artículo cubre la configuración de zonas, DNSSEC, views, RPZ y logging en BIND 9, así como las mejores prácticas para mejorar el rendimiento. Se analiza la transición a la versión 9.20 debido al fin de la vida útil de la versión 9.18.",
+    "content": "La configuración de zonas en BIND 9 se realiza mediante el archivo `named.conf`, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para configurar una zona de tipo `master`, se puede utilizar la siguiente sintaxis: `zone \"example.com\" IN { type master; file \"/etc/bind/db.example.com\"; };`. \n\nPara implementar DNSSEC, es necesario generar una clave de zona y una clave de firma, utilizando herramientas como `dnssec-keygen` y `dnssec-signzone`. Por ejemplo, para generar una clave de zona, se puede ejecutar el comando `dnssec-keygen -a RSASHA256 -b 2048 -n ZONE example.com`. \n\nLa función de vistas (views) en BIND 9 permite servir diferentes conjuntos de datos DNS a diferentes clientes en función de su dirección IP. Esto se logra mediante la configuración de vistas en el archivo `named.conf`, utilizando la directiva `view`. Por ejemplo, para definir una vista para clientes en la red 192.168.1.0/24, se puede utilizar la siguiente configuración: `view \"internal\" { match-clients { 192.168.1.0/24; }; recursion yes; };`. \n\nEl mecanismo de protección contra ataques de DNS (RPZ) en BIND 9 permite bloquear o restringir el acceso a ciertos dominios o direcciones IP. Esto se configura mediante la directiva `response-policy` en el archivo `named.conf`. Por ejemplo, para bloquear el acceso a un dominio específico, se puede utilizar la siguiente configuración: `response-policy { zone \"rpz.example.com\"; };`. \n\nEn cuanto al registro de eventos (logging), BIND 9 ofrece varias opciones para configurar el registro de eventos, incluyendo la posibilidad de especificar el nivel de registro y el destino de los registros. Por ejemplo, para configurar el registro de eventos en un archivo, se puede utilizar la siguiente configuración: `logging { channel \"default\" { file \"/var/log/named.log\"; severity info; }; };`. \n\nFinalmente, para mejorar el rendimiento de BIND 9, es recomendable ajustar los parámetros de configuración, como el tamaño del caché y el número de procesos. Por ejemplo, para aumentar el tamaño del caché, se puede utilizar la directiva `max-cache-size` en el archivo `named.conf`. \n\nEs importante tener en cuenta que, según la fuente [1], la versión 9.18 de BIND ha alcanzado el fin de su vida útil, por lo que se recomienda migrar a la versión 9.20 lo antes posible.\n\n",
+    "sources": [
+      {
+        "title": "June 2026 release marks the End of Life for BIND 9.18",
+        "url": "https://www.isc.org/blogs/2026-06-10-bind9-18-eol/"
+      },
+      {
+        "title": "Milestones · ISC Open Source Projects / BIND · GitLab",
+        "url": "https://gitlab.isc.org/isc-projects/bind9/-/milestones"
+      },
+      {
+        "title": "named.rfc1912.zones + named.root.key",
+        "url": "https://lists.isc.org/pipermail/bind-users/2026-May/110626.html"
+      }
+    ]
+  },
   "2026-06-21_1119": {
     "slug": "bind9",
     "title": "Configuración y Mejoras de DNS BIND9",

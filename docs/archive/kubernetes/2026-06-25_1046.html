@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seguridad en OpenVPN - OpenVPN</title>
-    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
+    <title>Novedades en Kubernetes - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,49 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Seguridad en OpenVPN</h1>
-    <div class="meta">2026-06-21 1119 · OpenVPN</div>
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-06-25 1046 · Kubernetes</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenVPN es una herramienta de túneles de red seguros que permite a los usuarios conectarse de manera segura a una red privada a través de Internet. Para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada.</p>
+            <p>La versión 1.32 de Kubernetes incluye cambios importantes en la gestión de sistemas de archivos y montajes en Windows, gracias a la actualización a golang 1.23. Sin embargo, el paquete `k8s.io/mount-utils` no ha sido validado con estos cambios, lo que puede afectar a los desarrolladores de controladores CSI y `csi-proxy`.</p>
             
         
             
         
             
-            <p>Para configurar los certificados, se puede utilizar el comando `openssl` para generar los certificados y las claves. Por ejemplo, se puede utilizar el siguiente comando para generar un certificado de servidor: `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`.</p>
+            <p>Para solucionar este problema, se recomienda utilizar la versión más reciente del paquete `k8s.io/mount-utils` y seguir las instrucciones de instalación y configuración proporcionadas en la documentación oficial de Kubernetes. Por ejemplo, para instalar el paquete, se puede utilizar el comando `go get k8s.io/mount-utils`.</p>
             
         
             
         
             
-            <p>Además, es importante configurar la autenticación de manera segura. Se puede utilizar el protocolo de autenticación TLS para asegurar la conexión. Por ejemplo, se puede agregar la siguiente línea a la configuración de OpenVPN para habilitar la autenticación TLS: `tls-auth ta.key 0`.</p>
+            <p>En cuanto a la seguridad, Kubernetes sigue trabajando en la corrección de vulnerabilidades y la mejora de la protección de los clusters. Recientemente, se han publicado actualizaciones para corregir tres vulnerabilidades importantes, y se recomienda a los administradores de clusters que apliquen estas actualizaciones lo antes posible.</p>
             
         
             
         
             
-            <p>Es importante mencionar que, según la fuente [1], se ha descubierto una vulnerabilidad en OpenVPN, identificada como CVE-2026-11604, que puede permitir a un atacante interceptar y modificar el tráfico de red. Por lo tanto, es importante actualizar OpenVPN a la última versión disponible.</p>
+            <p>Además, Kubernetes sigue mejorando su soporte para GPUs y otros dispositivos de aceleración, lo que permite a los desarrolladores crear aplicaciones más eficientes y escalables. La convergencia de la adopción de proveedores, el programa de conformidad de AI de CNCF y otras iniciativas están impulsando el uso de Kubernetes en entornos de inteligencia artificial y aprendizaje automático.</p>
             
         
             
         
             
-            <p>Para mejorar la seguridad de OpenVPN, se puede utilizar la herramienta Fail2Ban, que puede bloquear las direcciones IP que intentan conectarse de manera no autorizada. Por ejemplo, se puede configurar Fail2Ban para bloquear las direcciones IP que intentan conectarse más de 5 veces en un período de 1 minuto, utilizando el siguiente comando: `fail2ban-client set openvpn banaction=iptables-multiport`.</p>
+            <p>Para más información sobre las novedades y mejoras en Kubernetes, se recomienda consultar la documentación oficial y las fuentes de noticias y blogs especializados en DevOps y cloud computing.</p>
             
         
             
         
             
-            <p>En resumen, para asegurar un entorno OpenVPN, es importante configurar los certificados y la autenticación de manera adecuada, y utilizar herramientas como Fail2Ban para bloquear las direcciones IP no autorizadas.</p>
+            <p>Finalmente, es importante destacar la importancia de la comunidad de Kubernetes y la colaboración entre desarrolladores y administradores de clusters. La participación en proyectos y grupos de trabajo, como el grupo de trabajo de gestión de dispositivos, puede ser muy beneficiosa para estar al tanto de las últimas novedades y mejores prácticas en el uso de Kubernetes.</p>
             
         
     </div>
@@ -107,17 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://community.openvpn.net/Security+Announcements/CVE-2026-11604" target="_blank">CVE-2026-11604</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md" target="_blank">Release Notes Draft</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/fail2ban/fail2ban" target="_blank">Fail2Ban</a>
+                <a href="https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/" target="_blank">Reconciling the Past: Correcting Records for Unfixed Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://openvpn.net/" target="_blank">OpenVPN</a>
+                <a href="https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e" target="_blank">From counting GPUs to reasoning about them: How Kubernetes DRA</a>
                 
             </li>
             
@@ -128,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-17_1220.html">&larr; 2026-06-17 1220</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-21_1119.html">&larr; 2026-06-21 1119</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-25_1046.html">2026-06-25 1046 &rarr;</a>
             
         </div>
     </div>
