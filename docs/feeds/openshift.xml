@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-25T10:47:54.263963+00:00</updated>
+  <updated>2026-06-26T10:56:15.576624+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -512,5 +512,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-22_1338.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para la gestión de aplicaciones. En este artículo, se presentan las últimas mejoras y best practices para trabajar con OpenShift.</summary>
     <published>2026-06-22T13:38:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-26_1055.html</id>
+    <title>Mejoras de Seguridad en OpenShift</title>
+    <updated>2026-06-26T10:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift Container Platform, que afectan a las versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; o la consola web de OpenShift.&lt;/p&gt;
+&lt;p&gt;La actualización de la versión 4.16 incluye un parche de seguridad con el identificador de imagen &lt;code&gt;sha256:746dd9a75ac3c9ed743d63b32c12de3484f74addadb1b5a00dbb004918406ba3&lt;/code&gt;. De igual forma, la versión 4.18 incluye un parche de seguridad con el identificador de imagen &lt;code&gt;sha256:f0ce3bc7f47d2bda4696f49eba84569ac87f1b2b42852e9f8756fe0a3f9a853f&lt;/code&gt;. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.&lt;/p&gt;
+&lt;p&gt;Además de las actualizaciones de seguridad, también se han publicado artículos sobre la arquitectura de ingress en OpenShift 4.18, que incluyen estrategias de particionamiento y umbrales de métricas para el manejo de tráfico de alta volumen. Estos artículos proporcionan información valiosa para los administradores de sistemas que buscan optimizar el rendimiento de sus clústeres de OpenShift.&lt;/p&gt;
+&lt;p&gt;Para instalar OpenShift 4.19.10 en infraestructura de metal desnudo, se puede seguir un tutorial detallado que incluye la configuración de DNS, nodos, redes y validación. Este tutorial es útil para los administradores de sistemas que buscan desplegar OpenShift en entornos de producción.&lt;/p&gt;
+&lt;p&gt;En resumen, las actualizaciones de seguridad y los artículos sobre la arquitectura de ingress y la instalación de OpenShift en metal desnudo proporcionan información valiosa para los administradores de sistemas que buscan garantizar la seguridad y estabilidad de sus entornos de producción. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para evitar vulnerabilidades y garantizar el rendimiento óptimo de los clústeres de OpenShift.&lt;/p&gt;
+&lt;p&gt;Los comandos para actualizar y verificar la versión de OpenShift son &lt;code&gt;oc adm upgrade&lt;/code&gt; y &lt;code&gt;oc get clusterversion&lt;/code&gt;. Estos comandos permiten a los administradores de sistemas verificar si hay actualizaciones disponibles y aplicarlas para garantizar la seguridad y estabilidad de sus clústeres.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:20087.html"&gt;RHSA-2026:20087&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:21656"&gt;RHSA-2026:21656&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@tcij1013/openshift-4-18-c606b897d184"&gt;OpenShift 4.18 Ingress Architecture&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810"&gt;Installing OpenShift 4.19.10 on Bare Metal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-26_1055.html"/>
+    <summary>OpenShift Container Platform ha publicado varias actualizaciones de seguridad para sus versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.</summary>
+    <published>2026-06-26T10:55:00+00:00</published>
   </entry>
 </feed>

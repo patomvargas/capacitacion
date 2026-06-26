@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Mejoras y Best Practices - OpenShift</title>
+    <title>Mejoras de Seguridad en OpenShift - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,46 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Mejoras y Best Practices</h1>
-    <div class="meta">2026-06-22 1338 · OpenShift</div>
+    <h1>Mejoras de Seguridad en OpenShift</h1>
+    <div class="meta">2026-06-26 1055 · OpenShift</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y características para la gestión de aplicaciones. Una de las características más importantes de OpenShift es su capacidad para gestionar la seguridad y la autenticación de las aplicaciones. Para ello, se utiliza el protocolo OAuth, que permite a los desarrolladores autenticar y autorizar a los usuarios de manera segura.</p>
+            <p>Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift Container Platform, que afectan a las versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc adm upgrade` o la consola web de OpenShift.</p>
             
         
             
         
             
-            <p>Para configurar OAuth en OpenShift, se puede utilizar el comando `oc create secret` para crear un secreto que contenga la información de autenticación. Luego, se puede utilizar el comando `oc create configmap` para crear un mapa de configuración que contenga la información de autorización. Por ejemplo: `oc create secret generic oauth-secret --from-literal=client-id=<id-cliente> --from-literal=client-secret=<secret-cliente>`.</p>
+            <p>La actualización de la versión 4.16 incluye un parche de seguridad con el identificador de imagen `sha256:746dd9a75ac3c9ed743d63b32c12de3484f74addadb1b5a00dbb004918406ba3`. De igual forma, la versión 4.18 incluye un parche de seguridad con el identificador de imagen `sha256:f0ce3bc7f47d2bda4696f49eba84569ac87f1b2b42852e9f8756fe0a3f9a853f`. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.</p>
             
         
             
         
             
-            <p>Otra característica importante de OpenShift es su capacidad para gestionar el monitoreo y la supervisión de las aplicaciones. Para ello, se puede utilizar la herramienta de monitoreo de OpenShift, que ofrece una variedad de características para monitorear el rendimiento y la disponibilidad de las aplicaciones. Por ejemplo, se puede utilizar el comando `oc get pods` para obtener una lista de los pods que se están ejecutando en el clúster.</p>
+            <p>Además de las actualizaciones de seguridad, también se han publicado artículos sobre la arquitectura de ingress en OpenShift 4.18, que incluyen estrategias de particionamiento y umbrales de métricas para el manejo de tráfico de alta volumen. Estos artículos proporcionan información valiosa para los administradores de sistemas que buscan optimizar el rendimiento de sus clústeres de OpenShift.</p>
             
         
             
         
             
-            <p>En cuanto a las mejoras, OpenShift 4.16.64 y Satellite 6.16.9 ofrecen una variedad de nuevas características y actualizaciones de seguridad. Por ejemplo, se ha mejorado la gestión de la seguridad y la autenticación de las aplicaciones, y se han agregado nuevas características para la gestión de la configuración y el monitoreo de las aplicaciones.</p>
+            <p>Para instalar OpenShift 4.19.10 en infraestructura de metal desnudo, se puede seguir un tutorial detallado que incluye la configuración de DNS, nodos, redes y validación. Este tutorial es útil para los administradores de sistemas que buscan desplegar OpenShift en entornos de producción.</p>
             
         
             
         
             
-            <p>Para migrar a OpenShift, se pueden seguir varios pasos. Primero, se debe crear un nuevo clúster de OpenShift y configurar la red y la seguridad. Luego, se deben crear los objetos de configuración necesarios, como los secrets y los configmaps. Finalmente, se deben desplegar las aplicaciones en el clúster de OpenShift.</p>
+            <p>En resumen, las actualizaciones de seguridad y los artículos sobre la arquitectura de ingress y la instalación de OpenShift en metal desnudo proporcionan información valiosa para los administradores de sistemas que buscan garantizar la seguridad y estabilidad de sus entornos de producción. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para evitar vulnerabilidades y garantizar el rendimiento óptimo de los clústeres de OpenShift.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y características para la gestión de aplicaciones. Con las últimas mejoras y best practices, los desarrolladores pueden crear aplicaciones seguras y escalables en OpenShift.</p>
+            <p>Los comandos para actualizar y verificar la versión de OpenShift son `oc adm upgrade` y `oc get clusterversion`. Estos comandos permiten a los administradores de sistemas verificar si hay actualizaciones disponibles y aplicarlas para garantizar la seguridad y estabilidad de sus clústeres.</p>
             
         
     </div>
@@ -107,22 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/Red_Hat" target="_blank">Red Hat - Wikipedia</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:20087.html" target="_blank">RHSA-2026:20087</a>
                 
             </li>
             
             <li>
-                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.linuxcompatible.org/story/red-hat-openshift-41664-and-satellite-6169-updates-for-rhel" target="_blank">Red Hat OpenShift 4.16.64 and Satellite 6.16.9 updates for RHEL</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:21656" target="_blank">RHSA-2026:21656</a>
                 
             </li>
             
             <li>
                 <a href="https://medium.com/@tcij1013/openshift-4-18-c606b897d184" target="_blank">OpenShift 4.18 Ingress Architecture</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810" target="_blank">Installing OpenShift 4.19.10 on Bare Metal</a>
                 
             </li>
             
@@ -133,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-18_1153.html">&larr; 2026-06-18 1153</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-22_1338.html">&larr; 2026-06-22 1338</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-26_1055.html">2026-06-26 1055 &rarr;</a>
             
         </div>
     </div>

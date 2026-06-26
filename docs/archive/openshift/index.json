@@ -1,4 +1,28 @@
 {
+  "2026-06-26_1055": {
+    "slug": "openshift",
+    "title": "Mejoras de Seguridad en OpenShift",
+    "summary": "OpenShift Container Platform ha publicado varias actualizaciones de seguridad para sus versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.",
+    "content": "Recientemente, se han publicado varias actualizaciones de seguridad para OpenShift Container Platform, que afectan a las versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc adm upgrade` o la consola web de OpenShift.\n\nLa actualización de la versión 4.16 incluye un parche de seguridad con el identificador de imagen `sha256:746dd9a75ac3c9ed743d63b32c12de3484f74addadb1b5a00dbb004918406ba3`. De igual forma, la versión 4.18 incluye un parche de seguridad con el identificador de imagen `sha256:f0ce3bc7f47d2bda4696f49eba84569ac87f1b2b42852e9f8756fe0a3f9a853f`. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.\n\nAdemás de las actualizaciones de seguridad, también se han publicado artículos sobre la arquitectura de ingress en OpenShift 4.18, que incluyen estrategias de particionamiento y umbrales de métricas para el manejo de tráfico de alta volumen. Estos artículos proporcionan información valiosa para los administradores de sistemas que buscan optimizar el rendimiento de sus clústeres de OpenShift.\n\nPara instalar OpenShift 4.19.10 en infraestructura de metal desnudo, se puede seguir un tutorial detallado que incluye la configuración de DNS, nodos, redes y validación. Este tutorial es útil para los administradores de sistemas que buscan desplegar OpenShift en entornos de producción.\n\nEn resumen, las actualizaciones de seguridad y los artículos sobre la arquitectura de ingress y la instalación de OpenShift en metal desnudo proporcionan información valiosa para los administradores de sistemas que buscan garantizar la seguridad y estabilidad de sus entornos de producción. Es importante mantenerse actualizado con las últimas versiones y parches de seguridad para evitar vulnerabilidades y garantizar el rendimiento óptimo de los clústeres de OpenShift.\n\nLos comandos para actualizar y verificar la versión de OpenShift son `oc adm upgrade` y `oc get clusterversion`. Estos comandos permiten a los administradores de sistemas verificar si hay actualizaciones disponibles y aplicarlas para garantizar la seguridad y estabilidad de sus clústeres.",
+    "sources": [
+      {
+        "title": "RHSA-2026:20087",
+        "url": "https://access.redhat.com/errata/RHSA-2026:20087.html"
+      },
+      {
+        "title": "RHSA-2026:21656",
+        "url": "https://access.redhat.com/errata/RHSA-2026:21656"
+      },
+      {
+        "title": "OpenShift 4.18 Ingress Architecture",
+        "url": "https://medium.com/@tcij1013/openshift-4-18-c606b897d184"
+      },
+      {
+        "title": "Installing OpenShift 4.19.10 on Bare Metal",
+        "url": "https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810"
+      }
+    ]
+  },
   "2026-06-22_1338": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Best Practices",
