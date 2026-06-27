@@ -1,4 +1,24 @@
 {
+  "2026-06-27_1013": {
+    "slug": "traefik",
+    "title": "Traefik: Routers, Middlewares y Seguridad",
+    "summary": "Traefik es un proxy inverso de código abierto que permite gestionar rutas y middlewares de manera eficiente. En este artículo, se analizarán las últimas novedades y mejores prácticas para su uso.",
+    "content": "Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Una de las características más destacadas de Traefik es su capacidad para gestionar rutas y middlewares de manera flexible. Por ejemplo, se puede configurar un router para redirigir tráfico a un servidor específico utilizando el comando `traefik http routers --rule=Host:example.com --service=example-service`.\n\nPara agregar una capa de seguridad adicional, se puede utilizar Let's Encrypt para obtener certificados SSL/TLS de manera automática. Esto se puede configurar en el archivo de configuración de Traefik utilizando la directiva `tls` y especificando el proveedor de certificados como `letsencrypt`. Por ejemplo: `tls:\n  certificates:\n    - certFile: /etc/traefik/certs/example.com.crt\n      keyFile: /etc/traefik/certs/example.com.key\n      stores:\n        - default`.\n\nEn cuanto a la seguridad, es importante mencionar que Traefik ha solucionado recientemente un problema de seguridad relacionado con la protección contra ataques de tipo domain-fronting. Esto se debe a que la función SNICheck ignoraba las asignaciones de opciones TLS con comodín, lo que permitía a los atacantes acceder a los servidores sin autenticación. Para solucionar este problema, se debe actualizar Traefik a la última versión y configurar las opciones TLS de manera adecuada.\n\nOtra característica importante de Traefik es su capacidad para gestionar tráfico TCP/UDP de manera eficiente. Esto se puede configurar utilizando la directiva `tcp` o `udp` en el archivo de configuración de Traefik. Por ejemplo: `tcp:\n  routers:\n    - rule: HostSNI(`example.com`)\n      service: example-service`.\n\nEn resumen, Traefik es una herramienta poderosa y flexible que permite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas y funcionen de manera óptima.\n\nPara obtener más información sobre Traefik y sus características, se puede consultar la documentación oficial de Traefik en <https://doc.traefik.io/traefik/>.\n\nAdemás, es importante mencionar que Traefik tiene una comunidad activa y una gran cantidad de recursos disponibles para ayudar a los usuarios a resolver problemas y mejorar su configuración. Algunos de estos recursos incluyen la documentación oficial, el foro de Traefik y la comunidad de GitHub.\n\nEn cuanto a las mejores prácticas, es importante mencionar que la seguridad es un aspecto fundamental en la configuración de Traefik. Al utilizar características como Let's Encrypt y la protección contra ataques de tipo domain-fronting, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas de manera adecuada.\n\nEn resumen, Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, y siguiendo las mejores prácticas de configuración, se puede asegurar que las aplicaciones web estén protegidas y funcionen de manera óptima.",
+    "sources": [
+      {
+        "title": "Traefik Security Advisory",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"
+      },
+      {
+        "title": "Traefik Issue #13289",
+        "url": "https://github.com/traefik/traefik/issues/13289"
+      },
+      {
+        "title": "Traefik Hub Release Notes",
+        "url": "https://doc.traefik.io/traefik-hub/api-management/release-notes"
+      }
+    ]
+  },
   "2026-06-23_1122": {
     "slug": "traefik",
     "title": "Traefik: Mejoras y Best Practices",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-26T10:56:15.597926+00:00</updated>
+  <updated>2026-06-27T10:14:32.701908+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -278,5 +278,35 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-23_1122.html"/>
     <summary>Traefik es un proxy inverso y un servidor web que ofrece una gran flexibilidad y escalabilidad. En este artículo, se presentan las últimas novedades y mejoras en Traefik, incluyendo la configuración de routers, middlewares y proveedores, así como la integración con Let's Encrypt y la observabilidad.</summary>
     <published>2026-06-23T11:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-27_1013.html</id>
+    <title>Traefik: Routers, Middlewares y Seguridad</title>
+    <updated>2026-06-27T10:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Una de las características más destacadas de Traefik es su capacidad para gestionar rutas y middlewares de manera flexible. Por ejemplo, se puede configurar un router para redirigir tráfico a un servidor específico utilizando el comando &lt;code&gt;traefik http routers --rule=Host:example.com --service=example-service&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para agregar una capa de seguridad adicional, se puede utilizar Let's Encrypt para obtener certificados SSL/TLS de manera automática. Esto se puede configurar en el archivo de configuración de Traefik utilizando la directiva &lt;code&gt;tls&lt;/code&gt; y especificando el proveedor de certificados como &lt;code&gt;letsencrypt&lt;/code&gt;. Por ejemplo: `tls:&lt;/p&gt;
+&lt;p&gt;certificates:&lt;/p&gt;
+&lt;p&gt;- certFile: /etc/traefik/certs/example.com.crt&lt;/p&gt;
+&lt;p&gt;keyFile: /etc/traefik/certs/example.com.key&lt;/p&gt;
+&lt;p&gt;stores:&lt;/p&gt;
+&lt;p&gt;- default`.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que Traefik ha solucionado recientemente un problema de seguridad relacionado con la protección contra ataques de tipo domain-fronting. Esto se debe a que la función SNICheck ignoraba las asignaciones de opciones TLS con comodín, lo que permitía a los atacantes acceder a los servidores sin autenticación. Para solucionar este problema, se debe actualizar Traefik a la última versión y configurar las opciones TLS de manera adecuada.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Traefik es su capacidad para gestionar tráfico TCP/UDP de manera eficiente. Esto se puede configurar utilizando la directiva &lt;code&gt;tcp&lt;/code&gt; o &lt;code&gt;udp&lt;/code&gt; en el archivo de configuración de Traefik. Por ejemplo: `tcp:&lt;/p&gt;
+&lt;p&gt;routers:&lt;/p&gt;
+&lt;p&gt;- rule: HostSNI(&lt;code&gt;example.com&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;service: example-service`.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa y flexible que permite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas y funcionen de manera óptima.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Traefik y sus características, se puede consultar la documentación oficial de Traefik en &lt;https://doc.traefik.io/traefik/&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar que Traefik tiene una comunidad activa y una gran cantidad de recursos disponibles para ayudar a los usuarios a resolver problemas y mejorar su configuración. Algunos de estos recursos incluyen la documentación oficial, el foro de Traefik y la comunidad de GitHub.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante mencionar que la seguridad es un aspecto fundamental en la configuración de Traefik. Al utilizar características como Let's Encrypt y la protección contra ataques de tipo domain-fronting, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas de manera adecuada.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, y siguiendo las mejores prácticas de configuración, se puede asegurar que las aplicaciones web estén protegidas y funcionen de manera óptima.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"&gt;Traefik Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13289"&gt;Traefik Issue #13289&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/api-management/release-notes"&gt;Traefik Hub Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-27_1013.html"/>
+    <summary>Traefik es un proxy inverso de código abierto que permite gestionar rutas y middlewares de manera eficiente. En este artículo, se analizarán las últimas novedades y mejores prácticas para su uso.</summary>
+    <published>2026-06-27T10:13:00+00:00</published>
   </entry>
 </feed>

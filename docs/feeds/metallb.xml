@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-26T10:56:15.599531+00:00</updated>
+  <updated>2026-06-27T10:14:32.704904+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -840,5 +840,22 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-19_1212.html"/>
     <summary>MetalLB es una implementación de balanceo de carga de red para Kubernetes que utiliza protocolos de enrutamiento estándar. En este artículo, exploraremos sus características y configuraciones.</summary>
     <published>2026-06-19T12:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-27_1013.html</id>
+    <title>MetalLB: Equilibrio de Carga en Kubernetes</title>
+    <updated>2026-06-27T10:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta esencial para cualquier clúster de Kubernetes que requiera exponer servicios a Internet. Para empezar a utilizar MetalLB, es necesario instalarlo en el clúster utilizando el comando &lt;code&gt;kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/namespace.yaml&lt;/code&gt;. Luego, se debe crear un pool de direcciones IP utilizando el comando &lt;code&gt;kubectl apply -f ip-pool.yaml&lt;/code&gt;, donde el archivo &lt;code&gt;ip-pool.yaml&lt;/code&gt; contiene la configuración del pool de direcciones IP.&lt;/p&gt;
+&lt;p&gt;En modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP del servicio en la red local. Esto se logra configurando el archivo &lt;code&gt;metallb-config.yaml&lt;/code&gt; con el contenido &lt;code&gt;address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.240-192.168.1.250&lt;/code&gt;. Luego, se aplica la configuración utilizando el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP del servicio a los routers de la red. Esto se logra configurando el archivo &lt;code&gt;metallb-config.yaml&lt;/code&gt; con el contenido &lt;code&gt;address-pools: - name: default - protocol: bgp - addresses: - 192.168.1.240-192.168.1.250 - bgp: - peer-address: 192.168.1.1 - peer-asn: 64512&lt;/code&gt;. Luego, se aplica la configuración utilizando el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas con MetalLB, se puede utilizar el comando &lt;code&gt;kubectl logs -f -n metallb-system metallb-controller&lt;/code&gt; para ver los registros del controlador de MetalLB. También se puede utilizar el comando &lt;code&gt;kubectl get pods -n metallb-system&lt;/code&gt; para ver el estado de los pods de MetalLB.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para proporcionar equilibrio de carga en clústeres de Kubernetes. Su configuración es sencilla y flexible, y puede ser utilizada en modo L2 o BGP según las necesidades de la red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://metallb.universe.tf/"&gt;MetalLB Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/docs/"&gt;Kubernetes Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-27_1013.html"/>
+    <summary>MetalLB es un equilibrador de carga de código abierto para Kubernetes que proporciona una forma sencilla de exponer servicios a Internet. En este artículo, se explora su configuración y uso en modo L2 y BGP.</summary>
+    <published>2026-06-27T10:13:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-26T10:56:15.595522+00:00</updated>
+  <updated>2026-06-27T10:14:32.698678+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -519,5 +519,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-23_1122.html"/>
     <summary>Superset es una herramienta de inteligencia de negocios que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla. En este artículo, se presentan las características y configuraciones de Superset.</summary>
     <published>2026-06-23T11:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-06-27_1013.html</id>
+    <title>Superset: Visualización de Datos y Exploración</title>
+    <updated>2026-06-27T10:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta poderosa para la visualización de datos y la exploración de información. Permite a los usuarios crear dashboards personalizadas con gráficos y tablas que se pueden utilizar para analizar y visualizar datos de manera efectiva. Una de las características más destacadas de Superset es su capacidad para crear dashboards embebidas utilizando el token de invitado, lo que permite a los usuarios compartir sus dashboards con otros sin tener que proporcionar acceso a la plataforma completa.&lt;/p&gt;
+&lt;p&gt;Para crear un dashboard embebido en Superset, se puede utilizar el comando &lt;code&gt;superset embed dashboard&lt;/code&gt; seguido del ID del dashboard y el token de invitado. Por ejemplo: &lt;code&gt;superset embed dashboard --dashboard-id 123 --guest-token abc123&lt;/code&gt;. Esto generará un enlace que se puede compartir con otros para acceder al dashboard embebido.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Superset es su capacidad para trabajar con datasets y SQL Lab. Los usuarios pueden crear y gestionar datasets utilizando la interfaz de usuario de Superset, y luego utilizar SQL Lab para ejecutar consultas y analizar los datos. Para crear un dataset en Superset, se puede utilizar el comando &lt;code&gt;superset dataset create&lt;/code&gt; seguido del nombre del dataset y la conexión de datos. Por ejemplo: &lt;code&gt;superset dataset create --name mi_dataset --connection mi_conexion&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se está trabajando en la versión 7.0 de Superset, que incluirá nuevas características y mejoras en la plataforma. Según el roadmap de la versión 7.0, se espera que se lance en un plazo de unos meses. Además, se ha actualizado la versión de Node.js utilizada en Superset a la versión 24, lo que mejorará la seguridad y el rendimiento de la plataforma.&lt;/p&gt;
+&lt;p&gt;Para mantenerse al tanto de las últimas novedades y best practices en Superset, se recomienda seguir la documentación oficial y las discusiones en GitHub. Además, se pueden utilizar herramientas como Jinja templates para personalizar y automatizar la creación de dashboards y informes en Superset.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la visualización de datos y la exploración de información que ofrece una variedad de características y herramientas para analizar y visualizar datos de manera efectiva. Con las últimas novedades y best practices, los usuarios pueden aprovechar al máximo la plataforma y crear dashboards personalizadas y efectivas para sus necesidades de análisis de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/34714"&gt;Issue 34714: Enable Superset embed Dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/40904"&gt;Discussion 40904: What's the plan for Superset 7.0?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/tree/master/superset-frontend/plugins/legacy-plugin-chart-rose"&gt;Legacy Plugin Chart Rose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-27_1013.html"/>
+    <summary>Superset es una plataforma de visualización de datos y exploración que permite a los usuarios crear dashboards personalizadas y analizar datos de manera efectiva. En este artículo, se presentan las últimas novedades y best practices para trabajar con Superset.</summary>
+    <published>2026-06-27T10:13:00+00:00</published>
   </entry>
 </feed>

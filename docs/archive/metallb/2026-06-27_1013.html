@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Herramienta de Inteligencia de Negocios - Superset</title>
-    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>Superset: Herramienta de Inteligencia de Negocios</h1>
-    <div class="meta">2026-06-23 1122 · Superset</div>
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-06-27 1013 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de código abierto que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla. Para instalar Superset, se puede utilizar el paquete `apachesuperset` disponible en PyPI, utilizando el comando `pip install apachesuperset`.</p>
+            <p>MetalLB es una herramienta esencial para cualquier clúster de Kubernetes que requiera exponer servicios a Internet. Para empezar a utilizar MetalLB, es necesario instalarlo en el clúster utilizando el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/namespace.yaml`. Luego, se debe crear un pool de direcciones IP utilizando el comando `kubectl apply -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.</p>
             
         
             
         
             
-            <p>Una vez instalado, se puede configurar Superset para conectarse a diferentes fuentes de datos, como bases de datos relacionales o NoSQL. Para crear un nuevo dashboard, se puede utilizar el comando `superset init` para inicializar el proyecto, y luego `superset run` para ejecutar el servidor de desarrollo.</p>
+        
+            
+            <p>En modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP del servicio en la red local. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.240-192.168.1.250`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
             
         
             
         
             
-            <p>Superset también incluye una variedad de características para la creación de visualizaciones de datos, como gráficos, tablas y mapas. Para crear un nuevo gráfico, se puede utilizar el comando `superset chart create` y seguir las instrucciones para configurar el gráfico.</p>
+        
+            
+            <p>En modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP del servicio a los routers de la red. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: bgp - addresses: - 192.168.1.240-192.168.1.250 - bgp: - peer-address: 192.168.1.1 - peer-asn: 64512`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Superset incluye una variedad de características para proteger los datos y los dashboards, como la autenticación y autorización de usuarios. Para configurar la seguridad, se puede utilizar el comando `superset config` y seguir las instrucciones para configurar la autenticación y autorización.</p>
+        
+            
+            <p>Para solucionar problemas con MetalLB, se puede utilizar el comando `kubectl logs -f -n metallb-system metallb-controller` para ver los registros del controlador de MetalLB. También se puede utilizar el comando `kubectl get pods -n metallb-system` para ver el estado de los pods de MetalLB.</p>
             
         
             
         
             
-            <p>Recientemente, se ha actualizado la versión de Node.js utilizada por Superset a la versión 24, como se puede ver en el commit `134fba3` en el repositorio de GitHub de Superset. Esta actualización permite aprovechar las últimas características y mejoras de Node.js.</p>
-            
         
             
-        
-            
-            <p>En resumen, Superset es una herramienta poderosa para la creación de dashboards y visualizaciones de datos, con una variedad de características y configuraciones para satisfacer las necesidades de los usuarios.</p>
+            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar equilibrio de carga en clústeres de Kubernetes. Su configuración es sencilla y flexible, y puede ser utilizada en modo L2 o BGP según las necesidades de la red.</p>
             
         
     </div>
@@ -105,17 +107,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/40413" target="_blank">Mixed Chart without X-Axis Sort By</a>
+                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/actions/runs/27085922755" target="_blank">feat(build): update Node version to v24</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://superset.apache.org/admin-docs/installation/pypi/" target="_blank">PyPI - Apache Superset</a>
+                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
                 
             </li>
             
@@ -126,12 +123,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-15_1427.html">&larr; 2026-06-15 1427</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-19_1212.html">&larr; 2026-06-19 1212</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-06-27_1013.html">2026-06-27 1013 &rarr;</a>
             
         </div>
     </div>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Routers, Middlewares y Seguridad - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Routers, Middlewares y Seguridad</h1>
+    <div class="meta">2026-06-27 1013 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Una de las características más destacadas de Traefik es su capacidad para gestionar rutas y middlewares de manera flexible. Por ejemplo, se puede configurar un router para redirigir tráfico a un servidor específico utilizando el comando `traefik http routers --rule=Host:example.com --service=example-service`.</p>
+            
+        
+            
+        
+            
+            <p>Para agregar una capa de seguridad adicional, se puede utilizar Let's Encrypt para obtener certificados SSL/TLS de manera automática. Esto se puede configurar en el archivo de configuración de Traefik utilizando la directiva `tls` y especificando el proveedor de certificados como `letsencrypt`. Por ejemplo: `tls:</p>
+            
+        
+            
+            <p>certificates:</p>
+            
+        
+            
+            <p>- certFile: /etc/traefik/certs/example.com.crt</p>
+            
+        
+            
+            <p>keyFile: /etc/traefik/certs/example.com.key</p>
+            
+        
+            
+            <p>stores:</p>
+            
+        
+            
+            <p>- default`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, es importante mencionar que Traefik ha solucionado recientemente un problema de seguridad relacionado con la protección contra ataques de tipo domain-fronting. Esto se debe a que la función SNICheck ignoraba las asignaciones de opciones TLS con comodín, lo que permitía a los atacantes acceder a los servidores sin autenticación. Para solucionar este problema, se debe actualizar Traefik a la última versión y configurar las opciones TLS de manera adecuada.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Traefik es su capacidad para gestionar tráfico TCP/UDP de manera eficiente. Esto se puede configurar utilizando la directiva `tcp` o `udp` en el archivo de configuración de Traefik. Por ejemplo: `tcp:</p>
+            
+        
+            
+            <p>routers:</p>
+            
+        
+            
+            <p>- rule: HostSNI(`example.com`)</p>
+            
+        
+            
+            <p>service: example-service`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta poderosa y flexible que permite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas y funcionen de manera óptima.</p>
+            
+        
+            
+        
+            
+            <p>Para obtener más información sobre Traefik y sus características, se puede consultar la documentación oficial de Traefik en <https://doc.traefik.io/traefik/>.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante mencionar que Traefik tiene una comunidad activa y una gran cantidad de recursos disponibles para ayudar a los usuarios a resolver problemas y mejorar su configuración. Algunos de estos recursos incluyen la documentación oficial, el foro de Traefik y la comunidad de GitHub.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante mencionar que la seguridad es un aspecto fundamental en la configuración de Traefik. Al utilizar características como Let's Encrypt y la protección contra ataques de tipo domain-fronting, los sysadmins y DevOps engineers pueden asegurarse de que sus aplicaciones web estén protegidas de manera adecuada.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta fundamental para cualquier sysadmin o DevOps engineer que necesite gestionar tráfico web de manera segura y escalable. Al utilizar sus características de rutas, middlewares y seguridad, y siguiendo las mejores prácticas de configuración, se puede asegurar que las aplicaciones web estén protegidas y funcionen de manera óptima.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">Traefik Security Advisory</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/13289" target="_blank">Traefik Issue #13289</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">Traefik Hub Release Notes</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-23_1122.html">&larr; 2026-06-23 1122</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
