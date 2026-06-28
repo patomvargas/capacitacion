@@ -1,4 +1,24 @@
 {
+  "2026-06-28_1031": {
+    "slug": "postgresql",
+    "title": "Mejoras en PostgreSQL",
+    "summary": "PostgreSQL sigue evolucionando con mejoras en índices, replicación y extensiones. Aprende a optimizar el rendimiento y a utilizar las mejores prácticas.",
+    "content": "\nPostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que sigue evolucionando con el tiempo. En las versiones 13-18, se han realizado mejoras significativas en los índices, lo que permite una mayor eficiencia en las consultas. Por ejemplo, se puede utilizar el comando `CREATE INDEX` para crear un índice en una tabla.\n\nLa replicación es otro aspecto importante en PostgreSQL, ya que permite mantener una copia exacta de la base de datos en un servidor secundario. Esto se puede lograr utilizando el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar la replicación utilizando el archivo `postgresql.conf`. También se pueden utilizar extensiones como `pg_stat_statements` para monitorear el rendimiento de la base de datos.\n\nPara mejorar el rendimiento, es importante utilizar las mejores prácticas, como particionar tablas grandes utilizando el comando `CREATE TABLE` con la cláusula `PARTITION BY`. También se puede utilizar el comando `VACUUM` para liberar espacio en disco y mejorar la eficiencia de las consultas. Además, se pueden utilizar herramientas como `pg_stat` para monitorear el rendimiento de la base de datos y identificar posibles problemas.\n\nEn cuanto a la seguridad, PostgreSQL ofrece características como la Seguridad de Nivel de Fila (Row Level Security, RLS), que permite controlar el acceso a los datos en función de las políticas definidas. Se puede habilitar la RLS utilizando el comando `ALTER TABLE` con la cláusula `ENABLE ROW LEVEL SECURITY`. Luego, se pueden definir políticas de seguridad utilizando el comando `CREATE POLICY`.\n\nEn resumen, PostgreSQL es un sistema de gestión de bases de datos relacional potente y flexible que ofrece muchas características y herramientas para mejorar el rendimiento, la seguridad y la eficiencia. Al utilizar las mejores prácticas y las características adecuadas, se puede crear una base de datos segura y eficiente que satisfaga las necesidades de la aplicación.\n\nFinalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y ofrece muchos recursos y herramientas para ayudar a los desarrolladores y administradores de bases de datos a mejorar su conocimiento y habilidades. Se pueden encontrar muchos tutoriales, documentación y ejemplos en línea para ayudar a aprender y mejorar la utilización de PostgreSQL.\n",
+    "sources": [
+      {
+        "title": "Unlock the latest PostgreSQL indexing advancements",
+        "url": "https://www.facebook.com/fossasia/posts/unlock-the-latest-postgresql-indexing-advancements-at-fossasia-summit-2026-as-ro/1629034562559057/"
+      },
+      {
+        "title": "PostgreSQL IOPS Limits Caused by Sync Process",
+        "url": "https://www.linkedin.com/posts/sujan-tamang-25b640198_postgresql-aws-rds-activity-7471490301577035777-MfiW"
+      },
+      {
+        "title": "What is PostgreSQL & Why Backend Devs Need It",
+        "url": "https://medium.com/backend-engineering-blog/what-is-postgresql-why-backend-devs-need-it-09caddb60914"
+      }
+    ]
+  },
   "2026-06-24_1055": {
     "slug": "postgresql",
     "title": "Mejoras en PostgreSQL 19",

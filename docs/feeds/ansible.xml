@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-27T10:14:32.716682+00:00</updated>
+  <updated>2026-06-28T10:33:14.262765+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -528,5 +528,30 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-24_1055.html"/>
     <summary>Ansible ha lanzado recientemente la versión 14.0.0, que incluye una serie de mejoras y nuevas características. En este artículo, se presentan las novedades más destacadas de esta versión.</summary>
     <published>2026-06-24T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-28_1031.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-06-28T10:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una suite de herramientas de software que permite la automatización de infraestructura como código. Fue escrito originalmente por Michael DeHaan en 2012 y adquirido por Red Hat en 2015. Ansible es diseñado para configurar sistemas Unix-like y Microsoft Windows de manera agentless.&lt;/p&gt;
+&lt;p&gt;Una de las características clave de Ansible es el uso de playbooks, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de hosts. Los playbooks pueden incluir roles, que son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache utilizando el comando &lt;code&gt;ansible-galaxy install apache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Ansible también incluye una característica llamada vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Esto se puede hacer utilizando el comando &lt;code&gt;ansible-vault encrypt&lt;/code&gt; para cifrar los archivos de configuración. Además, Ansible incluye una característica llamada colecciones, que son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks.&lt;/p&gt;
+&lt;p&gt;Para gestionar los hosts y los grupos de hosts, Ansible utiliza un archivo de inventario, que puede ser un archivo INI o YAML. Por ejemplo, se puede crear un archivo de inventario con el siguiente contenido:&lt;/p&gt;
+&lt;p&gt;```ini&lt;/p&gt;
+&lt;p&gt;[webservers]&lt;/p&gt;
+&lt;p&gt;server1 ansible_host=192.168.1.100&lt;/p&gt;
+&lt;p&gt;server2 ansible_host=192.168.1.101&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Este archivo define un grupo de hosts llamado &lt;code&gt;webservers&lt;/code&gt; con dos hosts: &lt;code&gt;server1&lt;/code&gt; y &lt;code&gt;server2&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, Ansible puede integrarse con herramientas como AWX/Tower, que proporcionan una interfaz web para gestionar y ejecutar playbooks. Esto permite a los administradores de sistemas y DevOps engineers gestionar y automatizar sus infraestructuras de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades para gestionar y configurar sistemas de manera eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Ansible_(software)"&gt;Ansible (software) - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/index.html"&gt;Ansible Documentation — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html"&gt;Introduction to Ansible — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-28_1031.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite configurar y gestionar sistemas de manera eficiente. En este artículo, se presentan las características y funcionalidades clave de Ansible, incluyendo playbooks, roles, colecciones y vault.</summary>
+    <published>2026-06-28T10:31:00+00:00</published>
   </entry>
 </feed>

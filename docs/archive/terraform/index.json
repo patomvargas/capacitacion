@@ -1,4 +1,24 @@
 {
+  "2026-06-28_1031": {
+    "slug": "terraform",
+    "title": "Terraform: Administración de Infraestructura como Código",
+    "summary": "Terraform es una herramienta de administración de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en la administración de estado, proveedores y módulos en Terraform.",
+    "content": "Terraform es una herramienta de administración de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar el comando `terraform` en el sistema y configurar el proveedor de infraestructura deseado, como AWS o Azure, utilizando comandos como `terraform init` y `terraform apply`.\n\nLa administración de estado en Terraform es crucial para garantizar la consistencia y la integridad de la infraestructura. El comando `terraform state` permite gestionar el estado de la infraestructura, incluyendo la creación, actualización y eliminación de recursos. Es importante utilizar el comando `terraform state pull` para obtener el estado actual de la infraestructura y `terraform state push` para actualizar el estado después de realizar cambios.\n\nLos proveedores en Terraform son responsables de interactuar con los servicios de infraestructura subyacentes. Por ejemplo, el proveedor de AWS utiliza el comando `aws configure` para configurar las credenciales de acceso a la cuenta de AWS. Los módulos en Terraform permiten reutilizar código y crear infraestructuras complejas de manera modular. Un ejemplo de un módulo de Terraform es el módulo de red de AWS, que puede ser utilizado para crear una red virtual y subredes en AWS.\n\nLa importación de recursos en Terraform es posible utilizando el comando `terraform import`. Este comando permite importar recursos existentes en la infraestructura y gestionarlos con Terraform. Es importante tener en cuenta que la importación de recursos puede requerir la creación de un archivo de estado de Terraform, que se puede generar utilizando el comando `terraform state push`.\n\nEn cuanto a las novedades en Terraform, es importante mencionar que la versión más reciente de Terraform incluye mejoras en la administración de estado y la gestión de proveedores. Además, se han agregado nuevos proveedores y módulos para apoyar la creación de infraestructuras complejas.\n\nFinalmente, es importante mencionar que la documentación oficial de Terraform es una excelente fuente de información para aprender sobre la herramienta y sus capacidades. La documentación incluye ejemplos de código, tutoriales y guías para ayudar a los usuarios a empezar a trabajar con Terraform de manera efectiva.\n\nEn resumen, Terraform es una herramienta poderosa para la administración de infraestructura como código que ofrece una amplia gama de capacidades y herramientas para gestionar y provisionar recursos de infraestructura de manera eficiente. Al seguir las mejores prácticas y utilizar los comandos y configuraciones adecuados, los equipos de DevOps y sysadmins pueden aprovechar al máximo las capacidades de Terraform y crear infraestructuras complejas y escalables.\n\nPara más información sobre Terraform y sus capacidades, se pueden consultar las fuentes oficiales de la herramienta, como la documentación oficial y el repositorio de GitHub.\n\n  ",
+    "sources": [
+      {
+        "title": "Terraform Import bug #38660",
+        "url": "https://github.com/hashicorp/terraform/issues/38660"
+      },
+      {
+        "title": "Reference Documentation Standards",
+        "url": "https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/topics/reference-documentation-standards.md"
+      },
+      {
+        "title": "Tfe package - github.com/hashicorp/go-tfe",
+        "url": "https://pkg.go.dev/github.com/hashicorp/go-tfe"
+      }
+    ]
+  },
   "2026-06-20_1035": {
     "slug": "terraform",
     "title": "Terraform: Mejores prácticas y novedades",

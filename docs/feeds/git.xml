@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-27T10:14:32.712589+00:00</updated>
+  <updated>2026-06-28T10:33:14.256212+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -428,5 +428,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-24_1055.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu flujo de trabajo y colaboración en equipo.</summary>
     <published>2026-06-24T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-06-28_1031.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-06-28T10:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es un sistema de control de versiones distribuido que permite a los desarrolladores trabajar de manera colaborativa en proyectos de software. Una de las mejores prácticas para trabajar con Git es utilizar &lt;code&gt;git flow&lt;/code&gt; para gestionar los flujos de trabajo. Esto implica utilizar comandos como &lt;code&gt;git flow init&lt;/code&gt; para inicializar el flujo de trabajo y &lt;code&gt;git flow feature start&lt;/code&gt; para crear una nueva característica.&lt;/p&gt;
+&lt;p&gt;Para garantizar la calidad del código, se pueden utilizar hooks en Git. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook para verificar que el código cumpla con ciertos estándares de codificación antes de permitir que se haga un commit. Esto se puede hacer con el comando &lt;code&gt;git hook pre-commit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil en Git es &lt;code&gt;git rebase&lt;/code&gt;. Esta herramienta permite reorganizar los commits para que tengan un historial de commits más limpio y fácil de seguir. Por ejemplo, se puede utilizar &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con los commits y reorganizarlos. También se puede utilizar &lt;code&gt;git bisect&lt;/code&gt; para encontrar el commit que introdujo un error en el código.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona la función de &lt;code&gt;git worktree&lt;/code&gt; que permite crear múltiples árboles de trabajo a partir de un solo repositorio. Esto es útil para trabajar en diferentes características o versiones del código de manera simultánea. Se puede crear un nuevo árbol de trabajo con el comando &lt;code&gt;git worktree add&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para gestionar el código de manera efectiva. Al utilizar estas mejores prácticas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos de software.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Git y sus funcionalidades, se pueden consultar las fuentes oficiales de Git y otros recursos en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Git"&gt;Git - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/install/"&gt;Git - Install&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/git-guides"&gt;Git · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-28_1031.html"/>
+    <summary>En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-06-28T10:31:00+00:00</published>
   </entry>
 </feed>

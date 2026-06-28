@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker: Mejoras y Best Practices - Docker</title>
-    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,57 +54,77 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-06-24 1055 · Docker</div>
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-06-28 1031 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos tiempos, Docker ha introducido varias mejoras y características nuevas, como los multi-stage builds, que permiten crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para crear una imagen de Docker a partir de un Dockerfile.</p>
+        
+            
+            <p>Ansible es una suite de herramientas de software que permite la automatización de infraestructura como código. Fue escrito originalmente por Michael DeHaan en 2012 y adquirido por Red Hat en 2015. Ansible es diseñado para configurar sistemas Unix-like y Microsoft Windows de manera agentless.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto importante en Docker, y se han introducido varias características para mejorar la seguridad de los contenedores, como el uso de `seccomp`, `AppArmor` y `SELinux` para restringir los permisos de los contenedores. Además, se ha introducido la característica de mitigación de vulnerabilidades, como la mitigación de CVE-2026-31431, que se puede realizar utilizando comandos como `docker run -it --rm --security-opt seccomp:unconfined mi-imagen`.</p>
+            <p>Una de las características clave de Ansible es el uso de playbooks, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de hosts. Los playbooks pueden incluir roles, que son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache utilizando el comando `ansible-galaxy install apache`.</p>
             
         
             
         
             
-        
-            
-            <p>Otra característica importante en Docker es la networking, que permite a los contenedores comunicarse entre sí y con el exterior. Se puede utilizar el comando `docker network create mi-red` para crear una red de Docker, y luego utilizar el comando `docker run -it --rm --net mi-red mi-imagen` para ejecutar un contenedor en esa red.</p>
+            <p>Ansible también incluye una característica llamada vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Esto se puede hacer utilizando el comando `ansible-vault encrypt` para cifrar los archivos de configuración. Además, Ansible incluye una característica llamada colecciones, que son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks.</p>
             
         
             
         
             
-        
-            
-            <p>Docker Content Trust es otra característica importante que ha sido mejorada recientemente. Se ha anunciado el retiro de Docker Content Trust y la migración a alternativas modernas. Se puede utilizar el comando `docker trust inspect mi-imagen` para verificar la integridad de una imagen de Docker.</p>
+            <p>Para gestionar los hosts y los grupos de hosts, Ansible utiliza un archivo de inventario, que puede ser un archivo INI o YAML. Por ejemplo, se puede crear un archivo de inventario con el siguiente contenido:</p>
             
         
             
+            <p>```ini</p>
+            
+        
+            
+            <p>[webservers]</p>
+            
+        
+            
+            <p>server1 ansible_host=192.168.1.100</p>
+            
+        
+            
+            <p>server2 ansible_host=192.168.1.101</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Este archivo define un grupo de hosts llamado `webservers` con dos hosts: `server1` y `server2`.</p>
+            
         
             
         
             
-            <p>En resumen, Docker es una plataforma de contenerización que ofrece varias características y mejoras para crear, probar y desplegar aplicaciones de manera rápida y segura. Se han introducido varias características nuevas, como los multi-stage builds, la seguridad y la networking, que permiten a los desarrolladores crear aplicaciones más eficientes y seguras.</p>
+            <p>Finalmente, Ansible puede integrarse con herramientas como AWX/Tower, que proporcionan una interfaz web para gestionar y ejecutar playbooks. Esto permite a los administradores de sistemas y DevOps engineers gestionar y automatizar sus infraestructuras de manera más eficiente.</p>
             
         
             
         
             
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades para gestionar y configurar sistemas de manera eficiente.</p>
+            
         
             
-            <p>Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas al final de este artículo.</p>
+        
             
         
     </div>
@@ -115,17 +135,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
+                <a href="https://en.wikipedia.org/wiki/Ansible_(software)" target="_blank">Ansible (software) - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://www.docker.com/blog/docker-content-trust-retirement-and-migration-guidance/" target="_blank">Docker Content Trust: Retirement and Migration Guidance</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/index.html" target="_blank">Ansible Documentation — Ansible Community Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://www.docker.com/blog/mitigating-cve-2026-31431-copy-fail-in-docker-engine/" target="_blank">Mitigating CVE-2026-31431 ("Copy Fail") in Docker Engine</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html" target="_blank">Introduction to Ansible — Ansible Community Documentation</a>
                 
             </li>
             
@@ -136,12 +156,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-20_1035.html">&larr; 2026-06-20 1035</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-24_1055.html">&larr; 2026-06-24 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html">2026-06-28 1031 &rarr;</a>
             
         </div>
     </div>

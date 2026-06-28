@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras en PostgreSQL 19 - PostgreSQL</title>
+    <title>Mejoras en PostgreSQL - PostgreSQL</title>
     <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
@@ -57,44 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Mejoras en PostgreSQL 19</h1>
-    <div class="meta">2026-06-24 1055 · PostgreSQL</div>
+    <h1>Mejoras en PostgreSQL</h1>
+    <div class="meta">2026-06-28 1031 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>La versión Beta 1 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. En esta versión, se han incluido varias mejoras en el rendimiento, como la optimización de las consultas y la reducción de la latencia en la replicación.</p>
+        
+            
+            <p>PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que sigue evolucionando con el tiempo. En las versiones 13-18, se han realizado mejoras significativas en los índices, lo que permite una mayor eficiencia en las consultas. Por ejemplo, se puede utilizar el comando `CREATE INDEX` para crear un índice en una tabla.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo estas mejoras, es importante configurar adecuadamente el servidor PostgreSQL. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para mejorar el rendimiento de las consultas: `ALTER SYSTEM SET shared_buffers TO '512MB';`.</p>
+            <p>La replicación es otro aspecto importante en PostgreSQL, ya que permite mantener una copia exacta de la base de datos en un servidor secundario. Esto se puede lograr utilizando el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar la replicación utilizando el archivo `postgresql.conf`. También se pueden utilizar extensiones como `pg_stat_statements` para monitorear el rendimiento de la base de datos.</p>
             
         
             
         
             
-            <p>Otra característica destacada de PostgreSQL 19 es la inclusión de nuevas extensiones, como `pg_infer`, que permite exponer los internos de la base de datos. Para instalar esta extensión, se puede utilizar el comando `CREATE EXTENSION pg_infer;`.</p>
+            <p>Para mejorar el rendimiento, es importante utilizar las mejores prácticas, como particionar tablas grandes utilizando el comando `CREATE TABLE` con la cláusula `PARTITION BY`. También se puede utilizar el comando `VACUUM` para liberar espacio en disco y mejorar la eficiencia de las consultas. Además, se pueden utilizar herramientas como `pg_stat` para monitorear el rendimiento de la base de datos y identificar posibles problemas.</p>
             
         
             
         
             
-            <p>Además, es importante mencionar que la replicación en PostgreSQL 19 ha sido mejorada, lo que permite una mayor disponibilidad y escalabilidad de la base de datos. Se puede configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de la base de datos: `pg_basebackup -h localhost -D /var/lib/pgsql/data`.</p>
+            <p>En cuanto a la seguridad, PostgreSQL ofrece características como la Seguridad de Nivel de Fila (Row Level Security, RLS), que permite controlar el acceso a los datos en función de las políticas definidas. Se puede habilitar la RLS utilizando el comando `ALTER TABLE` con la cláusula `ENABLE ROW LEVEL SECURITY`. Luego, se pueden definir políticas de seguridad utilizando el comando `CREATE POLICY`.</p>
             
         
             
         
             
-            <p>Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta `pg_stat`, que proporciona información detallada sobre el uso de los recursos y el rendimiento de las consultas. Por ejemplo, se puede utilizar el comando `pg_stat_activity` para ver las consultas actuales: `SELECT * FROM pg_stat_activity;`.</p>
+            <p>En resumen, PostgreSQL es un sistema de gestión de bases de datos relacional potente y flexible que ofrece muchas características y herramientas para mejorar el rendimiento, la seguridad y la eficiencia. Al utilizar las mejores prácticas y las características adecuadas, se puede crear una base de datos segura y eficiente que satisfaga las necesidades de la aplicación.</p>
             
         
             
         
             
-            <p>En resumen, PostgreSQL 19 ofrece importantes mejoras en el rendimiento y la escalabilidad, lo que la convierte en una excelente opción para proyectos que requieren una base de datos robusta y segura.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y ofrece muchos recursos y herramientas para ayudar a los desarrolladores y administradores de bases de datos a mejorar su conocimiento y habilidades. Se pueden encontrar muchos tutoriales, documentación y ejemplos en línea para ayudar a aprender y mejorar la utilización de PostgreSQL.</p>
+            
+        
             
         
     </div>
@@ -105,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://www.postgresql.org/about/news/postgresql-19-beta-1-released-3313/" target="_blank">PostgreSQL 19 Beta 1 Released!</a>
+                <a href="https://www.facebook.com/fossasia/posts/unlock-the-latest-postgresql-indexing-advancements-at-fossasia-summit-2026-as-ro/1629034562559057/" target="_blank">Unlock the latest PostgreSQL indexing advancements</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/about/newsarchive/" target="_blank">News Archive - PostgreSQL</a>
+                <a href="https://www.linkedin.com/posts/sujan-tamang-25b640198_postgresql-aws-rds-activity-7471490301577035777-MfiW" target="_blank">PostgreSQL IOPS Limits Caused by Sync Process</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.cloudflare.com/tag/postgres/" target="_blank">Postgres - The Cloudflare Blog</a>
+                <a href="https://medium.com/backend-engineering-blog/what-is-postgresql-why-backend-devs-need-it-09caddb60914" target="_blank">What is PostgreSQL & Why Backend Devs Need It</a>
                 
             </li>
             
@@ -126,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-16_1258.html">&larr; 2026-06-16 1258</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-24_1055.html">&larr; 2026-06-24 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-28_1031.html">2026-06-28 1031 &rarr;</a>
             
         </div>
     </div>

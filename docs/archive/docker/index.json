@@ -1,4 +1,24 @@
 {
+  "2026-06-28_1031": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Novedades",
+    "summary": "Docker sigue evolucionando con mejoras en seguridad y rendimiento. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta tecnología.",
+    "content": "\nDocker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite la creación y despliegue de aplicaciones en contenedores ligeros y portables. Recientemente, se han anunciado varias mejoras y novedades en la plataforma, como la retirada de Docker Content Trust (DCT) y la introducción de Docker Hardened Images (DHI).\n\nUna de las mejoras más significativas es la introducción de Docker Hardened Images, que proporciona una capa adicional de seguridad para los contenedores. Esto se logra mediante la implementación de medidas de seguridad como la autenticación y autorización de acceso a los contenedores. Para aprovechar esta función, se puede utilizar el comando `docker build` con la opción `--security-opt` para habilitar la autenticación y autorización.\n\nOtra novedad importante es la retirada de Docker Content Trust (DCT), que se utilizaba para garantizar la autenticidad y integridad de las imágenes de Docker. En su lugar, se recomienda utilizar la función de firma de imágenes de Docker, que se puede habilitar utilizando el comando `docker trust` con la opción `--enable`. Además, se puede utilizar la herramienta `notary` para gestionar las claves de firma y verificar la autenticidad de las imágenes.\n\nEn cuanto a la seguridad, es fundamental seguir las best practices recomendadas por Docker, como utilizar contenedores con permisos mínimos y limitar el acceso a los recursos del sistema. También es importante utilizar herramientas de seguridad como `docker exec` con la opción `--privileged` para ejecutar comandos dentro de un contenedor con permisos elevados.\n\nPara mejorar el rendimiento y la eficiencia, se pueden utilizar herramientas como Docker Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. También se puede utilizar la función de caching de Docker para reducir el tiempo de construcción de las imágenes y mejorar la velocidad de despliegue.\n\nEn resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Es fundamental seguir las best practices recomendadas y aprovechar las novedades y herramientas disponibles para aprovechar al máximo esta tecnología.\n\n",
+    "sources": [
+      {
+        "title": "Docker Hardened Images release notes",
+        "url": "https://docs.docker.com/dhi/release-notes/platform/"
+      },
+      {
+        "title": "Docker Content Trust: Retirement and Migration Guidance",
+        "url": "https://www.docker.com/blog/docker-content-trust-retirement-and-migration-guidance/"
+      },
+      {
+        "title": "Release Notes | 2.43 STS - Portainer Documentation",
+        "url": "https://docs.portainer.io/sts/release-notes"
+      }
+    ]
+  },
   "2026-06-24_1055": {
     "slug": "docker",
     "title": "Docker: Mejoras y Best Practices",

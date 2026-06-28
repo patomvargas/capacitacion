@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-27T10:14:32.710487+00:00</updated>
+  <updated>2026-06-28T10:33:14.252822+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -385,5 +385,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-24_1055.html"/>
     <summary>En este artículo, se presentan las últimas mejoras y best practices en Docker, incluyendo multi-stage builds, compose, networking, security y BuildKit. Se cubren también las novedades en Docker Content Trust y mitigación de vulnerabilidades.</summary>
     <published>2026-06-24T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html</id>
+    <title>Docker: Mejoras y Novedades</title>
+    <updated>2026-06-28T10:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite la creación y despliegue de aplicaciones en contenedores ligeros y portables. Recientemente, se han anunciado varias mejoras y novedades en la plataforma, como la retirada de Docker Content Trust (DCT) y la introducción de Docker Hardened Images (DHI).&lt;/p&gt;
+&lt;p&gt;Una de las mejoras más significativas es la introducción de Docker Hardened Images, que proporciona una capa adicional de seguridad para los contenedores. Esto se logra mediante la implementación de medidas de seguridad como la autenticación y autorización de acceso a los contenedores. Para aprovechar esta función, se puede utilizar el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--security-opt&lt;/code&gt; para habilitar la autenticación y autorización.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la retirada de Docker Content Trust (DCT), que se utilizaba para garantizar la autenticidad y integridad de las imágenes de Docker. En su lugar, se recomienda utilizar la función de firma de imágenes de Docker, que se puede habilitar utilizando el comando &lt;code&gt;docker trust&lt;/code&gt; con la opción &lt;code&gt;--enable&lt;/code&gt;. Además, se puede utilizar la herramienta &lt;code&gt;notary&lt;/code&gt; para gestionar las claves de firma y verificar la autenticidad de las imágenes.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es fundamental seguir las best practices recomendadas por Docker, como utilizar contenedores con permisos mínimos y limitar el acceso a los recursos del sistema. También es importante utilizar herramientas de seguridad como &lt;code&gt;docker exec&lt;/code&gt; con la opción &lt;code&gt;--privileged&lt;/code&gt; para ejecutar comandos dentro de un contenedor con permisos elevados.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento y la eficiencia, se pueden utilizar herramientas como Docker Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. También se puede utilizar la función de caching de Docker para reducir el tiempo de construcción de las imágenes y mejorar la velocidad de despliegue.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Es fundamental seguir las best practices recomendadas y aprovechar las novedades y herramientas disponibles para aprovechar al máximo esta tecnología.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/dhi/release-notes/platform/"&gt;Docker Hardened Images release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/docker-content-trust-retirement-and-migration-guidance/"&gt;Docker Content Trust: Retirement and Migration Guidance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.portainer.io/sts/release-notes"&gt;Release Notes | 2.43 STS - Portainer Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html"/>
+    <summary>Docker sigue evolucionando con mejoras en seguridad y rendimiento. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta tecnología.</summary>
+    <published>2026-06-28T10:31:00+00:00</published>
   </entry>
 </feed>

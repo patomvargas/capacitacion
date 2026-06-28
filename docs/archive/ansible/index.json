@@ -1,4 +1,24 @@
 {
+  "2026-06-28_1031": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite configurar y gestionar sistemas de manera eficiente. En este artículo, se presentan las características y funcionalidades clave de Ansible, incluyendo playbooks, roles, colecciones y vault.",
+    "content": "\nAnsible es una suite de herramientas de software que permite la automatización de infraestructura como código. Fue escrito originalmente por Michael DeHaan en 2012 y adquirido por Red Hat en 2015. Ansible es diseñado para configurar sistemas Unix-like y Microsoft Windows de manera agentless.\n\nUna de las características clave de Ansible es el uso de playbooks, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de hosts. Los playbooks pueden incluir roles, que son conjuntos predefinidos de tareas que se pueden reutilizar en diferentes playbooks. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache utilizando el comando `ansible-galaxy install apache`. \n\nAnsible también incluye una característica llamada vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Esto se puede hacer utilizando el comando `ansible-vault encrypt` para cifrar los archivos de configuración. Además, Ansible incluye una característica llamada colecciones, que son conjuntos de módulos y roles que se pueden instalar y utilizar en los playbooks. \n\nPara gestionar los hosts y los grupos de hosts, Ansible utiliza un archivo de inventario, que puede ser un archivo INI o YAML. Por ejemplo, se puede crear un archivo de inventario con el siguiente contenido: \n```ini\n[webservers]\nserver1 ansible_host=192.168.1.100\nserver2 ansible_host=192.168.1.101\n```\nEste archivo define un grupo de hosts llamado `webservers` con dos hosts: `server1` y `server2`. \n\nFinalmente, Ansible puede integrarse con herramientas como AWX/Tower, que proporcionan una interfaz web para gestionar y ejecutar playbooks. Esto permite a los administradores de sistemas y DevOps engineers gestionar y automatizar sus infraestructuras de manera más eficiente.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran variedad de características y funcionalidades para gestionar y configurar sistemas de manera eficiente.\n\n",
+    "sources": [
+      {
+        "title": "Ansible (software) - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+      },
+      {
+        "title": "Ansible Documentation — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/index.html"
+      },
+      {
+        "title": "Introduction to Ansible — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/getting_started/introduction.html"
+      }
+    ]
+  },
   "2026-06-24_1055": {
     "slug": "ansible",
     "title": "Ansible: Nuevas Características y Mejoras",

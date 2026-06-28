@@ -1,4 +1,28 @@
 {
+  "2026-06-28_1031": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "Git es un sistema de control de versiones distribuido que permite a los desarrolladores trabajar de manera colaborativa en proyectos de software. Una de las mejores prácticas para trabajar con Git es utilizar `git flow` para gestionar los flujos de trabajo. Esto implica utilizar comandos como `git flow init` para inicializar el flujo de trabajo y `git flow feature start` para crear una nueva característica.\n\nPara garantizar la calidad del código, se pueden utilizar hooks en Git. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook para verificar que el código cumpla con ciertos estándares de codificación antes de permitir que se haga un commit. Esto se puede hacer con el comando `git hook pre-commit`.\n\nOtra herramienta útil en Git es `git rebase`. Esta herramienta permite reorganizar los commits para que tengan un historial de commits más limpio y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y reorganizarlos. También se puede utilizar `git bisect` para encontrar el commit que introdujo un error en el código.\n\nAdemás, Git proporciona la función de `git worktree` que permite crear múltiples árboles de trabajo a partir de un solo repositorio. Esto es útil para trabajar en diferentes características o versiones del código de manera simultánea. Se puede crear un nuevo árbol de trabajo con el comando `git worktree add`.\n\nEn resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para gestionar el código de manera efectiva. Al utilizar estas mejores prácticas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos de software.\n\nPara obtener más información sobre Git y sus funcionalidades, se pueden consultar las fuentes oficiales de Git y otros recursos en línea.",
+    "sources": [
+      {
+        "title": "Git - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Git"
+      },
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/"
+      },
+      {
+        "title": "Git - Install",
+        "url": "https://git-scm.com/install/"
+      },
+      {
+        "title": "Git · GitHub",
+        "url": "https://github.com/git-guides"
+      }
+    ]
+  },
   "2026-06-24_1055": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

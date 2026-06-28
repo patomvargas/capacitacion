@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker: Mejoras y Best Practices - Docker</title>
+    <title>Docker: Mejoras y Novedades - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,54 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-06-24 1055 · Docker</div>
+    <h1>Docker: Mejoras y Novedades</h1>
+    <div class="meta">2026-06-28 1031 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>Docker es una plataforma de contenerización que permite a los desarrolladores crear, probar y desplegar aplicaciones de manera rápida y segura. En los últimos tiempos, Docker ha introducido varias mejoras y características nuevas, como los multi-stage builds, que permiten crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando `docker build -t mi-imagen .` para crear una imagen de Docker a partir de un Dockerfile.</p>
+        
+            
+            <p>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite la creación y despliegue de aplicaciones en contenedores ligeros y portables. Recientemente, se han anunciado varias mejoras y novedades en la plataforma, como la retirada de Docker Content Trust (DCT) y la introducción de Docker Hardened Images (DHI).</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto importante en Docker, y se han introducido varias características para mejorar la seguridad de los contenedores, como el uso de `seccomp`, `AppArmor` y `SELinux` para restringir los permisos de los contenedores. Además, se ha introducido la característica de mitigación de vulnerabilidades, como la mitigación de CVE-2026-31431, que se puede realizar utilizando comandos como `docker run -it --rm --security-opt seccomp:unconfined mi-imagen`.</p>
+            <p>Una de las mejoras más significativas es la introducción de Docker Hardened Images, que proporciona una capa adicional de seguridad para los contenedores. Esto se logra mediante la implementación de medidas de seguridad como la autenticación y autorización de acceso a los contenedores. Para aprovechar esta función, se puede utilizar el comando `docker build` con la opción `--security-opt` para habilitar la autenticación y autorización.</p>
             
         
             
         
             
-        
-            
-            <p>Otra característica importante en Docker es la networking, que permite a los contenedores comunicarse entre sí y con el exterior. Se puede utilizar el comando `docker network create mi-red` para crear una red de Docker, y luego utilizar el comando `docker run -it --rm --net mi-red mi-imagen` para ejecutar un contenedor en esa red.</p>
+            <p>Otra novedad importante es la retirada de Docker Content Trust (DCT), que se utilizaba para garantizar la autenticidad y integridad de las imágenes de Docker. En su lugar, se recomienda utilizar la función de firma de imágenes de Docker, que se puede habilitar utilizando el comando `docker trust` con la opción `--enable`. Además, se puede utilizar la herramienta `notary` para gestionar las claves de firma y verificar la autenticidad de las imágenes.</p>
             
         
             
         
             
-        
-            
-            <p>Docker Content Trust es otra característica importante que ha sido mejorada recientemente. Se ha anunciado el retiro de Docker Content Trust y la migración a alternativas modernas. Se puede utilizar el comando `docker trust inspect mi-imagen` para verificar la integridad de una imagen de Docker.</p>
+            <p>En cuanto a la seguridad, es fundamental seguir las best practices recomendadas por Docker, como utilizar contenedores con permisos mínimos y limitar el acceso a los recursos del sistema. También es importante utilizar herramientas de seguridad como `docker exec` con la opción `--privileged` para ejecutar comandos dentro de un contenedor con permisos elevados.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Docker es una plataforma de contenerización que ofrece varias características y mejoras para crear, probar y desplegar aplicaciones de manera rápida y segura. Se han introducido varias características nuevas, como los multi-stage builds, la seguridad y la networking, que permiten a los desarrolladores crear aplicaciones más eficientes y seguras.</p>
+            <p>Para mejorar el rendimiento y la eficiencia, se pueden utilizar herramientas como Docker Compose, que permite definir y ejecutar múltiples contenedores de manera simultánea. También se puede utilizar la función de caching de Docker para reducir el tiempo de construcción de las imágenes y mejorar la velocidad de despliegue.</p>
             
         
             
         
             
+            <p>En resumen, Docker sigue evolucionando con mejoras en seguridad y rendimiento. Es fundamental seguir las best practices recomendadas y aprovechar las novedades y herramientas disponibles para aprovechar al máximo esta tecnología.</p>
+            
         
             
-            <p>Para más información, se puede consultar la documentación oficial de Docker y las fuentes citadas al final de este artículo.</p>
+        
             
         
     </div>
@@ -115,7 +111,7 @@
         <ul>
             
             <li>
-                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
+                <a href="https://docs.docker.com/dhi/release-notes/platform/" target="_blank">Docker Hardened Images release notes</a>
                 
             </li>
             
@@ -125,7 +121,7 @@
             </li>
             
             <li>
-                <a href="https://www.docker.com/blog/mitigating-cve-2026-31431-copy-fail-in-docker-engine/" target="_blank">Mitigating CVE-2026-31431 ("Copy Fail") in Docker Engine</a>
+                <a href="https://docs.portainer.io/sts/release-notes" target="_blank">Release Notes | 2.43 STS - Portainer Documentation</a>
                 
             </li>
             
@@ -136,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-20_1035.html">&larr; 2026-06-20 1035</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-24_1055.html">&larr; 2026-06-24 1055</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html">2026-06-28 1031 &rarr;</a>
             
         </div>
     </div>

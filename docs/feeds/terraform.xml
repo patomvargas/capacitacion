@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-27T10:14:32.714785+00:00</updated>
+  <updated>2026-06-28T10:33:14.259468+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -316,5 +316,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-20_1035.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas definir y gestionar su infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de estado, módulos y proveedores.</summary>
     <published>2026-06-20T10:35:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-28_1031.html</id>
+    <title>Terraform: Administración de Infraestructura como Código</title>
+    <updated>2026-06-28T10:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de administración de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de infraestructura de manera eficiente. Para empezar a trabajar con Terraform, es necesario instalar el comando &lt;code&gt;terraform&lt;/code&gt; en el sistema y configurar el proveedor de infraestructura deseado, como AWS o Azure, utilizando comandos como &lt;code&gt;terraform init&lt;/code&gt; y &lt;code&gt;terraform apply&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La administración de estado en Terraform es crucial para garantizar la consistencia y la integridad de la infraestructura. El comando &lt;code&gt;terraform state&lt;/code&gt; permite gestionar el estado de la infraestructura, incluyendo la creación, actualización y eliminación de recursos. Es importante utilizar el comando &lt;code&gt;terraform state pull&lt;/code&gt; para obtener el estado actual de la infraestructura y &lt;code&gt;terraform state push&lt;/code&gt; para actualizar el estado después de realizar cambios.&lt;/p&gt;
+&lt;p&gt;Los proveedores en Terraform son responsables de interactuar con los servicios de infraestructura subyacentes. Por ejemplo, el proveedor de AWS utiliza el comando &lt;code&gt;aws configure&lt;/code&gt; para configurar las credenciales de acceso a la cuenta de AWS. Los módulos en Terraform permiten reutilizar código y crear infraestructuras complejas de manera modular. Un ejemplo de un módulo de Terraform es el módulo de red de AWS, que puede ser utilizado para crear una red virtual y subredes en AWS.&lt;/p&gt;
+&lt;p&gt;La importación de recursos en Terraform es posible utilizando el comando &lt;code&gt;terraform import&lt;/code&gt;. Este comando permite importar recursos existentes en la infraestructura y gestionarlos con Terraform. Es importante tener en cuenta que la importación de recursos puede requerir la creación de un archivo de estado de Terraform, que se puede generar utilizando el comando &lt;code&gt;terraform state push&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades en Terraform, es importante mencionar que la versión más reciente de Terraform incluye mejoras en la administración de estado y la gestión de proveedores. Además, se han agregado nuevos proveedores y módulos para apoyar la creación de infraestructuras complejas.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Terraform es una excelente fuente de información para aprender sobre la herramienta y sus capacidades. La documentación incluye ejemplos de código, tutoriales y guías para ayudar a los usuarios a empezar a trabajar con Terraform de manera efectiva.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la administración de infraestructura como código que ofrece una amplia gama de capacidades y herramientas para gestionar y provisionar recursos de infraestructura de manera eficiente. Al seguir las mejores prácticas y utilizar los comandos y configuraciones adecuados, los equipos de DevOps y sysadmins pueden aprovechar al máximo las capacidades de Terraform y crear infraestructuras complejas y escalables.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Terraform y sus capacidades, se pueden consultar las fuentes oficiales de la herramienta, como la documentación oficial y el repositorio de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38660"&gt;Terraform Import bug #38660&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-provider-azurerm/blob/main/contributing/topics/reference-documentation-standards.md"&gt;Reference Documentation Standards&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://pkg.go.dev/github.com/hashicorp/go-tfe"&gt;Tfe package - github.com/hashicorp/go-tfe&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-28_1031.html"/>
+    <summary>Terraform es una herramienta de administración de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en la administración de estado, proveedores y módulos en Terraform.</summary>
+    <published>2026-06-28T10:31:00+00:00</published>
   </entry>
 </feed>

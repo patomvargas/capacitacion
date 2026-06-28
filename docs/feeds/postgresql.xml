@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-27T10:14:32.708060+00:00</updated>
+  <updated>2026-06-28T10:33:14.249245+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -457,5 +457,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-24_1055.html"/>
     <summary>PostgreSQL 19 Beta 1 ya está disponible, con mejoras en rendimiento y nuevas características. En este artículo, exploraremos algunas de las novedades más destacadas y cómo aprovecharlas en tus proyectos.</summary>
     <published>2026-06-24T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-28_1031.html</id>
+    <title>Mejoras en PostgreSQL</title>
+    <updated>2026-06-28T10:31:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacionales de código abierto que sigue evolucionando con el tiempo. En las versiones 13-18, se han realizado mejoras significativas en los índices, lo que permite una mayor eficiencia en las consultas. Por ejemplo, se puede utilizar el comando &lt;code&gt;CREATE INDEX&lt;/code&gt; para crear un índice en una tabla.&lt;/p&gt;
+&lt;p&gt;La replicación es otro aspecto importante en PostgreSQL, ya que permite mantener una copia exacta de la base de datos en un servidor secundario. Esto se puede lograr utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de la base de datos y luego configurar la replicación utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt;. También se pueden utilizar extensiones como &lt;code&gt;pg_stat_statements&lt;/code&gt; para monitorear el rendimiento de la base de datos.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento, es importante utilizar las mejores prácticas, como particionar tablas grandes utilizando el comando &lt;code&gt;CREATE TABLE&lt;/code&gt; con la cláusula &lt;code&gt;PARTITION BY&lt;/code&gt;. También se puede utilizar el comando &lt;code&gt;VACUUM&lt;/code&gt; para liberar espacio en disco y mejorar la eficiencia de las consultas. Además, se pueden utilizar herramientas como &lt;code&gt;pg_stat&lt;/code&gt; para monitorear el rendimiento de la base de datos y identificar posibles problemas.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, PostgreSQL ofrece características como la Seguridad de Nivel de Fila (Row Level Security, RLS), que permite controlar el acceso a los datos en función de las políticas definidas. Se puede habilitar la RLS utilizando el comando &lt;code&gt;ALTER TABLE&lt;/code&gt; con la cláusula &lt;code&gt;ENABLE ROW LEVEL SECURITY&lt;/code&gt;. Luego, se pueden definir políticas de seguridad utilizando el comando &lt;code&gt;CREATE POLICY&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, PostgreSQL es un sistema de gestión de bases de datos relacional potente y flexible que ofrece muchas características y herramientas para mejorar el rendimiento, la seguridad y la eficiencia. Al utilizar las mejores prácticas y las características adecuadas, se puede crear una base de datos segura y eficiente que satisfaga las necesidades de la aplicación.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y ofrece muchos recursos y herramientas para ayudar a los desarrolladores y administradores de bases de datos a mejorar su conocimiento y habilidades. Se pueden encontrar muchos tutoriales, documentación y ejemplos en línea para ayudar a aprender y mejorar la utilización de PostgreSQL.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.facebook.com/fossasia/posts/unlock-the-latest-postgresql-indexing-advancements-at-fossasia-summit-2026-as-ro/1629034562559057/"&gt;Unlock the latest PostgreSQL indexing advancements&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linkedin.com/posts/sujan-tamang-25b640198_postgresql-aws-rds-activity-7471490301577035777-MfiW"&gt;PostgreSQL IOPS Limits Caused by Sync Process&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/backend-engineering-blog/what-is-postgresql-why-backend-devs-need-it-09caddb60914"&gt;What is PostgreSQL &amp; Why Backend Devs Need It&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-28_1031.html"/>
+    <summary>PostgreSQL sigue evolucionando con mejoras en índices, replicación y extensiones. Aprende a optimizar el rendimiento y a utilizar las mejores prácticas.</summary>
+    <published>2026-06-28T10:31:00+00:00</published>
   </entry>
 </feed>
