@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
+    <title>Novedades en Kubernetes 1.34 y 1.35 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,44 +57,62 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-06-25 1046 · Kubernetes</div>
+    <h1>Novedades en Kubernetes 1.34 y 1.35</h1>
+    <div class="meta">2026-06-29 1238 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>La versión 1.32 de Kubernetes incluye cambios importantes en la gestión de sistemas de archivos y montajes en Windows, gracias a la actualización a golang 1.23. Sin embargo, el paquete `k8s.io/mount-utils` no ha sido validado con estos cambios, lo que puede afectar a los desarrolladores de controladores CSI y `csi-proxy`.</p>
+            <p>Kubernetes es un sistema de orquestación de contenedores que ha ganado popularidad en los últimos años debido a su escalabilidad y flexibilidad. Recientemente, se han lanzado las versiones 1.34 y 1.35, que incluyen varias mejoras y nuevas características. Una de las novedades más destacadas es la mejora en la gestión de volúmenes, que permite a los administradores de clusters gestionar de manera más eficiente los recursos de almacenamiento.</p>
             
         
             
         
             
-            <p>Para solucionar este problema, se recomienda utilizar la versión más reciente del paquete `k8s.io/mount-utils` y seguir las instrucciones de instalación y configuración proporcionadas en la documentación oficial de Kubernetes. Por ejemplo, para instalar el paquete, se puede utilizar el comando `go get k8s.io/mount-utils`.</p>
+            <p>La versión 1.34 incluye una nueva característica llamada `CSI` (Container Storage Interface), que permite a los proveedores de almacenamiento crear drivers personalizados para interactuar con el sistema de orquestación. Esto permite una mayor flexibilidad y escalabilidad en la gestión de volúmenes. Por ejemplo, se puede utilizar el comando `kubectl` para crear un volumen persistente con el siguiente comando: `kubectl create -f persistent-volume.yaml`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Kubernetes sigue trabajando en la corrección de vulnerabilidades y la mejora de la protección de los clusters. Recientemente, se han publicado actualizaciones para corregir tres vulnerabilidades importantes, y se recomienda a los administradores de clusters que apliquen estas actualizaciones lo antes posible.</p>
+            <p>Otra novedad importante es la mejora en la autenticación de usuarios, que incluye la implementación de `OIDC` (OpenID Connect) para la autenticación de usuarios. Esto permite a los administradores de clusters configurar la autenticación de usuarios de manera más segura y escalable. Se puede configurar la autenticación de usuarios con el siguiente comando: `kubectl create -f oidc-config.yaml`.</p>
             
         
             
         
             
-            <p>Además, Kubernetes sigue mejorando su soporte para GPUs y otros dispositivos de aceleración, lo que permite a los desarrolladores crear aplicaciones más eficientes y escalables. La convergencia de la adopción de proveedores, el programa de conformidad de AI de CNCF y otras iniciativas están impulsando el uso de Kubernetes en entornos de inteligencia artificial y aprendizaje automático.</p>
+            <p>Además, la versión 1.35 incluye mejoras en la gestión de redes, que permiten a los administradores de clusters gestionar de manera más eficiente los recursos de red. Se puede utilizar el comando `kubectl` para crear un servicio de red con el siguiente comando: `kubectl create -f network-service.yaml`.</p>
             
         
             
         
             
-            <p>Para más información sobre las novedades y mejoras en Kubernetes, se recomienda consultar la documentación oficial y las fuentes de noticias y blogs especializados en DevOps y cloud computing.</p>
+            <p>En resumen, las versiones 1.34 y 1.35 de Kubernetes incluyen varias mejoras y nuevas características que permiten a los administradores de clusters gestionar de manera más eficiente los recursos de almacenamiento, autenticación de usuarios y redes.</p>
             
         
             
         
             
-            <p>Finalmente, es importante destacar la importancia de la comunidad de Kubernetes y la colaboración entre desarrolladores y administradores de clusters. La participación en proyectos y grupos de trabajo, como el grupo de trabajo de gestión de dispositivos, puede ser muy beneficiosa para estar al tanto de las últimas novedades y mejores prácticas en el uso de Kubernetes.</p>
+            <p>Para obtener más información sobre las nuevas características y mejoras de Kubernetes, se puede consultar la documentación oficial en la página web de Kubernetes.</p>
+            
+        
+            
+        
+            
+            <p>Se puede utilizar el siguiente comando para verificar la versión de Kubernetes: `kubectl version`.</p>
+            
+        
+            
+        
+            
+            <p>Se puede utilizar el siguiente comando para obtener información sobre los nodos del cluster: `kubectl get nodes`.</p>
+            
+        
+            
+        
+            
+        
             
         
     </div>
@@ -105,17 +123,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md" target="_blank">Release Notes Draft</a>
+                <a href="https://kubernetes.io/releases/1.34/" target="_blank">Kubernetes 1.34</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/05/26/reconciling-unfixed-kubernetes-cves/" target="_blank">Reconciling the Past: Correcting Records for Unfixed Kubernetes</a>
+                <a href="https://kubernetes.io/releases/1.35/" target="_blank">Kubernetes 1.35</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@christian.dussol/from-counting-gpus-to-reasoning-about-them-how-kubernetes-dra-powers-ai-native-infrastructure-369cc75a667e" target="_blank">From counting GPUs to reasoning about them: How Kubernetes DRA</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md" target="_blank">release-notes-draft.md</a>
                 
             </li>
             
@@ -126,12 +144,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-21_1119.html">&larr; 2026-06-21 1119</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-25_1046.html">&larr; 2026-06-25 1046</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-29_1238.html">2026-06-29 1238 &rarr;</a>
             
         </div>
     </div>

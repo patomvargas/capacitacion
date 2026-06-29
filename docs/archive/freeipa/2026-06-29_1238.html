@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FreeIPA: Gestión de Identidad y Acceso - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+    </div>
+
+    <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
+    <div class="meta">2026-06-29 1238 · FreeIPA</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos Unix. Permite la autenticación de usuarios y la autorización de acceso a recursos mediante el protocolo Kerberos. Para configurar un servidor FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.</p>
+            
+        
+            
+        
+            
+            <p>Una vez instalado el servidor FreeIPA, se puede configurar la autenticación Kerberos mediante el comando `kinit` y la autorización de acceso mediante el comando `ipa permission-add`. También se pueden configurar relaciones de confianza con otros dominios mediante el comando `ipa trust-add`. Es importante mencionar que FreeIPA también soporta el protocolo LDAP, lo que permite la integración con otros sistemas de gestión de identidad.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, FreeIPA incluye características como la autenticación multifactor y la autorización basada en roles. También se pueden configurar reglas de acceso HBAC (Host-Based Access Control) para restringir el acceso a recursos específicos. Para configurar reglas HBAC, se puede utilizar el comando `ipa hbacrule-add` y especificar los parámetros de acceso deseados.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que FreeIPA también incluye características de auditoría y monitoreo, lo que permite a los administradores detectar y responder a incidentes de seguridad. Para obtener más información sobre la configuración y el uso de FreeIPA, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos Unix, que ofrece una amplia gama de características y funcionalidades para la autenticación, autorización y auditoría de acceso.</p>
+            
+        
+            
+        
+            
+            <p>Para pentesting y pruebas de seguridad en FreeIPA, se pueden utilizar herramientas como `nmap` y `metasploit` para detectar vulnerabilidades y explotar debilidades en la configuración del servidor. También se pueden utilizar herramientas de pentesting específicas para FreeIPA, como las descritas en la wiki de HackTricks.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la actualización y el mantenimiento regular del servidor FreeIPA es crucial para garantizar la seguridad y la estabilidad del sistema. Se deben aplicar actualizaciones de seguridad y parches de forma regular, y se deben realizar copias de seguridad del sistema para evitar pérdidas de datos en caso de un incidente.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html" target="_blank">FreeIPA Pentesting - HackTricks</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345" target="_blank">Fedora 44 FreeIPA Important Samba Remote Code Exec Fix</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-25_1046.html">&larr; 2026-06-25 1046</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

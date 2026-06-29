@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-28T10:33:14.214136+00:00</updated>
+  <updated>2026-06-29T12:39:30.609326+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -517,5 +517,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-25_1046.html"/>
     <summary>FreeIPA es un sistema de administración de identidades de código abierto que proporciona autenticación, autorización y gestión de cuentas centralizadas. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
     <published>2026-06-25T10:46:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-29_1238.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-06-29T12:38:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos Unix. Permite la autenticación de usuarios y la autorización de acceso a recursos mediante el protocolo Kerberos. Para configurar un servidor FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; y seguir las instrucciones del asistente de instalación.&lt;/p&gt;
+&lt;p&gt;Una vez instalado el servidor FreeIPA, se puede configurar la autenticación Kerberos mediante el comando &lt;code&gt;kinit&lt;/code&gt; y la autorización de acceso mediante el comando &lt;code&gt;ipa permission-add&lt;/code&gt;. También se pueden configurar relaciones de confianza con otros dominios mediante el comando &lt;code&gt;ipa trust-add&lt;/code&gt;. Es importante mencionar que FreeIPA también soporta el protocolo LDAP, lo que permite la integración con otros sistemas de gestión de identidad.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA incluye características como la autenticación multifactor y la autorización basada en roles. También se pueden configurar reglas de acceso HBAC (Host-Based Access Control) para restringir el acceso a recursos específicos. Para configurar reglas HBAC, se puede utilizar el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; y especificar los parámetros de acceso deseados.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que FreeIPA también incluye características de auditoría y monitoreo, lo que permite a los administradores detectar y responder a incidentes de seguridad. Para obtener más información sobre la configuración y el uso de FreeIPA, se pueden consultar las fuentes oficiales y la documentación en línea.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso en entornos Unix, que ofrece una amplia gama de características y funcionalidades para la autenticación, autorización y auditoría de acceso.&lt;/p&gt;
+&lt;p&gt;Para pentesting y pruebas de seguridad en FreeIPA, se pueden utilizar herramientas como &lt;code&gt;nmap&lt;/code&gt; y &lt;code&gt;metasploit&lt;/code&gt; para detectar vulnerabilidades y explotar debilidades en la configuración del servidor. También se pueden utilizar herramientas de pentesting específicas para FreeIPA, como las descritas en la wiki de HackTricks.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la actualización y el mantenimiento regular del servidor FreeIPA es crucial para garantizar la seguridad y la estabilidad del sistema. Se deben aplicar actualizaciones de seguridad y parches de forma regular, y se deben realizar copias de seguridad del sistema para evitar pérdidas de datos en caso de un incidente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"&gt;FreeIPA Pentesting - HackTricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345"&gt;Fedora 44 FreeIPA Important Samba Remote Code Exec Fix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-29_1238.html"/>
+    <summary>FreeIPA es una solución de gestión de identidad y acceso para entornos Unix. Combina un directorio LDAP con autenticación Kerberos y permite la configuración de relaciones de confianza y reglas de acceso.</summary>
+    <published>2026-06-29T12:38:00+00:00</published>
   </entry>
 </feed>

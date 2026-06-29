@@ -1,4 +1,24 @@
 {
+  "2026-06-29_1238": {
+    "slug": "openvpn",
+    "title": "Seguridad en OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se discuten las últimas novedades y mejores prácticas para asegurar la configuración de OpenVPN.",
+    "content": "\nOpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para asegurar la configuración de OpenVPN, es importante mantener actualizados los certificados y claves. Se pueden generar certificados y claves utilizando herramientas como OpenSSL, con comandos como `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365`.\n\nUna de las últimas novedades en OpenVPN es la corrección de vulnerabilidades de seguridad, como la CVE-2026-11604, que se refiere a una inyección de comandos en el protocolo de control de OpenVPN. Para protegerse contra esta vulnerabilidad, es importante actualizar la versión de OpenVPN y configurar la autenticación de dos factores.\n\nLa configuración de OpenVPN también puede incluir la implementación de un servidor de acceso, como el Access Server de OpenVPN, que permite a los administradores gestionar las conexiones de los usuarios de manera centralizada. Para configurar el Access Server, se puede utilizar el comando `sudo apt-get install openvpn-as` en sistemas Ubuntu.\n\nAdemás, es importante mencionar la importancia del hardening en la configuración de OpenVPN, que incluye la configuración de firewalls y la limitación del acceso a los recursos de la red. Se puede utilizar el comando `sudo ufw allow openvpn` para permitir el tráfico OpenVPN en el firewall.\n\nEn cuanto a la conexión site-to-site, OpenVPN permite establecer conexiones seguras entre dos redes, utilizando la configuración de tunelización. Se puede utilizar el comando `sudo openvpn --config /etc/openvpn/server.conf` para establecer la conexión.\n\nEn resumen, la seguridad en OpenVPN es fundamental para proteger las conexiones entre redes. Es importante mantener actualizados los certificados y claves, configurar la autenticación de dos factores y implementar un servidor de acceso para gestionar las conexiones de los usuarios.\n\n",
+    "sources": [
+      {
+        "title": "CVE-2026-11604",
+        "url": "https://community.openvpn.net/Security+Announcements/CVE-2026-11604"
+      },
+      {
+        "title": "OpenVPN GitHub",
+        "url": "https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560"
+      },
+      {
+        "title": "CVE-2026-12996",
+        "url": "https://community.openvpn.net/Security+Announcements/CVE-2026-12996"
+      }
+    ]
+  },
   "2026-06-25_1046": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

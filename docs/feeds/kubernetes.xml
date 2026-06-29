@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-28T10:33:14.221524+00:00</updated>
+  <updated>2026-06-29T12:39:30.619219+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -562,5 +562,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-25_1046.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en seguridad, almacenamiento y redes. En este artículo, se presentan algunas de las novedades más destacadas en la versión 1.32.</summary>
     <published>2026-06-25T10:46:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-29_1238.html</id>
+    <title>Novedades en Kubernetes 1.34 y 1.35</title>
+    <updated>2026-06-29T12:38:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que ha ganado popularidad en los últimos años debido a su escalabilidad y flexibilidad. Recientemente, se han lanzado las versiones 1.34 y 1.35, que incluyen varias mejoras y nuevas características. Una de las novedades más destacadas es la mejora en la gestión de volúmenes, que permite a los administradores de clusters gestionar de manera más eficiente los recursos de almacenamiento.&lt;/p&gt;
+&lt;p&gt;La versión 1.34 incluye una nueva característica llamada &lt;code&gt;CSI&lt;/code&gt; (Container Storage Interface), que permite a los proveedores de almacenamiento crear drivers personalizados para interactuar con el sistema de orquestación. Esto permite una mayor flexibilidad y escalabilidad en la gestión de volúmenes. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear un volumen persistente con el siguiente comando: &lt;code&gt;kubectl create -f persistent-volume.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la mejora en la autenticación de usuarios, que incluye la implementación de &lt;code&gt;OIDC&lt;/code&gt; (OpenID Connect) para la autenticación de usuarios. Esto permite a los administradores de clusters configurar la autenticación de usuarios de manera más segura y escalable. Se puede configurar la autenticación de usuarios con el siguiente comando: &lt;code&gt;kubectl create -f oidc-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, la versión 1.35 incluye mejoras en la gestión de redes, que permiten a los administradores de clusters gestionar de manera más eficiente los recursos de red. Se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear un servicio de red con el siguiente comando: &lt;code&gt;kubectl create -f network-service.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, las versiones 1.34 y 1.35 de Kubernetes incluyen varias mejoras y nuevas características que permiten a los administradores de clusters gestionar de manera más eficiente los recursos de almacenamiento, autenticación de usuarios y redes.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las nuevas características y mejoras de Kubernetes, se puede consultar la documentación oficial en la página web de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Se puede utilizar el siguiente comando para verificar la versión de Kubernetes: &lt;code&gt;kubectl version&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Se puede utilizar el siguiente comando para obtener información sobre los nodos del cluster: &lt;code&gt;kubectl get nodes&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/releases/1.34/"&gt;Kubernetes 1.34&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/releases/1.35/"&gt;Kubernetes 1.35&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md"&gt;release-notes-draft.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-29_1238.html"/>
+    <summary>Kubernetes ha lanzado nuevas versiones con mejoras en networking, storage y seguridad. Estas versiones incluyen cambios en la gestión de volúmenes y la autenticación de usuarios.</summary>
+    <published>2026-06-29T12:38:00+00:00</published>
   </entry>
 </feed>

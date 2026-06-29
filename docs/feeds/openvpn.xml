@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-28T10:33:14.218750+00:00</updated>
+  <updated>2026-06-29T12:39:30.615085+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -495,5 +495,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-25_1046.html"/>
     <summary>OpenVPN es una solución de VPN de código abierto que proporciona tunneling y seguridad para conexiones de red. En este artículo, se exploran las características y configuraciones de OpenVPN.</summary>
     <published>2026-06-25T10:46:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-29_1238.html</id>
+    <title>Seguridad en OpenVPN</title>
+    <updated>2026-06-29T12:38:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para asegurar la configuración de OpenVPN, es importante mantener actualizados los certificados y claves. Se pueden generar certificados y claves utilizando herramientas como OpenSSL, con comandos como &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las últimas novedades en OpenVPN es la corrección de vulnerabilidades de seguridad, como la CVE-2026-11604, que se refiere a una inyección de comandos en el protocolo de control de OpenVPN. Para protegerse contra esta vulnerabilidad, es importante actualizar la versión de OpenVPN y configurar la autenticación de dos factores.&lt;/p&gt;
+&lt;p&gt;La configuración de OpenVPN también puede incluir la implementación de un servidor de acceso, como el Access Server de OpenVPN, que permite a los administradores gestionar las conexiones de los usuarios de manera centralizada. Para configurar el Access Server, se puede utilizar el comando &lt;code&gt;sudo apt-get install openvpn-as&lt;/code&gt; en sistemas Ubuntu.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar la importancia del hardening en la configuración de OpenVPN, que incluye la configuración de firewalls y la limitación del acceso a los recursos de la red. Se puede utilizar el comando &lt;code&gt;sudo ufw allow openvpn&lt;/code&gt; para permitir el tráfico OpenVPN en el firewall.&lt;/p&gt;
+&lt;p&gt;En cuanto a la conexión site-to-site, OpenVPN permite establecer conexiones seguras entre dos redes, utilizando la configuración de tunelización. Se puede utilizar el comando &lt;code&gt;sudo openvpn --config /etc/openvpn/server.conf&lt;/code&gt; para establecer la conexión.&lt;/p&gt;
+&lt;p&gt;En resumen, la seguridad en OpenVPN es fundamental para proteger las conexiones entre redes. Es importante mantener actualizados los certificados y claves, configurar la autenticación de dos factores y implementar un servidor de acceso para gestionar las conexiones de los usuarios.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Security+Announcements/CVE-2026-11604"&gt;CVE-2026-11604&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn-gui/actions/runs/26299729560"&gt;OpenVPN GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Security+Announcements/CVE-2026-12996"&gt;CVE-2026-12996&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-29_1238.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se discuten las últimas novedades y mejores prácticas para asegurar la configuración de OpenVPN.</summary>
+    <published>2026-06-29T12:38:00+00:00</published>
   </entry>
 </feed>
