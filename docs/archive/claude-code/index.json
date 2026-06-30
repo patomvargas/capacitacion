@@ -1,4 +1,24 @@
 {
+  "2026-06-30_1113": {
+    "slug": "claude-code",
+    "title": "Mejoras y soluciones en Claude Code",
+    "summary": "Claude Code ha presentado varias mejoras y soluciones a problemas comunes, como la autenticación y el manejo de sesiones. Estas mejoras incluyen la resolución de problemas de autenticación y la optimización de la experiencia del usuario.",
+    "content": "\nLa última versión de Claude Code ha incluido varias mejoras y soluciones a problemas comunes. Una de las mejoras más destacadas es la resolución del problema de autenticación que ocurría al intentar conectar con GitHub. Este problema se debía a la falta de documentación sobre el uso de `git credential-manager` en Windows. Para solucionar este problema, se puede utilizar el comando `git config --global credential.helper manager` para habilitar el administrador de credenciales de Git.\n\nOtra mejora importante es la optimización de la experiencia del usuario en la línea de comandos. Se han agregado nuevas características y comandos para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando `claude --resume` para reanudar una sesión anterior. Además, se han mejorado los mensajes de error y las notificaciones para proporcionar una mejor experiencia al usuario.\n\nEn cuanto a la seguridad, se han realizado mejoras en la autenticación y el manejo de sesiones. Se ha resuelto un problema de seguridad que permitía a un atacante acceder a la sesión de un usuario sin autorización. Para evitar este tipo de problemas, se recomienda utilizar `claude --secure` al iniciar una sesión.\n\nAdemás, se han agregado nuevas características y herramientas para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando `claude --help` para obtener ayuda y documentación sobre los comandos y características disponibles.\n\nEn resumen, las últimas mejoras y soluciones en Claude Code han mejorado significativamente la experiencia del usuario y la seguridad de la plataforma. Es importante estar al tanto de estas mejoras y soluciones para aprovechar al máximo las características y herramientas de Claude Code.\n\nPara obtener más información sobre las mejoras y soluciones en Claude Code, se pueden consultar las fuentes oficiales y la documentación disponible en línea. Es importante leer y seguir las instrucciones y recomendaciones para asegurarse de que se está utilizando la plataforma de manera segura y eficiente.\n",
+    "sources": [
+      {
+        "title": "Remote Control troubleshooting",
+        "url": "https://github.com/anthropics/claude-code/issues/66381"
+      },
+      {
+        "title": "Windows startup 'Connect to GitHub' popup",
+        "url": "https://github.com/anthropics/claude-code/issues/66382"
+      },
+      {
+        "title": "An update on recent Claude Code quality reports",
+        "url": "https://www.anthropic.com/engineering/april-23-postmortem?pubDate=20260604"
+      }
+    ]
+  },
   "2026-06-26_1055": {
     "slug": "claude-code",
     "title": "Mejoras en Claude Code",

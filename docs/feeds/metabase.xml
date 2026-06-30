@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-29T12:39:30.631124+00:00</updated>
+  <updated>2026-06-30T11:14:25.599718+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -341,5 +341,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-18_1153.html"/>
     <summary>Metabase es una herramienta de inteligencia empresarial y analítica integrada que permite a los usuarios trabajar con datos de manera efectiva. En este artículo, se presentan las últimas mejoras y best practices para utilizar Metabase de manera óptima.</summary>
     <published>2026-06-18T11:53:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html</id>
+    <title>Metabase: Nuevas Funcionalidades y Mejoras</title>
+    <updated>2026-06-30T11:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de análisis de datos y creación de paneles de control que permite a los usuarios crear consultas, paneles de control y informes personalizados. En su versión 62, Metabase ha agregado un SDK de plugins que permite a los desarrolladores crear tipos de gráficos personalizados y interactuar con los servidores MCP. También se ha introducido la Metabase CLI, que permite a los usuarios realizar flujos de trabajo en terminal de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;Para utilizar la Metabase CLI, los usuarios pueden ejecutar el comando &lt;code&gt;mbctl&lt;/code&gt; en su terminal, seguido de la acción que desean realizar, como &lt;code&gt;mbctl login&lt;/code&gt; para iniciar sesión o &lt;code&gt;mbctl query&lt;/code&gt; para ejecutar una consulta. Además, se ha mejorado la compatibilidad con OpenAI Codex, lo que permite a los usuarios conectar su instancia de Metabase directamente a Codex y realizar consultas y análisis de datos de manera más sencilla.&lt;/p&gt;
+&lt;p&gt;Sin embargo, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x. Según el informe de error #75458 en GitHub, la versión 62.x no es compatible con MariaDB y se requiere una actualización o una nueva instancia para resolver el problema. Los usuarios que utilicen MariaDB deben tener cuidado al actualizar a la versión 62.x y considerar la posibilidad de migrar a una base de datos compatible.&lt;/p&gt;
+&lt;p&gt;La versión 62 de Metabase también incluye otras mejoras y funcionalidades, como la capacidad de crear colecciones en la biblioteca y gestionar alertas de manera más eficiente. Además, se ha mejorado la integración con Claude Web y Claude Code, lo que permite a los usuarios crear paneles de control y informes personalizados de manera más sencilla.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión 62 de Metabase ofrece nuevas funcionalidades y mejoras que permiten a los usuarios crear consultas, paneles de control y informes personalizados de manera más eficiente. Sin embargo, es importante tener en cuenta los problemas de compatibilidad con MariaDB y considerar la posibilidad de migrar a una base de datos compatible.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las funcionalidades y mejoras de la versión 62 de Metabase, los usuarios pueden consultar la documentación oficial y los informes de error en GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/releases/metabase-62"&gt;Metabase 62&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/75458"&gt;Issue #75458&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/blog/metabase-plugin-openai-codex-announcement"&gt;OpenAI Codex - Metabase&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html"/>
+    <summary>Metabase ha lanzado nuevas funcionalidades y mejoras en su versión 62, incluyendo un SDK de plugins para crear tipos de gráficos personalizados y una CLI para flujos de trabajo en terminal. Además, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x.</summary>
+    <published>2026-06-30T11:13:00+00:00</published>
   </entry>
 </feed>

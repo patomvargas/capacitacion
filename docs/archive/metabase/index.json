@@ -1,4 +1,24 @@
 {
+  "2026-06-30_1113": {
+    "slug": "metabase",
+    "title": "Metabase: Nuevas Funcionalidades y Mejoras",
+    "summary": "Metabase ha lanzado nuevas funcionalidades y mejoras en su versión 62, incluyendo un SDK de plugins para crear tipos de gráficos personalizados y una CLI para flujos de trabajo en terminal. Además, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x.",
+    "content": "Metabase es una herramienta de análisis de datos y creación de paneles de control que permite a los usuarios crear consultas, paneles de control y informes personalizados. En su versión 62, Metabase ha agregado un SDK de plugins que permite a los desarrolladores crear tipos de gráficos personalizados y interactuar con los servidores MCP. También se ha introducido la Metabase CLI, que permite a los usuarios realizar flujos de trabajo en terminal de manera más eficiente.\n\nPara utilizar la Metabase CLI, los usuarios pueden ejecutar el comando `mbctl` en su terminal, seguido de la acción que desean realizar, como `mbctl login` para iniciar sesión o `mbctl query` para ejecutar una consulta. Además, se ha mejorado la compatibilidad con OpenAI Codex, lo que permite a los usuarios conectar su instancia de Metabase directamente a Codex y realizar consultas y análisis de datos de manera más sencilla.\n\nSin embargo, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x. Según el informe de error #75458 en GitHub, la versión 62.x no es compatible con MariaDB y se requiere una actualización o una nueva instancia para resolver el problema. Los usuarios que utilicen MariaDB deben tener cuidado al actualizar a la versión 62.x y considerar la posibilidad de migrar a una base de datos compatible.\n\nLa versión 62 de Metabase también incluye otras mejoras y funcionalidades, como la capacidad de crear colecciones en la biblioteca y gestionar alertas de manera más eficiente. Además, se ha mejorado la integración con Claude Web y Claude Code, lo que permite a los usuarios crear paneles de control y informes personalizados de manera más sencilla.\n\nEn resumen, la versión 62 de Metabase ofrece nuevas funcionalidades y mejoras que permiten a los usuarios crear consultas, paneles de control y informes personalizados de manera más eficiente. Sin embargo, es importante tener en cuenta los problemas de compatibilidad con MariaDB y considerar la posibilidad de migrar a una base de datos compatible.\n\nPara más información sobre las funcionalidades y mejoras de la versión 62 de Metabase, los usuarios pueden consultar la documentación oficial y los informes de error en GitHub.",
+    "sources": [
+      {
+        "title": "Metabase 62",
+        "url": "https://www.metabase.com/releases/metabase-62"
+      },
+      {
+        "title": "Issue #75458",
+        "url": "https://github.com/metabase/metabase/issues/75458"
+      },
+      {
+        "title": "OpenAI Codex - Metabase",
+        "url": "https://www.metabase.com/blog/metabase-plugin-openai-codex-announcement"
+      }
+    ]
+  },
   "2026-06-18_1153": {
     "slug": "metabase",
     "title": "Metabase: Mejoras y Best Practices",

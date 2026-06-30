@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-29T12:39:30.624770+00:00</updated>
+  <updated>2026-06-30T11:14:25.591272+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -507,5 +507,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-26_1055.html"/>
     <summary>Claude Code ha lanzado varias mejoras en sus últimos releases, incluyendo la adición de autoMode y mejoras en la simplicidad y flexibilidad de su GitHub Action. Estas mejoras permiten a los desarrolladores aprovechar al máximo las funcionalidades de Claude Code.</summary>
     <published>2026-06-26T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-30_1113.html</id>
+    <title>Mejoras y soluciones en Claude Code</title>
+    <updated>2026-06-30T11:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Claude Code ha incluido varias mejoras y soluciones a problemas comunes. Una de las mejoras más destacadas es la resolución del problema de autenticación que ocurría al intentar conectar con GitHub. Este problema se debía a la falta de documentación sobre el uso de &lt;code&gt;git credential-manager&lt;/code&gt; en Windows. Para solucionar este problema, se puede utilizar el comando &lt;code&gt;git config --global credential.helper manager&lt;/code&gt; para habilitar el administrador de credenciales de Git.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la optimización de la experiencia del usuario en la línea de comandos. Se han agregado nuevas características y comandos para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude --resume&lt;/code&gt; para reanudar una sesión anterior. Además, se han mejorado los mensajes de error y las notificaciones para proporcionar una mejor experiencia al usuario.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, se han realizado mejoras en la autenticación y el manejo de sesiones. Se ha resuelto un problema de seguridad que permitía a un atacante acceder a la sesión de un usuario sin autorización. Para evitar este tipo de problemas, se recomienda utilizar &lt;code&gt;claude --secure&lt;/code&gt; al iniciar una sesión.&lt;/p&gt;
+&lt;p&gt;Además, se han agregado nuevas características y herramientas para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude --help&lt;/code&gt; para obtener ayuda y documentación sobre los comandos y características disponibles.&lt;/p&gt;
+&lt;p&gt;En resumen, las últimas mejoras y soluciones en Claude Code han mejorado significativamente la experiencia del usuario y la seguridad de la plataforma. Es importante estar al tanto de estas mejoras y soluciones para aprovechar al máximo las características y herramientas de Claude Code.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre las mejoras y soluciones en Claude Code, se pueden consultar las fuentes oficiales y la documentación disponible en línea. Es importante leer y seguir las instrucciones y recomendaciones para asegurarse de que se está utilizando la plataforma de manera segura y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/66381"&gt;Remote Control troubleshooting&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/66382"&gt;Windows startup 'Connect to GitHub' popup&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.anthropic.com/engineering/april-23-postmortem?pubDate=20260604"&gt;An update on recent Claude Code quality reports&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-30_1113.html"/>
+    <summary>Claude Code ha presentado varias mejoras y soluciones a problemas comunes, como la autenticación y el manejo de sesiones. Estas mejoras incluyen la resolución de problemas de autenticación y la optimización de la experiencia del usuario.</summary>
+    <published>2026-06-30T11:13:00+00:00</published>
   </entry>
 </feed>

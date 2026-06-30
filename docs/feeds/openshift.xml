@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-29T12:39:30.622089+00:00</updated>
+  <updated>2026-06-30T11:14:25.587242+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -532,5 +532,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-26_1055.html"/>
     <summary>OpenShift Container Platform ha publicado varias actualizaciones de seguridad para sus versiones 4.16, 4.18 y 4.20. Estas actualizaciones incluyen parches para vulnerabilidades y mejoras en la seguridad de la plataforma. Los administradores de sistemas deben actualizar sus clústeres para garantizar la seguridad y estabilidad de sus entornos de producción.</summary>
     <published>2026-06-26T10:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-30_1113.html</id>
+    <title>OpenShift 4.22: Novedades y Mejoras</title>
+    <updated>2026-06-30T11:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, que ofrece una serie de mejoras y nuevas características para la gestión de contenedores y la seguridad. Una de las principales novedades es la inclusión de &lt;code&gt;OperatorHub&lt;/code&gt;, que permite a los administradores instalar y gestionar operadores de manera más sencilla. Además, se han realizado mejoras en la autenticación y autorización, incluyendo el soporte para &lt;code&gt;OAuth&lt;/code&gt; y la gestión de identidades.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las características de OpenShift 4.22, es importante entender cómo configurar y gestionar los &lt;code&gt;builds&lt;/code&gt; y las &lt;code&gt;routes&lt;/code&gt;. Los &lt;code&gt;builds&lt;/code&gt; permiten a los desarrolladores crear y desplegar aplicaciones de manera automática, mientras que las &lt;code&gt;routes&lt;/code&gt; permiten configurar el acceso a las aplicaciones desde outside del clúster. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc create route&lt;/code&gt; para crear una nueva ruta para una aplicación.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de OpenShift 4.22 es la gestión de la seguridad, que incluye la actualización de &lt;code&gt;RHEL&lt;/code&gt; y la inclusión de &lt;code&gt;CoreOS&lt;/code&gt;. La gestión de la seguridad es crucial para proteger los clústeres y las aplicaciones, y OpenShift 4.22 ofrece una serie de herramientas y características para ayudar a los administradores a mantener la seguridad de sus entornos. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc adm&lt;/code&gt; para gestionar la configuración de seguridad del clúster.&lt;/p&gt;
+&lt;p&gt;En cuanto a la migración, OpenShift 4.22 ofrece una serie de herramientas y características para ayudar a los administradores a migrar sus aplicaciones y clústeres a la nueva versión. Es importante planificar cuidadosamente la migración y seguir las mejores prácticas para minimizar el tiempo de inactividad y asegurarse de que las aplicaciones sigan funcionando correctamente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la monitorización y el análisis de los clústeres y las aplicaciones. La monitorización es crucial para entender el rendimiento y la seguridad de los clústeres y las aplicaciones, y OpenShift 4.22 ofrece una serie de herramientas y características para ayudar a los administradores a monitorear y analizar sus entornos. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc get&lt;/code&gt; para obtener información sobre el estado de los pods y los servicios.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.22 es una versión importante que ofrece una serie de mejoras y nuevas características para la gestión de contenedores y la seguridad. Los administradores deben planificar cuidadosamente la migración a esta versión y seguir las mejores prácticas para minimizar el tiempo de inactividad y asegurarse de que las aplicaciones sigan funcionando correctamente.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre OpenShift 4.22, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://electromech.cloud/openshift-4-22-new-features-release-highlights/"&gt;OpenShift 4.22: New Features and Release Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://radar.offseq.com/threat/red-hat-security-advisory-openshift-container-plat-a9e48fb8"&gt;Red Hat Security Advisory: OpenShift Container Platform 4.20.23 bug fix and security update&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/articles/6907891"&gt;RHEL versions used by RHEL CoreOS and OpenShift&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-30_1113.html"/>
+    <summary>OpenShift 4.22 ofrece nuevas características y mejoras para la gestión de contenedores y la seguridad. Esta versión incluye actualizaciones de seguridad y bugs, así como nuevas características para la gestión de clústeres y la autenticación.</summary>
+    <published>2026-06-30T11:13:00+00:00</published>
   </entry>
 </feed>
