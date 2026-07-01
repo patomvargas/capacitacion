@@ -1,4 +1,24 @@
 {
+  "2026-07-01_1128": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Visualización de Datos",
+    "summary": "Superset es una herramienta de visualización de datos que permite a los usuarios crear gráficos y tableros de control personalizados. En este artículo, se explorarán las características y configuraciones de Superset.",
+    "content": "Superset es una herramienta de código abierto desarrollada por Apache, que permite a los usuarios crear gráficos y tableros de control personalizados para visualizar datos. Una de las características más destacadas de Superset es su capacidad para crear tableros de control embebidos, lo que permite a los usuarios compartir información de manera segura. Sin embargo, según el issue #34714 en GitHub, algunos usuarios han reportado problemas al intentar embeber tableros de control utilizando tokens de invitado.\n\n \n Para crear usuarios en Superset de manera programática, se puede utilizar la API de Superset. Por ejemplo, se puede utilizar el comando `superset users create --username usuario --password contraseña --email correo` para crear un nuevo usuario. Además, se puede utilizar la función `create_user` de la API de Superset para crear usuarios de manera programática.\n\n \n En cuanto a la administración de Superset, es importante mencionar que se ha actualizado la versión de Node.js a v24, según el commit `134fba3` en GitHub. Esto puede afectar la compatibilidad de Superset con otros paquetes y dependencias. Por lo tanto, es importante verificar la compatibilidad de Superset con otros paquetes y dependencias antes de actualizar la versión de Node.js.\n\n \n Para configurar Superset, se puede utilizar el archivo de configuración `superset_config.py`. Por ejemplo, se puede agregar la siguiente línea de código para configurar la conexión a la base de datos: `SQLALCHEMY_DATABASE_URI = 'postgresql://usuario:contraseña@host:puerto/base_de_datos'`. Además, se puede utilizar la función `config` de la API de Superset para configurar parámetros de manera programática.\n\n \n En resumen, Superset es una herramienta poderosa para visualizar datos y crear tableros de control personalizados. Sin embargo, es importante tener en cuenta las limitaciones y configuraciones necesarias para utilizar esta herramienta de manera efectiva.\n\n \n Para más información, se puede consultar la documentación oficial de Superset y los issues en GitHub.",
+    "sources": [
+      {
+        "title": "Issue #34714",
+        "url": "https://github.com/apache/superset/issues/34714"
+      },
+      {
+        "title": "Crear usuarios en Apache Superset de manera programática",
+        "url": "https://github.com/apache/superset/discussions/27373"
+      },
+      {
+        "title": "Commit 134fba3",
+        "url": "https://github.com/apache/superset/actions/runs/27085922755"
+      }
+    ]
+  },
   "2026-06-27_1013": {
     "slug": "superset",
     "title": "Superset: Visualización de Datos y Exploración",

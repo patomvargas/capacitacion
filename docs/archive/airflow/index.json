@@ -1,4 +1,24 @@
 {
+  "2026-07-01_1128": {
+    "slug": "airflow",
+    "title": "Airflow 2.x: Mejoras y Best Practices",
+    "summary": "Airflow es una plataforma de orquestación de workflows ampliamente adoptada para construir, programar y monitorear pipelines de datos. En este artículo, se presentan las mejoras y best practices para Airflow 2.x, incluyendo DAGs, operadores, sensores y XCom.",
+    "content": "Airflow es una herramienta fundamental para los equipos de Data Engineering y DevOps, ya que permite la creación de pipelines de datos complejos de manera eficiente y escalable. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la compatibilidad con Python 3.8 y 3.9, y la capacidad de utilizar `Kubernetes` como ejecutor de tareas. \n \n Para crear un DAG en Airflow 2.x, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego `airflow dag parse` para parsear el DAG y verificar su sintaxis. También se puede utilizar el comando `airflow tasks list` para listar las tareas disponibles en un DAG. \n   \n La versión 2.x de Airflow también incluye mejoras en la seguridad, como la autenticación y autorización basadas en roles, y la capacidad de utilizar `SSL/TLS` para cifrar las comunicaciones entre los componentes de Airflow. Para configurar la autenticación y autorización, se puede utilizar el comando `airflow config set` para establecer las opciones de configuración, y luego `airflow users create` para crear usuarios y asignarles roles. \n   \n En cuanto a las best practices, es importante seguir los principios de diseño de pipelines de datos, como la separación de concerns, la reutilización de código y la documentación clara y concisa. También es fundamental realizar pruebas y validaciones exhaustivas de los pipelines de datos antes de ponerlos en producción. \n   \n Finalmente, es importante mencionar que Airflow 2.x es compatible con una variedad de proveedores de servicios en la nube, como `Google Cloud`, `Amazon Web Services` y `Microsoft Azure`, lo que permite a los equipos de Data Engineering y DevOps elegir el proveedor que mejor se adapte a sus necesidades y requerimientos.",
+    "sources": [
+      {
+        "title": "Changelog — apache-airflow-providers-github",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html"
+      },
+      {
+        "title": "Changelog — apache-airflow-providers-google",
+        "url": "https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"
+      },
+      {
+        "title": "Lakehouse Demystified — Part 5: Just enough about Managed Service for Apache Airflow",
+        "url": "https://medium.com/google-cloud/lakehouse-demystified-part-5-just-enough-about-managed-service-for-apache-airflow-d4f11517458b"
+      }
+    ]
+  },
   "2026-06-23_1122": {
     "slug": "airflow",
     "title": "Airflow 2.x: Mejores prácticas y novedades",

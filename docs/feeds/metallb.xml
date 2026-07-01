@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-30T11:14:25.610524+00:00</updated>
+  <updated>2026-07-01T11:30:05.365535+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -857,5 +857,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-27_1013.html"/>
     <summary>MetalLB es un equilibrador de carga de código abierto para Kubernetes que proporciona una forma sencilla de exponer servicios a Internet. En este artículo, se explora su configuración y uso en modo L2 y BGP.</summary>
     <published>2026-06-27T10:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html</id>
+    <title>MetalLB: Configuración y Troubleshooting</title>
+    <updated>2026-07-01T11:28:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que permite la configuración de direcciones IP externas para los servicios de la aplicación. Para configurar MetalLB, es necesario instalar el paquete de Helm y configurar el archivo de valores. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el comando &lt;code&gt;helm install metallb metallb/metallb -f valores.yaml&lt;/code&gt;, donde &lt;code&gt;valores.yaml&lt;/code&gt; es el archivo de configuración que contiene los parámetros de configuración de MetalLB.&lt;/p&gt;
+&lt;p&gt;Para configurar MetalLB en modo BGP, es necesario agregar la configuración de BGP al archivo de valores. Por ejemplo, se puede agregar la siguiente configuración: &lt;code&gt;bgp: { peers: [{ ip: 10.0.0.1, asn: 64512 }] }&lt;/code&gt;. Luego, se puede aplicar la configuración con el comando &lt;code&gt;helm upgrade metallb metallb/metallb -f valores.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de las piscinas de IP es otro aspecto importante de MetalLB. Las piscinas de IP permiten definir un rango de direcciones IP que se pueden asignar a los servicios de la aplicación. Por ejemplo, se puede definir una piscina de IP con el comando &lt;code&gt;kubectl apply -f ip-pool.yaml&lt;/code&gt;, donde &lt;code&gt;ip-pool.yaml&lt;/code&gt; es el archivo de configuración que contiene la definición de la piscina de IP.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas comunes de MetalLB, es importante verificar los registros de MetalLB y los registros de Kubernetes. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl logs -f metallb-controller&lt;/code&gt; para ver los registros de MetalLB. También es importante verificar la configuración de MetalLB y la configuración de la red para asegurarse de que estén correctas.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante asegurarse de que la configuración de MetalLB esté correcta y segura. Por ejemplo, es importante utilizar claves SSH seguras para acceder a los nodos de Kubernetes y asegurarse de que la configuración de BGP esté correcta para evitar problemas de conectividad.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para los administradores de Kubernetes, y su configuración y solución de problemas requieren una comprensión profunda de la tecnología y las mejores prácticas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@emilyharbord2/deploying-metallb-via-helm-layer-2-and-bgp-configurations-2893852e3f71"&gt;Deploying MetalLB via Helm: Layer 2 and BGP Configurations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@nidulanuwan"&gt;Nidula Ekanayake – Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/author/alexandra-godoi/"&gt;Alexandra Godoi - The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html"/>
+    <summary>MetalLB es un balanceador de carga de código abierto para Kubernetes que permite la configuración de direcciones IP externas. En este artículo, se explica cómo configurar MetalLB en modo L2 y BGP, así como cómo solucionar problemas comunes.</summary>
+    <published>2026-07-01T11:28:00+00:00</published>
   </entry>
 </feed>

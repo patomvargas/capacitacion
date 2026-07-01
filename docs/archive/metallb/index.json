@@ -1,4 +1,24 @@
 {
+  "2026-07-01_1128": {
+    "slug": "metallb",
+    "title": "MetalLB: Configuración y Troubleshooting",
+    "summary": "MetalLB es un balanceador de carga de código abierto para Kubernetes que permite la configuración de direcciones IP externas. En este artículo, se explica cómo configurar MetalLB en modo L2 y BGP, así como cómo solucionar problemas comunes.",
+    "content": "MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que permite la configuración de direcciones IP externas para los servicios de la aplicación. Para configurar MetalLB, es necesario instalar el paquete de Helm y configurar el archivo de valores. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el comando `helm install metallb metallb/metallb -f valores.yaml`, donde `valores.yaml` es el archivo de configuración que contiene los parámetros de configuración de MetalLB.\n\nPara configurar MetalLB en modo BGP, es necesario agregar la configuración de BGP al archivo de valores. Por ejemplo, se puede agregar la siguiente configuración: `bgp: { peers: [{ ip: 10.0.0.1, asn: 64512 }] }`. Luego, se puede aplicar la configuración con el comando `helm upgrade metallb metallb/metallb -f valores.yaml`.\n\nLa configuración de las piscinas de IP es otro aspecto importante de MetalLB. Las piscinas de IP permiten definir un rango de direcciones IP que se pueden asignar a los servicios de la aplicación. Por ejemplo, se puede definir una piscina de IP con el comando `kubectl apply -f ip-pool.yaml`, donde `ip-pool.yaml` es el archivo de configuración que contiene la definición de la piscina de IP.\n\nPara solucionar problemas comunes de MetalLB, es importante verificar los registros de MetalLB y los registros de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los registros de MetalLB. También es importante verificar la configuración de MetalLB y la configuración de la red para asegurarse de que estén correctas.\n\nEn cuanto a las mejores prácticas, es importante asegurarse de que la configuración de MetalLB esté correcta y segura. Por ejemplo, es importante utilizar claves SSH seguras para acceder a los nodos de Kubernetes y asegurarse de que la configuración de BGP esté correcta para evitar problemas de conectividad.\n\nEn resumen, MetalLB es una herramienta poderosa para los administradores de Kubernetes, y su configuración y solución de problemas requieren una comprensión profunda de la tecnología y las mejores prácticas.",
+    "sources": [
+      {
+        "title": "Deploying MetalLB via Helm: Layer 2 and BGP Configurations",
+        "url": "https://medium.com/@emilyharbord2/deploying-metallb-via-helm-layer-2-and-bgp-configurations-2893852e3f71"
+      },
+      {
+        "title": "Nidula Ekanayake – Medium",
+        "url": "https://medium.com/@nidulanuwan"
+      },
+      {
+        "title": "Alexandra Godoi - The Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/author/alexandra-godoi/"
+      }
+    ]
+  },
   "2026-06-27_1013": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en Kubernetes",

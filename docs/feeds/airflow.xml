@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-06-30T11:14:25.601673+00:00</updated>
+  <updated>2026-07-01T11:30:05.350728+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -420,5 +420,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-23_1122.html"/>
     <summary>Airflow es una plataforma de orquestación de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades de Airflow 2.x.</summary>
     <published>2026-06-23T11:22:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-01_1128.html</id>
+    <title>Airflow 2.x: Mejoras y Best Practices</title>
+    <updated>2026-07-01T11:28:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta fundamental para los equipos de Data Engineering y DevOps, ya que permite la creación de pipelines de datos complejos de manera eficiente y escalable. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la compatibilidad con Python 3.8 y 3.9, y la capacidad de utilizar &lt;code&gt;Kubernetes&lt;/code&gt; como ejecutor de tareas.&lt;/p&gt;
+&lt;p&gt;Para crear un DAG en Airflow 2.x, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos, y luego &lt;code&gt;airflow dag parse&lt;/code&gt; para parsear el DAG y verificar su sintaxis. También se puede utilizar el comando &lt;code&gt;airflow tasks list&lt;/code&gt; para listar las tareas disponibles en un DAG.&lt;/p&gt;
+&lt;p&gt;La versión 2.x de Airflow también incluye mejoras en la seguridad, como la autenticación y autorización basadas en roles, y la capacidad de utilizar &lt;code&gt;SSL/TLS&lt;/code&gt; para cifrar las comunicaciones entre los componentes de Airflow. Para configurar la autenticación y autorización, se puede utilizar el comando &lt;code&gt;airflow config set&lt;/code&gt; para establecer las opciones de configuración, y luego &lt;code&gt;airflow users create&lt;/code&gt; para crear usuarios y asignarles roles.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante seguir los principios de diseño de pipelines de datos, como la separación de concerns, la reutilización de código y la documentación clara y concisa. También es fundamental realizar pruebas y validaciones exhaustivas de los pipelines de datos antes de ponerlos en producción.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Airflow 2.x es compatible con una variedad de proveedores de servicios en la nube, como &lt;code&gt;Google Cloud&lt;/code&gt;, &lt;code&gt;Amazon Web Services&lt;/code&gt; y &lt;code&gt;Microsoft Azure&lt;/code&gt;, lo que permite a los equipos de Data Engineering y DevOps elegir el proveedor que mejor se adapte a sus necesidades y requerimientos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html"&gt;Changelog — apache-airflow-providers-github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html"&gt;Changelog — apache-airflow-providers-google&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/google-cloud/lakehouse-demystified-part-5-just-enough-about-managed-service-for-apache-airflow-d4f11517458b"&gt;Lakehouse Demystified — Part 5: Just enough about Managed Service for Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-01_1128.html"/>
+    <summary>Airflow es una plataforma de orquestación de workflows ampliamente adoptada para construir, programar y monitorear pipelines de datos. En este artículo, se presentan las mejoras y best practices para Airflow 2.x, incluyendo DAGs, operadores, sensores y XCom.</summary>
+    <published>2026-07-01T11:28:00+00:00</published>
   </entry>
 </feed>

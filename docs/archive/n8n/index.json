@@ -1,4 +1,28 @@
 {
+  "2026-07-01_1128": {
+    "slug": "n8n",
+    "title": "Automatización de Workflows con n8n",
+    "summary": "n8n es una herramienta de automatización de workflows que combina capacidades de inteligencia artificial con automatización de procesos empresariales. En este artículo, se presentan las mejores prácticas y novedades en la configuración y uso de n8n.",
+    "content": "\nLa automatización de workflows es un tema cada vez más importante en el ámbito de la tecnología, y n8n es una de las herramientas más populares para lograrlo. Según la documentación oficial de n8n, la versión 2.29.0 incluye correcciones de errores y mejoras en la estabilidad del sistema. Para instalar n8n, se puede utilizar el comando `npm install -g n8n` o `docker run -it n8n/n8n`.\n\nUna de las características más importantes de n8n es la capacidad de crear workflows personalizados utilizando nodos y webhooks. Los nodos son los bloques de construcción básicos de un workflow, y se pueden configurar para realizar tareas específicas, como la lectura de datos de una base de datos o el envío de correos electrónicos. Los webhooks, por otro lado, permiten a los workflows interactuar con servicios externos, como APIs o servicios de mensajería. Para crear un webhook en n8n, se puede utilizar el comando `n8n webhook create --name mi-webhook --url https://example.com/webhook`.\n\nLa seguridad es otro tema importante en la configuración de n8n. Recientemente, se descubrió una vulnerabilidad en la versión 2.28.0 de n8n que permitía el acceso no autenticado a archivos en el servidor subyacente. Para solucionar este problema, se recomienda actualizar a la versión 2.29.0 o superior. Además, es importante configurar las credenciales de acceso de manera segura, utilizando comandos como `n8n credential create --name mi-credencial --type básica --usuario mi-usuario --contraseña mi-contraseña`.\n\nEn cuanto a las mejores prácticas, se recomienda seguir los estándares de configuración y despliegue de n8n, como se describe en la guía de configuración completa para 2026. Esto incluye la configuración de un servidor de base de datos, la creación de un usuario y una contraseña seguros, y la configuración de los parámetros de seguridad del sistema. Además, se puede utilizar la herramienta de línea de comandos de n8n para automatizar tareas y workflows, como se describe en la documentación oficial.\n\nFinalmente, es importante mencionar que n8n tiene una comunidad activa y una gran cantidad de recursos disponibles, incluyendo tutoriales, cursos y documentación oficial. Esto hace que sea fácil encontrar ayuda y soluciones a problemas comunes, y permite a los usuarios aprovechar al máximo las capacidades de la herramienta.\n\nPara desplegar n8n en un entorno de producción, se pueden utilizar servicios en la nube como Azure, como se describe en la documentación oficial. Esto permite a los usuarios aprovechar las ventajas de la escalabilidad y la flexibilidad de la nube, mientras que se mantiene la seguridad y la confiabilidad del sistema.",
+    "sources": [
+      {
+        "title": "Release notes 2.x",
+        "url": "https://docs.n8n.io/changelog/release-notes-2.x"
+      },
+      {
+        "title": "n8n Docs",
+        "url": "https://docs.n8n.io/"
+      },
+      {
+        "title": "Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026",
+        "url": "https://medium.com/n8n-lab/self-hosted-n8n-best-practices-complete-setup-checklist-for-2026-585e240aca00"
+      },
+      {
+        "title": "Unauthenticated File Access via Improper Webhook Request Handling",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg"
+      }
+    ]
+  },
   "2026-06-27_1013": {
     "slug": "n8n",
     "title": "Automatización de Workflows con n8n",

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
-    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <title>Airflow 2.x: Mejoras y Best Practices - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,49 +54,41 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
-    <div class="meta">2026-06-27 1013 · MetalLB</div>
+    <h1>Airflow 2.x: Mejoras y Best Practices</h1>
+    <div class="meta">2026-07-01 1128 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es una herramienta esencial para cualquier clúster de Kubernetes que requiera exponer servicios a Internet. Para empezar a utilizar MetalLB, es necesario instalarlo en el clúster utilizando el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/namespace.yaml`. Luego, se debe crear un pool de direcciones IP utilizando el comando `kubectl apply -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.</p>
+            <p>Airflow es una herramienta fundamental para los equipos de Data Engineering y DevOps, ya que permite la creación de pipelines de datos complejos de manera eficiente y escalable. En la versión 2.x, se han introducido varias mejoras y características nuevas, como la compatibilidad con Python 3.8 y 3.9, y la capacidad de utilizar `Kubernetes` como ejecutor de tareas.</p>
             
         
             
         
             
-        
-            
-            <p>En modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP del servicio en la red local. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.240-192.168.1.250`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
+            <p>Para crear un DAG en Airflow 2.x, se puede utilizar el comando `airflow db init` para inicializar la base de datos, y luego `airflow dag parse` para parsear el DAG y verificar su sintaxis. También se puede utilizar el comando `airflow tasks list` para listar las tareas disponibles en un DAG.</p>
             
         
             
         
             
-        
-            
-            <p>En modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP del servicio a los routers de la red. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: bgp - addresses: - 192.168.1.240-192.168.1.250 - bgp: - peer-address: 192.168.1.1 - peer-asn: 64512`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
+            <p>La versión 2.x de Airflow también incluye mejoras en la seguridad, como la autenticación y autorización basadas en roles, y la capacidad de utilizar `SSL/TLS` para cifrar las comunicaciones entre los componentes de Airflow. Para configurar la autenticación y autorización, se puede utilizar el comando `airflow config set` para establecer las opciones de configuración, y luego `airflow users create` para crear usuarios y asignarles roles.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas con MetalLB, se puede utilizar el comando `kubectl logs -f -n metallb-system metallb-controller` para ver los registros del controlador de MetalLB. También se puede utilizar el comando `kubectl get pods -n metallb-system` para ver el estado de los pods de MetalLB.</p>
+            <p>En cuanto a las best practices, es importante seguir los principios de diseño de pipelines de datos, como la separación de concerns, la reutilización de código y la documentación clara y concisa. También es fundamental realizar pruebas y validaciones exhaustivas de los pipelines de datos antes de ponerlos en producción.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar equilibrio de carga en clústeres de Kubernetes. Su configuración es sencilla y flexible, y puede ser utilizada en modo L2 o BGP según las necesidades de la red.</p>
+            <p>Finalmente, es importante mencionar que Airflow 2.x es compatible con una variedad de proveedores de servicios en la nube, como `Google Cloud`, `Amazon Web Services` y `Microsoft Azure`, lo que permite a los equipos de Data Engineering y DevOps elegir el proveedor que mejor se adapte a sus necesidades y requerimientos.</p>
             
         
     </div>
@@ -107,12 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentation</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-github/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-github</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
+                <a href="https://airflow.apache.org/docs/apache-airflow-providers-google/stable/changelog.html" target="_blank">Changelog — apache-airflow-providers-google</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/google-cloud/lakehouse-demystified-part-5-just-enough-about-managed-service-for-apache-airflow-d4f11517458b" target="_blank">Lakehouse Demystified — Part 5: Just enough about Managed Service for Apache Airflow</a>
                 
             </li>
             
@@ -123,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-19_1212.html">&larr; 2026-06-19 1212</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-06-23_1122.html">&larr; 2026-06-23 1122</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html">2026-07-01 1128 &rarr;</a>
             
         </div>
     </div>

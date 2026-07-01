@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <title>MetalLB: Configuración y Troubleshooting - MetalLB</title>
     <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
@@ -57,46 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
-    <div class="meta">2026-06-27 1013 · MetalLB</div>
+    <h1>MetalLB: Configuración y Troubleshooting</h1>
+    <div class="meta">2026-07-01 1128 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es una herramienta esencial para cualquier clúster de Kubernetes que requiera exponer servicios a Internet. Para empezar a utilizar MetalLB, es necesario instalarlo en el clúster utilizando el comando `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/main/manifests/namespace.yaml`. Luego, se debe crear un pool de direcciones IP utilizando el comando `kubectl apply -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de direcciones IP.</p>
+            <p>MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que permite la configuración de direcciones IP externas para los servicios de la aplicación. Para configurar MetalLB, es necesario instalar el paquete de Helm y configurar el archivo de valores. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el comando `helm install metallb metallb/metallb -f valores.yaml`, donde `valores.yaml` es el archivo de configuración que contiene los parámetros de configuración de MetalLB.</p>
             
         
             
         
             
-        
-            
-            <p>En modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para anunciar la dirección IP del servicio en la red local. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: layer2 - addresses: - 192.168.1.240-192.168.1.250`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
+            <p>Para configurar MetalLB en modo BGP, es necesario agregar la configuración de BGP al archivo de valores. Por ejemplo, se puede agregar la siguiente configuración: `bgp: { peers: [{ ip: 10.0.0.1, asn: 64512 }] }`. Luego, se puede aplicar la configuración con el comando `helm upgrade metallb metallb/metallb -f valores.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>En modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar la dirección IP del servicio a los routers de la red. Esto se logra configurando el archivo `metallb-config.yaml` con el contenido `address-pools: - name: default - protocol: bgp - addresses: - 192.168.1.240-192.168.1.250 - bgp: - peer-address: 192.168.1.1 - peer-asn: 64512`. Luego, se aplica la configuración utilizando el comando `kubectl apply -f metallb-config.yaml`.</p>
+            <p>La configuración de las piscinas de IP es otro aspecto importante de MetalLB. Las piscinas de IP permiten definir un rango de direcciones IP que se pueden asignar a los servicios de la aplicación. Por ejemplo, se puede definir una piscina de IP con el comando `kubectl apply -f ip-pool.yaml`, donde `ip-pool.yaml` es el archivo de configuración que contiene la definición de la piscina de IP.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas con MetalLB, se puede utilizar el comando `kubectl logs -f -n metallb-system metallb-controller` para ver los registros del controlador de MetalLB. También se puede utilizar el comando `kubectl get pods -n metallb-system` para ver el estado de los pods de MetalLB.</p>
+            <p>Para solucionar problemas comunes de MetalLB, es importante verificar los registros de MetalLB y los registros de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl logs -f metallb-controller` para ver los registros de MetalLB. También es importante verificar la configuración de MetalLB y la configuración de la red para asegurarse de que estén correctas.</p>
             
         
             
         
             
+            <p>En cuanto a las mejores prácticas, es importante asegurarse de que la configuración de MetalLB esté correcta y segura. Por ejemplo, es importante utilizar claves SSH seguras para acceder a los nodos de Kubernetes y asegurarse de que la configuración de BGP esté correcta para evitar problemas de conectividad.</p>
+            
         
             
-            <p>En resumen, MetalLB es una herramienta poderosa para proporcionar equilibrio de carga en clústeres de Kubernetes. Su configuración es sencilla y flexible, y puede ser utilizada en modo L2 o BGP según las necesidades de la red.</p>
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para los administradores de Kubernetes, y su configuración y solución de problemas requieren una comprensión profunda de la tecnología y las mejores prácticas.</p>
             
         
     </div>
@@ -107,12 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://metallb.universe.tf/" target="_blank">MetalLB Documentation</a>
+                <a href="https://medium.com/@emilyharbord2/deploying-metallb-via-helm-layer-2-and-bgp-configurations-2893852e3f71" target="_blank">Deploying MetalLB via Helm: Layer 2 and BGP Configurations</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/docs/" target="_blank">Kubernetes Documentation</a>
+                <a href="https://medium.com/@nidulanuwan" target="_blank">Nidula Ekanayake – Medium</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://blog.cloudflare.com/author/alexandra-godoi/" target="_blank">Alexandra Godoi - The Cloudflare Blog</a>
                 
             </li>
             
@@ -123,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-19_1212.html">&larr; 2026-06-19 1212</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-06-27_1013.html">&larr; 2026-06-27 1013</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html">2026-07-01 1128 &rarr;</a>
             
         </div>
     </div>
