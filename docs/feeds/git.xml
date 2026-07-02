@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-01T11:30:05.373494+00:00</updated>
+  <updated>2026-07-02T10:46:16.503436+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -448,5 +448,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-28_1031.html"/>
     <summary>En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
     <published>2026-06-28T10:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-02_1045.html</id>
+    <title>Mejores prácticas de Git para DevOps</title>
+    <updated>2026-07-02T10:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para el control de versiones y la colaboración en proyectos de desarrollo de software. Una de las mejores prácticas para utilizar Git es establecer un flujo de trabajo (workflow) claro y consistente. Esto puede incluir la creación de ramas (branches) para diferentes características o correcciones de errores, y la utilización de &lt;code&gt;git merge&lt;/code&gt; o &lt;code&gt;git rebase&lt;/code&gt; para integrar los cambios en la rama principal.&lt;/p&gt;
+&lt;p&gt;Para mejorar la calidad del código y reducir los errores, se pueden utilizar hooks de Git. Por ejemplo, se puede configurar un hook de pre-commit para ejecutar pruebas unitarias o verificar la sintaxis del código antes de realizar un commit. Esto se puede hacer utilizando el comando &lt;code&gt;git config&lt;/code&gt; para agregar un hook personalizado, como &lt;code&gt;git config core.hooksPath .githooks&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta avanzada de Git es &lt;code&gt;git bisect&lt;/code&gt;, que permite identificar el commit que introdujo un error o problema en el código. Esto se puede hacer ejecutando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; para marcar el commit actual como defectuoso, y &lt;code&gt;git bisect good&lt;/code&gt; para marcar un commit anterior como bueno. Git entonces puede ayudar a identificar el commit problemático.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona la funcionalidad de worktrees, que permite tener múltiples copias de un repositorio en diferentes directorios. Esto se puede hacer utilizando el comando &lt;code&gt;git worktree add&lt;/code&gt; para agregar un nuevo worktree. Por ejemplo, &lt;code&gt;git worktree add ~/mi-proyecto feature/nueva-caracteristica&lt;/code&gt; creará un nuevo worktree en el directorio &lt;code&gt;~/mi-proyecto&lt;/code&gt; con la rama &lt;code&gt;feature/nueva-caracteristica&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la productividad y la colaboración, se pueden utilizar herramientas como GitHub Actions, que permiten automatizar flujos de trabajo y pruebas en la nube. Por ejemplo, se puede crear un archivo &lt;code&gt;github/workflows/build.yml&lt;/code&gt; con un flujo de trabajo que se ejecute automáticamente al realizar un push a la rama principal.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades avanzadas para mejorar la productividad y la colaboración en proyectos de desarrollo de software. Al utilizar workflows, hooks, rebase, bisect y worktrees, los desarrolladores pueden trabajar de manera más eficiente y efectiva.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Git es una excelente fuente de información para aprender sobre estas funcionalidades avanzadas. Además, existen muchas herramientas y recursos en línea que pueden ayudar a los desarrolladores a mejorar sus habilidades con Git.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/baba-s/awesome-unity-open-source-on-github"&gt;awesome-unity-open-source-on-github&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/github/vscode-github-actions"&gt;GitHub Actions for VS Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wasidennis/AdaptSegNet"&gt;Learning to Adapt Structured Output Space for Semantic Segmentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/A-poc/RedTeam-Tools"&gt;RedTeam-Tools&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/renesas/ble-sdk6-examples"&gt;ble-sdk6-examples&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-02_1045.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-07-02T10:45:00+00:00</published>
   </entry>
 </feed>

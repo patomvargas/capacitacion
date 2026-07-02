@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Optimización de PostgreSQL - PostgreSQL</title>
+    <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-06-28 1031 · Git</div>
+    <h1>Optimización de PostgreSQL</h1>
+    <div class="meta">2026-07-02 1045 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores trabajar de manera colaborativa en proyectos de software. Una de las mejores prácticas para trabajar con Git es utilizar `git flow` para gestionar los flujos de trabajo. Esto implica utilizar comandos como `git flow init` para inicializar el flujo de trabajo y `git flow feature start` para crear una nueva característica.</p>
+        
+            
+            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX` seguido del nombre del índice y la columna que deseas indexar.</p>
             
         
             
         
             
-            <p>Para garantizar la calidad del código, se pueden utilizar hooks en Git. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook para verificar que el código cumpla con ciertos estándares de codificación antes de permitir que se haga un commit. Esto se puede hacer con el comando `git hook pre-commit`.</p>
+            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en diferentes servidores, lo que garantiza la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego restaurarla en un servidor secundario.</p>
             
         
             
         
             
-            <p>Otra herramienta útil en Git es `git rebase`. Esta herramienta permite reorganizar los commits para que tengan un historial de commits más limpio y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y reorganizarlos. También se puede utilizar `git bisect` para encontrar el commit que introdujo un error en el código.</p>
+            <p>La copia de seguridad es fundamental para garantizar la integridad de los datos. Puedes realizar copias de seguridad utilizando el comando `pg_dump` para crear un archivo de copia de seguridad de la base de datos. También puedes utilizar el comando `pg_restore` para restaurar la copia de seguridad en caso de que se produzca un error.</p>
             
         
             
         
             
-            <p>Además, Git proporciona la función de `git worktree` que permite crear múltiples árboles de trabajo a partir de un solo repositorio. Esto es útil para trabajar en diferentes características o versiones del código de manera simultánea. Se puede crear un nuevo árbol de trabajo con el comando `git worktree add`.</p>
+            <p>Además, es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones de seguridad en noviembre de 2026. Es importante planificar la actualización a una versión más reciente para garantizar la seguridad y la estabilidad de la base de datos. Puedes verificar la versión actual de PostgreSQL utilizando el comando `postgres -V`.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para gestionar el código de manera efectiva. Al utilizar estas mejores prácticas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos de software.</p>
+            <p>La extensión `pg_stat` es una herramienta útil para monitorear el rendimiento de PostgreSQL. Puedes utilizar el comando `pg_stat_activity` para ver las consultas que se están ejecutando actualmente y `pg_stat_user_tables` para ver las estadísticas de las tablas.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre Git y sus funcionalidades, se pueden consultar las fuentes oficiales de Git y otros recursos en línea.</p>
+            <p>Finalmente, es importante mencionar que la versión 18 de PostgreSQL introduce la función de I/O asíncrono, lo que permite mejorar el rendimiento en consultas que involucran operaciones de disco. Puedes habilitar esta función utilizando el comando `ALTER SYSTEM SET io_method = 'async';`</p>
             
         
     </div>
@@ -105,22 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/Git" target="_blank">Git - Wikipedia</a>
+                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://git-scm.com/" target="_blank">Git</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://git-scm.com/install/" target="_blank">Git - Install</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/git-guides" target="_blank">Git · GitHub</a>
+                <a href="https://medium.com/@the_atomic_architect/postgresql-18-async-io-slow-queries-d62e106fd676" target="_blank">PostgreSQL 18 Async I/O: Rethinking Slow Queries</a>
                 
             </li>
             
@@ -131,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-24_1055.html">&larr; 2026-06-24 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-06-28_1031.html">&larr; 2026-06-28 1031</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-02_1045.html">2026-07-02 1045 &rarr;</a>
             
         </div>
     </div>

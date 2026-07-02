@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-01T11:30:05.375758+00:00</updated>
+  <updated>2026-07-02T10:46:16.506811+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -337,5 +337,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-28_1031.html"/>
     <summary>Terraform es una herramienta de administración de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos de infraestructura de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en la administración de estado, proveedores y módulos en Terraform.</summary>
     <published>2026-06-28T10:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-02_1045.html</id>
+    <title>Terraform: Mejoras y Novedades</title>
+    <updated>2026-07-02T10:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En las últimas versiones, se han incluido varias mejoras y correcciones de errores. Por ejemplo, en la versión 1.15.6, se ha corregido un error que causaba que se mostraran bloques eliminados de manera incorrecta en la representación JSON del plan de Terraform.&lt;/p&gt;
+&lt;p&gt;Para utilizar Terraform de manera efectiva, es importante entender cómo funcionan los proveedores, módulos y el estado de la infraestructura. Los proveedores son los responsables de interactuar con los servicios de infraestructura, como AWS o Azure, y se configuran utilizando el comando &lt;code&gt;terraform init&lt;/code&gt;. Los módulos, por otro lado, son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos, y se pueden importar utilizando el comando &lt;code&gt;terraform get&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión del estado, Terraform utiliza un archivo de estado que se llama &lt;code&gt;terraform.tfstate&lt;/code&gt;, que se utiliza para almacenar la configuración actual de la infraestructura. Es importante mencionar que, en la versión 1.15.7, se han incluido algunas correcciones de errores relacionadas con la gestión del estado.&lt;/p&gt;
+&lt;p&gt;Para importar recursos en Terraform, se puede utilizar el comando &lt;code&gt;terraform import&lt;/code&gt;, que permite importar recursos existentes en la infraestructura y agregarlos al estado de Terraform. Por ejemplo, para importar un recurso de AWS, se puede utilizar el comando &lt;code&gt;terraform import aws_instance.mi_instancia i-0123456789abcdef0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform también incluye una función de espacios de trabajo, que permite a los desarrolladores y administradores de sistemas crear y gestionar diferentes entornos de infraestructura de manera independiente. Para crear un nuevo espacio de trabajo, se puede utilizar el comando &lt;code&gt;terraform workspace new mi_entorno&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la creación y gestión de infraestructuras como código, y sus últimas versiones incluyen varias mejoras y correcciones de errores. Al entender cómo funcionan los proveedores, módulos y el estado de la infraestructura, los desarrolladores y administradores de sistemas pueden aprovechar al máximo las capacidades de Terraform y crear infraestructuras de manera eficiente y escalable.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-15-6-released/77489"&gt;Terraform v1.15.6 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-15-7-released/77530"&gt;Terraform v1.15.7 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@alkayedayat93/terraform-mental-models-internals-series-part-14-terraform-lifecycle-rules-changing-8fc4188c0d7d"&gt;Terraform Mental Models — Part 14: Terraform Lifecycle Rules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-02_1045.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo la versión 1.15.6 y 1.15.7, así como algunas best practices para su uso.</summary>
+    <published>2026-07-02T10:45:00+00:00</published>
   </entry>
 </feed>

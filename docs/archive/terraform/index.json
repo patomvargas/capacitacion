@@ -1,4 +1,24 @@
 {
+  "2026-07-02_1045": {
+    "slug": "terraform",
+    "title": "Terraform: Mejoras y Novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo la versión 1.15.6 y 1.15.7, así como algunas best practices para su uso.",
+    "content": "\nTerraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En las últimas versiones, se han incluido varias mejoras y correcciones de errores. Por ejemplo, en la versión 1.15.6, se ha corregido un error que causaba que se mostraran bloques eliminados de manera incorrecta en la representación JSON del plan de Terraform. \n\nPara utilizar Terraform de manera efectiva, es importante entender cómo funcionan los proveedores, módulos y el estado de la infraestructura. Los proveedores son los responsables de interactuar con los servicios de infraestructura, como AWS o Azure, y se configuran utilizando el comando `terraform init`. Los módulos, por otro lado, son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos, y se pueden importar utilizando el comando `terraform get`.\n\nEn cuanto a la gestión del estado, Terraform utiliza un archivo de estado que se llama `terraform.tfstate`, que se utiliza para almacenar la configuración actual de la infraestructura. Es importante mencionar que, en la versión 1.15.7, se han incluido algunas correcciones de errores relacionadas con la gestión del estado. \n\nPara importar recursos en Terraform, se puede utilizar el comando `terraform import`, que permite importar recursos existentes en la infraestructura y agregarlos al estado de Terraform. Por ejemplo, para importar un recurso de AWS, se puede utilizar el comando `terraform import aws_instance.mi_instancia i-0123456789abcdef0`. \n\nFinalmente, es importante mencionar que Terraform también incluye una función de espacios de trabajo, que permite a los desarrolladores y administradores de sistemas crear y gestionar diferentes entornos de infraestructura de manera independiente. Para crear un nuevo espacio de trabajo, se puede utilizar el comando `terraform workspace new mi_entorno`.\n\nEn resumen, Terraform es una herramienta poderosa para la creación y gestión de infraestructuras como código, y sus últimas versiones incluyen varias mejoras y correcciones de errores. Al entender cómo funcionan los proveedores, módulos y el estado de la infraestructura, los desarrolladores y administradores de sistemas pueden aprovechar al máximo las capacidades de Terraform y crear infraestructuras de manera eficiente y escalable.",
+    "sources": [
+      {
+        "title": "Terraform v1.15.6 released",
+        "url": "https://discuss.hashicorp.com/t/terraform-v1-15-6-released/77489"
+      },
+      {
+        "title": "Terraform v1.15.7 released",
+        "url": "https://discuss.hashicorp.com/t/terraform-v1-15-7-released/77530"
+      },
+      {
+        "title": "Terraform Mental Models — Part 14: Terraform Lifecycle Rules",
+        "url": "https://medium.com/@alkayedayat93/terraform-mental-models-internals-series-part-14-terraform-lifecycle-rules-changing-8fc4188c0d7d"
+      }
+    ]
+  },
   "2026-06-28_1031": {
     "slug": "terraform",
     "title": "Terraform: Administración de Infraestructura como Código",

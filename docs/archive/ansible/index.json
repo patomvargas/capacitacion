@@ -1,4 +1,24 @@
 {
+  "2026-07-02_1045": {
+    "slug": "ansible",
+    "title": "Ansible: Nuevas Funcionalidades y Mejoras",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas funcionalidades y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus capacidades.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera eficiente. Con la reciente publicación de `ansible-core v2.19.11rc1`, se han incluido varias mejoras y correcciones de errores. \n\nPara aprovechar estas nuevas funcionalidades, es importante actualizar la versión de Ansible en nuestro entorno. Esto se puede hacer ejecutando el comando `ansible --version` para verificar la versión actual y luego `pip install --upgrade ansible` para actualizarla. \n\nUna de las nuevas funcionalidades más interesantes es la integración con `OKD Collection for Ansible`, que permite automatizar la gestión de aplicaciones en clústeres OKD. Para utilizar esta colección, debemos instalarla ejecutando `ansible-galaxy collection install openshift.community.okd`. \n\nAdemás, se han publicado varias herramientas de desarrollo para Ansible, como `ansible-dev-environment v26.6.0` y `ansible-dev-tools v26.6.0`, que facilitan la creación y prueba de playbooks y roles. Para utilizar estas herramientas, debemos instalarlas ejecutando `pip install ansible-dev-environment` y `pip install ansible-dev-tools`. \n\nPara gestionar la seguridad de nuestros playbooks y roles, es importante utilizar `ansible-vault` para cifrar las credenciales y los datos sensibles. Esto se puede hacer ejecutando `ansible-vault create` para crear un nuevo archivo cifrado y `ansible-vault edit` para editar un archivo cifrado existente. \n\nEn resumen, Ansible sigue evolucionando con nuevas funcionalidades y mejoras que permiten a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera más eficiente y segura.",
+    "sources": [
+      {
+        "title": "Roadmaps — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"
+      },
+      {
+        "title": "New Release: ansible-core v2.19.11rc1",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-19-11rc1/45908"
+      },
+      {
+        "title": "OKD Collection for Ansible",
+        "url": "https://github.com/openshift/community.okd"
+      }
+    ]
+  },
   "2026-06-28_1031": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

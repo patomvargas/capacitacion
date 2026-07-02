@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Mejores prácticas con Docker - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-06-28 1031 · Git</div>
+    <h1>Mejores prácticas con Docker</h1>
+    <div class="meta">2026-07-02 1045 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores trabajar de manera colaborativa en proyectos de software. Una de las mejores prácticas para trabajar con Git es utilizar `git flow` para gestionar los flujos de trabajo. Esto implica utilizar comandos como `git flow init` para inicializar el flujo de trabajo y `git flow feature start` para crear una nueva característica.</p>
+            <p>Docker es una herramienta de contenerización que permite ejecutar aplicaciones de manera aislada y segura. Una de las mejores prácticas para utilizar Docker es utilizar `docker-compose` para definir y ejecutar múltiples contenedores. Esto se puede hacer creando un archivo `docker-compose.yml` que define los servicios y sus dependencias.</p>
             
         
             
         
             
-            <p>Para garantizar la calidad del código, se pueden utilizar hooks en Git. Los hooks son scripts que se ejecutan automáticamente en ciertos momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook para verificar que el código cumpla con ciertos estándares de codificación antes de permitir que se haga un commit. Esto se puede hacer con el comando `git hook pre-commit`.</p>
+        
+            
+            <p>Para mejorar la seguridad, es importante utilizar `docker build` con la opción `--no-cache` para evitar que se utilicen cachés de construcción antiguos. También se puede utilizar `docker build` con la opción `--build-arg` para pasar variables de entorno a la construcción del contenedor.</p>
             
         
             
         
             
-            <p>Otra herramienta útil en Git es `git rebase`. Esta herramienta permite reorganizar los commits para que tengan un historial de commits más limpio y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y reorganizarlos. También se puede utilizar `git bisect` para encontrar el commit que introdujo un error en el código.</p>
+        
+            
+            <p>Otra buena práctica es utilizar `BuildKit` para acelerar la construcción de imágenes. Esto se puede hacer agregando la línea `DOCKER_BUILDKIT=1` antes de ejecutar el comando `docker build`. También se puede utilizar `docker push` con la opción `--all-tags` para subir todas las etiquetas de una imagen a un registro.</p>
             
         
             
         
             
-            <p>Además, Git proporciona la función de `git worktree` que permite crear múltiples árboles de trabajo a partir de un solo repositorio. Esto es útil para trabajar en diferentes características o versiones del código de manera simultánea. Se puede crear un nuevo árbol de trabajo con el comando `git worktree add`.</p>
+        
+            
+            <p>En cuanto a la seguridad, es importante utilizar `docker exec` con la opción `-u` para ejecutar comandos dentro de un contenedor con un usuario no root. También se puede utilizar `docker inspect` para verificar la configuración de un contenedor y asegurarse de que no haya vulnerabilidades de seguridad.</p>
             
         
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades para gestionar el código de manera efectiva. Al utilizar estas mejores prácticas, los desarrolladores pueden trabajar de manera más eficiente y colaborativa en proyectos de software.</p>
-            
         
             
-        
-            
-            <p>Para obtener más información sobre Git y sus funcionalidades, se pueden consultar las fuentes oficiales de Git y otros recursos en línea.</p>
+            <p>Finalmente, es importante mencionar que las fuentes proporcionadas no contienen información relevante sobre Docker. Sin embargo, se pueden encontrar muchas recursos en línea que proporcionan información detallada sobre cómo utilizar Docker de manera efectiva.</p>
             
         
     </div>
@@ -105,22 +107,27 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/Git" target="_blank">Git - Wikipedia</a>
+                <a href="https://github.com/antonkomarev/github-profile-views-counter" target="_blank">GitHub Profile Views Counter</a>
                 
             </li>
             
             <li>
-                <a href="https://git-scm.com/" target="_blank">Git</a>
+                <a href="https://github.com/AshfordFamily/recvx-decomp" target="_blank">Resident Evil - Code: Veronica X Decompile</a>
                 
             </li>
             
             <li>
-                <a href="https://git-scm.com/install/" target="_blank">Git - Install</a>
+                <a href="https://github.com/apify/apify-cli" target="_blank">Apify CLI</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/git-guides" target="_blank">Git · GitHub</a>
+                <a href="https://github.com/open-energy-transition/open-tyndp" target="_blank">Open-TYNDP: Interfacing Open Energy System Planning with ENTSO-E Models and Contributing to TYNDP</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/ollama/ollama/issues/16618" target="_blank">API Error: Claude's response exceeded the 32000 output token maximum. #16618</a>
                 
             </li>
             
@@ -131,12 +138,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-06-24_1055.html">&larr; 2026-06-24 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html">&larr; 2026-06-28 1031</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-02_1045.html">2026-07-02 1045 &rarr;</a>
             
         </div>
     </div>

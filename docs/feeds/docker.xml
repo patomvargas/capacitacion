@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-01T11:30:05.371267+00:00</updated>
+  <updated>2026-07-02T10:46:16.500012+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -404,5 +404,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-06-28_1031.html"/>
     <summary>Docker sigue evolucionando con mejoras en seguridad y rendimiento. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo esta tecnología.</summary>
     <published>2026-06-28T10:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-07-02_1045.html</id>
+    <title>Mejores prácticas con Docker</title>
+    <updated>2026-07-02T10:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta de contenerización que permite ejecutar aplicaciones de manera aislada y segura. Una de las mejores prácticas para utilizar Docker es utilizar &lt;code&gt;docker-compose&lt;/code&gt; para definir y ejecutar múltiples contenedores. Esto se puede hacer creando un archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; que define los servicios y sus dependencias.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad, es importante utilizar &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--no-cache&lt;/code&gt; para evitar que se utilicen cachés de construcción antiguos. También se puede utilizar &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--build-arg&lt;/code&gt; para pasar variables de entorno a la construcción del contenedor.&lt;/p&gt;
+&lt;p&gt;Otra buena práctica es utilizar &lt;code&gt;BuildKit&lt;/code&gt; para acelerar la construcción de imágenes. Esto se puede hacer agregando la línea &lt;code&gt;DOCKER_BUILDKIT=1&lt;/code&gt; antes de ejecutar el comando &lt;code&gt;docker build&lt;/code&gt;. También se puede utilizar &lt;code&gt;docker push&lt;/code&gt; con la opción &lt;code&gt;--all-tags&lt;/code&gt; para subir todas las etiquetas de una imagen a un registro.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante utilizar &lt;code&gt;docker exec&lt;/code&gt; con la opción &lt;code&gt;-u&lt;/code&gt; para ejecutar comandos dentro de un contenedor con un usuario no root. También se puede utilizar &lt;code&gt;docker inspect&lt;/code&gt; para verificar la configuración de un contenedor y asegurarse de que no haya vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que las fuentes proporcionadas no contienen información relevante sobre Docker. Sin embargo, se pueden encontrar muchas recursos en línea que proporcionan información detallada sobre cómo utilizar Docker de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/antonkomarev/github-profile-views-counter"&gt;GitHub Profile Views Counter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/AshfordFamily/recvx-decomp"&gt;Resident Evil - Code: Veronica X Decompile&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apify/apify-cli"&gt;Apify CLI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/open-energy-transition/open-tyndp"&gt;Open-TYNDP: Interfacing Open Energy System Planning with ENTSO-E Models and Contributing to TYNDP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ollama/ollama/issues/16618"&gt;API Error: Claude's response exceeded the 32000 output token maximum. #16618&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-02_1045.html"/>
+    <summary>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan algunas mejores prácticas para utilizar Docker de manera efectiva.</summary>
+    <published>2026-07-02T10:45:00+00:00</published>
   </entry>
 </feed>

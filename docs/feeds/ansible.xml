@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-01T11:30:05.377763+00:00</updated>
+  <updated>2026-07-02T10:46:16.510264+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -553,5 +553,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-28_1031.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite configurar y gestionar sistemas de manera eficiente. En este artículo, se presentan las características y funcionalidades clave de Ansible, incluyendo playbooks, roles, colecciones y vault.</summary>
     <published>2026-06-28T10:31:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-02_1045.html</id>
+    <title>Ansible: Nuevas Funcionalidades y Mejoras</title>
+    <updated>2026-07-02T10:45:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera eficiente. Con la reciente publicación de &lt;code&gt;ansible-core v2.19.11rc1&lt;/code&gt;, se han incluido varias mejoras y correcciones de errores.&lt;/p&gt;
+&lt;p&gt;Para aprovechar estas nuevas funcionalidades, es importante actualizar la versión de Ansible en nuestro entorno. Esto se puede hacer ejecutando el comando &lt;code&gt;ansible --version&lt;/code&gt; para verificar la versión actual y luego &lt;code&gt;pip install --upgrade ansible&lt;/code&gt; para actualizarla.&lt;/p&gt;
+&lt;p&gt;Una de las nuevas funcionalidades más interesantes es la integración con &lt;code&gt;OKD Collection for Ansible&lt;/code&gt;, que permite automatizar la gestión de aplicaciones en clústeres OKD. Para utilizar esta colección, debemos instalarla ejecutando &lt;code&gt;ansible-galaxy collection install openshift.community.okd&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se han publicado varias herramientas de desarrollo para Ansible, como &lt;code&gt;ansible-dev-environment v26.6.0&lt;/code&gt; y &lt;code&gt;ansible-dev-tools v26.6.0&lt;/code&gt;, que facilitan la creación y prueba de playbooks y roles. Para utilizar estas herramientas, debemos instalarlas ejecutando &lt;code&gt;pip install ansible-dev-environment&lt;/code&gt; y &lt;code&gt;pip install ansible-dev-tools&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para gestionar la seguridad de nuestros playbooks y roles, es importante utilizar &lt;code&gt;ansible-vault&lt;/code&gt; para cifrar las credenciales y los datos sensibles. Esto se puede hacer ejecutando &lt;code&gt;ansible-vault create&lt;/code&gt; para crear un nuevo archivo cifrado y &lt;code&gt;ansible-vault edit&lt;/code&gt; para editar un archivo cifrado existente.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible sigue evolucionando con nuevas funcionalidades y mejoras que permiten a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera más eficiente y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-19-11rc1/45908"&gt;New Release: ansible-core v2.19.11rc1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/openshift/community.okd"&gt;OKD Collection for Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-02_1045.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas funcionalidades y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus capacidades.</summary>
+    <published>2026-07-02T10:45:00+00:00</published>
   </entry>
 </feed>

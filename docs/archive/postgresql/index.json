@@ -1,4 +1,24 @@
 {
+  "2026-07-02_1045": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre las mejores prácticas para mejorar la eficiencia de tu base de datos.",
+    "content": "\nLa optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX` seguido del nombre del índice y la columna que deseas indexar.\n\nOtra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de los datos en diferentes servidores, lo que garantiza la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego restaurarla en un servidor secundario.\n\nLa copia de seguridad es fundamental para garantizar la integridad de los datos. Puedes realizar copias de seguridad utilizando el comando `pg_dump` para crear un archivo de copia de seguridad de la base de datos. También puedes utilizar el comando `pg_restore` para restaurar la copia de seguridad en caso de que se produzca un error.\n\nAdemás, es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones de seguridad en noviembre de 2026. Es importante planificar la actualización a una versión más reciente para garantizar la seguridad y la estabilidad de la base de datos. Puedes verificar la versión actual de PostgreSQL utilizando el comando `postgres -V`.\n\nLa extensión `pg_stat` es una herramienta útil para monitorear el rendimiento de PostgreSQL. Puedes utilizar el comando `pg_stat_activity` para ver las consultas que se están ejecutando actualmente y `pg_stat_user_tables` para ver las estadísticas de las tablas.\n\nFinalmente, es importante mencionar que la versión 18 de PostgreSQL introduce la función de I/O asíncrono, lo que permite mejorar el rendimiento en consultas que involucran operaciones de disco. Puedes habilitar esta función utilizando el comando `ALTER SYSTEM SET io_method = 'async';`",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "PostgreSQL 18 Async I/O: Rethinking Slow Queries",
+        "url": "https://medium.com/@the_atomic_architect/postgresql-18-async-io-slow-queries-d62e106fd676"
+      }
+    ]
+  },
   "2026-06-28_1031": {
     "slug": "postgresql",
     "title": "Mejoras en PostgreSQL",

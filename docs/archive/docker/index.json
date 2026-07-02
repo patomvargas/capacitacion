@@ -1,4 +1,32 @@
 {
+  "2026-07-02_1045": {
+    "slug": "docker",
+    "title": "Mejores prácticas con Docker",
+    "summary": "Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan algunas mejores prácticas para utilizar Docker de manera efectiva.",
+    "content": "Docker es una herramienta de contenerización que permite ejecutar aplicaciones de manera aislada y segura. Una de las mejores prácticas para utilizar Docker es utilizar `docker-compose` para definir y ejecutar múltiples contenedores. Esto se puede hacer creando un archivo `docker-compose.yml` que define los servicios y sus dependencias.\n\n \nPara mejorar la seguridad, es importante utilizar `docker build` con la opción `--no-cache` para evitar que se utilicen cachés de construcción antiguos. También se puede utilizar `docker build` con la opción `--build-arg` para pasar variables de entorno a la construcción del contenedor.\n\n \nOtra buena práctica es utilizar `BuildKit` para acelerar la construcción de imágenes. Esto se puede hacer agregando la línea `DOCKER_BUILDKIT=1` antes de ejecutar el comando `docker build`. También se puede utilizar `docker push` con la opción `--all-tags` para subir todas las etiquetas de una imagen a un registro.\n\n \nEn cuanto a la seguridad, es importante utilizar `docker exec` con la opción `-u` para ejecutar comandos dentro de un contenedor con un usuario no root. También se puede utilizar `docker inspect` para verificar la configuración de un contenedor y asegurarse de que no haya vulnerabilidades de seguridad.\n\n \nFinalmente, es importante mencionar que las fuentes proporcionadas no contienen información relevante sobre Docker. Sin embargo, se pueden encontrar muchas recursos en línea que proporcionan información detallada sobre cómo utilizar Docker de manera efectiva.",
+    "sources": [
+      {
+        "title": "GitHub Profile Views Counter",
+        "url": "https://github.com/antonkomarev/github-profile-views-counter"
+      },
+      {
+        "title": "Resident Evil - Code: Veronica X Decompile",
+        "url": "https://github.com/AshfordFamily/recvx-decomp"
+      },
+      {
+        "title": "Apify CLI",
+        "url": "https://github.com/apify/apify-cli"
+      },
+      {
+        "title": "Open-TYNDP: Interfacing Open Energy System Planning with ENTSO-E Models and Contributing to TYNDP",
+        "url": "https://github.com/open-energy-transition/open-tyndp"
+      },
+      {
+        "title": "API Error: Claude's response exceeded the 32000 output token maximum. #16618",
+        "url": "https://github.com/ollama/ollama/issues/16618"
+      }
+    ]
+  },
   "2026-06-28_1031": {
     "slug": "docker",
     "title": "Docker: Mejoras y Novedades",

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Novedades - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Novedades</h1>
+    <div class="meta">2026-07-02 1045 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En las últimas versiones, se han incluido varias mejoras y correcciones de errores. Por ejemplo, en la versión 1.15.6, se ha corregido un error que causaba que se mostraran bloques eliminados de manera incorrecta en la representación JSON del plan de Terraform.</p>
+            
+        
+            
+        
+            
+            <p>Para utilizar Terraform de manera efectiva, es importante entender cómo funcionan los proveedores, módulos y el estado de la infraestructura. Los proveedores son los responsables de interactuar con los servicios de infraestructura, como AWS o Azure, y se configuran utilizando el comando `terraform init`. Los módulos, por otro lado, son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos, y se pueden importar utilizando el comando `terraform get`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la gestión del estado, Terraform utiliza un archivo de estado que se llama `terraform.tfstate`, que se utiliza para almacenar la configuración actual de la infraestructura. Es importante mencionar que, en la versión 1.15.7, se han incluido algunas correcciones de errores relacionadas con la gestión del estado.</p>
+            
+        
+            
+        
+            
+            <p>Para importar recursos en Terraform, se puede utilizar el comando `terraform import`, que permite importar recursos existentes en la infraestructura y agregarlos al estado de Terraform. Por ejemplo, para importar un recurso de AWS, se puede utilizar el comando `terraform import aws_instance.mi_instancia i-0123456789abcdef0`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Terraform también incluye una función de espacios de trabajo, que permite a los desarrolladores y administradores de sistemas crear y gestionar diferentes entornos de infraestructura de manera independiente. Para crear un nuevo espacio de trabajo, se puede utilizar el comando `terraform workspace new mi_entorno`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la creación y gestión de infraestructuras como código, y sus últimas versiones incluyen varias mejoras y correcciones de errores. Al entender cómo funcionan los proveedores, módulos y el estado de la infraestructura, los desarrolladores y administradores de sistemas pueden aprovechar al máximo las capacidades de Terraform y crear infraestructuras de manera eficiente y escalable.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-15-6-released/77489" target="_blank">Terraform v1.15.6 released</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-15-7-released/77530" target="_blank">Terraform v1.15.7 released</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@alkayedayat93/terraform-mental-models-internals-series-part-14-terraform-lifecycle-rules-changing-8fc4188c0d7d" target="_blank">Terraform Mental Models — Part 14: Terraform Lifecycle Rules</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-06-28_1031.html">&larr; 2026-06-28 1031</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
