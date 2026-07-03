@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-02T10:46:16.464223+00:00</updated>
+  <updated>2026-07-03T10:43:30.523002+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -327,5 +327,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html"/>
     <summary>El artículo cubre la configuración de zonas, DNSSEC, views, RPZ y logging en BIND 9, así como las mejores prácticas para mejorar el rendimiento. Se analiza la transición a la versión 9.20 debido al fin de la vida útil de la versión 9.18.</summary>
     <published>2026-06-25T10:46:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-03_1041.html</id>
+    <title>Configuración avanzada de BIND9</title>
+    <updated>2026-07-03T10:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la industria. Para configurar zonas en BIND9, se utiliza el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para agregar una zona primaria, se puede utilizar la siguiente configuración: &lt;code&gt;zone "example.com" { type master; file "/etc/named/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para configurar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma. La clave de zona se utiliza para firmar la zona, mientras que la clave de firma se utiliza para firmar las respuestas DNS. Se puede utilizar el comando &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar las claves.&lt;/p&gt;
+&lt;p&gt;Las vistas en BIND9 permiten configurar diferentes conjuntos de zonas y configuraciones para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Se puede utilizar la directiva &lt;code&gt;view&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt; para definir las vistas.&lt;/p&gt;
+&lt;p&gt;El registro de logs en BIND9 se puede configurar utilizando la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, se puede configurar el registro de logs para que se escriban en un archivo específico: &lt;code&gt;logging { channel log_file { file "/var/log/named.log"; }; category default { log_file; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la configuración de red. Se puede utilizar el comando &lt;code&gt;named-checkconf&lt;/code&gt; para verificar la configuración de BIND9 y detectar cualquier error o problema de configuración.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las diferentes opciones de configuración y cómo se utilizan para lograr un servidor DNS seguro y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/"&gt;The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ftp.isc.org/isc/bind9/cur/9.19.4/doc/arm/Bv9ARM.html"&gt;BIND9 Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-03_1041.html"/>
+    <summary>BIND9 es un servidor DNS de código abierto ampliamente utilizado. En este artículo, se presentan algunas de las mejores prácticas para configurar zonas, DNSSEC, vistas, RPZ y registro de logs en BIND9.</summary>
+    <published>2026-07-03T10:41:00+00:00</published>
   </entry>
 </feed>

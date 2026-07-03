@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-02T10:46:16.461621+00:00</updated>
+  <updated>2026-07-03T10:43:30.515138+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -536,5 +536,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-06-29_1238.html"/>
     <summary>FreeIPA es una solución de gestión de identidad y acceso para entornos Unix. Combina un directorio LDAP con autenticación Kerberos y permite la configuración de relaciones de confianza y reglas de acceso.</summary>
     <published>2026-06-29T12:38:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-03_1041.html</id>
+    <title>FreeIPA: Administración de Identidades</title>
+    <updated>2026-07-03T10:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta fundamental para la administración de identidades en entornos Unix. Permite la autenticación y autorización de usuarios y servicios de manera centralizada. Para implementar FreeIPA, es necesario instalar el paquete &lt;code&gt;freeipa-server&lt;/code&gt; y configurar el servidor con &lt;code&gt;ipa-server-install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez instalado, se puede configurar el acceso a los servicios utilizando &lt;code&gt;ipa service-add&lt;/code&gt; y &lt;code&gt;ipa host-add&lt;/code&gt;. Para agregar un nuevo usuario, se utiliza el comando &lt;code&gt;ipa user-add&lt;/code&gt;. Es importante mencionar que FreeIPA también admite la autenticación con claves Passkey, como se menciona en la issue #1130 de GitHub.&lt;/p&gt;
+&lt;p&gt;Para configurar las reglas de sudo, se utiliza el comando &lt;code&gt;ipa sudorule-add&lt;/code&gt;. También es posible configurar relaciones de confianza con otros dominios utilizando &lt;code&gt;ipa trust-add&lt;/code&gt;. La configuración de HBAC (Host-Based Access Control) se realiza con &lt;code&gt;ipa hbacrule-add&lt;/code&gt;. Es fundamental mencionar que la seguridad es un aspecto clave en la implementación de FreeIPA, por lo que es recomendable seguir las mejores prácticas de seguridad, como las mencionadas en el sitio web de HackTricks.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades, se ha actualizado la versión de Samba a 4.24.3, que incluye correcciones de seguridad para vulnerabilidades como CVE-2026-4480 y CVE-2026-2340. Es importante mantener el sistema actualizado para evitar vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de FreeIPA es una excelente fuente de información para la configuración y el uso de la herramienta. También se pueden encontrar recursos adicionales en la comunidad de GitHub y en sitios web especializados en seguridad y administración de sistemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa-webui/issues/1130"&gt;FreeIPA GitHub Issue #1130&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345"&gt;Fedora 44 FreeIPA Important Samba Remote Code Exec Fix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"&gt;FreeIPA Pentesting - HackTricks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-03_1041.html"/>
+    <summary>FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. En este artículo, se presentan las mejores prácticas para implementar y configurar FreeIPA.</summary>
+    <published>2026-07-03T10:41:00+00:00</published>
   </entry>
 </feed>

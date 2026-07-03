@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-02T10:46:16.466150+00:00</updated>
+  <updated>2026-07-03T10:43:30.526303+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -514,5 +514,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-06-29_1238.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se discuten las últimas novedades y mejores prácticas para asegurar la configuración de OpenVPN.</summary>
     <published>2026-06-29T12:38:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-03_1041.html</id>
+    <title>Configuración y Seguridad de OpenVPN</title>
+    <updated>2026-07-03T10:41:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de tunneling de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves. Esto se puede hacer utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt;. Por ejemplo, para generar un par de claves, se puede utilizar el comando &lt;code&gt;openssl genrsa -out server.key 2048&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez que se tienen los certificados y claves, es necesario configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración &lt;code&gt;server.conf&lt;/code&gt;. Por ejemplo, se puede agregar la siguiente línea para especificar el puerto de escucha: &lt;code&gt;port 1194&lt;/code&gt;. También es importante configurar la autenticación y autorización de los clientes. Por ejemplo, se puede utilizar la directiva &lt;code&gt;tls-auth&lt;/code&gt; para especificar el archivo de autenticación.&lt;/p&gt;
+&lt;p&gt;Para asegurar el servidor OpenVPN, es importante implementar medidas de seguridad como el uso de claves fuertes, la configuración de firewalls y la monitorización de los logs. También es importante actualizar regularmente el software y los certificados. Por ejemplo, se puede utilizar la herramienta &lt;code&gt;fail2ban&lt;/code&gt; para bloquear direcciones IP que intenten autenticarse de manera incorrecta. Se puede configurar &lt;code&gt;fail2ban&lt;/code&gt; para que monitoree los logs de OpenVPN y bloquee las direcciones IP que superen un umbral de intentos de autenticación fallidos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de sitio a sitio, OpenVPN permite establecer conexiones seguras entre dos redes. Para esto, es necesario configurar dos servidores OpenVPN, uno en cada sitio, y establecer una conexión entre ellos. Por ejemplo, se puede utilizar la directiva &lt;code&gt;tls-server&lt;/code&gt; para especificar el servidor que actuará como servidor TLS.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN tiene una variedad de herramientas y recursos disponibles para ayudar a los administradores a configurar y asegurar sus servidores. Por ejemplo, se puede utilizar la herramienta &lt;code&gt;openvpn-access-server&lt;/code&gt; para configurar y administrar un servidor OpenVPN de manera centralizada.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes. Sin embargo, es importante configurar y asegurar el servidor de manera adecuada para evitar vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/MichaIng/DietPi"&gt;DietPi&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/zabbix/community-templates"&gt;Zabbix Community Templates repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/fail2ban/fail2ban"&gt;Fail2Ban&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/splunk/security_content/blob/develop/detections/endpoint/registry_keys_used_for_persistence.yml"&gt;registry_keys_used_for_persistence.yml&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Vaskivskyi/ha-asusrouter"&gt;AsusWRT-powered router from Home Assistant&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-03_1041.html"/>
+    <summary>OpenVPN es una herramienta de tunneling de código abierto que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y asegurar un servidor OpenVPN.</summary>
+    <published>2026-07-03T10:41:00+00:00</published>
   </entry>
 </feed>

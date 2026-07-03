@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Novedades en Kubernetes - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+    </div>
+
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-07-03 1041 · Kubernetes</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>La versión 1.32 de Kubernetes ha introducido cambios importantes en la gestión de archivos y montajes en Windows, lo que requiere una actualización de los drivers CSI y csi-proxy. Además, se han mejorado las funcionalidades de seguridad, como la autenticación y autorización, para proteger los clústeres de ataques maliciosos.</p>
+            
+        
+            
+        
+            
+            <p>Para gestionar clústeres de Kubernetes de manera efectiva, es importante seguir las best practices recomendadas, como la creación de copias de seguridad y la implementación de políticas de seguridad. La herramienta `kubectl` es fundamental para administrar clústeres de Kubernetes, y se pueden utilizar comandos como `kubectl get pods` para obtener información sobre los pods en ejecución.</p>
+            
+        
+            
+        
+            
+            <p>La seguridad es un aspecto crítico en la administración de clústeres de Kubernetes, y se pueden implementar medidas como la autenticación de dos factores y la cifrado de datos para proteger los clústeres. Además, se pueden utilizar herramientas como `kubeadm` para crear y administrar clústeres de Kubernetes de manera sencilla.</p>
+            
+        
+            
+        
+            
+            <p>La gestión de almacenamiento en Kubernetes es otro aspecto importante, y se pueden utilizar herramientas como `Persistent Volumes` (PV) y `StatefulSets` para gestionar los datos de los pods. Los `Persistent Volumes` permiten almacenar datos de manera persistente, incluso si los pods se reinician o se eliminan.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la eficiencia y la escalabilidad de los clústeres de Kubernetes, se pueden utilizar herramientas como `Horizontal Pod Autoscaling` (HPA) y `Cluster Autoscaling` (CA). Estas herramientas permiten ajustar automáticamente el número de réplicas de los pods y el número de nodos en el clúster, según la demanda.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la administración de clústeres de Kubernetes requiere una comprensión profunda de las funcionalidades y las herramientas disponibles, así como la implementación de best practices y medidas de seguridad para proteger los clústeres y garantizar su funcionamiento óptimo.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.32/release-notes/release-notes-draft.md" target="_blank">Release Notes Draft</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e8y62xqQJob6fDM7XFqyfhfDVUCUwSfvWZJ4HwjGBC3WuIsopWrevLWrjXgu9ws9yF28ya9Z64PBAJBoGB7feLWZiIclpyjrMXJH8MYsfvjeqEzh8UE9bkVK0-4_3phbzidDINvdGUWBQQT-3cWLN0h_b1otNh6qRuZH-rUjEVgbD9DMcbdul_mPvKj6JqPDWEuUVipQ&u=aHR0cHMlM2ElMmYlMmZnby52ZWVhbS5jb20lMmZ3cC01LWt1YmVybmV0ZXMtYmFja3VwLWJlc3QtcHJhY3RpY2VzJTNmc3QlM2RiaW5ncGFpZHNlYXJjaCUyNnV0bV9jYW1wYWlnbl9pZCUzZDYwNjIwOTU2MiUyNnV0bV9hZGdyb3VwJTNkS3ViZXJuZXRlcyUyNTIwZ2VuZXJhbCUyNnV0bV9hZGdyb3VwX2lkJTNkMTMxMDYxOTEzNjkxNzI0NiUyNnV0bV9hZGlkJTNkODE5MTM3NjAyMTE2ODMlMjZ1dG1fbWF0Y2h0eXBlJTNkcCUyNnV0bV9iaWRtYXRjaHR5cGUlM2RicCUyNnV0bV9uZXR3b3JrJTNkbyUyNnV0bV9kZXZpY2UlM2RjJTI2dXRtX2tleXdvcmQlM2RrdWJlcm5ldGVzJTI1MjBtYW5hZ2VtZW50JTI2dXRtX3RhcmdldGlkJTNka3dkLTgxOTE0MDEwNDU5NzgzJTNhbG9jLTE5MCUyNnV0bV9xdWVyeSUzZCU3YlF1ZXJ5JTdkJTI2dXRtX21zY2xraWQlM2Q1YzUzNzY2NjYxZWUxMjEyZjdlMTFjMjFmM2RmOTU0NCUyNm1zY2xraWQlM2Q1YzUzNzY2NjYxZWUxMjEyZjdlMTFjMjFmM2RmOTU0NCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZDAzS0JTLVAwMV9OQV9FTl9VU19QYWlkLVNlYXJjaF9XUF9LQlMtNS1CZXN0LVByYWN0aWNlcy1OQl8zREMlMjZ1dG1fdGVybSUzZGt1YmVybmV0ZXMlMjUyMG1hbmFnZW1lbnQlMjZ1dG1fY29udGVudCUzZEt1YmVybmV0ZXMlMjUyMGdlbmVyYWw" target="_blank">Kubernetes 5 Best Practices</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e88teTDejDnJiVKEyrW-ADTTVUCUyFh-QdkE7OgxajDpslV7dl_47C4IAIgpxEpSjN6qpSzrKYe48dkf1sAzi4K3eiJzuEacVxzJt-ChmoFvVNxPl_cIa-PMX2TEJYtjEdczC6-5ho4AaIx81bYI-z7tfG0JH0-IMQs-hPWqbX1g5kshB7hqPCR0-RcKAouDJH0AShPg&u=aHR0cHMlM2ElMmYlMmZwaXhlbC5ldmVyZXN0dGVjaC5uZXQlMmY0NDIyJTJmY3ElM2Zldl9zaWQlM2QxMCUyNmV2X2xuJTNkY29udGFpbmVyJTI1MjBvcmNoZXN0cmF0aW9uJTI1MjBrdWJlcm5ldGVzJTI2ZXZfbHR4JTNkJTI2ZXZfbHglM2Rrd2QtNzIwODc1ODA0NTM0NzQlM2Fsb2MtMTkwJTI2ZXZfbHR4JTNkJTI2ZXZfY3J4JTNkNzIwODcwMTUyMTIxNDglMjZldl9tdCUzZHAlMjZldl9kdmMlM2RjJTI2ZXZfcGh5JTNkNDg3OTIlMjZldl9sb2MlM2QlMjZldl9jeCUzZDQ4NzQ0MTc4MSUyNmV2X2F4JTNkMTE1MzM4OTU0NTg5MTYxNSUyNmV2X2V4JTNkJTI2ZXZfZWZpZCUzZGFlNWM1MTA1YjU5MjFhYmEwYTI3M2I0MjI3YTM2MzNkJTNhRyUzYXMlMjZ1cmwlM2RodHRwcyUyNTNBJTI1MkYlMjUyRmF3cy5hbWF6b24uY29tJTI1MkZwbSUyNTJGZWtzLWFueXdoZXJlJTI1MkYlMjUzRnRyayUyNTNEOTI0ZTA4OTYtNGI5ZC00OTczLWFlNWQtMWVjYWIyOGViZGMyJTI1MjZzY19jaGFubmVsJTI1M0RwcyUyNTI2dHJrJTI1M0RhMTQ1ZGU0Mi1hNzg4LTQ1MDUtYmE0OC05NzA5YzIxNDZmMzUlMjUyNmVmX2lkJTNkREFMITQ0MjIhMyEhcCEhbyEhY29udGFpbmVyJTI1MjUyMG9yY2hlc3RyYXRpb24lMjUyNTIwa3ViZXJuZXRlcyE0ODc0NDE3ODEhMTE1MzM4OTU0NTg5MTYxNSUyNm1zY2xraWQlM2RhZTVjNTEwNWI1OTIxYWJhMGEyNzNiNDIyN2EzNjMzZA" target="_blank">Simplify Kubernetes Management</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-06-29_1238.html">&larr; 2026-06-29 1238</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

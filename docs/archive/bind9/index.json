@@ -1,4 +1,20 @@
 {
+  "2026-07-03_1041": {
+    "slug": "bind9",
+    "title": "Configuración avanzada de BIND9",
+    "summary": "BIND9 es un servidor DNS de código abierto ampliamente utilizado. En este artículo, se presentan algunas de las mejores prácticas para configurar zonas, DNSSEC, vistas, RPZ y registro de logs en BIND9.",
+    "content": "BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la industria. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`. Por ejemplo, para agregar una zona primaria, se puede utilizar la siguiente configuración: `zone \"example.com\" { type master; file \"/etc/named/db.example.com\"; };`. \n\nPara configurar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma. La clave de zona se utiliza para firmar la zona, mientras que la clave de firma se utiliza para firmar las respuestas DNS. Se puede utilizar el comando `dnssec-keygen` para generar las claves. \n\nLas vistas en BIND9 permiten configurar diferentes conjuntos de zonas y configuraciones para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Se puede utilizar la directiva `view` en el archivo de configuración `named.conf` para definir las vistas. \n\nEl registro de logs en BIND9 se puede configurar utilizando la directiva `logging` en el archivo de configuración `named.conf`. Por ejemplo, se puede configurar el registro de logs para que se escriban en un archivo específico: `logging { channel log_file { file \"/var/log/named.log\"; }; category default { log_file; }; };`. \n\nPara mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la configuración de red. Se puede utilizar el comando `named-checkconf` para verificar la configuración de BIND9 y detectar cualquier error o problema de configuración. \n\nEn resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las diferentes opciones de configuración y cómo se utilizan para lograr un servidor DNS seguro y eficiente.",
+    "sources": [
+      {
+        "title": "The Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/"
+      },
+      {
+        "title": "BIND9 Documentation",
+        "url": "https://ftp.isc.org/isc/bind9/cur/9.19.4/doc/arm/Bv9ARM.html"
+      }
+    ]
+  },
   "2026-06-25_1046": {
     "slug": "bind9",
     "title": "BIND 9: Configuración y Mejoras",

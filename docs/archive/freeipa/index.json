@@ -1,4 +1,24 @@
 {
+  "2026-07-03_1041": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Administración de Identidades",
+    "summary": "FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. En este artículo, se presentan las mejores prácticas para implementar y configurar FreeIPA.",
+    "content": "\nFreeIPA es una herramienta fundamental para la administración de identidades en entornos Unix. Permite la autenticación y autorización de usuarios y servicios de manera centralizada. Para implementar FreeIPA, es necesario instalar el paquete `freeipa-server` y configurar el servidor con `ipa-server-install`.\n\nUna vez instalado, se puede configurar el acceso a los servicios utilizando `ipa service-add` y `ipa host-add`. Para agregar un nuevo usuario, se utiliza el comando `ipa user-add`. Es importante mencionar que FreeIPA también admite la autenticación con claves Passkey, como se menciona en la issue #1130 de GitHub.\n\nPara configurar las reglas de sudo, se utiliza el comando `ipa sudorule-add`. También es posible configurar relaciones de confianza con otros dominios utilizando `ipa trust-add`. La configuración de HBAC (Host-Based Access Control) se realiza con `ipa hbacrule-add`. Es fundamental mencionar que la seguridad es un aspecto clave en la implementación de FreeIPA, por lo que es recomendable seguir las mejores prácticas de seguridad, como las mencionadas en el sitio web de HackTricks.\n\nEn cuanto a las novedades, se ha actualizado la versión de Samba a 4.24.3, que incluye correcciones de seguridad para vulnerabilidades como CVE-2026-4480 y CVE-2026-2340. Es importante mantener el sistema actualizado para evitar vulnerabilidades de seguridad.\n\nFinalmente, es importante mencionar que la documentación oficial de FreeIPA es una excelente fuente de información para la configuración y el uso de la herramienta. También se pueden encontrar recursos adicionales en la comunidad de GitHub y en sitios web especializados en seguridad y administración de sistemas.\n\n",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub Issue #1130",
+        "url": "https://github.com/freeipa/freeipa-webui/issues/1130"
+      },
+      {
+        "title": "Fedora 44 FreeIPA Important Samba Remote Code Exec Fix",
+        "url": "https://linuxsecurity.com/advisories/fedora/fedora-44-freeipa-2026-7567819345"
+      },
+      {
+        "title": "FreeIPA Pentesting - HackTricks",
+        "url": "https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"
+      }
+    ]
+  },
   "2026-06-29_1238": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Acceso",
