@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-03T10:43:30.533635+00:00</updated>
+  <updated>2026-07-04T10:17:11.718442+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -552,5 +552,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-30_1113.html"/>
     <summary>OpenShift 4.22 ofrece nuevas características y mejoras para la gestión de contenedores y la seguridad. Esta versión incluye actualizaciones de seguridad y bugs, así como nuevas características para la gestión de clústeres y la autenticación.</summary>
     <published>2026-06-30T11:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-04_1015.html</id>
+    <title>Novedades en OpenShift 4.22</title>
+    <updated>2026-07-04T10:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4.22 es la última versión del popular plataforma de contenedores de Red Hat. Esta versión incluye varias mejoras y nuevas características, como la actualización de Argo CD a la versión 3.4, que se utiliza en OpenShift GitOps 1.21. Además, se han realizado cambios en la orden de acciones realizadas por los ingenieros de confiabilidad del sitio de Azure Red Hat OpenShift para mantener la salud del clúster.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de OpenShift 4.22 es la mejora en la gestión de clústeres. Ahora, es posible realizar una acción oportuna si los recursos del plano de control están sobreutilizados. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc get nodes&lt;/code&gt; para obtener la lista de nodos del clúster y &lt;code&gt;oc describe node &lt;nombre_del_nodo&gt;&lt;/code&gt; para obtener información detallada sobre un nodo específico.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift 4.22 incluye mejoras en la autenticación y autorización. Por ejemplo, se puede utilizar &lt;code&gt;oc create secret&lt;/code&gt; para crear un secreto y &lt;code&gt;oc apply&lt;/code&gt; para aplicar una configuración de seguridad. Además, se puede utilizar &lt;code&gt;oc get routes&lt;/code&gt; para obtener la lista de rutas del clúster y &lt;code&gt;oc describe route &lt;nombre_de_la_ruta&gt;&lt;/code&gt; para obtener información detallada sobre una ruta específica.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de OpenShift 4.22 es la mejora en la monitorización y el registro. Ahora, es posible utilizar &lt;code&gt;oc get pods&lt;/code&gt; para obtener la lista de pods del clúster y &lt;code&gt;oc logs&lt;/code&gt; para obtener los registros de un pod específico. Además, se puede utilizar &lt;code&gt;oc get deployments&lt;/code&gt; para obtener la lista de despliegues del clúster y &lt;code&gt;oc rollout&lt;/code&gt; para realizar un despliegue.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.22 ofrece varias mejoras y nuevas características que permiten una mayor flexibilidad y seguridad en la gestión de clústeres y la ejecución de aplicaciones. Es importante mencionar que, para aprovechar al máximo estas características, es necesario consultar la documentación oficial de OpenShift y realizar pruebas exhaustivas antes de implementar cualquier cambio en un entorno de producción.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar que la instalación de OpenShift 4.22 en un entorno de bare metal es posible gracias a la documentación proporcionada por Red Hat. Por ejemplo, se puede utilizar el comando &lt;code&gt;openshift-install&lt;/code&gt; para instalar OpenShift en un clúster de bare metal. Además, se puede utilizar &lt;code&gt;oc cluster up&lt;/code&gt; para crear un clúster de desarrollo y &lt;code&gt;oc cluster down&lt;/code&gt; para eliminar un clúster de desarrollo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://electromech.cloud/openshift-4-22-new-features-release-highlights/"&gt;OpenShift 4.22: New Features and Release Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.21/html/release_notes/gitops-release-notes"&gt;Chapter 1. Red Hat OpenShift GitOps release notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-04_1015.html"/>
+    <summary>OpenShift 4.22 ofrece nuevas características y mejoras en la gestión de clústeres y la seguridad. En este artículo, se presentan las novedades y se proporcionan ejemplos prácticos de configuración y uso.</summary>
+    <published>2026-07-04T10:15:00+00:00</published>
   </entry>
 </feed>

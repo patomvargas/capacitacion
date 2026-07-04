@@ -1,4 +1,28 @@
 {
+  "2026-07-04_1015": {
+    "slug": "claude-code",
+    "title": "Mejoras en Claude Code",
+    "summary": "Claude Code ha recibido varias mejoras y actualizaciones recientemente, incluyendo la resolución de problemas de conectividad y la adición de nuevas características. Estas mejoras buscan mejorar la productividad y la experiencia del usuario.",
+    "content": "\nLa última versión de Claude Code incluye varias mejoras y correcciones de errores. Una de las principales mejoras es la resolución del problema de conectividad que ocurría cuando se intentaba reconectar después de un error de autenticación. Esto se logró mediante la actualización del mecanismo de autenticación y la implementación de un nuevo sistema de gestión de tokens.\n\nOtra característica importante es la adición de soporte para comandos de Git en segundo plano en Windows. Esto permite a los usuarios ejecutar comandos de Git sin tener que interactuar con la interfaz de usuario de Claude Code. Para habilitar esta característica, los usuarios deben configurar la variable de entorno `CLAUDE_CODE_GIT_COMMAND` con el comando de Git deseado.\n\nAdemás, se han agregado nuevas características para mejorar la productividad y la experiencia del usuario. Una de ellas es la capacidad de configurar el comportamiento de la copia y el pegado en la ventana de Claude Code. Los usuarios pueden configurar la variable de entorno `CLAUDE_CODE_COPY_BEHAVIOR` para cambiar el comportamiento de la copia y el pegado.\n\nPara aprovechar al máximo las nuevas características de Claude Code, los usuarios deben asegurarse de tener la última versión del software. También es importante consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas. Por ejemplo, los usuarios pueden ejecutar el comando `claude-code --version` para verificar la versión actual del software.\n\nFinalmente, es importante mencionar que Claude Code también ofrece una variedad de herramientas y extensiones para mejorar la productividad y la experiencia del usuario. Por ejemplo, la extensión de VS Code para Claude Code permite a los usuarios acceder a las características de Claude Code directamente desde la interfaz de usuario de VS Code.\n\nEn resumen, las últimas actualizaciones de Claude Code ofrecen una variedad de mejoras y nuevas características que buscan mejorar la productividad y la experiencia del usuario. Los usuarios deben asegurarse de tener la última versión del software y consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas.",
+    "sources": [
+      {
+        "title": "Remote Control troubleshooting",
+        "url": "https://github.com/anthropics/claude-code/issues/66381"
+      },
+      {
+        "title": "Windows startup Connect to GitHub popup",
+        "url": "https://github.com/anthropics/claude-code/issues/66382"
+      },
+      {
+        "title": "Claude Code Tool Manager",
+        "url": "https://github.com/tylergraydev/claude-code-tool-manager"
+      },
+      {
+        "title": "Kiro for Codex IDE",
+        "url": "https://github.com/atman-33/kiro-for-codex-ide"
+      }
+    ]
+  },
   "2026-06-30_1113": {
     "slug": "claude-code",
     "title": "Mejoras y soluciones en Claude Code",

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Novedades en OpenShift 4.22 - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
+    </div>
+
+    <h1>Novedades en OpenShift 4.22</h1>
+    <div class="meta">2026-07-04 1015 · OpenShift</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>OpenShift 4.22 es la última versión del popular plataforma de contenedores de Red Hat. Esta versión incluye varias mejoras y nuevas características, como la actualización de Argo CD a la versión 3.4, que se utiliza en OpenShift GitOps 1.21. Además, se han realizado cambios en la orden de acciones realizadas por los ingenieros de confiabilidad del sitio de Azure Red Hat OpenShift para mantener la salud del clúster.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características más destacadas de OpenShift 4.22 es la mejora en la gestión de clústeres. Ahora, es posible realizar una acción oportuna si los recursos del plano de control están sobreutilizados. Por ejemplo, se puede utilizar el comando `oc get nodes` para obtener la lista de nodos del clúster y `oc describe node <nombre_del_nodo>` para obtener información detallada sobre un nodo específico.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, OpenShift 4.22 incluye mejoras en la autenticación y autorización. Por ejemplo, se puede utilizar `oc create secret` para crear un secreto y `oc apply` para aplicar una configuración de seguridad. Además, se puede utilizar `oc get routes` para obtener la lista de rutas del clúster y `oc describe route <nombre_de_la_ruta>` para obtener información detallada sobre una ruta específica.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de OpenShift 4.22 es la mejora en la monitorización y el registro. Ahora, es posible utilizar `oc get pods` para obtener la lista de pods del clúster y `oc logs` para obtener los registros de un pod específico. Además, se puede utilizar `oc get deployments` para obtener la lista de despliegues del clúster y `oc rollout` para realizar un despliegue.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, OpenShift 4.22 ofrece varias mejoras y nuevas características que permiten una mayor flexibilidad y seguridad en la gestión de clústeres y la ejecución de aplicaciones. Es importante mencionar que, para aprovechar al máximo estas características, es necesario consultar la documentación oficial de OpenShift y realizar pruebas exhaustivas antes de implementar cualquier cambio en un entorno de producción.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar que la instalación de OpenShift 4.22 en un entorno de bare metal es posible gracias a la documentación proporcionada por Red Hat. Por ejemplo, se puede utilizar el comando `openshift-install` para instalar OpenShift en un clúster de bare metal. Además, se puede utilizar `oc cluster up` para crear un clúster de desarrollo y `oc cluster down` para eliminar un clúster de desarrollo.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://electromech.cloud/openshift-4-22-new-features-release-highlights/" target="_blank">OpenShift 4.22: New Features and Release Highlights</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.21/html/release_notes/gitops-release-notes" target="_blank">Chapter 1. Red Hat OpenShift GitOps release notes</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

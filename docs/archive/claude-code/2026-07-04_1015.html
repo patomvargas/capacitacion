@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras y soluciones en Claude Code - Claude Code</title>
+    <title>Mejoras en Claude Code - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Mejoras y soluciones en Claude Code</h1>
-    <div class="meta">2026-06-30 1113 · Claude Code</div>
+    <h1>Mejoras en Claude Code</h1>
+    <div class="meta">2026-07-04 1015 · Claude Code</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La última versión de Claude Code ha incluido varias mejoras y soluciones a problemas comunes. Una de las mejoras más destacadas es la resolución del problema de autenticación que ocurría al intentar conectar con GitHub. Este problema se debía a la falta de documentación sobre el uso de `git credential-manager` en Windows. Para solucionar este problema, se puede utilizar el comando `git config --global credential.helper manager` para habilitar el administrador de credenciales de Git.</p>
+            <p>La última versión de Claude Code incluye varias mejoras y correcciones de errores. Una de las principales mejoras es la resolución del problema de conectividad que ocurría cuando se intentaba reconectar después de un error de autenticación. Esto se logró mediante la actualización del mecanismo de autenticación y la implementación de un nuevo sistema de gestión de tokens.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la optimización de la experiencia del usuario en la línea de comandos. Se han agregado nuevas características y comandos para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando `claude --resume` para reanudar una sesión anterior. Además, se han mejorado los mensajes de error y las notificaciones para proporcionar una mejor experiencia al usuario.</p>
+            <p>Otra característica importante es la adición de soporte para comandos de Git en segundo plano en Windows. Esto permite a los usuarios ejecutar comandos de Git sin tener que interactuar con la interfaz de usuario de Claude Code. Para habilitar esta característica, los usuarios deben configurar la variable de entorno `CLAUDE_CODE_GIT_COMMAND` con el comando de Git deseado.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, se han realizado mejoras en la autenticación y el manejo de sesiones. Se ha resuelto un problema de seguridad que permitía a un atacante acceder a la sesión de un usuario sin autorización. Para evitar este tipo de problemas, se recomienda utilizar `claude --secure` al iniciar una sesión.</p>
+            <p>Además, se han agregado nuevas características para mejorar la productividad y la experiencia del usuario. Una de ellas es la capacidad de configurar el comportamiento de la copia y el pegado en la ventana de Claude Code. Los usuarios pueden configurar la variable de entorno `CLAUDE_CODE_COPY_BEHAVIOR` para cambiar el comportamiento de la copia y el pegado.</p>
             
         
             
         
             
-            <p>Además, se han agregado nuevas características y herramientas para mejorar la productividad y la eficiencia del usuario. Por ejemplo, se puede utilizar el comando `claude --help` para obtener ayuda y documentación sobre los comandos y características disponibles.</p>
+            <p>Para aprovechar al máximo las nuevas características de Claude Code, los usuarios deben asegurarse de tener la última versión del software. También es importante consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas. Por ejemplo, los usuarios pueden ejecutar el comando `claude-code --version` para verificar la versión actual del software.</p>
             
         
             
         
             
-            <p>En resumen, las últimas mejoras y soluciones en Claude Code han mejorado significativamente la experiencia del usuario y la seguridad de la plataforma. Es importante estar al tanto de estas mejoras y soluciones para aprovechar al máximo las características y herramientas de Claude Code.</p>
+            <p>Finalmente, es importante mencionar que Claude Code también ofrece una variedad de herramientas y extensiones para mejorar la productividad y la experiencia del usuario. Por ejemplo, la extensión de VS Code para Claude Code permite a los usuarios acceder a las características de Claude Code directamente desde la interfaz de usuario de VS Code.</p>
             
         
             
         
             
-            <p>Para obtener más información sobre las mejoras y soluciones en Claude Code, se pueden consultar las fuentes oficiales y la documentación disponible en línea. Es importante leer y seguir las instrucciones y recomendaciones para asegurarse de que se está utilizando la plataforma de manera segura y eficiente.</p>
-            
-        
+            <p>En resumen, las últimas actualizaciones de Claude Code ofrecen una variedad de mejoras y nuevas características que buscan mejorar la productividad y la experiencia del usuario. Los usuarios deben asegurarse de tener la última versión del software y consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas.</p>
             
         
     </div>
@@ -114,12 +112,17 @@
             </li>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/issues/66382" target="_blank">Windows startup 'Connect to GitHub' popup</a>
+                <a href="https://github.com/anthropics/claude-code/issues/66382" target="_blank">Windows startup Connect to GitHub popup</a>
                 
             </li>
             
             <li>
-                <a href="https://www.anthropic.com/engineering/april-23-postmortem?pubDate=20260604" target="_blank">An update on recent Claude Code quality reports</a>
+                <a href="https://github.com/tylergraydev/claude-code-tool-manager" target="_blank">Claude Code Tool Manager</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/atman-33/kiro-for-codex-ide" target="_blank">Kiro for Codex IDE</a>
                 
             </li>
             
@@ -130,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-26_1055.html">&larr; 2026-06-26 1055</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-04_1015.html">2026-07-04 1015 &rarr;</a>
             
         </div>
     </div>
