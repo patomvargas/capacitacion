@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airflow: Mejores Prácticas y Novedades - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Airflow: Mejores Prácticas y Novedades</h1>
+    <div class="meta">2026-07-05 1020 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Airflow es una herramienta poderosa para la orquestación de flujo de trabajo, que permite a los desarrolladores y administradores de sistemas automatizar y gestionar flujos de trabajo complejos. La versión 3.0 de Airflow, también conocida como Astro, introduce nuevas características y mejoras en la plataforma. Una de las mejores prácticas para trabajar con Airflow es utilizar la versión más reciente y estable, ya que esto garantiza la seguridad y la compatibilidad con otras herramientas.</p>
+            
+        
+            
+        
+            
+            <p>Para instalar Airflow, se puede utilizar el comando `pip install apache-airflow`, y para iniciar el servidor web, se puede utilizar el comando `airflow db init` y luego `airflow webserver`. La configuración de Airflow se puede realizar mediante el archivo `airflow.cfg`, donde se pueden establecer parámetros como la conexión a la base de datos y la autenticación.</p>
+            
+        
+            
+        
+            
+            <p>La integración de Airflow con otras herramientas como dbt y Snowflake es una de las características más poderosas de la plataforma. dbt es una herramienta de transformación de datos que permite a los desarrolladores definir y ejecutar transformaciones de datos de manera declarativa, mientras que Snowflake es una plataforma de almacenamiento de datos en la nube que permite a los desarrolladores almacenar y procesar grandes cantidades de datos. La integración de Airflow con estas herramientas permite a los desarrolladores crear flujos de trabajo complejos que involucran la transformación y el análisis de datos.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Airflow es la posibilidad de crear y gestionar DAGs (Directed Acyclic Graphs), que son gráficos que representan el flujo de trabajo y permiten a los desarrolladores definir y ejecutar flujos de trabajo de manera visual. Los DAGs se pueden crear utilizando el lenguaje de programación Python y se pueden ejecutar utilizando el comando `airflow trigger_dag`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades en Airflow, la versión 3.0 introduce una nueva arquitectura de plugins que permite a los desarrolladores crear y compartir plugins personalizados para la plataforma. Además, la versión 3.0 incluye mejoras en la seguridad y la autenticación, lo que garantiza la protección de los flujos de trabajo y los datos.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow es una plataforma de orquestación de flujo de trabajo poderosa y flexible que permite a los desarrolladores y administradores de sistemas automatizar y gestionar flujos de trabajo complejos. La versión 3.0 de Airflow introduce nuevas características y mejoras en la plataforma, y la integración con otras herramientas como dbt y Snowflake es una de las características más poderosas de la plataforma.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://medium.com/@allahverdiyev.tural/airflow-vs-dagster-vs-prefect-a-2026-production-comparison-that-doesnt-hedge-f223dbaebd21" target="_blank">Airflow vs Dagster vs Prefect: A 2026 Production Comparison That Doesn’t Hedge</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kiran-pothina.medium.com/building-a-reliable-orchestration-platform-using-airflow-3-0-astro-dbt-snowflake-3af77594d8d7" target="_blank">Building a Reliable Orchestration Platform using Airflow 3.0 (Astro) + dbt + Snowflake</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@spiralmantra07/orchestrating-modern-data-stacks-dbt-snowflake-and-apache-airflow-7302d9bc5248" target="_blank">Orchestrating Modern Data Stacks: dbt, Snowflake, and Apache Airflow</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-01_1128.html">&larr; 2026-07-01 1128</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

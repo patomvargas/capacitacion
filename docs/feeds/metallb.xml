@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-04T10:17:11.742243+00:00</updated>
+  <updated>2026-07-05T10:21:25.350617+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -876,5 +876,76 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html"/>
     <summary>MetalLB es un balanceador de carga de código abierto para Kubernetes que permite la configuración de direcciones IP externas. En este artículo, se explica cómo configurar MetalLB en modo L2 y BGP, así como cómo solucionar problemas comunes.</summary>
     <published>2026-07-01T11:28:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-05_1020.html</id>
+    <title>MetalLB: Configuración y Troubleshooting</title>
+    <updated>2026-07-05T10:20:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que permite la configuración de IP externas para los servicios del cluster. El modo L2 (Layer 2) es el más común y se utiliza para configurar IP externas en la misma red que el cluster. Por otro lado, el modo BGP (Border Gateway Protocol) se utiliza para configurar IP externas en diferentes redes.&lt;/p&gt;
+&lt;p&gt;Para configurar MetalLB en modo L2, se debe crear un archivo de configuración &lt;code&gt;metallb-config.yaml&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: v1&lt;/p&gt;
+&lt;p&gt;kind: ConfigMap&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;namespace: metallb-system&lt;/p&gt;
+&lt;p&gt;name: config&lt;/p&gt;
+&lt;p&gt;data:&lt;/p&gt;
+&lt;p&gt;config: |&lt;/p&gt;
+&lt;p&gt;address-pools:&lt;/p&gt;
+&lt;p&gt;- name: default&lt;/p&gt;
+&lt;p&gt;protocol: layer2&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 10.0.0.100-10.0.0.200&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Luego, se puede aplicar la configuración con el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto al modo BGP, se debe configurar un proveedor de BGP, como por ejemplo, el proveedor &lt;code&gt;bgp&lt;/code&gt; de MetalLB. Se debe crear un archivo de configuración &lt;code&gt;bgp-config.yaml&lt;/code&gt; con el siguiente contenido:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: v1&lt;/p&gt;
+&lt;p&gt;kind: ConfigMap&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;namespace: metallb-system&lt;/p&gt;
+&lt;p&gt;name: bgp-config&lt;/p&gt;
+&lt;p&gt;data:&lt;/p&gt;
+&lt;p&gt;config: |&lt;/p&gt;
+&lt;p&gt;peers:&lt;/p&gt;
+&lt;p&gt;- peer-address: 10.0.0.1&lt;/p&gt;
+&lt;p&gt;peer-asn: 64512&lt;/p&gt;
+&lt;p&gt;my-asn: 64512&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Luego, se puede aplicar la configuración con el comando &lt;code&gt;kubectl apply -f bgp-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para realizar troubleshooting en MetalLB, se pueden utilizar comandos como &lt;code&gt;kubectl get pods -n metallb-system&lt;/code&gt; para verificar el estado de los pods de MetalLB, o &lt;code&gt;kubectl logs -f -n metallb-system &lt;pod-name&gt;&lt;/code&gt; para verificar los logs de un pod específico.&lt;/p&gt;
+&lt;p&gt;Además, se pueden utilizar herramientas como &lt;code&gt;prometheus&lt;/code&gt; y &lt;code&gt;grafana&lt;/code&gt; para monitorear el rendimiento de MetalLB y detectar posibles problemas.&lt;/p&gt;
+&lt;p&gt;En cuanto a los pools de IP, se pueden configurar varios pools con diferentes rangos de IP. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: v1&lt;/p&gt;
+&lt;p&gt;kind: ConfigMap&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;namespace: metallb-system&lt;/p&gt;
+&lt;p&gt;name: config&lt;/p&gt;
+&lt;p&gt;data:&lt;/p&gt;
+&lt;p&gt;config: |&lt;/p&gt;
+&lt;p&gt;address-pools:&lt;/p&gt;
+&lt;p&gt;- name: pool1&lt;/p&gt;
+&lt;p&gt;protocol: layer2&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 10.0.0.100-10.0.0.200&lt;/p&gt;
+&lt;p&gt;- name: pool2&lt;/p&gt;
+&lt;p&gt;protocol: layer2&lt;/p&gt;
+&lt;p&gt;addresses:&lt;/p&gt;
+&lt;p&gt;- 10.0.1.100-10.0.1.200&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Luego, se puede aplicar la configuración con el comando &lt;code&gt;kubectl apply -f metallb-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, según la fuente [1], hay un problema conocido con la versión 0.16.0 de MetalLB que afecta a los &lt;code&gt;podMonitors&lt;/code&gt;. Es recomendable verificar la documentación oficial de MetalLB para obtener más información sobre este problema y cómo solucionarlo.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para la configuración de IP externas en Kubernetes. Con la configuración adecuada y el uso de herramientas de monitoreo y troubleshooting, se puede asegurar un rendimiento óptimo y una alta disponibilidad de los servicios del cluster.&lt;/p&gt;
+&lt;p&gt;Se deben tener en cuenta las novedades y cambios en la versión 0.16.0 de MetalLB, como se menciona en la fuente [1]. Además, se pueden encontrar más información y ejemplos de configuración en la fuente [2].&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con K8s, MetalLB se integra perfectamente con el ecosistema de Kubernetes, permitiendo la configuración de IP externas para los servicios del cluster de manera sencilla y eficiente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la fuente [2] proporciona una guía detallada para la configuración de MetalLB en modo L2 y BGP, lo que puede ser muy útil para los administradores de Kubernetes que buscan implementar esta herramienta en su cluster.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/3080"&gt;podMonitors are broken since 0.16.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@emilyharbord2/deploying-metallb-via-helm-layer-2-and-bgp-configurations-2893852e3f71"&gt;Deploying MetalLB via Helm: Layer 2 and BGP Configurations&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-05_1020.html"/>
+    <summary>MetalLB es un balanceador de carga para Kubernetes que permite la configuración de IP externas. En este artículo, se cubren los modos L2 y BGP, pools de IP y técnicas de troubleshooting.</summary>
+    <published>2026-07-05T10:20:00+00:00</published>
   </entry>
 </feed>

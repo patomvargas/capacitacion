@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Mejoras y Novedades - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Mejoras y Novedades</h1>
+    <div class="meta">2026-07-05 1020 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Traefik es una herramienta fundamental para los equipos de DevOps y sysadmins, ya que permite gestionar y proteger APIs y microservicios de manera eficiente. En la versión 3.7 de Traefik, se han introducido varias mejoras y novedades, como la protección contra ataques de domain-fronting mediante la configuración de `SNICheck` y la introducción de la definición de recursos personalizados en Traefik Hub.</p>
+            
+        
+            
+        
+            
+            <p>Una de las novedades más destacadas es la protección contra ataques de domain-fronting, que se logra mediante la configuración de `SNICheck` en el archivo de configuración de Traefik. Esto se puede hacer mediante el comando `traefik --configFile=traefik.yml`, donde `traefik.yml` es el archivo de configuración que contiene la configuración de `SNICheck`. Por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>tls:</p>
+            
+        
+            
+            <p>stores:</p>
+            
+        
+            
+            <p>default:</p>
+            
+        
+            
+            <p>defaultCertificate:</p>
+            
+        
+            
+            <p>certFile: /path/to/cert.crt</p>
+            
+        
+            
+            <p>keyFile: /path/to/cert.key</p>
+            
+        
+            
+            <p>options:</p>
+            
+        
+            
+            <p>default:</p>
+            
+        
+            
+            <p>sniStrict: true</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Otra novedad importante es la introducción de la definición de recursos personalizados en Traefik Hub, que permite a los usuarios definir sus propios recursos y personalizar la gestión de sus APIs y microservicios. Esto se puede hacer mediante la creación de un archivo de definición de recurso personalizado, como por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: traefik.containo.us/v1alpha1</p>
+            
+        
+            
+            <p>kind: APICatalogItem</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: mi-recurso-personalizado</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>description: Este es mi recurso personalizado</p>
+            
+        
+            
+            <p>endpoints:</p>
+            
+        
+            
+            <p>- path: /mi-recurso</p>
+            
+        
+            
+            <p>method: GET</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Además, Traefik también proporciona soporte para la configuración de middlewares y routers, lo que permite a los usuarios personalizar la gestión de sus APIs y microservicios. Por ejemplo, se puede configurar un middleware para agregar un encabezado personalizado a las respuestas:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>http:</p>
+            
+        
+            
+            <p>middlewares:</p>
+            
+        
+            
+            <p>mi-middleware:</p>
+            
+        
+            
+            <p>headers:</p>
+            
+        
+            
+            <p>customHeader: valor-personalizado</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta poderosa y flexible que permite a los equipos de DevOps y sysadmins gestionar y proteger sus APIs y microservicios de manera eficiente. Con las últimas novedades y mejoras, Traefik se convierte en una herramienta aún más valiosa para cualquier equipo que busque optimizar su infraestructura y mejorar la seguridad de sus aplicaciones.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Traefik también proporciona soporte para la configuración de proveedores y la gestión de certificados SSL/TLS, lo que permite a los usuarios personalizar la gestión de sus APIs y microservicios. Por ejemplo, se puede configurar un proveedor para obtener certificados SSL/TLS de Let's Encrypt:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>tls:</p>
+            
+        
+            
+            <p>certificates:</p>
+            
+        
+            
+            <p>- certFile: /path/to/cert.crt</p>
+            
+        
+            
+            <p>keyFile: /path/to/cert.key</p>
+            
+        
+            
+            <p>stores:</p>
+            
+        
+            
+            <p>- default</p>
+            
+        
+            
+            <p>options:</p>
+            
+        
+            
+            <p>default:</p>
+            
+        
+            
+            <p>tls:</p>
+            
+        
+            
+            <p>minVersion: VersionTLS12</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Esto permite a los usuarios obtener certificados SSL/TLS de manera automática y segura, lo que es fundamental para cualquier aplicación que requiera una conexión segura.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la observabilidad, Traefik proporciona soporte para la configuración de métricas y registros, lo que permite a los usuarios monitorear y analizar el rendimiento de sus APIs y microservicios. Por ejemplo, se puede configurar un registro para registrar las solicitudes y respuestas:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>log:</p>
+            
+        
+            
+            <p>level: DEBUG</p>
+            
+        
+            
+            <p>filePath: /path/to/log.log</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Esto permite a los usuarios monitorear y analizar el rendimiento de sus aplicaciones y identificar posibles problemas o áreas de mejora.</p>
+            
+        
+            
+        
+            
+            <p>En conclusión, Traefik es una herramienta fundamental para cualquier equipo que busque gestionar y proteger sus APIs y microservicios de manera eficiente. Con las últimas novedades y mejoras, Traefik se convierte en una herramienta aún más valiosa para cualquier equipo que busque optimizar su infraestructura y mejorar la seguridad de sus aplicaciones.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66" target="_blank">SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://doc.traefik.io/traefik-hub/api-management/release-notes" target="_blank">What's new in Traefik Hub?</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://doc.traefik.io/traefik-hub/" target="_blank">Traefik Hub</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://traefik.io/blog/traefik-v3-7-service-middlewares" target="_blank">Service Middlewares: A New Composition Layer In Traefik v3.7</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-27_1013.html">&larr; 2026-06-27 1013</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-04T10:17:11.740521+00:00</updated>
+  <updated>2026-07-05T10:21:25.347352+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -308,5 +308,75 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-06-27_1013.html"/>
     <summary>Traefik es un proxy inverso de código abierto que permite gestionar rutas y middlewares de manera eficiente. En este artículo, se analizarán las últimas novedades y mejores prácticas para su uso.</summary>
     <published>2026-06-27T10:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-05_1020.html</id>
+    <title>Traefik: Mejoras y Novedades</title>
+    <updated>2026-07-05T10:20:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta fundamental para los equipos de DevOps y sysadmins, ya que permite gestionar y proteger APIs y microservicios de manera eficiente. En la versión 3.7 de Traefik, se han introducido varias mejoras y novedades, como la protección contra ataques de domain-fronting mediante la configuración de &lt;code&gt;SNICheck&lt;/code&gt; y la introducción de la definición de recursos personalizados en Traefik Hub.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la protección contra ataques de domain-fronting, que se logra mediante la configuración de &lt;code&gt;SNICheck&lt;/code&gt; en el archivo de configuración de Traefik. Esto se puede hacer mediante el comando &lt;code&gt;traefik --configFile=traefik.yml&lt;/code&gt;, donde &lt;code&gt;traefik.yml&lt;/code&gt; es el archivo de configuración que contiene la configuración de &lt;code&gt;SNICheck&lt;/code&gt;. Por ejemplo:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;tls:&lt;/p&gt;
+&lt;p&gt;stores:&lt;/p&gt;
+&lt;p&gt;default:&lt;/p&gt;
+&lt;p&gt;defaultCertificate:&lt;/p&gt;
+&lt;p&gt;certFile: /path/to/cert.crt&lt;/p&gt;
+&lt;p&gt;keyFile: /path/to/cert.key&lt;/p&gt;
+&lt;p&gt;options:&lt;/p&gt;
+&lt;p&gt;default:&lt;/p&gt;
+&lt;p&gt;sniStrict: true&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la introducción de la definición de recursos personalizados en Traefik Hub, que permite a los usuarios definir sus propios recursos y personalizar la gestión de sus APIs y microservicios. Esto se puede hacer mediante la creación de un archivo de definición de recurso personalizado, como por ejemplo:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;apiVersion: traefik.containo.us/v1alpha1&lt;/p&gt;
+&lt;p&gt;kind: APICatalogItem&lt;/p&gt;
+&lt;p&gt;metadata:&lt;/p&gt;
+&lt;p&gt;name: mi-recurso-personalizado&lt;/p&gt;
+&lt;p&gt;spec:&lt;/p&gt;
+&lt;p&gt;description: Este es mi recurso personalizado&lt;/p&gt;
+&lt;p&gt;endpoints:&lt;/p&gt;
+&lt;p&gt;- path: /mi-recurso&lt;/p&gt;
+&lt;p&gt;method: GET&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Además, Traefik también proporciona soporte para la configuración de middlewares y routers, lo que permite a los usuarios personalizar la gestión de sus APIs y microservicios. Por ejemplo, se puede configurar un middleware para agregar un encabezado personalizado a las respuestas:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;http:&lt;/p&gt;
+&lt;p&gt;middlewares:&lt;/p&gt;
+&lt;p&gt;mi-middleware:&lt;/p&gt;
+&lt;p&gt;headers:&lt;/p&gt;
+&lt;p&gt;customHeader: valor-personalizado&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa y flexible que permite a los equipos de DevOps y sysadmins gestionar y proteger sus APIs y microservicios de manera eficiente. Con las últimas novedades y mejoras, Traefik se convierte en una herramienta aún más valiosa para cualquier equipo que busque optimizar su infraestructura y mejorar la seguridad de sus aplicaciones.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Traefik también proporciona soporte para la configuración de proveedores y la gestión de certificados SSL/TLS, lo que permite a los usuarios personalizar la gestión de sus APIs y microservicios. Por ejemplo, se puede configurar un proveedor para obtener certificados SSL/TLS de Let's Encrypt:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;tls:&lt;/p&gt;
+&lt;p&gt;certificates:&lt;/p&gt;
+&lt;p&gt;- certFile: /path/to/cert.crt&lt;/p&gt;
+&lt;p&gt;keyFile: /path/to/cert.key&lt;/p&gt;
+&lt;p&gt;stores:&lt;/p&gt;
+&lt;p&gt;- default&lt;/p&gt;
+&lt;p&gt;options:&lt;/p&gt;
+&lt;p&gt;default:&lt;/p&gt;
+&lt;p&gt;tls:&lt;/p&gt;
+&lt;p&gt;minVersion: VersionTLS12&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Esto permite a los usuarios obtener certificados SSL/TLS de manera automática y segura, lo que es fundamental para cualquier aplicación que requiera una conexión segura.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik proporciona soporte para la configuración de métricas y registros, lo que permite a los usuarios monitorear y analizar el rendimiento de sus APIs y microservicios. Por ejemplo, se puede configurar un registro para registrar las solicitudes y respuestas:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;log:&lt;/p&gt;
+&lt;p&gt;level: DEBUG&lt;/p&gt;
+&lt;p&gt;filePath: /path/to/log.log&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Esto permite a los usuarios monitorear y analizar el rendimiento de sus aplicaciones y identificar posibles problemas o áreas de mejora.&lt;/p&gt;
+&lt;p&gt;En conclusión, Traefik es una herramienta fundamental para cualquier equipo que busque gestionar y proteger sus APIs y microservicios de manera eficiente. Con las últimas novedades y mejoras, Traefik se convierte en una herramienta aún más valiosa para cualquier equipo que busque optimizar su infraestructura y mejorar la seguridad de sus aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-5r4w-85f3-pw66"&gt;SNICheck ignores wildcard TLSOptions mappings, allowing domain-fronted mTLS bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/api-management/release-notes"&gt;What's new in Traefik Hub?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://doc.traefik.io/traefik-hub/"&gt;Traefik Hub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://traefik.io/blog/traefik-v3-7-service-middlewares"&gt;Service Middlewares: A New Composition Layer In Traefik v3.7&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-05_1020.html"/>
+    <summary>Traefik es un proxy inverso de código abierto que permite gestionar y proteger APIs y microservicios. En este artículo, se presentan las últimas novedades y mejoras en Traefik, incluyendo la protección contra ataques de domain-fronting y la introducción de la definición de recursos personalizados en Traefik Hub.</summary>
+    <published>2026-07-05T10:20:00+00:00</published>
   </entry>
 </feed>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Configuración y Troubleshooting - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Configuración y Troubleshooting</h1>
+    <div class="meta">2026-07-05 1020 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+            <p>MetalLB es una herramienta esencial para los administradores de Kubernetes, ya que permite la configuración de IP externas para los servicios del cluster. El modo L2 (Layer 2) es el más común y se utiliza para configurar IP externas en la misma red que el cluster. Por otro lado, el modo BGP (Border Gateway Protocol) se utiliza para configurar IP externas en diferentes redes.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar MetalLB en modo L2, se debe crear un archivo de configuración `metallb-config.yaml` con el siguiente contenido:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: ConfigMap</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>namespace: metallb-system</p>
+            
+        
+            
+            <p>name: config</p>
+            
+        
+            
+            <p>data:</p>
+            
+        
+            
+            <p>config: |</p>
+            
+        
+            
+            <p>address-pools:</p>
+            
+        
+            
+            <p>- name: default</p>
+            
+        
+            
+            <p>protocol: layer2</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 10.0.0.100-10.0.0.200</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Luego, se puede aplicar la configuración con el comando `kubectl apply -f metallb-config.yaml`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto al modo BGP, se debe configurar un proveedor de BGP, como por ejemplo, el proveedor `bgp` de MetalLB. Se debe crear un archivo de configuración `bgp-config.yaml` con el siguiente contenido:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: ConfigMap</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>namespace: metallb-system</p>
+            
+        
+            
+            <p>name: bgp-config</p>
+            
+        
+            
+            <p>data:</p>
+            
+        
+            
+            <p>config: |</p>
+            
+        
+            
+            <p>peers:</p>
+            
+        
+            
+            <p>- peer-address: 10.0.0.1</p>
+            
+        
+            
+            <p>peer-asn: 64512</p>
+            
+        
+            
+            <p>my-asn: 64512</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Luego, se puede aplicar la configuración con el comando `kubectl apply -f bgp-config.yaml`.</p>
+            
+        
+            
+        
+            
+            <p>Para realizar troubleshooting en MetalLB, se pueden utilizar comandos como `kubectl get pods -n metallb-system` para verificar el estado de los pods de MetalLB, o `kubectl logs -f -n metallb-system <pod-name>` para verificar los logs de un pod específico.</p>
+            
+        
+            
+        
+            
+            <p>Además, se pueden utilizar herramientas como `prometheus` y `grafana` para monitorear el rendimiento de MetalLB y detectar posibles problemas.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a los pools de IP, se pueden configurar varios pools con diferentes rangos de IP. Por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: v1</p>
+            
+        
+            
+            <p>kind: ConfigMap</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>namespace: metallb-system</p>
+            
+        
+            
+            <p>name: config</p>
+            
+        
+            
+            <p>data:</p>
+            
+        
+            
+            <p>config: |</p>
+            
+        
+            
+            <p>address-pools:</p>
+            
+        
+            
+            <p>- name: pool1</p>
+            
+        
+            
+            <p>protocol: layer2</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 10.0.0.100-10.0.0.200</p>
+            
+        
+            
+            <p>- name: pool2</p>
+            
+        
+            
+            <p>protocol: layer2</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 10.0.1.100-10.0.1.200</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Luego, se puede aplicar la configuración con el comando `kubectl apply -f metallb-config.yaml`.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que, según la fuente [1], hay un problema conocido con la versión 0.16.0 de MetalLB que afecta a los `podMonitors`. Es recomendable verificar la documentación oficial de MetalLB para obtener más información sobre este problema y cómo solucionarlo.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para la configuración de IP externas en Kubernetes. Con la configuración adecuada y el uso de herramientas de monitoreo y troubleshooting, se puede asegurar un rendimiento óptimo y una alta disponibilidad de los servicios del cluster.</p>
+            
+        
+            
+        
+            
+            <p>Se deben tener en cuenta las novedades y cambios en la versión 0.16.0 de MetalLB, como se menciona en la fuente [1]. Además, se pueden encontrar más información y ejemplos de configuración en la fuente [2].</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con K8s, MetalLB se integra perfectamente con el ecosistema de Kubernetes, permitiendo la configuración de IP externas para los servicios del cluster de manera sencilla y eficiente.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la fuente [2] proporciona una guía detallada para la configuración de MetalLB en modo L2 y BGP, lo que puede ser muy útil para los administradores de Kubernetes que buscan implementar esta herramienta en su cluster.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3080" target="_blank">podMonitors are broken since 0.16.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@emilyharbord2/deploying-metallb-via-helm-layer-2-and-bgp-configurations-2893852e3f71" target="_blank">Deploying MetalLB via Helm: Layer 2 and BGP Configurations</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-01_1128.html">&larr; 2026-07-01 1128</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
