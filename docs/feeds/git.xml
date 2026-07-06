@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-05T10:21:25.358634+00:00</updated>
+  <updated>2026-07-06T12:09:20.866886+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -470,5 +470,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-02_1045.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-07-02T10:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-06_1208.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-07-06T12:08:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más potentes de Git es el uso de ramas, que permite a los desarrolladores trabajar de manera aislada en diferentes características o correcciones de errores sin afectar el código principal. Para crear una nueva rama, se puede utilizar el comando &lt;code&gt;git branch &lt;nombre_de_la_rama&gt;&lt;/code&gt;. Luego, se puede cambiar a la nueva rama con &lt;code&gt;git checkout &lt;nombre_de_la_rama&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez que se ha creado una rama, se pueden realizar cambios y commits sin afectar la rama principal. Cuando se estén listos para integrar los cambios, se puede utilizar &lt;code&gt;git merge &lt;nombre_de_la_rama&gt;&lt;/code&gt; para fusionar la rama con la rama principal. Sin embargo, si se desea mantener una historia de commits limpia, se puede utilizar &lt;code&gt;git rebase&lt;/code&gt; para reorganizar los commits.&lt;/p&gt;
+&lt;p&gt;Otra característica útil de Git es el uso de worktrees, que permite a los desarrolladores trabajar en diferentes directorios de trabajo para el mismo repositorio. Para crear un nuevo worktree, se puede utilizar el comando &lt;code&gt;git worktree add &lt;nombre_del_worktree&gt;&lt;/code&gt;. Luego, se puede cambiar al nuevo worktree con &lt;code&gt;git checkout &lt;nombre_del_worktree&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona una variedad de hooks que pueden ser utilizados para automatizar tareas y mejorar la calidad del código. Por ejemplo, se puede utilizar el hook &lt;code&gt;pre-commit&lt;/code&gt; para ejecutar pruebas unitarias antes de realizar un commit. Para configurar un hook, se puede crear un archivo en el directorio &lt;code&gt;.git/hooks&lt;/code&gt; con el nombre del hook y agregar el código deseado.&lt;/p&gt;
+&lt;p&gt;Recientemente, se han agregado algunas novedades y mejoras a Git, como el soporte para worktrees en GitHub Desktop. Esto permite a los desarrolladores trabajar de manera más eficiente y organizada en diferentes proyectos y características.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta muy potente que ofrece una variedad de características y herramientas para mejorar la productividad y la calidad del código. Al utilizar ramas, hooks y worktrees, los desarrolladores pueden trabajar de manera más eficiente y efectiva en sus proyectos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@tabspacepresentations/day-4-branching-fundamentals-the-superpower-of-git-0dc80a1ffe16"&gt;Day 4: Branching Fundamentals — The Superpower of Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://desktop.github.com/release-notes/"&gt;Release notes for GitHub Desktop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/git-for-windows/git-snapshots/releases"&gt;Releases · git-for-windows/git-snapshots - GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-06_1208.html"/>
+    <summary>En este artículo, exploraremos algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de ramas, hooks y worktrees. También cubriremos algunas novedades y mejoras en la herramienta.</summary>
+    <published>2026-07-06T12:08:00+00:00</published>
   </entry>
 </feed>

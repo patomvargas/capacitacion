@@ -1,4 +1,24 @@
 {
+  "2026-07-06_1208": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y configuración. Descubre cómo mejorar la eficiencia de tu base de datos.",
+    "content": "\nLa optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tu base de datos. Una de las formas de lograrlo es mediante la indexación. La indexación permite a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`.\n\nOtra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que garantiza la disponibilidad y la recuperación en caso de fallo. Puedes configurar la replicación utilizando el comando `pg_basebackup` y `pg_replay`.\n\nLa configuración de PostgreSQL también es fundamental para optimizar el rendimiento. Puedes ajustar parámetros como `shared_buffers`, `effective_cache_size` y `maintenance_work_mem` para mejorar el rendimiento de la base de datos. Por ejemplo, puedes aumentar el valor de `shared_buffers` para permitir que PostgreSQL almacene más datos en memoria.\n\nAdemás, es importante monitorear el rendimiento de la base de datos utilizando herramientas como `pg_stat` y `pg_top`. Estas herramientas te permiten analizar el rendimiento de la base de datos y identificar posibles cuellos de botella. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando `pg_dump` y `pg_restore`.\n\nLa extensión de PostgreSQL también es una forma de mejorar el rendimiento. Puedes instalar extensiones como `pg_partman` y `pg_pathman` para mejorar la gestión de particiones y la indexación. También es importante mantener la base de datos actualizada con las últimas versiones de PostgreSQL para asegurarte de tener las últimas características y mejoras de rendimiento.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación, configuración y monitoreo. Al seguir estos consejos, podrás mejorar el rendimiento y la escalabilidad de tu base de datos.\n",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "Postgres - The Cloudflare Blog",
+        "url": "https://blog.cloudflare.com/tag/postgres/"
+      },
+      {
+        "title": "PostgreSQL Memory Architecture Demystified — From Process ...",
+        "url": "https://medium.com/@ahmadrezazarei/postgresql-memory-architecture-demystified-from-process-model-to-shared-memory-2418a54bbd31"
+      }
+    ]
+  },
   "2026-07-02_1045": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

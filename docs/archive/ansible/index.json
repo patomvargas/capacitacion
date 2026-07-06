@@ -1,4 +1,32 @@
 {
+  "2026-07-06_1208": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan algunas de las mejores prácticas y características de Ansible.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que utiliza playbooks para definir las tareas que se deben ejecutar en los servidores. Un playbook es un archivo YAML que contiene una serie de tareas que se deben ejecutar en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web utilizando el comando `ansible-playbook -i inventory.ini playbook.yml`. \n\nUna de las características más importantes de Ansible es su capacidad para utilizar roles, que son conjuntos de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Los roles se pueden crear y compartir utilizando la herramienta `ansible-galaxy`, que permite a los usuarios buscar y descargar roles desde la galería de Ansible. \n\nOtra característica importante de Ansible es su capacidad para utilizar colecciones, que son conjuntos de módulos y roles que se pueden utilizar para implementar funcionalidades específicas. Las colecciones se pueden crear y compartir utilizando la herramienta `ansible-galaxy`, y se pueden instalar utilizando el comando `ansible-galaxy collection install`. \n\nEn cuanto a la seguridad, Ansible proporciona la herramienta `ansible-vault`, que permite a los usuarios cifrar y descifrar archivos y variables de manera segura. Esto es especialmente útil para almacenar contraseñas y claves de acceso en los playbooks. \n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran variedad de características y herramientas para implementar y gestionar configuraciones de manera eficiente. \n\nEs importante mencionar que, aunque las fuentes proporcionadas no contienen información específica sobre Ansible, se pueden encontrar muchas recursos y documentación en la página oficial de Ansible y en la comunidad de desarrolladores de Ansible.",
+    "sources": [
+      {
+        "title": "Open OnDemand Ansible Role",
+        "url": "https://github.com/OSC/ood-ansible"
+      },
+      {
+        "title": "Akamai CLI: Enterprise Application Access",
+        "url": "https://github.com/akamai/cli-eaa"
+      },
+      {
+        "title": "Sehab121/awesome-openclaw-skills-CN",
+        "url": "https://github.com/Sehab121/awesome-openclaw-skills-CN"
+      },
+      {
+        "title": "Azure DevOps Self-Learning Library",
+        "url": "https://github.com/rdammala/AzureDevOpsSelflearn"
+      },
+      {
+        "title": "Quantization and Synthesis (Device Specific Code Generation) for ADI's MAX78000 and MAX78002 Edge AI Devices",
+        "url": "https://github.com/analogdevicesinc/ai8x-synthesis"
+      }
+    ]
+  },
   "2026-07-02_1045": {
     "slug": "ansible",
     "title": "Ansible: Nuevas Funcionalidades y Mejoras",

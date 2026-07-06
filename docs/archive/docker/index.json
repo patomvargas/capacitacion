@@ -1,4 +1,24 @@
 {
+  "2026-07-06_1208": {
+    "slug": "docker",
+    "title": "Mejores prácticas de Docker para producción",
+    "summary": "En este artículo, se presentan las mejores prácticas de Docker para producción, incluyendo la creación de contenedores con almacenamiento persistente, la seguridad y la optimización de imágenes. Se cubren temas como multi-stage builds, compose, networking y seguridad.",
+    "content": "\nLa creación de contenedores con almacenamiento persistente es crucial para garantizar la integridad de los datos en entornos de producción. Para lograr esto, se pueden utilizar comandos como `docker volume create` y `docker run -v` para montar volúmenes persistente en los contenedores. Por ejemplo, `docker run -v /var/lib/mysql:/var/lib/mysql -d mysql` monta un volumen persistente en el contenedor de MySQL.\n\nLa seguridad es otro aspecto fundamental en la implementación de Docker en producción. Se pueden seguir las mejores prácticas de seguridad como la utilización de `docker exec` en lugar de `docker run` para evitar la creación de nuevos contenedores, y la configuración de `docker-compose` para limitar los recursos y los permisos de los contenedores. Por ejemplo, se puede configurar `docker-compose` para utilizar `restart: always` y `privileged: false` para garantizar que los contenedores se reinicien automáticamente en caso de fallo y no tengan permisos de root.\n\nEn cuanto a la optimización de imágenes, se pueden utilizar herramientas como `hadolint` para analizar y optimizar los Dockerfiles. Por ejemplo, se puede utilizar `hadolint` para detectar y corregir errores de sintaxis y mejores prácticas en los Dockerfiles. Además, se pueden utilizar comandos como `docker build -t` y `docker push` para crear y publicar imágenes de Docker optimizadas.\n\nLa utilización de `BuildKit` es otra forma de optimizar la creación de imágenes de Docker. `BuildKit` es una herramienta que permite crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar `docker build -t` con la opción `--buildkit` para habilitar `BuildKit` y crear imágenes de Docker optimizadas.\n\nEn resumen, la implementación de Docker en producción requiere una serie de mejores prácticas y herramientas para garantizar la integridad de los datos, la seguridad y la optimización de las imágenes. Al seguir estas prácticas y utilizar herramientas como `hadolint` y `BuildKit`, se pueden crear contenedores y imágenes de Docker seguras y eficientes.\n\nFinalmente, es importante mencionar que la documentación oficial de Docker y las fuentes de información en línea son fundamentales para mantenerse actualizado sobre las últimas novedades y mejores prácticas de Docker. Algunas fuentes recomendadas incluyen la documentación oficial de Docker y sitios web como DEV Community y Medium, que ofrecen artículos y tutoriales sobre Docker y DevOps.\n",
+    "sources": [
+      {
+        "title": "Building Docker Containers with Persistent Storage",
+        "url": "https://dev.to/highbee/building-docker-containers-with-persistent-storage-p1d"
+      },
+      {
+        "title": "7 Docker Security Best Practices for Production",
+        "url": "https://medium.com/@bektiaw/7-docker-security-best-practices-for-production-64499519d5da"
+      },
+      {
+        "title": "Docker Hello World: Building, Running, and Debugging",
+        "url": "https://medium.com/data-bistrot/docker-hello-world-building-running-and-debugging-bb211b5e9b85"
+      }
+    ]
+  },
   "2026-07-02_1045": {
     "slug": "docker",
     "title": "Mejores prácticas con Docker",

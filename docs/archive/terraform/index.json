@@ -1,4 +1,24 @@
 {
+  "2026-07-06_1208": {
+    "slug": "terraform",
+    "title": "Terraform: Mejores Practicas y Novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos en la nube de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de proveedores, módulos y estado.",
+    "content": "\nTerraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos en la nube de manera eficiente. Para empezar a trabajar con Terraform, es importante entender los conceptos básicos de la herramienta, como los proveedores, módulos y estado.\n\nLos proveedores en Terraform son responsables de interactuar con los servicios en la nube, como AWS o Azure, y de provisionar los recursos necesarios. Por ejemplo, el proveedor de AWS se puede configurar utilizando el comando `terraform provider aws`. Los módulos, por otro lado, son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos. Por ejemplo, se puede crear un módulo para provisionar un servidor web en AWS utilizando el comando `terraform module create`.\n\nLa gestión del estado en Terraform es crucial para asegurarse de que los recursos se provisionen y se eliminen correctamente. El estado se almacena en un archivo llamado `terraform.tfstate`, que se puede compartir entre diferentes miembros del equipo. Sin embargo, es importante tener cuidado al compartir el estado, ya que puede contener información sensible. Para evitar problemas con el estado, se puede utilizar el comando `terraform state pull` para descargar el estado desde un almacenamiento remoto.\n\nEn cuanto a las novedades en Terraform, se ha anunciado recientemente la versión 1.4, que incluye mejoras en la gestión de proveedores y módulos. También se ha introducido el concepto de workspaces, que permite a los equipos trabajar en diferentes entornos de desarrollo de manera aislada. Para crear un workspace, se puede utilizar el comando `terraform workspace new`.\n\nAdemás, se ha mejorado la compatibilidad con diferentes proveedores, como AWS y Azure. Por ejemplo, se puede utilizar el módulo `terraform-aws-notify-slack` para enviar notificaciones a Slack cuando se produzcan cambios en los recursos de AWS. Para instalar este módulo, se puede utilizar el comando `terraform get`.\n\nEn resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, y es importante entender sus conceptos básicos y mejores prácticas para aprovechar al máximo sus beneficios.\n\nPara más información, se pueden consultar las fuentes oficiales de Terraform y los módulos disponibles en GitHub.\n\n",
+    "sources": [
+      {
+        "title": "Terraform GitHub",
+        "url": "https://github.com/hashicorp/terraform"
+      },
+      {
+        "title": "Terraform AWS Notify Slack Module",
+        "url": "https://github.com/terraform-aws-modules/terraform-aws-notify-slack"
+      },
+      {
+        "title": "Terraform Documentation",
+        "url": "https://www.terraform.io/docs"
+      }
+    ]
+  },
   "2026-07-02_1045": {
     "slug": "terraform",
     "title": "Terraform: Mejoras y Novedades",

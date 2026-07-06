@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-05T10:21:25.353881+00:00</updated>
+  <updated>2026-07-06T12:09:20.859327+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -495,5 +495,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-02_1045.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre las mejores prácticas para mejorar la eficiencia de tu base de datos.</summary>
     <published>2026-07-02T10:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-06_1208.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-07-06T12:08:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tu base de datos. Una de las formas de lograrlo es mediante la indexación. La indexación permite a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que garantiza la disponibilidad y la recuperación en caso de fallo. Puedes configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_replay&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de PostgreSQL también es fundamental para optimizar el rendimiento. Puedes ajustar parámetros como &lt;code&gt;shared_buffers&lt;/code&gt;, &lt;code&gt;effective_cache_size&lt;/code&gt; y &lt;code&gt;maintenance_work_mem&lt;/code&gt; para mejorar el rendimiento de la base de datos. Por ejemplo, puedes aumentar el valor de &lt;code&gt;shared_buffers&lt;/code&gt; para permitir que PostgreSQL almacene más datos en memoria.&lt;/p&gt;
+&lt;p&gt;Además, es importante monitorear el rendimiento de la base de datos utilizando herramientas como &lt;code&gt;pg_stat&lt;/code&gt; y &lt;code&gt;pg_top&lt;/code&gt;. Estas herramientas te permiten analizar el rendimiento de la base de datos y identificar posibles cuellos de botella. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La extensión de PostgreSQL también es una forma de mejorar el rendimiento. Puedes instalar extensiones como &lt;code&gt;pg_partman&lt;/code&gt; y &lt;code&gt;pg_pathman&lt;/code&gt; para mejorar la gestión de particiones y la indexación. También es importante mantener la base de datos actualizada con las últimas versiones de PostgreSQL para asegurarte de tener las últimas características y mejoras de rendimiento.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación, configuración y monitoreo. Al seguir estos consejos, podrás mejorar el rendimiento y la escalabilidad de tu base de datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/tag/postgres/"&gt;Postgres - The Cloudflare Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@ahmadrezazarei/postgresql-memory-architecture-demystified-from-process-model-to-shared-memory-2418a54bbd31"&gt;PostgreSQL Memory Architecture Demystified — From Process ...&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-06_1208.html"/>
+    <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y configuración. Descubre cómo mejorar la eficiencia de tu base de datos.</summary>
+    <published>2026-07-06T12:08:00+00:00</published>
   </entry>
 </feed>

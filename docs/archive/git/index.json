@@ -1,4 +1,24 @@
 {
+  "2026-07-06_1208": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de ramas, hooks y worktrees. También cubriremos algunas novedades y mejoras en la herramienta.",
+    "content": "Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más potentes de Git es el uso de ramas, que permite a los desarrolladores trabajar de manera aislada en diferentes características o correcciones de errores sin afectar el código principal. Para crear una nueva rama, se puede utilizar el comando `git branch <nombre_de_la_rama>`. Luego, se puede cambiar a la nueva rama con `git checkout <nombre_de_la_rama>`.\n\nUna vez que se ha creado una rama, se pueden realizar cambios y commits sin afectar la rama principal. Cuando se estén listos para integrar los cambios, se puede utilizar `git merge <nombre_de_la_rama>` para fusionar la rama con la rama principal. Sin embargo, si se desea mantener una historia de commits limpia, se puede utilizar `git rebase` para reorganizar los commits.\n\nOtra característica útil de Git es el uso de worktrees, que permite a los desarrolladores trabajar en diferentes directorios de trabajo para el mismo repositorio. Para crear un nuevo worktree, se puede utilizar el comando `git worktree add <nombre_del_worktree>`. Luego, se puede cambiar al nuevo worktree con `git checkout <nombre_del_worktree>`.\n\nAdemás, Git proporciona una variedad de hooks que pueden ser utilizados para automatizar tareas y mejorar la calidad del código. Por ejemplo, se puede utilizar el hook `pre-commit` para ejecutar pruebas unitarias antes de realizar un commit. Para configurar un hook, se puede crear un archivo en el directorio `.git/hooks` con el nombre del hook y agregar el código deseado.\n\nRecientemente, se han agregado algunas novedades y mejoras a Git, como el soporte para worktrees en GitHub Desktop. Esto permite a los desarrolladores trabajar de manera más eficiente y organizada en diferentes proyectos y características.\n\nEn resumen, Git es una herramienta muy potente que ofrece una variedad de características y herramientas para mejorar la productividad y la calidad del código. Al utilizar ramas, hooks y worktrees, los desarrolladores pueden trabajar de manera más eficiente y efectiva en sus proyectos.",
+    "sources": [
+      {
+        "title": "Day 4: Branching Fundamentals — The Superpower of Git",
+        "url": "https://medium.com/@tabspacepresentations/day-4-branching-fundamentals-the-superpower-of-git-0dc80a1ffe16"
+      },
+      {
+        "title": "Release notes for GitHub Desktop",
+        "url": "https://desktop.github.com/release-notes/"
+      },
+      {
+        "title": "Releases · git-for-windows/git-snapshots - GitHub",
+        "url": "https://github.com/git-for-windows/git-snapshots/releases"
+      }
+    ]
+  },
   "2026-07-02_1045": {
     "slug": "git",
     "title": "Mejores prácticas de Git para DevOps",

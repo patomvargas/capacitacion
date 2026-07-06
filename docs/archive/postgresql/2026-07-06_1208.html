@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Nuevas Funcionalidades y Mejoras - Ansible</title>
-    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <title>Optimización de PostgreSQL - PostgreSQL</title>
+    <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,51 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Ansible: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-07-02 1045 · Ansible</div>
+    <h1>Optimización de PostgreSQL</h1>
+    <div class="meta">2026-07-06 1208 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera eficiente. Con la reciente publicación de `ansible-core v2.19.11rc1`, se han incluido varias mejoras y correcciones de errores.</p>
+        
+            
+            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tu base de datos. Una de las formas de lograrlo es mediante la indexación. La indexación permite a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`.</p>
             
         
             
         
             
-            <p>Para aprovechar estas nuevas funcionalidades, es importante actualizar la versión de Ansible en nuestro entorno. Esto se puede hacer ejecutando el comando `ansible --version` para verificar la versión actual y luego `pip install --upgrade ansible` para actualizarla.</p>
+            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que garantiza la disponibilidad y la recuperación en caso de fallo. Puedes configurar la replicación utilizando el comando `pg_basebackup` y `pg_replay`.</p>
             
         
             
         
             
-            <p>Una de las nuevas funcionalidades más interesantes es la integración con `OKD Collection for Ansible`, que permite automatizar la gestión de aplicaciones en clústeres OKD. Para utilizar esta colección, debemos instalarla ejecutando `ansible-galaxy collection install openshift.community.okd`.</p>
+            <p>La configuración de PostgreSQL también es fundamental para optimizar el rendimiento. Puedes ajustar parámetros como `shared_buffers`, `effective_cache_size` y `maintenance_work_mem` para mejorar el rendimiento de la base de datos. Por ejemplo, puedes aumentar el valor de `shared_buffers` para permitir que PostgreSQL almacene más datos en memoria.</p>
             
         
             
         
             
-            <p>Además, se han publicado varias herramientas de desarrollo para Ansible, como `ansible-dev-environment v26.6.0` y `ansible-dev-tools v26.6.0`, que facilitan la creación y prueba de playbooks y roles. Para utilizar estas herramientas, debemos instalarlas ejecutando `pip install ansible-dev-environment` y `pip install ansible-dev-tools`.</p>
+            <p>Además, es importante monitorear el rendimiento de la base de datos utilizando herramientas como `pg_stat` y `pg_top`. Estas herramientas te permiten analizar el rendimiento de la base de datos y identificar posibles cuellos de botella. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando `pg_dump` y `pg_restore`.</p>
             
         
             
         
             
-            <p>Para gestionar la seguridad de nuestros playbooks y roles, es importante utilizar `ansible-vault` para cifrar las credenciales y los datos sensibles. Esto se puede hacer ejecutando `ansible-vault create` para crear un nuevo archivo cifrado y `ansible-vault edit` para editar un archivo cifrado existente.</p>
+            <p>La extensión de PostgreSQL también es una forma de mejorar el rendimiento. Puedes instalar extensiones como `pg_partman` y `pg_pathman` para mejorar la gestión de particiones y la indexación. También es importante mantener la base de datos actualizada con las últimas versiones de PostgreSQL para asegurarte de tener las últimas características y mejoras de rendimiento.</p>
             
         
             
         
             
-            <p>En resumen, Ansible sigue evolucionando con nuevas funcionalidades y mejoras que permiten a los administradores de sistemas y desarrolladores de DevOps gestionar y configurar sus entornos de manera más eficiente y segura.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación, configuración y monitoreo. Al seguir estos consejos, podrás mejorar el rendimiento y la escalabilidad de tu base de datos.</p>
+            
+        
             
         
     </div>
@@ -105,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html" target="_blank">Roadmaps — Ansible Community Documentation</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-19-11rc1/45908" target="_blank">New Release: ansible-core v2.19.11rc1</a>
+                <a href="https://blog.cloudflare.com/tag/postgres/" target="_blank">Postgres - The Cloudflare Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/openshift/community.okd" target="_blank">OKD Collection for Ansible</a>
+                <a href="https://medium.com/@ahmadrezazarei/postgresql-memory-architecture-demystified-from-process-model-to-shared-memory-2418a54bbd31" target="_blank">PostgreSQL Memory Architecture Demystified — From Process ...</a>
                 
             </li>
             
@@ -126,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-06-28_1031.html">&larr; 2026-06-28 1031</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-02_1045.html">&larr; 2026-07-02 1045</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-06_1208.html">2026-07-06 1208 &rarr;</a>
             
         </div>
     </div>

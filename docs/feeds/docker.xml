@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-05T10:21:25.356366+00:00</updated>
+  <updated>2026-07-06T12:09:20.863208+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -424,5 +424,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-02_1045.html"/>
     <summary>Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas. En este artículo, se presentan algunas mejores prácticas para utilizar Docker de manera efectiva.</summary>
     <published>2026-07-02T10:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-07-06_1208.html</id>
+    <title>Mejores prácticas de Docker para producción</title>
+    <updated>2026-07-06T12:08:00+00:00</updated>
+    <content type="html">&lt;p&gt;La creación de contenedores con almacenamiento persistente es crucial para garantizar la integridad de los datos en entornos de producción. Para lograr esto, se pueden utilizar comandos como &lt;code&gt;docker volume create&lt;/code&gt; y &lt;code&gt;docker run -v&lt;/code&gt; para montar volúmenes persistente en los contenedores. Por ejemplo, &lt;code&gt;docker run -v /var/lib/mysql:/var/lib/mysql -d mysql&lt;/code&gt; monta un volumen persistente en el contenedor de MySQL.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto fundamental en la implementación de Docker en producción. Se pueden seguir las mejores prácticas de seguridad como la utilización de &lt;code&gt;docker exec&lt;/code&gt; en lugar de &lt;code&gt;docker run&lt;/code&gt; para evitar la creación de nuevos contenedores, y la configuración de &lt;code&gt;docker-compose&lt;/code&gt; para limitar los recursos y los permisos de los contenedores. Por ejemplo, se puede configurar &lt;code&gt;docker-compose&lt;/code&gt; para utilizar &lt;code&gt;restart: always&lt;/code&gt; y &lt;code&gt;privileged: false&lt;/code&gt; para garantizar que los contenedores se reinicien automáticamente en caso de fallo y no tengan permisos de root.&lt;/p&gt;
+&lt;p&gt;En cuanto a la optimización de imágenes, se pueden utilizar herramientas como &lt;code&gt;hadolint&lt;/code&gt; para analizar y optimizar los Dockerfiles. Por ejemplo, se puede utilizar &lt;code&gt;hadolint&lt;/code&gt; para detectar y corregir errores de sintaxis y mejores prácticas en los Dockerfiles. Además, se pueden utilizar comandos como &lt;code&gt;docker build -t&lt;/code&gt; y &lt;code&gt;docker push&lt;/code&gt; para crear y publicar imágenes de Docker optimizadas.&lt;/p&gt;
+&lt;p&gt;La utilización de &lt;code&gt;BuildKit&lt;/code&gt; es otra forma de optimizar la creación de imágenes de Docker. &lt;code&gt;BuildKit&lt;/code&gt; es una herramienta que permite crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar &lt;code&gt;docker build -t&lt;/code&gt; con la opción &lt;code&gt;--buildkit&lt;/code&gt; para habilitar &lt;code&gt;BuildKit&lt;/code&gt; y crear imágenes de Docker optimizadas.&lt;/p&gt;
+&lt;p&gt;En resumen, la implementación de Docker en producción requiere una serie de mejores prácticas y herramientas para garantizar la integridad de los datos, la seguridad y la optimización de las imágenes. Al seguir estas prácticas y utilizar herramientas como &lt;code&gt;hadolint&lt;/code&gt; y &lt;code&gt;BuildKit&lt;/code&gt;, se pueden crear contenedores y imágenes de Docker seguras y eficientes.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Docker y las fuentes de información en línea son fundamentales para mantenerse actualizado sobre las últimas novedades y mejores prácticas de Docker. Algunas fuentes recomendadas incluyen la documentación oficial de Docker y sitios web como DEV Community y Medium, que ofrecen artículos y tutoriales sobre Docker y DevOps.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/highbee/building-docker-containers-with-persistent-storage-p1d"&gt;Building Docker Containers with Persistent Storage&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@bektiaw/7-docker-security-best-practices-for-production-64499519d5da"&gt;7 Docker Security Best Practices for Production&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/data-bistrot/docker-hello-world-building-running-and-debugging-bb211b5e9b85"&gt;Docker Hello World: Building, Running, and Debugging&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-06_1208.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Docker para producción, incluyendo la creación de contenedores con almacenamiento persistente, la seguridad y la optimización de imágenes. Se cubren temas como multi-stage builds, compose, networking y seguridad.</summary>
+    <published>2026-07-06T12:08:00+00:00</published>
   </entry>
 </feed>

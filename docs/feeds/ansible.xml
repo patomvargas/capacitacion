@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-05T10:21:25.363131+00:00</updated>
+  <updated>2026-07-06T12:09:20.874344+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -572,5 +572,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-02_1045.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas funcionalidades y mejoras. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus capacidades.</summary>
     <published>2026-07-02T10:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-06_1208.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-07-06T12:08:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que utiliza playbooks para definir las tareas que se deben ejecutar en los servidores. Un playbook es un archivo YAML que contiene una serie de tareas que se deben ejecutar en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web utilizando el comando &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Ansible es su capacidad para utilizar roles, que son conjuntos de tareas y configuraciones que se pueden reutilizar en diferentes playbooks. Los roles se pueden crear y compartir utilizando la herramienta &lt;code&gt;ansible-galaxy&lt;/code&gt;, que permite a los usuarios buscar y descargar roles desde la galería de Ansible.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es su capacidad para utilizar colecciones, que son conjuntos de módulos y roles que se pueden utilizar para implementar funcionalidades específicas. Las colecciones se pueden crear y compartir utilizando la herramienta &lt;code&gt;ansible-galaxy&lt;/code&gt;, y se pueden instalar utilizando el comando &lt;code&gt;ansible-galaxy collection install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Ansible proporciona la herramienta &lt;code&gt;ansible-vault&lt;/code&gt;, que permite a los usuarios cifrar y descifrar archivos y variables de manera segura. Esto es especialmente útil para almacenar contraseñas y claves de acceso en los playbooks.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que ofrece una gran variedad de características y herramientas para implementar y gestionar configuraciones de manera eficiente.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, aunque las fuentes proporcionadas no contienen información específica sobre Ansible, se pueden encontrar muchas recursos y documentación en la página oficial de Ansible y en la comunidad de desarrolladores de Ansible.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OSC/ood-ansible"&gt;Open OnDemand Ansible Role&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/akamai/cli-eaa"&gt;Akamai CLI: Enterprise Application Access&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/Sehab121/awesome-openclaw-skills-CN"&gt;Sehab121/awesome-openclaw-skills-CN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rdammala/AzureDevOpsSelflearn"&gt;Azure DevOps Self-Learning Library&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/analogdevicesinc/ai8x-synthesis"&gt;Quantization and Synthesis (Device Specific Code Generation) for ADI's MAX78000 and MAX78002 Edge AI Devices&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-06_1208.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se presentan algunas de las mejores prácticas y características de Ansible.</summary>
+    <published>2026-07-06T12:08:00+00:00</published>
   </entry>
 </feed>

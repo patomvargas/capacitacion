@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-05T10:21:25.360992+00:00</updated>
+  <updated>2026-07-06T12:09:20.870590+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -356,5 +356,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-02_1045.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los desarrolladores y administradores de sistemas crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo la versión 1.15.6 y 1.15.7, así como algunas best practices para su uso.</summary>
     <published>2026-07-02T10:45:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-06_1208.html</id>
+    <title>Terraform: Mejores Practicas y Novedades</title>
+    <updated>2026-07-06T12:08:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos en la nube de manera eficiente. Para empezar a trabajar con Terraform, es importante entender los conceptos básicos de la herramienta, como los proveedores, módulos y estado.&lt;/p&gt;
+&lt;p&gt;Los proveedores en Terraform son responsables de interactuar con los servicios en la nube, como AWS o Azure, y de provisionar los recursos necesarios. Por ejemplo, el proveedor de AWS se puede configurar utilizando el comando &lt;code&gt;terraform provider aws&lt;/code&gt;. Los módulos, por otro lado, son conjuntos de configuraciones de Terraform que se pueden reutilizar en diferentes proyectos. Por ejemplo, se puede crear un módulo para provisionar un servidor web en AWS utilizando el comando &lt;code&gt;terraform module create&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La gestión del estado en Terraform es crucial para asegurarse de que los recursos se provisionen y se eliminen correctamente. El estado se almacena en un archivo llamado &lt;code&gt;terraform.tfstate&lt;/code&gt;, que se puede compartir entre diferentes miembros del equipo. Sin embargo, es importante tener cuidado al compartir el estado, ya que puede contener información sensible. Para evitar problemas con el estado, se puede utilizar el comando &lt;code&gt;terraform state pull&lt;/code&gt; para descargar el estado desde un almacenamiento remoto.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades en Terraform, se ha anunciado recientemente la versión 1.4, que incluye mejoras en la gestión de proveedores y módulos. También se ha introducido el concepto de workspaces, que permite a los equipos trabajar en diferentes entornos de desarrollo de manera aislada. Para crear un workspace, se puede utilizar el comando &lt;code&gt;terraform workspace new&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se ha mejorado la compatibilidad con diferentes proveedores, como AWS y Azure. Por ejemplo, se puede utilizar el módulo &lt;code&gt;terraform-aws-notify-slack&lt;/code&gt; para enviar notificaciones a Slack cuando se produzcan cambios en los recursos de AWS. Para instalar este módulo, se puede utilizar el comando &lt;code&gt;terraform get&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código, y es importante entender sus conceptos básicos y mejores prácticas para aprovechar al máximo sus beneficios.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Terraform y los módulos disponibles en GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform"&gt;Terraform GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/terraform-aws-modules/terraform-aws-notify-slack"&gt;Terraform AWS Notify Slack Module&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.terraform.io/docs"&gt;Terraform Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-06_1208.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos en la nube de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de proveedores, módulos y estado.</summary>
+    <published>2026-07-06T12:08:00+00:00</published>
   </entry>
 </feed>
