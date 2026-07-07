@@ -1,4 +1,20 @@
 {
+  "2026-07-07_1112": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se explora su configuración y hardening para asegurar la comunicación en redes.",
+    "content": "\nOpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, se puede generar un par de claves RSA con `openssl genrsa -out server.key 2048`.\n\nUna vez generados los certificados y claves, se debe configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`. Luego, se puede iniciar el servidor con `openvpn --config server.conf`.\n\nPara conectar un cliente a un servidor OpenVPN, se debe generar un archivo de configuración `client.conf` con las siguientes líneas: `client`, `dev tun`, `proto udp`, `remote-cert-tls server`, `ca ca.crt`, `cert client.crt`, `key client.key`. Luego, se puede conectar al servidor con `openvpn --config client.conf`.\n\nEn cuanto a la seguridad, es importante hardening el servidor OpenVPN. Esto se puede hacer configurando el firewall para que solo permita el tráfico necesario, utilizando `iptables` o `ufw`. También es importante mantener el servidor y los clientes actualizados con las últimas versiones de OpenVPN y otros paquetes de seguridad.\n\nAdemás, se puede utilizar OpenVPN Access Server para gestionar y configurar los servidores y clientes de manera centralizada. Esto permite una mayor flexibilidad y escalabilidad en la configuración de la red VPN.\n\nFinalmente, es importante mencionar que OpenVPN también se puede utilizar para configurar conexiones site-to-site, lo que permite conectar dos redes diferentes de manera segura. Esto se puede hacer configurando dos servidores OpenVPN, uno en cada red, y estableciendo una conexión entre ellos.\n\n  ",
+    "sources": [
+      {
+        "title": "OpenVPN GitHub",
+        "url": "https://github.com/OpenVPN/openvpn"
+      },
+      {
+        "title": "OpenVPN Access Server",
+        "url": "https://openvpn.net/access-server/"
+      }
+    ]
+  },
   "2026-07-03_1041": {
     "slug": "openvpn",
     "title": "Configuración y Seguridad de OpenVPN",

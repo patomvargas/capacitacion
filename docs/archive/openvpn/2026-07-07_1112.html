@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Configuración avanzada de BIND9 - DNS BIND9</title>
-    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Configuración avanzada de BIND9</h1>
-    <div class="meta">2026-07-03 1041 · DNS BIND9</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-07-07 1112 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la industria. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`. Por ejemplo, para agregar una zona primaria, se puede utilizar la siguiente configuración: `zone "example.com" { type master; file "/etc/named/db.example.com"; };`.</p>
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, se puede generar un par de claves RSA con `openssl genrsa -out server.key 2048`.</p>
             
         
             
         
             
-            <p>Para configurar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma. La clave de zona se utiliza para firmar la zona, mientras que la clave de firma se utiliza para firmar las respuestas DNS. Se puede utilizar el comando `dnssec-keygen` para generar las claves.</p>
+            <p>Una vez generados los certificados y claves, se debe configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`. Luego, se puede iniciar el servidor con `openvpn --config server.conf`.</p>
             
         
             
         
             
-            <p>Las vistas en BIND9 permiten configurar diferentes conjuntos de zonas y configuraciones para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Se puede utilizar la directiva `view` en el archivo de configuración `named.conf` para definir las vistas.</p>
+            <p>Para conectar un cliente a un servidor OpenVPN, se debe generar un archivo de configuración `client.conf` con las siguientes líneas: `client`, `dev tun`, `proto udp`, `remote-cert-tls server`, `ca ca.crt`, `cert client.crt`, `key client.key`. Luego, se puede conectar al servidor con `openvpn --config client.conf`.</p>
             
         
             
         
             
-            <p>El registro de logs en BIND9 se puede configurar utilizando la directiva `logging` en el archivo de configuración `named.conf`. Por ejemplo, se puede configurar el registro de logs para que se escriban en un archivo específico: `logging { channel log_file { file "/var/log/named.log"; }; category default { log_file; }; };`.</p>
+            <p>En cuanto a la seguridad, es importante hardening el servidor OpenVPN. Esto se puede hacer configurando el firewall para que solo permita el tráfico necesario, utilizando `iptables` o `ufw`. También es importante mantener el servidor y los clientes actualizados con las últimas versiones de OpenVPN y otros paquetes de seguridad.</p>
             
         
             
         
             
-            <p>Para mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la configuración de red. Se puede utilizar el comando `named-checkconf` para verificar la configuración de BIND9 y detectar cualquier error o problema de configuración.</p>
+            <p>Además, se puede utilizar OpenVPN Access Server para gestionar y configurar los servidores y clientes de manera centralizada. Esto permite una mayor flexibilidad y escalabilidad en la configuración de la red VPN.</p>
             
         
             
         
             
-            <p>En resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las diferentes opciones de configuración y cómo se utilizan para lograr un servidor DNS seguro y eficiente.</p>
+            <p>Finalmente, es importante mencionar que OpenVPN también se puede utilizar para configurar conexiones site-to-site, lo que permite conectar dos redes diferentes de manera segura. Esto se puede hacer configurando dos servidores OpenVPN, uno en cada red, y estableciendo una conexión entre ellos.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,12 +111,12 @@
         <ul>
             
             <li>
-                <a href="https://blog.cloudflare.com/" target="_blank">The Cloudflare Blog</a>
+                <a href="https://github.com/OpenVPN/openvpn" target="_blank">OpenVPN GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://ftp.isc.org/isc/bind9/cur/9.19.4/doc/arm/Bv9ARM.html" target="_blank">BIND9 Documentation</a>
+                <a href="https://openvpn.net/access-server/" target="_blank">OpenVPN Access Server</a>
                 
             </li>
             
@@ -121,12 +127,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html">&larr; 2026-06-25 1046</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-03_1041.html">&larr; 2026-07-03 1041</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-07_1112.html">2026-07-07 1112 &rarr;</a>
             
         </div>
     </div>

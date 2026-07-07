@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuración de DNS BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+    </div>
+
+    <h1>Configuración de DNS BIND9</h1>
+    <div class="meta">2026-07-07 1112 · DNS BIND9</div>
+
+    <div class="content">
+        
+        
+            
+            <p>El sistema DNS BIND9 es una herramienta fundamental para la administración de nombres de dominio en Internet. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`, donde se definen las zonas y sus respectivos archivos de zona. Por ejemplo, para crear una zona llamada `example.com`, se agregaría la siguiente línea al archivo `named.conf`: `zone "example.com" IN { type master; file "/etc/bind/db.example.com"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para implementar DNSSEC en BIND9, se deben generar claves de zona y firmar las zonas con ellas. Esto se puede hacer utilizando el comando `dnssec-keygen` para generar las claves y `dnssec-signzone` para firmar las zonas. Por ejemplo, para generar una clave de zona para la zona `example.com`, se ejecutaría el comando: `dnssec-keygen -a RSASHA1 -b 2048 -n ZONE example.com`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido DNS dependiendo de la dirección IP del cliente. Esto se puede hacer utilizando la directiva `view` en el archivo `named.conf`. Por ejemplo, para crear una vista llamada `internal` que sirva contenido DNS diferente para clientes dentro de la red interna, se agregaría la siguiente línea al archivo `named.conf`: `view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La configuración de RPZ (Response Policy Zones) en BIND9 permite bloquear o modificar respuestas DNS para ciertos dominios. Esto se puede hacer utilizando la directiva `response-policy` en el archivo `named.conf`. Por ejemplo, para crear una zona RPZ que bloquee las consultas para el dominio `malware.com`, se agregaría la siguiente línea al archivo `named.conf`: `response-policy { zone "rpz"; };` y luego se agregaría la zona RPZ con el comando: `zone "rpz" { type master; file "/etc/bind/db.rpz"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, para mejorar el rendimiento de BIND9, se pueden ajustar varios parámetros en el archivo `named.conf`, como el tamaño del caché y el número de hilos de procesamiento. Por ejemplo, para aumentar el tamaño del caché a 10MB, se agregaría la siguiente línea al archivo `named.conf`: `cache-size 10000;`. También se pueden utilizar herramientas como `bind9-stats` para monitorear el rendimiento de BIND9 y identificar áreas de mejora.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, la configuración de DNS BIND9 requiere una comprensión profunda de las diferentes características y parámetros que se pueden ajustar. Siguiendo las mejores prácticas y utilizando las herramientas adecuadas, se puede asegurar un rendimiento óptimo y una configuración segura para el sistema DNS.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/garyhooks/oscp/blob/master/dirb_lists/directory-list-lowercase-2.3-medium.txt" target="_blank">directory-list-lowercase-2.3-medium.txt</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-automate-container-deployments-portainer-webhooks" target="_blank">2026-03-20-automate-container-deployments-portainer-webhooks</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/OneUptime/blog/blob/master/posts/2026-02-23-how-to-use-terraform-graph-to-visualize-resource-dependencies/validation-summary.md" target="_blank">Validation Summary: How to Use terraform graph to Visualize Resource Dependencies</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-04-how-to-resolve-kernel-panic-not-syncing-boot-errors-on-rhel-9" target="_blank">2026-03-04-how-to-resolve-kernel-panic-not-syncing-boot-errors-on-rhel-9</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-design-schema-for-soft-deletes" target="_blank">2026-03-31-mysql-design-schema-for-soft-deletes</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-03_1041.html">&larr; 2026-07-03 1041</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-06T12:09:20.829442+00:00</updated>
+  <updated>2026-07-07T11:13:57.924571+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -602,5 +602,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-03_1041.html"/>
     <summary>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con nuevas características y mejoras en seguridad, almacenamiento y redes. En este artículo, se presentan las últimas novedades y best practices para administrar clústeres de Kubernetes de manera efectiva.</summary>
     <published>2026-07-03T10:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-07_1112.html</id>
+    <title>Novedades en Kubernetes 1.23</title>
+    <updated>2026-07-07T11:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes 1.23 es una versión importante que incluye varias mejoras y nuevas características. Una de las novedades más destacadas es la simplificación del código base mediante la deprecación de flags de logging específicos de klog. Esto se refleja en la eliminación de flags como &lt;code&gt;--v&lt;/code&gt; y &lt;code&gt;--vmodule&lt;/code&gt; en favor de una configuración de logging más estándar.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging en Kubernetes. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl logs&lt;/code&gt; para ver los logs de un pod específico. Además, se puede configurar el logging en el archivo de configuración de Kubernetes utilizando la directiva &lt;code&gt;logging.format&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Kubernetes 1.23 introduce varias mejoras, como la capacidad de utilizar &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico de red entre pods. Esto se puede lograr utilizando el comando &lt;code&gt;kubectl apply&lt;/code&gt; con un archivo de configuración que define la política de red. Por ejemplo: &lt;code&gt;kubectl apply -f network-policy.yaml&lt;/code&gt;. También se puede utilizar el comando &lt;code&gt;kubectl get networkpolicy&lt;/code&gt; para ver las políticas de red actuales.&lt;/p&gt;
+&lt;p&gt;Otra característica importante en Kubernetes 1.23 es el soporte mejorado para almacenamiento. Se puede utilizar el comando &lt;code&gt;kubectl get storageclass&lt;/code&gt; para ver las clases de almacenamiento disponibles. Además, se puede crear un nuevo almacenamiento utilizando el comando &lt;code&gt;kubectl apply&lt;/code&gt; con un archivo de configuración que define la clase de almacenamiento.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes 1.23 es una versión poderosa que ofrece varias mejoras y nuevas características. Para aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging, la seguridad y el almacenamiento.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Kubernetes es muy activa y ofrece muchos recursos para aprender y mejorar. Se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para interactuar con el clúster de Kubernetes, y se puede encontrar documentación y ejemplos en la página oficial de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/contributor-site"&gt;Kubernetes Contributor Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.23/release-notes/release-notes-draft.md"&gt;Release Notes Draft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/community/blob/master/sig-list.md"&gt;Kubernetes SIG List&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-07_1112.html"/>
+    <summary>Kubernetes 1.23 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta versión.</summary>
+    <published>2026-07-07T11:12:00+00:00</published>
   </entry>
 </feed>

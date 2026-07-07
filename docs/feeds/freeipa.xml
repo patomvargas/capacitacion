@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-06T12:09:20.821708+00:00</updated>
+  <updated>2026-07-07T11:13:57.912878+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -554,5 +554,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-03_1041.html"/>
     <summary>FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. En este artículo, se presentan las mejores prácticas para implementar y configurar FreeIPA.</summary>
     <published>2026-07-03T10:41:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-07_1112.html</id>
+    <title>FreeIPA: Administración de Identidades</title>
+    <updated>2026-07-07T11:12:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta poderosa para la administración de identidades en entornos Unix. Permite la autenticación de usuarios y la gestión de accesos a recursos mediante el protocolo Kerberos. Para instalar FreeIPA, se puede utilizar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; en una máquina con un sistema operativo compatible.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA implica la creación de un dominio y la definición de las políticas de autenticación y autorización. Se pueden crear usuarios y grupos, y asignar permisos y roles según sea necesario. El comando &lt;code&gt;ipa user-add&lt;/code&gt; se utiliza para agregar nuevos usuarios, mientras que &lt;code&gt;ipa group-add&lt;/code&gt; se utiliza para crear nuevos grupos.&lt;/p&gt;
+&lt;p&gt;Para establecer una relación de confianza entre dos dominios FreeIPA, se puede utilizar el comando &lt;code&gt;ipa trust-add&lt;/code&gt;. Esto permite a los usuarios de un dominio acceder a recursos en el otro dominio sin necesidad de autenticarse nuevamente. La gestión de accesos también se puede realizar mediante el uso de reglas HBAC (Host-Based Access Control) y sudo.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA ofrece varias características para proteger la autenticación y la autorización. Se pueden configurar certificados SSL/TLS para cifrar las comunicaciones entre el cliente y el servidor, y se pueden establecer políticas de contraseña y autenticación multifactor. El comando &lt;code&gt;ipa cert-request&lt;/code&gt; se utiliza para solicitar un certificado SSL/TLS para el servidor FreeIPA.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que FreeIPA es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y las fuentes de información actualizadas para obtener la información más reciente sobre su uso y configuración.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"&gt;FreeIPA Pentesting - HackTricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@tradingcontentdrive/how-i-built-a-freeipa-ldap-server-as-an-identity-provider-for-openshift-019425208bed"&gt;How I Built a FreeIPA LDAP Server as an Identity Provider for OpenShift Cluster&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/"&gt;FreeIPA&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-07_1112.html"/>
+    <summary>FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. Permite la gestión de identidades y accesos en entornos Unix.</summary>
+    <published>2026-07-07T11:12:00+00:00</published>
   </entry>
 </feed>

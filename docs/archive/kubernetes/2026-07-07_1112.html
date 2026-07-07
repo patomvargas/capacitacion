@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Configuración avanzada de BIND9 - DNS BIND9</title>
-    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <title>Novedades en Kubernetes 1.23 - Kubernetes</title>
+    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Configuración avanzada de BIND9</h1>
-    <div class="meta">2026-07-03 1041 · DNS BIND9</div>
+    <h1>Novedades en Kubernetes 1.23</h1>
+    <div class="meta">2026-07-07 1112 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la industria. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`. Por ejemplo, para agregar una zona primaria, se puede utilizar la siguiente configuración: `zone "example.com" { type master; file "/etc/named/db.example.com"; };`.</p>
+        
+            
+            <p>Kubernetes 1.23 es una versión importante que incluye varias mejoras y nuevas características. Una de las novedades más destacadas es la simplificación del código base mediante la deprecación de flags de logging específicos de klog. Esto se refleja en la eliminación de flags como `--v` y `--vmodule` en favor de una configuración de logging más estándar.</p>
             
         
             
         
             
-            <p>Para configurar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma. La clave de zona se utiliza para firmar la zona, mientras que la clave de firma se utiliza para firmar las respuestas DNS. Se puede utilizar el comando `dnssec-keygen` para generar las claves.</p>
+            <p>Para aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging en Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl logs` para ver los logs de un pod específico. Además, se puede configurar el logging en el archivo de configuración de Kubernetes utilizando la directiva `logging.format`.</p>
             
         
             
         
             
-            <p>Las vistas en BIND9 permiten configurar diferentes conjuntos de zonas y configuraciones para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Se puede utilizar la directiva `view` en el archivo de configuración `named.conf` para definir las vistas.</p>
+            <p>En cuanto a la seguridad, Kubernetes 1.23 introduce varias mejoras, como la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods. Esto se puede lograr utilizando el comando `kubectl apply` con un archivo de configuración que define la política de red. Por ejemplo: `kubectl apply -f network-policy.yaml`. También se puede utilizar el comando `kubectl get networkpolicy` para ver las políticas de red actuales.</p>
             
         
             
         
             
-            <p>El registro de logs en BIND9 se puede configurar utilizando la directiva `logging` en el archivo de configuración `named.conf`. Por ejemplo, se puede configurar el registro de logs para que se escriban en un archivo específico: `logging { channel log_file { file "/var/log/named.log"; }; category default { log_file; }; };`.</p>
+            <p>Otra característica importante en Kubernetes 1.23 es el soporte mejorado para almacenamiento. Se puede utilizar el comando `kubectl get storageclass` para ver las clases de almacenamiento disponibles. Además, se puede crear un nuevo almacenamiento utilizando el comando `kubectl apply` con un archivo de configuración que define la clase de almacenamiento.</p>
             
         
             
         
             
-            <p>Para mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la configuración de red. Se puede utilizar el comando `named-checkconf` para verificar la configuración de BIND9 y detectar cualquier error o problema de configuración.</p>
+            <p>En resumen, Kubernetes 1.23 es una versión poderosa que ofrece varias mejoras y nuevas características. Para aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging, la seguridad y el almacenamiento.</p>
             
         
             
         
             
-            <p>En resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las diferentes opciones de configuración y cómo se utilizan para lograr un servidor DNS seguro y eficiente.</p>
+            <p>Finalmente, es importante mencionar que la comunidad de Kubernetes es muy activa y ofrece muchos recursos para aprender y mejorar. Se puede utilizar el comando `kubectl` para interactuar con el clúster de Kubernetes, y se puede encontrar documentación y ejemplos en la página oficial de Kubernetes.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,12 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://blog.cloudflare.com/" target="_blank">The Cloudflare Blog</a>
+                <a href="https://github.com/kubernetes/contributor-site" target="_blank">Kubernetes Contributor Site</a>
                 
             </li>
             
             <li>
-                <a href="https://ftp.isc.org/isc/bind9/cur/9.19.4/doc/arm/Bv9ARM.html" target="_blank">BIND9 Documentation</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.23/release-notes/release-notes-draft.md" target="_blank">Release Notes Draft</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/kubernetes/community/blob/master/sig-list.md" target="_blank">Kubernetes SIG List</a>
                 
             </li>
             
@@ -121,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html">&larr; 2026-06-25 1046</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-03_1041.html">&larr; 2026-07-03 1041</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-07_1112.html">2026-07-07 1112 &rarr;</a>
             
         </div>
     </div>

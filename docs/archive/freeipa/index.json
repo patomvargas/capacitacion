@@ -1,4 +1,24 @@
 {
+  "2026-07-07_1112": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Administración de Identidades",
+    "summary": "FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. Permite la gestión de identidades y accesos en entornos Unix.",
+    "content": "FreeIPA es una herramienta poderosa para la administración de identidades en entornos Unix. Permite la autenticación de usuarios y la gestión de accesos a recursos mediante el protocolo Kerberos. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con un sistema operativo compatible.\n\n \n La configuración de FreeIPA implica la creación de un dominio y la definición de las políticas de autenticación y autorización. Se pueden crear usuarios y grupos, y asignar permisos y roles según sea necesario. El comando `ipa user-add` se utiliza para agregar nuevos usuarios, mientras que `ipa group-add` se utiliza para crear nuevos grupos.\n\n \n Para establecer una relación de confianza entre dos dominios FreeIPA, se puede utilizar el comando `ipa trust-add`. Esto permite a los usuarios de un dominio acceder a recursos en el otro dominio sin necesidad de autenticarse nuevamente. La gestión de accesos también se puede realizar mediante el uso de reglas HBAC (Host-Based Access Control) y sudo.\n\n \n En cuanto a la seguridad, FreeIPA ofrece varias características para proteger la autenticación y la autorización. Se pueden configurar certificados SSL/TLS para cifrar las comunicaciones entre el cliente y el servidor, y se pueden establecer políticas de contraseña y autenticación multifactor. El comando `ipa cert-request` se utiliza para solicitar un certificado SSL/TLS para el servidor FreeIPA.\n\n \n Es importante mencionar que FreeIPA es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y las fuentes de información actualizadas para obtener la información más reciente sobre su uso y configuración.",
+    "sources": [
+      {
+        "title": "FreeIPA Pentesting - HackTricks",
+        "url": "https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"
+      },
+      {
+        "title": "How I Built a FreeIPA LDAP Server as an Identity Provider for OpenShift Cluster",
+        "url": "https://medium.com/@tradingcontentdrive/how-i-built-a-freeipa-ldap-server-as-an-identity-provider-for-openshift-019425208bed"
+      },
+      {
+        "title": "FreeIPA",
+        "url": "https://www.freeipa.org/"
+      }
+    ]
+  },
   "2026-07-03_1041": {
     "slug": "freeipa",
     "title": "FreeIPA: Administración de Identidades",

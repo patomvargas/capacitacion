@@ -1,4 +1,24 @@
 {
+  "2026-07-07_1112": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes 1.23",
+    "summary": "Kubernetes 1.23 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta versión.",
+    "content": "\nKubernetes 1.23 es una versión importante que incluye varias mejoras y nuevas características. Una de las novedades más destacadas es la simplificación del código base mediante la deprecación de flags de logging específicos de klog. Esto se refleja en la eliminación de flags como `--v` y `--vmodule` en favor de una configuración de logging más estándar.\n\nPara aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging en Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl logs` para ver los logs de un pod específico. Además, se puede configurar el logging en el archivo de configuración de Kubernetes utilizando la directiva `logging.format`.\n\nEn cuanto a la seguridad, Kubernetes 1.23 introduce varias mejoras, como la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre pods. Esto se puede lograr utilizando el comando `kubectl apply` con un archivo de configuración que define la política de red. Por ejemplo: `kubectl apply -f network-policy.yaml`. También se puede utilizar el comando `kubectl get networkpolicy` para ver las políticas de red actuales.\n\nOtra característica importante en Kubernetes 1.23 es el soporte mejorado para almacenamiento. Se puede utilizar el comando `kubectl get storageclass` para ver las clases de almacenamiento disponibles. Además, se puede crear un nuevo almacenamiento utilizando el comando `kubectl apply` con un archivo de configuración que define la clase de almacenamiento.\n\nEn resumen, Kubernetes 1.23 es una versión poderosa que ofrece varias mejoras y nuevas características. Para aprovechar al máximo esta versión, es importante entender cómo configurar correctamente el logging, la seguridad y el almacenamiento.\n\nFinalmente, es importante mencionar que la comunidad de Kubernetes es muy activa y ofrece muchos recursos para aprender y mejorar. Se puede utilizar el comando `kubectl` para interactuar con el clúster de Kubernetes, y se puede encontrar documentación y ejemplos en la página oficial de Kubernetes.\n\n",
+    "sources": [
+      {
+        "title": "Kubernetes Contributor Site",
+        "url": "https://github.com/kubernetes/contributor-site"
+      },
+      {
+        "title": "Release Notes Draft",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.23/release-notes/release-notes-draft.md"
+      },
+      {
+        "title": "Kubernetes SIG List",
+        "url": "https://github.com/kubernetes/community/blob/master/sig-list.md"
+      }
+    ]
+  },
   "2026-07-03_1041": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

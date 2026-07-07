@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Configuración avanzada de BIND9 - DNS BIND9</title>
-    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <title>FreeIPA: Administración de Identidades - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>Configuración avanzada de BIND9</h1>
-    <div class="meta">2026-07-03 1041 · DNS BIND9</div>
+    <h1>FreeIPA: Administración de Identidades</h1>
+    <div class="meta">2026-07-07 1112 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la industria. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`. Por ejemplo, para agregar una zona primaria, se puede utilizar la siguiente configuración: `zone "example.com" { type master; file "/etc/named/db.example.com"; };`.</p>
+            <p>FreeIPA es una herramienta poderosa para la administración de identidades en entornos Unix. Permite la autenticación de usuarios y la gestión de accesos a recursos mediante el protocolo Kerberos. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con un sistema operativo compatible.</p>
             
         
             
         
             
-            <p>Para configurar DNSSEC en BIND9, se debe generar una clave de zona y una clave de firma. La clave de zona se utiliza para firmar la zona, mientras que la clave de firma se utiliza para firmar las respuestas DNS. Se puede utilizar el comando `dnssec-keygen` para generar las claves.</p>
+        
+            
+            <p>La configuración de FreeIPA implica la creación de un dominio y la definición de las políticas de autenticación y autorización. Se pueden crear usuarios y grupos, y asignar permisos y roles según sea necesario. El comando `ipa user-add` se utiliza para agregar nuevos usuarios, mientras que `ipa group-add` se utiliza para crear nuevos grupos.</p>
             
         
             
         
             
-            <p>Las vistas en BIND9 permiten configurar diferentes conjuntos de zonas y configuraciones para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Se puede utilizar la directiva `view` en el archivo de configuración `named.conf` para definir las vistas.</p>
+        
+            
+            <p>Para establecer una relación de confianza entre dos dominios FreeIPA, se puede utilizar el comando `ipa trust-add`. Esto permite a los usuarios de un dominio acceder a recursos en el otro dominio sin necesidad de autenticarse nuevamente. La gestión de accesos también se puede realizar mediante el uso de reglas HBAC (Host-Based Access Control) y sudo.</p>
             
         
             
         
             
-            <p>El registro de logs en BIND9 se puede configurar utilizando la directiva `logging` en el archivo de configuración `named.conf`. Por ejemplo, se puede configurar el registro de logs para que se escriban en un archivo específico: `logging { channel log_file { file "/var/log/named.log"; }; category default { log_file; }; };`.</p>
+        
+            
+            <p>En cuanto a la seguridad, FreeIPA ofrece varias características para proteger la autenticación y la autorización. Se pueden configurar certificados SSL/TLS para cifrar las comunicaciones entre el cliente y el servidor, y se pueden establecer políticas de contraseña y autenticación multifactor. El comando `ipa cert-request` se utiliza para solicitar un certificado SSL/TLS para el servidor FreeIPA.</p>
             
         
             
         
             
-            <p>Para mejorar el rendimiento de BIND9, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la configuración de red. Se puede utilizar el comando `named-checkconf` para verificar la configuración de BIND9 y detectar cualquier error o problema de configuración.</p>
-            
         
             
-        
-            
-            <p>En resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las diferentes opciones de configuración y cómo se utilizan para lograr un servidor DNS seguro y eficiente.</p>
+            <p>Es importante mencionar que FreeIPA es una herramienta en constante evolución, y se recomienda consultar la documentación oficial y las fuentes de información actualizadas para obtener la información más reciente sobre su uso y configuración.</p>
             
         
     </div>
@@ -105,12 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://blog.cloudflare.com/" target="_blank">The Cloudflare Blog</a>
+                <a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html" target="_blank">FreeIPA Pentesting - HackTricks</a>
                 
             </li>
             
             <li>
-                <a href="https://ftp.isc.org/isc/bind9/cur/9.19.4/doc/arm/Bv9ARM.html" target="_blank">BIND9 Documentation</a>
+                <a href="https://medium.com/@tradingcontentdrive/how-i-built-a-freeipa-ldap-server-as-an-identity-provider-for-openshift-019425208bed" target="_blank">How I Built a FreeIPA LDAP Server as an Identity Provider for OpenShift Cluster</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.freeipa.org/" target="_blank">FreeIPA</a>
                 
             </li>
             
@@ -121,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-06-25_1046.html">&larr; 2026-06-25 1046</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-03_1041.html">&larr; 2026-07-03 1041</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-07_1112.html">2026-07-07 1112 &rarr;</a>
             
         </div>
     </div>

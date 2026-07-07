@@ -1,4 +1,32 @@
 {
+  "2026-07-07_1112": {
+    "slug": "bind9",
+    "title": "Configuración de DNS BIND9",
+    "summary": "El sistema DNS BIND9 es una herramienta fundamental para la administración de nombres de dominio en Internet. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos.",
+    "content": "El sistema DNS BIND9 es una herramienta fundamental para la administración de nombres de dominio en Internet. Para configurar zonas en BIND9, se utiliza el archivo de configuración `named.conf`, donde se definen las zonas y sus respectivos archivos de zona. Por ejemplo, para crear una zona llamada `example.com`, se agregaría la siguiente línea al archivo `named.conf`: `zone \"example.com\" IN { type master; file \"/etc/bind/db.example.com\"; };`.\n\n \nPara implementar DNSSEC en BIND9, se deben generar claves de zona y firmar las zonas con ellas. Esto se puede hacer utilizando el comando `dnssec-keygen` para generar las claves y `dnssec-signzone` para firmar las zonas. Por ejemplo, para generar una clave de zona para la zona `example.com`, se ejecutaría el comando: `dnssec-keygen -a RSASHA1 -b 2048 -n ZONE example.com`.\n\n \nOtra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido DNS dependiendo de la dirección IP del cliente. Esto se puede hacer utilizando la directiva `view` en el archivo `named.conf`. Por ejemplo, para crear una vista llamada `internal` que sirva contenido DNS diferente para clientes dentro de la red interna, se agregaría la siguiente línea al archivo `named.conf`: `view \"internal\" { match-clients { 10.0.0.0/8; }; recursion yes; };`.\n\n \nLa configuración de RPZ (Response Policy Zones) en BIND9 permite bloquear o modificar respuestas DNS para ciertos dominios. Esto se puede hacer utilizando la directiva `response-policy` en el archivo `named.conf`. Por ejemplo, para crear una zona RPZ que bloquee las consultas para el dominio `malware.com`, se agregaría la siguiente línea al archivo `named.conf`: `response-policy { zone \"rpz\"; };` y luego se agregaría la zona RPZ con el comando: `zone \"rpz\" { type master; file \"/etc/bind/db.rpz\"; };`.\n\n \nFinalmente, para mejorar el rendimiento de BIND9, se pueden ajustar varios parámetros en el archivo `named.conf`, como el tamaño del caché y el número de hilos de procesamiento. Por ejemplo, para aumentar el tamaño del caché a 10MB, se agregaría la siguiente línea al archivo `named.conf`: `cache-size 10000;`. También se pueden utilizar herramientas como `bind9-stats` para monitorear el rendimiento de BIND9 y identificar áreas de mejora.\n\n \nEn resumen, la configuración de DNS BIND9 requiere una comprensión profunda de las diferentes características y parámetros que se pueden ajustar. Siguiendo las mejores prácticas y utilizando las herramientas adecuadas, se puede asegurar un rendimiento óptimo y una configuración segura para el sistema DNS.",
+    "sources": [
+      {
+        "title": "directory-list-lowercase-2.3-medium.txt",
+        "url": "https://github.com/garyhooks/oscp/blob/master/dirb_lists/directory-list-lowercase-2.3-medium.txt"
+      },
+      {
+        "title": "2026-03-20-automate-container-deployments-portainer-webhooks",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-20-automate-container-deployments-portainer-webhooks"
+      },
+      {
+        "title": "Validation Summary: How to Use terraform graph to Visualize Resource Dependencies",
+        "url": "https://github.com/OneUptime/blog/blob/master/posts/2026-02-23-how-to-use-terraform-graph-to-visualize-resource-dependencies/validation-summary.md"
+      },
+      {
+        "title": "2026-03-04-how-to-resolve-kernel-panic-not-syncing-boot-errors-on-rhel-9",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-04-how-to-resolve-kernel-panic-not-syncing-boot-errors-on-rhel-9"
+      },
+      {
+        "title": "2026-03-31-mysql-design-schema-for-soft-deletes",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-31-mysql-design-schema-for-soft-deletes"
+      }
+    ]
+  },
   "2026-07-03_1041": {
     "slug": "bind9",
     "title": "Configuración avanzada de BIND9",
