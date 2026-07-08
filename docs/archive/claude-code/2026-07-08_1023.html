@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejoras en Claude Code - Claude Code</title>
+    <title>Claude Code: Mejoras y Best Practices - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Mejoras en Claude Code</h1>
-    <div class="meta">2026-07-04 1015 · Claude Code</div>
+    <h1>Claude Code: Mejoras y Best Practices</h1>
+    <div class="meta">2026-07-08 1023 · Claude Code</div>
 
     <div class="content">
         
@@ -66,37 +66,41 @@
             
         
             
-            <p>La última versión de Claude Code incluye varias mejoras y correcciones de errores. Una de las principales mejoras es la resolución del problema de conectividad que ocurría cuando se intentaba reconectar después de un error de autenticación. Esto se logró mediante la actualización del mecanismo de autenticación y la implementación de un nuevo sistema de gestión de tokens.</p>
+            <p>La última versión de Claude Code, v2.0.65, ha presentado algunos problemas de estabilidad, como se puede ver en el issue #10021 de GitHub, donde se reporta un crash de Bun que afecta a Claude Code. Para solucionar este problema, se puede intentar actualizar la versión de Bun o ejecutar Claude Code en un entorno de contenedor.</p>
             
         
             
         
             
-            <p>Otra característica importante es la adición de soporte para comandos de Git en segundo plano en Windows. Esto permite a los usuarios ejecutar comandos de Git sin tener que interactuar con la interfaz de usuario de Claude Code. Para habilitar esta característica, los usuarios deben configurar la variable de entorno `CLAUDE_CODE_GIT_COMMAND` con el comando de Git deseado.</p>
+            <p>Otra característica importante de Claude Code es su capacidad para integrarse con el servidor MCP. Sin embargo, algunos usuarios han reportado problemas de autorización con el servidor MCP, como se puede ver en el issue #503 de GitHub. Para solucionar este problema, se puede intentar verificar la configuración del servidor MCP y asegurarse de que la autorización esté configurada correctamente. Por ejemplo, se puede utilizar el comando `claude-mcp-config` para verificar la configuración del servidor MCP.</p>
             
         
             
         
             
-            <p>Además, se han agregado nuevas características para mejorar la productividad y la experiencia del usuario. Una de ellas es la capacidad de configurar el comportamiento de la copia y el pegado en la ventana de Claude Code. Los usuarios pueden configurar la variable de entorno `CLAUDE_CODE_COPY_BEHAVIOR` para cambiar el comportamiento de la copia y el pegado.</p>
+            <p>En cuanto a las best practices, es importante mencionar la importancia de utilizar un flujo de trabajo bien definido en Claude Code. Esto puede incluir la creación de un archivo `CLAUDE.md` que describa el flujo de trabajo y las configuraciones utilizadas. También es importante utilizar subagentes para realizar tareas específicas y evitar la sobrecarga del agente principal. Por ejemplo, se puede utilizar el comando `claude-subagent` para crear un subagente que se encargue de realizar tareas de investigación.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las nuevas características de Claude Code, los usuarios deben asegurarse de tener la última versión del software. También es importante consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas. Por ejemplo, los usuarios pueden ejecutar el comando `claude-code --version` para verificar la versión actual del software.</p>
+            <p>Además, es importante mencionar la importancia de utilizar hooks como guardrails para evitar errores y asegurarse de que el código sea correcto. Por ejemplo, se puede utilizar el comando `claude-hook` para crear un hook que verifique la sintaxis del código antes de ejecutarlo.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Claude Code también ofrece una variedad de herramientas y extensiones para mejorar la productividad y la experiencia del usuario. Por ejemplo, la extensión de VS Code para Claude Code permite a los usuarios acceder a las características de Claude Code directamente desde la interfaz de usuario de VS Code.</p>
+            <p>En resumen, Claude Code es una herramienta poderosa que ofrece muchas características avanzadas para mejorar la productividad. Sin embargo, es importante estar al tanto de las novedades y best practices para aprovechar al máximo sus características y evitar problemas de estabilidad y configuración.</p>
             
         
             
         
             
-            <p>En resumen, las últimas actualizaciones de Claude Code ofrecen una variedad de mejoras y nuevas características que buscan mejorar la productividad y la experiencia del usuario. Los usuarios deben asegurarse de tener la última versión del software y consultar la documentación oficial para obtener más información sobre las nuevas características y cómo configurarlas.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Claude Code es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Por ejemplo, se puede consultar la documentación oficial para aprender a utilizar el comando `claude-sonnet-5` para crear un modelo de lenguaje avanzado.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,22 +111,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/issues/66381" target="_blank">Remote Control troubleshooting</a>
+                <a href="https://github.com/anthropics/claude-code/issues/10021" target="_blank">BUG: Bun crashes leads to Claude Code crashing #10021</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/issues/66382" target="_blank">Windows startup Connect to GitHub popup</a>
+                <a href="https://github.com/anthropics/claude-ai-mcp/issues/503" target="_blank">Connector: Elicit Error: Authorization with the MCP server failed Reference codes: - ofid_63b3aed2dd34ddb7 - ofid_8ee4443a8ad2a09d #503</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/tylergraydev/claude-code-tool-manager" target="_blank">Claude Code Tool Manager</a>
+                <a href="https://dev.to/galian/claude-code-workflow-best-practices-that-ship-code-na" target="_blank">Claude Code Workflow: Best Practices That Ship Code</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/atman-33/kiro-for-codex-ide" target="_blank">Kiro for Codex IDE</a>
+                <a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j" target="_blank">CLAUDE.md Best Practices: The Complete 2026 Guide</a>
                 
             </li>
             
@@ -133,12 +137,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-04_1015.html">&larr; 2026-07-04 1015</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-08_1023.html">2026-07-08 1023 &rarr;</a>
             
         </div>
     </div>

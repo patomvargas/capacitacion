@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-07T11:13:57.930588+00:00</updated>
+  <updated>2026-07-08T10:24:57.088108+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -546,5 +546,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-04_1015.html"/>
     <summary>Claude Code ha recibido varias mejoras y actualizaciones recientemente, incluyendo la resolución de problemas de conectividad y la adición de nuevas características. Estas mejoras buscan mejorar la productividad y la experiencia del usuario.</summary>
     <published>2026-07-04T10:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-08_1023.html</id>
+    <title>Claude Code: Mejoras y Best Practices</title>
+    <updated>2026-07-08T10:23:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Claude Code, v2.0.65, ha presentado algunos problemas de estabilidad, como se puede ver en el issue #10021 de GitHub, donde se reporta un crash de Bun que afecta a Claude Code. Para solucionar este problema, se puede intentar actualizar la versión de Bun o ejecutar Claude Code en un entorno de contenedor.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Claude Code es su capacidad para integrarse con el servidor MCP. Sin embargo, algunos usuarios han reportado problemas de autorización con el servidor MCP, como se puede ver en el issue #503 de GitHub. Para solucionar este problema, se puede intentar verificar la configuración del servidor MCP y asegurarse de que la autorización esté configurada correctamente. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude-mcp-config&lt;/code&gt; para verificar la configuración del servidor MCP.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar la importancia de utilizar un flujo de trabajo bien definido en Claude Code. Esto puede incluir la creación de un archivo &lt;code&gt;CLAUDE.md&lt;/code&gt; que describa el flujo de trabajo y las configuraciones utilizadas. También es importante utilizar subagentes para realizar tareas específicas y evitar la sobrecarga del agente principal. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude-subagent&lt;/code&gt; para crear un subagente que se encargue de realizar tareas de investigación.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar la importancia de utilizar hooks como guardrails para evitar errores y asegurarse de que el código sea correcto. Por ejemplo, se puede utilizar el comando &lt;code&gt;claude-hook&lt;/code&gt; para crear un hook que verifique la sintaxis del código antes de ejecutarlo.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que ofrece muchas características avanzadas para mejorar la productividad. Sin embargo, es importante estar al tanto de las novedades y best practices para aprovechar al máximo sus características y evitar problemas de estabilidad y configuración.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Claude Code es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Por ejemplo, se puede consultar la documentación oficial para aprender a utilizar el comando &lt;code&gt;claude-sonnet-5&lt;/code&gt; para crear un modelo de lenguaje avanzado.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/10021"&gt;BUG: Bun crashes leads to Claude Code crashing #10021&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-ai-mcp/issues/503"&gt;Connector: Elicit Error: Authorization with the MCP server failed Reference codes: - ofid_63b3aed2dd34ddb7 - ofid_8ee4443a8ad2a09d #503&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/galian/claude-code-workflow-best-practices-that-ship-code-na"&gt;Claude Code Workflow: Best Practices That Ship Code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j"&gt;CLAUDE.md Best Practices: The Complete 2026 Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-08_1023.html"/>
+    <summary>Claude Code es una herramienta de desarrollo que ofrece funcionalidades avanzadas para mejorar la productividad. En este artículo, se presentan algunas de las novedades y best practices para aprovechar al máximo sus características.</summary>
+    <published>2026-07-08T10:23:00+00:00</published>
   </entry>
 </feed>

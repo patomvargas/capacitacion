@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/chatgpt.xml</id>
   <title>ChatGPT - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-07T11:13:57.935639+00:00</updated>
+  <updated>2026-07-08T10:24:57.095821+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/chatgpt/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/chatgpt.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -268,5 +268,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/chatgpt/2026-07-04_1015.html"/>
     <summary>ChatGPT es una herramienta de lenguaje natural que puede ser integrada en diversas aplicaciones. En este artículo, se presentan algunas formas de integrar ChatGPT en proyectos de desarrollo de software.</summary>
     <published>2026-07-04T10:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/chatgpt/2026-07-08_1023.html</id>
+    <title>ChatGPT: Mejoras y Novedades</title>
+    <updated>2026-07-08T10:23:00+00:00</updated>
+    <content type="html">&lt;p&gt;ChatGPT es un modelo de lenguaje avanzado desarrollado por OpenAI que ha revolucionado la forma en que interactuamos con la inteligencia artificial. Recientemente, se han publicado varias actualizaciones y mejoras en el modelo, incluyendo la capacidad de procesar más tokens y una mayor memoria, lo que lo hace más eficaz para tareas complejas como la generación de texto y la respuesta a preguntas.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la capacidad de fine-tuning del modelo, lo que permite a los desarrolladores ajustar el modelo a sus necesidades específicas. Esto se puede hacer utilizando el comando &lt;code&gt;fine_tune&lt;/code&gt; en la API de OpenAI, como se muestra a continuación: &lt;code&gt;openai.api.fine_tune(model='chatgpt', prompt='mi prompt personalizado')&lt;/code&gt;. Esto permite a los desarrolladores crear modelos personalizados que se ajusten a sus necesidades específicas.&lt;/p&gt;
+&lt;p&gt;Además, se han agregado nuevas opciones de configuración para los desarrolladores, como la capacidad de especificar el número de tokens que se deben procesar y la posibilidad de utilizar un modelo de lenguaje específico. Por ejemplo, se puede utilizar el comando &lt;code&gt;openai.api.chat_completions&lt;/code&gt; para generar texto basado en un prompt específico, como se muestra a continuación: &lt;code&gt;openai.api.chat_completions(model='chatgpt', prompt='mi prompt personalizado', max_tokens=1024)&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad interesante es la capacidad de integrar ChatGPT con otros servicios y herramientas, como Cloudflare, que ofrece opciones de configuración para manejar el tráfico de AI en los sitios web. Por ejemplo, se puede utilizar el comando &lt;code&gt;cloudflare.api.ai_traffic&lt;/code&gt; para configurar las opciones de tráfico de AI en un sitio web, como se muestra a continuación: &lt;code&gt;cloudflare.api.ai_traffic(site_id='mi sitio web', ai_traffic='allow')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, ChatGPT es una herramienta poderosa y versátil que ofrece una amplia gama de posibilidades para los desarrolladores y los usuarios. Con sus últimas mejoras y novedades, es aún más útil y eficaz para tareas complejas y personalizadas.&lt;/p&gt;
+&lt;p&gt;La documentación oficial de OpenAI y Cloudflare ofrece más información sobre cómo utilizar estas herramientas y servicios. Es importante consultar la documentación oficial para obtener la información más actualizada y precisa sobre cómo utilizar estas herramientas y servicios.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://openai.com/products/release-notes/"&gt;Release Notes | OpenAI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes"&gt;ChatGPT — Release Notes - OpenAI Help Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"&gt;ChatGPT Business - Release Notes - OpenAI Help Center&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes"&gt;ChatGPT Enterprise &amp; Edu - Release Notes - OpenAI Help Center&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/chatgpt/2026-07-08_1023.html"/>
+    <summary>ChatGPT ha experimentado mejoras significativas en su capacidad de procesamiento y memoria, lo que lo hace más útil para tareas complejas. Además, se han agregado nuevas funcionalidades y opciones de configuración para los desarrolladores.</summary>
+    <published>2026-07-08T10:23:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,28 @@
 {
+  "2026-07-08_1023": {
+    "slug": "openshift",
+    "title": "OpenShift: Novedades y Mejoras",
+    "summary": "OpenShift es una plataforma de contenedores que ofrece nuevas características y mejoras en sus versiones recientes. En este artículo, se presentan las novedades y mejores prácticas para trabajar con OpenShift.",
+    "content": "\nLa versión 4.22 de OpenShift se lanzó recientemente, y con ella, se incluyen nuevas características y mejoras en la plataforma. Una de las novedades más destacadas es la integración con Argo CD 3.4, que permite una mejor gestión de los despliegues y la configuración de los clusters. Para instalar OpenShift 4.22, se puede utilizar el comando `oc cluster up` y seguir las instrucciones del instalador.\n\nOtra característica importante es la capacidad de realizar migraciones de clusters de manera más eficiente, gracias a la integración con herramientas como Azure Red Hat OpenShift. Esto permite a los administradores de sistemas realizar migraciones de manera más rápida y segura. Además, se han mejorado las herramientas de monitoreo y análisis de los clusters, lo que permite a los administradores tener una visión más clara del rendimiento y la seguridad de sus sistemas.\n\nEn cuanto a la seguridad, OpenShift 4.22 incluye mejoras en la autenticación y autorización, gracias a la integración con OAuth y otros protocolos de autenticación. Esto permite a los administradores de sistemas configurar políticas de acceso y seguridad de manera más flexible y segura. Para configurar la autenticación con OAuth, se puede utilizar el comando `oc create secret` y seguir las instrucciones del proveedor de identidad.\n\nEn resumen, OpenShift 4.22 es una versión que ofrece muchas mejoras y novedades en la plataforma, desde la integración con Argo CD hasta la mejora de la seguridad y el monitoreo. Los administradores de sistemas pueden aprovechar estas características para mejorar la eficiencia y la seguridad de sus clusters.\n\nPara más información sobre la configuración y el uso de OpenShift, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift. Además, se pueden utilizar herramientas como `oc` y `kubectl` para gestionar y configurar los clusters de manera más eficiente.\n\nEn cuanto a las mejores prácticas, se recomienda utilizar herramientas como OpenShift GitOps para gestionar la configuración y los despliegues de los clusters de manera más eficiente y segura. Además, se deben seguir las políticas de seguridad y acceso recomendadas por Red Hat y la comunidad de OpenShift.",
+    "sources": [
+      {
+        "title": "What's new with Azure Red Hat OpenShift?",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "OpenShift 4.22: New Features and Release Highlights",
+        "url": "https://electromech.cloud/openshift-4-22-new-features-release-highlights/"
+      },
+      {
+        "title": "Chapter 1. Red Hat OpenShift GitOps release notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.21/html/release_notes/gitops-release-notes"
+      },
+      {
+        "title": "What's New in OpenShift GitOps 1.21",
+        "url": "https://developers.redhat.com/blog/2026/06/26/whats-new-openshift-gitops-121"
+      }
+    ]
+  },
   "2026-07-04_1015": {
     "slug": "openshift",
     "title": "Novedades en OpenShift 4.22",

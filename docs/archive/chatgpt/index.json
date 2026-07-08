@@ -1,4 +1,28 @@
 {
+  "2026-07-08_1023": {
+    "slug": "chatgpt",
+    "title": "ChatGPT: Mejoras y Novedades",
+    "summary": "ChatGPT ha experimentado mejoras significativas en su capacidad de procesamiento y memoria, lo que lo hace más útil para tareas complejas. Además, se han agregado nuevas funcionalidades y opciones de configuración para los desarrolladores.",
+    "content": "\nChatGPT es un modelo de lenguaje avanzado desarrollado por OpenAI que ha revolucionado la forma en que interactuamos con la inteligencia artificial. Recientemente, se han publicado varias actualizaciones y mejoras en el modelo, incluyendo la capacidad de procesar más tokens y una mayor memoria, lo que lo hace más eficaz para tareas complejas como la generación de texto y la respuesta a preguntas.\n\nUna de las novedades más destacadas es la capacidad de fine-tuning del modelo, lo que permite a los desarrolladores ajustar el modelo a sus necesidades específicas. Esto se puede hacer utilizando el comando `fine_tune` en la API de OpenAI, como se muestra a continuación: `openai.api.fine_tune(model='chatgpt', prompt='mi prompt personalizado')`. Esto permite a los desarrolladores crear modelos personalizados que se ajusten a sus necesidades específicas.\n\nAdemás, se han agregado nuevas opciones de configuración para los desarrolladores, como la capacidad de especificar el número de tokens que se deben procesar y la posibilidad de utilizar un modelo de lenguaje específico. Por ejemplo, se puede utilizar el comando `openai.api.chat_completions` para generar texto basado en un prompt específico, como se muestra a continuación: `openai.api.chat_completions(model='chatgpt', prompt='mi prompt personalizado', max_tokens=1024)`.\n\nOtra novedad interesante es la capacidad de integrar ChatGPT con otros servicios y herramientas, como Cloudflare, que ofrece opciones de configuración para manejar el tráfico de AI en los sitios web. Por ejemplo, se puede utilizar el comando `cloudflare.api.ai_traffic` para configurar las opciones de tráfico de AI en un sitio web, como se muestra a continuación: `cloudflare.api.ai_traffic(site_id='mi sitio web', ai_traffic='allow')`.\n\nEn resumen, ChatGPT es una herramienta poderosa y versátil que ofrece una amplia gama de posibilidades para los desarrolladores y los usuarios. Con sus últimas mejoras y novedades, es aún más útil y eficaz para tareas complejas y personalizadas.\n\nLa documentación oficial de OpenAI y Cloudflare ofrece más información sobre cómo utilizar estas herramientas y servicios. Es importante consultar la documentación oficial para obtener la información más actualizada y precisa sobre cómo utilizar estas herramientas y servicios.\n\n",
+    "sources": [
+      {
+        "title": "Release Notes | OpenAI",
+        "url": "https://openai.com/products/release-notes/"
+      },
+      {
+        "title": "ChatGPT — Release Notes - OpenAI Help Center",
+        "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes"
+      },
+      {
+        "title": "ChatGPT Business - Release Notes - OpenAI Help Center",
+        "url": "https://help.openai.com/en/articles/11391654-chatgpt-business-release-notes"
+      },
+      {
+        "title": "ChatGPT Enterprise & Edu - Release Notes - OpenAI Help Center",
+        "url": "https://help.openai.com/en/articles/10128477-chatgpt-enterprise-edu-release-notes"
+      }
+    ]
+  },
   "2026-07-04_1015": {
     "slug": "chatgpt",
     "title": "Integración de ChatGPT",
