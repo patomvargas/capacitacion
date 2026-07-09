@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-08T10:24:57.102252+00:00</updated>
+  <updated>2026-07-09T11:15:29.926266+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -551,5 +551,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-05_1020.html"/>
     <summary>n8n es una plataforma de automatización de flujos de trabajo que permite a los usuarios crear y ejecutar flujos de trabajo personalizados. En este artículo, se presentan las mejores prácticas para la implementación y configuración de n8n.</summary>
     <published>2026-07-05T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-09_1113.html</id>
+    <title>Automatización de flujos de trabajo con n8n</title>
+    <updated>2026-07-09T11:13:00+00:00</updated>
+    <content type="html">&lt;p&gt;n8n es una herramienta poderosa para automatizar flujos de trabajo, que se puede self-hostear en un servidor propio. Para comenzar, es necesario crear un directorio para el proyecto y ejecutar el comando &lt;code&gt;docker-compose up -d&lt;/code&gt; para iniciar los contenedores de n8n. Luego, se puede acceder a la interfaz web de n8n mediante &lt;code&gt;http://localhost:5678&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de n8n es la capacidad de crear y gestionar nodos, que son los bloques de construcción de los flujos de trabajo. Los nodos se pueden crear y configurar utilizando la interfaz web de n8n, y se pueden conectar entre sí para crear flujos de trabajo complejos. Por ejemplo, se puede crear un nodo de &lt;code&gt;HTTP Request&lt;/code&gt; para realizar una solicitud HTTP a un servidor externo, y luego conectarlo a un nodo de &lt;code&gt;JSON Parser&lt;/code&gt; para parsear la respuesta.&lt;/p&gt;
+&lt;p&gt;Para self-hostear n8n, es importante seguir las mejores prácticas de seguridad y configuración. Por ejemplo, se debe configurar un certificado SSL para garantizar la seguridad de la conexión, y se debe limitar el acceso a la interfaz web de n8n mediante autenticación y autorización. Además, se debe realizar una copia de seguridad regular de la base de datos de n8n para evitar la pérdida de datos en caso de un fallo del sistema.&lt;/p&gt;
+&lt;p&gt;En cuanto a las integraciones, n8n ofrece una amplia variedad de nodos para conectarse a diferentes servicios y sistemas, como bases de datos, servidores de correo electrónico y plataformas de redes sociales. Por ejemplo, se puede crear un nodo de &lt;code&gt;MySQL&lt;/code&gt; para conectarse a una base de datos MySQL, y luego utilizar el nodo de &lt;code&gt;SQL Query&lt;/code&gt; para realizar consultas a la base de datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que n8n tiene una comunidad activa de desarrolladores y usuarios, que ofrecen soporte y recursos para ayudar a los nuevos usuarios a comenzar. Se puede encontrar documentación y tutoriales en la página web oficial de n8n, y se puede unirse a la comunidad de Discord o subreddit para conectarse con otros usuarios y obtener ayuda.&lt;/p&gt;
+&lt;p&gt;En resumen, n8n es una herramienta poderosa para automatizar flujos de trabajo, que se puede self-hostear en un servidor propio y configurar para satisfacer las necesidades específicas de cada usuario. Siguiendo las mejores prácticas de seguridad y configuración, y utilizando las integraciones y nodos disponibles, se puede crear flujos de trabajo complejos y personalizados para automatizar tareas y procesos.&lt;/p&gt;
+&lt;p&gt;Se pueden utilizar comandos como &lt;code&gt;n8n start&lt;/code&gt; para iniciar el servidor de n8n, y &lt;code&gt;n8n stop&lt;/code&gt; para detenerlo. También se puede utilizar &lt;code&gt;docker-compose exec n8n n8n cli&lt;/code&gt; para acceder a la línea de comandos de n8n y realizar operaciones avanzadas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.n8n.io/release-notes/?trk=article-ssr-frontend-pulse_little-text-block"&gt;Release notes | n8n Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/n8n-lab/self-hosted-n8n-best-practices-complete-setup-checklist-for-2026-585e240aca00"&gt;Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/nevik_schmidt_3635afa2b85/self-hosting-n8n-complete-setup-guide-2026-gd1"&gt;Self-Hosting n8n: Complete Setup Guide (2026)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-09_1113.html"/>
+    <summary>n8n es una plataforma de automatización de flujos de trabajo que permite a los usuarios crear y gestionar flujos de trabajo personalizados. En este artículo, se presentan las mejores prácticas y configuraciones para self-hosting y uso avanzado de n8n.</summary>
+    <published>2026-07-09T11:13:00+00:00</published>
   </entry>
 </feed>

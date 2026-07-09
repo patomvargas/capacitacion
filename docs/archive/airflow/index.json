@@ -1,4 +1,24 @@
 {
+  "2026-07-09_1113": {
+    "slug": "airflow",
+    "title": "Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje",
+    "summary": "Apache Airflow 3.3.0 introduce tareas con estado y soporte multilenguaje, permitiendo una mayor flexibilidad y escalabilidad en la automatización de flujos de trabajo. Esta versión también incluye una expansión de la partición de activos y políticas de reintento personalizables.",
+    "content": "Apache Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. La versión 3.3.0 de Airflow incluye varias mejoras significativas, como el soporte para tareas con estado y multilenguaje. Esto permite a los desarrolladores escribir lógica de tareas en Java y Go, además de Python. \n\nLa nueva versión de Airflow también incluye una expansión de la partición de activos, lo que permite una mayor flexibilidad en la gestión de datos. Además, se han agregado políticas de reintento personalizables, lo que permite a los desarrolladores definir sus propias estrategias de reintento para las tareas. \n\nPara utilizar estas nuevas características, es necesario actualizar a la versión 3.3.0 de Airflow. Esto se puede hacer mediante el comando `pip install apache-airflow==3.3.0`. Una vez actualizado, se pueden crear tareas con estado utilizando el `Language Task SDK` y se pueden definir políticas de reintento personalizadas utilizando el `retry` de la tarea. \n\nOtra característica importante de Airflow 3.3.0 es el soporte para `XCom`, que permite la comunicación entre tareas. Esto se puede lograr mediante el uso de `xcom_push` y `xcom_pull` en las tareas. \n\nEn resumen, Apache Airflow 3.3.0 es una versión importante que incluye varias mejoras significativas para la automatización de flujos de trabajo. Con el soporte para tareas con estado y multilenguaje, la expansión de la partición de activos y las políticas de reintento personalizables, esta versión ofrece una mayor flexibilidad y escalabilidad para los desarrolladores.\n\nPara más información sobre la configuración y el uso de Airflow, se puede consultar la documentación oficial de Airflow, que incluye ejemplos y tutoriales para ayudar a los desarrolladores a empezar a trabajar con la plataforma. \n\nEl comando para crear un nuevo DAG en Airflow es `airflow db init` y luego `airflow webserver -p 8080` para iniciar el servidor web. Luego, se puede acceder a la interfaz web de Airflow en `http://localhost:8080` para crear y gestionar los DAGs.",
+    "sources": [
+      {
+        "title": "Apache Airflow 3.3.0: Stateful Tasks and Multi-Language Support",
+        "url": "https://airflow.apache.org/blog/airflow-3.3.0/"
+      },
+      {
+        "title": "Airflow 3.3.0 · Milestone #122 · apache/airflow",
+        "url": "https://github.com/apache/airflow/milestone/122"
+      },
+      {
+        "title": "Apache Airflow",
+        "url": "https://airflow.apache.org/?ref=producthunt"
+      }
+    ]
+  },
   "2026-07-05_1020": {
     "slug": "airflow",
     "title": "Airflow: Mejores Prácticas y Novedades",

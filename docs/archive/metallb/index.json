@@ -1,4 +1,16 @@
 {
+  "2026-07-09_1113": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en K8s",
+    "summary": "MetalLB es un equilibrador de carga para Kubernetes que permite la asignación de direcciones IP a servicios. En este artículo, se explora su configuración y uso en modo L2 y BGP.",
+    "content": "MetalLB es una herramienta esencial para los administradores de sistemas y DevOps que trabajan con Kubernetes. Su función principal es proporcionar un equilibrador de carga para servicios en el clúster. Para configurar MetalLB, es necesario crear un objeto de configuración que defina los parámetros de operación. Por ejemplo, para configurar el modo L2, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/layer2.yaml`. \n\nUna vez configurado, MetalLB asigna direcciones IP a los servicios del clúster. Es importante mencionar que MetalLB admite dos modos de operación: L2 y BGP. El modo L2 es el más simple y utiliza ARP para anunciar la dirección IP del servicio. Por otro lado, el modo BGP es más complejo y utiliza el protocolo BGP para anunciar la dirección IP del servicio a los routers de la red.\n\nPara configurar el modo BGP, es necesario crear un objeto de configuración que defina los parámetros de BGP. Por ejemplo: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/bgp.yaml`. Es importante mencionar que, para utilizar el modo BGP, es necesario tener un router que soporte BGP en la red.\n\nOtra característica importante de MetalLB es la capacidad de configurar pools de direcciones IP. Un pool de direcciones IP es un rango de direcciones IP que se pueden asignar a los servicios del clúster. Por ejemplo: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/config/pool.yaml`. \n\nEn cuanto a la integración con K8s, MetalLB se integra perfectamente con el clúster de Kubernetes. Para instalar MetalLB en un clúster de K8s, se puede utilizar el siguiente comando: `kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.13.7/main.yaml`.\n\nEn resumen, MetalLB es una herramienta poderosa para los administradores de sistemas y DevOps que trabajan con Kubernetes. Su capacidad para asignar direcciones IP a servicios y su integración con K8s la hacen una herramienta esencial para cualquier clúster de Kubernetes.\n\nPara solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `kubectl` y `metallbctl`. Por ejemplo, para verificar el estado de MetalLB, se puede utilizar el siguiente comando: `kubectl get pods -n metallb-system`. \n\nEs importante mencionar que, para obtener más información sobre MetalLB, se puede consultar la documentación oficial de MetalLB en https://metallb.universe.tf/.\n\nFinalmente, es importante destacar que MetalLB es una herramienta en constante evolución. Por lo tanto, es importante mantenerse actualizado con las últimas novedades y mejoras de la herramienta.\n\n",
+    "sources": [
+      {
+        "title": "MetalLB",
+        "url": "https://metallb.universe.tf/"
+      }
+    ]
+  },
   "2026-07-05_1020": {
     "slug": "metallb",
     "title": "MetalLB: Configuración y Troubleshooting",
