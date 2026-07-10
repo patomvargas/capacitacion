@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-09T11:15:29.942344+00:00</updated>
+  <updated>2026-07-10T11:10:09.180581+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -443,5 +443,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-06_1208.html"/>
     <summary>En este artículo, se presentan las mejores prácticas de Docker para producción, incluyendo la creación de contenedores con almacenamiento persistente, la seguridad y la optimización de imágenes. Se cubren temas como multi-stage builds, compose, networking y seguridad.</summary>
     <published>2026-07-06T12:08:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-07-10_1109.html</id>
+    <title>Mejores prácticas de Docker para DevOps</title>
+    <updated>2026-07-10T11:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de imágenes de Docker es fundamental para reducir el tamaño de las imágenes y mejorar el rendimiento de los contenedores. Una de las mejores prácticas es utilizar la instrucción &lt;code&gt;FROM&lt;/code&gt; con una imagen base oficial, como &lt;code&gt;python:3.9-slim&lt;/code&gt;, y luego agregar las dependencias necesarias. También se puede utilizar la herramienta &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--no-cache&lt;/code&gt; para evitar la utilización de la caché de Docker.&lt;/p&gt;
+&lt;p&gt;Otra mejor práctica es la utilización de Docker Compose para definir y ejecutar múltiples contenedores. Se puede crear un archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; con la definición de los servicios y luego ejecutar &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar los contenedores. También se puede utilizar la herramienta &lt;code&gt;docker-compose exec&lt;/code&gt; para acceder a los contenedores en ejecución.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante utilizar la herramienta &lt;code&gt;docker scan&lt;/code&gt; para analizar las imágenes de Docker en busca de vulnerabilidades. También se puede utilizar la herramienta &lt;code&gt;docker secrets&lt;/code&gt; para gestionar los secretos de los contenedores. La utilización de redes de Docker también es importante para aislar los contenedores y evitar la exposición de los servicios.&lt;/p&gt;
+&lt;p&gt;La herramienta BuildKit es una herramienta de construcción de imágenes de Docker que permite la creación de imágenes de manera más eficiente y segura. Se puede utilizar la opción &lt;code&gt;--buildkit&lt;/code&gt; con la herramienta &lt;code&gt;docker build&lt;/code&gt; para habilitar la utilización de BuildKit. También se puede utilizar la herramienta &lt;code&gt;buildkitd&lt;/code&gt; para ejecutar la construcción de imágenes de manera remota.&lt;/p&gt;
+&lt;p&gt;Finalmente, la utilización de registros de Docker es fundamental para la gestión de las imágenes de Docker. Se puede utilizar la herramienta &lt;code&gt;docker push&lt;/code&gt; para subir las imágenes a un registro de Docker y luego utilizar la herramienta &lt;code&gt;docker pull&lt;/code&gt; para descargar las imágenes desde el registro.&lt;/p&gt;
+&lt;p&gt;En resumen, la utilización de las mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose, es fundamental para la creación de contenedores de manera eficiente y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@429abi/top-10-docker-mistakes-devops-engineers-keep-making-in-production-14d20fb2ea0e"&gt;Top 10 Docker Mistakes DevOps Engineers Keep Making in Production&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@sunil17bbmp/docker-image-optimization-best-practices-to-reduce-size-improve-performance-2026-b26a46a61505"&gt;Docker Image Optimization: Best Practices to Reduce Size and Improve Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373"&gt;DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-10_1109.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas de Docker para DevOps, incluyendo la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose. Se destacan también las novedades y mejoras en el ecosistema de Docker.</summary>
+    <published>2026-07-10T11:09:00+00:00</published>
   </entry>
 </feed>

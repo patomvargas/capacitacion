@@ -1,4 +1,20 @@
 {
+  "2026-07-10_1109": {
+    "slug": "ansible",
+    "title": "Ansible: Automatización de Infraestructura",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se explorarán las mejores prácticas y características de Ansible.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se utiliza para implementar y gestionar configuraciones de manera eficiente. Permite a los administradores de sistemas y desarrolladores definir la configuración deseada de una infraestructura y aplicarla de manera automática. \n \n Una de las características más importantes de Ansible es su capacidad para utilizar playbooks, que son archivos de configuración que definen la configuración deseada de una infraestructura. Los playbooks se escriben en YAML y pueden ser utilizados para implementar una variedad de tareas, desde la configuración de servidores hasta la implementación de aplicaciones. \n   \n Para utilizar Ansible, es necesario instalar el software en un equipo y configurar el inventario de los equipos que se desean gestionar. El inventario se puede definir en un archivo de configuración llamado `hosts` y se utiliza para especificar los equipos que se desean gestionar. \n   \n Una vez configurado el inventario, se pueden utilizar comandos como `ansible-playbook` para ejecutar playbooks y aplicar la configuración deseada a los equipos. Por ejemplo, el comando `ansible-playbook -i hosts playbook.yml` se puede utilizar para ejecutar un playbook llamado `playbook.yml` en los equipos definidos en el archivo `hosts`. \n   \n Ansible también proporciona una variedad de módulos y colecciones que pueden ser utilizados para implementar tareas específicas. Los módulos son fragmentos de código que se pueden utilizar para realizar tareas como la configuración de redes o la implementación de aplicaciones. Las colecciones son conjuntos de módulos y playbooks que se pueden utilizar para implementar tareas más complejas. \n   \n En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura que puede ser utilizada para implementar y gestionar configuraciones de manera eficiente. Su capacidad para utilizar playbooks y módulos la hace ideal para una variedad de tareas, desde la configuración de servidores hasta la implementación de aplicaciones.",
+    "sources": [
+      {
+        "title": "Ansible Online Course",
+        "url": "https://www.bing.com/aclick?ld=e8fAWoQ08sBQ02vt2lfYsv7jVUCUwHnjeGzbJsLzJlFS0mP0eMNG-eUvJdh4iypGCaZyh1XRDBYJd7tC2WNfBYUM-BVNb01rocp2OAEq3-SpQY-LAzQ2uKj7uhAxsSinKCKdB8BsPipgUcPpp-5WqCXZGytj1S2zmW6KLfhVQ3AzXWHlPRkI1b_TzhRX4pUOqR1b_Hf86oKiZaf-9yPGdRThR-OJQ&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmbWFzdGVyaW5nLWFuc2libGUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfS2V5d29yZF9CZXRhX1Byb2ZfbGEuRU5fY2MuVVMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctVVNBJTI2dXRtX2F1ZGllbmNlJTNkbXglMjZ1dG1fdGFjdGljJTNkbmIlMjZ1dG1fdGVybSUzZF8uX2FnXzEzMjI3MTQ4NjYyNTAyMDFfLl9hZF9fLl9rd19BbnNpYmxlJTI1MjBDb3Vyc2UlMjZ1dG1fY29udGVudCUzZG8lMjZmdW5uZWwlM2QlMjZ0ZXN0JTNkJTI2dXRtX2NhbXBhaWduX2lkJTNkNjM4NTgyMjU2JTI2bXNjbGtpZCUzZDJiNzc3MmJiMWIyOTE0MGFiOTJjMThlYmM4MjUzZmU4&rlid=2b7772bb1b29140ab92c18ebc8253fe8"
+      },
+      {
+        "title": "Vaibhav Verma – Medium",
+        "url": "https://medium.com/@vaaiiibbhav"
+      }
+    ]
+  },
   "2026-07-06_1208": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Infraestructura",

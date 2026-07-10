@@ -1,4 +1,24 @@
 {
+  "2026-07-10_1109": {
+    "slug": "docker",
+    "title": "Mejores prácticas de Docker para DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Docker para DevOps, incluyendo la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose. Se destacan también las novedades y mejoras en el ecosistema de Docker.",
+    "content": "\nLa optimización de imágenes de Docker es fundamental para reducir el tamaño de las imágenes y mejorar el rendimiento de los contenedores. Una de las mejores prácticas es utilizar la instrucción `FROM` con una imagen base oficial, como `python:3.9-slim`, y luego agregar las dependencias necesarias. También se puede utilizar la herramienta `docker build` con la opción `--no-cache` para evitar la utilización de la caché de Docker.\n\nOtra mejor práctica es la utilización de Docker Compose para definir y ejecutar múltiples contenedores. Se puede crear un archivo `docker-compose.yml` con la definición de los servicios y luego ejecutar `docker-compose up` para iniciar los contenedores. También se puede utilizar la herramienta `docker-compose exec` para acceder a los contenedores en ejecución.\n\nEn cuanto a la seguridad, es importante utilizar la herramienta `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades. También se puede utilizar la herramienta `docker secrets` para gestionar los secretos de los contenedores. La utilización de redes de Docker también es importante para aislar los contenedores y evitar la exposición de los servicios.\n\nLa herramienta BuildKit es una herramienta de construcción de imágenes de Docker que permite la creación de imágenes de manera más eficiente y segura. Se puede utilizar la opción `--buildkit` con la herramienta `docker build` para habilitar la utilización de BuildKit. También se puede utilizar la herramienta `buildkitd` para ejecutar la construcción de imágenes de manera remota.\n\nFinalmente, la utilización de registros de Docker es fundamental para la gestión de las imágenes de Docker. Se puede utilizar la herramienta `docker push` para subir las imágenes a un registro de Docker y luego utilizar la herramienta `docker pull` para descargar las imágenes desde el registro.\n\nEn resumen, la utilización de las mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose, es fundamental para la creación de contenedores de manera eficiente y segura.\n",
+    "sources": [
+      {
+        "title": "Top 10 Docker Mistakes DevOps Engineers Keep Making in Production",
+        "url": "https://medium.com/@429abi/top-10-docker-mistakes-devops-engineers-keep-making-in-production-14d20fb2ea0e"
+      },
+      {
+        "title": "Docker Image Optimization: Best Practices to Reduce Size and Improve Performance",
+        "url": "https://medium.com/@sunil17bbmp/docker-image-optimization-best-practices-to-reduce-size-improve-performance-2026-b26a46a61505"
+      },
+      {
+        "title": "DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes",
+        "url": "https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373"
+      }
+    ]
+  },
   "2026-07-06_1208": {
     "slug": "docker",
     "title": "Mejores prácticas de Docker para producción",

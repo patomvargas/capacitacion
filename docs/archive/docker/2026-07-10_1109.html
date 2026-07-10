@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Docker para producción - Docker</title>
+    <title>Mejores prácticas de Docker para DevOps - Docker</title>
     <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Mejores prácticas de Docker para producción</h1>
-    <div class="meta">2026-07-06 1208 · Docker</div>
+    <h1>Mejores prácticas de Docker para DevOps</h1>
+    <div class="meta">2026-07-10 1109 · Docker</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>La creación de contenedores con almacenamiento persistente es crucial para garantizar la integridad de los datos en entornos de producción. Para lograr esto, se pueden utilizar comandos como `docker volume create` y `docker run -v` para montar volúmenes persistente en los contenedores. Por ejemplo, `docker run -v /var/lib/mysql:/var/lib/mysql -d mysql` monta un volumen persistente en el contenedor de MySQL.</p>
+            <p>La optimización de imágenes de Docker es fundamental para reducir el tamaño de las imágenes y mejorar el rendimiento de los contenedores. Una de las mejores prácticas es utilizar la instrucción `FROM` con una imagen base oficial, como `python:3.9-slim`, y luego agregar las dependencias necesarias. También se puede utilizar la herramienta `docker build` con la opción `--no-cache` para evitar la utilización de la caché de Docker.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto fundamental en la implementación de Docker en producción. Se pueden seguir las mejores prácticas de seguridad como la utilización de `docker exec` en lugar de `docker run` para evitar la creación de nuevos contenedores, y la configuración de `docker-compose` para limitar los recursos y los permisos de los contenedores. Por ejemplo, se puede configurar `docker-compose` para utilizar `restart: always` y `privileged: false` para garantizar que los contenedores se reinicien automáticamente en caso de fallo y no tengan permisos de root.</p>
+            <p>Otra mejor práctica es la utilización de Docker Compose para definir y ejecutar múltiples contenedores. Se puede crear un archivo `docker-compose.yml` con la definición de los servicios y luego ejecutar `docker-compose up` para iniciar los contenedores. También se puede utilizar la herramienta `docker-compose exec` para acceder a los contenedores en ejecución.</p>
             
         
             
         
             
-            <p>En cuanto a la optimización de imágenes, se pueden utilizar herramientas como `hadolint` para analizar y optimizar los Dockerfiles. Por ejemplo, se puede utilizar `hadolint` para detectar y corregir errores de sintaxis y mejores prácticas en los Dockerfiles. Además, se pueden utilizar comandos como `docker build -t` y `docker push` para crear y publicar imágenes de Docker optimizadas.</p>
+            <p>En cuanto a la seguridad, es importante utilizar la herramienta `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades. También se puede utilizar la herramienta `docker secrets` para gestionar los secretos de los contenedores. La utilización de redes de Docker también es importante para aislar los contenedores y evitar la exposición de los servicios.</p>
             
         
             
         
             
-            <p>La utilización de `BuildKit` es otra forma de optimizar la creación de imágenes de Docker. `BuildKit` es una herramienta que permite crear imágenes de Docker de manera más eficiente y segura. Por ejemplo, se puede utilizar `docker build -t` con la opción `--buildkit` para habilitar `BuildKit` y crear imágenes de Docker optimizadas.</p>
+            <p>La herramienta BuildKit es una herramienta de construcción de imágenes de Docker que permite la creación de imágenes de manera más eficiente y segura. Se puede utilizar la opción `--buildkit` con la herramienta `docker build` para habilitar la utilización de BuildKit. También se puede utilizar la herramienta `buildkitd` para ejecutar la construcción de imágenes de manera remota.</p>
             
         
             
         
             
-            <p>En resumen, la implementación de Docker en producción requiere una serie de mejores prácticas y herramientas para garantizar la integridad de los datos, la seguridad y la optimización de las imágenes. Al seguir estas prácticas y utilizar herramientas como `hadolint` y `BuildKit`, se pueden crear contenedores y imágenes de Docker seguras y eficientes.</p>
+            <p>Finalmente, la utilización de registros de Docker es fundamental para la gestión de las imágenes de Docker. Se puede utilizar la herramienta `docker push` para subir las imágenes a un registro de Docker y luego utilizar la herramienta `docker pull` para descargar las imágenes desde el registro.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de Docker y las fuentes de información en línea son fundamentales para mantenerse actualizado sobre las últimas novedades y mejores prácticas de Docker. Algunas fuentes recomendadas incluyen la documentación oficial de Docker y sitios web como DEV Community y Medium, que ofrecen artículos y tutoriales sobre Docker y DevOps.</p>
+            <p>En resumen, la utilización de las mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose, es fundamental para la creación de contenedores de manera eficiente y segura.</p>
             
         
             
@@ -109,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://dev.to/highbee/building-docker-containers-with-persistent-storage-p1d" target="_blank">Building Docker Containers with Persistent Storage</a>
+                <a href="https://medium.com/@429abi/top-10-docker-mistakes-devops-engineers-keep-making-in-production-14d20fb2ea0e" target="_blank">Top 10 Docker Mistakes DevOps Engineers Keep Making in Production</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@bektiaw/7-docker-security-best-practices-for-production-64499519d5da" target="_blank">7 Docker Security Best Practices for Production</a>
+                <a href="https://medium.com/@sunil17bbmp/docker-image-optimization-best-practices-to-reduce-size-improve-performance-2026-b26a46a61505" target="_blank">Docker Image Optimization: Best Practices to Reduce Size and Improve Performance</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/data-bistrot/docker-hello-world-building-running-and-debugging-bb211b5e9b85" target="_blank">Docker Hello World: Building, Running, and Debugging</a>
+                <a href="https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373" target="_blank">DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes</a>
                 
             </li>
             
@@ -130,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-02_1045.html">&larr; 2026-07-02 1045</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-06_1208.html">&larr; 2026-07-06 1208</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-10_1109.html">2026-07-10 1109 &rarr;</a>
             
         </div>
     </div>

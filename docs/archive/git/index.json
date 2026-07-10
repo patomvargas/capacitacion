@@ -1,4 +1,32 @@
 {
+  "2026-07-10_1109": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "Una de las mejores prácticas al trabajar con Git es utilizar `git flow` para gestionar los workflows. Esto permite tener un control más estricto sobre las ramas y los cambios en el código. Para iniciar `git flow`, se puede utilizar el comando `git flow init`. \n   \n   Otra herramienta útil es `git hook`, que permite ejecutar scripts automáticamente antes o después de ciertos eventos, como el commit o el push. Por ejemplo, se puede utilizar `git hook` para verificar que el código cumpla con ciertos estándares de calidad antes de ser enviado al repositorio. \n   \n   El comando `git rebase` es muy útil para mantener la historia de commits limpia y organizada. Por ejemplo, si se han realizado varios commits en una rama y se desea combinarlos en uno solo, se puede utilizar `git rebase -i` para interactuar con la historia de commits. \n   \n   El comando `git bisect` es una herramienta poderosa para encontrar el commit que introdujo un bug en el código. Esto se puede hacer utilizando `git bisect start` y luego `git bisect bad` o `git bisect good` para indicar si el commit es bueno o malo. \n   \n   Finalmente, `git worktree` es una herramienta que permite tener múltiples directorios de trabajo para un solo repositorio. Esto es útil para trabajar en diferentes ramas o proyectos al mismo tiempo. Por ejemplo, se puede utilizar `git worktree add` para agregar un nuevo directorio de trabajo para una rama específica.",
+    "sources": [
+      {
+        "title": "usbkill",
+        "url": "https://github.com/hephaest0s/usbkill"
+      },
+      {
+        "title": "Satis",
+        "url": "https://github.com/composer/satis"
+      },
+      {
+        "title": "GlueStick",
+        "url": "https://github.com/cvg/GlueStick"
+      },
+      {
+        "title": "KVision",
+        "url": "https://github.com/rjaros/kvision"
+      },
+      {
+        "title": "SONiC",
+        "url": "https://github.com/sonic-net/SONiC"
+      }
+    ]
+  },
   "2026-07-06_1208": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

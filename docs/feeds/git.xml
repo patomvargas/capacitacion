@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-09T11:15:29.944678+00:00</updated>
+  <updated>2026-07-10T11:10:09.184310+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -489,5 +489,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-06_1208.html"/>
     <summary>En este artículo, exploraremos algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de ramas, hooks y worktrees. También cubriremos algunas novedades y mejoras en la herramienta.</summary>
     <published>2026-07-06T12:08:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-10_1109.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-07-10T11:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;Una de las mejores prácticas al trabajar con Git es utilizar &lt;code&gt;git flow&lt;/code&gt; para gestionar los workflows. Esto permite tener un control más estricto sobre las ramas y los cambios en el código. Para iniciar &lt;code&gt;git flow&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;git flow init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;git hook&lt;/code&gt;, que permite ejecutar scripts automáticamente antes o después de ciertos eventos, como el commit o el push. Por ejemplo, se puede utilizar &lt;code&gt;git hook&lt;/code&gt; para verificar que el código cumpla con ciertos estándares de calidad antes de ser enviado al repositorio.&lt;/p&gt;
+&lt;p&gt;El comando &lt;code&gt;git rebase&lt;/code&gt; es muy útil para mantener la historia de commits limpia y organizada. Por ejemplo, si se han realizado varios commits en una rama y se desea combinarlos en uno solo, se puede utilizar &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con la historia de commits.&lt;/p&gt;
+&lt;p&gt;El comando &lt;code&gt;git bisect&lt;/code&gt; es una herramienta poderosa para encontrar el commit que introdujo un bug en el código. Esto se puede hacer utilizando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; o &lt;code&gt;git bisect good&lt;/code&gt; para indicar si el commit es bueno o malo.&lt;/p&gt;
+&lt;p&gt;Finalmente, &lt;code&gt;git worktree&lt;/code&gt; es una herramienta que permite tener múltiples directorios de trabajo para un solo repositorio. Esto es útil para trabajar en diferentes ramas o proyectos al mismo tiempo. Por ejemplo, se puede utilizar &lt;code&gt;git worktree add&lt;/code&gt; para agregar un nuevo directorio de trabajo para una rama específica.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hephaest0s/usbkill"&gt;usbkill&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/composer/satis"&gt;Satis&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/cvg/GlueStick"&gt;GlueStick&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/rjaros/kvision"&gt;KVision&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/sonic-net/SONiC"&gt;SONiC&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-10_1109.html"/>
+    <summary>En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-07-10T11:09:00+00:00</published>
   </entry>
 </feed>

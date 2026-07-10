@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-09T11:15:29.947092+00:00</updated>
+  <updated>2026-07-10T11:10:09.187991+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -376,5 +376,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-06_1208.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins gestionar y provisionar recursos en la nube de manera eficiente. En este artículo, se presentan las mejores prácticas y novedades en Terraform, incluyendo la gestión de proveedores, módulos y estado.</summary>
     <published>2026-07-06T12:08:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-10_1109.html</id>
+    <title>Terraform: Mejoras y Best Practices</title>
+    <updated>2026-07-10T11:09:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta fundamental para la gestión de infraestructuras en la nube. Con la última versión, se han agregado nuevas características como el soporte para Terraform Stack y Deployment files, lo que permite una mayor flexibilidad y personalización en la creación de infraestructuras.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Terraform, es necesario instalar el proveedor correspondiente a la nube que se esté utilizando. Por ejemplo, para trabajar con AWS, se puede utilizar el comando &lt;code&gt;terraform init&lt;/code&gt; para inicializar el proyecto y luego &lt;code&gt;terraform apply&lt;/code&gt; para aplicar la configuración. Es importante mencionar que se debe configurar el archivo &lt;code&gt;main.tf&lt;/code&gt; con la configuración deseada, utilizando bloques como &lt;code&gt;provider&lt;/code&gt; y &lt;code&gt;resource&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un tema importante a considerar es el manejo de estado en Terraform. El estado se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado &lt;code&gt;terraform.tfstate&lt;/code&gt;. Es importante mantener este archivo actualizado y sincronizado con la configuración real de la infraestructura. Para ello, se puede utilizar el comando &lt;code&gt;terraform refresh&lt;/code&gt; para actualizar el estado y &lt;code&gt;terraform destroy&lt;/code&gt; para eliminar la infraestructura.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Terraform es la capacidad de trabajar con módulos. Los módulos son bloques de código reutilizables que permiten crear infraestructuras de manera más eficiente. Por ejemplo, se puede crear un módulo para un servidor web y otro para una base de datos, y luego combinarlos para crear una infraestructura completa. Para utilizar módulos, se debe crear un archivo &lt;code&gt;modules.tf&lt;/code&gt; y luego importarlo en el archivo &lt;code&gt;main.tf&lt;/code&gt; utilizando la sentencia &lt;code&gt;module&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a best practices, es importante seguir las recomendaciones de seguridad y buenas prácticas para evitar problemas de configuración y seguridad. Por ejemplo, se debe utilizar autenticación y autorización para acceder a la infraestructura, y se debe mantener la configuración actualizada y documentada. También es importante realizar pruebas y validaciones antes de aplicar cualquier cambio a la infraestructura.&lt;/p&gt;
+&lt;p&gt;Para importar recursos existentes en Terraform, se puede utilizar el comando &lt;code&gt;terraform import&lt;/code&gt;. Este comando permite importar recursos como instancias de EC2, bases de datos RDS, entre otros. Por ejemplo, &lt;code&gt;terraform import aws_instance.mi_instancia i-0123456789abcdef0&lt;/code&gt;. Es importante mencionar que se debe tener cuidado al importar recursos, ya que puede sobreescribir la configuración existente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, lo que facilita el aprendizaje y la resolución de problemas. También existen muchos proveedores y módulos disponibles para diferentes servicios en la nube, lo que permite una gran flexibilidad y personalización en la creación de infraestructuras.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md"&gt;CHANGELOG.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/issues/38725"&gt;Data race ("concurrent map iteration and map write") in configload.Loader's shared parser during plan #38725&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e8A07miVNydoQl4BBcZQMd8TVUCUwIjqpmp2sFUu6QPwLyBcVlICprm2PuSOytU13tKVjbBVg2LNtnr-DgwJqf1CArZ_gK3LYsQLd4xy7BDwMMreTHRyM-3rtwBAnHOWFkqUy8RR2jaz1MW0fM7OQdZTG0snMUnY96DTqZhB3qcdMFypoYYIyN1DJou_iTqoT6wqQ0AHeeTD_J4YtOhza29Yr3nlo&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmdGVycmFmb3JtLWJlZ2lubmVyLXRvLWFkdmFuY2VkJTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLkVOX2NjLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI4MjEyNDI0NDk2OTU4Xy5fYWRfXy5fa3dfVGVycmFmb3JtJTI1MjBCZWdpbm5lciUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkMmIzZDMwNmNkNWJhMWE3MDlmMGY1YTNjMDc0ZjE2ZTA"&gt;Terraform Online Course - Courses that Never Go Stale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-10_1109.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
+    <published>2026-07-10T11:09:00+00:00</published>
   </entry>
 </feed>

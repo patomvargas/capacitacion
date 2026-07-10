@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Best Practices - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Best Practices</h1>
+    <div class="meta">2026-07-10 1109 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta fundamental para la gestión de infraestructuras en la nube. Con la última versión, se han agregado nuevas características como el soporte para Terraform Stack y Deployment files, lo que permite una mayor flexibilidad y personalización en la creación de infraestructuras.</p>
+            
+        
+            
+        
+            
+            <p>Para empezar a trabajar con Terraform, es necesario instalar el proveedor correspondiente a la nube que se esté utilizando. Por ejemplo, para trabajar con AWS, se puede utilizar el comando `terraform init` para inicializar el proyecto y luego `terraform apply` para aplicar la configuración. Es importante mencionar que se debe configurar el archivo `main.tf` con la configuración deseada, utilizando bloques como `provider` y `resource`.</p>
+            
+        
+            
+        
+            
+            <p>Un tema importante a considerar es el manejo de estado en Terraform. El estado se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado `terraform.tfstate`. Es importante mantener este archivo actualizado y sincronizado con la configuración real de la infraestructura. Para ello, se puede utilizar el comando `terraform refresh` para actualizar el estado y `terraform destroy` para eliminar la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de Terraform es la capacidad de trabajar con módulos. Los módulos son bloques de código reutilizables que permiten crear infraestructuras de manera más eficiente. Por ejemplo, se puede crear un módulo para un servidor web y otro para una base de datos, y luego combinarlos para crear una infraestructura completa. Para utilizar módulos, se debe crear un archivo `modules.tf` y luego importarlo en el archivo `main.tf` utilizando la sentencia `module`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a best practices, es importante seguir las recomendaciones de seguridad y buenas prácticas para evitar problemas de configuración y seguridad. Por ejemplo, se debe utilizar autenticación y autorización para acceder a la infraestructura, y se debe mantener la configuración actualizada y documentada. También es importante realizar pruebas y validaciones antes de aplicar cualquier cambio a la infraestructura.</p>
+            
+        
+            
+        
+            
+            <p>Para importar recursos existentes en Terraform, se puede utilizar el comando `terraform import`. Este comando permite importar recursos como instancias de EC2, bases de datos RDS, entre otros. Por ejemplo, `terraform import aws_instance.mi_instancia i-0123456789abcdef0`. Es importante mencionar que se debe tener cuidado al importar recursos, ya que puede sobreescribir la configuración existente.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que Terraform tiene una comunidad activa y una documentación extensa, lo que facilita el aprendizaje y la resolución de problemas. También existen muchos proveedores y módulos disponibles para diferentes servicios en la nube, lo que permite una gran flexibilidad y personalización en la creación de infraestructuras.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/issues/38725" target="_blank">Data race ("concurrent map iteration and map write") in configload.Loader's shared parser during plan #38725</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e8A07miVNydoQl4BBcZQMd8TVUCUwIjqpmp2sFUu6QPwLyBcVlICprm2PuSOytU13tKVjbBVg2LNtnr-DgwJqf1CArZ_gK3LYsQLd4xy7BDwMMreTHRyM-3rtwBAnHOWFkqUy8RR2jaz1MW0fM7OQdZTG0snMUnY96DTqZhB3qcdMFypoYYIyN1DJou_iTqoT6wqQ0AHeeTD_J4YtOhza29Yr3nlo&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmdGVycmFmb3JtLWJlZ2lubmVyLXRvLWFkdmFuY2VkJTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLkVOX2NjLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzI4MjEyNDI0NDk2OTU4Xy5fYWRfXy5fa3dfVGVycmFmb3JtJTI1MjBCZWdpbm5lciUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkMmIzZDMwNmNkNWJhMWE3MDlmMGY1YTNjMDc0ZjE2ZTA" target="_blank">Terraform Online Course - Courses that Never Go Stale</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-06_1208.html">&larr; 2026-07-06 1208</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
