@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-10T11:10:09.138504+00:00</updated>
+  <updated>2026-07-11T09:42:48.254796+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -572,5 +572,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-07_1112.html"/>
     <summary>FreeIPA es una solución de administración de identidades de código abierto que combina un directorio LDAP con autenticación Kerberos. Permite la gestión de identidades y accesos en entornos Unix.</summary>
     <published>2026-07-07T11:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-11_0942.html</id>
+    <title>FreeIPA: Administración de Identidad</title>
+    <updated>2026-07-11T09:42:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de administración de identidad que se utiliza para proporcionar autenticación centralizada en entornos de Unix. Combina un directorio LDAP con un servidor Kerberos para proporcionar una solución completa de autenticación y autorización. Para implementar FreeIPA, es necesario configurar el servidor y los clientes para que utilicen el protocolo Kerberos para la autenticación.&lt;/p&gt;
+&lt;p&gt;La configuración de FreeIPA se puede realizar mediante la interfaz de línea de comandos &lt;code&gt;ipa&lt;/code&gt; o mediante la interfaz web. Para agregar un cliente a FreeIPA, se puede utilizar el comando &lt;code&gt;ipa client-install&lt;/code&gt; en el cliente y luego &lt;code&gt;ipa host-add&lt;/code&gt; en el servidor para agregar el cliente al dominio. Luego, se puede configurar la autenticación Kerberos en el cliente con el comando &lt;code&gt;ipa getkeytab&lt;/code&gt; para obtener el keytab del cliente.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios. Esto se puede hacer mediante el comando &lt;code&gt;ipa trust-add&lt;/code&gt; para agregar un dominio de confianza. También se puede configurar el acceso basado en hosts (HBAC) para restringir el acceso a ciertos hosts o servicios. Para ello, se puede utilizar el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; para agregar una regla de acceso.&lt;/p&gt;
+&lt;p&gt;En cuanto a la autenticación, FreeIPA admite varios métodos, incluyendo la autenticación con contraseña y la autenticación con tarjeta inteligente. Sin embargo, en la versión actual, hay un problema con la autenticación con Passkey, como se indica en el issue #1130 de GitHub. Para solucionar este problema, se puede utilizar la autenticación con contraseña o configurar la autenticación con tarjeta inteligente.&lt;/p&gt;
+&lt;p&gt;Por último, es importante mencionar que FreeIPA tiene varias alternativas de código abierto, como se indica en la lista de Saasworthy. Sin embargo, FreeIPA sigue siendo una de las opciones más populares y ampliamente utilizadas para la administración de identidad en entornos de Unix.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"&gt;FreeIPA Pentesting - HackTricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.devops.dev/how-i-added-a-linux-client-to-freeipa-for-centralized-authentication-566613ef636d"&gt;How I Added a Linux Client to FreeIPA for Centralized Authentication&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa-webui/issues/1130"&gt;Missing user authentication types Passkey #1130&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-11_0942.html"/>
+    <summary>FreeIPA es un sistema de administración de identidad que combina LDAP y Kerberos para proporcionar autenticación centralizada. En este artículo, se cubren las mejores prácticas y configuraciones para implementar FreeIPA en un entorno de producción.</summary>
+    <published>2026-07-11T09:42:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <title>Seguridad y configuración de OpenVPN - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>OpenVPN: Tunneling y Seguridad</h1>
-    <div class="meta">2026-07-07 1112 · OpenVPN</div>
+    <h1>Seguridad y configuración de OpenVPN</h1>
+    <div class="meta">2026-07-11 0942 · OpenVPN</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite crear túneles VPN seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, se puede generar un par de claves RSA con `openssl genrsa -out server.key 2048`.</p>
+            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves. Se puede utilizar `openssl` para generar los certificados y claves necesarios. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650`.</p>
             
         
             
         
             
-            <p>Una vez generados los certificados y claves, se debe configurar el servidor OpenVPN. Esto se puede hacer editando el archivo de configuración `server.conf` y agregando las siguientes líneas: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`. Luego, se puede iniciar el servidor con `openvpn --config server.conf`.</p>
+            <p>Una vez generados los certificados y claves, se puede configurar OpenVPN para establecer una conexión segura. Se puede utilizar el archivo de configuración `server.conf` para especificar los parámetros de la conexión, como la dirección IP y el puerto del servidor. Por ejemplo, se puede agregar la siguiente línea al archivo de configuración: `port 1194`. También se puede utilizar `iptables` para configurar las reglas de firewall y permitir el tráfico de red a través del túnel.</p>
             
         
             
         
             
-            <p>Para conectar un cliente a un servidor OpenVPN, se debe generar un archivo de configuración `client.conf` con las siguientes líneas: `client`, `dev tun`, `proto udp`, `remote-cert-tls server`, `ca ca.crt`, `cert client.crt`, `key client.key`. Luego, se puede conectar al servidor con `openvpn --config client.conf`.</p>
+            <p>Para hardenizar OpenVPN, se pueden implementar varias medidas de seguridad, como la autenticación de dos factores y la limitación de acceso a la red. Se puede utilizar `fail2ban` para bloquear las direcciones IP que intentan conectarse al servidor de OpenVPN de manera no autorizada. También se puede utilizar `openssl` para cifrar los datos de la conexión.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante hardening el servidor OpenVPN. Esto se puede hacer configurando el firewall para que solo permita el tráfico necesario, utilizando `iptables` o `ufw`. También es importante mantener el servidor y los clientes actualizados con las últimas versiones de OpenVPN y otros paquetes de seguridad.</p>
+            <p>En cuanto a la configuración de OpenVPN para acceso remoto, se puede utilizar el protocolo de autenticación de OpenVPN para verificar la identidad de los clientes. Se puede utilizar el comando `openvpn --config client.conf` para establecer una conexión segura con el servidor de OpenVPN.</p>
             
         
             
         
             
-            <p>Además, se puede utilizar OpenVPN Access Server para gestionar y configurar los servidores y clientes de manera centralizada. Esto permite una mayor flexibilidad y escalabilidad en la configuración de la red VPN.</p>
+            <p>Para la configuración de OpenVPN en modo sitio a sitio, se puede utilizar el protocolo de enrutamiento de OpenVPN para establecer una conexión segura entre dos redes. Se puede utilizar el comando `openvpn --config site-to-site.conf` para establecer una conexión segura entre dos redes.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenVPN también se puede utilizar para configurar conexiones site-to-site, lo que permite conectar dos redes diferentes de manera segura. Esto se puede hacer configurando dos servidores OpenVPN, uno en cada red, y estableciendo una conexión entre ellos.</p>
+            <p>En resumen, OpenVPN es una herramienta poderosa para establecer conexiones seguras entre redes. Al seguir las mejores prácticas de configuración y hardenización, se puede garantizar la seguridad y la integridad de los datos de la red.</p>
             
         
             
@@ -111,12 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn" target="_blank">OpenVPN GitHub</a>
+                <a href="https://github.com/GLiNet-Community-Scripts/GL-iNet_utils" target="_blank">GLiNet-Community-Scripts/GL-iNet_utils</a>
                 
             </li>
             
             <li>
-                <a href="https://openvpn.net/access-server/" target="_blank">OpenVPN Access Server</a>
+                <a href="https://github.com/fail2ban/fail2ban" target="_blank">Fail2Ban: ban hosts that cause multiple authentication errors</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/zabbix/community-templates" target="_blank">Zabbix Community Templates repository</a>
                 
             </li>
             
@@ -127,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-03_1041.html">&larr; 2026-07-03 1041</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-07_1112.html">&larr; 2026-07-07 1112</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-11_0942.html">2026-07-11 0942 &rarr;</a>
             
         </div>
     </div>
