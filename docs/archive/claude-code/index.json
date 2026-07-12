@@ -1,4 +1,28 @@
 {
+  "2026-07-12_0954": {
+    "slug": "claude-code",
+    "title": "Claude Code: Mejoras y Best Practices",
+    "summary": "Claude Code es una herramienta de desarrollo que utiliza inteligencia artificial para mejorar la productividad de los desarrolladores. En este artículo, se presentan las últimas novedades y mejores prácticas para utilizar Claude Code de manera efectiva.",
+    "content": "Claude Code es una herramienta de desarrollo que utiliza inteligencia artificial para mejorar la productividad de los desarrolladores. Una de las características más destacadas de Claude Code es su capacidad para aprender y adaptarse a las necesidades del desarrollador. Para empezar a utilizar Claude Code, es necesario instalar el paquete `@anthropic-ai/claude-code` mediante npm con el comando `npm i -g @anthropic-ai/claude-code`. Luego, se puede ejecutar Claude Code en la terminal con el comando `claude`.\n\n \n Los plugins de Claude Code son extensiones que permiten personalizar y ampliar la funcionalidad de la herramienta. Por ejemplo, se puede utilizar el plugin `claude-plugins-official` para agregar funcionalidades como la clasificación automática de código y la detección de errores. Para instalar un plugin, se puede utilizar el comando `claude plugin install <nombre-del-plugin>`.\n\n \n En cuanto a la configuración de Claude Code, es posible personalizar la herramienta para adaptarla a las necesidades específicas del proyecto. Por ejemplo, se puede configurar Claude Code para utilizar un servidor MCP (Message Control Protocol) personalizado con el comando `claude config set mcp-server <url-del-servidor>`. Además, se pueden definir flujos de trabajo personalizados para automatizar tareas comunes con el comando `claude workflow create <nombre-del-flujo>`.\n\n \n Es importante mencionar que Claude Code también cuenta con una comunidad activa de desarrolladores que crean y comparten plugins y configuraciones personalizadas. Por ejemplo, se puede encontrar una lista de plugins oficiales en el repositorio de GitHub `anthropics/claude-plugins-official`. Además, se pueden encontrar tutoriales y guías de configuración en la documentación oficial de Claude Code.\n\n \n En resumen, Claude Code es una herramienta poderosa que puede mejorar significativamente la productividad de los desarrolladores. Con sus plugins y configuraciones personalizables, es posible adaptar la herramienta a las necesidades específicas del proyecto. Para obtener más información sobre Claude Code y sus características, se puede consultar la documentación oficial y la comunidad de desarrolladores.\n\n \n Finalmente, es importante destacar que Claude Code es una herramienta en constante evolución, por lo que es importante estar al tanto de las últimas novedades y actualizaciones. Se puede seguir la cuenta de GitHub de Claude Code para estar informado sobre las últimas características y mejoras.",
+    "sources": [
+      {
+        "title": "Claude Code Plugins",
+        "url": "https://github.com/anthropics/claude-code/tree/main/plugins"
+      },
+      {
+        "title": "anthropics/claude-plugins-official",
+        "url": "https://github.com/anthropics/claude-plugins-official"
+      },
+      {
+        "title": "How Claude Code is used in practice",
+        "url": "https://www.anthropic.com/research/claude-code-expertise"
+      },
+      {
+        "title": "Ponytail: Teaching Claude Code to Think Before It Types",
+        "url": "https://medium.com/@ahirlog/ponytail-teaching-claude-code-to-think-before-it-types-f1781e65b136"
+      }
+    ]
+  },
   "2026-07-08_1023": {
     "slug": "claude-code",
     "title": "Claude Code: Mejoras y Best Practices",

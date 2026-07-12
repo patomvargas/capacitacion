@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift: Novedades y Mejoras - OpenShift</title>
+    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift: Novedades y Mejoras</h1>
-    <div class="meta">2026-07-08 1023 · OpenShift</div>
+    <h1>OpenShift: Mejoras y Novedades</h1>
+    <div class="meta">2026-07-12 0954 · OpenShift</div>
 
     <div class="content">
         
@@ -66,37 +66,41 @@
             
         
             
-            <p>La versión 4.22 de OpenShift se lanzó recientemente, y con ella, se incluyen nuevas características y mejoras en la plataforma. Una de las novedades más destacadas es la integración con Argo CD 3.4, que permite una mejor gestión de los despliegues y la configuración de los clusters. Para instalar OpenShift 4.22, se puede utilizar el comando `oc cluster up` y seguir las instrucciones del instalador.</p>
+            <p>OpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. En los últimos días, se han publicado varias actualizaciones de seguridad para OpenShift, como la `RHSA-2026:34790`, que incluye actualizaciones para la versión 4.22 de OpenShift Container Platform.</p>
             
         
             
         
             
-            <p>Otra característica importante es la capacidad de realizar migraciones de clusters de manera más eficiente, gracias a la integración con herramientas como Azure Red Hat OpenShift. Esto permite a los administradores de sistemas realizar migraciones de manera más rápida y segura. Además, se han mejorado las herramientas de monitoreo y análisis de los clusters, lo que permite a los administradores tener una visión más clara del rendimiento y la seguridad de sus sistemas.</p>
+            <p>Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc get clusterversion` en la línea de comandos de OpenShift. Si se encuentran actualizaciones, se pueden aplicar utilizando el comando `oc adm upgrade`. Es importante tener en cuenta que, antes de realizar cualquier actualización, se debe realizar un respaldo de la configuración y los datos de la plataforma.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, OpenShift 4.22 incluye mejoras en la autenticación y autorización, gracias a la integración con OAuth y otros protocolos de autenticación. Esto permite a los administradores de sistemas configurar políticas de acceso y seguridad de manera más flexible y segura. Para configurar la autenticación con OAuth, se puede utilizar el comando `oc create secret` y seguir las instrucciones del proveedor de identidad.</p>
+            <p>Una de las características más interesantes de OpenShift es la capacidad de utilizar operadores para automatizar la instalación y configuración de aplicaciones y servicios. Por ejemplo, el `ClickHouse Operator` es un operador que permite automatizar la instalación y configuración de clusters de ClickHouse en OpenShift. Para instalar este operador, se puede utilizar el comando `oc apply -f https://github.com/clickhouse/clickhouse-operator/deploy/operator.yaml`.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4.22 es una versión que ofrece muchas mejoras y novedades en la plataforma, desde la integración con Argo CD hasta la mejora de la seguridad y el monitoreo. Los administradores de sistemas pueden aprovechar estas características para mejorar la eficiencia y la seguridad de sus clusters.</p>
+            <p>Además, OpenShift ofrece una variedad de herramientas y características para la gestión de la seguridad, como la autenticación y autorización mediante OAuth. En este sentido, se puede utilizar el comando `oc create secret generic oauth-credentials --from-literal=client-id=<client-id> --from-literal=client-secret=<client-secret>` para crear un secreto que contenga las credenciales de OAuth.</p>
             
         
             
         
             
-            <p>Para más información sobre la configuración y el uso de OpenShift, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift. Además, se pueden utilizar herramientas como `oc` y `kubectl` para gestionar y configurar los clusters de manera más eficiente.</p>
+            <p>En cuanto a la migración de aplicaciones a OpenShift, se puede utilizar la herramienta `oc adm migrate` para migrar aplicaciones desde otras plataformas de contenedores. Por ejemplo, se puede utilizar el comando `oc adm migrate --from=<source-platform> --to=<target-platform>` para migrar una aplicación desde una plataforma de contenedores a otra.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, se recomienda utilizar herramientas como OpenShift GitOps para gestionar la configuración y los despliegues de los clusters de manera más eficiente y segura. Además, se deben seguir las políticas de seguridad y acceso recomendadas por Red Hat y la comunidad de OpenShift.</p>
+            <p>En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Con las últimas actualizaciones de seguridad y nuevas características, OpenShift se posiciona como una plataforma líder en el mercado de los contenedores.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -107,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes" target="_blank">What's new with Azure Red Hat OpenShift?</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:34790" target="_blank">RHSA-2026:34790</a>
                 
             </li>
             
             <li>
-                <a href="https://electromech.cloud/openshift-4-22-new-features-release-highlights/" target="_blank">OpenShift 4.22: New Features and Release Highlights</a>
+                <a href="https://github.com/clickhouse/clickhouse-operator" target="_blank">ClickHouse Operator</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_gitops/1.21/html/release_notes/gitops-release-notes" target="_blank">Chapter 1. Red Hat OpenShift GitOps release notes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://developers.redhat.com/blog/2026/06/26/whats-new-openshift-gitops-121" target="_blank">What's New in OpenShift GitOps 1.21</a>
+                <a href="https://github.com/nextcloud/all-in-one/tree/main/nextcloud-aio-helm-chart" target="_blank">nextcloud-aio-helm-chart</a>
                 
             </li>
             
@@ -133,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-04_1015.html">&larr; 2026-07-04 1015</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-08_1023.html">&larr; 2026-07-08 1023</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-12_0954.html">2026-07-12 0954 &rarr;</a>
             
         </div>
     </div>

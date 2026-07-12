@@ -1,4 +1,24 @@
 {
+  "2026-07-12_0954": {
+    "slug": "metabase",
+    "title": "Metabase: Nuevas Funcionalidades y Mejoras",
+    "summary": "Metabase ha lanzado recientemente varias actualizaciones que mejoran su funcionalidad y usabilidad. En este artículo, exploraremos las nuevas características y cómo pueden ser utilizadas para mejorar la experiencia del usuario.",
+    "content": "\nMetabase es una herramienta de análisis de datos que permite a los usuarios crear informes y paneles personalizados. Recientemente, se han agregado varias funcionalidades nuevas, como la capacidad de crear gráficos personalizados y la integración con el cliente de AI de Metabase (MCP). \n\nPara crear un gráfico personalizado, los usuarios pueden utilizar el plugin SDK de Metabase, que les permite crear cualquier tipo de gráfico que deseen. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `metabase.plugins.createChart('bar-chart')`. \n\nAdemás, la versión 62 de Metabase incluye la función de Metabase CLI, que permite a los usuarios interactuar con la herramienta desde la terminal. Por ejemplo, para crear un nuevo panel, se puede utilizar el comando `metabase create-dashboard --name 'Mi Panel'`. \n\nLa administración de Metabase también ha sido mejorada, con la adición de una función de Schema Viewer interactiva y la capacidad de gestionar colecciones en la biblioteca. Para acceder a la Schema Viewer, se puede utilizar el comando `metabase schema-viewer`. \n\nEn cuanto a la seguridad, es importante mencionar que los usuarios deben validar y asegurar sus claves de API de Stripe, como se recomienda en la documentación de Metabase. Para hacer esto, se puede utilizar el comando `stripe keys create --restricted --scope read_only`. \n\nEn resumen, las nuevas funcionalidades y mejoras de Metabase ofrecen una mayor flexibilidad y personalización para los usuarios, lo que les permite crear informes y paneles más efectivos y eficientes.\n\n",
+    "sources": [
+      {
+        "title": "Metabase 62",
+        "url": "https://www.metabase.com/releases/metabase-62"
+      },
+      {
+        "title": "Metabase 62: Custom viz, more MCP tools, Metabase CLI, and more",
+        "url": "https://discourse.metabase.com/t/metabase-62-custom-viz-more-mcp-tools-metabase-cli-and-more/310557"
+      },
+      {
+        "title": "Custom Column handling updates in the latest release",
+        "url": "https://discourse.metabase.com/t/custom-column-handling-updates-in-the-latest-release/310755"
+      }
+    ]
+  },
   "2026-06-30_1113": {
     "slug": "metabase",
     "title": "Metabase: Nuevas Funcionalidades y Mejoras",

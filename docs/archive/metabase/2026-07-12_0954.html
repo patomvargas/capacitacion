@@ -58,43 +58,49 @@
     </div>
 
     <h1>Metabase: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-06-30 1113 · Metabase</div>
+    <div class="meta">2026-07-12 0954 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>Metabase es una herramienta de análisis de datos y creación de paneles de control que permite a los usuarios crear consultas, paneles de control y informes personalizados. En su versión 62, Metabase ha agregado un SDK de plugins que permite a los desarrolladores crear tipos de gráficos personalizados y interactuar con los servidores MCP. También se ha introducido la Metabase CLI, que permite a los usuarios realizar flujos de trabajo en terminal de manera más eficiente.</p>
+        
+            
+            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear informes y paneles personalizados. Recientemente, se han agregado varias funcionalidades nuevas, como la capacidad de crear gráficos personalizados y la integración con el cliente de AI de Metabase (MCP).</p>
             
         
             
         
             
-            <p>Para utilizar la Metabase CLI, los usuarios pueden ejecutar el comando `mbctl` en su terminal, seguido de la acción que desean realizar, como `mbctl login` para iniciar sesión o `mbctl query` para ejecutar una consulta. Además, se ha mejorado la compatibilidad con OpenAI Codex, lo que permite a los usuarios conectar su instancia de Metabase directamente a Codex y realizar consultas y análisis de datos de manera más sencilla.</p>
+            <p>Para crear un gráfico personalizado, los usuarios pueden utilizar el plugin SDK de Metabase, que les permite crear cualquier tipo de gráfico que deseen. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `metabase.plugins.createChart('bar-chart')`.</p>
             
         
             
         
             
-            <p>Sin embargo, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x. Según el informe de error #75458 en GitHub, la versión 62.x no es compatible con MariaDB y se requiere una actualización o una nueva instancia para resolver el problema. Los usuarios que utilicen MariaDB deben tener cuidado al actualizar a la versión 62.x y considerar la posibilidad de migrar a una base de datos compatible.</p>
+            <p>Además, la versión 62 de Metabase incluye la función de Metabase CLI, que permite a los usuarios interactuar con la herramienta desde la terminal. Por ejemplo, para crear un nuevo panel, se puede utilizar el comando `metabase create-dashboard --name 'Mi Panel'`.</p>
             
         
             
         
             
-            <p>La versión 62 de Metabase también incluye otras mejoras y funcionalidades, como la capacidad de crear colecciones en la biblioteca y gestionar alertas de manera más eficiente. Además, se ha mejorado la integración con Claude Web y Claude Code, lo que permite a los usuarios crear paneles de control y informes personalizados de manera más sencilla.</p>
+            <p>La administración de Metabase también ha sido mejorada, con la adición de una función de Schema Viewer interactiva y la capacidad de gestionar colecciones en la biblioteca. Para acceder a la Schema Viewer, se puede utilizar el comando `metabase schema-viewer`.</p>
             
         
             
         
             
-            <p>En resumen, la versión 62 de Metabase ofrece nuevas funcionalidades y mejoras que permiten a los usuarios crear consultas, paneles de control y informes personalizados de manera más eficiente. Sin embargo, es importante tener en cuenta los problemas de compatibilidad con MariaDB y considerar la posibilidad de migrar a una base de datos compatible.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que los usuarios deben validar y asegurar sus claves de API de Stripe, como se recomienda en la documentación de Metabase. Para hacer esto, se puede utilizar el comando `stripe keys create --restricted --scope read_only`.</p>
             
         
             
         
             
-            <p>Para más información sobre las funcionalidades y mejoras de la versión 62 de Metabase, los usuarios pueden consultar la documentación oficial y los informes de error en GitHub.</p>
+            <p>En resumen, las nuevas funcionalidades y mejoras de Metabase ofrecen una mayor flexibilidad y personalización para los usuarios, lo que les permite crear informes y paneles más efectivos y eficientes.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -110,12 +116,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/75458" target="_blank">Issue #75458</a>
+                <a href="https://discourse.metabase.com/t/metabase-62-custom-viz-more-mcp-tools-metabase-cli-and-more/310557" target="_blank">Metabase 62: Custom viz, more MCP tools, Metabase CLI, and more</a>
                 
             </li>
             
             <li>
-                <a href="https://www.metabase.com/blog/metabase-plugin-openai-codex-announcement" target="_blank">OpenAI Codex - Metabase</a>
+                <a href="https://discourse.metabase.com/t/custom-column-handling-updates-in-the-latest-release/310755" target="_blank">Custom Column handling updates in the latest release</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-18_1153.html">&larr; 2026-06-18 1153</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-12_0954.html">2026-07-12 0954 &rarr;</a>
             
         </div>
     </div>

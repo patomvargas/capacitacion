@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-11T09:42:48.276784+00:00</updated>
+  <updated>2026-07-12T09:55:46.522890+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -360,5 +360,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html"/>
     <summary>Metabase ha lanzado nuevas funcionalidades y mejoras en su versión 62, incluyendo un SDK de plugins para crear tipos de gráficos personalizados y una CLI para flujos de trabajo en terminal. Además, se han identificado problemas de compatibilidad con MariaDB en la versión 62.x.</summary>
     <published>2026-06-30T11:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-12_0954.html</id>
+    <title>Metabase: Nuevas Funcionalidades y Mejoras</title>
+    <updated>2026-07-12T09:54:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de análisis de datos que permite a los usuarios crear informes y paneles personalizados. Recientemente, se han agregado varias funcionalidades nuevas, como la capacidad de crear gráficos personalizados y la integración con el cliente de AI de Metabase (MCP).&lt;/p&gt;
+&lt;p&gt;Para crear un gráfico personalizado, los usuarios pueden utilizar el plugin SDK de Metabase, que les permite crear cualquier tipo de gráfico que deseen. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando &lt;code&gt;metabase.plugins.createChart('bar-chart')&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, la versión 62 de Metabase incluye la función de Metabase CLI, que permite a los usuarios interactuar con la herramienta desde la terminal. Por ejemplo, para crear un nuevo panel, se puede utilizar el comando &lt;code&gt;metabase create-dashboard --name 'Mi Panel'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La administración de Metabase también ha sido mejorada, con la adición de una función de Schema Viewer interactiva y la capacidad de gestionar colecciones en la biblioteca. Para acceder a la Schema Viewer, se puede utilizar el comando &lt;code&gt;metabase schema-viewer&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que los usuarios deben validar y asegurar sus claves de API de Stripe, como se recomienda en la documentación de Metabase. Para hacer esto, se puede utilizar el comando &lt;code&gt;stripe keys create --restricted --scope read_only&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, las nuevas funcionalidades y mejoras de Metabase ofrecen una mayor flexibilidad y personalización para los usuarios, lo que les permite crear informes y paneles más efectivos y eficientes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.metabase.com/releases/metabase-62"&gt;Metabase 62&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discourse.metabase.com/t/metabase-62-custom-viz-more-mcp-tools-metabase-cli-and-more/310557"&gt;Metabase 62: Custom viz, more MCP tools, Metabase CLI, and more&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discourse.metabase.com/t/custom-column-handling-updates-in-the-latest-release/310755"&gt;Custom Column handling updates in the latest release&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-12_0954.html"/>
+    <summary>Metabase ha lanzado recientemente varias actualizaciones que mejoran su funcionalidad y usabilidad. En este artículo, exploraremos las nuevas características y cómo pueden ser utilizadas para mejorar la experiencia del usuario.</summary>
+    <published>2026-07-12T09:54:00+00:00</published>
   </entry>
 </feed>

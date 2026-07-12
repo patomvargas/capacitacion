@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-11T09:42:48.267081+00:00</updated>
+  <updated>2026-07-12T09:55:46.512105+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -591,5 +591,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-08_1023.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece nuevas características y mejoras en sus versiones recientes. En este artículo, se presentan las novedades y mejores prácticas para trabajar con OpenShift.</summary>
     <published>2026-07-08T10:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-12_0954.html</id>
+    <title>OpenShift: Mejoras y Novedades</title>
+    <updated>2026-07-12T09:54:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift es una plataforma de contenedores que se basa en Kubernetes y ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. En los últimos días, se han publicado varias actualizaciones de seguridad para OpenShift, como la &lt;code&gt;RHSA-2026:34790&lt;/code&gt;, que incluye actualizaciones para la versión 4.22 de OpenShift Container Platform.&lt;/p&gt;
+&lt;p&gt;Para verificar si hay actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc get clusterversion&lt;/code&gt; en la línea de comandos de OpenShift. Si se encuentran actualizaciones, se pueden aplicar utilizando el comando &lt;code&gt;oc adm upgrade&lt;/code&gt;. Es importante tener en cuenta que, antes de realizar cualquier actualización, se debe realizar un respaldo de la configuración y los datos de la plataforma.&lt;/p&gt;
+&lt;p&gt;Una de las características más interesantes de OpenShift es la capacidad de utilizar operadores para automatizar la instalación y configuración de aplicaciones y servicios. Por ejemplo, el &lt;code&gt;ClickHouse Operator&lt;/code&gt; es un operador que permite automatizar la instalación y configuración de clusters de ClickHouse en OpenShift. Para instalar este operador, se puede utilizar el comando &lt;code&gt;oc apply -f https://github.com/clickhouse/clickhouse-operator/deploy/operator.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, OpenShift ofrece una variedad de herramientas y características para la gestión de la seguridad, como la autenticación y autorización mediante OAuth. En este sentido, se puede utilizar el comando &lt;code&gt;oc create secret generic oauth-credentials --from-literal=client-id=&lt;client-id&gt; --from-literal=client-secret=&lt;client-secret&gt;&lt;/code&gt; para crear un secreto que contenga las credenciales de OAuth.&lt;/p&gt;
+&lt;p&gt;En cuanto a la migración de aplicaciones a OpenShift, se puede utilizar la herramienta &lt;code&gt;oc adm migrate&lt;/code&gt; para migrar aplicaciones desde otras plataformas de contenedores. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc adm migrate --from=&lt;source-platform&gt; --to=&lt;target-platform&gt;&lt;/code&gt; para migrar una aplicación desde una plataforma de contenedores a otra.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Con las últimas actualizaciones de seguridad y nuevas características, OpenShift se posiciona como una plataforma líder en el mercado de los contenedores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:34790"&gt;RHSA-2026:34790&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/clickhouse/clickhouse-operator"&gt;ClickHouse Operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nextcloud/all-in-one/tree/main/nextcloud-aio-helm-chart"&gt;nextcloud-aio-helm-chart&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-12_0954.html"/>
+    <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo actualizaciones de seguridad y nuevas características.</summary>
+    <published>2026-07-12T09:54:00+00:00</published>
   </entry>
 </feed>
