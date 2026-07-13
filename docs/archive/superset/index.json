@@ -1,4 +1,20 @@
 {
+  "2026-07-13_1117": {
+    "slug": "superset",
+    "title": "Administración Avanzada de Superset",
+    "summary": "Superset es una herramienta de visualización de datos que permite a los administradores crear dashboards personalizados y analizar grandes cantidades de datos. En este artículo, se explorarán las mejores prácticas para la administración avanzada de Superset.",
+    "content": "Superset es una herramienta de código abierto que permite a los administradores crear dashboards personalizados y analizar grandes cantidades de datos. Para empezar a trabajar con Superset, es necesario instalarlo en un servidor y configurar la base de datos. Se puede hacer esto ejecutando el comando `pip install superset` y luego configurando la base de datos con `superset db upgrade`.\n\n \n La creación de dashboards en Superset es un proceso sencillo que implica arrastrar y soltar componentes en una interfaz gráfica. Los administradores pueden crear dashboards personalizados con gráficos, tablas y otros componentes para visualizar los datos. También se puede utilizar SQL Lab para ejecutar consultas SQL y analizar los resultados.\n\n \n Para administrar los usuarios y los permisos en Superset, se puede utilizar la interfaz de administración. Los administradores pueden crear usuarios y asignarles permisos para acceder a los dashboards y los datos. También se puede utilizar la API de Superset para automatizar tareas y integrar la herramienta con otras aplicaciones.\n\n \n En cuanto a las mejores prácticas, es importante mencionar que la seguridad es un aspecto fundamental en la administración de Superset. Los administradores deben asegurarse de que los datos estén cifrados y que los usuarios tengan los permisos adecuados para acceder a los dashboards y los datos. También es importante realizar copias de seguridad regulares de la base de datos y los dashboards para evitar la pérdida de datos en caso de un fallo del sistema.\n\n \n Otra buena práctica es utilizar plantillas de Jinja para crear dashboards personalizados y reutilizables. Las plantillas de Jinja permiten a los administradores crear componentes reutilizables que se pueden utilizar en diferentes dashboards. También se puede utilizar la función de embed para integrar los dashboards de Superset en otras aplicaciones web.\n\n \n Finalmente, es importante mencionar que la comunidad de Superset es muy activa y ofrece muchos recursos y documentación para ayudar a los administradores a aprender y mejorar sus habilidades. Los administradores pueden encontrar documentación, tutoriales y ejemplos en la página oficial de Superset y en la comunidad de GitHub.",
+    "sources": [
+      {
+        "title": "Issue #34714",
+        "url": "https://github.com/apache/superset/issues/34714"
+      },
+      {
+        "title": "Discusión #27373",
+        "url": "https://github.com/apache/superset/discussions/27373"
+      }
+    ]
+  },
   "2026-07-09_1113": {
     "slug": "superset",
     "title": "Superset: Mejoras y Novedades",

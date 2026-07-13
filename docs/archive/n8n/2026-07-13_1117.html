@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje - Airflow</title>
-    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <title>Seguridad y Mejoras en n8n - n8n</title>
+    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,53 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje</h1>
-    <div class="meta">2026-07-09 1113 · Airflow</div>
+    <h1>Seguridad y Mejoras en n8n</h1>
+    <div class="meta">2026-07-13 1117 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>Apache Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. La versión 3.3.0 de Airflow incluye varias mejoras significativas, como el soporte para tareas con estado y multilenguaje. Esto permite a los desarrolladores escribir lógica de tareas en Java y Go, además de Python.</p>
+            <p>n8n es una herramienta de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. Sin embargo, la seguridad es un aspecto crucial en la configuración de n8n. Recientemente, se ha descubierto una vulnerabilidad en la versión de n8n que permite el acceso no autenticado a archivos en el servidor subyacente a través de la ejecución de determinados flujos de trabajo basados en formularios. Para solucionar este problema, es importante actualizar la versión de n8n y configurar adecuadamente los `webhooks` y las `credentials`.</p>
             
         
             
         
             
-            <p>La nueva versión de Airflow también incluye una expansión de la partición de activos, lo que permite una mayor flexibilidad en la gestión de datos. Además, se han agregado políticas de reintento personalizables, lo que permite a los desarrolladores definir sus propias estrategias de reintento para las tareas.</p>
+        
+            
+            <p>Para configurar los `webhooks` de manera segura, se puede utilizar el comando `n8n webhook:create` con la opción `--secure` para habilitar la autenticación. Por ejemplo: `n8n webhook:create --secure --path=/mi-webhook`. Además, es importante configurar las `credentials` de manera segura, utilizando el comando `n8n credential:create` con la opción `--type` para especificar el tipo de credencial.</p>
             
         
             
         
             
-            <p>Para utilizar estas nuevas características, es necesario actualizar a la versión 3.3.0 de Airflow. Esto se puede hacer mediante el comando `pip install apache-airflow==3.3.0`. Una vez actualizado, se pueden crear tareas con estado utilizando el `Language Task SDK` y se pueden definir políticas de reintento personalizadas utilizando el `retry` de la tarea.</p>
+        
+            
+            <p>En cuanto a las mejoras, n8n ha anunciado recientemente la integración con Cloudflare, lo que permite a los usuarios aprovechar las funcionalidades de seguridad y velocidad de Cloudflare. Para integrar n8n con Cloudflare, se puede utilizar el comando `n8n cloudflare:configure` con la opción `--api-key` para especificar la clave de API de Cloudflare.</p>
             
         
             
         
             
-            <p>Otra característica importante de Airflow 3.3.0 es el soporte para `XCom`, que permite la comunicación entre tareas. Esto se puede lograr mediante el uso de `xcom_push` y `xcom_pull` en las tareas.</p>
+        
+            
+            <p>Otra mejora importante es la capacidad de crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los bloques de construcción de los flujos de trabajo en n8n, y se pueden crear utilizando el comando `n8n node:create` con la opción `--type` para especificar el tipo de nodo. Por ejemplo: `n8n node:create --type=http`.</p>
             
         
             
         
             
-            <p>En resumen, Apache Airflow 3.3.0 es una versión importante que incluye varias mejoras significativas para la automatización de flujos de trabajo. Con el soporte para tareas con estado y multilenguaje, la expansión de la partición de activos y las políticas de reintento personalizables, esta versión ofrece una mayor flexibilidad y escalabilidad para los desarrolladores.</p>
+        
+            
+            <p>En resumen, la seguridad y las mejoras en n8n son aspectos cruciales para los desarrolladores y administradores de sistemas. Al configurar adecuadamente los `webhooks` y las `credentials`, y al aprovechar las funcionalidades de integración con Cloudflare, los usuarios pueden crear flujos de trabajo personalizados y seguros.</p>
             
         
             
         
             
-            <p>Para más información sobre la configuración y el uso de Airflow, se puede consultar la documentación oficial de Airflow, que incluye ejemplos y tutoriales para ayudar a los desarrolladores a empezar a trabajar con la plataforma.</p>
-            
         
             
-        
-            
-            <p>El comando para crear un nuevo DAG en Airflow es `airflow db init` y luego `airflow webserver -p 8080` para iniciar el servidor web. Luego, se puede acceder a la interfaz web de Airflow en `http://localhost:8080` para crear y gestionar los DAGs.</p>
+            <p>Para más información, se pueden consultar las fuentes oficiales de n8n y Cloudflare.</p>
             
         
     </div>
@@ -111,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://airflow.apache.org/blog/airflow-3.3.0/" target="_blank">Apache Airflow 3.3.0: Stateful Tasks and Multi-Language Support</a>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg" target="_blank">Unauthenticated File Access via Improper Webhook Request Handling</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/airflow/milestone/122" target="_blank">Airflow 3.3.0 · Milestone #122 · apache/airflow</a>
+                <a href="https://blog.cloudflare.com/cloudflare-one-stack/" target="_blank">Cloudflare One stack</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/?ref=producthunt" target="_blank">Apache Airflow</a>
+                <a href="https://blog.cloudflare.com/temporary-accounts/" target="_blank">Temporary Cloudflare Accounts for AI agents</a>
                 
             </li>
             
@@ -132,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-05_1020.html">&larr; 2026-07-05 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-09_1113.html">&larr; 2026-07-09 1113</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-13_1117.html">2026-07-13 1117 &rarr;</a>
             
         </div>
     </div>

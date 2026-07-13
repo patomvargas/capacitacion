@@ -1,4 +1,24 @@
 {
+  "2026-07-13_1117": {
+    "slug": "n8n",
+    "title": "Seguridad y Mejoras en n8n",
+    "summary": "n8n es una herramienta de automatización de workflows que requiere una configuración y seguridad adecuadas. En este artículo, se presentan algunas best practices y novedades en la seguridad y las mejoras de n8n.",
+    "content": "n8n es una herramienta de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. Sin embargo, la seguridad es un aspecto crucial en la configuración de n8n. Recientemente, se ha descubierto una vulnerabilidad en la versión de n8n que permite el acceso no autenticado a archivos en el servidor subyacente a través de la ejecución de determinados flujos de trabajo basados en formularios. Para solucionar este problema, es importante actualizar la versión de n8n y configurar adecuadamente los `webhooks` y las `credentials`.\n\n \nPara configurar los `webhooks` de manera segura, se puede utilizar el comando `n8n webhook:create` con la opción `--secure` para habilitar la autenticación. Por ejemplo: `n8n webhook:create --secure --path=/mi-webhook`. Además, es importante configurar las `credentials` de manera segura, utilizando el comando `n8n credential:create` con la opción `--type` para especificar el tipo de credencial.\n\n \nEn cuanto a las mejoras, n8n ha anunciado recientemente la integración con Cloudflare, lo que permite a los usuarios aprovechar las funcionalidades de seguridad y velocidad de Cloudflare. Para integrar n8n con Cloudflare, se puede utilizar el comando `n8n cloudflare:configure` con la opción `--api-key` para especificar la clave de API de Cloudflare.\n\n \nOtra mejora importante es la capacidad de crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los bloques de construcción de los flujos de trabajo en n8n, y se pueden crear utilizando el comando `n8n node:create` con la opción `--type` para especificar el tipo de nodo. Por ejemplo: `n8n node:create --type=http`.\n\n \nEn resumen, la seguridad y las mejoras en n8n son aspectos cruciales para los desarrolladores y administradores de sistemas. Al configurar adecuadamente los `webhooks` y las `credentials`, y al aprovechar las funcionalidades de integración con Cloudflare, los usuarios pueden crear flujos de trabajo personalizados y seguros.\n\n \nPara más información, se pueden consultar las fuentes oficiales de n8n y Cloudflare.",
+    "sources": [
+      {
+        "title": "Unauthenticated File Access via Improper Webhook Request Handling",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg"
+      },
+      {
+        "title": "Cloudflare One stack",
+        "url": "https://blog.cloudflare.com/cloudflare-one-stack/"
+      },
+      {
+        "title": "Temporary Cloudflare Accounts for AI agents",
+        "url": "https://blog.cloudflare.com/temporary-accounts/"
+      }
+    ]
+  },
   "2026-07-09_1113": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",

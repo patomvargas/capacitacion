@@ -1,4 +1,24 @@
 {
+  "2026-07-13_1117": {
+    "slug": "airflow",
+    "title": "Airflow 3.3: Mejoras y Best Practices",
+    "summary": "Apache Airflow 3.3 ofrece mejoras significativas, incluyendo tareas con estado y soporte multilenguaje. En este artículo, exploraremos las novedades y best practices para aprovechar al máximo Airflow.",
+    "content": "\nApache Airflow 3.3 es una versión importante que introduce tareas con estado y soporte multilenguaje. Esto significa que los desarrolladores pueden escribir lógica de tarea en Java y Go, además de Python. Para aprovechar esta característica, se puede utilizar el `Language Task SDK` para escribir tareas personalizadas.\n\nUna de las mejoras clave en Airflow 3.3 es el soporte para tareas con estado. Esto permite a los desarrolladores almacenar y recuperar estado de tarea de manera eficiente. Para utilizar esta característica, se puede utilizar el `StatefulTask` y configurar el `state_store` en el archivo `airflow.cfg`. Por ejemplo: `state_store = sqlite:///state.db`.\n\nOtra mejora importante es el soporte multilenguaje. Esto permite a los desarrolladores escribir tareas en diferentes lenguajes, lo que facilita la integración con otros sistemas. Para utilizar esta característica, se puede utilizar el `Language Task SDK` y configurar el `language` en el archivo `airflow.cfg`. Por ejemplo: `language = java`.\n\nEn cuanto a las best practices, es importante seguir las recomendaciones de la comunidad Airflow. Una de las recomendaciones es utilizar un `CHANGELOG.md` para rastrear los cambios en la versión. Esto ayuda a los desarrolladores a entender qué cambios se han realizado y a tomar decisiones informadas al momento de actualizar.\n\nPara configurar Airflow 3.3, se puede utilizar el comando `airflow db init` para inicializar la base de datos. Luego, se puede configurar el `airflow.cfg` para ajustar las configuraciones según sea necesario. Por ejemplo: `airflow.cfg` puede contener la configuración para el `state_store` y el `language`.\n\nEn resumen, Apache Airflow 3.3 ofrece mejoras significativas y best practices para aprovechar al máximo la plataforma. Al seguir estas recomendaciones y utilizar las características nuevas, los desarrolladores pueden crear flujos de trabajo más eficientes y escalables.\n\nPara obtener más información, se puede consultar la documentación oficial de Airflow y las fuentes citadas a continuación.\n",
+    "sources": [
+      {
+        "title": "Apache Airflow 3.3.0: Stateful Tasks and Multi-Language Support",
+        "url": "https://airflow.apache.org/blog/airflow-3.3.0/"
+      },
+      {
+        "title": "Introducing Apache Airflow 3.3",
+        "url": "https://www.astronomer.io/blog/introducing-apache-airflow-3-3/"
+      },
+      {
+        "title": "Airflow vs Dagster vs Prefect: A 2026 Production Comparison",
+        "url": "https://medium.com/@allahverdiyev.tural/airflow-vs-dagster-vs-prefect-a-2026-production-comparison-that-doesnt-hedge-f223dbaebd21"
+      }
+    ]
+  },
   "2026-07-09_1113": {
     "slug": "airflow",
     "title": "Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje",

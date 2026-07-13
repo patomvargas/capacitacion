@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-12T09:55:46.526420+00:00</updated>
+  <updated>2026-07-13T11:18:30.157389+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -571,5 +571,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-09_1113.html"/>
     <summary>n8n es una plataforma de automatización de flujos de trabajo que permite a los usuarios crear y gestionar flujos de trabajo personalizados. En este artículo, se presentan las mejores prácticas y configuraciones para self-hosting y uso avanzado de n8n.</summary>
     <published>2026-07-09T11:13:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-13_1117.html</id>
+    <title>Seguridad y Mejoras en n8n</title>
+    <updated>2026-07-13T11:17:00+00:00</updated>
+    <content type="html">&lt;p&gt;n8n es una herramienta de automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. Sin embargo, la seguridad es un aspecto crucial en la configuración de n8n. Recientemente, se ha descubierto una vulnerabilidad en la versión de n8n que permite el acceso no autenticado a archivos en el servidor subyacente a través de la ejecución de determinados flujos de trabajo basados en formularios. Para solucionar este problema, es importante actualizar la versión de n8n y configurar adecuadamente los &lt;code&gt;webhooks&lt;/code&gt; y las &lt;code&gt;credentials&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para configurar los &lt;code&gt;webhooks&lt;/code&gt; de manera segura, se puede utilizar el comando &lt;code&gt;n8n webhook:create&lt;/code&gt; con la opción &lt;code&gt;--secure&lt;/code&gt; para habilitar la autenticación. Por ejemplo: &lt;code&gt;n8n webhook:create --secure --path=/mi-webhook&lt;/code&gt;. Además, es importante configurar las &lt;code&gt;credentials&lt;/code&gt; de manera segura, utilizando el comando &lt;code&gt;n8n credential:create&lt;/code&gt; con la opción &lt;code&gt;--type&lt;/code&gt; para especificar el tipo de credencial.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejoras, n8n ha anunciado recientemente la integración con Cloudflare, lo que permite a los usuarios aprovechar las funcionalidades de seguridad y velocidad de Cloudflare. Para integrar n8n con Cloudflare, se puede utilizar el comando &lt;code&gt;n8n cloudflare:configure&lt;/code&gt; con la opción &lt;code&gt;--api-key&lt;/code&gt; para especificar la clave de API de Cloudflare.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la capacidad de crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los bloques de construcción de los flujos de trabajo en n8n, y se pueden crear utilizando el comando &lt;code&gt;n8n node:create&lt;/code&gt; con la opción &lt;code&gt;--type&lt;/code&gt; para especificar el tipo de nodo. Por ejemplo: &lt;code&gt;n8n node:create --type=http&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la seguridad y las mejoras en n8n son aspectos cruciales para los desarrolladores y administradores de sistemas. Al configurar adecuadamente los &lt;code&gt;webhooks&lt;/code&gt; y las &lt;code&gt;credentials&lt;/code&gt;, y al aprovechar las funcionalidades de integración con Cloudflare, los usuarios pueden crear flujos de trabajo personalizados y seguros.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de n8n y Cloudflare.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-v4pr-fm98-w9pg"&gt;Unauthenticated File Access via Improper Webhook Request Handling&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/cloudflare-one-stack/"&gt;Cloudflare One stack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.cloudflare.com/temporary-accounts/"&gt;Temporary Cloudflare Accounts for AI agents&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-13_1117.html"/>
+    <summary>n8n es una herramienta de automatización de workflows que requiere una configuración y seguridad adecuadas. En este artículo, se presentan algunas best practices y novedades en la seguridad y las mejoras de n8n.</summary>
+    <published>2026-07-13T11:17:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje - Airflow</title>
+    <title>Airflow 3.3: Mejoras y Best Practices - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,50 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow 3.3.0: Tareas con Estado y Soporte Multilenguaje</h1>
-    <div class="meta">2026-07-09 1113 · Airflow</div>
+    <h1>Airflow 3.3: Mejoras y Best Practices</h1>
+    <div class="meta">2026-07-13 1117 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Apache Airflow es una plataforma para autorizar, programar y monitorear flujos de trabajo de manera programática. La versión 3.3.0 de Airflow incluye varias mejoras significativas, como el soporte para tareas con estado y multilenguaje. Esto permite a los desarrolladores escribir lógica de tareas en Java y Go, además de Python.</p>
+        
+            
+            <p>Apache Airflow 3.3 es una versión importante que introduce tareas con estado y soporte multilenguaje. Esto significa que los desarrolladores pueden escribir lógica de tarea en Java y Go, además de Python. Para aprovechar esta característica, se puede utilizar el `Language Task SDK` para escribir tareas personalizadas.</p>
             
         
             
         
             
-            <p>La nueva versión de Airflow también incluye una expansión de la partición de activos, lo que permite una mayor flexibilidad en la gestión de datos. Además, se han agregado políticas de reintento personalizables, lo que permite a los desarrolladores definir sus propias estrategias de reintento para las tareas.</p>
+            <p>Una de las mejoras clave en Airflow 3.3 es el soporte para tareas con estado. Esto permite a los desarrolladores almacenar y recuperar estado de tarea de manera eficiente. Para utilizar esta característica, se puede utilizar el `StatefulTask` y configurar el `state_store` en el archivo `airflow.cfg`. Por ejemplo: `state_store = sqlite:///state.db`.</p>
             
         
             
         
             
-            <p>Para utilizar estas nuevas características, es necesario actualizar a la versión 3.3.0 de Airflow. Esto se puede hacer mediante el comando `pip install apache-airflow==3.3.0`. Una vez actualizado, se pueden crear tareas con estado utilizando el `Language Task SDK` y se pueden definir políticas de reintento personalizadas utilizando el `retry` de la tarea.</p>
+            <p>Otra mejora importante es el soporte multilenguaje. Esto permite a los desarrolladores escribir tareas en diferentes lenguajes, lo que facilita la integración con otros sistemas. Para utilizar esta característica, se puede utilizar el `Language Task SDK` y configurar el `language` en el archivo `airflow.cfg`. Por ejemplo: `language = java`.</p>
             
         
             
         
             
-            <p>Otra característica importante de Airflow 3.3.0 es el soporte para `XCom`, que permite la comunicación entre tareas. Esto se puede lograr mediante el uso de `xcom_push` y `xcom_pull` en las tareas.</p>
+            <p>En cuanto a las best practices, es importante seguir las recomendaciones de la comunidad Airflow. Una de las recomendaciones es utilizar un `CHANGELOG.md` para rastrear los cambios en la versión. Esto ayuda a los desarrolladores a entender qué cambios se han realizado y a tomar decisiones informadas al momento de actualizar.</p>
             
         
             
         
             
-            <p>En resumen, Apache Airflow 3.3.0 es una versión importante que incluye varias mejoras significativas para la automatización de flujos de trabajo. Con el soporte para tareas con estado y multilenguaje, la expansión de la partición de activos y las políticas de reintento personalizables, esta versión ofrece una mayor flexibilidad y escalabilidad para los desarrolladores.</p>
+            <p>Para configurar Airflow 3.3, se puede utilizar el comando `airflow db init` para inicializar la base de datos. Luego, se puede configurar el `airflow.cfg` para ajustar las configuraciones según sea necesario. Por ejemplo: `airflow.cfg` puede contener la configuración para el `state_store` y el `language`.</p>
             
         
             
         
             
-            <p>Para más información sobre la configuración y el uso de Airflow, se puede consultar la documentación oficial de Airflow, que incluye ejemplos y tutoriales para ayudar a los desarrolladores a empezar a trabajar con la plataforma.</p>
+            <p>En resumen, Apache Airflow 3.3 ofrece mejoras significativas y best practices para aprovechar al máximo la plataforma. Al seguir estas recomendaciones y utilizar las características nuevas, los desarrolladores pueden crear flujos de trabajo más eficientes y escalables.</p>
             
         
             
         
             
-            <p>El comando para crear un nuevo DAG en Airflow es `airflow db init` y luego `airflow webserver -p 8080` para iniciar el servidor web. Luego, se puede acceder a la interfaz web de Airflow en `http://localhost:8080` para crear y gestionar los DAGs.</p>
+            <p>Para obtener más información, se puede consultar la documentación oficial de Airflow y las fuentes citadas a continuación.</p>
+            
+        
             
         
     </div>
@@ -116,12 +120,12 @@
             </li>
             
             <li>
-                <a href="https://github.com/apache/airflow/milestone/122" target="_blank">Airflow 3.3.0 · Milestone #122 · apache/airflow</a>
+                <a href="https://www.astronomer.io/blog/introducing-apache-airflow-3-3/" target="_blank">Introducing Apache Airflow 3.3</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/?ref=producthunt" target="_blank">Apache Airflow</a>
+                <a href="https://medium.com/@allahverdiyev.tural/airflow-vs-dagster-vs-prefect-a-2026-production-comparison-that-doesnt-hedge-f223dbaebd21" target="_blank">Airflow vs Dagster vs Prefect: A 2026 Production Comparison</a>
                 
             </li>
             
@@ -132,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-05_1020.html">&larr; 2026-07-05 1020</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-09_1113.html">&larr; 2026-07-09 1113</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-13_1117.html">2026-07-13 1117 &rarr;</a>
             
         </div>
     </div>
