@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-13T11:18:30.170952+00:00</updated>
+  <updated>2026-07-14T10:04:12.728779+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -509,5 +509,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-10_1109.html"/>
     <summary>En este artículo, se presentan algunas de las mejores prácticas para trabajar con Git, incluyendo el uso de workflows, hooks, rebase, bisect y worktrees. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
     <published>2026-07-10T11:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-14_1002.html</id>
+    <title>Git Avanzado: Workflows y Mejores Prácticas</title>
+    <updated>2026-07-14T10:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para el control de versiones y la colaboración en proyectos de desarrollo de software. En este artículo, exploraremos algunas de las características avanzadas de Git, como los workflows, hooks y comandos para mejorar la productividad y la colaboración en tus proyectos.&lt;/p&gt;
+&lt;p&gt;Un workflow de Git se refiere a la secuencia de pasos que se siguen para realizar un cambio en el código fuente. Esto puede incluir la creación de una rama, la realización de cambios, la prueba y la fusión de la rama en la rama principal. Para crear una rama en Git, se utiliza el comando &lt;code&gt;git branch &lt;nombre_de_la_rama&gt;&lt;/code&gt;. Luego, se puede cambiar a la rama utilizando &lt;code&gt;git checkout &lt;nombre_de_la_rama&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Los hooks de Git son scripts que se ejecutan automáticamente en respuesta a ciertos eventos, como la creación de un commit o la fusión de una rama. Estos scripts pueden ser utilizados para automatizar tareas, como la ejecución de pruebas o la verificación de la calidad del código. Para crear un hook, se debe crear un archivo en el directorio &lt;code&gt;.git/hooks&lt;/code&gt; con el nombre del evento que se desea capturar, por ejemplo, &lt;code&gt;pre-commit&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otro comando avanzado de Git es &lt;code&gt;git rebase&lt;/code&gt;, que se utiliza para reorganizar la historia de commits de una rama. Esto puede ser útil para eliminar commits innecesarios o para reordenar los commits para que tengan más sentido. Sin embargo, se debe tener cuidado al utilizar este comando, ya que puede causar problemas si no se utiliza correctamente.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona una herramienta llamada &lt;code&gt;git bisect&lt;/code&gt; para ayudar a identificar el commit que introdujo un error en el código. Esto puede ser especialmente útil en proyectos grandes y complejos, donde puede ser difícil identificar el origen de un error.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de utilizar buenas prácticas de Git, como la creación de commits con mensajes claros y concisos, la utilización de ramas para realizar cambios y la fusión de ramas de manera regular. Estas prácticas pueden ayudar a mejorar la colaboración y la productividad en tus proyectos de desarrollo de software.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para mejorar la productividad y la colaboración en proyectos de desarrollo de software. Al utilizar workflows, hooks, comandos avanzados y buenas prácticas, puedes aprovechar al máximo las capacidades de Git y mejorar la calidad de tus proyectos.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Git y sus características avanzadas, se pueden consultar las fuentes siguientes:&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e8e8DH31iQ6xrlwVGCZS5o4DVUCUzxJ8tEZW-JWFSc4AwYp26hHRTlUrthpcx1qk40uz9K4Sd8keRFkxyAvwsUMkeYp5kvGgTeBHklPhVfchpR941SIelZoMxTdwjfDqMQNWg1Umt3GDh0KZe5GBWTZir7HhULti83TlAVeKkLOTL9xa7Q02GXFVuAuDIQfPdaun_n7BX1JrHxg8PVTyerZs4SMvM&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmZ2l0LWNvbXBsZXRlJTJmJTNmdXRtX2NhbXBhaWduJTNkQkctU2VhcmNoX0tleXdvcmRfQmV0YV9Qcm9mX2xhLlVTJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fbWVkaXVtJTNkcGFpZC1zZWFyY2glMjZwb3J0Zm9saW8lM2RCaW5nLVVTQSUyNnV0bV9hdWRpZW5jZSUzZG14JTI2dXRtX3RhY3RpYyUzZG5iJTI2dXRtX3Rlcm0lM2RfLl9hZ18xMzE1MDE4Mjg1ODgxMTA2Xy5fYWRfXy5fa3dfR2l0SHViJTI1MjBDbGFzcyUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkNTMxYTM5MDE2MzU3MWExMmMyMWU1MzU3NmEzZDA2NjM&amp;rlid=531a390163571a12c21e53576a3d0663"&gt;GitHub Online Course&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kuldeep-modh.medium.com/git-lfs-the-practical-guide-to-versioning-large-files-without-breaking-your-repository-5795b327a78e"&gt;Git LFS: The Practical Guide to Versioning Large Files&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373"&gt;DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kyverno&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-14_1002.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-07-14T10:02:00+00:00</published>
   </entry>
 </feed>

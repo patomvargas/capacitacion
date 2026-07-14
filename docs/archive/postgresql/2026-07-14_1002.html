@@ -58,43 +58,53 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-07-10 1109 · PostgreSQL</div>
+    <div class="meta">2026-07-14 1002 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento de nuestras aplicaciones. Una de las formas de hacerlo es mediante el uso de índices. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo los tiempos de búsqueda y mejora la velocidad de las consultas. Para crear un índice, podemos utilizar el comando `CREATE INDEX` seguido del nombre del índice y la columna que queremos indexar.</p>
+            <p>La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más rápida y eficiente. Puedes crear un índice utilizando el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
             
         
             
         
             
-            <p>La replicación es otra forma de mejorar la disponibilidad y el rendimiento de nuestra base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestra-esclava y la replicación asíncrona. Para configurar la replicación, podemos utilizar el comando `pg_basebackup` para crear una copia de seguridad de la base de datos maestra y luego configurar el esclavo para que se conecte a la maestra.</p>
+            <p>La replicación es otra forma de mejorar el rendimiento y la disponibilidad de tus datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestra-esclava y la replicación de transacciones. Puedes configurar la replicación utilizando el archivo `postgresql.conf` y el comando `pg_basebackup`.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar el rendimiento es mediante el uso de extensiones. PostgreSQL ofrece una variedad de extensiones que pueden ser utilizadas para mejorar el rendimiento, como la extensión `pg_stat_statements` que permite monitorear el rendimiento de las consultas. Para instalar una extensión, podemos utilizar el comando `CREATE EXTENSION` seguido del nombre de la extensión.</p>
+            <p>La copia de seguridad es fundamental para proteger tus datos en caso de errores o desastres. PostgreSQL ofrece varias opciones de copia de seguridad, incluyendo la copia de seguridad completa, la copia de seguridad incremental y la copia de seguridad diferencial. Puedes realizar una copia de seguridad utilizando el comando `pg_dump`.</p>
             
         
             
         
             
-            <p>La herramienta `EXPLAIN ANALYZE` es fundamental para optimizar las consultas. Esta herramienta nos permite analizar el plan de ejecución de una consulta y identificar los cuellos de botella. Para utilizar `EXPLAIN ANALYZE`, simplemente podemos agregar la cláusula `EXPLAIN ANALYZE` antes de la consulta que queremos analizar.</p>
+            <p>Para mejorar el rendimiento de tus consultas, puedes utilizar la herramienta EXPLAIN ANALYZE. Esta herramienta te permite analizar el plan de ejecución de tus consultas y identificar posibles cuellos de botella. Por ejemplo: `EXPLAIN ANALYZE SELECT * FROM tabla;`. Esto te permitirá identificar si la consulta está utilizando un índice o si está realizando una búsqueda secuencial.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la versión de PostgreSQL que estamos utilizando es importante. La versión 14 de PostgreSQL dejará de recibir actualizaciones de seguridad en noviembre de 2026, por lo que es importante planificar la actualización a una versión más reciente.</p>
+            <p>Otra forma de mejorar el rendimiento es mediante la utilización de extensiones. PostgreSQL ofrece varias extensiones, incluyendo la extensión `pg_stat_statements` que te permite monitorear el rendimiento de tus consultas. Puedes instalar la extensión utilizando el comando `CREATE EXTENSION`.</p>
             
         
             
         
             
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas y mejores prácticas, incluyendo el uso de índices, replicación, extensiones y la herramienta `EXPLAIN ANALYZE`. Al seguir estas recomendaciones, podemos mejorar significativamente el rendimiento de nuestras aplicaciones y reducir los tiempos de respuesta.</p>
+            <p>Finalmente, es importante mencionar que la versión de PostgreSQL que estás utilizando puede afectar el rendimiento. Es importante mantener tu versión de PostgreSQL actualizada para asegurarte de que estás utilizando las últimas características y mejoras de rendimiento.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación, copias de seguridad y monitoreo del rendimiento. Al utilizar estas técnicas y herramientas, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -115,7 +125,7 @@
             </li>
             
             <li>
-                <a href="https://medium.com/@nithidol/create-stored-procedures-and-functions-with-postgresql-fdd923e1f69a" target="_blank">PostgreSQL Procedures Failed Under Real Data</a>
+                <a href="https://medium.com/@hartwig.bertrand/running-postgresql-correctly-with-docker-compose-bcf3e2273221" target="_blank">Running PostgreSQL Correctly with Docker Compose</a>
                 
             </li>
             
@@ -126,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-06_1208.html">&larr; 2026-07-06 1208</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-10_1109.html">&larr; 2026-07-10 1109</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-14_1002.html">2026-07-14 1002 &rarr;</a>
             
         </div>
     </div>

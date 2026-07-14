@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ansible: Automatización de Infraestructura - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+    </div>
+
+    <h1>Ansible: Automatización de Infraestructura</h1>
+    <div class="meta">2026-07-14 1002 · Ansible</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que se utiliza para implementar y gestionar configuraciones de manera eficiente. Permite a los administradores de sistemas y desarrolladores crear playbooks que definen las tareas que se deben realizar en un conjunto de servidores o máquinas virtuales. La plataforma de automatización de Ansible 2.7 introduce nuevas capacidades, como la capacidad de crear y gestionar roles y colecciones de manera más eficiente.</p>
+            
+        
+            
+        
+            
+            <p>La creación de playbooks en Ansible se puede realizar utilizando el lenguaje de definición de YAML. Por ejemplo, para crear un playbook que instale y configure un servidor web Apache, se puede utilizar el siguiente código:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>---</p>
+            
+        
+            
+            <p>- name: Instalar y configurar Apache</p>
+            
+        
+            
+            <p>hosts: servidores_web</p>
+            
+        
+            
+            <p>become: true</p>
+            
+        
+            
+            <p>tasks:</p>
+            
+        
+            
+            <p>- name: Instalar Apache</p>
+            
+        
+            
+            <p>apt:</p>
+            
+        
+            
+            <p>name: apache2</p>
+            
+        
+            
+            <p>state: present</p>
+            
+        
+            
+            <p>- name: Configurar Apache</p>
+            
+        
+            
+            <p>template:</p>
+            
+        
+            
+            <p>src: templates/apache2.conf.j2</p>
+            
+        
+            
+            <p>dest: /etc/apache2/apache2.conf</p>
+            
+        
+            
+            <p>mode: '0644'</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>La plataforma de automatización de Ansible también incluye la capacidad de crear y gestionar inventarios, que permiten a los administradores de sistemas y desarrolladores definir los servidores o máquinas virtuales que se deben gestionar. El inventario se puede definir en un archivo de texto plano, utilizando el siguiente formato:</p>
+            
+        
+            
+            <p>```ini</p>
+            
+        
+            
+            <p>[servidores_web]</p>
+            
+        
+            
+            <p>servidor1 ansible_host=192.168.1.100</p>
+            
+        
+            
+            <p>servidor2 ansible_host=192.168.1.101</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Además, la plataforma de automatización de Ansible incluye la capacidad de crear y gestionar vault, que permite a los administradores de sistemas y desarrolladores almacenar y gestionar secretos de manera segura. El vault se puede crear y gestionar utilizando el comando `ansible-vault`.</p>
+            
+        
+            
+        
+            
+            <p>La integración de Ansible con otras herramientas de automatización y orquestación, como Kubernetes, es posible mediante la utilización de plugins y módulos. Por ejemplo, el módulo `k8s` permite a los administradores de sistemas y desarrolladores crear y gestionar recursos de Kubernetes utilizando Ansible.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. La plataforma de automatización de Ansible 2.7 introduce nuevas capacidades para mejorar la eficiencia y reducir la fricción en la automatización.</p>
+            
+        
+            
+        
+            
+            <p>La documentación oficial de Ansible proporciona más información sobre la instalación, configuración y utilización de la herramienta. Además, la comunidad de Ansible es muy activa y proporciona una gran cantidad de recursos y ejemplos para ayudar a los administradores de sistemas y desarrolladores a empezar a utilizar la herramienta.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las novedades y mejoras en la versión 2.7 de la plataforma de automatización de Ansible, se pueden destacar la capacidad de crear y gestionar roles y colecciones de manera más eficiente, la mejora en la gestión de inventarios y la integración con otras herramientas de automatización y orquestación.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la seguridad es un aspecto fundamental en la automatización de infraestructura, y Ansible proporciona herramientas y recursos para ayudar a los administradores de sistemas y desarrolladores a asegurar sus entornos. La utilización de vault y la gestión de secretos de manera segura son solo algunos ejemplos de las capacidades de seguridad que ofrece Ansible.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.redhat.com/en/events/webinar/whats-new-with-red-hat-ansible-automation-platform-2-7" target="_blank">What’s new with Red Hat Ansible Automation Platform 2.7</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e84HtQF6WoiRL8WFK30CgmfzVUCUwHeKr8cYO71Caa9-ok6rh7oD8JwFVqqrPXrmNvBf1m7jkSzBLBxSdG9u-8aAqPPVRgkhycSCl9YnX1EgEiKonUqk05OZ3tT2C2jPWv582iVFH13iMVfRtifyhTRtkurdJ1rEeM0x7GdmFMeRE9LvBDyMdTslApayaKduwt7zU3zm2qEoyZMCr3jzO4fXo-bVM&u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmbWFzdGVyaW5nLWFuc2libGUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfS2V5d29yZF9CZXRhX1Byb2ZfbGEuRU5fY2MuVVMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctVVNBJTI2dXRtX2F1ZGllbmNlJTNkbXglMjZ1dG1fdGFjdGljJTNkbmIlMjZ1dG1fdGVybSUzZF8uX2FnXzEzMjI3MTQ4NjYyNTAyMDFfLl9hZF9fLl9rd19BbnNpYmxlJTI1MjBUdXRvcmlhbCUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkNWE4MTE1OWY0MWFkMWEwOWY0Yzk3ZmM5NDgzYTNlMTM&rlid=5a81159f41ad1a09f4c97fc9483a3e13" target="_blank">Ansible Online Course - Courses that Never Go Stale</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-10_1109.html">&larr; 2026-07-10 1109</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

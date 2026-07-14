@@ -1,4 +1,24 @@
 {
+  "2026-07-14_1002": {
+    "slug": "docker",
+    "title": "Mejores prácticas de Docker para DevOps",
+    "summary": "En este artículo, se presentan las mejores prácticas de Docker para DevOps, incluyendo la optimización de imágenes, la seguridad y la gestión de redes. Se proporcionan ejemplos concretos y comandos para mejorar la eficiencia y la seguridad en entornos de producción.",
+    "content": "La optimización de imágenes Docker es crucial para reducir el tamaño de las imágenes y mejorar los tiempos de construcción. Según el artículo '9 Docker Image Optimization Tips That Actually Cut Build Times', se pueden aplicar varias técnicas para optimizar las imágenes, como utilizar `docker build --no-cache` para evitar el uso de caché y `docker build --rm` para eliminar las capas intermedias. Además, se puede utilizar `docker image prune` para eliminar las imágenes no utilizadas.\n\n \n La seguridad es otro aspecto importante en la gestión de contenedores Docker. En el artículo 'DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes on AWS EKS', se presenta un ejemplo de cómo integrar la seguridad en una cadena de entrega continua utilizando herramientas como GitHub Actions y Kubernetes. Se pueden utilizar comandos como `docker exec` para ejecutar comandos dentro de un contenedor y `docker logs` para monitorear los logs de los contenedores.\n\n \n La gestión de redes es fundamental para garantizar la comunicación entre los contenedores y los servicios externos. En el artículo 'Stop Melting Your CI Runners: A Better Way to Handle Database Testing', se presenta un ejemplo de cómo utilizar Docker-in-Docker para probar bases de datos en un entorno de integración continua. Se pueden utilizar comandos como `docker network create` para crear redes y `docker network connect` para conectar contenedores a una red.\n\n \n La utilización de BuildKit es otra forma de mejorar la eficiencia en la construcción de imágenes Docker. BuildKit es una herramienta que permite construir imágenes de manera paralela y concurrente, lo que reduce el tiempo de construcción. Se puede utilizar el comando `docker buildx` para crear un contexto de construcción y `docker buildx build` para construir una imagen utilizando BuildKit.\n\n \n En resumen, la utilización de mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la gestión de redes, puede mejorar la eficiencia y la seguridad en entornos de producción. Se pueden utilizar comandos y herramientas como `docker build`, `docker exec`, `docker logs` y BuildKit para mejorar la gestión de contenedores Docker.",
+    "sources": [
+      {
+        "title": "9 Docker Image Optimization Tips That Actually Cut Build Times",
+        "url": "https://medium.com/@himanshu.pant415/9-docker-image-optimization-tips-that-actually-cut-build-times-2026-b4f0b8a87bed"
+      },
+      {
+        "title": "DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes on AWS EKS",
+        "url": "https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373"
+      },
+      {
+        "title": "Stop Melting Your CI Runners: A Better Way to Handle Database Testing",
+        "url": "https://medium.com/@alvarolopsi/stop-melting-your-ci-runners-a-better-way-to-handle-database-testing-6713439b657b"
+      }
+    ]
+  },
   "2026-07-10_1109": {
     "slug": "docker",
     "title": "Mejores prácticas de Docker para DevOps",

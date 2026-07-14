@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-13T11:18:30.174637+00:00</updated>
+  <updated>2026-07-14T10:04:12.735463+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -611,5 +611,47 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-10_1109.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. En este artículo, se explorarán las mejores prácticas y características de Ansible.</summary>
     <published>2026-07-10T11:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-14_1002.html</id>
+    <title>Ansible: Automatización de Infraestructura</title>
+    <updated>2026-07-14T10:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que se utiliza para implementar y gestionar configuraciones de manera eficiente. Permite a los administradores de sistemas y desarrolladores crear playbooks que definen las tareas que se deben realizar en un conjunto de servidores o máquinas virtuales. La plataforma de automatización de Ansible 2.7 introduce nuevas capacidades, como la capacidad de crear y gestionar roles y colecciones de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;La creación de playbooks en Ansible se puede realizar utilizando el lenguaje de definición de YAML. Por ejemplo, para crear un playbook que instale y configure un servidor web Apache, se puede utilizar el siguiente código:&lt;/p&gt;
+&lt;p&gt;```yaml&lt;/p&gt;
+&lt;p&gt;---&lt;/p&gt;
+&lt;p&gt;- name: Instalar y configurar Apache&lt;/p&gt;
+&lt;p&gt;hosts: servidores_web&lt;/p&gt;
+&lt;p&gt;become: true&lt;/p&gt;
+&lt;p&gt;tasks:&lt;/p&gt;
+&lt;p&gt;- name: Instalar Apache&lt;/p&gt;
+&lt;p&gt;apt:&lt;/p&gt;
+&lt;p&gt;name: apache2&lt;/p&gt;
+&lt;p&gt;state: present&lt;/p&gt;
+&lt;p&gt;- name: Configurar Apache&lt;/p&gt;
+&lt;p&gt;template:&lt;/p&gt;
+&lt;p&gt;src: templates/apache2.conf.j2&lt;/p&gt;
+&lt;p&gt;dest: /etc/apache2/apache2.conf&lt;/p&gt;
+&lt;p&gt;mode: '0644'&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;La plataforma de automatización de Ansible también incluye la capacidad de crear y gestionar inventarios, que permiten a los administradores de sistemas y desarrolladores definir los servidores o máquinas virtuales que se deben gestionar. El inventario se puede definir en un archivo de texto plano, utilizando el siguiente formato:&lt;/p&gt;
+&lt;p&gt;```ini&lt;/p&gt;
+&lt;p&gt;[servidores_web]&lt;/p&gt;
+&lt;p&gt;servidor1 ansible_host=192.168.1.100&lt;/p&gt;
+&lt;p&gt;servidor2 ansible_host=192.168.1.101&lt;/p&gt;
+&lt;p&gt;```&lt;/p&gt;
+&lt;p&gt;Además, la plataforma de automatización de Ansible incluye la capacidad de crear y gestionar vault, que permite a los administradores de sistemas y desarrolladores almacenar y gestionar secretos de manera segura. El vault se puede crear y gestionar utilizando el comando &lt;code&gt;ansible-vault&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La integración de Ansible con otras herramientas de automatización y orquestación, como Kubernetes, es posible mediante la utilización de plugins y módulos. Por ejemplo, el módulo &lt;code&gt;k8s&lt;/code&gt; permite a los administradores de sistemas y desarrolladores crear y gestionar recursos de Kubernetes utilizando Ansible.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. La plataforma de automatización de Ansible 2.7 introduce nuevas capacidades para mejorar la eficiencia y reducir la fricción en la automatización.&lt;/p&gt;
+&lt;p&gt;La documentación oficial de Ansible proporciona más información sobre la instalación, configuración y utilización de la herramienta. Además, la comunidad de Ansible es muy activa y proporciona una gran cantidad de recursos y ejemplos para ayudar a los administradores de sistemas y desarrolladores a empezar a utilizar la herramienta.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en la versión 2.7 de la plataforma de automatización de Ansible, se pueden destacar la capacidad de crear y gestionar roles y colecciones de manera más eficiente, la mejora en la gestión de inventarios y la integración con otras herramientas de automatización y orquestación.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad es un aspecto fundamental en la automatización de infraestructura, y Ansible proporciona herramientas y recursos para ayudar a los administradores de sistemas y desarrolladores a asegurar sus entornos. La utilización de vault y la gestión de secretos de manera segura son solo algunos ejemplos de las capacidades de seguridad que ofrece Ansible.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/events/webinar/whats-new-with-red-hat-ansible-automation-platform-2-7"&gt;What’s new with Red Hat Ansible Automation Platform 2.7&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e84HtQF6WoiRL8WFK30CgmfzVUCUwHeKr8cYO71Caa9-ok6rh7oD8JwFVqqrPXrmNvBf1m7jkSzBLBxSdG9u-8aAqPPVRgkhycSCl9YnX1EgEiKonUqk05OZ3tT2C2jPWv582iVFH13iMVfRtifyhTRtkurdJ1rEeM0x7GdmFMeRE9LvBDyMdTslApayaKduwt7zU3zm2qEoyZMCr3jzO4fXo-bVM&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cudWRlbXkuY29tJTJmY291cnNlJTJmbWFzdGVyaW5nLWFuc2libGUlMmYlM2Z1dG1fY2FtcGFpZ24lM2RCRy1TZWFyY2hfS2V5d29yZF9CZXRhX1Byb2ZfbGEuRU5fY2MuVVMlMjZ1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RwYWlkLXNlYXJjaCUyNnBvcnRmb2xpbyUzZEJpbmctVVNBJTI2dXRtX2F1ZGllbmNlJTNkbXglMjZ1dG1fdGFjdGljJTNkbmIlMjZ1dG1fdGVybSUzZF8uX2FnXzEzMjI3MTQ4NjYyNTAyMDFfLl9hZF9fLl9rd19BbnNpYmxlJTI1MjBUdXRvcmlhbCUyNnV0bV9jb250ZW50JTNkbyUyNmZ1bm5lbCUzZCUyNnRlc3QlM2QlMjZ1dG1fY2FtcGFpZ25faWQlM2Q2Mzg1ODIyNTYlMjZtc2Nsa2lkJTNkNWE4MTE1OWY0MWFkMWEwOWY0Yzk3ZmM5NDgzYTNlMTM&amp;rlid=5a81159f41ad1a09f4c97fc9483a3e13"&gt;Ansible Online Course - Courses that Never Go Stale&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-14_1002.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. La versión 2.7 de la plataforma de automatización de Ansible introduce nuevas capacidades para mejorar la eficiencia y reducir la fricción en la automatización.</summary>
+    <published>2026-07-14T10:02:00+00:00</published>
   </entry>
 </feed>

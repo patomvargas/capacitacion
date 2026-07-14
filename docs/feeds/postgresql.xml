@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-13T11:18:30.166989+00:00</updated>
+  <updated>2026-07-14T10:04:12.720652+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -533,5 +533,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-10_1109.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas y mejores prácticas. Descubre cómo mejorar la velocidad de tus consultas y reducir los tiempos de respuesta.</summary>
     <published>2026-07-10T11:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-14_1002.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-07-14T10:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización del rendimiento de PostgreSQL es crucial para garantizar la eficiencia y escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más rápida y eficiente. Puedes crear un índice utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;. Por ejemplo: &lt;code&gt;CREATE INDEX idx_nombre ON tabla (nombre);&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La replicación es otra forma de mejorar el rendimiento y la disponibilidad de tus datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestra-esclava y la replicación de transacciones. Puedes configurar la replicación utilizando el archivo &lt;code&gt;postgresql.conf&lt;/code&gt; y el comando &lt;code&gt;pg_basebackup&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La copia de seguridad es fundamental para proteger tus datos en caso de errores o desastres. PostgreSQL ofrece varias opciones de copia de seguridad, incluyendo la copia de seguridad completa, la copia de seguridad incremental y la copia de seguridad diferencial. Puedes realizar una copia de seguridad utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento de tus consultas, puedes utilizar la herramienta EXPLAIN ANALYZE. Esta herramienta te permite analizar el plan de ejecución de tus consultas y identificar posibles cuellos de botella. Por ejemplo: &lt;code&gt;EXPLAIN ANALYZE SELECT * FROM tabla;&lt;/code&gt;. Esto te permitirá identificar si la consulta está utilizando un índice o si está realizando una búsqueda secuencial.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la utilización de extensiones. PostgreSQL ofrece varias extensiones, incluyendo la extensión &lt;code&gt;pg_stat_statements&lt;/code&gt; que te permite monitorear el rendimiento de tus consultas. Puedes instalar la extensión utilizando el comando &lt;code&gt;CREATE EXTENSION&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la versión de PostgreSQL que estás utilizando puede afectar el rendimiento. Es importante mantener tu versión de PostgreSQL actualizada para asegurarte de que estás utilizando las últimas características y mejoras de rendimiento.&lt;/p&gt;
+&lt;p&gt;En resumen, la optimización del rendimiento de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación, copias de seguridad y monitoreo del rendimiento. Al utilizar estas técnicas y herramientas, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/engineering-playbook/i-optimized-our-postgresql-query-from-47-seconds-to-83-milliseconds-heres-the-one-thing-i-changed-c35e2d4b036a"&gt;I Optimized Our PostgreSQL Query from 47 Seconds to 83 Milliseconds. Here’s the One Thing I Changed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@hartwig.bertrand/running-postgresql-correctly-with-docker-compose-bcf3e2273221"&gt;Running PostgreSQL Correctly with Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-14_1002.html"/>
+    <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo utilizar herramientas como EXPLAIN ANALYZE para mejorar el rendimiento de tus consultas.</summary>
+    <published>2026-07-14T10:02:00+00:00</published>
   </entry>
 </feed>

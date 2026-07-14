@@ -58,47 +58,45 @@
     </div>
 
     <h1>Mejores prácticas de Docker para DevOps</h1>
-    <div class="meta">2026-07-10 1109 · Docker</div>
+    <div class="meta">2026-07-14 1002 · Docker</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La optimización de imágenes de Docker es fundamental para reducir el tamaño de las imágenes y mejorar el rendimiento de los contenedores. Una de las mejores prácticas es utilizar la instrucción `FROM` con una imagen base oficial, como `python:3.9-slim`, y luego agregar las dependencias necesarias. También se puede utilizar la herramienta `docker build` con la opción `--no-cache` para evitar la utilización de la caché de Docker.</p>
+            <p>La optimización de imágenes Docker es crucial para reducir el tamaño de las imágenes y mejorar los tiempos de construcción. Según el artículo '9 Docker Image Optimization Tips That Actually Cut Build Times', se pueden aplicar varias técnicas para optimizar las imágenes, como utilizar `docker build --no-cache` para evitar el uso de caché y `docker build --rm` para eliminar las capas intermedias. Además, se puede utilizar `docker image prune` para eliminar las imágenes no utilizadas.</p>
             
         
             
         
             
-            <p>Otra mejor práctica es la utilización de Docker Compose para definir y ejecutar múltiples contenedores. Se puede crear un archivo `docker-compose.yml` con la definición de los servicios y luego ejecutar `docker-compose up` para iniciar los contenedores. También se puede utilizar la herramienta `docker-compose exec` para acceder a los contenedores en ejecución.</p>
+        
+            
+            <p>La seguridad es otro aspecto importante en la gestión de contenedores Docker. En el artículo 'DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes on AWS EKS', se presenta un ejemplo de cómo integrar la seguridad en una cadena de entrega continua utilizando herramientas como GitHub Actions y Kubernetes. Se pueden utilizar comandos como `docker exec` para ejecutar comandos dentro de un contenedor y `docker logs` para monitorear los logs de los contenedores.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante utilizar la herramienta `docker scan` para analizar las imágenes de Docker en busca de vulnerabilidades. También se puede utilizar la herramienta `docker secrets` para gestionar los secretos de los contenedores. La utilización de redes de Docker también es importante para aislar los contenedores y evitar la exposición de los servicios.</p>
+        
+            
+            <p>La gestión de redes es fundamental para garantizar la comunicación entre los contenedores y los servicios externos. En el artículo 'Stop Melting Your CI Runners: A Better Way to Handle Database Testing', se presenta un ejemplo de cómo utilizar Docker-in-Docker para probar bases de datos en un entorno de integración continua. Se pueden utilizar comandos como `docker network create` para crear redes y `docker network connect` para conectar contenedores a una red.</p>
             
         
             
         
             
-            <p>La herramienta BuildKit es una herramienta de construcción de imágenes de Docker que permite la creación de imágenes de manera más eficiente y segura. Se puede utilizar la opción `--buildkit` con la herramienta `docker build` para habilitar la utilización de BuildKit. También se puede utilizar la herramienta `buildkitd` para ejecutar la construcción de imágenes de manera remota.</p>
+        
+            
+            <p>La utilización de BuildKit es otra forma de mejorar la eficiencia en la construcción de imágenes Docker. BuildKit es una herramienta que permite construir imágenes de manera paralela y concurrente, lo que reduce el tiempo de construcción. Se puede utilizar el comando `docker buildx` para crear un contexto de construcción y `docker buildx build` para construir una imagen utilizando BuildKit.</p>
             
         
             
         
             
-            <p>Finalmente, la utilización de registros de Docker es fundamental para la gestión de las imágenes de Docker. Se puede utilizar la herramienta `docker push` para subir las imágenes a un registro de Docker y luego utilizar la herramienta `docker pull` para descargar las imágenes desde el registro.</p>
-            
         
             
-        
-            
-            <p>En resumen, la utilización de las mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la utilización de herramientas como BuildKit y Docker Compose, es fundamental para la creación de contenedores de manera eficiente y segura.</p>
-            
-        
+            <p>En resumen, la utilización de mejores prácticas de Docker, como la optimización de imágenes, la seguridad y la gestión de redes, puede mejorar la eficiencia y la seguridad en entornos de producción. Se pueden utilizar comandos y herramientas como `docker build`, `docker exec`, `docker logs` y BuildKit para mejorar la gestión de contenedores Docker.</p>
             
         
     </div>
@@ -109,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://medium.com/@429abi/top-10-docker-mistakes-devops-engineers-keep-making-in-production-14d20fb2ea0e" target="_blank">Top 10 Docker Mistakes DevOps Engineers Keep Making in Production</a>
+                <a href="https://medium.com/@himanshu.pant415/9-docker-image-optimization-tips-that-actually-cut-build-times-2026-b4f0b8a87bed" target="_blank">9 Docker Image Optimization Tips That Actually Cut Build Times</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@sunil17bbmp/docker-image-optimization-best-practices-to-reduce-size-improve-performance-2026-b26a46a61505" target="_blank">Docker Image Optimization: Best Practices to Reduce Size and Improve Performance</a>
+                <a href="https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373" target="_blank">DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes on AWS EKS</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@azars.codes/devsecops-in-action-how-i-built-a-secure-ci-cd-pipeline-with-github-actions-docker-and-4de52cc9d373" target="_blank">DevSecOps in Action: How I Built a Secure CI/CD Pipeline with GitHub Actions, Docker, and Kubernetes</a>
+                <a href="https://medium.com/@alvarolopsi/stop-melting-your-ci-runners-a-better-way-to-handle-database-testing-6713439b657b" target="_blank">Stop Melting Your CI Runners: A Better Way to Handle Database Testing</a>
                 
             </li>
             
@@ -130,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-06_1208.html">&larr; 2026-07-06 1208</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-10_1109.html">&larr; 2026-07-10 1109</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-14_1002.html">2026-07-14 1002 &rarr;</a>
             
         </div>
     </div>
