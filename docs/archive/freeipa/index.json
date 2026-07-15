@@ -1,4 +1,28 @@
 {
+  "2026-07-15_1007": {
+    "slug": "freeipa",
+    "title": "Administración de Identidad con FreeIPA",
+    "summary": "FreeIPA es una solución de administración de identidad que combina LDAP, Kerberos y otros protocolos para proporcionar una plataforma de autenticación y autorización centralizada. En este artículo, se explora cómo configurar y utilizar FreeIPA para administrar identidades en un entorno de red.",
+    "content": "FreeIPA es un sistema de administración de identidad que permite a los administradores de sistemas gestionar identidades de usuarios y grupos de manera centralizada. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con un sistema operativo compatible, como Fedora o CentOS. Una vez instalado, se puede configurar el servidor FreeIPA utilizando el comando `ipa config-mod` para establecer parámetros como el dominio y el servidor DNS.\n\n \n Para agregar un cliente Linux a un servidor FreeIPA, se puede utilizar el comando `ipa-client-install` en el cliente, seguido de la configuración del cliente con el comando `ipa config-mod`. Esto permitirá a los usuarios autenticarse en el cliente utilizando sus credenciales de FreeIPA.\n\n \n En cuanto a la seguridad, FreeIPA proporciona varias características para proteger la autenticación y la autorización, como el uso de claves SSH y la autenticación multifactor. Además, se puede configurar el servidor FreeIPA para utilizar un proveedor de autenticación externo, como un servidor de autenticación de Active Directory.\n\n \n Para administrar los usuarios y grupos en FreeIPA, se puede utilizar el comando `ipa user-add` y `ipa group-add`, respectivamente. También se puede utilizar el comando `ipa hbacrule-add` para agregar reglas de control de acceso basado en hosts.\n\n \n En cuanto a las novedades, se ha reportado un problema con la autenticación de usuarios con claves Passkey en el issue #1130 de GitHub, que se está trabajando para solucionar. Además, se han publicado actualizaciones de seguridad para el paquete SSSD en Fedora, que es utilizado por FreeIPA para la autenticación y autorización.",
+    "sources": [
+      {
+        "title": "Issue #1130: Missing user authentication types Passkey",
+        "url": "https://github.com/freeipa/freeipa-webui/issues/1130"
+      },
+      {
+        "title": "Disable stale users",
+        "url": "https://github.com/freeipa/freeipa/blob/master/doc/designs/disable-stale-users.md"
+      },
+      {
+        "title": "FreeIPA Pentesting",
+        "url": "https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html"
+      },
+      {
+        "title": "How I Added a Linux Client to FreeIPA for Centralized Authentication",
+        "url": "https://blog.devops.dev/how-i-added-a-linux-client-to-freeipa-for-centralized-authentication-566613ef636d"
+      }
+    ]
+  },
   "2026-07-11_0942": {
     "slug": "freeipa",
     "title": "FreeIPA: Administración de Identidad",

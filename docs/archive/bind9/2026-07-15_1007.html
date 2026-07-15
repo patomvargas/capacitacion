@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configuración Avanzada de BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+    </div>
+
+    <h1>Configuración Avanzada de BIND9</h1>
+    <div class="meta">2026-07-15 1007 · DNS BIND9</div>
+
+    <div class="content">
+        
+        
+            
+            <p>La configuración de zonas en BIND9 se realiza mediante el archivo de configuración `named.conf`. En este archivo, se definen las zonas que se van a servir, así como las configuraciones de seguridad y rendimiento. Por ejemplo, para configurar una zona primaria, se puede utilizar el siguiente comando: `zone "example.com" { type master; file "/etc/bind/db.example.com"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La configuración de DNSSEC en BIND9 es crucial para garantizar la autenticidad y la integridad de los datos DNS. Para habilitar DNSSEC, se debe generar una clave de zona y una clave de firma, utilizando herramientas como `dnssec-keygen` y `dnssec-signzone`. Luego, se debe configurar el servidor DNS para que sirva las zonas firmadas.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido DNS en función de la dirección IP del cliente. Por ejemplo, se puede configurar una vista para que sirva una zona diferente a los clientes que se conectan desde una subred específica, utilizando el comando `view "internal" { match-clients { 10.0.0.0/24; }; zone "example.com" { type master; file "/etc/bind/db.example.com.internal"; }; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>La configuración de RPZ (Response Policy Zones) en BIND9 permite bloquear o restringir el acceso a ciertos dominios o direcciones IP. Por ejemplo, se puede configurar una zona RPZ para bloquear el acceso a un dominio específico, utilizando el comando `zone "rpz.example.com" { type master; file "/etc/bind/db.rpz.example.com"; };`.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Finalmente, para ajustar el rendimiento de BIND9, se pueden utilizar varias opciones de configuración, como `max-cache-size` y `max-cache-ttl`, que permiten controlar el tamaño y la duración de la caché DNS. También se puede utilizar el comando `rndc` para recargar la configuración y reiniciar el servidor DNS.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, la configuración avanzada de BIND9 requiere una comprensión profunda de las opciones de configuración y las herramientas disponibles. Al seguir las mejores prácticas y utilizar las herramientas adecuadas, se puede garantizar un servidor DNS seguro, escalable y de alto rendimiento.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa" target="_blank">Cómo configurar Flagger Canary AutoscalerRef para HPA</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-07_1112.html">&larr; 2026-07-07 1112</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

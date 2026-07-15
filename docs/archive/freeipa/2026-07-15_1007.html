@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Administración de Identidad - FreeIPA</title>
+    <title>Administración de Identidad con FreeIPA - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,14 +57,14 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Administración de Identidad</h1>
-    <div class="meta">2026-07-11 0942 · FreeIPA</div>
+    <h1>Administración de Identidad con FreeIPA</h1>
+    <div class="meta">2026-07-15 1007 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es un sistema de administración de identidad que se utiliza para proporcionar autenticación centralizada en entornos de Unix. Combina un directorio LDAP con un servidor Kerberos para proporcionar una solución completa de autenticación y autorización. Para implementar FreeIPA, es necesario configurar el servidor y los clientes para que utilicen el protocolo Kerberos para la autenticación.</p>
+            <p>FreeIPA es un sistema de administración de identidad que permite a los administradores de sistemas gestionar identidades de usuarios y grupos de manera centralizada. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con un sistema operativo compatible, como Fedora o CentOS. Una vez instalado, se puede configurar el servidor FreeIPA utilizando el comando `ipa config-mod` para establecer parámetros como el dominio y el servidor DNS.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>La configuración de FreeIPA se puede realizar mediante la interfaz de línea de comandos `ipa` o mediante la interfaz web. Para agregar un cliente a FreeIPA, se puede utilizar el comando `ipa client-install` en el cliente y luego `ipa host-add` en el servidor para agregar el cliente al dominio. Luego, se puede configurar la autenticación Kerberos en el cliente con el comando `ipa getkeytab` para obtener el keytab del cliente.</p>
+            <p>Para agregar un cliente Linux a un servidor FreeIPA, se puede utilizar el comando `ipa-client-install` en el cliente, seguido de la configuración del cliente con el comando `ipa config-mod`. Esto permitirá a los usuarios autenticarse en el cliente utilizando sus credenciales de FreeIPA.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>Una de las características más importantes de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios. Esto se puede hacer mediante el comando `ipa trust-add` para agregar un dominio de confianza. También se puede configurar el acceso basado en hosts (HBAC) para restringir el acceso a ciertos hosts o servicios. Para ello, se puede utilizar el comando `ipa hbacrule-add` para agregar una regla de acceso.</p>
+            <p>En cuanto a la seguridad, FreeIPA proporciona varias características para proteger la autenticación y la autorización, como el uso de claves SSH y la autenticación multifactor. Además, se puede configurar el servidor FreeIPA para utilizar un proveedor de autenticación externo, como un servidor de autenticación de Active Directory.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>En cuanto a la autenticación, FreeIPA admite varios métodos, incluyendo la autenticación con contraseña y la autenticación con tarjeta inteligente. Sin embargo, en la versión actual, hay un problema con la autenticación con Passkey, como se indica en el issue #1130 de GitHub. Para solucionar este problema, se puede utilizar la autenticación con contraseña o configurar la autenticación con tarjeta inteligente.</p>
+            <p>Para administrar los usuarios y grupos en FreeIPA, se puede utilizar el comando `ipa user-add` y `ipa group-add`, respectivamente. También se puede utilizar el comando `ipa hbacrule-add` para agregar reglas de control de acceso basado en hosts.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>Por último, es importante mencionar que FreeIPA tiene varias alternativas de código abierto, como se indica en la lista de Saasworthy. Sin embargo, FreeIPA sigue siendo una de las opciones más populares y ampliamente utilizadas para la administración de identidad en entornos de Unix.</p>
+            <p>En cuanto a las novedades, se ha reportado un problema con la autenticación de usuarios con claves Passkey en el issue #1130 de GitHub, que se está trabajando para solucionar. Además, se han publicado actualizaciones de seguridad para el paquete SSSD en Fedora, que es utilizado por FreeIPA para la autenticación y autorización.</p>
             
         
     </div>
@@ -107,17 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html" target="_blank">FreeIPA Pentesting - HackTricks</a>
+                <a href="https://github.com/freeipa/freeipa-webui/issues/1130" target="_blank">Issue #1130: Missing user authentication types Passkey</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/freeipa/freeipa/blob/master/doc/designs/disable-stale-users.md" target="_blank">Disable stale users</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://hacktricks.wiki/en/linux-hardening/freeipa-pentesting.html" target="_blank">FreeIPA Pentesting</a>
                 
             </li>
             
             <li>
                 <a href="https://blog.devops.dev/how-i-added-a-linux-client-to-freeipa-for-centralized-authentication-566613ef636d" target="_blank">How I Added a Linux Client to FreeIPA for Centralized Authentication</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/freeipa/freeipa-webui/issues/1130" target="_blank">Missing user authentication types Passkey #1130</a>
                 
             </li>
             
@@ -128,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-07_1112.html">&larr; 2026-07-07 1112</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-11_0942.html">&larr; 2026-07-11 0942</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-15_1007.html">2026-07-15 1007 &rarr;</a>
             
         </div>
     </div>

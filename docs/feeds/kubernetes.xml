@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-14T10:04:12.688814+00:00</updated>
+  <updated>2026-07-15T10:08:11.520309+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -621,5 +621,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-07_1112.html"/>
     <summary>Kubernetes 1.23 introduce nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan las novedades y best practices para aprovechar al máximo esta versión.</summary>
     <published>2026-07-07T11:12:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-15_1007.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-07-15T10:07:00+00:00</updated>
+    <content type="html">&lt;p&gt;Una de las características más destacadas en la versión reciente de Kubernetes es la capacidad de habilitar topologías multi-cluster dinámicas y transparentes. Esto se logra gracias a proyectos como Liqo, que permite la creación de topologías de cluster heterogéneas en entornos locales, en la nube y de borde. Para habilitar esta característica, se puede utilizar el comando &lt;code&gt;kubectl liqo enable&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes, y la plataforma sigue mejorando en este sentido. Por ejemplo, se puede utilizar el proyecto Brigade para scripting de eventos en Kubernetes, lo que permite la automatización de tareas y la respuesta a eventos en tiempo real. Para instalar Brigade, se puede utilizar el comando &lt;code&gt;helm install brigade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto al almacenamiento, Kubernetes ofrece una variedad de opciones para satisfacer las necesidades de los diferentes escenarios. Por ejemplo, se puede utilizar el proveedor de API de Cluster vSphere para crear y gestionar clusters de Kubernetes en entornos vSphere. Para crear un cluster con este proveedor, se puede utilizar el comando &lt;code&gt;kubectl create cluster --provider vsphere&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica interesante en Kubernetes es la capacidad de utilizar operadores para gestionar aplicaciones y servicios. Por ejemplo, se puede utilizar el operador de Ingress NGINX para gestionar el tráfico de entrada a las aplicaciones. Para instalar este operador, se puede utilizar el comando &lt;code&gt;helm install ingress-nginx&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando en diferentes áreas, desde la creación de topologías multi-cluster hasta la gestión de aplicaciones y servicios con operadores. Estas novedades y mejoras permiten a los administradores de sistemas y desarrolladores crear entornos de Kubernetes más seguros, escalables y eficientes.&lt;/p&gt;
+&lt;p&gt;Para más información sobre estas características y mejoras, se pueden consultar las fuentes oficiales de Kubernetes y los proyectos relacionados.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/LiqoTech/liqo"&gt;Liqo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/brigadecore/brigade"&gt;Brigade&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/cluster-api-provider-vsphere"&gt;Kubernetes Cluster API Provider vSphere&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/ingress-nginx"&gt;Ingress NGINX&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-15_1007.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más recientes en la plataforma.</summary>
+    <published>2026-07-15T10:07:00+00:00</published>
   </entry>
 </feed>

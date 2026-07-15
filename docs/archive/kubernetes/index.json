@@ -1,4 +1,28 @@
 {
+  "2026-07-15_1007": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más recientes en la plataforma.",
+    "content": "Una de las características más destacadas en la versión reciente de Kubernetes es la capacidad de habilitar topologías multi-cluster dinámicas y transparentes. Esto se logra gracias a proyectos como Liqo, que permite la creación de topologías de cluster heterogéneas en entornos locales, en la nube y de borde. Para habilitar esta característica, se puede utilizar el comando `kubectl liqo enable`.\n\n \nLa seguridad es otro aspecto importante en Kubernetes, y la plataforma sigue mejorando en este sentido. Por ejemplo, se puede utilizar el proyecto Brigade para scripting de eventos en Kubernetes, lo que permite la automatización de tareas y la respuesta a eventos en tiempo real. Para instalar Brigade, se puede utilizar el comando `helm install brigade`.\n\n \nEn cuanto al almacenamiento, Kubernetes ofrece una variedad de opciones para satisfacer las necesidades de los diferentes escenarios. Por ejemplo, se puede utilizar el proveedor de API de Cluster vSphere para crear y gestionar clusters de Kubernetes en entornos vSphere. Para crear un cluster con este proveedor, se puede utilizar el comando `kubectl create cluster --provider vsphere`.\n\n \nOtra característica interesante en Kubernetes es la capacidad de utilizar operadores para gestionar aplicaciones y servicios. Por ejemplo, se puede utilizar el operador de Ingress NGINX para gestionar el tráfico de entrada a las aplicaciones. Para instalar este operador, se puede utilizar el comando `helm install ingress-nginx`.\n\n \nEn resumen, Kubernetes sigue evolucionando y mejorando en diferentes áreas, desde la creación de topologías multi-cluster hasta la gestión de aplicaciones y servicios con operadores. Estas novedades y mejoras permiten a los administradores de sistemas y desarrolladores crear entornos de Kubernetes más seguros, escalables y eficientes.\n\n \nPara más información sobre estas características y mejoras, se pueden consultar las fuentes oficiales de Kubernetes y los proyectos relacionados.",
+    "sources": [
+      {
+        "title": "Liqo",
+        "url": "https://github.com/LiqoTech/liqo"
+      },
+      {
+        "title": "Brigade",
+        "url": "https://github.com/brigadecore/brigade"
+      },
+      {
+        "title": "Kubernetes Cluster API Provider vSphere",
+        "url": "https://github.com/kubernetes-sigs/cluster-api-provider-vsphere"
+      },
+      {
+        "title": "Ingress NGINX",
+        "url": "https://github.com/kubernetes/ingress-nginx"
+      }
+    ]
+  },
   "2026-07-07_1112": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes 1.23",
