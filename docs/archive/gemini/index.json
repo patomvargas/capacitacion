@@ -1,4 +1,24 @@
 {
+  "2026-07-16_1014": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una herramienta que integra Computer Use como una herramienta estándar, permitiendo la automatización de pruebas de QA. Además, se han agregado nuevas opciones para la gestión de tráfico de AI.",
+    "content": "\nGemini es una herramienta que ha evolucionado significativamente en los últimos meses. La versión actual, gemini-3.5-flash, integra Computer Use como una herramienta estándar, lo que permite a los desarrolladores automatizar pruebas de QA de manera efectiva. Esto se logra mediante la ejecución de un navegador real desde los píxeles de la pantalla, lo que permite simular interacciones de usuario de manera precisa.\n\nPara utilizar Gemini, es necesario configurar la herramienta mediante la API de Google Cloud. Esto se puede hacer utilizando comandos como `gcloud ai gemini configure` para configurar la herramienta y `gcloud ai gemini deploy` para desplegar la aplicación. Además, se puede utilizar la herramienta de línea de comandos `gemini-cli` para interactuar con la API de Gemini.\n\nLa integración de Gemini con Vertex AI y Workspace permite a los desarrolladores crear modelos de machine learning y desplegarlos de manera efectiva. Además, la herramienta de diseño de agentes de Gemini Enterprise permite a los usuarios crear agentes simples basados en prompt sin necesidad de codificar. Esto se logra mediante la utilización de la API de Gemini y la configuración de la herramienta mediante comandos como `gemini-agent configure` y `gemini-agent deploy`.\n\nEn cuanto a la gestión de tráfico de AI, se han agregado nuevas opciones para permitir a los desarrolladores distinguir y gestionar diferentes tipos de tráfico de AI, como Search, Agent y Training bots. Esto se puede hacer mediante la configuración de la herramienta de línea de comandos `cloudflare` y la utilización de comandos como `cloudflare api token` y `cloudflare zone settings`.\n\nEn resumen, Gemini es una herramienta poderosa que permite a los desarrolladores automatizar pruebas de QA, crear modelos de machine learning y gestionar tráfico de AI de manera efectiva. La integración con Vertex AI y Workspace, así como la herramienta de diseño de agentes de Gemini Enterprise, hacen de esta herramienta una excelente opción para los desarrolladores que buscan mejorar la eficiencia y la precisión de sus aplicaciones.\n\nPara obtener más información sobre Gemini y sus características, se pueden consultar las fuentes oficiales de Google Cloud y Cloudflare.",
+    "sources": [
+      {
+        "title": "Mastering Gemini Computer Use",
+        "url": "https://medium.com/google-cloud/mastering-gemini-computer-use-a-comprehensive-hands-on-guide-ab8ec7db3aab"
+      },
+      {
+        "title": "Automated Manual-Like QA Testing with Gemini",
+        "url": "https://medium.com/google-cloud/web-manual-like-qa-with-gemini-2bdac5dcab6a"
+      },
+      {
+        "title": "Your site, your rules: new AI traffic options for all customers",
+        "url": "https://blog.cloudflare.com/content-independence-day-ai-options/"
+      }
+    ]
+  },
   "2026-07-12_0954": {
     "slug": "gemini",
     "title": "Gemini: Actualizaciones y Mejoras",

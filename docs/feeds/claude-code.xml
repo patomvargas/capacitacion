@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-15T10:08:11.526418+00:00</updated>
+  <updated>2026-07-16T10:15:22.864210+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -586,5 +586,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-12_0954.html"/>
     <summary>Claude Code es una herramienta de desarrollo que utiliza inteligencia artificial para mejorar la productividad de los desarrolladores. En este artículo, se presentan las últimas novedades y mejores prácticas para utilizar Claude Code de manera efectiva.</summary>
     <published>2026-07-12T09:54:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-16_1014.html</id>
+    <title>Mejoras en Claude Code</title>
+    <updated>2026-07-16T10:14:00+00:00</updated>
+    <content type="html">&lt;p&gt;Claude Code es una herramienta que se puede extender con plugins, lo que permite agregar funcionalidades como comandos personalizados y servidores MCP. Los plugins se pueden compartir entre proyectos y se pueden configurar para realizar tareas específicas. Por ejemplo, se puede crear un plugin para automatizar la aprobación de solicitudes de MCP utilizando el comando &lt;code&gt;claude-auto-approve-mcp&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La autenticación OAuth es un tema importante en Claude Code, y se han reportado algunos errores en este sentido. Por ejemplo, el error #11464 reporta que la autenticación OAuth falla en entornos de desarrollo remoto con proxy. Para solucionar este problema, se puede intentar utilizar el comando &lt;code&gt;claude-code --oauth-token&lt;/code&gt; para obtener un token de autenticación válido.&lt;/p&gt;
+&lt;p&gt;Otro tema importante es la resolución de errores en Claude Code. Por ejemplo, el error #70348 reporta un error 500 y 529 en el código de estado HTTP. Para solucionar este problema, se puede intentar utilizar el comando &lt;code&gt;claude-code --debug&lt;/code&gt; para obtener más información sobre el error.&lt;/p&gt;
+&lt;p&gt;La implementación de best practices es fundamental para utilizar Claude Code de manera efectiva. Por ejemplo, se puede utilizar el plugin &lt;code&gt;claude-plugins-official&lt;/code&gt; para agregar funcionalidades como la automatización de tareas y la integración con otras herramientas. También se puede utilizar el comando &lt;code&gt;claude-code --help&lt;/code&gt; para obtener más información sobre las opciones y comandos disponibles.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que se puede extender con plugins y ofrece funcionalidades como comandos personalizados y servidores MCP. La resolución de errores y la implementación de best practices son fundamentales para utilizar Claude Code de manera efectiva.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Claude Code y sus plugins, se puede consultar la documentación oficial en &lt;code&gt;https://github.com/anthropics/claude-code&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/tree/main/plugins"&gt;Claude Code Plugins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/11464"&gt;BUG: Claude Code OAuth authentication fails in proxy environment&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/issues/70348"&gt;BUG: Anthropic API Error: 500 and 529 HTTP Status Codes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/wallneradam/claude_autoapprove_mcp"&gt;Claude Auto-Approve MCP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-plugins-official"&gt;anthropics/claude-plugins-official&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-16_1014.html"/>
+    <summary>Claude Code es una herramienta que se puede extender con plugins y ofrece funcionalidades como comandos personalizados y servidores MCP. En este artículo, se presentan algunas de las novedades y mejoras en Claude Code, incluyendo la resolución de errores y la implementación de best practices.</summary>
+    <published>2026-07-16T10:14:00+00:00</published>
   </entry>
 </feed>

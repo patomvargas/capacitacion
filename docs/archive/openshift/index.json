@@ -1,4 +1,32 @@
 {
+  "2026-07-16_1014": {
+    "slug": "openshift",
+    "title": "OpenShift 4.22: Nuevas Características y Mejoras",
+    "summary": "OpenShift 4.22 ofrece nuevas características y mejoras para la gestión de contenedores y la seguridad. En este artículo, se presentan las novedades y se proporcionan ejemplos prácticos para su implementación.",
+    "content": "OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, que ofrece una serie de nuevas características y mejoras para la gestión de contenedores y la seguridad. Una de las novedades más destacadas es la mejora en la gestión de clústeres, que permite a los administradores realizar acciones de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando `oc get nodes` para obtener una lista de los nodos del clúster y `oc describe node <nombre-del-nodo>` para obtener información detallada sobre un nodo específico.\n\nLa nueva versión también incluye mejoras en la seguridad, como la actualización del módulo `redhat-ds:12` para Red Hat Directory Server 12.4 E4S para RHEL 9, que ha sido calificada como una actualización de seguridad importante por Red Hat Product Security. Para implementar esta actualización, se puede utilizar el comando `yum update` en el sistema operativo del clúster.\n\nOtra característica destacada de OpenShift 4.22 es la mejora en la gestión de rutas y la configuración de OAuth. Por ejemplo, se puede utilizar el comando `oc create route` para crear una nueva ruta y `oc edit route <nombre-de-la-ruta>` para editar una ruta existente. Además, se puede utilizar el comando `oc create oauthaccesstoken` para crear un nuevo token de acceso de OAuth.\n\nEn cuanto a la monitorización, OpenShift 4.22 ofrece mejoras en la integración con herramientas de monitorización como Prometheus y Grafana. Por ejemplo, se puede utilizar el comando `oc create prometheus` para crear un nuevo recurso de Prometheus y `oc edit prometheus <nombre-del-recurso>` para editar un recurso existente.\n\nEn resumen, OpenShift 4.22 ofrece una serie de nuevas características y mejoras para la gestión de contenedores y la seguridad, que permiten a los administradores y desarrolladores trabajar de manera más eficiente y segura. Para obtener más información sobre la instalación y configuración de OpenShift 4.22, se puede consultar la documentación oficial de Red Hat.\n\nLa migración a OpenShift 4.22 puede ser un proceso complejo, pero con la ayuda de herramientas como la consola de OpenShift y el comando `oc`, se puede realizar de manera más sencilla. Por ejemplo, se puede utilizar el comando `oc cluster up` para crear un nuevo clúster y `oc cluster down` para eliminar un clúster existente.\n\nEn cuanto a las mejores prácticas, es importante seguir las recomendaciones de seguridad y configuración de Red Hat para asegurarse de que el clúster esté configurado de manera segura y eficiente. Por ejemplo, se puede utilizar el comando `oc adm must-gather` para recopilar información de depuración y `oc adm top` para obtener información sobre el uso de recursos del clúster.",
+    "sources": [
+      {
+        "title": "What's new with Azure Red Hat OpenShift?",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "Red Hat OpenShift | endoflife.date",
+        "url": "https://endoflife.date/red-hat-openshift"
+      },
+      {
+        "title": "Red Hat OpenShift Data Foundation 4.21 4.21 Release Notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_data_foundation/4.21/pdf/4.21_release_notes/Red_Hat_OpenShift_Data_Foundation-4.21-4.21_Release_Notes-en-US.pdf"
+      },
+      {
+        "title": "Firefox, Kernel, Nginx, and OpenShift Updates for RHEL",
+        "url": "https://www.linuxcompatible.org/story/firefox-kernel-nginx-and-openshift-updates-for-rhel"
+      },
+      {
+        "title": "OpenShift 4.22: New Features and Release Highlights",
+        "url": "https://electromech.cloud/openshift-4-22-new-features-release-highlights/"
+      }
+    ]
+  },
   "2026-07-12_0954": {
     "slug": "openshift",
     "title": "OpenShift: Mejoras y Novedades",

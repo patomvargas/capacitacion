@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Claude Code: Mejoras y Best Practices - Claude Code</title>
+    <title>Mejoras en Claude Code - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,14 +57,14 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Claude Code: Mejoras y Best Practices</h1>
-    <div class="meta">2026-07-12 0954 · Claude Code</div>
+    <h1>Mejoras en Claude Code</h1>
+    <div class="meta">2026-07-16 1014 · Claude Code</div>
 
     <div class="content">
         
         
             
-            <p>Claude Code es una herramienta de desarrollo que utiliza inteligencia artificial para mejorar la productividad de los desarrolladores. Una de las características más destacadas de Claude Code es su capacidad para aprender y adaptarse a las necesidades del desarrollador. Para empezar a utilizar Claude Code, es necesario instalar el paquete `@anthropic-ai/claude-code` mediante npm con el comando `npm i -g @anthropic-ai/claude-code`. Luego, se puede ejecutar Claude Code en la terminal con el comando `claude`.</p>
+            <p>Claude Code es una herramienta que se puede extender con plugins, lo que permite agregar funcionalidades como comandos personalizados y servidores MCP. Los plugins se pueden compartir entre proyectos y se pueden configurar para realizar tareas específicas. Por ejemplo, se puede crear un plugin para automatizar la aprobación de solicitudes de MCP utilizando el comando `claude-auto-approve-mcp`.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>Los plugins de Claude Code son extensiones que permiten personalizar y ampliar la funcionalidad de la herramienta. Por ejemplo, se puede utilizar el plugin `claude-plugins-official` para agregar funcionalidades como la clasificación automática de código y la detección de errores. Para instalar un plugin, se puede utilizar el comando `claude plugin install <nombre-del-plugin>`.</p>
+            <p>La autenticación OAuth es un tema importante en Claude Code, y se han reportado algunos errores en este sentido. Por ejemplo, el error #11464 reporta que la autenticación OAuth falla en entornos de desarrollo remoto con proxy. Para solucionar este problema, se puede intentar utilizar el comando `claude-code --oauth-token` para obtener un token de autenticación válido.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>En cuanto a la configuración de Claude Code, es posible personalizar la herramienta para adaptarla a las necesidades específicas del proyecto. Por ejemplo, se puede configurar Claude Code para utilizar un servidor MCP (Message Control Protocol) personalizado con el comando `claude config set mcp-server <url-del-servidor>`. Además, se pueden definir flujos de trabajo personalizados para automatizar tareas comunes con el comando `claude workflow create <nombre-del-flujo>`.</p>
+            <p>Otro tema importante es la resolución de errores en Claude Code. Por ejemplo, el error #70348 reporta un error 500 y 529 en el código de estado HTTP. Para solucionar este problema, se puede intentar utilizar el comando `claude-code --debug` para obtener más información sobre el error.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>Es importante mencionar que Claude Code también cuenta con una comunidad activa de desarrolladores que crean y comparten plugins y configuraciones personalizadas. Por ejemplo, se puede encontrar una lista de plugins oficiales en el repositorio de GitHub `anthropics/claude-plugins-official`. Además, se pueden encontrar tutoriales y guías de configuración en la documentación oficial de Claude Code.</p>
+            <p>La implementación de best practices es fundamental para utilizar Claude Code de manera efectiva. Por ejemplo, se puede utilizar el plugin `claude-plugins-official` para agregar funcionalidades como la automatización de tareas y la integración con otras herramientas. También se puede utilizar el comando `claude-code --help` para obtener más información sobre las opciones y comandos disponibles.</p>
             
         
             
@@ -96,7 +96,7 @@
             
         
             
-            <p>En resumen, Claude Code es una herramienta poderosa que puede mejorar significativamente la productividad de los desarrolladores. Con sus plugins y configuraciones personalizables, es posible adaptar la herramienta a las necesidades específicas del proyecto. Para obtener más información sobre Claude Code y sus características, se puede consultar la documentación oficial y la comunidad de desarrolladores.</p>
+            <p>En resumen, Claude Code es una herramienta poderosa que se puede extender con plugins y ofrece funcionalidades como comandos personalizados y servidores MCP. La resolución de errores y la implementación de best practices son fundamentales para utilizar Claude Code de manera efectiva.</p>
             
         
             
@@ -104,7 +104,7 @@
             
         
             
-            <p>Finalmente, es importante destacar que Claude Code es una herramienta en constante evolución, por lo que es importante estar al tanto de las últimas novedades y actualizaciones. Se puede seguir la cuenta de GitHub de Claude Code para estar informado sobre las últimas características y mejoras.</p>
+            <p>Para obtener más información sobre Claude Code y sus plugins, se puede consultar la documentación oficial en `https://github.com/anthropics/claude-code`.</p>
             
         
     </div>
@@ -120,17 +120,22 @@
             </li>
             
             <li>
+                <a href="https://github.com/anthropics/claude-code/issues/11464" target="_blank">BUG: Claude Code OAuth authentication fails in proxy environment</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/anthropics/claude-code/issues/70348" target="_blank">BUG: Anthropic API Error: 500 and 529 HTTP Status Codes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/wallneradam/claude_autoapprove_mcp" target="_blank">Claude Auto-Approve MCP</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://github.com/anthropics/claude-plugins-official" target="_blank">anthropics/claude-plugins-official</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.anthropic.com/research/claude-code-expertise" target="_blank">How Claude Code is used in practice</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@ahirlog/ponytail-teaching-claude-code-to-think-before-it-types-f1781e65b136" target="_blank">Ponytail: Teaching Claude Code to Think Before It Types</a>
                 
             </li>
             
@@ -141,12 +146,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-08_1023.html">&larr; 2026-07-08 1023</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-12_0954.html">&larr; 2026-07-12 0954</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-16_1014.html">2026-07-16 1014 &rarr;</a>
             
         </div>
     </div>

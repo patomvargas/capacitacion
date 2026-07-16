@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-15T10:08:11.523450+00:00</updated>
+  <updated>2026-07-16T10:15:22.859430+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -610,5 +610,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-12_0954.html"/>
     <summary>OpenShift es una plataforma de contenedores que ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. En este artículo, se presentan las últimas novedades y mejoras en OpenShift, incluyendo actualizaciones de seguridad y nuevas características.</summary>
     <published>2026-07-12T09:54:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-16_1014.html</id>
+    <title>OpenShift 4.22: Nuevas Características y Mejoras</title>
+    <updated>2026-07-16T10:14:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, que ofrece una serie de nuevas características y mejoras para la gestión de contenedores y la seguridad. Una de las novedades más destacadas es la mejora en la gestión de clústeres, que permite a los administradores realizar acciones de manera más eficiente y segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc get nodes&lt;/code&gt; para obtener una lista de los nodos del clúster y &lt;code&gt;oc describe node &lt;nombre-del-nodo&gt;&lt;/code&gt; para obtener información detallada sobre un nodo específico.&lt;/p&gt;
+&lt;p&gt;La nueva versión también incluye mejoras en la seguridad, como la actualización del módulo &lt;code&gt;redhat-ds:12&lt;/code&gt; para Red Hat Directory Server 12.4 E4S para RHEL 9, que ha sido calificada como una actualización de seguridad importante por Red Hat Product Security. Para implementar esta actualización, se puede utilizar el comando &lt;code&gt;yum update&lt;/code&gt; en el sistema operativo del clúster.&lt;/p&gt;
+&lt;p&gt;Otra característica destacada de OpenShift 4.22 es la mejora en la gestión de rutas y la configuración de OAuth. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc create route&lt;/code&gt; para crear una nueva ruta y &lt;code&gt;oc edit route &lt;nombre-de-la-ruta&gt;&lt;/code&gt; para editar una ruta existente. Además, se puede utilizar el comando &lt;code&gt;oc create oauthaccesstoken&lt;/code&gt; para crear un nuevo token de acceso de OAuth.&lt;/p&gt;
+&lt;p&gt;En cuanto a la monitorización, OpenShift 4.22 ofrece mejoras en la integración con herramientas de monitorización como Prometheus y Grafana. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc create prometheus&lt;/code&gt; para crear un nuevo recurso de Prometheus y &lt;code&gt;oc edit prometheus &lt;nombre-del-recurso&gt;&lt;/code&gt; para editar un recurso existente.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.22 ofrece una serie de nuevas características y mejoras para la gestión de contenedores y la seguridad, que permiten a los administradores y desarrolladores trabajar de manera más eficiente y segura. Para obtener más información sobre la instalación y configuración de OpenShift 4.22, se puede consultar la documentación oficial de Red Hat.&lt;/p&gt;
+&lt;p&gt;La migración a OpenShift 4.22 puede ser un proceso complejo, pero con la ayuda de herramientas como la consola de OpenShift y el comando &lt;code&gt;oc&lt;/code&gt;, se puede realizar de manera más sencilla. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc cluster up&lt;/code&gt; para crear un nuevo clúster y &lt;code&gt;oc cluster down&lt;/code&gt; para eliminar un clúster existente.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante seguir las recomendaciones de seguridad y configuración de Red Hat para asegurarse de que el clúster esté configurado de manera segura y eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;oc adm must-gather&lt;/code&gt; para recopilar información de depuración y &lt;code&gt;oc adm top&lt;/code&gt; para obtener información sobre el uso de recursos del clúster.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"&gt;What's new with Azure Red Hat OpenShift?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/red-hat-openshift"&gt;Red Hat OpenShift | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_data_foundation/4.21/pdf/4.21_release_notes/Red_Hat_OpenShift_Data_Foundation-4.21-4.21_Release_Notes-en-US.pdf"&gt;Red Hat OpenShift Data Foundation 4.21 4.21 Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.linuxcompatible.org/story/firefox-kernel-nginx-and-openshift-updates-for-rhel"&gt;Firefox, Kernel, Nginx, and OpenShift Updates for RHEL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://electromech.cloud/openshift-4-22-new-features-release-highlights/"&gt;OpenShift 4.22: New Features and Release Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-16_1014.html"/>
+    <summary>OpenShift 4.22 ofrece nuevas características y mejoras para la gestión de contenedores y la seguridad. En este artículo, se presentan las novedades y se proporcionan ejemplos prácticos para su implementación.</summary>
+    <published>2026-07-16T10:14:00+00:00</published>
   </entry>
 </feed>
