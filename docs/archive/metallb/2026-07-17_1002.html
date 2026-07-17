@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-07-17 1002 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>MetalLB es una herramienta de equilibrio de carga para Kubernetes que se ejecuta en el clúster y se encarga de distribuir el tráfico de red entre los pods. Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación, la puerta de enlace y la dirección IP del equilibrador de carga. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f metallb-config.yaml`, donde el archivo `metallb-config.yaml` contiene la configuración de MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la gestión de pools de IP, MetalLB permite a los administradores de sistemas configurar pools de IP para asignar direcciones IP a los pods. Para crear un pool de IP, se puede utilizar el comando `kubectl create -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de IP. Por ejemplo:</p>
+            
+        
+            
+            <p>```yaml</p>
+            
+        
+            
+            <p>apiVersion: metallb.io/v1beta1</p>
+            
+        
+            
+            <p>kind: IPAddressPool</p>
+            
+        
+            
+            <p>metadata:</p>
+            
+        
+            
+            <p>name: my-ip-pool</p>
+            
+        
+            
+            <p>spec:</p>
+            
+        
+            
+            <p>addresses:</p>
+            
+        
+            
+            <p>- 192.168.1.1-192.168.1.10</p>
+            
+        
+            
+            <p>```</p>
+            
+        
+            
+            <p>Para solucionar problemas comunes en MetalLB, es importante verificar la configuración del equilibrador de carga y la conectividad de red entre los pods. También es recomendable utilizar herramientas de monitoreo y registro para detectar problemas y optimizar el rendimiento del clúster.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el clúster y permite a los administradores de sistemas configurar y gestionar el tráfico de red de manera eficiente. Para integrar MetalLB con Kubernetes, es necesario crear un objeto de configuración que especifique la puerta de enlace y la dirección IP del equilibrador de carga.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para configurar y gestionar el tráfico de red en clústeres de Kubernetes. Con su modo L2, BGP y la gestión de pools de IP, MetalLB ofrece una gran flexibilidad y escalabilidad para los administradores de sistemas.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre MetalLB, se pueden consultar las fuentes oficiales y la documentación de Kubernetes. Es importante mencionar que, según la issue #3080 en el repositorio de MetalLB, hay un problema con los podMonitors desde la versión 0.16.0, por lo que es recomendable verificar la configuración y la versión de MetalLB antes de implementarla en un entorno de producción.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante destacar que la issue #3095 en el repositorio de MetalLB solicita la capacidad de deshabilitar el endpoint de métricas, lo que puede ser útil para mejorar la seguridad y el rendimiento del clúster.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3080" target="_blank">Issue #3080: podMonitors are broken since 0.16.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3095" target="_blank">Issue #3095: Support disabling metrics endpoint</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://kubernetes.io/blog/2026/06/24/wg-device-management-spotlight-2026/" target="_blank">Kubernetes Blog: Spotlight on WG Device Management</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-09_1113.html">&larr; 2026-07-09 1113</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

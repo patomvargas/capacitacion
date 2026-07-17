@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-16T10:15:22.884675+00:00</updated>
+  <updated>2026-07-17T10:03:53.340995+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -378,5 +378,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-05_1020.html"/>
     <summary>Traefik es un proxy inverso de código abierto que permite gestionar y proteger APIs y microservicios. En este artículo, se presentan las últimas novedades y mejoras en Traefik, incluyendo la protección contra ataques de domain-fronting y la introducción de la definición de recursos personalizados en Traefik Hub.</summary>
     <published>2026-07-05T10:20:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-17_1002.html</id>
+    <title>Traefik: Routers y Middlewares</title>
+    <updated>2026-07-17T10:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Para empezar a utilizar Traefik, es necesario instalarlo en el sistema utilizando el comando &lt;code&gt;docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock traefik&lt;/code&gt;. Una vez instalado, se puede configurar Traefik para que utilice routers y middlewares personalizados.&lt;/p&gt;
+&lt;p&gt;Para configurar un router en Traefik, se puede utilizar el comando &lt;code&gt;traefik http routers add --rule 'Host:example.com' --service example-service&lt;/code&gt;. Esto creará un router que redirige las solicitudes a &lt;code&gt;example.com&lt;/code&gt; al servicio &lt;code&gt;example-service&lt;/code&gt;. También se pueden agregar middlewares a los routers para mejorar la seguridad y el rendimiento de las aplicaciones. Por ejemplo, se puede agregar un middleware de autenticación utilizando el comando &lt;code&gt;traefik http middlewares add --basic-auth example-auth&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Traefik también admite la configuración de proveedores de SSL/TLS, como Let's Encrypt, para mejorar la seguridad de las aplicaciones. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando &lt;code&gt;traefik tls certificated add --store example-store --dns-challenge example-challenge&lt;/code&gt;. Esto creará un certificado SSL/TLS para el dominio &lt;code&gt;example.com&lt;/code&gt; utilizando el proveedor de certificados Let's Encrypt.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik admite la configuración de registros de acceso y métricas para mejorar la visibilidad de las aplicaciones. Para configurar los registros de acceso en Traefik, se puede utilizar el comando &lt;code&gt;traefik log access add --format json&lt;/code&gt;. Esto creará un registro de acceso en formato JSON que se puede utilizar para analizar y mejorar el rendimiento de las aplicaciones.&lt;/p&gt;
+&lt;p&gt;Además, Traefik admite la configuración de proveedores de logs y métricas, como Azure Log Analytics, para mejorar la observabilidad de las aplicaciones. Para configurar Azure Log Analytics en Traefik, se puede utilizar el comando &lt;code&gt;traefik log azure-log-analytics add --workspace-id example-workspace-id --secret example-secret&lt;/code&gt;. Esto creará un proveedor de logs y métricas que envía los registros de acceso y las métricas a Azure Log Analytics.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Su configuración y utilización pueden mejorar la seguridad y el rendimiento de las aplicaciones, y su integración con proveedores de SSL/TLS, logs y métricas puede mejorar la observabilidad y la visibilidad de las aplicaciones.&lt;/p&gt;
+&lt;p&gt;Para más información sobre la configuración y utilización de Traefik, se pueden consultar las fuentes oficiales de Traefik y otros recursos en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/pull/8307"&gt;Prepare release v2.4.12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13411"&gt;access logs are not sent to stdout unless json format is specified&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13391"&gt;Add Support to Azure loganalytics workspace for sending OTEL traces/logs/metrics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-17_1002.html"/>
+    <summary>Traefik es un proxy inverso y balanciador de carga que permite gestionar routers y middlewares de manera eficiente. En este artículo, se explora cómo configurar y utilizar Traefik para mejorar la seguridad y el rendimiento de las aplicaciones.</summary>
+    <published>2026-07-17T10:02:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-07-17_1002": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo complejos. En este artículo, se presentan las mejores prácticas y configuraciones para self-hosting y uso de n8n.",
+    "content": "\nn8n es una herramienta de automatización de flujos de trabajo que se ejecuta en un entorno de self-hosting, lo que significa que los usuarios tienen control total sobre la configuración y el funcionamiento de la herramienta. Para self-hosting n8n, se puede utilizar un contenedor Docker y ejecutar el comando `docker run -d -p 5678:5678 n8n/n8n`. \n\nUna vez que se tiene n8n en ejecución, se pueden crear flujos de trabajo utilizando nodos y configuraciones específicas. Por ejemplo, se puede crear un flujo de trabajo que utilice el nodo `Microsoft Dataverse` para leer y escribir datos en una base de datos de Microsoft Dataverse. Para hacer esto, se debe configurar el nodo con la URL de la base de datos y las credenciales de autenticación, utilizando comandos como `n8n nodos microsoft-dataverse --url https://example.dataverse.com --username usuario --password contraseña`.\n\nEs importante mencionar que n8n tiene una comunidad activa que crea y comparte nodos y configuraciones para diferentes casos de uso. Por ejemplo, se puede utilizar el nodo `CLI-Anything` para ejecutar comandos de línea de comandos en un flujo de trabajo. Para hacer esto, se debe configurar el nodo con el comando que se desea ejecutar, utilizando comandos como `n8n nodos cli-anything --command ls -l`.\n\nEn cuanto a las mejores prácticas para self-hosting n8n, es importante mencionar que se debe utilizar una versión estable de la herramienta y configurar la seguridad y la autenticación adecuadamente. Se debe utilizar un archivo de configuración como `n8n.config.json` para almacenar las configuraciones y credenciales de la herramienta, y se debe utilizar un sistema de gestión de versiones como Git para controlar los cambios en la configuración.\n\nFinalmente, es importante mencionar que n8n es una herramienta muy flexible y personalizable, y se puede utilizar para automatizar una amplia variedad de flujos de trabajo y procesos. Se puede utilizar para integrar diferentes sistemas y herramientas, y se puede utilizar para crear flujos de trabajo complejos que involucren múltiples pasos y condiciones.\n\nEn resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo, y se puede utilizar para self-hosting y configuraciones personalizadas. Se debe utilizar una versión estable de la herramienta, configurar la seguridad y la autenticación adecuadamente, y utilizar un sistema de gestión de versiones para controlar los cambios en la configuración.\n\nPara más información sobre n8n y sus configuraciones, se puede consultar la documentación oficial de la herramienta y las fuentes citadas en este artículo.\n\n  ",
+    "sources": [
+      {
+        "title": "Release: Schedule Patch Release PRs",
+        "url": "https://github.com/n8n-io/n8n/actions/runs/28160035736"
+      },
+      {
+        "title": "Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026",
+        "url": "https://medium.com/n8n-lab/self-hosted-n8n-best-practices-complete-setup-checklist-for-2026-585e240aca00"
+      },
+      {
+        "title": "Microsoft Dataverse node for n8n",
+        "url": "https://github.com/microsoft/n8n-nodes-microsoft-dataverse"
+      }
+    ]
+  },
   "2026-07-13_1117": {
     "slug": "n8n",
     "title": "Seguridad y Mejoras en n8n",

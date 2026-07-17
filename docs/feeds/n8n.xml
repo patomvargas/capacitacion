@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-16T10:15:22.878892+00:00</updated>
+  <updated>2026-07-17T10:03:53.332440+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -590,5 +590,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-13_1117.html"/>
     <summary>n8n es una herramienta de automatización de workflows que requiere una configuración y seguridad adecuadas. En este artículo, se presentan algunas best practices y novedades en la seguridad y las mejoras de n8n.</summary>
     <published>2026-07-13T11:17:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-17_1002.html</id>
+    <title>Automatización con n8n</title>
+    <updated>2026-07-17T10:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;n8n es una herramienta de automatización de flujos de trabajo que se ejecuta en un entorno de self-hosting, lo que significa que los usuarios tienen control total sobre la configuración y el funcionamiento de la herramienta. Para self-hosting n8n, se puede utilizar un contenedor Docker y ejecutar el comando &lt;code&gt;docker run -d -p 5678:5678 n8n/n8n&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez que se tiene n8n en ejecución, se pueden crear flujos de trabajo utilizando nodos y configuraciones específicas. Por ejemplo, se puede crear un flujo de trabajo que utilice el nodo &lt;code&gt;Microsoft Dataverse&lt;/code&gt; para leer y escribir datos en una base de datos de Microsoft Dataverse. Para hacer esto, se debe configurar el nodo con la URL de la base de datos y las credenciales de autenticación, utilizando comandos como &lt;code&gt;n8n nodos microsoft-dataverse --url https://example.dataverse.com --username usuario --password contraseña&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que n8n tiene una comunidad activa que crea y comparte nodos y configuraciones para diferentes casos de uso. Por ejemplo, se puede utilizar el nodo &lt;code&gt;CLI-Anything&lt;/code&gt; para ejecutar comandos de línea de comandos en un flujo de trabajo. Para hacer esto, se debe configurar el nodo con el comando que se desea ejecutar, utilizando comandos como &lt;code&gt;n8n nodos cli-anything --command ls -l&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas para self-hosting n8n, es importante mencionar que se debe utilizar una versión estable de la herramienta y configurar la seguridad y la autenticación adecuadamente. Se debe utilizar un archivo de configuración como &lt;code&gt;n8n.config.json&lt;/code&gt; para almacenar las configuraciones y credenciales de la herramienta, y se debe utilizar un sistema de gestión de versiones como Git para controlar los cambios en la configuración.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que n8n es una herramienta muy flexible y personalizable, y se puede utilizar para automatizar una amplia variedad de flujos de trabajo y procesos. Se puede utilizar para integrar diferentes sistemas y herramientas, y se puede utilizar para crear flujos de trabajo complejos que involucren múltiples pasos y condiciones.&lt;/p&gt;
+&lt;p&gt;En resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo, y se puede utilizar para self-hosting y configuraciones personalizadas. Se debe utilizar una versión estable de la herramienta, configurar la seguridad y la autenticación adecuadamente, y utilizar un sistema de gestión de versiones para controlar los cambios en la configuración.&lt;/p&gt;
+&lt;p&gt;Para más información sobre n8n y sus configuraciones, se puede consultar la documentación oficial de la herramienta y las fuentes citadas en este artículo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n/actions/runs/28160035736"&gt;Release: Schedule Patch Release PRs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/n8n-lab/self-hosted-n8n-best-practices-complete-setup-checklist-for-2026-585e240aca00"&gt;Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/n8n-nodes-microsoft-dataverse"&gt;Microsoft Dataverse node for n8n&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-17_1002.html"/>
+    <summary>n8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear y gestionar flujos de trabajo complejos. En este artículo, se presentan las mejores prácticas y configuraciones para self-hosting y uso de n8n.</summary>
+    <published>2026-07-17T10:02:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,24 @@
 {
+  "2026-07-17_1002": {
+    "slug": "traefik",
+    "title": "Traefik: Routers y Middlewares",
+    "summary": "Traefik es un proxy inverso y balanciador de carga que permite gestionar routers y middlewares de manera eficiente. En este artículo, se explora cómo configurar y utilizar Traefik para mejorar la seguridad y el rendimiento de las aplicaciones.",
+    "content": "Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Para empezar a utilizar Traefik, es necesario instalarlo en el sistema utilizando el comando `docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock traefik`. Una vez instalado, se puede configurar Traefik para que utilice routers y middlewares personalizados.\n\nPara configurar un router en Traefik, se puede utilizar el comando `traefik http routers add --rule 'Host:example.com' --service example-service`. Esto creará un router que redirige las solicitudes a `example.com` al servicio `example-service`. También se pueden agregar middlewares a los routers para mejorar la seguridad y el rendimiento de las aplicaciones. Por ejemplo, se puede agregar un middleware de autenticación utilizando el comando `traefik http middlewares add --basic-auth example-auth`.\n\nTraefik también admite la configuración de proveedores de SSL/TLS, como Let's Encrypt, para mejorar la seguridad de las aplicaciones. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando `traefik tls certificated add --store example-store --dns-challenge example-challenge`. Esto creará un certificado SSL/TLS para el dominio `example.com` utilizando el proveedor de certificados Let's Encrypt.\n\nEn cuanto a la observabilidad, Traefik admite la configuración de registros de acceso y métricas para mejorar la visibilidad de las aplicaciones. Para configurar los registros de acceso en Traefik, se puede utilizar el comando `traefik log access add --format json`. Esto creará un registro de acceso en formato JSON que se puede utilizar para analizar y mejorar el rendimiento de las aplicaciones.\n\nAdemás, Traefik admite la configuración de proveedores de logs y métricas, como Azure Log Analytics, para mejorar la observabilidad de las aplicaciones. Para configurar Azure Log Analytics en Traefik, se puede utilizar el comando `traefik log azure-log-analytics add --workspace-id example-workspace-id --secret example-secret`. Esto creará un proveedor de logs y métricas que envía los registros de acceso y las métricas a Azure Log Analytics.\n\nEn resumen, Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Su configuración y utilización pueden mejorar la seguridad y el rendimiento de las aplicaciones, y su integración con proveedores de SSL/TLS, logs y métricas puede mejorar la observabilidad y la visibilidad de las aplicaciones.\n\nPara más información sobre la configuración y utilización de Traefik, se pueden consultar las fuentes oficiales de Traefik y otros recursos en línea.",
+    "sources": [
+      {
+        "title": "Prepare release v2.4.12",
+        "url": "https://github.com/traefik/traefik/pull/8307"
+      },
+      {
+        "title": "access logs are not sent to stdout unless json format is specified",
+        "url": "https://github.com/traefik/traefik/issues/13411"
+      },
+      {
+        "title": "Add Support to Azure loganalytics workspace for sending OTEL traces/logs/metrics",
+        "url": "https://github.com/traefik/traefik/issues/13391"
+      }
+    ]
+  },
   "2026-07-05_1020": {
     "slug": "traefik",
     "title": "Traefik: Mejoras y Novedades",

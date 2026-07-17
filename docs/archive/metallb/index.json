@@ -1,4 +1,24 @@
 {
+  "2026-07-17_1002": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en Kubernetes",
+    "summary": "MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar el tráfico de red en sus clústeres. En este artículo, se presentan las características y configuraciones de MetalLB, incluyendo el modo L2, BGP y la gestión de pools de IP.",
+    "content": "\nMetalLB es una herramienta de equilibrio de carga para Kubernetes que se ejecuta en el clúster y se encarga de distribuir el tráfico de red entre los pods. Para configurar MetalLB, es necesario crear un objeto de configuración que especifique el modo de operación, la puerta de enlace y la dirección IP del equilibrador de carga. Por ejemplo, para configurar MetalLB en modo L2, se puede utilizar el siguiente comando: `kubectl apply -f metallb-config.yaml`, donde el archivo `metallb-config.yaml` contiene la configuración de MetalLB.\n\nEn cuanto a la gestión de pools de IP, MetalLB permite a los administradores de sistemas configurar pools de IP para asignar direcciones IP a los pods. Para crear un pool de IP, se puede utilizar el comando `kubectl create -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de IP. Por ejemplo: \n```yaml\napiVersion: metallb.io/v1beta1\nkind: IPAddressPool\nmetadata:\n  name: my-ip-pool\nspec:\n  addresses:\n  - 192.168.1.1-192.168.1.10\n```\nPara solucionar problemas comunes en MetalLB, es importante verificar la configuración del equilibrador de carga y la conectividad de red entre los pods. También es recomendable utilizar herramientas de monitoreo y registro para detectar problemas y optimizar el rendimiento del clúster.\n\nEn cuanto a la integración con Kubernetes, MetalLB se integra perfectamente con el clúster y permite a los administradores de sistemas configurar y gestionar el tráfico de red de manera eficiente. Para integrar MetalLB con Kubernetes, es necesario crear un objeto de configuración que especifique la puerta de enlace y la dirección IP del equilibrador de carga.\n\nEn resumen, MetalLB es una herramienta poderosa para configurar y gestionar el tráfico de red en clústeres de Kubernetes. Con su modo L2, BGP y la gestión de pools de IP, MetalLB ofrece una gran flexibilidad y escalabilidad para los administradores de sistemas.\n\nPara más información sobre MetalLB, se pueden consultar las fuentes oficiales y la documentación de Kubernetes. Es importante mencionar que, según la issue #3080 en el repositorio de MetalLB, hay un problema con los podMonitors desde la versión 0.16.0, por lo que es recomendable verificar la configuración y la versión de MetalLB antes de implementarla en un entorno de producción.\n\nAdemás, es importante destacar que la issue #3095 en el repositorio de MetalLB solicita la capacidad de deshabilitar el endpoint de métricas, lo que puede ser útil para mejorar la seguridad y el rendimiento del clúster. \n",
+    "sources": [
+      {
+        "title": "Issue #3080: podMonitors are broken since 0.16.0",
+        "url": "https://github.com/metallb/metallb/issues/3080"
+      },
+      {
+        "title": "Issue #3095: Support disabling metrics endpoint",
+        "url": "https://github.com/metallb/metallb/issues/3095"
+      },
+      {
+        "title": "Kubernetes Blog: Spotlight on WG Device Management",
+        "url": "https://kubernetes.io/blog/2026/06/24/wg-device-management-spotlight-2026/"
+      }
+    ]
+  },
   "2026-07-09_1113": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en K8s",

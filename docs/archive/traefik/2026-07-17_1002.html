@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Traefik: Routers y Middlewares - Traefik</title>
+    <link rel="alternate" type="application/atom+xml" title="Traefik" href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/traefik/">Traefik</a>
+    </div>
+
+    <h1>Traefik: Routers y Middlewares</h1>
+    <div class="meta">2026-07-17 1002 · Traefik</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Para empezar a utilizar Traefik, es necesario instalarlo en el sistema utilizando el comando `docker run -d -p 8080:8080 -v /var/run/docker.sock:/var/run/docker.sock traefik`. Una vez instalado, se puede configurar Traefik para que utilice routers y middlewares personalizados.</p>
+            
+        
+            
+        
+            
+            <p>Para configurar un router en Traefik, se puede utilizar el comando `traefik http routers add --rule 'Host:example.com' --service example-service`. Esto creará un router que redirige las solicitudes a `example.com` al servicio `example-service`. También se pueden agregar middlewares a los routers para mejorar la seguridad y el rendimiento de las aplicaciones. Por ejemplo, se puede agregar un middleware de autenticación utilizando el comando `traefik http middlewares add --basic-auth example-auth`.</p>
+            
+        
+            
+        
+            
+            <p>Traefik también admite la configuración de proveedores de SSL/TLS, como Let's Encrypt, para mejorar la seguridad de las aplicaciones. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando `traefik tls certificated add --store example-store --dns-challenge example-challenge`. Esto creará un certificado SSL/TLS para el dominio `example.com` utilizando el proveedor de certificados Let's Encrypt.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la observabilidad, Traefik admite la configuración de registros de acceso y métricas para mejorar la visibilidad de las aplicaciones. Para configurar los registros de acceso en Traefik, se puede utilizar el comando `traefik log access add --format json`. Esto creará un registro de acceso en formato JSON que se puede utilizar para analizar y mejorar el rendimiento de las aplicaciones.</p>
+            
+        
+            
+        
+            
+            <p>Además, Traefik admite la configuración de proveedores de logs y métricas, como Azure Log Analytics, para mejorar la observabilidad de las aplicaciones. Para configurar Azure Log Analytics en Traefik, se puede utilizar el comando `traefik log azure-log-analytics add --workspace-id example-workspace-id --secret example-secret`. Esto creará un proveedor de logs y métricas que envía los registros de acceso y las métricas a Azure Log Analytics.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Traefik es una herramienta poderosa para gestionar routers y middlewares en aplicaciones web. Su configuración y utilización pueden mejorar la seguridad y el rendimiento de las aplicaciones, y su integración con proveedores de SSL/TLS, logs y métricas puede mejorar la observabilidad y la visibilidad de las aplicaciones.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre la configuración y utilización de Traefik, se pueden consultar las fuentes oficiales de Traefik y otros recursos en línea.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/pull/8307" target="_blank">Prepare release v2.4.12</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/13411" target="_blank">access logs are not sent to stdout unless json format is specified</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/traefik/traefik/issues/13391" target="_blank">Add Support to Azure loganalytics workspace for sending OTEL traces/logs/metrics</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-05_1020.html">&larr; 2026-07-05 1020</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

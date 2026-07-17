@@ -1,4 +1,24 @@
 {
+  "2026-07-17_1002": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Visualización de Datos",
+    "summary": "Superset es una herramienta de visualización de datos de código abierto que permite a los usuarios crear dashboards y gráficos personalizados. En este artículo, se presentan las características y configuraciones de Superset.",
+    "content": "Superset es una herramienta de visualización de datos que se utiliza para crear dashboards y gráficos personalizados. Permite a los usuarios conectarse a diversas fuentes de datos, como bases de datos relacionales y NoSQL, y crear visualizaciones de datos de manera sencilla. Una de las características más destacadas de Superset es su capacidad para crear dashboards personalizados utilizando `SQL Lab` y `Jinja templates`. \n\nPara empezar a utilizar Superset, es necesario instalarlo en un entorno de desarrollo. Esto se puede hacer utilizando `pip install superset`. Una vez instalado, es posible acceder a la interfaz de usuario de Superset mediante `http://localhost:8088`. \n\nEn la versión 6.1.0 de Superset, se han realizado mejoras en la creación de dashboards y gráficos. Sin embargo, algunos usuarios han reportado problemas con la carga de dashboards después de la actualización. Para solucionar este problema, se puede intentar reiniciar el servidor de Superset utilizando `superset run -p 8088`. \n\nAdemás, Superset ofrece una variedad de opciones de configuración para personalizar la visualización de datos. Por ejemplo, es posible utilizar `datasets` para cargar datos de diferentes fuentes y `charts` para crear visualizaciones de datos personalizadas. \n\nEn cuanto a la administración de Superset, es posible utilizar la interfaz de usuario para gestionar los usuarios y los permisos. También es posible utilizar `guest_token` para compartir dashboards con otros usuarios sin necesidad de que tengan una cuenta en Superset. \n\nEn resumen, Superset es una herramienta poderosa para la visualización de datos que ofrece una variedad de características y configuraciones para personalizar la experiencia del usuario.",
+    "sources": [
+      {
+        "title": "Apache Superset Releases Discussions",
+        "url": "https://github.com/apache/superset/discussions/categories/releases"
+      },
+      {
+        "title": "Enable Superset embed Dashboard",
+        "url": "https://github.com/apache/superset/issues/34714"
+      },
+      {
+        "title": "Dashboard page stuck on loading after upgrading superset to 6.1.0",
+        "url": "https://github.com/apache/superset/discussions/41444"
+      }
+    ]
+  },
   "2026-07-13_1117": {
     "slug": "superset",
     "title": "Administración Avanzada de Superset",
