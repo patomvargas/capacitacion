@@ -1,4 +1,24 @@
 {
+  "2026-07-18_0937": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para Workflows avanzados",
+    "summary": "Aprende a utilizar Git de manera efectiva en tus Workflows, incluyendo el uso de hooks, rebase, bisect y worktrees. Descubre las últimas novedades y mejoras en Git 2.55.",
+    "content": "Git es una herramienta fundamental para cualquier desarrollador o equipo de DevOps. En este artículo, exploraremos algunas de las mejores prácticas para utilizar Git de manera efectiva en tus Workflows. Una de las características más poderosas de Git es el uso de `hooks`, que permiten ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un repositorio. Por ejemplo, puedes utilizar el hook `pre-commit` para verificar la calidad del código antes de realizar un commit.\n\nPara mejorar la colaboración y la eficiencia en tus Workflows, es importante utilizar `rebase` y `merge` de manera efectiva. El comando `git rebase` permite reorganizar los commits de una rama para que tengan una historia de commits más lineal y fácil de seguir. Por otro lado, el comando `git merge` permite unir dos ramas y resolver conflictos de manera automática.\n\nOtra herramienta útil en Git es `bisect`, que permite buscar el commit que introdujo un bug o problema en el código. Esto se logra ejecutando el comando `git bisect start` y luego `git bisect bad` para marcar el commit actual como defectuoso. Luego, Git te guiará a través de un proceso de división y conquista para encontrar el commit culpable.\n\nFinalmente, es importante mencionar el uso de `worktrees`, que permite tener múltiples directorios de trabajo para un solo repositorio. Esto es útil para trabajar en diferentes características o ramas de manera simultánea. Puedes crear un nuevo worktree con el comando `git worktree add` y luego cambiar entre ellos con el comando `git worktree list`.\n\nEn resumen, Git ofrece una variedad de herramientas y características para mejorar la colaboración y la eficiencia en tus Workflows. Al utilizar `hooks`, `rebase`, `bisect` y `worktrees` de manera efectiva, puedes simplificar tus procesos de desarrollo y asegurarte de que tu código sea de alta calidad.\n\nLa última versión de Git, 2.55, incluye varias mejoras y novedades, como la capacidad de utilizar `git switch` para cambiar entre ramas y el soporte mejorado para `git worktree`. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Git.",
+    "sources": [
+      {
+        "title": "The latest on Git updates - The GitHub Blog",
+        "url": "https://github.blog/open-source/git/"
+      },
+      {
+        "title": "Highlights from Git 2.55 - The GitHub Blog",
+        "url": "https://github.blog/open-source/git/highlights-from-git-2-55/"
+      },
+      {
+        "title": "Your OpenAPI Spec Belongs in Git",
+        "url": "https://rowanblackwoon.medium.com/your-openapi-spec-belongs-in-git-1a472ac7b6f3"
+      }
+    ]
+  },
   "2026-07-14_1002": {
     "slug": "git",
     "title": "Git Avanzado: Workflows y Mejores Prácticas",

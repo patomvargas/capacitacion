@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-17T10:03:53.348079+00:00</updated>
+  <updated>2026-07-18T09:39:01.754408+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -553,5 +553,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-14_1002.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo utilizar herramientas como EXPLAIN ANALYZE para mejorar el rendimiento de tus consultas.</summary>
     <published>2026-07-14T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-18_0937.html</id>
+    <title>Mejoras en PostgreSQL 19 Beta 2</title>
+    <updated>2026-07-18T09:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión beta 2 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. Esta versión incluye varias mejoras y nuevas características, como la mejora en la escalabilidad y el rendimiento, lo que la convierte en una opción atractiva para aquellos que buscan un sistema de gestión de bases de datos de alta calidad.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de PostgreSQL 19 es la mejora en la escalabilidad, lo que permite a los administradores de bases de datos gestionar grandes cantidades de datos de manera más eficiente. Para aprovechar al máximo esta característica, se pueden utilizar comandos como &lt;code&gt;ALTER TABLE&lt;/code&gt; para ajustar la configuración de la tabla y mejorar el rendimiento.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de PostgreSQL 19 es la mejora en la replicación, lo que permite a los administradores de bases de datos crear copias exactas de la base de datos en diferentes servidores. Para configurar la replicación, se pueden utilizar comandos como &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_ctl&lt;/code&gt; para crear una copia de la base de datos y configurar el servidor de replicación.&lt;/p&gt;
+&lt;p&gt;Además, PostgreSQL 19 incluye varias mejoras en la seguridad, como la autenticación basada en SSL/TLS y la autorización basada en roles. Para configurar la autenticación y la autorización, se pueden utilizar comandos como &lt;code&gt;CREATE ROLE&lt;/code&gt; y &lt;code&gt;GRANT&lt;/code&gt; para crear roles y asignar permisos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración, se pueden utilizar comandos como &lt;code&gt;SHOW&lt;/code&gt; para visualizar la configuración actual de la base de datos y &lt;code&gt;SET&lt;/code&gt; para ajustar la configuración. Por ejemplo, se puede utilizar el comando &lt;code&gt;SHOW shared_buffers&lt;/code&gt; para visualizar el tamaño de los búferes compartidos y ajustar la configuración según sea necesario.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión beta 2 de PostgreSQL 19 es una oportunidad para que la comunidad pruebe y proporcione retroalimentación antes de la disponibilidad general. Con sus mejoras en la escalabilidad, la replicación y la seguridad, esta versión es una opción atractiva para aquellos que buscan un sistema de gestión de bases de datos de alta calidad.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"&gt;PostgreSQL 19 Beta 2 Released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/?__locale=en"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.bing.com/aclick?ld=e8WUwAlkkicgb_QveibF5XczVUCUxWq8lg6yVwmiREcnchU-tyUPtg1MLKlH8dmCDxInVQIYyfT5XjMWAH5AslG15EgyVx6dLRmsPUUlARamypQGVLTY9vFyMxIbNnTKkiAEOc69nkHnNd6ieWioxLuTXDj1N-_CsgUpO_UQYkpLa0IXQmzEuojBVP6GWyQYSR4wKuzn6TNGp0sJMbB9BHuRhb8Vw&amp;u=aHR0cHMlM2ElMmYlMmZ3d3cuZGF0YWJyaWNrcy5jb20lMmZyZXNvdXJjZXMlMmZlYm9vayUyZmxha2ViYXNlLWZvci1kdW1taWVzJTNmc2NpZCUzZDcwMThZMDAwMDAxRmkwTlFBUyUyNnV0bV9tZWRpdW0lM2RwYWlkJTJic2VhcmNoJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fY2FtcGFpZ24lM2Q2ODg5Nzc2MzQlMjZ1dG1fYWRncm91cCUzZDEzMjcxMTMzMjgzMzk0MzclMjZ1dG1fY29udGVudCUzZGVib29rJTI2dXRtX29mZmVyJTNkbGFrZWJhc2UtZm9yLWR1bW1pZXMlMjZ1dG1fYWQlM2QlMjZ1dG1fdGVybSUzZHBvc3RncmVzJTI2bXNjbGtpZCUzZDAxOWExZWFiNTZkYTFjZjJhNWQyNzRmMDFmYjkzMGQ5"&gt;PostgreSQL Scale to Zero - Postgres Autoscaling&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-18_0937.html"/>
+    <summary>La versión beta 2 de PostgreSQL 19 ha sido lanzada, incluyendo mejoras en la escalabilidad y el rendimiento. Esta versión es una oportunidad para que la comunidad pruebe y proporcione retroalimentación antes de la disponibilidad general.</summary>
+    <published>2026-07-18T09:37:00+00:00</published>
   </entry>
 </feed>

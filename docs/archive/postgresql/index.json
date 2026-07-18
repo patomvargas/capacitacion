@@ -1,4 +1,24 @@
 {
+  "2026-07-18_0937": {
+    "slug": "postgresql",
+    "title": "Mejoras en PostgreSQL 19 Beta 2",
+    "summary": "La versión beta 2 de PostgreSQL 19 ha sido lanzada, incluyendo mejoras en la escalabilidad y el rendimiento. Esta versión es una oportunidad para que la comunidad pruebe y proporcione retroalimentación antes de la disponibilidad general.",
+    "content": "La versión beta 2 de PostgreSQL 19 ha sido lanzada recientemente, lo que supone un importante paso hacia la disponibilidad general de esta versión. Esta versión incluye varias mejoras y nuevas características, como la mejora en la escalabilidad y el rendimiento, lo que la convierte en una opción atractiva para aquellos que buscan un sistema de gestión de bases de datos de alta calidad.\n\nUna de las características más destacadas de PostgreSQL 19 es la mejora en la escalabilidad, lo que permite a los administradores de bases de datos gestionar grandes cantidades de datos de manera más eficiente. Para aprovechar al máximo esta característica, se pueden utilizar comandos como `ALTER TABLE` para ajustar la configuración de la tabla y mejorar el rendimiento.\n\nOtra característica importante de PostgreSQL 19 es la mejora en la replicación, lo que permite a los administradores de bases de datos crear copias exactas de la base de datos en diferentes servidores. Para configurar la replicación, se pueden utilizar comandos como `pg_basebackup` y `pg_ctl` para crear una copia de la base de datos y configurar el servidor de replicación.\n\nAdemás, PostgreSQL 19 incluye varias mejoras en la seguridad, como la autenticación basada en SSL/TLS y la autorización basada en roles. Para configurar la autenticación y la autorización, se pueden utilizar comandos como `CREATE ROLE` y `GRANT` para crear roles y asignar permisos.\n\nEn cuanto a la configuración, se pueden utilizar comandos como `SHOW` para visualizar la configuración actual de la base de datos y `SET` para ajustar la configuración. Por ejemplo, se puede utilizar el comando `SHOW shared_buffers` para visualizar el tamaño de los búferes compartidos y ajustar la configuración según sea necesario.\n\nEn resumen, la versión beta 2 de PostgreSQL 19 es una oportunidad para que la comunidad pruebe y proporcione retroalimentación antes de la disponibilidad general. Con sus mejoras en la escalabilidad, la replicación y la seguridad, esta versión es una opción atractiva para aquellos que buscan un sistema de gestión de bases de datos de alta calidad.",
+    "sources": [
+      {
+        "title": "PostgreSQL 19 Beta 2 Released",
+        "url": "https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/?__locale=en"
+      },
+      {
+        "title": "PostgreSQL Scale to Zero - Postgres Autoscaling",
+        "url": "https://www.bing.com/aclick?ld=e8WUwAlkkicgb_QveibF5XczVUCUxWq8lg6yVwmiREcnchU-tyUPtg1MLKlH8dmCDxInVQIYyfT5XjMWAH5AslG15EgyVx6dLRmsPUUlARamypQGVLTY9vFyMxIbNnTKkiAEOc69nkHnNd6ieWioxLuTXDj1N-_CsgUpO_UQYkpLa0IXQmzEuojBVP6GWyQYSR4wKuzn6TNGp0sJMbB9BHuRhb8Vw&u=aHR0cHMlM2ElMmYlMmZ3d3cuZGF0YWJyaWNrcy5jb20lMmZyZXNvdXJjZXMlMmZlYm9vayUyZmxha2ViYXNlLWZvci1kdW1taWVzJTNmc2NpZCUzZDcwMThZMDAwMDAxRmkwTlFBUyUyNnV0bV9tZWRpdW0lM2RwYWlkJTJic2VhcmNoJTI2dXRtX3NvdXJjZSUzZGJpbmclMjZ1dG1fY2FtcGFpZ24lM2Q2ODg5Nzc2MzQlMjZ1dG1fYWRncm91cCUzZDEzMjcxMTMzMjgzMzk0MzclMjZ1dG1fY29udGVudCUzZGVib29rJTI2dXRtX29mZmVyJTNkbGFrZWJhc2UtZm9yLWR1bW1pZXMlMjZ1dG1fYWQlM2QlMjZ1dG1fdGVybSUzZHBvc3RncmVzJTI2bXNjbGtpZCUzZDAxOWExZWFiNTZkYTFjZjJhNWQyNzRmMDFmYjkzMGQ5"
+      }
+    ]
+  },
   "2026-07-14_1002": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

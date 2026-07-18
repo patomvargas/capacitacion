@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-17T10:03:53.353564+00:00</updated>
+  <updated>2026-07-18T09:39:01.762691+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -530,5 +530,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-14_1002.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-07-14T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-18_0937.html</id>
+    <title>Mejores prácticas de Git para Workflows avanzados</title>
+    <updated>2026-07-18T09:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para cualquier desarrollador o equipo de DevOps. En este artículo, exploraremos algunas de las mejores prácticas para utilizar Git de manera efectiva en tus Workflows. Una de las características más poderosas de Git es el uso de &lt;code&gt;hooks&lt;/code&gt;, que permiten ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un repositorio. Por ejemplo, puedes utilizar el hook &lt;code&gt;pre-commit&lt;/code&gt; para verificar la calidad del código antes de realizar un commit.&lt;/p&gt;
+&lt;p&gt;Para mejorar la colaboración y la eficiencia en tus Workflows, es importante utilizar &lt;code&gt;rebase&lt;/code&gt; y &lt;code&gt;merge&lt;/code&gt; de manera efectiva. El comando &lt;code&gt;git rebase&lt;/code&gt; permite reorganizar los commits de una rama para que tengan una historia de commits más lineal y fácil de seguir. Por otro lado, el comando &lt;code&gt;git merge&lt;/code&gt; permite unir dos ramas y resolver conflictos de manera automática.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil en Git es &lt;code&gt;bisect&lt;/code&gt;, que permite buscar el commit que introdujo un bug o problema en el código. Esto se logra ejecutando el comando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; para marcar el commit actual como defectuoso. Luego, Git te guiará a través de un proceso de división y conquista para encontrar el commit culpable.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar el uso de &lt;code&gt;worktrees&lt;/code&gt;, que permite tener múltiples directorios de trabajo para un solo repositorio. Esto es útil para trabajar en diferentes características o ramas de manera simultánea. Puedes crear un nuevo worktree con el comando &lt;code&gt;git worktree add&lt;/code&gt; y luego cambiar entre ellos con el comando &lt;code&gt;git worktree list&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Git ofrece una variedad de herramientas y características para mejorar la colaboración y la eficiencia en tus Workflows. Al utilizar &lt;code&gt;hooks&lt;/code&gt;, &lt;code&gt;rebase&lt;/code&gt;, &lt;code&gt;bisect&lt;/code&gt; y &lt;code&gt;worktrees&lt;/code&gt; de manera efectiva, puedes simplificar tus procesos de desarrollo y asegurarte de que tu código sea de alta calidad.&lt;/p&gt;
+&lt;p&gt;La última versión de Git, 2.55, incluye varias mejoras y novedades, como la capacidad de utilizar &lt;code&gt;git switch&lt;/code&gt; para cambiar entre ramas y el soporte mejorado para &lt;code&gt;git worktree&lt;/code&gt;. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Git.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/open-source/git/"&gt;The latest on Git updates - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/open-source/git/highlights-from-git-2-55/"&gt;Highlights from Git 2.55 - The GitHub Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://rowanblackwoon.medium.com/your-openapi-spec-belongs-in-git-1a472ac7b6f3"&gt;Your OpenAPI Spec Belongs in Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-18_0937.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva en tus Workflows, incluyendo el uso de hooks, rebase, bisect y worktrees. Descubre las últimas novedades y mejoras en Git 2.55.</summary>
+    <published>2026-07-18T09:37:00+00:00</published>
   </entry>
 </feed>

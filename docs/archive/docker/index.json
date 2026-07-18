@@ -1,4 +1,24 @@
 {
+  "2026-07-18_0937": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Novedades",
+    "summary": "Docker ha introducido cambios significativos en su plataforma, incluyendo la jubilación de Docker Content Trust y mejoras en la seguridad y el rendimiento. Estos cambios afectan la forma en que los desarrolladores y administradores de sistemas utilizan Docker.",
+    "content": "\nDocker ha anunciado la jubilación de Docker Content Trust (DCT) y el servicio Notary v1, lo que obliga a los usuarios a migrar a alternativas modernas. Esto se debe a que DCT y Notary v1 ya no son compatibles con las últimas versiones de Docker. Para migrar, los usuarios pueden utilizar `docker trust` para gestionar las políticas de confianza de sus imágenes.\n\nOtra novedad importante es la introducción de cambios en la forma en que Docker maneja los contenedores en entornos sin raíz (rootless). En versiones anteriores, Docker utilizaba el demonio `containerd` para gestionar los contenedores, pero en la versión 29, Docker ha cambiado a utilizar el almacenamiento de imágenes de `containerd` por defecto, lo que puede causar errores al montar sistemas de archivos superpuestos en entornos sin raíz. Para solucionar este problema, los usuarios pueden utilizar el comando `docker run` con la opción `--privileged` para ejecutar contenedores con privilegios de raíz.\n\nEn cuanto a la seguridad, Docker ha mejorado la forma en que se gestionan las políticas de acceso a los contenedores. La herramienta `sbx` permite a los usuarios definir políticas de acceso a los contenedores de manera más segura y flexible. Por ejemplo, los usuarios pueden utilizar el comando `sbx policy ls` para listar las políticas de acceso definidas y `sbx policy inspect` para inspeccionar las políticas de acceso de un contenedor en particular.\n\nAdemás, Docker ha mejorado la forma en que se gestionan las redes de contenedores. La herramienta `docker network` permite a los usuarios crear y gestionar redes de contenedores de manera más sencilla y segura. Por ejemplo, los usuarios pueden utilizar el comando `docker network create` para crear una red de contenedores y `docker network connect` para conectar un contenedor a una red existente.\n\nEn resumen, Docker ha introducido cambios significativos en su plataforma para mejorar la seguridad, el rendimiento y la flexibilidad de los contenedores. Los usuarios deben migrar a las últimas versiones de Docker y utilizar las herramientas y comandos adecuados para gestionar sus contenedores de manera segura y eficiente.\n\nFinalmente, es importante mencionar que la comunidad de Docker ha estado trabajando en mejorar la documentación y los recursos disponibles para los usuarios. Los usuarios pueden encontrar información adicional sobre las últimas novedades y mejoras en la plataforma de Docker en el sitio web oficial de Docker y en la comunidad de Docker en línea.",
+    "sources": [
+      {
+        "title": "Docker Content Trust: Retirement and Migration Guidance",
+        "url": "https://www.docker.com/blog/category/products/"
+      },
+      {
+        "title": "Docker 29 dind-rootless fails to start containers on Linux",
+        "url": "https://github.com/moby/moby/issues/53029"
+      },
+      {
+        "title": "Docker Sandboxes release notes",
+        "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+      }
+    ]
+  },
   "2026-07-14_1002": {
     "slug": "docker",
     "title": "Mejores prácticas de Docker para DevOps",

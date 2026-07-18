@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-17T10:03:53.358503+00:00</updated>
+  <updated>2026-07-18T09:39:01.769553+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -653,5 +653,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-14_1002.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar y gestionar configuraciones de manera eficiente. La versión 2.7 de la plataforma de automatización de Ansible introduce nuevas capacidades para mejorar la eficiencia y reducir la fricción en la automatización.</summary>
     <published>2026-07-14T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html</id>
+    <title>Ansible: Mejoras y Novedades</title>
+    <updated>2026-07-18T09:37:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y DevOps engineers automatizar tareas repetitivas y complejas. En los últimos meses, se han lanzado varias actualizaciones y mejoras en Ansible, incluyendo la versión &lt;code&gt;ansible-creator v26.6.1&lt;/code&gt; y &lt;code&gt;ansible-dev-environment v26.6.0&lt;/code&gt;. Estas actualizaciones incluyen mejoras en la seguridad, el rendimiento y la usabilidad.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más interesantes es la mejora en la gestión de &lt;code&gt;playbooks&lt;/code&gt;, que ahora permiten una mayor flexibilidad y personalización. Los &lt;code&gt;playbooks&lt;/code&gt; son archivos que contienen una serie de tareas que se ejecutan en un orden específico, y pueden ser utilizados para automatizar tareas como la configuración de servidores, la implementación de aplicaciones y la gestión de redes. Para crear un &lt;code&gt;playbook&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;ansible-playbook -i &lt;inventory&gt; &lt;playbook&gt;&lt;/code&gt;, donde &lt;code&gt;&lt;inventory&gt;&lt;/code&gt; es el archivo de inventario que contiene la lista de hosts y &lt;code&gt;&lt;playbook&gt;&lt;/code&gt; es el archivo de &lt;code&gt;playbook&lt;/code&gt; que se va a ejecutar.&lt;/p&gt;
+&lt;p&gt;Otra mejora notable es la introducción de &lt;code&gt;collections&lt;/code&gt;, que permiten a los usuarios crear y compartir módulos y &lt;code&gt;playbooks&lt;/code&gt; personalizados. Las &lt;code&gt;collections&lt;/code&gt; son paquetes de módulos y &lt;code&gt;playbooks&lt;/code&gt; que se pueden instalar y utilizar en cualquier proyecto de Ansible. Para instalar una &lt;code&gt;collection&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;ansible-galaxy collection install &lt;collection&gt;&lt;/code&gt;, donde &lt;code&gt;&lt;collection&gt;&lt;/code&gt; es el nombre de la &lt;code&gt;collection&lt;/code&gt; que se va a instalar.&lt;/p&gt;
+&lt;p&gt;Además, se han mejorado las funcionalidades de &lt;code&gt;vault&lt;/code&gt;, que permiten a los usuarios cifrar y proteger datos sensibles como contraseñas y claves de acceso. El &lt;code&gt;vault&lt;/code&gt; es un sistema de cifrado que utiliza una clave maestra para cifrar y descifrar los datos. Para crear un &lt;code&gt;vault&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;ansible-vault create &lt;vault&gt;&lt;/code&gt;, donde &lt;code&gt;&lt;vault&gt;&lt;/code&gt; es el nombre del &lt;code&gt;vault&lt;/code&gt; que se va a crear.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejoras y novedades en Ansible ofrecen una mayor flexibilidad, personalización y seguridad para los administradores de sistemas y DevOps engineers. Con estas actualizaciones, es posible automatizar tareas complejas y mejorar la eficiencia y el rendimiento de los sistemas.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Ansible, que ofrecen documentación detallada y ejemplos prácticos de cómo utilizar estas herramientas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/c/news/releases/18/l/top?page=5"&gt;Ecosystem Releases - Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-creator-v26-6-1/46003"&gt;Release Announcement: ansible-creator v26.6.1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las mejoras y novedades más recientes en Ansible, incluyendo actualizaciones en playbooks, roles, collections y vault.</summary>
+    <published>2026-07-18T09:37:00+00:00</published>
   </entry>
 </feed>
