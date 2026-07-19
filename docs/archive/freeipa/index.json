@@ -1,4 +1,24 @@
 {
+  "2026-07-19_0955": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Acceso",
+    "summary": "FreeIPA es una solución de gestión de identidad y acceso para entornos Linux/Unix que combina LDAP, Kerberos y una autoridad de certificación. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "\nFreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores gestionar de manera centralizada los accesos y permisos de los usuarios en un entorno Linux/Unix. Una de las características clave de FreeIPA es su capacidad para combinar un directorio LDAP con un centro de distribución de claves Kerberos, lo que permite una autenticación y autorización seguras.\n\nPara configurar FreeIPA, es necesario ejecutar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración. Una vez instalado, se puede acceder a la interfaz web de FreeIPA mediante el comando `ipa ui` y configurar los diferentes componentes, como la autenticación y la autorización. Por ejemplo, se puede configurar la autenticación Kerberos mediante el comando `ipa kerberos config`.\n\nOtra característica importante de FreeIPA es su capacidad para gestionar claves SSH. Se puede configurar FreeIPA para que actúe como un almacén de claves SSH, lo que permite a los usuarios acceder a los servidores sin necesidad de introducir contraseñas. Para configurar esto, se puede ejecutar el comando `ipa sshconfig` y seguir las instrucciones del asistente de configuración.\n\nEn cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger los accesos y permisos de los usuarios. Por ejemplo, se puede configurar la autenticación de dos factores mediante el comando `ipa 2fa config`. También se puede configurar la política de contraseñas y la expiración de las cuentas de usuario mediante el comando `ipa passwordpolicy config`.\n\nFinalmente, es importante mencionar que FreeIPA es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. Por ejemplo, se puede consultar el registro de cambios de FreeIPA en el sitio web oficial de GitHub.\n\n",
+    "sources": [
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa"
+      },
+      {
+        "title": "FreeIPA Documentation",
+        "url": "https://www.freeipa.org/page/Documentation"
+      },
+      {
+        "title": "FreeIPA Wiki",
+        "url": "https://www.freeipa.org/wiki"
+      }
+    ]
+  },
   "2026-07-15_1007": {
     "slug": "freeipa",
     "title": "Administración de Identidad con FreeIPA",

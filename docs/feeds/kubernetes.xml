@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-18T09:39:01.722194+00:00</updated>
+  <updated>2026-07-19T09:56:23.350276+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -641,5 +641,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-15_1007.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más recientes en la plataforma.</summary>
     <published>2026-07-15T10:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-19_0955.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-07-19T09:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que se utiliza ampliamente en la industria para desplegar y gestionar aplicaciones en contenedores. En los últimos años, Kubernetes ha seguido evolucionando con nuevas características y mejoras. Una de las novedades más recientes es la versión 1.37, que incluye mejoras en la seguridad y el almacenamiento.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en cualquier sistema de orquestación de contenedores. En Kubernetes, la seguridad se puede mejorar utilizando herramientas como &lt;code&gt;etcd&lt;/code&gt; y &lt;code&gt;RBAC&lt;/code&gt; (Role-Based Access Control). &lt;code&gt;Etcd&lt;/code&gt; es un almacén de datos distribuido que se utiliza para almacenar la configuración y el estado de los clústeres de Kubernetes. &lt;code&gt;RBAC&lt;/code&gt; es un sistema de control de acceso que permite definir permisos y roles para los usuarios y los servicios en el clúster.&lt;/p&gt;
+&lt;p&gt;Otra novedad en Kubernetes es la mejora en el almacenamiento. Kubernetes proporciona varios tipos de almacenamiento, como &lt;code&gt;Persistent Volumes&lt;/code&gt; (PV) y &lt;code&gt;StatefulSets&lt;/code&gt;. Los &lt;code&gt;PV&lt;/code&gt; son volúmenes de almacenamiento que se pueden utilizar por los pods en el clúster. Los &lt;code&gt;StatefulSets&lt;/code&gt; son un tipo de conjunto de réplicas que se utiliza para desplegar aplicaciones que requieren un estado persistente. Para crear un &lt;code&gt;PV&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl create -f &lt;archivo_de_configuracion&gt;.yaml&lt;/code&gt;, donde &lt;code&gt;&lt;archivo_de_configuracion&gt;.yaml&lt;/code&gt; es el archivo de configuración que define el &lt;code&gt;PV&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de clústeres, Kubernetes proporciona varias herramientas y características para simplificar la tarea. Una de ellas es &lt;code&gt;Amazon EKS Anywhere&lt;/code&gt;, que permite crear y operar clústeres de Kubernetes en infraestructuras propias. Otra herramienta es &lt;code&gt;Headlamp&lt;/code&gt;, que es un proyecto de la comunidad de Kubernetes que proporciona una interfaz de usuario para explorar, gestionar y depurar recursos de clústeres.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras. La seguridad y el almacenamiento son aspectos fundamentales en cualquier sistema de orquestación de contenedores, y Kubernetes proporciona varias herramientas y características para mejorar la seguridad y el almacenamiento en los clústeres. Además, la gestión de clústeres se puede simplificar utilizando herramientas como &lt;code&gt;Amazon EKS Anywhere&lt;/code&gt; y &lt;code&gt;Headlamp&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para más información sobre las novedades en Kubernetes, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas en este artículo.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/discussions/3051"&gt;Kubernetes 1.37 Release Highlights Discussion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/"&gt;Kubernetes Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/"&gt;Introducing the Cluster API plugin for Headlamp&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/devops-ai-decoded/top-10-open-source-security-tools-for-kubernetes-in-2026-374483249168"&gt;Top 10 Open Source Security Tools for Kubernetes in 2026&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-19_0955.html"/>
+    <summary>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan algunas de las novedades más recientes en Kubernetes, incluyendo mejoras en la seguridad y el almacenamiento.</summary>
+    <published>2026-07-19T09:55:00+00:00</published>
   </entry>
 </feed>

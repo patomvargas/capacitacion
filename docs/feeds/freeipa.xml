@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-18T09:39:01.713793+00:00</updated>
+  <updated>2026-07-19T09:56:23.337615+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -609,5 +609,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-15_1007.html"/>
     <summary>FreeIPA es una solución de administración de identidad que combina LDAP, Kerberos y otros protocolos para proporcionar una plataforma de autenticación y autorización centralizada. En este artículo, se explora cómo configurar y utilizar FreeIPA para administrar identidades en un entorno de red.</summary>
     <published>2026-07-15T10:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-19_0955.html</id>
+    <title>FreeIPA: Gestión de Identidad y Acceso</title>
+    <updated>2026-07-19T09:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores gestionar de manera centralizada los accesos y permisos de los usuarios en un entorno Linux/Unix. Una de las características clave de FreeIPA es su capacidad para combinar un directorio LDAP con un centro de distribución de claves Kerberos, lo que permite una autenticación y autorización seguras.&lt;/p&gt;
+&lt;p&gt;Para configurar FreeIPA, es necesario ejecutar el comando &lt;code&gt;ipa-server-install&lt;/code&gt; y seguir las instrucciones del asistente de configuración. Una vez instalado, se puede acceder a la interfaz web de FreeIPA mediante el comando &lt;code&gt;ipa ui&lt;/code&gt; y configurar los diferentes componentes, como la autenticación y la autorización. Por ejemplo, se puede configurar la autenticación Kerberos mediante el comando &lt;code&gt;ipa kerberos config&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de FreeIPA es su capacidad para gestionar claves SSH. Se puede configurar FreeIPA para que actúe como un almacén de claves SSH, lo que permite a los usuarios acceder a los servidores sin necesidad de introducir contraseñas. Para configurar esto, se puede ejecutar el comando &lt;code&gt;ipa sshconfig&lt;/code&gt; y seguir las instrucciones del asistente de configuración.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger los accesos y permisos de los usuarios. Por ejemplo, se puede configurar la autenticación de dos factores mediante el comando &lt;code&gt;ipa 2fa config&lt;/code&gt;. También se puede configurar la política de contraseñas y la expiración de las cuentas de usuario mediante el comando &lt;code&gt;ipa passwordpolicy config&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que FreeIPA es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. Por ejemplo, se puede consultar el registro de cambios de FreeIPA en el sitio web oficial de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa"&gt;FreeIPA GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/page/Documentation"&gt;FreeIPA Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.freeipa.org/wiki"&gt;FreeIPA Wiki&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-19_0955.html"/>
+    <summary>FreeIPA es una solución de gestión de identidad y acceso para entornos Linux/Unix que combina LDAP, Kerberos y una autoridad de certificación. En este artículo, se presentan las características y configuraciones clave de FreeIPA.</summary>
+    <published>2026-07-19T09:55:00+00:00</published>
   </entry>
 </feed>

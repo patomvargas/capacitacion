@@ -1,4 +1,20 @@
 {
+  "2026-07-19_0955": {
+    "slug": "bind9",
+    "title": "BIND9: Configuración y Mejoras",
+    "summary": "BIND9 es un servidor DNS de código abierto ampliamente utilizado. En este artículo, se cubren aspectos clave de su configuración y mejores prácticas para asegurar un rendimiento óptimo y seguridad.",
+    "content": "La configuración de zonas en BIND9 es fundamental para su funcionamiento. Se puede realizar mediante el archivo `named.conf`, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para configurar una zona primaria, se puede utilizar la directiva `zone` con el tipo `master`. \n  Además, es importante mencionar la seguridad del DNS, para lo cual se puede implementar DNSSEC. Esto se logra mediante la generación de claves y la configuración de los parámetros de seguridad en el archivo `named.conf`. \n  Otra característica útil de BIND9 es la capacidad de utilizar vistas (views), que permiten servir diferentes respuestas DNS basadas en la dirección IP del cliente. Esto se puede configurar utilizando la directiva `view` en el archivo `named.conf`.\n  La protección contra ataques de malware y spam también es crucial, y se puede lograr mediante la implementación de RPZ (Response Policy Zones). Esto implica configurar una zona que contenga registros que indiquen qué respuestas DNS deben ser bloqueadas o rechazadas.\n  En cuanto al rendimiento, es importante realizar un ajuste fino de la configuración de BIND9 para asegurar un funcionamiento óptimo. Esto puede incluir la configuración de parámetros como el tamaño del caché y el número de hilos de procesamiento.\n  Finalmente, para monitorear el rendimiento y la seguridad de BIND9, se pueden utilizar herramientas de registro y monitoreo. Por ejemplo, se puede utilizar el comando `rndc stats` para obtener estadísticas sobre el rendimiento del servidor.",
+    "sources": [
+      {
+        "title": "2026-03-13-calico-l2-fabric-validate-lab",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-calico-l2-fabric-validate-lab"
+      },
+      {
+        "title": "2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa"
+      }
+    ]
+  },
   "2026-07-15_1007": {
     "slug": "bind9",
     "title": "Configuración Avanzada de BIND9",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-18T09:39:01.716835+00:00</updated>
+  <updated>2026-07-19T09:56:23.341843+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -383,5 +383,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-15_1007.html"/>
     <summary>En este artículo, se explora la configuración avanzada de BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y ajustes de rendimiento. Se proporcionan ejemplos prácticos y comandos para implementar estas configuraciones.</summary>
     <published>2026-07-15T10:07:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-19_0955.html</id>
+    <title>BIND9: Configuración y Mejoras</title>
+    <updated>2026-07-19T09:55:00+00:00</updated>
+    <content type="html">&lt;p&gt;La configuración de zonas en BIND9 es fundamental para su funcionamiento. Se puede realizar mediante el archivo &lt;code&gt;named.conf&lt;/code&gt;, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para configurar una zona primaria, se puede utilizar la directiva &lt;code&gt;zone&lt;/code&gt; con el tipo &lt;code&gt;master&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, es importante mencionar la seguridad del DNS, para lo cual se puede implementar DNSSEC. Esto se logra mediante la generación de claves y la configuración de los parámetros de seguridad en el archivo &lt;code&gt;named.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica útil de BIND9 es la capacidad de utilizar vistas (views), que permiten servir diferentes respuestas DNS basadas en la dirección IP del cliente. Esto se puede configurar utilizando la directiva &lt;code&gt;view&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La protección contra ataques de malware y spam también es crucial, y se puede lograr mediante la implementación de RPZ (Response Policy Zones). Esto implica configurar una zona que contenga registros que indiquen qué respuestas DNS deben ser bloqueadas o rechazadas.&lt;/p&gt;
+&lt;p&gt;En cuanto al rendimiento, es importante realizar un ajuste fino de la configuración de BIND9 para asegurar un funcionamiento óptimo. Esto puede incluir la configuración de parámetros como el tamaño del caché y el número de hilos de procesamiento.&lt;/p&gt;
+&lt;p&gt;Finalmente, para monitorear el rendimiento y la seguridad de BIND9, se pueden utilizar herramientas de registro y monitoreo. Por ejemplo, se puede utilizar el comando &lt;code&gt;rndc stats&lt;/code&gt; para obtener estadísticas sobre el rendimiento del servidor.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-calico-l2-fabric-validate-lab"&gt;2026-03-13-calico-l2-fabric-validate-lab&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa"&gt;2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-19_0955.html"/>
+    <summary>BIND9 es un servidor DNS de código abierto ampliamente utilizado. En este artículo, se cubren aspectos clave de su configuración y mejores prácticas para asegurar un rendimiento óptimo y seguridad.</summary>
+    <published>2026-07-19T09:55:00+00:00</published>
   </entry>
 </feed>

@@ -1,4 +1,20 @@
 {
+  "2026-07-19_0955": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling de red que permite establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes y dispositivos. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado de servidor.\n\nPara configurar el servidor OpenVPN, se debe crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP y el puerto de escucha. Por ejemplo, el archivo de configuración puede contener las siguientes líneas: `port 1194`, `proto udp`, `dev tun`. También es importante configurar la autenticación de clientes, utilizando comandos como `tls-auth ta.key 0` y `ca ca.crt`.\n\nUna de las mejores prácticas para proteger un servidor OpenVPN es utilizar el protocolo de autenticación TLS. Se puede configurar el servidor para que utilice un certificado de servidor y una clave de autenticación, y también se puede requerir que los clientes proporcionen un certificado de cliente válido. Otro aspecto importante es el hardening del servidor, que implica deshabilitar los servicios innecesarios y configurar el firewall para que solo permita el tráfico necesario.\n\nPara establecer una conexión de sitio a sitio con OpenVPN, se debe configurar un servidor OpenVPN en cada sitio y establecer una conexión entre ellos. Se puede utilizar el comando `openvpn --config cliente.conf` para establecer la conexión desde el lado del cliente. También es importante configurar la ruta de acceso a la red remota, utilizando comandos como `route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.1`.\n\nEn cuanto a la versión 2.7.4 de OpenVPN, se han realizado varias mejoras y correcciones de errores. Es importante consultar la documentación oficial para obtener más información sobre las novedades y cambios en esta versión.\n\nFinalmente, es importante mencionar que OpenVPN es una herramienta muy versátil y configurable, por lo que es importante consultar la documentación oficial y buscar ayuda en línea si se necesitan más detalles sobre su configuración y uso.",
+    "sources": [
+      {
+        "title": "OpenVPN Release 2.7.4",
+        "url": "https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"
+      },
+      {
+        "title": "interactive-service-notes.rst",
+        "url": "https://github.com/OpenVPN/openvpn/blob/master/doc/interactive-service-notes.rst"
+      }
+    ]
+  },
   "2026-07-15_1007": {
     "slug": "openvpn",
     "title": "Configuración y Seguridad de OpenVPN",
