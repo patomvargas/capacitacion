@@ -1,4 +1,24 @@
 {
+  "2026-07-20_1056": {
+    "slug": "claude-code",
+    "title": "Mejoras en Claude Code",
+    "summary": "Claude Code es una herramienta de desarrollo que ofrece funcionalidades avanzadas para mejorar la productividad de los desarrolladores. En este artículo, se presentan las últimas novedades y mejoras en Claude Code, incluyendo la integración con Cloudflare Workers y la creación de plugins personalizados.",
+    "content": "Claude Code es una herramienta de desarrollo que ofrece funcionalidades avanzadas para mejorar la productividad de los desarrolladores. Una de las características más destacadas de Claude Code es la posibilidad de crear plugins personalizados utilizando la API de Claude Code. Por ejemplo, se puede crear un plugin para integrar Claude Code con Cloudflare Workers, lo que permite ejecutar código de manera autónoma y segura en la nube. Para crear un plugin, se puede utilizar el comando `claude-code plugin create` y luego configurar el plugin utilizando el archivo de configuración `config.json`.\n\nLa integración con Cloudflare Workers es una de las últimas novedades en Claude Code. Esto permite a los desarrolladores ejecutar código de manera autónoma y segura en la nube, lo que puede ser especialmente útil para aplicaciones que requieren una gran cantidad de procesamiento de datos. Para integrar Claude Code con Cloudflare Workers, se puede utilizar el comando `claude-code worker create` y luego configurar el worker utilizando el archivo de configuración `worker.json`.\n\nOtra característica importante de Claude Code es la posibilidad de crear flujos de trabajo personalizados utilizando la API de Claude Code. Por ejemplo, se puede crear un flujo de trabajo que automatice la creación de un nuevo proyecto, incluyendo la creación de un nuevo repositorio de Git y la configuración de un nuevo entorno de desarrollo. Para crear un flujo de trabajo, se puede utilizar el comando `claude-code workflow create` y luego configurar el flujo de trabajo utilizando el archivo de configuración `workflow.json`.\n\nEn cuanto a la seguridad, Claude Code ofrece una variedad de características para proteger la integridad de los datos y la privacidad de los usuarios. Por ejemplo, se puede utilizar el comando `claude-code security enable` para habilitar la autenticación de dos factores y el cifrado de datos. Además, se puede utilizar el comando `claude-code security audit` para realizar auditorías de seguridad y detectar posibles vulnerabilidades.\n\nEn resumen, Claude Code es una herramienta de desarrollo avanzada que ofrece una variedad de características para mejorar la productividad de los desarrolladores. La integración con Cloudflare Workers, la creación de plugins personalizados y la seguridad son solo algunas de las características que hacen de Claude Code una herramienta indispensable para cualquier desarrollador.\n\nPara obtener más información sobre Claude Code y sus características, se puede consultar la documentación oficial de Claude Code y las fuentes citadas a continuación.",
+    "sources": [
+      {
+        "title": "anthropics claude-ai-mcp General Discussions",
+        "url": "https://github.com/anthropics/claude-ai-mcp/discussions/categories/general"
+      },
+      {
+        "title": "Claude Code Plugins",
+        "url": "https://github.com/anthropics/claude-code/tree/main/plugins"
+      },
+      {
+        "title": "Cloudflare Workers",
+        "url": "https://blog.cloudflare.com/en-us/tag/workers/"
+      }
+    ]
+  },
   "2026-07-16_1014": {
     "slug": "claude-code",
     "title": "Mejoras en Claude Code",

@@ -1,4 +1,24 @@
 {
+  "2026-07-20_1056": {
+    "slug": "openshift",
+    "title": "OpenShift 4.22: Novedades y Mejoras",
+    "summary": "OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores. Esta versión incluye actualizaciones de seguridad y mejoras en la experiencia del desarrollador.",
+    "content": "\nOpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, basada en Kubernetes 1.35 y CRI-O 1.35. Esta versión incluye varias mejoras y nuevas características, como la integración con Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear y gestionar entornos de desarrollo personalizados.\n\nUna de las novedades más destacadas es la mejora en la experiencia del desarrollador, que incluye la capacidad de crear y gestionar aplicaciones de manera más eficiente. Para aprovechar al máximo estas nuevas características, es importante mantener la plataforma actualizada. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc adm upgrade` en la línea de comandos.\n\nEn cuanto a la seguridad, OpenShift 4.22 incluye varias actualizaciones de seguridad importantes, como la actualización de la imagen de Docker a `sha256:f82534b7dda297c688947f35be54c9abdb62fdac30a6688c9baab6c8eba7a449`. Es importante aplicar estas actualizaciones para garantizar la seguridad de la plataforma. Para aplicar las actualizaciones, se puede utilizar el comando `oc apply` con el archivo de configuración correspondiente.\n\nOtra característica importante es la capacidad de crear y gestionar rutas (routes) de manera más eficiente. Para crear una ruta, se puede utilizar el comando `oc create route` con la opción `--service` para especificar el servicio que se quiere exponer. Por ejemplo: `oc create route edge --service=miservicio --hostname=miservicio.example.com`.\n\nEn cuanto a la autenticación y autorización, OpenShift 4.22 incluye soporte para OAuth, que permite a los desarrolladores autenticar y autorizar a los usuarios de manera más segura. Para configurar OAuth, se puede utilizar el comando `oc create oauthclient` con la opción `--secret` para especificar el secreto del cliente.\n\nFinalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la monitorización y el análisis de logs. Para configurar la monitorización, se puede utilizar el comando `oc create deployment` con la opción `--image` para especificar la imagen del contenedor que se quiere monitorear.\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:29800 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:29800"
+      },
+      {
+        "title": "What's new for developers in Red Hat OpenShift 4.22",
+        "url": "https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"
+      },
+      {
+        "title": "Installing OpenShift 4.19.10 on Bare Metal",
+        "url": "https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810"
+      }
+    ]
+  },
   "2026-07-16_1014": {
     "slug": "openshift",
     "title": "OpenShift 4.22: Nuevas Características y Mejoras",

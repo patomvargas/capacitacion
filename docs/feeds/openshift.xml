@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-19T09:56:23.353572+00:00</updated>
+  <updated>2026-07-20T10:58:09.281337+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -632,5 +632,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-16_1014.html"/>
     <summary>OpenShift 4.22 ofrece nuevas características y mejoras para la gestión de contenedores y la seguridad. En este artículo, se presentan las novedades y se proporcionan ejemplos prácticos para su implementación.</summary>
     <published>2026-07-16T10:14:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-20_1056.html</id>
+    <title>OpenShift 4.22: Novedades y Mejoras</title>
+    <updated>2026-07-20T10:56:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, basada en Kubernetes 1.35 y CRI-O 1.35. Esta versión incluye varias mejoras y nuevas características, como la integración con Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear y gestionar entornos de desarrollo personalizados.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la mejora en la experiencia del desarrollador, que incluye la capacidad de crear y gestionar aplicaciones de manera más eficiente. Para aprovechar al máximo estas nuevas características, es importante mantener la plataforma actualizada. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; en la línea de comandos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, OpenShift 4.22 incluye varias actualizaciones de seguridad importantes, como la actualización de la imagen de Docker a &lt;code&gt;sha256:f82534b7dda297c688947f35be54c9abdb62fdac30a6688c9baab6c8eba7a449&lt;/code&gt;. Es importante aplicar estas actualizaciones para garantizar la seguridad de la plataforma. Para aplicar las actualizaciones, se puede utilizar el comando &lt;code&gt;oc apply&lt;/code&gt; con el archivo de configuración correspondiente.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es la capacidad de crear y gestionar rutas (routes) de manera más eficiente. Para crear una ruta, se puede utilizar el comando &lt;code&gt;oc create route&lt;/code&gt; con la opción &lt;code&gt;--service&lt;/code&gt; para especificar el servicio que se quiere exponer. Por ejemplo: &lt;code&gt;oc create route edge --service=miservicio --hostname=miservicio.example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la autenticación y autorización, OpenShift 4.22 incluye soporte para OAuth, que permite a los desarrolladores autenticar y autorizar a los usuarios de manera más segura. Para configurar OAuth, se puede utilizar el comando &lt;code&gt;oc create oauthclient&lt;/code&gt; con la opción &lt;code&gt;--secret&lt;/code&gt; para especificar el secreto del cliente.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la monitorización y el análisis de logs. Para configurar la monitorización, se puede utilizar el comando &lt;code&gt;oc create deployment&lt;/code&gt; con la opción &lt;code&gt;--image&lt;/code&gt; para especificar la imagen del contenedor que se quiere monitorear.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:29800"&gt;RHSA-2026:29800 - Security Advisory&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"&gt;What's new for developers in Red Hat OpenShift 4.22&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810"&gt;Installing OpenShift 4.19.10 on Bare Metal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-20_1056.html"/>
+    <summary>OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores. Esta versión incluye actualizaciones de seguridad y mejoras en la experiencia del desarrollador.</summary>
+    <published>2026-07-20T10:56:00+00:00</published>
   </entry>
 </feed>

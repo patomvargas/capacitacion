@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metabase: Nuevas Funcionalidades y Mejoras - Metabase</title>
+    <title>Metabase: Herramienta de Análisis de Datos - Metabase</title>
     <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
     <style>
         :root {
@@ -57,50 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
     </div>
 
-    <h1>Metabase: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-07-12 0954 · Metabase</div>
+    <h1>Metabase: Herramienta de Análisis de Datos</h1>
+    <div class="meta">2026-07-20 1056 · Metabase</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear informes y paneles personalizados. Recientemente, se han agregado varias funcionalidades nuevas, como la capacidad de crear gráficos personalizados y la integración con el cliente de AI de Metabase (MCP).</p>
+            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y visualizaciones de manera sencilla. Para empezar a utilizar Metabase, es necesario instalarlo en un servidor y configurar la conexión a la base de datos. Esto se puede hacer utilizando el comando `docker run -d -p 3000:3000 --name metabase metabase/metabase` para instalar el contenedor de Docker.</p>
             
         
             
         
             
-            <p>Para crear un gráfico personalizado, los usuarios pueden utilizar el plugin SDK de Metabase, que les permite crear cualquier tipo de gráfico que deseen. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `metabase.plugins.createChart('bar-chart')`.</p>
+            <p>Una vez instalado, se puede acceder a la interfaz de usuario de Metabase y crear una nueva consulta utilizando el lenguaje de consulta SQL. Por ejemplo, se puede utilizar la consulta `SELECT * FROM tabla` para obtener todos los registros de una tabla. También se pueden crear tableros personalizados utilizando las visualizaciones de Metabase, como gráficos de barras o diagramas de dispersión.</p>
             
         
             
         
             
-            <p>Además, la versión 62 de Metabase incluye la función de Metabase CLI, que permite a los usuarios interactuar con la herramienta desde la terminal. Por ejemplo, para crear un nuevo panel, se puede utilizar el comando `metabase create-dashboard --name 'Mi Panel'`.</p>
+            <p>Metabase también proporciona una API REST para interactuar con la herramienta de manera programática. Por ejemplo, se puede utilizar el comando `curl -X GET 'http://localhost:3000/api/card/:id'` para obtener la información de una consulta específica. Además, se pueden crear expresiones personalizadas utilizando el lenguaje de expresiones de Metabase, como `{{variable}}` para crear una variable personalizada.</p>
             
         
             
         
             
-            <p>La administración de Metabase también ha sido mejorada, con la adición de una función de Schema Viewer interactiva y la capacidad de gestionar colecciones en la biblioteca. Para acceder a la Schema Viewer, se puede utilizar el comando `metabase schema-viewer`.</p>
+            <p>En cuanto a la administración de Metabase, se pueden configurar los permisos de acceso para los usuarios y crear grupos de trabajo para colaborar en la creación de consultas y tableros. También se pueden integrar herramientas de autenticación externas, como LDAP o OAuth, para gestionar el acceso a la herramienta.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante mencionar que los usuarios deben validar y asegurar sus claves de API de Stripe, como se recomienda en la documentación de Metabase. Para hacer esto, se puede utilizar el comando `stripe keys create --restricted --scope read_only`.</p>
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece una amplia gama de características y configuraciones avanzadas. Su interfaz de usuario intuitiva y su API REST hacen que sea fácil de utilizar y personalizar.</p>
             
         
             
         
             
-            <p>En resumen, las nuevas funcionalidades y mejoras de Metabase ofrecen una mayor flexibilidad y personalización para los usuarios, lo que les permite crear informes y paneles más efectivos y eficientes.</p>
-            
-        
-            
-        
+            <p>Para más información, se pueden consultar las fuentes oficiales de Metabase y la documentación de la API REST.</p>
             
         
     </div>
@@ -111,17 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://www.metabase.com/releases/metabase-62" target="_blank">Metabase 62</a>
+                <a href="https://metabase.com/docs/" target="_blank">Metabase Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/t/metabase-62-custom-viz-more-mcp-tools-metabase-cli-and-more/310557" target="_blank">Metabase 62: Custom viz, more MCP tools, Metabase CLI, and more</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://discourse.metabase.com/t/custom-column-handling-updates-in-the-latest-release/310755" target="_blank">Custom Column handling updates in the latest release</a>
+                <a href="https://github.com/metabase/metabase" target="_blank">Metabase GitHub</a>
                 
             </li>
             
@@ -132,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-12_0954.html">&larr; 2026-07-12 0954</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-20_1056.html">2026-07-20 1056 &rarr;</a>
             
         </div>
     </div>

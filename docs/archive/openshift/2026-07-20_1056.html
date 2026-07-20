@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Metabase: Nuevas Funcionalidades y Mejoras - Metabase</title>
-    <link rel="alternate" type="application/atom+xml" title="Metabase" href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml">
+    <title>OpenShift 4.22: Novedades y Mejoras - OpenShift</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/metabase/">Metabase</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>Metabase: Nuevas Funcionalidades y Mejoras</h1>
-    <div class="meta">2026-07-12 0954 · Metabase</div>
+    <h1>OpenShift 4.22: Novedades y Mejoras</h1>
+    <div class="meta">2026-07-20 1056 · OpenShift</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>Metabase es una herramienta de análisis de datos que permite a los usuarios crear informes y paneles personalizados. Recientemente, se han agregado varias funcionalidades nuevas, como la capacidad de crear gráficos personalizados y la integración con el cliente de AI de Metabase (MCP).</p>
+            <p>OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, basada en Kubernetes 1.35 y CRI-O 1.35. Esta versión incluye varias mejoras y nuevas características, como la integración con Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear y gestionar entornos de desarrollo personalizados.</p>
             
         
             
         
             
-            <p>Para crear un gráfico personalizado, los usuarios pueden utilizar el plugin SDK de Metabase, que les permite crear cualquier tipo de gráfico que deseen. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `metabase.plugins.createChart('bar-chart')`.</p>
+            <p>Una de las novedades más destacadas es la mejora en la experiencia del desarrollador, que incluye la capacidad de crear y gestionar aplicaciones de manera más eficiente. Para aprovechar al máximo estas nuevas características, es importante mantener la plataforma actualizada. Para verificar si hay actualizaciones disponibles, se puede utilizar el comando `oc adm upgrade` en la línea de comandos.</p>
             
         
             
         
             
-            <p>Además, la versión 62 de Metabase incluye la función de Metabase CLI, que permite a los usuarios interactuar con la herramienta desde la terminal. Por ejemplo, para crear un nuevo panel, se puede utilizar el comando `metabase create-dashboard --name 'Mi Panel'`.</p>
+            <p>En cuanto a la seguridad, OpenShift 4.22 incluye varias actualizaciones de seguridad importantes, como la actualización de la imagen de Docker a `sha256:f82534b7dda297c688947f35be54c9abdb62fdac30a6688c9baab6c8eba7a449`. Es importante aplicar estas actualizaciones para garantizar la seguridad de la plataforma. Para aplicar las actualizaciones, se puede utilizar el comando `oc apply` con el archivo de configuración correspondiente.</p>
             
         
             
         
             
-            <p>La administración de Metabase también ha sido mejorada, con la adición de una función de Schema Viewer interactiva y la capacidad de gestionar colecciones en la biblioteca. Para acceder a la Schema Viewer, se puede utilizar el comando `metabase schema-viewer`.</p>
+            <p>Otra característica importante es la capacidad de crear y gestionar rutas (routes) de manera más eficiente. Para crear una ruta, se puede utilizar el comando `oc create route` con la opción `--service` para especificar el servicio que se quiere exponer. Por ejemplo: `oc create route edge --service=miservicio --hostname=miservicio.example.com`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, es importante mencionar que los usuarios deben validar y asegurar sus claves de API de Stripe, como se recomienda en la documentación de Metabase. Para hacer esto, se puede utilizar el comando `stripe keys create --restricted --scope read_only`.</p>
+            <p>En cuanto a la autenticación y autorización, OpenShift 4.22 incluye soporte para OAuth, que permite a los desarrolladores autenticar y autorizar a los usuarios de manera más segura. Para configurar OAuth, se puede utilizar el comando `oc create oauthclient` con la opción `--secret` para especificar el secreto del cliente.</p>
             
         
             
         
             
-            <p>En resumen, las nuevas funcionalidades y mejoras de Metabase ofrecen una mayor flexibilidad y personalización para los usuarios, lo que les permite crear informes y paneles más efectivos y eficientes.</p>
-            
-        
+            <p>Finalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la monitorización y el análisis de logs. Para configurar la monitorización, se puede utilizar el comando `oc create deployment` con la opción `--image` para especificar la imagen del contenedor que se quiere monitorear.</p>
             
         
             
@@ -111,17 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://www.metabase.com/releases/metabase-62" target="_blank">Metabase 62</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:29800" target="_blank">RHSA-2026:29800 - Security Advisory</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/t/metabase-62-custom-viz-more-mcp-tools-metabase-cli-and-more/310557" target="_blank">Metabase 62: Custom viz, more MCP tools, Metabase CLI, and more</a>
+                <a href="https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22" target="_blank">What's new for developers in Red Hat OpenShift 4.22</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/t/custom-column-handling-updates-in-the-latest-release/310755" target="_blank">Custom Column handling updates in the latest release</a>
+                <a href="https://medium.com/@tradingcontentdrive/installing-openshift-4-19-10-on-bare-metal-user-provisioned-infrastructure-f60efecf3810" target="_blank">Installing OpenShift 4.19.10 on Bare Metal</a>
                 
             </li>
             
@@ -132,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-06-30_1113.html">&larr; 2026-06-30 1113</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-16_1014.html">&larr; 2026-07-16 1014</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-20_1056.html">2026-07-20 1056 &rarr;</a>
             
         </div>
     </div>

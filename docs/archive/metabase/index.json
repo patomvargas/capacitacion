@@ -1,4 +1,20 @@
 {
+  "2026-07-20_1056": {
+    "slug": "metabase",
+    "title": "Metabase: Herramienta de Análisis de Datos",
+    "summary": "Metabase es una herramienta de código abierto que permite a los usuarios analizar y visualizar datos de manera sencilla. En este artículo, se presentan las características y configuraciones avanzadas de Metabase.",
+    "content": "Metabase es una herramienta de análisis de datos que permite a los usuarios crear consultas, tableros y visualizaciones de manera sencilla. Para empezar a utilizar Metabase, es necesario instalarlo en un servidor y configurar la conexión a la base de datos. Esto se puede hacer utilizando el comando `docker run -d -p 3000:3000 --name metabase metabase/metabase` para instalar el contenedor de Docker.\n\nUna vez instalado, se puede acceder a la interfaz de usuario de Metabase y crear una nueva consulta utilizando el lenguaje de consulta SQL. Por ejemplo, se puede utilizar la consulta `SELECT * FROM tabla` para obtener todos los registros de una tabla. También se pueden crear tableros personalizados utilizando las visualizaciones de Metabase, como gráficos de barras o diagramas de dispersión.\n\nMetabase también proporciona una API REST para interactuar con la herramienta de manera programática. Por ejemplo, se puede utilizar el comando `curl -X GET 'http://localhost:3000/api/card/:id'` para obtener la información de una consulta específica. Además, se pueden crear expresiones personalizadas utilizando el lenguaje de expresiones de Metabase, como `{{variable}}` para crear una variable personalizada.\n\nEn cuanto a la administración de Metabase, se pueden configurar los permisos de acceso para los usuarios y crear grupos de trabajo para colaborar en la creación de consultas y tableros. También se pueden integrar herramientas de autenticación externas, como LDAP o OAuth, para gestionar el acceso a la herramienta.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece una amplia gama de características y configuraciones avanzadas. Su interfaz de usuario intuitiva y su API REST hacen que sea fácil de utilizar y personalizar.\n\nPara más información, se pueden consultar las fuentes oficiales de Metabase y la documentación de la API REST.",
+    "sources": [
+      {
+        "title": "Metabase Documentation",
+        "url": "https://metabase.com/docs/"
+      },
+      {
+        "title": "Metabase GitHub",
+        "url": "https://github.com/metabase/metabase"
+      }
+    ]
+  },
   "2026-07-12_0954": {
     "slug": "metabase",
     "title": "Metabase: Nuevas Funcionalidades y Mejoras",
