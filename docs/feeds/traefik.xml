@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-20T10:58:09.304778+00:00</updated>
+  <updated>2026-07-21T10:28:56.218007+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -398,5 +398,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-17_1002.html"/>
     <summary>Traefik es un proxy inverso y balanciador de carga que permite gestionar routers y middlewares de manera eficiente. En este artículo, se explora cómo configurar y utilizar Traefik para mejorar la seguridad y el rendimiento de las aplicaciones.</summary>
     <published>2026-07-17T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-21_1027.html</id>
+    <title>Traefik: Routers y Middlewares</title>
+    <updated>2026-07-21T10:27:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan gestionar routers y middlewares de manera eficiente. Una de las características más destacadas de Traefik es su capacidad para gestionar routers y middlewares mediante una configuración simple y flexible. Por ejemplo, se puede configurar un router para redirigir tráfico a un servidor específico utilizando el comando &lt;code&gt;traefik http routers --entrypoints=web --rule=Host:example.com --service=example-service&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las características de Traefik, es importante entender cómo funcionan los middlewares. Los middlewares son componentes que se ejecutan antes o después de que se procese una solicitud. Por ejemplo, se puede utilizar el middleware &lt;code&gt;forwardauth&lt;/code&gt; para autenticar solicitudes antes de que lleguen a un servidor. Sin embargo, es importante tener en cuenta que el middleware &lt;code&gt;forwardauth&lt;/code&gt; puede ser vulnerable a ataques de denegación de servicio si no se configura correctamente. Para evitar esto, se puede configurar el middleware &lt;code&gt;forwardauth&lt;/code&gt; con un tamaño máximo de respuesta, como se muestra en el siguiente ejemplo: &lt;code&gt;traefik http middlewares --from=example.com --to=example-service --forwardauth.address=http://example-auth.com --forwardauth.maxresponsebody=1024&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Traefik es su capacidad para gestionar certificados SSL/TLS de manera automática mediante Let's Encrypt. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando &lt;code&gt;traefik tls certificates --store=example-store --key=example-key --email=example@example.com&lt;/code&gt;. Esto permitirá a Traefik obtener y renovar certificados SSL/TLS de manera automática.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, Traefik proporciona una variedad de herramientas para monitorear y depurar el tráfico. Por ejemplo, se puede utilizar el comando &lt;code&gt;traefik logs --level=DEBUG&lt;/code&gt; para ver los registros de depuración de Traefik. Además, se puede configurar Traefik para enviar registros a un servidor de registros externo, como Elasticsearch o Splunk.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa para gestionar routers y middlewares de manera eficiente. Al entender cómo funcionan los middlewares y cómo configurar Traefik para aprovechar sus características, los desarrolladores y administradores de sistemas pueden crear aplicaciones y servicios más seguros y escalables.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/pull/8307"&gt;Prepare release v2.4.12&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/issues/13411"&gt;access logs are not sent to stdout unless json format is specified&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-fw45-f5q2-2p4x"&gt;ForwardAuth Middleware Allows Unbounded Response Body, Causing Potential Denial of Service&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-07-21_1027.html"/>
+    <summary>Traefik es un proxy inverso de código abierto que permite gestionar routers y middlewares de manera eficiente. En este artículo, se presentan las mejores prácticas para configurar Traefik y aprovechar sus características.</summary>
+    <published>2026-07-21T10:27:00+00:00</published>
   </entry>
 </feed>

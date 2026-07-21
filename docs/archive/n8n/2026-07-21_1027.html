@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Automatización con n8n - n8n</title>
+    <title>Automatización de flujos de trabajo con n8n - n8n</title>
     <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
@@ -57,56 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Automatización con n8n</h1>
-    <div class="meta">2026-07-17 1002 · n8n</div>
+    <h1>Automatización de flujos de trabajo con n8n</h1>
+    <div class="meta">2026-07-21 1027 · n8n</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>n8n es una herramienta de automatización de flujos de trabajo que se ejecuta en un entorno de self-hosting, lo que significa que los usuarios tienen control total sobre la configuración y el funcionamiento de la herramienta. Para self-hosting n8n, se puede utilizar un contenedor Docker y ejecutar el comando `docker run -d -p 5678:5678 n8n/n8n`.</p>
+            <p>n8n es una herramienta de código abierto que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y conexiones. Los nodos son componentes que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los flujos de trabajo se crean conectando nodos en una secuencia lógica.</p>
             
         
             
         
             
-            <p>Una vez que se tiene n8n en ejecución, se pueden crear flujos de trabajo utilizando nodos y configuraciones específicas. Por ejemplo, se puede crear un flujo de trabajo que utilice el nodo `Microsoft Dataverse` para leer y escribir datos en una base de datos de Microsoft Dataverse. Para hacer esto, se debe configurar el nodo con la URL de la base de datos y las credenciales de autenticación, utilizando comandos como `n8n nodos microsoft-dataverse --url https://example.dataverse.com --username usuario --password contraseña`.</p>
+            <p>Para empezar a utilizar n8n, es necesario instalar el software en un servidor o en una máquina virtual. Luego, se puede acceder a la interfaz de usuario web y empezar a crear flujos de trabajo. La creación de un flujo de trabajo implica arrastrar y soltar nodos en el lienzo de trabajo y configurar las propiedades de cada nodo. Por ejemplo, para enviar un correo electrónico, se puede utilizar el nodo `Enviar correo electrónico` y configurar las propiedades `Asunto`, `Cuerpo` y `Destinatario`.</p>
             
         
             
         
             
-            <p>Es importante mencionar que n8n tiene una comunidad activa que crea y comparte nodos y configuraciones para diferentes casos de uso. Por ejemplo, se puede utilizar el nodo `CLI-Anything` para ejecutar comandos de línea de comandos en un flujo de trabajo. Para hacer esto, se debe configurar el nodo con el comando que se desea ejecutar, utilizando comandos como `n8n nodos cli-anything --command ls -l`.</p>
+            <p>n8n también admite la creación de credenciales y webhooks, lo que permite a los usuarios almacenar información sensible de forma segura y recibir notificaciones en tiempo real. Para crear una credencial, se puede utilizar el comando `n8n credentials create` y seguir las instrucciones en pantalla.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas para self-hosting n8n, es importante mencionar que se debe utilizar una versión estable de la herramienta y configurar la seguridad y la autenticación adecuadamente. Se debe utilizar un archivo de configuración como `n8n.config.json` para almacenar las configuraciones y credenciales de la herramienta, y se debe utilizar un sistema de gestión de versiones como Git para controlar los cambios en la configuración.</p>
+            <p>En cuanto a las integraciones, n8n admite una amplia variedad de servicios y herramientas, incluyendo Microsoft Dataverse, que se puede utilizar para leer y escribir filas de datos directamente desde flujos de trabajo de n8n. Para utilizar esta integración, se puede instalar el nodo `Microsoft Dataverse` utilizando el comando `n8n nodes install microsoft-dataverse`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que n8n es una herramienta muy flexible y personalizable, y se puede utilizar para automatizar una amplia variedad de flujos de trabajo y procesos. Se puede utilizar para integrar diferentes sistemas y herramientas, y se puede utilizar para crear flujos de trabajo complejos que involucren múltiples pasos y condiciones.</p>
+            <p>Finalmente, n8n es una herramienta muy flexible y personalizable, lo que la hace ideal para una amplia variedad de casos de uso. Ya sea que se desee automatizar tareas simples o complejas, n8n es una excelente opción para cualquier equipo de desarrollo o administración de sistemas.</p>
             
         
             
         
             
-            <p>En resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo, y se puede utilizar para self-hosting y configuraciones personalizadas. Se debe utilizar una versión estable de la herramienta, configurar la seguridad y la autenticación adecuadamente, y utilizar un sistema de gestión de versiones para controlar los cambios en la configuración.</p>
-            
-        
-            
-        
-            
-            <p>Para más información sobre n8n y sus configuraciones, se puede consultar la documentación oficial de la herramienta y las fuentes citadas en este artículo.</p>
-            
-        
-            
-        
+            <p>Para obtener más información sobre n8n y sus características, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
             
         
     </div>
@@ -117,12 +105,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/actions/runs/28160035736" target="_blank">Release: Schedule Patch Release PRs</a>
+                <a href="https://github.com/n8n-io/n8n-hosting/issues/163" target="_blank">n8n Hosting</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/n8n-lab/self-hosted-n8n-best-practices-complete-setup-checklist-for-2026-585e240aca00" target="_blank">Self-Hosted n8n Best Practices + Complete Setup Checklist for 2026</a>
+                <a href="https://github.com/n8n-io/n8n/actions/runs/28160035736" target="_blank">n8n Release</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.bing.com/aclick?ld=e8EWnN2cSiRSZ8ipntXMURijVUCUxlheR93e7sUULGZAjYbrCsO_B1Ix5lCVDDRfYDKRhX89lKd_YR8hpHc1BrGCQkWY3lNz4xsgrUNzQU2uno5YsuMinH9LZNMi0Az7NNceL68cmIe_hGgTSttaKxQm90pmYIjCac-FNNgQvAkc2x1QnHGaqjiUkr1kl1lj6wBuVyxQ&u=aHR0cHMlM2ElMmYlMmZob3d0b2NoYW5nZWd1aWRlLmNvbSUyZmhvdy10by11c2UlMmZ3aGF0LWlzLW44bi1hbmQtaG93LXRvLXVzZS1pdCUzZm1zY2xraWQlM2Q0NTVmN2M2OWVjNWYxNjRmZDg2NzE2MzZhNWU4NGQ3ZCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEhvdyUyNTIwVG8lMjUyMFVzZS1Ib3dUb0NoYW5nZUd1aWRlLmNvbS1WMyUyNnV0bV90ZXJtJTNkd2hhdCUyNTIwaXMlMjUyMG44biUyNTIwYW5kJTI1MjBob3clMjUyMHRvJTI1MjB1c2UlMjUyMGl0JTI2dXRtX2NvbnRlbnQlM2RXaGF0JTI1MjBJcyUyNTIwTjhuJTI1MjBBbmQlMjUyMEhvdyUyNTIwVG8lMjUyMFVzZSUyNTIwSXQtSG93VG9DaGFuZ2VHdWlkZS5jb20tVjM&rlid=455f7c69ec5f164fd8671636a5e84d7d" target="_blank">What Is N8n?</a>
                 
             </li>
             
@@ -138,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-13_1117.html">&larr; 2026-07-13 1117</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-17_1002.html">&larr; 2026-07-17 1002</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-21_1027.html">2026-07-21 1027 &rarr;</a>
             
         </div>
     </div>

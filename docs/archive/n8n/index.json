@@ -1,4 +1,28 @@
 {
+  "2026-07-21_1027": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se explora cómo utilizar n8n para automatizar tareas y procesos.",
+    "content": "n8n es una herramienta de código abierto que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y conexiones. Los nodos son componentes que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los flujos de trabajo se crean conectando nodos en una secuencia lógica. \n \n Para empezar a utilizar n8n, es necesario instalar el software en un servidor o en una máquina virtual. Luego, se puede acceder a la interfaz de usuario web y empezar a crear flujos de trabajo. La creación de un flujo de trabajo implica arrastrar y soltar nodos en el lienzo de trabajo y configurar las propiedades de cada nodo. Por ejemplo, para enviar un correo electrónico, se puede utilizar el nodo `Enviar correo electrónico` y configurar las propiedades `Asunto`, `Cuerpo` y `Destinatario`. \n \n n8n también admite la creación de credenciales y webhooks, lo que permite a los usuarios almacenar información sensible de forma segura y recibir notificaciones en tiempo real. Para crear una credencial, se puede utilizar el comando `n8n credentials create` y seguir las instrucciones en pantalla. \n \n En cuanto a las integraciones, n8n admite una amplia variedad de servicios y herramientas, incluyendo Microsoft Dataverse, que se puede utilizar para leer y escribir filas de datos directamente desde flujos de trabajo de n8n. Para utilizar esta integración, se puede instalar el nodo `Microsoft Dataverse` utilizando el comando `n8n nodes install microsoft-dataverse`. \n \n Finalmente, n8n es una herramienta muy flexible y personalizable, lo que la hace ideal para una amplia variedad de casos de uso. Ya sea que se desee automatizar tareas simples o complejas, n8n es una excelente opción para cualquier equipo de desarrollo o administración de sistemas. \n \n Para obtener más información sobre n8n y sus características, se pueden consultar las fuentes oficiales y la documentación en línea.",
+    "sources": [
+      {
+        "title": "n8n Hosting",
+        "url": "https://github.com/n8n-io/n8n-hosting/issues/163"
+      },
+      {
+        "title": "n8n Release",
+        "url": "https://github.com/n8n-io/n8n/actions/runs/28160035736"
+      },
+      {
+        "title": "What Is N8n?",
+        "url": "https://www.bing.com/aclick?ld=e8EWnN2cSiRSZ8ipntXMURijVUCUxlheR93e7sUULGZAjYbrCsO_B1Ix5lCVDDRfYDKRhX89lKd_YR8hpHc1BrGCQkWY3lNz4xsgrUNzQU2uno5YsuMinH9LZNMi0Az7NNceL68cmIe_hGgTSttaKxQm90pmYIjCac-FNNgQvAkc2x1QnHGaqjiUkr1kl1lj6wBuVyxQ&u=aHR0cHMlM2ElMmYlMmZob3d0b2NoYW5nZWd1aWRlLmNvbSUyZmhvdy10by11c2UlMmZ3aGF0LWlzLW44bi1hbmQtaG93LXRvLXVzZS1pdCUzZm1zY2xraWQlM2Q0NTVmN2M2OWVjNWYxNjRmZDg2NzE2MzZhNWU4NGQ3ZCUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEhvdyUyNTIwVG8lMjUyMFVzZS1Ib3dUb0NoYW5nZUd1aWRlLmNvbS1WMyUyNnV0bV90ZXJtJTNkd2hhdCUyNTIwaXMlMjUyMG44biUyNTIwYW5kJTI1MjBob3clMjUyMHRvJTI1MjB1c2UlMjUyMGl0JTI2dXRtX2NvbnRlbnQlM2RXaGF0JTI1MjBJcyUyNTIwTjhuJTI1MjBBbmQlMjUyMEhvdyUyNTIwVG8lMjUyMFVzZSUyNTIwSXQtSG93VG9DaGFuZ2VHdWlkZS5jb20tVjM&rlid=455f7c69ec5f164fd8671636a5e84d7d"
+      },
+      {
+        "title": "Microsoft Dataverse node for n8n",
+        "url": "https://github.com/microsoft/n8n-nodes-microsoft-dataverse"
+      }
+    ]
+  },
   "2026-07-17_1002": {
     "slug": "n8n",
     "title": "Automatización con n8n",

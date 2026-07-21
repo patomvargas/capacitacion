@@ -1,4 +1,24 @@
 {
+  "2026-07-21_1027": {
+    "slug": "traefik",
+    "title": "Traefik: Routers y Middlewares",
+    "summary": "Traefik es un proxy inverso de código abierto que permite gestionar routers y middlewares de manera eficiente. En este artículo, se presentan las mejores prácticas para configurar Traefik y aprovechar sus características.",
+    "content": "\nTraefik es una herramienta fundamental para los desarrolladores y administradores de sistemas que buscan gestionar routers y middlewares de manera eficiente. Una de las características más destacadas de Traefik es su capacidad para gestionar routers y middlewares mediante una configuración simple y flexible. Por ejemplo, se puede configurar un router para redirigir tráfico a un servidor específico utilizando el comando `traefik http routers --entrypoints=web --rule=Host:example.com --service=example-service`.\n\n \nPara aprovechar al máximo las características de Traefik, es importante entender cómo funcionan los middlewares. Los middlewares son componentes que se ejecutan antes o después de que se procese una solicitud. Por ejemplo, se puede utilizar el middleware `forwardauth` para autenticar solicitudes antes de que lleguen a un servidor. Sin embargo, es importante tener en cuenta que el middleware `forwardauth` puede ser vulnerable a ataques de denegación de servicio si no se configura correctamente. Para evitar esto, se puede configurar el middleware `forwardauth` con un tamaño máximo de respuesta, como se muestra en el siguiente ejemplo: `traefik http middlewares --from=example.com --to=example-service --forwardauth.address=http://example-auth.com --forwardauth.maxresponsebody=1024`.\n\n \nOtra característica importante de Traefik es su capacidad para gestionar certificados SSL/TLS de manera automática mediante Let's Encrypt. Para configurar Let's Encrypt en Traefik, se puede utilizar el comando `traefik tls certificates --store=example-store --key=example-key --email=example@example.com`. Esto permitirá a Traefik obtener y renovar certificados SSL/TLS de manera automática.\n\n \nEn cuanto a la observabilidad, Traefik proporciona una variedad de herramientas para monitorear y depurar el tráfico. Por ejemplo, se puede utilizar el comando `traefik logs --level=DEBUG` para ver los registros de depuración de Traefik. Además, se puede configurar Traefik para enviar registros a un servidor de registros externo, como Elasticsearch o Splunk.\n\n \nEn resumen, Traefik es una herramienta poderosa para gestionar routers y middlewares de manera eficiente. Al entender cómo funcionan los middlewares y cómo configurar Traefik para aprovechar sus características, los desarrolladores y administradores de sistemas pueden crear aplicaciones y servicios más seguros y escalables.",
+    "sources": [
+      {
+        "title": "Prepare release v2.4.12",
+        "url": "https://github.com/traefik/traefik/pull/8307"
+      },
+      {
+        "title": "access logs are not sent to stdout unless json format is specified",
+        "url": "https://github.com/traefik/traefik/issues/13411"
+      },
+      {
+        "title": "ForwardAuth Middleware Allows Unbounded Response Body, Causing Potential Denial of Service",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-fw45-f5q2-2p4x"
+      }
+    ]
+  },
   "2026-07-17_1002": {
     "slug": "traefik",
     "title": "Traefik: Routers y Middlewares",
