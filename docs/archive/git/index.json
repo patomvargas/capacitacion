@@ -1,4 +1,32 @@
 {
+  "2026-07-22_1029": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks, rebase, bisect y worktrees. Estas herramientas pueden mejorar significativamente la eficiencia y la calidad del desarrollo de software.",
+    "content": "Git es una herramienta fundamental en el desarrollo de software moderno. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, se puede utilizar `git branch` para crear una nueva rama y `git checkout` para cambiar entre ellas.\n\nUn hook es un script que se ejecuta automáticamente en respuesta a un evento específico en Git. Los hooks pueden ser utilizados para automatizar tareas, como la ejecución de pruebas unitarias o la verificación de código. Por ejemplo, se puede utilizar `git hook pre-commit` para ejecutar un script antes de que se realice un commit.\n\nOtra característica avanzada de Git es el rebase. El rebase permite reorganizar los commits de una rama para que parezcan haber sido realizados de manera lineal. Esto puede ser útil para mantener un historial de commits limpio y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y reorganizarlos.\n\nEl bisect es otra herramienta poderosa de Git que permite encontrar el commit que introdujo un bug en el código. Por ejemplo, se puede utilizar `git bisect start` para iniciar el proceso de bisect y `git bisect bad` para marcar un commit como defectuoso.\n\nFinalmente, los worktrees son una característica de Git que permite tener múltiples copias de un repositorio en diferentes directorios. Esto puede ser útil para trabajar en diferentes características o ramas de manera simultánea. Por ejemplo, se puede utilizar `git worktree add` para agregar un nuevo worktree a un repositorio.\n\nEn resumen, Git ofrece una variedad de herramientas y características avanzadas que pueden mejorar significativamente la eficiencia y la calidad del desarrollo de software. Al utilizar estas herramientas de manera efectiva, los desarrolladores pueden trabajar de manera más eficiente y producir código de alta calidad.\n\nSin embargo, las fuentes proporcionadas no ofrecen información relevante sobre Git. Por lo tanto, este artículo se ha enfocado en proporcionar una visión general de algunas de las mejores prácticas y características avanzadas de Git.",
+    "sources": [
+      {
+        "title": "MetalK8s",
+        "url": "https://github.com/scality/metalk8s"
+      },
+      {
+        "title": "Cloudflare Pages GitHub Action",
+        "url": "https://github.com/cloudflare/pages-action"
+      },
+      {
+        "title": "Tencent/TFace",
+        "url": "https://github.com/Tencent/TFace"
+      },
+      {
+        "title": "WinBoat",
+        "url": "https://github.com/TibixDev/winboat"
+      },
+      {
+        "title": "Aim",
+        "url": "https://github.com/aimhubio/aim"
+      }
+    ]
+  },
   "2026-07-18_0937": {
     "slug": "git",
     "title": "Mejores prácticas de Git para Workflows avanzados",

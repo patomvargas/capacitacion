@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-21T10:28:56.234181+00:00</updated>
+  <updated>2026-07-22T10:30:20.884885+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -672,5 +672,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las mejoras y novedades más recientes en Ansible, incluyendo actualizaciones en playbooks, roles, collections y vault.</summary>
     <published>2026-07-18T09:37:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-22_1029.html</id>
+    <title>Ansible: Mejores Practicas</title>
+    <updated>2026-07-22T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar cambios de manera rápida y segura. Para empezar a usar Ansible, es importante entender los conceptos básicos de playbooks, roles, collections y vault. Un playbook es un archivo YAML que define una serie de tareas que se ejecutan en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web con &lt;code&gt;nginx&lt;/code&gt; y &lt;code&gt;mysql&lt;/code&gt; utilizando los siguientes comandos: &lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para gestionar la complejidad de los playbooks, Ansible proporciona la funcionalidad de roles, que permiten dividir un playbook en componentes más pequeños y reutilizables. Un rol es un conjunto de tareas y handlers que se pueden aplicar a un grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar &lt;code&gt;nginx&lt;/code&gt; utilizando el comando &lt;code&gt;ansible-galaxy install nginx&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, Ansible proporciona la funcionalidad de collections, que permiten agrupar roles y módulos relacionados en un solo paquete. Un ejemplo de colección es la colección &lt;code&gt;ansible.posix&lt;/code&gt;, que incluye roles y módulos para la gestión de sistemas operativos POSIX. Para instalar una colección, se puede utilizar el comando &lt;code&gt;ansible-galaxy collection install ansible.posix&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Por último, Ansible proporciona la funcionalidad de vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Para utilizar vault, se puede crear un archivo de cifrado con el comando &lt;code&gt;ansible-vault create vault.yml&lt;/code&gt;, y luego utilizar el comando &lt;code&gt;ansible-vault encrypt&lt;/code&gt; para cifrar los datos sensibles.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de los conceptos básicos de playbooks, roles, collections y vault.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Ansible y otros recursos en línea.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/ansible/latest/index.html"&gt;Ansible Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://galaxy.ansible.com/"&gt;Ansible Galaxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.ansible.com/blog"&gt;Ansible Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-22_1029.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan mejores prácticas para el uso de Ansible, incluyendo playbooks, roles, collections y vault.</summary>
+    <published>2026-07-22T10:29:00+00:00</published>
   </entry>
 </feed>

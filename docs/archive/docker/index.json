@@ -1,4 +1,24 @@
 {
+  "2026-07-22_1029": {
+    "slug": "docker",
+    "title": "Mejoras en Docker: Multi-stage builds y seguridad",
+    "summary": "Docker sigue evolucionando con mejoras en multi-stage builds, compose, networking y seguridad. En este artículo, exploraremos las últimas novedades y best practices para aprovechar al máximo Docker. Se presentan ejemplos prácticos y configuraciones para mejorar la seguridad y eficiencia en el uso de Docker.",
+    "content": "Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores de manera eficiente. Una de las características más destacadas de Docker es la capacidad de crear multi-stage builds, lo que permite dividir el proceso de construcción de una imagen en varias etapas. Esto se logra utilizando el comando `docker build` con la opción `--target` para especificar la etapa de construcción.\n\n \nLa seguridad es otro aspecto crucial en el uso de Docker. Para mejorar la seguridad, se pueden utilizar redes privadas y configurar los contenedores para que utilicen protocolos de autenticación seguros. Por ejemplo, se puede utilizar el comando `docker network create` para crear una red privada y luego utilizar el comando `docker run` con la opción `--net` para especificar la red que debe utilizar el contenedor.\n\n \nOtra característica importante de Docker es la capacidad de utilizar compose para definir y ejecutar múltiples contenedores de manera simultánea. Esto se logra utilizando el comando `docker-compose up` para iniciar los contenedores y el comando `docker-compose down` para detenerlos. También se puede utilizar el comando `docker-compose exec` para ejecutar comandos dentro de un contenedor en ejecución.\n\n \nEn cuanto a la configuración de Docker, se pueden utilizar archivos de configuración para personalizar el comportamiento de los contenedores. Por ejemplo, se puede utilizar el archivo `docker-compose.yml` para definir la configuración de los contenedores y el archivo `Dockerfile` para definir la configuración de la imagen. También se puede utilizar el comando `docker config` para crear y gestionar configuraciones de Docker.\n\n \nFinalmente, es importante destacar la importancia de utilizar BuildKit para mejorar la eficiencia y la seguridad en el proceso de construcción de imágenes. BuildKit es una herramienta que permite crear imágenes de manera más eficiente y segura, y se puede utilizar con el comando `docker build` con la opción `--buildkit` para habilitarla.\n\n \nEn resumen, Docker es una herramienta poderosa que ofrece muchas características y opciones para mejorar la eficiencia y la seguridad en el desarrollo y la ejecución de aplicaciones. Al utilizar multi-stage builds, compose, redes privadas y BuildKit, se puede crear un entorno de desarrollo y ejecución de aplicaciones más eficiente y seguro.",
+    "sources": [
+      {
+        "title": "Docker Compose Releases",
+        "url": "https://github.com/docker/compose/releases"
+      },
+      {
+        "title": "Docker Documentation",
+        "url": "https://docs.docker.com/"
+      },
+      {
+        "title": "BuildKit",
+        "url": "https://github.com/moby/buildkit"
+      }
+    ]
+  },
   "2026-07-18_0937": {
     "slug": "docker",
     "title": "Docker: Mejoras y Novedades",

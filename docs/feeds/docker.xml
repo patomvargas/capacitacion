@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-21T10:28:56.226493+00:00</updated>
+  <updated>2026-07-22T10:30:20.874175+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -499,5 +499,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-18_0937.html"/>
     <summary>Docker ha introducido cambios significativos en su plataforma, incluyendo la jubilación de Docker Content Trust y mejoras en la seguridad y el rendimiento. Estos cambios afectan la forma en que los desarrolladores y administradores de sistemas utilizan Docker.</summary>
     <published>2026-07-18T09:37:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-07-22_1029.html</id>
+    <title>Mejoras en Docker: Multi-stage builds y seguridad</title>
+    <updated>2026-07-22T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental para los desarrolladores y administradores de sistemas, ya que permite crear y ejecutar contenedores de manera eficiente. Una de las características más destacadas de Docker es la capacidad de crear multi-stage builds, lo que permite dividir el proceso de construcción de una imagen en varias etapas. Esto se logra utilizando el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--target&lt;/code&gt; para especificar la etapa de construcción.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto crucial en el uso de Docker. Para mejorar la seguridad, se pueden utilizar redes privadas y configurar los contenedores para que utilicen protocolos de autenticación seguros. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker network create&lt;/code&gt; para crear una red privada y luego utilizar el comando &lt;code&gt;docker run&lt;/code&gt; con la opción &lt;code&gt;--net&lt;/code&gt; para especificar la red que debe utilizar el contenedor.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Docker es la capacidad de utilizar compose para definir y ejecutar múltiples contenedores de manera simultánea. Esto se logra utilizando el comando &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar los contenedores y el comando &lt;code&gt;docker-compose down&lt;/code&gt; para detenerlos. También se puede utilizar el comando &lt;code&gt;docker-compose exec&lt;/code&gt; para ejecutar comandos dentro de un contenedor en ejecución.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Docker, se pueden utilizar archivos de configuración para personalizar el comportamiento de los contenedores. Por ejemplo, se puede utilizar el archivo &lt;code&gt;docker-compose.yml&lt;/code&gt; para definir la configuración de los contenedores y el archivo &lt;code&gt;Dockerfile&lt;/code&gt; para definir la configuración de la imagen. También se puede utilizar el comando &lt;code&gt;docker config&lt;/code&gt; para crear y gestionar configuraciones de Docker.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar la importancia de utilizar BuildKit para mejorar la eficiencia y la seguridad en el proceso de construcción de imágenes. BuildKit es una herramienta que permite crear imágenes de manera más eficiente y segura, y se puede utilizar con el comando &lt;code&gt;docker build&lt;/code&gt; con la opción &lt;code&gt;--buildkit&lt;/code&gt; para habilitarla.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa que ofrece muchas características y opciones para mejorar la eficiencia y la seguridad en el desarrollo y la ejecución de aplicaciones. Al utilizar multi-stage builds, compose, redes privadas y BuildKit, se puede crear un entorno de desarrollo y ejecución de aplicaciones más eficiente y seguro.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/docker/compose/releases"&gt;Docker Compose Releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/"&gt;Docker Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/buildkit"&gt;BuildKit&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-22_1029.html"/>
+    <summary>Docker sigue evolucionando con mejoras en multi-stage builds, compose, networking y seguridad. En este artículo, exploraremos las últimas novedades y best practices para aprovechar al máximo Docker. Se presentan ejemplos prácticos y configuraciones para mejorar la seguridad y eficiencia en el uso de Docker.</summary>
+    <published>2026-07-22T10:29:00+00:00</published>
   </entry>
 </feed>

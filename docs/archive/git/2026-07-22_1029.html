@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas de Git para Workflows avanzados - Git</title>
+    <title>Mejores prácticas con Git - Git</title>
     <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Mejores prácticas de Git para Workflows avanzados</h1>
-    <div class="meta">2026-07-18 0937 · Git</div>
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-07-22 1029 · Git</div>
 
     <div class="content">
         
         
             
-            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de DevOps. En este artículo, exploraremos algunas de las mejores prácticas para utilizar Git de manera efectiva en tus Workflows. Una de las características más poderosas de Git es el uso de `hooks`, que permiten ejecutar scripts personalizados en diferentes momentos del ciclo de vida de un repositorio. Por ejemplo, puedes utilizar el hook `pre-commit` para verificar la calidad del código antes de realizar un commit.</p>
+            <p>Git es una herramienta fundamental en el desarrollo de software moderno. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, se puede utilizar `git branch` para crear una nueva rama y `git checkout` para cambiar entre ellas.</p>
             
         
             
         
             
-            <p>Para mejorar la colaboración y la eficiencia en tus Workflows, es importante utilizar `rebase` y `merge` de manera efectiva. El comando `git rebase` permite reorganizar los commits de una rama para que tengan una historia de commits más lineal y fácil de seguir. Por otro lado, el comando `git merge` permite unir dos ramas y resolver conflictos de manera automática.</p>
+            <p>Un hook es un script que se ejecuta automáticamente en respuesta a un evento específico en Git. Los hooks pueden ser utilizados para automatizar tareas, como la ejecución de pruebas unitarias o la verificación de código. Por ejemplo, se puede utilizar `git hook pre-commit` para ejecutar un script antes de que se realice un commit.</p>
             
         
             
         
             
-            <p>Otra herramienta útil en Git es `bisect`, que permite buscar el commit que introdujo un bug o problema en el código. Esto se logra ejecutando el comando `git bisect start` y luego `git bisect bad` para marcar el commit actual como defectuoso. Luego, Git te guiará a través de un proceso de división y conquista para encontrar el commit culpable.</p>
+            <p>Otra característica avanzada de Git es el rebase. El rebase permite reorganizar los commits de una rama para que parezcan haber sido realizados de manera lineal. Esto puede ser útil para mantener un historial de commits limpio y fácil de seguir. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y reorganizarlos.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar el uso de `worktrees`, que permite tener múltiples directorios de trabajo para un solo repositorio. Esto es útil para trabajar en diferentes características o ramas de manera simultánea. Puedes crear un nuevo worktree con el comando `git worktree add` y luego cambiar entre ellos con el comando `git worktree list`.</p>
+            <p>El bisect es otra herramienta poderosa de Git que permite encontrar el commit que introdujo un bug en el código. Por ejemplo, se puede utilizar `git bisect start` para iniciar el proceso de bisect y `git bisect bad` para marcar un commit como defectuoso.</p>
             
         
             
         
             
-            <p>En resumen, Git ofrece una variedad de herramientas y características para mejorar la colaboración y la eficiencia en tus Workflows. Al utilizar `hooks`, `rebase`, `bisect` y `worktrees` de manera efectiva, puedes simplificar tus procesos de desarrollo y asegurarte de que tu código sea de alta calidad.</p>
+            <p>Finalmente, los worktrees son una característica de Git que permite tener múltiples copias de un repositorio en diferentes directorios. Esto puede ser útil para trabajar en diferentes características o ramas de manera simultánea. Por ejemplo, se puede utilizar `git worktree add` para agregar un nuevo worktree a un repositorio.</p>
             
         
             
         
             
-            <p>La última versión de Git, 2.55, incluye varias mejoras y novedades, como la capacidad de utilizar `git switch` para cambiar entre ramas y el soporte mejorado para `git worktree`. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Git.</p>
+            <p>En resumen, Git ofrece una variedad de herramientas y características avanzadas que pueden mejorar significativamente la eficiencia y la calidad del desarrollo de software. Al utilizar estas herramientas de manera efectiva, los desarrolladores pueden trabajar de manera más eficiente y producir código de alta calidad.</p>
+            
+        
+            
+        
+            
+            <p>Sin embargo, las fuentes proporcionadas no ofrecen información relevante sobre Git. Por lo tanto, este artículo se ha enfocado en proporcionar una visión general de algunas de las mejores prácticas y características avanzadas de Git.</p>
             
         
     </div>
@@ -105,17 +111,27 @@
         <ul>
             
             <li>
-                <a href="https://github.blog/open-source/git/" target="_blank">The latest on Git updates - The GitHub Blog</a>
+                <a href="https://github.com/scality/metalk8s" target="_blank">MetalK8s</a>
                 
             </li>
             
             <li>
-                <a href="https://github.blog/open-source/git/highlights-from-git-2-55/" target="_blank">Highlights from Git 2.55 - The GitHub Blog</a>
+                <a href="https://github.com/cloudflare/pages-action" target="_blank">Cloudflare Pages GitHub Action</a>
                 
             </li>
             
             <li>
-                <a href="https://rowanblackwoon.medium.com/your-openapi-spec-belongs-in-git-1a472ac7b6f3" target="_blank">Your OpenAPI Spec Belongs in Git</a>
+                <a href="https://github.com/Tencent/TFace" target="_blank">Tencent/TFace</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/TibixDev/winboat" target="_blank">WinBoat</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/aimhubio/aim" target="_blank">Aim</a>
                 
             </li>
             
@@ -126,12 +142,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-14_1002.html">&larr; 2026-07-14 1002</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-22_1029.html">2026-07-22 1029 &rarr;</a>
             
         </div>
     </div>
