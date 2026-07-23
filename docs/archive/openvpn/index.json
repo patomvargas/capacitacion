@@ -1,4 +1,36 @@
 {
+  "2026-07-23_1027": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Configuración y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas crear conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.",
+    "content": "OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas crear conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves, que se pueden crear utilizando herramientas como `openssl`. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650`.\n\n \n La configuración de OpenVPN se realiza mediante el archivo de configuración `server.conf`, donde se especifican los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo, la configuración básica de un servidor OpenVPN podría ser: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`.\n\n \n Para asegurar la conexión OpenVPN, es importante implementar medidas de hardening, como la autenticación de dos factores y la limitación de acceso a la red. Por ejemplo, se puede utilizar el protocolo de autenticación `tls-auth` para agregar una capa adicional de seguridad a la conexión. Además, se puede utilizar la directiva `max-clients` para limitar el número de clientes que pueden conectarse al servidor.\n\n \n Otra característica importante de OpenVPN es la capacidad de crear conexiones site-to-site, que permiten conectar dos redes diferentes a través de Internet. Para configurar una conexión site-to-site, es necesario crear un archivo de configuración para cada sitio, especificando la dirección IP del otro sitio y los parámetros de conexión.\n\n \n Finalmente, es importante mencionar que OpenVPN tiene una herramienta de administración llamada Access Server, que permite a los administradores de sistemas gestionar y monitorizar las conexiones OpenVPN de manera centralizada. El Access Server proporciona una interfaz web para configurar y gestionar las conexiones, lo que facilita la administración de la red.\n\n \n En resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras entre redes, y su configuración y seguridad son fundamentales para proteger la información y los recursos de la red.",
+    "sources": [
+      {
+        "title": "OpenVPN Release 2.7.4",
+        "url": "https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"
+      },
+      {
+        "title": "Zabbix Community Templates repository",
+        "url": "https://github.com/zabbix/community-templates"
+      },
+      {
+        "title": "Lightweight justice for your single-board computer!",
+        "url": "https://github.com/MichaIng/DietPi"
+      },
+      {
+        "title": "may215/awesome-termux-hacking",
+        "url": "https://github.com/may215/awesome-termux-hacking"
+      },
+      {
+        "title": "directory-list-lowercase-2.3-medium.txt",
+        "url": "https://github.com/garyhooks/oscp/blob/master/dirb_lists/directory-list-lowercase-2.3-medium.txt"
+      },
+      {
+        "title": "jaywcjlove/awesome-mac",
+        "url": "https://github.com/jaywcjlove/awesome-mac"
+      }
+    ]
+  },
   "2026-07-19_0955": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

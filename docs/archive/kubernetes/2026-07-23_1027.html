@@ -58,53 +58,47 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-07-19 0955 · Kubernetes</div>
+    <div class="meta">2026-07-23 1027 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que se utiliza ampliamente en la industria para desplegar y gestionar aplicaciones en contenedores. En los últimos años, Kubernetes ha seguido evolucionando con nuevas características y mejoras. Una de las novedades más recientes es la versión 1.37, que incluye mejoras en la seguridad y el almacenamiento.</p>
+        
+            
+            <p>La versión 1.19 de Kubernetes introdujo un cambio importante en el soporte de correcciones de errores, aumentando el período de soporte de 9 meses a 1 año. Esto se refleja en el documento `release-notes-draft.md` de la rama `sig-release` del repositorio de Kubernetes.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es un aspecto fundamental en cualquier sistema de orquestación de contenedores. En Kubernetes, la seguridad se puede mejorar utilizando herramientas como `etcd` y `RBAC` (Role-Based Access Control). `Etcd` es un almacén de datos distribuido que se utiliza para almacenar la configuración y el estado de los clústeres de Kubernetes. `RBAC` es un sistema de control de acceso que permite definir permisos y roles para los usuarios y los servicios en el clúster.</p>
+            <p>Una de las herramientas más interesantes para la automatización en Kubernetes es Brigade, una plataforma de scripting basada en eventos que se integra con diversas fuentes de eventos. Con `brigade`, se pueden crear scripts personalizados para automatizar tareas en el cluster. Por ejemplo, se puede utilizar el comando `brigade create` para crear un nuevo script.</p>
             
         
             
         
             
-        
-            
-            <p>Otra novedad en Kubernetes es la mejora en el almacenamiento. Kubernetes proporciona varios tipos de almacenamiento, como `Persistent Volumes` (PV) y `StatefulSets`. Los `PV` son volúmenes de almacenamiento que se pueden utilizar por los pods en el clúster. Los `StatefulSets` son un tipo de conjunto de réplicas que se utiliza para desplegar aplicaciones que requieren un estado persistente. Para crear un `PV`, se puede utilizar el comando `kubectl create -f <archivo_de_configuracion>.yaml`, donde `<archivo_de_configuracion>.yaml` es el archivo de configuración que define el `PV`.</p>
+            <p>En cuanto a la seguridad, la herramienta `kubeseal` de `bitnami/sealed-secrets` permite cifrar secretos de manera asimétrica, de modo que solo el controlador pueda descifrarlos. Esto se logra mediante el comando `kubeseal init` y la creación de un recurso `SealedSecret`. Por ejemplo: `kubeseal init --name mi-secreto`.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a la gestión de clústeres, Kubernetes proporciona varias herramientas y características para simplificar la tarea. Una de ellas es `Amazon EKS Anywhere`, que permite crear y operar clústeres de Kubernetes en infraestructuras propias. Otra herramienta es `Headlamp`, que es un proyecto de la comunidad de Kubernetes que proporciona una interfaz de usuario para explorar, gestionar y depurar recursos de clústeres.</p>
+            <p>Otra herramienta útil es `CoreDNS Corefile Migration Tools`, que proporciona funciones para migrar archivos `Corefile` de CoreDNS a versiones compatibles con nuevas versiones de CoreDNS. Esto se puede lograr mediante la ejecución de `corefile-migration --help` para obtener información sobre cómo utilizar la herramienta.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Kubernetes sigue evolucionando con nuevas características y mejoras. La seguridad y el almacenamiento son aspectos fundamentales en cualquier sistema de orquestación de contenedores, y Kubernetes proporciona varias herramientas y características para mejorar la seguridad y el almacenamiento en los clústeres. Además, la gestión de clústeres se puede simplificar utilizando herramientas como `Amazon EKS Anywhere` y `Headlamp`.</p>
+            <p>Finalmente, la instalación de `Vertical Pod Autoscaler` requiere la actualización de la definición de CRD y la configuración de RBAC para el recurso de estado. Esto se puede hacer mediante el comando `kubectl apply` y la creación de un archivo de configuración `yaml` que defina los permisos necesarios.</p>
             
         
             
         
             
-        
+            <p>En resumen, Kubernetes sigue mejorando y expandiendo sus capacidades, y es importante estar al tanto de las últimas novedades y herramientas disponibles para aprovechar al máximo su potencial.</p>
             
-            <p>Para más información sobre las novedades en Kubernetes, se puede consultar la documentación oficial de Kubernetes y las fuentes citadas en este artículo.</p>
+        
             
         
     </div>
@@ -115,22 +109,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/discussions/3051" target="_blank">Kubernetes 1.37 Release Highlights Discussion</a>
+                <a href="https://github.com/kubernetes/contributor-site" target="_blank">Kubernetes Contributor Site</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
+                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.19/release-notes-draft.md" target="_blank">release-notes-draft.md</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/blog/2026/06/25/headlamp-cluster-api-plugin/" target="_blank">Introducing the Cluster API plugin for Headlamp</a>
+                <a href="https://github.com/brigadecore/brigade" target="_blank">Brigade: Event-Driven Scripting for Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/devops-ai-decoded/top-10-open-source-security-tools-for-kubernetes-in-2026-374483249168" target="_blank">Top 10 Open Source Security Tools for Kubernetes in 2026</a>
+                <a href="https://github.com/bitnami/sealed-secrets" target="_blank">bitnami/sealed-secrets</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/coredns/corefile-migration" target="_blank">CoreDNS Corefile Migration Tools</a>
                 
             </li>
             
@@ -141,12 +140,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-15_1007.html">&larr; 2026-07-15 1007</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-19_0955.html">&larr; 2026-07-19 0955</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html">2026-07-23 1027 &rarr;</a>
             
         </div>
     </div>

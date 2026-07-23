@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <title>OpenVPN: Configuración y Seguridad - OpenVPN</title>
     <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
@@ -57,44 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>OpenVPN: Tunneling y Seguridad</h1>
-    <div class="meta">2026-07-19 0955 · OpenVPN</div>
+    <h1>OpenVPN: Configuración y Seguridad</h1>
+    <div class="meta">2026-07-23 1027 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes y dispositivos. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado de servidor.</p>
+            <p>OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas crear conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves, que se pueden crear utilizando herramientas como `openssl`. Por ejemplo, para generar un certificado de servidor, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650`.</p>
             
         
             
         
             
-            <p>Para configurar el servidor OpenVPN, se debe crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP y el puerto de escucha. Por ejemplo, el archivo de configuración puede contener las siguientes líneas: `port 1194`, `proto udp`, `dev tun`. También es importante configurar la autenticación de clientes, utilizando comandos como `tls-auth ta.key 0` y `ca ca.crt`.</p>
+        
+            
+            <p>La configuración de OpenVPN se realiza mediante el archivo de configuración `server.conf`, donde se especifican los parámetros de conexión, como la dirección IP del servidor y el puerto de escucha. Por ejemplo, la configuración básica de un servidor OpenVPN podría ser: `port 1194`, `proto udp`, `dev tun`, `ca ca.crt`, `cert server.crt`, `key server.key`.</p>
             
         
             
         
             
-            <p>Una de las mejores prácticas para proteger un servidor OpenVPN es utilizar el protocolo de autenticación TLS. Se puede configurar el servidor para que utilice un certificado de servidor y una clave de autenticación, y también se puede requerir que los clientes proporcionen un certificado de cliente válido. Otro aspecto importante es el hardening del servidor, que implica deshabilitar los servicios innecesarios y configurar el firewall para que solo permita el tráfico necesario.</p>
+        
+            
+            <p>Para asegurar la conexión OpenVPN, es importante implementar medidas de hardening, como la autenticación de dos factores y la limitación de acceso a la red. Por ejemplo, se puede utilizar el protocolo de autenticación `tls-auth` para agregar una capa adicional de seguridad a la conexión. Además, se puede utilizar la directiva `max-clients` para limitar el número de clientes que pueden conectarse al servidor.</p>
             
         
             
         
             
-            <p>Para establecer una conexión de sitio a sitio con OpenVPN, se debe configurar un servidor OpenVPN en cada sitio y establecer una conexión entre ellos. Se puede utilizar el comando `openvpn --config cliente.conf` para establecer la conexión desde el lado del cliente. También es importante configurar la ruta de acceso a la red remota, utilizando comandos como `route add -net 10.0.0.0 netmask 255.255.255.0 gw 10.0.0.1`.</p>
+        
+            
+            <p>Otra característica importante de OpenVPN es la capacidad de crear conexiones site-to-site, que permiten conectar dos redes diferentes a través de Internet. Para configurar una conexión site-to-site, es necesario crear un archivo de configuración para cada sitio, especificando la dirección IP del otro sitio y los parámetros de conexión.</p>
             
         
             
         
             
-            <p>En cuanto a la versión 2.7.4 de OpenVPN, se han realizado varias mejoras y correcciones de errores. Es importante consultar la documentación oficial para obtener más información sobre las novedades y cambios en esta versión.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que OpenVPN tiene una herramienta de administración llamada Access Server, que permite a los administradores de sistemas gestionar y monitorizar las conexiones OpenVPN de manera centralizada. El Access Server proporciona una interfaz web para configurar y gestionar las conexiones, lo que facilita la administración de la red.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenVPN es una herramienta muy versátil y configurable, por lo que es importante consultar la documentación oficial y buscar ayuda en línea si se necesitan más detalles sobre su configuración y uso.</p>
+        
+            
+            <p>En resumen, OpenVPN es una herramienta poderosa para crear conexiones seguras entre redes, y su configuración y seguridad son fundamentales para proteger la información y los recursos de la red.</p>
             
         
     </div>
@@ -110,7 +120,27 @@
             </li>
             
             <li>
-                <a href="https://github.com/OpenVPN/openvpn/blob/master/doc/interactive-service-notes.rst" target="_blank">interactive-service-notes.rst</a>
+                <a href="https://github.com/zabbix/community-templates" target="_blank">Zabbix Community Templates repository</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/MichaIng/DietPi" target="_blank">Lightweight justice for your single-board computer!</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/may215/awesome-termux-hacking" target="_blank">may215/awesome-termux-hacking</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/garyhooks/oscp/blob/master/dirb_lists/directory-list-lowercase-2.3-medium.txt" target="_blank">directory-list-lowercase-2.3-medium.txt</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/jaywcjlove/awesome-mac" target="_blank">jaywcjlove/awesome-mac</a>
                 
             </li>
             
@@ -121,12 +151,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-15_1007.html">&larr; 2026-07-15 1007</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-19_0955.html">&larr; 2026-07-19 0955</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-23_1027.html">2026-07-23 1027 &rarr;</a>
             
         </div>
     </div>

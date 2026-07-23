@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-22T10:30:20.839324+00:00</updated>
+  <updated>2026-07-23T10:28:08.930053+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -661,5 +661,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-19_0955.html"/>
     <summary>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando con nuevas características y mejoras. En este artículo, se presentan algunas de las novedades más recientes en Kubernetes, incluyendo mejoras en la seguridad y el almacenamiento.</summary>
     <published>2026-07-19T09:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-07-23T10:27:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 1.19 de Kubernetes introdujo un cambio importante en el soporte de correcciones de errores, aumentando el período de soporte de 9 meses a 1 año. Esto se refleja en el documento &lt;code&gt;release-notes-draft.md&lt;/code&gt; de la rama &lt;code&gt;sig-release&lt;/code&gt; del repositorio de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Una de las herramientas más interesantes para la automatización en Kubernetes es Brigade, una plataforma de scripting basada en eventos que se integra con diversas fuentes de eventos. Con &lt;code&gt;brigade&lt;/code&gt;, se pueden crear scripts personalizados para automatizar tareas en el cluster. Por ejemplo, se puede utilizar el comando &lt;code&gt;brigade create&lt;/code&gt; para crear un nuevo script.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, la herramienta &lt;code&gt;kubeseal&lt;/code&gt; de &lt;code&gt;bitnami/sealed-secrets&lt;/code&gt; permite cifrar secretos de manera asimétrica, de modo que solo el controlador pueda descifrarlos. Esto se logra mediante el comando &lt;code&gt;kubeseal init&lt;/code&gt; y la creación de un recurso &lt;code&gt;SealedSecret&lt;/code&gt;. Por ejemplo: &lt;code&gt;kubeseal init --name mi-secreto&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta útil es &lt;code&gt;CoreDNS Corefile Migration Tools&lt;/code&gt;, que proporciona funciones para migrar archivos &lt;code&gt;Corefile&lt;/code&gt; de CoreDNS a versiones compatibles con nuevas versiones de CoreDNS. Esto se puede lograr mediante la ejecución de &lt;code&gt;corefile-migration --help&lt;/code&gt; para obtener información sobre cómo utilizar la herramienta.&lt;/p&gt;
+&lt;p&gt;Finalmente, la instalación de &lt;code&gt;Vertical Pod Autoscaler&lt;/code&gt; requiere la actualización de la definición de CRD y la configuración de RBAC para el recurso de estado. Esto se puede hacer mediante el comando &lt;code&gt;kubectl apply&lt;/code&gt; y la creación de un archivo de configuración &lt;code&gt;yaml&lt;/code&gt; que defina los permisos necesarios.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue mejorando y expandiendo sus capacidades, y es importante estar al tanto de las últimas novedades y herramientas disponibles para aprovechar al máximo su potencial.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/contributor-site"&gt;Kubernetes Contributor Site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.19/release-notes-draft.md"&gt;release-notes-draft.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/brigadecore/brigade"&gt;Brigade: Event-Driven Scripting for Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/bitnami/sealed-secrets"&gt;bitnami/sealed-secrets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/coredns/corefile-migration"&gt;CoreDNS Corefile Migration Tools&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más destacadas.</summary>
+    <published>2026-07-23T10:27:00+00:00</published>
   </entry>
 </feed>

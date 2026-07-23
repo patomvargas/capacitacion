@@ -58,7 +58,7 @@
     </div>
 
     <h1>FreeIPA: Gestión de Identidad y Acceso</h1>
-    <div class="meta">2026-07-19 0955 · FreeIPA</div>
+    <div class="meta">2026-07-23 1027 · FreeIPA</div>
 
     <div class="content">
         
@@ -66,31 +66,37 @@
             
         
             
-            <p>FreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores gestionar de manera centralizada los accesos y permisos de los usuarios en un entorno Linux/Unix. Una de las características clave de FreeIPA es su capacidad para combinar un directorio LDAP con un centro de distribución de claves Kerberos, lo que permite una autenticación y autorización seguras.</p>
+            <p>FreeIPA es una herramienta de gestión de identidad y acceso que permite a los administradores de sistemas gestionar de manera centralizada las credenciales de los usuarios y los accesos a los recursos. Entre sus características se incluyen la autenticación de usuarios mediante LDAP y Kerberos, la gestión de certificados y la configuración de políticas de acceso.</p>
             
         
             
         
             
-            <p>Para configurar FreeIPA, es necesario ejecutar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración. Una vez instalado, se puede acceder a la interfaz web de FreeIPA mediante el comando `ipa ui` y configurar los diferentes componentes, como la autenticación y la autorización. Por ejemplo, se puede configurar la autenticación Kerberos mediante el comando `ipa kerberos config`.</p>
+            <p>Una de las características clave de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios, lo que permite a los usuarios acceder a recursos en diferentes dominios sin necesidad de autenticarse múltiples veces. Esto se logra mediante la configuración de `trust relationships` entre los dominios. Por ejemplo, se puede establecer una relación de confianza entre dos dominios mediante el comando `ipa trust-add`.</p>
             
         
             
         
             
-            <p>Otra característica importante de FreeIPA es su capacidad para gestionar claves SSH. Se puede configurar FreeIPA para que actúe como un almacén de claves SSH, lo que permite a los usuarios acceder a los servidores sin necesidad de introducir contraseñas. Para configurar esto, se puede ejecutar el comando `ipa sshconfig` y seguir las instrucciones del asistente de configuración.</p>
+            <p>La gestión de acceso en FreeIPA se basa en la configuración de reglas de acceso, como las reglas de acceso basadas en hosts (HBAC) y las reglas de acceso basadas en usuarios. Estas reglas se pueden configurar mediante la interfaz de línea de comandos de FreeIPA, utilizando comandos como `ipa hbacrule-add` y `ipa sudorule-add`. Además, FreeIPA también admite la configuración de reglas de acceso basadas en certificados, lo que permite a los administradores de sistemas gestionar de manera centralizada los accesos a los recursos basados en certificados.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, FreeIPA proporciona una serie de características para proteger los accesos y permisos de los usuarios. Por ejemplo, se puede configurar la autenticación de dos factores mediante el comando `ipa 2fa config`. También se puede configurar la política de contraseñas y la expiración de las cuentas de usuario mediante el comando `ipa passwordpolicy config`.</p>
+            <p>En cuanto a la autenticación de usuarios, FreeIPA admite diferentes métodos de autenticación, incluyendo la autenticación mediante contraseñas y la autenticación mediante certificados. Los administradores de sistemas pueden configurar la autenticación de usuarios mediante la interfaz de línea de comandos de FreeIPA, utilizando comandos como `ipa user-add` y `ipa group-add`. Además, FreeIPA también admite la configuración de políticas de autenticación, como la política de autenticación basada en el tiempo de inactividad, que permite a los administradores de sistemas gestionar de manera centralizada la autenticación de los usuarios.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que FreeIPA es una herramienta en constante evolución, y es importante estar al tanto de las últimas novedades y actualizaciones. Por ejemplo, se puede consultar el registro de cambios de FreeIPA en el sitio web oficial de GitHub.</p>
+            <p>Finalmente, es importante destacar que FreeIPA es una herramienta en constante evolución, y los administradores de sistemas deben estar atentos a las últimas actualizaciones y mejoras. Por ejemplo, se puede consultar la documentación oficial de FreeIPA para obtener más información sobre la configuración y el uso de la herramienta.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y acceso que ofrece una amplia gama de características y configuraciones para gestionar de manera centralizada las credenciales de los usuarios y los accesos a los recursos. Los administradores de sistemas pueden aprovechar las características de FreeIPA para mejorar la seguridad y la eficiencia de sus sistemas.</p>
             
         
             
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
+                <a href="https://www.freeipa.org/" target="_blank">FreeIPA</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://github.com/freeipa/freeipa" target="_blank">FreeIPA GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentation</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.freeipa.org/wiki" target="_blank">FreeIPA Wiki</a>
+                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentación</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-15_1007.html">&larr; 2026-07-15 1007</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-19_0955.html">&larr; 2026-07-19 0955</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-23_1027.html">2026-07-23 1027 &rarr;</a>
             
         </div>
     </div>

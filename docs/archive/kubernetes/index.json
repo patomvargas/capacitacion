@@ -1,4 +1,32 @@
 {
+  "2026-07-23_1027": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más destacadas.",
+    "content": "\nLa versión 1.19 de Kubernetes introdujo un cambio importante en el soporte de correcciones de errores, aumentando el período de soporte de 9 meses a 1 año. Esto se refleja en el documento `release-notes-draft.md` de la rama `sig-release` del repositorio de Kubernetes.\n\nUna de las herramientas más interesantes para la automatización en Kubernetes es Brigade, una plataforma de scripting basada en eventos que se integra con diversas fuentes de eventos. Con `brigade`, se pueden crear scripts personalizados para automatizar tareas en el cluster. Por ejemplo, se puede utilizar el comando `brigade create` para crear un nuevo script.\n\nEn cuanto a la seguridad, la herramienta `kubeseal` de `bitnami/sealed-secrets` permite cifrar secretos de manera asimétrica, de modo que solo el controlador pueda descifrarlos. Esto se logra mediante el comando `kubeseal init` y la creación de un recurso `SealedSecret`. Por ejemplo: `kubeseal init --name mi-secreto`.\n\nOtra herramienta útil es `CoreDNS Corefile Migration Tools`, que proporciona funciones para migrar archivos `Corefile` de CoreDNS a versiones compatibles con nuevas versiones de CoreDNS. Esto se puede lograr mediante la ejecución de `corefile-migration --help` para obtener información sobre cómo utilizar la herramienta.\n\nFinalmente, la instalación de `Vertical Pod Autoscaler` requiere la actualización de la definición de CRD y la configuración de RBAC para el recurso de estado. Esto se puede hacer mediante el comando `kubectl apply` y la creación de un archivo de configuración `yaml` que defina los permisos necesarios.\n\nEn resumen, Kubernetes sigue mejorando y expandiendo sus capacidades, y es importante estar al tanto de las últimas novedades y herramientas disponibles para aprovechar al máximo su potencial.\n",
+    "sources": [
+      {
+        "title": "Kubernetes Contributor Site",
+        "url": "https://github.com/kubernetes/contributor-site"
+      },
+      {
+        "title": "release-notes-draft.md",
+        "url": "https://github.com/kubernetes/sig-release/blob/master/releases/release-1.19/release-notes-draft.md"
+      },
+      {
+        "title": "Brigade: Event-Driven Scripting for Kubernetes",
+        "url": "https://github.com/brigadecore/brigade"
+      },
+      {
+        "title": "bitnami/sealed-secrets",
+        "url": "https://github.com/bitnami/sealed-secrets"
+      },
+      {
+        "title": "CoreDNS Corefile Migration Tools",
+        "url": "https://github.com/coredns/corefile-migration"
+      }
+    ]
+  },
   "2026-07-19_0955": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",
