@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/gemini.xml</id>
   <title>Gemini - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-23T10:28:08.939426+00:00</updated>
+  <updated>2026-07-24T10:24:19.023307+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/gemini/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -557,5 +557,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-07-16_1014.html"/>
     <summary>Gemini es una herramienta que integra Computer Use como una herramienta estándar, permitiendo la automatización de pruebas de QA. Además, se han agregado nuevas opciones para la gestión de tráfico de AI.</summary>
     <published>2026-07-16T10:14:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/gemini/2026-07-24_1023.html</id>
+    <title>Gemini: Novedades y Mejoras</title>
+    <updated>2026-07-24T10:23:00+00:00</updated>
+    <content type="html">&lt;p&gt;La plataforma Gemini de Google Cloud ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Recientemente, se han anunciado varias novedades y mejoras en la plataforma, incluyendo la deprecación de los modelos &lt;code&gt;gemini-3.1-flash-image-preview&lt;/code&gt; y &lt;code&gt;gemini-3-pro-image-preview&lt;/code&gt;, que serán reemplazados por nuevos modelos más avanzados.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo la plataforma Gemini, es importante estar al tanto de las últimas novedades y mejoras. Por ejemplo, se puede utilizar el comando &lt;code&gt;gcloud gemini models list&lt;/code&gt; para obtener una lista de los modelos disponibles en la plataforma.&lt;/p&gt;
+&lt;p&gt;La integración de Gemini con Workspace y Vertex AI es otra de las funcionalidades más destacadas de la plataforma. Se puede utilizar el comando &lt;code&gt;gcloud gemini workspaces create&lt;/code&gt; para crear un nuevo espacio de trabajo en Gemini, y luego utilizar el comando &lt;code&gt;gcloud gemini vertex-ai enable&lt;/code&gt; para habilitar la integración con Vertex AI.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que la plataforma Gemini ofrece varias opciones para proteger los datos y las aplicaciones. Por ejemplo, se puede utilizar el comando &lt;code&gt;gcloud gemini security enable&lt;/code&gt; para habilitar la seguridad en un espacio de trabajo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar que la plataforma Gemini ofrece una variedad de recursos y documentación para ayudar a los desarrolladores y administradores de sistemas a aprovechar al máximo la plataforma. Se puede encontrar más información en la documentación oficial de Gemini, que incluye tutoriales, ejemplos de código y referencias de la API.&lt;/p&gt;
+&lt;p&gt;Para programar acciones en Gemini Enterprise de forma programática, se puede seguir el tutorial publicado en Medium, que incluye un paso a paso para la ejecución de acciones utilizando &lt;code&gt;Terraform&lt;/code&gt; y otros herramientas, como: &lt;code&gt;terraform init&lt;/code&gt;, &lt;code&gt;terraform plan&lt;/code&gt; y &lt;code&gt;terraform apply&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Tambien se puede utilizar &lt;code&gt;BigQuery&lt;/code&gt; para crear un agente de búsqueda periódico, con comandos como: &lt;code&gt;bq query --use_legacy_sql=false 'SELECT * FROM mytable'&lt;/code&gt; y &lt;code&gt;bq load --replace --source_format=CSV mydataset.mytable gs://mybucket/data.csv&lt;/code&gt;&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"&gt;Gemini Enterprise release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ai.google.dev/gemini-api/docs/changelog"&gt;Release notes | Gemini API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/"&gt;Google AI announcements from June 2026&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://ai.google.dev/gemini-api/docs/deprecations"&gt;Gemini deprecations | Gemini API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/google-cloud/beyond-the-app-programmatic-access-to-gemini-enterprise-actions-770fb5bc5908"&gt;Beyond the App: Programmatic Access to Gemini Enterprise&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-07-24_1023.html"/>
+    <summary>Gemini es una plataforma de inteligencia artificial que ofrece nuevas funcionalidades y mejoras en su API, modelos y integración con Workspace y Vertex AI. En este artículo, se presentan las novedades y best practices para aprovechar al máximo la plataforma.</summary>
+    <published>2026-07-24T10:23:00+00:00</published>
   </entry>
 </feed>

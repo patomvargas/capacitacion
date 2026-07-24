@@ -1,4 +1,28 @@
 {
+  "2026-07-24_1023": {
+    "slug": "openshift",
+    "title": "Novedades y Mejoras en OpenShift",
+    "summary": "OpenShift es una plataforma de contenedores que sigue evolucionando con actualizaciones y mejoras. En este artículo, se presentan las novedades y cambios recientes en OpenShift, incluyendo actualizaciones de seguridad y mejoras en la gestión de clústeres.",
+    "content": "OpenShift es una plataforma de contenedores que se utiliza ampliamente en entornos de producción. Recientemente, se han publicado varias actualizaciones y mejoras en la plataforma, incluyendo la versión 4.21 de Red Hat OpenShift Data Foundation. Esta versión incluye mejoras en la gestión de datos y la seguridad.\n\n Una de las novedades más importantes es la actualización de la versión 4.19.36 de OpenShift Container Platform, que incluye correcciones de seguridad y mejoras en la gestión de paquetes y imágenes. Para aplicar esta actualización, se puede utilizar el comando `oc apply` para actualizar la configuración del clúster.\n\n Otra mejora importante es la capacidad de utilizar label selectors para limpiar aplicaciones desplegadas en OpenShift. Esto se puede hacer utilizando el comando `oc delete` con la opción `--selector` para especificar los labels de las aplicaciones que se desean eliminar. Por ejemplo, `oc delete pods --selector=app=myapp` eliminará todos los pods con el label `app=myapp`.\n\n En cuanto a la gestión de clústeres, se ha mejorado la capacidad de monitorizar y gestionar los recursos del clúster. Se puede utilizar el comando `oc get` para obtener información sobre los nodos y los pods del clúster, y el comando `oc describe` para obtener más detalles sobre un recurso específico.\n\n Finalmente, es importante mencionar que la documentación oficial de OpenShift proporciona una guía detallada para la instalación y configuración de la plataforma en diferentes entornos, incluyendo la instalación en metal bare con CentOS Stream 9 y RHCOS.\n\n Para más información sobre las novedades y mejoras en OpenShift, se puede consultar la documentación oficial y las fuentes citadas al final de este artículo.",
+    "sources": [
+      {
+        "title": "What's new with Azure Red Hat OpenShift?",
+        "url": "https://learn.microsoft.com/en-us/azure/openshift/azure-redhat-openshift-release-notes"
+      },
+      {
+        "title": "Red Hat OpenShift | endoflife.date",
+        "url": "https://endoflife.date/red-hat-openshift"
+      },
+      {
+        "title": "OpenShift and Kernel updates for RHEL",
+        "url": "https://www.linuxcompatible.org/story/openshift-and-kernel-updates-for-rhel"
+      },
+      {
+        "title": "Red Hat OpenShift Data Foundation 4.21 Release Notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_data_foundation/4.21/pdf/4.21_release_notes/Red_Hat_OpenShift_Data_Foundation-4.21-4.21_Release_Notes-en-US.pdf"
+      }
+    ]
+  },
   "2026-07-20_1056": {
     "slug": "openshift",
     "title": "OpenShift 4.22: Novedades y Mejoras",

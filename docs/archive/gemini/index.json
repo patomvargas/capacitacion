@@ -1,4 +1,32 @@
 {
+  "2026-07-24_1023": {
+    "slug": "gemini",
+    "title": "Gemini: Novedades y Mejoras",
+    "summary": "Gemini es una plataforma de inteligencia artificial que ofrece nuevas funcionalidades y mejoras en su API, modelos y integración con Workspace y Vertex AI. En este artículo, se presentan las novedades y best practices para aprovechar al máximo la plataforma.",
+    "content": "La plataforma Gemini de Google Cloud ofrece una variedad de herramientas y funcionalidades para desarrolladores y administradores de sistemas. Recientemente, se han anunciado varias novedades y mejoras en la plataforma, incluyendo la deprecación de los modelos `gemini-3.1-flash-image-preview` y `gemini-3-pro-image-preview`, que serán reemplazados por nuevos modelos más avanzados. \n\nPara aprovechar al máximo la plataforma Gemini, es importante estar al tanto de las últimas novedades y mejoras. Por ejemplo, se puede utilizar el comando `gcloud gemini models list` para obtener una lista de los modelos disponibles en la plataforma. \n\nLa integración de Gemini con Workspace y Vertex AI es otra de las funcionalidades más destacadas de la plataforma. Se puede utilizar el comando `gcloud gemini workspaces create` para crear un nuevo espacio de trabajo en Gemini, y luego utilizar el comando `gcloud gemini vertex-ai enable` para habilitar la integración con Vertex AI. \n\nEn cuanto a la seguridad, es importante mencionar que la plataforma Gemini ofrece varias opciones para proteger los datos y las aplicaciones. Por ejemplo, se puede utilizar el comando `gcloud gemini security enable` para habilitar la seguridad en un espacio de trabajo. \n\nFinalmente, es importante destacar que la plataforma Gemini ofrece una variedad de recursos y documentación para ayudar a los desarrolladores y administradores de sistemas a aprovechar al máximo la plataforma. Se puede encontrar más información en la documentación oficial de Gemini, que incluye tutoriales, ejemplos de código y referencias de la API.\n\nPara programar acciones en Gemini Enterprise de forma programática, se puede seguir el tutorial publicado en Medium, que incluye un paso a paso para la ejecución de acciones utilizando `Terraform` y otros herramientas, como: `terraform init`, `terraform plan` y `terraform apply`. \n\nTambien se puede utilizar `BigQuery` para crear un agente de búsqueda periódico, con comandos como: `bq query --use_legacy_sql=false 'SELECT * FROM mytable'` y `bq load --replace --source_format=CSV mydataset.mytable gs://mybucket/data.csv`",
+    "sources": [
+      {
+        "title": "Gemini Enterprise release notes",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      },
+      {
+        "title": "Release notes | Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Google AI announcements from June 2026",
+        "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-june-2026/"
+      },
+      {
+        "title": "Gemini deprecations | Gemini API",
+        "url": "https://ai.google.dev/gemini-api/docs/deprecations"
+      },
+      {
+        "title": "Beyond the App: Programmatic Access to Gemini Enterprise",
+        "url": "https://medium.com/google-cloud/beyond-the-app-programmatic-access-to-gemini-enterprise-actions-770fb5bc5908"
+      }
+    ]
+  },
   "2026-07-16_1014": {
     "slug": "gemini",
     "title": "Gemini: Integración y Mejoras",
