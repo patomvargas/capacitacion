@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-24T10:24:19.042976+00:00</updated>
+  <updated>2026-07-25T09:54:31.841438+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -996,5 +996,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-17_1002.html"/>
     <summary>MetalLB es una herramienta de equilibrio de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar el tráfico de red en sus clústeres. En este artículo, se presentan las características y configuraciones de MetalLB, incluyendo el modo L2, BGP y la gestión de pools de IP.</summary>
     <published>2026-07-17T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-25_0953.html</id>
+    <title>MetalLB: Equilibrio de Carga en Kubernetes</title>
+    <updated>2026-07-25T09:53:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es un proyecto de código abierto que proporciona una solución de equilibrio de carga para clústeres de Kubernetes. Permite a los administradores de sistemas configurar y gestionar servicios de equilibrio de carga de manera sencilla y escalable.&lt;/p&gt;
+&lt;p&gt;Una de las características principales de MetalLB es su capacidad para funcionar en modo L2, que permite a los servicios de equilibrio de carga comunicarse directamente con los nodos del clúster sin necesidad de una capa adicional de direccionamiento. Para configurar MetalLB en modo L2, se puede utilizar el comando &lt;code&gt;kubectl apply -f metallb-l2-config.yaml&lt;/code&gt;, donde el archivo &lt;code&gt;metallb-l2-config.yaml&lt;/code&gt; contiene la configuración de MetalLB en formato YAML.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de MetalLB es su capacidad para integrarse con protocolos de enrutamiento como BGP (Border Gateway Protocol). Esto permite a los servicios de equilibrio de carga comunicarse con los routers de la red y anunciar las rutas de los servicios. Para configurar MetalLB con BGP, se puede utilizar el comando &lt;code&gt;kubectl apply -f metallb-bgp-config.yaml&lt;/code&gt;, donde el archivo &lt;code&gt;metallb-bgp-config.yaml&lt;/code&gt; contiene la configuración de MetalLB con BGP en formato YAML.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de IP pools, MetalLB permite a los administradores de sistemas definir rangos de direcciones IP que se pueden utilizar para los servicios de equilibrio de carga. Para configurar un IP pool, se puede utilizar el comando &lt;code&gt;kubectl apply -f metallb-ip-pool.yaml&lt;/code&gt;, donde el archivo &lt;code&gt;metallb-ip-pool.yaml&lt;/code&gt; contiene la configuración del IP pool en formato YAML.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como &lt;code&gt;kubectl logs&lt;/code&gt; para ver los registros de los pods de MetalLB, o &lt;code&gt;kubectl describe&lt;/code&gt; para obtener información detallada sobre los servicios de equilibrio de carga.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es una herramienta poderosa para configurar y gestionar servicios de equilibrio de carga en clústeres de Kubernetes. Su capacidad para funcionar en modo L2, integrarse con protocolos de enrutamiento como BGP y configurar IP pools la hacen una solución escalable y flexible para los administradores de sistemas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/3095"&gt;Support disabling metrics endpoint&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/3092"&gt;helm chart shows wrongly named value for relabeling&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-25_0953.html"/>
+    <summary>MetalLB es un software de equilibrio de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar servicios de equilibrio de carga en sus clústeres. En este artículo, se presentan las características y configuraciones de MetalLB.</summary>
+    <published>2026-07-25T09:53:00+00:00</published>
   </entry>
 </feed>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-07-25 0953 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>MetalLB es un proyecto de código abierto que proporciona una solución de equilibrio de carga para clústeres de Kubernetes. Permite a los administradores de sistemas configurar y gestionar servicios de equilibrio de carga de manera sencilla y escalable.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características principales de MetalLB es su capacidad para funcionar en modo L2, que permite a los servicios de equilibrio de carga comunicarse directamente con los nodos del clúster sin necesidad de una capa adicional de direccionamiento. Para configurar MetalLB en modo L2, se puede utilizar el comando `kubectl apply -f metallb-l2-config.yaml`, donde el archivo `metallb-l2-config.yaml` contiene la configuración de MetalLB en formato YAML.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante de MetalLB es su capacidad para integrarse con protocolos de enrutamiento como BGP (Border Gateway Protocol). Esto permite a los servicios de equilibrio de carga comunicarse con los routers de la red y anunciar las rutas de los servicios. Para configurar MetalLB con BGP, se puede utilizar el comando `kubectl apply -f metallb-bgp-config.yaml`, donde el archivo `metallb-bgp-config.yaml` contiene la configuración de MetalLB con BGP en formato YAML.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de IP pools, MetalLB permite a los administradores de sistemas definir rangos de direcciones IP que se pueden utilizar para los servicios de equilibrio de carga. Para configurar un IP pool, se puede utilizar el comando `kubectl apply -f metallb-ip-pool.yaml`, donde el archivo `metallb-ip-pool.yaml` contiene la configuración del IP pool en formato YAML.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas comunes con MetalLB, se pueden utilizar herramientas como `kubectl logs` para ver los registros de los pods de MetalLB, o `kubectl describe` para obtener información detallada sobre los servicios de equilibrio de carga.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, MetalLB es una herramienta poderosa para configurar y gestionar servicios de equilibrio de carga en clústeres de Kubernetes. Su capacidad para funcionar en modo L2, integrarse con protocolos de enrutamiento como BGP y configurar IP pools la hacen una solución escalable y flexible para los administradores de sistemas.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3095" target="_blank">Support disabling metrics endpoint</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3092" target="_blank">helm chart shows wrongly named value for relabeling</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-17_1002.html">&larr; 2026-07-17 1002</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

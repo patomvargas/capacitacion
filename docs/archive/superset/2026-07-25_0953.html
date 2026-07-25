@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superset: Herramienta de Inteligencia Empresarial - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Superset: Herramienta de Inteligencia Empresarial</h1>
+    <div class="meta">2026-07-25 0953 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Superset es una herramienta de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera efectiva. Con su interfaz web fácil de usar, los usuarios pueden crear gráficos y paneles de control personalizados para analizar y presentar datos. La plataforma también incluye un laboratorio de SQL que permite a los usuarios ejecutar consultas y analizar datos de manera más detallada.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características clave de Superset es su capacidad para conectarse a una variedad de fuentes de datos, incluyendo bases de datos relacionales y NoSQL. Los usuarios pueden configurar la conexión a la base de datos utilizando el comando `superset db upgrade` y luego crear gráficos y paneles de control utilizando la interfaz web. Por ejemplo, para crear un gráfico de barras, los usuarios pueden utilizar el comando `superset chart create --type bar --dataset mi_dataset`.</p>
+            
+        
+            
+        
+            
+            <p>La versión 6.1.0 de Superset incluye varias mejoras y nuevas características, como la compatibilidad con ClickHouse como motor de base de datos. Sin embargo, algunos usuarios han reportado problemas al utilizar ClickHouse como driver, por lo que es importante revisar la documentación oficial antes de intentar configurarlo. La documentación oficial de Superset se puede encontrar en el sitio web oficial, que incluye una guía de inicio rápido y una sección de preguntas frecuentes.</p>
+            
+        
+            
+        
+            
+            <p>Para administrar y configurar Superset, los usuarios pueden utilizar la interfaz web o el comando `superset config`. Por ejemplo, para agregar un nuevo usuario, los usuarios pueden utilizar el comando `superset user add --username mi_usuario --password mi_contraseña`. La plataforma también incluye una variedad de plantillas de Jinja que permiten a los usuarios personalizar la apariencia y el comportamiento de los gráficos y paneles de control.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa y flexible para la exploración y visualización de datos. Con su interfaz web fácil de usar y su capacidad para conectarse a una variedad de fuentes de datos, es una excelente opción para empresas y organizaciones que buscan analizar y presentar datos de manera efectiva.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la comunidad de Superset es muy activa y ofrece una variedad de recursos y documentación para ayudar a los usuarios a empezar a utilizar la plataforma. La documentación oficial de Superset se puede encontrar en el sitio web oficial, y la comunidad también ofrece una variedad de tutoriales y guías en línea.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/40867" target="_blank">Superset 6.1.0 - Docker Hub Image #40867</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/categories/releases" target="_blank">apache superset Releases Discussions</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/issues/41795" target="_blank">Table server pagination fails to search for UUID #41795</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://superset.apache.org/user-docs/6.1.0/" target="_blank">Superset</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-07-21_1027.html">&larr; 2026-07-21 1027</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

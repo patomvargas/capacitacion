@@ -1,4 +1,28 @@
 {
+  "2026-07-25_0953": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Inteligencia Empresarial",
+    "summary": "Superset es una plataforma de exploración y visualización de datos moderna y lista para empresas. Ofrece una variedad de características como gráficos, paneles de control y laboratorio de SQL.",
+    "content": "\nSuperset es una herramienta de inteligencia empresarial que permite a los usuarios explorar y visualizar datos de manera efectiva. Con su interfaz web fácil de usar, los usuarios pueden crear gráficos y paneles de control personalizados para analizar y presentar datos. La plataforma también incluye un laboratorio de SQL que permite a los usuarios ejecutar consultas y analizar datos de manera más detallada.\n\nUna de las características clave de Superset es su capacidad para conectarse a una variedad de fuentes de datos, incluyendo bases de datos relacionales y NoSQL. Los usuarios pueden configurar la conexión a la base de datos utilizando el comando `superset db upgrade` y luego crear gráficos y paneles de control utilizando la interfaz web. Por ejemplo, para crear un gráfico de barras, los usuarios pueden utilizar el comando `superset chart create --type bar --dataset mi_dataset`.\n\nLa versión 6.1.0 de Superset incluye varias mejoras y nuevas características, como la compatibilidad con ClickHouse como motor de base de datos. Sin embargo, algunos usuarios han reportado problemas al utilizar ClickHouse como driver, por lo que es importante revisar la documentación oficial antes de intentar configurarlo. La documentación oficial de Superset se puede encontrar en el sitio web oficial, que incluye una guía de inicio rápido y una sección de preguntas frecuentes.\n\nPara administrar y configurar Superset, los usuarios pueden utilizar la interfaz web o el comando `superset config`. Por ejemplo, para agregar un nuevo usuario, los usuarios pueden utilizar el comando `superset user add --username mi_usuario --password mi_contraseña`. La plataforma también incluye una variedad de plantillas de Jinja que permiten a los usuarios personalizar la apariencia y el comportamiento de los gráficos y paneles de control.\n\nEn resumen, Superset es una herramienta poderosa y flexible para la exploración y visualización de datos. Con su interfaz web fácil de usar y su capacidad para conectarse a una variedad de fuentes de datos, es una excelente opción para empresas y organizaciones que buscan analizar y presentar datos de manera efectiva.\n\nFinalmente, es importante mencionar que la comunidad de Superset es muy activa y ofrece una variedad de recursos y documentación para ayudar a los usuarios a empezar a utilizar la plataforma. La documentación oficial de Superset se puede encontrar en el sitio web oficial, y la comunidad también ofrece una variedad de tutoriales y guías en línea.\n",
+    "sources": [
+      {
+        "title": "Superset 6.1.0 - Docker Hub Image #40867",
+        "url": "https://github.com/apache/superset/discussions/40867"
+      },
+      {
+        "title": "apache superset Releases Discussions",
+        "url": "https://github.com/apache/superset/discussions/categories/releases"
+      },
+      {
+        "title": "Table server pagination fails to search for UUID #41795",
+        "url": "https://github.com/apache/superset/issues/41795"
+      },
+      {
+        "title": "Superset",
+        "url": "https://superset.apache.org/user-docs/6.1.0/"
+      }
+    ]
+  },
   "2026-07-21_1027": {
     "slug": "superset",
     "title": "Superset: Herramienta de Visualización de Datos",

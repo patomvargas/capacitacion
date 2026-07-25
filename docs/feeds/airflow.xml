@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-24T10:24:19.032235+00:00</updated>
+  <updated>2026-07-25T09:54:31.826789+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -534,5 +534,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-21_1027.html"/>
     <summary>Apache Airflow 3.3 introduce tareas con estado y soporte multilenguaje, permitiendo una mayor flexibilidad y escalabilidad en la orquestación de flujos de trabajo. Esta versión también incluye mejoras en la partición de activos y políticas de reintento configurables.</summary>
     <published>2026-07-21T10:27:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-25_0953.html</id>
+    <title>Airflow 3.3: Tareas con estado y soporte multilenguaje</title>
+    <updated>2026-07-25T09:53:00+00:00</updated>
+    <content type="html">&lt;p&gt;Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Una de las novedades más destacadas es el soporte para tareas con estado, lo que permite a los desarrolladores crear flujos de trabajo más complejos y dinámicos. Para aprovechar esta característica, se puede utilizar el &lt;code&gt;Language Task SDK&lt;/code&gt; para escribir lógica de tareas en Java y Go.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es el soporte multilenguaje, que permite a los desarrolladores escribir tareas en diferentes lenguajes de programación. Esto se logra mediante el uso de &lt;code&gt;XCom&lt;/code&gt;, un sistema de comunicación entre tareas que permite compartir datos entre ellas. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow db init&lt;/code&gt; para inicializar la base de datos y luego crear una tarea que utilice &lt;code&gt;XCom&lt;/code&gt; para compartir datos con otras tareas.&lt;/p&gt;
+&lt;p&gt;La versión 3.3 también incluye mejoras en la partición de activos, lo que permite una mayor escalabilidad y flexibilidad en la gestión de flujos de trabajo. Se puede utilizar el comando &lt;code&gt;airflow assets list&lt;/code&gt; para listar los activos disponibles y luego crear una tarea que utilice la partición de activos para procesar los datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante destacar la importancia de utilizar &lt;code&gt;DAGs&lt;/code&gt; (Directed Acyclic Graphs) para definir los flujos de trabajo. Los &lt;code&gt;DAGs&lt;/code&gt; permiten crear flujos de trabajo complejos y dinámicos, y se pueden utilizar para definir las dependencias entre tareas. Por ejemplo, se puede utilizar el comando &lt;code&gt;airflow dag list&lt;/code&gt; para listar los &lt;code&gt;DAGs&lt;/code&gt; disponibles y luego crear un nuevo &lt;code&gt;DAG&lt;/code&gt; que utilice las tareas y los operadores para procesar los datos.&lt;/p&gt;
+&lt;p&gt;En resumen, Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Los desarrolladores pueden aprovechar estas características para crear flujos de trabajo más complejos y dinámicos, y para mejorar la escalabilidad y flexibilidad en la gestión de flujos de trabajo.&lt;/p&gt;
+&lt;p&gt;Para más información, se puede consultar la documentación oficial de Apache Airflow y las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/blog/airflow-3.3.0/"&gt;Apache Airflow 3.3.0: Stateful Tasks and Multi-Language Support&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.astronomer.io/blog/introducing-apache-airflow-3-3/"&gt;Introducing Apache Airflow 3.3&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://airflow.apache.org/"&gt;Apache Airflow&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-25_0953.html"/>
+    <summary>Apache Airflow 3.3 introduce tareas con estado y soporte multilenguaje, permitiendo una mayor flexibilidad y escalabilidad en la gestión de flujos de trabajo. Esta versión también incluye mejoras en la partición de activos y políticas de reintento personalizables.</summary>
+    <published>2026-07-25T09:53:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.3: Tareas con Estado y Soporte Multilenguaje - Airflow</title>
+    <title>Airflow 3.3: Tareas con estado y soporte multilenguaje - Airflow</title>
     <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
     <style>
         :root {
@@ -57,46 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
     </div>
 
-    <h1>Airflow 3.3: Tareas con Estado y Soporte Multilenguaje</h1>
-    <div class="meta">2026-07-21 1027 · Airflow</div>
+    <h1>Airflow 3.3: Tareas con estado y soporte multilenguaje</h1>
+    <div class="meta">2026-07-25 0953 · Airflow</div>
 
     <div class="content">
         
         
             
-            <p>Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Una de las características más destacadas es el soporte para tareas con estado, lo que permite a los desarrolladores crear tareas que puedan mantener un estado interno y recuperarlo en caso de fallos. Esto se logra mediante el uso de un almacén de estado de tareas, que se puede configurar utilizando el comando `airflow db init` para inicializar la base de datos.</p>
+        
+            
+            <p>Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Una de las novedades más destacadas es el soporte para tareas con estado, lo que permite a los desarrolladores crear flujos de trabajo más complejos y dinámicos. Para aprovechar esta característica, se puede utilizar el `Language Task SDK` para escribir lógica de tareas en Java y Go.</p>
             
         
             
         
             
-        
-            
-            <p>La versión 3.3 también incluye soporte multilenguaje, lo que permite a los desarrolladores escribir lógica de tareas en diferentes lenguajes de programación, como Java y Go. Esto se logra mediante el uso de un SDK de tareas que proporciona una API unificada para interactuar con Airflow, independientemente del lenguaje utilizado. Para utilizar este SDK, los desarrolladores pueden ejecutar el comando `airflow task-sdk` para generar un proyecto de tarea básico.</p>
+            <p>Otra característica importante es el soporte multilenguaje, que permite a los desarrolladores escribir tareas en diferentes lenguajes de programación. Esto se logra mediante el uso de `XCom`, un sistema de comunicación entre tareas que permite compartir datos entre ellas. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego crear una tarea que utilice `XCom` para compartir datos con otras tareas.</p>
             
         
             
         
             
-        
-            
-            <p>Otra característica importante de Airflow 3.3 es la mejora en la partición de activos, que permite a los desarrolladores dividir sus activos en particiones más pequeñas y gestionarlas de manera más eficiente. Esto se logra mediante el uso de un sistema de partición de activos que se puede configurar utilizando el comando `airflow assets partition` para crear y gestionar particiones. Además, la versión 3.3 incluye políticas de reintento configurables, lo que permite a los desarrolladores definir políticas de reintento personalizadas para sus tareas.</p>
+            <p>La versión 3.3 también incluye mejoras en la partición de activos, lo que permite una mayor escalabilidad y flexibilidad en la gestión de flujos de trabajo. Se puede utilizar el comando `airflow assets list` para listar los activos disponibles y luego crear una tarea que utilice la partición de activos para procesar los datos.</p>
             
         
             
         
             
-        
-            
-            <p>Para empezar a utilizar Airflow 3.3, los desarrolladores pueden ejecutar el comando `airflow upgrade` para actualizar su versión actual de Airflow a la versión 3.3. Luego, pueden crear un nuevo proyecto de Airflow utilizando el comando `airflow project init` y comenzar a definir sus flujos de trabajo y tareas utilizando la API de Airflow.</p>
+            <p>En cuanto a las mejores prácticas, es importante destacar la importancia de utilizar `DAGs` (Directed Acyclic Graphs) para definir los flujos de trabajo. Los `DAGs` permiten crear flujos de trabajo complejos y dinámicos, y se pueden utilizar para definir las dependencias entre tareas. Por ejemplo, se puede utilizar el comando `airflow dag list` para listar los `DAGs` disponibles y luego crear un nuevo `DAG` que utilice las tareas y los operadores para procesar los datos.</p>
             
         
             
         
             
+            <p>En resumen, Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Los desarrolladores pueden aprovechar estas características para crear flujos de trabajo más complejos y dinámicos, y para mejorar la escalabilidad y flexibilidad en la gestión de flujos de trabajo.</p>
+            
         
             
-            <p>En resumen, Apache Airflow 3.3 es una versión poderosa y flexible que ofrece una amplia gama de características y mejoras para la orquestación de flujos de trabajo. Con su soporte para tareas con estado, soporte multilenguaje y mejoras en la partición de activos y políticas de reintento, Airflow 3.3 es una herramienta esencial para cualquier equipo de desarrollo que desee automatizar y gestionar sus flujos de trabajo de manera eficiente.</p>
+        
+            
+            <p>Para más información, se puede consultar la documentación oficial de Apache Airflow y las fuentes citadas a continuación.</p>
+            
+        
             
         
     </div>
@@ -117,7 +119,7 @@
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/blog/" target="_blank">Airflow Survey 2025</a>
+                <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
                 
             </li>
             
@@ -128,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-17_1002.html">&larr; 2026-07-17 1002</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-21_1027.html">&larr; 2026-07-21 1027</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-25_0953.html">2026-07-25 0953 &rarr;</a>
             
         </div>
     </div>

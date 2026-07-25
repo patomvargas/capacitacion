@@ -1,4 +1,24 @@
 {
+  "2026-07-25_0953": {
+    "slug": "n8n",
+    "title": "N8n: Automatización de Flujos de Trabajo",
+    "summary": "N8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores y administradores crear y gestionar flujos de trabajo complejos de manera eficiente. En este artículo, se presentan las últimas novedades y mejoras en n8n, incluyendo la actualización de la documentación y la introducción de un changelog.",
+    "content": "N8n es una herramienta de automatización de flujos de trabajo que se está volviendo cada vez más popular en la comunidad de desarrolladores y administradores. En los últimos meses, se han realizado varias actualizaciones y mejoras en la herramienta, incluyendo la actualización de la documentación y la introducción de un changelog. El changelog es un registro de todos los cambios realizados en la herramienta, lo que permite a los usuarios estar al tanto de las últimas novedades y mejoras.\n\n \nPara empezar a utilizar n8n, es necesario instalar la herramienta en un servidor o en una máquina virtual. Esto se puede hacer utilizando el comando `docker run -d -p 5678:5678 n8nio/n8n`. Una vez instalada la herramienta, es posible acceder a la interfaz web y empezar a crear flujos de trabajo.\n\n \nLos flujos de trabajo en n8n se componen de nodos, que son elementos que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos. Por ejemplo, es posible crear un flujo de trabajo que envíe un correo electrónico cuando se recibe una solicitud HTTP utilizando el comando `n8n send-email`.\n\n \nOtra característica importante de n8n es la capacidad de utilizar credenciales y webhooks. Las credenciales permiten a los usuarios autenticarse con servicios externos, como bases de datos o servicios de almacenamiento en la nube. Los webhooks permiten a los usuarios recibir notificaciones cuando se produce un evento específico, como la recepción de un correo electrónico.\n\n \nEn cuanto a las últimas novedades, la comunidad de n8n ha anunciado la actualización de la documentación y la introducción de un changelog. Esto permitirá a los usuarios estar al tanto de las últimas novedades y mejoras en la herramienta. Además, se han realizado varias mejoras en la estabilidad y el rendimiento de la herramienta, lo que la hace aún más eficiente y confiable.\n\n \nEn resumen, n8n es una herramienta de automatización de flujos de trabajo que se está volviendo cada vez más popular en la comunidad de desarrolladores y administradores. Con su interfaz web intuitiva y su capacidad para crear flujos de trabajo complejos, n8n es una herramienta ideal para aquellos que buscan automatizar tareas y procesos en su organización.",
+    "sources": [
+      {
+        "title": "ICYMI: The docs now have a changelog",
+        "url": "https://community.n8n.io/t/icymi-the-docs-now-have-a-changelog/302591"
+      },
+      {
+        "title": "Comparing n8n@2.28.6...n8n@2.28.7",
+        "url": "https://github.com/n8n-io/n8n/compare/n8n@2.28.6...n8n@2.28.7"
+      },
+      {
+        "title": "Guide, Tutorials, and Updates on Workflow Automation",
+        "url": "https://blog.n8n.io/"
+      }
+    ]
+  },
   "2026-07-21_1027": {
     "slug": "n8n",
     "title": "Automatización de flujos de trabajo con n8n",
