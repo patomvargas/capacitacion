@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Mejores Practicas - Ansible</title>
-    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <title>Docker: Mejoras y Best Practices - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,49 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
     </div>
 
-    <h1>Ansible: Mejores Practicas</h1>
-    <div class="meta">2026-07-22 1029 · Ansible</div>
+    <h1>Docker: Mejoras y Best Practices</h1>
+    <div class="meta">2026-07-26 1004 · Docker</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar cambios de manera rápida y segura. Para empezar a usar Ansible, es importante entender los conceptos básicos de playbooks, roles, collections y vault. Un playbook es un archivo YAML que define una serie de tareas que se ejecutan en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web con `nginx` y `mysql` utilizando los siguientes comandos: `ansible-playbook -i inventory.ini playbook.yml`.</p>
+        
+            
+            <p>Docker es una de las tecnologías más populares para contenerización de aplicaciones, y sigue mejorando con el tiempo. Una de las últimas novedades es la introducción de Docker Engine v29, que incluye actualizaciones fundamentales para el futuro de la plataforma. Por ejemplo, se ha mejorado la seguridad con la introducción de `docker trust` para firmar y verificar imágenes.</p>
             
         
             
         
             
-            <p>Para gestionar la complejidad de los playbooks, Ansible proporciona la funcionalidad de roles, que permiten dividir un playbook en componentes más pequeños y reutilizables. Un rol es un conjunto de tareas y handlers que se pueden aplicar a un grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar `nginx` utilizando el comando `ansible-galaxy install nginx`.</p>
+            <p>Otra mejora importante es la optimización de las redes en Docker. Con el comando `docker network`, se pueden crear y gestionar redes para contenedores de manera más eficiente. Por ejemplo, se puede crear una red con `docker network create --driver bridge mi_red` y luego conectar un contenedor a ella con `docker run -it --net mi_red mi_imagen`.</p>
             
         
             
         
             
-            <p>Además, Ansible proporciona la funcionalidad de collections, que permiten agrupar roles y módulos relacionados en un solo paquete. Un ejemplo de colección es la colección `ansible.posix`, que incluye roles y módulos para la gestión de sistemas operativos POSIX. Para instalar una colección, se puede utilizar el comando `ansible-galaxy collection install ansible.posix`.</p>
+            <p>En cuanto a la seguridad, Docker proporciona herramientas como `docker secret` para gestionar secretos y `docker config` para gestionar configuraciones. Por ejemplo, se puede crear un secreto con `docker secret create mi_secreto` y luego utilizarlo en un contenedor con `docker run -it --secret mi_secreto mi_imagen`.</p>
             
         
             
         
             
-            <p>Por último, Ansible proporciona la funcionalidad de vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Para utilizar vault, se puede crear un archivo de cifrado con el comando `ansible-vault create vault.yml`, y luego utilizar el comando `ansible-vault encrypt` para cifrar los datos sensibles.</p>
+            <p>Además, Docker sigue mejorando su integración con otras tecnologías, como Kubernetes. Con la herramienta `docker-compose`, se pueden definir y ejecutar aplicaciones complejas de manera más sencilla. Por ejemplo, se puede definir una aplicación con `docker-compose.yml` y luego ejecutarla con `docker-compose up`.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de los conceptos básicos de playbooks, roles, collections y vault.</p>
+            <p>En resumen, Docker sigue siendo una tecnología líder en contenerización de aplicaciones, y sus últimas mejoras y best practices permiten aprovechar al máximo sus beneficios. Ya sea para desarrollo, pruebas o producción, Docker es una herramienta fundamental para cualquier equipo de desarrollo.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Ansible y otros recursos en línea.</p>
+            <p>Para más información, se pueden consultar las fuentes oficiales de Docker, como el blog de Docker y la documentación oficial. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Docker de manera efectiva.</p>
             
         
     </div>
@@ -105,17 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/ansible/latest/index.html" target="_blank">Ansible Documentation</a>
+                <a href="https://www.docker.com/blog/" target="_blank">Docker Blog</a>
                 
             </li>
             
             <li>
-                <a href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</a>
+                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
                 
             </li>
             
             <li>
-                <a href="https://www.ansible.com/blog" target="_blank">Ansible Blog</a>
+                <a href="https://www.docker.com/blog/category/company/" target="_blank">Company Archives | Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.docker.com/blog/category/products/" target="_blank">Products Archives | Docker</a>
                 
             </li>
             
@@ -126,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-22_1029.html">&larr; 2026-07-22 1029</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html">2026-07-26 1004 &rarr;</a>
             
         </div>
     </div>

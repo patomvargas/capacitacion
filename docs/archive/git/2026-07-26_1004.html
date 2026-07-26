@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Mejores Practicas - Ansible</title>
-    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <title>Mejores prácticas con Git - Git</title>
+    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
     </div>
 
-    <h1>Ansible: Mejores Practicas</h1>
-    <div class="meta">2026-07-22 1029 · Ansible</div>
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-07-26 1004 · Git</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar cambios de manera rápida y segura. Para empezar a usar Ansible, es importante entender los conceptos básicos de playbooks, roles, collections y vault. Un playbook es un archivo YAML que define una serie de tareas que se ejecutan en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web con `nginx` y `mysql` utilizando los siguientes comandos: `ansible-playbook -i inventory.ini playbook.yml`.</p>
+            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, podemos utilizar `git worktree` para crear múltiples copias de nuestro repositorio en diferentes directorios, lo que nos permite trabajar en diferentes características o bugs de manera simultánea.</p>
             
         
             
         
             
-            <p>Para gestionar la complejidad de los playbooks, Ansible proporciona la funcionalidad de roles, que permiten dividir un playbook en componentes más pequeños y reutilizables. Un rol es un conjunto de tareas y handlers que se pueden aplicar a un grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar `nginx` utilizando el comando `ansible-galaxy install nginx`.</p>
+        
+            
+            <p>Para mejorar nuestra productividad, podemos utilizar hooks de Git para automatizar tareas repetitivas. Por ejemplo, podemos crear un hook de pre-commit que verifique si nuestro código cumple con ciertos estándares de calidad antes de permitir el commit. Esto se puede hacer utilizando el comando `git hook` y creando un script que se ejecute antes de cada commit.</p>
             
         
             
         
             
-            <p>Además, Ansible proporciona la funcionalidad de collections, que permiten agrupar roles y módulos relacionados en un solo paquete. Un ejemplo de colección es la colección `ansible.posix`, que incluye roles y módulos para la gestión de sistemas operativos POSIX. Para instalar una colección, se puede utilizar el comando `ansible-galaxy collection install ansible.posix`.</p>
+        
+            
+            <p>Otra característica avanzada de Git es el rebase. El rebase nos permite reorganizar nuestra historia de commits para que sea más lineal y fácil de seguir. Por ejemplo, podemos utilizar `git rebase -i` para interactuar con nuestra historia de commits y eliminar o reordenar commits innecesarios. También podemos utilizar `git bisect` para encontrar el commit que introdujo un bug en nuestro código.</p>
             
         
             
         
             
-            <p>Por último, Ansible proporciona la funcionalidad de vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Para utilizar vault, se puede crear un archivo de cifrado con el comando `ansible-vault create vault.yml`, y luego utilizar el comando `ansible-vault encrypt` para cifrar los datos sensibles.</p>
+        
+            
+            <p>En resumen, Git ofrece una amplia variedad de características y comandos que nos permiten trabajar de manera más eficiente y productiva. Al utilizar workflows, hooks, rebase y otros comandos avanzados, podemos mejorar la calidad de nuestro código y reducir el tiempo necesario para desarrollar y mantener nuestros proyectos.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de los conceptos básicos de playbooks, roles, collections y vault.</p>
+        
+            
+            <p>Para más información sobre Git y sus características, podemos consultar la documentación oficial de Git y otros recursos en línea. También podemos utilizar herramientas como GitKraken o Git Tower para visualizar y manejar nuestros repositorios de manera más intuitiva.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Ansible y otros recursos en línea.</p>
+        
+            
+            <p>En conclusión, Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo, y conocer sus características avanzadas y mejores prácticas es esencial para trabajar de manera eficiente y productiva.</p>
             
         
     </div>
@@ -105,17 +115,12 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/ansible/latest/index.html" target="_blank">Ansible Documentation</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.ansible.com/blog" target="_blank">Ansible Blog</a>
+                <a href="https://git-scm.com/docs" target="_blank">Git Documentation</a>
                 
             </li>
             
@@ -126,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-22_1029.html">&larr; 2026-07-22 1029</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html">2026-07-26 1004 &rarr;</a>
             
         </div>
     </div>

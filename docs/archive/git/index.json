@@ -1,4 +1,20 @@
 {
+  "2026-07-26_1004": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. Aprenderemos a utilizar comandos como `git rebase` y `git bisect` para mejorar nuestra productividad.",
+    "content": "Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, podemos utilizar `git worktree` para crear múltiples copias de nuestro repositorio en diferentes directorios, lo que nos permite trabajar en diferentes características o bugs de manera simultánea.\n\n \nPara mejorar nuestra productividad, podemos utilizar hooks de Git para automatizar tareas repetitivas. Por ejemplo, podemos crear un hook de pre-commit que verifique si nuestro código cumple con ciertos estándares de calidad antes de permitir el commit. Esto se puede hacer utilizando el comando `git hook` y creando un script que se ejecute antes de cada commit.\n\n \nOtra característica avanzada de Git es el rebase. El rebase nos permite reorganizar nuestra historia de commits para que sea más lineal y fácil de seguir. Por ejemplo, podemos utilizar `git rebase -i` para interactuar con nuestra historia de commits y eliminar o reordenar commits innecesarios. También podemos utilizar `git bisect` para encontrar el commit que introdujo un bug en nuestro código.\n\n \nEn resumen, Git ofrece una amplia variedad de características y comandos que nos permiten trabajar de manera más eficiente y productiva. Al utilizar workflows, hooks, rebase y otros comandos avanzados, podemos mejorar la calidad de nuestro código y reducir el tiempo necesario para desarrollar y mantener nuestros proyectos.\n\n \nPara más información sobre Git y sus características, podemos consultar la documentación oficial de Git y otros recursos en línea. También podemos utilizar herramientas como GitKraken o Git Tower para visualizar y manejar nuestros repositorios de manera más intuitiva.\n\n \nEn conclusión, Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo, y conocer sus características avanzadas y mejores prácticas es esencial para trabajar de manera eficiente y productiva.",
+    "sources": [
+      {
+        "title": "GitHub",
+        "url": "https://github.com"
+      },
+      {
+        "title": "Git Documentation",
+        "url": "https://git-scm.com/docs"
+      }
+    ]
+  },
   "2026-07-22_1029": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

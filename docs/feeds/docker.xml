@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-25T09:54:31.847272+00:00</updated>
+  <updated>2026-07-26T10:05:21.799647+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -518,5 +518,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-22_1029.html"/>
     <summary>Docker sigue evolucionando con mejoras en multi-stage builds, compose, networking y seguridad. En este artículo, exploraremos las últimas novedades y best practices para aprovechar al máximo Docker. Se presentan ejemplos prácticos y configuraciones para mejorar la seguridad y eficiencia en el uso de Docker.</summary>
     <published>2026-07-22T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-07-26_1004.html</id>
+    <title>Docker: Mejoras y Best Practices</title>
+    <updated>2026-07-26T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una de las tecnologías más populares para contenerización de aplicaciones, y sigue mejorando con el tiempo. Una de las últimas novedades es la introducción de Docker Engine v29, que incluye actualizaciones fundamentales para el futuro de la plataforma. Por ejemplo, se ha mejorado la seguridad con la introducción de &lt;code&gt;docker trust&lt;/code&gt; para firmar y verificar imágenes.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la optimización de las redes en Docker. Con el comando &lt;code&gt;docker network&lt;/code&gt;, se pueden crear y gestionar redes para contenedores de manera más eficiente. Por ejemplo, se puede crear una red con &lt;code&gt;docker network create --driver bridge mi_red&lt;/code&gt; y luego conectar un contenedor a ella con &lt;code&gt;docker run -it --net mi_red mi_imagen&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Docker proporciona herramientas como &lt;code&gt;docker secret&lt;/code&gt; para gestionar secretos y &lt;code&gt;docker config&lt;/code&gt; para gestionar configuraciones. Por ejemplo, se puede crear un secreto con &lt;code&gt;docker secret create mi_secreto&lt;/code&gt; y luego utilizarlo en un contenedor con &lt;code&gt;docker run -it --secret mi_secreto mi_imagen&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, Docker sigue mejorando su integración con otras tecnologías, como Kubernetes. Con la herramienta &lt;code&gt;docker-compose&lt;/code&gt;, se pueden definir y ejecutar aplicaciones complejas de manera más sencilla. Por ejemplo, se puede definir una aplicación con &lt;code&gt;docker-compose.yml&lt;/code&gt; y luego ejecutarla con &lt;code&gt;docker-compose up&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker sigue siendo una tecnología líder en contenerización de aplicaciones, y sus últimas mejoras y best practices permiten aprovechar al máximo sus beneficios. Ya sea para desarrollo, pruebas o producción, Docker es una herramienta fundamental para cualquier equipo de desarrollo.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Docker, como el blog de Docker y la documentación oficial. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Docker de manera efectiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/ai/sandboxes/release-notes/"&gt;Docker Sandboxes release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/company/"&gt;Company Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/products/"&gt;Products Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-26_1004.html"/>
+    <summary>Docker sigue evolucionando con mejoras en seguridad, redes y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.</summary>
+    <published>2026-07-26T10:04:00+00:00</published>
   </entry>
 </feed>

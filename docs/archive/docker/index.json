@@ -1,4 +1,28 @@
 {
+  "2026-07-26_1004": {
+    "slug": "docker",
+    "title": "Docker: Mejoras y Best Practices",
+    "summary": "Docker sigue evolucionando con mejoras en seguridad, redes y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.",
+    "content": "\nDocker es una de las tecnologías más populares para contenerización de aplicaciones, y sigue mejorando con el tiempo. Una de las últimas novedades es la introducción de Docker Engine v29, que incluye actualizaciones fundamentales para el futuro de la plataforma. Por ejemplo, se ha mejorado la seguridad con la introducción de `docker trust` para firmar y verificar imágenes.\n\nOtra mejora importante es la optimización de las redes en Docker. Con el comando `docker network`, se pueden crear y gestionar redes para contenedores de manera más eficiente. Por ejemplo, se puede crear una red con `docker network create --driver bridge mi_red` y luego conectar un contenedor a ella con `docker run -it --net mi_red mi_imagen`.\n\nEn cuanto a la seguridad, Docker proporciona herramientas como `docker secret` para gestionar secretos y `docker config` para gestionar configuraciones. Por ejemplo, se puede crear un secreto con `docker secret create mi_secreto` y luego utilizarlo en un contenedor con `docker run -it --secret mi_secreto mi_imagen`.\n\nAdemás, Docker sigue mejorando su integración con otras tecnologías, como Kubernetes. Con la herramienta `docker-compose`, se pueden definir y ejecutar aplicaciones complejas de manera más sencilla. Por ejemplo, se puede definir una aplicación con `docker-compose.yml` y luego ejecutarla con `docker-compose up`.\n\nEn resumen, Docker sigue siendo una tecnología líder en contenerización de aplicaciones, y sus últimas mejoras y best practices permiten aprovechar al máximo sus beneficios. Ya sea para desarrollo, pruebas o producción, Docker es una herramienta fundamental para cualquier equipo de desarrollo.\n\nPara más información, se pueden consultar las fuentes oficiales de Docker, como el blog de Docker y la documentación oficial. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Docker de manera efectiva.",
+    "sources": [
+      {
+        "title": "Docker Blog",
+        "url": "https://www.docker.com/blog/"
+      },
+      {
+        "title": "Docker Sandboxes release notes",
+        "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+      },
+      {
+        "title": "Company Archives | Docker",
+        "url": "https://www.docker.com/blog/category/company/"
+      },
+      {
+        "title": "Products Archives | Docker",
+        "url": "https://www.docker.com/blog/category/products/"
+      }
+    ]
+  },
   "2026-07-22_1029": {
     "slug": "docker",
     "title": "Mejoras en Docker: Multi-stage builds y seguridad",

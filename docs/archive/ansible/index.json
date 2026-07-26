@@ -1,4 +1,24 @@
 {
+  "2026-07-26_1004": {
+    "slug": "ansible",
+    "title": "Ansible: Mejoras y Novedades",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas mejoras y características. En este artículo, exploraremos las últimas novedades y cambios en Ansible, incluyendo la versión 8.6.0 de ansible.netcommon y la versión v26.6.1 de ansible-creator.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps automatizar tareas repetitivas y complejas. En los últimos meses, Ansible ha lanzado varias actualizaciones y mejoras, incluyendo la versión 8.6.0 de ansible.netcommon, que incluye correcciones de errores y mejoras de compatibilidad con Python y ansible-core.\n\nUna de las características más destacadas de Ansible es su capacidad para utilizar `playbooks`, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de servidores. Los playbooks pueden incluir `roles`, que son conjuntos de tareas relacionadas que se pueden reutilizar en diferentes playbooks. Para utilizar roles, se puede ejecutar el comando `ansible-galaxy install` para instalar los roles necesarios.\n\nAdemás, Ansible también ofrece `collections`, que son conjuntos de módulos y roles que se pueden utilizar en los playbooks. Las collections pueden ser instaladas utilizando el comando `ansible-galaxy collection install`. Por ejemplo, para instalar la colección `ansible.netcommon`, se puede ejecutar el comando `ansible-galaxy collection install ansible.netcommon`.\n\nOtra característica importante de Ansible es su capacidad para utilizar `vault`, que es una herramienta de cifrado que permite proteger información sensible, como contraseñas y claves SSH. Para utilizar vault, se puede ejecutar el comando `ansible-vault create` para crear un archivo de cifrado, y luego utilizar el comando `ansible-vault encrypt` para cifrar la información sensible.\n\nEn cuanto a la gestión de inventarios, Ansible ofrece la capacidad de utilizar `inventory`, que es un archivo que define los servidores y grupos de servidores que se deben administrar. El archivo de inventario puede ser utilizado para definir variables y grupos de servidores, y se puede utilizar el comando `ansible-inventory` para gestionar el inventario.\n\nFinalmente, Ansible también ofrece la capacidad de utilizar `AWX/Tower`, que es una herramienta de gestión de Ansible que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y automatizar tareas de manera más eficiente. AWX/Tower ofrece una interfaz web para gestionar playbooks, roles y collections, y se puede utilizar para definir workflows y automatizar tareas complejas.\n\n",
+    "sources": [
+      {
+        "title": "Release Announcement: ansible.netcommon 8.6.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-netcommon-8-6-0/46062"
+      },
+      {
+        "title": "Release Announcement: ansible-creator v26.6.1",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-creator-v26-6-1/46003"
+      },
+      {
+        "title": "Roadmaps — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"
+      }
+    ]
+  },
   "2026-07-22_1029": {
     "slug": "ansible",
     "title": "Ansible: Mejores Practicas",

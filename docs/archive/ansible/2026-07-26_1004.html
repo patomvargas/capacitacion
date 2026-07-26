@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Mejores Practicas - Ansible</title>
+    <title>Ansible: Mejoras y Novedades - Ansible</title>
     <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Ansible: Mejores Practicas</h1>
-    <div class="meta">2026-07-22 1029 · Ansible</div>
+    <h1>Ansible: Mejoras y Novedades</h1>
+    <div class="meta">2026-07-26 1004 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar cambios de manera rápida y segura. Para empezar a usar Ansible, es importante entender los conceptos básicos de playbooks, roles, collections y vault. Un playbook es un archivo YAML que define una serie de tareas que se ejecutan en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web con `nginx` y `mysql` utilizando los siguientes comandos: `ansible-playbook -i inventory.ini playbook.yml`.</p>
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps automatizar tareas repetitivas y complejas. En los últimos meses, Ansible ha lanzado varias actualizaciones y mejoras, incluyendo la versión 8.6.0 de ansible.netcommon, que incluye correcciones de errores y mejoras de compatibilidad con Python y ansible-core.</p>
             
         
             
         
             
-            <p>Para gestionar la complejidad de los playbooks, Ansible proporciona la funcionalidad de roles, que permiten dividir un playbook en componentes más pequeños y reutilizables. Un rol es un conjunto de tareas y handlers que se pueden aplicar a un grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar `nginx` utilizando el comando `ansible-galaxy install nginx`.</p>
+            <p>Una de las características más destacadas de Ansible es su capacidad para utilizar `playbooks`, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de servidores. Los playbooks pueden incluir `roles`, que son conjuntos de tareas relacionadas que se pueden reutilizar en diferentes playbooks. Para utilizar roles, se puede ejecutar el comando `ansible-galaxy install` para instalar los roles necesarios.</p>
             
         
             
         
             
-            <p>Además, Ansible proporciona la funcionalidad de collections, que permiten agrupar roles y módulos relacionados en un solo paquete. Un ejemplo de colección es la colección `ansible.posix`, que incluye roles y módulos para la gestión de sistemas operativos POSIX. Para instalar una colección, se puede utilizar el comando `ansible-galaxy collection install ansible.posix`.</p>
+            <p>Además, Ansible también ofrece `collections`, que son conjuntos de módulos y roles que se pueden utilizar en los playbooks. Las collections pueden ser instaladas utilizando el comando `ansible-galaxy collection install`. Por ejemplo, para instalar la colección `ansible.netcommon`, se puede ejecutar el comando `ansible-galaxy collection install ansible.netcommon`.</p>
             
         
             
         
             
-            <p>Por último, Ansible proporciona la funcionalidad de vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Para utilizar vault, se puede crear un archivo de cifrado con el comando `ansible-vault create vault.yml`, y luego utilizar el comando `ansible-vault encrypt` para cifrar los datos sensibles.</p>
+            <p>Otra característica importante de Ansible es su capacidad para utilizar `vault`, que es una herramienta de cifrado que permite proteger información sensible, como contraseñas y claves SSH. Para utilizar vault, se puede ejecutar el comando `ansible-vault create` para crear un archivo de cifrado, y luego utilizar el comando `ansible-vault encrypt` para cifrar la información sensible.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de los conceptos básicos de playbooks, roles, collections y vault.</p>
+            <p>En cuanto a la gestión de inventarios, Ansible ofrece la capacidad de utilizar `inventory`, que es un archivo que define los servidores y grupos de servidores que se deben administrar. El archivo de inventario puede ser utilizado para definir variables y grupos de servidores, y se puede utilizar el comando `ansible-inventory` para gestionar el inventario.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Ansible y otros recursos en línea.</p>
+            <p>Finalmente, Ansible también ofrece la capacidad de utilizar `AWX/Tower`, que es una herramienta de gestión de Ansible que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y automatizar tareas de manera más eficiente. AWX/Tower ofrece una interfaz web para gestionar playbooks, roles y collections, y se puede utilizar para definir workflows y automatizar tareas complejas.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,17 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/ansible/latest/index.html" target="_blank">Ansible Documentation</a>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-netcommon-8-6-0/46062" target="_blank">Release Announcement: ansible.netcommon 8.6.0</a>
                 
             </li>
             
             <li>
-                <a href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</a>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-creator-v26-6-1/46003" target="_blank">Release Announcement: ansible-creator v26.6.1</a>
                 
             </li>
             
             <li>
-                <a href="https://www.ansible.com/blog" target="_blank">Ansible Blog</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html" target="_blank">Roadmaps — Ansible Community Documentation</a>
                 
             </li>
             
@@ -126,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-22_1029.html">&larr; 2026-07-22 1029</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html">2026-07-26 1004 &rarr;</a>
             
         </div>
     </div>

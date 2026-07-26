@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-25T09:54:31.844671+00:00</updated>
+  <updated>2026-07-26T10:05:21.795340+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -572,5 +572,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-18_0937.html"/>
     <summary>La versión beta 2 de PostgreSQL 19 ha sido lanzada, incluyendo mejoras en la escalabilidad y el rendimiento. Esta versión es una oportunidad para que la comunidad pruebe y proporcione retroalimentación antes de la disponibilidad general.</summary>
     <published>2026-07-18T09:37:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-26_1004.html</id>
+    <title>Optimización de Rendimiento en PostgreSQL</title>
+    <updated>2026-07-26T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. Para optimizar el rendimiento de PostgreSQL, es importante configurar adecuadamente los parámetros del sistema, como el tamaño de la memoria compartida (&lt;code&gt;shared_buffers&lt;/code&gt;) y el número de conexiones simultáneas (&lt;code&gt;max_connections&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;Además, la creación de índices adecuados puede mejorar significativamente el rendimiento de las consultas. Los índices pueden ser creados utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt; y pueden ser de diferentes tipos, como índices B-tree (&lt;code&gt;BTREE&lt;/code&gt;) o índices hash (&lt;code&gt;HASH&lt;/code&gt;).&lt;/p&gt;
+&lt;p&gt;La replicación de datos es otra forma de mejorar el rendimiento y la disponibilidad de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestro-esclavo (&lt;code&gt;master-slave&lt;/code&gt;) y la replicación multimaster (&lt;code&gt;multimaster&lt;/code&gt;). La replicación puede ser configurada utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; y el archivo de configuración &lt;code&gt;postgresql.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta &lt;code&gt;pg_stat&lt;/code&gt; que proporciona información detallada sobre el uso de la CPU, la memoria y el disco. También se puede utilizar el comando &lt;code&gt;EXPLAIN&lt;/code&gt; para analizar el plan de ejecución de las consultas y identificar posibles cuellos de botella.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante realizar copias de seguridad regulares de la base de datos para garantizar la integridad de los datos en caso de fallos o errores. Las copias de seguridad pueden ser realizadas utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt; y pueden ser programadas para que se ejecuten automáticamente utilizando herramientas como &lt;code&gt;cron&lt;/code&gt;.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/PostgreSQL"&gt;PostgreSQL - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0"&gt;PostgreSQL Performance Tuning: Best Practices for Better Database Speed&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-26_1004.html"/>
+    <summary>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. En este artículo, se presentan algunas mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de parámetros, la creación de índices y la replicación de datos.</summary>
+    <published>2026-07-26T10:04:00+00:00</published>
   </entry>
 </feed>

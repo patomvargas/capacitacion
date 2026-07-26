@@ -1,4 +1,24 @@
 {
+  "2026-07-26_1004": {
+    "slug": "postgresql",
+    "title": "Optimización de Rendimiento en PostgreSQL",
+    "summary": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. En este artículo, se presentan algunas mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de parámetros, la creación de índices y la replicación de datos.",
+    "content": "PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. Para optimizar el rendimiento de PostgreSQL, es importante configurar adecuadamente los parámetros del sistema, como el tamaño de la memoria compartida (`shared_buffers`) y el número de conexiones simultáneas (`max_connections`). \n\n Además, la creación de índices adecuados puede mejorar significativamente el rendimiento de las consultas. Los índices pueden ser creados utilizando el comando `CREATE INDEX` y pueden ser de diferentes tipos, como índices B-tree (`BTREE`) o índices hash (`HASH`). \n\n La replicación de datos es otra forma de mejorar el rendimiento y la disponibilidad de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestro-esclavo (`master-slave`) y la replicación multimaster (`multimaster`). La replicación puede ser configurada utilizando el comando `pg_basebackup` y el archivo de configuración `postgresql.conf`. \n\n Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta `pg_stat` que proporciona información detallada sobre el uso de la CPU, la memoria y el disco. También se puede utilizar el comando `EXPLAIN` para analizar el plan de ejecución de las consultas y identificar posibles cuellos de botella. \n\n Finalmente, es importante realizar copias de seguridad regulares de la base de datos para garantizar la integridad de los datos en caso de fallos o errores. Las copias de seguridad pueden ser realizadas utilizando el comando `pg_dump` y pueden ser programadas para que se ejecuten automáticamente utilizando herramientas como `cron`.",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "PostgreSQL Performance Tuning: Best Practices for Better Database Speed",
+        "url": "https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0"
+      }
+    ]
+  },
   "2026-07-18_0937": {
     "slug": "postgresql",
     "title": "Mejoras en PostgreSQL 19 Beta 2",

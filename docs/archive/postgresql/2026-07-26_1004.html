@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ansible: Mejores Practicas - Ansible</title>
-    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
+    <title>Optimización de Rendimiento en PostgreSQL - PostgreSQL</title>
+    <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,41 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Ansible: Mejores Practicas</h1>
-    <div class="meta">2026-07-22 1029 · Ansible</div>
+    <h1>Optimización de Rendimiento en PostgreSQL</h1>
+    <div class="meta">2026-07-26 1004 · PostgreSQL</div>
 
     <div class="content">
         
         
             
-            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar cambios de manera rápida y segura. Para empezar a usar Ansible, es importante entender los conceptos básicos de playbooks, roles, collections y vault. Un playbook es un archivo YAML que define una serie de tareas que se ejecutan en un orden específico. Por ejemplo, se puede crear un playbook para instalar y configurar un servidor web con `nginx` y `mysql` utilizando los siguientes comandos: `ansible-playbook -i inventory.ini playbook.yml`.</p>
+            <p>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. Para optimizar el rendimiento de PostgreSQL, es importante configurar adecuadamente los parámetros del sistema, como el tamaño de la memoria compartida (`shared_buffers`) y el número de conexiones simultáneas (`max_connections`).</p>
             
         
             
         
             
-            <p>Para gestionar la complejidad de los playbooks, Ansible proporciona la funcionalidad de roles, que permiten dividir un playbook en componentes más pequeños y reutilizables. Un rol es un conjunto de tareas y handlers que se pueden aplicar a un grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar `nginx` utilizando el comando `ansible-galaxy install nginx`.</p>
+            <p>Además, la creación de índices adecuados puede mejorar significativamente el rendimiento de las consultas. Los índices pueden ser creados utilizando el comando `CREATE INDEX` y pueden ser de diferentes tipos, como índices B-tree (`BTREE`) o índices hash (`HASH`).</p>
             
         
             
         
             
-            <p>Además, Ansible proporciona la funcionalidad de collections, que permiten agrupar roles y módulos relacionados en un solo paquete. Un ejemplo de colección es la colección `ansible.posix`, que incluye roles y módulos para la gestión de sistemas operativos POSIX. Para instalar una colección, se puede utilizar el comando `ansible-galaxy collection install ansible.posix`.</p>
+            <p>La replicación de datos es otra forma de mejorar el rendimiento y la disponibilidad de la base de datos. PostgreSQL ofrece varias opciones de replicación, incluyendo la replicación maestro-esclavo (`master-slave`) y la replicación multimaster (`multimaster`). La replicación puede ser configurada utilizando el comando `pg_basebackup` y el archivo de configuración `postgresql.conf`.</p>
             
         
             
         
             
-            <p>Por último, Ansible proporciona la funcionalidad de vault, que permite cifrar datos sensibles como contraseñas y claves SSH. Para utilizar vault, se puede crear un archivo de cifrado con el comando `ansible-vault create vault.yml`, y luego utilizar el comando `ansible-vault encrypt` para cifrar los datos sensibles.</p>
+            <p>Para monitorizar el rendimiento de la base de datos, se puede utilizar la herramienta `pg_stat` que proporciona información detallada sobre el uso de la CPU, la memoria y el disco. También se puede utilizar el comando `EXPLAIN` para analizar el plan de ejecución de las consultas y identificar posibles cuellos de botella.</p>
             
         
             
         
             
-            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de los conceptos básicos de playbooks, roles, collections y vault.</p>
-            
-        
-            
-        
-            
-            <p>Para más información, se pueden consultar las fuentes oficiales de Ansible y otros recursos en línea.</p>
+            <p>Finalmente, es importante realizar copias de seguridad regulares de la base de datos para garantizar la integridad de los datos en caso de fallos o errores. Las copias de seguridad pueden ser realizadas utilizando el comando `pg_dump` y pueden ser programadas para que se ejecuten automáticamente utilizando herramientas como `cron`.</p>
             
         
     </div>
@@ -105,17 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://docs.ansible.com/ansible/latest/index.html" target="_blank">Ansible Documentation</a>
+                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://www.ansible.com/blog" target="_blank">Ansible Blog</a>
+                <a href="https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0" target="_blank">PostgreSQL Performance Tuning: Best Practices for Better Database Speed</a>
                 
             </li>
             
@@ -126,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-18_0937.html">&larr; 2026-07-18 0937</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html">2026-07-26 1004 &rarr;</a>
             
         </div>
     </div>

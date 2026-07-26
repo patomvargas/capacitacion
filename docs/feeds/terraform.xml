@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-25T09:54:31.852183+00:00</updated>
+  <updated>2026-07-26T10:05:21.807812+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -396,5 +396,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-10_1109.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite a los equipos de DevOps y sysadmins crear y gestionar infraestructuras de manera eficiente. En este artículo, se presentan las últimas mejoras y best practices para trabajar con Terraform.</summary>
     <published>2026-07-10T11:09:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-26_1004.html</id>
+    <title>Terraform: Mejoras y Novedades</title>
+    <updated>2026-07-26T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite crear, cambiar y mejorar la infraestructura de manera segura y predecible. La versión 1.16.0-beta1 de Terraform introduce nuevas características, como la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a través de planes. Para utilizar esta característica, se puede ejecutar el comando &lt;code&gt;terraform plan&lt;/code&gt; con la opción &lt;code&gt;-out&lt;/code&gt; para especificar el archivo de salida.&lt;/p&gt;
+&lt;p&gt;La integración con el lenguaje de servidor de HashiCorp también es una de las novedades más destacadas en Terraform. Esto permite una integración más estrecha con las herramientas de HashiCorp, como el proveedor de Azure. Para utilizar el proveedor de Azure, se puede agregar el siguiente bloque de código a la configuración de Terraform: &lt;code&gt;provider 'azurerm' { version = '2.34.0' }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante en Terraform es el manejo de estado. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado &lt;code&gt;terraform.tfstate&lt;/code&gt;. Para ver el estado actual de la infraestructura, se puede ejecutar el comando &lt;code&gt;terraform show&lt;/code&gt;. Para importar recursos existentes en el estado de Terraform, se puede utilizar el comando &lt;code&gt;terraform import&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 1.15.8 de Terraform también incluye una corrección de errores relacionada con la descarga de proveedores utilizando alias de servicio de descubrimiento. Para actualizar a la última versión de Terraform, se puede ejecutar el comando &lt;code&gt;terraform update&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código. Con las últimas novedades y mejoras, Terraform se convierte en una herramienta aún más útil para los administradores de sistemas y desarrolladores.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Terraform, se puede consultar la documentación oficial de HashiCorp.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mencionar que se debe utilizar un proveedor de versiones para gestionar las versiones de los proveedores y módulos en Terraform. También es importante utilizar un sistema de control de versiones para gestionar los cambios en la configuración de Terraform.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603"&gt;Terraform v1.16.0-beta1 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-15-8-released/77560"&gt;Terraform v1.15.8 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform/releases?after=v0.14.7"&gt;Releases · hashicorp/terraform&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-26_1004.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite crear, cambiar y mejorar la infraestructura de manera segura y predecible. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo la versión 1.16.0-beta1 y la integración con el lenguaje de servidor de HashiCorp.</summary>
+    <published>2026-07-26T10:04:00+00:00</published>
   </entry>
 </feed>

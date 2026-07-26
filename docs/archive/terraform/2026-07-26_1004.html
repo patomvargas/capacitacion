@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terraform: Mejoras y Novedades - Terraform</title>
+    <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
+    </div>
+
+    <h1>Terraform: Mejoras y Novedades</h1>
+    <div class="meta">2026-07-26 1004 · Terraform</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite crear, cambiar y mejorar la infraestructura de manera segura y predecible. La versión 1.16.0-beta1 de Terraform introduce nuevas características, como la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a través de planes. Para utilizar esta característica, se puede ejecutar el comando `terraform plan` con la opción `-out` para especificar el archivo de salida.</p>
+            
+        
+            
+        
+            
+            <p>La integración con el lenguaje de servidor de HashiCorp también es una de las novedades más destacadas en Terraform. Esto permite una integración más estrecha con las herramientas de HashiCorp, como el proveedor de Azure. Para utilizar el proveedor de Azure, se puede agregar el siguiente bloque de código a la configuración de Terraform: `provider 'azurerm' { version = '2.34.0' }`.</p>
+            
+        
+            
+        
+            
+            <p>Otra característica importante en Terraform es el manejo de estado. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado `terraform.tfstate`. Para ver el estado actual de la infraestructura, se puede ejecutar el comando `terraform show`. Para importar recursos existentes en el estado de Terraform, se puede utilizar el comando `terraform import`.</p>
+            
+        
+            
+        
+            
+            <p>La versión 1.15.8 de Terraform también incluye una corrección de errores relacionada con la descarga de proveedores utilizando alias de servicio de descubrimiento. Para actualizar a la última versión de Terraform, se puede ejecutar el comando `terraform update`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código. Con las últimas novedades y mejoras, Terraform se convierte en una herramienta aún más útil para los administradores de sistemas y desarrolladores.</p>
+            
+        
+            
+        
+            
+            <p>Para más información sobre Terraform, se puede consultar la documentación oficial de HashiCorp.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las best practices, es importante mencionar que se debe utilizar un proveedor de versiones para gestionar las versiones de los proveedores y módulos en Terraform. También es importante utilizar un sistema de control de versiones para gestionar los cambios en la configuración de Terraform.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603" target="_blank">Terraform v1.16.0-beta1 released</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-15-8-released/77560" target="_blank">Terraform v1.15.8 released</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform/releases?after=v0.14.7" target="_blank">Releases · hashicorp/terraform</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-10_1109.html">&larr; 2026-07-10 1109</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

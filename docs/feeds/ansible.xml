@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-25T09:54:31.854294+00:00</updated>
+  <updated>2026-07-26T10:05:21.811731+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -691,5 +691,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-22_1029.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan mejores prácticas para el uso de Ansible, incluyendo playbooks, roles, collections y vault.</summary>
     <published>2026-07-22T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html</id>
+    <title>Ansible: Mejoras y Novedades</title>
+    <updated>2026-07-26T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores de DevOps automatizar tareas repetitivas y complejas. En los últimos meses, Ansible ha lanzado varias actualizaciones y mejoras, incluyendo la versión 8.6.0 de ansible.netcommon, que incluye correcciones de errores y mejoras de compatibilidad con Python y ansible-core.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de Ansible es su capacidad para utilizar &lt;code&gt;playbooks&lt;/code&gt;, que son archivos YAML que definen las tareas que se deben ejecutar en un conjunto de servidores. Los playbooks pueden incluir &lt;code&gt;roles&lt;/code&gt;, que son conjuntos de tareas relacionadas que se pueden reutilizar en diferentes playbooks. Para utilizar roles, se puede ejecutar el comando &lt;code&gt;ansible-galaxy install&lt;/code&gt; para instalar los roles necesarios.&lt;/p&gt;
+&lt;p&gt;Además, Ansible también ofrece &lt;code&gt;collections&lt;/code&gt;, que son conjuntos de módulos y roles que se pueden utilizar en los playbooks. Las collections pueden ser instaladas utilizando el comando &lt;code&gt;ansible-galaxy collection install&lt;/code&gt;. Por ejemplo, para instalar la colección &lt;code&gt;ansible.netcommon&lt;/code&gt;, se puede ejecutar el comando &lt;code&gt;ansible-galaxy collection install ansible.netcommon&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es su capacidad para utilizar &lt;code&gt;vault&lt;/code&gt;, que es una herramienta de cifrado que permite proteger información sensible, como contraseñas y claves SSH. Para utilizar vault, se puede ejecutar el comando &lt;code&gt;ansible-vault create&lt;/code&gt; para crear un archivo de cifrado, y luego utilizar el comando &lt;code&gt;ansible-vault encrypt&lt;/code&gt; para cifrar la información sensible.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de inventarios, Ansible ofrece la capacidad de utilizar &lt;code&gt;inventory&lt;/code&gt;, que es un archivo que define los servidores y grupos de servidores que se deben administrar. El archivo de inventario puede ser utilizado para definir variables y grupos de servidores, y se puede utilizar el comando &lt;code&gt;ansible-inventory&lt;/code&gt; para gestionar el inventario.&lt;/p&gt;
+&lt;p&gt;Finalmente, Ansible también ofrece la capacidad de utilizar &lt;code&gt;AWX/Tower&lt;/code&gt;, que es una herramienta de gestión de Ansible que permite a los administradores de sistemas y desarrolladores de DevOps gestionar y automatizar tareas de manera más eficiente. AWX/Tower ofrece una interfaz web para gestionar playbooks, roles y collections, y se puede utilizar para definir workflows y automatizar tareas complejas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-netcommon-8-6-0/46062"&gt;Release Announcement: ansible.netcommon 8.6.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-creator-v26-6-1/46003"&gt;Release Announcement: ansible-creator v26.6.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas mejoras y características. En este artículo, exploraremos las últimas novedades y cambios en Ansible, incluyendo la versión 8.6.0 de ansible.netcommon y la versión v26.6.1 de ansible-creator.</summary>
+    <published>2026-07-26T10:04:00+00:00</published>
   </entry>
 </feed>

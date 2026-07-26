@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-25T09:54:31.849717+00:00</updated>
+  <updated>2026-07-26T10:05:21.803830+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -571,5 +571,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-22_1029.html"/>
     <summary>En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks, rebase, bisect y worktrees. Estas herramientas pueden mejorar significativamente la eficiencia y la calidad del desarrollo de software.</summary>
     <published>2026-07-22T10:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-07-26_1004.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-07-26T10:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, podemos utilizar &lt;code&gt;git worktree&lt;/code&gt; para crear múltiples copias de nuestro repositorio en diferentes directorios, lo que nos permite trabajar en diferentes características o bugs de manera simultánea.&lt;/p&gt;
+&lt;p&gt;Para mejorar nuestra productividad, podemos utilizar hooks de Git para automatizar tareas repetitivas. Por ejemplo, podemos crear un hook de pre-commit que verifique si nuestro código cumple con ciertos estándares de calidad antes de permitir el commit. Esto se puede hacer utilizando el comando &lt;code&gt;git hook&lt;/code&gt; y creando un script que se ejecute antes de cada commit.&lt;/p&gt;
+&lt;p&gt;Otra característica avanzada de Git es el rebase. El rebase nos permite reorganizar nuestra historia de commits para que sea más lineal y fácil de seguir. Por ejemplo, podemos utilizar &lt;code&gt;git rebase -i&lt;/code&gt; para interactuar con nuestra historia de commits y eliminar o reordenar commits innecesarios. También podemos utilizar &lt;code&gt;git bisect&lt;/code&gt; para encontrar el commit que introdujo un bug en nuestro código.&lt;/p&gt;
+&lt;p&gt;En resumen, Git ofrece una amplia variedad de características y comandos que nos permiten trabajar de manera más eficiente y productiva. Al utilizar workflows, hooks, rebase y otros comandos avanzados, podemos mejorar la calidad de nuestro código y reducir el tiempo necesario para desarrollar y mantener nuestros proyectos.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Git y sus características, podemos consultar la documentación oficial de Git y otros recursos en línea. También podemos utilizar herramientas como GitKraken o Git Tower para visualizar y manejar nuestros repositorios de manera más intuitiva.&lt;/p&gt;
+&lt;p&gt;En conclusión, Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo, y conocer sus características avanzadas y mejores prácticas es esencial para trabajar de manera eficiente y productiva.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs"&gt;Git Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-26_1004.html"/>
+    <summary>En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. Aprenderemos a utilizar comandos como `git rebase` y `git bisect` para mejorar nuestra productividad.</summary>
+    <published>2026-07-26T10:04:00+00:00</published>
   </entry>
 </feed>
