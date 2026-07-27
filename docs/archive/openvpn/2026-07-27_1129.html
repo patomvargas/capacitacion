@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BIND9: Configuración y Mejoras - DNS BIND9</title>
-    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,37 +54,53 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>BIND9: Configuración y Mejoras</h1>
-    <div class="meta">2026-07-19 0955 · DNS BIND9</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-07-27 1129 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>La configuración de zonas en BIND9 es fundamental para su funcionamiento. Se puede realizar mediante el archivo `named.conf`, donde se definen las zonas y sus respectivas configuraciones. Por ejemplo, para configurar una zona primaria, se puede utilizar la directiva `zone` con el tipo `master`.</p>
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados SSL/TLS y configurar el servidor para que acepte conexiones. Esto se puede hacer utilizando comandos como `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650` para generar los certificados y `openvpn --config server.conf` para iniciar el servidor.</p>
             
         
             
-            <p>Además, es importante mencionar la seguridad del DNS, para lo cual se puede implementar DNSSEC. Esto se logra mediante la generación de claves y la configuración de los parámetros de seguridad en el archivo `named.conf`.</p>
+        
+            
+            <p>Una vez configurado el servidor, es importante protegerlo contra ataques. Una de las mejores prácticas es utilizar autenticación de dos factores y configurar el servidor para que solo acepte conexiones de clientes que tengan un certificado válido. Esto se puede hacer utilizando comandos como `openvpn --auth-user-pass-verify verify.py via-env` para autenticar a los clientes.</p>
             
         
             
-            <p>Otra característica útil de BIND9 es la capacidad de utilizar vistas (views), que permiten servir diferentes respuestas DNS basadas en la dirección IP del cliente. Esto se puede configurar utilizando la directiva `view` en el archivo `named.conf`.</p>
+        
+            
+            <p>Otra forma de proteger el servidor es configurar el firewall para que solo permita conexiones al servidor OpenVPN. Esto se puede hacer utilizando comandos como `iptables -A INPUT -p udp --dport 1194 -j ACCEPT` para permitir conexiones UDP al puerto 1194.</p>
             
         
             
-            <p>La protección contra ataques de malware y spam también es crucial, y se puede lograr mediante la implementación de RPZ (Response Policy Zones). Esto implica configurar una zona que contenga registros que indiquen qué respuestas DNS deben ser bloqueadas o rechazadas.</p>
+        
+            
+            <p>En cuanto a la versión 2.7.4 de OpenVPN, se han solucionado varios problemas de seguridad y se han agregado nuevas características, como la capacidad de utilizar protocolos de autenticación más seguros. Es importante mantener el servidor actualizado para asegurarse de que se tienen las últimas características de seguridad.</p>
             
         
             
-            <p>En cuanto al rendimiento, es importante realizar un ajuste fino de la configuración de BIND9 para asegurar un funcionamiento óptimo. Esto puede incluir la configuración de parámetros como el tamaño del caché y el número de hilos de procesamiento.</p>
+        
+            
+            <p>Para configurar un túnel site-to-site con OpenVPN, es necesario configurar dos servidores OpenVPN, uno en cada lado del túnel, y establecer una conexión entre ellos. Esto se puede hacer utilizando comandos como `openvpn --config site-to-site.conf` para establecer la conexión.</p>
             
         
             
-            <p>Finalmente, para monitorear el rendimiento y la seguridad de BIND9, se pueden utilizar herramientas de registro y monitoreo. Por ejemplo, se puede utilizar el comando `rndc stats` para obtener estadísticas sobre el rendimiento del servidor.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que la comunidad de OpenVPN es muy activa y hay muchos recursos disponibles para ayudar a configurar y proteger un servidor OpenVPN. En el sitio web oficial de OpenVPN, se pueden encontrar documentación y ejemplos de configuración para ayudar a los administradores de sistemas a configurar y proteger sus servidores.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -95,12 +111,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-calico-l2-fabric-validate-lab" target="_blank">2026-03-13-calico-l2-fabric-validate-lab</a>
+                <a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow" target="_blank">OpenVPN Release 2.7.4</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa" target="_blank">2026-03-13-how-to-configure-flagger-canary-autoscalerref-for-hpa</a>
+                <a href="https://github.com/OpenVPN/openvpn/issues/1073" target="_blank">Route error with OpenVPN 2.7+ Stunnel #1073</a>
                 
             </li>
             
@@ -111,12 +127,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-15_1007.html">&larr; 2026-07-15 1007</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-23_1027.html">&larr; 2026-07-23 1027</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-27_1129.html">2026-07-27 1129 &rarr;</a>
             
         </div>
     </div>

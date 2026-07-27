@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
+    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,48 +57,54 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-07-23 1027 · Kubernetes</div>
+    <h1>Novedades en Kubernetes 1.36</h1>
+    <div class="meta">2026-07-27 1129 · Kubernetes</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>La versión 1.19 de Kubernetes introdujo un cambio importante en el soporte de correcciones de errores, aumentando el período de soporte de 9 meses a 1 año. Esto se refleja en el documento `release-notes-draft.md` de la rama `sig-release` del repositorio de Kubernetes.</p>
+            <p>Kubernetes 1.36 es la última versión del popular sistema de orquestación de contenedores. Una de las novedades más destacadas es la mejora en el soporte para redes de alta disponibilidad. Para configurar una red de alta disponibilidad, podemos utilizar el comando `kubectl create deployment` con la opción `--replicas` para especificar el número de réplicas de nuestro deployment.</p>
             
         
             
         
             
-            <p>Una de las herramientas más interesantes para la automatización en Kubernetes es Brigade, una plataforma de scripting basada en eventos que se integra con diversas fuentes de eventos. Con `brigade`, se pueden crear scripts personalizados para automatizar tareas en el cluster. Por ejemplo, se puede utilizar el comando `brigade create` para crear un nuevo script.</p>
+        
+            
+            <p>La seguridad es otro aspecto que ha sido mejorado en Kubernetes 1.36. Ahora, podemos utilizar el comando `kubectl create secret` para crear secretos cifrados que solo pueden ser descifrados por el controlador de secretos. Por ejemplo, podemos crear un secreto cifrado con el comando `kubectl create secret generic mysecret --from-literal=password=mypassword`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, la herramienta `kubeseal` de `bitnami/sealed-secrets` permite cifrar secretos de manera asimétrica, de modo que solo el controlador pueda descifrarlos. Esto se logra mediante el comando `kubeseal init` y la creación de un recurso `SealedSecret`. Por ejemplo: `kubeseal init --name mi-secreto`.</p>
+        
+            
+            <p>En cuanto al almacenamiento, Kubernetes 1.36 soporta ahora el almacenamiento de objetos S3-compatible. Podemos utilizar el comando `kubectl create storageclass` para crear una clase de almacenamiento que utilice un proveedor de almacenamiento de objetos como Alarik. Por ejemplo, podemos crear una clase de almacenamiento con el comando `kubectl create storageclass mystorageclass --provisioner=alarik.io/alarik`.</p>
             
         
             
         
             
-            <p>Otra herramienta útil es `CoreDNS Corefile Migration Tools`, que proporciona funciones para migrar archivos `Corefile` de CoreDNS a versiones compatibles con nuevas versiones de CoreDNS. Esto se puede lograr mediante la ejecución de `corefile-migration --help` para obtener información sobre cómo utilizar la herramienta.</p>
+        
+            
+            <p>Otra novedad interesante es la integración con el operador de Apache Flink, que nos permite gestionar aplicaciones de procesamiento de datos en tiempo real de manera más eficiente. Podemos utilizar el comando `kubectl create deployment` con la opción `--image` para especificar la imagen de Apache Flink que queremos utilizar.</p>
             
         
             
         
             
-            <p>Finalmente, la instalación de `Vertical Pod Autoscaler` requiere la actualización de la definición de CRD y la configuración de RBAC para el recurso de estado. Esto se puede hacer mediante el comando `kubectl apply` y la creación de un archivo de configuración `yaml` que defina los permisos necesarios.</p>
+        
+            
+            <p>Finalmente, es importante mencionar que la versión 1.36 de Kubernetes también incluye mejoras en la herramienta de línea de comandos `kubectl`. Ahora, podemos utilizar el comando `kubectl debug` para depurar nuestros pods y deployments de manera más eficiente. Por ejemplo, podemos utilizar el comando `kubectl debug mypod --container=mycontainer` para depurar un contenedor específico dentro de un pod.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes sigue mejorando y expandiendo sus capacidades, y es importante estar al tanto de las últimas novedades y herramientas disponibles para aprovechar al máximo su potencial.</p>
-            
         
+            
+            <p>En resumen, Kubernetes 1.36 es una versión muy completa que incluye mejoras en networking, almacenamiento, seguridad y herramientas de línea de comandos. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes en nuestros entornos de producción.</p>
             
         
     </div>
@@ -109,27 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/contributor-site" target="_blank">Kubernetes Contributor Site</a>
+                <a href="https://medium.com/@vkajarkhane/creating-an-aws-eks-cluster-on-kubernetes-1-36-the-complete-2026-guide-aab25af5e629" target="_blank">Creating an AWS EKS Cluster on Kubernetes 1.36</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/sig-release/blob/master/releases/release-1.19/release-notes-draft.md" target="_blank">release-notes-draft.md</a>
+                <a href="https://github.com/apache/flink-kubernetes-operator" target="_blank">Apache Flink Kubernetes Operator</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/brigadecore/brigade" target="_blank">Brigade: Event-Driven Scripting for Kubernetes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/bitnami/sealed-secrets" target="_blank">bitnami/sealed-secrets</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/coredns/corefile-migration" target="_blank">CoreDNS Corefile Migration Tools</a>
+                <a href="https://kubernetes.io/blog/" target="_blank">Kubernetes Blog</a>
                 
             </li>
             
@@ -140,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-19_0955.html">&larr; 2026-07-19 0955</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html">&larr; 2026-07-23 1027</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-27_1129.html">2026-07-27 1129 &rarr;</a>
             
         </div>
     </div>

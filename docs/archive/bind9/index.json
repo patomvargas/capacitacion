@@ -1,4 +1,20 @@
 {
+  "2026-07-27_1129": {
+    "slug": "bind9",
+    "title": "Configuración de DNS BIND9",
+    "summary": "El DNS BIND9 es un servidor de nombres de dominio ampliamente utilizado. En este artículo, se presentan las mejores prácticas para configurar zonas, DNSSEC, vistas, RPZ y registro de eventos.",
+    "content": "El DNS BIND9 es un software de servidor de nombres de dominio que permite administrar y configurar zonas DNS de manera eficiente. Para configurar una zona DNS, es necesario crear un archivo de zona que contenga la información de los registros DNS. Por ejemplo, se puede utilizar el comando `named-checkzone` para verificar la sintaxis del archivo de zona.\n\n \nPara configurar el DNSSEC, es necesario generar una pareja de claves y firmar la zona DNS. Esto se puede hacer utilizando el comando `dnssec-keygen` para generar las claves y `dnssec-signzone` para firmar la zona. Es importante mencionar que el DNSSEC es una tecnología que proporciona autenticidad y integridad a los datos DNS.\n\n \nLas vistas en DNS BIND9 permiten configurar diferentes conjuntos de registros DNS para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Esto se puede hacer utilizando la directiva `view` en el archivo de configuración `named.conf`. El registro de eventos es fundamental para monitorear y depurar el servidor DNS. El DNS BIND9 proporciona varias opciones de registro, incluyendo el registro de eventos en un archivo o en un servidor de registro remoto.\n\n \nLa configuración de RPZ (Response Policy Zone) es una característica de seguridad que permite bloquear el acceso a sitios web maliciosos. Esto se puede hacer utilizando la directiva `response-policy` en el archivo de configuración `named.conf`. Por ejemplo, se puede utilizar el comando `named-checkconf` para verificar la sintaxis del archivo de configuración.\n\n \nEn cuanto al rendimiento, es importante configurar el servidor DNS para que pueda manejar un gran número de consultas. Esto se puede hacer utilizando la directiva `options` en el archivo de configuración `named.conf`. Por ejemplo, se puede ajustar el tamaño del caché DNS o el número de hilos de ejecución. Además, es importante mencionar que el uso de herramientas de monitoreo y análisis de rendimiento puede ayudar a identificar problemas y optimizar el servidor DNS.\n\n \nEn resumen, la configuración de DNS BIND9 requiere una comprensión profunda de las diferentes características y opciones de configuración. Al seguir las mejores prácticas y utilizar las herramientas adecuadas, es posible configurar un servidor DNS seguro y eficiente.",
+    "sources": [
+      {
+        "title": "GitHub - StevenBlack/hosts",
+        "url": "https://github.com/StevenBlack/hosts"
+      },
+      {
+        "title": "RHSA-2026:37282 - Security Advisory - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/errata/RHSA-2026:37282"
+      }
+    ]
+  },
   "2026-07-19_0955": {
     "slug": "bind9",
     "title": "BIND9: Configuración y Mejoras",

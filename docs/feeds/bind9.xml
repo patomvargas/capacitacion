@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-26T10:05:21.756795+00:00</updated>
+  <updated>2026-07-27T11:31:00.450450+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -401,5 +401,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-19_0955.html"/>
     <summary>BIND9 es un servidor DNS de código abierto ampliamente utilizado. En este artículo, se cubren aspectos clave de su configuración y mejores prácticas para asegurar un rendimiento óptimo y seguridad.</summary>
     <published>2026-07-19T09:55:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-27_1129.html</id>
+    <title>Configuración de DNS BIND9</title>
+    <updated>2026-07-27T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;El DNS BIND9 es un software de servidor de nombres de dominio que permite administrar y configurar zonas DNS de manera eficiente. Para configurar una zona DNS, es necesario crear un archivo de zona que contenga la información de los registros DNS. Por ejemplo, se puede utilizar el comando &lt;code&gt;named-checkzone&lt;/code&gt; para verificar la sintaxis del archivo de zona.&lt;/p&gt;
+&lt;p&gt;Para configurar el DNSSEC, es necesario generar una pareja de claves y firmar la zona DNS. Esto se puede hacer utilizando el comando &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar las claves y &lt;code&gt;dnssec-signzone&lt;/code&gt; para firmar la zona. Es importante mencionar que el DNSSEC es una tecnología que proporciona autenticidad y integridad a los datos DNS.&lt;/p&gt;
+&lt;p&gt;Las vistas en DNS BIND9 permiten configurar diferentes conjuntos de registros DNS para diferentes clientes. Por ejemplo, se puede configurar una vista para clientes internos y otra para clientes externos. Esto se puede hacer utilizando la directiva &lt;code&gt;view&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. El registro de eventos es fundamental para monitorear y depurar el servidor DNS. El DNS BIND9 proporciona varias opciones de registro, incluyendo el registro de eventos en un archivo o en un servidor de registro remoto.&lt;/p&gt;
+&lt;p&gt;La configuración de RPZ (Response Policy Zone) es una característica de seguridad que permite bloquear el acceso a sitios web maliciosos. Esto se puede hacer utilizando la directiva &lt;code&gt;response-policy&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, se puede utilizar el comando &lt;code&gt;named-checkconf&lt;/code&gt; para verificar la sintaxis del archivo de configuración.&lt;/p&gt;
+&lt;p&gt;En cuanto al rendimiento, es importante configurar el servidor DNS para que pueda manejar un gran número de consultas. Esto se puede hacer utilizando la directiva &lt;code&gt;options&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, se puede ajustar el tamaño del caché DNS o el número de hilos de ejecución. Además, es importante mencionar que el uso de herramientas de monitoreo y análisis de rendimiento puede ayudar a identificar problemas y optimizar el servidor DNS.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración de DNS BIND9 requiere una comprensión profunda de las diferentes características y opciones de configuración. Al seguir las mejores prácticas y utilizar las herramientas adecuadas, es posible configurar un servidor DNS seguro y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/StevenBlack/hosts"&gt;GitHub - StevenBlack/hosts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:37282"&gt;RHSA-2026:37282 - Security Advisory - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-27_1129.html"/>
+    <summary>El DNS BIND9 es un servidor de nombres de dominio ampliamente utilizado. En este artículo, se presentan las mejores prácticas para configurar zonas, DNSSEC, vistas, RPZ y registro de eventos.</summary>
+    <published>2026-07-27T11:29:00+00:00</published>
   </entry>
 </feed>

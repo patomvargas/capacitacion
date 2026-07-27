@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-26T10:05:21.759162+00:00</updated>
+  <updated>2026-07-27T11:31:00.454333+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -631,5 +631,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-23_1027.html"/>
     <summary>OpenVPN es una herramienta de tunneling de código abierto que permite a los administradores de sistemas crear conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y asegurar OpenVPN.</summary>
     <published>2026-07-23T10:27:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-27_1129.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-07-27T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados SSL/TLS y configurar el servidor para que acepte conexiones. Esto se puede hacer utilizando comandos como &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650&lt;/code&gt; para generar los certificados y &lt;code&gt;openvpn --config server.conf&lt;/code&gt; para iniciar el servidor.&lt;/p&gt;
+&lt;p&gt;Una vez configurado el servidor, es importante protegerlo contra ataques. Una de las mejores prácticas es utilizar autenticación de dos factores y configurar el servidor para que solo acepte conexiones de clientes que tengan un certificado válido. Esto se puede hacer utilizando comandos como &lt;code&gt;openvpn --auth-user-pass-verify verify.py via-env&lt;/code&gt; para autenticar a los clientes.&lt;/p&gt;
+&lt;p&gt;Otra forma de proteger el servidor es configurar el firewall para que solo permita conexiones al servidor OpenVPN. Esto se puede hacer utilizando comandos como &lt;code&gt;iptables -A INPUT -p udp --dport 1194 -j ACCEPT&lt;/code&gt; para permitir conexiones UDP al puerto 1194.&lt;/p&gt;
+&lt;p&gt;En cuanto a la versión 2.7.4 de OpenVPN, se han solucionado varios problemas de seguridad y se han agregado nuevas características, como la capacidad de utilizar protocolos de autenticación más seguros. Es importante mantener el servidor actualizado para asegurarse de que se tienen las últimas características de seguridad.&lt;/p&gt;
+&lt;p&gt;Para configurar un túnel site-to-site con OpenVPN, es necesario configurar dos servidores OpenVPN, uno en cada lado del túnel, y establecer una conexión entre ellos. Esto se puede hacer utilizando comandos como &lt;code&gt;openvpn --config site-to-site.conf&lt;/code&gt; para establecer la conexión.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de OpenVPN es muy activa y hay muchos recursos disponibles para ayudar a configurar y proteger un servidor OpenVPN. En el sitio web oficial de OpenVPN, se pueden encontrar documentación y ejemplos de configuración para ayudar a los administradores de sistemas a configurar y proteger sus servidores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"&gt;OpenVPN Release 2.7.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/issues/1073"&gt;Route error with OpenVPN 2.7+ Stunnel #1073&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-27_1129.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
+    <published>2026-07-27T11:29:00+00:00</published>
   </entry>
 </feed>

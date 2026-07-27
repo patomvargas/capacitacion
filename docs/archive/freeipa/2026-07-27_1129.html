@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FreeIPA: Administración de Identidad - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+    </div>
+
+    <h1>FreeIPA: Administración de Identidad</h1>
+    <div class="meta">2026-07-27 1129 · FreeIPA</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>FreeIPA es un proyecto de código abierto que proporciona una solución de administración de identidad para entornos de red. Permite la autenticación y autorización de usuarios y servicios a través de protocolos como LDAP, Kerberos y SSL/TLS. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` en una máquina con Red Hat Enterprise Linux o CentOS.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características clave de FreeIPA es la capacidad de establecer relaciones de confianza entre dominios, lo que permite la autenticación y autorización de usuarios entre diferentes dominios. Esto se logra a través del protocolo Kerberos, que permite la autenticación de usuarios y servicios de manera segura. Para configurar una relación de confianza en FreeIPA, se puede utilizar el comando `ipa trust-add` seguido del nombre del dominio con el que se desea establecer la relación de confianza.</p>
+            
+        
+            
+        
+            
+            <p>FreeIPA también proporciona una serie de características de seguridad, como la autenticación de dos factores y la autorización basada en roles. La autenticación de dos factores se puede configurar utilizando el comando `ipa config-mod` para habilitar la autenticación de dos factores para todos los usuarios. La autorización basada en roles se puede configurar utilizando el comando `ipa role-add` para crear roles y asignar permisos a esos roles.</p>
+            
+        
+            
+        
+            
+            <p>Recientemente, se han realizado algunas mejoras en la interfaz de usuario de FreeIPA, como la capacidad de buscar usuarios y grupos de manera dinámica. Sin embargo, todavía hay algunas limitaciones en la búsqueda, como se menciona en la issue #1138 en GitHub. Otra característica que se ha mejorado es la capacidad de importar certificados de autoridad de certificación de manera más segura, como se menciona en la issue #1142 en GitHub.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, es importante mantener actualizados los certificados de autoridad de certificación y los certificados de servidor para evitar problemas de autenticación y autorización. También es importante configurar la autenticación de dos factores y la autorización basada en roles para mejorar la seguridad del sistema.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que FreeIPA es una herramienta muy potente y flexible que puede ser utilizada en una variedad de entornos y escenarios. Sin embargo, requiere una configuración y administración adecuadas para funcionar de manera efectiva y segura. Para obtener más información sobre FreeIPA y sus características, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/freeipa/freeipa-webui/issues" target="_blank">FreeIPA WebUI Issues</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://web.mit.edu/kerberos/" target="_blank">Kerberos Protocol</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-23_1027.html">&larr; 2026-07-23 1027</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-26T10:05:21.762356+00:00</updated>
+  <updated>2026-07-27T11:31:00.459198+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -682,5 +682,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, almacenamiento y seguridad. En este artículo, se presentan algunas de las novedades más destacadas.</summary>
     <published>2026-07-23T10:27:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-27_1129.html</id>
+    <title>Novedades en Kubernetes 1.36</title>
+    <updated>2026-07-27T11:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes 1.36 es la última versión del popular sistema de orquestación de contenedores. Una de las novedades más destacadas es la mejora en el soporte para redes de alta disponibilidad. Para configurar una red de alta disponibilidad, podemos utilizar el comando &lt;code&gt;kubectl create deployment&lt;/code&gt; con la opción &lt;code&gt;--replicas&lt;/code&gt; para especificar el número de réplicas de nuestro deployment.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto que ha sido mejorado en Kubernetes 1.36. Ahora, podemos utilizar el comando &lt;code&gt;kubectl create secret&lt;/code&gt; para crear secretos cifrados que solo pueden ser descifrados por el controlador de secretos. Por ejemplo, podemos crear un secreto cifrado con el comando &lt;code&gt;kubectl create secret generic mysecret --from-literal=password=mypassword&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto al almacenamiento, Kubernetes 1.36 soporta ahora el almacenamiento de objetos S3-compatible. Podemos utilizar el comando &lt;code&gt;kubectl create storageclass&lt;/code&gt; para crear una clase de almacenamiento que utilice un proveedor de almacenamiento de objetos como Alarik. Por ejemplo, podemos crear una clase de almacenamiento con el comando &lt;code&gt;kubectl create storageclass mystorageclass --provisioner=alarik.io/alarik&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad interesante es la integración con el operador de Apache Flink, que nos permite gestionar aplicaciones de procesamiento de datos en tiempo real de manera más eficiente. Podemos utilizar el comando &lt;code&gt;kubectl create deployment&lt;/code&gt; con la opción &lt;code&gt;--image&lt;/code&gt; para especificar la imagen de Apache Flink que queremos utilizar.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la versión 1.36 de Kubernetes también incluye mejoras en la herramienta de línea de comandos &lt;code&gt;kubectl&lt;/code&gt;. Ahora, podemos utilizar el comando &lt;code&gt;kubectl debug&lt;/code&gt; para depurar nuestros pods y deployments de manera más eficiente. Por ejemplo, podemos utilizar el comando &lt;code&gt;kubectl debug mypod --container=mycontainer&lt;/code&gt; para depurar un contenedor específico dentro de un pod.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes 1.36 es una versión muy completa que incluye mejoras en networking, almacenamiento, seguridad y herramientas de línea de comandos. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes en nuestros entornos de producción.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@vkajarkhane/creating-an-aws-eks-cluster-on-kubernetes-1-36-the-complete-2026-guide-aab25af5e629"&gt;Creating an AWS EKS Cluster on Kubernetes 1.36&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/flink-kubernetes-operator"&gt;Apache Flink Kubernetes Operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/"&gt;Kubernetes Blog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-27_1129.html"/>
+    <summary>Kubernetes 1.36 trae consigo mejoras en networking, almacenamiento y seguridad. En este artículo, exploraremos algunas de las novedades más destacadas y cómo implementarlas en un clúster de producción.</summary>
+    <published>2026-07-27T11:29:00+00:00</published>
   </entry>
 </feed>
