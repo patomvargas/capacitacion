@@ -58,43 +58,45 @@
     </div>
 
     <h1>Metabase: Mejoras y Best Practices</h1>
-    <div class="meta">2026-07-24 1023 · Metabase</div>
+    <div class="meta">2026-07-28 1040 · Metabase</div>
 
     <div class="content">
         
         
             
-            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear dashboards y realizar queries de manera sencilla. Una de las características más importantes de Metabase es la capacidad de crear dashboards personalizados con filtros y visualizaciones avanzadas. Para crear un dashboard en Metabase, se puede utilizar el comando `metabase dashboard create` y luego agregar los filtros y visualizaciones deseados.</p>
+        
+            
+            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y informes personalizados a partir de sus datos. Una de las funcionalidades más destacadas de Metabase es su capacidad para conectar con diversas fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando `metabase db connect` seguido de la URL de la base de datos y las credenciales de acceso.</p>
             
         
             
         
             
-            <p>La comunidad de Metabase ha estado trabajando en mejorar la herramienta, y recientemente se ha introducido el MetaViz Hub, un registro comunitario para visualizaciones personalizadas. Esto permite a los desarrolladores crear y compartir visualizaciones avanzadas de manera sencilla. Para utilizar el MetaViz Hub, se puede acceder a la página de GitHub y seguir las instrucciones para crear y compartir visualizaciones.</p>
+            <p>Una de las últimas novedades en Metabase es la capacidad de renderizar campos como enlaces. Esto se logra mediante la configuración de la URL del campo en el formato `https://example.com/${campo}`. Sin embargo, es importante tener en cuenta que este formato puede variar dependiendo de la versión de Metabase que se esté utilizando. Para obtener más información sobre la configuración de la URL, se puede consultar la documentación oficial de Metabase.</p>
             
         
             
         
             
-            <p>Otra característica importante de Metabase es la capacidad de realizar queries avanzadas utilizando el lenguaje de query de Metabase. Por ejemplo, se puede utilizar el comando `metabase query run` para ejecutar una query y obtener los resultados. También se puede utilizar el comando `metabase query create` para crear una nueva query y guardarla para futuras consultas.</p>
+            <p>En cuanto a la seguridad, Metabase ha solventado varias vulnerabilidades en sus últimas versiones. Una de ellas es la Arbitrary Code Execution via Database Connection Detail Bypass, que permitía a los administradores autenticados ejecutar código Java arbitrario en el servidor de Metabase. Para evitar esta vulnerabilidad, es importante actualizar Metabase a la última versión y seguir las best practices de seguridad recomendadas por los desarrolladores.</p>
             
         
             
         
             
-            <p>En cuanto a la administración de Metabase, es importante mencionar que se puede utilizar el comando `metabase admin` para acceder a la consola de administración y realizar tareas como la creación de usuarios y la configuración de la herramienta. También se puede utilizar el comando `metabase backup` para crear un respaldo de la base de datos y evitar pérdidas de datos en caso de un fallo.</p>
+            <p>Para aprovechar al máximo las capacidades de Metabase, es importante seguir las best practices recomendadas por los desarrolladores. Una de ellas es utilizar la función `build-for-release` para compilar y probar la aplicación antes de implementarla en producción. Esto se puede lograr mediante el comando `git checkout master` seguido de `git pull` y finalmente `build-for-release`. Además, es importante configurar la aplicación para que se ejecute en modo de producción, lo que se puede lograr mediante el comando `java -jar metabase.jar --production`.</p>
             
         
             
         
             
-            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece una variedad de características y herramientas para crear dashboards y realizar queries de manera sencilla. Con la introducción del MetaViz Hub y las mejoras en la administración de la herramienta, Metabase es una opción atractiva para los equipos de análisis de datos.</p>
+            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como consultas, dashboards y API. Para aprovechar al máximo sus capacidades, es importante seguir las best practices recomendadas por los desarrolladores y estar al tanto de las últimas novedades y actualizaciones de seguridad.</p>
             
         
             
         
             
-            <p>Para más información sobre Metabase y sus características, se pueden consultar las fuentes oficiales de la herramienta.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Metabase es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Allí se pueden encontrar tutoriales, ejemplos y referencias para ayudar a los usuarios a aprovechar al máximo las capacidades de Metabase.</p>
             
         
     </div>
@@ -105,17 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metabase/metabase/wiki/Home/" target="_blank">Metabase GitHub</a>
+                <a href="https://github.com/metabase/metabase/tree/master/release" target="_blank">Metabase Release</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/t/introducing-metaviz-hub-a-community-registry-for-the-new-custom-visualizations/315144" target="_blank">MetaViz Hub</a>
+                <a href="https://github.com/metabase/metabase/issues/77352" target="_blank">URL format changed by metabase when rendering field value as link</a>
                 
             </li>
             
             <li>
-                <a href="https://discourse.metabase.com/" target="_blank">Metabase Discourse</a>
+                <a href="https://github.com/metabase/metabase/security/advisories/GHSA-8wx2-rxp2-4x35" target="_blank">Arbitrary Code Execution via Database Connection Detail Bypass</a>
                 
             </li>
             
@@ -126,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-20_1056.html">&larr; 2026-07-20 1056</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-24_1023.html">&larr; 2026-07-24 1023</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-28_1040.html">2026-07-28 1040 &rarr;</a>
             
         </div>
     </div>

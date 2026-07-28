@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-27T11:31:00.462502+00:00</updated>
+  <updated>2026-07-28T10:41:25.233328+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -671,5 +671,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-24_1023.html"/>
     <summary>OpenShift es una plataforma de contenedores que sigue evolucionando con actualizaciones y mejoras. En este artículo, se presentan las novedades y cambios recientes en OpenShift, incluyendo actualizaciones de seguridad y mejoras en la gestión de clústeres.</summary>
     <published>2026-07-24T10:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-28_1040.html</id>
+    <title>Novedades en OpenShift 4.22</title>
+    <updated>2026-07-28T10:40:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 4.22 de OpenShift se basa en Kubernetes 1.35 y CRI-O 1.35, y ofrece varias mejoras y nuevas características para desarrolladores y administradores de sistemas. Una de las novedades más destacadas es la inclusión de Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear entornos de desarrollo personalizados y colaborativos.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en esta versión, con actualizaciones que incluyen la corrección de vulnerabilidades críticas. Para verificar la disponibilidad de actualizaciones, se puede utilizar el comando &lt;code&gt;oc adm upgrade&lt;/code&gt; en la línea de comandos. Además, se puede utilizar el comando &lt;code&gt;oc get clusteroperators&lt;/code&gt; para verificar el estado de los operadores del clúster.&lt;/p&gt;
+&lt;p&gt;En cuanto a la observabilidad, OpenShift 4.22 incluye la versión 1.5 del operador de observabilidad de clúster (COO), que ofrece dashboards personalizables y compatibilidad con fuentes de datos de monitoreo existentes. Para instalar el operador de observabilidad, se puede utilizar el comando &lt;code&gt;oc apply -f https://raw.githubusercontent.com/red-hat-storage/ocs-operator/main/deploy/csv-templates/crds/ocs/ocs.openshift.io_storageclusters.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La migración a OpenShift 4.22 también es un proceso importante, y se puede realizar utilizando el comando &lt;code&gt;oc adm migrate&lt;/code&gt;. Es importante tener en cuenta que antes de realizar la migración, se deben realizar copias de seguridad de los datos y configuraciones importantes.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.22 es una versión que ofrece muchas mejoras y nuevas características para desarrolladores y administradores de sistemas, y es importante estar al tanto de las novedades y cambios para aprovechar al máximo sus funcionalidades.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:40764"&gt;RHSA-2026:40764&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"&gt;What's new for developers in Red Hat OpenShift 4.22&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/new-observability-features-red-hat-openshift-422"&gt;New observability features in Red Hat OpenShift 4.22&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-28_1040.html"/>
+    <summary>OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores de sistemas. Esta versión incluye actualizaciones de seguridad, nuevas herramientas de desarrollo y mejoras en la observabilidad.</summary>
+    <published>2026-07-28T10:40:00+00:00</published>
   </entry>
 </feed>

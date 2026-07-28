@@ -1,4 +1,24 @@
 {
+  "2026-07-28_1040": {
+    "slug": "metabase",
+    "title": "Metabase: Mejoras y Best Practices",
+    "summary": "Metabase es una herramienta de análisis de datos que ofrece funcionalidades como consultas, dashboards y API. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus capacidades.",
+    "content": "\nMetabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y informes personalizados a partir de sus datos. Una de las funcionalidades más destacadas de Metabase es su capacidad para conectar con diversas fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando `metabase db connect` seguido de la URL de la base de datos y las credenciales de acceso.\n\nUna de las últimas novedades en Metabase es la capacidad de renderizar campos como enlaces. Esto se logra mediante la configuración de la URL del campo en el formato `https://example.com/${campo}`. Sin embargo, es importante tener en cuenta que este formato puede variar dependiendo de la versión de Metabase que se esté utilizando. Para obtener más información sobre la configuración de la URL, se puede consultar la documentación oficial de Metabase.\n\nEn cuanto a la seguridad, Metabase ha solventado varias vulnerabilidades en sus últimas versiones. Una de ellas es la Arbitrary Code Execution via Database Connection Detail Bypass, que permitía a los administradores autenticados ejecutar código Java arbitrario en el servidor de Metabase. Para evitar esta vulnerabilidad, es importante actualizar Metabase a la última versión y seguir las best practices de seguridad recomendadas por los desarrolladores.\n\nPara aprovechar al máximo las capacidades de Metabase, es importante seguir las best practices recomendadas por los desarrolladores. Una de ellas es utilizar la función `build-for-release` para compilar y probar la aplicación antes de implementarla en producción. Esto se puede lograr mediante el comando `git checkout master` seguido de `git pull` y finalmente `build-for-release`. Además, es importante configurar la aplicación para que se ejecute en modo de producción, lo que se puede lograr mediante el comando `java -jar metabase.jar --production`.\n\nEn resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como consultas, dashboards y API. Para aprovechar al máximo sus capacidades, es importante seguir las best practices recomendadas por los desarrolladores y estar al tanto de las últimas novedades y actualizaciones de seguridad.\n\nFinalmente, es importante mencionar que la documentación oficial de Metabase es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Allí se pueden encontrar tutoriales, ejemplos y referencias para ayudar a los usuarios a aprovechar al máximo las capacidades de Metabase.",
+    "sources": [
+      {
+        "title": "Metabase Release",
+        "url": "https://github.com/metabase/metabase/tree/master/release"
+      },
+      {
+        "title": "URL format changed by metabase when rendering field value as link",
+        "url": "https://github.com/metabase/metabase/issues/77352"
+      },
+      {
+        "title": "Arbitrary Code Execution via Database Connection Detail Bypass",
+        "url": "https://github.com/metabase/metabase/security/advisories/GHSA-8wx2-rxp2-4x35"
+      }
+    ]
+  },
   "2026-07-24_1023": {
     "slug": "metabase",
     "title": "Metabase: Mejoras y Best Practices",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metabase.xml</id>
   <title>Metabase - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-27T11:31:00.473102+00:00</updated>
+  <updated>2026-07-28T10:41:25.247653+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metabase/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metabase.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -416,5 +416,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-24_1023.html"/>
     <summary>Metabase es una herramienta de análisis de datos que permite a los usuarios crear dashboards y realizar queries de manera sencilla. En este artículo, se presentan algunas mejoras y best practices para utilizar Metabase de manera efectiva.</summary>
     <published>2026-07-24T10:23:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-28_1040.html</id>
+    <title>Metabase: Mejoras y Best Practices</title>
+    <updated>2026-07-28T10:40:00+00:00</updated>
+    <content type="html">&lt;p&gt;Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y informes personalizados a partir de sus datos. Una de las funcionalidades más destacadas de Metabase es su capacidad para conectar con diversas fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando &lt;code&gt;metabase db connect&lt;/code&gt; seguido de la URL de la base de datos y las credenciales de acceso.&lt;/p&gt;
+&lt;p&gt;Una de las últimas novedades en Metabase es la capacidad de renderizar campos como enlaces. Esto se logra mediante la configuración de la URL del campo en el formato &lt;code&gt;https://example.com/${campo}&lt;/code&gt;. Sin embargo, es importante tener en cuenta que este formato puede variar dependiendo de la versión de Metabase que se esté utilizando. Para obtener más información sobre la configuración de la URL, se puede consultar la documentación oficial de Metabase.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Metabase ha solventado varias vulnerabilidades en sus últimas versiones. Una de ellas es la Arbitrary Code Execution via Database Connection Detail Bypass, que permitía a los administradores autenticados ejecutar código Java arbitrario en el servidor de Metabase. Para evitar esta vulnerabilidad, es importante actualizar Metabase a la última versión y seguir las best practices de seguridad recomendadas por los desarrolladores.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo las capacidades de Metabase, es importante seguir las best practices recomendadas por los desarrolladores. Una de ellas es utilizar la función &lt;code&gt;build-for-release&lt;/code&gt; para compilar y probar la aplicación antes de implementarla en producción. Esto se puede lograr mediante el comando &lt;code&gt;git checkout master&lt;/code&gt; seguido de &lt;code&gt;git pull&lt;/code&gt; y finalmente &lt;code&gt;build-for-release&lt;/code&gt;. Además, es importante configurar la aplicación para que se ejecute en modo de producción, lo que se puede lograr mediante el comando &lt;code&gt;java -jar metabase.jar --production&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como consultas, dashboards y API. Para aprovechar al máximo sus capacidades, es importante seguir las best practices recomendadas por los desarrolladores y estar al tanto de las últimas novedades y actualizaciones de seguridad.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Metabase es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Allí se pueden encontrar tutoriales, ejemplos y referencias para ayudar a los usuarios a aprovechar al máximo las capacidades de Metabase.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/tree/master/release"&gt;Metabase Release&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/issues/77352"&gt;URL format changed by metabase when rendering field value as link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metabase/metabase/security/advisories/GHSA-8wx2-rxp2-4x35"&gt;Arbitrary Code Execution via Database Connection Detail Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-28_1040.html"/>
+    <summary>Metabase es una herramienta de análisis de datos que ofrece funcionalidades como consultas, dashboards y API. En este artículo, se presentan las últimas novedades y best practices para aprovechar al máximo sus capacidades.</summary>
+    <published>2026-07-28T10:40:00+00:00</published>
   </entry>
 </feed>

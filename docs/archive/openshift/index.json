@@ -1,4 +1,24 @@
 {
+  "2026-07-28_1040": {
+    "slug": "openshift",
+    "title": "Novedades en OpenShift 4.22",
+    "summary": "OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores de sistemas. Esta versión incluye actualizaciones de seguridad, nuevas herramientas de desarrollo y mejoras en la observabilidad.",
+    "content": "La versión 4.22 de OpenShift se basa en Kubernetes 1.35 y CRI-O 1.35, y ofrece varias mejoras y nuevas características para desarrolladores y administradores de sistemas. Una de las novedades más destacadas es la inclusión de Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear entornos de desarrollo personalizados y colaborativos.\n\nLa seguridad es otro aspecto importante en esta versión, con actualizaciones que incluyen la corrección de vulnerabilidades críticas. Para verificar la disponibilidad de actualizaciones, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Además, se puede utilizar el comando `oc get clusteroperators` para verificar el estado de los operadores del clúster.\n\nEn cuanto a la observabilidad, OpenShift 4.22 incluye la versión 1.5 del operador de observabilidad de clúster (COO), que ofrece dashboards personalizables y compatibilidad con fuentes de datos de monitoreo existentes. Para instalar el operador de observabilidad, se puede utilizar el comando `oc apply -f https://raw.githubusercontent.com/red-hat-storage/ocs-operator/main/deploy/csv-templates/crds/ocs/ocs.openshift.io_storageclusters.yaml`.\n\nLa migración a OpenShift 4.22 también es un proceso importante, y se puede realizar utilizando el comando `oc adm migrate`. Es importante tener en cuenta que antes de realizar la migración, se deben realizar copias de seguridad de los datos y configuraciones importantes.\n\nEn resumen, OpenShift 4.22 es una versión que ofrece muchas mejoras y nuevas características para desarrolladores y administradores de sistemas, y es importante estar al tanto de las novedades y cambios para aprovechar al máximo sus funcionalidades.\n\nPara más información, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift.",
+    "sources": [
+      {
+        "title": "RHSA-2026:40764",
+        "url": "https://access.redhat.com/errata/RHSA-2026:40764"
+      },
+      {
+        "title": "What's new for developers in Red Hat OpenShift 4.22",
+        "url": "https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"
+      },
+      {
+        "title": "New observability features in Red Hat OpenShift 4.22",
+        "url": "https://www.redhat.com/en/blog/new-observability-features-red-hat-openshift-422"
+      }
+    ]
+  },
   "2026-07-24_1023": {
     "slug": "openshift",
     "title": "Novedades y Mejoras en OpenShift",
