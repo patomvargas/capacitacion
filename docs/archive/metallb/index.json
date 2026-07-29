@@ -1,4 +1,28 @@
 {
+  "2026-07-29_1043": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en K8s",
+    "summary": "MetalLB es un sistema de equilibrio de carga para Kubernetes (K8s) que permite la asignación de direcciones IP a servicios. En este artículo, se explora su funcionamiento en modo L2 y BGP, así como la configuración de pools de IP y técnicas de solución de problemas.",
+    "content": "MetalLB es un componente esencial en la infraestructura de K8s, ya que proporciona una forma de exponer servicios al exterior de la red. En modo L2, MetalLB asigna direcciones IP a los servicios utilizando el protocolo ARP. Para configurar MetalLB en modo L2, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config=\"{ \"address-pools\": [ { \"protocol\": \"layer2\", \"addresses\": [ \"192.168.1.0/24\" ] } ] }\"`. \n\nEn modo BGP, MetalLB utiliza el protocolo BGP para anunciar las rutas a los servicios. Para configurar MetalLB en modo BGP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config=\"{ \"address-pools\": [ { \"protocol\": \"bgp\", \"addresses\": [ \"10.0.0.0/16\" ], \"bgp\": { \"peers\": [ { \"peer-address\": \"10.0.0.1\", \"peer-asn\": 64512 } ] } } ] }\"`. \n\nLa configuración de pools de IP es fundamental en MetalLB, ya que permite asignar direcciones IP a los servicios de manera eficiente. Para crear un pool de IP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=address-pools=\"[ { \"protocol\": \"layer2\", \"addresses\": [ \"192.168.1.0/24\" ] } ]\"`. \n\nEn caso de problemas, es importante verificar la configuración de MetalLB y los logs de los componentes de K8s. Para solucionar problemas comunes, se pueden utilizar comandos como `kubectl get pods -n metallb-system` para verificar el estado de los pods de MetalLB, o `kubectl logs -f -n metallb-system <pod-name>` para verificar los logs de un pod específico.\n\nLa integración con K8s es fundamental en MetalLB, ya que permite la asignación de direcciones IP a los servicios de manera automática. Para integrar MetalLB con K8s, se debe crear un objeto `Service` con la configuración deseada, por ejemplo: `kubectl create service loadbalancer --name=my-service --tcp=80:80`. \n\nFinalmente, es importante mencionar que MetalLB es un proyecto en constante evolución, y es importante estar al tanto de las últimas novedades y cambios en la documentación oficial. Para obtener más información, se puede consultar la documentación oficial de MetalLB en <https://metallb.universe.tf/>.\n\n  ",
+    "sources": [
+      {
+        "title": "MetalLB Issue #3087",
+        "url": "https://github.com/metallb/metallb/issues/3087"
+      },
+      {
+        "title": "CNCF Sandbox Proposal",
+        "url": "https://github.com/metallb/metallb/blob/main/design/cncf-sandbox-proposal.md"
+      },
+      {
+        "title": "Cómo manejar claves SSH de manera segura en Terraform",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-02-23-how-to-handle-ssh-keys-securely-in-terraform"
+      },
+      {
+        "title": "Cómo configurar la red con cloud-init en Ubuntu",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-configure-network-settings-with-cloud-init-on-ubuntu"
+      }
+    ]
+  },
   "2026-07-25_0953": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en Kubernetes",

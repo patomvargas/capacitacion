@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>N8n: Automatización de Flujos de Trabajo - n8n</title>
+    <title>Automatización con n8n - n8n</title>
     <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
@@ -57,54 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>N8n: Automatización de Flujos de Trabajo</h1>
-    <div class="meta">2026-07-25 0953 · n8n</div>
+    <h1>Automatización con n8n</h1>
+    <div class="meta">2026-07-29 1043 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>N8n es una herramienta de automatización de flujos de trabajo que se está volviendo cada vez más popular en la comunidad de desarrolladores y administradores. En los últimos meses, se han realizado varias actualizaciones y mejoras en la herramienta, incluyendo la actualización de la documentación y la introducción de un changelog. El changelog es un registro de todos los cambios realizados en la herramienta, lo que permite a los usuarios estar al tanto de las últimas novedades y mejoras.</p>
+            <p>n8n es una herramienta de código abierto que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los componentes básicos de n8n y se utilizan para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los workflows, por otro lado, son la secuencia de nodos que se ejecutan en un orden determinado para lograr un objetivo específico.</p>
             
         
             
         
             
-        
-            
-            <p>Para empezar a utilizar n8n, es necesario instalar la herramienta en un servidor o en una máquina virtual. Esto se puede hacer utilizando el comando `docker run -d -p 5678:5678 n8nio/n8n`. Una vez instalada la herramienta, es posible acceder a la interfaz web y empezar a crear flujos de trabajo.</p>
+            <p>Para empezar a utilizar n8n, es necesario instalarlo en un servidor o en una máquina local. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante un navegador web. En la interfaz de usuario, se pueden crear nuevos workflows y nodos, y se pueden configurar las credenciales y los webhooks necesarios para la automatización.</p>
             
         
             
         
             
-        
-            
-            <p>Los flujos de trabajo en n8n se componen de nodos, que son elementos que realizan una acción específica, como enviar un correo electrónico o realizar una solicitud HTTP. Los nodos se pueden conectar entre sí para crear flujos de trabajo complejos. Por ejemplo, es posible crear un flujo de trabajo que envíe un correo electrónico cuando se recibe una solicitud HTTP utilizando el comando `n8n send-email`.</p>
+            <p>Un ejemplo de cómo se puede utilizar n8n es la creación de un workflow que envíe un correo electrónico cada vez que se recibe un nuevo mensaje en un servidor de correo electrónico. Para hacer esto, se pueden utilizar los nodos `IMAP` y `SMTP` para conectarse al servidor de correo electrónico y enviar el correo electrónico, respectivamente. El comando para ejecutar este workflow sería: `n8n start --workflow=myWorkflow`.</p>
             
         
             
         
             
-        
-            
-            <p>Otra característica importante de n8n es la capacidad de utilizar credenciales y webhooks. Las credenciales permiten a los usuarios autenticarse con servicios externos, como bases de datos o servicios de almacenamiento en la nube. Los webhooks permiten a los usuarios recibir notificaciones cuando se produce un evento específico, como la recepción de un correo electrónico.</p>
+            <p>Otra característica importante de n8n es la posibilidad de autoalojamiento. Esto significa que se puede instalar n8n en un servidor propio y configurarlo para que se ejecute de manera autónoma. Esto es especialmente útil para las organizaciones que requieren un alto nivel de seguridad y control sobre sus flujos de trabajo.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a las últimas novedades, la comunidad de n8n ha anunciado la actualización de la documentación y la introducción de un changelog. Esto permitirá a los usuarios estar al tanto de las últimas novedades y mejoras en la herramienta. Además, se han realizado varias mejoras en la estabilidad y el rendimiento de la herramienta, lo que la hace aún más eficiente y confiable.</p>
+            <p>En cuanto a las integraciones, n8n admite una amplia variedad de servicios y herramientas, incluyendo Microsoft Dataverse, LangChain y Chatwoot. Estas integraciones permiten a los usuarios crear flujos de trabajo que interactúen con diferentes sistemas y servicios, lo que aumenta la flexibilidad y la eficiencia de la automatización.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, n8n es una herramienta de automatización de flujos de trabajo que se está volviendo cada vez más popular en la comunidad de desarrolladores y administradores. Con su interfaz web intuitiva y su capacidad para crear flujos de trabajo complejos, n8n es una herramienta ideal para aquellos que buscan automatizar tareas y procesos en su organización.</p>
+            <p>En resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo. Con su interfaz de usuario intuitiva y su amplia variedad de nodos y integraciones, n8n es una excelente opción para los desarrolladores y administradores de sistemas que buscan automatizar tareas y procesos.</p>
             
         
     </div>
@@ -115,17 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://community.n8n.io/t/icymi-the-docs-now-have-a-changelog/302591" target="_blank">ICYMI: The docs now have a changelog</a>
+                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/release-notes-2.x.md" target="_blank">Release Notes 2.x</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/compare/n8n@2.28.6...n8n@2.28.7" target="_blank">Comparing n8n@2.28.6...n8n@2.28.7</a>
+                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md" target="_blank">n8n-nodes-langchain.lmlemonade</a>
                 
             </li>
             
             <li>
-                <a href="https://blog.n8n.io/" target="_blank">Guide, Tutorials, and Updates on Workflow Automation</a>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr" target="_blank">Expression Sandbox Escape Leading to RCE</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/microsoft/n8n-nodes-microsoft-dataverse" target="_blank">Microsoft Dataverse node for n8n</a>
                 
             </li>
             
@@ -136,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-21_1027.html">&larr; 2026-07-21 1027</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-29_1043.html">2026-07-29 1043 &rarr;</a>
             
         </div>
     </div>

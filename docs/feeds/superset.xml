@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-28T10:41:25.255619+00:00</updated>
+  <updated>2026-07-29T10:44:13.262541+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -672,5 +672,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-07-25_0953.html"/>
     <summary>Superset es una plataforma de exploración y visualización de datos moderna y lista para empresas. Ofrece una variedad de características como gráficos, paneles de control y laboratorio de SQL.</summary>
     <published>2026-07-25T09:53:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-07-29_1043.html</id>
+    <title>Superset: Administración y Visualización de Datos</title>
+    <updated>2026-07-29T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de visualización de datos que permite a los usuarios crear gráficos y tableros personalizados para analizar y visualizar sus datos. Para instalar Superset, se puede utilizar la imagen de Docker disponible en Docker Hub, como se muestra en la discusión &lt;code&gt;Superset 6.1.0 - Docker Hub Image #40867&lt;/code&gt;. Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante el comando &lt;code&gt;superset run -p 8088&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La creación de gráficos y tableros en Superset es sencilla y intuitiva. Los usuarios pueden seleccionar el tipo de gráfico que desean crear, como un gráfico de barras o un gráfico de líneas, y luego configurar las opciones de visualización según sea necesario. También se puede utilizar SQL Lab para crear consultas personalizadas y visualizar los resultados en un gráfico o tablero. Para ejemplo, se puede utilizar el comando &lt;code&gt;superset sql_lab&lt;/code&gt; para acceder a la interfaz de SQL Lab.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de conjuntos de datos, Superset proporciona una variedad de herramientas para gestionar y configurar los conjuntos de datos. Los usuarios pueden crear nuevos conjuntos de datos, editar los existentes y configurar las opciones de seguridad según sea necesario. Es importante mencionar que se debe tener cuidado con la seguridad de los conjuntos de datos, ya que se ha reportado una vulnerabilidad de inyección de código SQL en la versión anterior de Superset, como se muestra en la discusión &lt;code&gt;security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar la seguridad de Superset, se pueden implementar varias medidas, como la autenticación y autorización de usuarios, el cifrado de datos y la configuración de firewalls. También se puede utilizar la plantilla de Jinja para crear informes y visualizaciones personalizadas. Para ejemplo, se puede utilizar el comando &lt;code&gt;superset jinja&lt;/code&gt; para acceder a la interfaz de Jinja.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la visualización y administración de datos. Con sus características y configuraciones, los usuarios pueden crear gráficos y tableros personalizados, administrar conjuntos de datos y mejorar la seguridad de sus datos.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que se deben consultar las fuentes oficiales de Superset para obtener la información más actualizada y relevante sobre la herramienta. Las fuentes como la discusión &lt;code&gt;Superset Helm Chart #41876&lt;/code&gt; y la discusión &lt;code&gt;How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973&lt;/code&gt; proporcionan información valiosa sobre la configuración y el uso de Superset.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/41876"&gt;Superset Helm Chart #41876&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/40867"&gt;Superset 6.1.0 - Docker Hub Image #40867&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/41973"&gt;How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/41869"&gt;security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-07-29_1043.html"/>
+    <summary>Superset es una herramienta de código abierto para la visualización y administración de datos. En este artículo, se explorarán las características y configuraciones de Superset, incluyendo la creación de gráficos y tableros, la administración de conjuntos de datos y la seguridad.</summary>
+    <published>2026-07-29T10:43:00+00:00</published>
   </entry>
 </feed>

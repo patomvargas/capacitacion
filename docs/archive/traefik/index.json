@@ -1,4 +1,28 @@
 {
+  "2026-07-29_1043": {
+    "slug": "traefik",
+    "title": "Seguridad y configuración en Traefik",
+    "summary": "Traefik es un proxy inverso y balanceador de carga que ofrece una gran flexibilidad en la configuración de rutas y middlewares. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad y configurar adecuadamente el sistema para evitar problemas.",
+    "content": "\nTraefik es un sistema muy versátil que permite la configuración de rutas y middlewares de manera sencilla. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad que pueden afectar al sistema. Recientemente, se han descubierto varias vulnerabilidades en la versión de Traefik, como la vulnerabilidad de confusión de namespace en la API de Gateway, que puede permitir a un atacante acceder a información confidencial.\n\nPara configurar Traefik de manera segura, es importante utilizar la versión más reciente del sistema y aplicar las actualizaciones de seguridad correspondientes. También es importante configurar adecuadamente los middlewares y las rutas para evitar problemas de seguridad. Por ejemplo, se puede utilizar el middleware `ForwardAuth` para autenticar a los usuarios antes de permitirles acceder a una ruta determinada. Sin embargo, es importante tener en cuenta que este middleware puede ser vulnerable a ataques de denegación de servicio si no se configura adecuadamente.\n\nPara configurar el middleware `ForwardAuth`, se puede utilizar el siguiente comando: `traefikctl middleware create --name my-auth --type forwardauth --url http://my-auth-server.com`. Luego, se puede agregar este middleware a una ruta determinada utilizando el comando: `traefikctl route create --name my-route --rule Host:my-domain.com --middleware my-auth`.\n\nEs importante mencionar que Traefik también ofrece soporte para Let's Encrypt, lo que permite obtener certificados SSL/TLS de manera gratuita y automática. Para configurar Let's Encrypt en Traefik, se puede utilizar el siguiente comando: `traefikctl certificate create --name my-cert --type letsencrypt --email my-email@example.com`.\n\nEn cuanto a la observabilidad, Traefik ofrece una variedad de herramientas para monitorear y depurar el sistema. Por ejemplo, se puede utilizar el comando `traefikctl log` para ver los registros del sistema, o el comando `traefikctl metrics` para ver las métricas del sistema.\n\nEn resumen, Traefik es un sistema muy versátil y flexible que ofrece una gran variedad de opciones de configuración y seguridad. Sin embargo, es importante tener en cuenta las vulnerabilidades de seguridad y configurar adecuadamente el sistema para evitar problemas.\n\n  ",
+    "sources": [
+      {
+        "title": "Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-qq9q-x9w4-chhj"
+      },
+      {
+        "title": "Prepare release v2.4.12",
+        "url": "https://github.com/traefik/traefik/pull/8307"
+      },
+      {
+        "title": "Gateway HTTPRoute backendRef filters can leak backend context across routes sharing a Service:port",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-6p8f-p8j2-rqmv"
+      },
+      {
+        "title": "ForwardAuth Middleware Allows Unbounded Response Body, Causing Potential Denial of Service",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-fw45-f5q2-2p4x"
+      }
+    ]
+  },
   "2026-07-21_1027": {
     "slug": "traefik",
     "title": "Traefik: Routers y Middlewares",

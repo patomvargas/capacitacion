@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Equilibrio de Carga en K8s - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Equilibrio de Carga en K8s</h1>
+    <div class="meta">2026-07-29 1043 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+            <p>MetalLB es un componente esencial en la infraestructura de K8s, ya que proporciona una forma de exponer servicios al exterior de la red. En modo L2, MetalLB asigna direcciones IP a los servicios utilizando el protocolo ARP. Para configurar MetalLB en modo L2, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config="{ "address-pools": [ { "protocol": "layer2", "addresses": [ "192.168.1.0/24" ] } ] }"`.</p>
+            
+        
+            
+        
+            
+            <p>En modo BGP, MetalLB utiliza el protocolo BGP para anunciar las rutas a los servicios. Para configurar MetalLB en modo BGP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config="{ "address-pools": [ { "protocol": "bgp", "addresses": [ "10.0.0.0/16" ], "bgp": { "peers": [ { "peer-address": "10.0.0.1", "peer-asn": 64512 } ] } } ] }"`.</p>
+            
+        
+            
+        
+            
+            <p>La configuración de pools de IP es fundamental en MetalLB, ya que permite asignar direcciones IP a los servicios de manera eficiente. Para crear un pool de IP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=address-pools="[ { "protocol": "layer2", "addresses": [ "192.168.1.0/24" ] } ]"`.</p>
+            
+        
+            
+        
+            
+            <p>En caso de problemas, es importante verificar la configuración de MetalLB y los logs de los componentes de K8s. Para solucionar problemas comunes, se pueden utilizar comandos como `kubectl get pods -n metallb-system` para verificar el estado de los pods de MetalLB, o `kubectl logs -f -n metallb-system <pod-name>` para verificar los logs de un pod específico.</p>
+            
+        
+            
+        
+            
+            <p>La integración con K8s es fundamental en MetalLB, ya que permite la asignación de direcciones IP a los servicios de manera automática. Para integrar MetalLB con K8s, se debe crear un objeto `Service` con la configuración deseada, por ejemplo: `kubectl create service loadbalancer --name=my-service --tcp=80:80`.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que MetalLB es un proyecto en constante evolución, y es importante estar al tanto de las últimas novedades y cambios en la documentación oficial. Para obtener más información, se puede consultar la documentación oficial de MetalLB en <https://metallb.universe.tf/>.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/issues/3087" target="_blank">MetalLB Issue #3087</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/blob/main/design/cncf-sandbox-proposal.md" target="_blank">CNCF Sandbox Proposal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-02-23-how-to-handle-ssh-keys-securely-in-terraform" target="_blank">Cómo manejar claves SSH de manera segura en Terraform</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-configure-network-settings-with-cloud-init-on-ubuntu" target="_blank">Cómo configurar la red con cloud-init en Ubuntu</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

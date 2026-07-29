@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Superset: Administración y Visualización de Datos - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
+    </div>
+
+    <h1>Superset: Administración y Visualización de Datos</h1>
+    <div class="meta">2026-07-29 1043 · Superset</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Superset es una herramienta de visualización de datos que permite a los usuarios crear gráficos y tableros personalizados para analizar y visualizar sus datos. Para instalar Superset, se puede utilizar la imagen de Docker disponible en Docker Hub, como se muestra en la discusión `Superset 6.1.0 - Docker Hub Image #40867`. Una vez instalado, se puede acceder a la interfaz de usuario de Superset mediante el comando `superset run -p 8088`.</p>
+            
+        
+            
+        
+            
+            <p>La creación de gráficos y tableros en Superset es sencilla y intuitiva. Los usuarios pueden seleccionar el tipo de gráfico que desean crear, como un gráfico de barras o un gráfico de líneas, y luego configurar las opciones de visualización según sea necesario. También se puede utilizar SQL Lab para crear consultas personalizadas y visualizar los resultados en un gráfico o tablero. Para ejemplo, se puede utilizar el comando `superset sql_lab` para acceder a la interfaz de SQL Lab.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la administración de conjuntos de datos, Superset proporciona una variedad de herramientas para gestionar y configurar los conjuntos de datos. Los usuarios pueden crear nuevos conjuntos de datos, editar los existentes y configurar las opciones de seguridad según sea necesario. Es importante mencionar que se debe tener cuidado con la seguridad de los conjuntos de datos, ya que se ha reportado una vulnerabilidad de inyección de código SQL en la versión anterior de Superset, como se muestra en la discusión `security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869`.</p>
+            
+        
+            
+        
+            
+            <p>Para mejorar la seguridad de Superset, se pueden implementar varias medidas, como la autenticación y autorización de usuarios, el cifrado de datos y la configuración de firewalls. También se puede utilizar la plantilla de Jinja para crear informes y visualizaciones personalizadas. Para ejemplo, se puede utilizar el comando `superset jinja` para acceder a la interfaz de Jinja.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para la visualización y administración de datos. Con sus características y configuraciones, los usuarios pueden crear gráficos y tableros personalizados, administrar conjuntos de datos y mejorar la seguridad de sus datos.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que se deben consultar las fuentes oficiales de Superset para obtener la información más actualizada y relevante sobre la herramienta. Las fuentes como la discusión `Superset Helm Chart #41876` y la discusión `How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973` proporcionan información valiosa sobre la configuración y el uso de Superset.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/41876" target="_blank">Superset Helm Chart #41876</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/40867" target="_blank">Superset 6.1.0 - Docker Hub Image #40867</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/discussions/41973" target="_blank">How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/apache/superset/issues/41869" target="_blank">security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

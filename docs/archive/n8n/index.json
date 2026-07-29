@@ -1,4 +1,28 @@
 {
+  "2026-07-29_1043": {
+    "slug": "n8n",
+    "title": "Automatización con n8n",
+    "summary": "n8n es una herramienta de automatización de flujo de trabajo que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las características y funcionalidades de n8n, incluyendo nodos, workflows, credenciales, webhooks y autoalojamiento.",
+    "content": "n8n es una herramienta de código abierto que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los componentes básicos de n8n y se utilizan para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los workflows, por otro lado, son la secuencia de nodos que se ejecutan en un orden determinado para lograr un objetivo específico. \n \n Para empezar a utilizar n8n, es necesario instalarlo en un servidor o en una máquina local. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante un navegador web. En la interfaz de usuario, se pueden crear nuevos workflows y nodos, y se pueden configurar las credenciales y los webhooks necesarios para la automatización. \n \n Un ejemplo de cómo se puede utilizar n8n es la creación de un workflow que envíe un correo electrónico cada vez que se recibe un nuevo mensaje en un servidor de correo electrónico. Para hacer esto, se pueden utilizar los nodos `IMAP` y `SMTP` para conectarse al servidor de correo electrónico y enviar el correo electrónico, respectivamente. El comando para ejecutar este workflow sería: `n8n start --workflow=myWorkflow`. \n \n Otra característica importante de n8n es la posibilidad de autoalojamiento. Esto significa que se puede instalar n8n en un servidor propio y configurarlo para que se ejecute de manera autónoma. Esto es especialmente útil para las organizaciones que requieren un alto nivel de seguridad y control sobre sus flujos de trabajo. \n \n En cuanto a las integraciones, n8n admite una amplia variedad de servicios y herramientas, incluyendo Microsoft Dataverse, LangChain y Chatwoot. Estas integraciones permiten a los usuarios crear flujos de trabajo que interactúen con diferentes sistemas y servicios, lo que aumenta la flexibilidad y la eficiencia de la automatización. \n \n En resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo. Con su interfaz de usuario intuitiva y su amplia variedad de nodos y integraciones, n8n es una excelente opción para los desarrolladores y administradores de sistemas que buscan automatizar tareas y procesos.",
+    "sources": [
+      {
+        "title": "Release Notes 2.x",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/release-notes-2.x.md"
+      },
+      {
+        "title": "n8n-nodes-langchain.lmlemonade",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md"
+      },
+      {
+        "title": "Expression Sandbox Escape Leading to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr"
+      },
+      {
+        "title": "Microsoft Dataverse node for n8n",
+        "url": "https://github.com/microsoft/n8n-nodes-microsoft-dataverse"
+      }
+    ]
+  },
   "2026-07-25_0953": {
     "slug": "n8n",
     "title": "N8n: Automatización de Flujos de Trabajo",
