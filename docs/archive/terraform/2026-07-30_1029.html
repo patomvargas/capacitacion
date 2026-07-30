@@ -58,49 +58,45 @@
     </div>
 
     <h1>Terraform: Mejoras y Novedades</h1>
-    <div class="meta">2026-07-26 1004 · Terraform</div>
+    <div class="meta">2026-07-30 1029 · Terraform</div>
 
     <div class="content">
         
         
             
-            <p>Terraform es una herramienta de infraestructura como código que permite crear, cambiar y mejorar la infraestructura de manera segura y predecible. La versión 1.16.0-beta1 de Terraform introduce nuevas características, como la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a través de planes. Para utilizar esta característica, se puede ejecutar el comando `terraform plan` con la opción `-out` para especificar el archivo de salida.</p>
+        
+            
+            <p>Terraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En la versión más reciente, se ha agregado soporte para Terraform Stack y Deployment files, lo que proporciona una forma más inteligente de completar bloques y atributos en estos archivos. Esto se logra mediante el comando `terraform init` y la configuración de los archivos `main.tf` y `variables.tf`.</p>
             
         
             
         
             
-            <p>La integración con el lenguaje de servidor de HashiCorp también es una de las novedades más destacadas en Terraform. Esto permite una integración más estrecha con las herramientas de HashiCorp, como el proveedor de Azure. Para utilizar el proveedor de Azure, se puede agregar el siguiente bloque de código a la configuración de Terraform: `provider 'azurerm' { version = '2.34.0' }`.</p>
+            <p>Una de las novedades más destacadas es la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a lo largo del plan y la aplicación. Esto se puede lograr mediante el comando `terraform plan` y la configuración de los archivos `provider.tf` y `backend.tf`. Además, se han agregado mejoras en la gestión de estado, lo que permite una mayor flexibilidad y control sobre la infraestructura.</p>
             
         
             
         
             
-            <p>Otra característica importante en Terraform es el manejo de estado. El estado de Terraform se refiere a la configuración actual de la infraestructura y se almacena en un archivo llamado `terraform.tfstate`. Para ver el estado actual de la infraestructura, se puede ejecutar el comando `terraform show`. Para importar recursos existentes en el estado de Terraform, se puede utilizar el comando `terraform import`.</p>
+            <p>En cuanto a la gestión de módulos, Terraform proporciona una forma de reutilizar y compartir código mediante la creación de módulos. Un módulo es un conjunto de archivos de configuración que se pueden utilizar para provisionar una parte específica de la infraestructura. Los módulos se pueden crear y compartir mediante el comando `terraform module` y la configuración de los archivos `module.tf` y `outputs.tf`.</p>
             
         
             
         
             
-            <p>La versión 1.15.8 de Terraform también incluye una corrección de errores relacionada con la descarga de proveedores utilizando alias de servicio de descubrimiento. Para actualizar a la última versión de Terraform, se puede ejecutar el comando `terraform update`.</p>
+            <p>La gestión de espacios de trabajo es otra característica importante de Terraform. Un espacio de trabajo es una forma de organizar y gestionar la infraestructura de manera independiente. Los espacios de trabajo se pueden crear y gestionar mediante el comando `terraform workspace` y la configuración de los archivos `workspace.tf` y `terraform.tfstate`.</p>
             
         
             
         
             
-            <p>En resumen, Terraform es una herramienta poderosa para la gestión de infraestructura como código. Con las últimas novedades y mejoras, Terraform se convierte en una herramienta aún más útil para los administradores de sistemas y desarrolladores.</p>
+            <p>Finalmente, es importante mencionar que Terraform proporciona una forma de importar y mover bloques de configuración, lo que permite una mayor flexibilidad y control sobre la infraestructura. Esto se puede lograr mediante el comando `terraform import` y la configuración de los archivos `main.tf` y `terraform.tfstate`.</p>
             
         
             
         
             
-            <p>Para más información sobre Terraform, se puede consultar la documentación oficial de HashiCorp.</p>
-            
-        
-            
-        
-            
-            <p>En cuanto a las best practices, es importante mencionar que se debe utilizar un proveedor de versiones para gestionar las versiones de los proveedores y módulos en Terraform. También es importante utilizar un sistema de control de versiones para gestionar los cambios en la configuración de Terraform.</p>
+            <p>En resumen, Terraform es una herramienta poderosa y flexible que permite gestionar y provisionar infraestructura de manera segura y predecible. Con las últimas novedades y mejoras, Terraform se ha convertido en una herramienta aún más valiosa para los equipos de DevOps y sysadmins.</p>
             
         
     </div>
@@ -111,7 +107,7 @@
         <ul>
             
             <li>
-                <a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603" target="_blank">Terraform v1.16.0-beta1 released</a>
+                <a href="https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a>
                 
             </li>
             
@@ -121,7 +117,7 @@
             </li>
             
             <li>
-                <a href="https://github.com/hashicorp/terraform/releases?after=v0.14.7" target="_blank">Releases · hashicorp/terraform</a>
+                <a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603" target="_blank">Terraform v1.16.0-beta1 released</a>
                 
             </li>
             
@@ -132,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-10_1109.html">&larr; 2026-07-10 1109</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-26_1004.html">&larr; 2026-07-26 1004</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-30_1029.html">2026-07-30 1029 &rarr;</a>
             
         </div>
     </div>

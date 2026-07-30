@@ -1,4 +1,44 @@
 {
+  "2026-07-30_1029": {
+    "slug": "git",
+    "title": "Mejores prácticas de Git para sysadmins y DevOps",
+    "summary": "Este artículo cubre las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "Git es una herramienta fundamental para el control de versiones y la colaboración en proyectos de software. Para aprovechar al máximo sus capacidades, es importante entender cómo funciona y cómo se puede utilizar de manera efectiva. En este artículo, se cubren las mejores prácticas de Git para sysadmins y DevOps, incluyendo workflows, hooks, rebase, bisect, worktrees y tips avanzados.\n\nUn workflow de Git bien definido es esencial para mantener un proyecto organizado y asegurarse de que los cambios se realizan de manera controlada. Para crear un nuevo branch, se puede utilizar el comando `git branch <nombre_del_branch>`. Luego, se puede cambiar al nuevo branch con `git checkout <nombre_del_branch>`. Para fusionar los cambios de un branch con otro, se puede utilizar `git merge <nombre_del_branch>`.\n\nLos hooks de Git son scripts que se ejecutan automáticamente en momentos específicos del ciclo de vida de un proyecto, como antes de realizar un commit o push. Por ejemplo, se puede crear un hook para verificar que los archivos de código cumplan con ciertas normas de estilo antes de realizar un commit. Para crear un hook, se puede utilizar el comando `git hook <tipo_de_hook> <nombre_del_hook>`.\n\nEl comando `git rebase` se utiliza para reorganizar los commits de un branch para que parezcan haber sido realizados de manera lineal. Esto puede ser útil para mantener un historial de commits limpio y fácil de seguir. Sin embargo, es importante tener cuidado al utilizar `git rebase`, ya que puede causar problemas si se utiliza de manera incorrecta.\n\nEl comando `git bisect` se utiliza para encontrar el commit que introdujo un error en el código. Esto puede ser útil para identificar y solucionar problemas de manera rápida y eficiente. Para utilizar `git bisect`, se debe ejecutar el comando `git bisect start` y luego `git bisect bad` para marcar el commit actual como defectuoso. Luego, se debe ejecutar `git bisect good <commit_hash>` para marcar un commit anterior como bueno.\n\nLos worktrees de Git son directorios separados que contienen una copia del proyecto en un estado específico. Esto puede ser útil para trabajar en diferentes branches o versiones del proyecto de manera simultánea. Para crear un nuevo worktree, se puede utilizar el comando `git worktree add <nombre_del_worktree> <commit_hash>`.\n\nEn resumen, Git es una herramienta poderosa que requiere práctica y experiencia para dominar. Al seguir las mejores prácticas y utilizar los comandos y configuraciones adecuadas, se puede aprovechar al máximo sus capacidades y mantener proyectos de software complejos de manera eficiente.\n\nPara obtener más información sobre Git y sus capacidades, se pueden consultar las fuentes proporcionadas al final de este artículo.\n\nFinalmente, es importante mencionar que la documentación oficial de Git es una excelente fuente de información para aprender sobre Git y sus capacidades. Se puede encontrar en el sitio web oficial de Git.\n\n",
+    "sources": [
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/"
+      },
+      {
+        "title": "Type: New Releases - GitHub Changelog",
+        "url": "https://github.blog/changelog/type/new-releases/"
+      },
+      {
+        "title": "Type: Improvements - GitHub Changelog",
+        "url": "https://github.blog/changelog/type/improvements/"
+      },
+      {
+        "title": "GitHub MCP Server supports the next MCP specification",
+        "url": "https://github.blog/changelog/2026-07-23-github-mcp-server-supports-the-next-mcp-specification/"
+      },
+      {
+        "title": "The latest blogs from GitHub",
+        "url": "https://github.blog/latest/"
+      },
+      {
+        "title": "Git Basics Guide - Git Guide for Beginners - How to Use Git",
+        "url": "https://www.bing.com/aclick?ld=e8HDo0w2b6cT3oiBskg4pWwTVUCUz5Fh3U1_GnA68TU_KgJsaN6SVjtt1WeJZf2m4lsMn9Ce1h_8TenNb4jl-0nberc4p3I831mP29xzd8mH5NU1cfmX2TN89RhBQM1m9VjQAF62vXa44S75Q7llsDrTiVpMNv-3bVWBGS6A2KRvz1CStkooVhd81DIGCGX0WtDwZKmga2LLEfmv3R7okVNecZqFo&u=aHR0cHMlM2ElMmYlMmZob3d0b2NoYW5nZWd1aWRlLmNvbSUyZmhvdy10by11c2UlMmZob3ctdG8tdXNlLWdpdCUzZm1zY2xraWQlM2QxZTY4Yzk0MTM0OTIxYWY5OWJkMGEzMmExMzE1ZjdlZiUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZEhvdyUyNTIwVG8lMjUyMFVzZS1Ib3dUb0NoYW5nZUd1aWRlLmNvbS1WMyUyNnV0bV90ZXJtJTNkSG93JTI1MjBUbyUyNTIwVXNlJTI1MjBHaXQlMjZ1dG1fY29udGVudCUzZEhvdyUyNTIwVG8lMjUyMFVzZSUyNTIwR2l0LUhvd1RvQ2hhbmdlR3VpZGUuY29tLVYz&rlid=1e68c94134921af99bd0a32a1315f7ef"
+      },
+      {
+        "title": "Git Pocket Guide - Valuable Resources and Tips",
+        "url": "https://www.bing.com/aclick?ld=e8spTGlsEfPuF_tmqYOZP-QDVUCUzvIypI3onoZ6apxBmlB6rQLtg1nx-gy4DVW_OZ0ancp8JqNslw1N5qhnrxsec8Ogo5h-159pc9gM-qXR32onrHAC3f_zhP_Qp7hT41jhYxfxElzSJzWk_Yz8ny-gNKacEVyzimS6_s2I15oovo8TQW4I8I2LqkLSeaAUCmVKphqwIfYB4ZPR3XN9Id9AP-PSE&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1hem9uLmNvbSUyZnMlMmYlM2ZpZSUzZFVURjglMjZrZXl3b3JkcyUzZGdpdCUyYnBvY2tldCUyYmd1aWRlJTI2aW5kZXglM2RzdHJpcGJvb2tzJTI2dGFnJTNkbWgwYi0yMCUyNmFkZ3JwaWQlM2QxMzMwNDEwMzQ5MjU2MTI4JTI2aHZhZGlkJTNkODMxNTA4NDEyOTM1NTclMjZodm5ldHclM2RvJTI2aHZxbXQlM2RwJTI2aHZibXQlM2RicCUyNmh2ZGV2JTNkYyUyNmh2bG9jaW50JTNkJTI2aHZsb2NwaHklM2Q0ODc5MiUyNmh2dGFyZ2lkJTNka3dkLTgzMTUxNTI5OTczOTQwJTNhbG9jLTE5MCUyNmh5ZGFkY3IlM2QxNjM3NV8xMzQyMTY0OSUyNm1jaWQlM2RhYTAzYWYyZjBiN2UzNDk2OGNlZGI1MmU0MTQ1YTRkOSUyNmh2b2NpamlkJTNkMTgxMDc0NzE3NjkxMDg4MDE4Mi0tJTI2aHZleHBsbiUzZDAlMjZnYiUzZDI"
+      },
+      {
+        "title": "GitHub Mastery: The Ultimate Guide to Git ... - Medium",
+        "url": "https://rajputlakhveer.medium.com/github-mastery-the-ultimate-guide-to-git-github-hidden-features-pro-tips-power-tools-79caedf15e56"
+      }
+    ]
+  },
   "2026-07-26_1004": {
     "slug": "git",
     "title": "Mejores prácticas con Git",

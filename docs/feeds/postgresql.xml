@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-29T10:44:13.274003+00:00</updated>
+  <updated>2026-07-30T10:30:20.472990+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -590,5 +590,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-26_1004.html"/>
     <summary>PostgreSQL es un sistema de gestión de bases de datos relacional de código abierto que ofrece una gran flexibilidad y personalización. En este artículo, se presentan algunas mejores prácticas para optimizar el rendimiento de PostgreSQL, incluyendo la configuración de parámetros, la creación de índices y la replicación de datos.</summary>
     <published>2026-07-26T10:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-30_1029.html</id>
+    <title>Mejoras en PostgreSQL 19</title>
+    <updated>2026-07-30T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;PostgreSQL 19 es la última versión del sistema de gestión de bases de datos relacional de código abierto. Esta versión incluye varias mejoras y características nuevas, como la capacidad de mantener tablas de 200GB con cero tiempo de inactividad. Esto se logra gracias a la mejora en la gestión de la memoria y la optimización de los algoritmos de compactación.&lt;/p&gt;
+&lt;p&gt;Una de las características más destacadas de PostgreSQL 19 es la mejora en la replicación. La replicación es el proceso de copiar los datos de una base de datos a otra para garantizar la disponibilidad y la integridad de los datos. En PostgreSQL 19, la replicación se ha optimizado para ser más rápida y eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;pg_basebackup&lt;/code&gt; para crear una copia de seguridad de la base de datos y luego utilizar &lt;code&gt;pg_restore&lt;/code&gt; para restaurar la copia de seguridad en una nueva base de datos.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de PostgreSQL 19 es la capacidad de utilizar extensiones. Las extensiones son módulos que se pueden agregar a la base de datos para proporcionar funcionalidades adicionales. Por ejemplo, se puede utilizar la extensión &lt;code&gt;pg_stat_statements&lt;/code&gt; para recopilar estadísticas sobre las consultas que se ejecutan en la base de datos. Para instalar esta extensión, se puede utilizar el comando &lt;code&gt;CREATE EXTENSION pg_stat_statements;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La configuración de la base de datos es fundamental para obtener un rendimiento óptimo. Por ejemplo, se puede ajustar el parámetro &lt;code&gt;shared_buffers&lt;/code&gt; para determinar la cantidad de memoria que se asigna a la base de datos. Un valor más alto para este parámetro puede mejorar el rendimiento, pero también puede aumentar el riesgo de que la base de datos se quede sin memoria. Se puede utilizar el comando &lt;code&gt;ALTER SYSTEM SET shared_buffers TO '512MB';&lt;/code&gt; para ajustar este parámetro.&lt;/p&gt;
+&lt;p&gt;En resumen, PostgreSQL 19 ofrece varias mejoras y características nuevas que pueden ayudar a los administradores de bases de datos a mejorar el rendimiento y la disponibilidad de sus bases de datos. Algunos ejemplos de comandos que se pueden utilizar para configurar y optimizar la base de datos son &lt;code&gt;pg_basebackup&lt;/code&gt;, &lt;code&gt;pg_restore&lt;/code&gt;, &lt;code&gt;CREATE EXTENSION&lt;/code&gt; y &lt;code&gt;ALTER SYSTEM&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la seguridad es fundamental en cualquier base de datos. Por lo tanto, es importante seguir las mejores prácticas de seguridad, como utilizar contraseñas seguras y limitar el acceso a la base de datos a los usuarios y aplicaciones que lo necesiten. Se puede utilizar el comando &lt;code&gt;ALTER ROLE&lt;/code&gt; para ajustar los permisos de los usuarios y &lt;code&gt;GRANT&lt;/code&gt; para asignar permisos a los usuarios y aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"&gt;PostgreSQL 19 Beta 2 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0"&gt;PostgreSQL Performance Tuning: Best Practices for Better Database Speed&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://githubdaily.medium.com/postgresql-19-coming-soon-maintain-200gb-tables-with-zero-downtime-new-features-at-a-glance-50f15a77cc49"&gt;PostgreSQL 19 Coming Soon: Maintain 200GB Tables with 'Zero Downtime'&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-30_1029.html"/>
+    <summary>PostgreSQL 19 ofrece mejoras en rendimiento, replicación y extensiones. Esta versión incluye características como la capacidad de mantener tablas de 200GB con cero tiempo de inactividad.</summary>
+    <published>2026-07-30T10:29:00+00:00</published>
   </entry>
 </feed>

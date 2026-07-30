@@ -1,4 +1,24 @@
 {
+  "2026-07-30_1029": {
+    "slug": "postgresql",
+    "title": "Mejoras en PostgreSQL 19",
+    "summary": "PostgreSQL 19 ofrece mejoras en rendimiento, replicación y extensiones. Esta versión incluye características como la capacidad de mantener tablas de 200GB con cero tiempo de inactividad.",
+    "content": "\nPostgreSQL 19 es la última versión del sistema de gestión de bases de datos relacional de código abierto. Esta versión incluye varias mejoras y características nuevas, como la capacidad de mantener tablas de 200GB con cero tiempo de inactividad. Esto se logra gracias a la mejora en la gestión de la memoria y la optimización de los algoritmos de compactación.\n\nUna de las características más destacadas de PostgreSQL 19 es la mejora en la replicación. La replicación es el proceso de copiar los datos de una base de datos a otra para garantizar la disponibilidad y la integridad de los datos. En PostgreSQL 19, la replicación se ha optimizado para ser más rápida y eficiente. Por ejemplo, se puede utilizar el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego utilizar `pg_restore` para restaurar la copia de seguridad en una nueva base de datos.\n\nOtra característica importante de PostgreSQL 19 es la capacidad de utilizar extensiones. Las extensiones son módulos que se pueden agregar a la base de datos para proporcionar funcionalidades adicionales. Por ejemplo, se puede utilizar la extensión `pg_stat_statements` para recopilar estadísticas sobre las consultas que se ejecutan en la base de datos. Para instalar esta extensión, se puede utilizar el comando `CREATE EXTENSION pg_stat_statements;`.\n\nLa configuración de la base de datos es fundamental para obtener un rendimiento óptimo. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para determinar la cantidad de memoria que se asigna a la base de datos. Un valor más alto para este parámetro puede mejorar el rendimiento, pero también puede aumentar el riesgo de que la base de datos se quede sin memoria. Se puede utilizar el comando `ALTER SYSTEM SET shared_buffers TO '512MB';` para ajustar este parámetro.\n\nEn resumen, PostgreSQL 19 ofrece varias mejoras y características nuevas que pueden ayudar a los administradores de bases de datos a mejorar el rendimiento y la disponibilidad de sus bases de datos. Algunos ejemplos de comandos que se pueden utilizar para configurar y optimizar la base de datos son `pg_basebackup`, `pg_restore`, `CREATE EXTENSION` y `ALTER SYSTEM`.\n\nFinalmente, es importante mencionar que la seguridad es fundamental en cualquier base de datos. Por lo tanto, es importante seguir las mejores prácticas de seguridad, como utilizar contraseñas seguras y limitar el acceso a la base de datos a los usuarios y aplicaciones que lo necesiten. Se puede utilizar el comando `ALTER ROLE` para ajustar los permisos de los usuarios y `GRANT` para asignar permisos a los usuarios y aplicaciones.\n\n",
+    "sources": [
+      {
+        "title": "PostgreSQL 19 Beta 2 Released!",
+        "url": "https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"
+      },
+      {
+        "title": "PostgreSQL Performance Tuning: Best Practices for Better Database Speed",
+        "url": "https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0"
+      },
+      {
+        "title": "PostgreSQL 19 Coming Soon: Maintain 200GB Tables with 'Zero Downtime'",
+        "url": "https://githubdaily.medium.com/postgresql-19-coming-soon-maintain-200gb-tables-with-zero-downtime-new-features-at-a-glance-50f15a77cc49"
+      }
+    ]
+  },
   "2026-07-26_1004": {
     "slug": "postgresql",
     "title": "Optimización de Rendimiento en PostgreSQL",

@@ -1,4 +1,24 @@
 {
+  "2026-07-30_1029": {
+    "slug": "terraform",
+    "title": "Terraform: Mejoras y Novedades",
+    "summary": "Terraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo soporte para Terraform Stack y Deployment files.",
+    "content": "\nTerraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En la versión más reciente, se ha agregado soporte para Terraform Stack y Deployment files, lo que proporciona una forma más inteligente de completar bloques y atributos en estos archivos. Esto se logra mediante el comando `terraform init` y la configuración de los archivos `main.tf` y `variables.tf`.\n\nUna de las novedades más destacadas es la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a lo largo del plan y la aplicación. Esto se puede lograr mediante el comando `terraform plan` y la configuración de los archivos `provider.tf` y `backend.tf`. Además, se han agregado mejoras en la gestión de estado, lo que permite una mayor flexibilidad y control sobre la infraestructura.\n\nEn cuanto a la gestión de módulos, Terraform proporciona una forma de reutilizar y compartir código mediante la creación de módulos. Un módulo es un conjunto de archivos de configuración que se pueden utilizar para provisionar una parte específica de la infraestructura. Los módulos se pueden crear y compartir mediante el comando `terraform module` y la configuración de los archivos `module.tf` y `outputs.tf`.\n\nLa gestión de espacios de trabajo es otra característica importante de Terraform. Un espacio de trabajo es una forma de organizar y gestionar la infraestructura de manera independiente. Los espacios de trabajo se pueden crear y gestionar mediante el comando `terraform workspace` y la configuración de los archivos `workspace.tf` y `terraform.tfstate`.\n\nFinalmente, es importante mencionar que Terraform proporciona una forma de importar y mover bloques de configuración, lo que permite una mayor flexibilidad y control sobre la infraestructura. Esto se puede lograr mediante el comando `terraform import` y la configuración de los archivos `main.tf` y `terraform.tfstate`.\n\nEn resumen, Terraform es una herramienta poderosa y flexible que permite gestionar y provisionar infraestructura de manera segura y predecible. Con las últimas novedades y mejoras, Terraform se ha convertido en una herramienta aún más valiosa para los equipos de DevOps y sysadmins.",
+    "sources": [
+      {
+        "title": "CHANGELOG.md",
+        "url": "https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "Terraform v1.15.8 released",
+        "url": "https://discuss.hashicorp.com/t/terraform-v1-15-8-released/77560"
+      },
+      {
+        "title": "Terraform v1.16.0-beta1 released",
+        "url": "https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603"
+      }
+    ]
+  },
   "2026-07-26_1004": {
     "slug": "terraform",
     "title": "Terraform: Mejoras y Novedades",

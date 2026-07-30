@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-29T10:44:13.285198+00:00</updated>
+  <updated>2026-07-30T10:30:20.488621+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -710,5 +710,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando con nuevas mejoras y características. En este artículo, exploraremos las últimas novedades y cambios en Ansible, incluyendo la versión 8.6.0 de ansible.netcommon y la versión v26.6.1 de ansible-creator.</summary>
     <published>2026-07-26T10:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-30_1029.html</id>
+    <title>Ansible: Automatización de Servidores</title>
+    <updated>2026-07-30T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de servidores que utiliza playbooks para definir las tareas que se deben realizar en los servidores. Un playbook es un archivo YAML que contiene una serie de tareas que se deben ejecutar en un orden específico. Para crear un playbook, se puede utilizar el comando &lt;code&gt;ansible-playbook --help&lt;/code&gt; para obtener información sobre las opciones disponibles.&lt;/p&gt;
+&lt;p&gt;Para gestionar los servidores, Ansible utiliza un inventario que contiene la lista de servidores que se deben gestionar. El inventario se puede definir en un archivo llamado &lt;code&gt;hosts&lt;/code&gt; o utilizando una base de datos. Para agregar un servidor al inventario, se puede utilizar el comando &lt;code&gt;ansible-hosts add &lt;nombre_del_servidor&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las características más importantes de Ansible es la capacidad de utilizar roles para organizar las tareas en playbooks. Un rol es un conjunto de tareas que se pueden reutilizar en diferentes playbooks. Para crear un rol, se puede utilizar el comando &lt;code&gt;ansible-galaxy init &lt;nombre_del_rol&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para ejecutar un playbook, se puede utilizar el comando &lt;code&gt;ansible-playbook &lt;nombre_del_playbook&gt;&lt;/code&gt;. Este comando ejecutará las tareas definidas en el playbook en los servidores especificados en el inventario.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto importante en la automatización de servidores. Ansible proporciona la herramienta &lt;code&gt;ansible-vault&lt;/code&gt; para cifrar los datos sensibles, como las contraseñas y las claves SSH. Para cifrar un archivo, se puede utilizar el comando &lt;code&gt;ansible-vault encrypt &lt;nombre_del_archivo&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de servidores que permite a los administradores de sistemas gestionar y configurar múltiples servidores de manera eficiente. Al utilizar playbooks, roles y el inventario, se pueden automatizar las tareas de manera segura y eficiente.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Ansible, se pueden consultar las fuentes proporcionadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://dev.to/wadethomastt/the-ansible-playbook-that-will-harden-your-vps-in-seconds-49ca"&gt;The Ansible Playbook that will Harden Your VPS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/wadethomastt/ansible-installation-and-configuration-on-ubuntu-automate-your-server-management-1fdg"&gt;Ansible Installation and Configuration on Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://sidhantjain90.medium.com/behind-the-scenes-how-does-ansible-connects-to-remote-hosts-5758b15d6427"&gt;Behind the scenes: How does ansible connects to remote hosts ?&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-30_1029.html"/>
+    <summary>Ansible es una herramienta de automatización de servidores que permite a los administradores de sistemas gestionar y configurar múltiples servidores de manera eficiente. En este artículo, se presentan las mejores prácticas para utilizar Ansible en la automatización de servidores.</summary>
+    <published>2026-07-30T10:29:00+00:00</published>
   </entry>
 </feed>

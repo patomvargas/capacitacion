@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Ansible: Automatización de Servidores - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,57 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-07-26 1004 · Git</div>
+    <h1>Ansible: Automatización de Servidores</h1>
+    <div class="meta">2026-07-30 1029 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo. Una de las características más poderosas de Git es su capacidad para manejar diferentes ramas y workflows. Por ejemplo, podemos utilizar `git worktree` para crear múltiples copias de nuestro repositorio en diferentes directorios, lo que nos permite trabajar en diferentes características o bugs de manera simultánea.</p>
+            <p>Ansible es una herramienta de automatización de servidores que utiliza playbooks para definir las tareas que se deben realizar en los servidores. Un playbook es un archivo YAML que contiene una serie de tareas que se deben ejecutar en un orden específico. Para crear un playbook, se puede utilizar el comando `ansible-playbook --help` para obtener información sobre las opciones disponibles.</p>
             
         
             
         
             
-        
-            
-            <p>Para mejorar nuestra productividad, podemos utilizar hooks de Git para automatizar tareas repetitivas. Por ejemplo, podemos crear un hook de pre-commit que verifique si nuestro código cumple con ciertos estándares de calidad antes de permitir el commit. Esto se puede hacer utilizando el comando `git hook` y creando un script que se ejecute antes de cada commit.</p>
+            <p>Para gestionar los servidores, Ansible utiliza un inventario que contiene la lista de servidores que se deben gestionar. El inventario se puede definir en un archivo llamado `hosts` o utilizando una base de datos. Para agregar un servidor al inventario, se puede utilizar el comando `ansible-hosts add <nombre_del_servidor>`.</p>
             
         
             
         
             
-        
-            
-            <p>Otra característica avanzada de Git es el rebase. El rebase nos permite reorganizar nuestra historia de commits para que sea más lineal y fácil de seguir. Por ejemplo, podemos utilizar `git rebase -i` para interactuar con nuestra historia de commits y eliminar o reordenar commits innecesarios. También podemos utilizar `git bisect` para encontrar el commit que introdujo un bug en nuestro código.</p>
+            <p>Una de las características más importantes de Ansible es la capacidad de utilizar roles para organizar las tareas en playbooks. Un rol es un conjunto de tareas que se pueden reutilizar en diferentes playbooks. Para crear un rol, se puede utilizar el comando `ansible-galaxy init <nombre_del_rol>`.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Git ofrece una amplia variedad de características y comandos que nos permiten trabajar de manera más eficiente y productiva. Al utilizar workflows, hooks, rebase y otros comandos avanzados, podemos mejorar la calidad de nuestro código y reducir el tiempo necesario para desarrollar y mantener nuestros proyectos.</p>
+            <p>Para ejecutar un playbook, se puede utilizar el comando `ansible-playbook <nombre_del_playbook>`. Este comando ejecutará las tareas definidas en el playbook en los servidores especificados en el inventario.</p>
             
         
             
         
             
-        
-            
-            <p>Para más información sobre Git y sus características, podemos consultar la documentación oficial de Git y otros recursos en línea. También podemos utilizar herramientas como GitKraken o Git Tower para visualizar y manejar nuestros repositorios de manera más intuitiva.</p>
+            <p>La seguridad es un aspecto importante en la automatización de servidores. Ansible proporciona la herramienta `ansible-vault` para cifrar los datos sensibles, como las contraseñas y las claves SSH. Para cifrar un archivo, se puede utilizar el comando `ansible-vault encrypt <nombre_del_archivo>`.</p>
             
         
             
         
             
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de servidores que permite a los administradores de sistemas gestionar y configurar múltiples servidores de manera eficiente. Al utilizar playbooks, roles y el inventario, se pueden automatizar las tareas de manera segura y eficiente.</p>
+            
         
             
-            <p>En conclusión, Git es una herramienta fundamental para cualquier desarrollador o equipo de desarrollo, y conocer sus características avanzadas y mejores prácticas es esencial para trabajar de manera eficiente y productiva.</p>
+        
+            
+            <p>Para más información sobre Ansible, se pueden consultar las fuentes proporcionadas a continuación.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -115,12 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://dev.to/wadethomastt/the-ansible-playbook-that-will-harden-your-vps-in-seconds-49ca" target="_blank">The Ansible Playbook that will Harden Your VPS</a>
                 
             </li>
             
             <li>
-                <a href="https://git-scm.com/docs" target="_blank">Git Documentation</a>
+                <a href="https://dev.to/wadethomastt/ansible-installation-and-configuration-on-ubuntu-automate-your-server-management-1fdg" target="_blank">Ansible Installation and Configuration on Ubuntu</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://sidhantjain90.medium.com/behind-the-scenes-how-does-ansible-connects-to-remote-hosts-5758b15d6427" target="_blank">Behind the scenes: How does ansible connects to remote hosts ?</a>
                 
             </li>
             
@@ -131,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-22_1029.html">&larr; 2026-07-22 1029</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-07-26_1004.html">&larr; 2026-07-26 1004</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-30_1029.html">2026-07-30 1029 &rarr;</a>
             
         </div>
     </div>

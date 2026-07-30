@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/terraform.xml</id>
   <title>Terraform - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-29T10:44:13.282795+00:00</updated>
+  <updated>2026-07-30T10:30:20.484490+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/terraform/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -416,5 +416,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-26_1004.html"/>
     <summary>Terraform es una herramienta de infraestructura como código que permite crear, cambiar y mejorar la infraestructura de manera segura y predecible. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo la versión 1.16.0-beta1 y la integración con el lenguaje de servidor de HashiCorp.</summary>
     <published>2026-07-26T10:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-30_1029.html</id>
+    <title>Terraform: Mejoras y Novedades</title>
+    <updated>2026-07-30T10:29:00+00:00</updated>
+    <content type="html">&lt;p&gt;Terraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En la versión más reciente, se ha agregado soporte para Terraform Stack y Deployment files, lo que proporciona una forma más inteligente de completar bloques y atributos en estos archivos. Esto se logra mediante el comando &lt;code&gt;terraform init&lt;/code&gt; y la configuración de los archivos &lt;code&gt;main.tf&lt;/code&gt; y &lt;code&gt;variables.tf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a lo largo del plan y la aplicación. Esto se puede lograr mediante el comando &lt;code&gt;terraform plan&lt;/code&gt; y la configuración de los archivos &lt;code&gt;provider.tf&lt;/code&gt; y &lt;code&gt;backend.tf&lt;/code&gt;. Además, se han agregado mejoras en la gestión de estado, lo que permite una mayor flexibilidad y control sobre la infraestructura.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de módulos, Terraform proporciona una forma de reutilizar y compartir código mediante la creación de módulos. Un módulo es un conjunto de archivos de configuración que se pueden utilizar para provisionar una parte específica de la infraestructura. Los módulos se pueden crear y compartir mediante el comando &lt;code&gt;terraform module&lt;/code&gt; y la configuración de los archivos &lt;code&gt;module.tf&lt;/code&gt; y &lt;code&gt;outputs.tf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La gestión de espacios de trabajo es otra característica importante de Terraform. Un espacio de trabajo es una forma de organizar y gestionar la infraestructura de manera independiente. Los espacios de trabajo se pueden crear y gestionar mediante el comando &lt;code&gt;terraform workspace&lt;/code&gt; y la configuración de los archivos &lt;code&gt;workspace.tf&lt;/code&gt; y &lt;code&gt;terraform.tfstate&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Terraform proporciona una forma de importar y mover bloques de configuración, lo que permite una mayor flexibilidad y control sobre la infraestructura. Esto se puede lograr mediante el comando &lt;code&gt;terraform import&lt;/code&gt; y la configuración de los archivos &lt;code&gt;main.tf&lt;/code&gt; y &lt;code&gt;terraform.tfstate&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Terraform es una herramienta poderosa y flexible que permite gestionar y provisionar infraestructura de manera segura y predecible. Con las últimas novedades y mejoras, Terraform se ha convertido en una herramienta aún más valiosa para los equipos de DevOps y sysadmins.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md"&gt;CHANGELOG.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-15-8-released/77560"&gt;Terraform v1.15.8 released&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603"&gt;Terraform v1.16.0-beta1 released&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-30_1029.html"/>
+    <summary>Terraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En este artículo, se presentan las últimas novedades y mejoras en Terraform, incluyendo soporte para Terraform Stack y Deployment files.</summary>
+    <published>2026-07-30T10:29:00+00:00</published>
   </entry>
 </feed>
