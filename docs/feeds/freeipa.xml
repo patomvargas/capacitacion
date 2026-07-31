@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/freeipa.xml</id>
   <title>FreeIPA - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-30T10:30:20.431299+00:00</updated>
+  <updated>2026-07-31T10:44:36.840021+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -665,5 +665,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-27_1129.html"/>
     <summary>FreeIPA es un sistema de administración de identidad que integra LDAP, Kerberos y otros protocolos para proporcionar una solución de autenticación y autorización unificada. En este artículo, se presentan las últimas novedades y mejores prácticas para implementar y configurar FreeIPA.</summary>
     <published>2026-07-27T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-31_1043.html</id>
+    <title>Administración de Identidad con FreeIPA</title>
+    <updated>2026-07-31T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;FreeIPA es un sistema de administración de identidad de código abierto que proporciona una solución integral para la gestión de identidades en entornos de red. Su arquitectura se basa en la integración de varios protocolos, incluyendo LDAP (Lightweight Directory Access Protocol) para el almacenamiento y la gestión de directorios, Kerberos para la autenticación y el control de acceso, y otros componentes como HBAC (Host-Based Access Control) y sudo rules para el control de acceso refinado.&lt;/p&gt;
+&lt;p&gt;Una de las características clave de FreeIPA es su capacidad para establecer relaciones de confianza entre dominios, lo que permite la autenticación y el acceso a recursos entre diferentes dominios de confianza. Para configurar una relación de confianza en FreeIPA, se puede utilizar el comando &lt;code&gt;ipa trust-add&lt;/code&gt; seguido del nombre del dominio de confianza. Por ejemplo: &lt;code&gt;ipa trust-add example.com&lt;/code&gt;. Esto establece una relación de confianza entre el dominio actual y el dominio &lt;code&gt;example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para gestionar los accesos y permisos en FreeIPA, se pueden utilizar las reglas de HBAC y las reglas de sudo. Las reglas de HBAC permiten definir políticas de acceso basadas en la ubicación del host y las reglas de sudo permiten definir permisos específicos para los usuarios y grupos. Por ejemplo, para agregar una regla de HBAC, se puede utilizar el comando &lt;code&gt;ipa hbacrule-add&lt;/code&gt; seguido del nombre de la regla y la descripción. Luego, se pueden agregar condiciones y permisos a la regla utilizando comandos como &lt;code&gt;ipa hbacrule-add-condition&lt;/code&gt; y &lt;code&gt;ipa hbacrule-add-permission&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la autenticación, FreeIPA utiliza Kerberos como protocolo de autenticación. Para configurar la autenticación Kerberos en FreeIPA, se deben generar claves y certificados utilizando herramientas como &lt;code&gt;ipa-getkeytab&lt;/code&gt; y &lt;code&gt;ipa-cacert-manage&lt;/code&gt;. Luego, se pueden configurar los clientes para que utilicen la autenticación Kerberos mediante la configuración de los parámetros de autenticación en los archivos de configuración del sistema.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que FreeIPA proporciona una interfaz de usuario web para la administración y el monitoreo del sistema. La interfaz web de FreeIPA permite a los administradores gestionar usuarios, grupos, hosts y otros objetos del directorio, así como monitorear el estado del sistema y realizar tareas de mantenimiento.&lt;/p&gt;
+&lt;p&gt;En resumen, FreeIPA es una solución completa de administración de identidad que proporciona una amplia gama de funcionalidades y configuraciones para la gestión de identidades en entornos de red. Su arquitectura basada en la integración de protocolos como LDAP y Kerberos, junto con sus características de gestión de accesos y permisos, lo convierten en una herramienta valiosa para los administradores de sistemas y redes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/ansible-freeipa/blob/master/README-inventory-plugin-freeipa.md"&gt;README-inventory-plugin-freeipa.md&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa-webui/issues/1142"&gt;Hardcoded Import Certificate Authority certificate&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/freeipa/freeipa/blob/master/install/updates/10-config.update"&gt;10-config.update&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-31_1043.html"/>
+    <summary>FreeIPA es un sistema de administración de identidad que integra LDAP, Kerberos y otros protocolos para proporcionar una solución completa de gestión de identidades. En este artículo, se exploran las funcionalidades y configuraciones clave de FreeIPA.</summary>
+    <published>2026-07-31T10:43:00+00:00</published>
   </entry>
 </feed>

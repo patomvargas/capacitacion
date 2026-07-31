@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-07-30T10:30:20.436801+00:00</updated>
+  <updated>2026-07-31T10:44:36.847286+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -649,5 +649,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-27_1129.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
     <published>2026-07-27T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-31_1043.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-07-31T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer túneles de red seguros utilizando protocolos de autenticación y cifrado avanzados. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt;. Por ejemplo, para generar un par de claves RSA, se puede utilizar el comando &lt;code&gt;openssl genrsa -out servidor.key 2048&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez generados los certificados y claves, es posible configurar el servidor OpenVPN utilizando el archivo de configuración &lt;code&gt;server.conf&lt;/code&gt;. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP y el puerto del servidor, así como los certificados y claves generados. Por ejemplo, la configuración puede incluir líneas como &lt;code&gt;port 1194&lt;/code&gt; y &lt;code&gt;tls-server&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para establecer una conexión segura con el servidor OpenVPN, los clientes deben configurar su propio archivo de configuración &lt;code&gt;client.conf&lt;/code&gt;. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP y el puerto del servidor, así como los certificados y claves generados. Por ejemplo, la configuración puede incluir líneas como &lt;code&gt;remote-cert-tls server&lt;/code&gt; y &lt;code&gt;tls-client&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además de la configuración básica, es importante considerar la seguridad del servidor OpenVPN. Esto incluye la implementación de medidas de hardening, como la restricción de acceso a los certificados y claves, y la configuración de firewalls y reglas de seguridad para proteger el servidor contra ataques. Por ejemplo, se puede utilizar el comando &lt;code&gt;iptables&lt;/code&gt; para bloquear el tráfico de red no autorizado.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y mejoras en OpenVPN, la versión 2.7.4 incluye varias correcciones de errores y mejoras en la seguridad. Por ejemplo, se ha solucionado un problema con la ruta de error en OpenVPN 2.7+ Stunnel. Además, se ha anunciado una auditoría de seguridad para la versión 2.7.0, que incluye resultados internos y una publicación oficial en un blog.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN ofrece una variedad de herramientas y recursos para los administradores de sistemas y desarrolladores de DevOps. Por ejemplo, el sitio web de OpenVPN ofrece documentación detallada y ejemplos de configuración, así como un foro de discusión para resolver problemas y compartir conocimientos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"&gt;OpenVPN Release 2.7.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/issues/1073"&gt;Route error with OpenVPN 2.7+ Stunnel #1073&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/blob/master/doc/interactive-service-notes.rst"&gt;Interactive Service Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-31_1043.html"/>
+    <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas y desarrolladores de DevOps establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas y configuraciones para utilizar OpenVPN de manera efectiva.</summary>
+    <published>2026-07-31T10:43:00+00:00</published>
   </entry>
 </feed>

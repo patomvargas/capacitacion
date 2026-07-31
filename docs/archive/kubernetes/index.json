@@ -1,4 +1,24 @@
 {
+  "2026-07-31_1043": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Se presentan las últimas novedades y mejoras en Kubernetes, incluyendo la versión 1.37 y la liberación de etcd v3.7.0. Se discuten también las mejores prácticas para proteger la infraestructura de Kubernetes.",
+    "content": "\nLa versión 1.37 de Kubernetes se encuentra en discusión, y se espera que incluya varias mejoras y novedades. Una de las características más destacadas es la liberación de etcd v3.7.0, que incluye la función `RangeStream` y varias mejoras de rendimiento. Para aprovechar estas características, es importante mantener la infraestructura de Kubernetes actualizada y segura.\n\nPara proteger la infraestructura de Kubernetes, es fundamental seguir las mejores prácticas de seguridad. Esto incluye el uso de `NetworkPolicies` para controlar el tráfico de red, y la implementación de `PodSecurityPolicies` para restringir los permisos de los pods. También es importante realizar copias de seguridad regulares de los datos y configuraciones, utilizando herramientas como `kubectl` y `etcdctl`.\n\nLa versión 1.37 de Kubernetes también incluye varias mejoras en la gestión de almacenamiento y redes. Por ejemplo, se puede utilizar el comando `kubectl` para crear y gestionar `PersistentVolumes` y `StatefulSets`. Para crear un `PersistentVolume`, se puede utilizar el siguiente comando: `kubectl create -f pv.yaml`, donde `pv.yaml` es un archivo de configuración que define el volumen persistente.\n\nAdemás, la versión 1.37 de Kubernetes incluye varias mejoras en la gestión de operadores y la resolución de problemas. Por ejemplo, se puede utilizar el comando `kubectl` para crear y gestionar `Deployments` y `ReplicaSets`. Para crear un `Deployment`, se puede utilizar el siguiente comando: `kubectl create -f deployment.yaml`, donde `deployment.yaml` es un archivo de configuración que define el despliegue.\n\nEn cuanto a la resolución de problemas, es importante utilizar herramientas como `kubectl` y `kubeadm` para diagnosticar y solucionar problemas en la infraestructura de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl get pods` para obtener una lista de los pods en ejecución, y el comando `kubectl describe pod` para obtener información detallada sobre un pod específico.\n\nEn resumen, la versión 1.37 de Kubernetes incluye varias mejoras y novedades, y es fundamental seguir las mejores prácticas de seguridad y resolución de problemas para proteger la infraestructura de Kubernetes.\n",
+    "sources": [
+      {
+        "title": "Kubernetes 1.37 Release Highlights Discussion",
+        "url": "https://github.com/kubernetes/sig-release/discussions/3051"
+      },
+      {
+        "title": "Announcing etcd v3.7.0",
+        "url": "https://kubernetes.io/blog/2026/07/08/announcing-etcd-3.7/"
+      },
+      {
+        "title": "Kubernetes Blog",
+        "url": "https://kubernetes.io/blog/"
+      }
+    ]
+  },
   "2026-07-27_1129": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes 1.36",

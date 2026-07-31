@@ -58,7 +58,7 @@
     </div>
 
     <h1>OpenVPN: Tunneling y Seguridad</h1>
-    <div class="meta">2026-07-27 1129 · OpenVPN</div>
+    <div class="meta">2026-07-31 1043 · OpenVPN</div>
 
     <div class="content">
         
@@ -66,41 +66,37 @@
             
         
             
-            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados SSL/TLS y configurar el servidor para que acepte conexiones. Esto se puede hacer utilizando comandos como `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 3650` para generar los certificados y `openvpn --config server.conf` para iniciar el servidor.</p>
+            <p>OpenVPN es una herramienta de código abierto que permite establecer túneles de red seguros utilizando protocolos de autenticación y cifrado avanzados. Para configurar un servidor OpenVPN, es necesario generar certificados y claves utilizando herramientas como `openssl`. Por ejemplo, para generar un par de claves RSA, se puede utilizar el comando `openssl genrsa -out servidor.key 2048`.</p>
             
         
             
         
             
-            <p>Una vez configurado el servidor, es importante protegerlo contra ataques. Una de las mejores prácticas es utilizar autenticación de dos factores y configurar el servidor para que solo acepte conexiones de clientes que tengan un certificado válido. Esto se puede hacer utilizando comandos como `openvpn --auth-user-pass-verify verify.py via-env` para autenticar a los clientes.</p>
+            <p>Una vez generados los certificados y claves, es posible configurar el servidor OpenVPN utilizando el archivo de configuración `server.conf`. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP y el puerto del servidor, así como los certificados y claves generados. Por ejemplo, la configuración puede incluir líneas como `port 1194` y `tls-server`.</p>
             
         
             
         
             
-            <p>Otra forma de proteger el servidor es configurar el firewall para que solo permita conexiones al servidor OpenVPN. Esto se puede hacer utilizando comandos como `iptables -A INPUT -p udp --dport 1194 -j ACCEPT` para permitir conexiones UDP al puerto 1194.</p>
+            <p>Para establecer una conexión segura con el servidor OpenVPN, los clientes deben configurar su propio archivo de configuración `client.conf`. En este archivo, se deben especificar los parámetros de conexión, como la dirección IP y el puerto del servidor, así como los certificados y claves generados. Por ejemplo, la configuración puede incluir líneas como `remote-cert-tls server` y `tls-client`.</p>
             
         
             
         
             
-            <p>En cuanto a la versión 2.7.4 de OpenVPN, se han solucionado varios problemas de seguridad y se han agregado nuevas características, como la capacidad de utilizar protocolos de autenticación más seguros. Es importante mantener el servidor actualizado para asegurarse de que se tienen las últimas características de seguridad.</p>
+            <p>Además de la configuración básica, es importante considerar la seguridad del servidor OpenVPN. Esto incluye la implementación de medidas de hardening, como la restricción de acceso a los certificados y claves, y la configuración de firewalls y reglas de seguridad para proteger el servidor contra ataques. Por ejemplo, se puede utilizar el comando `iptables` para bloquear el tráfico de red no autorizado.</p>
             
         
             
         
             
-            <p>Para configurar un túnel site-to-site con OpenVPN, es necesario configurar dos servidores OpenVPN, uno en cada lado del túnel, y establecer una conexión entre ellos. Esto se puede hacer utilizando comandos como `openvpn --config site-to-site.conf` para establecer la conexión.</p>
+            <p>En cuanto a las novedades y mejoras en OpenVPN, la versión 2.7.4 incluye varias correcciones de errores y mejoras en la seguridad. Por ejemplo, se ha solucionado un problema con la ruta de error en OpenVPN 2.7+ Stunnel. Además, se ha anunciado una auditoría de seguridad para la versión 2.7.0, que incluye resultados internos y una publicación oficial en un blog.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la comunidad de OpenVPN es muy activa y hay muchos recursos disponibles para ayudar a configurar y proteger un servidor OpenVPN. En el sitio web oficial de OpenVPN, se pueden encontrar documentación y ejemplos de configuración para ayudar a los administradores de sistemas a configurar y proteger sus servidores.</p>
-            
-        
-            
-        
+            <p>Finalmente, es importante mencionar que OpenVPN ofrece una variedad de herramientas y recursos para los administradores de sistemas y desarrolladores de DevOps. Por ejemplo, el sitio web de OpenVPN ofrece documentación detallada y ejemplos de configuración, así como un foro de discusión para resolver problemas y compartir conocimientos.</p>
             
         
     </div>
@@ -120,6 +116,11 @@
                 
             </li>
             
+            <li>
+                <a href="https://github.com/OpenVPN/openvpn/blob/master/doc/interactive-service-notes.rst" target="_blank">Interactive Service Notes</a>
+                
+            </li>
+            
         </ul>
     </div>
     
@@ -127,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-23_1027.html">&larr; 2026-07-23 1027</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-31_1043.html">2026-07-31 1043 &rarr;</a>
             
         </div>
     </div>

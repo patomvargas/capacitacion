@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes 1.36 - Kubernetes</title>
+    <title>Novedades en Kubernetes - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,54 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes 1.36</h1>
-    <div class="meta">2026-07-27 1129 · Kubernetes</div>
+    <h1>Novedades en Kubernetes</h1>
+    <div class="meta">2026-07-31 1043 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes 1.36 es la última versión del popular sistema de orquestación de contenedores. Una de las novedades más destacadas es la mejora en el soporte para redes de alta disponibilidad. Para configurar una red de alta disponibilidad, podemos utilizar el comando `kubectl create deployment` con la opción `--replicas` para especificar el número de réplicas de nuestro deployment.</p>
+        
+            
+            <p>La versión 1.37 de Kubernetes se encuentra en discusión, y se espera que incluya varias mejoras y novedades. Una de las características más destacadas es la liberación de etcd v3.7.0, que incluye la función `RangeStream` y varias mejoras de rendimiento. Para aprovechar estas características, es importante mantener la infraestructura de Kubernetes actualizada y segura.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto que ha sido mejorado en Kubernetes 1.36. Ahora, podemos utilizar el comando `kubectl create secret` para crear secretos cifrados que solo pueden ser descifrados por el controlador de secretos. Por ejemplo, podemos crear un secreto cifrado con el comando `kubectl create secret generic mysecret --from-literal=password=mypassword`.</p>
+            <p>Para proteger la infraestructura de Kubernetes, es fundamental seguir las mejores prácticas de seguridad. Esto incluye el uso de `NetworkPolicies` para controlar el tráfico de red, y la implementación de `PodSecurityPolicies` para restringir los permisos de los pods. También es importante realizar copias de seguridad regulares de los datos y configuraciones, utilizando herramientas como `kubectl` y `etcdctl`.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto al almacenamiento, Kubernetes 1.36 soporta ahora el almacenamiento de objetos S3-compatible. Podemos utilizar el comando `kubectl create storageclass` para crear una clase de almacenamiento que utilice un proveedor de almacenamiento de objetos como Alarik. Por ejemplo, podemos crear una clase de almacenamiento con el comando `kubectl create storageclass mystorageclass --provisioner=alarik.io/alarik`.</p>
+            <p>La versión 1.37 de Kubernetes también incluye varias mejoras en la gestión de almacenamiento y redes. Por ejemplo, se puede utilizar el comando `kubectl` para crear y gestionar `PersistentVolumes` y `StatefulSets`. Para crear un `PersistentVolume`, se puede utilizar el siguiente comando: `kubectl create -f pv.yaml`, donde `pv.yaml` es un archivo de configuración que define el volumen persistente.</p>
             
         
             
         
             
-        
-            
-            <p>Otra novedad interesante es la integración con el operador de Apache Flink, que nos permite gestionar aplicaciones de procesamiento de datos en tiempo real de manera más eficiente. Podemos utilizar el comando `kubectl create deployment` con la opción `--image` para especificar la imagen de Apache Flink que queremos utilizar.</p>
+            <p>Además, la versión 1.37 de Kubernetes incluye varias mejoras en la gestión de operadores y la resolución de problemas. Por ejemplo, se puede utilizar el comando `kubectl` para crear y gestionar `Deployments` y `ReplicaSets`. Para crear un `Deployment`, se puede utilizar el siguiente comando: `kubectl create -f deployment.yaml`, donde `deployment.yaml` es un archivo de configuración que define el despliegue.</p>
             
         
             
         
             
-        
-            
-            <p>Finalmente, es importante mencionar que la versión 1.36 de Kubernetes también incluye mejoras en la herramienta de línea de comandos `kubectl`. Ahora, podemos utilizar el comando `kubectl debug` para depurar nuestros pods y deployments de manera más eficiente. Por ejemplo, podemos utilizar el comando `kubectl debug mypod --container=mycontainer` para depurar un contenedor específico dentro de un pod.</p>
+            <p>En cuanto a la resolución de problemas, es importante utilizar herramientas como `kubectl` y `kubeadm` para diagnosticar y solucionar problemas en la infraestructura de Kubernetes. Por ejemplo, se puede utilizar el comando `kubectl get pods` para obtener una lista de los pods en ejecución, y el comando `kubectl describe pod` para obtener información detallada sobre un pod específico.</p>
             
         
             
         
             
-        
+            <p>En resumen, la versión 1.37 de Kubernetes incluye varias mejoras y novedades, y es fundamental seguir las mejores prácticas de seguridad y resolución de problemas para proteger la infraestructura de Kubernetes.</p>
             
-            <p>En resumen, Kubernetes 1.36 es una versión muy completa que incluye mejoras en networking, almacenamiento, seguridad y herramientas de línea de comandos. Es importante estar al tanto de estas novedades para aprovechar al máximo las capacidades de Kubernetes en nuestros entornos de producción.</p>
+        
             
         
     </div>
@@ -115,12 +109,12 @@
         <ul>
             
             <li>
-                <a href="https://medium.com/@vkajarkhane/creating-an-aws-eks-cluster-on-kubernetes-1-36-the-complete-2026-guide-aab25af5e629" target="_blank">Creating an AWS EKS Cluster on Kubernetes 1.36</a>
+                <a href="https://github.com/kubernetes/sig-release/discussions/3051" target="_blank">Kubernetes 1.37 Release Highlights Discussion</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/flink-kubernetes-operator" target="_blank">Apache Flink Kubernetes Operator</a>
+                <a href="https://kubernetes.io/blog/2026/07/08/announcing-etcd-3.7/" target="_blank">Announcing etcd v3.7.0</a>
                 
             </li>
             
@@ -136,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-23_1027.html">&larr; 2026-07-23 1027</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-31_1043.html">2026-07-31 1043 &rarr;</a>
             
         </div>
     </div>

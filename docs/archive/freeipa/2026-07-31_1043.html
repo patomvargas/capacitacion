@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Administración de Identidad con FreeIPA - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
+    </div>
+
+    <h1>Administración de Identidad con FreeIPA</h1>
+    <div class="meta">2026-07-31 1043 · FreeIPA</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>FreeIPA es un sistema de administración de identidad de código abierto que proporciona una solución integral para la gestión de identidades en entornos de red. Su arquitectura se basa en la integración de varios protocolos, incluyendo LDAP (Lightweight Directory Access Protocol) para el almacenamiento y la gestión de directorios, Kerberos para la autenticación y el control de acceso, y otros componentes como HBAC (Host-Based Access Control) y sudo rules para el control de acceso refinado.</p>
+            
+        
+            
+        
+            
+            <p>Una de las características clave de FreeIPA es su capacidad para establecer relaciones de confianza entre dominios, lo que permite la autenticación y el acceso a recursos entre diferentes dominios de confianza. Para configurar una relación de confianza en FreeIPA, se puede utilizar el comando `ipa trust-add` seguido del nombre del dominio de confianza. Por ejemplo: `ipa trust-add example.com`. Esto establece una relación de confianza entre el dominio actual y el dominio `example.com`.</p>
+            
+        
+            
+        
+            
+            <p>Para gestionar los accesos y permisos en FreeIPA, se pueden utilizar las reglas de HBAC y las reglas de sudo. Las reglas de HBAC permiten definir políticas de acceso basadas en la ubicación del host y las reglas de sudo permiten definir permisos específicos para los usuarios y grupos. Por ejemplo, para agregar una regla de HBAC, se puede utilizar el comando `ipa hbacrule-add` seguido del nombre de la regla y la descripción. Luego, se pueden agregar condiciones y permisos a la regla utilizando comandos como `ipa hbacrule-add-condition` y `ipa hbacrule-add-permission`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la autenticación, FreeIPA utiliza Kerberos como protocolo de autenticación. Para configurar la autenticación Kerberos en FreeIPA, se deben generar claves y certificados utilizando herramientas como `ipa-getkeytab` y `ipa-cacert-manage`. Luego, se pueden configurar los clientes para que utilicen la autenticación Kerberos mediante la configuración de los parámetros de autenticación en los archivos de configuración del sistema.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que FreeIPA proporciona una interfaz de usuario web para la administración y el monitoreo del sistema. La interfaz web de FreeIPA permite a los administradores gestionar usuarios, grupos, hosts y otros objetos del directorio, así como monitorear el estado del sistema y realizar tareas de mantenimiento.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, FreeIPA es una solución completa de administración de identidad que proporciona una amplia gama de funcionalidades y configuraciones para la gestión de identidades en entornos de red. Su arquitectura basada en la integración de protocolos como LDAP y Kerberos, junto con sus características de gestión de accesos y permisos, lo convierten en una herramienta valiosa para los administradores de sistemas y redes.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/freeipa/ansible-freeipa/blob/master/README-inventory-plugin-freeipa.md" target="_blank">README-inventory-plugin-freeipa.md</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/freeipa/freeipa-webui/issues/1142" target="_blank">Hardcoded Import Certificate Authority certificate</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/freeipa/freeipa/blob/master/install/updates/10-config.update" target="_blank">10-config.update</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>
