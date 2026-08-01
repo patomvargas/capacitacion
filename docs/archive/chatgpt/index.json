@@ -1,4 +1,32 @@
 {
+  "2026-08-01_1002": {
+    "slug": "chatgpt",
+    "title": "Actualizaciones y Mejoras en ChatGPT",
+    "summary": "ChatGPT ha experimentado cambios y mejoras en su API, plugins y funcionalidades. En este artículo, se presentan las novedades y best practices para sysadmins y DevOps engineers.",
+    "content": "Recientemente, se han reportado varios issues en la plataforma de ChatGPT, como la desaparición del botón de grabación en la aplicación de macOS después de la migración a la nueva aplicación de Codex. Esto ha causado confusión entre los usuarios, ya que la aplicación anterior permitía acceder a la función de grabación de ChatGPT.\n\nLa comunidad de desarrolladores ha reportado también problemas con la aplicación de Codex, como la colisión de iconos entre la aplicación de Codex y ChatGPT, lo que puede causar confusión en la identificación de las aplicaciones. Además, se ha informado de un problema con la aplicación de Codex que hace que se cierre cuando se abre una página que utiliza WebCodecs o canvas en el navegador embebido.\n\nEn cuanto a la API de ChatGPT, se ha agregado soporte para la versión 5.5 de GPT, que fuerza el uso de MultiAgentV2 a pesar de que se haya deshabilitado. Esto puede causar problemas para los desarrolladores que necesitan utilizar agentes personalizados. Para solucionar este problema, se puede utilizar el comando `--disable-multi-agent` al iniciar la aplicación de ChatGPT.\n\nOtro problema reportado es la colisión de atajos de teclado en la extensión de Codex para VS Code, donde la combinación de teclas Shift+Tab ya no alterna el modo de planificación después de la última actualización. Esto puede ser un problema para los desarrolladores que utilizan la extensión de Codex en su flujo de trabajo diario.\n\nEn resumen, es importante estar al tanto de las actualizaciones y cambios en la plataforma de ChatGPT para asegurarse de que se están utilizando las mejores prácticas y configuraciones para evitar problemas y confusiones.\n\nPara solucionar estos problemas, se recomienda verificar la documentación oficial de ChatGPT y Codex, y utilizar comandos como `--help` o `--version` para obtener más información sobre las opciones y configuraciones disponibles.",
+    "sources": [
+      {
+        "title": "VS Code Shift+Tab no longer toggles Plan Mode",
+        "url": "https://github.com/openai/codex/issues/32147"
+      },
+      {
+        "title": "Annoyance Codex App and ChatGPT App use the same Icon",
+        "url": "https://github.com/openai/codex/issues/32096"
+      },
+      {
+        "title": "Regression ChatGPT Record button disappeared",
+        "url": "https://github.com/openai/codex/issues/32576"
+      },
+      {
+        "title": "Codex app crashes when embedded browser opens WebCodecs/canvas-capable pages",
+        "url": "https://github.com/openai/codex/issues/32094"
+      },
+      {
+        "title": "CLI GPT-5.5 forces MultiAgentV2 despite disable and hides documented custom-agent controls",
+        "url": "https://github.com/openai/codex/issues/31097"
+      }
+    ]
+  },
   "2026-07-24_1023": {
     "slug": "chatgpt",
     "title": "ChatGPT: Novedades y Mejoras",

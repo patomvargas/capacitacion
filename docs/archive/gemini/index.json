@@ -1,4 +1,20 @@
 {
+  "2026-08-01_1002": {
+    "slug": "gemini",
+    "title": "Gemini: Fine-Tuning y Integración",
+    "summary": "Gemini es un modelo de lenguaje que puede ser fine-tuneado para mejorar su rendimiento en tareas específicas. En este artículo, exploraremos cómo fine-tunear Gemini y su integración con otras herramientas como Vertex AI y Workspace.",
+    "content": "\nEl fine-tuning de Gemini es un proceso que permite ajustar el modelo para que se adapte a un conjunto específico de datos. Esto se puede hacer utilizando técnicas de aprendizaje supervisado, como la fine-tuning de Gemini 3.5 Flash y Qwen en la plataforma Agent. Para hacer esto, se pueden utilizar comandos como `python train.py --model gemini --data mi_conjunto_de_datos` para entrenar el modelo con nuestros datos.\n\nLa integración de Gemini con Vertex AI es otro tema importante. Vertex AI es una plataforma de aprendizaje automático que permite a los desarrolladores crear y desplegar modelos de lenguaje como Gemini. Para integrar Gemini con Vertex AI, se pueden utilizar APIs como la API de Vertex AI para crear y gestionar modelos de lenguaje. Por ejemplo, se puede utilizar el comando `gcloud ai models create mi_modelo --region us-central1 --framework gemini` para crear un modelo de lenguaje en Vertex AI.\n\nLa integración de Gemini con Workspace es también posible. Workspace es una plataforma de colaboración que permite a los equipos trabajar juntos en proyectos de desarrollo de software. Para integrar Gemini con Workspace, se pueden utilizar APIs como la API de Workspace para crear y gestionar proyectos de desarrollo de software. Por ejemplo, se puede utilizar el comando `google-api-python-client` para interactuar con la API de Workspace y crear un proyecto de desarrollo de software que utilice Gemini.\n\nEn cuanto a las mejores prácticas para el fine-tuning de Gemini, es importante mencionar que la calidad de los datos es fundamental. Los datos deben ser relevantes y precisos para que el modelo pueda aprender de ellos. También es importante ajustar los hiperparámetros del modelo para que se adapten a las necesidades específicas del proyecto. Por ejemplo, se puede utilizar el comando `python train.py --model gemini --data mi_conjunto_de_datos --batch_size 32 --epochs 10` para ajustar el tamaño del lote y el número de épocas de entrenamiento.\n\nFinalmente, es importante mencionar que la comunidad de desarrolladores de Gemini es muy activa y hay muchos recursos disponibles para aprender a utilizar este modelo de lenguaje. Por ejemplo, se puede utilizar el repositorio de GitHub de Gemini para obtener acceso a código de ejemplo y documentación.\n\nEn resumen, Gemini es un modelo de lenguaje poderoso que puede ser fine-tuneado para mejorar su rendimiento en tareas específicas. La integración con Vertex AI y Workspace es posible y puede ser muy útil para los desarrolladores que trabajan en proyectos de desarrollo de software. La calidad de los datos y el ajuste de los hiperparámetros son fundamentales para el fine-tuning de Gemini.\n\n  ",
+    "sources": [
+      {
+        "title": "Supervised fine-tuning of Gemini 3.5 Flash and Qwen",
+        "url": "https://medium.com/google-cloud/supervised-fine-tuning-of-gemini-3-5-flash-and-qwen-on-agent-platform-3117054119d2"
+      },
+      {
+        "title": "Running and Evaluating TurboQuant optimized Gemma 4",
+        "url": "https://medium.com/google-cloud/running-and-evaluating-turboquant-optimized-gemma-4-with-antigravity-818524f8d3ff"
+      }
+    ]
+  },
   "2026-07-28_1040": {
     "slug": "gemini",
     "title": "Gemini: Avances y Mejoras en la API y Modelos",

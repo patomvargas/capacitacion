@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gemini: Fine-Tuning y Integración - Gemini</title>
+    <link rel="alternate" type="application/atom+xml" title="Gemini" href="https://patomvargas.github.io/capacitacion/feeds/gemini.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/gemini/">Gemini</a>
+    </div>
+
+    <h1>Gemini: Fine-Tuning y Integración</h1>
+    <div class="meta">2026-08-01 1002 · Gemini</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>El fine-tuning de Gemini es un proceso que permite ajustar el modelo para que se adapte a un conjunto específico de datos. Esto se puede hacer utilizando técnicas de aprendizaje supervisado, como la fine-tuning de Gemini 3.5 Flash y Qwen en la plataforma Agent. Para hacer esto, se pueden utilizar comandos como `python train.py --model gemini --data mi_conjunto_de_datos` para entrenar el modelo con nuestros datos.</p>
+            
+        
+            
+        
+            
+            <p>La integración de Gemini con Vertex AI es otro tema importante. Vertex AI es una plataforma de aprendizaje automático que permite a los desarrolladores crear y desplegar modelos de lenguaje como Gemini. Para integrar Gemini con Vertex AI, se pueden utilizar APIs como la API de Vertex AI para crear y gestionar modelos de lenguaje. Por ejemplo, se puede utilizar el comando `gcloud ai models create mi_modelo --region us-central1 --framework gemini` para crear un modelo de lenguaje en Vertex AI.</p>
+            
+        
+            
+        
+            
+            <p>La integración de Gemini con Workspace es también posible. Workspace es una plataforma de colaboración que permite a los equipos trabajar juntos en proyectos de desarrollo de software. Para integrar Gemini con Workspace, se pueden utilizar APIs como la API de Workspace para crear y gestionar proyectos de desarrollo de software. Por ejemplo, se puede utilizar el comando `google-api-python-client` para interactuar con la API de Workspace y crear un proyecto de desarrollo de software que utilice Gemini.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas para el fine-tuning de Gemini, es importante mencionar que la calidad de los datos es fundamental. Los datos deben ser relevantes y precisos para que el modelo pueda aprender de ellos. También es importante ajustar los hiperparámetros del modelo para que se adapten a las necesidades específicas del proyecto. Por ejemplo, se puede utilizar el comando `python train.py --model gemini --data mi_conjunto_de_datos --batch_size 32 --epochs 10` para ajustar el tamaño del lote y el número de épocas de entrenamiento.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que la comunidad de desarrolladores de Gemini es muy activa y hay muchos recursos disponibles para aprender a utilizar este modelo de lenguaje. Por ejemplo, se puede utilizar el repositorio de GitHub de Gemini para obtener acceso a código de ejemplo y documentación.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Gemini es un modelo de lenguaje poderoso que puede ser fine-tuneado para mejorar su rendimiento en tareas específicas. La integración con Vertex AI y Workspace es posible y puede ser muy útil para los desarrolladores que trabajan en proyectos de desarrollo de software. La calidad de los datos y el ajuste de los hiperparámetros son fundamentales para el fine-tuning de Gemini.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://medium.com/google-cloud/supervised-fine-tuning-of-gemini-3-5-flash-and-qwen-on-agent-platform-3117054119d2" target="_blank">Supervised fine-tuning of Gemini 3.5 Flash and Qwen</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/google-cloud/running-and-evaluating-turboquant-optimized-gemma-4-with-antigravity-818524f8d3ff" target="_blank">Running and Evaluating TurboQuant optimized Gemma 4</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/gemini/2026-07-28_1040.html">&larr; 2026-07-28 1040</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

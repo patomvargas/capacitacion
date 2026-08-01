@@ -1,4 +1,28 @@
 {
+  "2026-08-01_1002": {
+    "slug": "claude-code",
+    "title": "Mejores prácticas para Claude Code",
+    "summary": "Aprende a optimizar tu flujo de trabajo con Claude Code utilizando plugins, hooks y MCP servers. Descubre cómo mejorar la productividad y la eficiencia en tu código.",
+    "content": "\nPara empezar a trabajar con Claude Code, es importante entender la diferencia entre las versiones de instalación 'stable' y 'latest'. La versión 'stable' se refiere a la última versión estable del software, mientras que 'latest' se refiere a la última versión disponible, que puede incluir características experimentales. Esto se puede configurar utilizando el comando `claude-code --version`.\n\nUna de las características más poderosas de Claude Code es la capacidad de utilizar plugins para extender su funcionalidad. Los plugins pueden ser utilizados para agregar comandos personalizados, agentes especializados, hooks y MCP servers. Por ejemplo, se puede utilizar el plugin `claude-code-plugin-semgrep` para escanear el código en busca de vulnerabilidades de seguridad. Para instalar un plugin, se puede utilizar el comando `claude-code plugin install <nombre-del-plugin>`.\n\nLos hooks son otro aspecto importante de Claude Code, ya que permiten ejecutar acciones personalizadas en diferentes momentos del flujo de trabajo. Por ejemplo, se puede utilizar un hook para ejecutar un comando antes de que se genere el código. Para configurar un hook, se puede utilizar el comando `claude-code hook add <nombre-del-hook> <comando>`.\n\nLos MCP servers son fundamentales para el funcionamiento de Claude Code, ya que permiten la comunicación entre el cliente y el servidor. Se pueden utilizar diferentes MCP servers, como el servidor de Semgrep, para escanear el código en busca de vulnerabilidades de seguridad. Para configurar un MCP server, se puede utilizar el comando `claude-code mcp add <nombre-del-mcp-server> <url-del-mcp-server>`.\n\nFinalmente, es importante mencionar que existen varias best practices para trabajar con Claude Code, como mantener el código organizado y conciso, y utilizar comandos personalizados para automatizar tareas repetitivas. También es importante estar al tanto de las últimas novedades y cambios en la documentación oficial de Claude Code.\n\nEn resumen, Claude Code es una herramienta poderosa que puede ser utilizada para mejorar la productividad y la eficiencia en el código. Al utilizar plugins, hooks y MCP servers, se pueden extender sus funcionalidades y personalizar el flujo de trabajo. Es importante estar al tanto de las últimas novedades y cambios en la documentación oficial y seguir las best practices para obtener el máximo provecho de esta herramienta.",
+    "sources": [
+      {
+        "title": "Docs: Clarify 'stable' vs. 'latest' installation versions and update CHANGELOG",
+        "url": "https://github.com/anthropics/claude-code/issues/5735"
+      },
+      {
+        "title": "Claude Code Plugins",
+        "url": "https://github.com/anthropics/claude-code/tree/main/plugins"
+      },
+      {
+        "title": "Semgrep MCP Server",
+        "url": "https://github.com/semgrep/mcp"
+      },
+      {
+        "title": "CLAUDE.md Best Practices",
+        "url": "https://medium.com/@onix_react/claude-md-best-practices-a60d726dc2a5"
+      }
+    ]
+  },
   "2026-07-28_1040": {
     "slug": "claude-code",
     "title": "Claude Code: Mejoras y Novedades",

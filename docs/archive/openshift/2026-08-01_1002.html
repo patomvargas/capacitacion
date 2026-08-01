@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en OpenShift 4.22 - OpenShift</title>
+    <title>OpenShift 4.22: Novedades y Mejoras - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,44 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>Novedades en OpenShift 4.22</h1>
-    <div class="meta">2026-07-28 1040 · OpenShift</div>
+    <h1>OpenShift 4.22: Novedades y Mejoras</h1>
+    <div class="meta">2026-08-01 1002 · OpenShift</div>
 
     <div class="content">
         
         
             
-            <p>La versión 4.22 de OpenShift se basa en Kubernetes 1.35 y CRI-O 1.35, y ofrece varias mejoras y nuevas características para desarrolladores y administradores de sistemas. Una de las novedades más destacadas es la inclusión de Red Hat OpenShift Dev Spaces, que permite a los desarrolladores crear entornos de desarrollo personalizados y colaborativos.</p>
+        
+            
+            <p>OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, basada en Kubernetes 1.35 y CRI-O 1.35. Esta versión incluye mejoras en seguridad, monitoreo y desarrollo, lo que la convierte en una opción atractiva para los desarrolladores y administradores de sistemas.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto importante en esta versión, con actualizaciones que incluyen la corrección de vulnerabilidades críticas. Para verificar la disponibilidad de actualizaciones, se puede utilizar el comando `oc adm upgrade` en la línea de comandos. Además, se puede utilizar el comando `oc get clusteroperators` para verificar el estado de los operadores del clúster.</p>
+            <p>Una de las novedades más destacadas de OpenShift 4.22 es la inclusión de la herramienta `oc adm upgrade recommend`, que permite a los administradores identificar y aplicar actualizaciones de seguridad y mejoras en la plataforma. Para utilizar esta herramienta, los administradores pueden ejecutar el comando `oc adm upgrade recommend` y seguir las instrucciones para aplicar las actualizaciones recomendadas.</p>
             
         
             
         
             
-            <p>En cuanto a la observabilidad, OpenShift 4.22 incluye la versión 1.5 del operador de observabilidad de clúster (COO), que ofrece dashboards personalizables y compatibilidad con fuentes de datos de monitoreo existentes. Para instalar el operador de observabilidad, se puede utilizar el comando `oc apply -f https://raw.githubusercontent.com/red-hat-storage/ocs-operator/main/deploy/csv-templates/crds/ocs/ocs.openshift.io_storageclusters.yaml`.</p>
+            <p>En cuanto a la seguridad, OpenShift 4.22 incluye mejoras en la autenticación y autorización, gracias a la integración con OAuth. Los desarrolladores pueden utilizar el comando `oc create secret` para crear secretos y utilizarlos en sus aplicaciones. Por ejemplo, `oc create secret generic mysecret --from-literal=username=myuser --from-literal=password=mypassword`.</p>
             
         
             
         
             
-            <p>La migración a OpenShift 4.22 también es un proceso importante, y se puede realizar utilizando el comando `oc adm migrate`. Es importante tener en cuenta que antes de realizar la migración, se deben realizar copias de seguridad de los datos y configuraciones importantes.</p>
+            <p>La versión 4.22 de OpenShift también incluye mejoras en el monitoreo y la observabilidad, gracias a la integración con Prometheus y Grafana. Los administradores pueden utilizar el comando `oc get prometheus` para obtener información sobre el estado de Prometheus en la plataforma. Además, la herramienta `oc describe` puede ser utilizada para obtener información detallada sobre los pods y los servicios en ejecución.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4.22 es una versión que ofrece muchas mejoras y nuevas características para desarrolladores y administradores de sistemas, y es importante estar al tanto de las novedades y cambios para aprovechar al máximo sus funcionalidades.</p>
+            <p>En resumen, OpenShift 4.22 es una versión robusta y segura de la plataforma de contenedores de Red Hat, que ofrece mejoras en seguridad, monitoreo y desarrollo. Los desarrolladores y administradores de sistemas pueden aprovechar las nuevas características y herramientas para mejorar la eficiencia y la productividad en sus entornos de desarrollo y producción.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Red Hat y la documentación de OpenShift.</p>
+            <p>Para obtener más información sobre las novedades y mejoras de OpenShift 4.22, los desarrolladores y administradores de sistemas pueden consultar la documentación oficial de Red Hat y las fuentes citadas a continuación.</p>
+            
+        
             
         
     </div>
@@ -105,7 +109,7 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:40764" target="_blank">RHSA-2026:40764</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:40764" target="_blank">RHSA-2026:40764 - Security Advisory</a>
                 
             </li>
             
@@ -126,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-24_1023.html">&larr; 2026-07-24 1023</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-07-28_1040.html">&larr; 2026-07-28 1040</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-01_1002.html">2026-08-01 1002 &rarr;</a>
             
         </div>
     </div>
