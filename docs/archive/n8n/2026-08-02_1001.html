@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Automatización con n8n - n8n</title>
+    <title>N8n: Automatización de Flujos de Trabajo - n8n</title>
     <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
     </div>
 
-    <h1>Automatización con n8n</h1>
-    <div class="meta">2026-07-29 1043 · n8n</div>
+    <h1>N8n: Automatización de Flujos de Trabajo</h1>
+    <div class="meta">2026-08-02 1001 · n8n</div>
 
     <div class="content">
         
         
             
-            <p>n8n es una herramienta de código abierto que permite a los usuarios crear flujos de trabajo personalizados utilizando nodos y workflows. Los nodos son los componentes básicos de n8n y se utilizan para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los workflows, por otro lado, son la secuencia de nodos que se ejecutan en un orden determinado para lograr un objetivo específico.</p>
+            <p>N8n es una herramienta de automatización de flujos de trabajo que se basa en nodos y flujos de trabajo. Los nodos son los componentes básicos de n8n y pueden ser utilizados para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los flujos de trabajo son la forma en que se organizan los nodos para crear un proceso automatizado.</p>
             
         
             
         
             
-            <p>Para empezar a utilizar n8n, es necesario instalarlo en un servidor o en una máquina local. Una vez instalado, se puede acceder a la interfaz de usuario de n8n mediante un navegador web. En la interfaz de usuario, se pueden crear nuevos workflows y nodos, y se pueden configurar las credenciales y los webhooks necesarios para la automatización.</p>
+            <p>Para crear un flujo de trabajo en n8n, se puede utilizar el comando `n8n workflow:create` y luego se puede configurar el flujo de trabajo utilizando el archivo de configuración `n8n.config.json`. En este archivo, se pueden definir los nodos y los flujos de trabajo, así como las credenciales y los webhooks necesarios.</p>
             
         
             
         
             
-            <p>Un ejemplo de cómo se puede utilizar n8n es la creación de un workflow que envíe un correo electrónico cada vez que se recibe un nuevo mensaje en un servidor de correo electrónico. Para hacer esto, se pueden utilizar los nodos `IMAP` y `SMTP` para conectarse al servidor de correo electrónico y enviar el correo electrónico, respectivamente. El comando para ejecutar este workflow sería: `n8n start --workflow=myWorkflow`.</p>
+            <p>Una de las últimas novedades en n8n es la integración con LangChain, que permite a los desarrolladores crear flujos de trabajo que utilicen modelos de lenguaje para realizar tareas como la completación de textos. Esta integración se puede realizar utilizando el nodo `n8n-nodes-langchain.lmlemonade`.</p>
             
         
             
         
             
-            <p>Otra característica importante de n8n es la posibilidad de autoalojamiento. Esto significa que se puede instalar n8n en un servidor propio y configurarlo para que se ejecute de manera autónoma. Esto es especialmente útil para las organizaciones que requieren un alto nivel de seguridad y control sobre sus flujos de trabajo.</p>
+            <p>Otra característica importante de n8n es la capacidad de autenticar y autorizar a los usuarios utilizando credenciales y webhooks. Esto se puede realizar utilizando el comando `n8n credentials:create` y luego configurando las credenciales y los webhooks en el archivo de configuración.</p>
             
         
             
         
             
-            <p>En cuanto a las integraciones, n8n admite una amplia variedad de servicios y herramientas, incluyendo Microsoft Dataverse, LangChain y Chatwoot. Estas integraciones permiten a los usuarios crear flujos de trabajo que interactúen con diferentes sistemas y servicios, lo que aumenta la flexibilidad y la eficiencia de la automatización.</p>
+            <p>En cuanto a la seguridad, n8n ha solucionado varios problemas de seguridad en las últimas versiones, incluyendo la vulnerabilidad de Expression Sandbox Escape que permitía a los atacantes ejecutar código arbitrario en el servidor.</p>
             
         
             
         
             
-            <p>En resumen, n8n es una herramienta poderosa y flexible para la automatización de flujos de trabajo. Con su interfaz de usuario intuitiva y su amplia variedad de nodos y integraciones, n8n es una excelente opción para los desarrolladores y administradores de sistemas que buscan automatizar tareas y procesos.</p>
+            <p>Para self-hosting, n8n proporciona una herramienta de migración para versiones anteriores, como se describe en el archivo `v20-migration-tool.md`. Esto permite a los desarrolladores migrar sus flujos de trabajo y configuraciones a la última versión de n8n.</p>
             
         
     </div>
@@ -110,17 +110,17 @@
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md" target="_blank">n8n-nodes-langchain.lmlemonade</a>
+                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md" target="_blank">N8n Nodes Langchain</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr" target="_blank">Expression Sandbox Escape Leading to RCE</a>
+                <a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr" target="_blank">Expression Sandbox Escape to RCE</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/microsoft/n8n-nodes-microsoft-dataverse" target="_blank">Microsoft Dataverse node for n8n</a>
+                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/v20-migration-tool.md" target="_blank">V20 Migration Tool</a>
                 
             </li>
             
@@ -131,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-29_1043.html">&larr; 2026-07-29 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-08-02_1001.html">2026-08-02 1001 &rarr;</a>
             
         </div>
     </div>

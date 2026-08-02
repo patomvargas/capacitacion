@@ -1,4 +1,28 @@
 {
+  "2026-08-02_1001": {
+    "slug": "n8n",
+    "title": "N8n: Automatización de Flujos de Trabajo",
+    "summary": "N8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores crear y gestionar flujos de trabajo complejos. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.",
+    "content": "N8n es una herramienta de automatización de flujos de trabajo que se basa en nodos y flujos de trabajo. Los nodos son los componentes básicos de n8n y pueden ser utilizados para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los flujos de trabajo son la forma en que se organizan los nodos para crear un proceso automatizado. \n \n Para crear un flujo de trabajo en n8n, se puede utilizar el comando `n8n workflow:create` y luego se puede configurar el flujo de trabajo utilizando el archivo de configuración `n8n.config.json`. En este archivo, se pueden definir los nodos y los flujos de trabajo, así como las credenciales y los webhooks necesarios. \n \n Una de las últimas novedades en n8n es la integración con LangChain, que permite a los desarrolladores crear flujos de trabajo que utilicen modelos de lenguaje para realizar tareas como la completación de textos. Esta integración se puede realizar utilizando el nodo `n8n-nodes-langchain.lmlemonade`. \n \n Otra característica importante de n8n es la capacidad de autenticar y autorizar a los usuarios utilizando credenciales y webhooks. Esto se puede realizar utilizando el comando `n8n credentials:create` y luego configurando las credenciales y los webhooks en el archivo de configuración. \n \n En cuanto a la seguridad, n8n ha solucionado varios problemas de seguridad en las últimas versiones, incluyendo la vulnerabilidad de Expression Sandbox Escape que permitía a los atacantes ejecutar código arbitrario en el servidor. \n \n Para self-hosting, n8n proporciona una herramienta de migración para versiones anteriores, como se describe en el archivo `v20-migration-tool.md`. Esto permite a los desarrolladores migrar sus flujos de trabajo y configuraciones a la última versión de n8n.",
+    "sources": [
+      {
+        "title": "Release Notes 2.x",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/release-notes-2.x.md"
+      },
+      {
+        "title": "N8n Nodes Langchain",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md"
+      },
+      {
+        "title": "Expression Sandbox Escape to RCE",
+        "url": "https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr"
+      },
+      {
+        "title": "V20 Migration Tool",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/v20-migration-tool.md"
+      }
+    ]
+  },
   "2026-07-29_1043": {
     "slug": "n8n",
     "title": "Automatización con n8n",

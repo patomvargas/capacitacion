@@ -1,4 +1,40 @@
 {
+  "2026-08-02_1001": {
+    "slug": "metallb",
+    "title": "MetalLB: Equilibrio de Carga en Kubernetes",
+    "summary": "MetalLB es un componente de equilibrio de carga para Kubernetes que permite la asignación de direcciones IP a servicios. En este artículo, se presentan las características y configuraciones de MetalLB, incluyendo el modo L2, el modo BGP y la integración con Kubernetes.",
+    "content": "MetalLB es un proyecto de código abierto que proporciona un equilibrio de carga para servicios en Kubernetes. Una de las características clave de MetalLB es su capacidad para operar en diferentes modos, incluyendo el modo L2 y el modo BGP. En el modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para asignar direcciones IP a servicios. Por otro lado, en el modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar rutas a los servicios.\n\nPara configurar MetalLB en modo L2, se debe crear un archivo de configuración que especifique el rango de direcciones IP que se asignarán a los servicios. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar la configuración siguiente: `cat <<EOF | kubectl apply -f - apiVersion: metallb.io/v1beta1 kind: IPAddressPool metadata: name: my-ip-pool spec: addresses: - 192.168.1.1-192.168.1.100 EOF`. Esto creará un grupo de direcciones IP que se asignarán a los servicios.\n\nEn cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con servicios de tipo LoadBalancer. Por ejemplo, se puede crear un servicio de tipo LoadBalancer con el comando `kubectl expose deployment my-deployment --type=LoadBalancer --port=80`. Luego, MetalLB se encargará de asignar una dirección IP a este servicio.\n\nPara solucionar problemas comunes en MetalLB, se pueden utilizar herramientas como `kubectl logs` para ver los registros de los pods de MetalLB. También se puede utilizar `kubectl describe` para obtener más información sobre los servicios y los pods de MetalLB.\n\nFinalmente, es importante mencionar que MetalLB se puede instalar utilizando Helm, una herramienta de gestión de paquetes para Kubernetes. Se puede utilizar el comando `helm install metallb` para instalar MetalLB en un clúster de Kubernetes.\n\nEn resumen, MetalLB es una herramienta poderosa para el equilibrio de carga en Kubernetes, que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los desarrolladores y administradores de sistemas.\n\n",
+    "sources": [
+      {
+        "title": "MetalLB Issues",
+        "url": "https://github.com/metallb/metallb/issues/3087"
+      },
+      {
+        "title": "CNCF Sandbox Proposal",
+        "url": "https://github.com/metallb/metallb/blob/main/design/cncf-sandbox-proposal.md"
+      },
+      {
+        "title": "Kubespray Releases",
+        "url": "https://github.com/kubernetes-sigs/kubespray/releases"
+      },
+      {
+        "title": "Ansible Galaxy",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-02-21-how-to-use-ansible-galaxy-to-install-roles-from-github"
+      },
+      {
+        "title": "Supported Kubernetes Versions",
+        "url": "https://github.com/MicrosoftDocs/azure-stack-docs/blob/main/AKS-Arc/supported-kubernetes-versions.md"
+      },
+      {
+        "title": "Setup DKIM with OpenDKIM on Ubuntu",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-set-up-dkim-with-opendkim-on-ubuntu"
+      },
+      {
+        "title": "Setup Network Namespaces for Testing on Ubuntu",
+        "url": "https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-set-up-network-namespaces-for-testing-on-ubuntu"
+      }
+    ]
+  },
   "2026-07-29_1043": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en K8s",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-01T10:04:11.623604+00:00</updated>
+  <updated>2026-08-02T10:01:59.255994+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -692,5 +692,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-07-29_1043.html"/>
     <summary>Superset es una herramienta de código abierto para la visualización y administración de datos. En este artículo, se explorarán las características y configuraciones de Superset, incluyendo la creación de gráficos y tableros, la administración de conjuntos de datos y la seguridad.</summary>
     <published>2026-07-29T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-08-02_1001.html</id>
+    <title>Superset: Administración y Mejoras</title>
+    <updated>2026-08-02T10:01:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta poderosa para la creación de paneles de control y análisis de datos. Para instalar Superset, se puede utilizar la chart de Helm, como se muestra en el issue &lt;code&gt;#41876&lt;/code&gt; de GitHub. Para configurar Superset, es necesario editar el archivo &lt;code&gt;superset_config.py&lt;/code&gt; y establecer las variables de entorno adecuadas, como &lt;code&gt;SUPERSET_HOME&lt;/code&gt; y &lt;code&gt;SUPERSET_SECRET_KEY&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para crear un panel de control en Superset, es necesario crear un conjunto de datos y un gráfico. El conjunto de datos se puede crear utilizando la interfaz de usuario de Superset o mediante la API de Superset, utilizando comandos como &lt;code&gt;superset db upgrade&lt;/code&gt; y &lt;code&gt;superset init&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las últimas novedades en Superset es la capacidad de crear informes y alertas personalizados. Sin embargo, como se muestra en el issue &lt;code&gt;#41862&lt;/code&gt; de GitHub, existe un problema con la exportación de gráficos como CSV. Para solucionar este problema, es necesario actualizar la versión de Superset a la última disponible.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante en Superset es la seguridad. Como se muestra en el issue &lt;code&gt;#41869&lt;/code&gt; de GitHub, existe una vulnerabilidad en la inyección de SQL en la engine de Presto. Para solucionar este problema, es necesario actualizar la versión de Superset a la última disponible y configurar adecuadamente la seguridad de la base de datos.&lt;/p&gt;
+&lt;p&gt;Para configurar la seguridad de Superset, es necesario editar el archivo &lt;code&gt;superset_config.py&lt;/code&gt; y establecer las variables de entorno adecuadas, como &lt;code&gt;SUPERSET_SECURITY_ENABLED&lt;/code&gt; y &lt;code&gt;SUPERSET_SECURITY_USERNAME&lt;/code&gt;. También es importante configurar adecuadamente el acceso a la base de datos y establecer permisos adecuados para los usuarios.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la creación de paneles de control y análisis de datos. Sin embargo, es importante estar al tanto de las últimas novedades y mejoras en la administración y configuración de Superset para asegurarse de que la herramienta esté configurada de manera segura y eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/41876"&gt;Superset Helm Chart #41876&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/41973"&gt;How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/41862"&gt;Alerts/Reports sending chart as csv fails with HTTP 500 #41862&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/41869"&gt;[security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-02_1001.html"/>
+    <summary>Superset es una herramienta de código abierto para la creación de paneles de control y análisis de datos. En este artículo, se presentan las últimas novedades y mejoras en la administración y configuración de Superset.</summary>
+    <published>2026-08-02T10:01:00+00:00</published>
   </entry>
 </feed>

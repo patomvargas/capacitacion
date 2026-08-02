@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/n8n.xml</id>
   <title>n8n - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-01T10:04:11.617013+00:00</updated>
+  <updated>2026-08-02T10:01:59.250852+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/n8n/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -669,5 +669,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-07-29_1043.html"/>
     <summary>n8n es una herramienta de automatización de flujo de trabajo que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las características y funcionalidades de n8n, incluyendo nodos, workflows, credenciales, webhooks y autoalojamiento.</summary>
     <published>2026-07-29T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/n8n/2026-08-02_1001.html</id>
+    <title>N8n: Automatización de Flujos de Trabajo</title>
+    <updated>2026-08-02T10:01:00+00:00</updated>
+    <content type="html">&lt;p&gt;N8n es una herramienta de automatización de flujos de trabajo que se basa en nodos y flujos de trabajo. Los nodos son los componentes básicos de n8n y pueden ser utilizados para realizar tareas específicas, como la autenticación o la ejecución de comandos. Los flujos de trabajo son la forma en que se organizan los nodos para crear un proceso automatizado.&lt;/p&gt;
+&lt;p&gt;Para crear un flujo de trabajo en n8n, se puede utilizar el comando &lt;code&gt;n8n workflow:create&lt;/code&gt; y luego se puede configurar el flujo de trabajo utilizando el archivo de configuración &lt;code&gt;n8n.config.json&lt;/code&gt;. En este archivo, se pueden definir los nodos y los flujos de trabajo, así como las credenciales y los webhooks necesarios.&lt;/p&gt;
+&lt;p&gt;Una de las últimas novedades en n8n es la integración con LangChain, que permite a los desarrolladores crear flujos de trabajo que utilicen modelos de lenguaje para realizar tareas como la completación de textos. Esta integración se puede realizar utilizando el nodo &lt;code&gt;n8n-nodes-langchain.lmlemonade&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de n8n es la capacidad de autenticar y autorizar a los usuarios utilizando credenciales y webhooks. Esto se puede realizar utilizando el comando &lt;code&gt;n8n credentials:create&lt;/code&gt; y luego configurando las credenciales y los webhooks en el archivo de configuración.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, n8n ha solucionado varios problemas de seguridad en las últimas versiones, incluyendo la vulnerabilidad de Expression Sandbox Escape que permitía a los atacantes ejecutar código arbitrario en el servidor.&lt;/p&gt;
+&lt;p&gt;Para self-hosting, n8n proporciona una herramienta de migración para versiones anteriores, como se describe en el archivo &lt;code&gt;v20-migration-tool.md&lt;/code&gt;. Esto permite a los desarrolladores migrar sus flujos de trabajo y configuraciones a la última versión de n8n.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/release-notes-2.x.md"&gt;Release Notes 2.x&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md"&gt;N8n Nodes Langchain&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n/security/advisories/GHSA-vpcf-gvg4-6qwr"&gt;Expression Sandbox Escape to RCE&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/v20-migration-tool.md"&gt;V20 Migration Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-08-02_1001.html"/>
+    <summary>N8n es una herramienta de automatización de flujos de trabajo que permite a los desarrolladores crear y gestionar flujos de trabajo complejos. En este artículo, se presentan las últimas novedades y mejores prácticas para trabajar con n8n.</summary>
+    <published>2026-08-02T10:01:00+00:00</published>
   </entry>
 </feed>

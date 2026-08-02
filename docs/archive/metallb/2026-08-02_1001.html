@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MetalLB: Equilibrio de Carga en K8s - MetalLB</title>
+    <title>MetalLB: Equilibrio de Carga en Kubernetes - MetalLB</title>
     <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
@@ -57,44 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>MetalLB: Equilibrio de Carga en K8s</h1>
-    <div class="meta">2026-07-29 1043 · MetalLB</div>
+    <h1>MetalLB: Equilibrio de Carga en Kubernetes</h1>
+    <div class="meta">2026-08-02 1001 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>MetalLB es un componente esencial en la infraestructura de K8s, ya que proporciona una forma de exponer servicios al exterior de la red. En modo L2, MetalLB asigna direcciones IP a los servicios utilizando el protocolo ARP. Para configurar MetalLB en modo L2, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config="{ "address-pools": [ { "protocol": "layer2", "addresses": [ "192.168.1.0/24" ] } ] }"`.</p>
+            <p>MetalLB es un proyecto de código abierto que proporciona un equilibrio de carga para servicios en Kubernetes. Una de las características clave de MetalLB es su capacidad para operar en diferentes modos, incluyendo el modo L2 y el modo BGP. En el modo L2, MetalLB utiliza ARP (Address Resolution Protocol) para asignar direcciones IP a servicios. Por otro lado, en el modo BGP, MetalLB utiliza el protocolo BGP (Border Gateway Protocol) para anunciar rutas a los servicios.</p>
             
         
             
         
             
-            <p>En modo BGP, MetalLB utiliza el protocolo BGP para anunciar las rutas a los servicios. Para configurar MetalLB en modo BGP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=config="{ "address-pools": [ { "protocol": "bgp", "addresses": [ "10.0.0.0/16" ], "bgp": { "peers": [ { "peer-address": "10.0.0.1", "peer-asn": 64512 } ] } } ] }"`.</p>
+            <p>Para configurar MetalLB en modo L2, se debe crear un archivo de configuración que especifique el rango de direcciones IP que se asignarán a los servicios. Por ejemplo, se puede utilizar el comando `kubectl apply -f` para aplicar la configuración siguiente: `cat <<EOF | kubectl apply -f - apiVersion: metallb.io/v1beta1 kind: IPAddressPool metadata: name: my-ip-pool spec: addresses: - 192.168.1.1-192.168.1.100 EOF`. Esto creará un grupo de direcciones IP que se asignarán a los servicios.</p>
             
         
             
         
             
-            <p>La configuración de pools de IP es fundamental en MetalLB, ya que permite asignar direcciones IP a los servicios de manera eficiente. Para crear un pool de IP, se debe crear un objeto `ConfigMap` con la configuración deseada, por ejemplo: `kubectl create configmap metallb-config --from-literal=address-pools="[ { "protocol": "layer2", "addresses": [ "192.168.1.0/24" ] } ]"`.</p>
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con servicios de tipo LoadBalancer. Por ejemplo, se puede crear un servicio de tipo LoadBalancer con el comando `kubectl expose deployment my-deployment --type=LoadBalancer --port=80`. Luego, MetalLB se encargará de asignar una dirección IP a este servicio.</p>
             
         
             
         
             
-            <p>En caso de problemas, es importante verificar la configuración de MetalLB y los logs de los componentes de K8s. Para solucionar problemas comunes, se pueden utilizar comandos como `kubectl get pods -n metallb-system` para verificar el estado de los pods de MetalLB, o `kubectl logs -f -n metallb-system <pod-name>` para verificar los logs de un pod específico.</p>
+            <p>Para solucionar problemas comunes en MetalLB, se pueden utilizar herramientas como `kubectl logs` para ver los registros de los pods de MetalLB. También se puede utilizar `kubectl describe` para obtener más información sobre los servicios y los pods de MetalLB.</p>
             
         
             
         
             
-            <p>La integración con K8s es fundamental en MetalLB, ya que permite la asignación de direcciones IP a los servicios de manera automática. Para integrar MetalLB con K8s, se debe crear un objeto `Service` con la configuración deseada, por ejemplo: `kubectl create service loadbalancer --name=my-service --tcp=80:80`.</p>
+            <p>Finalmente, es importante mencionar que MetalLB se puede instalar utilizando Helm, una herramienta de gestión de paquetes para Kubernetes. Se puede utilizar el comando `helm install metallb` para instalar MetalLB en un clúster de Kubernetes.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que MetalLB es un proyecto en constante evolución, y es importante estar al tanto de las últimas novedades y cambios en la documentación oficial. Para obtener más información, se puede consultar la documentación oficial de MetalLB en <https://metallb.universe.tf/>.</p>
+            <p>En resumen, MetalLB es una herramienta poderosa para el equilibrio de carga en Kubernetes, que ofrece una variedad de características y configuraciones para satisfacer las necesidades de los desarrolladores y administradores de sistemas.</p>
             
         
             
@@ -109,7 +109,7 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metallb/metallb/issues/3087" target="_blank">MetalLB Issue #3087</a>
+                <a href="https://github.com/metallb/metallb/issues/3087" target="_blank">MetalLB Issues</a>
                 
             </li>
             
@@ -119,12 +119,27 @@
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-02-23-how-to-handle-ssh-keys-securely-in-terraform" target="_blank">Cómo manejar claves SSH de manera segura en Terraform</a>
+                <a href="https://github.com/kubernetes-sigs/kubespray/releases" target="_blank">Kubespray Releases</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-configure-network-settings-with-cloud-init-on-ubuntu" target="_blank">Cómo configurar la red con cloud-init en Ubuntu</a>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-02-21-how-to-use-ansible-galaxy-to-install-roles-from-github" target="_blank">Ansible Galaxy</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/MicrosoftDocs/azure-stack-docs/blob/main/AKS-Arc/supported-kubernetes-versions.md" target="_blank">Supported Kubernetes Versions</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-set-up-dkim-with-opendkim-on-ubuntu" target="_blank">Setup DKIM with OpenDKIM on Ubuntu</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/oneuptime/blog/tree/master/posts/2026-03-02-how-to-set-up-network-namespaces-for-testing-on-ubuntu" target="_blank">Setup Network Namespaces for Testing on Ubuntu</a>
                 
             </li>
             
@@ -135,12 +150,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-07-29_1043.html">&larr; 2026-07-29 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-02_1001.html">2026-08-02 1001 &rarr;</a>
             
         </div>
     </div>

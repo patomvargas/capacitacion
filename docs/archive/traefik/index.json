@@ -1,4 +1,24 @@
 {
+  "2026-08-02_1001": {
+    "slug": "traefik",
+    "title": "Traefik: Seguridad y Configuración",
+    "summary": "Traefik es un proxy inverso y balanceador de carga que ofrece una gran flexibilidad y seguridad. En este artículo, se discuten las últimas novedades y mejores prácticas para configurar y proteger Traefik.",
+    "content": "Traefik es una herramienta popular para sysadmins y DevOps engineers que busca simplificar la gestión de tráfico de red y la seguridad de los servicios. Una de las características clave de Traefik es su capacidad para manejar routers, middlewares y proveedores de forma eficiente. Por ejemplo, se puede configurar un router para redirigir el tráfico a un servicio específico utilizando el comando `traefik http routers --add-router myrouter --rule Host:example.com --service myservice`.\n\n \n La seguridad es un aspecto fundamental en Traefik, y se han identificado varias vulnerabilidades en versiones anteriores, como la vulnerabilidad de confusión de namespace en el proveedor de Kubernetes Gateway API. Para mitigar este tipo de vulnerabilidades, es importante mantener Traefik actualizado y configurar los middlewares de forma adecuada. Por ejemplo, se puede utilizar el middleware `ForwardAuth` para autenticar los request, pero es importante configurarlo correctamente para evitar ataques de denegación de servicio.\n\n \n Otra característica importante de Traefik es su capacidad para manejar certificados SSL/TLS de forma automática utilizando Let's Encrypt. Esto se puede configurar utilizando el comando `traefik certificats --add-certificate example.com --email user@example.com`. Además, Traefik también admite la configuración de proveedores de certificados personalizados.\n\n \n En cuanto a la observabilidad, Traefik ofrece una variedad de opciones para monitorear y analizar el tráfico de red. Por ejemplo, se puede utilizar el comando `traefik logs --level DEBUG` para obtener información detallada sobre el tráfico de red. También se pueden configurar proveedores de logging personalizados para enviar los logs a servicios de análisis de logs.\n\n \n En resumen, Traefik es una herramienta poderosa para la gestión de tráfico de red y la seguridad de los servicios. Es importante mantenerla actualizada y configurarla de forma adecuada para evitar vulnerabilidades y asegurar la integridad de los servicios.\n\n \n Para más información sobre la configuración y seguridad de Traefik, se recomienda consultar la documentación oficial y las fuentes de información proporcionadas.",
+    "sources": [
+      {
+        "title": "Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-qq9q-x9w4-chhj"
+      },
+      {
+        "title": "Prepare release v2.4.12",
+        "url": "https://github.com/traefik/traefik/pull/8307"
+      },
+      {
+        "title": "ForwardAuth Middleware Allows Unbounded Response Body, Causing Potential Denial of Service",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-fw45-f5q2-2p4x"
+      }
+    ]
+  },
   "2026-07-29_1043": {
     "slug": "traefik",
     "title": "Seguridad y configuración en Traefik",
