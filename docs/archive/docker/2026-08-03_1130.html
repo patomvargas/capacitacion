@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Docker: Mejores Practicas y Novedades - Docker</title>
+    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+    </div>
+
+    <h1>Docker: Mejores Practicas y Novedades</h1>
+    <div class="meta">2026-08-03 1130 · Docker</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Docker es una herramienta fundamental en la industria del desarrollo de software, permitiendo a los desarrolladores crear y desplegar aplicaciones de manera rapida y eficiente. Una de las mejores practicas en Docker es utilizar multi-stage builds, que permiten dividir el proceso de construccion de una imagen en varias etapas, reduciendo el tamaño final de la imagen y mejorando la seguridad. Por ejemplo, se puede utilizar el comando `docker build -t mi-aplicacion .` para construir una imagen de Docker, y luego utilizar `docker run -p 8080:8080 mi-aplicacion` para ejecutar la aplicacion.</p>
+            
+        
+            
+        
+            
+            <p>Otra herramienta importante en Docker es Compose, que permite definir y ejecutar multiples contenedores de manera simultanea. Se puede utilizar el comando `docker-compose up` para iniciar todos los contenedores definidos en el archivo `docker-compose.yml`. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando herramientas como BuildKit, que permite construir imagenes de Docker de manera segura y eficiente. Por ejemplo, se puede utilizar el comando `docker build -t mi-aplicacion --build-arg BUILDKIT_INLINE_CACHE=1 .` para construir una imagen de Docker con BuildKit.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, es importante mencionar que Docker proporciona varias herramientas para asegurar contenedores y pipelines de producción. Por ejemplo, se puede utilizar el comando `docker exec -it mi-contenedor bash` para acceder a un contenedor y verificar su configuracion de seguridad. Tambien es importante utilizar herramientas de escaneo de vulnerabilidades, como `docker scan` para identificar posibles vulnerabilidades en las imagenes de Docker. Finalmente, es importante mencionar que la comunidad de Docker es muy activa y proporciona muchos recursos y herramientas para mejorar la seguridad y la eficiencia en la utilizacion de Docker.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Docker es una herramienta poderosa que requiere una configuracion y utilizacion adecuadas para asegurar la seguridad y la eficiencia en la creacion y despliegue de aplicaciones. Al utilizar mejores practicas como multi-stage builds, Compose y BuildKit, y herramientas de seguridad como el escaneo de vulnerabilidades, se puede asegurar que los contenedores y pipelines de producción sean seguros y eficientes.</p>
+            
+        
+            
+        
+            
+            <p>Ademas, es importante mencionar que la utilizacion de registros de Docker, como Docker Hub, puede ser muy util para almacenar y compartir imagenes de Docker. Se puede utilizar el comando `docker push mi-aplicacion:latest` para subir una imagen de Docker a un registro, y luego utilizar `docker pull mi-aplicacion:latest` para descargarla y utilizarla en otro lugar.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante destacar que la comunidad de Docker esta en constante evolucion, y se están desarrollando nuevas herramientas y tecnologias para mejorar la seguridad y la eficiencia en la utilizacion de Docker. Por ejemplo, se está trabajando en la integracion de Docker con otras herramientas de desarrollo, como Kubernetes y Jenkins, para mejorar la automatizacion y la eficiencia en la creacion y despliegue de aplicaciones.</p>
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://www.docker.com/blog/" target="_blank">Docker Blog</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.docker.com/blog/category/products/" target="_blank">Products Archives | Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://www.docker.com/blog/category/community-content/" target="_blank">Community Archives | Docker</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://cloudwithazeem.medium.com/10-essential-docker-concepts-i-wish-someone-explained-to-me-on-day-one-fcfc6e7c4aa4" target="_blank">10 Essential Docker Concepts I Wish Someone Explained to Me on Day One</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/apprecode/cicd-for-containers-how-to-build-and-secure-a-production-pipeline-9eh" target="_blank">CI/CD for Containers: How to Build and Secure a Production Pipeline</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jibachhhmahto764/docker-for-beginners-56mh" target="_blank">Docker For beginners</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jjoyneriv/hardening-docker-containers-the-security-habits-that-actually-matter-3d88" target="_blank">Hardening Docker Containers: The Security Habits That Actually Matter</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/jtorchia/docker-healthchecks-what-they-actually-measure-and-what-you-shouldnt-promise-447k" target="_blank">Docker healthchecks: what they actually measure and what you shouldn't promise</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-26_1004.html">&larr; 2026-07-26 1004</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

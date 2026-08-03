@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas con Git - Git</title>
+    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+    </div>
+
+    <h1>Mejores prácticas con Git</h1>
+    <div class="meta">2026-08-03 1130 · Git</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Git es un sistema de control de versiones distribuido que se utiliza ampliamente en la industria del software. Una de las características más poderosas de Git es su capacidad para manejar diferentes workflows y flujos de trabajo. Por ejemplo, se puede utilizar `git worktree` para crear múltiples directorios de trabajo a partir de un solo repositorio, lo que permite a los desarrolladores trabajar en diferentes características o ramas de manera simultánea.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para automatizar tareas y procesos, Git proporciona hooks, que son scripts que se ejecutan en diferentes momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar que el código cumpla con ciertos estándares de calidad antes de que se realice el commit. Para configurar un hook, se puede utilizar el comando `git config --local core.hooksPath .githooks`, y luego crear un script en el directorio `.githooks` con el nombre del hook deseado.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Otra característica avanzada de Git es el comando `git rebase`, que permite reorganizar y combinar commits de manera más eficiente. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y decidir qué commits se deben combinar o reorganizar. También se puede utilizar `git bisect` para encontrar el commit que introdujo un bug o problema en el código. Este comando utiliza una búsqueda binaria para encontrar el commit problemático, lo que puede ahorrar mucho tiempo y esfuerzo.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>Para aprovechar al máximo estas características, es importante seguir algunas mejores prácticas. Por ejemplo, es recomendable utilizar ramas para trabajar en diferentes características o tareas, y luego combinarlas en la rama principal cuando estén listas. También es importante utilizar mensajes de commit claros y descriptivos, y evitar hacer commits que contengan múltiples cambios o características.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para ayudar a los desarrolladores a trabajar de manera más eficiente y efectiva. Al seguir algunas mejores prácticas y utilizar características como workflows, hooks, rebase y bisect, los desarrolladores pueden aprovechar al máximo las capacidades de Git y producir código de alta calidad.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://git-scm.com/?pubDate=20260725" target="_blank">Git</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.blog/changelog/" target="_blank">GitHub Changelog</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-30_1029.html">&larr; 2026-07-30 1029</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

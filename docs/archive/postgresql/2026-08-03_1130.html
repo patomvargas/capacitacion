@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Docker: Mejoras y Best Practices - Docker</title>
-    <link rel="alternate" type="application/atom+xml" title="Docker" href="https://patomvargas.github.io/capacitacion/feeds/docker.xml">
+    <title>Optimización de PostgreSQL - PostgreSQL</title>
+    <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/docker/">Docker</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
     </div>
 
-    <h1>Docker: Mejoras y Best Practices</h1>
-    <div class="meta">2026-07-26 1004 · Docker</div>
+    <h1>Optimización de PostgreSQL</h1>
+    <div class="meta">2026-08-03 1130 · PostgreSQL</div>
 
     <div class="content">
         
@@ -66,37 +66,39 @@
             
         
             
-            <p>Docker es una de las tecnologías más populares para contenerización de aplicaciones, y sigue mejorando con el tiempo. Una de las últimas novedades es la introducción de Docker Engine v29, que incluye actualizaciones fundamentales para el futuro de la plataforma. Por ejemplo, se ha mejorado la seguridad con la introducción de `docker trust` para firmar y verificar imágenes.</p>
+            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la eficiencia de la base de datos. Una de las formas de lograr esto es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más rápida y eficiente. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la optimización de las redes en Docker. Con el comando `docker network`, se pueden crear y gestionar redes para contenedores de manera más eficiente. Por ejemplo, se puede crear una red con `docker network create --driver bridge mi_red` y luego conectar un contenedor a ella con `docker run -it --net mi_red mi_imagen`.</p>
+            <p>Otra forma de optimizar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -U postgres -D /var/lib/postgresql/13/main -Ft -z`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Docker proporciona herramientas como `docker secret` para gestionar secretos y `docker config` para gestionar configuraciones. Por ejemplo, se puede crear un secreto con `docker secret create mi_secreto` y luego utilizarlo en un contenedor con `docker run -it --secret mi_secreto mi_imagen`.</p>
+            <p>La configuración de PostgreSQL también es fundamental para optimizar el rendimiento. El archivo de configuración `postgresql.conf` permite ajustar parámetros como la cantidad de memoria que se utiliza para el caché de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para el caché de datos. `shared_buffers = 512MB`.</p>
             
         
             
         
             
-            <p>Además, Docker sigue mejorando su integración con otras tecnologías, como Kubernetes. Con la herramienta `docker-compose`, se pueden definir y ejecutar aplicaciones complejas de manera más sencilla. Por ejemplo, se puede definir una aplicación con `docker-compose.yml` y luego ejecutarla con `docker-compose up`.</p>
+            <p>Además, es importante monitorear el rendimiento de PostgreSQL para identificar posibles problemas. La herramienta `pg_stat` permite monitorear el rendimiento de la base de datos y identificar áreas de mejora. Por ejemplo, se puede utilizar el comando `pg_stat_activity` para monitorear la actividad de la base de datos.</p>
             
         
             
         
             
-            <p>En resumen, Docker sigue siendo una tecnología líder en contenerización de aplicaciones, y sus últimas mejoras y best practices permiten aprovechar al máximo sus beneficios. Ya sea para desarrollo, pruebas o producción, Docker es una herramienta fundamental para cualquier equipo de desarrollo.</p>
+            <p>La realización de copias de seguridad es también fundamental para proteger los datos. Se puede utilizar el comando `pg_dump` para realizar una copia de seguridad de la base de datos. Por ejemplo: `pg_dump -U postgres -d nombre_de_la_base_de_datos > backup.sql`.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Docker, como el blog de Docker y la documentación oficial. También se pueden encontrar tutoriales y guías en línea para aprender a utilizar Docker de manera efectiva.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y configuración, así como la monitorización del rendimiento y la realización de copias de seguridad regulares.</p>
+            
+        
             
         
     </div>
@@ -107,22 +109,17 @@
         <ul>
             
             <li>
-                <a href="https://www.docker.com/blog/" target="_blank">Docker Blog</a>
+                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
                 
             </li>
             
             <li>
-                <a href="https://docs.docker.com/ai/sandboxes/release-notes/" target="_blank">Docker Sandboxes release notes</a>
+                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://www.docker.com/blog/category/company/" target="_blank">Company Archives | Docker</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://www.docker.com/blog/category/products/" target="_blank">Products Archives | Docker</a>
+                <a href="https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0" target="_blank">PostgreSQL Performance Tuning: Best Practices for Better Database Speed</a>
                 
             </li>
             
@@ -133,12 +130,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-22_1029.html">&larr; 2026-07-22 1029</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-30_1029.html">&larr; 2026-07-30 1029</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-03_1130.html">2026-08-03 1130 &rarr;</a>
             
         </div>
     </div>

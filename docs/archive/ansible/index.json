@@ -1,4 +1,36 @@
 {
+  "2026-08-03_1130": {
+    "slug": "ansible",
+    "title": "Mejores prácticas con Ansible",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar configuraciones y despliegues de manera eficiente. En este artículo, se presentan algunas mejores prácticas para trabajar con Ansible, incluyendo el uso de playbooks, roles y colecciones.",
+    "content": "Ansible es una herramienta de automatización de infraestructura que se utiliza para gestionar y configurar servidores, redes y aplicaciones. Para trabajar con Ansible, es necesario crear un inventario que defina los hosts y grupos de hosts que se van a gestionar. El inventario se puede definir en un archivo `hosts.ini` o `hosts.yml`, utilizando la sintaxis `ini` o `yaml` respectivamente. Por ejemplo, se puede definir un grupo de hosts llamado `servidores_web` de la siguiente manera: `servidores_web: [server1, server2, server3]`.\n\nUna vez definido el inventario, se pueden crear playbooks que definan las tareas que se van a ejecutar en los hosts. Los playbooks se escriben en formato `yaml` y se pueden incluir módulos y roles para realizar tareas específicas. Por ejemplo, se puede crear un playbook que instale y configure un servidor web Apache en los hosts del grupo `servidores_web` utilizando el módulo `apache2` de la siguiente manera: `ansible-playbook -i hosts.ini apache.yml`.\n\nAnsible también proporciona una característica llamada `roles` que permite reutilizar código y configuraciones en diferentes playbooks. Los roles se pueden crear en un directorio llamado `roles` en el directorio raíz del proyecto y se pueden incluir en los playbooks utilizando la directiva `roles`. Por ejemplo, se puede crear un rol llamado `apache` que incluya las tareas para instalar y configurar Apache, y luego incluir ese rol en un playbook que configure los servidores web.\n\nAdemás, Ansible proporciona una característica llamada `colecciones` que permite agrupar módulos y roles relacionados en un solo paquete. Las colecciones se pueden instalar utilizando el comando `ansible-galaxy` y se pueden incluir en los playbooks utilizando la directiva `collections`. Por ejemplo, se puede instalar la colección `ansible.posix` que incluye módulos para gestionar sistemas operativos Unix-like, y luego incluir esa colección en un playbook que configure los servidores.\n\nPor último, es importante mencionar que Ansible proporciona una característica llamada `vault` que permite cifrar datos sensibles como contraseñas y claves SSH. El vault se puede crear utilizando el comando `ansible-vault` y se puede incluir en los playbooks utilizando la directiva `vault`. Por ejemplo, se puede crear un vault que contenga la contraseña de root para los servidores y luego incluir ese vault en un playbook que configure los servidores.\n\nEn resumen, Ansible es una herramienta poderosa para automatizar la configuración y el despliegue de infraestructuras, y proporciona características como playbooks, roles, colecciones y vault para hacer que el proceso sea más eficiente y seguro.",
+    "sources": [
+      {
+        "title": "Release notes are not updated properly #16059",
+        "url": "https://github.com/ansible/awx/issues/16059"
+      },
+      {
+        "title": "directory-list-lowercase-2.3-medium.txt",
+        "url": "https://github.com/garyhooks/oscp/blob/master/dirb_lists/directory-list-lowercase-2.3-medium.txt"
+      },
+      {
+        "title": "microsoft-defender-core-service-configurations-and-experimentation.md",
+        "url": "https://github.com/MicrosoftDocs/defender-docs/blob/public/defender-endpoint/microsoft-defender-core-service-configurations-and-experimentation.md"
+      },
+      {
+        "title": "MCP Security Scanner: Real-Time Protection for AI Code Assistants",
+        "url": "https://github.com/aws-samples/sample-mcp-security-scanner"
+      },
+      {
+        "title": "SonarQube for IDE: Visual Studio Code (formerly SonarLint)",
+        "url": "https://github.com/SonarSource/sonarlint-vscode"
+      },
+      {
+        "title": "Bridge MCP",
+        "url": "https://github.com/muchiny/bridge-mcp"
+      }
+    ]
+  },
   "2026-07-30_1029": {
     "slug": "ansible",
     "title": "Ansible: Automatización de Servidores",

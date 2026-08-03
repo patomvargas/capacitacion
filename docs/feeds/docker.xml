@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-02T10:01:59.270952+00:00</updated>
+  <updated>2026-08-03T11:31:01.118957+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -538,5 +538,30 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-07-26_1004.html"/>
     <summary>Docker sigue evolucionando con mejoras en seguridad, redes y rendimiento. Aprende sobre las últimas novedades y best practices para aprovechar al máximo esta tecnología.</summary>
     <published>2026-07-26T10:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-08-03_1130.html</id>
+    <title>Docker: Mejores Practicas y Novedades</title>
+    <updated>2026-08-03T11:30:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta fundamental en la industria del desarrollo de software, permitiendo a los desarrolladores crear y desplegar aplicaciones de manera rapida y eficiente. Una de las mejores practicas en Docker es utilizar multi-stage builds, que permiten dividir el proceso de construccion de una imagen en varias etapas, reduciendo el tamaño final de la imagen y mejorando la seguridad. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker build -t mi-aplicacion .&lt;/code&gt; para construir una imagen de Docker, y luego utilizar &lt;code&gt;docker run -p 8080:8080 mi-aplicacion&lt;/code&gt; para ejecutar la aplicacion.&lt;/p&gt;
+&lt;p&gt;Otra herramienta importante en Docker es Compose, que permite definir y ejecutar multiples contenedores de manera simultanea. Se puede utilizar el comando &lt;code&gt;docker-compose up&lt;/code&gt; para iniciar todos los contenedores definidos en el archivo &lt;code&gt;docker-compose.yml&lt;/code&gt;. La seguridad es otro aspecto importante en Docker, y se puede mejorar utilizando herramientas como BuildKit, que permite construir imagenes de Docker de manera segura y eficiente. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker build -t mi-aplicacion --build-arg BUILDKIT_INLINE_CACHE=1 .&lt;/code&gt; para construir una imagen de Docker con BuildKit.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que Docker proporciona varias herramientas para asegurar contenedores y pipelines de producción. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker exec -it mi-contenedor bash&lt;/code&gt; para acceder a un contenedor y verificar su configuracion de seguridad. Tambien es importante utilizar herramientas de escaneo de vulnerabilidades, como &lt;code&gt;docker scan&lt;/code&gt; para identificar posibles vulnerabilidades en las imagenes de Docker. Finalmente, es importante mencionar que la comunidad de Docker es muy activa y proporciona muchos recursos y herramientas para mejorar la seguridad y la eficiencia en la utilizacion de Docker.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa que requiere una configuracion y utilizacion adecuadas para asegurar la seguridad y la eficiencia en la creacion y despliegue de aplicaciones. Al utilizar mejores practicas como multi-stage builds, Compose y BuildKit, y herramientas de seguridad como el escaneo de vulnerabilidades, se puede asegurar que los contenedores y pipelines de producción sean seguros y eficientes.&lt;/p&gt;
+&lt;p&gt;Ademas, es importante mencionar que la utilizacion de registros de Docker, como Docker Hub, puede ser muy util para almacenar y compartir imagenes de Docker. Se puede utilizar el comando &lt;code&gt;docker push mi-aplicacion:latest&lt;/code&gt; para subir una imagen de Docker a un registro, y luego utilizar &lt;code&gt;docker pull mi-aplicacion:latest&lt;/code&gt; para descargarla y utilizarla en otro lugar.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante destacar que la comunidad de Docker esta en constante evolucion, y se están desarrollando nuevas herramientas y tecnologias para mejorar la seguridad y la eficiencia en la utilizacion de Docker. Por ejemplo, se está trabajando en la integracion de Docker con otras herramientas de desarrollo, como Kubernetes y Jenkins, para mejorar la automatizacion y la eficiencia en la creacion y despliegue de aplicaciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/ai/sandboxes/release-notes/"&gt;Docker Sandboxes release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/products/"&gt;Products Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/community-content/"&gt;Community Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://cloudwithazeem.medium.com/10-essential-docker-concepts-i-wish-someone-explained-to-me-on-day-one-fcfc6e7c4aa4"&gt;10 Essential Docker Concepts I Wish Someone Explained to Me on Day One&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/apprecode/cicd-for-containers-how-to-build-and-secure-a-production-pipeline-9eh"&gt;CI/CD for Containers: How to Build and Secure a Production Pipeline&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/jibachhhmahto764/docker-for-beginners-56mh"&gt;Docker For beginners&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/jjoyneriv/hardening-docker-containers-the-security-habits-that-actually-matter-3d88"&gt;Hardening Docker Containers: The Security Habits That Actually Matter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/jtorchia/docker-healthchecks-what-they-actually-measure-and-what-you-shouldnt-promise-447k"&gt;Docker healthchecks: what they actually measure and what you shouldn't promise&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-03_1130.html"/>
+    <summary>En este articulo se presentan las mejores practicas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se discuten tambien las mejores formas de asegurar contenedores y pipelines de producción.</summary>
+    <published>2026-08-03T11:30:00+00:00</published>
   </entry>
 </feed>

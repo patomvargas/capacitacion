@@ -1,4 +1,20 @@
 {
+  "2026-08-03_1130": {
+    "slug": "git",
+    "title": "Mejores prácticas con Git",
+    "summary": "En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, incluyendo workflows, hooks, rebase y bisect. Estas herramientas pueden ayudar a los desarrolladores a trabajar de manera más eficiente y efectiva.",
+    "content": "Git es un sistema de control de versiones distribuido que se utiliza ampliamente en la industria del software. Una de las características más poderosas de Git es su capacidad para manejar diferentes workflows y flujos de trabajo. Por ejemplo, se puede utilizar `git worktree` para crear múltiples directorios de trabajo a partir de un solo repositorio, lo que permite a los desarrolladores trabajar en diferentes características o ramas de manera simultánea.\n\n \nPara automatizar tareas y procesos, Git proporciona hooks, que son scripts que se ejecutan en diferentes momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar que el código cumpla con ciertos estándares de calidad antes de que se realice el commit. Para configurar un hook, se puede utilizar el comando `git config --local core.hooksPath .githooks`, y luego crear un script en el directorio `.githooks` con el nombre del hook deseado.\n\n \nOtra característica avanzada de Git es el comando `git rebase`, que permite reorganizar y combinar commits de manera más eficiente. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y decidir qué commits se deben combinar o reorganizar. También se puede utilizar `git bisect` para encontrar el commit que introdujo un bug o problema en el código. Este comando utiliza una búsqueda binaria para encontrar el commit problemático, lo que puede ahorrar mucho tiempo y esfuerzo.\n\n \nPara aprovechar al máximo estas características, es importante seguir algunas mejores prácticas. Por ejemplo, es recomendable utilizar ramas para trabajar en diferentes características o tareas, y luego combinarlas en la rama principal cuando estén listas. También es importante utilizar mensajes de commit claros y descriptivos, y evitar hacer commits que contengan múltiples cambios o características.\n\n \nEn resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para ayudar a los desarrolladores a trabajar de manera más eficiente y efectiva. Al seguir algunas mejores prácticas y utilizar características como workflows, hooks, rebase y bisect, los desarrolladores pueden aprovechar al máximo las capacidades de Git y producir código de alta calidad.",
+    "sources": [
+      {
+        "title": "Git",
+        "url": "https://git-scm.com/?pubDate=20260725"
+      },
+      {
+        "title": "GitHub Changelog",
+        "url": "https://github.blog/changelog/"
+      }
+    ]
+  },
   "2026-07-30_1029": {
     "slug": "git",
     "title": "Mejores prácticas de Git para sysadmins y DevOps",
