@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Google Workspace: Mejoras y Novedades - Google Workspace</title>
-    <link rel="alternate" type="application/atom+xml" title="Google Workspace" href="https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml">
+    <title>OpenVPN: Tunneling y Seguridad - OpenVPN</title>
+    <link rel="alternate" type="application/atom+xml" title="OpenVPN" href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,41 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/">Google Workspace</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/">OpenVPN</a>
     </div>
 
-    <h1>Google Workspace: Mejoras y Novedades</h1>
-    <div class="meta">2026-07-31 1043 · Google Workspace</div>
+    <h1>OpenVPN: Tunneling y Seguridad</h1>
+    <div class="meta">2026-08-04 1043 · OpenVPN</div>
 
     <div class="content">
         
         
             
-            <p>Google Workspace es una suite de herramientas de productividad en la nube que ofrece una variedad de servicios, incluyendo Gmail, Google Drive, Google Docs y Google Sheets. Recientemente, se han anunciado varias mejoras y novedades en la plataforma, como la capacidad de importar archivos de Microsoft Excel de manera más fluida.</p>
+        
+            
+            <p>OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como `openssl` para generar los certificados y claves.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo estas mejoras, es importante configurar correctamente la consola de administración de Google Workspace. Por ejemplo, se puede utilizar el comando `gcloud` para configurar los ajustes de seguridad y privacidad de la organización.</p>
+            <p>Una vez generados los certificados y claves, se pueden configurar los archivos de configuración de OpenVPN. Por ejemplo, el archivo de configuración del servidor puede incluir la siguiente línea: `port 1194` para especificar el puerto de escucha. Además, se puede configurar la autenticación de los clientes utilizando la directiva `tls-auth` y la clave de autenticación `ta.key`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Google Workspace ofrece una variedad de herramientas y características para proteger los datos de los usuarios. Por ejemplo, se puede utilizar la API de seguridad de Google Workspace para implementar autenticación de dos factores y autorización basada en roles.</p>
+            <p>Para hardenear OpenVPN, es importante configurar la autenticación de dos factores y limitar el acceso a los clientes autorizados. Esto se puede hacer utilizando la directiva `auth` y especificando el método de autenticación, como `auth pam` para utilizar la autenticación PAM. Además, se puede configurar el firewall para permitir solo el tráfico de OpenVPN y bloquear cualquier otro tráfico no autorizado.</p>
             
         
             
         
             
-            <p>Además, la plataforma ofrece una variedad de herramientas de colaboración, como Google Drive y Google Docs, que permiten a los usuarios trabajar juntos en tiempo real. Para aprovechar al máximo estas herramientas, es importante configurar correctamente los permisos y los ajustes de privacidad.</p>
+            <p>En cuanto a la configuración de site-to-site, OpenVPN permite establecer conexiones seguras entre dos redes. Esto se puede hacer utilizando la directiva `mode site-to-site` y especificando las direcciones IP de las redes que se van a conectar. Por ejemplo: `mode site-to-site` y `tun-ipv6 2001:db8:1::/64`.</p>
             
         
             
         
             
-            <p>En resumen, Google Workspace es una plataforma poderosa y flexible que ofrece una variedad de herramientas y características para mejorar la productividad y la colaboración en el trabajo. Al configurar correctamente la consola de administración y utilizar las herramientas de seguridad y colaboración, los administradores de sistemas y los desarrolladores pueden aprovechar al máximo esta plataforma.</p>
+            <p>Finalmente, es importante mencionar que OpenVPN tiene una herramienta llamada Access Server, que permite administrar y configurar los servidores OpenVPN de manera centralizada. Esto puede ser útil en entornos de producción donde se necesitan múltiples servidores OpenVPN.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -99,17 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://workspaceupdates.googleblog.com/" target="_blank">Google Workspace Updates</a>
+                <a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow" target="_blank">OpenVPN Release 2.7.4</a>
                 
             </li>
             
             <li>
-                <a href="https://workspaceupdates.googleblog.com/2026/07/" target="_blank">Google Workspace Updates: July 2026</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank">Gemini Enterprise release notes</a>
+                <a href="https://medium.com/@avyuktsec" target="_blank">Avyukt Security – Medium</a>
                 
             </li>
             
@@ -120,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-31_1043.html">&larr; 2026-07-31 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-08-04_1043.html">2026-08-04 1043 &rarr;</a>
             
         </div>
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-03T11:31:01.085351+00:00</updated>
+  <updated>2026-08-04T10:45:23.207505+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -419,5 +419,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-27_1129.html"/>
     <summary>El DNS BIND9 es un servidor de nombres de dominio ampliamente utilizado. En este artículo, se presentan las mejores prácticas para configurar zonas, DNSSEC, vistas, RPZ y registro de eventos.</summary>
     <published>2026-07-27T11:29:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-04_1043.html</id>
+    <title>Configuración de DNS BIND9</title>
+    <updated>2026-08-04T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;El sistema DNS BIND9 es uno de los más utilizados en la actualidad. Para configurar un servidor DNS con BIND9, es necesario crear un archivo de configuración &lt;code&gt;/etc/named.conf&lt;/code&gt; que especifique las zonas que se van a servir. Por ejemplo, para servir una zona &lt;code&gt;example.com&lt;/code&gt;, se puede agregar la siguiente configuración: &lt;code&gt;zone "example.com" { type master; file "/etc/named/example.com.zone"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para habilitar el soporte para DNSSEC, es necesario agregar la siguiente configuración: &lt;code&gt;dnssec-validation yes;&lt;/code&gt;. Luego, se debe generar una clave de zona con el comando &lt;code&gt;dnssec-keygen -a RSASHA1 -b 2048 -n ZONE example.com&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Las vistas en BIND9 permiten servir diferentes contenido DNS en función de la dirección IP del cliente. Por ejemplo, se puede crear una vista para servir una zona &lt;code&gt;example.com&lt;/code&gt; solo para clientes que se conectan desde la red interna: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; zone "example.com" { type master; file "/etc/named/example.com.internal.zone"; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El registro de eventos en BIND9 se puede configurar para registrar eventos de seguridad, como intentos de acceso no autorizados. Por ejemplo, se puede agregar la siguiente configuración: &lt;code&gt;logging { channel security_log { file "/var/log/named/security.log" versions 3 size 1m; severity warning; }; category security { security_log; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para mejorar el rendimiento del servidor DNS, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la base de datos de zonas. Por ejemplo, se puede configurar el tamaño del caché con la siguiente configuración: &lt;code&gt;max-cache-size 100M;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mantener el servidor DNS actualizado y configurado correctamente. Se deben aplicar las últimas actualizaciones de seguridad y configurar el firewall para restringir el acceso al servidor DNS solo a los clientes autorizados.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:37282"&gt;RHSA-2026:37282&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:39879"&gt;RHSA-2026:39879&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-04_1043.html"/>
+    <summary>El sistema de nombres de dominio (DNS) es fundamental para la resolución de nombres de dominio en Internet. En este artículo, se explora la configuración de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos.</summary>
+    <published>2026-08-04T10:43:00+00:00</published>
   </entry>
 </feed>

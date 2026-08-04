@@ -1,4 +1,24 @@
 {
+  "2026-08-04_1043": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage y seguridad. En este artículo, se presentan algunas de las novedades más recientes en el sistema.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que sigue creciendo y mejorando con el tiempo. Una de las novedades más recientes es la inclusión de la característica de `ClusterClass` en el proyecto `cluster-api`, que permite patchear metadatos como etiquetas y anotaciones a través de parches de `ClusterClass`. Esto se puede lograr utilizando el comando `clusterctl` con la opción `--patch`.\n\n \nLa seguridad es otro aspecto importante en Kubernetes, y se han realizado mejoras en este sentido. Por ejemplo, se ha agregado soporte para `Golang 1.26.5/1.25.12` en el proyecto de lanzamiento de Kubernetes, lo que ayuda a proteger contra vulnerabilidades de seguridad.\n\n \nEn cuanto a almacenamiento, Kubernetes sigue mejorando su capacidad para gestionar almacenamiento en diferentes entornos. Por ejemplo, se ha agregado soporte para `AMD GPU Operator`, que permite gestionar GPU en entornos de Kubernetes.\n\n \nPara solucionar problemas en Kubernetes, se pueden utilizar herramientas como `kubetest` y `argo-rollouts`. Estas herramientas permiten realizar pruebas y despliegues de aplicaciones de manera automatizada y segura.\n\n \nEn resumen, Kubernetes sigue evolucionando y mejorando con el tiempo, y es importante estar al tanto de las novedades y mejoras para aprovechar al máximo sus características y funcionalidades.\n\n \nPara más información, se pueden consultar las fuentes oficiales de Kubernetes y sus proyectos relacionados, como `cluster-api` y `argo-rollouts`. Estas fuentes proporcionan documentación detallada y ejemplos prácticos para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo las características de Kubernetes.",
+    "sources": [
+      {
+        "title": "kubernetes-sigs/cluster-api",
+        "url": "https://github.com/kubernetes-sigs/cluster-api/releases"
+      },
+      {
+        "title": "ROCm/gpu-operator",
+        "url": "https://github.com/ROCm/gpu-operator"
+      },
+      {
+        "title": "argoproj/argo-rollouts",
+        "url": "https://github.com/argoproj/argo-rollouts/releases"
+      }
+    ]
+  },
   "2026-07-31_1043": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

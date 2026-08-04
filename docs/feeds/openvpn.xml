@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-03T11:31:01.087171+00:00</updated>
+  <updated>2026-08-04T10:45:23.211501+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -668,5 +668,22 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-07-31_1043.html"/>
     <summary>OpenVPN es una herramienta de túneles de red seguros que permite a los administradores de sistemas y desarrolladores de DevOps establecer conexiones seguras entre redes y dispositivos. En este artículo, se presentan las mejores prácticas y configuraciones para utilizar OpenVPN de manera efectiva.</summary>
     <published>2026-07-31T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-04_1043.html</id>
+    <title>OpenVPN: Tunneling y Seguridad</title>
+    <updated>2026-08-04T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves.&lt;/p&gt;
+&lt;p&gt;Una vez generados los certificados y claves, se pueden configurar los archivos de configuración de OpenVPN. Por ejemplo, el archivo de configuración del servidor puede incluir la siguiente línea: &lt;code&gt;port 1194&lt;/code&gt; para especificar el puerto de escucha. Además, se puede configurar la autenticación de los clientes utilizando la directiva &lt;code&gt;tls-auth&lt;/code&gt; y la clave de autenticación &lt;code&gt;ta.key&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para hardenear OpenVPN, es importante configurar la autenticación de dos factores y limitar el acceso a los clientes autorizados. Esto se puede hacer utilizando la directiva &lt;code&gt;auth&lt;/code&gt; y especificando el método de autenticación, como &lt;code&gt;auth pam&lt;/code&gt; para utilizar la autenticación PAM. Además, se puede configurar el firewall para permitir solo el tráfico de OpenVPN y bloquear cualquier otro tráfico no autorizado.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de site-to-site, OpenVPN permite establecer conexiones seguras entre dos redes. Esto se puede hacer utilizando la directiva &lt;code&gt;mode site-to-site&lt;/code&gt; y especificando las direcciones IP de las redes que se van a conectar. Por ejemplo: &lt;code&gt;mode site-to-site&lt;/code&gt; y &lt;code&gt;tun-ipv6 2001:db8:1::/64&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que OpenVPN tiene una herramienta llamada Access Server, que permite administrar y configurar los servidores OpenVPN de manera centralizada. Esto puede ser útil en entornos de producción donde se necesitan múltiples servidores OpenVPN.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"&gt;OpenVPN Release 2.7.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@avyuktsec"&gt;Avyukt Security – Medium&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-04_1043.html"/>
+    <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y hardenear OpenVPN.</summary>
+    <published>2026-08-04T10:43:00+00:00</published>
   </entry>
 </feed>

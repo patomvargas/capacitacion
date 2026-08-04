@@ -1,4 +1,20 @@
 {
+  "2026-08-04_1043": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad",
+    "summary": "OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y hardenear OpenVPN.",
+    "content": "\nOpenVPN es una herramienta de código abierto que permite establecer conexiones seguras entre redes. Para configurar OpenVPN, es necesario generar certificados y claves para autenticar los clientes y servidores. Esto se puede hacer utilizando herramientas como `openssl` para generar los certificados y claves.\n\nUna vez generados los certificados y claves, se pueden configurar los archivos de configuración de OpenVPN. Por ejemplo, el archivo de configuración del servidor puede incluir la siguiente línea: `port 1194` para especificar el puerto de escucha. Además, se puede configurar la autenticación de los clientes utilizando la directiva `tls-auth` y la clave de autenticación `ta.key`.\n\nPara hardenear OpenVPN, es importante configurar la autenticación de dos factores y limitar el acceso a los clientes autorizados. Esto se puede hacer utilizando la directiva `auth` y especificando el método de autenticación, como `auth pam` para utilizar la autenticación PAM. Además, se puede configurar el firewall para permitir solo el tráfico de OpenVPN y bloquear cualquier otro tráfico no autorizado.\n\nEn cuanto a la configuración de site-to-site, OpenVPN permite establecer conexiones seguras entre dos redes. Esto se puede hacer utilizando la directiva `mode site-to-site` y especificando las direcciones IP de las redes que se van a conectar. Por ejemplo: `mode site-to-site` y `tun-ipv6 2001:db8:1::/64`.\n\nFinalmente, es importante mencionar que OpenVPN tiene una herramienta llamada Access Server, que permite administrar y configurar los servidores OpenVPN de manera centralizada. Esto puede ser útil en entornos de producción donde se necesitan múltiples servidores OpenVPN.\n\n  ",
+    "sources": [
+      {
+        "title": "OpenVPN Release 2.7.4",
+        "url": "https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"
+      },
+      {
+        "title": "Avyukt Security – Medium",
+        "url": "https://medium.com/@avyuktsec"
+      }
+    ]
+  },
   "2026-07-31_1043": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",

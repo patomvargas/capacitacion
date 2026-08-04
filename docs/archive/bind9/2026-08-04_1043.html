@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Google Workspace: Mejoras y Novedades - Google Workspace</title>
-    <link rel="alternate" type="application/atom+xml" title="Google Workspace" href="https://patomvargas.github.io/capacitacion/feeds/google-workspace.xml">
+    <title>Configuración de DNS BIND9 - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,41 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/">Google Workspace</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
     </div>
 
-    <h1>Google Workspace: Mejoras y Novedades</h1>
-    <div class="meta">2026-07-31 1043 · Google Workspace</div>
+    <h1>Configuración de DNS BIND9</h1>
+    <div class="meta">2026-08-04 1043 · DNS BIND9</div>
 
     <div class="content">
         
         
             
-            <p>Google Workspace es una suite de herramientas de productividad en la nube que ofrece una variedad de servicios, incluyendo Gmail, Google Drive, Google Docs y Google Sheets. Recientemente, se han anunciado varias mejoras y novedades en la plataforma, como la capacidad de importar archivos de Microsoft Excel de manera más fluida.</p>
+            <p>El sistema DNS BIND9 es uno de los más utilizados en la actualidad. Para configurar un servidor DNS con BIND9, es necesario crear un archivo de configuración `/etc/named.conf` que especifique las zonas que se van a servir. Por ejemplo, para servir una zona `example.com`, se puede agregar la siguiente configuración: `zone "example.com" { type master; file "/etc/named/example.com.zone"; };`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo estas mejoras, es importante configurar correctamente la consola de administración de Google Workspace. Por ejemplo, se puede utilizar el comando `gcloud` para configurar los ajustes de seguridad y privacidad de la organización.</p>
+            <p>Para habilitar el soporte para DNSSEC, es necesario agregar la siguiente configuración: `dnssec-validation yes;`. Luego, se debe generar una clave de zona con el comando `dnssec-keygen -a RSASHA1 -b 2048 -n ZONE example.com`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Google Workspace ofrece una variedad de herramientas y características para proteger los datos de los usuarios. Por ejemplo, se puede utilizar la API de seguridad de Google Workspace para implementar autenticación de dos factores y autorización basada en roles.</p>
+            <p>Las vistas en BIND9 permiten servir diferentes contenido DNS en función de la dirección IP del cliente. Por ejemplo, se puede crear una vista para servir una zona `example.com` solo para clientes que se conectan desde la red interna: `view "internal" { match-clients { 10.0.0.0/8; }; zone "example.com" { type master; file "/etc/named/example.com.internal.zone"; }; };`.</p>
             
         
             
         
             
-            <p>Además, la plataforma ofrece una variedad de herramientas de colaboración, como Google Drive y Google Docs, que permiten a los usuarios trabajar juntos en tiempo real. Para aprovechar al máximo estas herramientas, es importante configurar correctamente los permisos y los ajustes de privacidad.</p>
+            <p>El registro de eventos en BIND9 se puede configurar para registrar eventos de seguridad, como intentos de acceso no autorizados. Por ejemplo, se puede agregar la siguiente configuración: `logging { channel security_log { file "/var/log/named/security.log" versions 3 size 1m; severity warning; }; category security { security_log; }; };`.</p>
             
         
             
         
             
-            <p>En resumen, Google Workspace es una plataforma poderosa y flexible que ofrece una variedad de herramientas y características para mejorar la productividad y la colaboración en el trabajo. Al configurar correctamente la consola de administración y utilizar las herramientas de seguridad y colaboración, los administradores de sistemas y los desarrolladores pueden aprovechar al máximo esta plataforma.</p>
+            <p>Para mejorar el rendimiento del servidor DNS, se pueden utilizar varias técnicas, como la configuración de caché y la optimización de la base de datos de zonas. Por ejemplo, se puede configurar el tamaño del caché con la siguiente configuración: `max-cache-size 100M;`.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la seguridad, es importante mantener el servidor DNS actualizado y configurado correctamente. Se deben aplicar las últimas actualizaciones de seguridad y configurar el firewall para restringir el acceso al servidor DNS solo a los clientes autorizados.</p>
             
         
     </div>
@@ -99,17 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://workspaceupdates.googleblog.com/" target="_blank">Google Workspace Updates</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:37282" target="_blank">RHSA-2026:37282</a>
                 
             </li>
             
             <li>
-                <a href="https://workspaceupdates.googleblog.com/2026/07/" target="_blank">Google Workspace Updates: July 2026</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://docs.cloud.google.com/gemini/enterprise/docs/release-notes" target="_blank">Gemini Enterprise release notes</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:39879" target="_blank">RHSA-2026:39879</a>
                 
             </li>
             
@@ -120,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-07-27_1129.html">&larr; 2026-07-27 1129</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/google-workspace/2026-08-04_1043.html">2026-08-04 1043 &rarr;</a>
             
         </div>
     </div>

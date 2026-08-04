@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-03T11:31:01.089713+00:00</updated>
+  <updated>2026-08-04T10:45:23.216711+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -720,5 +720,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-31_1043.html"/>
     <summary>Se presentan las últimas novedades y mejoras en Kubernetes, incluyendo la versión 1.37 y la liberación de etcd v3.7.0. Se discuten también las mejores prácticas para proteger la infraestructura de Kubernetes.</summary>
     <published>2026-07-31T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-08-04T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue creciendo y mejorando con el tiempo. Una de las novedades más recientes es la inclusión de la característica de &lt;code&gt;ClusterClass&lt;/code&gt; en el proyecto &lt;code&gt;cluster-api&lt;/code&gt;, que permite patchear metadatos como etiquetas y anotaciones a través de parches de &lt;code&gt;ClusterClass&lt;/code&gt;. Esto se puede lograr utilizando el comando &lt;code&gt;clusterctl&lt;/code&gt; con la opción &lt;code&gt;--patch&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes, y se han realizado mejoras en este sentido. Por ejemplo, se ha agregado soporte para &lt;code&gt;Golang 1.26.5/1.25.12&lt;/code&gt; en el proyecto de lanzamiento de Kubernetes, lo que ayuda a proteger contra vulnerabilidades de seguridad.&lt;/p&gt;
+&lt;p&gt;En cuanto a almacenamiento, Kubernetes sigue mejorando su capacidad para gestionar almacenamiento en diferentes entornos. Por ejemplo, se ha agregado soporte para &lt;code&gt;AMD GPU Operator&lt;/code&gt;, que permite gestionar GPU en entornos de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas en Kubernetes, se pueden utilizar herramientas como &lt;code&gt;kubetest&lt;/code&gt; y &lt;code&gt;argo-rollouts&lt;/code&gt;. Estas herramientas permiten realizar pruebas y despliegues de aplicaciones de manera automatizada y segura.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando con el tiempo, y es importante estar al tanto de las novedades y mejoras para aprovechar al máximo sus características y funcionalidades.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Kubernetes y sus proyectos relacionados, como &lt;code&gt;cluster-api&lt;/code&gt; y &lt;code&gt;argo-rollouts&lt;/code&gt;. Estas fuentes proporcionan documentación detallada y ejemplos prácticos para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo las características de Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/cluster-api/releases"&gt;kubernetes-sigs/cluster-api&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ROCm/gpu-operator"&gt;ROCm/gpu-operator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/argoproj/argo-rollouts/releases"&gt;argoproj/argo-rollouts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html"/>
+    <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage y seguridad. En este artículo, se presentan algunas de las novedades más recientes en el sistema.</summary>
+    <published>2026-08-04T10:43:00+00:00</published>
   </entry>
 </feed>
