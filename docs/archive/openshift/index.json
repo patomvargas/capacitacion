@@ -1,4 +1,24 @@
 {
+  "2026-08-05_1040": {
+    "slug": "openshift",
+    "title": "OpenShift 4.22: Novedades y Mejoras",
+    "summary": "OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores, incluyendo actualizaciones de seguridad y nuevas herramientas de observabilidad. Esta versión se basa en Kubernetes 1.35 y CRI-O 1.35.",
+    "content": "\nOpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de novedades y mejoras para desarrolladores y administradores. Una de las principales novedades es la inclusión de la herramienta de observabilidad Red Hat OpenShift Cluster Observability Operator (COO) 1.5, que ofrece paneles personalizables y visibilidad multi-cluster.\n\nPara aprovechar al máximo las nuevas características de OpenShift 4.22, es importante actualizar la plataforma a la última versión. Para hacerlo, se puede utilizar el comando `oc adm upgrade` para verificar si hay actualizaciones disponibles. Si se encuentra una actualización, se puede aplicar utilizando el comando `oc adm upgrade apply`.\n\nOtra novedad importante en OpenShift 4.22 es la inclusión de la herramienta de desarrollo Red Hat OpenShift Dev Spaces, que ofrece un entorno de desarrollo integrado y colaborativo para los desarrolladores. Esta herramienta permite a los desarrolladores crear y probar aplicaciones de manera más eficiente y segura.\n\nEn cuanto a la seguridad, OpenShift 4.22 incluye varias actualizaciones y mejoras, incluyendo la capacidad de agregar la etiqueta `openShiftUpdatePrecheck` a las alertas en un recurso personalizado de PrometheusRule, lo que permite a los administradores verificar si hay alertas pendientes antes de realizar una actualización. Para hacerlo, se puede utilizar el comando `oc adm upgrade recommend` para verificar si hay alertas pendientes.\n\nFinalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la escalabilidad y el rendimiento, lo que permite a los administradores aprovechar al máximo los recursos de su infraestructura. Para aprovechar al máximo estas mejoras, se puede utilizar la herramienta de monitorización de OpenShift para supervisar el rendimiento de la plataforma y identificar áreas de mejora.\n\nEn resumen, OpenShift 4.22 es una versión importante que ofrece una serie de novedades y mejoras para desarrolladores y administradores. Con sus nuevas herramientas de observabilidad y desarrollo, así como sus actualizaciones de seguridad y mejoras en la escalabilidad y el rendimiento, esta versión es una excelente opción para aquellos que buscan aprovechar al máximo la plataforma de contenedores de Red Hat.\n\nPara más información sobre las novedades y mejoras de OpenShift 4.22, se puede consultar la documentación oficial de Red Hat y las fuentes citadas a continuación.\n",
+    "sources": [
+      {
+        "title": "RHSA-2026:48657 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48657"
+      },
+      {
+        "title": "What's new for developers in Red Hat OpenShift 4.22",
+        "url": "https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"
+      },
+      {
+        "title": "New observability features in Red Hat OpenShift 4.22",
+        "url": "https://www.redhat.com/en/blog/new-observability-features-red-hat-openshift-422"
+      }
+    ]
+  },
   "2026-08-01_1002": {
     "slug": "openshift",
     "title": "OpenShift 4.22: Novedades y Mejoras",

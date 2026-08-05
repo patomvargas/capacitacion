@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actualizaciones y Mejoras en ChatGPT - ChatGPT</title>
+    <link rel="alternate" type="application/atom+xml" title="ChatGPT" href="https://patomvargas.github.io/capacitacion/feeds/chatgpt.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/chatgpt/">ChatGPT</a>
+    </div>
+
+    <h1>Actualizaciones y Mejoras en ChatGPT</h1>
+    <div class="meta">2026-08-05 1040 · ChatGPT</div>
+
+    <div class="content">
+        
+        
+            
+            <p>Recientemente, se ha agregado soporte para MCP Python SDK v2 en ChatGPT, lo que permite a los desarrolladores interactuar con la API de manera más eficiente. Para implementar esta actualización, se puede utilizar el comando `pip install openai` para instalar la última versión de la biblioteca OpenAI. Además, se ha solucionado un problema con la aplicación Codex que causaba la pérdida de configuraciones de usuario después de una actualización automática.</p>
+            
+        
+            
+        
+            
+            <p>La aplicación Codex también ha presentado problemas con la funcionalidad de subagentes en la versión 5.6 de ChatGPT. Para solucionar este problema, se puede intentar actualizar la versión de Codex o utilizar la opción `--force-update` al ejecutar el comando `codex update`. Es importante mencionar que la actualización de la aplicación Codex puede requerir la reinstalación de la aplicación.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a las mejores prácticas, se recomienda utilizar la función `try-except` para manejar errores y excepciones en el código, lo que puede ayudar a prevenir problemas como la pérdida de configuraciones de usuario. Por ejemplo, se puede utilizar el siguiente código: `try:</p>
+            
+        
+            
+            <p># código que puede generar un error</p>
+            
+        
+            
+            <p>except Exception as e:</p>
+            
+        
+            
+            <p># manejo del error`. Además, es importante mantener actualizada la documentación y los registros de cambios para asegurarse de que los desarrolladores estén al tanto de las últimas actualizaciones y mejoras.</p>
+            
+        
+            
+        
+            
+            <p>En relación con la integración de ChatGPT con otros herramientas de desarrollo, como VS Code, se ha presentado un problema con la funcionalidad de toggle de Plan Mode después de una actualización de la extensión Codex. Para solucionar este problema, se puede intentar desinstalar y reinstalar la extensión Codex o utilizar la opción `--reset` al ejecutar el comando `codex reset`.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, las últimas actualizaciones y mejoras en ChatGPT ofrecen nuevas funcionalidades y soluciones a problemas previos, pero también requieren una actualización y configuración adecuada para asegurarse de que los desarrolladores puedan aprovechar al máximo las capacidades de la plataforma.</p>
+            
+        
+            
+        
+            
+            <p>Es importante mencionar que la documentación oficial de ChatGPT y Codex es una fuente valiosa de información para los desarrolladores, y se recomienda consultarla regularmente para mantenerse al tanto de las últimas actualizaciones y mejoras.</p>
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/openai/openai-agents-python/issues/4014" target="_blank">Support MCP Python SDK v2 and the MCP 2026-07-28 protocol #4014</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/openai/codex/issues/31488" target="_blank">Pro account never received promised free banked Codex reset #31488</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/openai/codex/issues/31866" target="_blank">macOS: Self-update removed Codex.app, official Codex download installs ChatGPT instead #31866</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/openai/codex/issues/32096" target="_blank">[Annoyance] Codex App and ChatGPT App use the same Icon, causing confusion #32096</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/openai/codex/issues/32147" target="_blank">[VS Code] Shift+Tab no longer toggles Plan Mode after the latest Codex extension update #32147</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/obra/superpowers/issues/1960" target="_blank">ChatGPT 5.6 update for Codex isnt allowing subagent behaviour to work properly #1960</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/openai/codex/issues/32653" target="_blank">Codex Desktop crashes entire application due to missing tool call result #32653</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/chatgpt/2026-08-01_1002.html">&larr; 2026-08-01 1002</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

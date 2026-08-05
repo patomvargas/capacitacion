@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/claude-code.xml</id>
   <title>Claude Code - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-04T10:45:23.223677+00:00</updated>
+  <updated>2026-08-05T10:41:58.239437+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -667,5 +667,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-08-01_1002.html"/>
     <summary>Aprende a optimizar tu flujo de trabajo con Claude Code utilizando plugins, hooks y MCP servers. Descubre cómo mejorar la productividad y la eficiencia en tu código.</summary>
     <published>2026-08-01T10:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/claude-code/2026-08-05_1040.html</id>
+    <title>Claude Code: Mejoras y Best Practices</title>
+    <updated>2026-08-05T10:40:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de Claude Code incluye varias mejoras importantes, como la capacidad de spawn nested subagents hasta una profundidad de 3 por defecto, lo que permite una mayor flexibilidad en la creación de flujos de trabajo. Para aprovechar esta función, se puede utilizar el comando &lt;code&gt;CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1&lt;/code&gt; para deshabilitar el anidado de subagentes.&lt;/p&gt;
+&lt;p&gt;Otra mejora notable es la adición del flag &lt;code&gt;--forward-subagent-text&lt;/code&gt; y la variable de entorno &lt;code&gt;CLAUDE_CODE_FORWARD_SUBAGENT_TEXT&lt;/code&gt;, que permiten incluir el texto y el pensamiento de los subagentes en la salida de stream-json. Esto se puede lograr ejecutando el comando &lt;code&gt;claude-code --forward-subagent-text&lt;/code&gt; o estableciendo la variable de entorno &lt;code&gt;CLAUDE_CODE_FORWARD_SUBAGENT_TEXT=true&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a las best practices, es importante mantener un archivo &lt;code&gt;CLAUDE.md&lt;/code&gt; bien estructurado y conciso, ya que esto permite a Claude Code entender mejor el contexto del proyecto y proporcionar sugerencias más precisas. También es recomendable utilizar comandos como &lt;code&gt;claude-code --config&lt;/code&gt; para configurar las opciones de Claude Code y &lt;code&gt;claude-code --help&lt;/code&gt; para obtener ayuda y documentación.&lt;/p&gt;
+&lt;p&gt;Además, es importante estar al tanto de las últimas novedades y cambios en Claude Code, como la eliminación de Opus 4.7 del modo rápido y la actualización de la habilidad &lt;code&gt;claude-api&lt;/code&gt; para que utilice Claude Opus 5 por defecto. Para obtener más información, se puede consultar la documentación oficial de Claude Code y las fuentes proporcionadas.&lt;/p&gt;
+&lt;p&gt;En resumen, Claude Code es una herramienta poderosa que puede mejorar significativamente la productividad en el desarrollo de software. Al aprovechar las últimas mejoras y seguir las best practices, los desarrolladores pueden obtener el máximo beneficio de esta herramienta.&lt;/p&gt;
+&lt;p&gt;Las fuentes utilizadas para este artículo incluyen la documentación oficial de Claude Code, así como varias fuentes en línea que proporcionan información adicional y ejemplos prácticos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/releases"&gt;Releases · anthropics/claude-code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"&gt;claude-code/CHANGELOG.md at main · anthropics/claude-code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j"&gt;CLAUDE.md Best Practices: The Complete 2026 Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-08-05_1040.html"/>
+    <summary>Claude Code es una herramienta de desarrollo de software que utiliza inteligencia artificial para mejorar la productividad. En este artículo, se presentan las últimas mejoras y best practices para aprovechar al máximo sus funcionalidades.</summary>
+    <published>2026-08-05T10:40:00+00:00</published>
   </entry>
 </feed>

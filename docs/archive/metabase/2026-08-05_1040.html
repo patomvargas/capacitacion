@@ -58,45 +58,43 @@
     </div>
 
     <h1>Metabase: Mejoras y Best Practices</h1>
-    <div class="meta">2026-07-28 1040 · Metabase</div>
+    <div class="meta">2026-08-05 1040 · Metabase</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y informes personalizados a partir de sus datos. Una de las funcionalidades más destacadas de Metabase es su capacidad para conectar con diversas fuentes de datos, como bases de datos relacionales y NoSQL. Para conectar con una base de datos, se puede utilizar el comando `metabase db connect` seguido de la URL de la base de datos y las credenciales de acceso.</p>
+            <p>Metabase es una herramienta de código abierto que permite a los usuarios crear consultas, dashboards y informes personalizados para analizar y visualizar datos. Una de las últimas mejoras en Metabase es la capacidad de renderizar valores de campos como enlaces, lo que se logra mediante la configuración de la URL en el formato adecuado, como se muestra en el problema `#77352` de GitHub.</p>
             
         
             
         
             
-            <p>Una de las últimas novedades en Metabase es la capacidad de renderizar campos como enlaces. Esto se logra mediante la configuración de la URL del campo en el formato `https://example.com/${campo}`. Sin embargo, es importante tener en cuenta que este formato puede variar dependiendo de la versión de Metabase que se esté utilizando. Para obtener más información sobre la configuración de la URL, se puede consultar la documentación oficial de Metabase.</p>
+            <p>Para aprovechar al máximo las funcionalidades de Metabase, es importante entender cómo crear consultas efectivas. Por ejemplo, se puede utilizar el comando `SELECT * FROM tabla` para seleccionar todos los campos de una tabla. Luego, se pueden aplicar filtros y agrupaciones utilizando comandos como `WHERE` y `GROUP BY`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Metabase ha solventado varias vulnerabilidades en sus últimas versiones. Una de ellas es la Arbitrary Code Execution via Database Connection Detail Bypass, que permitía a los administradores autenticados ejecutar código Java arbitrario en el servidor de Metabase. Para evitar esta vulnerabilidad, es importante actualizar Metabase a la última versión y seguir las best practices de seguridad recomendadas por los desarrolladores.</p>
+            <p>Otra funcionalidad importante en Metabase es la capacidad de crear dashboards personalizados. Para hacer esto, se puede utilizar el comando `CREATE DASHBOARD` y luego agregar tarjetas y visualizaciones según sea necesario. Por ejemplo, se puede agregar una tarjeta de tipo `tabla` con el comando `ADD CARD TYPE TABLE` y luego configurar las columnas y filas según sea necesario.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las capacidades de Metabase, es importante seguir las best practices recomendadas por los desarrolladores. Una de ellas es utilizar la función `build-for-release` para compilar y probar la aplicación antes de implementarla en producción. Esto se puede lograr mediante el comando `git checkout master` seguido de `git pull` y finalmente `build-for-release`. Además, es importante configurar la aplicación para que se ejecute en modo de producción, lo que se puede lograr mediante el comando `java -jar metabase.jar --production`.</p>
+            <p>En cuanto a la administración de Metabase, es importante entender cómo configurar y mantener la instancia. Por ejemplo, se puede utilizar el comando `metabase config` para configurar la instancia y establecer parámetros como la conexión a la base de datos. Luego, se puede utilizar el comando `metabase restart` para reiniciar la instancia y aplicar los cambios.</p>
             
         
             
         
             
-            <p>En resumen, Metabase es una herramienta poderosa para el análisis de datos que ofrece funcionalidades como consultas, dashboards y API. Para aprovechar al máximo sus capacidades, es importante seguir las best practices recomendadas por los desarrolladores y estar al tanto de las últimas novedades y actualizaciones de seguridad.</p>
+            <p>En resumen, Metabase es una herramienta poderosa para analizar y visualizar datos. Al entender cómo crear consultas efectivas, crear dashboards personalizados y administrar la instancia, los usuarios pueden aprovechar al máximo sus funcionalidades y obtener insights valiosos de sus datos.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la documentación oficial de Metabase es una excelente fuente de información para aprender a utilizar la herramienta de manera efectiva. Allí se pueden encontrar tutoriales, ejemplos y referencias para ayudar a los usuarios a aprovechar al máximo las capacidades de Metabase.</p>
+            <p>Para más información sobre Metabase y sus funcionalidades, se puede consultar la documentación oficial y los recursos en línea, como los artículos de Medium y los repositorios de GitHub.</p>
             
         
     </div>
@@ -107,17 +105,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/metabase/metabase/tree/master/release" target="_blank">Metabase Release</a>
+                <a href="https://github.com/metabase/metabase/issues/77352" target="_blank">Metabase GitHub Issue #77352</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/issues/77352" target="_blank">URL format changed by metabase when rendering field value as link</a>
+                <a href="https://github.com/metabase/metabase" target="_blank">Metabase GitHub Repository</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/metabase/metabase/security/advisories/GHSA-8wx2-rxp2-4x35" target="_blank">Arbitrary Code Execution via Database Connection Detail Bypass</a>
+                <a href="https://medium.com/@vyomgoyal2004" target="_blank">Vyom Goyal en Medium</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@linda.tanumihardja" target="_blank">Linda Tanumihardja en Medium</a>
                 
             </li>
             
@@ -128,12 +131,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-24_1023.html">&larr; 2026-07-24 1023</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-07-28_1040.html">&larr; 2026-07-28 1040</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/metabase/2026-08-05_1040.html">2026-08-05 1040 &rarr;</a>
             
         </div>
     </div>

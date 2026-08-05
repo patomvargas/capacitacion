@@ -1,4 +1,24 @@
 {
+  "2026-08-05_1040": {
+    "slug": "claude-code",
+    "title": "Claude Code: Mejoras y Best Practices",
+    "summary": "Claude Code es una herramienta de desarrollo de software que utiliza inteligencia artificial para mejorar la productividad. En este artículo, se presentan las últimas mejoras y best practices para aprovechar al máximo sus funcionalidades.",
+    "content": "\nLa última versión de Claude Code incluye varias mejoras importantes, como la capacidad de spawn nested subagents hasta una profundidad de 3 por defecto, lo que permite una mayor flexibilidad en la creación de flujos de trabajo. Para aprovechar esta función, se puede utilizar el comando `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1` para deshabilitar el anidado de subagentes.\n\nOtra mejora notable es la adición del flag `--forward-subagent-text` y la variable de entorno `CLAUDE_CODE_FORWARD_SUBAGENT_TEXT`, que permiten incluir el texto y el pensamiento de los subagentes en la salida de stream-json. Esto se puede lograr ejecutando el comando `claude-code --forward-subagent-text` o estableciendo la variable de entorno `CLAUDE_CODE_FORWARD_SUBAGENT_TEXT=true`.\n\nEn cuanto a las best practices, es importante mantener un archivo `CLAUDE.md` bien estructurado y conciso, ya que esto permite a Claude Code entender mejor el contexto del proyecto y proporcionar sugerencias más precisas. También es recomendable utilizar comandos como `claude-code --config` para configurar las opciones de Claude Code y `claude-code --help` para obtener ayuda y documentación.\n\nAdemás, es importante estar al tanto de las últimas novedades y cambios en Claude Code, como la eliminación de Opus 4.7 del modo rápido y la actualización de la habilidad `claude-api` para que utilice Claude Opus 5 por defecto. Para obtener más información, se puede consultar la documentación oficial de Claude Code y las fuentes proporcionadas.\n\nEn resumen, Claude Code es una herramienta poderosa que puede mejorar significativamente la productividad en el desarrollo de software. Al aprovechar las últimas mejoras y seguir las best practices, los desarrolladores pueden obtener el máximo beneficio de esta herramienta.\n\nLas fuentes utilizadas para este artículo incluyen la documentación oficial de Claude Code, así como varias fuentes en línea que proporcionan información adicional y ejemplos prácticos.",
+    "sources": [
+      {
+        "title": "Releases · anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code/releases"
+      },
+      {
+        "title": "claude-code/CHANGELOG.md at main · anthropics/claude-code",
+        "url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "CLAUDE.md Best Practices: The Complete 2026 Guide",
+        "url": "https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j"
+      }
+    ]
+  },
   "2026-08-01_1002": {
     "slug": "claude-code",
     "title": "Mejores prácticas para Claude Code",

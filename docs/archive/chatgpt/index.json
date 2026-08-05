@@ -1,4 +1,40 @@
 {
+  "2026-08-05_1040": {
+    "slug": "chatgpt",
+    "title": "Actualizaciones y Mejoras en ChatGPT",
+    "summary": "Se presentan las últimas actualizaciones y mejoras en ChatGPT, incluyendo soporte para MCP Python SDK v2 y solución de problemas con la aplicación Codex. Se discuten también las mejores prácticas para la implementación de ChatGPT en entornos de desarrollo.",
+    "content": "Recientemente, se ha agregado soporte para MCP Python SDK v2 en ChatGPT, lo que permite a los desarrolladores interactuar con la API de manera más eficiente. Para implementar esta actualización, se puede utilizar el comando `pip install openai` para instalar la última versión de la biblioteca OpenAI. Además, se ha solucionado un problema con la aplicación Codex que causaba la pérdida de configuraciones de usuario después de una actualización automática.\n\nLa aplicación Codex también ha presentado problemas con la funcionalidad de subagentes en la versión 5.6 de ChatGPT. Para solucionar este problema, se puede intentar actualizar la versión de Codex o utilizar la opción `--force-update` al ejecutar el comando `codex update`. Es importante mencionar que la actualización de la aplicación Codex puede requerir la reinstalación de la aplicación.\n\nEn cuanto a las mejores prácticas, se recomienda utilizar la función `try-except` para manejar errores y excepciones en el código, lo que puede ayudar a prevenir problemas como la pérdida de configuraciones de usuario. Por ejemplo, se puede utilizar el siguiente código: `try: \n  # código que puede generar un error \nexcept Exception as e: \n  # manejo del error`. Además, es importante mantener actualizada la documentación y los registros de cambios para asegurarse de que los desarrolladores estén al tanto de las últimas actualizaciones y mejoras.\n\nEn relación con la integración de ChatGPT con otros herramientas de desarrollo, como VS Code, se ha presentado un problema con la funcionalidad de toggle de Plan Mode después de una actualización de la extensión Codex. Para solucionar este problema, se puede intentar desinstalar y reinstalar la extensión Codex o utilizar la opción `--reset` al ejecutar el comando `codex reset`.\n\nEn resumen, las últimas actualizaciones y mejoras en ChatGPT ofrecen nuevas funcionalidades y soluciones a problemas previos, pero también requieren una actualización y configuración adecuada para asegurarse de que los desarrolladores puedan aprovechar al máximo las capacidades de la plataforma.\n\nEs importante mencionar que la documentación oficial de ChatGPT y Codex es una fuente valiosa de información para los desarrolladores, y se recomienda consultarla regularmente para mantenerse al tanto de las últimas actualizaciones y mejoras.",
+    "sources": [
+      {
+        "title": "Support MCP Python SDK v2 and the MCP 2026-07-28 protocol #4014",
+        "url": "https://github.com/openai/openai-agents-python/issues/4014"
+      },
+      {
+        "title": "Pro account never received promised free banked Codex reset #31488",
+        "url": "https://github.com/openai/codex/issues/31488"
+      },
+      {
+        "title": "macOS: Self-update removed Codex.app, official Codex download installs ChatGPT instead #31866",
+        "url": "https://github.com/openai/codex/issues/31866"
+      },
+      {
+        "title": "[Annoyance] Codex App and ChatGPT App use the same Icon, causing confusion #32096",
+        "url": "https://github.com/openai/codex/issues/32096"
+      },
+      {
+        "title": "[VS Code] Shift+Tab no longer toggles Plan Mode after the latest Codex extension update #32147",
+        "url": "https://github.com/openai/codex/issues/32147"
+      },
+      {
+        "title": "ChatGPT 5.6 update for Codex isnt allowing subagent behaviour to work properly #1960",
+        "url": "https://github.com/obra/superpowers/issues/1960"
+      },
+      {
+        "title": "Codex Desktop crashes entire application due to missing tool call result #32653",
+        "url": "https://github.com/openai/codex/issues/32653"
+      }
+    ]
+  },
   "2026-08-01_1002": {
     "slug": "chatgpt",
     "title": "Actualizaciones y Mejoras en ChatGPT",

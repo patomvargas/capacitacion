@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas para Claude Code - Claude Code</title>
+    <title>Claude Code: Mejoras y Best Practices - Claude Code</title>
     <link rel="alternate" type="application/atom+xml" title="Claude Code" href="https://patomvargas.github.io/capacitacion/feeds/claude-code.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/">Claude Code</a>
     </div>
 
-    <h1>Mejores prácticas para Claude Code</h1>
-    <div class="meta">2026-08-01 1002 · Claude Code</div>
+    <h1>Claude Code: Mejoras y Best Practices</h1>
+    <div class="meta">2026-08-05 1040 · Claude Code</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>Para empezar a trabajar con Claude Code, es importante entender la diferencia entre las versiones de instalación 'stable' y 'latest'. La versión 'stable' se refiere a la última versión estable del software, mientras que 'latest' se refiere a la última versión disponible, que puede incluir características experimentales. Esto se puede configurar utilizando el comando `claude-code --version`.</p>
+            <p>La última versión de Claude Code incluye varias mejoras importantes, como la capacidad de spawn nested subagents hasta una profundidad de 3 por defecto, lo que permite una mayor flexibilidad en la creación de flujos de trabajo. Para aprovechar esta función, se puede utilizar el comando `CLAUDE_CODE_MAX_SUBAGENT_SPAWN_DEPTH=1` para deshabilitar el anidado de subagentes.</p>
             
         
             
         
             
-            <p>Una de las características más poderosas de Claude Code es la capacidad de utilizar plugins para extender su funcionalidad. Los plugins pueden ser utilizados para agregar comandos personalizados, agentes especializados, hooks y MCP servers. Por ejemplo, se puede utilizar el plugin `claude-code-plugin-semgrep` para escanear el código en busca de vulnerabilidades de seguridad. Para instalar un plugin, se puede utilizar el comando `claude-code plugin install <nombre-del-plugin>`.</p>
+            <p>Otra mejora notable es la adición del flag `--forward-subagent-text` y la variable de entorno `CLAUDE_CODE_FORWARD_SUBAGENT_TEXT`, que permiten incluir el texto y el pensamiento de los subagentes en la salida de stream-json. Esto se puede lograr ejecutando el comando `claude-code --forward-subagent-text` o estableciendo la variable de entorno `CLAUDE_CODE_FORWARD_SUBAGENT_TEXT=true`.</p>
             
         
             
         
             
-            <p>Los hooks son otro aspecto importante de Claude Code, ya que permiten ejecutar acciones personalizadas en diferentes momentos del flujo de trabajo. Por ejemplo, se puede utilizar un hook para ejecutar un comando antes de que se genere el código. Para configurar un hook, se puede utilizar el comando `claude-code hook add <nombre-del-hook> <comando>`.</p>
+            <p>En cuanto a las best practices, es importante mantener un archivo `CLAUDE.md` bien estructurado y conciso, ya que esto permite a Claude Code entender mejor el contexto del proyecto y proporcionar sugerencias más precisas. También es recomendable utilizar comandos como `claude-code --config` para configurar las opciones de Claude Code y `claude-code --help` para obtener ayuda y documentación.</p>
             
         
             
         
             
-            <p>Los MCP servers son fundamentales para el funcionamiento de Claude Code, ya que permiten la comunicación entre el cliente y el servidor. Se pueden utilizar diferentes MCP servers, como el servidor de Semgrep, para escanear el código en busca de vulnerabilidades de seguridad. Para configurar un MCP server, se puede utilizar el comando `claude-code mcp add <nombre-del-mcp-server> <url-del-mcp-server>`.</p>
+            <p>Además, es importante estar al tanto de las últimas novedades y cambios en Claude Code, como la eliminación de Opus 4.7 del modo rápido y la actualización de la habilidad `claude-api` para que utilice Claude Opus 5 por defecto. Para obtener más información, se puede consultar la documentación oficial de Claude Code y las fuentes proporcionadas.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que existen varias best practices para trabajar con Claude Code, como mantener el código organizado y conciso, y utilizar comandos personalizados para automatizar tareas repetitivas. También es importante estar al tanto de las últimas novedades y cambios en la documentación oficial de Claude Code.</p>
+            <p>En resumen, Claude Code es una herramienta poderosa que puede mejorar significativamente la productividad en el desarrollo de software. Al aprovechar las últimas mejoras y seguir las best practices, los desarrolladores pueden obtener el máximo beneficio de esta herramienta.</p>
             
         
             
         
             
-            <p>En resumen, Claude Code es una herramienta poderosa que puede ser utilizada para mejorar la productividad y la eficiencia en el código. Al utilizar plugins, hooks y MCP servers, se pueden extender sus funcionalidades y personalizar el flujo de trabajo. Es importante estar al tanto de las últimas novedades y cambios en la documentación oficial y seguir las best practices para obtener el máximo provecho de esta herramienta.</p>
+            <p>Las fuentes utilizadas para este artículo incluyen la documentación oficial de Claude Code, así como varias fuentes en línea que proporcionan información adicional y ejemplos prácticos.</p>
             
         
     </div>
@@ -107,22 +107,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/issues/5735" target="_blank">Docs: Clarify 'stable' vs. 'latest' installation versions and update CHANGELOG</a>
+                <a href="https://github.com/anthropics/claude-code/releases" target="_blank">Releases · anthropics/claude-code</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/anthropics/claude-code/tree/main/plugins" target="_blank">Claude Code Plugins</a>
+                <a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank">claude-code/CHANGELOG.md at main · anthropics/claude-code</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/semgrep/mcp" target="_blank">Semgrep MCP Server</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://medium.com/@onix_react/claude-md-best-practices-a60d726dc2a5" target="_blank">CLAUDE.md Best Practices</a>
+                <a href="https://dev.to/nishilbhave/claudemd-best-practices-the-complete-2026-guide-435j" target="_blank">CLAUDE.md Best Practices: The Complete 2026 Guide</a>
                 
             </li>
             
@@ -133,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-07-28_1040.html">&larr; 2026-07-28 1040</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-08-01_1002.html">&larr; 2026-08-01 1002</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/claude-code/2026-08-05_1040.html">2026-08-05 1040 &rarr;</a>
             
         </div>
     </div>
