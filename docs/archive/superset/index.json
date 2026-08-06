@@ -1,4 +1,28 @@
 {
+  "2026-08-06_1043": {
+    "slug": "superset",
+    "title": "Superset: Herramienta de Visualización de Datos",
+    "summary": "Superset es una herramienta de visualización de datos que permite a los usuarios crear dashboards personalizados y explorar grandes conjuntos de datos. En este artículo, se presentan las características y funcionalidades de Superset, incluyendo la creación de gráficos, tableros y la administración de conjuntos de datos.",
+    "content": "Superset es una herramienta de código abierto desarrollada por Apache que permite a los usuarios crear dashboards personalizados y explorar grandes conjuntos de datos. Una de las características más destacadas de Superset es su capacidad para crear gráficos y tableros personalizados utilizando `SQL Lab` y `Jinja templates`. Los usuarios pueden crear gráficos de diferentes tipos, como barras, líneas y scatter plots, y personalizar su apariencia utilizando `CSS` y `JavaScript`.\n\nLa administración de conjuntos de datos es otra característica importante de Superset. Los usuarios pueden crear y gestionar conjuntos de datos utilizando la interfaz de usuario de Superset, y también pueden importar datos desde fuentes externas como bases de datos y archivos CSV. La herramienta también incluye una función de `SQL Lab` que permite a los usuarios ejecutar consultas SQL y visualizar los resultados en forma de gráficos y tablas.\n\nEn cuanto a la seguridad, Superset incluye una función de `autenticación` y `autorización` que permite a los administradores controlar el acceso a los datos y a las funcionalidades de la herramienta. Los usuarios también pueden crear `alertas` y `informes` personalizados para notificar a otros usuarios sobre cambios en los datos o en la herramienta. Para configurar la autenticación y autorización en Superset, se puede utilizar el comando `superset config` y editar el archivo de configuración `superset_config.py`.\n\nLa comunidad de Superset es muy activa y hay muchos recursos disponibles para los usuarios, incluyendo la documentación oficial y los foros de discusión en GitHub. Los usuarios también pueden contribuir al desarrollo de la herramienta y enviar `pull requests` con nuevas funcionalidades y correcciones de errores. Por ejemplo, se puede utilizar el comando `git clone` para clonar el repositorio de Superset y empezar a contribuir.\n\nEn resumen, Superset es una herramienta de visualización de datos muy potente y flexible que permite a los usuarios crear dashboards personalizados y explorar grandes conjuntos de datos. Su capacidad para crear gráficos y tableros personalizados, su función de administración de conjuntos de datos y su enfoque en la seguridad la hacen una herramienta ideal para cualquier organización que necesite analizar y visualizar grandes cantidades de datos.\n\nPara más información sobre Superset, se pueden consultar las fuentes oficiales y la documentación en línea. También se pueden unir a la comunidad de Superset y contribuir al desarrollo de la herramienta.",
+    "sources": [
+      {
+        "title": "Superset Helm Chart #41876",
+        "url": "https://github.com/apache/superset/discussions/41876"
+      },
+      {
+        "title": "How does Preset.io work + building a hierarchy table and interactive calendar chart? #41973",
+        "url": "https://github.com/apache/superset/discussions/41973"
+      },
+      {
+        "title": "Alerts/Reports sending chart as csv fails with HTTP 500 #41862",
+        "url": "https://github.com/apache/superset/issues/41862"
+      },
+      {
+        "title": "[security hardening] SQL injection in PrestoBaseEngineSpec.latest_sub_partition via broken field guard #41869",
+        "url": "https://github.com/apache/superset/issues/41869"
+      }
+    ]
+  },
   "2026-08-02_1001": {
     "slug": "superset",
     "title": "Superset: Administración y Mejoras",

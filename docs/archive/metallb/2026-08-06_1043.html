@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetalLB: Balanceo de Carga en K8s - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
+    </div>
+
+    <h1>MetalLB: Balanceo de Carga en K8s</h1>
+    <div class="meta">2026-08-06 1043 · MetalLB</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>MetalLB es una herramienta fundamental para los administradores de Kubernetes, ya que les permite asignar direcciones IP a servicios y balancear la carga de tráfico de red. Uno de los modos de operación más comunes es el modo L2, que utiliza la capa 2 de la pila de protocolos de red para realizar la asignación de direcciones IP. Para configurar MetalLB en modo L2, se puede utilizar el comando `kubectl apply -f metallb-l2.yaml`, donde el archivo `metallb-l2.yaml` contiene la configuración del balanceador de carga.</p>
+            
+        
+            
+        
+            
+            <p>Otro modo de operación importante es el modo BGP, que utiliza el protocolo de gateway de borde para anunciar las rutas de red. Para configurar MetalLB en modo BGP, se puede utilizar el comando `kubectl apply -f metallb-bgp.yaml`, donde el archivo `metallb-bgp.yaml` contiene la configuración del balanceador de carga. Es importante mencionar que, para utilizar el modo BGP, se requiere una configuración adicional en el router de borde.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la asignación de direcciones IP, MetalLB utiliza pools de IP para asignar direcciones a los servicios. Los pools de IP se pueden configurar utilizando el comando `kubectl apply -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de IP. Es importante mencionar que, para evitar conflictos de direcciones IP, se debe asegurar que los pools de IP no se superpongan.</p>
+            
+        
+            
+        
+            
+            <p>Para solucionar problemas con MetalLB, se puede utilizar el comando `kubectl logs -f metallb-speaker`, que muestra los registros del componente speaker de MetalLB. También se puede utilizar el comando `kubectl describe pod metallb-speaker`, que muestra la información detallada del pod que ejecuta el componente speaker.</p>
+            
+        
+            
+        
+            
+            <p>La integración de MetalLB con Kubernetes es fundamental para su funcionamiento. MetalLB se integra con Kubernetes a través de la API de Kubernetes, lo que le permite asignar direcciones IP a los servicios y balancear la carga de tráfico de red. Para asegurarse de que MetalLB esté funcionando correctamente, se debe verificar que la versión de Kubernetes sea compatible con MetalLB.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que MetalLB es un proyecto en constante evolución, y se están agregando nuevas características y mejoras continuamente. Por ejemplo, se ha agregado una nueva función llamada `preferredNodeSelectors`, que permite a los administradores expresar preferencias de nodos para la elección de líder en el modo L2.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/blob/main/design/cncf-sandbox-proposal.md" target="_blank">cncf-sandbox-proposal</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/metallb/metallb/blob/main/design/preferred-node-l2.md" target="_blank">preferred-node-l2</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/MicrosoftDocs/azure-stack-docs/blob/main/AKS-Arc/supported-kubernetes-versions.md" target="_blank">supported-kubernetes-versions</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-02_1001.html">&larr; 2026-08-02 1001</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,24 @@
 {
+  "2026-08-06_1043": {
+    "slug": "traefik",
+    "title": "Traefik: Routers y Middlewares",
+    "summary": "Traefik es una herramienta de proxy inverso y balanceo de carga que permite gestionar tráfico HTTP y TCP. En este artículo, se presentan las mejores prácticas para configurar routers y middlewares en Traefik.",
+    "content": "Traefik es una herramienta de proxy inverso y balanceo de carga que permite gestionar tráfico HTTP y TCP. Para configurar routers en Traefik, se puede utilizar el comando `traefikctl` con la opción `--router`. Por ejemplo, para crear un router que redirija el tráfico desde el puerto 80 al puerto 8080, se puede utilizar el siguiente comando: `traefikctl router add --router myrouter --rule 'Host:example.com' --service myservice:8080`.\n\nPara configurar middlewares en Traefik, se puede utilizar el comando `traefikctl` con la opción `--middleware`. Por ejemplo, para crear un middleware que agregue un encabezado de seguridad a las respuestas, se puede utilizar el siguiente comando: `traefikctl middleware add --middleware mymiddleware --header 'X-Frame-Options: DENY'`.\n\nEn cuanto a la seguridad, Traefik proporciona varias características para proteger los servicios expuestos. Por ejemplo, se puede utilizar el proveedor de Let's Encrypt para obtener certificados SSL/TLS gratuitos y configurar el protocolo HTTPS. Para hacer esto, se puede agregar la siguiente configuración a el archivo `traefik.yml`: `certificatesResolvers: { letsencrypt: { acme: { email: 'example@example.com', keyType: 'RSA4096' } } }`.\n\nAdemás, Traefik proporciona características de observabilidad para monitorear el tráfico y los servicios. Por ejemplo, se puede utilizar el comando `traefikctl` con la opción `--metrics` para obtener estadísticas sobre el tráfico. También se puede utilizar la API de Traefik para obtener información sobre los servicios y los routers.\n\nEn resumen, Traefik es una herramienta poderosa para gestionar tráfico HTTP y TCP, y proporciona varias características para configurar routers y middlewares de manera segura y escalable.\n\nPara obtener más información sobre Traefik y sus características, se puede consultar la documentación oficial de Traefik.\n\nEn cuanto a las novedades y cambios en Traefik, se han encontrado varias vulnerabilidades de seguridad en versiones anteriores de Traefik. Por ejemplo, se ha encontrado una vulnerabilidad de bypass de autenticación en el middleware de reemplazo de ruta. Para solucionar esto, se puede actualizar a la última versión de Traefik y configurar el middleware de autenticación de manera segura.",
+    "sources": [
+      {
+        "title": "Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-qq9q-x9w4-chhj"
+      },
+      {
+        "title": "Traefik CRD IngressRouteTCP ServersTransport Cross-Provider Namespace Bypass",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-42cj-m3vj-89wv"
+      },
+      {
+        "title": "Authentication Bypass via Path Traversal in ReplacePathRegex Middleware",
+        "url": "https://github.com/traefik/traefik/security/advisories/GHSA-cxjq-mrr5-89rv"
+      }
+    ]
+  },
   "2026-08-02_1001": {
     "slug": "traefik",
     "title": "Traefik: Seguridad y Configuración",

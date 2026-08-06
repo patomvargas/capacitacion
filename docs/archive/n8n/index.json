@@ -1,4 +1,24 @@
 {
+  "2026-08-06_1043": {
+    "slug": "n8n",
+    "title": "N8n: Integraciones y Workflows",
+    "summary": "N8n es una herramienta de integración y automatización de workflows que permite a los desarrolladores y administradores de sistemas crear flujos de trabajo personalizados. En este artículo, se presentan las características y capacidades de n8n, incluyendo nodos, workflows, credenciales, webhooks y self-hosting.",
+    "content": "N8n es una herramienta de código abierto que permite a los usuarios crear y gestionar workflows de manera visual. Los workflows se componen de nodos, que son bloques de funcionalidad que se pueden conectar para crear flujos de trabajo complejos. Los nodos pueden ser de diferentes tipos, como nodos de entrada, nodos de procesamiento y nodos de salida. \n   \n   Para crear un workflow en n8n, se puede utilizar la interfaz gráfica de usuario, que permite arrastrar y soltar nodos para crear el flujo de trabajo deseado. También se puede utilizar la línea de comandos para crear y gestionar workflows, utilizando comandos como `n8n start` y `n8n stop`. \n   \n   Una de las características más importantes de n8n es la capacidad de integrar con otras herramientas y servicios, como bases de datos, servicios de mensajería y servicios de almacenamiento en la nube. Esto se logra mediante la utilización de credenciales y webhooks, que permiten a los workflows interactuar con otros sistemas y servicios. \n   \n   En cuanto a la seguridad, n8n ofrece una variedad de características para proteger los workflows y los datos que se procesan. Esto incluye la utilización de credenciales y tokens de acceso para autenticar y autorizar a los usuarios, así como la capacidad de cifrar los datos en tránsito y en reposo. \n   \n   Finalmente, n8n también ofrece la capacidad de self-hosting, lo que permite a los usuarios instalar y ejecutar la herramienta en su propio servidor o infraestructura en la nube. Esto puede ser especialmente útil para organizaciones que requieren un alto nivel de control y seguridad sobre sus workflows y datos.",
+    "sources": [
+      {
+        "title": "Built-in Audit node returns HTTP 500 on n8n Cloud 2.32.6 #35234",
+        "url": "https://github.com/n8n-io/n8n/issues/35234"
+      },
+      {
+        "title": "n8n-nodes-langchain.lmlemonade.md",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md"
+      },
+      {
+        "title": "v20-migration-tool.md",
+        "url": "https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/v20-migration-tool.md"
+      }
+    ]
+  },
   "2026-08-02_1001": {
     "slug": "n8n",
     "title": "N8n: Automatización de Flujos de Trabajo",

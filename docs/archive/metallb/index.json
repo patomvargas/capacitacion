@@ -1,4 +1,24 @@
 {
+  "2026-08-06_1043": {
+    "slug": "metallb",
+    "title": "MetalLB: Balanceo de Carga en K8s",
+    "summary": "MetalLB es un balanceador de carga para Kubernetes que permite la asignación de direcciones IP a servicios. Ofrece diferentes modos de operación, como L2 y BGP.",
+    "content": "\nMetalLB es una herramienta fundamental para los administradores de Kubernetes, ya que les permite asignar direcciones IP a servicios y balancear la carga de tráfico de red. Uno de los modos de operación más comunes es el modo L2, que utiliza la capa 2 de la pila de protocolos de red para realizar la asignación de direcciones IP. Para configurar MetalLB en modo L2, se puede utilizar el comando `kubectl apply -f metallb-l2.yaml`, donde el archivo `metallb-l2.yaml` contiene la configuración del balanceador de carga.\n\nOtro modo de operación importante es el modo BGP, que utiliza el protocolo de gateway de borde para anunciar las rutas de red. Para configurar MetalLB en modo BGP, se puede utilizar el comando `kubectl apply -f metallb-bgp.yaml`, donde el archivo `metallb-bgp.yaml` contiene la configuración del balanceador de carga. Es importante mencionar que, para utilizar el modo BGP, se requiere una configuración adicional en el router de borde.\n\nEn cuanto a la asignación de direcciones IP, MetalLB utiliza pools de IP para asignar direcciones a los servicios. Los pools de IP se pueden configurar utilizando el comando `kubectl apply -f ip-pool.yaml`, donde el archivo `ip-pool.yaml` contiene la configuración del pool de IP. Es importante mencionar que, para evitar conflictos de direcciones IP, se debe asegurar que los pools de IP no se superpongan.\n\nPara solucionar problemas con MetalLB, se puede utilizar el comando `kubectl logs -f metallb-speaker`, que muestra los registros del componente speaker de MetalLB. También se puede utilizar el comando `kubectl describe pod metallb-speaker`, que muestra la información detallada del pod que ejecuta el componente speaker.\n\nLa integración de MetalLB con Kubernetes es fundamental para su funcionamiento. MetalLB se integra con Kubernetes a través de la API de Kubernetes, lo que le permite asignar direcciones IP a los servicios y balancear la carga de tráfico de red. Para asegurarse de que MetalLB esté funcionando correctamente, se debe verificar que la versión de Kubernetes sea compatible con MetalLB.\n\nFinalmente, es importante mencionar que MetalLB es un proyecto en constante evolución, y se están agregando nuevas características y mejoras continuamente. Por ejemplo, se ha agregado una nueva función llamada `preferredNodeSelectors`, que permite a los administradores expresar preferencias de nodos para la elección de líder en el modo L2.\n\n  ",
+    "sources": [
+      {
+        "title": "cncf-sandbox-proposal",
+        "url": "https://github.com/metallb/metallb/blob/main/design/cncf-sandbox-proposal.md"
+      },
+      {
+        "title": "preferred-node-l2",
+        "url": "https://github.com/metallb/metallb/blob/main/design/preferred-node-l2.md"
+      },
+      {
+        "title": "supported-kubernetes-versions",
+        "url": "https://github.com/MicrosoftDocs/azure-stack-docs/blob/main/AKS-Arc/supported-kubernetes-versions.md"
+      }
+    ]
+  },
   "2026-08-02_1001": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en Kubernetes",

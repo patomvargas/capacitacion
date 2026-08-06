@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/traefik.xml</id>
   <title>Traefik - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-05T10:41:58.262642+00:00</updated>
+  <updated>2026-08-06T10:44:46.130483+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/traefik/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/traefik.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -455,5 +455,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-08-02_1001.html"/>
     <summary>Traefik es un proxy inverso y balanceador de carga que ofrece una gran flexibilidad y seguridad. En este artículo, se discuten las últimas novedades y mejores prácticas para configurar y proteger Traefik.</summary>
     <published>2026-08-02T10:01:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/traefik/2026-08-06_1043.html</id>
+    <title>Traefik: Routers y Middlewares</title>
+    <updated>2026-08-06T10:43:00+00:00</updated>
+    <content type="html">&lt;p&gt;Traefik es una herramienta de proxy inverso y balanceo de carga que permite gestionar tráfico HTTP y TCP. Para configurar routers en Traefik, se puede utilizar el comando &lt;code&gt;traefikctl&lt;/code&gt; con la opción &lt;code&gt;--router&lt;/code&gt;. Por ejemplo, para crear un router que redirija el tráfico desde el puerto 80 al puerto 8080, se puede utilizar el siguiente comando: &lt;code&gt;traefikctl router add --router myrouter --rule 'Host:example.com' --service myservice:8080&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para configurar middlewares en Traefik, se puede utilizar el comando &lt;code&gt;traefikctl&lt;/code&gt; con la opción &lt;code&gt;--middleware&lt;/code&gt;. Por ejemplo, para crear un middleware que agregue un encabezado de seguridad a las respuestas, se puede utilizar el siguiente comando: &lt;code&gt;traefikctl middleware add --middleware mymiddleware --header 'X-Frame-Options: DENY'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Traefik proporciona varias características para proteger los servicios expuestos. Por ejemplo, se puede utilizar el proveedor de Let's Encrypt para obtener certificados SSL/TLS gratuitos y configurar el protocolo HTTPS. Para hacer esto, se puede agregar la siguiente configuración a el archivo &lt;code&gt;traefik.yml&lt;/code&gt;: &lt;code&gt;certificatesResolvers: { letsencrypt: { acme: { email: 'example@example.com', keyType: 'RSA4096' } } }&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, Traefik proporciona características de observabilidad para monitorear el tráfico y los servicios. Por ejemplo, se puede utilizar el comando &lt;code&gt;traefikctl&lt;/code&gt; con la opción &lt;code&gt;--metrics&lt;/code&gt; para obtener estadísticas sobre el tráfico. También se puede utilizar la API de Traefik para obtener información sobre los servicios y los routers.&lt;/p&gt;
+&lt;p&gt;En resumen, Traefik es una herramienta poderosa para gestionar tráfico HTTP y TCP, y proporciona varias características para configurar routers y middlewares de manera segura y escalable.&lt;/p&gt;
+&lt;p&gt;Para obtener más información sobre Traefik y sus características, se puede consultar la documentación oficial de Traefik.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y cambios en Traefik, se han encontrado varias vulnerabilidades de seguridad en versiones anteriores de Traefik. Por ejemplo, se ha encontrado una vulnerabilidad de bypass de autenticación en el middleware de reemplazo de ruta. Para solucionar esto, se puede actualizar a la última versión de Traefik y configurar el middleware de autenticación de manera segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-qq9q-x9w4-chhj"&gt;Traefik Gateway API HTTPRoute BackendRef ExtensionRef Namespace Confusion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-42cj-m3vj-89wv"&gt;Traefik CRD IngressRouteTCP ServersTransport Cross-Provider Namespace Bypass&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/traefik/traefik/security/advisories/GHSA-cxjq-mrr5-89rv"&gt;Authentication Bypass via Path Traversal in ReplacePathRegex Middleware&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/traefik/2026-08-06_1043.html"/>
+    <summary>Traefik es una herramienta de proxy inverso y balanceo de carga que permite gestionar tráfico HTTP y TCP. En este artículo, se presentan las mejores prácticas para configurar routers y middlewares en Traefik.</summary>
+    <published>2026-08-06T10:43:00+00:00</published>
   </entry>
 </feed>
