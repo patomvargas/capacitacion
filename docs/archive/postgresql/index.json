@@ -1,4 +1,32 @@
 {
+  "2026-08-07_0904": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo mejorar la eficiencia de tus bases de datos.",
+    "content": "\nLa optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de lograr esto es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más eficiente, reduciendo el tiempo de respuesta de las consultas. Puedes crear un índice utilizando el comando `CREATE INDEX` seguido del nombre del índice y la columna que deseas indexar.\n\nOtra técnica importante es la replicación. La replicación permite mantener una copia exacta de tus datos en un servidor secundario, lo que te permite recuperar tus datos en caso de una falla del servidor principal. Puedes configurar la replicación en PostgreSQL utilizando el comando `pg_basebackup` para crear una copia de la base de datos y luego configurar el servidor secundario para que se sincronice con el servidor principal.\n\nLa copia de seguridad es otro aspecto fundamental de la optimización de PostgreSQL. Puedes realizar copias de seguridad utilizando el comando `pg_dump` para crear un archivo de copia de seguridad de la base de datos. También puedes utilizar herramientas como `pg_cron` para programar copias de seguridad automáticas. Además, es importante mencionar que la versión 14 de PostgreSQL dejará de recibir actualizaciones el 12 de noviembre de 2026, por lo que se recomienda actualizar a una versión más reciente.\n\nLa extensión `pg_stat` es una herramienta útil para monitorear el rendimiento de PostgreSQL. Puedes utilizar comandos como `pg_stat_activity` para ver las consultas que están siendo ejecutadas actualmente y `pg_stat_user_tables` para ver las estadísticas de las tablas. También puedes utilizar herramientas como `pgBadger` para analizar los logs de PostgreSQL y identificar posibles problemas de rendimiento.\n\nFinalmente, es importante mencionar que existen varias herramientas y extensiones disponibles para PostgreSQL que pueden ayudar a mejorar el rendimiento y la funcionalidad. Por ejemplo, la extensión `pg_ivm` proporciona funciones de indexación y búsqueda avanzadas, mientras que la herramienta `TimescaleDB` permite crear bases de datos de serie temporal escalables y de alto rendimiento.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y copias de seguridad, así como el uso de herramientas y extensiones especializadas. Al seguir estas recomendaciones, puedes mejorar significativamente el rendimiento y la escalabilidad de tus aplicaciones que utilizan PostgreSQL.\n",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "Release Notes for Azure Database for PostgreSQL flexible server - Azure Database for PostgreSQL | Microsoft Learn",
+        "url": "https://learn.microsoft.com/en-us/azure/postgresql/release-notes/release-notes"
+      },
+      {
+        "title": "PostgreSQL: News Archive",
+        "url": "https://www.postgresql.org/about/newsarchive/"
+      },
+      {
+        "title": "Cloud SQL for PostgreSQL release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/sql/docs/postgres/release-notes"
+      }
+    ]
+  },
   "2026-08-03_1130": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Optimización de PostgreSQL - PostgreSQL</title>
-    <link rel="alternate" type="application/atom+xml" title="PostgreSQL" href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml">
+    <title>Ansible: Mejoras y Novedades - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,11 +54,11 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/">PostgreSQL</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-08-03 1130 · PostgreSQL</div>
+    <h1>Ansible: Mejoras y Novedades</h1>
+    <div class="meta">2026-08-07 0904 · Ansible</div>
 
     <div class="content">
         
@@ -66,37 +66,39 @@
             
         
             
-            <p>La optimización de PostgreSQL es crucial para mejorar el rendimiento y la eficiencia de la base de datos. Una de las formas de lograr esto es mediante la indexación. Los índices permiten a PostgreSQL acceder a los datos de manera más rápida y eficiente. Para crear un índice, se puede utilizar el comando `CREATE INDEX`. Por ejemplo: `CREATE INDEX idx_nombre ON tabla (nombre);`.</p>
+            <p>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores automatizar tareas repetitivas y complejas. En las últimas versiones, se han incluido varias mejoras y novedades, como la versión 14.2.0 de Ansible y la versión 2.19.12rc1 de ansible-core.</p>
             
         
             
         
             
-            <p>Otra forma de optimizar el rendimiento es mediante la replicación. La replicación permite a PostgreSQL mantener una copia exacta de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Para configurar la replicación, se puede utilizar el comando `pg_basebackup`. Por ejemplo: `pg_basebackup -h localhost -U postgres -D /var/lib/postgresql/13/main -Ft -z`.</p>
+            <p>Una de las novedades más destacadas es la inclusión de nuevos módulos y plugins en la versión 14.2.0 de Ansible. Por ejemplo, se ha agregado el módulo `ansible.builtin.uri` que permite realizar solicitudes HTTP y HTTPS de manera más segura. Para utilizar este módulo, se puede ejecutar el comando `ansible -m uri -a 'url=https://example.com'`.</p>
             
         
             
         
             
-            <p>La configuración de PostgreSQL también es fundamental para optimizar el rendimiento. El archivo de configuración `postgresql.conf` permite ajustar parámetros como la cantidad de memoria que se utiliza para el caché de datos. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria que se utiliza para el caché de datos. `shared_buffers = 512MB`.</p>
+            <p>La versión 2.19.12rc1 de ansible-core también incluye varias mejoras, como la corrección de errores y la mejora de la compatibilidad con diferentes sistemas operativos. Para instalar esta versión, se puede ejecutar el comando `pip install ansible-core==2.19.12rc1`.</p>
             
         
             
         
             
-            <p>Además, es importante monitorear el rendimiento de PostgreSQL para identificar posibles problemas. La herramienta `pg_stat` permite monitorear el rendimiento de la base de datos y identificar áreas de mejora. Por ejemplo, se puede utilizar el comando `pg_stat_activity` para monitorear la actividad de la base de datos.</p>
+            <p>En cuanto a la configuración de Ansible, es importante mencionar la importancia de utilizar un archivo de inventario (`hosts.ini` o `hosts.yml`) para definir los hosts y grupos de hosts que se van a administrar. Por ejemplo, se puede definir un grupo de hosts llamado `servidores` con el comando `ansible -i hosts.ini servidores -m ping`.</p>
             
         
             
         
             
-            <p>La realización de copias de seguridad es también fundamental para proteger los datos. Se puede utilizar el comando `pg_dump` para realizar una copia de seguridad de la base de datos. Por ejemplo: `pg_dump -U postgres -d nombre_de_la_base_de_datos > backup.sql`.</p>
+            <p>Es importante destacar que Ansible también se puede integrar con otras herramientas y plataformas, como AWX/Tower, para proporcionar una solución de automatización de infraestructura más completa. Para más información, se puede consultar la documentación oficial de Ansible.</p>
             
         
             
         
             
-            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y configuración, así como la monitorización del rendimiento y la realización de copias de seguridad regulares.</p>
+            <p>En resumen, Ansible sigue evolucionando y mejorando, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.</p>
+            
+        
             
         
             
@@ -109,17 +111,22 @@
         <ul>
             
             <li>
-                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
+                <a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html" target="_blank">Roadmaps — Ansible Community Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
+                <a href="https://forum.ansible.com/t/the-bullhorn-234/46136" target="_blank">The Bullhorn #234 - Newsletter - Ansible</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@mydbopsdatabasemanagement/postgresql-performance-tuning-best-practices-for-better-database-speed-148cae27ece0" target="_blank">PostgreSQL Performance Tuning: Best Practices for Better Database Speed</a>
+                <a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-2-0/46049" target="_blank">Release announcement: Ansible community package 14.2.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://forum.ansible.com/t/new-release-ansible-core-v2-19-12rc1/46125" target="_blank">New Release: ansible-core v2.19.12rc1 - Ecosystem Releases</a>
                 
             </li>
             
@@ -130,12 +137,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-07-30_1029.html">&larr; 2026-07-30 1029</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-03_1130.html">&larr; 2026-08-03 1130</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-07_0904.html">2026-08-07 0904 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,28 @@
 {
+  "2026-08-07_0904": {
+    "slug": "ansible",
+    "title": "Ansible: Mejoras y Novedades",
+    "summary": "Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las últimas novedades y mejoras en Ansible, incluyendo la versión 14.2.0 y la versión 2.19.12rc1 de ansible-core.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores automatizar tareas repetitivas y complejas. En las últimas versiones, se han incluido varias mejoras y novedades, como la versión 14.2.0 de Ansible y la versión 2.19.12rc1 de ansible-core.\n\nUna de las novedades más destacadas es la inclusión de nuevos módulos y plugins en la versión 14.2.0 de Ansible. Por ejemplo, se ha agregado el módulo `ansible.builtin.uri` que permite realizar solicitudes HTTP y HTTPS de manera más segura. Para utilizar este módulo, se puede ejecutar el comando `ansible -m uri -a 'url=https://example.com'`.\n\nLa versión 2.19.12rc1 de ansible-core también incluye varias mejoras, como la corrección de errores y la mejora de la compatibilidad con diferentes sistemas operativos. Para instalar esta versión, se puede ejecutar el comando `pip install ansible-core==2.19.12rc1`.\n\nEn cuanto a la configuración de Ansible, es importante mencionar la importancia de utilizar un archivo de inventario (`hosts.ini` o `hosts.yml`) para definir los hosts y grupos de hosts que se van a administrar. Por ejemplo, se puede definir un grupo de hosts llamado `servidores` con el comando `ansible -i hosts.ini servidores -m ping`.\n\nEs importante destacar que Ansible también se puede integrar con otras herramientas y plataformas, como AWX/Tower, para proporcionar una solución de automatización de infraestructura más completa. Para más información, se puede consultar la documentación oficial de Ansible.\n\nEn resumen, Ansible sigue evolucionando y mejorando, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.\n\n  ",
+    "sources": [
+      {
+        "title": "Roadmaps — Ansible Community Documentation",
+        "url": "https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"
+      },
+      {
+        "title": "The Bullhorn #234 - Newsletter - Ansible",
+        "url": "https://forum.ansible.com/t/the-bullhorn-234/46136"
+      },
+      {
+        "title": "Release announcement: Ansible community package 14.2.0",
+        "url": "https://forum.ansible.com/t/release-announcement-ansible-community-package-14-2-0/46049"
+      },
+      {
+        "title": "New Release: ansible-core v2.19.12rc1 - Ecosystem Releases",
+        "url": "https://forum.ansible.com/t/new-release-ansible-core-v2-19-12rc1/46125"
+      }
+    ]
+  },
   "2026-08-03_1130": {
     "slug": "ansible",
     "title": "Mejores prácticas con Ansible",

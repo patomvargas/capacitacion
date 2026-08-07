@@ -58,13 +58,13 @@
     </div>
 
     <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-08-03 1130 · Git</div>
+    <div class="meta">2026-08-07 0904 · Git</div>
 
     <div class="content">
         
         
             
-            <p>Git es un sistema de control de versiones distribuido que se utiliza ampliamente en la industria del software. Una de las características más poderosas de Git es su capacidad para manejar diferentes workflows y flujos de trabajo. Por ejemplo, se puede utilizar `git worktree` para crear múltiples directorios de trabajo a partir de un solo repositorio, lo que permite a los desarrolladores trabajar en diferentes características o ramas de manera simultánea.</p>
+            <p>Git es una herramienta fundamental en el desarrollo de software, y su uso efectivo puede mejorar significativamente la productividad y la colaboración en equipo. Una de las mejores prácticas es utilizar `git flow` para gestionar los workflows de desarrollo, lo que permite una organización clara y eficiente de las ramas y los cambios en el código.</p>
             
         
             
@@ -72,7 +72,7 @@
             
         
             
-            <p>Para automatizar tareas y procesos, Git proporciona hooks, que son scripts que se ejecutan en diferentes momentos del ciclo de vida de un commit. Por ejemplo, se puede utilizar un hook `pre-commit` para verificar que el código cumpla con ciertos estándares de calidad antes de que se realice el commit. Para configurar un hook, se puede utilizar el comando `git config --local core.hooksPath .githooks`, y luego crear un script en el directorio `.githooks` con el nombre del hook deseado.</p>
+            <p>Para empezar a utilizar `git flow`, es necesario instalarlo en el sistema y configurarlo en el proyecto. Esto se puede hacer con el comando `git flow init`. Luego, se puede crear una nueva rama de características con `git flow feature start <nombre_de_la_caracteristica>`, y cuando se complete la característica, se puede fusionar con la rama principal con `git flow feature finish <nombre_de_la_caracteristica>`.</p>
             
         
             
@@ -80,7 +80,7 @@
             
         
             
-            <p>Otra característica avanzada de Git es el comando `git rebase`, que permite reorganizar y combinar commits de manera más eficiente. Por ejemplo, se puede utilizar `git rebase -i` para interactuar con los commits y decidir qué commits se deben combinar o reorganizar. También se puede utilizar `git bisect` para encontrar el commit que introdujo un bug o problema en el código. Este comando utiliza una búsqueda binaria para encontrar el commit problemático, lo que puede ahorrar mucho tiempo y esfuerzo.</p>
+            <p>Otra característica avanzada de Git es el uso de `git rebase` para reorganizar los commits y mantener un historial de cambios limpio y coherente. Por ejemplo, si se han realizado varios commits en una rama de características y se desea fusionar con la rama principal, se puede utilizar `git rebase -i <hash_del_commit_inicial>` para reorganizar los commits y eliminar cualquier commit innecesario.</p>
             
         
             
@@ -88,7 +88,7 @@
             
         
             
-            <p>Para aprovechar al máximo estas características, es importante seguir algunas mejores prácticas. Por ejemplo, es recomendable utilizar ramas para trabajar en diferentes características o tareas, y luego combinarlas en la rama principal cuando estén listas. También es importante utilizar mensajes de commit claros y descriptivos, y evitar hacer commits que contengan múltiples cambios o características.</p>
+            <p>Además, Git proporciona una herramienta llamada `git bisect` para identificar rápidamente el commit que introduce un bug o problema en el código. Esto se puede hacer con el comando `git bisect start` y luego `git bisect bad` o `git bisect good` para indicar si el commit actual es bueno o malo.</p>
             
         
             
@@ -96,39 +96,28 @@
             
         
             
-            <p>En resumen, Git es una herramienta poderosa que ofrece muchas características avanzadas para ayudar a los desarrolladores a trabajar de manera más eficiente y efectiva. Al seguir algunas mejores prácticas y utilizar características como workflows, hooks, rebase y bisect, los desarrolladores pueden aprovechar al máximo las capacidades de Git y producir código de alta calidad.</p>
+            <p>Finalmente, es importante mencionar la importancia de utilizar `git worktrees` para gestionar múltiples ramas y proyectos de forma eficiente. Con `git worktree add <nombre_del_proyecto> <rama>`, se puede crear un nuevo trabajo con una rama específica y trabajar en él de forma independiente al proyecto principal.</p>
+            
+        
+            
+        
+            
+        
+            
+            <p>En resumen, Git ofrece una variedad de características y herramientas avanzadas para mejorar la productividad y la colaboración en proyectos de desarrollo de software. Al utilizar `git flow`, `git rebase`, `git bisect` y `git worktrees`, se puede mantener un historial de cambios limpio y coherente, y trabajar de forma eficiente en múltiples proyectos y ramas.</p>
             
         
     </div>
 
-    
-    <div class="sources">
-        <h3>Fuentes</h3>
-        <ul>
-            
-            <li>
-                <a href="https://git-scm.com/?pubDate=20260725" target="_blank">Git</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.blog/changelog/" target="_blank">GitHub Changelog</a>
-                
-            </li>
-            
-        </ul>
-    </div>
     
 
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-07-30_1029.html">&larr; 2026-07-30 1029</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-03_1130.html">&larr; 2026-08-03 1130</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-07_0904.html">2026-08-07 0904 &rarr;</a>
             
         </div>
     </div>

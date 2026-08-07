@@ -1,4 +1,32 @@
 {
+  "2026-08-07_0904": {
+    "slug": "docker",
+    "title": "Mejoras en Docker",
+    "summary": "Docker ha anunciado mejoras en su plataforma, incluyendo la versión 2 de la especificación de kits y mejoras en la seguridad. Estas mejoras permiten a los desarrolladores crear entornos de desarrollo más productivos y seguros.",
+    "content": "La versión 2 de la especificación de kits de Docker permite a los desarrolladores crear kits más personalizados y seguros. Esto se logra mediante la definición de un esquema claro para la configuración de los kits, que incluye la definición de permisos, instrucciones de agente y credenciales. Para utilizar esta nueva versión, los desarrolladores deben agregar la línea `schemaVersion: \"2\"` en su archivo de configuración de kit.\n\n \nLa seguridad es otro aspecto importante que ha sido mejorado en Docker. La plataforma ahora incluye características como el aislamiento de contenedores y la aplicación de políticas de seguridad en tiempo de ejecución. Esto se logra mediante el uso de herramientas como `seccomp` y `AppArmor`, que permiten restringir las acciones que pueden realizar los contenedores. Por ejemplo, se puede utilizar el comando `docker run -it --security-opt seccomp:/path/to/seccomp/profile.json` para ejecutar un contenedor con un perfil de seguridad personalizado.\n\n \nAdemás, Docker ha anunciado mejoras en su plataforma de sandbox, que permite a los desarrolladores crear entornos de desarrollo aislados y seguros. La plataforma de sandbox de Docker incluye características como la creación de kits personalizados y la aplicación de políticas de seguridad en tiempo de ejecución. Para utilizar la plataforma de sandbox, los desarrolladores deben instalar el paquete `docker-sandbox` y luego ejecutar el comando `docker sandbox create` para crear un nuevo entorno de desarrollo.\n\n \nLa versión 0.38.0 de Docker Sandboxes incluye una nueva versión de la especificación de kits, que permite a los desarrolladores crear kits más personalizados y seguros. Esta versión también incluye mejoras en la seguridad, como la aplicación de políticas de seguridad en tiempo de ejecución. Para obtener más información sobre esta versión, los desarrolladores pueden consultar el archivo `RELEASE-NOTES` en el repositorio de GitHub de Docker Sandboxes.\n\n \nEn resumen, las mejoras en Docker permiten a los desarrolladores crear entornos de desarrollo más productivos y seguros. La versión 2 de la especificación de kits y las mejoras en la seguridad son solo algunos de los cambios que han sido anunciados. Los desarrolladores pueden obtener más información sobre estas mejoras en el blog de Docker y en el repositorio de GitHub de Docker Sandboxes.\n\n \nPara mantenerse actualizado sobre las últimas novedades y mejoras en Docker, los desarrolladores pueden consultar el blog de Docker y el repositorio de GitHub de Docker Sandboxes. Allí podrán encontrar información sobre las últimas versiones y características, así como tutoriales y ejemplos para ayudarles a aprovechar al máximo la plataforma.",
+    "sources": [
+      {
+        "title": "Docker Blog",
+        "url": "https://www.docker.com/blog/"
+      },
+      {
+        "title": "Docker Sandboxes release notes",
+        "url": "https://docs.docker.com/ai/sandboxes/release-notes/"
+      },
+      {
+        "title": "Milestones · moby/moby · GitHub",
+        "url": "https://github.com/moby/moby/milestones"
+      },
+      {
+        "title": "Products Archives | Docker",
+        "url": "https://www.docker.com/blog/category/products/"
+      },
+      {
+        "title": "Engineering Archives | Docker",
+        "url": "https://www.docker.com/blog/category/engineering/"
+      }
+    ]
+  },
   "2026-08-03_1130": {
     "slug": "docker",
     "title": "Docker: Mejores Practicas y Novedades",

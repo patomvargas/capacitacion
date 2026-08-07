@@ -1,4 +1,28 @@
 {
+  "2026-08-07_0904": {
+    "slug": "terraform",
+    "title": "Mejoras en Terraform",
+    "summary": "Terraform ha incorporado mejoras en su extensión para VSCode y ha solucionado problemas con módulos y proveedores. Además, se han agregado nuevas características para mejorar la gestión de estados y workspaces.",
+    "content": "\nLa extensión de Terraform para VSCode ha sido actualizada y ahora se integra con un nuevo servidor de lenguaje diseñado para crear una integración estable con Terraform a través de APIs públicas. Esto se logra mediante el comando `terraform init` y la configuración de la extensión en el archivo `settings.json`.\n\nUn problema común con los módulos de Terraform es que el comando `terraform modules -json` devuelve la ruta de origen incorrecta para los módulos locales anidados. Esto se está solucionando en la issue #38872 del repositorio de Terraform en GitHub. Mientras tanto, se puede utilizar el comando `terraform state show` para obtener la ruta de origen correcta de los módulos.\n\nEn cuanto a la gestión de estados, Terraform ha incorporado mejoras en su sistema de workspaces. Ahora se puede utilizar el comando `terraform workspace` para crear y gestionar workspaces de manera más eficiente. Por ejemplo, se puede crear un nuevo workspace con el comando `terraform workspace new mi-workspace` y luego seleccionarlo con `terraform workspace select mi-workspace`.\n\nAdemás, se han agregado nuevas características para mejorar la gestión de proveedores. Por ejemplo, se puede utilizar el comando `terraform provider` para instalar y configurar proveedores de manera más sencilla. También se ha agregado soporte para esperar a que el endpoint de SCM (Kudu) esté listo antes de la implementación en azurerm_linux_function_app.\n\nEn resumen, Terraform ha incorporado mejoras significativas en su extensión para VSCode, gestión de módulos y proveedores, y workspaces. Estas mejoras permiten a los desarrolladores y administradores de sistemas trabajar de manera más eficiente y segura con Terraform.\n\nFinalmente, es importante mencionar que se han detectado vulnerabilidades de seguridad en algunas dependencias de Terraform, como la vulnerabilidad de bypass de características de seguridad en .NET. Es importante actualizar las dependencias y seguir las mejores prácticas de seguridad para evitar problemas.",
+    "sources": [
+      {
+        "title": "CHANGELOG.md",
+        "url": "https://github.com/hashicorp/vscode-terraform/blob/main/CHANGELOG.md"
+      },
+      {
+        "title": "terraform modules -json returns incorrect source path to nested local modules #38872",
+        "url": "https://github.com/hashicorp/terraform/issues/38872"
+      },
+      {
+        "title": "Microsoft Security Advisory CVE-2026-47304 | .NET Security Feature Bypass Vulnerability #412",
+        "url": "https://github.com/dotnet/announcements/issues/412"
+      },
+      {
+        "title": "Support for waiting on SCM (Kudu) endpoint readiness before deployment on azurerm_linux_function_app #32889",
+        "url": "https://github.com/hashicorp/terraform-provider-azurerm/issues/32889"
+      }
+    ]
+  },
   "2026-07-30_1029": {
     "slug": "terraform",
     "title": "Terraform: Mejoras y Novedades",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-06T10:44:46.145137+00:00</updated>
+  <updated>2026-08-07T09:05:02.528697+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -752,5 +752,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-03_1130.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores implementar configuraciones y despliegues de manera eficiente. En este artículo, se presentan algunas mejores prácticas para trabajar con Ansible, incluyendo el uso de playbooks, roles y colecciones.</summary>
     <published>2026-08-03T11:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-07_0904.html</id>
+    <title>Ansible: Mejoras y Novedades</title>
+    <updated>2026-08-07T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura que permite a los administradores de sistemas y desarrolladores automatizar tareas repetitivas y complejas. En las últimas versiones, se han incluido varias mejoras y novedades, como la versión 14.2.0 de Ansible y la versión 2.19.12rc1 de ansible-core.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la inclusión de nuevos módulos y plugins en la versión 14.2.0 de Ansible. Por ejemplo, se ha agregado el módulo &lt;code&gt;ansible.builtin.uri&lt;/code&gt; que permite realizar solicitudes HTTP y HTTPS de manera más segura. Para utilizar este módulo, se puede ejecutar el comando &lt;code&gt;ansible -m uri -a 'url=https://example.com'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 2.19.12rc1 de ansible-core también incluye varias mejoras, como la corrección de errores y la mejora de la compatibilidad con diferentes sistemas operativos. Para instalar esta versión, se puede ejecutar el comando &lt;code&gt;pip install ansible-core==2.19.12rc1&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Ansible, es importante mencionar la importancia de utilizar un archivo de inventario (&lt;code&gt;hosts.ini&lt;/code&gt; o &lt;code&gt;hosts.yml&lt;/code&gt;) para definir los hosts y grupos de hosts que se van a administrar. Por ejemplo, se puede definir un grupo de hosts llamado &lt;code&gt;servidores&lt;/code&gt; con el comando &lt;code&gt;ansible -i hosts.ini servidores -m ping&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Es importante destacar que Ansible también se puede integrar con otras herramientas y plataformas, como AWX/Tower, para proporcionar una solución de automatización de infraestructura más completa. Para más información, se puede consultar la documentación oficial de Ansible.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible sigue evolucionando y mejorando, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/projects/ansible/latest/roadmap/index.html"&gt;Roadmaps — Ansible Community Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/the-bullhorn-234/46136"&gt;The Bullhorn #234 - Newsletter - Ansible&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/release-announcement-ansible-community-package-14-2-0/46049"&gt;Release announcement: Ansible community package 14.2.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://forum.ansible.com/t/new-release-ansible-core-v2-19-12rc1/46125"&gt;New Release: ansible-core v2.19.12rc1 - Ecosystem Releases&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-07_0904.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las últimas novedades y mejoras en Ansible, incluyendo la versión 14.2.0 y la versión 2.19.12rc1 de ansible-core.</summary>
+    <published>2026-08-07T09:04:00+00:00</published>
   </entry>
 </feed>

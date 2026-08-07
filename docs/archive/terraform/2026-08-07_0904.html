@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Terraform: Mejoras y Novedades - Terraform</title>
+    <title>Mejoras en Terraform - Terraform</title>
     <link rel="alternate" type="application/atom+xml" title="Terraform" href="https://patomvargas.github.io/capacitacion/feeds/terraform.xml">
     <style>
         :root {
@@ -57,8 +57,8 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/terraform/">Terraform</a>
     </div>
 
-    <h1>Terraform: Mejoras y Novedades</h1>
-    <div class="meta">2026-07-30 1029 · Terraform</div>
+    <h1>Mejoras en Terraform</h1>
+    <div class="meta">2026-08-07 0904 · Terraform</div>
 
     <div class="content">
         
@@ -66,37 +66,37 @@
             
         
             
-            <p>Terraform es una herramienta de infraestructura como código que permite gestionar y provisionar recursos de manera segura y predecible. En la versión más reciente, se ha agregado soporte para Terraform Stack y Deployment files, lo que proporciona una forma más inteligente de completar bloques y atributos en estos archivos. Esto se logra mediante el comando `terraform init` y la configuración de los archivos `main.tf` y `variables.tf`.</p>
+            <p>La extensión de Terraform para VSCode ha sido actualizada y ahora se integra con un nuevo servidor de lenguaje diseñado para crear una integración estable con Terraform a través de APIs públicas. Esto se logra mediante el comando `terraform init` y la configuración de la extensión en el archivo `settings.json`.</p>
             
         
             
         
             
-            <p>Una de las novedades más destacadas es la capacidad de almacenar datos privados planificados para proveedores, lo que permite preservar el estado específico del proveedor a lo largo del plan y la aplicación. Esto se puede lograr mediante el comando `terraform plan` y la configuración de los archivos `provider.tf` y `backend.tf`. Además, se han agregado mejoras en la gestión de estado, lo que permite una mayor flexibilidad y control sobre la infraestructura.</p>
+            <p>Un problema común con los módulos de Terraform es que el comando `terraform modules -json` devuelve la ruta de origen incorrecta para los módulos locales anidados. Esto se está solucionando en la issue #38872 del repositorio de Terraform en GitHub. Mientras tanto, se puede utilizar el comando `terraform state show` para obtener la ruta de origen correcta de los módulos.</p>
             
         
             
         
             
-            <p>En cuanto a la gestión de módulos, Terraform proporciona una forma de reutilizar y compartir código mediante la creación de módulos. Un módulo es un conjunto de archivos de configuración que se pueden utilizar para provisionar una parte específica de la infraestructura. Los módulos se pueden crear y compartir mediante el comando `terraform module` y la configuración de los archivos `module.tf` y `outputs.tf`.</p>
+            <p>En cuanto a la gestión de estados, Terraform ha incorporado mejoras en su sistema de workspaces. Ahora se puede utilizar el comando `terraform workspace` para crear y gestionar workspaces de manera más eficiente. Por ejemplo, se puede crear un nuevo workspace con el comando `terraform workspace new mi-workspace` y luego seleccionarlo con `terraform workspace select mi-workspace`.</p>
             
         
             
         
             
-            <p>La gestión de espacios de trabajo es otra característica importante de Terraform. Un espacio de trabajo es una forma de organizar y gestionar la infraestructura de manera independiente. Los espacios de trabajo se pueden crear y gestionar mediante el comando `terraform workspace` y la configuración de los archivos `workspace.tf` y `terraform.tfstate`.</p>
+            <p>Además, se han agregado nuevas características para mejorar la gestión de proveedores. Por ejemplo, se puede utilizar el comando `terraform provider` para instalar y configurar proveedores de manera más sencilla. También se ha agregado soporte para esperar a que el endpoint de SCM (Kudu) esté listo antes de la implementación en azurerm_linux_function_app.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que Terraform proporciona una forma de importar y mover bloques de configuración, lo que permite una mayor flexibilidad y control sobre la infraestructura. Esto se puede lograr mediante el comando `terraform import` y la configuración de los archivos `main.tf` y `terraform.tfstate`.</p>
+            <p>En resumen, Terraform ha incorporado mejoras significativas en su extensión para VSCode, gestión de módulos y proveedores, y workspaces. Estas mejoras permiten a los desarrolladores y administradores de sistemas trabajar de manera más eficiente y segura con Terraform.</p>
             
         
             
         
             
-            <p>En resumen, Terraform es una herramienta poderosa y flexible que permite gestionar y provisionar infraestructura de manera segura y predecible. Con las últimas novedades y mejoras, Terraform se ha convertido en una herramienta aún más valiosa para los equipos de DevOps y sysadmins.</p>
+            <p>Finalmente, es importante mencionar que se han detectado vulnerabilidades de seguridad en algunas dependencias de Terraform, como la vulnerabilidad de bypass de características de seguridad en .NET. Es importante actualizar las dependencias y seguir las mejores prácticas de seguridad para evitar problemas.</p>
             
         
     </div>
@@ -107,17 +107,22 @@
         <ul>
             
             <li>
-                <a href="https://github.com/hashicorp/terraform-ls/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a>
+                <a href="https://github.com/hashicorp/vscode-terraform/blob/main/CHANGELOG.md" target="_blank">CHANGELOG.md</a>
                 
             </li>
             
             <li>
-                <a href="https://discuss.hashicorp.com/t/terraform-v1-15-8-released/77560" target="_blank">Terraform v1.15.8 released</a>
+                <a href="https://github.com/hashicorp/terraform/issues/38872" target="_blank">terraform modules -json returns incorrect source path to nested local modules #38872</a>
                 
             </li>
             
             <li>
-                <a href="https://discuss.hashicorp.com/t/terraform-v1-16-0-beta1-released/77603" target="_blank">Terraform v1.16.0-beta1 released</a>
+                <a href="https://github.com/dotnet/announcements/issues/412" target="_blank">Microsoft Security Advisory CVE-2026-47304 | .NET Security Feature Bypass Vulnerability #412</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/hashicorp/terraform-provider-azurerm/issues/32889" target="_blank">Support for waiting on SCM (Kudu) endpoint readiness before deployment on azurerm_linux_function_app #32889</a>
                 
             </li>
             
@@ -128,12 +133,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-26_1004.html">&larr; 2026-07-26 1004</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-07-30_1029.html">&larr; 2026-07-30 1029</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/terraform/2026-08-07_0904.html">2026-08-07 0904 &rarr;</a>
             
         </div>
     </div>

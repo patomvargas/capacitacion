@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-06T10:44:46.140996+00:00</updated>
+  <updated>2026-08-07T09:05:02.520854+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -633,5 +633,19 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-03_1130.html"/>
     <summary>En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, incluyendo workflows, hooks, rebase y bisect. Estas herramientas pueden ayudar a los desarrolladores a trabajar de manera más eficiente y efectiva.</summary>
     <published>2026-08-03T11:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-08-07_0904.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-08-07T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental en el desarrollo de software, y su uso efectivo puede mejorar significativamente la productividad y la colaboración en equipo. Una de las mejores prácticas es utilizar &lt;code&gt;git flow&lt;/code&gt; para gestionar los workflows de desarrollo, lo que permite una organización clara y eficiente de las ramas y los cambios en el código.&lt;/p&gt;
+&lt;p&gt;Para empezar a utilizar &lt;code&gt;git flow&lt;/code&gt;, es necesario instalarlo en el sistema y configurarlo en el proyecto. Esto se puede hacer con el comando &lt;code&gt;git flow init&lt;/code&gt;. Luego, se puede crear una nueva rama de características con &lt;code&gt;git flow feature start &lt;nombre_de_la_caracteristica&gt;&lt;/code&gt;, y cuando se complete la característica, se puede fusionar con la rama principal con &lt;code&gt;git flow feature finish &lt;nombre_de_la_caracteristica&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica avanzada de Git es el uso de &lt;code&gt;git rebase&lt;/code&gt; para reorganizar los commits y mantener un historial de cambios limpio y coherente. Por ejemplo, si se han realizado varios commits en una rama de características y se desea fusionar con la rama principal, se puede utilizar &lt;code&gt;git rebase -i &lt;hash_del_commit_inicial&gt;&lt;/code&gt; para reorganizar los commits y eliminar cualquier commit innecesario.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona una herramienta llamada &lt;code&gt;git bisect&lt;/code&gt; para identificar rápidamente el commit que introduce un bug o problema en el código. Esto se puede hacer con el comando &lt;code&gt;git bisect start&lt;/code&gt; y luego &lt;code&gt;git bisect bad&lt;/code&gt; o &lt;code&gt;git bisect good&lt;/code&gt; para indicar si el commit actual es bueno o malo.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar la importancia de utilizar &lt;code&gt;git worktrees&lt;/code&gt; para gestionar múltiples ramas y proyectos de forma eficiente. Con &lt;code&gt;git worktree add &lt;nombre_del_proyecto&gt; &lt;rama&gt;&lt;/code&gt;, se puede crear un nuevo trabajo con una rama específica y trabajar en él de forma independiente al proyecto principal.&lt;/p&gt;
+&lt;p&gt;En resumen, Git ofrece una variedad de características y herramientas avanzadas para mejorar la productividad y la colaboración en proyectos de desarrollo de software. Al utilizar &lt;code&gt;git flow&lt;/code&gt;, &lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y &lt;code&gt;git worktrees&lt;/code&gt;, se puede mantener un historial de cambios limpio y coherente, y trabajar de forma eficiente en múltiples proyectos y ramas.&lt;/p&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-07_0904.html"/>
+    <summary>En este artículo, se presentan algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. Se incluyen ejemplos concretos y comandos para mejorar la productividad y la colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-08-07T09:04:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-06T10:44:46.138800+00:00</updated>
+  <updated>2026-08-07T09:05:02.516692+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -563,5 +563,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-03_1130.html"/>
     <summary>En este articulo se presentan las mejores practicas y novedades en Docker, incluyendo multi-stage builds, compose, networking, seguridad y BuildKit. Se discuten tambien las mejores formas de asegurar contenedores y pipelines de producción.</summary>
     <published>2026-08-03T11:30:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-08-07_0904.html</id>
+    <title>Mejoras en Docker</title>
+    <updated>2026-08-07T09:04:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 2 de la especificación de kits de Docker permite a los desarrolladores crear kits más personalizados y seguros. Esto se logra mediante la definición de un esquema claro para la configuración de los kits, que incluye la definición de permisos, instrucciones de agente y credenciales. Para utilizar esta nueva versión, los desarrolladores deben agregar la línea &lt;code&gt;schemaVersion: "2"&lt;/code&gt; en su archivo de configuración de kit.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante que ha sido mejorado en Docker. La plataforma ahora incluye características como el aislamiento de contenedores y la aplicación de políticas de seguridad en tiempo de ejecución. Esto se logra mediante el uso de herramientas como &lt;code&gt;seccomp&lt;/code&gt; y &lt;code&gt;AppArmor&lt;/code&gt;, que permiten restringir las acciones que pueden realizar los contenedores. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker run -it --security-opt seccomp:/path/to/seccomp/profile.json&lt;/code&gt; para ejecutar un contenedor con un perfil de seguridad personalizado.&lt;/p&gt;
+&lt;p&gt;Además, Docker ha anunciado mejoras en su plataforma de sandbox, que permite a los desarrolladores crear entornos de desarrollo aislados y seguros. La plataforma de sandbox de Docker incluye características como la creación de kits personalizados y la aplicación de políticas de seguridad en tiempo de ejecución. Para utilizar la plataforma de sandbox, los desarrolladores deben instalar el paquete &lt;code&gt;docker-sandbox&lt;/code&gt; y luego ejecutar el comando &lt;code&gt;docker sandbox create&lt;/code&gt; para crear un nuevo entorno de desarrollo.&lt;/p&gt;
+&lt;p&gt;La versión 0.38.0 de Docker Sandboxes incluye una nueva versión de la especificación de kits, que permite a los desarrolladores crear kits más personalizados y seguros. Esta versión también incluye mejoras en la seguridad, como la aplicación de políticas de seguridad en tiempo de ejecución. Para obtener más información sobre esta versión, los desarrolladores pueden consultar el archivo &lt;code&gt;RELEASE-NOTES&lt;/code&gt; en el repositorio de GitHub de Docker Sandboxes.&lt;/p&gt;
+&lt;p&gt;En resumen, las mejoras en Docker permiten a los desarrolladores crear entornos de desarrollo más productivos y seguros. La versión 2 de la especificación de kits y las mejoras en la seguridad son solo algunos de los cambios que han sido anunciados. Los desarrolladores pueden obtener más información sobre estas mejoras en el blog de Docker y en el repositorio de GitHub de Docker Sandboxes.&lt;/p&gt;
+&lt;p&gt;Para mantenerse actualizado sobre las últimas novedades y mejoras en Docker, los desarrolladores pueden consultar el blog de Docker y el repositorio de GitHub de Docker Sandboxes. Allí podrán encontrar información sobre las últimas versiones y características, así como tutoriales y ejemplos para ayudarles a aprovechar al máximo la plataforma.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/"&gt;Docker Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.docker.com/ai/sandboxes/release-notes/"&gt;Docker Sandboxes release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/moby/moby/milestones"&gt;Milestones · moby/moby · GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/products/"&gt;Products Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.docker.com/blog/category/engineering/"&gt;Engineering Archives | Docker&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-07_0904.html"/>
+    <summary>Docker ha anunciado mejoras en su plataforma, incluyendo la versión 2 de la especificación de kits y mejoras en la seguridad. Estas mejoras permiten a los desarrolladores crear entornos de desarrollo más productivos y seguros.</summary>
+    <published>2026-08-07T09:04:00+00:00</published>
   </entry>
 </feed>
