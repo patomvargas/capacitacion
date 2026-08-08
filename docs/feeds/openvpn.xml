@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-07T09:05:02.476920+00:00</updated>
+  <updated>2026-08-08T08:48:50.926945+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -685,5 +685,27 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-04_1043.html"/>
     <summary>OpenVPN es una herramienta de tunneling que permite establecer conexiones seguras entre redes. En este artículo, se presentan las mejores prácticas para configurar y hardenear OpenVPN.</summary>
     <published>2026-08-04T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-08_0847.html</id>
+    <title>OpenVPN: Tunneling y Seguridad Avanzada</title>
+    <updated>2026-08-08T08:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta ampliamente utilizada para crear túneles VPN seguros. Para configurar OpenVPN, es necesario generar certificados SSL/TLS utilizando herramientas como OpenSSL. Por ejemplo, se puede generar un certificado de servidor utilizando el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365 -subj '/C=US/ST=State/L=Locality/O=Organization/CN=server'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una vez generados los certificados, se pueden configurar en el archivo de configuración de OpenVPN, que suele ser &lt;code&gt;/etc/openvpn/server.conf&lt;/code&gt; en sistemas Linux. En este archivo, se deben especificar los parámetros de configuración, como la dirección IP del servidor, la puerta de red y los certificados. Por ejemplo, se puede agregar la siguiente línea para especificar el certificado de servidor: &lt;code&gt;tls-server server.crt&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Para hardenizar OpenVPN, es importante implementar medidas de seguridad adicionales, como la autenticación de dos factores y la limitación de acceso a la red. Se puede utilizar el protocolo de autenticación de dos factores OTP (One-Time Password) para agregar una capa adicional de seguridad. Además, se puede limitar el acceso a la red utilizando reglas de firewall y listas de control de acceso (ACL).&lt;/p&gt;
+&lt;p&gt;OpenVPN Access Server es una herramienta que permite administrar y configurar múltiples servidores OpenVPN de manera centralizada. Se puede instalar en un servidor y configurar para administrar múltiples servidores OpenVPN, lo que facilita la gestión de la infraestructura de red.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de site-to-site, se puede utilizar OpenVPN para crear un túnel VPN entre dos redes. Por ejemplo, se puede configurar un servidor OpenVPN en una red y un cliente OpenVPN en otra red, y luego conectarlos mediante un túnel VPN. Esto permite que las dos redes se comuniquen de manera segura.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para crear túneles VPN seguros y configurar infraestructuras de red avanzadas. Al seguir las mejores prácticas de configuración y hardenización, se puede asegurar la seguridad y la integridad de la red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"&gt;OpenVPN Release 2.7.4&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://en.m.wikipedia.org/wiki/OpenVPN"&gt;OpenVPN - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/client/"&gt;OpenVPN Connect - VPN For Your Operating System | OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://openvpn.net/community/"&gt;Download OpenVPN Community Edition (Open Source) | OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://apps.microsoft.com/detail/xpdlgw32hhrb5p"&gt;OpenVPN Connect - Download and install on Windows | Microsoft...&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://community.openvpn.net/Downloads"&gt;Downloads – community wiki - OpenVPN&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-08_0847.html"/>
+    <summary>OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las mejores prácticas para configurar y hardenizar OpenVPN, incluyendo la configuración de certificados y la implementación de Access Server.</summary>
+    <published>2026-08-08T08:47:00+00:00</published>
   </entry>
 </feed>

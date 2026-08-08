@@ -1,4 +1,32 @@
 {
+  "2026-08-08_0847": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "Kubernetes es un sistema de orquestación de contenedores en constante evolución. En este artículo, se presentan las últimas novedades y mejoras en el sistema.",
+    "content": "Kubernetes, también conocido como K8s, es un sistema de código abierto para la automatización de la implementación, escalado y administración de aplicaciones contenerizadas. En los últimos meses, se han producido varios cambios y mejoras en el sistema, como la inclusión de nuevos operadores y la mejora de la seguridad.\n\nUna de las novedades más destacadas es la introducción de la herramienta `kueue`, que permite a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo. Para instalar `kueue`, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/kueue/releases/latest/download/kueue.yaml`.\n\nOtra mejora importante es la inclusión de la herramienta `volcano`, que permite a los administradores de clusters gestionar de manera más eficiente las cargas de trabajo y los recursos. Para instalar `volcano`, se puede utilizar el comando `kubectl apply -f https://github.com/volcano-sh/volcano/releases/latest/download/volcano.yaml`.\n\nEn cuanto a la seguridad, Kubernetes ha incluido varias mejoras en la versión 1.36, como la inclusión de la autenticación y autorización basada en tokens. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create secret generic token --from-literal token=<token>`.\n\nEn resumen, Kubernetes es un sistema en constante evolución, con nuevas herramientas y mejoras que permiten a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo.\n\nPara más información, se pueden consultar las fuentes oficiales de Kubernetes, como la documentación oficial y el repositorio de GitHub.",
+    "sources": [
+      {
+        "title": "Kubernetes",
+        "url": "https://kubernetes.io/"
+      },
+      {
+        "title": "Kubernetes Documentation",
+        "url": "https://kubernetes.io/docs/home/"
+      },
+      {
+        "title": "GitHub - kubernetes/kubernetes",
+        "url": "https://github.com/kubernetes/kubernetes"
+      },
+      {
+        "title": "Pull requests: kubernetes-sigs/kueue",
+        "url": "https://github.com/kubernetes-sigs/kueue/pulls"
+      },
+      {
+        "title": "Pull requests: volcano-sh/volcano",
+        "url": "https://github.com/volcano-sh/volcano/pulls"
+      }
+    ]
+  },
   "2026-08-04_1043": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

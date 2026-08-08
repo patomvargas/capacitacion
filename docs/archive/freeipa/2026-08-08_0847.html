@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
-    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <title>FreeIPA: Gestión de Identidad y Autenticación - FreeIPA</title>
+    <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,57 +54,59 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-08-04 1043 · Kubernetes</div>
+    <h1>FreeIPA: Gestión de Identidad y Autenticación</h1>
+    <div class="meta">2026-08-08 0847 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo y mejorando con el tiempo. Una de las novedades más recientes es la inclusión de la característica de `ClusterClass` en el proyecto `cluster-api`, que permite patchear metadatos como etiquetas y anotaciones a través de parches de `ClusterClass`. Esto se puede lograr utilizando el comando `clusterctl` con la opción `--patch`.</p>
+            <p>FreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos Linux. Combina varias tecnologías, como 389 Directory Server, MIT Kerberos, NTP, DNS y Dogtag, para proporcionar una solución integral de gestión de identidad. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` con las opciones adecuadas, como `--domain` y `--realm`.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto importante en Kubernetes, y se han realizado mejoras en este sentido. Por ejemplo, se ha agregado soporte para `Golang 1.26.5/1.25.12` en el proyecto de lanzamiento de Kubernetes, lo que ayuda a proteger contra vulnerabilidades de seguridad.</p>
+            <p>Una vez instalado, se puede acceder a la interfaz web de FreeIPA mediante `https://<servidor>/ipa/ui`. Desde aquí, se pueden gestionar usuarios, grupos, hosts y otros objetos de la infraestructura de identidad. Para agregar un usuario, por ejemplo, se puede utilizar el comando `ipa user-add <nombre_usuario> --first=<nombre> --last=<apellido> --email=<correo_electrónico>`.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a almacenamiento, Kubernetes sigue mejorando su capacidad para gestionar almacenamiento en diferentes entornos. Por ejemplo, se ha agregado soporte para `AMD GPU Operator`, que permite gestionar GPU en entornos de Kubernetes.</p>
+            <p>En cuanto a la autenticación, FreeIPA utiliza Kerberos para proporcionar una autenticación segura y escalable. Se puede configurar la autenticación Kerberos utilizando el comando `ipa kerberos-config` y especificando las opciones adecuadas, como `--keytab` y `--principal`.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas en Kubernetes, se pueden utilizar herramientas como `kubetest` y `argo-rollouts`. Estas herramientas permiten realizar pruebas y despliegues de aplicaciones de manera automatizada y segura.</p>
+            <p>Recientemente, se han identificado algunos problemas en la interfaz web de FreeIPA, como la falta de búsqueda dinámica en la lista de usuarios y grupos. Sin embargo, se están trabajando en soluciones para estos problemas, como se puede ver en el issue #1138 de GitHub.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Kubernetes sigue evolucionando y mejorando con el tiempo, y es importante estar al tanto de las novedades y mejoras para aprovechar al máximo sus características y funcionalidades.</p>
+            <p>Para configurar la autenticación con otros sistemas, como Active Directory, se pueden utilizar las relaciones de confianza (trust relationships) de FreeIPA. Se pueden establecer relaciones de confianza con otros dominios utilizando el comando `ipa trust-add <dominio>` y especificando las opciones adecuadas, como `--type` y `--direction`.</p>
             
         
             
         
             
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos Linux. Con su interfaz web y comandos de línea de comandos, se pueden gestionar usuarios, grupos, hosts y otros objetos de la infraestructura de identidad de manera eficiente y segura.</p>
+            
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Kubernetes y sus proyectos relacionados, como `cluster-api` y `argo-rollouts`. Estas fuentes proporcionan documentación detallada y ejemplos prácticos para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo las características de Kubernetes.</p>
+        
+            
+            <p>Para obtener más información sobre FreeIPA y su configuración, se pueden consultar las fuentes oficiales y la documentación en línea.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante mencionar que FreeIPA es una herramienta en constante evolución, por lo que es importante estar al tanto de las últimas novedades y mejores prácticas para su implementación y configuración.</p>
             
         
     </div>
@@ -115,17 +117,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes-sigs/cluster-api/releases" target="_blank">kubernetes-sigs/cluster-api</a>
+                <a href="https://github.com/freeipa/freeipa-webui/issues" target="_blank">FreeIPA Web UI Issues</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/ROCm/gpu-operator" target="_blank">ROCm/gpu-operator</a>
+                <a href="https://wiki.rockstable.it/freeipa" target="_blank">FreeIPA Wiki</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/argoproj/argo-rollouts/releases" target="_blank">argoproj/argo-rollouts</a>
+                <a href="https://www.freeipa.org/page/Documentation" target="_blank">FreeIPA Documentation</a>
                 
             </li>
             
@@ -136,12 +138,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-31_1043.html">&larr; 2026-07-31 1043</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-07-31_1043.html">&larr; 2026-07-31 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html">2026-08-08 0847 &rarr;</a>
             
         </div>
     </div>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-07T09:05:02.480117+00:00</updated>
+  <updated>2026-08-08T08:48:50.931861+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -739,5 +739,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html"/>
     <summary>Kubernetes sigue evolucionando con nuevas características y mejoras en networking, storage y seguridad. En este artículo, se presentan algunas de las novedades más recientes en el sistema.</summary>
     <published>2026-08-04T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-08-08T08:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes, también conocido como K8s, es un sistema de código abierto para la automatización de la implementación, escalado y administración de aplicaciones contenerizadas. En los últimos meses, se han producido varios cambios y mejoras en el sistema, como la inclusión de nuevos operadores y la mejora de la seguridad.&lt;/p&gt;
+&lt;p&gt;Una de las novedades más destacadas es la introducción de la herramienta &lt;code&gt;kueue&lt;/code&gt;, que permite a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo. Para instalar &lt;code&gt;kueue&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://github.com/kubernetes-sigs/kueue/releases/latest/download/kueue.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra mejora importante es la inclusión de la herramienta &lt;code&gt;volcano&lt;/code&gt;, que permite a los administradores de clusters gestionar de manera más eficiente las cargas de trabajo y los recursos. Para instalar &lt;code&gt;volcano&lt;/code&gt;, se puede utilizar el comando &lt;code&gt;kubectl apply -f https://github.com/volcano-sh/volcano/releases/latest/download/volcano.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, Kubernetes ha incluido varias mejoras en la versión 1.36, como la inclusión de la autenticación y autorización basada en tokens. Para configurar la autenticación y autorización, se puede utilizar el comando &lt;code&gt;kubectl create secret generic token --from-literal token=&lt;token&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes es un sistema en constante evolución, con nuevas herramientas y mejoras que permiten a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes oficiales de Kubernetes, como la documentación oficial y el repositorio de GitHub.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/"&gt;Kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/docs/home/"&gt;Kubernetes Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes"&gt;GitHub - kubernetes/kubernetes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/kueue/pulls"&gt;Pull requests: kubernetes-sigs/kueue&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/volcano-sh/volcano/pulls"&gt;Pull requests: volcano-sh/volcano&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html"/>
+    <summary>Kubernetes es un sistema de orquestación de contenedores en constante evolución. En este artículo, se presentan las últimas novedades y mejoras en el sistema.</summary>
+    <published>2026-08-08T08:47:00+00:00</published>
   </entry>
 </feed>

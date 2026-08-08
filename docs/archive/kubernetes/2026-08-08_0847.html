@@ -58,53 +58,43 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-08-04 1043 · Kubernetes</div>
+    <div class="meta">2026-08-08 0847 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue creciendo y mejorando con el tiempo. Una de las novedades más recientes es la inclusión de la característica de `ClusterClass` en el proyecto `cluster-api`, que permite patchear metadatos como etiquetas y anotaciones a través de parches de `ClusterClass`. Esto se puede lograr utilizando el comando `clusterctl` con la opción `--patch`.</p>
+            <p>Kubernetes, también conocido como K8s, es un sistema de código abierto para la automatización de la implementación, escalado y administración de aplicaciones contenerizadas. En los últimos meses, se han producido varios cambios y mejoras en el sistema, como la inclusión de nuevos operadores y la mejora de la seguridad.</p>
             
         
             
         
             
-        
-            
-            <p>La seguridad es otro aspecto importante en Kubernetes, y se han realizado mejoras en este sentido. Por ejemplo, se ha agregado soporte para `Golang 1.26.5/1.25.12` en el proyecto de lanzamiento de Kubernetes, lo que ayuda a proteger contra vulnerabilidades de seguridad.</p>
+            <p>Una de las novedades más destacadas es la introducción de la herramienta `kueue`, que permite a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo. Para instalar `kueue`, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/kueue/releases/latest/download/kueue.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a almacenamiento, Kubernetes sigue mejorando su capacidad para gestionar almacenamiento en diferentes entornos. Por ejemplo, se ha agregado soporte para `AMD GPU Operator`, que permite gestionar GPU en entornos de Kubernetes.</p>
+            <p>Otra mejora importante es la inclusión de la herramienta `volcano`, que permite a los administradores de clusters gestionar de manera más eficiente las cargas de trabajo y los recursos. Para instalar `volcano`, se puede utilizar el comando `kubectl apply -f https://github.com/volcano-sh/volcano/releases/latest/download/volcano.yaml`.</p>
             
         
             
         
             
-        
-            
-            <p>Para solucionar problemas en Kubernetes, se pueden utilizar herramientas como `kubetest` y `argo-rollouts`. Estas herramientas permiten realizar pruebas y despliegues de aplicaciones de manera automatizada y segura.</p>
+            <p>En cuanto a la seguridad, Kubernetes ha incluido varias mejoras en la versión 1.36, como la inclusión de la autenticación y autorización basada en tokens. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create secret generic token --from-literal token=<token>`.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Kubernetes sigue evolucionando y mejorando con el tiempo, y es importante estar al tanto de las novedades y mejoras para aprovechar al máximo sus características y funcionalidades.</p>
+            <p>En resumen, Kubernetes es un sistema en constante evolución, con nuevas herramientas y mejoras que permiten a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo.</p>
             
         
             
         
             
-        
-            
-            <p>Para más información, se pueden consultar las fuentes oficiales de Kubernetes y sus proyectos relacionados, como `cluster-api` y `argo-rollouts`. Estas fuentes proporcionan documentación detallada y ejemplos prácticos para ayudar a los administradores de sistemas y desarrolladores a aprovechar al máximo las características de Kubernetes.</p>
+            <p>Para más información, se pueden consultar las fuentes oficiales de Kubernetes, como la documentación oficial y el repositorio de GitHub.</p>
             
         
     </div>
@@ -115,17 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes-sigs/cluster-api/releases" target="_blank">kubernetes-sigs/cluster-api</a>
+                <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/ROCm/gpu-operator" target="_blank">ROCm/gpu-operator</a>
+                <a href="https://kubernetes.io/docs/home/" target="_blank">Kubernetes Documentation</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/argoproj/argo-rollouts/releases" target="_blank">argoproj/argo-rollouts</a>
+                <a href="https://github.com/kubernetes/kubernetes" target="_blank">GitHub - kubernetes/kubernetes</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/kubernetes-sigs/kueue/pulls" target="_blank">Pull requests: kubernetes-sigs/kueue</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/volcano-sh/volcano/pulls" target="_blank">Pull requests: volcano-sh/volcano</a>
                 
             </li>
             
@@ -136,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-07-31_1043.html">&larr; 2026-07-31 1043</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html">&larr; 2026-08-04 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html">2026-08-08 0847 &rarr;</a>
             
         </div>
     </div>

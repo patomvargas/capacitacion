@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-07T09:05:02.474527+00:00</updated>
+  <updated>2026-08-08T08:48:50.923136+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -437,5 +437,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-04_1043.html"/>
     <summary>El sistema de nombres de dominio (DNS) es fundamental para la resolución de nombres de dominio en Internet. En este artículo, se explora la configuración de DNS BIND9, incluyendo la configuración de zonas, DNSSEC, vistas, RPZ y registro de eventos.</summary>
     <published>2026-08-04T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-08_0847.html</id>
+    <title>Configuración de BIND9</title>
+    <updated>2026-08-08T08:47:00+00:00</updated>
+    <content type="html">&lt;p&gt;El sistema de nombres de dominio BIND9 es un servidor DNS de código abierto que se utiliza ampliamente en la administración de redes. Para configurar zonas en BIND9, se utiliza el comando &lt;code&gt;named.conf&lt;/code&gt; para definir las zonas y sus respectivos archivos de zona. Por ejemplo, para crear una zona para el dominio &lt;code&gt;example.com&lt;/code&gt;, se agregaría la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;zone "example.com" { type master; file "/etc/bind/db.example.com"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es un aspecto fundamental en la configuración de BIND9. Una de las formas de asegurar el DNS es mediante el uso de DNSSEC, que permite autenticar la respuesta del servidor DNS. Para configurar DNSSEC en BIND9, se utiliza el comando &lt;code&gt;dnssec-keygen&lt;/code&gt; para generar las claves de zona y de clave. Luego, se configura el servidor DNS para firmar las respuestas con la clave de zona utilizando el comando &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;dnssec-validation yes;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de BIND9 es la capacidad de configurar vistas, que permiten servir diferentes contenido DNS dependiendo de la ubicación del cliente. Para configurar vistas en BIND9, se utiliza el comando &lt;code&gt;view&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para crear una vista para los clientes que se encuentran en la red interna, se agregaría la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;view "internal" { match-clients { 10.0.0.0/8; }; recursion yes; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La protección contra ataques de malware y spam es otro aspecto importante en la configuración de BIND9. Una de las formas de protegerse contra estos ataques es mediante el uso de RPZ (Response Policy Zones), que permite bloquear respuestas DNS maliciosas. Para configurar RPZ en BIND9, se utiliza el comando &lt;code&gt;response-policy&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para bloquear respuestas DNS que apunten a un servidor malicioso, se agregaría la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;response-policy { zone "malicious"; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, el ajuste de rendimiento es fundamental para garantizar que el servidor DNS responda de manera eficiente a las consultas. Una de las formas de ajustar el rendimiento es mediante el uso de caching, que permite almacenar respuestas DNS en memoria para reducir el tiempo de respuesta. Para configurar el caching en BIND9, se utiliza el comando &lt;code&gt;cache&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt;. Por ejemplo, para configurar un tamaño de caché de 10MB, se agregaría la siguiente línea al archivo &lt;code&gt;named.conf&lt;/code&gt;: &lt;code&gt;cache 10MB;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, la configuración de BIND9 requiere una comprensión profunda de las diferentes características y opciones disponibles. Al seguir las mejores prácticas y configurar correctamente las zonas, DNSSEC, vistas, RPZ, logging y ajuste de rendimiento, es posible crear un servidor DNS seguro y eficiente que satisfaga las necesidades de la red.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://en.wikipedia.org/wiki/Domain_Name_System"&gt;Domain Name System - Wikipedia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.cloudflare.com/learning/dns/what-is-dns/"&gt;What is DNS? | Learning Center - Cloudflare&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.geeksforgeeks.org/computer-networks/domain-name-system-dns-in-application-layer/"&gt;Domain Name System (DNS) - GeeksforGeeks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dnschecker.org/"&gt;DNS Checker - DNS Check Propagation Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://publicdns.info/best-dns-servers.html"&gt;Best DNS Servers 2026 — Tested &amp; Ranked | PublicDNS.info&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-08_0847.html"/>
+    <summary>El sistema de nombres de dominio BIND9 es una herramienta fundamental para la administración de redes. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ, logging y ajuste de rendimiento.</summary>
+    <published>2026-08-08T08:47:00+00:00</published>
   </entry>
 </feed>

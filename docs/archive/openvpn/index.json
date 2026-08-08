@@ -1,4 +1,36 @@
 {
+  "2026-08-08_0847": {
+    "slug": "openvpn",
+    "title": "OpenVPN: Tunneling y Seguridad Avanzada",
+    "summary": "OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las mejores prácticas para configurar y hardenizar OpenVPN, incluyendo la configuración de certificados y la implementación de Access Server.",
+    "content": "OpenVPN es una herramienta ampliamente utilizada para crear túneles VPN seguros. Para configurar OpenVPN, es necesario generar certificados SSL/TLS utilizando herramientas como OpenSSL. Por ejemplo, se puede generar un certificado de servidor utilizando el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365 -subj '/C=US/ST=State/L=Locality/O=Organization/CN=server'`. \n\nUna vez generados los certificados, se pueden configurar en el archivo de configuración de OpenVPN, que suele ser `/etc/openvpn/server.conf` en sistemas Linux. En este archivo, se deben especificar los parámetros de configuración, como la dirección IP del servidor, la puerta de red y los certificados. Por ejemplo, se puede agregar la siguiente línea para especificar el certificado de servidor: `tls-server server.crt`. \n\nPara hardenizar OpenVPN, es importante implementar medidas de seguridad adicionales, como la autenticación de dos factores y la limitación de acceso a la red. Se puede utilizar el protocolo de autenticación de dos factores OTP (One-Time Password) para agregar una capa adicional de seguridad. Además, se puede limitar el acceso a la red utilizando reglas de firewall y listas de control de acceso (ACL). \n\nOpenVPN Access Server es una herramienta que permite administrar y configurar múltiples servidores OpenVPN de manera centralizada. Se puede instalar en un servidor y configurar para administrar múltiples servidores OpenVPN, lo que facilita la gestión de la infraestructura de red. \n\nEn cuanto a la configuración de site-to-site, se puede utilizar OpenVPN para crear un túnel VPN entre dos redes. Por ejemplo, se puede configurar un servidor OpenVPN en una red y un cliente OpenVPN en otra red, y luego conectarlos mediante un túnel VPN. Esto permite que las dos redes se comuniquen de manera segura. \n\nEn resumen, OpenVPN es una herramienta poderosa para crear túneles VPN seguros y configurar infraestructuras de red avanzadas. Al seguir las mejores prácticas de configuración y hardenización, se puede asegurar la seguridad y la integridad de la red.",
+    "sources": [
+      {
+        "title": "OpenVPN Release 2.7.4",
+        "url": "https://github.com/OpenVPN/openvpn/actions/runs/25177188580/workflow"
+      },
+      {
+        "title": "OpenVPN - Wikipedia",
+        "url": "https://en.m.wikipedia.org/wiki/OpenVPN"
+      },
+      {
+        "title": "OpenVPN Connect - VPN For Your Operating System | OpenVPN",
+        "url": "https://openvpn.net/client/"
+      },
+      {
+        "title": "Download OpenVPN Community Edition (Open Source) | OpenVPN",
+        "url": "https://openvpn.net/community/"
+      },
+      {
+        "title": "OpenVPN Connect - Download and install on Windows | Microsoft...",
+        "url": "https://apps.microsoft.com/detail/xpdlgw32hhrb5p"
+      },
+      {
+        "title": "Downloads – community wiki - OpenVPN",
+        "url": "https://community.openvpn.net/Downloads"
+      }
+    ]
+  },
   "2026-08-04_1043": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad",
