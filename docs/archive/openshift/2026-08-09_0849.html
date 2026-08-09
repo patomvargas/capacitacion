@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift 4.22: Novedades y Mejoras - OpenShift</title>
+    <title>OpenShift 4.22: Mejoras y Novedades - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,54 +57,44 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift 4.22: Novedades y Mejoras</h1>
-    <div class="meta">2026-08-05 1040 · OpenShift</div>
+    <h1>OpenShift 4.22: Mejoras y Novedades</h1>
+    <div class="meta">2026-08-09 0849 · OpenShift</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>OpenShift 4.22 es la última versión del plataforma de contenedores de Red Hat, y ofrece una serie de novedades y mejoras para desarrolladores y administradores. Una de las principales novedades es la inclusión de la herramienta de observabilidad Red Hat OpenShift Cluster Observability Operator (COO) 1.5, que ofrece paneles personalizables y visibilidad multi-cluster.</p>
+            <p>La última versión de OpenShift, 4.22, ofrece una serie de mejoras y novedades para desarrolladores y administradores de sistemas. Una de las características más destacadas es la mejora en la legibilidad de pipelines, lo que permite a los desarrolladores crear y gestionar flujos de trabajo de manera más eficiente.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo las nuevas características de OpenShift 4.22, es importante actualizar la plataforma a la última versión. Para hacerlo, se puede utilizar el comando `oc adm upgrade` para verificar si hay actualizaciones disponibles. Si se encuentra una actualización, se puede aplicar utilizando el comando `oc adm upgrade apply`.</p>
+            <p>Para aprovechar al máximo esta función, se puede utilizar el comando `oc adm upgrade recommend` para identificar posibles problemas en la actualización. Además, se puede agregar la etiqueta `openShiftUpdatePrecheck` a las reglas de Prometheus para que aparezcan en la salida del comando.</p>
             
         
             
         
             
-            <p>Otra novedad importante en OpenShift 4.22 es la inclusión de la herramienta de desarrollo Red Hat OpenShift Dev Spaces, que ofrece un entorno de desarrollo integrado y colaborativo para los desarrolladores. Esta herramienta permite a los desarrolladores crear y probar aplicaciones de manera más eficiente y segura.</p>
+            <p>Otra característica importante es el soporte mejorado para Prometheus, que permite a los administradores de sistemas monitorear y analizar el rendimiento de sus aplicaciones de manera más efectiva. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml` para crear un recurso de Prometheus.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, OpenShift 4.22 incluye varias actualizaciones y mejoras, incluyendo la capacidad de agregar la etiqueta `openShiftUpdatePrecheck` a las alertas en un recurso personalizado de PrometheusRule, lo que permite a los administradores verificar si hay alertas pendientes antes de realizar una actualización. Para hacerlo, se puede utilizar el comando `oc adm upgrade recommend` para verificar si hay alertas pendientes.</p>
+            <p>La versión 4.22 de OpenShift también incluye mejoras en la seguridad, como la capacidad de especificar recursos para builds y fine-grained resource definitions. Esto permite a los administradores de sistemas controlar de manera más precisa los recursos utilizados por las aplicaciones.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que OpenShift 4.22 también incluye mejoras en la escalabilidad y el rendimiento, lo que permite a los administradores aprovechar al máximo los recursos de su infraestructura. Para aprovechar al máximo estas mejoras, se puede utilizar la herramienta de monitorización de OpenShift para supervisar el rendimiento de la plataforma y identificar áreas de mejora.</p>
+            <p>Para aprovechar estas características, se puede utilizar el comando `oc new-build` para crear un nuevo build y especificar los recursos necesarios.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4.22 es una versión importante que ofrece una serie de novedades y mejoras para desarrolladores y administradores. Con sus nuevas herramientas de observabilidad y desarrollo, así como sus actualizaciones de seguridad y mejoras en la escalabilidad y el rendimiento, esta versión es una excelente opción para aquellos que buscan aprovechar al máximo la plataforma de contenedores de Red Hat.</p>
-            
-        
-            
-        
-            
-            <p>Para más información sobre las novedades y mejoras de OpenShift 4.22, se puede consultar la documentación oficial de Red Hat y las fuentes citadas a continuación.</p>
-            
-        
+            <p>En resumen, OpenShift 4.22 es una versión poderosa y flexible que ofrece una serie de herramientas y características para desarrolladores y administradores de sistemas. Con su soporte mejorado para Prometheus, fine-grained resource definitions y mejoras en la legibilidad de pipelines, esta versión es ideal para aquellos que buscan crear y gestionar aplicaciones de manera eficiente y segura.</p>
             
         
     </div>
@@ -115,7 +105,7 @@
         <ul>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:48657" target="_blank">RHSA-2026:48657 - Security Advisory</a>
+                <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf" target="_blank">Red Hat OpenShift Logging 6.5 Release notes</a>
                 
             </li>
             
@@ -125,7 +115,7 @@
             </li>
             
             <li>
-                <a href="https://www.redhat.com/en/blog/new-observability-features-red-hat-openshift-422" target="_blank">New observability features in Red Hat OpenShift 4.22</a>
+                <a href="https://medium.com/@savasirez/red-hat-openshift-4-22-highlights-2b2eeccd8e4f" target="_blank">Red Hat Openshift 4.22 Highlights</a>
                 
             </li>
             
@@ -136,12 +126,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-01_1002.html">&larr; 2026-08-01 1002</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-05_1040.html">&larr; 2026-08-05 1040</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-09_0849.html">2026-08-09 0849 &rarr;</a>
             
         </div>
     </div>

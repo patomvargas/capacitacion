@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-08T08:48:50.937435+00:00</updated>
+  <updated>2026-08-09T08:50:15.232367+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -729,5 +729,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-05_1040.html"/>
     <summary>OpenShift 4.22 ofrece nuevas características y mejoras para desarrolladores y administradores, incluyendo actualizaciones de seguridad y nuevas herramientas de observabilidad. Esta versión se basa en Kubernetes 1.35 y CRI-O 1.35.</summary>
     <published>2026-08-05T10:40:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-09_0849.html</id>
+    <title>OpenShift 4.22: Mejoras y Novedades</title>
+    <updated>2026-08-09T08:49:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de OpenShift, 4.22, ofrece una serie de mejoras y novedades para desarrolladores y administradores de sistemas. Una de las características más destacadas es la mejora en la legibilidad de pipelines, lo que permite a los desarrolladores crear y gestionar flujos de trabajo de manera más eficiente.&lt;/p&gt;
+&lt;p&gt;Para aprovechar al máximo esta función, se puede utilizar el comando &lt;code&gt;oc adm upgrade recommend&lt;/code&gt; para identificar posibles problemas en la actualización. Además, se puede agregar la etiqueta &lt;code&gt;openShiftUpdatePrecheck&lt;/code&gt; a las reglas de Prometheus para que aparezcan en la salida del comando.&lt;/p&gt;
+&lt;p&gt;Otra característica importante es el soporte mejorado para Prometheus, que permite a los administradores de sistemas monitorear y analizar el rendimiento de sus aplicaciones de manera más efectiva. Para configurar Prometheus en OpenShift, se puede utilizar el comando &lt;code&gt;oc create -f prometheus.yaml&lt;/code&gt; para crear un recurso de Prometheus.&lt;/p&gt;
+&lt;p&gt;La versión 4.22 de OpenShift también incluye mejoras en la seguridad, como la capacidad de especificar recursos para builds y fine-grained resource definitions. Esto permite a los administradores de sistemas controlar de manera más precisa los recursos utilizados por las aplicaciones.&lt;/p&gt;
+&lt;p&gt;Para aprovechar estas características, se puede utilizar el comando &lt;code&gt;oc new-build&lt;/code&gt; para crear un nuevo build y especificar los recursos necesarios.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift 4.22 es una versión poderosa y flexible que ofrece una serie de herramientas y características para desarrolladores y administradores de sistemas. Con su soporte mejorado para Prometheus, fine-grained resource definitions y mejoras en la legibilidad de pipelines, esta versión es ideal para aquellos que buscan crear y gestionar aplicaciones de manera eficiente y segura.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf"&gt;Red Hat OpenShift Logging 6.5 Release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"&gt;What's new for developers in Red Hat OpenShift 4.22&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@savasirez/red-hat-openshift-4-22-highlights-2b2eeccd8e4f"&gt;Red Hat Openshift 4.22 Highlights&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-09_0849.html"/>
+    <summary>OpenShift 4.22 introduce mejoras en la legibilidad de pipelines, monitoreo, seguridad, rendimiento y soporte para Prometheus. Esta versión también incluye fine-grained resource definitions y permite especificar recursos para builds.</summary>
+    <published>2026-08-09T08:49:00+00:00</published>
   </entry>
 </feed>

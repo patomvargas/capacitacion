@@ -1,4 +1,24 @@
 {
+  "2026-08-09_0849": {
+    "slug": "openshift",
+    "title": "OpenShift 4.22: Mejoras y Novedades",
+    "summary": "OpenShift 4.22 introduce mejoras en la legibilidad de pipelines, monitoreo, seguridad, rendimiento y soporte para Prometheus. Esta versión también incluye fine-grained resource definitions y permite especificar recursos para builds.",
+    "content": "La última versión de OpenShift, 4.22, ofrece una serie de mejoras y novedades para desarrolladores y administradores de sistemas. Una de las características más destacadas es la mejora en la legibilidad de pipelines, lo que permite a los desarrolladores crear y gestionar flujos de trabajo de manera más eficiente. \n \n Para aprovechar al máximo esta función, se puede utilizar el comando `oc adm upgrade recommend` para identificar posibles problemas en la actualización. Además, se puede agregar la etiqueta `openShiftUpdatePrecheck` a las reglas de Prometheus para que aparezcan en la salida del comando. \n   \n Otra característica importante es el soporte mejorado para Prometheus, que permite a los administradores de sistemas monitorear y analizar el rendimiento de sus aplicaciones de manera más efectiva. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml` para crear un recurso de Prometheus. \n   \n La versión 4.22 de OpenShift también incluye mejoras en la seguridad, como la capacidad de especificar recursos para builds y fine-grained resource definitions. Esto permite a los administradores de sistemas controlar de manera más precisa los recursos utilizados por las aplicaciones. \n   \n Para aprovechar estas características, se puede utilizar el comando `oc new-build` para crear un nuevo build y especificar los recursos necesarios. \n   \n En resumen, OpenShift 4.22 es una versión poderosa y flexible que ofrece una serie de herramientas y características para desarrolladores y administradores de sistemas. Con su soporte mejorado para Prometheus, fine-grained resource definitions y mejoras en la legibilidad de pipelines, esta versión es ideal para aquellos que buscan crear y gestionar aplicaciones de manera eficiente y segura.",
+    "sources": [
+      {
+        "title": "Red Hat OpenShift Logging 6.5 Release notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf"
+      },
+      {
+        "title": "What's new for developers in Red Hat OpenShift 4.22",
+        "url": "https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22"
+      },
+      {
+        "title": "Red Hat Openshift 4.22 Highlights",
+        "url": "https://medium.com/@savasirez/red-hat-openshift-4-22-highlights-2b2eeccd8e4f"
+      }
+    ]
+  },
   "2026-08-05_1040": {
     "slug": "openshift",
     "title": "OpenShift 4.22: Novedades y Mejoras",
