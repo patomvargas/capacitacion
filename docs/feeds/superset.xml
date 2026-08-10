@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/superset.xml</id>
   <title>Superset - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-09T08:50:15.254503+00:00</updated>
+  <updated>2026-08-10T09:27:32.238387+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/superset/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/superset.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -732,5 +732,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-06_1043.html"/>
     <summary>Superset es una herramienta de visualización de datos que permite a los usuarios crear dashboards personalizados y explorar grandes conjuntos de datos. En este artículo, se presentan las características y funcionalidades de Superset, incluyendo la creación de gráficos, tableros y la administración de conjuntos de datos.</summary>
     <published>2026-08-06T10:43:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/superset/2026-08-10_0926.html</id>
+    <title>Superset: Creación de Tableros y Gráficos</title>
+    <updated>2026-08-10T09:26:00+00:00</updated>
+    <content type="html">&lt;p&gt;Superset es una herramienta de visualización de datos que permite a los usuarios crear tableros y gráficos personalizados. Para empezar a utilizar Superset, es necesario configurar un dataset. Un dataset es un conjunto de datos que se utiliza para crear gráficos y tableros. Para configurar un dataset, se puede utilizar el comando &lt;code&gt;superset init&lt;/code&gt; para inicializar el proyecto y luego &lt;code&gt;superset import&lt;/code&gt; para importar los datos.&lt;/p&gt;
+&lt;p&gt;Para crear un gráfico, se puede utilizar el comando &lt;code&gt;superset chart&lt;/code&gt; y seleccionar el tipo de gráfico que se desea crear. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando &lt;code&gt;superset chart bar&lt;/code&gt;. Superset también permite la creación de tableros personalizados, que pueden incluir múltiples gráficos y datasets.&lt;/p&gt;
+&lt;p&gt;En la discusión #41973 en GitHub, se explica cómo crear una tabla de jerarquía y un gráfico de calendario interactivo con Superset. Esto se puede lograr utilizando el comando &lt;code&gt;superset table&lt;/code&gt; para crear la tabla y luego &lt;code&gt;superset chart calendar&lt;/code&gt; para crear el gráfico de calendario.&lt;/p&gt;
+&lt;p&gt;En cuanto a la administración de Superset, es importante mencionar que se puede utilizar el comando &lt;code&gt;superset config&lt;/code&gt; para configurar los parámetros del proyecto. Por ejemplo, se puede utilizar el comando &lt;code&gt;superset config set&lt;/code&gt; para establecer el timezone del proyecto.&lt;/p&gt;
+&lt;p&gt;En resumen, Superset es una herramienta poderosa para la creación de tableros y gráficos personalizados. Con la configuración adecuada de datasets y la creación de gráficos interactivos, los usuarios pueden crear visualizaciones de datos personalizadas y efectivas.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que, según la discusión #42254 en GitHub, se ha encontrado un bug en la versión actual de Superset que afecta a la configuración del timezone. Por lo tanto, es recomendable verificar la documentación oficial de Superset para obtener más información sobre cómo solucionar este problema.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/41973"&gt;How does Preset.io work + building a hierarchy table and interactive calendar chart?&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/issues/42254"&gt;A Big Bug: date type timezone bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/superset/discussions/42281"&gt;Adding an image into a dashboard&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-10_0926.html"/>
+    <summary>Superset es una herramienta de código abierto para crear tableros y gráficos personalizados. En este artículo, se explora cómo crear tableros y gráficos con Superset, incluyendo la configuración de datasets y la creación de gráficos interactivos.</summary>
+    <published>2026-08-10T09:26:00+00:00</published>
   </entry>
 </feed>

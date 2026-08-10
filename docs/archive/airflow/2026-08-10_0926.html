@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mejores prácticas para Airflow 3.x - Airflow</title>
+    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <style>
+        :root {
+            --bg: #0d1117; --card: #161b22; --border: #30363d;
+            --text: #c9d1d9; --heading: #f0f6fc; --accent: #58a6ff;
+            --code-bg: #1c2128; --muted: #8b949e;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            background: var(--bg); color: var(--text); line-height: 1.7;
+            padding: 2rem 1rem; max-width: 800px; margin: 0 auto;
+        }
+        .breadcrumb { font-size: 0.85rem; margin-bottom: 1rem; }
+        .breadcrumb a { color: var(--accent); text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .breadcrumb span { color: var(--muted); }
+        h1 { color: var(--heading); font-size: 1.3rem; margin-bottom: 0.3rem; }
+        .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 1.5rem; }
+        .content { font-size: 0.95rem; }
+        .content p { margin-bottom: 1rem; }
+        .content code {
+            background: var(--code-bg); padding: 0.15rem 0.4rem;
+            border-radius: 3px; font-size: 0.88rem; color: #e6edf3;
+        }
+        .content pre {
+            background: var(--code-bg); padding: 1rem; border-radius: 6px;
+            overflow-x: auto; margin-bottom: 1rem; border: 1px solid var(--border);
+        }
+        .content pre code { padding: 0; background: none; }
+        .sources {
+            margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--border);
+        }
+        .sources h3 { color: var(--heading); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .sources ul { list-style: none; padding: 0; }
+        .sources li { margin-bottom: 0.3rem; font-size: 0.85rem; }
+        .sources a { color: var(--accent); text-decoration: none; }
+        .sources a:hover { text-decoration: underline; }
+        .nav {
+            margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--border);
+            display: flex; justify-content: space-between;
+        }
+        .nav a { color: var(--accent); text-decoration: none; font-size: 0.85rem; }
+        .nav a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="breadcrumb">
+        <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
+        <span> / </span>
+        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+    </div>
+
+    <h1>Mejores prácticas para Airflow 3.x</h1>
+    <div class="meta">2026-08-10 0926 · Airflow</div>
+
+    <div class="content">
+        
+        
+            
+        
+            
+            <p>Airflow es una herramienta poderosa que permite a los equipos de DevOps automatizar y gestionar sus procesos de manera eficiente. Para utilizar Airflow 3.x de manera efectiva, es importante seguir algunas mejores prácticas. En primer lugar, es importante utilizar `DAGs` (Directed Acyclic Graphs) para definir los workflows, ya que esto permite una mayor flexibilidad y escalabilidad. Los `DAGs` se pueden definir utilizando el comando `airflow db init` y luego creando un archivo `dag.py` que contenga la lógica del workflow.</p>
+            
+        
+            
+        
+            
+            <p>Otra mejor práctica es utilizar `operators` y `sensors` para ejecutar tareas y monitorear eventos en los workflows. Los `operators` permiten ejecutar tareas específicas, como la ejecución de comandos `bash` o la lectura de archivos, mientras que los `sensors` permiten monitorear eventos y desencadenar acciones en función de ellos. Por ejemplo, se puede utilizar el `Sensor` `ExternalTaskSensor` para monitorear el estado de una tarea externa y desencadenar una acción cuando la tarea esté completa.</p>
+            
+        
+            
+        
+            
+            <p>Además, es importante utilizar `XCom` para compartir datos entre tareas en un workflow. `XCom` es un mecanismo que permite a las tareas compartir datos de manera segura y eficiente. Por ejemplo, se puede utilizar `XCom` para compartir un archivo generado por una tarea con otra tarea que lo necesite. Para utilizar `XCom`, se debe configurar el parámetro `xcom` en el archivo `airflow.cfg` y luego utilizar el método `xcom_push` y `xcom_pull` en las tareas para compartir datos.</p>
+            
+        
+            
+        
+            
+            <p>En cuanto a la configuración de Airflow, es importante utilizar `connections` para conectar con bases de datos y otros servicios externos. Las `connections` se pueden configurar utilizando el comando `airflow connections` y luego creando un archivo `connections.json` que contenga la configuración de las conexiones. Por ejemplo, se puede utilizar la conexión `postgresql` para conectar con una base de datos PostgreSQL y ejecutar consultas SQL.</p>
+            
+        
+            
+        
+            
+            <p>Finalmente, es importante seguir las mejores prácticas de seguridad y monitoreo para garantizar la integridad y la disponibilidad de los workflows. Esto incluye la utilización de autenticación y autorización para controlar el acceso a los workflows, la monitoreo de los logs y la utilización de herramientas de monitoreo para detectar problemas y optimizar el rendimiento.</p>
+            
+        
+            
+        
+            
+            <p>En resumen, Airflow 3.x es una herramienta poderosa que requiere una configuración y una utilización adecuadas para aprovechar al máximo sus capacidades. Siguiendo las mejores prácticas presentadas en este artículo, los equipos de DevOps pueden crear workflows eficientes y escalables que satisfagan sus necesidades y les permitan automatizar y gestionar sus procesos de manera efectiva.</p>
+            
+        
+            
+        
+            
+            <p>Para más información, se pueden consultar las fuentes citadas a continuación.</p>
+            
+        
+            
+        
+            
+        
+    </div>
+
+    
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://github.com/apache/airflow/milestone/143" target="_blank">Airflow 3.4.0</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://medium.com/@sriwworldofcoding/airflow-interview-questions-whats-difference-between-requirements-txt-44bf23f83ede" target="_blank">Airflow Interview Questions</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/felipe_de_godoy/pytest-pt4-production-test-coverage-6hn" target="_blank">Pytest - Production test Coverage</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
+
+    <div class="nav">
+        <div>
+            
+            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-25_0953.html">&larr; 2026-07-25 0953</a>
+            
+        </div>
+        <div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,4 +1,24 @@
 {
+  "2026-08-10_0926": {
+    "slug": "superset",
+    "title": "Superset: Creación de Tableros y Gráficos",
+    "summary": "Superset es una herramienta de código abierto para crear tableros y gráficos personalizados. En este artículo, se explora cómo crear tableros y gráficos con Superset, incluyendo la configuración de datasets y la creación de gráficos interactivos.",
+    "content": "Superset es una herramienta de visualización de datos que permite a los usuarios crear tableros y gráficos personalizados. Para empezar a utilizar Superset, es necesario configurar un dataset. Un dataset es un conjunto de datos que se utiliza para crear gráficos y tableros. Para configurar un dataset, se puede utilizar el comando `superset init` para inicializar el proyecto y luego `superset import` para importar los datos.\n\n \nPara crear un gráfico, se puede utilizar el comando `superset chart` y seleccionar el tipo de gráfico que se desea crear. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `superset chart bar`. Superset también permite la creación de tableros personalizados, que pueden incluir múltiples gráficos y datasets.\n\n \nEn la discusión #41973 en GitHub, se explica cómo crear una tabla de jerarquía y un gráfico de calendario interactivo con Superset. Esto se puede lograr utilizando el comando `superset table` para crear la tabla y luego `superset chart calendar` para crear el gráfico de calendario.\n\n \nEn cuanto a la administración de Superset, es importante mencionar que se puede utilizar el comando `superset config` para configurar los parámetros del proyecto. Por ejemplo, se puede utilizar el comando `superset config set` para establecer el timezone del proyecto.\n\n \nEn resumen, Superset es una herramienta poderosa para la creación de tableros y gráficos personalizados. Con la configuración adecuada de datasets y la creación de gráficos interactivos, los usuarios pueden crear visualizaciones de datos personalizadas y efectivas.\n\n \nEs importante mencionar que, según la discusión #42254 en GitHub, se ha encontrado un bug en la versión actual de Superset que afecta a la configuración del timezone. Por lo tanto, es recomendable verificar la documentación oficial de Superset para obtener más información sobre cómo solucionar este problema.",
+    "sources": [
+      {
+        "title": "How does Preset.io work + building a hierarchy table and interactive calendar chart?",
+        "url": "https://github.com/apache/superset/discussions/41973"
+      },
+      {
+        "title": "A Big Bug: date type timezone bug",
+        "url": "https://github.com/apache/superset/issues/42254"
+      },
+      {
+        "title": "Adding an image into a dashboard",
+        "url": "https://github.com/apache/superset/discussions/42281"
+      }
+    ]
+  },
   "2026-08-06_1043": {
     "slug": "superset",
     "title": "Superset: Herramienta de Visualización de Datos",

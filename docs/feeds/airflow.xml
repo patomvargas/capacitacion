@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/airflow.xml</id>
   <title>Airflow - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-09T08:50:15.248655+00:00</updated>
+  <updated>2026-08-10T09:27:32.230169+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/airflow/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -553,5 +553,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-25_0953.html"/>
     <summary>Apache Airflow 3.3 introduce tareas con estado y soporte multilenguaje, permitiendo una mayor flexibilidad y escalabilidad en la gestión de flujos de trabajo. Esta versión también incluye mejoras en la partición de activos y políticas de reintento personalizables.</summary>
     <published>2026-07-25T09:53:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/airflow/2026-08-10_0926.html</id>
+    <title>Mejores prácticas para Airflow 3.x</title>
+    <updated>2026-08-10T09:26:00+00:00</updated>
+    <content type="html">&lt;p&gt;Airflow es una herramienta poderosa que permite a los equipos de DevOps automatizar y gestionar sus procesos de manera eficiente. Para utilizar Airflow 3.x de manera efectiva, es importante seguir algunas mejores prácticas. En primer lugar, es importante utilizar &lt;code&gt;DAGs&lt;/code&gt; (Directed Acyclic Graphs) para definir los workflows, ya que esto permite una mayor flexibilidad y escalabilidad. Los &lt;code&gt;DAGs&lt;/code&gt; se pueden definir utilizando el comando &lt;code&gt;airflow db init&lt;/code&gt; y luego creando un archivo &lt;code&gt;dag.py&lt;/code&gt; que contenga la lógica del workflow.&lt;/p&gt;
+&lt;p&gt;Otra mejor práctica es utilizar &lt;code&gt;operators&lt;/code&gt; y &lt;code&gt;sensors&lt;/code&gt; para ejecutar tareas y monitorear eventos en los workflows. Los &lt;code&gt;operators&lt;/code&gt; permiten ejecutar tareas específicas, como la ejecución de comandos &lt;code&gt;bash&lt;/code&gt; o la lectura de archivos, mientras que los &lt;code&gt;sensors&lt;/code&gt; permiten monitorear eventos y desencadenar acciones en función de ellos. Por ejemplo, se puede utilizar el &lt;code&gt;Sensor&lt;/code&gt; &lt;code&gt;ExternalTaskSensor&lt;/code&gt; para monitorear el estado de una tarea externa y desencadenar una acción cuando la tarea esté completa.&lt;/p&gt;
+&lt;p&gt;Además, es importante utilizar &lt;code&gt;XCom&lt;/code&gt; para compartir datos entre tareas en un workflow. &lt;code&gt;XCom&lt;/code&gt; es un mecanismo que permite a las tareas compartir datos de manera segura y eficiente. Por ejemplo, se puede utilizar &lt;code&gt;XCom&lt;/code&gt; para compartir un archivo generado por una tarea con otra tarea que lo necesite. Para utilizar &lt;code&gt;XCom&lt;/code&gt;, se debe configurar el parámetro &lt;code&gt;xcom&lt;/code&gt; en el archivo &lt;code&gt;airflow.cfg&lt;/code&gt; y luego utilizar el método &lt;code&gt;xcom_push&lt;/code&gt; y &lt;code&gt;xcom_pull&lt;/code&gt; en las tareas para compartir datos.&lt;/p&gt;
+&lt;p&gt;En cuanto a la configuración de Airflow, es importante utilizar &lt;code&gt;connections&lt;/code&gt; para conectar con bases de datos y otros servicios externos. Las &lt;code&gt;connections&lt;/code&gt; se pueden configurar utilizando el comando &lt;code&gt;airflow connections&lt;/code&gt; y luego creando un archivo &lt;code&gt;connections.json&lt;/code&gt; que contenga la configuración de las conexiones. Por ejemplo, se puede utilizar la conexión &lt;code&gt;postgresql&lt;/code&gt; para conectar con una base de datos PostgreSQL y ejecutar consultas SQL.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante seguir las mejores prácticas de seguridad y monitoreo para garantizar la integridad y la disponibilidad de los workflows. Esto incluye la utilización de autenticación y autorización para controlar el acceso a los workflows, la monitoreo de los logs y la utilización de herramientas de monitoreo para detectar problemas y optimizar el rendimiento.&lt;/p&gt;
+&lt;p&gt;En resumen, Airflow 3.x es una herramienta poderosa que requiere una configuración y una utilización adecuadas para aprovechar al máximo sus capacidades. Siguiendo las mejores prácticas presentadas en este artículo, los equipos de DevOps pueden crear workflows eficientes y escalables que satisfagan sus necesidades y les permitan automatizar y gestionar sus procesos de manera efectiva.&lt;/p&gt;
+&lt;p&gt;Para más información, se pueden consultar las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/apache/airflow/milestone/143"&gt;Airflow 3.4.0&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@sriwworldofcoding/airflow-interview-questions-whats-difference-between-requirements-txt-44bf23f83ede"&gt;Airflow Interview Questions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/felipe_de_godoy/pytest-pt4-production-test-coverage-6hn"&gt;Pytest - Production test Coverage&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-08-10_0926.html"/>
+    <summary>Airflow es una herramienta de orquestación de workflows que permite a los equipos de DevOps automatizar y gestionar sus procesos. En este artículo, se presentan mejores prácticas para utilizar Airflow 3.x de manera efectiva.</summary>
+    <published>2026-08-10T09:26:00+00:00</published>
   </entry>
 </feed>

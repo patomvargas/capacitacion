@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Airflow 3.3: Tareas con estado y soporte multilenguaje - Airflow</title>
-    <link rel="alternate" type="application/atom+xml" title="Airflow" href="https://patomvargas.github.io/capacitacion/feeds/airflow.xml">
+    <title>Superset: Creación de Tableros y Gráficos - Superset</title>
+    <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,51 +54,57 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/airflow/">Airflow</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Airflow 3.3: Tareas con estado y soporte multilenguaje</h1>
-    <div class="meta">2026-07-25 0953 · Airflow</div>
+    <h1>Superset: Creación de Tableros y Gráficos</h1>
+    <div class="meta">2026-08-10 0926 · Superset</div>
 
     <div class="content">
         
         
             
-        
-            
-            <p>Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Una de las novedades más destacadas es el soporte para tareas con estado, lo que permite a los desarrolladores crear flujos de trabajo más complejos y dinámicos. Para aprovechar esta característica, se puede utilizar el `Language Task SDK` para escribir lógica de tareas en Java y Go.</p>
+            <p>Superset es una herramienta de visualización de datos que permite a los usuarios crear tableros y gráficos personalizados. Para empezar a utilizar Superset, es necesario configurar un dataset. Un dataset es un conjunto de datos que se utiliza para crear gráficos y tableros. Para configurar un dataset, se puede utilizar el comando `superset init` para inicializar el proyecto y luego `superset import` para importar los datos.</p>
             
         
             
         
             
-            <p>Otra característica importante es el soporte multilenguaje, que permite a los desarrolladores escribir tareas en diferentes lenguajes de programación. Esto se logra mediante el uso de `XCom`, un sistema de comunicación entre tareas que permite compartir datos entre ellas. Por ejemplo, se puede utilizar el comando `airflow db init` para inicializar la base de datos y luego crear una tarea que utilice `XCom` para compartir datos con otras tareas.</p>
+        
+            
+            <p>Para crear un gráfico, se puede utilizar el comando `superset chart` y seleccionar el tipo de gráfico que se desea crear. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `superset chart bar`. Superset también permite la creación de tableros personalizados, que pueden incluir múltiples gráficos y datasets.</p>
             
         
             
         
             
-            <p>La versión 3.3 también incluye mejoras en la partición de activos, lo que permite una mayor escalabilidad y flexibilidad en la gestión de flujos de trabajo. Se puede utilizar el comando `airflow assets list` para listar los activos disponibles y luego crear una tarea que utilice la partición de activos para procesar los datos.</p>
+        
+            
+            <p>En la discusión #41973 en GitHub, se explica cómo crear una tabla de jerarquía y un gráfico de calendario interactivo con Superset. Esto se puede lograr utilizando el comando `superset table` para crear la tabla y luego `superset chart calendar` para crear el gráfico de calendario.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, es importante destacar la importancia de utilizar `DAGs` (Directed Acyclic Graphs) para definir los flujos de trabajo. Los `DAGs` permiten crear flujos de trabajo complejos y dinámicos, y se pueden utilizar para definir las dependencias entre tareas. Por ejemplo, se puede utilizar el comando `airflow dag list` para listar los `DAGs` disponibles y luego crear un nuevo `DAG` que utilice las tareas y los operadores para procesar los datos.</p>
+        
+            
+            <p>En cuanto a la administración de Superset, es importante mencionar que se puede utilizar el comando `superset config` para configurar los parámetros del proyecto. Por ejemplo, se puede utilizar el comando `superset config set` para establecer el timezone del proyecto.</p>
             
         
             
         
             
-            <p>En resumen, Apache Airflow 3.3 es una versión importante que introduce varias características nuevas y mejoras significativas. Los desarrolladores pueden aprovechar estas características para crear flujos de trabajo más complejos y dinámicos, y para mejorar la escalabilidad y flexibilidad en la gestión de flujos de trabajo.</p>
+        
+            
+            <p>En resumen, Superset es una herramienta poderosa para la creación de tableros y gráficos personalizados. Con la configuración adecuada de datasets y la creación de gráficos interactivos, los usuarios pueden crear visualizaciones de datos personalizadas y efectivas.</p>
             
         
             
         
             
-            <p>Para más información, se puede consultar la documentación oficial de Apache Airflow y las fuentes citadas a continuación.</p>
-            
         
+            
+            <p>Es importante mencionar que, según la discusión #42254 en GitHub, se ha encontrado un bug en la versión actual de Superset que afecta a la configuración del timezone. Por lo tanto, es recomendable verificar la documentación oficial de Superset para obtener más información sobre cómo solucionar este problema.</p>
             
         
     </div>
@@ -109,17 +115,17 @@
         <ul>
             
             <li>
-                <a href="https://airflow.apache.org/blog/airflow-3.3.0/" target="_blank">Apache Airflow 3.3.0: Stateful Tasks and Multi-Language Support</a>
+                <a href="https://github.com/apache/superset/discussions/41973" target="_blank">How does Preset.io work + building a hierarchy table and interactive calendar chart?</a>
                 
             </li>
             
             <li>
-                <a href="https://www.astronomer.io/blog/introducing-apache-airflow-3-3/" target="_blank">Introducing Apache Airflow 3.3</a>
+                <a href="https://github.com/apache/superset/issues/42254" target="_blank">A Big Bug: date type timezone bug</a>
                 
             </li>
             
             <li>
-                <a href="https://airflow.apache.org/" target="_blank">Apache Airflow</a>
+                <a href="https://github.com/apache/superset/discussions/42281" target="_blank">Adding an image into a dashboard</a>
                 
             </li>
             
@@ -130,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-07-21_1027.html">&larr; 2026-07-21 1027</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-06_1043.html">&larr; 2026-08-06 1043</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/airflow/2026-08-10_0926.html">2026-08-10 0926 &rarr;</a>
             
         </div>
     </div>
