@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/postgresql.xml</id>
   <title>PostgreSQL - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-10T09:27:32.249691+00:00</updated>
+  <updated>2026-08-11T09:03:59.498416+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/postgresql.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -649,5 +649,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-07_0904.html"/>
     <summary>Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y copias de seguridad. Descubre cómo mejorar la eficiencia de tus bases de datos.</summary>
     <published>2026-08-07T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-11_0902.html</id>
+    <title>Optimización de PostgreSQL</title>
+    <updated>2026-08-11T09:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;La optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la configuración de índices. Los índices permiten a la base de datos acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando &lt;code&gt;CREATE INDEX&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite mantener una copia de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando &lt;code&gt;pg_basebackup&lt;/code&gt; y &lt;code&gt;pg_receivewal&lt;/code&gt;. También es importante monitorear el rendimiento de la base de datos utilizando herramientas como &lt;code&gt;pg_stat&lt;/code&gt; y &lt;code&gt;pg_top&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La extensión &lt;code&gt;pg_stat&lt;/code&gt; proporciona información detallada sobre el rendimiento de la base de datos, incluyendo el tiempo de consulta, el número de consultas y el uso de recursos. Puedes acceder a esta información utilizando el comando &lt;code&gt;SELECT * FROM pg_stat_activity&lt;/code&gt;. La extensión &lt;code&gt;pg_top&lt;/code&gt; proporciona una visión general del rendimiento de la base de datos, incluyendo el uso de CPU, memoria y disco.&lt;/p&gt;
+&lt;p&gt;Es importante mencionar que la versión 19 de PostgreSQL ha introducido cambios significativos en la configuración y el rendimiento. Según la documentación oficial, la versión 19 ha mejorado la seguridad y el rendimiento, y ha agregado nuevas características como la compatibilidad con RADIUS sobre TCP. Puedes encontrar más información sobre la versión 19 en la documentación oficial de PostgreSQL.&lt;/p&gt;
+&lt;p&gt;En cuanto a las mejores prácticas, es importante seguir los consejos de los expertos en la materia. Por ejemplo, es recomendable utilizar una buena diseño de esquema, incluyendo la creación de índices y la optimización de consultas. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando &lt;code&gt;pg_dump&lt;/code&gt; y &lt;code&gt;pg_restore&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y proporciona muchos recursos y herramientas para mejorar el rendimiento y la escalabilidad de la base de datos. Puedes encontrar más información en la página oficial de PostgreSQL y en las fuentes citadas a continuación.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/"&gt;PostgreSQL: The world's most advanced open source database&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"&gt;PostgreSQL 19 Beta 2 Released!&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://dev.to/johnkipruto/postgresql-best-practices-for-backend-developers-10he"&gt;PostgreSQL Best Practices for Backend Developers&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-11_0902.html"/>
+    <summary>Mejora el rendimiento de tu base de datos PostgreSQL con técnicas de optimización y configuración. Aprende a identificar y solucionar cuellos de botella en tu sistema.</summary>
+    <published>2026-08-11T09:02:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-10T09:27:32.261648+00:00</updated>
+  <updated>2026-08-11T09:03:59.513774+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -772,5 +772,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-07_0904.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura que sigue evolucionando. En este artículo, se presentan las últimas novedades y mejoras en Ansible, incluyendo la versión 14.2.0 y la versión 2.19.12rc1 de ansible-core.</summary>
     <published>2026-08-07T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-11_0902.html</id>
+    <title>Ansible: Mejores Practicas</title>
+    <updated>2026-08-11T09:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura y aplicaciones que utiliza un enfoque basado en playbooks, roles, collections, vault, inventory y AWX/Tower. Para empezar a utilizar Ansible, es importante entender el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un servidor o grupo de servidores. Un ejemplo de playbook básico es:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ansible-playbook -i inventory.ini playbook.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Un aspecto importante de Ansible es la gestión de la configuración de los servidores, que se puede realizar mediante el uso de roles. Los roles son conjuntos de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ansible-galaxy install apache&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Ansible, y se puede lograr mediante el uso de vault, que es una herramienta para cifrar y descifrar datos sensibles. Por ejemplo, se puede cifrar una contraseña de acceso a un servidor:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;ansible-vault encrypt_string 'mi_contraseña'&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, Ansible proporciona una herramienta llamada AWX/Tower, que es una interfaz web para gestionar y automatizar las tareas de Ansible. AWX/Tower permite crear y ejecutar playbooks, gestionar inventarios y monitorear los resultados de las tareas.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de sus componentes y mejores prácticas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/"&gt;Ansible Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://galaxy.ansible.com/"&gt;Ansible Galaxy&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.ansible.com/ansible-tower/"&gt;AWX/Tower Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-11_0902.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan las mejores prácticas para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-08-11T09:02:00+00:00</published>
   </entry>
 </feed>

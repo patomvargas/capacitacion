@@ -1,4 +1,24 @@
 {
+  "2026-08-11_0902": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Mejora el rendimiento de tu base de datos PostgreSQL con técnicas de optimización y configuración. Aprende a identificar y solucionar cuellos de botella en tu sistema.",
+    "content": "\nLa optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la configuración de índices. Los índices permiten a la base de datos acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`.\n\nOtra forma de mejorar el rendimiento es mediante la replicación. La replicación permite mantener una copia de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup` y `pg_receivewal`. También es importante monitorear el rendimiento de la base de datos utilizando herramientas como `pg_stat` y `pg_top`.\n\nLa extensión `pg_stat` proporciona información detallada sobre el rendimiento de la base de datos, incluyendo el tiempo de consulta, el número de consultas y el uso de recursos. Puedes acceder a esta información utilizando el comando `SELECT * FROM pg_stat_activity`. La extensión `pg_top` proporciona una visión general del rendimiento de la base de datos, incluyendo el uso de CPU, memoria y disco.\n\nEs importante mencionar que la versión 19 de PostgreSQL ha introducido cambios significativos en la configuración y el rendimiento. Según la documentación oficial, la versión 19 ha mejorado la seguridad y el rendimiento, y ha agregado nuevas características como la compatibilidad con RADIUS sobre TCP. Puedes encontrar más información sobre la versión 19 en la documentación oficial de PostgreSQL.\n\nEn cuanto a las mejores prácticas, es importante seguir los consejos de los expertos en la materia. Por ejemplo, es recomendable utilizar una buena diseño de esquema, incluyendo la creación de índices y la optimización de consultas. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando `pg_dump` y `pg_restore`.\n\nFinalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y proporciona muchos recursos y herramientas para mejorar el rendimiento y la escalabilidad de la base de datos. Puedes encontrar más información en la página oficial de PostgreSQL y en las fuentes citadas a continuación.\n\n",
+    "sources": [
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "PostgreSQL 19 Beta 2 Released!",
+        "url": "https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/"
+      },
+      {
+        "title": "PostgreSQL Best Practices for Backend Developers",
+        "url": "https://dev.to/johnkipruto/postgresql-best-practices-for-backend-developers-10he"
+      }
+    ]
+  },
   "2026-08-07_0904": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",

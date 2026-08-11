@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mejores prácticas con Git - Git</title>
-    <link rel="alternate" type="application/atom+xml" title="Git" href="https://patomvargas.github.io/capacitacion/feeds/git.xml">
+    <title>Ansible: Mejores Practicas - Ansible</title>
+    <link rel="alternate" type="application/atom+xml" title="Ansible" href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,72 +54,94 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/git/">Git</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/ansible/">Ansible</a>
     </div>
 
-    <h1>Mejores prácticas con Git</h1>
-    <div class="meta">2026-08-07 0904 · Git</div>
+    <h1>Ansible: Mejores Practicas</h1>
+    <div class="meta">2026-08-11 0902 · Ansible</div>
 
     <div class="content">
         
         
             
-            <p>Git es una herramienta fundamental en el desarrollo de software, y su uso efectivo puede mejorar significativamente la productividad y la colaboración en equipo. Una de las mejores prácticas es utilizar `git flow` para gestionar los workflows de desarrollo, lo que permite una organización clara y eficiente de las ramas y los cambios en el código.</p>
+        
+            
+            <p>Ansible es una herramienta de automatización de infraestructura y aplicaciones que utiliza un enfoque basado en playbooks, roles, collections, vault, inventory y AWX/Tower. Para empezar a utilizar Ansible, es importante entender el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un servidor o grupo de servidores. Un ejemplo de playbook básico es:</p>
+            
+        
+            
+            <p>`ansible-playbook -i inventory.ini playbook.yml`.</p>
             
         
             
         
             
-        
-            
-            <p>Para empezar a utilizar `git flow`, es necesario instalarlo en el sistema y configurarlo en el proyecto. Esto se puede hacer con el comando `git flow init`. Luego, se puede crear una nueva rama de características con `git flow feature start <nombre_de_la_caracteristica>`, y cuando se complete la característica, se puede fusionar con la rama principal con `git flow feature finish <nombre_de_la_caracteristica>`.</p>
+            <p>Un aspecto importante de Ansible es la gestión de la configuración de los servidores, que se puede realizar mediante el uso de roles. Los roles son conjuntos de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache:</p>
             
         
             
-        
-            
-        
-            
-            <p>Otra característica avanzada de Git es el uso de `git rebase` para reorganizar los commits y mantener un historial de cambios limpio y coherente. Por ejemplo, si se han realizado varios commits en una rama de características y se desea fusionar con la rama principal, se puede utilizar `git rebase -i <hash_del_commit_inicial>` para reorganizar los commits y eliminar cualquier commit innecesario.</p>
+            <p>`ansible-galaxy install apache`.</p>
             
         
             
         
             
-        
-            
-            <p>Además, Git proporciona una herramienta llamada `git bisect` para identificar rápidamente el commit que introduce un bug o problema en el código. Esto se puede hacer con el comando `git bisect start` y luego `git bisect bad` o `git bisect good` para indicar si el commit actual es bueno o malo.</p>
+            <p>La seguridad es otro aspecto importante en Ansible, y se puede lograr mediante el uso de vault, que es una herramienta para cifrar y descifrar datos sensibles. Por ejemplo, se puede cifrar una contraseña de acceso a un servidor:</p>
             
         
             
-        
-            
-        
-            
-            <p>Finalmente, es importante mencionar la importancia de utilizar `git worktrees` para gestionar múltiples ramas y proyectos de forma eficiente. Con `git worktree add <nombre_del_proyecto> <rama>`, se puede crear un nuevo trabajo con una rama específica y trabajar en él de forma independiente al proyecto principal.</p>
+            <p>`ansible-vault encrypt_string 'mi_contraseña'`.</p>
             
         
             
         
             
+            <p>Además, Ansible proporciona una herramienta llamada AWX/Tower, que es una interfaz web para gestionar y automatizar las tareas de Ansible. AWX/Tower permite crear y ejecutar playbooks, gestionar inventarios y monitorear los resultados de las tareas.</p>
+            
         
             
-            <p>En resumen, Git ofrece una variedad de características y herramientas avanzadas para mejorar la productividad y la colaboración en proyectos de desarrollo de software. Al utilizar `git flow`, `git rebase`, `git bisect` y `git worktrees`, se puede mantener un historial de cambios limpio y coherente, y trabajar de forma eficiente en múltiples proyectos y ramas.</p>
+        
+            
+            <p>En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de sus componentes y mejores prácticas.</p>
+            
+        
+            
+        
             
         
     </div>
 
     
+    <div class="sources">
+        <h3>Fuentes</h3>
+        <ul>
+            
+            <li>
+                <a href="https://docs.ansible.com/" target="_blank">Ansible Documentation</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://galaxy.ansible.com/" target="_blank">Ansible Galaxy</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://docs.ansible.com/ansible-tower/" target="_blank">AWX/Tower Documentation</a>
+                
+            </li>
+            
+        </ul>
+    </div>
+    
 
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-03_1130.html">&larr; 2026-08-03 1130</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-07_0904.html">&larr; 2026-08-07 0904</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-11_0902.html">2026-08-11 0902 &rarr;</a>
             
         </div>
     </div>

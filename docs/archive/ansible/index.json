@@ -1,4 +1,24 @@
 {
+  "2026-08-11_0902": {
+    "slug": "ansible",
+    "title": "Ansible: Mejores Practicas",
+    "summary": "Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan las mejores prácticas para utilizar Ansible de manera efectiva.",
+    "content": "\nAnsible es una herramienta de automatización de infraestructura y aplicaciones que utiliza un enfoque basado en playbooks, roles, collections, vault, inventory y AWX/Tower. Para empezar a utilizar Ansible, es importante entender el concepto de playbooks, que son archivos YAML que definen las tareas a realizar en un servidor o grupo de servidores. Un ejemplo de playbook básico es: \n`ansible-playbook -i inventory.ini playbook.yml`.\n\nUn aspecto importante de Ansible es la gestión de la configuración de los servidores, que se puede realizar mediante el uso de roles. Los roles son conjuntos de tareas y configuraciones que se pueden aplicar a un servidor o grupo de servidores. Por ejemplo, se puede crear un rol para instalar y configurar un servidor web Apache: \n`ansible-galaxy install apache`.\n\nLa seguridad es otro aspecto importante en Ansible, y se puede lograr mediante el uso de vault, que es una herramienta para cifrar y descifrar datos sensibles. Por ejemplo, se puede cifrar una contraseña de acceso a un servidor: \n`ansible-vault encrypt_string 'mi_contraseña'`.\n\nAdemás, Ansible proporciona una herramienta llamada AWX/Tower, que es una interfaz web para gestionar y automatizar las tareas de Ansible. AWX/Tower permite crear y ejecutar playbooks, gestionar inventarios y monitorear los resultados de las tareas.\n\nEn resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones, y su uso efectivo requiere una comprensión profunda de sus componentes y mejores prácticas.\n\n  ",
+    "sources": [
+      {
+        "title": "Ansible Documentation",
+        "url": "https://docs.ansible.com/"
+      },
+      {
+        "title": "Ansible Galaxy",
+        "url": "https://galaxy.ansible.com/"
+      },
+      {
+        "title": "AWX/Tower Documentation",
+        "url": "https://docs.ansible.com/ansible-tower/"
+      }
+    ]
+  },
   "2026-08-07_0904": {
     "slug": "ansible",
     "title": "Ansible: Mejoras y Novedades",

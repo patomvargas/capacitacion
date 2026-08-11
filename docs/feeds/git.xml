@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-10T09:27:32.255963+00:00</updated>
+  <updated>2026-08-11T09:03:59.506279+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -647,5 +647,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-07_0904.html"/>
     <summary>En este artículo, se presentan algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks y rebase. Se incluyen ejemplos concretos y comandos para mejorar la productividad y la colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-08-07T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-08-11_0902.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-08-11T09:02:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental en el desarrollo de software, permitiendo a los equipos colaborar de manera efectiva en proyectos de código abierto y privados. Una de las mejores prácticas para utilizar Git es establecer un flujo de trabajo (workflow) claro y consistente. Esto puede incluir la creación de ramas (branches) para diferentes características o correcciones de errores, y la utilización de &lt;code&gt;git merge&lt;/code&gt; y &lt;code&gt;git rebase&lt;/code&gt; para integrar cambios en la rama principal.&lt;/p&gt;
+&lt;p&gt;Para mejorar la calidad del código y reducir errores, se pueden utilizar hooks en Git. Los hooks son scripts que se ejecutan automáticamente en diferentes momentos del ciclo de vida de un commit, como antes de realizar un commit (&lt;code&gt;pre-commit&lt;/code&gt;) o después de realizar un push (&lt;code&gt;post-push&lt;/code&gt;). Por ejemplo, se puede utilizar un hook &lt;code&gt;pre-commit&lt;/code&gt; para verificar que el código cumpla con ciertos estándares de codificación antes de permitir el commit.&lt;/p&gt;
+&lt;p&gt;Otra herramienta avanzada en Git es &lt;code&gt;git bisect&lt;/code&gt;, que permite identificar el commit que introdujo un error o problema en el código. Esto se logra mediante una búsqueda binaria, donde se prueba el código en diferentes puntos de la historia del proyecto para determinar dónde se produjo el error. Por ejemplo, se puede utilizar &lt;code&gt;git bisect start&lt;/code&gt; para iniciar la búsqueda, &lt;code&gt;git bisect bad&lt;/code&gt; para marcar un commit como defectuoso y &lt;code&gt;git bisect good&lt;/code&gt; para marcar un commit como bueno.&lt;/p&gt;
+&lt;p&gt;Además, Git proporciona la funcionalidad de &lt;code&gt;git worktree&lt;/code&gt;, que permite tener múltiples copias de un repositorio en diferentes directorios. Esto es útil para trabajar en diferentes características o correcciones de errores de manera simultánea. Por ejemplo, se puede utilizar &lt;code&gt;git worktree add&lt;/code&gt; para crear una nueva copia del repositorio en un directorio diferente.&lt;/p&gt;
+&lt;p&gt;En resumen, Git es una herramienta poderosa que ofrece muchas funcionalidades avanzadas para mejorar la productividad y colaboración en proyectos de desarrollo de software. Al utilizar workflows, hooks, &lt;code&gt;git rebase&lt;/code&gt;, &lt;code&gt;git bisect&lt;/code&gt; y &lt;code&gt;git worktree&lt;/code&gt;, los desarrolladores pueden trabajar de manera más eficiente y efectiva.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la comunidad de Git está en constante evolución, y nuevas características y mejoras se agregan regularmente. Por ejemplo, la versión 2.55.0 de Git, lanzada en junio de 2026, incluye varias mejoras y correcciones de errores. Es importante estar al tanto de estas actualizaciones y aprovechar las nuevas funcionalidades para mejorar la productividad y colaboración en proyectos de desarrollo de software.&lt;/p&gt;
+&lt;p&gt;Para más información sobre Git y sus funcionalidades, se pueden consultar las fuentes oficiales de Git y GitHub, que ofrecen documentación detallada y tutoriales para principiantes y avanzados.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/"&gt;GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.blog/changelog/type/new-releases/"&gt;Type: New Releases - GitHub Changelog&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-11_0902.html"/>
+    <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
+    <published>2026-08-11T09:02:00+00:00</published>
   </entry>
 </feed>
