@@ -1,4 +1,20 @@
 {
+  "2026-08-12_0915": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes",
+    "summary": "En este artículo, se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de networking, storage y security. Se destacan las mejoras en el AMD GPU Operator y se proporcionan ejemplos prácticos de configuración.",
+    "content": "Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las últimas novedades es la inclusión de nuevas características de networking, como la capacidad de configurar redes de forma más flexible y segura. Por ejemplo, se puede utilizar el comando `kubectl` para crear una red de tipo `NetworkPolicy` que restrinja el tráfico entre pods.\n\nLa seguridad es otro aspecto importante en Kubernetes, y se han agregado nuevas características para mejorar la protección de los clusters. Por ejemplo, se puede utilizar el comando `kubectl` para crear un `Secret` que almacene información sensible, como claves de API o contraseñas. Luego, se puede utilizar este `Secret` para autenticar y autorizar a los pods que necesitan acceder a estos recursos.\n\nEl AMD GPU Operator es otro componente importante en Kubernetes, que permite utilizar tarjetas gráficas AMD en los pods. Se puede instalar y configurar utilizando el comando `kubectl` y la herramienta `helm`. Por ejemplo, se puede utilizar el comando `helm install gpu-operator` para instalar el operador, y luego configurar los parámetros de la tarjeta gráfica utilizando el comando `kubectl edit gpu-operator`.\n\nEn cuanto a la resolución de problemas, Kubernetes proporciona varias herramientas y comandos para diagnosticar y solucionar problemas. Por ejemplo, se puede utilizar el comando `kubectl logs` para ver los registros de un pod, o el comando `kubectl describe` para obtener información detallada sobre un recurso. También se puede utilizar la herramienta `kubeadm` para diagnosticar y solucionar problemas relacionados con la instalación y configuración del cluster.\n\nEn resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que permiten a los administradores y desarrolladores crear y gestionar clusters de forma más eficiente y segura. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Kubernetes.\n\nFinalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en este sistema. Se puede encontrar documentación detallada sobre cada una de las características y herramientas mencionadas en este artículo, así como ejemplos y tutoriales prácticos para ayudar a los administradores y desarrolladores a comenzar a trabajar con Kubernetes.",
+    "sources": [
+      {
+        "title": "Flaking Test",
+        "url": "https://github.com/kubernetes/kubernetes/issues/140598"
+      },
+      {
+        "title": "AMD GPU Operator",
+        "url": "https://github.com/ROCm/gpu-operator"
+      }
+    ]
+  },
   "2026-08-08_0847": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

@@ -1,4 +1,28 @@
 {
+  "2026-08-12_0915": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Seguridad",
+    "summary": "FreeIPA es un sistema de gestión de identidad y seguridad que ofrece funcionalidades como LDAP, Kerberos y trust relationships. En este artículo, se presentan las últimas novedades y best practices para implementar y configurar FreeIPA de manera efectiva.",
+    "content": "FreeIPA es un sistema de gestión de identidad y seguridad que se basa en tecnologías como LDAP, Kerberos y trust relationships. Para implementar FreeIPA, es necesario configurar el servidor y los clientes. Para configurar el servidor, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración.\n\nUna vez configurado el servidor, se pueden agregar clientes utilizando el comando `ipa-client-install`. Es importante configurar correctamente la autenticación y la autorización para garantizar la seguridad del sistema. Para ello, se pueden utilizar comandos como `ipa user-add` y `ipa group-add` para crear usuarios y grupos, y `ipa hbacrule-add` para crear reglas de acceso basadas en el host.\n\nEn cuanto a las últimas novedades, se ha detectado un problema con la eliminación en批 de usuarios y grupos, que puede reportar éxito incluso cuando una de las operaciones falla. Para solucionar este problema, se puede utilizar el comando `ipa user-del` y `ipa group-del` para eliminar usuarios y grupos de manera individual. Además, se han detectado vulnerabilidades de seguridad en el paquete `freeipmi`, que se pueden solucionar actualizando el paquete a la última versión.\n\nPara garantizar la seguridad del sistema, es importante mantener actualizados los paquetes y parches de seguridad. Se pueden utilizar comandos como `yum update` y `ipa-patch` para actualizar los paquetes y aplicar parches de seguridad. Además, se pueden configurar reglas de sudo para restringir el acceso a ciertos comandos y recursos. Para ello, se puede utilizar el comando `ipa sudorule-add` y `ipa sudorule-mod` para crear y modificar reglas de sudo.\n\nEn resumen, FreeIPA es un sistema de gestión de identidad y seguridad que ofrece funcionalidades avanzadas para la autenticación y autorización. Para implementar y configurar FreeIPA de manera efectiva, es importante seguir las best practices y mantener actualizados los paquetes y parches de seguridad.\n\nFinalmente, es importante mencionar que se han detectado problemas con la búsqueda en la interfaz web de FreeIPA, que solo busca valores después de presionar la tecla Enter. Para solucionar este problema, se puede utilizar la búsqueda avanzada o utilizar comandos como `ipa user-find` y `ipa group-find` para buscar usuarios y grupos de manera más efectiva.",
+    "sources": [
+      {
+        "title": "Hardcoded Import Certificate Authority certificate",
+        "url": "https://github.com/freeipa/freeipa-webui/issues/1142"
+      },
+      {
+        "title": "Batch deletion reports success even when one of the operations fails",
+        "url": "https://github.com/freeipa/freeipa-webui/issues/1146"
+      },
+      {
+        "title": "RHSA-2026:48826 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:48826"
+      },
+      {
+        "title": "RHSA-2026:47982 - Security Advisory",
+        "url": "https://access.redhat.com/errata/RHSA-2026:47982"
+      }
+    ]
+  },
   "2026-08-08_0847": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Autenticación",

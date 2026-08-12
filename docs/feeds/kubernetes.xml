@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-11T09:03:59.463065+00:00</updated>
+  <updated>2026-08-12T09:16:46.923803+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -760,5 +760,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html"/>
     <summary>Kubernetes es un sistema de orquestación de contenedores en constante evolución. En este artículo, se presentan las últimas novedades y mejoras en el sistema.</summary>
     <published>2026-08-08T08:47:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html</id>
+    <title>Novedades en Kubernetes</title>
+    <updated>2026-08-12T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las últimas novedades es la inclusión de nuevas características de networking, como la capacidad de configurar redes de forma más flexible y segura. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear una red de tipo &lt;code&gt;NetworkPolicy&lt;/code&gt; que restrinja el tráfico entre pods.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante en Kubernetes, y se han agregado nuevas características para mejorar la protección de los clusters. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl&lt;/code&gt; para crear un &lt;code&gt;Secret&lt;/code&gt; que almacene información sensible, como claves de API o contraseñas. Luego, se puede utilizar este &lt;code&gt;Secret&lt;/code&gt; para autenticar y autorizar a los pods que necesitan acceder a estos recursos.&lt;/p&gt;
+&lt;p&gt;El AMD GPU Operator es otro componente importante en Kubernetes, que permite utilizar tarjetas gráficas AMD en los pods. Se puede instalar y configurar utilizando el comando &lt;code&gt;kubectl&lt;/code&gt; y la herramienta &lt;code&gt;helm&lt;/code&gt;. Por ejemplo, se puede utilizar el comando &lt;code&gt;helm install gpu-operator&lt;/code&gt; para instalar el operador, y luego configurar los parámetros de la tarjeta gráfica utilizando el comando &lt;code&gt;kubectl edit gpu-operator&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la resolución de problemas, Kubernetes proporciona varias herramientas y comandos para diagnosticar y solucionar problemas. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl logs&lt;/code&gt; para ver los registros de un pod, o el comando &lt;code&gt;kubectl describe&lt;/code&gt; para obtener información detallada sobre un recurso. También se puede utilizar la herramienta &lt;code&gt;kubeadm&lt;/code&gt; para diagnosticar y solucionar problemas relacionados con la instalación y configuración del cluster.&lt;/p&gt;
+&lt;p&gt;En resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que permiten a los administradores y desarrolladores crear y gestionar clusters de forma más eficiente y segura. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Kubernetes.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en este sistema. Se puede encontrar documentación detallada sobre cada una de las características y herramientas mencionadas en este artículo, así como ejemplos y tutoriales prácticos para ayudar a los administradores y desarrolladores a comenzar a trabajar con Kubernetes.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes/kubernetes/issues/140598"&gt;Flaking Test&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ROCm/gpu-operator"&gt;AMD GPU Operator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html"/>
+    <summary>En este artículo, se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de networking, storage y security. Se destacan las mejoras en el AMD GPU Operator y se proporcionan ejemplos prácticos de configuración.</summary>
+    <published>2026-08-12T09:15:00+00:00</published>
   </entry>
 </feed>

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/bind9.xml</id>
   <title>DNS BIND9 - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-11T09:03:59.457092+00:00</updated>
+  <updated>2026-08-12T09:16:46.915671+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/bind9/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -458,5 +458,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-08_0847.html"/>
     <summary>El sistema de nombres de dominio BIND9 es una herramienta fundamental para la administración de redes. En este artículo, se presentan las mejores prácticas para la configuración de zonas, DNSSEC, vistas, RPZ, logging y ajuste de rendimiento.</summary>
     <published>2026-08-08T08:47:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-12_0915.html</id>
+    <title>BIND9: Mejoras y vulnerabilidades</title>
+    <updated>2026-08-12T09:15:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión 9.20.26 de BIND9 incluye varias correcciones de seguridad, incluyendo la vulnerabilidad CVE-2026-11605, que se refiere a la validación innecesaria de registros DNSSEC firmados. Para solucionar esta vulnerabilidad, se debe actualizar a la versión 9.20.26 o superior.&lt;/p&gt;
+&lt;p&gt;Para configurar DNSSEC en BIND9, se deben seguir varios pasos. En primer lugar, se debe generar una clave de zona utilizando el comando &lt;code&gt;dnssec-keygen&lt;/code&gt;. Luego, se debe configurar la zona para utilizar DNSSEC mediante la directiva &lt;code&gt;dnssec-validation&lt;/code&gt; en el archivo de configuración &lt;code&gt;named.conf&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se debe configurar el logging para monitorear el rendimiento y la seguridad del servidor DNS. Se puede utilizar la directiva &lt;code&gt;logging&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt; para configurar el logging. Por ejemplo, se puede utilizar la siguiente configuración: &lt;code&gt;logging { category security { security; }; };&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;La versión 9.20.26 de BIND9 también incluye mejoras en el rendimiento, incluyendo la optimización del uso de memoria y la reducción del tiempo de respuesta. Para aprovechar estas mejoras, se debe configurar el servidor DNS para utilizar las opciones de rendimiento recomendadas.&lt;/p&gt;
+&lt;p&gt;Finalmente, se debe mencionar que la configuración de vistas (views) y RPZ (Response Policy Zones) es fundamental para mejorar la seguridad y el rendimiento del servidor DNS. Se pueden utilizar las directivas &lt;code&gt;view&lt;/code&gt; y &lt;code&gt;response-policy&lt;/code&gt; en el archivo &lt;code&gt;named.conf&lt;/code&gt; para configurar estas opciones.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-11605"&gt;CVE-2026-11605&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/en/whats-newx"&gt;ISC Knowledgebase&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-13321"&gt;CVE-2026-13321&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://kb.isc.org/docs/cve-2026-11331"&gt;CVE-2026-11331&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:54071"&gt;RHSA-2026:54071&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-12_0915.html"/>
+    <summary>BIND9 es un servidor DNS ampliamente utilizado que ha sido objeto de varias vulnerabilidades recientes. En este artículo, se presentan las mejoras y correcciones realizadas en las últimas versiones para abordar estas vulnerabilidades y mejorar el rendimiento. Se discuten las configuraciones y comandos necesarios para implementar estas mejoras.</summary>
+    <published>2026-08-12T09:15:00+00:00</published>
   </entry>
 </feed>

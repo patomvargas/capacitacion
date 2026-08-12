@@ -1,4 +1,32 @@
 {
+  "2026-08-12_0915": {
+    "slug": "bind9",
+    "title": "BIND9: Mejoras y vulnerabilidades",
+    "summary": "BIND9 es un servidor DNS ampliamente utilizado que ha sido objeto de varias vulnerabilidades recientes. En este artículo, se presentan las mejoras y correcciones realizadas en las últimas versiones para abordar estas vulnerabilidades y mejorar el rendimiento. Se discuten las configuraciones y comandos necesarios para implementar estas mejoras.",
+    "content": "\nLa versión 9.20.26 de BIND9 incluye varias correcciones de seguridad, incluyendo la vulnerabilidad CVE-2026-11605, que se refiere a la validación innecesaria de registros DNSSEC firmados. Para solucionar esta vulnerabilidad, se debe actualizar a la versión 9.20.26 o superior. \n\nPara configurar DNSSEC en BIND9, se deben seguir varios pasos. En primer lugar, se debe generar una clave de zona utilizando el comando `dnssec-keygen`. Luego, se debe configurar la zona para utilizar DNSSEC mediante la directiva `dnssec-validation` en el archivo de configuración `named.conf`. \n\nAdemás, se debe configurar el logging para monitorear el rendimiento y la seguridad del servidor DNS. Se puede utilizar la directiva `logging` en el archivo `named.conf` para configurar el logging. Por ejemplo, se puede utilizar la siguiente configuración: `logging { category security { security; }; };`. \n\nLa versión 9.20.26 de BIND9 también incluye mejoras en el rendimiento, incluyendo la optimización del uso de memoria y la reducción del tiempo de respuesta. Para aprovechar estas mejoras, se debe configurar el servidor DNS para utilizar las opciones de rendimiento recomendadas. \n\nFinalmente, se debe mencionar que la configuración de vistas (views) y RPZ (Response Policy Zones) es fundamental para mejorar la seguridad y el rendimiento del servidor DNS. Se pueden utilizar las directivas `view` y `response-policy` en el archivo `named.conf` para configurar estas opciones.\n\n",
+    "sources": [
+      {
+        "title": "CVE-2026-11605",
+        "url": "https://kb.isc.org/docs/cve-2026-11605"
+      },
+      {
+        "title": "ISC Knowledgebase",
+        "url": "https://kb.isc.org/docs/en/whats-newx"
+      },
+      {
+        "title": "CVE-2026-13321",
+        "url": "https://kb.isc.org/docs/cve-2026-13321"
+      },
+      {
+        "title": "CVE-2026-11331",
+        "url": "https://kb.isc.org/docs/cve-2026-11331"
+      },
+      {
+        "title": "RHSA-2026:54071",
+        "url": "https://access.redhat.com/errata/RHSA-2026:54071"
+      }
+    ]
+  },
   "2026-08-08_0847": {
     "slug": "bind9",
     "title": "Configuración de BIND9",

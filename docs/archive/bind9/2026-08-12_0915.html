@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
-    <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
+    <title>BIND9: Mejoras y vulnerabilidades - DNS BIND9</title>
+    <link rel="alternate" type="application/atom+xml" title="DNS BIND9" href="https://patomvargas.github.io/capacitacion/feeds/bind9.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,47 +54,47 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/bind9/">DNS BIND9</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-08-08 0847 · Kubernetes</div>
+    <h1>BIND9: Mejoras y vulnerabilidades</h1>
+    <div class="meta">2026-08-12 0915 · DNS BIND9</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes, también conocido como K8s, es un sistema de código abierto para la automatización de la implementación, escalado y administración de aplicaciones contenerizadas. En los últimos meses, se han producido varios cambios y mejoras en el sistema, como la inclusión de nuevos operadores y la mejora de la seguridad.</p>
+        
+            
+            <p>La versión 9.20.26 de BIND9 incluye varias correcciones de seguridad, incluyendo la vulnerabilidad CVE-2026-11605, que se refiere a la validación innecesaria de registros DNSSEC firmados. Para solucionar esta vulnerabilidad, se debe actualizar a la versión 9.20.26 o superior.</p>
             
         
             
         
             
-            <p>Una de las novedades más destacadas es la introducción de la herramienta `kueue`, que permite a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo. Para instalar `kueue`, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/kueue/releases/latest/download/kueue.yaml`.</p>
+            <p>Para configurar DNSSEC en BIND9, se deben seguir varios pasos. En primer lugar, se debe generar una clave de zona utilizando el comando `dnssec-keygen`. Luego, se debe configurar la zona para utilizar DNSSEC mediante la directiva `dnssec-validation` en el archivo de configuración `named.conf`.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la inclusión de la herramienta `volcano`, que permite a los administradores de clusters gestionar de manera más eficiente las cargas de trabajo y los recursos. Para instalar `volcano`, se puede utilizar el comando `kubectl apply -f https://github.com/volcano-sh/volcano/releases/latest/download/volcano.yaml`.</p>
+            <p>Además, se debe configurar el logging para monitorear el rendimiento y la seguridad del servidor DNS. Se puede utilizar la directiva `logging` en el archivo `named.conf` para configurar el logging. Por ejemplo, se puede utilizar la siguiente configuración: `logging { category security { security; }; };`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Kubernetes ha incluido varias mejoras en la versión 1.36, como la inclusión de la autenticación y autorización basada en tokens. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create secret generic token --from-literal token=<token>`.</p>
+            <p>La versión 9.20.26 de BIND9 también incluye mejoras en el rendimiento, incluyendo la optimización del uso de memoria y la reducción del tiempo de respuesta. Para aprovechar estas mejoras, se debe configurar el servidor DNS para utilizar las opciones de rendimiento recomendadas.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes es un sistema en constante evolución, con nuevas herramientas y mejoras que permiten a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo.</p>
+            <p>Finalmente, se debe mencionar que la configuración de vistas (views) y RPZ (Response Policy Zones) es fundamental para mejorar la seguridad y el rendimiento del servidor DNS. Se pueden utilizar las directivas `view` y `response-policy` en el archivo `named.conf` para configurar estas opciones.</p>
             
         
             
         
-            
-            <p>Para más información, se pueden consultar las fuentes oficiales de Kubernetes, como la documentación oficial y el repositorio de GitHub.</p>
             
         
     </div>
@@ -105,27 +105,27 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+                <a href="https://kb.isc.org/docs/cve-2026-11605" target="_blank">CVE-2026-11605</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/docs/home/" target="_blank">Kubernetes Documentation</a>
+                <a href="https://kb.isc.org/docs/en/whats-newx" target="_blank">ISC Knowledgebase</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes/kubernetes" target="_blank">GitHub - kubernetes/kubernetes</a>
+                <a href="https://kb.isc.org/docs/cve-2026-13321" target="_blank">CVE-2026-13321</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/kubernetes-sigs/kueue/pulls" target="_blank">Pull requests: kubernetes-sigs/kueue</a>
+                <a href="https://kb.isc.org/docs/cve-2026-11331" target="_blank">CVE-2026-11331</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/volcano-sh/volcano/pulls" target="_blank">Pull requests: volcano-sh/volcano</a>
+                <a href="https://access.redhat.com/errata/RHSA-2026:54071" target="_blank">RHSA-2026:54071</a>
                 
             </li>
             
@@ -136,12 +136,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html">&larr; 2026-08-04 1043</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/bind9/2026-08-08_0847.html">&larr; 2026-08-08 0847</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html">2026-08-12 0915 &rarr;</a>
             
         </div>
     </div>

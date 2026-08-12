@@ -58,43 +58,43 @@
     </div>
 
     <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-08-08 0847 · Kubernetes</div>
+    <div class="meta">2026-08-12 0915 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes, también conocido como K8s, es un sistema de código abierto para la automatización de la implementación, escalado y administración de aplicaciones contenerizadas. En los últimos meses, se han producido varios cambios y mejoras en el sistema, como la inclusión de nuevos operadores y la mejora de la seguridad.</p>
+            <p>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las últimas novedades es la inclusión de nuevas características de networking, como la capacidad de configurar redes de forma más flexible y segura. Por ejemplo, se puede utilizar el comando `kubectl` para crear una red de tipo `NetworkPolicy` que restrinja el tráfico entre pods.</p>
             
         
             
         
             
-            <p>Una de las novedades más destacadas es la introducción de la herramienta `kueue`, que permite a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo. Para instalar `kueue`, se puede utilizar el comando `kubectl apply -f https://github.com/kubernetes-sigs/kueue/releases/latest/download/kueue.yaml`.</p>
+            <p>La seguridad es otro aspecto importante en Kubernetes, y se han agregado nuevas características para mejorar la protección de los clusters. Por ejemplo, se puede utilizar el comando `kubectl` para crear un `Secret` que almacene información sensible, como claves de API o contraseñas. Luego, se puede utilizar este `Secret` para autenticar y autorizar a los pods que necesitan acceder a estos recursos.</p>
             
         
             
         
             
-            <p>Otra mejora importante es la inclusión de la herramienta `volcano`, que permite a los administradores de clusters gestionar de manera más eficiente las cargas de trabajo y los recursos. Para instalar `volcano`, se puede utilizar el comando `kubectl apply -f https://github.com/volcano-sh/volcano/releases/latest/download/volcano.yaml`.</p>
+            <p>El AMD GPU Operator es otro componente importante en Kubernetes, que permite utilizar tarjetas gráficas AMD en los pods. Se puede instalar y configurar utilizando el comando `kubectl` y la herramienta `helm`. Por ejemplo, se puede utilizar el comando `helm install gpu-operator` para instalar el operador, y luego configurar los parámetros de la tarjeta gráfica utilizando el comando `kubectl edit gpu-operator`.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, Kubernetes ha incluido varias mejoras en la versión 1.36, como la inclusión de la autenticación y autorización basada en tokens. Para configurar la autenticación y autorización, se puede utilizar el comando `kubectl create secret generic token --from-literal token=<token>`.</p>
+            <p>En cuanto a la resolución de problemas, Kubernetes proporciona varias herramientas y comandos para diagnosticar y solucionar problemas. Por ejemplo, se puede utilizar el comando `kubectl logs` para ver los registros de un pod, o el comando `kubectl describe` para obtener información detallada sobre un recurso. También se puede utilizar la herramienta `kubeadm` para diagnosticar y solucionar problemas relacionados con la instalación y configuración del cluster.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes es un sistema en constante evolución, con nuevas herramientas y mejoras que permiten a los administradores de clusters gestionar de manera más eficiente los recursos y las cargas de trabajo.</p>
+            <p>En resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que permiten a los administradores y desarrolladores crear y gestionar clusters de forma más eficiente y segura. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Kubernetes.</p>
             
         
             
         
             
-            <p>Para más información, se pueden consultar las fuentes oficiales de Kubernetes, como la documentación oficial y el repositorio de GitHub.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en este sistema. Se puede encontrar documentación detallada sobre cada una de las características y herramientas mencionadas en este artículo, así como ejemplos y tutoriales prácticos para ayudar a los administradores y desarrolladores a comenzar a trabajar con Kubernetes.</p>
             
         
     </div>
@@ -105,27 +105,12 @@
         <ul>
             
             <li>
-                <a href="https://kubernetes.io/" target="_blank">Kubernetes</a>
+                <a href="https://github.com/kubernetes/kubernetes/issues/140598" target="_blank">Flaking Test</a>
                 
             </li>
             
             <li>
-                <a href="https://kubernetes.io/docs/home/" target="_blank">Kubernetes Documentation</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/kubernetes/kubernetes" target="_blank">GitHub - kubernetes/kubernetes</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/kubernetes-sigs/kueue/pulls" target="_blank">Pull requests: kubernetes-sigs/kueue</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/volcano-sh/volcano/pulls" target="_blank">Pull requests: volcano-sh/volcano</a>
+                <a href="https://github.com/ROCm/gpu-operator" target="_blank">AMD GPU Operator</a>
                 
             </li>
             
@@ -136,12 +121,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-04_1043.html">&larr; 2026-08-04 1043</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html">&larr; 2026-08-08 0847</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html">2026-08-12 0915 &rarr;</a>
             
         </div>
     </div>
