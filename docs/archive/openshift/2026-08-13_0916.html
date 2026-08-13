@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>OpenShift 4.22: Mejoras y Novedades - OpenShift</title>
+    <title>OpenShift: Mejoras y Novedades - OpenShift</title>
     <link rel="alternate" type="application/atom+xml" title="OpenShift" href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml">
     <style>
         :root {
@@ -57,44 +57,48 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/openshift/">OpenShift</a>
     </div>
 
-    <h1>OpenShift 4.22: Mejoras y Novedades</h1>
-    <div class="meta">2026-08-09 0849 · OpenShift</div>
+    <h1>OpenShift: Mejoras y Novedades</h1>
+    <div class="meta">2026-08-13 0916 · OpenShift</div>
 
     <div class="content">
         
         
             
-            <p>La última versión de OpenShift, 4.22, ofrece una serie de mejoras y novedades para desarrolladores y administradores de sistemas. Una de las características más destacadas es la mejora en la legibilidad de pipelines, lo que permite a los desarrolladores crear y gestionar flujos de trabajo de manera más eficiente.</p>
+        
+            
+            <p>La última versión de OpenShift Logging, la 6.5, incluye mejoras en la seguridad y el rendimiento. Para instalar esta versión, se puede utilizar el comando `oc apply -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.crd.yaml`. Luego, se puede crear un objeto de configuración de logging con `oc create -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.yaml`.</p>
             
         
             
         
             
-            <p>Para aprovechar al máximo esta función, se puede utilizar el comando `oc adm upgrade recommend` para identificar posibles problemas en la actualización. Además, se puede agregar la etiqueta `openShiftUpdatePrecheck` a las reglas de Prometheus para que aparezcan en la salida del comando.</p>
+            <p>Otra novedad importante es la introducción de Red Hat Enterprise Linux CoreOS 10 en OpenShift 4.22. Esto permitirá a los clusters ejecutar diferentes flujos de CoreOS en el futuro. Para probar esta función, se puede crear un cluster de OpenShift con `oc cluster up --image=registry.redhat.io/openshift4/ose-coreos:4.22`.</p>
             
         
             
         
             
-            <p>Otra característica importante es el soporte mejorado para Prometheus, que permite a los administradores de sistemas monitorear y analizar el rendimiento de sus aplicaciones de manera más efectiva. Para configurar Prometheus en OpenShift, se puede utilizar el comando `oc create -f prometheus.yaml` para crear un recurso de Prometheus.</p>
+            <p>En cuanto a la seguridad, es importante mencionar que se puede enriquecer los resultados de cumplimiento de OpenShift con metadatos personalizados. Para hacer esto, se puede crear un objeto ScanSettingBinding con `oc create -f https://raw.githubusercontent.com/openshift/compliance-operator/master/templates/scansettingbinding.yaml`. Luego, se puede agregar metadatos personalizados a los objetos ComplianceCheckResult con `oc annotate compliancecheckresult <nombre> compliance.openshift.io/custom-metadata=<valor>`.</p>
             
         
             
         
             
-            <p>La versión 4.22 de OpenShift también incluye mejoras en la seguridad, como la capacidad de especificar recursos para builds y fine-grained resource definitions. Esto permite a los administradores de sistemas controlar de manera más precisa los recursos utilizados por las aplicaciones.</p>
+            <p>Además, se puede utilizar el OperatorHub para instalar operadores personalizados en OpenShift. Por ejemplo, se puede instalar el operador de AMD GPU con `oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.crd.yaml`. Luego, se puede crear un objeto de configuración de GPU con `oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.yaml`.</p>
             
         
             
         
             
-            <p>Para aprovechar estas características, se puede utilizar el comando `oc new-build` para crear un nuevo build y especificar los recursos necesarios.</p>
+            <p>En resumen, OpenShift es una plataforma en constante evolución, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.</p>
             
         
             
         
             
-            <p>En resumen, OpenShift 4.22 es una versión poderosa y flexible que ofrece una serie de herramientas y características para desarrolladores y administradores de sistemas. Con su soporte mejorado para Prometheus, fine-grained resource definitions y mejoras en la legibilidad de pipelines, esta versión es ideal para aquellos que buscan crear y gestionar aplicaciones de manera eficiente y segura.</p>
+            <p>Finalmente, es importante mencionar que la documentación oficial de OpenShift es una excelente fuente de información para aprender sobre la plataforma y sus funcionalidades. Se puede encontrar documentación detallada sobre la instalación, configuración y administración de OpenShift en la página oficial de Red Hat.</p>
+            
+        
             
         
     </div>
@@ -105,17 +109,22 @@
         <ul>
             
             <li>
+                <a href="https://endoflife.date/red-hat-openshift" target="_blank">Red Hat OpenShift | endoflife.date</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf" target="_blank">Red Hat OpenShift Logging 6.5 Release notes</a>
                 
             </li>
             
             <li>
-                <a href="https://developers.redhat.com/articles/2026/07/14/whats-new-developers-red-hat-openshift-4-22" target="_blank">What's new for developers in Red Hat OpenShift 4.22</a>
+                <a href="https://www.redhat.com/en/blog/red-hat-enterprise-linux-coreos-10-coming-red-hat-openshift" target="_blank">Red Hat Enterprise Linux CoreOS 10 is coming to Red Hat OpenShift</a>
                 
             </li>
             
             <li>
-                <a href="https://medium.com/@savasirez/red-hat-openshift-4-22-highlights-2b2eeccd8e4f" target="_blank">Red Hat Openshift 4.22 Highlights</a>
+                <a href="https://developers.redhat.com/articles/2026/07/28/enrich-openshift-compliance-results-custom-metadata" target="_blank">Enrich OpenShift compliance results with custom metadata</a>
                 
             </li>
             
@@ -126,12 +135,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-05_1040.html">&larr; 2026-08-05 1040</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-09_0849.html">&larr; 2026-08-09 0849</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-13_0916.html">2026-08-13 0916 &rarr;</a>
             
         </div>
     </div>

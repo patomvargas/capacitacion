@@ -1,4 +1,28 @@
 {
+  "2026-08-13_0916": {
+    "slug": "openshift",
+    "title": "OpenShift: Mejoras y Novedades",
+    "summary": "OpenShift es una plataforma de contenedores líder en la industria, y recientemente ha lanzado varias mejoras y novedades. En este artículo, se presentan las últimas actualizaciones y best practices para aprovechar al máximo la plataforma.",
+    "content": "\nLa última versión de OpenShift Logging, la 6.5, incluye mejoras en la seguridad y el rendimiento. Para instalar esta versión, se puede utilizar el comando `oc apply -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.crd.yaml`. Luego, se puede crear un objeto de configuración de logging con `oc create -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.yaml`.\n\nOtra novedad importante es la introducción de Red Hat Enterprise Linux CoreOS 10 en OpenShift 4.22. Esto permitirá a los clusters ejecutar diferentes flujos de CoreOS en el futuro. Para probar esta función, se puede crear un cluster de OpenShift con `oc cluster up --image=registry.redhat.io/openshift4/ose-coreos:4.22`.\n\nEn cuanto a la seguridad, es importante mencionar que se puede enriquecer los resultados de cumplimiento de OpenShift con metadatos personalizados. Para hacer esto, se puede crear un objeto ScanSettingBinding con `oc create -f https://raw.githubusercontent.com/openshift/compliance-operator/master/templates/scansettingbinding.yaml`. Luego, se puede agregar metadatos personalizados a los objetos ComplianceCheckResult con `oc annotate compliancecheckresult <nombre> compliance.openshift.io/custom-metadata=<valor>`.\n\nAdemás, se puede utilizar el OperatorHub para instalar operadores personalizados en OpenShift. Por ejemplo, se puede instalar el operador de AMD GPU con `oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.crd.yaml`. Luego, se puede crear un objeto de configuración de GPU con `oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.yaml`.\n\nEn resumen, OpenShift es una plataforma en constante evolución, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.\n\nFinalmente, es importante mencionar que la documentación oficial de OpenShift es una excelente fuente de información para aprender sobre la plataforma y sus funcionalidades. Se puede encontrar documentación detallada sobre la instalación, configuración y administración de OpenShift en la página oficial de Red Hat.\n",
+    "sources": [
+      {
+        "title": "Red Hat OpenShift | endoflife.date",
+        "url": "https://endoflife.date/red-hat-openshift"
+      },
+      {
+        "title": "Red Hat OpenShift Logging 6.5 Release notes",
+        "url": "https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf"
+      },
+      {
+        "title": "Red Hat Enterprise Linux CoreOS 10 is coming to Red Hat OpenShift",
+        "url": "https://www.redhat.com/en/blog/red-hat-enterprise-linux-coreos-10-coming-red-hat-openshift"
+      },
+      {
+        "title": "Enrich OpenShift compliance results with custom metadata",
+        "url": "https://developers.redhat.com/articles/2026/07/28/enrich-openshift-compliance-results-custom-metadata"
+      }
+    ]
+  },
   "2026-08-09_0849": {
     "slug": "openshift",
     "title": "OpenShift 4.22: Mejoras y Novedades",

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openshift.xml</id>
   <title>OpenShift - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-12T09:16:46.927599+00:00</updated>
+  <updated>2026-08-13T09:17:24.314856+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openshift/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openshift.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -748,5 +748,25 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-09_0849.html"/>
     <summary>OpenShift 4.22 introduce mejoras en la legibilidad de pipelines, monitoreo, seguridad, rendimiento y soporte para Prometheus. Esta versión también incluye fine-grained resource definitions y permite especificar recursos para builds.</summary>
     <published>2026-08-09T08:49:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-13_0916.html</id>
+    <title>OpenShift: Mejoras y Novedades</title>
+    <updated>2026-08-13T09:16:00+00:00</updated>
+    <content type="html">&lt;p&gt;La última versión de OpenShift Logging, la 6.5, incluye mejoras en la seguridad y el rendimiento. Para instalar esta versión, se puede utilizar el comando &lt;code&gt;oc apply -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.crd.yaml&lt;/code&gt;. Luego, se puede crear un objeto de configuración de logging con &lt;code&gt;oc create -f https://raw.githubusercontent.com/openshift/cluster-logging-operator/master/templates/clusterlogging.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra novedad importante es la introducción de Red Hat Enterprise Linux CoreOS 10 en OpenShift 4.22. Esto permitirá a los clusters ejecutar diferentes flujos de CoreOS en el futuro. Para probar esta función, se puede crear un cluster de OpenShift con &lt;code&gt;oc cluster up --image=registry.redhat.io/openshift4/ose-coreos:4.22&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que se puede enriquecer los resultados de cumplimiento de OpenShift con metadatos personalizados. Para hacer esto, se puede crear un objeto ScanSettingBinding con &lt;code&gt;oc create -f https://raw.githubusercontent.com/openshift/compliance-operator/master/templates/scansettingbinding.yaml&lt;/code&gt;. Luego, se puede agregar metadatos personalizados a los objetos ComplianceCheckResult con &lt;code&gt;oc annotate compliancecheckresult &lt;nombre&gt; compliance.openshift.io/custom-metadata=&lt;valor&gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Además, se puede utilizar el OperatorHub para instalar operadores personalizados en OpenShift. Por ejemplo, se puede instalar el operador de AMD GPU con &lt;code&gt;oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.crd.yaml&lt;/code&gt;. Luego, se puede crear un objeto de configuración de GPU con &lt;code&gt;oc create -f https://raw.githubusercontent.com/ROCm/gpu-operator/master/deploy/crds/gpuoperator.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenShift es una plataforma en constante evolución, y es importante estar al tanto de las últimas novedades y mejoras para aprovechar al máximo su potencial.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que la documentación oficial de OpenShift es una excelente fuente de información para aprender sobre la plataforma y sus funcionalidades. Se puede encontrar documentación detallada sobre la instalación, configuración y administración de OpenShift en la página oficial de Red Hat.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://endoflife.date/red-hat-openshift"&gt;Red Hat OpenShift | endoflife.date&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://docs.redhat.com/en/documentation/red_hat_openshift_logging/6.5/pdf/release_notes/Red_Hat_OpenShift_Logging-6.5-Release_notes-en-US.pdf"&gt;Red Hat OpenShift Logging 6.5 Release notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.redhat.com/en/blog/red-hat-enterprise-linux-coreos-10-coming-red-hat-openshift"&gt;Red Hat Enterprise Linux CoreOS 10 is coming to Red Hat OpenShift&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://developers.redhat.com/articles/2026/07/28/enrich-openshift-compliance-results-custom-metadata"&gt;Enrich OpenShift compliance results with custom metadata&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openshift/2026-08-13_0916.html"/>
+    <summary>OpenShift es una plataforma de contenedores líder en la industria, y recientemente ha lanzado varias mejoras y novedades. En este artículo, se presentan las últimas actualizaciones y best practices para aprovechar al máximo la plataforma.</summary>
+    <published>2026-08-13T09:16:00+00:00</published>
   </entry>
 </feed>

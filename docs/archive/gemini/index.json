@@ -1,4 +1,32 @@
 {
+  "2026-08-13_0916": {
+    "slug": "gemini",
+    "title": "Gemini: Integración y Mejoras",
+    "summary": "Gemini es una plataforma de inteligencia artificial que ofrece modelos y herramientas para desarrolladores y científicos. En este artículo, se presentan las novedades y mejoras en la integración con Workspace, Vertex AI y prompting.",
+    "content": "\nLa plataforma Gemini ofrece una variedad de modelos y herramientas para desarrolladores y científicos. Recientemente, se ha lanzado la versión Gemini 3 Flash, una variante optimizada para la velocidad, y Gemini 3 Deep Think, que se enfoca en aplicaciones prácticas en ciencia, investigación y ingeniería. Para utilizar estos modelos, se puede utilizar el comando `gemini-3.1-flash-lite` en la consola de Google Cloud.\n\nLa integración con Workspace y Vertex AI es fundamental para aprovechar al máximo las capacidades de Gemini. Se puede utilizar el comando `gcloud ai gemini` para interactuar con la API de Gemini y realizar tareas como la creación de modelos y la ejecución de experimentos. Además, se puede utilizar la herramienta `Gemini Code Assist` para obtener asistencia en la codificación y la depuración de modelos.\n\nPara configurar la integración con Jira Data Center, se puede seguir el tutorial de la documentación oficial de Gemini. Primero, se debe crear un data store en Jira Data Center y luego agregar filtros para limitar los datos que se envían a Gemini. Luego, se puede utilizar el comando `gemini-jira-data-center` para conectar la instancia de Jira con la plataforma Gemini.\n\nLa seguridad y el control de costos son fundamentales al utilizar Gemini. Se puede establecer un presupuesto y recibir alertas cuando se supera el límite establecido. Por ejemplo, se puede utilizar el comando `gcloud billing budgets` para crear un presupuesto y establecer alertas. Además, se puede utilizar la herramienta `Gemini CLI` para monitorizar y controlar los costos de la plataforma.\n\nEn cuanto a las mejores prácticas, se recomienda utilizar la herramienta `Gemini Code Assist` para obtener asistencia en la codificación y la depuración de modelos. Además, se debe establecer un presupuesto y recibir alertas cuando se supera el límite establecido para evitar costos inesperados.\n\nFinalmente, se puede consultar la documentación oficial de Gemini para obtener más información sobre la integración con Workspace, Vertex AI y prompting. También se pueden utilizar las herramientas y comandos mencionados anteriormente para aprovechar al máximo las capacidades de la plataforma.",
+    "sources": [
+      {
+        "title": "Google Gemini - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Google_Gemini"
+      },
+      {
+        "title": "Release notes | Gemini API | Google AI for Developers",
+        "url": "https://ai.google.dev/gemini-api/docs/changelog"
+      },
+      {
+        "title": "Gemini Code Assist release notes | Gemini for Google Cloud | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/docs/codeassist/release-notes"
+      },
+      {
+        "title": "Gemini for Google Cloud release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/docs/release-notes"
+      },
+      {
+        "title": "Gemini Enterprise release notes | Google Cloud Documentation",
+        "url": "https://docs.cloud.google.com/gemini/enterprise/docs/release-notes"
+      }
+    ]
+  },
   "2026-08-09_0849": {
     "slug": "gemini",
     "title": "Gemini: Integración con Workspace y Vertex AI",
