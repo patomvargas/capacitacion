@@ -1,4 +1,20 @@
 {
+  "2026-08-14_0911": {
+    "slug": "metallb",
+    "title": "MetalLB: Avances en L2 y BGP",
+    "summary": "MetalLB es un sistema de balanceo de carga para Kubernetes que ofrece funcionalidades avanzadas en modo L2 y BGP. En este artículo, se presentan las novedades y mejoras en la configuración y el uso de MetalLB.",
+    "content": "\nMetalLB es un sistema de balanceo de carga para Kubernetes que permite la configuración de IP pools y la integración con protocolos de enrutamiento como BGP. En el modo L2, MetalLB utiliza la capa 2 de la pila de protocolos para realizar la elección del líder y la asignación de direcciones IP. \nPara configurar MetalLB en modo L2, se puede utilizar el comando `metallbctl create ipaddresspool` para crear un pool de direcciones IP. Luego, se puede configurar el modo L2 utilizando el comando `metallbctl create l2advertisement`.\n\nUna de las novedades en MetalLB es la introducción del campo `preferredNodeSelectors` en la configuración de L2Advertisement, que permite a los administradores expresar preferencias suaves para la elección del líder en modo L2. Esto se puede configurar utilizando el comando `metallbctl update l2advertisement` y especificando el campo `preferredNodeSelectors`.\n\nEn cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con clusters k3s y otros tipos de clusters. Para configurar MetalLB en un cluster k3s, se puede utilizar el comando `k3s kubectl apply` para aplicar la configuración de MetalLB. \nPara solucionar problemas en MetalLB, se pueden utilizar comandos como `metallbctl debug` para obtener información de depuración y `metallbctl logs` para ver los registros de eventos.\n\nEn resumen, MetalLB es un sistema de balanceo de carga avanzado para Kubernetes que ofrece funcionalidades en modo L2 y BGP, y se puede configurar y solucionar problemas utilizando comandos y configuraciones específicas.",
+    "sources": [
+      {
+        "title": "Patch release including the grpc bump from #3093 #3113",
+        "url": "https://github.com/metallb/metallb/issues/3113"
+      },
+      {
+        "title": "preferred-node-l2.md",
+        "url": "https://github.com/metallb/metallb/blob/main/design/preferred-node-l2.md"
+      }
+    ]
+  },
   "2026-08-10_0926": {
     "slug": "metallb",
     "title": "MetalLB: Equilibrio de Carga en Kubernetes",

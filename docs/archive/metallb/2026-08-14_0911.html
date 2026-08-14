@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>N8n: Integraciones y Workflows - n8n</title>
-    <link rel="alternate" type="application/atom+xml" title="n8n" href="https://patomvargas.github.io/capacitacion/feeds/n8n.xml">
+    <title>MetalLB: Avances en L2 y BGP - MetalLB</title>
+    <link rel="alternate" type="application/atom+xml" title="MetalLB" href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml">
     <style>
         :root {
             --bg: #0d1117; --card: #161b22; --border: #30363d;
@@ -54,41 +54,45 @@
     <div class="breadcrumb">
         <a href="https://patomvargas.github.io/capacitacion/">Inicio</a>
         <span> / </span>
-        <a href="https://patomvargas.github.io/capacitacion/archive/n8n/">n8n</a>
+        <a href="https://patomvargas.github.io/capacitacion/archive/metallb/">MetalLB</a>
     </div>
 
-    <h1>N8n: Integraciones y Workflows</h1>
-    <div class="meta">2026-08-06 1043 · n8n</div>
+    <h1>MetalLB: Avances en L2 y BGP</h1>
+    <div class="meta">2026-08-14 0911 · MetalLB</div>
 
     <div class="content">
         
         
             
-            <p>N8n es una herramienta de código abierto que permite a los usuarios crear y gestionar workflows de manera visual. Los workflows se componen de nodos, que son bloques de funcionalidad que se pueden conectar para crear flujos de trabajo complejos. Los nodos pueden ser de diferentes tipos, como nodos de entrada, nodos de procesamiento y nodos de salida.</p>
+        
+            
+            <p>MetalLB es un sistema de balanceo de carga para Kubernetes que permite la configuración de IP pools y la integración con protocolos de enrutamiento como BGP. En el modo L2, MetalLB utiliza la capa 2 de la pila de protocolos para realizar la elección del líder y la asignación de direcciones IP.</p>
+            
+        
+            
+            <p>Para configurar MetalLB en modo L2, se puede utilizar el comando `metallbctl create ipaddresspool` para crear un pool de direcciones IP. Luego, se puede configurar el modo L2 utilizando el comando `metallbctl create l2advertisement`.</p>
             
         
             
         
             
-            <p>Para crear un workflow en n8n, se puede utilizar la interfaz gráfica de usuario, que permite arrastrar y soltar nodos para crear el flujo de trabajo deseado. También se puede utilizar la línea de comandos para crear y gestionar workflows, utilizando comandos como `n8n start` y `n8n stop`.</p>
+            <p>Una de las novedades en MetalLB es la introducción del campo `preferredNodeSelectors` en la configuración de L2Advertisement, que permite a los administradores expresar preferencias suaves para la elección del líder en modo L2. Esto se puede configurar utilizando el comando `metallbctl update l2advertisement` y especificando el campo `preferredNodeSelectors`.</p>
             
         
             
         
             
-            <p>Una de las características más importantes de n8n es la capacidad de integrar con otras herramientas y servicios, como bases de datos, servicios de mensajería y servicios de almacenamiento en la nube. Esto se logra mediante la utilización de credenciales y webhooks, que permiten a los workflows interactuar con otros sistemas y servicios.</p>
+            <p>En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con clusters k3s y otros tipos de clusters. Para configurar MetalLB en un cluster k3s, se puede utilizar el comando `k3s kubectl apply` para aplicar la configuración de MetalLB.</p>
+            
+        
+            
+            <p>Para solucionar problemas en MetalLB, se pueden utilizar comandos como `metallbctl debug` para obtener información de depuración y `metallbctl logs` para ver los registros de eventos.</p>
             
         
             
         
             
-            <p>En cuanto a la seguridad, n8n ofrece una variedad de características para proteger los workflows y los datos que se procesan. Esto incluye la utilización de credenciales y tokens de acceso para autenticar y autorizar a los usuarios, así como la capacidad de cifrar los datos en tránsito y en reposo.</p>
-            
-        
-            
-        
-            
-            <p>Finalmente, n8n también ofrece la capacidad de self-hosting, lo que permite a los usuarios instalar y ejecutar la herramienta en su propio servidor o infraestructura en la nube. Esto puede ser especialmente útil para organizaciones que requieren un alto nivel de control y seguridad sobre sus workflows y datos.</p>
+            <p>En resumen, MetalLB es un sistema de balanceo de carga avanzado para Kubernetes que ofrece funcionalidades en modo L2 y BGP, y se puede configurar y solucionar problemas utilizando comandos y configuraciones específicas.</p>
             
         
     </div>
@@ -99,17 +103,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n/issues/35234" target="_blank">Built-in Audit node returns HTTP 500 on n8n Cloud 2.32.6 #35234</a>
+                <a href="https://github.com/metallb/metallb/issues/3113" target="_blank">Patch release including the grpc bump from #3093 #3113</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmlemonade.md" target="_blank">n8n-nodes-langchain.lmlemonade.md</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://github.com/n8n-io/n8n-docs/blob/main/docs/changelog/v20-migration-tool.md" target="_blank">v20-migration-tool.md</a>
+                <a href="https://github.com/metallb/metallb/blob/main/design/preferred-node-l2.md" target="_blank">preferred-node-l2.md</a>
                 
             </li>
             
@@ -120,12 +119,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-08-02_1001.html">&larr; 2026-08-02 1001</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-10_0926.html">&larr; 2026-08-10 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/n8n/2026-08-14_0911.html">2026-08-14 0911 &rarr;</a>
             
         </div>
     </div>

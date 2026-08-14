@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/metallb.xml</id>
   <title>MetalLB - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-13T09:17:24.336733+00:00</updated>
+  <updated>2026-08-14T09:12:20.627635+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/metallb/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/metallb.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -1094,5 +1094,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-10_0926.html"/>
     <summary>MetalLB es un software de equilibrio de carga para Kubernetes que permite a los administradores de sistemas configurar y gestionar el tráfico de red hacia los pods de una aplicación. En este artículo, se presentan las características y configuraciones clave de MetalLB, incluyendo el modo L2, BGP y pools de IP.</summary>
     <published>2026-08-10T09:26:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-14_0911.html</id>
+    <title>MetalLB: Avances en L2 y BGP</title>
+    <updated>2026-08-14T09:11:00+00:00</updated>
+    <content type="html">&lt;p&gt;MetalLB es un sistema de balanceo de carga para Kubernetes que permite la configuración de IP pools y la integración con protocolos de enrutamiento como BGP. En el modo L2, MetalLB utiliza la capa 2 de la pila de protocolos para realizar la elección del líder y la asignación de direcciones IP.&lt;/p&gt;
+&lt;p&gt;Para configurar MetalLB en modo L2, se puede utilizar el comando &lt;code&gt;metallbctl create ipaddresspool&lt;/code&gt; para crear un pool de direcciones IP. Luego, se puede configurar el modo L2 utilizando el comando &lt;code&gt;metallbctl create l2advertisement&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Una de las novedades en MetalLB es la introducción del campo &lt;code&gt;preferredNodeSelectors&lt;/code&gt; en la configuración de L2Advertisement, que permite a los administradores expresar preferencias suaves para la elección del líder en modo L2. Esto se puede configurar utilizando el comando &lt;code&gt;metallbctl update l2advertisement&lt;/code&gt; y especificando el campo &lt;code&gt;preferredNodeSelectors&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;En cuanto a la integración con Kubernetes, MetalLB se puede configurar para trabajar con clusters k3s y otros tipos de clusters. Para configurar MetalLB en un cluster k3s, se puede utilizar el comando &lt;code&gt;k3s kubectl apply&lt;/code&gt; para aplicar la configuración de MetalLB.&lt;/p&gt;
+&lt;p&gt;Para solucionar problemas en MetalLB, se pueden utilizar comandos como &lt;code&gt;metallbctl debug&lt;/code&gt; para obtener información de depuración y &lt;code&gt;metallbctl logs&lt;/code&gt; para ver los registros de eventos.&lt;/p&gt;
+&lt;p&gt;En resumen, MetalLB es un sistema de balanceo de carga avanzado para Kubernetes que ofrece funcionalidades en modo L2 y BGP, y se puede configurar y solucionar problemas utilizando comandos y configuraciones específicas.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/issues/3113"&gt;Patch release including the grpc bump from #3093 #3113&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/metallb/metallb/blob/main/design/preferred-node-l2.md"&gt;preferred-node-l2.md&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/metallb/2026-08-14_0911.html"/>
+    <summary>MetalLB es un sistema de balanceo de carga para Kubernetes que ofrece funcionalidades avanzadas en modo L2 y BGP. En este artículo, se presentan las novedades y mejoras en la configuración y el uso de MetalLB.</summary>
+    <published>2026-08-14T09:11:00+00:00</published>
   </entry>
 </feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Superset: Creación de Tableros y Gráficos - Superset</title>
+    <title>Superset: Mejoras y Novedades - Superset</title>
     <link rel="alternate" type="application/atom+xml" title="Superset" href="https://patomvargas.github.io/capacitacion/feeds/superset.xml">
     <style>
         :root {
@@ -57,54 +57,38 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/superset/">Superset</a>
     </div>
 
-    <h1>Superset: Creación de Tableros y Gráficos</h1>
-    <div class="meta">2026-08-10 0926 · Superset</div>
+    <h1>Superset: Mejoras y Novedades</h1>
+    <div class="meta">2026-08-14 0911 · Superset</div>
 
     <div class="content">
         
         
             
-            <p>Superset es una herramienta de visualización de datos que permite a los usuarios crear tableros y gráficos personalizados. Para empezar a utilizar Superset, es necesario configurar un dataset. Un dataset es un conjunto de datos que se utiliza para crear gráficos y tableros. Para configurar un dataset, se puede utilizar el comando `superset init` para inicializar el proyecto y luego `superset import` para importar los datos.</p>
+            <p>Superset es una herramienta de código abierto que permite a los usuarios crear dashboards y visualizaciones de datos de manera sencilla y eficiente. En su última versión, Superset ha introducido una capa semántica que permite a los usuarios definir y gestionar de manera más efectiva los metadatos de sus conjuntos de datos. Esto se ha logrado a través de la implementación de la propuesta de mejora SIP-182, que ha permitido la creación de una capa semántica más robusta y flexible.</p>
             
         
             
         
             
-        
-            
-            <p>Para crear un gráfico, se puede utilizar el comando `superset chart` y seleccionar el tipo de gráfico que se desea crear. Por ejemplo, para crear un gráfico de barras, se puede utilizar el comando `superset chart bar`. Superset también permite la creación de tableros personalizados, que pueden incluir múltiples gráficos y datasets.</p>
+            <p>Para aprovechar al máximo esta nueva funcionalidad, los usuarios pueden utilizar la interfaz de línea de comandos de Superset, que ofrece comandos como `superset init` para inicializar el entorno de Superset, y `superset db upgrade` para actualizar la base de datos a la última versión. Además, los usuarios pueden utilizar la función de `SQL Lab` para crear y ejecutar consultas SQL sobre sus conjuntos de datos.</p>
             
         
             
         
             
-        
-            
-            <p>En la discusión #41973 en GitHub, se explica cómo crear una tabla de jerarquía y un gráfico de calendario interactivo con Superset. Esto se puede lograr utilizando el comando `superset table` para crear la tabla y luego `superset chart calendar` para crear el gráfico de calendario.</p>
+            <p>Otra mejora significativa en Superset es la introducción de la función de `soft delete` para dashboards, conjuntos de datos y gráficos. Esto permite a los usuarios eliminar temporalmente estos elementos sin perder los metadatos asociados, lo que facilita la gestión y el mantenimiento de los dashboards y conjuntos de datos. Para utilizar esta función, los usuarios pueden simplemente hacer clic en el botón de `eliminar` en la interfaz de usuario de Superset, y luego confirmar la acción.</p>
             
         
             
         
             
-        
-            
-            <p>En cuanto a la administración de Superset, es importante mencionar que se puede utilizar el comando `superset config` para configurar los parámetros del proyecto. Por ejemplo, se puede utilizar el comando `superset config set` para establecer el timezone del proyecto.</p>
+            <p>En cuanto a la administración de dashboards y conjuntos de datos, Superset ofrece una variedad de herramientas y funciones que permiten a los usuarios personalizar y gestionar de manera efectiva sus dashboards y conjuntos de datos. Por ejemplo, los usuarios pueden utilizar la función de `Jinja templates` para crear plantillas personalizadas para sus dashboards, y la función de `datasets` para crear y gestionar conjuntos de datos de manera centralizada.</p>
             
         
             
         
             
-        
-            
-            <p>En resumen, Superset es una herramienta poderosa para la creación de tableros y gráficos personalizados. Con la configuración adecuada de datasets y la creación de gráficos interactivos, los usuarios pueden crear visualizaciones de datos personalizadas y efectivas.</p>
-            
-        
-            
-        
-            
-        
-            
-            <p>Es importante mencionar que, según la discusión #42254 en GitHub, se ha encontrado un bug en la versión actual de Superset que afecta a la configuración del timezone. Por lo tanto, es recomendable verificar la documentación oficial de Superset para obtener más información sobre cómo solucionar este problema.</p>
+            <p>En resumen, Superset es una herramienta poderosa y flexible que ofrece una variedad de funciones y herramientas para la exploración y visualización de datos. Con la introducción de la capa semántica y las mejoras en la administración de dashboards y conjuntos de datos, Superset se ha convertido en una herramienta aún más valiosa para los profesionales de la información y los analistas de datos.</p>
             
         
     </div>
@@ -115,17 +99,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/41973" target="_blank">How does Preset.io work + building a hierarchy table and interactive calendar chart?</a>
+                <a href="https://preset.io/blog/apache-superset-repo-recap-july-2026/" target="_blank">Apache Superset Repo Recap: July 2026</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/issues/42254" target="_blank">A Big Bug: date type timezone bug</a>
+                <a href="https://preset.io/blog/semantic-layers-in-superset/" target="_blank">Semantic Layers in Apache Superset: SIP-182 and Apache Ossie</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/apache/superset/discussions/42281" target="_blank">Adding an image into a dashboard</a>
+                <a href="https://superset.apache.org/user-docs/6.0.0/intro/" target="_blank">Superset Documentation</a>
                 
             </li>
             
@@ -136,12 +120,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-06_1043.html">&larr; 2026-08-06 1043</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-10_0926.html">&larr; 2026-08-10 0926</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/superset/2026-08-14_0911.html">2026-08-14 0911 &rarr;</a>
             
         </div>
     </div>

@@ -1,4 +1,20 @@
 {
+  "2026-08-14_0911": {
+    "slug": "n8n",
+    "title": "Automatización de flujos de trabajo con n8n",
+    "summary": "n8n es una plataforma de código abierto para la automatización de flujos de trabajo y la creación de agentes de inteligencia artificial. Permite la integración con más de 1500 servicios y la ejecución de flujos de trabajo de manera autónoma.",
+    "content": "n8n es una herramienta poderosa para la automatización de flujos de trabajo y la creación de agentes de inteligencia artificial. Su arquitectura se basa en nodos, que son los bloques de construcción de los flujos de trabajo. Cada nodo puede ser configurado para realizar una tarea específica, como la lectura de datos de una base de datos o la publicación de un mensaje en una red social. \n   \n   Para empezar a trabajar con n8n, es necesario instalar la plataforma en un servidor o en una máquina local. Esto se puede hacer mediante el comando `npm install -g n8n` o `docker pull n8n/n8n`. Una vez instalada, se puede acceder a la interfaz web de n8n mediante el comando `n8n start` y acceder a la URL `http://localhost:5678` en el navegador.\n   \n   La configuración de los flujos de trabajo en n8n se puede realizar de manera visual mediante la interfaz web, o mediante la edición de archivos JSON que definen los nodos y sus conexiones. Por ejemplo, para crear un flujo de trabajo que envíe un correo electrónico cuando se recibe un nuevo mensaje en un canal de Slack, se puede utilizar el nodo `Slack` para leer los mensajes del canal y el nodo `Email` para enviar el correo electrónico. \n   \n   La seguridad es un aspecto importante en la automatización de flujos de trabajo, y n8n proporciona varias herramientas para proteger los flujos de trabajo y los datos que se procesan. Por ejemplo, se pueden utilizar credenciales para autenticar los nodos y los flujos de trabajo, y se pueden configurar webhooks para notificar a los administradores en caso de errores o problemas. \n   \n   En cuanto a la integración con otros servicios, n8n proporciona una amplia gama de nodos para conectar con diferentes APIs y servicios, como Slack, GitHub, Twitter, etc. Esto permite a los desarrolladores crear flujos de trabajo que integren diferentes servicios y sistemas, y que se puedan ejecutar de manera autónoma.\n   \n   Finalmente, n8n también proporciona la posibilidad de ejecutar flujos de trabajo de manera autónoma en un servidor o en una máquina local, lo que permite a los desarrolladores crear aplicaciones y servicios que se puedan ejecutar sin la necesidad de una infraestructura en la nube. Esto se puede hacer mediante la configuración de un servidor de n8n en un contenedor Docker, por ejemplo, y la ejecución de los flujos de trabajo mediante el comando `n8n run`.",
+    "sources": [
+      {
+        "title": "n8n – The Platform for AI Agents and Workflow Automation",
+        "url": "https://github.com/n8n-io/n8n?utm_repo=n8n-io/n8n"
+      },
+      {
+        "title": "Palladium — Universal Portable Server Manager",
+        "url": "https://github.com/M-2000-0/Palladium"
+      }
+    ]
+  },
   "2026-08-06_1043": {
     "slug": "n8n",
     "title": "N8n: Integraciones y Workflows",
