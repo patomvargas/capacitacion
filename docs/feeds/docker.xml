@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/docker.xml</id>
   <title>Docker - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-14T09:12:20.633134+00:00</updated>
+  <updated>2026-08-15T08:34:56.465887+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/docker/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/docker.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -584,5 +584,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-07_0904.html"/>
     <summary>Docker ha anunciado mejoras en su plataforma, incluyendo la versión 2 de la especificación de kits y mejoras en la seguridad. Estas mejoras permiten a los desarrolladores crear entornos de desarrollo más productivos y seguros.</summary>
     <published>2026-08-07T09:04:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/docker/2026-08-15_0834.html</id>
+    <title>Mejores prácticas de Docker</title>
+    <updated>2026-08-15T08:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;Docker es una herramienta poderosa para contenerizar aplicaciones, pero su uso efectivo requiere una configuración y administración adecuadas. Una de las mejores prácticas es utilizar multi-stage builds, que permiten dividir el proceso de construcción de una imagen en varias etapas, reduciendo así el tamaño de la imagen final. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker build -t mi-aplicacion .&lt;/code&gt; para construir una imagen a partir de un Dockerfile.&lt;/p&gt;
+&lt;p&gt;Otra práctica importante es utilizar Docker Compose, que permite definir y ejecutar múltiples contenedores como una sola unidad. Se puede utilizar el comando &lt;code&gt;docker-compose up -d&lt;/code&gt; para iniciar los contenedores en segundo plano. La configuración de networking es también crucial, ya que permite a los contenedores comunicarse entre sí. Se puede utilizar el comando &lt;code&gt;docker network create mi-red&lt;/code&gt; para crear una red y luego utilizar el comando &lt;code&gt;docker run -it --net=mi-red mi-aplicacion&lt;/code&gt; para ejecutar un contenedor en esa red.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto importante a considerar al utilizar Docker. Se puede utilizar el comando &lt;code&gt;docker exec -it mi-aplicacion /bin/bash&lt;/code&gt; para acceder a un contenedor y realizar operaciones de administración. Es importante también utilizar una política de actualización de imágenes para asegurarse de que los contenedores estén actualizados y seguros. Se puede utilizar el comando &lt;code&gt;docker pull mi-aplicacion&lt;/code&gt; para actualizar la imagen de un contenedor.&lt;/p&gt;
+&lt;p&gt;En cuanto a la seguridad, es importante mencionar que Docker proporciona una serie de herramientas y características para proteger los contenedores y las imágenes. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker scan&lt;/code&gt; para analizar las imágenes en busca de vulnerabilidades de seguridad. También se puede utilizar el comando &lt;code&gt;docker trust&lt;/code&gt; para establecer una política de confianza para las imágenes.&lt;/p&gt;
+&lt;p&gt;Finalmente, es importante mencionar que Docker proporciona una serie de herramientas y características para mejorar la productividad y la eficiencia en el desarrollo y la administración de contenedores. Por ejemplo, se puede utilizar el comando &lt;code&gt;docker buildx&lt;/code&gt; para construir imágenes de manera más eficiente y segura. También se puede utilizar el comando &lt;code&gt;docker compose&lt;/code&gt; para definir y ejecutar múltiples contenedores como una sola unidad.&lt;/p&gt;
+&lt;p&gt;En resumen, Docker es una herramienta poderosa que requiere una configuración y administración adecuadas para utilizarla de manera efectiva. Al seguir las mejores prácticas y utilizar las herramientas y características proporcionadas por Docker, se puede asegurar la seguridad, la eficiencia y la productividad en el desarrollo y la administración de contenedores.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://hostnextra.medium.com/how-to-host-docker-apps-on-ubuntu-26-04-with-caddy-and-docker-compose-6dfefca43702"&gt;How to Host Docker Apps on Ubuntu 26.04 with Caddy and Docker Compose&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/orgs/docker/repositories"&gt;docker repositories&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/databricks/cli"&gt;Docker CLI&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/docker/2026-08-15_0834.html"/>
+    <summary>En este artículo, se presentan las mejores prácticas para utilizar Docker de manera efectiva, incluyendo la configuración de multi-stage builds, compose, networking y seguridad. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.</summary>
+    <published>2026-08-15T08:34:00+00:00</published>
   </entry>
 </feed>

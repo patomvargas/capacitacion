@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/git.xml</id>
   <title>Git - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-14T09:12:20.635424+00:00</updated>
+  <updated>2026-08-15T08:34:56.470592+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/git/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/git.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -667,5 +667,26 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-11_0902.html"/>
     <summary>Aprende a utilizar Git de manera efectiva con workflows, hooks y comandos avanzados. Mejora tu productividad y colaboración en proyectos de desarrollo de software.</summary>
     <published>2026-08-11T09:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/git/2026-08-15_0834.html</id>
+    <title>Mejores prácticas con Git</title>
+    <updated>2026-08-15T08:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;Git es una herramienta fundamental en el desarrollo de software, y su uso efectivo puede marcar una gran diferencia en la productividad y la calidad del código. Una de las mejores prácticas es utilizar &lt;code&gt;git flow&lt;/code&gt; para gestionar los workflows de desarrollo, lo que permite una organización clara de las ramas y la colaboración en equipo.&lt;/p&gt;
+&lt;p&gt;Para empezar a utilizar &lt;code&gt;git flow&lt;/code&gt;, primero debemos instalarlo en nuestro sistema con &lt;code&gt;apt-get install git-flow&lt;/code&gt; o &lt;code&gt;brew install git-flow&lt;/code&gt;. Luego, podemos inicializar el flujo de trabajo con &lt;code&gt;git flow init&lt;/code&gt;, y comenzar a crear nuevas características con &lt;code&gt;git flow feature start mi-.feature&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra herramienta avanzada de Git es &lt;code&gt;git rebase&lt;/code&gt;, que permite reorganizar los commits para que el historial del proyecto sea más lineal y fácil de seguir. Por ejemplo, podemos utilizar &lt;code&gt;git rebase -i HEAD~3&lt;/code&gt; para interactivamente reorganizar los últimos tres commits.&lt;/p&gt;
+&lt;p&gt;Además, &lt;code&gt;git bisect&lt;/code&gt; es una herramienta poderosa para encontrar el commit que introdujo un bug en el código. Con &lt;code&gt;git bisect start&lt;/code&gt; y &lt;code&gt;git bisect bad&lt;/code&gt;, podemos marcar el commit actual como defectuoso, y luego utilizar &lt;code&gt;git bisect good&lt;/code&gt; para marcar un commit anterior como bueno. Git entonces nos ayudará a encontrar el commit problemático.&lt;/p&gt;
+&lt;p&gt;Finalmente, &lt;code&gt;git worktree&lt;/code&gt; nos permite tener múltiples copias de un repositorio en diferentes directorios, lo que es útil para trabajar en diferentes características al mismo tiempo. Podemos agregar un nuevo worktree con &lt;code&gt;git worktree add ../mi-otro-proyecto mi-rama&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Estas son solo algunas de las muchas características avanzadas que ofrece Git. Al dominar estas herramientas, los desarrolladores pueden mejorar significativamente su flujo de trabajo y la calidad del código.&lt;/p&gt;
+&lt;p&gt;Para más información, se recomienda consultar la documentación oficial de Git y practicar con estos comandos en un entorno de prueba.&lt;/p&gt;
+&lt;p&gt;En resumen, Git ofrece una amplia gama de herramientas y características que pueden mejorar la productividad y la calidad del desarrollo de software. Algunas de las mejores prácticas incluyen utilizar &lt;code&gt;git flow&lt;/code&gt; para gestionar los workflows, &lt;code&gt;git rebase&lt;/code&gt; para reorganizar los commits, &lt;code&gt;git bisect&lt;/code&gt; para encontrar bugs y &lt;code&gt;git worktree&lt;/code&gt; para trabajar en diferentes características al mismo tiempo.&lt;/p&gt;
+&lt;p&gt;Con estas herramientas y prácticas, los desarrolladores pueden aprovechar al máximo las capacidades de Git y producir software de alta calidad de manera eficiente.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://git-scm.com/docs"&gt;Git Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/nvie/gitflow"&gt;Git Flow Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/git/2026-08-15_0834.html"/>
+    <summary>En este artículo, exploraremos algunas de las mejores prácticas y características avanzadas de Git, como workflows, hooks, rebase, bisect y worktrees. Estas herramientas pueden mejorar significativamente la eficiencia y la calidad del desarrollo de software.</summary>
+    <published>2026-08-15T08:34:00+00:00</published>
   </entry>
 </feed>

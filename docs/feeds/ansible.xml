@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/ansible.xml</id>
   <title>Ansible - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-14T09:12:20.639765+00:00</updated>
+  <updated>2026-08-15T08:34:56.478274+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/ansible/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/ansible.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -793,5 +793,19 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-11_0902.html"/>
     <summary>Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan las mejores prácticas para utilizar Ansible de manera efectiva.</summary>
     <published>2026-08-11T09:02:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-15_0834.html</id>
+    <title>Mejores Practicas con Ansible</title>
+    <updated>2026-08-15T08:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;Ansible es una herramienta de automatización de infraestructura y aplicaciones que permite a los administradores de sistemas y desarrolladores implementar y gestionar entornos de manera eficiente. Una de las características clave de Ansible es su capacidad para utilizar playbooks, que son archivos YAML que definen las tareas a realizar en un entorno.&lt;/p&gt;
+&lt;p&gt;Para empezar a trabajar con Ansible, es necesario instalar el software y configurar el inventario, que es el conjunto de hosts que se van a gestionar. El inventario se puede definir en un archivo &lt;code&gt;hosts.ini&lt;/code&gt; o utilizando una base de datos. Una vez configurado el inventario, se pueden crear playbooks para realizar tareas específicas, como la instalación de software o la configuración de servicios. Por ejemplo, se puede utilizar el comando &lt;code&gt;ansible-playbook -i hosts.ini playbook.yml&lt;/code&gt; para ejecutar un playbook en un conjunto de hosts.&lt;/p&gt;
+&lt;p&gt;Ansible también proporciona una característica llamada roles, que permiten modularizar las tareas y reutilizar código. Los roles se pueden crear utilizando el comando &lt;code&gt;ansible-galaxy init&lt;/code&gt; y se pueden instalar utilizando &lt;code&gt;ansible-galaxy install&lt;/code&gt;. Además, Ansible proporciona una característica llamada collections, que son conjuntos de módulos y roles que se pueden utilizar para realizar tareas específicas. Las collections se pueden instalar utilizando &lt;code&gt;ansible-galaxy collection install&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Otra característica importante de Ansible es la capacidad para cifrar datos sensibles utilizando Vault. Vault es una herramienta que permite cifrar y descifrar datos de manera segura. Para utilizar Vault, es necesario instalar el software y configurar la clave de cifrado. Luego, se puede utilizar el comando &lt;code&gt;ansible-vault encrypt&lt;/code&gt; para cifrar datos sensibles.&lt;/p&gt;
+&lt;p&gt;En cuanto a la gestión de la infraestructura, Ansible proporciona una característica llamada AWX/Tower, que es una plataforma de gestión de infraestructura que permite a los administradores de sistemas y desarrolladores gestionar entornos de manera centralizada. AWX/Tower proporciona una interfaz web para crear y gestionar playbooks, inventarios y otros recursos.&lt;/p&gt;
+&lt;p&gt;En resumen, Ansible es una herramienta poderosa para la automatización de infraestructura y aplicaciones. Al utilizar playbooks, roles, collections, Vault y AWX/Tower, los administradores de sistemas y desarrolladores pueden implementar y gestionar entornos de manera eficiente y segura.&lt;/p&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/ansible/2026-08-15_0834.html"/>
+    <summary>Ansible es una herramienta de automatización de infraestructura y aplicaciones. En este artículo, se presentan las mejores prácticas para utilizar Ansible de manera efectiva.</summary>
+    <published>2026-08-15T08:34:00+00:00</published>
   </entry>
 </feed>

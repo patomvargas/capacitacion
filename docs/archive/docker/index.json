@@ -1,4 +1,24 @@
 {
+  "2026-08-15_0834": {
+    "slug": "docker",
+    "title": "Mejores prácticas de Docker",
+    "summary": "En este artículo, se presentan las mejores prácticas para utilizar Docker de manera efectiva, incluyendo la configuración de multi-stage builds, compose, networking y seguridad. Se proporcionan ejemplos concretos y comandos para ilustrar cada concepto.",
+    "content": "\nDocker es una herramienta poderosa para contenerizar aplicaciones, pero su uso efectivo requiere una configuración y administración adecuadas. Una de las mejores prácticas es utilizar multi-stage builds, que permiten dividir el proceso de construcción de una imagen en varias etapas, reduciendo así el tamaño de la imagen final. Por ejemplo, se puede utilizar el comando `docker build -t mi-aplicacion .` para construir una imagen a partir de un Dockerfile.\n\nOtra práctica importante es utilizar Docker Compose, que permite definir y ejecutar múltiples contenedores como una sola unidad. Se puede utilizar el comando `docker-compose up -d` para iniciar los contenedores en segundo plano. La configuración de networking es también crucial, ya que permite a los contenedores comunicarse entre sí. Se puede utilizar el comando `docker network create mi-red` para crear una red y luego utilizar el comando `docker run -it --net=mi-red mi-aplicacion` para ejecutar un contenedor en esa red.\n\nLa seguridad es otro aspecto importante a considerar al utilizar Docker. Se puede utilizar el comando `docker exec -it mi-aplicacion /bin/bash` para acceder a un contenedor y realizar operaciones de administración. Es importante también utilizar una política de actualización de imágenes para asegurarse de que los contenedores estén actualizados y seguros. Se puede utilizar el comando `docker pull mi-aplicacion` para actualizar la imagen de un contenedor.\n\nEn cuanto a la seguridad, es importante mencionar que Docker proporciona una serie de herramientas y características para proteger los contenedores y las imágenes. Por ejemplo, se puede utilizar el comando `docker scan` para analizar las imágenes en busca de vulnerabilidades de seguridad. También se puede utilizar el comando `docker trust` para establecer una política de confianza para las imágenes.\n\nFinalmente, es importante mencionar que Docker proporciona una serie de herramientas y características para mejorar la productividad y la eficiencia en el desarrollo y la administración de contenedores. Por ejemplo, se puede utilizar el comando `docker buildx` para construir imágenes de manera más eficiente y segura. También se puede utilizar el comando `docker compose` para definir y ejecutar múltiples contenedores como una sola unidad.\n\nEn resumen, Docker es una herramienta poderosa que requiere una configuración y administración adecuadas para utilizarla de manera efectiva. Al seguir las mejores prácticas y utilizar las herramientas y características proporcionadas por Docker, se puede asegurar la seguridad, la eficiencia y la productividad en el desarrollo y la administración de contenedores.",
+    "sources": [
+      {
+        "title": "How to Host Docker Apps on Ubuntu 26.04 with Caddy and Docker Compose",
+        "url": "https://hostnextra.medium.com/how-to-host-docker-apps-on-ubuntu-26-04-with-caddy-and-docker-compose-6dfefca43702"
+      },
+      {
+        "title": "docker repositories",
+        "url": "https://github.com/orgs/docker/repositories"
+      },
+      {
+        "title": "Docker CLI",
+        "url": "https://github.com/databricks/cli"
+      }
+    ]
+  },
   "2026-08-07_0904": {
     "slug": "docker",
     "title": "Mejoras en Docker",

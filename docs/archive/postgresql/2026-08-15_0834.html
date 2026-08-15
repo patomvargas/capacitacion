@@ -58,7 +58,7 @@
     </div>
 
     <h1>Optimización de PostgreSQL</h1>
-    <div class="meta">2026-08-11 0902 · PostgreSQL</div>
+    <div class="meta">2026-08-15 0834 · PostgreSQL</div>
 
     <div class="content">
         
@@ -66,39 +66,37 @@
             
         
             
-            <p>La optimización de PostgreSQL es crucial para asegurar el rendimiento y la escalabilidad de tus aplicaciones. Una de las formas de mejorar el rendimiento es mediante la configuración de índices. Los índices permiten a la base de datos acceder a los datos de manera más eficiente, reduciendo el tiempo de consulta. Puedes crear un índice utilizando el comando `CREATE INDEX`.</p>
+            <p>La optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de las aplicaciones que lo utilizan. Una de las técnicas más efectivas es la indexación, que permite acelerar las consultas y reducir los tiempos de respuesta. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX` seguido del nombre del índice y la columna que se desea indexar.</p>
             
         
             
         
             
-            <p>Otra forma de mejorar el rendimiento es mediante la replicación. La replicación permite mantener una copia de la base de datos en un servidor separado, lo que puede mejorar la disponibilidad y la escalabilidad. Puedes configurar la replicación utilizando el comando `pg_basebackup` y `pg_receivewal`. También es importante monitorear el rendimiento de la base de datos utilizando herramientas como `pg_stat` y `pg_top`.</p>
+            <p>Otra técnica importante es la replicación, que permite duplicar los datos en diferentes servidores para mejorar la disponibilidad y la escalabilidad. PostgreSQL ofrece diferentes métodos de replicación, incluyendo la replicación maestra-esclava y la replicación asíncrona. Para configurar la replicación en PostgreSQL, se puede utilizar el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego configurar el servidor esclavo para que se conecte al servidor maestro.</p>
             
         
             
         
             
-            <p>La extensión `pg_stat` proporciona información detallada sobre el rendimiento de la base de datos, incluyendo el tiempo de consulta, el número de consultas y el uso de recursos. Puedes acceder a esta información utilizando el comando `SELECT * FROM pg_stat_activity`. La extensión `pg_top` proporciona una visión general del rendimiento de la base de datos, incluyendo el uso de CPU, memoria y disco.</p>
+            <p>Además de la indexación y la replicación, es importante monitorear el rendimiento de PostgreSQL para identificar posibles cuellos de botella y optimizar las consultas. La herramienta `pg_stat` ofrece información detallada sobre el rendimiento de la base de datos, incluyendo el número de consultas ejecutadas, el tiempo de respuesta y el uso de recursos. Para acceder a `pg_stat`, se puede utilizar el comando `psql` y ejecutar la consulta `SELECT * FROM pg_stat_activity;`.</p>
             
         
             
         
             
-            <p>Es importante mencionar que la versión 19 de PostgreSQL ha introducido cambios significativos en la configuración y el rendimiento. Según la documentación oficial, la versión 19 ha mejorado la seguridad y el rendimiento, y ha agregado nuevas características como la compatibilidad con RADIUS sobre TCP. Puedes encontrar más información sobre la versión 19 en la documentación oficial de PostgreSQL.</p>
+            <p>La configuración de la base de datos también es fundamental para optimizar el rendimiento. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria disponible para la base de datos. También se puede configurar el parámetro `wal_level` para ajustar el nivel de registro de transacciones. Para realizar estos ajustes, se puede editar el archivo de configuración `postgresql.conf` y reiniciar el servidor.</p>
             
         
             
         
             
-            <p>En cuanto a las mejores prácticas, es importante seguir los consejos de los expertos en la materia. Por ejemplo, es recomendable utilizar una buena diseño de esquema, incluyendo la creación de índices y la optimización de consultas. También es importante realizar copias de seguridad regulares de la base de datos utilizando el comando `pg_dump` y `pg_restore`.</p>
+            <p>En resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de la base de datos. Al seguir estas recomendaciones, es posible mejorar significativamente el rendimiento y la escalabilidad de las aplicaciones que utilizan PostgreSQL.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que la comunidad de PostgreSQL es muy activa y proporciona muchos recursos y herramientas para mejorar el rendimiento y la escalabilidad de la base de datos. Puedes encontrar más información en la página oficial de PostgreSQL y en las fuentes citadas a continuación.</p>
-            
-        
+            <p>Finalmente, es importante mencionar que la seguridad de la base de datos es fundamental para proteger los datos y prevenir accesos no autorizados. Se puede utilizar el comando `pg_hba.conf` para configurar la autenticación y autorización de los usuarios, y el comando `pg_crypto` para encriptar los datos sensibles.</p>
             
         
             
@@ -111,17 +109,27 @@
         <ul>
             
             <li>
+                <a href="https://en.wikipedia.org/wiki/PostgreSQL" target="_blank">PostgreSQL - Wikipedia</a>
+                
+            </li>
+            
+            <li>
                 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL: The world's most advanced open source database</a>
                 
             </li>
             
             <li>
-                <a href="https://www.postgresql.org/about/news/postgresql-19-beta-2-released-3350/" target="_blank">PostgreSQL 19 Beta 2 Released!</a>
+                <a href="https://dev.to/johnkipruto/postgresql-best-practices-for-backend-developers-10he" target="_blank">PostgreSQL Best Practices for Backend Developers</a>
                 
             </li>
             
             <li>
-                <a href="https://dev.to/johnkipruto/postgresql-best-practices-for-backend-developers-10he" target="_blank">PostgreSQL Best Practices for Backend Developers</a>
+                <a href="https://medium.com/@shrinet/most-slow-postgresql-queries-dont-need-a-bigger-server-b5544a463943" target="_blank">Most Slow PostgreSQL Queries Don’t Need a Bigger Server</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://dev.to/saipraveen446/postgresql-replication-the-complete-guide-to-read-replicas-architecture-and-setup-4f9o" target="_blank">PostgreSQL Replication: The Complete Guide to Read Replicas, Architecture, and Setup</a>
                 
             </li>
             
@@ -132,12 +140,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-07_0904.html">&larr; 2026-08-07 0904</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-11_0902.html">&larr; 2026-08-11 0902</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/postgresql/2026-08-15_0834.html">2026-08-15 0834 &rarr;</a>
             
         </div>
     </div>

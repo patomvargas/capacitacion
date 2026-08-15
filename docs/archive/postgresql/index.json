@@ -1,4 +1,32 @@
 {
+  "2026-08-15_0834": {
+    "slug": "postgresql",
+    "title": "Optimización de PostgreSQL",
+    "summary": "Aprende a optimizar el rendimiento de PostgreSQL con técnicas avanzadas de indexación, replicación y monitoreo. Mejora la eficiencia de tus consultas y reduce los tiempos de respuesta.",
+    "content": "\nLa optimización de PostgreSQL es crucial para garantizar el rendimiento y la escalabilidad de las aplicaciones que lo utilizan. Una de las técnicas más efectivas es la indexación, que permite acelerar las consultas y reducir los tiempos de respuesta. Para crear un índice en PostgreSQL, se puede utilizar el comando `CREATE INDEX` seguido del nombre del índice y la columna que se desea indexar.\n\nOtra técnica importante es la replicación, que permite duplicar los datos en diferentes servidores para mejorar la disponibilidad y la escalabilidad. PostgreSQL ofrece diferentes métodos de replicación, incluyendo la replicación maestra-esclava y la replicación asíncrona. Para configurar la replicación en PostgreSQL, se puede utilizar el comando `pg_basebackup` para crear una copia de seguridad de la base de datos y luego configurar el servidor esclavo para que se conecte al servidor maestro.\n\nAdemás de la indexación y la replicación, es importante monitorear el rendimiento de PostgreSQL para identificar posibles cuellos de botella y optimizar las consultas. La herramienta `pg_stat` ofrece información detallada sobre el rendimiento de la base de datos, incluyendo el número de consultas ejecutadas, el tiempo de respuesta y el uso de recursos. Para acceder a `pg_stat`, se puede utilizar el comando `psql` y ejecutar la consulta `SELECT * FROM pg_stat_activity;`.\n\nLa configuración de la base de datos también es fundamental para optimizar el rendimiento. Por ejemplo, se puede ajustar el parámetro `shared_buffers` para aumentar la cantidad de memoria disponible para la base de datos. También se puede configurar el parámetro `wal_level` para ajustar el nivel de registro de transacciones. Para realizar estos ajustes, se puede editar el archivo de configuración `postgresql.conf` y reiniciar el servidor.\n\nEn resumen, la optimización de PostgreSQL requiere una combinación de técnicas avanzadas de indexación, replicación y monitoreo, así como una configuración adecuada de la base de datos. Al seguir estas recomendaciones, es posible mejorar significativamente el rendimiento y la escalabilidad de las aplicaciones que utilizan PostgreSQL.\n\nFinalmente, es importante mencionar que la seguridad de la base de datos es fundamental para proteger los datos y prevenir accesos no autorizados. Se puede utilizar el comando `pg_hba.conf` para configurar la autenticación y autorización de los usuarios, y el comando `pg_crypto` para encriptar los datos sensibles.\n",
+    "sources": [
+      {
+        "title": "PostgreSQL - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/PostgreSQL"
+      },
+      {
+        "title": "PostgreSQL: The world's most advanced open source database",
+        "url": "https://www.postgresql.org/"
+      },
+      {
+        "title": "PostgreSQL Best Practices for Backend Developers",
+        "url": "https://dev.to/johnkipruto/postgresql-best-practices-for-backend-developers-10he"
+      },
+      {
+        "title": "Most Slow PostgreSQL Queries Don’t Need a Bigger Server",
+        "url": "https://medium.com/@shrinet/most-slow-postgresql-queries-dont-need-a-bigger-server-b5544a463943"
+      },
+      {
+        "title": "PostgreSQL Replication: The Complete Guide to Read Replicas, Architecture, and Setup",
+        "url": "https://dev.to/saipraveen446/postgresql-replication-the-complete-guide-to-read-replicas-architecture-and-setup-4f9o"
+      }
+    ]
+  },
   "2026-08-11_0902": {
     "slug": "postgresql",
     "title": "Optimización de PostgreSQL",
