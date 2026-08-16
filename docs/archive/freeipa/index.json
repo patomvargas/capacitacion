@@ -1,4 +1,24 @@
 {
+  "2026-08-16_0834": {
+    "slug": "freeipa",
+    "title": "FreeIPA: Gestión de Identidad y Autenticación",
+    "summary": "FreeIPA es una solución integral de gestión de identidad y autenticación que combina Linux, 389 Directory Server, MIT Kerberos, NTP, DNS y Dogtag. En este artículo, se presentan las características y configuraciones clave de FreeIPA.",
+    "content": "\nFreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos de red. Combina Linux, 389 Directory Server, MIT Kerberos, NTP, DNS y Dogtag para proporcionar una solución integral. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.\n\nUna vez instalado, se puede acceder a la interfaz web de FreeIPA mediante `https://<servidor-FreeIPA>/ipa/ui`. Desde aquí, se pueden gestionar los usuarios, grupos, hosts y servicios. Para agregar un nuevo usuario, se puede utilizar el comando `ipa user-add <nombre-usuario> --first=<nombre> --last=<apellido> --email=<correo-electronico>`.\n\nFreeIPA también admite la autenticación Kerberos, que se puede configurar utilizando el comando `ipa kerberos-auth`. Para habilitar la autenticación Kerberos, se debe ejecutar el comando `ipa kerberos-auth --enable`. Luego, se pueden agregar los hosts y servicios que requieren autenticación Kerberos utilizando los comandos `ipa host-add` y `ipa service-add`.\n\nEn cuanto a la gestión de acceso, FreeIPA proporciona la función de Host-Based Access Control (HBAC), que permite controlar el acceso a los hosts y servicios en función de la identidad del usuario y el grupo al que pertenece. Se puede configurar HBAC utilizando el comando `ipa hbacrule-add` y especificando las reglas de acceso.\n\nAdemás, FreeIPA admite la gestión de certificados mediante Dogtag, que se puede configurar utilizando el comando `ipa certmonger`. Para obtener un certificado, se debe ejecutar el comando `ipa certmonger --get-cert`.\n\nEn resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos de red. Su instalación y configuración son relativamente sencillas, y proporciona una variedad de funciones para gestionar los usuarios, grupos, hosts y servicios.\n\n",
+    "sources": [
+      {
+        "title": "FreeIPA Wiki",
+        "url": "https://wiki.rockstable.it/freeipa"
+      },
+      {
+        "title": "FreeIPA GitHub",
+        "url": "https://github.com/freeipa/freeipa-webui/issues/1142"
+      },
+      {
+        "title": "FreeIPA Server on FreeBSD",
+        "url": "https://forums.freebsd.org/threads/cft-freeipa-server-on-freebsd.103570/"
+      }
+    ]
+  },
   "2026-08-12_0915": {
     "slug": "freeipa",
     "title": "FreeIPA: Gestión de Identidad y Seguridad",

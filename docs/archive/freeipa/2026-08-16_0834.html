@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FreeIPA: Gestión de Identidad y Seguridad - FreeIPA</title>
+    <title>FreeIPA: Gestión de Identidad y Autenticación - FreeIPA</title>
     <link rel="alternate" type="application/atom+xml" title="FreeIPA" href="https://patomvargas.github.io/capacitacion/feeds/freeipa.xml">
     <style>
         :root {
@@ -57,44 +57,50 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/">FreeIPA</a>
     </div>
 
-    <h1>FreeIPA: Gestión de Identidad y Seguridad</h1>
-    <div class="meta">2026-08-12 0915 · FreeIPA</div>
+    <h1>FreeIPA: Gestión de Identidad y Autenticación</h1>
+    <div class="meta">2026-08-16 0834 · FreeIPA</div>
 
     <div class="content">
         
         
             
-            <p>FreeIPA es un sistema de gestión de identidad y seguridad que se basa en tecnologías como LDAP, Kerberos y trust relationships. Para implementar FreeIPA, es necesario configurar el servidor y los clientes. Para configurar el servidor, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de configuración.</p>
+        
+            
+            <p>FreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos de red. Combina Linux, 389 Directory Server, MIT Kerberos, NTP, DNS y Dogtag para proporcionar una solución integral. Para instalar FreeIPA, se puede utilizar el comando `ipa-server-install` y seguir las instrucciones del asistente de instalación.</p>
             
         
             
         
             
-            <p>Una vez configurado el servidor, se pueden agregar clientes utilizando el comando `ipa-client-install`. Es importante configurar correctamente la autenticación y la autorización para garantizar la seguridad del sistema. Para ello, se pueden utilizar comandos como `ipa user-add` y `ipa group-add` para crear usuarios y grupos, y `ipa hbacrule-add` para crear reglas de acceso basadas en el host.</p>
+            <p>Una vez instalado, se puede acceder a la interfaz web de FreeIPA mediante `https://<servidor-FreeIPA>/ipa/ui`. Desde aquí, se pueden gestionar los usuarios, grupos, hosts y servicios. Para agregar un nuevo usuario, se puede utilizar el comando `ipa user-add <nombre-usuario> --first=<nombre> --last=<apellido> --email=<correo-electronico>`.</p>
             
         
             
         
             
-            <p>En cuanto a las últimas novedades, se ha detectado un problema con la eliminación en批 de usuarios y grupos, que puede reportar éxito incluso cuando una de las operaciones falla. Para solucionar este problema, se puede utilizar el comando `ipa user-del` y `ipa group-del` para eliminar usuarios y grupos de manera individual. Además, se han detectado vulnerabilidades de seguridad en el paquete `freeipmi`, que se pueden solucionar actualizando el paquete a la última versión.</p>
+            <p>FreeIPA también admite la autenticación Kerberos, que se puede configurar utilizando el comando `ipa kerberos-auth`. Para habilitar la autenticación Kerberos, se debe ejecutar el comando `ipa kerberos-auth --enable`. Luego, se pueden agregar los hosts y servicios que requieren autenticación Kerberos utilizando los comandos `ipa host-add` y `ipa service-add`.</p>
             
         
             
         
             
-            <p>Para garantizar la seguridad del sistema, es importante mantener actualizados los paquetes y parches de seguridad. Se pueden utilizar comandos como `yum update` y `ipa-patch` para actualizar los paquetes y aplicar parches de seguridad. Además, se pueden configurar reglas de sudo para restringir el acceso a ciertos comandos y recursos. Para ello, se puede utilizar el comando `ipa sudorule-add` y `ipa sudorule-mod` para crear y modificar reglas de sudo.</p>
+            <p>En cuanto a la gestión de acceso, FreeIPA proporciona la función de Host-Based Access Control (HBAC), que permite controlar el acceso a los hosts y servicios en función de la identidad del usuario y el grupo al que pertenece. Se puede configurar HBAC utilizando el comando `ipa hbacrule-add` y especificando las reglas de acceso.</p>
             
         
             
         
             
-            <p>En resumen, FreeIPA es un sistema de gestión de identidad y seguridad que ofrece funcionalidades avanzadas para la autenticación y autorización. Para implementar y configurar FreeIPA de manera efectiva, es importante seguir las best practices y mantener actualizados los paquetes y parches de seguridad.</p>
+            <p>Además, FreeIPA admite la gestión de certificados mediante Dogtag, que se puede configurar utilizando el comando `ipa certmonger`. Para obtener un certificado, se debe ejecutar el comando `ipa certmonger --get-cert`.</p>
             
         
             
         
             
-            <p>Finalmente, es importante mencionar que se han detectado problemas con la búsqueda en la interfaz web de FreeIPA, que solo busca valores después de presionar la tecla Enter. Para solucionar este problema, se puede utilizar la búsqueda avanzada o utilizar comandos como `ipa user-find` y `ipa group-find` para buscar usuarios y grupos de manera más efectiva.</p>
+            <p>En resumen, FreeIPA es una herramienta poderosa para la gestión de identidad y autenticación en entornos de red. Su instalación y configuración son relativamente sencillas, y proporciona una variedad de funciones para gestionar los usuarios, grupos, hosts y servicios.</p>
+            
+        
+            
+        
             
         
     </div>
@@ -105,22 +111,17 @@
         <ul>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa-webui/issues/1142" target="_blank">Hardcoded Import Certificate Authority certificate</a>
+                <a href="https://wiki.rockstable.it/freeipa" target="_blank">FreeIPA Wiki</a>
                 
             </li>
             
             <li>
-                <a href="https://github.com/freeipa/freeipa-webui/issues/1146" target="_blank">Batch deletion reports success even when one of the operations fails</a>
+                <a href="https://github.com/freeipa/freeipa-webui/issues/1142" target="_blank">FreeIPA GitHub</a>
                 
             </li>
             
             <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:48826" target="_blank">RHSA-2026:48826 - Security Advisory</a>
-                
-            </li>
-            
-            <li>
-                <a href="https://access.redhat.com/errata/RHSA-2026:47982" target="_blank">RHSA-2026:47982 - Security Advisory</a>
+                <a href="https://forums.freebsd.org/threads/cft-freeipa-server-on-freebsd.103570/" target="_blank">FreeIPA Server on FreeBSD</a>
                 
             </li>
             
@@ -131,12 +132,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-08-08_0847.html">&larr; 2026-08-08 0847</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-08-12_0915.html">&larr; 2026-08-12 0915</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/freeipa/2026-08-16_0834.html">2026-08-16 0834 &rarr;</a>
             
         </div>
     </div>

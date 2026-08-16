@@ -1,4 +1,24 @@
 {
+  "2026-08-16_0834": {
+    "slug": "kubernetes",
+    "title": "Novedades en Kubernetes v1.37",
+    "summary": "Kubernetes v1.37 presenta nuevas características y mejoras en networking, storage, security y operators. Esta versión incluye cambios significativos en la forma en que se gestionan los clusters y los recursos.",
+    "content": "La versión v1.37 de Kubernetes incluye varias novedades y mejoras en diferentes áreas, como networking, storage, security y operators. Una de las características más destacadas es la capacidad de unir nodos de manera segura en versiones anteriores de Kubernetes utilizando `kubeadm`. Esto se logra mediante la característica `Enable safe joining of nodes on older kubernetes versions with kubeadm`, que se encuentra disponible en la versión v1.37.\n\n \nLa seguridad es otro aspecto que se ha mejorado en esta versión. Se han agregado nuevas características para proteger los clusters y los recursos, como la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre los pods. Esto se puede lograr mediante el comando `kubectl apply -f network-policy.yaml`, donde `network-policy.yaml` es un archivo que define la política de red.\n\n \nEn cuanto a los operadores, la versión v1.37 incluye mejoras en la forma en que se gestionan los recursos y los clusters. Por ejemplo, se puede utilizar el comando `kubectl get nodes` para obtener una lista de los nodos del cluster, y luego utilizar `kubectl describe node <nombre-del-nodo>` para obtener más información sobre un nodo específico.\n\n \nOtra característica interesante es la capacidad de utilizar el `AMD GPU Operator` para simplificar la implementación y el manejo de aceleradores de GPU de AMD en los clusters de Kubernetes. Esto se puede lograr mediante la ejecución del comando `kubectl apply -f gpu-operator.yaml`, donde `gpu-operator.yaml` es un archivo que define la configuración del operador de GPU.\n\n \nEn resumen, la versión v1.37 de Kubernetes presenta varias novedades y mejoras que pueden ayudar a los administradores de sistemas y desarrolladores a gestionar sus clusters y recursos de manera más eficiente y segura. Es importante consultar la documentación oficial de Kubernetes para obtener más información sobre estas características y cómo implementarlas en la práctica.",
+    "sources": [
+      {
+        "title": "Kubernetes v1.37 Sneak Peek",
+        "url": "https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/"
+      },
+      {
+        "title": "Releases: kubernetes-sigs/cluster-api",
+        "url": "https://github.com/kubernetes-sigs/cluster-api/releases"
+      },
+      {
+        "title": "AMD GPU Operator",
+        "url": "https://github.com/ROCm/gpu-operator"
+      }
+    ]
+  },
   "2026-08-12_0915": {
     "slug": "kubernetes",
     "title": "Novedades en Kubernetes",

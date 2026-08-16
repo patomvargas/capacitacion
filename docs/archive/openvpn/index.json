@@ -1,4 +1,24 @@
 {
+  "2026-08-16_0834": {
+    "slug": "openvpn",
+    "title": "Seguridad Avanzada con OpenVPN",
+    "summary": "OpenVPN es una herramienta de tunelización segura que permite a los administradores de sistemas y DevOps engineers proteger sus redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.",
+    "content": "OpenVPN es una herramienta de código abierto que permite crear túneles seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar `openssl` para generar los certificados y claves necesarios. Por ejemplo, se puede utilizar el comando `openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365` para generar un certificado y una clave de servidor.\n\n \n Para configurar el servidor OpenVPN, es necesario crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP y el puerto de escucha. Por ejemplo, se puede utilizar el comando `openvpn --config server.conf` para iniciar el servidor con la configuración especificada en el archivo `server.conf`. Es importante proteger el servidor OpenVPN con una configuración de seguridad adecuada, como la autenticación de dos factores y la cifrado de los datos.\n\n \n Una de las mejores prácticas para proteger un servidor OpenVPN es utilizar la autenticación de dos factores. Se puede utilizar una herramienta como `google-authenticator` para generar códigos de autenticación de un solo uso. También es importante cifrar los datos que se transmiten a través del túnel OpenVPN. Se puede utilizar el comando `openvpn --cipher AES-256-CBC` para especificar el algoritmo de cifrado a utilizar.\n\n \n Otra forma de proteger el servidor OpenVPN es utilizar un firewall para restringir el acceso a la red. Se puede utilizar una herramienta como `iptables` para configurar las reglas de firewall. Por ejemplo, se puede utilizar el comando `iptables -A INPUT -p tcp --dport 1194 -j ACCEPT` para permitir el tráfico de entrada en el puerto 1194, que es el puerto por defecto utilizado por OpenVPN.\n\n \n En cuanto a las novedades y cambios en OpenVPN, es importante mencionar que la versión 2.5.5 incluye mejoras en la seguridad y el rendimiento. También se han agregado nuevas funciones, como la compatibilidad con el protocolo de autenticación de dos factores de Google.\n\n \n En resumen, OpenVPN es una herramienta poderosa para proteger las redes y los datos. Es importante configurar y proteger el servidor OpenVPN con las mejores prácticas de seguridad, como la autenticación de dos factores y el cifrado de los datos.",
+    "sources": [
+      {
+        "title": "Kevin Beaumont – Medium",
+        "url": "https://medium.com/@networksecurity"
+      },
+      {
+        "title": "CVE-2026-64574 - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/security/cve/cve-2026-64574"
+      },
+      {
+        "title": "RHSA-2026:49744 - Security Advisory - Red Hat Customer Portal",
+        "url": "https://access.redhat.com/errata/RHSA-2026:49744"
+      }
+    ]
+  },
   "2026-08-08_0847": {
     "slug": "openvpn",
     "title": "OpenVPN: Tunneling y Seguridad Avanzada",

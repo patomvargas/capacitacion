@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/openvpn.xml</id>
   <title>OpenVPN - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-15T08:34:56.422821+00:00</updated>
+  <updated>2026-08-16T08:35:16.560967+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/openvpn.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -707,5 +707,24 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-08_0847.html"/>
     <summary>OpenVPN es una herramienta de código abierto para crear túneles VPN seguros. En este artículo, se presentan las mejores prácticas para configurar y hardenizar OpenVPN, incluyendo la configuración de certificados y la implementación de Access Server.</summary>
     <published>2026-08-08T08:47:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-16_0834.html</id>
+    <title>Seguridad Avanzada con OpenVPN</title>
+    <updated>2026-08-16T08:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;OpenVPN es una herramienta de código abierto que permite crear túneles seguros entre redes. Para configurar un servidor OpenVPN, es necesario generar certificados y claves de autenticación. Se puede utilizar &lt;code&gt;openssl&lt;/code&gt; para generar los certificados y claves necesarios. Por ejemplo, se puede utilizar el comando &lt;code&gt;openssl req -x509 -newkey rsa:2048 -nodes -keyout server.key -out server.crt -days 365&lt;/code&gt; para generar un certificado y una clave de servidor.&lt;/p&gt;
+&lt;p&gt;Para configurar el servidor OpenVPN, es necesario crear un archivo de configuración que especifique los parámetros de conexión, como la dirección IP y el puerto de escucha. Por ejemplo, se puede utilizar el comando &lt;code&gt;openvpn --config server.conf&lt;/code&gt; para iniciar el servidor con la configuración especificada en el archivo &lt;code&gt;server.conf&lt;/code&gt;. Es importante proteger el servidor OpenVPN con una configuración de seguridad adecuada, como la autenticación de dos factores y la cifrado de los datos.&lt;/p&gt;
+&lt;p&gt;Una de las mejores prácticas para proteger un servidor OpenVPN es utilizar la autenticación de dos factores. Se puede utilizar una herramienta como &lt;code&gt;google-authenticator&lt;/code&gt; para generar códigos de autenticación de un solo uso. También es importante cifrar los datos que se transmiten a través del túnel OpenVPN. Se puede utilizar el comando &lt;code&gt;openvpn --cipher AES-256-CBC&lt;/code&gt; para especificar el algoritmo de cifrado a utilizar.&lt;/p&gt;
+&lt;p&gt;Otra forma de proteger el servidor OpenVPN es utilizar un firewall para restringir el acceso a la red. Se puede utilizar una herramienta como &lt;code&gt;iptables&lt;/code&gt; para configurar las reglas de firewall. Por ejemplo, se puede utilizar el comando &lt;code&gt;iptables -A INPUT -p tcp --dport 1194 -j ACCEPT&lt;/code&gt; para permitir el tráfico de entrada en el puerto 1194, que es el puerto por defecto utilizado por OpenVPN.&lt;/p&gt;
+&lt;p&gt;En cuanto a las novedades y cambios en OpenVPN, es importante mencionar que la versión 2.5.5 incluye mejoras en la seguridad y el rendimiento. También se han agregado nuevas funciones, como la compatibilidad con el protocolo de autenticación de dos factores de Google.&lt;/p&gt;
+&lt;p&gt;En resumen, OpenVPN es una herramienta poderosa para proteger las redes y los datos. Es importante configurar y proteger el servidor OpenVPN con las mejores prácticas de seguridad, como la autenticación de dos factores y el cifrado de los datos.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://medium.com/@networksecurity"&gt;Kevin Beaumont – Medium&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/security/cve/cve-2026-64574"&gt;CVE-2026-64574 - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://access.redhat.com/errata/RHSA-2026:49744"&gt;RHSA-2026:49744 - Security Advisory - Red Hat Customer Portal&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/openvpn/2026-08-16_0834.html"/>
+    <summary>OpenVPN es una herramienta de tunelización segura que permite a los administradores de sistemas y DevOps engineers proteger sus redes. En este artículo, se presentan las mejores prácticas para configurar y proteger un servidor OpenVPN.</summary>
+    <published>2026-08-16T08:34:00+00:00</published>
   </entry>
 </feed>

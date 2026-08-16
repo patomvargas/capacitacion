@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
   <id>https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml</id>
   <title>Kubernetes - Tech News &amp; Learning Feeds</title>
-  <updated>2026-08-15T08:34:56.426251+00:00</updated>
+  <updated>2026-08-16T08:35:16.566767+00:00</updated>
   <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/" rel="alternate"/>
   <link href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml" rel="self"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="1.0.0">python-feedgen</generator>
@@ -778,5 +778,23 @@
     <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html"/>
     <summary>En este artículo, se presentan las últimas novedades y mejoras en Kubernetes, incluyendo nuevas características de networking, storage y security. Se destacan las mejoras en el AMD GPU Operator y se proporcionan ejemplos prácticos de configuración.</summary>
     <published>2026-08-12T09:15:00+00:00</published>
+  </entry>
+  <entry>
+    <id>https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-16_0834.html</id>
+    <title>Novedades en Kubernetes v1.37</title>
+    <updated>2026-08-16T08:34:00+00:00</updated>
+    <content type="html">&lt;p&gt;La versión v1.37 de Kubernetes incluye varias novedades y mejoras en diferentes áreas, como networking, storage, security y operators. Una de las características más destacadas es la capacidad de unir nodos de manera segura en versiones anteriores de Kubernetes utilizando &lt;code&gt;kubeadm&lt;/code&gt;. Esto se logra mediante la característica &lt;code&gt;Enable safe joining of nodes on older kubernetes versions with kubeadm&lt;/code&gt;, que se encuentra disponible en la versión v1.37.&lt;/p&gt;
+&lt;p&gt;La seguridad es otro aspecto que se ha mejorado en esta versión. Se han agregado nuevas características para proteger los clusters y los recursos, como la capacidad de utilizar &lt;code&gt;Network Policies&lt;/code&gt; para controlar el tráfico de red entre los pods. Esto se puede lograr mediante el comando &lt;code&gt;kubectl apply -f network-policy.yaml&lt;/code&gt;, donde &lt;code&gt;network-policy.yaml&lt;/code&gt; es un archivo que define la política de red.&lt;/p&gt;
+&lt;p&gt;En cuanto a los operadores, la versión v1.37 incluye mejoras en la forma en que se gestionan los recursos y los clusters. Por ejemplo, se puede utilizar el comando &lt;code&gt;kubectl get nodes&lt;/code&gt; para obtener una lista de los nodos del cluster, y luego utilizar &lt;code&gt;kubectl describe node &lt;nombre-del-nodo&gt;&lt;/code&gt; para obtener más información sobre un nodo específico.&lt;/p&gt;
+&lt;p&gt;Otra característica interesante es la capacidad de utilizar el &lt;code&gt;AMD GPU Operator&lt;/code&gt; para simplificar la implementación y el manejo de aceleradores de GPU de AMD en los clusters de Kubernetes. Esto se puede lograr mediante la ejecución del comando &lt;code&gt;kubectl apply -f gpu-operator.yaml&lt;/code&gt;, donde &lt;code&gt;gpu-operator.yaml&lt;/code&gt; es un archivo que define la configuración del operador de GPU.&lt;/p&gt;
+&lt;p&gt;En resumen, la versión v1.37 de Kubernetes presenta varias novedades y mejoras que pueden ayudar a los administradores de sistemas y desarrolladores a gestionar sus clusters y recursos de manera más eficiente y segura. Es importante consultar la documentación oficial de Kubernetes para obtener más información sobre estas características y cómo implementarlas en la práctica.&lt;/p&gt;
+&lt;hr&gt;&lt;p&gt;&lt;strong&gt;Fuentes:&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/"&gt;Kubernetes v1.37 Sneak Peek&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/kubernetes-sigs/cluster-api/releases"&gt;Releases: kubernetes-sigs/cluster-api&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/ROCm/gpu-operator"&gt;AMD GPU Operator&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+    <link href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-16_0834.html"/>
+    <summary>Kubernetes v1.37 presenta nuevas características y mejoras en networking, storage, security y operators. Esta versión incluye cambios significativos en la forma en que se gestionan los clusters y los recursos.</summary>
+    <published>2026-08-16T08:34:00+00:00</published>
   </entry>
 </feed>

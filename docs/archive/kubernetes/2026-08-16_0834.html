@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Novedades en Kubernetes - Kubernetes</title>
+    <title>Novedades en Kubernetes v1.37 - Kubernetes</title>
     <link rel="alternate" type="application/atom+xml" title="Kubernetes" href="https://patomvargas.github.io/capacitacion/feeds/kubernetes.xml">
     <style>
         :root {
@@ -57,44 +57,46 @@
         <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/">Kubernetes</a>
     </div>
 
-    <h1>Novedades en Kubernetes</h1>
-    <div class="meta">2026-08-12 0915 · Kubernetes</div>
+    <h1>Novedades en Kubernetes v1.37</h1>
+    <div class="meta">2026-08-16 0834 · Kubernetes</div>
 
     <div class="content">
         
         
             
-            <p>Kubernetes es un sistema de orquestación de contenedores que sigue evolucionando y mejorando. Una de las últimas novedades es la inclusión de nuevas características de networking, como la capacidad de configurar redes de forma más flexible y segura. Por ejemplo, se puede utilizar el comando `kubectl` para crear una red de tipo `NetworkPolicy` que restrinja el tráfico entre pods.</p>
+            <p>La versión v1.37 de Kubernetes incluye varias novedades y mejoras en diferentes áreas, como networking, storage, security y operators. Una de las características más destacadas es la capacidad de unir nodos de manera segura en versiones anteriores de Kubernetes utilizando `kubeadm`. Esto se logra mediante la característica `Enable safe joining of nodes on older kubernetes versions with kubeadm`, que se encuentra disponible en la versión v1.37.</p>
             
         
             
         
             
-            <p>La seguridad es otro aspecto importante en Kubernetes, y se han agregado nuevas características para mejorar la protección de los clusters. Por ejemplo, se puede utilizar el comando `kubectl` para crear un `Secret` que almacene información sensible, como claves de API o contraseñas. Luego, se puede utilizar este `Secret` para autenticar y autorizar a los pods que necesitan acceder a estos recursos.</p>
+        
+            
+            <p>La seguridad es otro aspecto que se ha mejorado en esta versión. Se han agregado nuevas características para proteger los clusters y los recursos, como la capacidad de utilizar `Network Policies` para controlar el tráfico de red entre los pods. Esto se puede lograr mediante el comando `kubectl apply -f network-policy.yaml`, donde `network-policy.yaml` es un archivo que define la política de red.</p>
             
         
             
         
             
-            <p>El AMD GPU Operator es otro componente importante en Kubernetes, que permite utilizar tarjetas gráficas AMD en los pods. Se puede instalar y configurar utilizando el comando `kubectl` y la herramienta `helm`. Por ejemplo, se puede utilizar el comando `helm install gpu-operator` para instalar el operador, y luego configurar los parámetros de la tarjeta gráfica utilizando el comando `kubectl edit gpu-operator`.</p>
+        
+            
+            <p>En cuanto a los operadores, la versión v1.37 incluye mejoras en la forma en que se gestionan los recursos y los clusters. Por ejemplo, se puede utilizar el comando `kubectl get nodes` para obtener una lista de los nodos del cluster, y luego utilizar `kubectl describe node <nombre-del-nodo>` para obtener más información sobre un nodo específico.</p>
             
         
             
         
             
-            <p>En cuanto a la resolución de problemas, Kubernetes proporciona varias herramientas y comandos para diagnosticar y solucionar problemas. Por ejemplo, se puede utilizar el comando `kubectl logs` para ver los registros de un pod, o el comando `kubectl describe` para obtener información detallada sobre un recurso. También se puede utilizar la herramienta `kubeadm` para diagnosticar y solucionar problemas relacionados con la instalación y configuración del cluster.</p>
+        
+            
+            <p>Otra característica interesante es la capacidad de utilizar el `AMD GPU Operator` para simplificar la implementación y el manejo de aceleradores de GPU de AMD en los clusters de Kubernetes. Esto se puede lograr mediante la ejecución del comando `kubectl apply -f gpu-operator.yaml`, donde `gpu-operator.yaml` es un archivo que define la configuración del operador de GPU.</p>
             
         
             
         
             
-            <p>En resumen, Kubernetes sigue evolucionando y mejorando, con nuevas características y herramientas que permiten a los administradores y desarrolladores crear y gestionar clusters de forma más eficiente y segura. Es importante estar al tanto de estas novedades y mejoras para aprovechar al máximo las capacidades de Kubernetes.</p>
-            
         
             
-        
-            
-            <p>Finalmente, es importante mencionar que la documentación oficial de Kubernetes es una excelente fuente de información para aprender y mejorar las habilidades en este sistema. Se puede encontrar documentación detallada sobre cada una de las características y herramientas mencionadas en este artículo, así como ejemplos y tutoriales prácticos para ayudar a los administradores y desarrolladores a comenzar a trabajar con Kubernetes.</p>
+            <p>En resumen, la versión v1.37 de Kubernetes presenta varias novedades y mejoras que pueden ayudar a los administradores de sistemas y desarrolladores a gestionar sus clusters y recursos de manera más eficiente y segura. Es importante consultar la documentación oficial de Kubernetes para obtener más información sobre estas características y cómo implementarlas en la práctica.</p>
             
         
     </div>
@@ -105,7 +107,12 @@
         <ul>
             
             <li>
-                <a href="https://github.com/kubernetes/kubernetes/issues/140598" target="_blank">Flaking Test</a>
+                <a href="https://kubernetes.io/blog/2026/07/31/kubernetes-v1-37-sneak-peek/" target="_blank">Kubernetes v1.37 Sneak Peek</a>
+                
+            </li>
+            
+            <li>
+                <a href="https://github.com/kubernetes-sigs/cluster-api/releases" target="_blank">Releases: kubernetes-sigs/cluster-api</a>
                 
             </li>
             
@@ -121,12 +128,10 @@
     <div class="nav">
         <div>
             
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-08_0847.html">&larr; 2026-08-08 0847</a>
+            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-12_0915.html">&larr; 2026-08-12 0915</a>
             
         </div>
         <div>
-            
-            <a href="https://patomvargas.github.io/capacitacion/archive/kubernetes/2026-08-16_0834.html">2026-08-16 0834 &rarr;</a>
             
         </div>
     </div>
